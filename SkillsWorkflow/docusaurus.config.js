@@ -9,6 +9,7 @@ module.exports = {
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
   projectName: 'Documentation-v2', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
     navbar: {
       title: '',
       logo: {
@@ -25,6 +26,12 @@ module.exports = {
         },
         { to: 'blog', label: 'Blog', position: 'left', className: 'navbar-item' },
         {
+          label: "API",
+          position: 'right',
+          className: 'navbar-item',
+          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/',
+        },
+        {
           href: 'https://github.com/SkillsWorkflow/Documentation-v2',
           label: 'GitHub',
           position: 'right',
@@ -36,7 +43,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Craft',
           items: [
             {
               label: 'Style Guide',
@@ -44,7 +51,7 @@ module.exports = {
             },
             {
               label: 'Second Doc',
-              to: 'docs/doc2/',
+              to: 'docs/doc3/',
             },
           ],
         },
@@ -52,16 +59,12 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Help Desk',
+              href: 'https://helpdesk.skillsworkflow.com',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/skillsworkflow',
             },
           ],
         },
@@ -74,7 +77,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/SkillsWorkflow/Documentation-v2',
             },
           ],
         },
