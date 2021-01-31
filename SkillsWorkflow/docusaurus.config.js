@@ -1,19 +1,19 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Skills Workflow’s Documentation',
+  tagline: 'We are here to let you shine! Let´s get everything done ✅.',
   url: 'https://skillsworkflow.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
+  projectName: 'Documentation-v2', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Skills Workflow',
+        src: 'img/logo-blue.png'
       },
       items: [
         {
@@ -21,12 +21,14 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
+          className: 'navbar-item'
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        { to: 'blog', label: 'Blog', position: 'left', className: 'navbar-item' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/SkillsWorkflow/Documentation-v2',
           label: 'GitHub',
           position: 'right',
+          className: 'navbar-item'
         },
       ],
     },
