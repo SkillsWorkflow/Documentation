@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Skills Workflow’s Documentation',
-  tagline: 'We are here to let you shine! Let´s get everything done ✅.',
+  tagline: 'We are here to let you shine! Let´s get everything done ✅',
   url: 'https://skillsworkflow.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',

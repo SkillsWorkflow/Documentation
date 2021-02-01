@@ -61,8 +61,22 @@ function Home() {
     <Layout
       title={`Documentation | ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container text--center">
+      <header
+        className={clsx('hero hero--primary', styles.heroBanner)}
+        style={{
+          color: '#0172c6',
+          // backgroundImage: useBaseUrl('img/home.png'),
+          backgroundImage: "url(https://uploads-ssl.webflow.com/5bf3f119b7c4f5aa8040c8c5/5da5ca17bf24e401676c9fac_alex-azabache-UeX_qw9lnzc-unsplash.jpg)",
+          position: 'static',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundColor: '#f3f8ff',
+          backgroundPosition: 'left'
+        }}>
+        <div className="container text--center"
+          style={{
+            backdropFilter: 'blur(2px)'
+          }}>
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
@@ -71,6 +85,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
+              style={{ backgroundColor: '#f3f8ff' }}
               to={useBaseUrl('docs/')}>
               Get Started
             </Link>
@@ -90,7 +105,7 @@ function Home() {
           </section>
         )}
       </main>
-    </Layout>
+    </Layout >
   );
 }
 
