@@ -62,7 +62,7 @@ function Home() {
       title={`Documentation | ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
+        <div className="container text--center">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
@@ -80,7 +80,7 @@ function Home() {
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <div className="container">
+            <div className="container text--center">
               <div className="row">
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />

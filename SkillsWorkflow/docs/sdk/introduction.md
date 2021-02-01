@@ -4,9 +4,9 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-There was a need to have a set of tools to be used on the system
+There was a need to have a set of tools to be used while creating Portals.
 
-We've made available an SDK so that you can design you components quickly.
+We've made available an SDK so that you can design your Portal's components quickly.
 
 It can be used anywhere on the system, but it mostly used on Workspaces.
 

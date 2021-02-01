@@ -2,31 +2,48 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Craft',
+      label: '✍🏽 Craft',
       items: [
         'workspaces',
-        'components'
+        'widgets'
       ]
     },
     {
-      Advanced: [
+      type: 'category',
+      label: '⚙️ Advanced',
+      items: [
         {
           SDK: [
-            'sdk/introduction',
-            'sdk/utils', 'sdk/git', 'sdk/toastr'
+            'sdk/introduction', 'sdk/utils', 'sdk/git', 'sdk/toastr'
           ]
         }, 'automations', 'queries'
       ]
     },
     {
-      Integrations: ['integrations/introduction']
+      type: 'category',
+      label: '🔗 Integrations',
+      items: ['integrations/introduction']
     },
     {
-      Documenting: ['documenting/style-guide', 'documenting/mdx']
+      type: 'category',
+      label: '🎓 University',
+      items: [
+        'university/introduction',
+        'university/time-sheets'
+      ]
     },
     {
-      University: ['university/introduction']
-    }
+      type: 'category',
+      label: '📝 Documenting',
+      items: ['documenting/style-guide', 'documenting/mdx']
+    },
   ],
+  // releases: [
+  //   'releases',
+  //   {
+  //     20: ['releases/20.9'],
+  //     21: ['releases/21.0'],
+  //   }
+  // ],
   api: {}
 };

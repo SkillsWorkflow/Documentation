@@ -9,6 +9,18 @@ module.exports = {
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
   projectName: 'Documentation-v2', // Usually your repo name.
   themeConfig: {
+    // algolia: {
+    //   apiKey: 'YOUR_API_KEY',
+    //   indexName: 'YOUR_INDEX_NAME',
+
+    //   // Optional: see doc section bellow
+    //   contextualSearch: true,
+
+    //   // Optional: Algolia search parameters
+    //   // searchParameters: {},
+
+    //   //... other Algolia params
+    // },
     hideableSidebar: true,
     navbar: {
       title: '',
@@ -48,11 +60,7 @@ module.exports = {
             {
               label: 'Style Guide',
               to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc3/',
-            },
+            }
           ],
         },
         {
@@ -79,10 +87,14 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/SkillsWorkflow/Documentation-v2',
             },
+            {
+              label: 'Releases',
+              to: 'docs/releases'
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Skills Workflow`,
     },
   },
   presets: [
