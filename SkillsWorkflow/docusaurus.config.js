@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Skills Workflow’s Documentation',
   tagline: 'We are here to let you shine! Let´s get everything done ✅',
-  url: 'https://skillsworkflow.netlify.app',
+  url: 'https://documentation.skillsworkflow.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -9,18 +9,18 @@ module.exports = {
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
   projectName: 'Documentation-v2', // Usually your repo name.
   themeConfig: {
-    // algolia: {
-    //   apiKey: 'YOUR_API_KEY',
-    //   indexName: 'YOUR_INDEX_NAME',
+    algolia: {
+      apiKey: '79575dae0d56516960fc0bfe8f137e39',
+      indexName: 'prod_documentation',
 
-    //   // Optional: see doc section bellow
-    //   contextualSearch: true,
+      // Optional: see doc section bellow
+      contextualSearch: true,
 
-    //   // Optional: Algolia search parameters
-    //   // searchParameters: {},
+      // Optional: Algolia search parameters
+      // searchParameters: {},
 
-    //   //... other Algolia params
-    // },
+      //... other Algolia params
+    },
     hideableSidebar: true,
     navbar: {
       title: '',
