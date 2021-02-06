@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Skills Workflow’s Documentation',
-  tagline: 'We are here to let you shine! Let´s get everything done ✅',
+  tagline: 'We are here to let you shine! Let´s get everything done',
   url: 'https://documentation.skillsworkflow.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -12,7 +12,7 @@ module.exports = {
     algolia: {
       appId: '7B27BG1AFF',
       apiKey: '79575dae0d56516960fc0bfe8f137e39',
-      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
+      indexName: 'documentation',
 
       // Optional: see doc section bellow
       contextualSearch: true,
