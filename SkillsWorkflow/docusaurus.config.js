@@ -10,6 +10,7 @@ module.exports = {
   projectName: 'Documentation-v2', // Usually your repo name.
   themeConfig: {
     algolia: {
+      appId: 'BH4D9OD16A',
       apiKey: '4befdcdc8562bc404497b6c7a8612fe2',
       indexName: 'skillsworkflow',
 
