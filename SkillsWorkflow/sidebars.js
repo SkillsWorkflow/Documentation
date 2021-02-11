@@ -14,7 +14,7 @@ module.exports = {
       items: [
         {
           SDK: [
-            'sdk/introduction', 'sdk/utils', 'sdk/git', 'sdk/toastr', 'sdk/alerts'
+            'sdk/introduction', 'sdk/ui', 'sdk/alerts'
           ]
         }, 'automations', 'queries'
       ]
