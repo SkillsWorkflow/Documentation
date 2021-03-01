@@ -407,24 +407,6 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
 ```
 
 ### Response
-```javascript
-
-1       {
-2           "status": 200,
-3           "data": [
-4               {
-5                   "id": "uuid-1",
-6                   "name": "John Doe",
-7                   "externalId": null,
-8                   "profileUrl": null,
-9                   "email": "johndoe@pubnub.com",
-10                  "custom": null,
-11                  "updated": "2019-02-20T23:11:20.893755",
-12                  "eTag": "MDcyQ0REOTUtNEVBOC00QkY2LTgwOUUtNDkwQzI4MjgzMTcwCg=="
-13              }
-14          ]
-15      }
-```
 
 ## _ShowImage_
 
