@@ -18,7 +18,7 @@ SW.ui.{methodName}
 ---
 
 ## _ShowBulk_
-C:\Users\HugoZacariasSkillsWo\Pictures\Saved Pictures\showBulk_response.png
+
 ### Description
 This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
 ### Method(s)
