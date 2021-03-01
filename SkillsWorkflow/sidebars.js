@@ -16,7 +16,10 @@ module.exports = {
           SDK: [
             'sdk/introduction', 'sdk/ui', 'sdk/alerts'
           ]
-        }, 'automations', 'queries'
+        }, 
+        'automations', 
+            'queries',
+            'types'
       ]
     },
     {
