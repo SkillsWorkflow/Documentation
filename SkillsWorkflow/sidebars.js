@@ -8,27 +8,13 @@ module.exports = {
         'widgets'
       ]
     },
-    // {
-    //   type: 'category',
-    //   label: 'Advanced',
-    //   items: [
-    //     {
-    //       SDK: [
-    //         'sdk/introduction', 'sdk/ui', 'sdk/alerts'
-    //       ]
-    //     }, 
-    //     'automations', 
-    //         'queries',
-    //         'types'
-    //   ]
-    // },
     {
       type: 'category',
       label: 'Advanced',
       items: [
         {
           SDK: [
-            'sdk/introduction', 
+            'sdk/introduction',
             {
               UI: [
                 'sdk/ui',
@@ -38,13 +24,12 @@ module.exports = {
                 'sdk/ui-alert',
                 'sdk/ui-tooltip'
               ]
-            },
-            // 'sdk/alerts'
+            }
           ]
-        }, 
-        'automations', 
-            'queries',
-            'types'
+        },
+        'automations',
+        'queries',
+        'types'
       ]
     },
     {
