@@ -20,6 +20,10 @@
   --ifm-font-family-monospace: 'Open Sans';
 }
 
+.token-line {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
@@ -38,6 +42,11 @@ img[alt=small] { width: 30%;}
 
 img[alt=crafted-love]{ width: 250px;} 
 
+img {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
 h1 {
   font-family: 'Varela Round';
   font-size: 40px;
@@ -54,6 +63,10 @@ h3 {
   font-size: 20px;
   font-weight: 400;
   color: #9CA7B0;
+}
+
+.javascript {
+  font-family: Menlo, Monaco, "Courier New", monospace;
 }
 
 .pagination-nav__link {
@@ -117,6 +130,7 @@ html[data-theme='dark'] .DocSearch {
   margin: auto;
   border-style: hidden;
   box-shadow: 0 0 0 1px #e4e4eb;
+  font-size: 14px;
 }
 
 .custom-table tr {
