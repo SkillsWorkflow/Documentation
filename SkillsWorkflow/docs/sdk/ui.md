@@ -1,7 +1,7 @@
 ---
 id:  ui
 title: ' '
-sidebar_label: UI
+sidebar_label: Introduction
 ---
 
 # User Inteface
@@ -18,10 +18,11 @@ SW.ui.{methodName}
 ---
 
 ## _ShowBulk_
+<h3>Description</h3>
 
-### Description
 This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
-### Method(s)
+<h3>Method(s)</h3>
+
 ```js {3}
 1 function showBulk(entity: string, dataGrid: any, height = 500, width = 800): void;
 ```
@@ -67,20 +68,23 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showBulk("entity", "dataGrid");
 ```
-### Response
+<h3>Response</h3>
 
-<!-- <img alt='Show Bulk' src='../static/img/responses/showBulk_response.png'> -->
+<!-- <img alt="Show Bulk" src="/img/responses/showBulk_response.png"> -->
+![img](/img/responses/showBulk_response.png)
 
 ## _ShowCreate_
 
-### Description
-This method can be used inside any workspace. Adds an add button on top, which calls a creation pop-up styled by the entity passed as parameter. 
+<h3>Description</h3>
 
-### Method(s)
+This method can be used inside any workspace. Adds an add button on top, which calls a creation pop-up styled by the entity passed as parameter. 
+<h3>Method(s)</h3>
+
 ```javascript
 1    function showCreate(entity: string, height = 350, width = 800): void;
 ```
@@ -119,12 +123,14 @@ This method can be used inside any workspace. Adds an add button on top, which c
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showCreate("entity");
 ```
 
-### Response
+<h3>Response</h3>
+
 ```javascript
 
 1       {
@@ -146,15 +152,19 @@ This method can be used inside any workspace. Adds an add button on top, which c
 
 ## _ShowPopup_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Creates a pop-up with the specified entity and data. 
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function showPopup(entity: string, dashboardTabs: DashboardTab[], data: any = null, 
-2           height = 500, width = 800, enableScroll = false, title = "", openInFullScreen = false, 
-3           hideTabContainer = false, hideSubHeader = false, closeOnOutsideClick = true, 
-4           callBacks?: { OnClose: Function }, buttonsConfiguration?: DashboardButtonsConfiguration): void;
+1    function showPopup(entity: string, dashboardTabs: DashboardTab[], 
+2           data: any = null, height = 500, width = 800, enableScroll = false, 
+3           title = "", openInFullScreen = false, hideTabContainer = false, 
+4           hideSubHeader = false, closeOnOutsideClick = true, 
+5           callBacks?: { OnClose: Function }, 
+6           buttonsConfiguration?: DashboardButtonsConfiguration): void;
 
 ```
 <table className="custom-table">
@@ -262,23 +272,26 @@ This method can be used inside any workspace. Creates a pop-up with the specifie
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showPopup("id", "entity");
 ```
-
-### Response
+<h3>Response</h3>
 
 ## _ShowPreview_
 
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Creates a preview pop-up styled by the entity passed as parameter. 
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function showPreview(id: string, entity: string, dataGrid: any = null, fieldName: string = null, height?, width?, 
-2                         callBacks?: { onSave: Function; onClose: Function }): void;
+1    function showPreview(id: string, entity: string, dataGrid: any = null, 
+2           fieldName: string = null, height?, width?, 
+3           callBacks?: { onSave: Function; onClose: Function }): void;
 ```
 <table className="custom-table">
     <thead>
@@ -343,21 +356,25 @@ This method can be used inside any workspace. Creates a preview pop-up styled by
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showPreview("id", "dataGrid", "fieldName");
 ```
 
-### Response
+<h3>Response</h3>
 
 ## _ShowSystemPreview_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Creates a pop-up preview of the... ? 
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function showSystemPreview(id: string, entity: string, height = 500, width = 750): void;
+1    function showSystemPreview(id: string, entity: string, height = 500, 
+2           width = 750): void;
 ```
 <table className="custom-table">
     <thead>
@@ -400,23 +417,25 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
         </tr>
     </tbody>
 </table>
+<h3>Basic Usage</h3>
 
-### Basic Usage
 ```javascript
 >    SW.ui.showSystemPreview("id", "entity");
 ```
 
-### Response
+<h3>Response</h3>
 
 ## _ShowImage_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Displays and existing or default Image 
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function showImage( element: any, entity: "user" | "client" | "company", size: Size, 
-2                       hasImage: boolean, name: string, id?: string): string;
+1    function showImage( element: any, entity: "user" | "client" | "company", 
+2           size: Size, hasImage: boolean, name: string, id?: string): string;
 ```
 <table className="custom-table">
     <thead>
@@ -467,23 +486,26 @@ This method can be used inside any workspace. Displays and existing or default I
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showImage(div, "company", Size.small, true, 'SkillsWorkflow');
 ```
 
-### Response
-
+<h3>Response</h3>
 
 ## _ShowImageEditor_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Displays and existing or default Image 
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function showImageEditor(element: any, entity: string, entityId: string, endpoint: string = null, 
-2           size: Size = Size.LARGE, imageStyle: string = "height:100px;width:100px;"): string;
+1    function showImageEditor(element: any, entity: string, entityId: string, 
+2           endpoint: string = null, size: Size = Size.LARGE, 
+3           imageStyle: string = "height:100px;width:100px;"): string;
 
 ```
 <table className="custom-table">
@@ -542,19 +564,23 @@ This method can be used inside any workspace. Displays and existing or default I
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
->    SW.ui.showImageEditor(div, "company", "companyId", Size.small, "company/id", Size.Large);
+>    SW.ui.showImageEditor(div, "company", "companyId", Size.small, 
+            "company/id", Size.Large);
 ```
 
-### Response
+<h3>Response</h3>
 
 ## _ShowStage_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Displays a stage
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
 1    function function showStage(element: any, color: string, text: string, 
 2                        grouping = false, groupCount?: number): void;
@@ -608,18 +634,21 @@ This method can be used inside any workspace. Displays a stage
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showStage(div, "red", "example");
 ```
 
-### Response
+<h3>Response</h3>
 
 ## ShowPriority
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. To define an element priority
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
 1    function showPriority(element: any, priorityValue: number): void;
 ```
@@ -651,19 +680,22 @@ This method can be used inside any workspace. To define an element priority
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showPrioruty("div", 1);
 ```
 
-### Response
+<h3>Response</h3>
 
 ## _ShowTags_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Displays tags
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
 1    function showTags(tags: any, element: any): void;
 ```
@@ -695,19 +727,22 @@ This method can be used inside any workspace. Displays tags
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showTags({ Label: "Skills", Color: "#333"}, 'div');
 ```
 
-### Response
+<h3>Response</h3>
 
 ## _ShowTeam_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Displays teams
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
 1    function showTeam(element: any, data: any, executorIdsMapping: string, 
 2               executorNamesMapping: string, executorHasImageMapping: string, 
@@ -762,22 +797,26 @@ This method can be used inside any workspace. Displays teams
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
->    SW.ui.showTeam("div", data, [ IDs ], [Executers names],  [Executors Images], Size.Large);
+>    SW.ui.showTeam("div", data, [ IDs ], [Executers names],  
+            [Executors Images], Size.Large);
 ```
 
-### Response
+<h3>Response</h3>
 
 ## _SetRag_
+<h3>Description</h3>
 
-### Description
 This method can be used inside any workspace. Displays a rag
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
 1    function setRag(element: any, value: string, condition1: boolean, 
-2               condition2: boolean, condition3: boolean, createContainer = true): string;
+2           condition2: boolean, condition3: boolean, 
+3           createContainer = true): string;
 ```
 <table className="custom-table">
     <thead>
@@ -828,21 +867,25 @@ This method can be used inside any workspace. Displays a rag
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.setRag("div", "value", true, false, false);
 ```
 
-### Response
+<h3>Response</h3>
 
 ## _SetVersionRag_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Set rag with version
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function setVersionRag(element: any, version1: number, version2: number, createContainer = true): string;
+1    function setVersionRag(element: any, version1: number, version2: number, 
+3           createContainer = true): string;
 ```
 <table className="custom-table">
     <thead>
@@ -886,21 +929,25 @@ This method can be used inside any workspace. Set rag with version
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.setVersionRag({ Label: "Skills", Color: "#333"}, 'div');
 ```
 
-### Response
+<h3>Response</h3>
 
 ## _SetAttribute_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Set element's attributes
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function setAttribute(element: any, text: string, attribute = "", attributeValue = "", createContainer = true): string;
+1    function setAttribute(element: any, text: string, attribute = "", 
+2           attributeValue = "", createContainer = true): string;
 ```
 <table className="custom-table">
     <thead>
@@ -951,21 +998,26 @@ This method can be used inside any workspace. Set element's attributes
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.setAttribute('div', 'text', ));
 ```
 
-### Response
+<h3>Response</h3>
+
 
 ## _GetEntityImage_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Get entity's image
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function getEntityImage(element: any, size: Size, type: string, appRoute: string): string;
+1    function getEntityImage(element: any, size: Size, type: string, 
+2           appRoute: string): string;
 ```
 <table className="custom-table">
     <thead>
@@ -1009,20 +1061,24 @@ This method can be used inside any workspace. Get entity's image
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.getEntityImage('div', Size.Large, 'type', 'route');
 ```
 
-### Response
+<h3>Response</h3>
+
 
 ## _NavigateToNewTab_
 
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Navigate to a new tab
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
 1    function navigateToNewTab(useSkillsBaseUrl = true, url = ""): void;
 ```
@@ -1054,21 +1110,26 @@ This method can be used inside any workspace. Navigate to a new tab
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.navigateToNewTab();
 ```
 
-### Response
+<h3>Response</h3>
+
 
 ## _NavigateTo_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Navigate to workspace
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function navigateTo(workspaceId: string, entity: string = null, entityId: string = null): void;
+1    function navigateTo(workspaceId: string, entity: string = null, 
+2           entityId: string = null): void;
 ```
 <table className="custom-table">
     <thead>
@@ -1112,21 +1173,26 @@ This method can be used inside any workspace. Navigate to workspace
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.navigateTo('workspaceId', 'company', 'companyId');
 ```
 
-### Response
+<h3>Response</h3>
+
 
 ## _ShowWorkload_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Displays assignment's workload
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function showWorkload(assignmentId: string, target: string | HTMLElement): Promise<void>;
+1    function showWorkload(assignmentId: string, target: string | HTMLElement)
+2           :Promise<void>;
 ```
 <table className="custom-table">
     <thead>
@@ -1156,21 +1222,26 @@ This method can be used inside any workspace. Displays assignment's workload
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showWorkload('assignmentId', target);
 ```
 
-### Response
+<h3>Response</h3>
+
 
 ## _ShowComponent_
 
-### Description
+<h3>Description</h3>
+
 This method can be used inside any workspace. Show component's properties
 
-### Method(s)
+<h3>Method(s)</h3>
+
 ```javascript
-1    function showComponent(type: string, container: HTMLElement, properties: object): void;
+1    function showComponent(type: string, container: HTMLElement, 
+2           properties: object): void;
 ```
 <table className="custom-table">
     <thead>
@@ -1207,17 +1278,11 @@ This method can be used inside any workspace. Show component's properties
     </tbody>
 </table>
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 ```javascript
 >    SW.ui.showComponent("type", "div", { properties });
 ```
 
-### Response
+<h3>Response</h3>
 
-## Grid
-
-### Add toolbar buttons
-
-## Select Box
-
-### Get data source by endpoint
