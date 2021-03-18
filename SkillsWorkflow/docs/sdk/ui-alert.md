@@ -292,7 +292,7 @@ This method can be used inside any workspace. Shows a Error toastr and also in t
 ```
 <h3>Response</h3>
 
-![img](/img/responses/alertError_response.PNG)
+![img](/img/responses/alertError_response.png)
 
 
 ## _Clear_
