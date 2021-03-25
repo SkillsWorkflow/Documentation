@@ -117,17 +117,24 @@ This method can be used inside any workspace. Generates a create button in the s
             <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
         </tr>
         <tr className="selected">
-            <td><code>component</code></td>
+            <td><code>formComponent</code></td>
             <td>any</td>
             <td>true</td>
             <td></td>
             <td></td>
         </tr>
         <tr className="selected">
-            <td><code>patchEndpoint</code></td>
+            <td><code>descriptionComponent</code></td>
             <td>any</td>
             <td>true</td>
+            <td>null</td>
             <td></td>
+        </tr>
+        <tr className="selected">
+            <td><code>postModelMapper</code></td>
+            <td>any</td>
+            <td>true</td>
+            <td>null</td>
             <td></td>
         </tr>
         <tr className="selected">
@@ -135,14 +142,35 @@ This method can be used inside any workspace. Generates a create button in the s
             <td>any</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>Callback function</td>
         </tr>
         <tr className="selected">
             <td><code>postChangesOnFeed</code></td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td>false</td>
+            <td>Flag to display changes on feed</td>
+        </tr>
+        <tr className="selected">
+            <td><code>descriptionModelMapper</code></td>
+            <td>any</td>
+            <td>true</td>
+            <td>null</td>
+            <td></td>
+        </tr>
+        <tr className="selected">
+            <td><code>filesComponent</code></td>
             <td>any</td>
             <td>true</td>
             <td></td>
             <td></td>
+        </tr>
+        <tr className="selected">
+            <td><code>allowDraft</code></td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td>true</td>
+            <td>Allow draft creation</td>
         </tr>
     </tbody>
 </table>
@@ -205,7 +233,7 @@ This method can be used inside any workspace. Creates an button in the subheader
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.buttons.addToSubHeader(e.component, buttons);
+>    SW.UI.buttons.addToSubHeader(e.component, buttons);
 ```
 :::important
 

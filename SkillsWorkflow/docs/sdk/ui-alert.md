@@ -32,35 +32,35 @@ This method can be used inside any workspace. Shows a Info toastr and also in th
             <td>string</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>The message to be displayed in the alert</td>
         </tr>
         <tr className="selected">
             <td><code>type</code></td>
             <td>SystemNames</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>To style the alert according to the system name passed</td>
         </tr>
         <tr className="selected">
             <td><code>userName</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's name</td>
         </tr>
         <tr className="selected">
             <td><code>userId</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's id to get image</td>
         </tr>
         <tr className="selected">
             <td><code>callbackClick</code></td>
             <td>any</td>
             <td>false</td>
             <td>null</td>
-            <td></td>
+            <td>callback function</td>
         </tr>
     </tbody>
 </table>
@@ -68,7 +68,7 @@ This method can be used inside any workspace. Shows a Info toastr and also in th
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.alert.info("Toast info");
+>    SW.UI.alert.info("Toast info");
 ```
 <h3>Response</h3>
 
@@ -103,35 +103,35 @@ This method can be used inside any workspace. Shows a Warning toastr and also in
             <td>string</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>The message to be displayed in the alert</td>
         </tr>
         <tr className="selected">
             <td><code>type</code></td>
             <td>SystemNames</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>To style the alert according to the system name passed</td>
         </tr>
         <tr className="selected">
             <td><code>userName</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's name</td>
         </tr>
         <tr className="selected">
             <td><code>userId</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's id to get image</td>
         </tr>
         <tr className="selected">
             <td><code>callbackClick</code></td>
             <td>any</td>
             <td>false</td>
             <td>null</td>
-            <td></td>
+            <td>callback function</td>
         </tr>
         <tr className="selected">
             <td><code>timeOut</code></td>
@@ -146,7 +146,7 @@ This method can be used inside any workspace. Shows a Warning toastr and also in
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.alert.warning("User fields is required");
+>    SW.UI.alert.warning("User fields is required");
 ```
 <h3>Response</h3>
 
@@ -181,35 +181,35 @@ This method can be used inside any workspace. Shows a Success toastr and also in
             <td>string</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>The message to be displayed in the alert</td>
         </tr>
         <tr className="selected">
             <td><code>type</code></td>
             <td>SystemNames</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>To style the alert according to the system name passed</td>
         </tr>
         <tr className="selected">
             <td><code>userName</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's name</td>
         </tr>
         <tr className="selected">
             <td><code>userId</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's id to get image</td>
         </tr>
         <tr className="selected">
             <td><code>callbackClick</code></td>
             <td>any</td>
             <td>false</td>
             <td>null</td>
-            <td></td>
+            <td>callback function</td>
         </tr>
     </tbody>
 </table>
@@ -217,7 +217,7 @@ This method can be used inside any workspace. Shows a Success toastr and also in
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.alert.success("Toast success");
+>    SW.UI.alert.success("Toast success");
 ```
 <h3>Response</h3>
 
@@ -259,28 +259,28 @@ This method can be used inside any workspace. Shows a Error toastr and also in t
             <td>SystemNames</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>To style the alert according to the system name passed</td>
         </tr>
         <tr className="selected">
             <td><code>userName</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's name</td>
         </tr>
         <tr className="selected">
             <td><code>userId</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's id to get image</td>
         </tr>
         <tr className="selected">
             <td><code>callbackClick</code></td>
             <td>any</td>
             <td>false</td>
             <td>null</td>
-            <td></td>
+            <td>callback function</td>
         </tr>
     </tbody>
 </table>
@@ -288,7 +288,7 @@ This method can be used inside any workspace. Shows a Error toastr and also in t
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.alert.error("Toast error");
+>    SW.UI.alert.error("Toast error");
 ```
 <h3>Response</h3>
 
@@ -322,35 +322,35 @@ This method can be used inside any workspace. Clear specific toastr
             <td>string</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>The message to be displayed in the alert</td>
         </tr>
         <tr className="selected">
             <td><code>type</code></td>
             <td>SystemNames</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>To style the alert according to the system name passed</td>
         </tr>
         <tr className="selected">
             <td><code>userName</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's name</td>
         </tr>
         <tr className="selected">
             <td><code>userId</code></td>
             <td>string</td>
             <td>true</td>
             <td>null</td>
-            <td></td>
+            <td>User's id to get image</td>
         </tr>
         <tr className="selected">
             <td><code>callbackClick</code></td>
             <td>any</td>
             <td>false</td>
             <td>null</td>
-            <td></td>
+            <td>callback function</td>
         </tr>
     </tbody>
 </table>
@@ -358,5 +358,5 @@ This method can be used inside any workspace. Clear specific toastr
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.alert.clear("Toast clear"),
+>    SW.UI.alert.clear("Toast clear"),
 ```

@@ -8,7 +8,7 @@ sidebar_label: SelectBox
 
 <h3>Description</h3>
 
-This method can be used inside any workspace. Set SelectBox's list width
+This method can be used inside any workspace. Set SelectBox's list width according to the largest item passed in element's datasource
 
 <h3>Method(s)</h3>
 
@@ -31,7 +31,7 @@ This method can be used inside any workspace. Set SelectBox's list width
             <td>any</td>
             <td>true</td>
             <td></td>
-            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
+            <td>This parameter refers to a selectBox</td>
         </tr>
     </tbody>
 </table>
@@ -39,7 +39,7 @@ This method can be used inside any workspace. Set SelectBox's list width
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.selectBox.setListWidth(500);
+>    SW.UI.selectBox.setListWidth(selectBox);
 ```
 <h3>Response</h3>
 
@@ -84,6 +84,6 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.selectBox.getLookupByEndpoint("options", "companies/all");
+>    SW.UI.selectBox.getLookupByEndpoint("options", "companies/all");
 ```
 <h3>Response</h3>
