@@ -51,7 +51,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.grid.expandCollapseRow("dataGrid");
+>    SW.UI.grid.expandCollapseRow("dataGrid");
 ```
 <h3>Response</h3>
 
@@ -106,7 +106,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.grid.calculatePercentageSummary(options: any, dividend: number[], 
+>    SW.UI.grid.calculatePercentageSummary(options: any, dividend: number[], 
         diviser[]: number[]): void;
 ```
 <h3>Response</h3>
@@ -155,7 +155,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.grid.addToolbarButtons(toolbarEvent, buttonsList);
+>    SW.UI.grid.addToolbarButtons(toolbarEvent, buttonsList);
 ```
 <h3>Response</h3>
 
@@ -201,6 +201,6 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.grid.importExcel(file, grid);
+>    SW.UI.grid.importExcel(file, grid);
 ```
 <h3>Response</h3>

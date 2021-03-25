@@ -14,6 +14,9 @@ For this example the tooltip methods were set on 2 events
 
 :::
 
+
+![img](/img/responses/tooltip-usage-documentation.png)
+
 ![img](/img/responses/tooltip_set_show_usage.png)
 
 
@@ -47,7 +50,7 @@ This method can be used inside any workspace. Create a new tooltip
             <td>HTMLElement</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>Element's reference</td>
         </tr>
         <tr className="selected">
             <td><code>entity</code></td>
@@ -61,7 +64,7 @@ This method can be used inside any workspace. Create a new tooltip
             <td>object</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>Information to be displayed</td>
         </tr>
         <tr className="selected">
             <td><code>tooltipHTML</code></td>
@@ -76,7 +79,7 @@ This method can be used inside any workspace. Create a new tooltip
 <h3>Basic Usage</h3>
 
 ```javascript 
->    SW.ui.tooltip.set(div, "company", { Name: "SkillsWorkflow"});
+>    SW.UI.tooltip.set(element, "job", { Job: data });
 ```
 
 ## _Show_
@@ -105,7 +108,7 @@ This method can be used inside any workspace. Show existing tooptip
             <td>HTMLElement</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>Element's reference</td>
         </tr>
     </tbody>
 </table>
@@ -113,7 +116,7 @@ This method can be used inside any workspace. Show existing tooptip
 <h3>Basic Usage</h3>
 
 ```javascript 
->    SW.ui.tooltip.show(element);
+>    SW.UI.tooltip.show(element);
 ```
 
 ## _Hide_
@@ -142,7 +145,7 @@ This method can be used inside any workspace. Hide specified tooltip
             <td>HTMLElement</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>Element's reference</td>
         </tr>
     </tbody>
 </table>
@@ -150,5 +153,5 @@ This method can be used inside any workspace. Hide specified tooltip
 <h3>Basic Usage</h3>
 
 ```javascript 
->    SW.ui.tooltip.hide(element);
+>    SW.UI.tooltip.hide(element);
 ```

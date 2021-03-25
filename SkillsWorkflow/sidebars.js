@@ -4,7 +4,7 @@ module.exports = {
       type: 'category',
       label: 'Craft',
       items: [
-        'workspaces',
+        'craft/panels',
         'widgets'
       ]
     },
@@ -22,7 +22,8 @@ module.exports = {
                 'sdk/ui-selectBox',
                 'sdk/ui-buttons',
                 'sdk/ui-alert',
-                'sdk/ui-tooltip'
+                'sdk/ui-tooltip',
+                'sdk/ui-workspaces'
               ]
             }
           ]
@@ -44,11 +45,6 @@ module.exports = {
         'university/introduction',
         'university/time-sheets'
       ]
-    },
-    {
-      type: 'category',
-      label: 'Documenting',
-      items: ['documenting/style-guide', 'documenting/mdx']
     },
   ],
   api: {}
