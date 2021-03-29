@@ -4,7 +4,11 @@ module.exports = {
       type: 'category',
       label: 'Craft',
       items: [
-        'craft/panels',
+        {
+          Panels: [
+            'craft/panels/grid'
+          ]
+        },
         'widgets'
       ]
     },

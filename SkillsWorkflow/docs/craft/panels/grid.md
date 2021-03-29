@@ -1,7 +1,7 @@
 ---
-id: panels
-title: Panels
-sidebar_label: Panels
+id: grid
+title: Grid
+sidebar_label: Grid
 slug: /
 ---
 
