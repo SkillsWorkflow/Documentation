@@ -40,7 +40,10 @@ module.exports = {
     {
       type: 'category',
       label: 'Integrations',
-      items: ['integrations/introduction']
+      items: [
+        'integrations/introduction',
+        'integrations/hr-link'
+      ]
     },
     {
       type: 'category',
