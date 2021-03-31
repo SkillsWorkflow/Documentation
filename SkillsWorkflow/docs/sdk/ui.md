@@ -12,7 +12,7 @@ The namespace User Interface provides to developers, methods to easily show or v
 
 ```javascript
 //accessing to utils methods
-SW.ui.{methodName}
+SW.UI.{methodName}
 ```
 
 ---
@@ -71,7 +71,7 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showBulk("entity", "dataGrid");
+>    SW.UI.showBulk("entity", "dataGrid");
 ```
 <h3>Response</h3>
 
@@ -126,7 +126,7 @@ This method can be used inside any workspace. Adds an add button on top, which c
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showCreate("entity");
+>    SW.UI.showCreate("entity");
 ```
 
 <h3>Response</h3>
@@ -275,7 +275,7 @@ This method can be used inside any workspace. Creates a pop-up with the specifie
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showPopup("id", "entity");
+>    SW.UI.showPopup("id", "entity");
 ```
 <h3>Response</h3>
 
@@ -359,7 +359,7 @@ This method can be used inside any workspace. Creates a preview pop-up styled by
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showPreview("id", "dataGrid", "fieldName");
+>    SW.UI.showPreview("id", "dataGrid", "fieldName");
 ```
 
 <h3>Response</h3>
@@ -420,7 +420,7 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showSystemPreview("id", "entity");
+>    SW.UI.showSystemPreview("id", "entity");
 ```
 
 <h3>Response</h3>
@@ -489,7 +489,7 @@ This method can be used inside any workspace. Displays and existing or default I
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showImage(div, "company", Size.small, true, 'SkillsWorkflow');
+>    SW.UI.showImage(div, "company", Size.small, true, 'SkillsWorkflow');
 ```
 
 <h3>Response</h3>
@@ -567,7 +567,7 @@ This method can be used inside any workspace. Displays and existing or default I
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showImageEditor(div, "company", "companyId", Size.small, 
+>    SW.UI.showImageEditor(div, "company", "companyId", Size.small, 
             "company/id", Size.Large);
 ```
 
@@ -637,7 +637,7 @@ This method can be used inside any workspace. Displays a stage
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showStage(div, "red", "example");
+>    SW.UI.showStage(div, "red", "example");
 ```
 
 <h3>Response</h3>
@@ -683,7 +683,7 @@ This method can be used inside any workspace. To define an element priority
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showPrioruty("div", 1);
+>    SW.UI.showPrioruty("div", 1);
 ```
 
 <h3>Response</h3>
@@ -730,7 +730,7 @@ This method can be used inside any workspace. Displays tags
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showTags({ Label: "Skills", Color: "#333"}, 'div');
+>    SW.UI.showTags({ Label: "Skills", Color: "#333"}, 'div');
 ```
 
 <h3>Response</h3>
@@ -800,7 +800,7 @@ This method can be used inside any workspace. Displays teams
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showTeam("div", data, [ IDs ], [Executers names],  
+>    SW.UI.showTeam("div", data, [ IDs ], [Executers names],  
             [Executors Images], Size.Large);
 ```
 
@@ -870,7 +870,7 @@ This method can be used inside any workspace. Displays a rag
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.setRag("div", "value", true, false, false);
+>    SW.UI.setRag("div", "value", true, false, false);
 ```
 
 <h3>Response</h3>
@@ -932,7 +932,7 @@ This method can be used inside any workspace. Set rag with version
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.setVersionRag({ Label: "Skills", Color: "#333"}, 'div');
+>    SW.UI.setVersionRag({ Label: "Skills", Color: "#333"}, 'div');
 ```
 
 <h3>Response</h3>
@@ -1001,7 +1001,7 @@ This method can be used inside any workspace. Set element's attributes
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.setAttribute('div', 'text', ));
+>    SW.UI.setAttribute('div', 'text', ));
 ```
 
 <h3>Response</h3>
@@ -1064,7 +1064,7 @@ This method can be used inside any workspace. Get entity's image
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.getEntityImage('div', Size.Large, 'type', 'route');
+>    SW.UI.getEntityImage('div', Size.Large, 'type', 'route');
 ```
 
 <h3>Response</h3>
@@ -1113,7 +1113,7 @@ This method can be used inside any workspace. Navigate to a new tab
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.navigateToNewTab();
+>    SW.UI.navigateToNewTab();
 ```
 
 <h3>Response</h3>
@@ -1176,7 +1176,7 @@ This method can be used inside any workspace. Navigate to workspace
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.navigateTo('workspaceId', 'company', 'companyId');
+>    SW.UI.navigateTo('workspaceId', 'company', 'companyId');
 ```
 
 <h3>Response</h3>
@@ -1225,7 +1225,7 @@ This method can be used inside any workspace. Displays assignment's workload
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showWorkload('assignmentId', target);
+>    SW.UI.showWorkload('assignmentId', target);
 ```
 
 <h3>Response</h3>
@@ -1281,7 +1281,7 @@ This method can be used inside any workspace. Show component's properties
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.ui.showComponent("type", "div", { properties });
+>    SW.UI.showComponent("type", "div", { properties });
 ```
 
 <h3>Response</h3>
