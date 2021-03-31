@@ -83,19 +83,23 @@ Go to workspace **Timesheets Approval**
 
 ![img](/img/responses/timesheets_to_approve_response.png)
 
-1. You can approve all the requested `timesheets`
+1. You can approve all the requested `timesheets` by clicking check icon in the right upper side.
 
 ![img](/img/responses/timesheets_approve_all_response.png)
 
-2. Approve a group
+2. Approve a group by clicking the check icon on the group bar.
 
 ![img](/img/responses/timesheets_approve_group_response.png)
 
-3. Approve only the selected
+3. Approve only the selected by clicking check icon in the right upper side after you select the intended  `timesheets`.
+
+:::note
+Selected **timesheets** appear in darker blue.
+:::
 
 ![img](/img/responses/timesheets_approve_selected_response.png)
 
-4. The approved `timesheets` will have a darker green
+4. The approved `timesheets` will have a darker green.
 
 ![img](/img/responses/timesheets_approved_response.png)
 
@@ -107,15 +111,15 @@ Go to workspace **Timesheets Approval**
 In the same workspace where **timesheets** are approved
 :::
 
-1. It's also possible to reject all
+1. It's also possible to reject all by clicking X icon in the right upper side next to the check icon.
 
 ![img](/img/responses/timesheets_reject_all_response.png)
 
-2. To reject a group
+2. To reject a group, just has in **Timesheet Approval**. On the group bar click the X icon.
 
 ![img](/img/responses/timesheets_reject_group_response.png)
 
-3. Only the selected
+3. Only the selected by clicking the X icon in the right upper side next to the check icon after you select the intended  `timesheets`.
 
 :::note
 Selected **timesheets** appear in darker blue.
@@ -123,6 +127,6 @@ Selected **timesheets** appear in darker blue.
 
 ![img](/img/responses/timesheets_reject_selected_response.png)
 
-4. Rejected `timesheets` will appear in red
+4. Rejected `timesheets` will appear in red.
 
 ![img](/img/responses/timesheets_rejected_response.png)
