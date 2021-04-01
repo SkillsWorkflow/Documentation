@@ -112,7 +112,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 <h3>Response</h3>
 
 <!-- <img alt="Show Bulk" src="/img/responses/showBulk_response.png"> -->
-![img](/img/responses/showBulk_response.png)
+![img-with-border](/img/responses/showBulk_response.png)
 
 ## _AddToolbarButtons_
 

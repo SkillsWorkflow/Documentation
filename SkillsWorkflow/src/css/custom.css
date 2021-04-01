@@ -42,7 +42,7 @@ img[alt=small] { width: 30%;}
 
 img[alt=crafted-love]{ width: 250px;} 
 
-img {
+img[alt=img-with-border]{
   border: 1px solid lightgray;
   border-radius: 5px;
 }
