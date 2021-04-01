@@ -8,8 +8,6 @@ slug: /
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Craft Workspaces from tens of Services available through an SDK and APIs
-
 ## SetColumns
 <h3>Description</h3>
 A function used to set grid's columns in a workspace. 
