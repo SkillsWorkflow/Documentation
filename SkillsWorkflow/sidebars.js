@@ -6,7 +6,8 @@ module.exports = {
       items: [
         {
           Panels: [
-            'craft/panels/grid'
+            'craft/panels/grid',
+            'craft/craft-workspaces'
           ]
         },
         'widgets'

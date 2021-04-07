@@ -34,9 +34,10 @@ Column properties define the behavior and appearance of a grid column.
             hasImage: "ClientHasImage"
         },
         properties: {
-            hideName: true
-        },
-        size: "small"
+            hideName: true,
+            size: "small",
+            forceImage: false
+        }
     },
     caption: "Client",
     dataType: "string",
@@ -166,7 +167,7 @@ To define the size of the image it should be set the size property.
 #### properties
 Properties withing format property customize the behavior and appearance of a default display.
 
-In the following example, to hide the cllient name from the column and keep only the client image, hideName property should be set as true.
+In the following example, to hide the client name from the column and keep only the client image, hideName property should be set as true.
 ```json
 {
     entity: "client",
