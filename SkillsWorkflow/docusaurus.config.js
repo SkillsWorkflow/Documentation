@@ -44,7 +44,7 @@ module.exports = {
           href: 'https://apiv2-demo-prod-we.skillsworkflow.com/',
         },
         {
-          href: 'https://github.com/SkillsWorkflow/Documentation-v2',
+          href: 'https://github.com/SkillsWorkflow/Documentation',
           label: 'GitHub',
           position: 'right',
           className: 'navbar-item'
@@ -85,7 +85,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/SkillsWorkflow/Documentation-v2',
+              href: 'https://github.com/SkillsWorkflow/Documentation',
             },
             {
               label: 'Releases',
@@ -105,13 +105,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
