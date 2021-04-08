@@ -105,7 +105,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/website/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/',
         },
         blog: {
           showReadingTime: true,
