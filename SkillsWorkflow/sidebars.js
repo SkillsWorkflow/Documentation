@@ -30,6 +30,14 @@ module.exports = {
                 'sdk/ui-tooltip',
                 'sdk/ui-workspaces'
               ]
+            },
+            {
+              Document: [
+                'sdk/document',
+                'sdk/assignments',
+                'sdk/holidays',
+                'sdk/customTables'
+              ]
             }
           ]
         },
