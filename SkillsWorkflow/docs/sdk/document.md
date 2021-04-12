@@ -19,7 +19,7 @@ SW.Document.{methodName}
 
 <h3>Description</h3>
 
-This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
+This method can be used inside any workspace. Used to set custom user fields
 
 <h3>Method(s)</h3>
 
@@ -69,12 +69,12 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 >    SW.Document.setCustomFields("Employee", "b983e9b5-b2b8-485f-8ff8-794463771bcc", 
         { Name: "Default"});
 ```
+
 ## GetCustomFields
 
 <h3>Description</h3>
 
-This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
-
+This method can be used inside any workspace. Return custom user fields
 <h3>Method(s)</h3>
 
 ```js {3}
@@ -127,12 +127,11 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 
 <h3>Description</h3>
 
-This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
-
+This method can be used inside any workspace. Create a new document
 <h3>Method(s)</h3>
 
 ```js {3}
-1   declare function getCustomFields(document: string, 
+1   declare function create(document: string, 
 2       draftData: IDraftDocument = null): Promise<any>;
 ```
 
@@ -174,8 +173,7 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 
 <h3>Description</h3>
 
-This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
-
+This method can be used inside any workspace. Update a document
 <h3>Method(s)</h3>
 
 ```javascript
@@ -251,8 +249,7 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 
 <h3>Description</h3>
 
-This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
-
+This method can be used inside any workspace. Get document lookup
 <h3>Method(s)</h3>
 
 ```js {3}
