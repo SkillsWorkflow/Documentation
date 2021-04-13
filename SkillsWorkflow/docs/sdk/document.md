@@ -66,7 +66,7 @@ This method can be used inside any workspace. Used to set custom user fields
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.Document.setCustomFields("Employee", "b983e9b5-b2b8-485f-8ff8-794463771bcc", 
+>   SW.Document.setCustomFields("Employee","b983e9b5-b2b8-485f-8ff8-794463771bcc", 
         { Name: "Default"});
 ```
 

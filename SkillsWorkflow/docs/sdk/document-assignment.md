@@ -12,7 +12,7 @@ This method can be used inside any workspace. Create a new assignment
 
 <h3>Method(s)</h3>
 
-```js {3}
+```javascript
 1   declare function create(newUserId: string, documentId: string, 
 2       assignmentType: string, document: string, workload: number = 0, 
 3       callback: any = () => {}): 
