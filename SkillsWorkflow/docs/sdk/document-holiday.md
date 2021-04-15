@@ -12,7 +12,7 @@ This method can be used inside any workspace. Retrives a custom table
 
 <h3>Method(s)</h3>
 
-```js {3}
+```javascript
 1   declare function get(companyId: string, startDate?: Date, 
 2       endDate?: Date): Promise<any>;
 ```

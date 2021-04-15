@@ -36,7 +36,10 @@ module.exports = {
                 'sdk/document',
                 'sdk/assignments',
                 'sdk/holidays',
-                'sdk/customTables'
+                'sdk/customTables',
+                'sdk/clients',
+                'sdk/users',
+                'sdk/estimates'
               ]
             }
           ]
