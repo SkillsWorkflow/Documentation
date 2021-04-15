@@ -17,7 +17,7 @@ SW.UI.{methodName}
 
 ---
 
-## _ShowBulk_
+## ShowBulk
 
 <h3>Description</h3>
 
@@ -83,7 +83,7 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 
 ![img](/img/responses/showBulk_response.png)
 
-## _ShowCreate_
+## ShowCreate
 
 <h3>Description</h3>
 
@@ -158,7 +158,7 @@ This method can be used inside any workspace. Adds an add button on top, which c
 15      }
 ```
 
-## _ShowPopup_
+## ShowPopup
 
 <h3>Description</h3>
 
@@ -283,7 +283,7 @@ This method can be used inside any workspace. Creates a pop-up with the specifie
 
 <h3>Response</h3>
 
-## _ShowPreview_
+## ShowPreview
 
 <h3>Description</h3>
 
@@ -375,7 +375,7 @@ This method can be used inside any workspace. Creates a preview pop-up styled by
 
 <h3>Response</h3>
 
-## _ShowSystemPreview_
+## ShowSystemPreview
 
 <h3>Description</h3>
 
@@ -432,12 +432,12 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.UI.showSystemPreview("12345", "Company");
+>    SW.UI.showSystemPreview("f6671567-67b2-430c-bf04-dc7a41e99395", "Company");
 ```
 
 <h3>Response</h3>
 
-## _ShowImage_
+## ShowImage
 
 <h3>Description</h3>
 
@@ -508,7 +508,7 @@ This method can be used inside any workspace. Displays and existing or default I
 
 <h3>Response</h3>
 
-## _ShowImageEditor_
+## ShowImageEditor
 
 <h3>Description</h3>
 
@@ -586,7 +586,7 @@ This method can be used inside any workspace. Displays and existing or default I
 
 <h3>Response</h3>
 
-## _ShowStage_
+## ShowStage
 
 <h3>Description</h3>
 
@@ -703,7 +703,7 @@ This method can be used inside any workspace. To define an element priority
 
 <h3>Response</h3>
 
-## _ShowTags_
+## ShowTags
 
 <h3>Description</h3>
 
@@ -751,7 +751,7 @@ This method can be used inside any workspace. Displays tags
 
 <h3>Response</h3>
 
-## _ShowTeam_
+## ShowTeam
 
 <h3>Description</h3>
 
@@ -830,7 +830,7 @@ This method can be used inside any workspace. Displays teams
 
 <h3>Response</h3>
 
-## _SetRag_
+## SetRag
 
 <h3>Description</h3>
 
@@ -901,7 +901,7 @@ This method can be used inside any workspace. Displays a rag
 
 <h3>Response</h3>
 
-## _SetVersionRag_
+## SetVersionRag
 
 <h3>Description</h3>
 
@@ -964,7 +964,7 @@ This method can be used inside any workspace. Set rag with version
 
 <h3>Response</h3>
 
-## _SetAttribute_
+## SetAttribute
 
 <h3>Description</h3>
 
@@ -1035,7 +1035,7 @@ This method can be used inside any workspace. Set element's attributes
 
 <h3>Response</h3>
 
-## _GetDocumentImage_
+## GetDocumentImage
 
 <h3>Description</h3>
 
@@ -1091,7 +1091,7 @@ This method can be used inside any workspace. Get entity's image
 
 <h3>Response</h3>
 
-## _NavigateToNewTab_
+## NavigateToNewTab
 
 <h3>Description</h3>
 
@@ -1140,7 +1140,7 @@ This method can be used inside any workspace. Navigate to a new tab
 
 <h3>Response</h3>
 
-## _NavigateTo_
+## NavigateTo
 
 <h3>Description</h3>
 
@@ -1203,7 +1203,7 @@ This method can be used inside any workspace. Navigate to workspace
 
 <h3>Response</h3>
 
-## _ShowWorkload_
+## ShowWorkload
 
 <h3>Description</h3>
 
@@ -1252,7 +1252,7 @@ This method can be used inside any workspace. Displays assignment's workload
 
 <h3>Response</h3>
 
-## _ShowComponent_
+## ShowComponent
 
 <h3>Description</h3>
 
@@ -1304,5 +1304,3 @@ This method can be used inside any workspace. Show component's properties
 ```javascript
 >    SW.UI.showComponent("div", "type", { properties });
 ```
-
-<h3>Response</h3>

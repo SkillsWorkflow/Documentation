@@ -4,7 +4,7 @@ title: 'Workspaces'
 sidebar_label: Workspaces
 ---
 
-## _Info_
+## Info
 
 All settings directly regarding workspaces configuration properties (advanced)
 
