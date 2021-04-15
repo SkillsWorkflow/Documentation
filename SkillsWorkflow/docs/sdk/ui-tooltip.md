@@ -3,7 +3,7 @@ id:  ui-tooltip
 title: ' '
 sidebar_label: Tooltip
 ---
-## _Usage_
+## Usage
 When you hover the target, it shows the implemented tooltip
 
 <!-- ![img](/img/responses/tooltip_usage.png) -->
@@ -23,7 +23,7 @@ For this example the tooltip methods were set on 2 events
 ![img](/img/responses/tooltip_hide_usage.png)
 
 
-## _Set_
+## Set
 
 <h3>Description</h3>
 
@@ -82,7 +82,7 @@ This method can be used inside any workspace. Create a new tooltip
 >    SW.UI.tooltip.set(element, "job", { Job: data });
 ```
 
-## _Show_
+## Show
 
 <h3>Description</h3>
 
@@ -119,7 +119,7 @@ This method can be used inside any workspace. Show existing tooptip
 >    SW.UI.tooltip.show(element);
 ```
 
-## _Hide_
+## Hide
 
 <h3>Description</h3>
 
