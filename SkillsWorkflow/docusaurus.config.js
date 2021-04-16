@@ -11,7 +11,7 @@ module.exports = {
   themeConfig: {
     algolia: {
       apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
-      indexName: 'skillsworkflow',
+      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
       appId: 'KB6UV635OH',
       // Optional: see doc section bellow
       contextualSearch: true,
