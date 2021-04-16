@@ -7,10 +7,10 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
-  projectName: 'Documentation-v2', // Usually your repo name.
+  projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: '4befdcdc8562bc404497b6c7a8612fe2',
+      apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
       indexName: 'skillsworkflow',
 
       // Optional: see doc section bellow
