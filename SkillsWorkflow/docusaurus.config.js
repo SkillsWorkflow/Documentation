@@ -12,7 +12,7 @@ module.exports = {
     algolia: {
       apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
       indexName: 'skillsworkflow',
-      appId: 'KB6UV635OH'
+      appId: 'KB6UV635OH',
       // Optional: see doc section bellow
       contextualSearch: true,
 
