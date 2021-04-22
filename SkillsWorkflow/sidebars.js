@@ -7,6 +7,7 @@ module.exports = {
         {
           Panels: [
             'craft/panels/grid',
+            'craft/panels/form',
             'craft/craft-workspaces'
           ]
         },

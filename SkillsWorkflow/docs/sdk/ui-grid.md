@@ -55,6 +55,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 ```
 <h3>Response</h3>
 
+---
 
 ## CalculatePercentageSummary
 
@@ -114,6 +115,8 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 <!-- <img alt="Show Bulk" src="/img/responses/showBulk_response.png"> -->
 ![img-with-border](/img/responses/showBulk_response.png)
 
+---
+
 ## AddToolbarButtons
 
 <h3>Description</h3>
@@ -158,6 +161,8 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 >    SW.UI.grid.addToolbarButtons(toolbarEvent, buttonsList);
 ```
 <h3>Response</h3>
+
+---
 
 ## ImportExcel
 

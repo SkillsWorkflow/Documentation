@@ -6,7 +6,7 @@ sidebar_label: Tooltip
 ## Usage
 When you hover the target, it shows the implemented tooltip
 
-<!-- ![img](/img/responses/tooltip_usage.png) -->
+<!-- ![img-with-border](/img/responses/tooltip_usage.png) -->
 
 :::important
 
@@ -15,13 +15,20 @@ For this example the tooltip methods were set on 2 events
 :::
 
 
-![img](/img/responses/tooltip-usage-documentation.png)
+![img-with-border-with-border-with-border](/img/responses/tooltip-usage-documentation.png)
 
-![img](/img/responses/tooltip_set_show_usage.png)
+<figure>
+
+![img-with-border](/img/responses/tooltip_set_show_usage.png)
+<figcaption>Tooltip Set and Show on On Mouse Enter</figcaption>
+</figure>
 
 
-![img](/img/responses/tooltip_hide_usage.png)
+<figure>
 
+![img-with-border](/img/responses/tooltip_hide_usage.png)
+<figcaption>Tooltip Hide on On Mouse Leave event</figcaption>
+</figure>
 
 ## Set
 
@@ -82,6 +89,8 @@ This method can be used inside any workspace. Create a new tooltip
 >    SW.UI.tooltip.set(element, "job", { Job: data });
 ```
 
+---
+
 ## Show
 
 <h3>Description</h3>
@@ -118,6 +127,8 @@ This method can be used inside any workspace. Show existing tooptip
 ```javascript 
 >    SW.UI.tooltip.show(element);
 ```
+
+---
 
 ## Hide
 

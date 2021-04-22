@@ -82,6 +82,7 @@ This method can be used inside any workspace. Generates a save button in the sub
 
 ![img](/img/responses/addSaveButtonToSubHeader_response.png)
 
+---
 
 ## AddCreateToSubHeader
 
@@ -190,6 +191,7 @@ This method can be used inside any workspace. Generates a create button in the s
 
 ![img](/img/responses/addCreateButtonToSubHeader_response.png)
 
+---
 
 ## AddToSubHeader
 

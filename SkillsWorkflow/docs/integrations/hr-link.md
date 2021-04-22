@@ -6,17 +6,21 @@ sidebar_label: HR Link
 
 <h3>Description</h3>
 
-> This is the Documentation of how the Integration between the `ERP HR-Link` and `Skills Workflow`. This documentation is for Skills Workflow located in the Cloud.
+This is the Documentation of how the Integration between the `ERP HR-Link` and `Skills Workflow`. This documentation is for Skills Workflow located in the Cloud.
+
+---
 
 <h3>Data Exchange Technology</h3>
 
-> On Skills Workflow only the employees from one company will be received based on the Company's code.
+On Skills Workflow only the employees from one company will be received based on the Company's code.
 An additional application must be installed locally in order to allow the information exchange.
 The scope of data exchanged on this integration is the User's Data.
 
+---
+
 <h3>Data Exchange (To Skills Workflow)</h3>
 
-> This section describes the Data exchanged between systems. Please see the data exchanged.
+This section describes the Data exchanged between systems. Please see the data exchanged.
 The data is exchanged with Views available in the system.
 
 
@@ -55,6 +59,8 @@ Terminated employees will be automatically inactivated in Skills Workflow.
 SSO Username will be populated with e-mail coming from HRLink.
 External ID is populated with the user e-mail only in creation.
 
+---
+
 <h3>Conclusion</h3>
 
-> The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
+The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
