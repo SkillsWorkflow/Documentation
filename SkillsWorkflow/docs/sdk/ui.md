@@ -437,6 +437,8 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
 
 <h3>Response</h3>
 
+---
+
 ## ShowImage
 
 <h3>Description</h3>
@@ -507,6 +509,8 @@ This method can be used inside any workspace. Displays and existing or default I
 ```
 
 <h3>Response</h3>
+
+---
 
 ## ShowImageEditor
 
@@ -586,6 +590,8 @@ This method can be used inside any workspace. Displays and existing or default I
 
 <h3>Response</h3>
 
+---
+
 ## ShowStage
 
 <h3>Description</h3>
@@ -655,6 +661,8 @@ This method can be used inside any workspace. Displays a stage
 
 <h3>Response</h3>
 
+---
+
 ## ShowPriority
 
 <h3>Description</h3>
@@ -703,6 +711,8 @@ This method can be used inside any workspace. To define an element priority
 
 <h3>Response</h3>
 
+---
+
 ## ShowTags
 
 <h3>Description</h3>
@@ -750,6 +760,8 @@ This method can be used inside any workspace. Displays tags
 ```
 
 <h3>Response</h3>
+
+---
 
 ## ShowTeam
 
@@ -830,6 +842,8 @@ This method can be used inside any workspace. Displays teams
 
 <h3>Response</h3>
 
+---
+
 ## SetRag
 
 <h3>Description</h3>
@@ -901,6 +915,8 @@ This method can be used inside any workspace. Displays a rag
 
 <h3>Response</h3>
 
+---
+
 ## SetVersionRag
 
 <h3>Description</h3>
@@ -963,6 +979,8 @@ This method can be used inside any workspace. Set rag with version
 ```
 
 <h3>Response</h3>
+
+---
 
 ## SetAttribute
 
@@ -1035,6 +1053,8 @@ This method can be used inside any workspace. Set element's attributes
 
 <h3>Response</h3>
 
+---
+
 ## GetDocumentImage
 
 <h3>Description</h3>
@@ -1091,6 +1111,8 @@ This method can be used inside any workspace. Get entity's image
 
 <h3>Response</h3>
 
+---
+
 ## NavigateToNewTab
 
 <h3>Description</h3>
@@ -1139,6 +1161,8 @@ This method can be used inside any workspace. Navigate to a new tab
 ```
 
 <h3>Response</h3>
+
+---
 
 ## NavigateTo
 
@@ -1203,6 +1227,8 @@ This method can be used inside any workspace. Navigate to workspace
 
 <h3>Response</h3>
 
+---
+
 ## ShowWorkload
 
 <h3>Description</h3>
@@ -1251,6 +1277,8 @@ This method can be used inside any workspace. Displays assignment's workload
 ```
 
 <h3>Response</h3>
+
+---
 
 ## ShowComponent
 

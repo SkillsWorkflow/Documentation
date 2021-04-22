@@ -4,7 +4,7 @@ title: ' '
 sidebar_label: Alert
 ---
 
-## _Info_
+## Info
 
 <h3>Description</h3>
 
@@ -74,8 +74,9 @@ This method can be used inside any workspace. Shows a Info toastr and also in th
 
 ![img](/img/responses/alertInfo_response.png)
 
+---
 
-## _Warning_
+## Warning
 
 <h3>Description</h3>
 
@@ -152,8 +153,9 @@ This method can be used inside any workspace. Shows a Warning toastr and also in
 
 ![img](/img/responses/alertWarning_response.png)
 
+---
 
-## _Success_
+## Success
 
 <h3>Description</h3>
 
@@ -223,8 +225,9 @@ This method can be used inside any workspace. Shows a Success toastr and also in
 
 ![img](/img/responses/alertSuccess_response.png)
 
+---
 
-## _Error_
+## Error
 
 <h3>Description</h3>
 
@@ -294,8 +297,9 @@ This method can be used inside any workspace. Shows a Error toastr and also in t
 
 ![img](/img/responses/alertError_response.png)
 
+---
 
-## _Clear_
+## Clear
 
 <h3>Description</h3>
 

@@ -43,6 +43,8 @@ This method can be used inside any workspace. Set SelectBox's list width accordi
 ```
 <h3>Response</h3>
 
+---
+
 ## GetLookupByEndpoint
 
 <h3>Description</h3>

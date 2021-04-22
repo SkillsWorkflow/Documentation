@@ -42,10 +42,28 @@ img[alt=small] { width: 30%;}
 
 img[alt=crafted-love]{ width: 250px;} 
 
+img[alt=response]{ 
+  border: 2px solid lightgrey; 
+  border-radius: 4px;
+}
+
 img[alt=img-with-border]{
   border: 1px solid lightgray;
   border-radius: 5px;
 }
+
+figure {
+  margin: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+figure p {
+  margin-bottom: 0;
+}
+
+
+
 
 h1 {
   font-family: 'Varela Round';
@@ -147,9 +165,6 @@ html[data-theme='dark'] .DocSearch {
   border: 0;
   text-align: left;
 } 
-
-.custom-table td {
-}
 
 .custom-table tbody td code {
   background-color: rgba(62,123,250,.06);
