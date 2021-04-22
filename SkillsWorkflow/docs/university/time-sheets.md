@@ -37,27 +37,32 @@ To enter time, navigate to the **Time Sheets** module.
 <figcaption>Filter by a specific filter</figcaption>
 </figure>
 
-:::note
-Enter a work type. 
-:::
 
 8. It is possible to specify the type of activitiy you have been doing (e.g. Research, meeting, etc.) for each time entry. Go to the work type column and select the work type for each line from the drop down list.
+
+<figure>
+
 ![img-with-border](assets/timesheets/4-selecting-work-type.png)
+<figcaption>Enter a work type</figcaption>
+</figure>
 
   
-:::note
-Click on each cell and introduce the hours you have worked.
-:::
-
 9. Check that the indicators, on the right side of your timesheet, change as you enter time.
-![img-with-border](assets/timesheets/5-update-calendar.png)
 
-:::note
-Add details to each cell.
-:::
+<figure>
+
+![img-with-border](assets/timesheets/5-update-calendar.png)
+<figcaption> Click on each cell and introduce the hours you have worked</figcaption>
+</figure>
+
 
 10. Verify that you can add more details to your entries by clicking on the right button of your mouse and pressing "details". 
+
+<figure>
+
 ![img-with-border](assets/timesheets/6-adding-details.png)
+<figcaption>Add details to each cell.</figcaption>
+</figure>
 
 
 
@@ -133,7 +138,7 @@ Go to workspace **Time sheets Approval**
 <figcaption>Selected timesheets appear in darker blue.</figcaption>
 </figure>
 
-4. The approved timesheets will have a darker green.
+4. The approved timesheets will have a darker green
 
 <figure>
 
