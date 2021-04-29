@@ -10,8 +10,7 @@ module.exports = {
             'craft/panels/form',
             'craft/craft-workspaces'
           ]
-        },
-        'widgets'
+        }
       ]
     },
     {
@@ -63,13 +62,24 @@ module.exports = {
       items: [
         {
           Expenses: [
-            'university/expense-sheets',
-            'university/expenses',
-            'university/approve-expenses'
+            'university/expenses/expense-sheets',
+            'university/expenses/expenses',
+            'university/expenses/approve-expenses'
           ]
 
         },
-        'university/time-sheets',
+        {
+          Contracts: [
+            'university/contracts/rate-cards',
+            'university/contracts/contracts',
+            'university/contracts/contracts-projects'
+          ]
+        },
+        {
+          Timesheets: [
+            'university/time-sheets/time-sheets'
+          ]
+        }
       ]
     },
   ],
