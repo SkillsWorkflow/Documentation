@@ -54,7 +54,6 @@ module.exports = {
       type: 'category',
       label: 'Integrations',
       items: [
-        'integrations/introduction',
         'integrations/hr-link'
       ]
     },
@@ -62,8 +61,15 @@ module.exports = {
       type: 'category',
       label: 'University',
       items: [
-        'university/introduction',
-        'university/time-sheets'
+        {
+          Expenses: [
+            'university/expense-sheets',
+            'university/expenses',
+            'university/approve-expenses'
+          ]
+
+        },
+        'university/time-sheets',
       ]
     },
   ],
