@@ -71,6 +71,6 @@ To approve expenses navigate to Project module and select a project.
 <figure>
 
 ![img-box-shadow](/img/university/university-expenses-approve-3.png)
-<figcaption>Project Item</figcaption>
+<figcaption>Project's expense</figcaption>
 </figure>
 
