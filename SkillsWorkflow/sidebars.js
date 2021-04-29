@@ -75,11 +75,7 @@ module.exports = {
             'university/contracts/contracts-projects'
           ]
         },
-        {
-          Timesheets: [
-            'university/time-sheets/time-sheets'
-          ]
-        }
+            'university/time-sheets'
       ]
     },
   ],
