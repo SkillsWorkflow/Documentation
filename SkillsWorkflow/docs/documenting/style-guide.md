@@ -6,6 +6,8 @@ sidebar_label: Style Guide
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
+You can also consult [Docusaurus examples](https://v2.docusaurus.io/docs/markdown-features).
+
 ## Markdown Syntax
 
 To serve as an example page when styling markdown based Docusaurus sites.
@@ -97,12 +99,12 @@ Images from any folder can be used by providing path to file. Path should be rel
 
 ## Code
 
-```javascript
+```javascript title="You can add a title here"
 var s = 'JavaScript syntax highlighting';
 alert(s);
 ```
 
-```python
+```python 
 s = "Python syntax highlighting"
 print(s)
 ```
@@ -115,6 +117,27 @@ But let's throw in a <b>tag</b>.
 ```js {2}
 function highlightMe() {
   console.log('This line can be highlighted!');
+}
+```
+
+```jsx
+function HighlightSomeText(highlight) {
+  if (highlight) {
+    // highlight-next-line
+    return 'This text is highlighted!';
+  }
+
+  return 'Nothing highlighted';
+}
+
+function HighlightMoreText(highlight) {
+  // highlight-start
+  if (highlight) {
+    return 'This range is highlighted!';
+  }
+  // highlight-end
+
+  return 'Nothing highlighted';
 }
 ```
 

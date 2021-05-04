@@ -1,26 +1,29 @@
 module.exports = {
   title: 'Skills Workflow’s Documentation',
-  tagline: 'We are here to let you shine! Let´s get everything done ✅',
-  url: 'https://skillsworkflow.netlify.app',
+  tagline: 'We are here to let you shine! Let´s get everything done',
+  url: 'https://documentation.skillsworkflow.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
-  projectName: 'Documentation-v2', // Usually your repo name.
+  projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
-    // algolia: {
-    //   apiKey: 'YOUR_API_KEY',
-    //   indexName: 'YOUR_INDEX_NAME',
+    algolia: {
+      apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
+      appId: 'KB6UV635OH',
+      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
+      siteId: 'd017bb9a-2fd6-4648-8b11-d67021355c27',
+      branch: 'master',
+      selector: 'div#search',
+      // Optional: see doc section bellow
+      contextualSearch: true,
 
-    //   // Optional: see doc section bellow
-    //   contextualSearch: true,
+      // Optional: Algolia search parameters
+      // searchParameters: {},
 
-    //   // Optional: Algolia search parameters
-    //   // searchParameters: {},
-
-    //   //... other Algolia params
-    // },
+      //... other Algolia params
+    },
     hideableSidebar: true,
     navbar: {
       title: '',
@@ -44,7 +47,7 @@ module.exports = {
           href: 'https://apiv2-demo-prod-we.skillsworkflow.com/',
         },
         {
-          href: 'https://github.com/SkillsWorkflow/Documentation-v2',
+          href: 'https://github.com/SkillsWorkflow/Documentation',
           label: 'GitHub',
           position: 'right',
           className: 'navbar-item'
@@ -85,7 +88,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/SkillsWorkflow/Documentation-v2',
+              href: 'https://github.com/SkillsWorkflow/Documentation',
             },
             {
               label: 'Releases',
@@ -105,13 +108,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

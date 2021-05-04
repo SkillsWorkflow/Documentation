@@ -2,48 +2,82 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: '✍🏽 Craft',
+      label: 'Craft',
       items: [
-        'workspaces',
-        'widgets'
+        {
+          Panels: [
+            'craft/panels/grid',
+            'craft/panels/form',
+            'craft/craft-workspaces'
+          ]
+        }
       ]
     },
     {
       type: 'category',
-      label: '⚙️ Advanced',
+      label: 'Advanced',
       items: [
         {
           SDK: [
-            'sdk/introduction', 'sdk/utils', 'sdk/git', 'sdk/toastr'
+            'sdk/introduction',
+            {
+              UI: [
+                'sdk/ui',
+                'sdk/ui-grid',
+                'sdk/ui-selectBox',
+                'sdk/ui-buttons',
+                'sdk/ui-alert',
+                'sdk/ui-tooltip',
+                'sdk/ui-workspaces'
+              ]
+            },
+            {
+              Document: [
+                'sdk/document',
+                'sdk/assignments',
+                'sdk/holidays',
+                'sdk/customTables',
+                'sdk/clients',
+                'sdk/users',
+                'sdk/estimates'
+              ]
+            }
           ]
-        }, 'automations', 'queries'
+        },
+        'automations',
+        'queries',
+        'types'
       ]
     },
     {
       type: 'category',
-      label: '🔗 Integrations',
-      items: ['integrations/introduction']
-    },
-    {
-      type: 'category',
-      label: '🎓 University',
+      label: 'Integrations',
       items: [
-        'university/introduction',
-        'university/time-sheets'
+        'integrations/hr-link'
       ]
     },
     {
       type: 'category',
-      label: '📝 Documenting',
-      items: ['documenting/style-guide', 'documenting/mdx']
+      label: 'University',
+      items: [
+        {
+          Expenses: [
+            'university/expenses/expense-sheets',
+            'university/expenses/expenses',
+            'university/expenses/approve-expenses'
+          ]
+
+        },
+        {
+          Contracts: [
+            'university/contracts/rate-cards',
+            'university/contracts/contracts',
+            'university/contracts/contracts-projects'
+          ]
+        },
+            'university/time-sheets'
+      ]
     },
   ],
-  // releases: [
-  //   'releases',
-  //   {
-  //     20: ['releases/20.9'],
-  //     21: ['releases/21.0'],
-  //   }
-  // ],
   api: {}
 };
