@@ -1,4 +1,16 @@
 module.exports = {
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'pt'],
+    localeConfigs: {
+      en: {
+        label: 'English'
+      },
+      pt: {
+        label: 'Portugues'
+      }
+    }
+  },
   title: 'Skills Workflow’s Documentation',
   tagline: 'We are here to let you shine! Let´s get everything done',
   url: 'https://documentation.skillsworkflow.com',
@@ -52,6 +64,10 @@ module.exports = {
           position: 'right',
           className: 'navbar-item'
         },
+        {
+          type: 'localeDropdown',
+          position: 'left',
+      },
       ],
     },
     footer: {
