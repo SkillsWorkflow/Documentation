@@ -42,5 +42,13 @@
   "sidebar.docs.category.Contracts": {
     "message": "Contratos",
     "description": "The label for category Contracts in sidebar docs"
+  },
+  "sidebar.docs.category.Timesheets": {
+    "message": "Folha de Horas",
+    "description": "The label for category Contracts in sidebar docs"
+  },
+  "sidebar.docs.category.Bills": {
+    "message": "Documentos Financeiros",
+    "description": "The label for category Contracts in sidebar docs"
   }
 }
