@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Craft": {
+    "message": "Criar",
+    "description": "The label for category Craft in sidebar docs"
+  },
+  "sidebar.docs.category.Panels": {
+    "message": "Paineis",
+    "description": "The label for category Panels in sidebar docs"
+  },
+  "sidebar.docs.category.Advanced": {
+    "message": "Avançado",
+    "description": "The label for category Advanced in sidebar docs"
+  },
+  "sidebar.docs.category.SDK": {
+    "message": "SDK",
+    "description": "The label for category SDK in sidebar docs"
+  },
+  "sidebar.docs.category.UI": {
+    "message": "UI",
+    "description": "The label for category UI in sidebar docs"
+  },
+  "sidebar.docs.category.Document": {
+    "message": "Documento",
+    "description": "The label for category Document in sidebar docs"
+  },
+  "sidebar.docs.category.Integrations": {
+    "message": "Integrações",
+    "description": "The label for category Integrations in sidebar docs"
+  },
+  "sidebar.docs.category.University": {
+    "message": "Universidade",
+    "description": "The label for category University in sidebar docs"
+  },
+  "sidebar.docs.category.Expenses": {
+    "message": "Despesas",
+    "description": "The label for category Expenses in sidebar docs"
+  },
+  "sidebar.docs.category.Contracts": {
+    "message": "Contratos",
+    "description": "The label for category Contracts in sidebar docs"
+  }
+}

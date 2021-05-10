@@ -5,6 +5,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import Translate, {translate} from '@docusaurus/Translate';
+
 
 const features = [
   {
@@ -77,8 +79,8 @@ function Home() {
           style={{
             backdropFilter: 'blur(2px)'
           }}>
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h1 className="hero__title"><Translate>Skills Workflow's Documentation</Translate></h1>
+          <p className="hero__subtitle"><Translate>We are here to let you shine! Let's get everything done</Translate></p>
           <div className={styles.buttons}>
             <Link
               className={clsx(
@@ -87,7 +89,7 @@ function Home() {
               )}
               style={{ backgroundColor: '#f3f8ff' }}
               to={useBaseUrl('docs/')}>
-              Get Started
+              <Translate>Get Started</Translate>
             </Link>
           </div>
         </div>
@@ -97,9 +99,35 @@ function Home() {
           <section className={styles.features}>
             <div className="container text--center">
               <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
+                <div className={clsx('col col--4', styles.feature)}>
+                  {useBaseUrl('img/undraw_building_websites_crafting.svg') && (
+                    <div className="text--center">
+                      <img className={styles.featureImage} src={useBaseUrl('img/undraw_building_websites_crafting.svg')} alt={'Crafting'} />
+                    </div>
+                  )}
+                  <h3><Translate>Crafting</Translate></h3>
+                  <p><Translate>Unleash the creativity in you. Why not craft
+        your own workspace?</Translate></p>
+                </div>
+                <div className={clsx('col col--4', styles.feature)}>
+                  {useBaseUrl('img/undraw_Image_folder_store.svg') && (
+                    <div className="text--center">
+                      <img className={styles.featureImage} src={useBaseUrl('img/undraw_Image_folder_store.svg')} alt={'Store'} />
+                    </div>
+                  )}
+                  <h3><Translate>Store</Translate></h3>
+                  <p><Translate>A wide library is available for you! Check the available Workspaces directory.</Translate></p>
+                </div>
+                <div className={clsx('col col--4', styles.feature)}>
+                  {useBaseUrl('img/undraw_graduation_university.svg') && (
+                    <div className="text--center">
+                      <img className={styles.featureImage} src={useBaseUrl('img/undraw_graduation_university.svg')} alt={'University'} />
+                    </div>
+                  )}
+                  <h3><Translate>University</Translate></h3>
+                  <p><Translate>Want to become a system expert? Explore our walkthrough
+        lessons.</Translate></p>
+                </div>
               </div>
             </div>
           </section>
