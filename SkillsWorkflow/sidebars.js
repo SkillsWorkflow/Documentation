@@ -7,8 +7,14 @@ module.exports = {
         {
           Panels: [
             'craft/panels/grid',
-            'craft/panels/form',
             'craft/craft-workspaces'
+          ],
+          Form: [
+            {
+              SetItems: [
+                'craft/form/save-options'
+              ]
+            }
           ]
         }
       ]
