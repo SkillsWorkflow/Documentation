@@ -81,6 +81,12 @@ module.exports = {
             "university/bills/bills-lesson1",
             "university/bills/bills-lesson2",
           ]
+        },
+        {
+          Estimates: [
+            "university/estimates/estimates-lesson1",
+            "university/estimates/estimates-lesson2"
+          ]
         }
       ]
     },
