@@ -6,17 +6,19 @@ module.exports = {
       items: [
         {
           Panels: [
-            'craft/panels/grid',
-            'craft/craft-workspaces'
-          ],
-          Form: [
             {
-              SetItems: [
-                'craft/form/save-options'
+              Grid: [
+                'craft/panels/grid/set-columns'
+              ]
+            },
+            {
+              Form: [
+                'craft/panels/form/set-items'
               ]
             }
-          ]
-        }
+          ],
+        },
+        'craft/craft-workspaces'
       ]
     },
     {

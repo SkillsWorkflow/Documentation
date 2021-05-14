@@ -1,14 +1,13 @@
 ---
-id: grid
-title: Grid
-sidebar_label: Grid
+id: set-columns
+title: Set Columns
+sidebar_label: Set Columns
 slug: /
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## SetColumns
 <h3>Description</h3>
 A function used to set grid's columns in a workspace. 
 
@@ -48,7 +47,7 @@ Column properties define the behavior and appearance of a grid column.
 }
 ```
 
-### entity
+## entity
 Setting up the Entity property, the standard display will be used. 
 If the cell display needs to be configured, the format property allows defining other default displays according to the selected type.
 According to the type to be presented in the column, image, link or text, some additional fields must be available in the data source.
@@ -105,12 +104,13 @@ Required on data source:
 </TabItem>
 </Tabs>
 
-### format
+## format
 Formats the cell before it is displayed.
 
 There are some standard formats available. By specifing its type the corresponding format will be displayed.
 
-#### mapping
+<h3>mapping</h3>
+
 If the data source does is not mapping to the defaults fields name, it can be mapped by using the mapping property:
 ```json
 {
@@ -124,7 +124,7 @@ If the data source does is not mapping to the defaults fields name, it can be ma
     }
 }
 ```
-#### type
+<h3>type</h3>
 Accepted Values: 'undefined' | 'image' | 'link' 
 
 To setup the Image type, it is necessary that data source includes the entity:
@@ -151,7 +151,7 @@ To setup the Image type, it is necessary that data source includes the entity:
     }
 }
 ```
-#### size
+### size
 Accepted Values: 'small' | 'medium' | 'large' 
 
 To define the size of the image it should be set the size property.
@@ -164,7 +164,9 @@ To define the size of the image it should be set the size property.
     }
 }
 ```
-#### properties
+
+<h3>properties</h3>
+
 Properties withing format property customize the behavior and appearance of a default display.
 
 In the following example, to hide the client name from the column and keep only the client image, hideName property should be set as true.
@@ -198,19 +200,19 @@ In the following example, to hide the client name from the column and keep only 
 
 
 
-### caption
+## caption
 Specifies a caption for the column.
-### dataType
+## dataType
 Casts column values to a specific data type
 
 Accepted Values: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime'
-### dataField
+## dataField
 Binds the column to a field of the dataSource.
-### alignment
+## alignment
 Aligns the content of the column
 
 Accepted Values: undefined | 'center' | 'left' | 'right'
-### width
+## width
 Specifies the column's width in pixels or as a percentage. Ignored if it is less than minWidth.
 
 Type: Number | String
@@ -219,3 +221,6 @@ The property supports the following types of values:
 
 - Number - The column's width in pixels.
 - String - A CSS-accepted column width measurement (for example, "55px", "80%" and "auto") except relative units such as em, ch, vh, etc.
+
+## allowEditing
+A flag to allow column editing
