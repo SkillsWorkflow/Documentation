@@ -66,7 +66,7 @@ module.exports = {
         },
         {
           type: 'localeDropdown',
-          position: 'left',
+          position: 'right',
       },
       ],
     },
