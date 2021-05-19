@@ -4,6 +4,7 @@ title: Contracts
 sidebar_label: Lesson 2 - Create Contracts and Proposals
 ---
 
+## Lesson 2 - Create Contracts and Proposals
 
 It is possible to create and manage contracts associated with specific projects and activities.
 
