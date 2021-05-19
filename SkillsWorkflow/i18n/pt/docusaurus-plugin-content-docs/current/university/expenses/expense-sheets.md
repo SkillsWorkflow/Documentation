@@ -1,7 +1,7 @@
 ---
 id:  expense-sheets
 title: Expense Sheets
-sidebar_label: Lesson 1 - Create Expense Sheets
+sidebar_label: Lição 1 - Como criar Folhas de Despesas
 ---
 
 ## Lição 1 - Como criar Folhas de Despesas

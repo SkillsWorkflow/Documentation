@@ -1,7 +1,7 @@
 ---
 id:  expenses
 title: Expenses
-sidebar_label: Lesson 2 - Create Expenses
+sidebar_label: Lição 2 - Como criar Despesas
 ---
 
 ## Lição 2 - Como criar Despesas 
