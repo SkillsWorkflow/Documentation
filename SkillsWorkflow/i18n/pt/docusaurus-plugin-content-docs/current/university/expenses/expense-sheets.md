@@ -4,24 +4,24 @@ title: Expense Sheets
 sidebar_label: Lesson 1 - Create Expense Sheets
 ---
 
-## Lesson 1 - How to create Expenses Sheets
+## Lição 1 - Como criar Folhas de Despesas
 
-It's possible to create and manage expenses relative to projects and other activities.
+É possível criar e gerir despesas relativas a projetos e outras atividades.
 
-All costs will afect the project's profitability, for that reason
+Todos os custos afetarão a rentabilidade do projeto.
 
 :::note 
-To create a new **Expense Sheet** (multi-expense aggregating sheet), take the following steps. 
+Para criar uma nova **Folha de Despesas** (folha de agregação de várias despesas), execute as seguintes etapas.
 :::
 
-1. Go the Expense Sheets module.
+1. Vá para o módulo Folhas de Despesas.
 
-2. Select All list.
+2. Selecione a lista All.
 
 <figure>
 
 ![img-box-shadow](/img/university/university-expense-sheets-1.png)
-<figcaption>Expense Sheets module</figcaption>
+<figcaption>Módulo de Folha de Despesas</figcaption>
 </figure>
 
 3. Click on the '+' on the expenses list.
@@ -29,14 +29,14 @@ To create a new **Expense Sheet** (multi-expense aggregating sheet), take the fo
 <figure>
 
 ![img-box-shadow](/img/university/university-expense-sheets-2-creation.png)
-<figcaption>Creation pop-up</figcaption>
+<figcaption>pop-up de Criação</figcaption>
 </figure>
 
-4. Fill the Expense's fields:
+4. Preencha os campos das Despasas:
 
-- **Title** - A name which helps to easly find a specific expense.
-- **Department** - The department to which the user belongs to.
-- **Type** - Select the type of expense (this information is very important, it will define the flow of the expense).
-- **Start Date / End Date** - Select the start date of the expense and the end date (should reflect the date on which the employee is reimbursed).
+- **Title** -Um nome que ajuda a localizar facilmente uma despesa específica.
+- **Department** - O departamento ao qual o utilizador pertence.
+- **Type** - Selecione o tipo de gasto (esta informação é muito importante, pois definirá o fluxo da despesa).
+- **Start Date / End Date** - Selecione a data de início da despesa e a data de fim (deve refletir a data em que o funcionário é reembolsado).
 
 
