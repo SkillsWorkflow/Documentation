@@ -4,6 +4,8 @@ title: Estimate Associated Projects
 sidebar_label: Lesson 3 - Manage Projects associated to an Estimate
 ---
 
+## Lesson 3 - Manage Projects associated to an Estimate
+
 :::note
 Projects can be associated with a client estimate so that hours sold are deducted from that same contract.
 :::
