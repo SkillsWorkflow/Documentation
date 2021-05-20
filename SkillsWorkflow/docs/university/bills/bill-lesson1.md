@@ -1,6 +1,6 @@
 ---
 id:  bills-lesson1
-title: Bills
+title: Invoice Authorizations
 sidebar_label: Lesson 1 - How to create invoice authorizations
 ---
 
@@ -14,7 +14,8 @@ Definition of billing conditions:
 
 
 
-General conditions
+### General conditions
+
 To issue a billing request, within the budget approved by the customer, you must navigate to the "billing conditions" option.
 
 If the commercial customer has the financial customer associated, the system will automatically suggest the customer and pre-defined payment terms.
@@ -31,7 +32,8 @@ After establishing the billing conditions you want to apply, navigate to the fee
 <figcaption></figcaption>
 </figure>
 
-Conditions for delivery
+### Conditions for delivery
+
 You can define different billing conditions for the customer's deliverable lines.
 
 Therefore, if you have, for example, an annual fee budget, in which you generate an invoice monthly, you can make the annual billing plan, if you have the customer's PO.
@@ -52,11 +54,12 @@ You can define conditions on the lines either by percentage or by value.
 
 
 :::important
-If the billing conditions are the same for more than one approved line, when you go to the feed and adjust the flow to "bill" the system generates an invoice with two lines
-If the billing conditions are different for all lines, the system will generate as many invoices as defined conditions
-When navigating to the feed and changing the status of the workflow to "bill" the system will issue as many invoices as are defined in the billing conditions. To consult them, you can navigate to the invoices area.
+If the billing conditions are the same for more than one approved line, when you go to the feed and adjust the flow to "bill" the system generates an invoice with two lines.
+
+If the billing conditions are different for all lines, the system will generate as many invoices as defined conditions.
 :::
 
+When navigating to the feed and changing the status of the workflow to "bill" the system will issue as many invoices as are defined in the billing conditions. To consult them, you can navigate to the invoices area.
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson1-3.png)
@@ -80,11 +83,11 @@ To print just click on the pdf option in the upper right corner, and a PDF docum
 <figcaption>Invoice authorization detail</figcaption>
 </figure>
 
-Detalhe autorização fatura
+### Invoice authorization detail
 
-Pode igualmente consultar a lista de todas as suas autorizações de fatura navegando pelos módulos no navegador à sua esquerda.
+You can also consult the list of all your invoice authorizations by browsing the modules in the browser on your left.
 
-Na listagem de autorizações factura pode aplicar diversos filtros, tais como: cliente, projecto, orçamento
+In the list of invoice authorizations you can apply several filters, such as: customer, project, budget.
 
 <figure>
 

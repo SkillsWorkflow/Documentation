@@ -1,29 +1,30 @@
 ---
 id:  bills-lesson1
-title: Bills
-sidebar_label: Lesson 1 - How to create invoice authorizations
+title: Autorizações de fatura
+sidebar_label: Lição 1 - Como criar autorizações de fatura
 ---
 
-## Lesson 1 - How to create invoice authorizations
+## Lição 1 - Como criar autorizações de fatura
 
-You can create invoice orders in the system, and in this way inform the financial team to proceed with the creation / synchronization of the document to the external financial system, and generate the final invoice.
+Pode criar pedidos de faturas no sistema, e desta forma informar a equipa financeira para avançar com a criação/sincronização do documento para o sistema financeiro externo, e gerar a fatura definitiva.
 
-What the system generates is an invoice request, not a final invoice, it must always be generated in the financial system (Primavera, Sage, NAV, SAP, etc.).
+O que o sistema gera é um pedido de faturação, e não uma fatura definitiva, essa deverá ser sempre gerada no sistema financeiro (Primavera, Sage, NAV, SAP, etc).
 
-Definition of billing conditions:
+Definição das condições de faturação:
 
 
 
-General conditions
-To issue a billing request, within the budget approved by the customer, you must navigate to the "billing conditions" option.
+### Condições gerais
 
-If the commercial customer has the financial customer associated, the system will automatically suggest the customer and pre-defined payment terms.
+Para emitir um pedido de faturação, dentro do orçamento aprovado pelo cliente, deverá navegar para a opção "condições de faturação".
 
-You can define the percentage of billing, reference (PO customer) and dates.
+Se o cliente comercial, tiver o cliente financeiro associado, o sistema automaticamente vai sugerir o cliente e condições de pagamento pre-definidos.
 
-Note that if you have more than one billing condition for most budgets, you can add as many lines as you like and even have different customers.
+Poderá definir percentagem de faturação, referencia (PO cliente) e datas.
 
-After establishing the billing conditions you want to apply, navigate to the feed, and change the status of the workflow to bill, generating the necessary invoice authorization (s).
+Note que se para a generalidade do orçamento tiver mais que uma condição de faturação pode adicionar quantas linhas quiser e, inclusivamente ter clientes diferentes.
+
+Depois de estabelecer as condições de faturação que pretende aplicar, navegue para o feed, e mude o estado do workflow para faturar, gerando a(s) autorização(ões) de faturas necessárias.
 
 <figure>
 
@@ -31,18 +32,19 @@ After establishing the billing conditions you want to apply, navigate to the fee
 <figcaption></figcaption>
 </figure>
 
-Conditions for delivery
-You can define different billing conditions for the customer's deliverable lines.
+### Condições ao entregável
 
-Therefore, if you have, for example, an annual fee budget, in which you generate an invoice monthly, you can make the annual billing plan, if you have the customer's PO.
+Pode definir condições de faturação diferentes para as linhas de entregáveis ao cliente.
 
-In the general billing conditions, you should click on apply to all. The system will apply the conditions defined in the general option to all deliverables to the customer.
+Assim sendo, se tiver por exemplo um orçamento anual de fee, em que mensalmente gera uma fatura, pode fazer o plano de faturação anual, caso tenha a PO do cliente.
 
-You can go to each of the lines, press the details option, and manipulate the information of each of the lines if necessary, setting for example the dates or PO.
+Nas condições de faturação gerais, deverá clicar em aplicar a todas. O sistema vai aplicar as condições definidas na opção geral a todos os entregáveis ao cliente.
 
-In the example mentioned above for annual billing plans, you must handle dates and PO's
+Pode ir a cada uma das linhas, pressionar a opção detalhes, e manipular a informação de cada uma das linhas caso seja necessário, acertando por exemplo as datas ou PO.
 
-You can define conditions on the lines either by percentage or by value.
+No exemplo mencionado acima dos planos anuais de faturação, deverá manipular datas e PO's
+
+Pode definir condições nas linhas quer por percentagem, quer por valor.
 
 <figure>
 
@@ -52,10 +54,13 @@ You can define conditions on the lines either by percentage or by value.
 
 
 :::important
-If the billing conditions are the same for more than one approved line, when you go to the feed and adjust the flow to "bill" the system generates an invoice with two lines
-If the billing conditions are different for all lines, the system will generate as many invoices as defined conditions
-When navigating to the feed and changing the status of the workflow to "bill" the system will issue as many invoices as are defined in the billing conditions. To consult them, you can navigate to the invoices area.
+Se as condições de facturação forem iguais para mais que uma linha aprovada, quando for ao feed e ajustar o fluxo para "faturar" o sistema gera uma factura com duas linhas.
+
+Se as condições de faturação forem diferentes para todas as linhas o sistema vai gerar tantas faturas quantas condições definidas
 :::
+
+Ao navegar para o feed e alterar o estado do workflow para "faturar" o sistema ira emitir tantas faturas quantas estiverem definidas nas condições de faturação. Para as consultar poderá navegar para a zona de faturas.
+
 
 <figure>
 
@@ -63,24 +68,24 @@ When navigating to the feed and changing the status of the workflow to "bill" th
 <figcaption></figcaption>
 </figure>
 
-Note that the invoice authorization will be sent to the external financial system by issuing the final documents.
+Note que a autorização de fatura será enviada para o sistema financeiro externo emitindo os documentos finais.
 
-If an integration with the financial system is activated, the number field will be external updated with the final number. You can import the PDF of the invoice, for quick access to the document sent to the customer.
-To validate the final document that your invoice authorization generated, you must validate the status of the document (integrated) and the field with the external number.
+Caso esteja ativada a integração com o sistema financeiro, o campo do número externo será atualizado com o número definitivo. Pode importar o PDF da fatura, para ficar com acesso rápido ao documento enviado ao cliente.
+Para validar qual o documento final que a sua autorização de fatura gerou, deverá validar o estado do documento (integrado) e o campo com o número externo.
 
-To print you must navigate to the invoice permission document, clicking on the line you want to validate.
+Para imprimir deverá navegar para o documento autorização fatura, clicando na linha que pretende validar.
 
-The system will show the details of the document, values, contracted service, etc.
+O sistema vai mostrar o detalhe do documento, valores, serviço contratado, etc
 
-To print just click on the pdf option in the upper right corner, and a PDF document will be generated that you can download and send by email if necessary
+Para imprimir basta carregar na opção pdf no canto superior direito, e será gerado um documento em PDF que poderá fazer download e enviar por email se necessário.
 
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson1-4.png)
-<figcaption>Invoice authorization detail</figcaption>
+<figcaption>Detalhe autorização fatura</figcaption>
 </figure>
 
-Detalhe autorização fatura
+### Detalhe autorização fatura
 
 Pode igualmente consultar a lista de todas as suas autorizações de fatura navegando pelos módulos no navegador à sua esquerda.
 
@@ -89,5 +94,5 @@ Na listagem de autorizações factura pode aplicar diversos filtros, tais como: 
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson1-5.png)
-<figcaption>Invoice Whitelist</figcaption>
+<figcaption>Lista de autorizações fatura</figcaption>
 </figure>
