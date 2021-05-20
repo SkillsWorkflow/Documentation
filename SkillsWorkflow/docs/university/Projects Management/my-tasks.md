@@ -72,7 +72,7 @@ After filling in all the information, you will need to activate the Task.
 
 You can add a list of smaller items inside your task in the form of a checklist.
 
-1. On the Task's feed click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson8-symbol-1.png) symbol.
+1. On the Task's feed click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson8-symbol-1.PNG) symbol.
 
 2. Fill the name of the item you want to add.
 
