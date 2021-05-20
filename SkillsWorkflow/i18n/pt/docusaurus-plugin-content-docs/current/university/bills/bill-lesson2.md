@@ -1,56 +1,58 @@
 ---
 id:  bills-lesson2
-title: "Bills"
-sidebar_label: Lesson 2 - How to generate credit notes to clients
+title: "Notas de credito"
+sidebar_label: Lição 2 - Como gerar notas de credito a clientes
 ---
 
-## Lesson 2 - How to generate credit notes to clients
+## Lição 2 - Como gerar notas de credito a clientes
 
-Whenever you change the sales values ​​of the invoiced budget, to a lower value the system will suggest that a credit note be issued.
-Requests for the issuance of credit notes to customers in the system, and in this way inform the financial team to proceed with the creation / synchronization of the document to the external financial system, and generate the final credit.
+Sempre que alterar os valores de venda de orçamento faturado, para um valor inferior o sistema irá sugerir que seja emitida uma nota de crédito.
 
-<h3>Total credit</h3>
+Os pedidos de emissão de notas de credito a cliente no sistema, e desta forma informar a equipa financeira para avançar com a criação/sincronização do documento para o sistema financeiro externo, e gerar o credito definitivo. 
 
-To issue a credit request, within the budget approved by the customer, you must navigate to the line / s that you want to credit to the customer.
+### Credito total
 
-To generate a credit for the total value of the invoices that you have previously issued, in the budget lines you must put the values, or quantity to 0.
+- Para emitir um pedido de crédito, dentro do orçamento aprovado pelo cliente, deverá navegar para a/s linha/s que pretende creditar ao cliente.
 
-Navigate to the Feed and instruct the system to bill again. Don't forget to validate the billing conditions, as already described in Lesson 1.
+- Para gerar um credito pelo valor total das facturas que já emitiu previamente, nas linhas do orçamento deverá colocar os valores, ou quantidade a 0.
 
-The system will issue a credit note document for the total amount that will be processed by the finance department.
+- Navegue para o Feed e dê instrução ao sistema para facturar novamente. Não se esqueça de validar as condições de facturação, como já descrito na Lição 1.
 
-<h3>Partial credit</h3>
+- O sistema irá emitir um documento do tipo nota de credito pelo valor total que será processado pelo departamento financeiro.
 
-You can issue partial credits from customer lines, that is, initially invoiced a value, and you need to issue a credit from a party.
+### Credito parcial
 
-To do this, just go to the line you want to credit and adjust the sale value of it.
+- Pode emitir créditos parciais de linhas de cliente, ou seja inicialmente facturou um valor, e precisa de emitir um credito de uma parte.
 
-In other words, in the example below, the line was billed for 104,100 and we intend to issue a credit in the amount of 50,600. Therefore, we would have to go to the line and adjust the sale price to 53,500.
+- Para tal basta-lhe ir á linha que pretende creditar e ajustar o valor de venda da mesma.
 
-When finished, you should go to the feed again and give instructions to the system to invoice / credit.
+- Ou seja, no exemplo abaixo a linha foi facturada por 104.100 e pretendemos emitir um credito no valor de 50.600. Assim sendo, teriamos de ir á linha e ajustar o valor de venda para 53.500.
 
-Don't forget to define the billing conditions described in Lesson 1.
+- Quando terminar deverá ir novamente ao feed e voltar a dar instruções ao sistema para facturar/creditar.
+
+- Não esquecer de definir as condições de facturação descritas na Lição 1.
 
  
 
-You can navigate to the customer credit notes area, and you can find the document you have just issued
+Pode navegar para a área de notas de credito a cliente, e pode encontrar o documento que acabou de emitir
 
 :::important
-For the issuance of credit, the invoices in the budget must be in an "integrated" stage
+Para a emissão do credito, as facturas que constam no orçamento têm de estar numa etapa "integrado"
 :::
 
-After the creation of credit applications, due to legal obligations, you will have to identify the reason in the lines, only in this way can it be integrated into the external system
-To validate the information, and to print, you must navigate to the purchase order document by clicking on the line you want to validate.
+- Após a criação dos pedidos de crédito, por obrigatoriedades legais, terá que nas linhas identificar o motivo, só desta forma poderá ser integrada no sistema externo.
 
-The system will show the details of the document, values, contracted service, etc.
+- Para validar a informação, e imprimir deverá navegar para o documento nota de encomenda clicando na linha que pretende validar.
 
-To print just click on the pdf option in the upper right corner, and a PDF document will be generated that you can download and send by email to the respective supplier
+- O sistema vai mostrar o detalhe do documento, valores, serviço contratado, etc
+
+- Para imprimir basta carregar na opção pdf no canto superior direito, e será gerado um documento em PDF que poderá fazer download e enviar por email para o respectivo fornecedor.
 
 
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>Detail credit notes</figcaption>
+<figcaption>Detalhe notas de credito</figcaption>
 </figure>
 
 Pode igualmente consultar a lista de todas as suas notas de encomenda navegando pelos modulos no navegador á sua esquerda
@@ -60,7 +62,7 @@ Na listagem das notas de encomenda pode aplicar diversos filtros, tais como: cli
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+<figcaption>Lista de notas de credito</figcaption>
 </figure>
 
 
