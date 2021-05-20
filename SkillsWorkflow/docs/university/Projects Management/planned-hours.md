@@ -57,6 +57,7 @@ Planned hours typically come from the contract with the client, and as such the 
 **You can also do monthly forecasts by filling in forecasted figures under each month column.**
 
 The column called Forecast will show you the sum of all monthly forecasts.
+
 The column Actual and Forecast will show the sum of all monthly forecasts with the actuals up to the previous month (i.e. excluding the current month actuals shown on the stripped column).
 
 **On the timesheet grid you may find a column called Remaining time**
