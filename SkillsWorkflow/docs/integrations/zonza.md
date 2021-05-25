@@ -1,12 +1,12 @@
 ---
-id:  hr-link
-title: 'HR Link'
-sidebar_label: HR Link
+id:  zonza
+title: 'Zonza'
+sidebar_label: Zonza
 ---
 
 <h3>Description</h3>
 
-This is the Documentation of how the Integration between the `ERP HR-Link` and `Skills Workflow`. This documentation is for Skills Workflow located in the Cloud.
+This is the Documentation of how the Integration between the Zonza and `Skills Workflow`. This documentation is for Skills Workflow located in the Cloud.
 
 ---
 
@@ -28,7 +28,7 @@ The data is exchanged with Views available in the system.
 
 `Employees` are received by Skills Workflow. 
 
-New Employees created in HR-Link are automatically created in Skills Workflow.
+New Employees created in Zonza are automatically created in Skills Workflow.
 After creation, the only fields updated are "IsActive" and "Termination Date".
 Employees Data Exchanged
 
@@ -56,7 +56,7 @@ Are filled, all the employees will have the same department and typology by defa
 All active status coming from HRLink should be populated on the field: "User Active Status". i.e, leave status as "L" and active as "A".
 
 Terminated employees will be automatically inactivated in Skills Workflow.
-SSO Username will be populated with e-mail coming from HRLink.
+SSO Username will be populated with e-mail coming from Zonza.
 External ID is populated with the user e-mail only in creation.
 
 ---
