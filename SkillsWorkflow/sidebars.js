@@ -61,7 +61,8 @@ module.exports = {
       type: 'category',
       label: 'Integrations',
       items: [
-        'integrations/hr-link'
+        'integrations/hr-link',
+        'integrations/sage'
       ]
     },
      {
