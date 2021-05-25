@@ -62,7 +62,11 @@ module.exports = {
       label: 'Integrations',
       items: [
         'integrations/hr-link',
-        'integrations/sage'
+        'integrations/sage',
+        'integrations/vbs',
+        'integrations/zonza',
+        'integrations/ziflow',
+        'integrations/primavera'
       ]
     },
      {
