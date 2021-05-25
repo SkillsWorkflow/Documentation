@@ -7,7 +7,7 @@ module.exports = {
         label: 'English'
       },
       pt: {
-        label: 'Portugues'
+        label: 'Português'
       }
     }
   },
