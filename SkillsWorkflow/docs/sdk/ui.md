@@ -93,7 +93,7 @@ This method can be used inside any workspace. Adds an add button on top, which c
 
 ```javascript
 1    function showCreate(documentName: string, params?: { height?: number, 
-2       width?: number} = {height: 350, width: 800}): void;
+2       width?: number, container?: HTMLElement} = {height: 350, width: 800}): void;
 ```
 
 <table className="custom-table">
@@ -124,6 +124,13 @@ This method can be used inside any workspace. Adds an add button on top, which c
         <tr className="selected">
             <td><code>width</code></td>
             <td>Number</td>
+            <td>false</td>
+            <td>800</td>
+            <td>It sets the new pop-up's width (pixels)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>container</code></td>
+            <td>HTMLElement</td>
             <td>false</td>
             <td>800</td>
             <td>It sets the new pop-up's width (pixels)</td>
@@ -168,7 +175,7 @@ This method can be used inside any workspace. Creates a pop-up with the specifie
 
 ```javascript
 1    function showPopup(dashboardTabs: DashboardTab[], params?: { 
-2       documentName?: string, data?: any, height?: number, width?: number, 
+2       container?: DOMComponent, documentName?: string, data?: any, height?: number, width?: number, 
 3       enableScroll?: boolean,title?: string, openInFullScreen?: boolean,
 4       hideTabContainer?: boolean, hideSubHeader?: boolean,
 5       closeOnOutsideClick?: boolean, onClose?: Function, 
@@ -194,6 +201,20 @@ This method can be used inside any workspace. Creates a pop-up with the specifie
             <td>true</td>
             <td></td>
             <td>An array of DashboardTabs</td>
+        </tr>
+        <tr className="selected">
+            <td><code>container</code></td>
+            <td>DOMComponent</td>
+            <td>false</td>
+            <td>null</td>
+            <td>In the HTML DOM, the Element object represents an HTML element</td>
+        </tr>
+        <tr className="selected">
+            <td><code>documentName</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td>null</td>
+            <td>Document's name</td>
         </tr>
         <tr className="selected">
             <td><code>data</code></td>
@@ -292,7 +313,7 @@ This method can be used inside any workspace. Creates a preview pop-up styled by
 <h3>Method(s)</h3>
 
 ```javascript
-1    function showPreview(documentId: string, documentName: string, params?: {
+1    function showPreview(documentName: string, documentId: string,  params?: {
 2    dataGrid?: dxDataGrid, fieldName?: string, height?: number, width?: number, 
 3    onSave?: Function; onClose?: Function} = {height: 500, width: 800}): void;
 ```
@@ -309,18 +330,18 @@ This method can be used inside any workspace. Creates a preview pop-up styled by
     </thead>
     <tbody>
         <tr className="selected">
-            <td><code>documentId</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Unique Identifier</td>
-        </tr>
-        <tr className="selected">
             <td><code>documentName</code></td>
             <td>String</td>
             <td>true</td>
             <td></td>
             <td>Document's name</td>
+        </tr>
+        <tr className="selected">
+            <td><code>documentId</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Unique Identifier</td>
         </tr>
         <tr className="selected">
             <td><code>dataGrid</code></td>
@@ -384,7 +405,7 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
 <h3>Method(s)</h3>
 
 ```javascript
-1    function showSystemPreview(id: string, documentName: string, params?: {
+1    function showSystemPreview(documentName: string, id: string,  params?: {
 2    height?: number, width?: number} = {height: 500, width: 750}): void;
 ```
 
@@ -399,19 +420,19 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
         </tr>
     </thead>
     <tbody>
-    <tr className="selected">
-            <td><code>id</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Unique Identifier</td>
-        </tr>
        <tr className="selected">
             <td><code>documentName</code></td>
             <td>String</td>
             <td>true</td>
             <td></td>
             <td>Document's name</td>
+        </tr>
+        <tr className="selected">
+            <td><code>id</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Unique Identifier</td>
         </tr>
         <tr className="selected">
             <td><code>height</code></td>
@@ -439,6 +460,53 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
 
 ---
 
+function showComponent(element: HTMLElement, type: string, properties: object): void;
+
+## ShowComponent
+
+<h3>Description</h3>
+
+This method can be used inside any workspace. Displays and existing or default Image
+
+<h3>Method(s)</h3>
+
+```javascript
+1    function showComponent(element: HTMLElement, type: string, properties: object): void;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr className="selected">
+            <td><code>type</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML tag</td>
+        </tr>
+        <tr className="selected">
+            <td><code>properties</code></td>
+            <td>object</td>
+            <td>true</td>
+            <td></td>
+            <td>Component's properties</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Basic Usage</h3>
+
+```javascript
+>    SW.UI.showComponent(div, "company", {height: 300});
+```
 ## ShowImage
 
 <h3>Description</h3>
@@ -521,7 +589,10 @@ This method can be used inside any workspace. Displays and existing or default I
 <h3>Method(s)</h3>
 
 ```javascript
-1    function showImageEditor(element: HTMLElement, documentName: string, documentId: string, params?: {endpoint?: string, size?: Size, imageStyle?: string} = {size: Size.LARGE, height: 100, width: 100}): HTMLElement;
+1    function showImageEditor(element: HTMLElement, documentName: string, 
+2       documentId: string, params?: {endpoint?: string, size?: Size, 
+3       imageStyle?: string} = {size: Size.LARGE, height: 100, 
+4       width: 100}): HTMLElement;
 
 ```
 
@@ -601,7 +672,7 @@ This method can be used inside any workspace. Displays a stage
 <h3>Method(s)</h3>
 
 ```javascript
-1    function function showStage(element: HTMLElement, color: string = null, name: string = null, params?: {grouping?: boolean, groupCount?: number} = {}): void;
+1    function function showStage(element: HTMLElement, name: string = null, color: string = null, params?: {grouping?: boolean, groupCount?: number} = {}): void;
 ```
 
 <table className="custom-table">
@@ -623,18 +694,18 @@ This method can be used inside any workspace. Displays a stage
             <td>HTML tag</td>
         </tr>
         <tr className="selected">
+            <td><code>name</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Stage name</td>
+        </tr>
+        <tr className="selected">
             <td><code>color</code></td>
             <td>String</td>
             <td>true</td>
             <td></td>
             <td>Element's color</td>
-        </tr>
-        <tr className="selected">
-            <td><code>text</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Element's inner text</td>
         </tr>
         <tr className="selected">
             <td><code>grouping</code></td>
@@ -844,6 +915,56 @@ This method can be used inside any workspace. Displays teams
 
 ---
 
+## ShowWorkload
+
+<h3>Description</h3>
+
+This method can be used inside any workspace. Displays assignment's workload
+
+<h3>Method(s)</h3>
+
+```javascript
+1    function showWorkload(element: string | HTMLElement, assignmentId: string)
+2           :Promise<void>;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr className="selected">
+            <td><code>element</code></td>
+            <td>String | HTMLElement</td>
+            <td>true</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr className="selected">
+            <td><code>assignmentId</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Assignment Identifier</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Basic Usage</h3>
+
+```javascript
+>    SW.UI.showWorkload(target, 'assignmentId');
+```
+
+<h3>Response</h3>
+
+---
 ## SetRag
 
 <h3>Description</h3>
@@ -926,8 +1047,8 @@ This method can be used inside any workspace. Set rag with version
 <h3>Method(s)</h3>
 
 ```javascript
-1   function setVersionRag(element: HTMLElement, version1: number, version2: number, 
-2       params?: {createContainer?: boolean} = {createContainer: true}): string;
+1 function setVersionRag(element: HTMLElement, version1: number, version2: number,
+2     params?: {createContainer?: boolean} = {createContainer: true}): string;
 ```
 
 <table className="custom-table">
@@ -1164,7 +1285,7 @@ This method can be used inside any workspace. Navigate to a new tab
 
 ---
 
-## NavigateTo
+## NavigateToWorkspace
 
 <h3>Description</h3>
 
@@ -1173,7 +1294,7 @@ This method can be used inside any workspace. Navigate to workspace
 <h3>Method(s)</h3>
 
 ```javascript
-1    function navigateTo(workspaceId: string, entity: string = null,
+1    function navigateToWorkspace(workspaceId: string, entity: string = null,
 2           entityId: string = null): void;
 ```
 
@@ -1223,57 +1344,6 @@ This method can be used inside any workspace. Navigate to workspace
 
 ```javascript
 >    SW.UI.navigateTo('workspaceId', 'company', 'companyId');
-```
-
-<h3>Response</h3>
-
----
-
-## ShowWorkload
-
-<h3>Description</h3>
-
-This method can be used inside any workspace. Displays assignment's workload
-
-<h3>Method(s)</h3>
-
-```javascript
-1    function showWorkload(element: string | HTMLElement, assignmentId: string)
-2           :Promise<void>;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-       <tr className="selected">
-            <td><code>element</code></td>
-            <td>String | HTMLElement</td>
-            <td>true</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr className="selected">
-            <td><code>assignmentId</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Assignment Identifier</td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>Basic Usage</h3>
-
-```javascript
->    SW.UI.showWorkload(target, 'assignmentId');
 ```
 
 <h3>Response</h3>

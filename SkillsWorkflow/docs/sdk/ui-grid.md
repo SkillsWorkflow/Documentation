@@ -17,8 +17,9 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 <h3>Method(s)</h3>
 
 ```js {3}
-1 function expandCollapseRows(dataGrid: dxDataGrid, expandPriority: boolean = true)
-2        :void;
+1 function expandCollapseRows(dataGrid: dxDataGrid, params?: 
+2   {expandPriority?: boolean} = {expandPriority: true})
+3       :void;
 ```
 <table className="custom-table">
     <thead>
@@ -207,5 +208,64 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 ```javascript
 >    SW.UI.grid.importExcel(file, grid);
+```
+<h3>Response</h3>
+
+---
+
+
+
+
+## ImportExcel
+
+<h3>Description</h3>
+
+This method can be used inside any workspace. To expand or collapse specified Grid rows.
+
+<h3>Method(s)</h3>
+
+```js {3}
+1 function delete(documentName: string, dataGrid: dxDataGrid, params?: 
+2   {idField?: string} = {}): void;
+```
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>documentName</code></td>
+            <td>Any</td>
+            <td>true</td>
+            <td></td>
+            <td>The target dataGrid whose rows are going to be expanded or collapsed</td> 
+        </tr>
+         <tr className="selected">
+            <td><code>dataGrid</code></td>
+            <td>dxDataGrid</td>
+            <td>true</td>
+            <td></td>
+            <td>Deveextreme dataGrid</td> 
+        </tr>
+         <tr className="selected">
+            <td><code>idField</code></td>
+            <td>DxDataGridComponent</td>
+            <td>false</td>
+            <td></td>
+            <td>field id</td> 
+        </tr>
+    </tbody>
+</table>
+
+<h3>Basic Usage</h3>
+
+```javascript
+>    SW.UI.grid.delete("company", dataGrid);
 ```
 <h3>Response</h3>
