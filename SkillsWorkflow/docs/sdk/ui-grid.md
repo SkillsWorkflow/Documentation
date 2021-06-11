@@ -16,10 +16,9 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 <h3>Method(s)</h3>
 
-```js {3}
+```javascript
 1 function expandCollapseRows(dataGrid: dxDataGrid, params?: 
-2   {expandPriority?: boolean} = {expandPriority: true})
-3       :void;
+2   {expandPriority?: boolean} = {expandPriority: true}): void;
 ```
 <table className="custom-table">
     <thead>
@@ -216,7 +215,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 
 
-## ImportExcel
+## Delete
 
 <h3>Description</h3>
 
