@@ -35,6 +35,7 @@ module.exports = {
       // searchParameters: {},
 
       //... other Algolia params
+      ignoreCanonicalTo: false
     },
     hideableSidebar: true,
     navbar: {
