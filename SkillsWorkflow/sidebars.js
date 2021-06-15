@@ -52,9 +52,7 @@ module.exports = {
             }
           ]
         },
-        'automations',
-        'queries',
-        'types'
+        'automations'
       ]
     },
     {
