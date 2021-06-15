@@ -52,7 +52,6 @@ module.exports = {
           position: 'left',
           className: 'navbar-item'
         },
-        { to: 'blog', label: 'Blog', position: 'left', className: 'navbar-item' },
         {
           label: "API",
           position: 'right',
