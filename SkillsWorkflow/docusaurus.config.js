@@ -56,7 +56,7 @@ module.exports = {
           label: "API",
           position: 'right',
           className: 'navbar-item',
-          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/',
+          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/',
         },
         {
           href: 'https://github.com/SkillsWorkflow/Documentation',
