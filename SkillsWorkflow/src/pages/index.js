@@ -20,12 +20,12 @@ const features = [
     ),
   },
   {
-    title: 'Store',
+    title: 'Integrations',
     imageUrl: 'img/undraw_Image_folder_store.svg',
     description: (
       <>
-        An wide library is available for you!
-        Check the available <code>Workspaces</code> directory.
+        An wide variaty of integrations is available for you!
+        Check the available <code>Integrations</code> directory.
       </>
     ),
   },

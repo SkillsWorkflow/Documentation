@@ -27,7 +27,6 @@ module.exports = {
       items: [
         {
           SDK: [
-            'sdk/introduction',
             {
               UI: [
                 'sdk/ui',
