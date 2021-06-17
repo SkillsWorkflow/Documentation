@@ -1,4 +1,16 @@
 module.exports = {
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'pt'],
+    localeConfigs: {
+      en: {
+        label: 'English'
+      },
+      pt: {
+        label: 'Português'
+      }
+    }
+  },
   title: 'Skills Workflow’s Documentation',
   tagline: 'We are here to let you shine! Let´s get everything done',
   url: 'https://documentation.skillsworkflow.com',
@@ -23,6 +35,7 @@ module.exports = {
       // searchParameters: {},
 
       //... other Algolia params
+      ignoreCanonicalTo: false
     },
     hideableSidebar: true,
     navbar: {
@@ -39,7 +52,6 @@ module.exports = {
           position: 'left',
           className: 'navbar-item'
         },
-        { to: 'blog', label: 'Blog', position: 'left', className: 'navbar-item' },
         {
           label: "API",
           position: 'right',
@@ -52,6 +64,10 @@ module.exports = {
           position: 'right',
           className: 'navbar-item'
         },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+      },
       ],
     },
     footer: {
