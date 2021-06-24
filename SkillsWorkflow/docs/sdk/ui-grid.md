@@ -147,7 +147,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
         </tr>
          <tr className="selected">
             <td><code>buttonsList</code></td>
-            <td>Any</td>
+            <td>Button</td>
             <td>true</td>
             <td></td>
             <td>Flag to set if the rows are to expanded or collapsed instead</td> 
@@ -240,7 +240,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     <tbody>
         <tr className="selected">
             <td><code>documentName</code></td>
-            <td>Any</td>
+            <td>String</td>
             <td>true</td>
             <td></td>
             <td>The target dataGrid whose rows are going to be expanded or collapsed</td> 

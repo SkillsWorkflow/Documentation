@@ -48,7 +48,8 @@ module.exports = {
                 'sdk/users',
                 'sdk/estimates'
               ]
-            }
+            },
+            'sdk/execute-api'
           ]
         },
         'automations'
