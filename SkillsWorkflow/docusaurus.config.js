@@ -57,12 +57,6 @@ module.exports = {
           className: 'navbar-item',
           href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/',
         },
-        // {
-        //   href: 'https://github.com/SkillsWorkflow/Documentation',
-        //   label: 'GitHub',
-        //   position: 'right',
-        //   className: 'navbar-item'
-        // },
         {
           type: 'localeDropdown',
           position: 'right',
