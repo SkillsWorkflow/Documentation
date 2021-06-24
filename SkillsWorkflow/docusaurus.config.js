@@ -57,12 +57,12 @@ module.exports = {
           className: 'navbar-item',
           href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/',
         },
-        {
-          href: 'https://github.com/SkillsWorkflow/Documentation',
-          label: 'GitHub',
-          position: 'right',
-          className: 'navbar-item'
-        },
+        // {
+        //   href: 'https://github.com/SkillsWorkflow/Documentation',
+        //   label: 'GitHub',
+        //   position: 'right',
+        //   className: 'navbar-item'
+        // },
         {
           type: 'localeDropdown',
           position: 'right',
@@ -89,28 +89,27 @@ module.exports = {
               href: 'https://helpdesk.skillsworkflow.com',
             },
             {
+              label: 'Youtube',
+              href: 'https://www.youtube.com/channel/UCauqHRlHUSkS1H8KUYm4CiA'
+            },
+            {
               label: 'Twitter',
               href: 'https://twitter.com/skillsworkflow',
             },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/skills-workflow/?viewAsMember=true'
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/SkillsWorkflow/Documentation',
+              label: 'Instagram',
+              href: 'https://www.instagram.com/skillsworkflow/'
             },
             {
-              label: 'Releases',
-              to: 'docs/releases'
+              label: 'Facebook',
+              href: 'https://www.facebook.com/skillsworkflow/'
             }
           ],
-        },
+        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Skills Workflow`,
     },

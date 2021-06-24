@@ -119,7 +119,7 @@ public executeAPI(
 <h3>Basic Usage</h3>
 
 ```javascript
->    SW.executeAPI('GET', 'documentBriefs?documentId=' + 'contractId');
+>    SW.executeAPI('GET', 'documentBriefs', {documentId: '123'});
 ```
 
 <h3>Example</h3>
