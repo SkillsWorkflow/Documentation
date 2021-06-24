@@ -21,11 +21,11 @@ const features = [
   },
   {
     title: 'Integrations',
-    imageUrl: 'img/undraw_Image_folder_store.svg',
+    // imageUrl: 'img/undraw_Image_folder_store.svg',
     description: (
       <>
         An wide variaty of integrations is available for you!
-        Check the available <code>Integrations</code> directory.
+        Check the available Integrations directory.
       </>
     ),
   },
@@ -115,8 +115,9 @@ function Home() {
                       <img className={styles.featureImage} src={useBaseUrl('img/undraw_Image_folder_store.svg')} alt={'Store'} />
                     </div>
                   )}
-                  <h3><Translate>Store</Translate></h3>
-                  <p><Translate>A wide library is available for you! Check the available Workspaces directory.</Translate></p>
+                  <h3><Translate>Integrations</Translate></h3>
+                  <p><Translate>An wide variaty of integrations is available for you!
+        Check the available Integrations directory.</Translate></p>
                 </div>
                 <div className={clsx('col col--4', styles.feature)}>
                   {useBaseUrl('img/undraw_graduation_university.svg') && (
