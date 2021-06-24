@@ -105,7 +105,7 @@ function Home() {
                       <img className={styles.featureImage} src={useBaseUrl('img/undraw_building_websites_crafting.svg')} alt={'Crafting'} />
                     </div>
                   )}
-                  <h3><Translate>Crafting</Translate></h3>
+                  <h3><a href='https://documentation.skillsworkflow.com/docs/'><Translate>Crafting</Translate></a></h3>
                   <p><Translate>Unleash the creativity in you. Why not craft
         your own workspace?</Translate></p>
                 </div>
@@ -115,7 +115,7 @@ function Home() {
                       <img className={styles.featureImage} src={useBaseUrl('img/undraw_Image_folder_store.svg')} alt={'Store'} />
                     </div>
                   )}
-                  <h3><Translate>Integrations</Translate></h3>
+                  <h3><a href='https://documentation.skillsworkflow.com/docs/integrations/hr-link'><Translate>Integrations</Translate></a></h3>
                   <p><Translate>An wide variaty of integrations is available for you!
         Check the available Integrations directory.</Translate></p>
                 </div>
@@ -125,7 +125,7 @@ function Home() {
                       <img className={styles.featureImage} src={useBaseUrl('img/undraw_graduation_university.svg')} alt={'University'} />
                     </div>
                   )}
-                  <h3><Translate>University</Translate></h3>
+                  <h3><a href='https://documentation.skillsworkflow.com/docs/university/Bills/bills-lesson1'><Translate>University</Translate></a></h3>
                   <p><Translate>Want to become a system expert? Explore our walkthrough
         lessons.</Translate></p>
                 </div>
