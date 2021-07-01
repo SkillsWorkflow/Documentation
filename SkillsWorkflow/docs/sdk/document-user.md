@@ -18,7 +18,7 @@ because you're already in a User document
 
 [Get Lookup](document#getlookup)
 
-## GetImages
+## getImages
 
 <h3>Description</h3>
 

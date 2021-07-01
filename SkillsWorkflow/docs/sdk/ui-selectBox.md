@@ -4,7 +4,7 @@ title: ' '
 sidebar_label: SelectBox
 ---
 
-## SetListWidth
+## setListWidth
 
 <h3>Description</h3>
 
@@ -45,7 +45,7 @@ This method can be used inside any workspace. Set SelectBox's list width accordi
 
 ---
 
-## GetLookupByEndpoint
+## getLookupByEndpoint
 
 <h3>Description</h3>
 

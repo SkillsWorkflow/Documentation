@@ -4,7 +4,7 @@ title: ' '
 sidebar_label: Execute API
 ---
 
-## ExecuteAPI
+## executeAPI
 
 <h3>Description</h3>
 

@@ -49,6 +49,12 @@ module.exports = {
                 'sdk/estimates'
               ]
             },
+            {
+              Shell: [
+                'sdk/shell-workspace',
+                'sdk/shell-panel'
+              ]
+            },
             'sdk/execute-api'
           ]
         },

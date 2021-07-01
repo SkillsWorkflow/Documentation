@@ -72,16 +72,41 @@ module.exports = {
             {
               label: 'Style Guide',
               to: 'docs/',
+            },
+            {
+              label: 'Automations',
+              to: 'docs/automations/'
+            },
+            {
+              label: 'SDK',
+              href: 'docs/sdk/ui/'
+            },
+            {
+              label: 'Integrations',
+              href: 'docs/integrations/hr-link'
+            },
+            {
+              label: 'University',
+              href: 'docs/university/Bills/bills-lesson1/'
             }
           ],
         },
         {
-          title: 'Community',
+          title: 'Learn More',
           items: [
             {
               label: 'Help Desk',
               href: 'https://helpdesk.skillsworkflow.com',
             },
+            {
+              label: 'Api',
+              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/'
+            }
+          ],
+        },
+        {
+          title: 'Social Media',
+          items: [
             {
               label: 'Youtube',
               href: 'https://www.youtube.com/channel/UCauqHRlHUSkS1H8KUYm4CiA'
@@ -102,7 +127,7 @@ module.exports = {
               label: 'Facebook',
               href: 'https://www.facebook.com/skillsworkflow/'
             }
-          ],
+          ]
         }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Skills Workflow`,

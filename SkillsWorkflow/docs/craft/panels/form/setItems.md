@@ -8,7 +8,7 @@ sidebar_label: Set Items
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Save Options
+## saveOptions
 
 <h3>Description</h3>
 

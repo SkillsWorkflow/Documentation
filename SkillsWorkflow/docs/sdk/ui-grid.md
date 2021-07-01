@@ -8,7 +8,7 @@ sidebar_label: Grid
 
 A sub namespace of UI, exclusive for grid properties
 
-## ExpandCollapseRows
+## expandCollapseRows
 
 <h3>Description</h3>
 
@@ -57,7 +57,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 ---
 
-## CalculatePercentageSummary
+## calculatePercentageSummary
 
 <h3>Description</h3>
 
@@ -117,7 +117,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 ---
 
-## AddToolbarButtons
+## addToolbarButtons
 
 <h3>Description</h3>
 
@@ -164,7 +164,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 ---
 
-## ImportExcel
+## importExcel
 
 <h3>Description</h3>
 
@@ -215,7 +215,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 
 
-## Delete
+## delete
 
 <h3>Description</h3>
 
