@@ -4,7 +4,7 @@ title: " "
 sidebar_label: Introduction
 ---
 
-# User Inteface
+# userInteface
 
 With this namespace, you can quickly provide methods to show UI.
 
@@ -17,7 +17,7 @@ SW.UI.{methodName}
 
 ---
 
-## ShowBulk
+## showBulk
 
 <h3>Description</h3>
 
@@ -83,7 +83,7 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 
 ![img](/img/responses/showBulk_response.png)
 
-## ShowCreate
+## showCreate
 
 <h3>Description</h3>
 
@@ -165,7 +165,7 @@ This method can be used inside any workspace. Adds an add button on top, which c
 15      }
 ```
 
-## ShowPopup
+## showPopup
 
 <h3>Description</h3>
 
@@ -304,7 +304,7 @@ This method can be used inside any workspace. Creates a pop-up with the specifie
 
 <h3>Response</h3>
 
-## ShowPreview
+## showPreview
 
 <h3>Description</h3>
 
@@ -396,7 +396,7 @@ This method can be used inside any workspace. Creates a preview pop-up styled by
 
 <h3>Response</h3>
 
-## ShowSystemPreview
+## showSystemPreview
 
 <h3>Description</h3>
 
@@ -462,7 +462,7 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
 
 function showComponent(element: HTMLElement, type: string, properties: object): void;
 
-## ShowComponent
+## showComponent
 
 <h3>Description</h3>
 
@@ -507,7 +507,7 @@ This method can be used inside any workspace. Displays and existing or default I
 ```javascript
 >    SW.UI.showComponent(div, "company", {height: 300});
 ```
-## ShowImage
+## showImage
 
 <h3>Description</h3>
 
@@ -580,7 +580,7 @@ This method can be used inside any workspace. Displays and existing or default I
 
 ---
 
-## ShowImageEditor
+## showImageEditor
 
 <h3>Description</h3>
 
@@ -663,7 +663,7 @@ This method can be used inside any workspace. Displays and existing or default I
 
 ---
 
-## ShowStage
+## showStage
 
 <h3>Description</h3>
 
@@ -734,7 +734,7 @@ This method can be used inside any workspace. Displays a stage
 
 ---
 
-## ShowPriority
+## showPriority
 
 <h3>Description</h3>
 
@@ -784,7 +784,7 @@ This method can be used inside any workspace. To define an element priority
 
 ---
 
-## ShowTags
+## showTags
 
 <h3>Description</h3>
 
@@ -915,7 +915,7 @@ This method can be used inside any workspace. Displays teams
 
 ---
 
-## ShowWorkload
+## showWorkload
 
 <h3>Description</h3>
 
@@ -965,7 +965,7 @@ This method can be used inside any workspace. Displays assignment's workload
 <h3>Response</h3>
 
 ---
-## SetRag
+## setRag
 
 <h3>Description</h3>
 
@@ -1038,7 +1038,7 @@ This method can be used inside any workspace. Displays a rag
 
 ---
 
-## SetVersionRag
+## setVersionRag
 
 <h3>Description</h3>
 
@@ -1103,7 +1103,7 @@ This method can be used inside any workspace. Set rag with version
 
 ---
 
-## SetAttribute
+## setAttribute
 
 <h3>Description</h3>
 
@@ -1176,7 +1176,7 @@ This method can be used inside any workspace. Set element's attributes
 
 ---
 
-## GetDocumentImage
+## getDocumentImage
 
 <h3>Description</h3>
 
@@ -1234,7 +1234,7 @@ This method can be used inside any workspace. Get entity's image
 
 ---
 
-## NavigateToNewTab
+## navigateToNewTab
 
 <h3>Description</h3>
 
@@ -1285,7 +1285,7 @@ This method can be used inside any workspace. Navigate to a new tab
 
 ---
 
-## NavigateToWorkspace
+## navigateToWorkspace
 
 <h3>Description</h3>
 
@@ -1350,7 +1350,7 @@ This method can be used inside any workspace. Navigate to workspace
 
 ---
 
-## ShowComponent
+## showComponent
 
 <h3>Description</h3>
 

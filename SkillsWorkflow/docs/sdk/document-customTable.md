@@ -5,7 +5,7 @@ sidebar_label: Custom Tables
 ---
 
 
-## SetCustomFields
+## setCustomFields
 
 <h3>Description</h3>
 
