@@ -58,12 +58,6 @@ module.exports = {
           href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/',
         },
         {
-          href: 'https://github.com/SkillsWorkflow/Documentation',
-          label: 'GitHub',
-          position: 'right',
-          className: 'navbar-item'
-        },
-        {
           type: 'localeDropdown',
           position: 'right',
       },
@@ -78,39 +72,63 @@ module.exports = {
             {
               label: 'Style Guide',
               to: 'docs/',
+            },
+            {
+              label: 'Automations',
+              to: 'docs/automations/'
+            },
+            {
+              label: 'SDK',
+              href: 'docs/sdk/ui/'
+            },
+            {
+              label: 'Integrations',
+              href: 'docs/integrations/hr-link'
+            },
+            {
+              label: 'University',
+              href: 'docs/university/Bills/bills-lesson1/'
             }
           ],
         },
         {
-          title: 'Community',
+          title: 'Learn More',
           items: [
             {
               label: 'Help Desk',
               href: 'https://helpdesk.skillsworkflow.com',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/skillsworkflow',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/SkillsWorkflow/Documentation',
-            },
-            {
-              label: 'Releases',
-              to: 'docs/releases'
+              label: 'Api',
+              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/'
             }
           ],
         },
+        {
+          title: 'Social Media',
+          items: [
+            {
+              label: 'Youtube',
+              href: 'https://www.youtube.com/channel/UCauqHRlHUSkS1H8KUYm4CiA'
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/skillsworkflow',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/skills-workflow/?viewAsMember=true'
+            },
+            {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/skillsworkflow/'
+            },
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com/skillsworkflow/'
+            }
+          ]
+        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Skills Workflow`,
     },

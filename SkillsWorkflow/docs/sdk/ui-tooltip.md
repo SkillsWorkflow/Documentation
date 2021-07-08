@@ -3,7 +3,7 @@ id:  ui-tooltip
 title: ' '
 sidebar_label: Tooltip
 ---
-## Usage
+## usage
 When you hover the target, it shows the implemented tooltip
 
 <!-- ![img-with-border](/img/responses/tooltip_usage.png) -->
@@ -30,7 +30,7 @@ For this example the tooltip methods were set on 2 events
 <figcaption>Tooltip Hide on On Mouse Leave event</figcaption>
 </figure>
 
-## Set
+## set
 
 <h3>Description</h3>
 
@@ -91,7 +91,7 @@ This method can be used inside any workspace. Create a new tooltip
 
 ---
 
-## Show
+## show
 
 <h3>Description</h3>
 
@@ -130,7 +130,7 @@ This method can be used inside any workspace. Show existing tooptip
 
 ---
 
-## Hide
+## hide
 
 <h3>Description</h3>
 

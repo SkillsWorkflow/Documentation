@@ -50,6 +50,12 @@ module.exports = {
                 'sdk/currentUser'
               ]
             },
+            {
+              Shell: [
+                'sdk/shell-workspace',
+                'sdk/shell-panel'
+              ]
+            },
             'sdk/execute-api'
           ]
         },

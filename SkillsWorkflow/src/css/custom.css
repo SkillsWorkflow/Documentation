@@ -23,6 +23,10 @@
 * {
   font-family: 'Varela Round', sans-serif;
 }
+.menu {
+  font-size: 14px !important;
+}
+
 h1 {
   font-size: 36px !important;
 }
@@ -117,6 +121,10 @@ h3 {
   font-size: 20px;
   font-weight: 400;
   color: #9CA7B0;
+}
+
+.footer__col {
+  text-align: center !important;
 }
 
 .javascript {

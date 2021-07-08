@@ -4,7 +4,7 @@ title: ' '
 sidebar_label: Buttons
 ---
 
-## AddSaveToSubHeader
+## addSaveToSubHeader
 
 <h3>Description</h3>
 
@@ -84,7 +84,7 @@ This method can be used inside any workspace. Generates a save button in the sub
 
 ---
 
-## AddCreateToSubHeader
+## addCreateToSubHeader
 
 <h3>Description</h3>
 
@@ -193,7 +193,7 @@ This method can be used inside any workspace. Generates a create button in the s
 
 ---
 
-## AddToSubHeader
+## addToSubHeader
 
 <h3>Description</h3>
 

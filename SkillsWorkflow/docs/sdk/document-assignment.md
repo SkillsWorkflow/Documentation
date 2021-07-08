@@ -4,7 +4,7 @@ title: " "
 sidebar_label: Assignments
 ---
 
-## Create
+## create
 
 <h3>Description</h3>
 
@@ -81,7 +81,7 @@ This method can be used inside any workspace. Create a new assignment
         "assignmentType", "document", 2);
 ```
 
-## Update
+## update
 
 <h3>Description</h3>
 
@@ -150,7 +150,7 @@ This method can be used inside any workspace. Update an assignment
         "documentId", "company");
 ```
 
-## Delete
+## delete
 
 <h3>Description</h3>
 

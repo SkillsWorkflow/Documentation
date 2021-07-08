@@ -4,14 +4,14 @@ title: 'Workspaces'
 sidebar_label: Workspaces
 ---
 
-## Info
+## info
 
 All settings directly regarding workspaces configuration properties (advanced)
 
 ![img](/img/responses/workspaces_info_usage.png)
 
 
-## Context Parameter
+## contextParameter
 
 <h3>Description</h3>
 

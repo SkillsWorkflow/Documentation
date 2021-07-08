@@ -4,7 +4,7 @@ title: " "
 sidebar_label: Holidays
 ---
 
-## SetCustomFields
+## setCustomFields
 
 <h3>Description</h3>
 

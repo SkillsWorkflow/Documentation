@@ -4,7 +4,7 @@ title: " "
 sidebar_label: Introduction
 ---
 
-# Document
+# document
 
 With this namespace, you can quickly provide methods to manipulate documents.
 
@@ -15,7 +15,7 @@ The namespace Document provides to developers, methods to easily create, update,
 SW.Document.{methodName}
 ```
 
-## SetCustomFields
+## setCustomFields
 
 <h3>Description</h3>
 
@@ -70,7 +70,7 @@ This method can be used inside any workspace. Used to set custom user fields
         { Name: "Default"});
 ```
 
-## GetCustomFields
+## getCustomFields
 
 <h3>Description</h3>
 
@@ -123,7 +123,7 @@ This method can be used inside any workspace. Return custom user fields
 >    SW.Document.getCustomFields("b983e9b5-b2b8-485f-8ff8-794463771bcc", "Default", 
         "string");
 ```
-## Create
+## create
 
 <h3>Description</h3>
 
@@ -169,7 +169,7 @@ This method can be used inside any workspace. Create a new document
 >    SW.Document.create("company", data);
 ```
 
-## Update
+## update
 
 <h3>Description</h3>
 
