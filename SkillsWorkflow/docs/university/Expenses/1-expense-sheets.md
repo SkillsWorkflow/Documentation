@@ -1,5 +1,5 @@
 ---
-id:  expense-sheets
+id:  1-expense-sheets
 title: Expense Sheets
 sidebar_label: Lesson 1 - Create Expense Sheets
 ---

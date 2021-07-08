@@ -20,6 +20,21 @@
   --ifm-font-family-base: 'Varela Round';
   --ifm-font-family-monospace: 'Open Sans';
 }
+
+.menu__list-item {
+  margin: 0 !important;
+}
+
+.menu__link--sublist::after{
+  content: '';
+  height: 13px !important;
+  width: 13px;
+}
+
+.header-home {
+  height: 60vh;
+}
+
 * {
   font-family: 'Varela Round', sans-serif;
 }
@@ -54,13 +69,14 @@ p {
   text-transform: uppercase
 }
 
-/* .hello {
-  display: inline-block;
-  background: orange;
-  color: #fff;
-  border-radius: 50%;
-  padding: 4px;
-} */
+.home-h1{
+  font-weight: 300;
+  color: black;
+}
+
+.home-p {
+  color: rgb(170, 169, 169);
+}
 
 img[alt=small] { width: 30%;}
 

@@ -1,5 +1,5 @@
 ---
-id:  approve-expenses
+id:  1-approve-expenses
 title: Approve Expenses
 sidebar_label: Lesson 3 - Approve Expenses
 ---
