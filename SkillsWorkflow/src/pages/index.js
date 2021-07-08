@@ -67,33 +67,35 @@ function Home() {
         className={clsx('hero hero--primary', styles.heroBanner)}
         style={{
           color: '#0172c6',
-          // backgroundImage: useBaseUrl('img/home.png'),
-          backgroundImage: "url(https://uploads-ssl.webflow.com/5bf3f119b7c4f5aa8040c8c5/5da5ca17bf24e401676c9fac_alex-azabache-UeX_qw9lnzc-unsplash.jpg)",
           position: 'static',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          backgroundColor: '#f3f8ff',
-          backgroundPosition: 'left'
+          backgroundColor: '#fff',
+          backgroundPosition: 'center'
         }}>
         <div className="container text--center"
           style={{
             backdropFilter: 'blur(2px)'
           }}>
-          <h1 className="hero__title"><Translate>Skills Workflow's Documentation</Translate></h1>
-          <p className="hero__subtitle"><Translate>We are here to let you shine! Let's get everything done</Translate></p>
+          <h1 className="hero__title home-h1"><Translate>Skills Workflow's Documentation</Translate></h1>
+          <p className="hero__subtitle home-p"><Translate>We are here to let you shine! Let's get everything done</Translate></p>
           <div className={styles.buttons}>
             <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              style={{ backgroundColor: '#f3f8ff' }}
+              className={styles.skills}
               to={useBaseUrl('docs/')}>
               <Translate>Get Started</Translate>
             </Link>
           </div>
         </div>
       </header>
+      <section className={styles.section} style={{
+        backgroundImage: "url(/img/home/skillsworkflow-homepage.jpg)",
+        position: 'static',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundColor: '#fff',
+          backgroundPosition: 'center'
+      }}></section>
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>

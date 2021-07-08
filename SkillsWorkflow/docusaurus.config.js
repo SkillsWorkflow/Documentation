@@ -95,12 +95,16 @@ module.exports = {
           title: 'Learn More',
           items: [
             {
-              label: 'Help Desk',
+              label: 'Api Integration',
               href: 'https://helpdesk.skillsworkflow.com',
             },
             {
-              label: 'Api',
+              label: 'Client Api',
               href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/'
+            },
+            {
+              label: 'Website',
+              href: 'https://www.skillsworkflow.com/'
             }
           ],
         },

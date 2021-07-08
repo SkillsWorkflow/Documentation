@@ -1,5 +1,5 @@
 ---
-id:  expenses
+id:  2-expenses
 title: Expenses
 sidebar_label: Lesson 2 - Create Expenses
 ---
