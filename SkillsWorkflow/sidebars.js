@@ -46,7 +46,8 @@ module.exports = {
                 'sdk/customTables',
                 'sdk/clients',
                 'sdk/users',
-                'sdk/estimates'
+                'sdk/estimates',
+                'sdk/currentUser'
               ]
             },
             'sdk/execute-api'
