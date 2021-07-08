@@ -110,7 +110,7 @@ This method can be used inside any workspace. Retrives a list of Clients
 ```javascript
 >    SW.Document.CurrentUser.getClients("Skillsworkflow", 0, 20);
 ```
-## SetCustomFields
+## getDivisons
 
 <h3>Description</h3>
 
