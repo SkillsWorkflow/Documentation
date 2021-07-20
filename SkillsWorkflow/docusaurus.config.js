@@ -60,7 +60,7 @@ module.exports = {
         {
           type: 'localeDropdown',
           position: 'right',
-      },
+        },
       ],
     },
     footer: {
@@ -75,7 +75,7 @@ module.exports = {
             },
             {
               label: 'Automations',
-              to: 'docs/automations/'
+              to: 'docs/automations/automations'
             },
             {
               label: 'SDK',
