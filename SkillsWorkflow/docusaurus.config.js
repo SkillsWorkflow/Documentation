@@ -75,11 +75,11 @@ module.exports = {
             },
             {
               label: 'Automations',
-              to: 'docs/automations/automations'
+              to: 'docs/automations/introduction'
             },
             {
               label: 'SDK',
-              href: 'docs/sdk/ui/'
+              href: 'docs/sdk/ui'
             },
             {
               label: 'Integrations',
@@ -87,7 +87,7 @@ module.exports = {
             },
             {
               label: 'University',
-              href: 'docs/university/Bills/bills-lesson1/'
+              href: 'docs/university/Bills/invoice-authorizations'
             }
           ],
         },
