@@ -81,7 +81,7 @@ To have a custom Response you must configure the httpResponse.
 
 * actionType - The action type is Result
 * name - The action name is custom
-* httpResponse
+* httpResponse - Optional
   * statusCode - The value to be sent in the HttpResponse statusCode
   * headers - The headers to be sent in the HttpResponse headers
   * body - The body to be sent in the HttpResponse body
