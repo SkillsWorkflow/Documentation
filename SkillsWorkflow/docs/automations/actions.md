@@ -798,10 +798,12 @@ Map action allows you to Map previous action Result to a property List of key/va
 
 ## AzureAdAuthentication
 
-AzureAdAuthentication action allows you to Authenticate against Azure Active Directory and
-obtain a authentication token with permissions for Microsoft Graph Api.
+AzureAdAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory 
+using Microsoft Graph API.
 
 #### Configuration
+
+The Azure Active Directory permissions assigned to the token are defined on the Azure Active Diretory application.
 
 There are configurations that need to be applied in the automation workflow in order to perform the actions properly.
 
@@ -814,9 +816,9 @@ Please check the template description to know which parameters must be sent for 
    "actionType": "AzureAdAuthentication",  
    "name": "GetAzureAdToken",  
    "next": "Exit",  
-   "tenantId": "d0c80707-32ae-4b9b-a470-8b0efe5d79f7",  
-   "ClientId": "323ca7cd-1166-4d28-84bf-e59313924b79",  
-   "ClientSecret": "*",   
+   "tenantId": "cdda9984-9095-443c-b0bf-131c1e6bdc76",  
+   "clientId": "aad39603-3954-4bf7-8128-b41f535ff211",  
+   "clientSecret": "*",   
  }
 ```
 
