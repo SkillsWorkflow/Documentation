@@ -600,7 +600,7 @@ To configure this action, there are parameters that can be set:
         "next": "Exit",
         "Method": "Post",
         "url": "https://e09905cd.ngrok.io/WS_DataTransfer.asmx?wsdl",
-        "body": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\"><soap:Header/><soap:Body><tem:CreateNewTicket><!--Optional:--><tem:Params> {\"IdCompania\":\"4\", \"IDCategora\":\"6\", \"IDSubcategoria\":\"143\",\"Descripcion\":\"Skills Workflow test3\", \"solicitanteEmail\":\"bruno.moscao@wmccann.com\"}</tem:Params><!--Optional:--><tem:adjuntos>[{\"nombre\":\"teste.xlsx\", \"contenido\":\"{{['CreateCsv']$|ToBase64}}\"}]</tem:adjuntos></tem:CreateNewTicket></soap:Body></soap:Envelope>",
+        "body": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"https://tempuri.org/\"><soap:Header/><soap:Body><tem:CreateNewTicket><!--Optional:--><tem:Params> {\"IdCompania\":\"4\", \"IDCategora\":\"6\", \"IDSubcategoria\":\"143\",\"Descripcion\":\"Skills Workflow test3\", \"solicitanteEmail\":\"bruno.moscao@wmccann.com\"}</tem:Params><!--Optional:--><tem:adjuntos>[{\"nombre\":\"teste.xlsx\", \"contenido\":\"{{['CreateCsv']$|ToBase64}}\"}]</tem:adjuntos></tem:CreateNewTicket></soap:Body></soap:Envelope>",
         "bodyMediaType": "Raw",
         "requestHeaders": [
             {
@@ -786,7 +786,15 @@ To do so it is required a parameter to be filled:
 
 ## Map
 
-Map action allows you to Map previous action Result to a json file replacing its property values.
+Map action allows you to Map previous action Result to a property List of key/values.
+
+<h3>Example</h3>
+
+<figure>
+
+![img-box-shadow](/img/automation/mapaction.png)
+<figcaption>Map Example</figcaption>
+</figure>
 
 ## AzureAdAuthentication
 
