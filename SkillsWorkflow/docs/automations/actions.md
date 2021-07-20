@@ -63,13 +63,15 @@ To have a custom Response you must configure the httpResponse.
 
 #### Template
 
-```json {3}
+```json {2,4-10}
 {
     "actionType": "Result",
     "name": "Exit",
     "httpResponse": {
         "statusCode": 200,
-        "headers": {},
+        "headers": {
+            "content-type": "application/json"
+            },
         "body": "{{['SendExpenseFile']}}"
     }
 }     
@@ -109,7 +111,7 @@ To configure this action, the fields available are:
 
 #### Template
 
-```json {2}
+```json {2,5-15}
 {  
     "actionType": "Rest",  
     "name": "",  
@@ -278,7 +280,7 @@ Please check the template description to know which parameters must be sent for 
 
 #### Template
 
-```json {3}
+```json {2,5-14}
 {  
    "actionType": "SftpListFiles" or "SftpDownload" or"SftpUpload" or "SftpMoveTo",  
    "name": "SftpListFiles",  
@@ -311,7 +313,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 <TabItem value="sftplistfiles">
 
-```json {3}
+```json {2,5-10}
 {  
    "actionType": "SftpListFiles",  
    "name": "SftpListFiles",  
@@ -341,7 +343,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 <TabItem value="sftpdownload">
 
-```json {3}
+```json {2,5-9}
 {  
    "actionType": "SftpDownload",  
    "name": "SftpDownload",  
@@ -367,7 +369,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 <TabItem value="sftpupload">
 
-```json {3}
+```json {2,5-10}
 {  
    "actionType": "SftpUpload",  
    "name": "SftpUpload",  
@@ -375,7 +377,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
    "ftpHostIp": "sftp.skillsworkflow.com",  
    "ftpUsername": "SkillsWorkflow.Sftp.QA",  
    "ftpPassword": "",  
-   "ftpPath": "/path"  
+   "ftpPath": "/path",
    "filePath": "C:\\TempFolder\test.png",  
    "fileName": "NewFilename.csv"  
 }
@@ -399,7 +401,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 <TabItem value="sftpmoveto">
 
-```json {3} 
+```json {2,5-10} 
 {  
    "actionType": "SftpMoveTo",  
    "name": "MoveSftpFileSuccess",  
@@ -444,7 +446,7 @@ To do so, it is required some parameters to be filled:
 
 #### Template
 
-```json {3}
+```json {2,5-8}
 {
     "actionType": "Email",
     "name": "SendEmail",
@@ -487,7 +489,7 @@ There are fields required to be filled to have this action working properly:
 
 #### Template
 
-```json {3}
+```json {2,4-16}
 {
     "actionType": "Case",
     "name": "ExistsGetSharepointSiteUrl",
@@ -550,7 +552,7 @@ To configure this action, there are parameters that can be set:
 
 #### Template
 
-```json {3}
+```json {17,21-42}
 [
     {
         "actionType": "Start",
@@ -659,7 +661,7 @@ To configure this action, there are parameters that can be set:
 
 #### Template
 
-```json {3}
+```json {2,27,30-31,56-85}
 {
     "name": "ImportUsers",
     "actions": [
@@ -760,7 +762,7 @@ To configure this action, there are parameters that can be set:
 
 Download action allows you to download the content of a file from a specific URL.
 
-Configurations
+#### Configurations
 
 To do so it is required a parameter to be filled:
 
@@ -768,7 +770,7 @@ To do so it is required a parameter to be filled:
 
 #### Template
 
-```json {3}
+```json {3,5}
 {   
     "actionType": "Download",  
     "name": "DownloadFile",  
@@ -786,15 +788,26 @@ To do so it is required a parameter to be filled:
 
 ## Map
 
-Map action allows you to Map previous action Result to a property List of key/values.
+Map action allows you to Map previous actions Result to a property List of key/values.
 
-<h3>Example</h3>
+#### Configuration
+To do so it is required a parameter to be filled:
 
-<figure>
+* values - The mapped values will be available on the Map action result (Content)
 
-![img-box-shadow](/img/automation/mapaction.png)
-<figcaption>Map Example</figcaption>
-</figure>
+#### Template
+
+```json {3,5-8}
+{  
+   "actionType": "Map",  
+   "name": "Map",  
+   "next": "Exit",  
+   "values": {
+       "SubJobs":"{{['GetCompanies']$.Content[:1].SubJobs | ToJson}}",
+       "Tasks":"{{['GetCompanies']$.Content[:1].Tasks | ToJson}}"
+   }
+ }
+```
 
 ## AzureAdAuthentication
 
@@ -811,7 +824,7 @@ Please check the template description to know which parameters must be sent for 
 
 #### Template
 
-```json {3}
+```json {3,5-7}
 {  
    "actionType": "AzureAdAuthentication",  
    "name": "GetAzureAdToken",  
