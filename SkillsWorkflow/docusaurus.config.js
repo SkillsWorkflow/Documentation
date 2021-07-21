@@ -84,15 +84,15 @@ module.exports = {
             },
             {
               label: 'SDK',
-              href: 'docs/sdk/ui'
+              to: 'docs/sdk/ui'
             },
             {
               label: 'Integrations',
-              href: 'docs/integrations/hr-link'
+              to: 'docs/integrations/hr-link'
             },
             {
               label: 'University',
-              href: 'docs/university/Bills/invoice-authorizations'
+              to: 'docs/university/Bills/invoice-authorizations'
             }
           ],
         },
