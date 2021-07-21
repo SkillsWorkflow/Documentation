@@ -21,6 +21,7 @@ const features = [
   },
   {
     title: 'Integrations',
+    imageUrl: 'img/undraw_Image_folder_store.svg',
     description: (
       <>
         An wide variaty of integrations is available for you!
