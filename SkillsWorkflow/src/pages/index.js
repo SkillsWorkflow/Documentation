@@ -7,6 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 
+
 const features = [
   {
     title: 'Crafting',
@@ -20,6 +21,7 @@ const features = [
   },
   {
     title: 'Integrations',
+    // imageUrl: 'img/undraw_Image_folder_store.svg',
     description: (
       <>
         An wide variaty of integrations is available for you!
@@ -80,7 +82,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={styles.skills}
-              to={useBaseUrl('/')}>
+              to={useBaseUrl('docs/')}>
               <Translate>Get Started</Translate>
             </Link>
           </div>
@@ -125,7 +127,7 @@ function Home() {
                       <img className={styles.featureImage} src={useBaseUrl('img/undraw_graduation_university.svg')} alt={'University'} />
                     </div>
                   )}
-                  <h3><a href='https://documentation.skillsworkflow.com/docs/university/Bills/invoice-authorizations'><Translate>University</Translate></a></h3>
+                  <h3><a href='https://documentation.skillsworkflow.com/docs/university/Bills/bills-lesson1'><Translate>University</Translate></a></h3>
                   <p><Translate>Want to become a system expert? Explore our walkthrough
                     lessons.</Translate></p>
                 </div>
