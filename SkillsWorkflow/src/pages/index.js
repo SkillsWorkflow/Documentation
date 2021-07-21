@@ -7,7 +7,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 
-
 const features = [
   {
     title: 'Crafting',
@@ -21,7 +20,6 @@ const features = [
   },
   {
     title: 'Integrations',
-    // imageUrl: 'img/undraw_Image_folder_store.svg',
     description: (
       <>
         An wide variaty of integrations is available for you!
@@ -82,7 +80,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={styles.skills}
-              to={useBaseUrl('docs')}>
+              to={useBaseUrl('/')}>
               <Translate>Get Started</Translate>
             </Link>
           </div>
