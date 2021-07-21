@@ -37,7 +37,7 @@ module.exports = {
 
       // Optional: Algolia search parameters
       searchParameters: {
-        facetFilters: ["lang:en", "lang:pt"],
+        facetFilters: [["lang:en", "lang:pt"]],
       },
 
       //... other Algolia params
