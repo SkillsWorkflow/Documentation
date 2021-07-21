@@ -36,9 +36,9 @@ module.exports = {
       //contextualSearch: true,
 
       // Optional: Algolia search parameters
-      searchParameters: {
-        facetFilters: [["lang:en", "lang:pt"]],
-      },
+      // searchParameters: {
+      //   facetFilters: [["lang:en", "lang:pt"]],
+      // },
 
       //... other Algolia params
       //ignoreCanonicalTo: true
