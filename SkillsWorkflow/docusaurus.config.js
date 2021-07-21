@@ -23,7 +23,7 @@ module.exports = {
   themeConfig: {
     algolia: {
       apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
-      //appId: 'KB6UV635OH',
+      appId: 'KB6UV635OH',
       siteId: 'd017bb9a-2fd6-4648-8b11-d67021355c27',
       branch: 'master',
       selector: 'div#search',
