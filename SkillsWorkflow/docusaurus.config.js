@@ -15,7 +15,6 @@ module.exports = {
   tagline: 'We are here to let you shine! Let´s get everything done',
   url: 'https://documentation.skillsworkflow.com',
   baseUrl: '/',
-  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -96,12 +95,12 @@ module.exports = {
           title: 'Learn More',
           items: [
             {
-              label: 'Api Integration',
-              href: 'https://helpdesk.skillsworkflow.com',
+              label: 'Client API',
+              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
             },
             {
-              label: 'Client Api',
-              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
+              label: 'Integration API',
+              href: 'https://integration-api-test.skillsworkflow.com',
             },
             {
               label: 'Website',
