@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import Translate, {translate} from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 
 const features = [
@@ -82,7 +82,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={styles.skills}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('docs')}>
               <Translate>Get Started</Translate>
             </Link>
           </div>
@@ -91,10 +91,10 @@ function Home() {
       <section className={styles.section} style={{
         backgroundImage: "url(/img/home/skillsworkflow-homepage.jpg)",
         position: 'static',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundColor: '#fff',
-          backgroundPosition: 'center'
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundColor: '#fff',
+        backgroundPosition: 'center'
       }}></section>
       <main>
         {features && features.length > 0 && (
@@ -107,9 +107,9 @@ function Home() {
                       <img className={styles.featureImage} src={useBaseUrl('img/undraw_building_websites_crafting.svg')} alt={'Crafting'} />
                     </div>
                   )}
-                  <h3><a href='https://documentation.skillsworkflow.com/docs/'><Translate>Crafting</Translate></a></h3>
+                  <h3><a href='https://documentation.skillsworkflow.com/docs'><Translate>Crafting</Translate></a></h3>
                   <p><Translate>Unleash the creativity in you. Why not craft
-        your own workspace?</Translate></p>
+                    your own workspace?</Translate></p>
                 </div>
                 <div className={clsx('col col--4', styles.feature)}>
                   {useBaseUrl('img/undraw_Image_folder_store.svg') && (
@@ -119,7 +119,7 @@ function Home() {
                   )}
                   <h3><a href='https://documentation.skillsworkflow.com/docs/integrations/hr-link'><Translate>Integrations</Translate></a></h3>
                   <p><Translate>An wide variaty of integrations is available for you!
-        Check the available Integrations directory.</Translate></p>
+                    Check the available Integrations directory.</Translate></p>
                 </div>
                 <div className={clsx('col col--4', styles.feature)}>
                   {useBaseUrl('img/undraw_graduation_university.svg') && (
@@ -127,9 +127,9 @@ function Home() {
                       <img className={styles.featureImage} src={useBaseUrl('img/undraw_graduation_university.svg')} alt={'University'} />
                     </div>
                   )}
-                  <h3><a href='https://documentation.skillsworkflow.com/docs/university/Bills/bills-lesson1'><Translate>University</Translate></a></h3>
+                  <h3><a href='https://documentation.skillsworkflow.com/docs/university/Bills/invoice-authorizations'><Translate>University</Translate></a></h3>
                   <p><Translate>Want to become a system expert? Explore our walkthrough
-        lessons.</Translate></p>
+                    lessons.</Translate></p>
                 </div>
               </div>
             </div>

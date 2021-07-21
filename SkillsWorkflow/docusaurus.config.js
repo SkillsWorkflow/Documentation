@@ -15,6 +15,7 @@ module.exports = {
   tagline: 'We are here to let you shine! Let´s get everything done',
   url: 'https://documentation.skillsworkflow.com',
   baseUrl: '/',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -45,7 +46,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -55,7 +56,7 @@ module.exports = {
           label: "API",
           position: 'right',
           className: 'navbar-item',
-          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/',
+          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger',
         },
         {
           type: 'localeDropdown',
@@ -71,7 +72,7 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/',
+              to: 'docs',
             },
             {
               label: 'Automations',
@@ -100,11 +101,11 @@ module.exports = {
             },
             {
               label: 'Client Api',
-              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/'
+              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
             },
             {
               label: 'Website',
-              href: 'https://www.skillsworkflow.com/'
+              href: 'https://www.skillsworkflow.com'
             }
           ],
         },
@@ -125,11 +126,11 @@ module.exports = {
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/skillsworkflow/'
+              href: 'https://www.instagram.com/skillsworkflow'
             },
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/skillsworkflow/'
+              href: 'https://www.facebook.com/skillsworkflow'
             }
           ]
         }
@@ -145,13 +146,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/blog/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
