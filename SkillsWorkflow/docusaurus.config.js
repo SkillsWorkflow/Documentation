@@ -22,8 +22,8 @@ module.exports = {
   projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
-      appId: 'KB6UV635OH',
+      apiKey: '79575dae0d56516960fc0bfe8f137e39',
+      appId: '7B27BG1AFF',
       siteId: 'd017bb9a-2fd6-4648-8b11-d67021355c27',
       branch: 'master',
       selector: 'div#search',
