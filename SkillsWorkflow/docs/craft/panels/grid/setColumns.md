@@ -2,6 +2,7 @@
 id: set-columns
 title: Set Columns
 sidebar_label: Set Columns
+slug: /
 ---
 
 import Tabs from '@theme/Tabs';
