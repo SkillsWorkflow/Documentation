@@ -32,7 +32,7 @@ module.exports = {
       selector: 'div#search',
       indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
       // Optional: see doc section bellow
-      contextualSearch: true,
+      //contextualSearch: true,
 
       // Optional: Algolia search parameters
       // searchParameters: {},
