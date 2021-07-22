@@ -1,0 +1,233 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Varela+Round&display=swap');
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #0072c6;
+  --ifm-color-primary-dark: #00508b;
+  --ifm-color-primary-darker: #003963;
+  --ifm-color-primary-darkest: #00223b;
+  --ifm-color-primary-light: #0294ff;
+  --ifm-color-primary-lighter: #2aa5ff;
+  --ifm-color-primary-lightest: #52b5ff;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Varela Round';
+  --ifm-font-family-monospace: 'Open Sans';
+}
+
+.menu__list-item {
+  margin: 0 !important;
+}
+
+.menu__link--sublist::after{
+  content: '';
+  height: 13px !important;
+  width: 13px;
+}
+
+.header-home {
+  height: 60vh;
+}
+
+* {
+  font-family: 'Varela Round', sans-serif;
+}
+.menu {
+  font-size: 14px !important;
+}
+
+h1 {
+  font-size: 36px !important;
+}
+
+p {
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.token-line {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.navbar-item {
+  color: #797979;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+.home-h1{
+  font-weight: 300;
+  color: black;
+}
+
+.home-p {
+  color: rgb(170, 169, 169);
+}
+
+img[alt=small] { width: 30%;}
+
+img[alt=crafted-love]{ width: 250px;} 
+
+img[alt=img-box-shadow]{ 
+  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
+  border: 2px solid lightgrey; 
+  border-radius: 5px;
+}
+
+img[alt=img-symbol-box-shadow]{ 
+  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
+  border: 2px solid lightgrey; 
+  border-radius: 5px;
+  width: 30px;
+}
+
+img[alt=img-box-shadow-sm]{ 
+  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
+  border: 2px solid lightgrey; 
+  border-radius: 5px;
+  width: 30px;
+  width: 250px;
+}
+
+img[alt=img-with-border]{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+figure {
+  margin: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+figure p {
+  margin-bottom: 0;
+}
+
+
+
+
+h1 {
+  font-family: 'Varela Round';
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Varela Round';
+  font-size: 25px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Varela Round';
+  font-size: 20px;
+  font-weight: 400;
+  color: #9CA7B0;
+}
+
+.footer__col {
+  text-align: center !important;
+}
+
+.javascript {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.pagination-nav__link {
+  border: none;
+  flex-grow: 1;
+  padding: var(--ifm-global-spacing);
+  line-height: var(--ifm-heading-line-height);
+  transition: border-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+/* Algolia Search here*/
+html[data-theme='light'] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+html[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+
+/* Custom Table */
+
+.custom-table {
+  box-sizing: border-box;
+  border: 1px solid #e4e4eb;
+  border-radius: 5px  !important;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #e4e4eb;
+  font-size: 14px;
+}
+
+.custom-table tr {
+  background-color: transparent !important;
+  border-bottom: 1px solid #e4e4eb;
+  color: #49495f
+}
+
+.selected:hover {
+  background-color: rgb(240, 240, 240) !important;
+}
+
+.custom-table th, .custom-table td {
+  border: 0;
+  text-align: left;
+} 
+
+.custom-table tbody td code {
+  background-color: rgba(62,123,250,.06);
+  border-radius: 5px;
+  padding: 3px 5px;
+}
