@@ -21,7 +21,6 @@ module.exports = {
   customFields: {
     trailingSlash: false
   },
-  noIndex: true,
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
   projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
