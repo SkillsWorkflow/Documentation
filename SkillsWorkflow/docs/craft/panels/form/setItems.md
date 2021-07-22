@@ -4,7 +4,6 @@ title: Set Items
 sidebar_label: Set Items
 ---
 
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -17,7 +16,7 @@ A function used to save User, Document and other fields in the form.
 
 <h3>Example</h3>
 
-```json
+```js
 {
     saveOptions: {
         type: "document",
@@ -38,7 +37,8 @@ A function used to save User, Document and other fields in the form.
 
 - If is specified as parameter instead of an object. The value passed will set the 'type'. 
 
-```json
+
+```js
 {
     saveOptions: "document",
     dataField: "AgreedDateUtc",
@@ -69,7 +69,7 @@ Accepted Values: 'document' | 'userfield' | 'other'
 }>
 <TabItem value="document">
 
-```json
+```js
 {
     type: "document"
 }
@@ -78,7 +78,7 @@ Accepted Values: 'document' | 'userfield' | 'other'
 </TabItem>
 <TabItem value="userfield">
 
-```json
+```js
 {
     type: "userfield"
 }
@@ -87,7 +87,7 @@ Accepted Values: 'document' | 'userfield' | 'other'
 </TabItem>
 <TabItem value="others">
 
-```json
+```js
 {
     type: "others"
 }
@@ -105,7 +105,7 @@ Accepted Values: 'document' | 'userfield' | 'other'
 
 To assign the name you want to save the field.
 
-```json
+```js
 {
    saveOptions: {
        type: "userField",
@@ -119,7 +119,7 @@ To assign the name you want to save the field.
 
 If no value is passed, it will use the dataField value.
 
-```json
+```js
 {
    saveOptions: {
        type: "userField"
@@ -137,7 +137,7 @@ If no value is passed, it will use the dataField value.
 To pass the User Data Type Id, it takes a value of type number.
 
 
-```json
+```js
 {
    saveOptions: {
        type: "userField",
@@ -155,7 +155,7 @@ Default value: false.
 
 A parameter of type boolean to allow multisection.
 
-```json
+```js
 {
    saveOptions: {
        type: "userField",
@@ -172,7 +172,7 @@ A parameter of type boolean to allow multisection.
 
 To set the userfield lookup field name.
 
-```json
+```js
 {
    saveOptions: {
        type: "userField",
