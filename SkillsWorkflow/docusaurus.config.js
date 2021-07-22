@@ -24,26 +24,6 @@ module.exports = {
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
   projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
-    algolia: {
-      apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
-      appId: 'KB6UV635OH',
-      siteId: 'd017bb9a-2fd6-4648-8b11-d67021355c27',
-      branch: 'master',
-      selector: 'div#search',
-      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
-
-      // Optional: see doc section bellow
-      //contextualSearch: true,
-
-      // Optional: Algolia search parameters
-      // searchParameters: {
-      //   facetFilters: [["lang:en", "lang:pt"]],
-      // },
-
-      //... other Algolia params
-      //ignoreCanonicalTo: true
-
-    },
     hideableSidebar: true,
     navbar: {
       title: '',
