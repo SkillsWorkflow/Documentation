@@ -18,9 +18,6 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  customFields: {
-    trailingSlash: false
-  },
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
   projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
@@ -148,9 +145,9 @@ module.exports = {
           editUrl:
             'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/blog',
         },
-        // theme: {
-        //   customCss: require.resolve('./src/css/custom.css'),
-        // }
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        }
       }
     ]
   ]
