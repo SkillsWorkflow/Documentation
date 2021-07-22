@@ -29,10 +29,7 @@ module.exports = {
       appId: 'KB6UV635OH',
       siteId: 'd017bb9a-2fd6-4648-8b11-d67021355c27',
       branch: 'master',
-      selector: 'div#search',
-      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
-      template: "hierarchical",
-      contextualSearch: false
+      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all'
     },
     hideableSidebar: true,
     navbar: {
@@ -151,10 +148,10 @@ module.exports = {
           editUrl:
             'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/blog',
         },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+        // theme: {
+        //   customCss: require.resolve('./src/css/custom.css'),
+        // }
+      }
+    ]
+  ]
 };
