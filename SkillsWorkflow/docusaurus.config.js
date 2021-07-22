@@ -31,7 +31,8 @@ module.exports = {
       branch: 'master',
       selector: 'div#search',
       indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
-      template: "hierarchical"
+      template: "hierarchical",
+      contextualSearch: true
     },
     hideableSidebar: true,
     navbar: {
