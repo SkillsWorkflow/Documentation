@@ -66,6 +66,3 @@ To create  workspace, navigate to the **Workspaces** in the Configuration.
         </tr>
     </tbody>
 </table>
-
-
-
