@@ -26,7 +26,7 @@
 }
 
 .menu__link--sublist::after{
-  content: '';
+  /*content: '';*/
   height: 13px !important;
   width: 13px;
 }
@@ -40,11 +40,6 @@
 }
 .menu {
   font-size: 14px !important;
-}
-
-p {
-  font-size: 14px !important;
-  font-family: 'Open Sans', sans-serif !important;
 }
 
 .token-line {
@@ -112,6 +107,11 @@ figure {
 
 figure p {
   margin-bottom: 0;
+}
+
+p {
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 h1 {
