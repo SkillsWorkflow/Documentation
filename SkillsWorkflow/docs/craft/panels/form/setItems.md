@@ -9,12 +9,12 @@ import TabItem from '@theme/TabItem';
 
 ## saveOptions
 
-<h3>Description</h3>
+###Description
 
 A function used to save User, Document and other fields in the form.
 
 
-<h3>Example</h3>
+###Example
 
 ```js
 {
@@ -54,7 +54,7 @@ A function used to save User, Document and other fields in the form.
 }
 ```
 
-<h3>type</h3>
+###type
 
 Accepted Values: 'document' | 'userfield' | 'other'
 
@@ -100,7 +100,7 @@ Accepted Values: 'document' | 'userfield' | 'other'
  If the type is set as 'others', no further parameter needs to be passed into the saveOptions.
 :::
 
-<h3>fieldName</h3>
+###fieldName
 
 
 To assign the name you want to save the field.
@@ -130,9 +130,9 @@ If no value is passed, it will use the dataField value.
 ```
 
 
-<h2>Properties only valid if the type propertie is set to 'userfield'</h2>
+## Properties only valid if the type propertie is set to 'userfield'
 
-<h3>dataType</h3>
+###dataType
 
 To pass the User Data Type Id, it takes a value of type number.
 
@@ -149,7 +149,7 @@ To pass the User Data Type Id, it takes a value of type number.
 ```
 
 
-<h3>isMultipleSelection</h3>
+###isMultipleSelection
 
 Default value: false.
 
@@ -168,7 +168,7 @@ A parameter of type boolean to allow multisection.
 ```
 
 
-<h3>lookupFieldName</h3>
+###lookupFieldName
 
 To set the userfield lookup field name.
 

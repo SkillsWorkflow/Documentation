@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## Lesson 1 - How to create a Project
 
-<h3>A Project is an umbrella that groups a bundle of related jobs inside.</h3>
+###A Project is an umbrella that groups a bundle of related jobs inside.
 
 1. To create a new Project, navigate to the "Clients" module.
 
@@ -82,7 +82,7 @@ sidebar_position: 1
 </figure>
 
 
-<h3> At the top of the page you will be able to find various tabs with information about this Project</h3>
+### At the top of the page you will be able to find various tabs with information about this Project
 
 
 - **Feed** - Activity and comments related with the Project.

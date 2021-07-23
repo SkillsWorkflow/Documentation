@@ -6,11 +6,11 @@ sidebar_label: Holidays
 
 ## setCustomFields
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Retrives a custom table
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1   declare function get(companyId: string, startDate?: Date, 
@@ -52,7 +52,7 @@ This method can be used inside any workspace. Retrives a custom table
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.Holidays.get("SkillsWorkflow");

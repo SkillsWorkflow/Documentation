@@ -7,13 +7,13 @@ sidebar_label: Sage
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<h3>Description</h3>
+###Description
 
 This is the Documentation of how the Integration between the Sage and `Skills Workflow`. This documentation is for Skills Workflow located in the Cloud.
 
 ---
 
-<h3>Data Exchange Technology</h3>
+###Data Exchange Technology
 
 Based on Views.
 
@@ -41,7 +41,7 @@ The scope of data exchanged on this integration includes:
 
 ---
 
-<h3>Data Exchange (To Skills Workflow)</h3>
+###Data Exchange (To Skills Workflow)
 
 This section describes the Data exchanged between systems. Please see the data exchanged.
 
@@ -693,6 +693,6 @@ The fields that will be populated into SAGE:
 
 </Tabs>
 
-<h3>Conclusion</h3>
+###Conclusion
 
 The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.

@@ -13,18 +13,18 @@ All settings directly regarding workspaces configuration properties (advanced)
 
 ## contextParameter
 
-<h3>Description</h3>
+###Description
 
 All the workspaces configuration functions have context as last parameter. Context is of type function and has 3 properties.
 Set, Get and Subscribe. It allows you set a context variable in workspace and access that variable in another workspace under the same routing scope.
 
-<h3>Typical function</h3>
+###Typical function
 
 ```js {3}
 1 function onPointClick(e, context){ }
 ```
 
-<h3>Set</h3>
+###Set
 
 ```js {3}
 1 context.set('name', value);
@@ -58,7 +58,7 @@ Set, Get and Subscribe. It allows you set a context variable in workspace and ac
 </table>
 
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 
 ![img](/img/responses/context_set_usage.png)
@@ -68,7 +68,7 @@ Set, Get and Subscribe. It allows you set a context variable in workspace and ac
 Variable ExecutorName set on workspace A
 :::
 
-<h3>Get</h3>
+###Get
 
 ```js {3}
 1 context.get('name');
@@ -95,7 +95,7 @@ Variable ExecutorName set on workspace A
 </table>
 
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 
 ![img](/img/responses/context_get_usage.png)
@@ -105,7 +105,7 @@ Variable ExecutorName set on workspace A
 Get used on workspace B to access variable ExecutorName previously set on Workspace A
 :::
 
-<h3>Subscribe</h3>
+###Subscribe
 
 Subscribe context's variable you want to listen
 
@@ -143,7 +143,7 @@ Subscribe context's variable you want to listen
 </table>
 
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 
 ![img](/img/responses/context_subscribe_usage.png)

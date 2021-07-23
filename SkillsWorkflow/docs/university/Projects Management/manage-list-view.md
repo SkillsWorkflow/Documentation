@@ -5,7 +5,7 @@ sidebar_label: Lesson 5 - How to manage your List View
 sidebar_position: 5
 ---
 
-<h3>In order for you to find what you are looking for in Skills Workflow, there is a menu on your left organized with different modules.</h3>
+###In order for you to find what you are looking for in Skills Workflow, there is a menu on your left organized with different modules.
 
 1. To navigate to each module just pass your mouse on each icon and a legend will appear identifying the respective module.
 
@@ -17,7 +17,7 @@ sidebar_position: 5
 <figcaption></figcaption>
 </figure>
 
-<h3>Whenever you are looking for a specific Job or simply want to search for a job who is grouped in one category, you can always use the sub-lists available.</h3>
+###Whenever you are looking for a specific Job or simply want to search for a job who is grouped in one category, you can always use the sub-lists available.
 
 1. In the Jobs module, there are several sub-lists that shows the different jobs organized by status.
 
@@ -46,7 +46,7 @@ sidebar_position: 5
 </figure>
 
 
-<h3>Once you select the sub-list, you can always customize your own list view in order to organize the fields according to the relevance.</h3>
+###Once you select the sub-list, you can always customize your own list view in order to organize the fields according to the relevance.
 
 You need to expand your view in order to be able to see all the available fields. For that you just need to click on the symbol that says "Expand".
 
@@ -57,7 +57,7 @@ You need to expand your view in order to be able to see all the available fields
 </figure>
 
 
-<h3>To customize your own view, you can drag and drop fields and organize the information according to your needs.</h3>
+###To customize your own view, you can drag and drop fields and organize the information according to your needs.
 
 1. You can also remove or add more fields through the option "Column Chooser". For that you just need to click on the option ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson5-symbol-1.png).
 
@@ -70,7 +70,7 @@ You need to expand your view in order to be able to see all the available fields
 </figure>
 
 
-<h3>You can also filter the available fields in order to see a specific stage, client, company, etc.</h3>
+###You can also filter the available fields in order to see a specific stage, client, company, etc.
 
 1. For that you just need to click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson5-symbol-2.png) symbol.
 

@@ -7,11 +7,11 @@ sidebar_label: Workspace
 
 ## refresh
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Refresh a workspace
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1   declare function refresh(): void;
@@ -19,7 +19,7 @@ This method can be used inside any workspace. Refresh a workspace
 
 
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Shell.Workspace.refresh();
@@ -28,11 +28,11 @@ This method can be used inside any workspace. Refresh a workspace
 
 ## setFilter
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Create a new assignment
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1  declare function setFilter(filter: string, value: any, 
@@ -74,7 +74,7 @@ This method can be used inside any workspace. Create a new assignment
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Shell.Workspace.setFilter(filter, 20);
@@ -82,11 +82,11 @@ This method can be used inside any workspace. Create a new assignment
 
 ## setFilters
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Set multiple filters
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1  declare function setFilters(filtersWithValues: DashboardFilter[], 
@@ -121,17 +121,17 @@ This method can be used inside any workspace. Set multiple filters
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Shell.Workspace.setFilters([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
 ```
 ## setPanels
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Set workspace's panels
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1  declare function setPanels(items: IUpdatedLayoutItems, 
@@ -166,7 +166,7 @@ This method can be used inside any workspace. Set workspace's panels
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Shell.Workspace.setPanels("EF6C7CB6-9798-4A44-B33D-284B38F54931", true);

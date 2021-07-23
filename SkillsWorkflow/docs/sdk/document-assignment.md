@@ -6,11 +6,11 @@ sidebar_label: Assignments
 
 ## create
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Create a new assignment
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1   declare function create(newUserId: string, documentId: string, 
@@ -74,7 +74,7 @@ This method can be used inside any workspace. Create a new assignment
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.Assignments.create("userId", "documentId", 
@@ -83,11 +83,11 @@ This method can be used inside any workspace. Create a new assignment
 
 ## update
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Update an assignment
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1   declare function update(assignmentId: string, newValuesModel: any = {}, 
@@ -143,7 +143,7 @@ This method can be used inside any workspace. Update an assignment
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.Assignments.update("AssignmentId", {}, 
@@ -152,11 +152,11 @@ This method can be used inside any workspace. Update an assignment
 
 ## delete
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Delete an assignment
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1   declare function delete(assignmentId: string, callback: any = () => {}
@@ -190,7 +190,7 @@ This method can be used inside any workspace. Delete an assignment
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.Assignments.delete("AssignmentId");

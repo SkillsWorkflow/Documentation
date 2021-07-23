@@ -7,11 +7,11 @@ sidebar_label: Custom Tables
 
 ## setCustomFields
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Retrives a custom table
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1   declare function get(customTableName: string, 
@@ -46,7 +46,7 @@ This method can be used inside any workspace. Retrives a custom table
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.CustomTable.get("Table");

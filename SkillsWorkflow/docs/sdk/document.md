@@ -17,11 +17,11 @@ SW.Document.{methodName}
 
 ## setCustomFields
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Used to set custom user fields
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1   declare function setCustomFields(document: string, documentIds: string[], 
@@ -63,7 +63,7 @@ This method can be used inside any workspace. Used to set custom user fields
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >   SW.Document.setCustomFields("Employee","b983e9b5-b2b8-485f-8ff8-794463771bcc", 
@@ -72,10 +72,10 @@ This method can be used inside any workspace. Used to set custom user fields
 
 ## getCustomFields
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Return custom user fields
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1   declare function getCustomFields(documentIds: string[], userFieldName: string, 
@@ -117,7 +117,7 @@ This method can be used inside any workspace. Return custom user fields
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.getCustomFields("b983e9b5-b2b8-485f-8ff8-794463771bcc", "Default", 
@@ -125,10 +125,10 @@ This method can be used inside any workspace. Return custom user fields
 ```
 ## create
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Create a new document
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1   declare function create(document: string, 
@@ -163,7 +163,7 @@ This method can be used inside any workspace. Create a new document
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.create("company", data);
@@ -171,10 +171,10 @@ This method can be used inside any workspace. Create a new document
 
 ## update
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Update a document
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1   declare function update(document: string, documentId: string, 
@@ -238,7 +238,7 @@ This method can be used inside any workspace. Update a document
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.update("employee", "b983e9b5-b2b8-485f-8ff8-794463771bcc", 
@@ -247,10 +247,10 @@ This method can be used inside any workspace. Update a document
 
 ## GetLookup
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Get document lookup
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1   declare function getLookup(document: string, 
@@ -285,7 +285,7 @@ This method can be used inside any workspace. Get document lookup
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Document.create("company", options);

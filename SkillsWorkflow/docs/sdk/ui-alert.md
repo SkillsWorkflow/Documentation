@@ -6,11 +6,11 @@ sidebar_label: Alert
 
 ## info
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Shows a Info toastr and also in the console
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1 function info(message: string, type: SystemNames = null,
@@ -65,12 +65,12 @@ This method can be used inside any workspace. Shows a Info toastr and also in th
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.UI.alert.info("Toast info");
 ```
-<h3>Response</h3>
+###Response
 
 ![img](/img/responses/alertInfo_response.png)
 
@@ -78,10 +78,10 @@ This method can be used inside any workspace. Shows a Info toastr and also in th
 
 ## warning
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Shows a Warning toastr and also in the console
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1 function warning(message: string, type: SystemNames = null, 
@@ -144,12 +144,12 @@ This method can be used inside any workspace. Shows a Warning toastr and also in
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.UI.alert.warning("User fields is required");
 ```
-<h3>Response</h3>
+###Response
 
 ![img](/img/responses/alertWarning_response.png)
 
@@ -157,10 +157,10 @@ This method can be used inside any workspace. Shows a Warning toastr and also in
 
 ## success
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Shows a Success toastr and also in the console
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1 function success(message: string, type: SystemNames = null,
@@ -216,12 +216,12 @@ This method can be used inside any workspace. Shows a Success toastr and also in
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.UI.alert.success("Toast success");
 ```
-<h3>Response</h3>
+###Response
 
 ![img](/img/responses/alertSuccess_response.png)
 
@@ -229,10 +229,10 @@ This method can be used inside any workspace. Shows a Success toastr and also in
 
 ## error
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Shows a Error toastr and also in the console
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1 function error(message: string, type: SystemNames = null, 
@@ -288,12 +288,12 @@ This method can be used inside any workspace. Shows a Error toastr and also in t
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.UI.alert.error("Toast error");
 ```
-<h3>Response</h3>
+###Response
 
 ![img](/img/responses/alertError_response.png)
 
@@ -301,10 +301,10 @@ This method can be used inside any workspace. Shows a Error toastr and also in t
 
 ## clear
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Clear specific toastr
-<h3>Method(s)</h3>
+###Method(s)
 
 ```js {3}
 1 function clear(message: string, type: SystemNames = null, 
@@ -359,7 +359,7 @@ This method can be used inside any workspace. Clear specific toastr
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.UI.alert.clear("Toast clear"),

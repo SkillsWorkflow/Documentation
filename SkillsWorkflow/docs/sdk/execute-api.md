@@ -6,11 +6,11 @@ sidebar_label: Execute API
 
 ## executeAPI
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. To call the API service and execute a Restful operation.
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 public executeAPI(
@@ -116,13 +116,13 @@ public executeAPI(
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.executeAPI('GET', 'documentBriefs', {documentId: 'd8615b0f-4b52-4360-8f61-62c62bcb5463'});
 ```
 
-<h3>Example</h3>
+###Example
 
 <figure>
 

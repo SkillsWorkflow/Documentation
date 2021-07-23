@@ -6,11 +6,11 @@ sidebar_label: Panel
 
 ## refresh
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Refresh the panel
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1   declare function refresh(senderId: string): void;
@@ -37,7 +37,7 @@ This method can be used inside any workspace. Refresh the panel
 </table>
 
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Shell.Panel.refresh('BAF13A4B-B0EE-4F64-B9F7-0543778CE383');
@@ -46,11 +46,11 @@ This method can be used inside any workspace. Refresh the panel
 
 ## refreshDataSource
 
-<h3>Description</h3>
+###Description
 
 This method can be used inside any workspace. Refresh the datasource
 
-<h3>Method(s)</h3>
+###Method(s)
 
 ```javascript
 1  declare function refreshDataSource(filters: Array<{ name: string; value: string }>, 
@@ -100,7 +100,7 @@ This method can be used inside any workspace. Refresh the datasource
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+###Basic Usage
 
 ```javascript
 >    SW.Shell.Panel.refreshDataSource([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
