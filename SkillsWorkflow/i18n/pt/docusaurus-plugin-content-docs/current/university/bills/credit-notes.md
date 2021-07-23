@@ -1,6 +1,6 @@
 ---
-id:  bills-lesson2
-title: "Notas de credito"
+id:  credit-notes
+title: Notas de credito
 sidebar_label: Lição 2 - Como gerar notas de credito a clientes
 ---
 

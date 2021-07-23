@@ -1,5 +1,5 @@
 ---
-id:  estimates-lesson2
+id:  invoice-estimate
 title: Estimates
 sidebar_label: Lesson 2 - How to invoice an Estimate
 ---
