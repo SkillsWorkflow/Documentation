@@ -22,20 +22,20 @@ module.exports = {
   projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: '79575dae0d56516960fc0bfe8f137e39',
-      appId: '7B27BG1AFF',
-      indexName: 'netlify_b6757571-cd82-43be-84b8-985bd74f9e66_master_all',
+      appId: '3P5IUMI5WG',
+      apiKey: '67fb60c2ca588e1e6316e4499ee0e6ba',
       siteId: 'b6757571-cd82-43be-84b8-985bd74f9e66',
-      branch: 'master',
+      branch: 'preview',
       selector: 'div#search',
+
       // Optional: see doc section bellow
-      contextualSearch: true,
+      //contextualSearch: true,
 
       // Optional: Algolia search parameters
       // searchParameters: {},
 
       //... other Algolia params
-      ignoreCanonicalTo: false
+      //ignoreCanonicalTo: false
     },
     hideableSidebar: true,
     navbar: {
