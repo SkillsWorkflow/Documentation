@@ -10,7 +10,7 @@ Rate Cards are prices/costs for typology groups and/or users.
 
 You can set multiple Rate Cards and Rate Cards columns in the same table.
 
-###Rate Cards can be managed in two ways:
+### Rate Cards can be managed in two ways:
 
 <h4>Sales values</h4>
 

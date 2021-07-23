@@ -7,13 +7,13 @@ sidebar_label: Primavera
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-###Description
+### Description
 
 This is the Documentation of how the Integration between the ERP Primavera and Skills Workflow work. This documentation is for Skills Workflow located in the Cloud.
 
 ---
 
-###Data Exchange Technology
+### Data Exchange Technology
 
 Based on Views.
 
@@ -22,7 +22,7 @@ The ERP will be installed locally on a server.
 The scope of data exchanged on this integration includes:
 
 
-###From Primavera to Skills Workflow
+### From Primavera to Skills Workflow
 
 Master data
 
@@ -34,7 +34,7 @@ Master data
 - Articles
 - Reversal Reasons
 
-###From Skills Workflow to Primavera
+### From Skills Workflow to Primavera
 
 Financial Documents
 
@@ -44,7 +44,7 @@ Financial Documents
 
 ---
 
-###Data Exchange (To Skills Workflow)
+### Data Exchange (To Skills Workflow)
 
 This section describes the Data exchanged between systems. Please see the data exchanged.
 The data is exchanged with Views available in the system.
@@ -54,7 +54,7 @@ Financial Documents
 - Invoices/Bills
 - Purchase Orders
 
-###Data Exchange (inbound)
+### Data Exchange (inbound)
 This section describes the Data exchanged between systems. Please see the data exchanged.
 The data is exchanged with Views available in the system.
 
@@ -274,7 +274,7 @@ The fields that will be populated into Skills Workflow:
 </TabItem>
 </Tabs>
 
-###Data Exchange (To Skills Workflow)
+### Data Exchange (To Skills Workflow)
 
 This section describes the Data exchanged between systems. Please see the data exchanged.
 
@@ -675,7 +675,7 @@ The fields that will be populated into Primavera:
 </Tabs>
 ---
 
-###Conclusion
+### Conclusion
 
 The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies.
 The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.

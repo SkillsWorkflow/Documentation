@@ -6,7 +6,7 @@ sidebar_label: Lição 2 - Como criar Despesas
 
 ## Lição 2 - Como criar Despesas 
 
-###As despesas podem ser criadas de duas maneiras:
+### As despesas podem ser criadas de duas maneiras:
 
 - Diretamente num Projeto
 - Em uma Folha de Despesas

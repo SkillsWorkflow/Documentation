@@ -10,11 +10,11 @@ A sub namespace of UI, exclusive for grid properties
 
 ## expandCollapseRows
 
-###Description
+### Description
 
 This method can be used inside any workspace. To expand or collapse specified Grid rows.
 
-###Method(s)
+### Method(s)
 
 ```javascript
 1 function expandCollapseRows(dataGrid: dxDataGrid, params?: 
@@ -48,22 +48,22 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.UI.grid.expandCollapseRow("dataGrid");
 ```
-###Response
+### Response
 
 ---
 
 ## calculatePercentageSummary
 
-###Description
+### Description
 
 This method can be used inside any workspace. To expand or collapse specified Grid rows.
 
-###Method(s)
+### Method(s)
 
 ```js {3}
 1 function calculatePercentageSummary(options: any, dividend: number[], 
@@ -104,13 +104,13 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.UI.grid.calculatePercentageSummary(options: any, dividend: number[], 
         diviser[]: number[]): void;
 ```
-###Response
+### Response
 
 <!-- <img alt="Show Bulk" src="/img/responses/showBulk_response.png"> -->
 ![img-with-border](/img/responses/showBulk_response.png)
@@ -119,10 +119,10 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 ## addToolbarButtons
 
-###Description
+### Description
 
 This method can be used inside any workspace. To expand or collapse specified Grid rows.
-###Method(s)
+### Method(s)
 
 ```js {3}
 1 function addToolbarButtons(toolbarEvent: any, buttonsList: Button[]): void;
@@ -155,22 +155,22 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.UI.grid.addToolbarButtons(toolbarEvent, buttonsList);
 ```
-###Response
+### Response
 
 ---
 
 ## importExcel
 
-###Description
+### Description
 
 This method can be used inside any workspace. To expand or collapse specified Grid rows.
 
-###Method(s)
+### Method(s)
 
 ```js {3}
 1 function importExcel(fileUpload: any, grid: DxDataGridComponent): void;
@@ -203,12 +203,12 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.UI.grid.importExcel(file, grid);
 ```
-###Response
+### Response
 
 ---
 
@@ -217,11 +217,11 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 
 ## delete
 
-###Description
+### Description
 
 This method can be used inside any workspace. To expand or collapse specified Grid rows.
 
-###Method(s)
+### Method(s)
 
 ```js {3}
 1 function delete(documentName: string, dataGrid: dxDataGrid, params?: 
@@ -262,9 +262,9 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.UI.grid.delete("company", dataGrid);
 ```
-###Response
+### Response

@@ -4,13 +4,13 @@ title: 'ZiFlow'
 sidebar_label: ZiFlow
 ---
 
-###Description
+### Description
 
 This is the Documentation of how the Integration between the ZiFlow and `Skills Workflow`. This documentation is for Skills Workflow located in the Cloud.
 
 ---
 
-###Data Exchange Technology
+### Data Exchange Technology
 
 On Skills Workflow only the employees from one company will be received based on the Company's code.
 An additional application must be installed locally in order to allow the information exchange.
@@ -18,7 +18,7 @@ The scope of data exchanged on this integration is the User's Data.
 
 ---
 
-###Data Exchange (To Skills Workflow)
+### Data Exchange (To Skills Workflow)
 
 This section describes the Data exchanged between systems. Please see the data exchanged.
 The data is exchanged with Views available in the system.
@@ -61,6 +61,6 @@ External ID is populated with the user e-mail only in creation.
 
 ---
 
-###Conclusion
+### Conclusion
 
 The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.

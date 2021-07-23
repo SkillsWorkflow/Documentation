@@ -7,7 +7,7 @@ sidebar_position: 6
 
 From the client perspective, you can now create and control your own requests using Skills Workflow.
 
-###After collecting your credentials and logging in, the first step is to create your request.
+### After collecting your credentials and logging in, the first step is to create your request.
 
 1. For that you just need to access the Project you're involved with, create a new Job.
 
@@ -35,7 +35,7 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-###After completing all the details, make sure you submit the post in order to create the Job.
+### After completing all the details, make sure you submit the post in order to create the Job.
 
 - Once the Job is created, it will get a number that can be used as a reference.
 
@@ -65,7 +65,7 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-###Throughout the process, you can always check the stage of your requests by clicking on the Job sub-list "Mine".
+### Throughout the process, you can always check the stage of your requests by clicking on the Job sub-list "Mine".
 
 1. By clicking on this sub-list you can check in which stage the Job is and also access the details of the Job, such as new posts, comments, etc.
 

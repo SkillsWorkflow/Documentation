@@ -7,7 +7,7 @@ sidebar_label: Lição 3 - Aprovar Despesas
 ## Lição 3 - Aprovar Despesas
 
 
-###Despesas podem ser aprovadas de duas maneiras:
+### Despesas podem ser aprovadas de duas maneiras:
 
 - Pelo responsavel do Projecto
 - Pelo responsavel do utilizador

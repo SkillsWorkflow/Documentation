@@ -125,7 +125,7 @@ In order to notify someone on your team about a new post or Job related topics, 
 <figcaption></figcaption>
 </figure>
 
-###At the top of the page you will be able to find various tabs with information about this Job.
+### At the top of the page you will be able to find various tabs with information about this Job.
 
 
 - **Feed** - Activity and comments related with the Project.

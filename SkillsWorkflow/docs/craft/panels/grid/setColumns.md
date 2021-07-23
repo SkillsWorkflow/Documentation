@@ -8,7 +8,7 @@ slug: /
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-###Description
+### Description
 A function used to set grid's columns in a workspace. 
 
 By default, a column is created for each field of a data source object, but in most cases, it is redundant. To specify a set of columns to be created in a grid, assign an array specifying these columns to the columns property.
@@ -20,7 +20,7 @@ Each grid column is represented in this array by an object containing column set
 
 Column properties define the behavior and appearance of a grid column.
 
-###Example
+### Example
 
 ```json
 {
@@ -109,7 +109,7 @@ Formats the cell before it is displayed.
 
 There are some standard formats available. By specifing its type the corresponding format will be displayed.
 
-###mapping
+### mapping
 
 If the data source does is not mapping to the defaults fields name, it can be mapped by using the mapping property:
 ```json
@@ -124,7 +124,7 @@ If the data source does is not mapping to the defaults fields name, it can be ma
     }
 }
 ```
-###type
+### type
 Accepted Values: 'undefined' | 'image' | 'link' 
 
 To setup the Image type, it is necessary that data source includes the entity:
@@ -151,7 +151,7 @@ To setup the Image type, it is necessary that data source includes the entity:
     }
 }
 ```
-### size
+###  size
 Accepted Values: 'small' | 'medium' | 'large' 
 
 To define the size of the image it should be set the size property.
@@ -165,7 +165,7 @@ To define the size of the image it should be set the size property.
 }
 ```
 
-###properties
+### properties
 
 Properties withing format property customize the behavior and appearance of a default display.
 

@@ -6,11 +6,11 @@ sidebar_label: Buttons
 
 ## addSaveToSubHeader
 
-###Description
+### Description
 
 This method can be used inside any workspace. Generates a save button in the subheader
 
-###Method(s)
+### Method(s)
 
 ```javascript
 1   function addSaveToSubHeader(entity: string, component: any, 
@@ -66,7 +66,7 @@ This method can be used inside any workspace. Generates a save button in the sub
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 > SW.addSaveButtonToSubHeader("commercialclient", e.component, null, 
@@ -78,7 +78,7 @@ This method can be used inside any workspace. Generates a save button in the sub
     }, true);
 
 ```
-###Response
+### Response
 
 ![img](/img/responses/addSaveButtonToSubHeader_response.png)
 
@@ -86,11 +86,11 @@ This method can be used inside any workspace. Generates a save button in the sub
 
 ## addCreateToSubHeader
 
-###Description
+### Description
 
 This method can be used inside any workspace. Generates a create button in the subheader
 
-###Method(s)
+### Method(s)
 
 ```javascript
 1   function addCreateToSubHeader(entity: string, formComponent: any, 
@@ -176,7 +176,7 @@ This method can be used inside any workspace. Generates a create button in the s
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >   SW.addCreateToSubHeader("project", e.component, SW.getComponent("description"), 
@@ -187,7 +187,7 @@ This method can be used inside any workspace. Generates a create button in the s
             return postModel;
         }
 ```
-###Response
+### Response
 
 ![img](/img/responses/addCreateButtonToSubHeader_response.png)
 
@@ -195,11 +195,11 @@ This method can be used inside any workspace. Generates a create button in the s
 
 ## addToSubHeader
 
-###Description
+### Description
 
 This method can be used inside any workspace. Creates an button in the subheader
 
-###Method(s)
+### Method(s)
 
 ```javascript
 1   function addToSubHeader(component: any, buttons: SubHeaderButton[])
@@ -232,7 +232,7 @@ This method can be used inside any workspace. Creates an button in the subheader
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.UI.buttons.addToSubHeader(e.component, buttons);
@@ -244,6 +244,6 @@ Buttons have the following structure
 :::
 ![img](/img/responses/addButtonsStructure.png)
 
-###Response
+### Response
 
 ![img](/img/responses/addToSubHeaderButtons_response.png)

@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## Lesson 2 - How to create Expenses 
 
-###Expenses can be created in two ways:
+### Expenses can be created in two ways:
 
 - Directly on a Project
 - On an Expense Sheet

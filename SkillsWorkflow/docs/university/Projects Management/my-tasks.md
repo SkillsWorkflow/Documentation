@@ -7,7 +7,7 @@ sidebar_position: 8
 
 ## Lesson 8 - My Tasks
 
-###In Skills Workflow you can create tasks for yourself (if configured at your company).
+### In Skills Workflow you can create tasks for yourself (if configured at your company).
 
 - Tasks are regular jobs that behave a little bit differently throughout the system.
 

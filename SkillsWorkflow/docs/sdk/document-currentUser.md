@@ -6,11 +6,11 @@ sidebar_label: Current User
 
 ## getCompanies
 
-###Description
+### Description
 
 This method can be used inside any workspace. Retrives a list of Companies
 
-###Method(s)
+### Method(s)
 
 ```js {3}
 1   declare function getCompanies(params: {name?:string, skip: number,
@@ -52,18 +52,18 @@ This method can be used inside any workspace. Retrives a list of Companies
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.Document.CurrentUser.getCompanies("Skillsworkflow", 0, 20);
 ```
 ## getClients
 
-###Description
+### Description
 
 This method can be used inside any workspace. Retrives a list of Clients
 
-###Method(s)
+### Method(s)
 
 ```js {3}
 1   declare function getClients(params: {name?:string, skip: number,
@@ -105,18 +105,18 @@ This method can be used inside any workspace. Retrives a list of Clients
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.Document.CurrentUser.getClients("Skillsworkflow", 0, 20);
 ```
 ## getDivisons
 
-###Description
+### Description
 
 This method can be used inside any workspace. Retrives a list of Divisions
 
-###Method(s)
+### Method(s)
 
 ```js {3}
 1   declare function getDivisions(params: {name?:string, skip: number,
@@ -158,7 +158,7 @@ This method can be used inside any workspace. Retrives a list of Divisions
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.Document.CurrentUser.getDivisions("Consulting", 0, 20);

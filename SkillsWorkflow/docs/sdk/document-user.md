@@ -20,11 +20,11 @@ because you're already in a User document
 
 ## getImages
 
-###Description
+### Description
 
 This method can be used inside any workspace. To return an Estimate's images
 
-###Method(s)
+### Method(s)
 
 ```javascript
 1   declare function getImages(ids: string[]): string[];
@@ -50,7 +50,7 @@ This method can be used inside any workspace. To return an Estimate's images
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.Document.Estimates.getImages(["f6671567-67b2-430c-bf04-dc7a41e99395"]);

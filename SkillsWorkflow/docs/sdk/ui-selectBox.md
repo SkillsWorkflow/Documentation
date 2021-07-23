@@ -6,11 +6,11 @@ sidebar_label: SelectBox
 
 ## setListWidth
 
-###Description
+### Description
 
 This method can be used inside any workspace. Set SelectBox's list width according to the largest item passed in element's datasource
 
-###Method(s)
+### Method(s)
 
 ```js {3}
 1 function setListWidth(e: any): void;
@@ -36,21 +36,21 @@ This method can be used inside any workspace. Set SelectBox's list width accordi
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.UI.selectBox.setListWidth(selectBox);
 ```
-###Response
+### Response
 
 ---
 
 ## getLookupByEndpoint
 
-###Description
+### Description
 
 This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
-###Method(s)
+### Method(s)
 
 ```js {3}
 1 function getLookupByEndpoint(options: any, endpoint: string): Promise<any>;
@@ -83,9 +83,9 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
     </tbody>
 </table>
 
-###Basic Usage
+### Basic Usage
 
 ```javascript
 >    SW.UI.selectBox.getLookupByEndpoint("options", "companies/all");
 ```
-###Response
+### Response

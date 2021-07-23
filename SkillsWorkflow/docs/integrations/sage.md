@@ -7,13 +7,13 @@ sidebar_label: Sage
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-###Description
+### Description
 
 This is the Documentation of how the Integration between the Sage and `Skills Workflow`. This documentation is for Skills Workflow located in the Cloud.
 
 ---
 
-###Data Exchange Technology
+### Data Exchange Technology
 
 Based on Views.
 
