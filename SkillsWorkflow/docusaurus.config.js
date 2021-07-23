@@ -26,8 +26,7 @@ module.exports = {
       appId: 'KB6UV635OH',
       siteId: 'd017bb9a-2fd6-4648-8b11-d67021355c27',
       branch: 'master',
-      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
-      selector: 'div#search'
+      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all'
     },
     hideableSidebar: true,
     navbar: {
