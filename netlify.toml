@@ -2,3 +2,9 @@
 package = "@algolia/netlify-plugin-crawler"
   [plugins.inputs]
   branches = ["preview"]
+  appId= '3P5IUMI5WG'
+  apiKey= '67fb60c2ca588e1e6316e4499ee0e6ba'
+  indexName= 'netlify_b6757571-cd82-43be-84b8-985bd74f9e66_master_all'
+  siteId= 'b6757571-cd82-43be-84b8-985bd74f9e66'
+  branch= 'preview'
+  selector= 'div#search'
