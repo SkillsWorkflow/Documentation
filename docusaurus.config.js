@@ -13,7 +13,7 @@ module.exports = {
   },
   title: 'Skills Workflow’s Documentation',
   tagline: 'We are here to let you shine! Let´s get everything done',
-  url: 'https://documentation.skillsworkflow.com',
+  url: 'https://skillsworkflow-preview.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
