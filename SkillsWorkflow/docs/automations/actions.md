@@ -1,7 +1,7 @@
 ---
 id: actions
-title: ""
-sidebar_label: "Actions"
+title: Actions
+sidebar_label: Actions
 ---
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
