@@ -1,4 +1,13 @@
 module.exports = {
+  title: 'Skills Workflow’s Documentation',
+  tagline: 'We are here to let you shine! Let´s get everything done',
+  url: 'https://documentation.skillsworkflow.com',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
+  projectName: 'Documentation', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'pt'],
@@ -11,22 +20,14 @@ module.exports = {
       }
     }
   },
-  title: 'Skills Workflow’s Documentation',
-  tagline: 'We are here to let you shine! Let´s get everything done',
-  url: 'https://documentation.skillsworkflow.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
-  projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
     algolia: {
       apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
       appId: 'KB6UV635OH',
       siteId: 'd017bb9a-2fd6-4648-8b11-d67021355c27',
       branch: 'master',
-      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all'
+      indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
+      contextualSearch: true
     },
     hideableSidebar: true,
     navbar: {
