@@ -19,6 +19,7 @@
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Varela Round';
   --ifm-font-family-monospace: 'Open Sans';
+  --home-text-color: black;
 }
 
 .menu__list-item {
@@ -38,6 +39,7 @@
 * {
   font-family: 'Varela Round', sans-serif;
 }
+
 .menu {
   font-size: 14px !important;
 }
@@ -49,6 +51,22 @@ h1 {
 p {
   font-size: 14px !important;
   font-family: 'Open Sans', sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: rgb(26, 26, 26);
+}
+
+html[data-theme='dark'] a:hover {
+  color: #fff !important;
+}
+
+html[data-theme='dark'] .skills_src-pages-:hover {
+  transform: scale(0.95) !important;
 }
 
 .token-line {
@@ -71,7 +89,7 @@ p {
 
 .home-h1{
   font-weight: 300;
-  color: black;
+  color: var(--home-text-color);
 }
 
 .home-p {
@@ -108,6 +126,31 @@ img[alt=img-with-border]{
   border-radius: 5px;
 }
 
+.left {
+  animation: right-to-left 1s linear forwards;
+}
+
+.footer__links {
+  animation: left-to-right 1s linear forwards;
+}
+
+@keyframes right-to-left {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 figure {
   margin: 0;
   margin-bottom: 2rem;
@@ -118,8 +161,25 @@ figure p {
   margin-bottom: 0;
 }
 
+.row {
+  margin-bottom: 1.6rem;
+}
+.footer__copyright {
+  padding-top: 15px;
+  border-top: 1px solid rgb(226, 239, 248);
+}
+/* html[data-theme='light']  */
+.footer__col {
+  border-left: 1px solid rgb(226, 239, 248);
+}
 
+html[data-theme='dark'] header {
+  background-color: #333 !important;
+}
 
+html[data-theme='dark'] .hero__title {
+  color: #fff;
+}
 
 h1 {
   font-family: 'Varela Round';
@@ -140,7 +200,43 @@ h3 {
 }
 
 .footer__col {
-  text-align: center !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left !important;
+  height: 200px !important;
+}
+
+.footer__title {
+  height: 20%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+html[data-theme='light'] .footer__title{
+  color: rgb(26, 26, 26);
+}
+
+html[data-theme='dark'] .footer__title{
+  color: #fff;
+}
+
+.footer__items {
+  height: 80%;
+}
+
+footer li a {
+  color: rgb(155, 164, 175) !important;
+}
+
+footer li a:hover {
+  text-decoration: none;
+  color: rgb(26, 26, 26) !important;
+}
+
+.footer__copyright{
+  color:rgb(155, 164, 175);
 }
 
 .javascript {
@@ -172,6 +268,7 @@ html[data-theme='light'] .DocSearch {
   --docsearch-hit-background: var(--ifm-color-white);
   /* Footer */
   --docsearch-footer-background: var(--ifm-color-white);
+  --home-text-color: black;
 }
 
 html[data-theme='dark'] .DocSearch {
@@ -194,8 +291,17 @@ html[data-theme='dark'] .DocSearch {
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
   );
+  /* --home-text-color: var(--home-text-color: #fff; */
 }
 
+html[data-theme='dark'] .footer{
+  --ifm-footer-background-color: #333;
+  --ifm-footer-color: #fff;
+}
+
+html[data-theme='light'] .footer{
+  background-image: linear-gradient(rgb(243, 248, 255), rgb(243, 248, 255));
+}
 /* Custom Table */
 
 .custom-table {

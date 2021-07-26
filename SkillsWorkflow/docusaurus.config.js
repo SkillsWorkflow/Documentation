@@ -21,6 +21,9 @@ module.exports = {
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
   projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      respectPrefersColorScheme: true
+    },
     algolia: {
       apiKey: 'dd45d8034a589d99ca6d342b4b8bc9cd',
       appId: 'KB6UV635OH',
@@ -105,6 +108,10 @@ module.exports = {
             {
               label: 'Website',
               href: 'https://www.skillsworkflow.com/'
+            }, 
+            {
+              label: 'Status',
+              href: 'https://status.skillsworkflow.com/'
             }
           ],
         },

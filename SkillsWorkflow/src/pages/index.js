@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Translate, {translate} from '@docusaurus/Translate';
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 
 const features = [
@@ -99,7 +100,7 @@ function Home() {
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <div className="container text--center">
+            <div className=" left container text--center">
               <div className="row">
                 <div className={clsx('col col--4', styles.feature)}>
                   {useBaseUrl('img/undraw_building_websites_crafting.svg') && (
