@@ -20,7 +20,7 @@ sidebar_label: Lição 3 - Aprovar Despesas
 
 <figure>
 
-![img-box-shadow](/img/university/university-expense-sheets-1.png)
+![img-box-shadow](/img/university/expenses/university-expense-sheets-1.png)
 <figcaption>Módulo de folhas de despesas</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ Uma notificação será enviada ao solicitante.
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-approve-1.png)
+![img-box-shadow](/img/university/expenses/university-expenses-approve-1.png)
 <figcaption>Workspace de aprovação de despesas</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Uma notificação será enviada ao solicitante.
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-approve-2.png)
+![img-box-shadow](/img/university/expenses/university-expenses-approve-2.png)
 <figcaption>Workspace de aprovação de despesas</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ Para aprovar despesas, navegue até o módulo Projeto e selecione um projeto.
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-3-project.png)
+![img-box-shadow](/img/university/expenses/university-expenses-3-project.png)
 <figcaption>Project Item</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ Para aprovar despesas, navegue até o módulo Projeto e selecione um projeto.
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-approve-3.png)
+![img-box-shadow](/img/university/expenses/university-expenses-approve-3.png)
 <figcaption>Project's expense</figcaption>
 </figure>
 

@@ -18,7 +18,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-3-project.png)
+![img-box-shadow](/img/university/expenses/university-expenses-3-project.png)
 <figcaption>Project Item</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-6-project-list.png)
+![img-box-shadow](/img/university/expenses/university-expenses-6-project-list.png)
 <figcaption>Lista de despesas do Projecto</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 
 <figure>
 
-![img-box-shadow](/img/university/university-expense-sheets-1.png)
+![img-box-shadow](/img/university/expenses/university-expense-sheets-1.png)
 <figcaption>Módulo de Folhas de Despesas</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-1-creation.png)
+![img-box-shadow](/img/university/expenses/university-expenses-1-creation.png)
 <figcaption>Folha de Despesas</figcaption>
 </figure>
 
@@ -64,14 +64,14 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-2.png)
+![img-box-shadow](/img/university/expenses/university-expenses-2.png)
 <figcaption>pop-up de Criação de Despesas</figcaption>
 </figure>
 
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-4.png)
+![img-box-shadow](/img/university/expenses/university-expenses-4.png)
 <figcaption>pop-up Info de Despesas</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ Se tiver vários recibos para a mesma folha, pode repetir o processo usando a op
 
 <figure>
 
-![img-box-shadow](/img/university/university-expenses-5.png)
+![img-box-shadow](/img/university/expenses/university-expenses-5.png)
 <figcaption>Expense List duplicate</figcaption>
 </figure>
 

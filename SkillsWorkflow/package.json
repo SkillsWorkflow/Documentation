@@ -16,9 +16,12 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.0",
     "@docusaurus/preset-classic": "^2.0.0-beta.0",
-    "@docusaurus/theme-search-algolia": "^2.0.0-beta.0",
+    "@docusaurus/theme-search-algolia": "^2.0.0-beta.3",
     "@mdx-js/react": "^1.6.21",
+    "@types/react": "^17.0.14",
     "clsx": "^1.1.1",
+    "postcss": "^8.3.5",
+    "prism-react-renderer": "^1.2.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },

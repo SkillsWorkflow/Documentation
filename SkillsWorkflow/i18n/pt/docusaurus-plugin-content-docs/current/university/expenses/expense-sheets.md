@@ -20,7 +20,7 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 
 <figure>
 
-![img-box-shadow](/img/university/university-expense-sheets-1.png)
+![img-box-shadow](/img/university/expenses/university-expense-sheets-1.png)
 <figcaption>Módulo de Folha de Despesas</figcaption>
 </figure>
 
@@ -28,8 +28,8 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 
 <figure>
 
-![img-box-shadow](/img/university/university-expense-sheets-2-creation.png)
-<figcaption>pop-up de Criação</figcaption>
+![img-box-shadow](/img/university/expenses/university-expense-sheets-2-creation.png)
+<figcaption>Pop-up de Criação</figcaption>
 </figure>
 
 4. Preencha os campos das Despasas:

@@ -18,6 +18,9 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  customFields: {
+    trailingSlash: false
+  },
   organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
   projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
@@ -31,13 +34,18 @@ module.exports = {
       branch: 'master',
       selector: 'div#search',
       indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
+
       // Optional: see doc section bellow
-      contextualSearch: true
+      //contextualSearch: true,
 
       // Optional: Algolia search parameters
-      // searchParameters: {},
+      // searchParameters: {
+      //   facetFilters: [["lang:en", "lang:pt"]],
+      // },
 
       //... other Algolia params
+      //ignoreCanonicalTo: true
+
     },
     hideableSidebar: true,
     navbar: {
@@ -48,7 +56,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -58,12 +66,12 @@ module.exports = {
           label: "API",
           position: 'right',
           className: 'navbar-item',
-          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/',
+          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger',
         },
         {
           type: 'localeDropdown',
           position: 'right',
-      },
+        },
       ],
     },
     footer: {
@@ -74,23 +82,23 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/',
+              to: 'docs',
             },
             {
               label: 'Automations',
-              to: 'docs/automations/'
+              to: 'docs/automations/introduction'
             },
             {
               label: 'SDK',
-              href: 'docs/sdk/ui/'
+              to: 'docs/sdk/ui'
             },
             {
               label: 'Integrations',
-              href: 'docs/integrations/hr-link'
+              to: 'docs/integrations/hr-link'
             },
             {
               label: 'University',
-              href: 'docs/university/Bills/bills-lesson1/'
+              to: 'docs/university/Bills/invoice-authorizations'
             }
           ],
         },
@@ -98,12 +106,12 @@ module.exports = {
           title: 'Learn More',
           items: [
             {
-              label: 'Api Integration',
-              href: 'https://helpdesk.skillsworkflow.com',
+              label: 'Client API',
+              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
             },
             {
-              label: 'Client Api',
-              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger/'
+              label: 'Integration API',
+              href: 'https://integration-api-test.skillsworkflow.com',
             },
             {
               label: 'Website',
@@ -132,11 +140,11 @@ module.exports = {
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/skillsworkflow/'
+              href: 'https://www.instagram.com/skillsworkflow'
             },
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/skillsworkflow/'
+              href: 'https://www.facebook.com/skillsworkflow'
             }
           ]
         }
@@ -152,13 +160,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/blog/',
+            'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

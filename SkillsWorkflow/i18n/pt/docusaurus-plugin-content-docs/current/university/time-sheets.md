@@ -33,7 +33,7 @@ Para preencher horas, navegue para o módulo **Time sheets**
 <figure>
 
 ![img-with-border](assets/timesheets/2-adding-suggestions.png)
-<figcaption>pop-up Folha de Horas</figcaption>
+<figcaption>Pop-up Folha de Horas</figcaption>
 </figure>
 
 <figure>
