@@ -7,13 +7,13 @@ sidebar_position: 3
 
 ## Lesson 3 - Resource Scheduler
 
-<h3>Assignments in Skills Workflow can be done in numerous ways.</h3>
+### Assignments in Skills Workflow can be done in numerous ways.
 
 - You can assign executors directly on the job through the option "Add Assignment".
 
 - Or you can do it using the Resource Scheduler.
 
-<h3>On the Resource scheduler you have an overview of your team's workload and capacity.</h3>
+### On the Resource scheduler you have an overview of your team's workload and capacity.
 
 This feature will help you plan your resources' time more efficiently, by keeping track of each user's assigned jobs.
 

@@ -16,6 +16,7 @@
   --ifm-color-primary-light: #0294ff;
   --ifm-color-primary-lighter: #2aa5ff;
   --ifm-color-primary-lightest: #52b5ff;
+  --ifm-font-color-base: var(--ifm-color-secondary-darkest);
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Varela Round';
   --ifm-font-family-monospace: 'Open Sans';
@@ -27,7 +28,7 @@
 }
 
 .menu__link--sublist::after{
-  content: '';
+  /*content: '';*/
   height: 13px !important;
   width: 13px;
 }
@@ -183,7 +184,7 @@ html[data-theme='dark'] .hero__title {
 
 h1 {
   font-family: 'Varela Round';
-  font-size: 40px;
+  font-size: 46px;
 }
 
 h2 {
@@ -251,10 +252,10 @@ footer li a:hover {
   transition: border-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
 
-/*Algolia search style*/
+/* Algolia Search here*/
 html[data-theme='light'] .DocSearch {
-  /* --docsearch-primary-color: var(--ifm-color-primary); */
-  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-primary-color: var(--ifm-color-primary);
+  --docsearch-text-color: var(--ifm-font-color-base); 
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
   --docsearch-container-background: rgba(94, 100, 112, 0.7);
   /* Modal */

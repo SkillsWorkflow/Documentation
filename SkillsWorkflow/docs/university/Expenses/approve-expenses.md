@@ -8,7 +8,7 @@ sidebar_position: 3
 ## Lesson 3 - Approve Expenses
 
 
-<h3>Expenses can be approved in two ways:</h3>
+### Expenses can be approved in two ways:
 
 - By the project's responsible
 - By the user's responsible

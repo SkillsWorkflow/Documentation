@@ -1,5 +1,5 @@
 ---
-id:  estimates-lesson1
+id:  create-estimate
 title: Estimates
 sidebar_label: Lesson 1 - How to create an Estimate
 ---

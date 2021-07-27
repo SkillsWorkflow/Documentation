@@ -1,4 +1,13 @@
 module.exports = {
+  title: 'Skills Workflow’s Documentation',
+  tagline: 'We are here to let you shine! Let´s get everything done',
+  url: 'https://documentation.skillsworkflow.com',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
+  projectName: 'Documentation', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'pt'],
@@ -11,18 +20,6 @@ module.exports = {
       }
     }
   },
-  title: 'Skills Workflow’s Documentation',
-  tagline: 'We are here to let you shine! Let´s get everything done',
-  url: 'https://documentation.skillsworkflow.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  customFields: {
-    trailingSlash: false
-  },
-  organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
-  projectName: 'Documentation', // Usually your repo name.
   themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true
@@ -32,20 +29,9 @@ module.exports = {
       appId: 'KB6UV635OH',
       siteId: 'd017bb9a-2fd6-4648-8b11-d67021355c27',
       branch: 'master',
-      selector: 'div#search',
       indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
-
-      // Optional: see doc section bellow
-      //contextualSearch: true,
-
-      // Optional: Algolia search parameters
-      // searchParameters: {
-      //   facetFilters: [["lang:en", "lang:pt"]],
-      // },
-
-      //... other Algolia params
-      //ignoreCanonicalTo: true
-
+      contextualSearch: false,
+      selector: 'div#'
     },
     hideableSidebar: true,
     navbar: {
@@ -170,8 +156,8 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+        }
+      }
+    ]
+  ]
 };

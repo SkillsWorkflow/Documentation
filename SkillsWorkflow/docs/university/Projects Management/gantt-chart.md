@@ -8,7 +8,7 @@ sidebar_position: 4
 ## Lesson 4 - Gantt Chart
 
 
-<h3>One of the many ways of visualizing your Projects in Skills Workflow is in a Gantt Chart.</h3>
+### One of the many ways of visualizing your Projects in Skills Workflow is in a Gantt Chart.
 
 
 The Gantt view will give a more visual representation of all the jobs of a Project and how they are related to one another through time.
@@ -47,7 +47,7 @@ The Gantt view will give a more visual representation of all the jobs of a Proje
 </figure>
 
 
-<h3>Check completeness of each job.</h3>
+### Check completeness of each job.
 
 - On the field "% Done" you can check how much has been done on a given job and whether it has already finished (100% done) or is still in progress (<100% done).
 

@@ -67,8 +67,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 [You can use numbers for reference-style link definitions][1]
 
-This is a link to [another document.](doc3.md) This is a link to an [external page.](http://www.skillsworkflow.com/)
-
 Or leave it empty and use the [link text itself].
 
 URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com/ or <http://www.example.com/> and sometimes example.com (but not on GitHub, for example).

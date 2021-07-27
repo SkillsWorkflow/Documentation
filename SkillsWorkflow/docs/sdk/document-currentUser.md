@@ -6,11 +6,11 @@ sidebar_label: Current User
 
 ## getCompanies
 
-<h3>Description</h3>
+### Description
 
 This method can be used inside any workspace. Retrives a list of Companies
 
-<h3>Method(s)</h3>
+### Method(s)
 
 ```js {3}
 1   declare function getCompanies(params: {name?:string, skip: number,
@@ -52,18 +52,18 @@ This method can be used inside any workspace. Retrives a list of Companies
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+### Basic Usage
 
 ```javascript
 >    SW.Document.CurrentUser.getCompanies("Skillsworkflow", 0, 20);
 ```
 ## getClients
 
-<h3>Description</h3>
+### Description
 
 This method can be used inside any workspace. Retrives a list of Clients
 
-<h3>Method(s)</h3>
+### Method(s)
 
 ```js {3}
 1   declare function getClients(params: {name?:string, skip: number,
@@ -105,18 +105,18 @@ This method can be used inside any workspace. Retrives a list of Clients
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+### Basic Usage
 
 ```javascript
 >    SW.Document.CurrentUser.getClients("Skillsworkflow", 0, 20);
 ```
 ## getDivisons
 
-<h3>Description</h3>
+### Description
 
 This method can be used inside any workspace. Retrives a list of Divisions
 
-<h3>Method(s)</h3>
+### Method(s)
 
 ```js {3}
 1   declare function getDivisions(params: {name?:string, skip: number,
@@ -158,7 +158,7 @@ This method can be used inside any workspace. Retrives a list of Divisions
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+### Basic Usage
 
 ```javascript
 >    SW.Document.CurrentUser.getDivisions("Consulting", 0, 20);

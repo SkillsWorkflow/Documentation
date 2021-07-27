@@ -1,12 +1,13 @@
 ---
 id: introduction 
-title: ""
-sidebar_label: "Introduction"
+title: Introduction
+sidebar_label: Introduction
 sidebar_position: 0
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
+# Introduction
 ## Cause
 
 There was a need to:

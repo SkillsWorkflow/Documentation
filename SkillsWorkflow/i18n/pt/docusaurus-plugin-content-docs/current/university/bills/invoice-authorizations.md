@@ -1,5 +1,5 @@
 ---
-id:  bills-lesson1
+id:  invoice-authorizations
 title: Autorizações de fatura
 sidebar_label: Lição 1 - Como criar autorizações de fatura
 ---

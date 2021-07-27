@@ -4,20 +4,19 @@ title: Set Items
 sidebar_label: Set Items
 ---
 
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 ## saveOptions
 
-<h3>Description</h3>
+### Description
 
 A function used to save User, Document and other fields in the form.
 
 
-<h3>Example</h3>
+### Example
 
-```json
+```js
 {
     saveOptions: {
         type: "document",
@@ -38,7 +37,8 @@ A function used to save User, Document and other fields in the form.
 
 - If is specified as parameter instead of an object. The value passed will set the 'type'. 
 
-```json
+
+```js
 {
     saveOptions: "document",
     dataField: "AgreedDateUtc",
@@ -54,7 +54,7 @@ A function used to save User, Document and other fields in the form.
 }
 ```
 
-<h3>type</h3>
+### type
 
 Accepted Values: 'document' | 'userfield' | 'other'
 
@@ -69,7 +69,7 @@ Accepted Values: 'document' | 'userfield' | 'other'
 }>
 <TabItem value="document">
 
-```json
+```js
 {
     type: "document"
 }
@@ -78,7 +78,7 @@ Accepted Values: 'document' | 'userfield' | 'other'
 </TabItem>
 <TabItem value="userfield">
 
-```json
+```js
 {
     type: "userfield"
 }
@@ -87,7 +87,7 @@ Accepted Values: 'document' | 'userfield' | 'other'
 </TabItem>
 <TabItem value="others">
 
-```json
+```js
 {
     type: "others"
 }
@@ -100,12 +100,12 @@ Accepted Values: 'document' | 'userfield' | 'other'
  If the type is set as 'others', no further parameter needs to be passed into the saveOptions.
 :::
 
-<h3>fieldName</h3>
+### fieldName
 
 
 To assign the name you want to save the field.
 
-```json
+```js
 {
    saveOptions: {
        type: "userField",
@@ -119,7 +119,7 @@ To assign the name you want to save the field.
 
 If no value is passed, it will use the dataField value.
 
-```json
+```js
 {
    saveOptions: {
        type: "userField"
@@ -130,14 +130,14 @@ If no value is passed, it will use the dataField value.
 ```
 
 
-<h2>Properties only valid if the type propertie is set to 'userfield'</h2>
+## Properties only valid if the type propertie is set to 'userfield'
 
-<h3>dataType</h3>
+### dataType
 
 To pass the User Data Type Id, it takes a value of type number.
 
 
-```json
+```js
 {
    saveOptions: {
        type: "userField",
@@ -149,13 +149,13 @@ To pass the User Data Type Id, it takes a value of type number.
 ```
 
 
-<h3>isMultipleSelection</h3>
+### isMultipleSelection
 
 Default value: false.
 
 A parameter of type boolean to allow multisection.
 
-```json
+```js
 {
    saveOptions: {
        type: "userField",
@@ -168,11 +168,11 @@ A parameter of type boolean to allow multisection.
 ```
 
 
-<h3>lookupFieldName</h3>
+### lookupFieldName
 
 To set the userfield lookup field name.
 
-```json
+```js
 {
    saveOptions: {
        type: "userField",

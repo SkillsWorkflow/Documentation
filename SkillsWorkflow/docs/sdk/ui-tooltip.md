@@ -32,10 +32,10 @@ For this example the tooltip methods were set on 2 events
 
 ## set
 
-<h3>Description</h3>
+### Description
 
 This method can be used inside any workspace. Create a new tooltip
-<h3>Method(s)</h3>
+### Method(s)
 
 ```js {3}
 1 function set(reference: HTMLElement, entity: string, data: object, 
@@ -83,7 +83,7 @@ This method can be used inside any workspace. Create a new tooltip
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+### Basic Usage
 
 ```javascript 
 >    SW.UI.tooltip.set(element, "job", { Job: data });
@@ -93,10 +93,10 @@ This method can be used inside any workspace. Create a new tooltip
 
 ## show
 
-<h3>Description</h3>
+### Description
 
 This method can be used inside any workspace. Show existing tooptip
-<h3>Method(s)</h3>
+### Method(s)
 
 ```js {3}
 1 function show(reference: HTMLElement);
@@ -122,7 +122,7 @@ This method can be used inside any workspace. Show existing tooptip
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+### Basic Usage
 
 ```javascript 
 >    SW.UI.tooltip.show(element);
@@ -132,10 +132,10 @@ This method can be used inside any workspace. Show existing tooptip
 
 ## hide
 
-<h3>Description</h3>
+### Description
 
 This method can be used inside any workspace. Hide specified tooltip
-<h3>Method(s)</h3>
+### Method(s)
 
 ```js {3}
 1 function hide(reference: HTMLElement);
@@ -161,7 +161,7 @@ This method can be used inside any workspace. Hide specified tooltip
     </tbody>
 </table>
 
-<h3>Basic Usage</h3>
+### Basic Usage
 
 ```javascript 
 >    SW.UI.tooltip.hide(element);
