@@ -17,6 +17,391 @@ SW.UI.{methodName}
 
 ---
 
+## getDocumentImage
+
+### Description
+
+This method can be used inside any workspace. Get entity's image
+
+### Method(s)
+
+```javascript
+1    function getDocumentImage(element: HTMLElement, type: string, params?: 
+2       {size?: Size} = {size: Size.SMALL}): string;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>element</code></td>
+            <td>HTMLElement</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML element</td>
+        </tr>
+        <tr className="selected">
+            <td><code>type</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Type of document</td>
+        </tr>
+       <tr className="selected">
+            <td><code>size</code></td>
+            <td>Enum</td>
+            <td>true</td>
+            <td></td>
+            <td>Image's size to be displayed(small, medium, large)</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.getDocumentImage('div', 'type', Size.Large);
+```
+
+### Response
+
+---
+
+## navigateToNewTab
+
+### Description
+
+This method can be used inside any workspace. Navigate to a new tab
+
+### Method(s)
+
+```javascript
+1    function navigateToNewTab(url: string, params?: {useSkillsBaseUrl: boolean} = 
+2       {useSkillsBaseUrl: true}): void;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr className="selected">
+            <td><code>url</code></td>
+            <td>String</td>
+            <td>false</td>
+            <td>" "</td>
+            <td>Url Link</td>
+        </tr>
+        <tr className="selected">
+            <td><code>useSkillsBaseUrl</code></td>
+            <td>Boolean</td>
+            <td>true</td>
+            <td>true</td>
+            <td>Flag to Skills Base url</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.navigateToNewTab("url");
+```
+
+### Response
+
+---
+
+## navigateToWorkspace
+
+### Description
+
+This method can be used inside any workspace. Navigate to workspace
+
+### Method(s)
+
+```javascript
+1    function navigateToWorkspace(workspaceId: string, entity: string = null,
+2           entityId: string = null): void;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>workspaceId</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td></td>
+        </tr>
+       <tr className="selected">
+            <td><code>url</code></td>
+            <td>String</td>
+            <td>false</td>
+            <td>" "</td>
+            <td>Url Link</td>
+        </tr>
+        <tr className="selected">
+            <td><code>entity</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td>null</td>
+            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
+        </tr>
+        <tr className="selected">
+            <td><code>entityId</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td>null</td>
+            <td>Entity's identifier</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.navigateTo('workspaceId', 'company', 'companyId');
+```
+
+### Response
+
+---
+
+## setAttribute
+
+### Description
+
+This method can be used inside any workspace. Set element's attributes
+
+### Method(s)
+
+```javascript
+1    function setAttribute(element: HTMLElement, attribute: string, 
+2      attributeValue: string, params?: {text?: string, createContainer?: boolean} = 
+3      { createContainer: true}): HTMLElement;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>element</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML element</td>
+        </tr>
+        <tr className="selected">
+            <td><code>text</code></td>
+            <td>Number</td>
+            <td>true</td>
+            <td></td>
+            <td>A set of data</td>
+        </tr>
+        <tr className="selected">
+            <td><code>attribute</code></td>
+            <td>String</td>
+            <td>false</td>
+            <td>" "</td>
+            <td></td>
+        </tr>
+        <tr className="selected">
+            <td><code>attributeValue</code></td>
+            <td>String</td>
+            <td>false</td>
+            <td>" "</td>
+            <td></td>
+        </tr>
+        <tr className="selected">
+            <td><code>createContainer</code></td>
+            <td>String</td>
+            <td>false</td>
+            <td>true</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.setAttribute('div', 'text', ));
+```
+
+### Response
+
+---
+
+## setRag
+
+### Description
+
+This method can be used inside any workspace. Displays a rag
+
+### Method(s)
+
+```javascript
+1    function setRag(element: any, value: string, condition1: boolean,
+2           condition2: boolean, condition3: boolean,
+3           createContainer = true): string;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>element</code></td>
+            <td>HTMLElement</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML element</td>
+        </tr>
+        <tr className="selected">
+            <td><code>value</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>A set of data</td>
+        </tr>
+        <tr className="selected">
+            <td><code>condition1</code></td>
+            <td>Boolean</td>
+            <td>true</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr className="selected">
+            <td><code>condition2</code></td>
+            <td>Boolean</td>
+            <td>true</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr className="selected">
+            <td><code>condition3</code></td>
+            <td>Boolean</td>
+            <td>true</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.setRag("div", "value", true, false, false);
+```
+
+### Response
+
+---
+
+## setVersionRag
+
+### Description
+
+This method can be used inside any workspace. Set rag with version
+
+### Method(s)
+
+```javascript
+1 function setVersionRag(element: HTMLElement, version1: number, version2: number,
+2     params?: {createContainer?: boolean} = {createContainer: true}): string;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>element</code></td>
+            <td>HTMLElement</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML element</td>
+        </tr>
+        <tr className="selected">
+            <td><code>version1</code></td>
+            <td>Number</td>
+            <td>true</td>
+            <td></td>
+            <td>A set of data</td>
+        </tr>
+        <tr className="selected">
+            <td><code>version2</code></td>
+            <td>Number</td>
+            <td>true</td>
+            <td></td>
+            <td>A set of data</td>
+        </tr>
+        <tr className="selected">
+            <td><code>createContainer</code></td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td>true</td>
+            <td>Flag to create a container</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.setVersionRag({ Label: "Skills", Color: "#333"}, 'div');
+```
+
+### Response
+
+---
+
 ## showBulk
 
 ### Description
@@ -82,6 +467,130 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
 
 
 ![img](/img/responses/showBulk_response.png)
+
+---
+
+## showComponent
+
+### Description
+
+This method can be used inside any workspace. Creates a new component
+
+### Method(s)
+
+```javascript
+1    function showComponent(element: HTMLElement, type: string, properties: object): void;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr className="selected">
+            <td><code>element</code></td>
+            <td>HTMLElement</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML tag</td>
+        </tr>
+        <tr className="selected">
+            <td><code>type</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Component's type</td>
+        </tr>
+       <tr className="selected">
+            <td><code>properties</code></td>
+            <td>Object</td>
+            <td>true</td>
+            <td></td>
+            <td>Component's properties</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.showComponent("div", "type", { properties });
+```
+
+---
+
+## showConfirmPopup
+
+### Description
+
+This method can be used inside any workspace. Creates a new popup with Yes and No buttons. If Yes button is pressed it will return true, else, it will return  false.
+
+### Method(s)
+
+```javascript
+1   function showConfirmPopup(
+        params: {
+            title?: string, 
+            text?: string, 
+            trueButtonText?: string, 
+            falseButtonText?: string, 
+            width?: number, 
+            height?: number
+        } = {
+            width: 400, 
+            height: 150
+        }
+    ): Promise<boolean>;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr className="selected">
+            <td><code>params</code></td>
+            <td>Object</td>
+            <td>false</td>
+            <td></td>
+            <td>Popup options</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>   SW.UI.showConfirmPopup(
+        params: {
+            title: 'Popup title', 
+            text: 'Click one button', 
+            trueButtonText: 'Yes button', 
+            falseButtonText: 'No button', 
+            width: 400, 
+            height: 150
+        }
+    );
+```
+
+### Response
+
+
+![img](/img/responses/showConfirmPopup.png)
+
+---
 
 ## showCreate
 
@@ -164,6 +673,164 @@ This method can be used inside any workspace. Adds an add button on top, which c
 14          ]
 15      }
 ```
+
+---
+
+## showImage
+
+### Description
+
+This method can be used inside any workspace. Displays and existing or default Image
+
+### Method(s)
+
+```javascript
+1    function showImage(element: HTMLElement, documentName: "user" | "client" 
+2    | "company", hasImage: boolean, name: string, params?: {
+3    size?: Size, id?: string} = {size: Size.SMALL}): HTMLElement;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr className="selected">
+            <td><code>element</code></td>
+            <td>Any</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML tag</td>
+        </tr>
+        <tr className="selected">
+            <td><code>entity</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
+        </tr>
+        <tr className="selected">
+            <td><code>size</code></td>
+            <td>Enum</td>
+            <td>true</td>
+            <td></td>
+            <td>Image's size to be displayed(small, medium, large)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>hasImage</code></td>
+            <td>Boolean</td>
+            <td>true</td>
+            <td></td>
+            <td>A flag to specify if target already has an image</td>
+        </tr>
+        <tr className="selected">
+            <td><code>name</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Name of the User, Client or Company whose image belongs or from where default image is generated</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.showImage(div, "company", Size.small, true, 'SkillsWorkflow');
+```
+
+### Response
+
+---
+
+## showImageEditor
+
+### Description
+
+This method can be used inside any workspace. Displays and existing or default Image
+
+### Method(s)
+
+```javascript
+1    function showImageEditor(element: HTMLElement, documentName: string, 
+2       documentId: string, params?: {endpoint?: string, size?: Size, 
+3       imageStyle?: string} = {size: Size.LARGE, height: 100, 
+4       width: 100}): HTMLElement;
+
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr className="selected">
+            <td><code>element</code></td>
+            <td>Any</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML tag</td>
+        </tr>
+        <tr className="selected">
+            <td><code>entity</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
+        </tr>
+        <tr className="selected">
+            <td><code>entityId</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Entity's Identifier</td>
+        </tr>
+        <tr className="selected">
+            <td><code>endpoint</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td></td>
+            <td>Image's endpoint</td>
+        </tr>
+        <tr className="selected">
+            <td><code>size</code></td>
+            <td>Enum</td>
+            <td>true</td>
+            <td></td>
+            <td>Image's size to be displayed(small, medium, large)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>imageStyle</code></td>
+            <td>String</td>
+            <td>false</td>
+            <td>"height:100px;width:100px;"</td>
+            <td>Setting height & width in string format</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.showImageEditor(div, "company", "companyId", Size.small,
+            "company/id", Size.Large);
+```
+
+### Response
+
+---
 
 ## showPopup
 
@@ -396,17 +1063,80 @@ This method can be used inside any workspace. Creates a preview pop-up styled by
 
 ### Response
 
-## showSystemPreview
+---
+
+## showPriority
 
 ### Description
 
-This method can be used inside any workspace. Creates a pop-up preview of the... ?
+This method can be used inside any workspace. To define an element priority
 
 ### Method(s)
 
 ```javascript
-1    function showSystemPreview(documentName: string, id: string,  params?: {
-2    height?: number, width?: number} = {height: 500, width: 750}): void;
+1    function showPriority(element: HTMLElement, priorityValue: number): void;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr className="selected">
+            <td><code>element</code></td>
+            <td>HTMLElement</td>
+            <td>true</td>
+            <td></td>
+            <td>HTML tag</td>
+        </tr>
+        <tr className="selected">
+            <td><code>priorityValue</code></td>
+            <td>number</td>
+            <td>true</td>
+            <td></td>
+            <td>Define element's priority</td>
+        </tr>
+    </tbody>
+</table>
+
+### Basic Usage
+
+```javascript
+>    SW.UI.showPrioruty("div", 1);
+```
+
+### Response
+
+---
+
+## showPromptPopup
+
+### Description
+
+This method can be used inside any workspace. Creates a new popup with Yes and No buttons and a textBox. If Yes button is pressed it will return the text written in the textBox, else, it will return null.
+
+### Method(s)
+
+```javascript
+1   function showPromptPopup(
+        params: {
+            title?: string, 
+            text?: string, 
+            trueButtonText?: string, 
+            falseButtonText?: string, 
+            width?: number, 
+            height?: number
+        } = {
+            width: 400, 
+            height: 150
+        }
+    ): Promise<string>;
 ```
 
 <table className="custom-table">
@@ -421,245 +1151,33 @@ This method can be used inside any workspace. Creates a pop-up preview of the...
     </thead>
     <tbody>
        <tr className="selected">
-            <td><code>documentName</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Document's name</td>
-        </tr>
-        <tr className="selected">
-            <td><code>id</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Unique Identifier</td>
-        </tr>
-        <tr className="selected">
-            <td><code>height</code></td>
-            <td>Number</td>
+            <td><code>params</code></td>
+            <td>Object</td>
             <td>false</td>
-            <td>500</td>
-            <td>It sets the new pop-up's height (pixels)</td>
-        </tr>
-        <tr className="selected">
-            <td><code>width</code></td>
-            <td>Number</td>
-            <td>false</td>
-            <td>750</td>
-            <td>It sets the new pop-up's width (pixels)</td>
+            <td></td>
+            <td>Popup options</td>
         </tr>
     </tbody>
 </table>
+
 ### Basic Usage
 
 ```javascript
->    SW.UI.showSystemPreview("f6671567-67b2-430c-bf04-dc7a41e99395", "Company");
+>   SW.UI.showPromptPopup(
+        params: {
+            title: 'Popup title', 
+            text: 'Click one button', 
+            trueButtonText: 'Yes button', 
+            falseButtonText: 'No button', 
+            width: 400, 
+            height: 150
+        }
+    );
 ```
 
 ### Response
 
----
-
-function showComponent(element: HTMLElement, type: string, properties: object): void;
-
-## showComponent
-
-### Description
-
-This method can be used inside any workspace. Displays and existing or default Image
-
-### Method(s)
-
-```javascript
-1    function showComponent(element: HTMLElement, type: string, properties: object): void;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr className="selected">
-            <td><code>type</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>HTML tag</td>
-        </tr>
-        <tr className="selected">
-            <td><code>properties</code></td>
-            <td>object</td>
-            <td>true</td>
-            <td></td>
-            <td>Component's properties</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.showComponent(div, "company", {height: 300});
-```
-## showImage
-
-### Description
-
-This method can be used inside any workspace. Displays and existing or default Image
-
-### Method(s)
-
-```javascript
-1    function showImage(element: HTMLElement, documentName: "user" | "client" 
-2    | "company", hasImage: boolean, name: string, params?: {
-3    size?: Size, id?: string} = {size: Size.SMALL}): HTMLElement;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr className="selected">
-            <td><code>element</code></td>
-            <td>Any</td>
-            <td>true</td>
-            <td></td>
-            <td>HTML tag</td>
-        </tr>
-        <tr className="selected">
-            <td><code>entity</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
-        </tr>
-        <tr className="selected">
-            <td><code>size</code></td>
-            <td>Enum</td>
-            <td>true</td>
-            <td></td>
-            <td>Image's size to be displayed(small, medium, large)</td>
-        </tr>
-        <tr className="selected">
-            <td><code>hasImage</code></td>
-            <td>Boolean</td>
-            <td>true</td>
-            <td></td>
-            <td>A flag to specify if target already has an image</td>
-        </tr>
-        <tr className="selected">
-            <td><code>name</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Name of the User, Client or Company whose image belongs or from where default image is generated</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.showImage(div, "company", Size.small, true, 'SkillsWorkflow');
-```
-
-### Response
-
----
-
-## showImageEditor
-
-### Description
-
-This method can be used inside any workspace. Displays and existing or default Image
-
-### Method(s)
-
-```javascript
-1    function showImageEditor(element: HTMLElement, documentName: string, 
-2       documentId: string, params?: {endpoint?: string, size?: Size, 
-3       imageStyle?: string} = {size: Size.LARGE, height: 100, 
-4       width: 100}): HTMLElement;
-
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr className="selected">
-            <td><code>element</code></td>
-            <td>Any</td>
-            <td>true</td>
-            <td></td>
-            <td>HTML tag</td>
-        </tr>
-        <tr className="selected">
-            <td><code>entity</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
-        </tr>
-        <tr className="selected">
-            <td><code>entityId</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Entity's Identifier</td>
-        </tr>
-        <tr className="selected">
-            <td><code>endpoint</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Image's endpoint</td>
-        </tr>
-        <tr className="selected">
-            <td><code>size</code></td>
-            <td>Enum</td>
-            <td>true</td>
-            <td></td>
-            <td>Image's size to be displayed(small, medium, large)</td>
-        </tr>
-        <tr className="selected">
-            <td><code>imageStyle</code></td>
-            <td>String</td>
-            <td>false</td>
-            <td>"height:100px;width:100px;"</td>
-            <td>Setting height & width in string format</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.showImageEditor(div, "company", "companyId", Size.small,
-            "company/id", Size.Large);
-```
-
-### Response
+![img](/img/responses/showPromptPopup.png)
 
 ---
 
@@ -734,16 +1252,17 @@ This method can be used inside any workspace. Displays a stage
 
 ---
 
-## showPriority
+## showSystemPreview
 
 ### Description
 
-This method can be used inside any workspace. To define an element priority
+This method can be used inside any workspace. Creates a pop-up preview of the... ?
 
 ### Method(s)
 
 ```javascript
-1    function showPriority(element: HTMLElement, priorityValue: number): void;
+1    function showSystemPreview(documentName: string, id: string,  params?: {
+2    height?: number, width?: number} = {height: 500, width: 750}): void;
 ```
 
 <table className="custom-table">
@@ -757,27 +1276,40 @@ This method can be used inside any workspace. To define an element priority
         </tr>
     </thead>
     <tbody>
-    <tr className="selected">
-            <td><code>element</code></td>
-            <td>HTMLElement</td>
+       <tr className="selected">
+            <td><code>documentName</code></td>
+            <td>String</td>
             <td>true</td>
             <td></td>
-            <td>HTML tag</td>
+            <td>Document's name</td>
         </tr>
         <tr className="selected">
-            <td><code>priorityValue</code></td>
-            <td>number</td>
+            <td><code>id</code></td>
+            <td>String</td>
             <td>true</td>
             <td></td>
-            <td>Define element's priority</td>
+            <td>Unique Identifier</td>
+        </tr>
+        <tr className="selected">
+            <td><code>height</code></td>
+            <td>Number</td>
+            <td>false</td>
+            <td>500</td>
+            <td>It sets the new pop-up's height (pixels)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>width</code></td>
+            <td>Number</td>
+            <td>false</td>
+            <td>750</td>
+            <td>It sets the new pop-up's width (pixels)</td>
         </tr>
     </tbody>
 </table>
-
 ### Basic Usage
 
 ```javascript
->    SW.UI.showPrioruty("div", 1);
+>    SW.UI.showSystemPreview("f6671567-67b2-430c-bf04-dc7a41e99395", "Company");
 ```
 
 ### Response
@@ -834,7 +1366,7 @@ This method can be used inside any workspace. Displays tags
 
 ---
 
-## ShowTeam
+## showTeam
 
 ### Description
 
@@ -963,442 +1495,3 @@ This method can be used inside any workspace. Displays assignment's workload
 ```
 
 ### Response
-
----
-## setRag
-
-### Description
-
-This method can be used inside any workspace. Displays a rag
-
-### Method(s)
-
-```javascript
-1    function setRag(element: any, value: string, condition1: boolean,
-2           condition2: boolean, condition3: boolean,
-3           createContainer = true): string;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>element</code></td>
-            <td>HTMLElement</td>
-            <td>true</td>
-            <td></td>
-            <td>HTML element</td>
-        </tr>
-        <tr className="selected">
-            <td><code>value</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>A set of data</td>
-        </tr>
-        <tr className="selected">
-            <td><code>condition1</code></td>
-            <td>Boolean</td>
-            <td>true</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr className="selected">
-            <td><code>condition2</code></td>
-            <td>Boolean</td>
-            <td>true</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr className="selected">
-            <td><code>condition3</code></td>
-            <td>Boolean</td>
-            <td>true</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.setRag("div", "value", true, false, false);
-```
-
-### Response
-
----
-
-## setVersionRag
-
-### Description
-
-This method can be used inside any workspace. Set rag with version
-
-### Method(s)
-
-```javascript
-1 function setVersionRag(element: HTMLElement, version1: number, version2: number,
-2     params?: {createContainer?: boolean} = {createContainer: true}): string;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>element</code></td>
-            <td>HTMLElement</td>
-            <td>true</td>
-            <td></td>
-            <td>HTML element</td>
-        </tr>
-        <tr className="selected">
-            <td><code>version1</code></td>
-            <td>Number</td>
-            <td>true</td>
-            <td></td>
-            <td>A set of data</td>
-        </tr>
-        <tr className="selected">
-            <td><code>version2</code></td>
-            <td>Number</td>
-            <td>true</td>
-            <td></td>
-            <td>A set of data</td>
-        </tr>
-        <tr className="selected">
-            <td><code>createContainer</code></td>
-            <td>Boolean</td>
-            <td>false</td>
-            <td>true</td>
-            <td>Flag to create a container</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.setVersionRag({ Label: "Skills", Color: "#333"}, 'div');
-```
-
-### Response
-
----
-
-## setAttribute
-
-### Description
-
-This method can be used inside any workspace. Set element's attributes
-
-### Method(s)
-
-```javascript
-1    function setAttribute(element: HTMLElement, attribute: string, 
-2      attributeValue: string, params?: {text?: string, createContainer?: boolean} = 
-3      { createContainer: true}): HTMLElement;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>element</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>HTML element</td>
-        </tr>
-        <tr className="selected">
-            <td><code>text</code></td>
-            <td>Number</td>
-            <td>true</td>
-            <td></td>
-            <td>A set of data</td>
-        </tr>
-        <tr className="selected">
-            <td><code>attribute</code></td>
-            <td>String</td>
-            <td>false</td>
-            <td>" "</td>
-            <td></td>
-        </tr>
-        <tr className="selected">
-            <td><code>attributeValue</code></td>
-            <td>String</td>
-            <td>false</td>
-            <td>" "</td>
-            <td></td>
-        </tr>
-        <tr className="selected">
-            <td><code>createContainer</code></td>
-            <td>String</td>
-            <td>false</td>
-            <td>true</td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.setAttribute('div', 'text', ));
-```
-
-### Response
-
----
-
-## getDocumentImage
-
-### Description
-
-This method can be used inside any workspace. Get entity's image
-
-### Method(s)
-
-```javascript
-1    function getDocumentImage(element: HTMLElement, type: string, params?: 
-2       {size?: Size} = {size: Size.SMALL}): string;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>element</code></td>
-            <td>HTMLElement</td>
-            <td>true</td>
-            <td></td>
-            <td>HTML element</td>
-        </tr>
-        <tr className="selected">
-            <td><code>type</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Type of document</td>
-        </tr>
-       <tr className="selected">
-            <td><code>size</code></td>
-            <td>Enum</td>
-            <td>true</td>
-            <td></td>
-            <td>Image's size to be displayed(small, medium, large)</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.getDocumentImage('div', 'type', Size.Large);
-```
-
-### Response
-
----
-
-## navigateToNewTab
-
-### Description
-
-This method can be used inside any workspace. Navigate to a new tab
-
-### Method(s)
-
-```javascript
-1    function navigateToNewTab(url: string, params?: {useSkillsBaseUrl: boolean} = 
-2       {useSkillsBaseUrl: true}): void;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-       <tr className="selected">
-            <td><code>url</code></td>
-            <td>String</td>
-            <td>false</td>
-            <td>" "</td>
-            <td>Url Link</td>
-        </tr>
-        <tr className="selected">
-            <td><code>useSkillsBaseUrl</code></td>
-            <td>Boolean</td>
-            <td>true</td>
-            <td>true</td>
-            <td>Flag to Skills Base url</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.navigateToNewTab("url");
-```
-
-### Response
-
----
-
-## navigateToWorkspace
-
-### Description
-
-This method can be used inside any workspace. Navigate to workspace
-
-### Method(s)
-
-```javascript
-1    function navigateToWorkspace(workspaceId: string, entity: string = null,
-2           entityId: string = null): void;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>workspaceId</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td></td>
-        </tr>
-       <tr className="selected">
-            <td><code>url</code></td>
-            <td>String</td>
-            <td>false</td>
-            <td>" "</td>
-            <td>Url Link</td>
-        </tr>
-        <tr className="selected">
-            <td><code>entity</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td>null</td>
-            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
-        </tr>
-        <tr className="selected">
-            <td><code>entityId</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td>null</td>
-            <td>Entity's identifier</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.navigateTo('workspaceId', 'company', 'companyId');
-```
-
-### Response
-
----
-
-## showComponent
-
-### Description
-
-This method can be used inside any workspace. Show component's properties
-
-### Method(s)
-
-```javascript
-1    function showComponent(element: HTMLElement, type: string, properties: object): void;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-       <tr className="selected">
-            <td><code>element</code></td>
-            <td>HTMLElement</td>
-            <td>true</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr className="selected">
-            <td><code>type</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td></td>
-        </tr>
-       <tr className="selected">
-            <td><code>properties</code></td>
-            <td>Object</td>
-            <td>true</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.showComponent("div", "type", { properties });
-```
