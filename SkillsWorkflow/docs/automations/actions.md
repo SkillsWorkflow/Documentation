@@ -42,7 +42,7 @@ To configure this action, the fields required to be filled are:
 * name - The name of the action
 * next - The action that will be triggered after the current action been completed
 
-#### Result
+## Result
 
 The Result action is the action responsible to finish the Automation Workflow.
 
