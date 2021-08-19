@@ -532,7 +532,7 @@ function itemTemplate(itemData, itemIndex, itemElement, workspaceContext) {
     var properties = {
         items: [{"id":1, "value":"Blue"}, {"id":2, "value":"Red"}]
     };
-    SW.generateComponent(itemElement, 'List', properties);
+    SW.UI.showComponent(itemElement, 'List', properties);
 }
 ```
 
