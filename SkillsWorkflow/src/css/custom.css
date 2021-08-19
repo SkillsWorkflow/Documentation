@@ -49,6 +49,13 @@ h1 {
   font-size: 36px !important;
 }
 
+h4 {
+  font-family: 'Varela Round';
+  font-size: 20px;
+  font-weight: 400;
+  color: #9CA7B0;
+}
+
 p {
   font-size: 14px !important;
   font-family: 'Open Sans', sans-serif !important;
@@ -183,14 +190,25 @@ html[data-theme='dark'] .hero__title {
 }
 
 h1 {
-  font-family: 'Varela Round';
-  font-size: 46px;
+  margin: 0 auto;
+  font-family: 'Varela Round',sans-serif;
+  line-height: 48px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: none;
+  color: #1a1a1a;
 }
 
 h2 {
-  font-family: 'Varela Round';
-  font-size: 25px;
-  font-weight: 400;
+  display: block;
+  width: auto;
+  font-family: 'Varela Round',sans-serif;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: normal;
+  text-transform: uppercase;
 }
 
 h3 {
