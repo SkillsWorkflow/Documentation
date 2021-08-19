@@ -520,7 +520,20 @@ This method can be used inside any workspace. Creates a new component
 #### Basic Usage
 
 ```javascript
->    SW.UI.showComponent("div", "type", { properties });
+>    SW.UI.showComponent(element, "List", properties);
+```
+
+#### Example
+
+In the following example you can find a template for an item that will present a List of items:
+
+```javascript
+function itemTemplate(itemData, itemIndex, itemElement, workspaceContext) {
+    var properties = {
+        items: [{"id":1, "value":"Blue"}, {"id":2, "value":"Red"}]
+    };
+    SW.generateComponent(itemElement, 'List', properties);
+}
 ```
 
 ---
