@@ -204,11 +204,10 @@ h2 {
   width: auto;
   font-family: 'Varela Round',sans-serif;
   color: #1a1a1a;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
   white-space: normal;
-  text-transform: uppercase;
 }
 
 h3 {
@@ -348,7 +347,7 @@ html[data-theme='light'] .footer{
 
 .custom-table th, .custom-table td {
   border: 0;
-  text-align: left;
+  text-align: center;
 } 
 
 .custom-table tbody td code {
