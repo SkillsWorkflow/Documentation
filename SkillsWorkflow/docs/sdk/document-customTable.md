@@ -1,21 +1,29 @@
 ---
-id: customTables
+id: customTable
 title: " "
-sidebar_label: Custom Tables
+sidebar_label: Custom Table
+
 ---
 
+# Custom Table
 
-## setCustomFields
+A sub namespace of Document, exclusive for the custom tables operations
 
-### Description
+---
 
-This method can be used inside any workspace. Retrives a custom table
+## get
 
-### Method(s)
+#### Description
+
+This method can be used to get custom tables.
+
+#### Method(s)
 
 ```js {3}
-1   declare function get(customTableName: string, 
-2       orderByColumnName: string = null): Promise<any>;
+1   declare function get(
+2                           customTableName: string, 
+3                           orderByColumnName: string = null
+4   ): Promise<CustomTableDto[]>
 ```
 
 <table className="custom-table">
@@ -31,22 +39,22 @@ This method can be used inside any workspace. Retrives a custom table
     <tbody>
         <tr className="selected">
             <td><code>customTableName</code></td>
-            <td>String</td>
+            <td>string</td>
             <td>true</td>
             <td></td>
             <td>Table's name</td>
         </tr>
          <tr className="selected">
             <td><code>orderByColumnName</code></td>
-            <td>String</td>
-            <td>true</td>
+            <td>string</td>
+            <td>false</td>
             <td>null</td>
             <td>Column to order by table</td>
         </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
 >    SW.Document.CustomTable.get("Table");

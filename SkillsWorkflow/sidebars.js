@@ -38,13 +38,13 @@ module.exports = {
                         {
                             Document: [
                                 'sdk/document',
-                                'sdk/assignments',
-                                'sdk/holidays',
-                                'sdk/customTables',
-                                'sdk/clients',
-                                'sdk/users',
-                                'sdk/estimates',
-                                'sdk/currentUser'
+                                'sdk/assignment',
+                                'sdk/client',
+                                'sdk/currentUser',
+                                'sdk/customTable',
+                                'sdk/estimate',
+                                'sdk/holiday',
+                                'sdk/user'
                             ]
                         },
                         'sdk/execute-api',

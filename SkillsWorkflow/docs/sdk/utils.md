@@ -148,13 +148,13 @@ This method can be used to convert a string of data into an array of data.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.getDataArrayFromMultipleSelectionFieldString("[{\"name\":\"John\"}, {\"name\":\"Kiko\"}]")
+>    SW.Utils.getDataArrayFromMultipleSelectionFieldString("[{\"name\":\"John\"}, {\"name\":\"Arthur\"}]")
 ```
 
 #### Response
 
 ```javascript
->   [{name: John}, {name: Kiko}]
+>   [{name: John}, {name: Arthur}]
 ```
 
 ---

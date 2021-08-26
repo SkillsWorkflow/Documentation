@@ -1,19 +1,24 @@
 ---
-id: estimates
-title: "Estimates"
-sidebar_label: Estimates
+id: estimate
+title: ""
+sidebar_label: Estimate
+
+---
+
+# Estimate
+
+A sub namespace of Document, exclusive for estimate operations
+
 ---
 
 :::note
-The same methods that are presented in the Document Introduction but do not take the first param document, 
+The same methods that are presented in the Document Introduction but do not take the first param documentName, 
 because you're already in a Estimate document
 :::
-[Set Custom Fields](document#setcustomfields)
-
 [Get Custom Fields](document#getcustomfields)
 
-[Create](document#create)
+[Get Lookup](document#getlookup)
+
+[Set Custom Fields](document#setcustomfields)
 
 [Update](document#update)
-
-[Get Lookup](document#getlookup)
