@@ -11,7 +11,7 @@ With this namespace, you can quickly provide methods to show UI.
 The namespace User Interface provides to developers, methods to easily show or validate data.
 
 ```javascript
-//accessing to utils methods
+//accessing to ui methods
 SW.UI.{methodName}
 ```
 

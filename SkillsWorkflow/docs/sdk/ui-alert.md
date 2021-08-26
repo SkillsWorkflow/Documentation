@@ -68,7 +68,7 @@ This method can be used inside any workspace. Shows a Info toastr and also in th
 ### Basic Usage
 
 ```javascript
->    SW.UI.alert.info("Toast info");
+>    SW.UI.Alert.info("Toast info");
 ```
 ### Response
 
@@ -147,7 +147,7 @@ This method can be used inside any workspace. Shows a Warning toastr and also in
 ### Basic Usage
 
 ```javascript
->    SW.UI.alert.warning("User fields is required");
+>    SW.UI.Alert.warning("User fields is required");
 ```
 ### Response
 
@@ -219,7 +219,7 @@ This method can be used inside any workspace. Shows a Success toastr and also in
 ### Basic Usage
 
 ```javascript
->    SW.UI.alert.success("Toast success");
+>    SW.UI.Alert.success("Toast success");
 ```
 ### Response
 
@@ -291,7 +291,7 @@ This method can be used inside any workspace. Shows a Error toastr and also in t
 ### Basic Usage
 
 ```javascript
->    SW.UI.alert.error("Toast error");
+>    SW.UI.Alert.error("Toast error");
 ```
 ### Response
 
@@ -362,5 +362,5 @@ This method can be used inside any workspace. Clear specific toastr
 ### Basic Usage
 
 ```javascript
->    SW.UI.alert.clear("Toast clear"),
+>    SW.UI.Alert.clear("Toast clear"),
 ```
