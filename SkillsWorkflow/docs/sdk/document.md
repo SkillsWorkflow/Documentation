@@ -11,128 +11,22 @@ With this namespace, you can quickly provide methods to manipulate documents.
 The namespace Document provides to developers, methods to easily create, update, retrieve document data.
 
 ```javascript
-//accessing to utils methods
+//accessing to Document methods
 SW.Document.{methodName}
 ```
 
-## setCustomFields
+---
 
-### Description
-
-This method can be used inside any workspace. Used to set custom user fields
-
-### Method(s)
-
-```js {3}
-1   declare function setCustomFields(document: string, documentIds: string[], 
-2       documentUserFieldsValue: any[]): Promise<any>;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>document</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Document's type name</td>
-        </tr>
-         <tr className="selected">
-            <td><code>documentIds</code></td>
-            <td>String []</td>
-            <td>true</td>
-            <td></td>
-            <td>An array of document's Ids</td>
-        </tr>
-        <tr className="selected">
-            <td><code>documentUserFieldsValue</code></td>
-            <td>Any</td>
-            <td>true</td>
-            <td></td>
-            <td>User fields to set into the passed documents</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->   SW.Document.setCustomFields("Employee","b983e9b5-b2b8-485f-8ff8-794463771bcc", 
-        { Name: "Default"});
-```
-
-## getCustomFields
-
-### Description
-
-This method can be used inside any workspace. Return custom user fields
-### Method(s)
-
-```js {3}
-1   declare function getCustomFields(documentIds: string[], userFieldName: string, 
-2       valueType: string): Promise<any>;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-         <tr className="selected">
-            <td><code>documentIds</code></td>
-            <td>String []</td>
-            <td>true</td>
-            <td></td>
-            <td>An array of document's Ids</td>
-        </tr>
-        <tr className="selected">
-            <td><code>userFieldName</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>User field name</td>
-        </tr>
-        <tr className="selected">
-            <td><code>valueType</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Specify the value type of the document user field</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.Document.getCustomFields("b983e9b5-b2b8-485f-8ff8-794463771bcc", "Default", 
-        "string");
-```
 ## create
 
-### Description
+#### Description
 
-This method can be used inside any workspace. Create a new document
-### Method(s)
+This method can be used to create a new document.
 
-```js {3}
-1   declare function create(document: string, 
-2       draftData: IDraftDocument = null): Promise<any>;
+#### Method(s)
+
+```javascript
+1   declare function create(documentName: DocumentName, params: {draftData?: IDraftDocument} = {}): void;
 ```
 
 <table className="custom-table">
@@ -147,8 +41,8 @@ This method can be used inside any workspace. Create a new document
     </thead>
     <tbody>
          <tr className="selected">
-            <td><code>document</code></td>
-            <td>String</td>
+            <td><code>documentName</code></td>
+            <td>DocumentName</td>
             <td>true</td>
             <td></td>
             <td>Document's type name</td>
@@ -163,23 +57,214 @@ This method can be used inside any workspace. Create a new document
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
->    SW.Document.create("company", data);
+>    SW.Document.create(SW.DocumentName.Job, {draftData: data});
 ```
+
+---
+
+## getCustomFields
+
+#### Description
+
+This method can be used to get a custom user field from various documents.
+
+#### Method(s)
+
+```javascript
+1   declare function getCustomFields(   
+2                                       documentName: DocumentName, 
+3                                       documentIds: string[], 
+4                                       userFieldName: string, 
+5                                       valueType: string
+6   ): Promise<any>;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr className="selected">
+            <td><code>documentName</code></td>
+            <td>DocumentName</td>
+            <td>true</td>
+            <td></td>
+            <td>Document's type</td>
+        </tr>
+         <tr className="selected">
+            <td><code>documentIds</code></td>
+            <td>string[]</td>
+            <td>true</td>
+            <td></td>
+            <td>An array of document ids</td>
+        </tr>
+        <tr className="selected">
+            <td><code>userFieldName</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td></td>
+            <td>User field name</td>
+        </tr>
+        <tr className="selected">
+            <td><code>valueType</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td></td>
+            <td>Specify the value type of the document user field</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+>   SW.Document.getCustomFields(
+>                                   SW.DocumentName.Job,
+>                                   ["b983e9b5-b2b8-485f-8ff8-794463771bcc"], 
+>                                   "Default", 
+>                                   "string"
+>   );
+```
+
+---
+
+## getLookup
+
+#### Description
+
+This method can be used to execute a document lookup.
+#### Method(s)
+
+```javascript
+1   declare function getLookup(
+2                               documentName: DocumentName, 
+3                               options: string | {searchValue?: string, skip?: number, take?: number} = {}
+4   ): Promise<any> 
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr className="selected">
+            <td><code>document</code></td>
+            <td>DocumentName</td>
+            <td>true</td>
+            <td></td>
+            <td>Document type</td>
+        </tr>
+        <tr className="selected">
+            <td><code>options</code></td>
+            <td>string</td>
+            <td>false</td>
+            <td></td>
+            <td>Document id or search, skip and take values</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+>    SW.Document.getLookup(SW.DocumentName.Job, options);
+```
+
+---
+
+## setCustomFields
+
+#### Description
+
+This method can be used to set custom user fields in documents.
+
+#### Method(s)
+
+```javascript
+1   declare function setCustomFields(
+2                                       documentName: DocumentName, 
+3                                       documentIds: string[], 
+4                                       documentUserFieldsValue: DocumentUserFieldValueModel[]
+5   ): Promise<DocumentUserFieldValuesModel[]>
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>documentName</code></td>
+            <td>DocumentName</td>
+            <td>true</td>
+            <td></td>
+            <td>Document's type</td>
+        </tr>
+         <tr className="selected">
+            <td><code>documentIds</code></td>
+            <td>string[]</td>
+            <td>true</td>
+            <td></td>
+            <td>An array of document ids</td>
+        </tr>
+        <tr className="selected">
+            <td><code>documentUserFieldsValue</code></td>
+            <td>DocumentUserFieldValueModel[]</td>
+            <td>true</td>
+            <td></td>
+            <td>User fields to set into the passed documents</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+>   SW.Document.setCustomFields(
+>                               SW.DocumentName.Job,
+>                               ["b1dd37dd-4633-4cc4-a418-0830d5e35638"], 
+>                               [{ ColumnName: 'AddedOn', Value: false, ColumnDataTypeId: 0 }]
+>   );
+```
+
+---
 
 ## update
 
-### Description
+#### Description
 
-This method can be used inside any workspace. Update a document
-### Method(s)
+This method can be used to update fields in a document.
+
+#### Method(s)
 
 ```javascript
-1   declare function update(document: string, documentId: string, 
-2       fields: string[], values: string[], callback: Function = () => {},
-3       callbackError: Function = () => {: Promise<any>;
+1   declare function update(
+2                           documentName: DocumentName,
+3                           documentId: string,
+4                           fields: string[],
+5                           values: string[]
+6   ): Promise<any>
 ```
 
 <table className="custom-table">
@@ -194,99 +279,43 @@ This method can be used inside any workspace. Update a document
     </thead>
     <tbody>
        <tr className="selected">
-            <td><code>document</code></td>
-            <td>String</td>
+            <td><code>documentName</code></td>
+            <td>DocumentName</td>
             <td>true</td>
             <td></td>
-            <td>Document's type name</td>
+            <td>Document type</td>
         </tr>
          <tr className="selected">
             <td><code>documentId</code></td>
-            <td>String</td>
+            <td>string</td>
             <td>true</td>
             <td></td>
-            <td>Document's Ids</td>
+            <td>Document id</td>
         </tr>
         <tr className="selected">
             <td><code>fields</code></td>
-            <td>String []</td>
+            <td>string[]</td>
             <td>true</td>
             <td></td>
             <td>Fields to update</td>
         </tr>
         <tr className="selected">
             <td><code>values</code></td>
-            <td>String []</td>
+            <td>string[]</td>
             <td>true</td>
             <td></td>
             <td>Values to update the fields</td>
         </tr>
-        <tr className="selected">
-            <td><code>callBack</code></td>
-            <td>Function</td>
-            <td>false</td>
-            <td>null</td>
-            <td>Callback function</td>
-        </tr>
-        <tr className="selected">
-            <td><code>callBackError</code></td>
-            <td>Function</td>
-            <td>false</td>
-            <td>null</td>
-            <td>Callback function</td>
-        </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
->    SW.Document.update("employee", "b983e9b5-b2b8-485f-8ff8-794463771bcc", 
-        "Default", "true");
-```
-
-## GetLookup
-
-### Description
-
-This method can be used inside any workspace. Get document lookup
-### Method(s)
-
-```js {3}
-1   declare function getLookup(document: string, 
-2       options: any): Promise<any>;
-```
-
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-         <tr className="selected">
-            <td><code>document</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Document's type name</td>
-        </tr>
-        <tr className="selected">
-            <td><code>options</code></td>
-            <td>any</td>
-            <td>false</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.Document.create("company", options);
+>   SW.updateDocument(
+>                       SW.DocumentName.Job, 
+>                       "b1dd37dd-4633-4cc4-a418-0830d5e35638", 
+>                       ['AgreedDateUtc'], 
+>                       ['2021-01-01']
+>   );
 ```

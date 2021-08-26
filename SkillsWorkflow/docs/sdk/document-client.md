@@ -1,30 +1,37 @@
 ---
-id: clients
-title: "Clients"
-sidebar_label: Clients
+id: client
+title: ""
+sidebar_label: Client
+
+---
+
+# Client
+
+A sub namespace of Document, exclusive for client operations
+
 ---
 
 :::note
-The same methods that are presented in the Document Introduction but do not take the first param document, 
+The same methods that are presented in the Document Introduction but do not take the first param documentName, 
 because you're already in a Client document
 :::
-[Set Custom Fields](document#setcustomfields)
-
 [Get Custom Fields](document#getcustomfields)
-
-[Create](document#create)
-
-[Update](document#update)
 
 [Get Lookup](document#getlookup)
 
+[Set Custom Fields](document#setcustomfields)
+
+[Update](document#update)
+
+---
+
 ## getImages
 
-### Description
+#### Description
 
-This method can be used inside any workspace. To return an Estimate's images
+This method can be used to get clients image url.
 
-### Method(s)
+#### Method(s)
 
 ```javascript
 1   declare function getImages(ids: string[]): string[];
@@ -42,16 +49,16 @@ This method can be used inside any workspace. To return an Estimate's images
     <tbody>
         <tr className="selected">
             <td><code>ids</code></td>
-            <td>String []</td>
+            <td>string[]</td>
             <td>true</td>
             <td></td>
-            <td>Array of document's ids</td> 
+            <td>Array of client ids</td> 
         </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
->    SW.Document.Estimates.getImages(["f6671567-67b2-430c-bf04-dc7a41e99395"]);
+>    SW.Document.Client.getImages(["f6671567-67b2-430c-bf04-dc7a41e99395"]);
 ```

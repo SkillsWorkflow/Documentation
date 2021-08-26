@@ -1,20 +1,26 @@
 ---
-id: holidays
+id: holiday
 title: " "
-sidebar_label: Holidays
+sidebar_label: Holiday
+
 ---
 
-## setCustomFields
+# Holiday
 
-### Description
+A sub namespace of Document, exclusive for holiday operations
 
-This method can be used inside any workspace. Retrives a custom table
+---
 
-### Method(s)
+## get
+
+#### Description
+
+This method can be used to get holidays from a company between two dates.
+
+#### Method(s)
 
 ```javascript
-1   declare function get(companyId: string, startDate?: Date, 
-2       endDate?: Date): Promise<any>;
+1   declare function get(companyId?: string, startDate?: Date, endDate?: Date): Promise<HolidayInfoDto[]>
 ```
 
 <table className="custom-table">
@@ -30,7 +36,7 @@ This method can be used inside any workspace. Retrives a custom table
     <tbody>
         <tr className="selected">
             <td><code>companyId</code></td>
-            <td>String</td>
+            <td>string</td>
             <td>true</td>
             <td></td>
             <td>Company's id</td>
@@ -40,20 +46,20 @@ This method can be used inside any workspace. Retrives a custom table
             <td>Date</td>
             <td>false</td>
             <td></td>
-            <td>Holiday start date</td>
+            <td>Range start date</td>
         </tr>
         <tr className="selected">
             <td><code>endDate</code></td>
             <td>Date</td>
             <td>false</td>
             <td></td>
-            <td>Holiday end date</td>
+            <td>Range end date</td>
         </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
->    SW.Document.Holidays.get("SkillsWorkflow");
+>    SW.Document.Holiday.get("bf54366c-4212-4099-b959-7c969b6c878f");
 ```
