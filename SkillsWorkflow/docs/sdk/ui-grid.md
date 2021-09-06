@@ -6,123 +6,22 @@ sidebar_label: Grid
 
 # Grid
 
-A sub namespace of UI, exclusive for grid properties
-
-## expandCollapseRows
-
-### Description
-
-This method can be used inside any workspace. To expand or collapse specified Grid rows.
-
-### Method(s)
+A sub namespace of UI, exclusive for grid operations
 
 ```javascript
-1 function expandCollapseRows(dataGrid: dxDataGrid, params?: 
-2   {expandPriority?: boolean} = {expandPriority: true}): void;
+//accessing to ui.grid methods
+SW.UI.Grid.{methodName}
 ```
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>dataGrid</code></td>
-            <td>dxDataGrid</td>
-            <td>true</td>
-            <td></td>
-            <td>The target dataGrid whose rows are going to be expanded or collapsed</td> 
-        </tr>
-         <tr className="selected">
-            <td><code>expandPriority</code></td>
-            <td>Boolean</td>
-            <td>false</td>
-            <td>true</td>
-            <td>Flag to set if the rows are to expanded or collapsed instead</td> 
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.grid.expandCollapseRow("dataGrid");
-```
-### Response
-
----
-
-## calculatePercentageSummary
-
-### Description
-
-This method can be used inside any workspace. To expand or collapse specified Grid rows.
-
-### Method(s)
-
-```js {3}
-1 function calculatePercentageSummary(options: any, dividend: number[], 
-2       diviser[]: number[]): void;
-```
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>options</code></td>
-            <td>Any</td>
-            <td>true</td>
-            <td></td>
-            <td>The target dataGrid whose rows are going to be expanded or collapsed</td> 
-        </tr>
-         <tr className="selected">
-            <td><code>dividend</code></td>
-            <td>Number</td>
-            <td>true</td>
-            <td></td>
-            <td>Flag to set if the rows are to expanded or collapsed instead</td> 
-        </tr>
-         <tr className="selected">
-            <td><code>divisor</code></td>
-            <td>Number</td>
-            <td>true</td>
-            <td></td>
-            <td>Flag to set if the rows are to expanded or collapsed instead</td> 
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
-
-```javascript
->    SW.UI.grid.calculatePercentageSummary(options: any, dividend: number[], 
-        diviser[]: number[]): void;
-```
-### Response
-
-<!-- <img alt="Show Bulk" src="/img/responses/showBulk_response.png"> -->
-![img-with-border](/img/responses/showBulk_response.png)
 
 ---
 
 ## addToolbarButtons
 
-### Description
+#### Description
 
-This method can be used inside any workspace. To expand or collapse specified Grid rows.
-### Method(s)
+This method can be to add buttons in the grid toolbar.
+
+#### Method(s)
 
 ```js {3}
 1 function addToolbarButtons(toolbarEvent: any, buttonsList: Button[]): void;
@@ -140,40 +39,39 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     <tbody>
         <tr className="selected">
             <td><code>toolbarEvent</code></td>
-            <td>Any</td>
+            <td>any</td>
             <td>true</td>
             <td></td>
-            <td>The target dataGrid whose rows are going to be expanded or collapsed</td> 
+            <td>The target dataGrid</td> 
         </tr>
          <tr className="selected">
             <td><code>buttonsList</code></td>
             <td>Button</td>
             <td>true</td>
             <td></td>
-            <td>Flag to set if the rows are to expanded or collapsed instead</td> 
+            <td>Buttons to add</td> 
         </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
->    SW.UI.grid.addToolbarButtons(toolbarEvent, buttonsList);
+>    SW.UI.Grid.addToolbarButtons(toolbarEvent, buttonsList);
 ```
-### Response
 
 ---
 
-## importExcel
+## calculatePercentageSummary
 
-### Description
+#### Description
 
-This method can be used inside any workspace. To expand or collapse specified Grid rows.
+This method can be used to calculate summaries with percentages.
 
-### Method(s)
+#### Method(s)
 
 ```js {3}
-1 function importExcel(fileUpload: any, grid: DxDataGridComponent): void;
+1 function calculatePercentageSummary(options: any, dividend: number[], divisor: number[]): void
 ```
 <table className="custom-table">
     <thead>
@@ -187,45 +85,48 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     </thead>
     <tbody>
         <tr className="selected">
-            <td><code>fileUpload</code></td>
-            <td>Any</td>
+            <td><code>options</code></td>
+            <td>any</td>
             <td>true</td>
             <td></td>
-            <td>The target dataGrid whose rows are going to be expanded or collapsed</td> 
+            <td>Summary options</td> 
         </tr>
          <tr className="selected">
-            <td><code>grid</code></td>
-            <td>DxDataGridComponent</td>
+            <td><code>dividend</code></td>
+            <td>number[]</td>
             <td>true</td>
             <td></td>
-            <td>Flag to set if the rows are to expanded or collapsed instead</td> 
+            <td>Array of dividends</td> 
+        </tr>
+         <tr className="selected">
+            <td><code>divisor</code></td>
+            <td>number[]</td>
+            <td>true</td>
+            <td></td>
+            <td>Array of divisors</td> 
         </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
->    SW.UI.grid.importExcel(file, grid);
+>    SW.UI.Grid.calculatePercentageSummary(options, [1,2,3], [4,5,6]);
 ```
-### Response
+#### Response
 
 ---
 
-
-
-
 ## delete
 
-### Description
+#### Description
 
-This method can be used inside any workspace. To expand or collapse specified Grid rows.
+This method can be used to delete grid rows.
 
-### Method(s)
+#### Method(s)
 
 ```js {3}
-1 function delete(documentName: string, dataGrid: dxDataGrid, params?: 
-2   {idField?: string} = {}): void;
+1 function delete(documentName: string, dataGrid: dxDataGrid, params: { idField?: string } = {}): void 
 ```
 <table className="custom-table">
     <thead>
@@ -240,31 +141,134 @@ This method can be used inside any workspace. To expand or collapse specified Gr
     <tbody>
         <tr className="selected">
             <td><code>documentName</code></td>
-            <td>String</td>
+            <td>string</td>
             <td>true</td>
             <td></td>
-            <td>The target dataGrid whose rows are going to be expanded or collapsed</td> 
+            <td>Document name</td> 
         </tr>
          <tr className="selected">
             <td><code>dataGrid</code></td>
             <td>dxDataGrid</td>
             <td>true</td>
             <td></td>
-            <td>Deveextreme dataGrid</td> 
+            <td>Target datagrid</td> 
         </tr>
          <tr className="selected">
             <td><code>idField</code></td>
-            <td>DxDataGridComponent</td>
+            <td>string</td>
             <td>false</td>
             <td></td>
-            <td>field id</td> 
+            <td>Field to delete</td> 
         </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
->    SW.UI.grid.delete("company", dataGrid);
+>    SW.UI.Grid.delete("company", dataGrid);
 ```
-### Response
+
+---
+
+## expandCollapseRows
+
+#### Description
+
+This method can be used inside any workspace. To expand or collapse specified Grid rows.
+
+#### Method(s)
+
+```javascript
+1   function expandCollapseRows(dataGrid: dxDataGrid,
+2       params: { 
+3           expandPriority?: boolean 
+4       } = { 
+5           expandPriority: true 
+6       }
+7   ): void 
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>dataGrid</code></td>
+            <td>dxDataGrid</td>
+            <td>true</td>
+            <td></td>
+            <td>Target datagrid</td> 
+        </tr>
+         <tr className="selected">
+            <td><code>expandPriority</code></td>
+            <td>boolean</td>
+            <td>false</td>
+            <td>true</td>
+            <td>Flag to set if the rows are to expanded or collapsed instead</td> 
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+>    SW.UI.grid.expandCollapseRow(dataGrid.component);
+```
+
+#### Response
+
+---
+
+## importExcel
+
+#### Description
+
+This method can be used to import a xlsx file into a datagrid.
+
+#### Method(s)
+
+```js {3}
+1 function importExcel(fileUpload: any, grid: dxDataGrid): void;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>fileUpload</code></td>
+            <td>any</td>
+            <td>true</td>
+            <td></td>
+            <td>File to be uploaded</td> 
+        </tr>
+         <tr className="selected">
+            <td><code>dataGrid</code></td>
+            <td>dxDataGrid</td>
+            <td>true</td>
+            <td></td>
+            <td>Target datagrid</td> 
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+>    SW.UI.grid.importExcel(file, grid);
+```
