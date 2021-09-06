@@ -4,7 +4,7 @@ title: " "
 sidebar_label: Introduction
 ---
 
-# document
+# Document
 
 With this namespace, you can quickly provide methods to manipulate documents.
 

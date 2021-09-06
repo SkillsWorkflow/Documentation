@@ -3,44 +3,35 @@ id:  ui-tooltip
 title: ' '
 sidebar_label: Tooltip
 ---
-## usage
-When you hover the target, it shows the implemented tooltip
 
-<!-- ![img-with-border](/img/responses/tooltip_usage.png) -->
+# Tooltip
 
-:::important
+A sub namespace of UI, exclusive for tooltip operations
 
-For this example the tooltip methods were set on 2 events 
+```javascript
+//accessing to ui.tooltip methods
+SW.UI.Tooltip.{methodName}
+```
 
-:::
-
-
-![img-with-border-with-border-with-border](/img/responses/tooltip-usage-documentation.png)
-
-<figure>
-
-![img-with-border](/img/responses/tooltip_set_show_usage.png)
-<figcaption>Tooltip Set and Show on On Mouse Enter</figcaption>
-</figure>
-
-
-<figure>
-
-![img-with-border](/img/responses/tooltip_hide_usage.png)
-<figcaption>Tooltip Hide on On Mouse Leave event</figcaption>
-</figure>
+---
 
 ## set
 
-### Description
+#### Description
 
-This method can be used inside any workspace. Create a new tooltip
-### Method(s)
+This method can be used to set a new tooltip to a html element.
+
+#### Method(s)
 
 ```js {3}
-1 function set(reference: HTMLElement, entity: string, data: object, 
-2   tooltipHTML?: string);
+1   function set(reference: HTMLElement, data: object | string,
+2       params: {
+3           documentName?: DocumentName,
+4           tooltipOptions?: PopperContentOptions
+5       } = {}
+6   ): void
 ```
+
 <table className="custom-table">
     <thead>
         <tr>
@@ -60,47 +51,54 @@ This method can be used inside any workspace. Create a new tooltip
             <td>Element's reference</td>
         </tr>
         <tr className="selected">
-            <td><code>entity</code></td>
-            <td>String</td>
-            <td>true</td>
-            <td></td>
-            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
-        </tr>
-        <tr className="selected">
             <td><code>data</code></td>
-            <td>object</td>
+            <td>object | string</td>
             <td>true</td>
             <td></td>
-            <td>Information to be displayed</td>
+            <td>Data to be displayed</td>
         </tr>
         <tr className="selected">
-            <td><code>tooltipHTML</code></td>
-            <td>string</td>
+            <td><code>documentName</code></td>
+            <td>DocumentName</td>
             <td>false</td>
             <td></td>
+            <td>Document name</td>
+        </tr>
+        <tr className="selected">
+            <td><code>tooltipOptions</code></td>
+            <td>PopperContentOptions</td>
+            <td>false</td>
             <td></td>
+            <td>Tooltip options</td>
         </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript 
->    SW.UI.tooltip.set(element, "job", { Job: data });
+>    SW.UI.Tooltip.set(element, jobData, { documentName: SW.DocumentName.Job });
 ```
 
 ---
 
 ## show
 
-### Description
+#### Description
 
-This method can be used inside any workspace. Show existing tooptip
-### Method(s)
+This method can be used to show a tooptip in a html element. (When used, to hide the tooltip use SW.UI.Tooltip.hide())
+
+#### Method(s)
 
 ```js {3}
-1 function show(reference: HTMLElement);
+1   function show(reference: HTMLElement, data: object | string,
+2       params: {
+3           documentName?: DocumentName,
+4           tooltipOptions?: PopperContentOptions
+5       } = {}
+6   ): void
 ```
+
 <table className="custom-table">
     <thead>
         <tr>
@@ -119,27 +117,50 @@ This method can be used inside any workspace. Show existing tooptip
             <td></td>
             <td>Element's reference</td>
         </tr>
+        <tr className="selected">
+            <td><code>data</code></td>
+            <td>object | string</td>
+            <td>true</td>
+            <td></td>
+            <td>Data to be displayed</td>
+        </tr>
+        <tr className="selected">
+            <td><code>documentName</code></td>
+            <td>DocumentName</td>
+            <td>false</td>
+            <td></td>
+            <td>Document name</td>
+        </tr>
+        <tr className="selected">
+            <td><code>tooltipOptions</code></td>
+            <td>PopperContentOptions</td>
+            <td>false</td>
+            <td></td>
+            <td>Tooltip options</td>
+        </tr>
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript 
->    SW.UI.tooltip.show(element);
+>    SW.UI.Tooltip.(element, jobData, { documentName: SW.DocumentName.Job });
 ```
 
 ---
 
 ## hide
 
-### Description
+#### Description
 
-This method can be used inside any workspace. Hide specified tooltip
-### Method(s)
+This method can be used to hide a tooltip. (Only used when using SW.UI.Tooltip.show())
+
+#### Method(s)
 
 ```js {3}
-1 function hide(reference: HTMLElement);
+1 function hide(reference: HTMLElement): void
 ```
+
 <table className="custom-table">
     <thead>
         <tr>
@@ -161,7 +182,7 @@ This method can be used inside any workspace. Hide specified tooltip
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript 
 >    SW.UI.tooltip.hide(element);

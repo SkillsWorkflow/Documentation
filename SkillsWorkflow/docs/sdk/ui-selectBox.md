@@ -4,53 +4,24 @@ title: ' '
 sidebar_label: SelectBox
 ---
 
-## setListWidth
+# SelectBox
 
-### Description
-
-This method can be used inside any workspace. Set SelectBox's list width according to the largest item passed in element's datasource
-
-### Method(s)
-
-```js {3}
-1 function setListWidth(e: any): void;
-```
-<table className="custom-table">
-    <thead>
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Defaults</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>e</code></td>
-            <td>any</td>
-            <td>true</td>
-            <td></td>
-            <td>This parameter refers to a selectBox</td>
-        </tr>
-    </tbody>
-</table>
-
-### Basic Usage
+A sub namespace of UI, exclusive for select box operations
 
 ```javascript
->    SW.UI.selectBox.setListWidth(selectBox);
+//accessing to ui.selectBox methods
+SW.UI.SelectBox.{methodName}
 ```
-### Response
 
 ---
 
 ## getLookupByEndpoint
 
-### Description
+#### Description
 
-This method can be used inside any workspace. Generates a pop-up to allow editing in bulk
-### Method(s)
+This method can be used to get a SelectBox's datasource.
+
+#### Method(s)
 
 ```js {3}
 1 function getLookupByEndpoint(options: any, endpoint: string): Promise<any>;
@@ -71,7 +42,7 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
             <td>any</td>
             <td>true</td>
             <td></td>
-            <td>Refers to a pre-set element of entity list. Has unique atributes and styling</td>
+            <td>SearchValue, skip and take</td>
         </tr>
         <tr className="selected">
             <td><code>endpoint</code></td>
@@ -83,9 +54,55 @@ This method can be used inside any workspace. Generates a pop-up to allow editin
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
->    SW.UI.selectBox.getLookupByEndpoint("options", "companies/all");
+>    SW.UI.selectBox.getLookupByEndpoint({searchValue: '', skip: 0, take: 20}, "departments/lookup");
 ```
-### Response
+
+---
+
+## setListWidth
+
+#### Description
+
+This method can be used to set a SelectBox's list width according to the largest item passed in element's datasource.
+
+#### Method(s)
+
+```js {3}
+1 function setListWidth(selectBox: {component: dxSelectBox, element: HTMLElement}): void
+```
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>component</code></td>
+            <td>dxSelectBox</td>
+            <td>true</td>
+            <td></td>
+            <td>Target select box</td>
+        </tr>
+        <tr className="selected">
+            <td><code>element</code></td>
+            <td>HTMLElement</td>
+            <td>true</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+>    SW.UI.selectBox.setListWidth(selectBox);
+```

@@ -57,10 +57,12 @@ module.exports = {
                         {
                             UI: [
                                 'sdk/ui',
-                                'sdk/ui-grid',
-                                'sdk/ui-selectBox',
-                                'sdk/ui-buttons',
                                 'sdk/ui-alert',
+                                'sdk/ui-buttons',
+                                'sdk/ui-grid',
+                                'sdk/ui-navigate',
+                                'sdk/ui-popup',
+                                'sdk/ui-selectBox',
                                 'sdk/ui-tooltip',
                                 'sdk/ui-workspaces'
                             ]
