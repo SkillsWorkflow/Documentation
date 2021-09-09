@@ -1,5 +1,5 @@
 [[plugins]]
-package = "@algolia/netlify-plugin-crawler"
+package = "@algolia/netlify-plugin-crawler@1.0.9"
   [plugins.inputs]
   template = "hierarchical"
   customDomain = "skillsworkflow.com"
