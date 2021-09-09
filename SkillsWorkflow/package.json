@@ -19,6 +19,7 @@
     "@docusaurus/plugin-content-docs": "^2.0.0-alpha.40",
     "@docusaurus/preset-classic": "^2.0.0-alpha.40",
     "@docusaurus/theme-search-algolia": "^2.0.0-alpha.40",
+    "@docsearch/js": "^3.0.0-alpha.40",
     "@types/node": "^16.4.1",
     "@types/react": "^17.0.14",
     "clsx": "^1.1.1",
