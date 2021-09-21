@@ -455,7 +455,8 @@ To do so, it is required some parameters to be filled:
     "body": "This body can also be HTML.",
     "subject": "This is the e-mail subject",
     "fromDisplayName": "Notification | Skills Workflow",
-    "toAddress": "user@skillsworkflow.com"
+    "toAddress": "user@skillsworkflow.com",
+    "attachment": "document.pdf"
 }
 ```
 
@@ -468,6 +469,7 @@ To do so, it is required some parameters to be filled:
 * subject - The email's subject
 * fromDisplayName - The display name that will appear on the sender
 * toAddress - The email address to whom the email should be sent
+* attachment - Name of the File to attach in email 
 
 ---
 
@@ -844,4 +846,40 @@ Please check the template description to know which parameters must be sent for 
 * tenantId - Microsoft Active Directory Tenant Id
 * clientId - Microsoft App Registration Id In Azure AD
 * clientSecret - Microsoft App Registration Secret
+
+
+## CreatPdfFromDocument
+
+CreatPdfFromDocument action allows you to download a pdf from a existing document using a pre-existing layout
+
+#### Configuration
+
+To do so it is required a parameter to be filled:
+
+* documentType - The type of the document to create a Pdf
+* documentId - The id of the document
+* layoutId - The Id of the layout to use to create Pdf
+
+
+#### Template
+
+```json {3,5-7}
+{
+    "actionType": "CreatePdfFromDocument",
+    "name": "GetPdfFromDocument",
+    "next": "SendEmail",
+    "documentType":"Expense",
+    "documentId":"8b0412b4-37bc-47c9-9269-fa570f1f1f60",
+    "layoutId":"20"
+}
+```
+
+#### Template Description
+
+* actionType – The action type is CreatePdfFromDocument
+* name - The name of the action
+* next - The action that will be triggered after the current action been completed
+* documentType - Type of Document. ex: "Expense", "Project", "Deliverable"
+* documentId - The Id of the desired Document
+* layoutId - The layout id used to create pdf
 
