@@ -1,7 +1,7 @@
 ---
 id:  contracts
 title: Contracts
-sidebar_label: Lesson 2 - Create Contracts and Proposals
+sidebar_label: 2. Create Contracts and Proposals
 ---
 
 

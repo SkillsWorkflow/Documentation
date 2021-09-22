@@ -1,11 +1,11 @@
 ---
 id:  contract-dashboard
 title: Contract
-sidebar_label: Lesson 3 - Contract Dashboards
+sidebar_label: 3. Contract Dashboards
 sidebar_position: 3
 ---
 
-## Lesson 3 - Contract Dashboards
+## 3. Contract Dashboards
 
 Dashboards are a powerful feature used to quickly support decisions related to a specific contract.
 

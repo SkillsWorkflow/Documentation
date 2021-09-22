@@ -1,11 +1,11 @@
 ---
 id:  client-dashboard
 title: Clients
-sidebar_label: Lesson 1 - Client Dashboards
+sidebar_label: 1. Client Dashboards
 sidebar_position: 1
 ---
 
-## Lesson 1 - Client Dashboards
+## 1. Client Dashboards
 
 Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.
 

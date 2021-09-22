@@ -1,12 +1,12 @@
 ---
 id:  create-jobs
 title: Create Jobs
-sidebar_label: Lesson 2 - How to create Jobs
+sidebar_label: 2. Create Jobs
 sidebar_position: 2
 ---
 
 
-## Lesson 2 - How to create Jobs
+## 2. Create Jobs
 
 1. To create a new Job, navigate to the "Projects" module.
 

@@ -45,7 +45,7 @@ To invoke the action content use the following statement: {{['actionName']}}
 
 * It can be evaluated using JsonPath syntax
 
-Please see the example below to see how to access to the action GetProjectFile and get the Uri:
+Please see the example below to see  access to the action GetProjectFile and get the Uri:
 
 ```json {5} title="Accessing GetProjectFile action's content to use the Uri"
 {   

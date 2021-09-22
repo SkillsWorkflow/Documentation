@@ -1,10 +1,10 @@
 ---
 id:  invoice-estimate
 title: Estimates
-sidebar_label: Lesson 2 - How to invoice an Estimate
+sidebar_label: 2.  invoice an Estimate
 ---
 
-## Lesson 2 - How to create retainer estimates
+## 2.  create retainer estimates
 
 Estimates can be created as retainers, and the system will automatically display their values.
 

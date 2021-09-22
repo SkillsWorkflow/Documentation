@@ -1,11 +1,11 @@
 ---
 id:  1-approve-expenses
 title: Approve Expenses
-sidebar_label: Lesson 3 - Approve Expenses
+sidebar_label: 3. Approve Expenses
 sidebar_position: 3
 ---
 
-## Lesson 3 - Approve Expenses
+## 3. Approve Expenses
 
 
 ### Expenses can be approved in two ways:

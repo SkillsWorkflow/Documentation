@@ -1,11 +1,11 @@
 ---
 id:  gantt-chart
 title: Gantt Chart
-sidebar_label: Lesson 4 - Gantt Chart
+sidebar_label: 4. Gantt Chart
 sidebar_position: 4
 ---
 
-## Lesson 4 - Gantt Chart
+## 4. Gantt Chart
 
 
 ### One of the many ways of visualizing your Projects in Skills Workflow is in a Gantt Chart.

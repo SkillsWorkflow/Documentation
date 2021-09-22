@@ -1,11 +1,11 @@
 ---
 id:  2-expenses
 title: Expenses
-sidebar_label: Lesson 2 - Create Expenses
+sidebar_label: 2. Create Expenses
 sidebar_position: 2
 ---
 
-## Lesson 2 - How to create Expenses 
+## 2. Create Expenses 
 
 ### Expenses can be created in two ways:
 

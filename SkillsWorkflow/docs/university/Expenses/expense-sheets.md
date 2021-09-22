@@ -1,11 +1,11 @@
 ---
 id:  expense-sheets
 title: Expense Sheets
-sidebar_label: Lesson 1 - Create Expense Sheets
+sidebar_label: 1. Create Expense Sheets
 sidebar_position: 1
 ---
 
-## Lesson 1 - How to create Expenses Sheets
+## 1. Create Expenses Sheets
 
 It's possible to create and manage expenses relative to projects and other activities.
 

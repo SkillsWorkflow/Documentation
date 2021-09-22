@@ -1,11 +1,11 @@
 ---
 id:  invoice-authorizations
 title: Invoice Authorizations
-sidebar_label: Lesson 1 - How to create invoice authorizations
+sidebar_label: 1. Create invoice authorizations
 sidebar_position: 1
 ---
 
-## Lesson 1 - How to create invoice authorizations
+## 1. Create invoice authorizations
 
 You can create invoice orders in the system, and in this way inform the financial team to proceed with the creation / synchronization of the document to the external financial system, and generate the final invoice.
 

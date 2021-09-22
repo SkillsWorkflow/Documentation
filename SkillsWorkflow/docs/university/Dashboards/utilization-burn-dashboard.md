@@ -1,11 +1,11 @@
 ---
 id:  utilization-burn-dashboard
 title: Burn and Utilization
-sidebar_label: Lesson 5 - Burn and Utilization Dashboards
+sidebar_label: 5. Burn and Utilization Dashboards
 sidebar_position: 5
 --- 
 
-## Lesson 5 - Burn and Utilization Dashboards
+## 5. Burn and Utilization Dashboards
 
 Dashboards are a powerful feature used to quickly support decisions related to a specific contract.
 
