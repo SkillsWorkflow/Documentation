@@ -4,7 +4,7 @@ title: Folha de Horas
 sidebar_label: Folha de Horas
 ---
 
-## Lição 1 - Preencher Folhas de horas
+## 1. Preencher Folhas de horas
 
 :::note 
 Para preencher horas, navegue para o módulo **Time sheets**
@@ -111,7 +111,7 @@ Para preencher horas, navegue para o módulo **Time sheets**
 
 ---
 
-## Lição 2 - Aprovar Folhas de Horas
+## 2. Aprovar Folhas de Horas
 
 :::note
 Navegue para o módulo **Time sheets Approval**
@@ -157,7 +157,7 @@ Navegue para o módulo **Time sheets Approval**
 
 ---
 
-## Lição 3 - Planear e Marcar Ausências
+## 3. Planear e Marcar Ausências
 
 :::note
 No mesmo workspace on as **folhas de horas** são aprovadas.
