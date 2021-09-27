@@ -1,10 +1,10 @@
 ---
 id:  expenses
 title: Expenses
-sidebar_label: Lição 2 - Como criar Despesas
+sidebar_label: 2. Criar Despesas
 ---
 
-## Lição 2 - Como criar Despesas 
+## 2. Como criar Despesas 
 
 ### As despesas podem ser criadas de duas maneiras:
 

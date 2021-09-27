@@ -1,10 +1,10 @@
 ---
 id:  credit-notes
 title: Notas de credito
-sidebar_label: Lição 2 - Como gerar notas de credito a clientes
+sidebar_label: 2. Gerar notas de credito a clientes
 ---
 
-## Lição 2 - Como gerar notas de credito a clientes
+## 2. Gerar notas de credito a clientes
 
 Sempre que alterar os valores de venda de orçamento faturado, para um valor inferior o sistema irá sugerir que seja emitida uma nota de crédito.
 

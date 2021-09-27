@@ -4,7 +4,7 @@ title: Timesheets
 sidebar_label: Timesheets
 ---
 
-## Lesson 1 - Filling in Time Sheets
+## 1. Filling in Time Sheets
 
 :::note 
 To enter time, navigate to the **Time Sheets** module. 
@@ -102,7 +102,7 @@ To enter time, navigate to the **Time Sheets** module.
 
 ---
 
-## Lesson 2 - Approving Timesheets
+## 2. Approving Timesheets
 
 :::note
 Go to workspace **Time sheets Approval**
@@ -148,7 +148,7 @@ Go to workspace **Time sheets Approval**
 
 ---
 
-## Lesson 3 - Rejecting Time sheets
+## 3. Rejecting Time sheets
 
 :::note
 In the same workspace where **time sheets** are approved

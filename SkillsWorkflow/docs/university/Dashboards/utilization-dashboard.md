@@ -1,11 +1,11 @@
 ---
 id:  utilization-dashboard
 title: Utilization
-sidebar_label: Lesson 4 - Utilization Dashboard
+sidebar_label: 4. Utilization Dashboard
 sidebar_position: 4
 ---
 
-## Lesson 4 - Utilization Dashboard
+## 4. Utilization Dashboard
 
 Project Managers put a lot of effort on resource allocation. As much as possible, they want their team to be busy with tasks which are valuable to the agency (billable hours) as this will increase profitability. However, resource allocation becomes a challenge as the team grows when you have to assign resources to different projects all happening at the same time.
 

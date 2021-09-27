@@ -1,10 +1,10 @@
 ---
 id:  approve-expenses
 title: Approve Expenses
-sidebar_label: Lição 3 - Aprovar Despesas
+sidebar_label: 3. Aprovar Despesas
 ---
 
-## Lição 3 - Aprovar Despesas
+## 3. Aprovar Despesas
 
 
 ### Despesas podem ser aprovadas de duas maneiras:

@@ -1,7 +1,7 @@
 ---
 id:  contracts-projects
 title: Estimate Associated Projects
-sidebar_label: Lesson 3 - Manage Projects associated to an Estimate
+sidebar_label: 3. Manage Projects associated to an Estimate
 ---
 
 :::note

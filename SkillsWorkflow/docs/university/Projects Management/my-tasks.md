@@ -1,11 +1,11 @@
 ---
 id:  my-tasks
 title: My Tasks
-sidebar_label: Lesson 8 - My Tasks
+sidebar_label: 8. My Tasks
 sidebar_position: 8
 ---
 
-## Lesson 8 - My Tasks
+## 8. My Tasks
 
 ### In Skills Workflow you can create tasks for yourself (if configured at your company).
 

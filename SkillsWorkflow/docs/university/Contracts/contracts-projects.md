@@ -1,11 +1,11 @@
 ---
 id:  contracts-projects
 title: Estimate Associated Projects
-sidebar_label: Lesson 3 - Manage Projects associated to an Estimate
+sidebar_label: 3. Manage Projects associated to an Estimate
 sidebar_position: 3
 ---
 
-## Lesson 3 - Manage Projects associated to an Estimate
+## 3. Manage Projects associated to an Estimate
 
 :::note
 Projects can be associated with a client estimate so that hours sold are deducted from that same contract.

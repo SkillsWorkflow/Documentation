@@ -1,10 +1,10 @@
 ---
 id:  create-estimate
 title: Estimates
-sidebar_label: Lesson 1 - How to create an Estimate
+sidebar_label: 1.  create an Estimate
 ---
 
-## Lesson 1 - How to create an Estimate
+## 1.  create an Estimate
 
 Estimates can either be linked to Fees or created directly under a Project or Job.
 

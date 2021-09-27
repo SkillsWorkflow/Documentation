@@ -1,11 +1,11 @@
 ---
 id:  create-projects
 title: Create Projects
-sidebar_label: Lesson 1 - How to create a Project
+sidebar_label: 1. Create a Project
 sidebar_position: 1
 ---
 
-## Lesson 1 - How to create a Project
+## 1. Create a Project
 
 ### A Project is an umbrella that groups a bundle of related jobs inside.
 

@@ -1,11 +1,11 @@
 ---
 id: leave-dashboard
 title: Leaves
-sidebar_label: Lesson 6 - Leaves Dashboard
+sidebar_label: 6. Leaves Dashboard
 sidebar_position: 6
 ---
 
-## Lesson 6 - Leaves Dashboard
+## 6. Leaves Dashboard
 
 When scheduling our own leaves or approving leaves submitted by our subordinates, it's important to know if other employees in the company are also on leave on the same day. This prevents the company from being crippled due to a lot of employees being on leave on the same day.
 

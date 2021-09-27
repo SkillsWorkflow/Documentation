@@ -1,7 +1,7 @@
 ---
 id:  client-requests
 title: Create Client Requests
-sidebar_label: Lesson 6 - How to create Client Requests
+sidebar_label: 6. Create Client Requests
 sidebar_position: 6
 ---
 

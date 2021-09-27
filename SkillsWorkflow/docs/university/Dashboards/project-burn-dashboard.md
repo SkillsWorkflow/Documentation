@@ -1,11 +1,11 @@
 ---
 id:  project-burn-dashboard
 title: Project Burn
-sidebar_label: Lesson 2 - Project Burn Dashboard
+sidebar_label: 2. Project Burn Dashboard
 sidebar_position: 2
 ---
 
-## Lesson 2 - Project Burn Dashboard
+## 2. Project Burn Dashboard
 
 
 Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.

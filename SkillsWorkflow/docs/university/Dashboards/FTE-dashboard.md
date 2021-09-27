@@ -1,11 +1,11 @@
 ---
 id:  FTE-dashboard
 title: FTE
-sidebar_label: Lesson 10 - FTE
+sidebar_label: 10. FTE
 sidebar_position: 10
 ---
 
-## Lesson 10 - FTE
+## 10. FTE
 
 FTE which stands for Full-Time Equivalent is a unit that measures the workload of an employee. FTE is often used to measure an employee’s involvement in a project. In this dashboard, project managers can analyze the FTE in different levels (i.e. Company, Division, Department, Typology Group, Employee).
 

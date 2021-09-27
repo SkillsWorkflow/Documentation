@@ -1,7 +1,7 @@
 ---
 id:  list-view
 title: Manage List View
-sidebar_label: Lesson 5 - How to manage your List View
+sidebar_label: 5. Manage your List View
 sidebar_position: 5
 ---
 

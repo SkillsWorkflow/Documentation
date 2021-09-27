@@ -1,11 +1,11 @@
 ---
 id:  resource-schedular
 title: Resource Schedular
-sidebar_label: Lesson 3 - Resource Scheduler
+sidebar_label: 3. Resource Scheduler
 sidebar_position: 3
 ---
 
-## Lesson 3 - Resource Scheduler
+## 3. Resource Scheduler
 
 ### Assignments in Skills Workflow can be done in numerous ways.
 

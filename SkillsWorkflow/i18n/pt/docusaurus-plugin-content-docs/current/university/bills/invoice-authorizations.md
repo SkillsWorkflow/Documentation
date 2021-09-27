@@ -1,10 +1,10 @@
 ---
 id:  invoice-authorizations
 title: Autorizações de fatura
-sidebar_label: Lição 1 - Como criar autorizações de fatura
+sidebar_label: 1. Criar autorizações de fatura
 ---
 
-## Lição 1 - Como criar autorizações de fatura
+## 1. Como criar autorizações de fatura
 
 Pode criar pedidos de faturas no sistema, e desta forma informar a equipa financeira para avançar com a criação/sincronização do documento para o sistema financeiro externo, e gerar a fatura definitiva.
 

@@ -90,7 +90,7 @@ function Home() {
         </div>
       </header>
       <section className={styles.section} style={{
-        backgroundImage: "url(/img/home/skillsworkflow-homepage.jpg)",
+        
         position: 'static',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

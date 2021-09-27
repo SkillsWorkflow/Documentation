@@ -1,7 +1,7 @@
 ---
 id:  planned-hours
 title: Planned Hours
-sidebar_label: Lesson 7 - Planned hours
+sidebar_label: 7. Planned hours
 sidebar_position: 7
 ---
 

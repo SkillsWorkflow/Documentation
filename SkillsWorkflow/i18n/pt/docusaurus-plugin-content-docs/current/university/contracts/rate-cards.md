@@ -1,10 +1,10 @@
 ---
 id:  rate-cards
 title: Rate Cards
-sidebar_label: Lesson 1 - Create Rate Cards
+sidebar_label: 1. Create Rate Cards
 ---
 
-## Lesson 1 - Create Rate Cards
+## 1. Create Rate Cards
 
 Rate Cards are prices/costs for typology groups and/or users.
 
