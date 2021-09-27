@@ -60,5 +60,5 @@ This method can be used to get users image url.
 #### Basic Usage
 
 ```javascript
->    SW.Document.User.getImages(["f6671567-67b2-430c-bf04-dc7a41e99395"]);
+SW.Document.User.getImages(["f6671567-67b2-430c-bf04-dc7a41e99395"]);
 ```

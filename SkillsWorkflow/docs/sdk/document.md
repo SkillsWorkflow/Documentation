@@ -60,7 +60,7 @@ This method can be used to create a new document.
 #### Basic Usage
 
 ```javascript
->    SW.Document.create(SW.DocumentName.Job, {draftData: data});
+SW.Document.create(SW.DocumentName.Job, {draftData: data});
 ```
 
 ---
@@ -127,12 +127,12 @@ This method can be used to get a custom user field from various documents.
 #### Basic Usage
 
 ```javascript
->   SW.Document.getCustomFields(
->                                   SW.DocumentName.Job,
->                                   ["b983e9b5-b2b8-485f-8ff8-794463771bcc"], 
->                                   "Default", 
->                                   "string"
->   );
+SW.Document.getCustomFields(
+                               SW.DocumentName.Job,
+                               ["b983e9b5-b2b8-485f-8ff8-794463771bcc"], 
+                               "Default", 
+                               "string"
+);
 ```
 
 ---
@@ -182,7 +182,7 @@ This method can be used to execute a document lookup.
 #### Basic Usage
 
 ```javascript
->    SW.Document.getLookup(SW.DocumentName.Job, options);
+SW.Document.getLookup(SW.DocumentName.Job, options);
 ```
 
 ---
@@ -241,11 +241,11 @@ This method can be used to set custom user fields in documents.
 #### Basic Usage
 
 ```javascript
->   SW.Document.setCustomFields(
->                               SW.DocumentName.Job,
->                               ["b1dd37dd-4633-4cc4-a418-0830d5e35638"], 
->                               [{ ColumnName: 'AddedOn', Value: false, ColumnDataTypeId: 0 }]
->   );
+SW.Document.setCustomFields(
+                           SW.DocumentName.Job,
+                           ["b1dd37dd-4633-4cc4-a418-0830d5e35638"], 
+                           [{ ColumnName: 'AddedOn', Value: false, ColumnDataTypeId: 0 }]
+);
 ```
 
 ---
@@ -312,10 +312,10 @@ This method can be used to update fields in a document.
 #### Basic Usage
 
 ```javascript
->   SW.updateDocument(
->                       SW.DocumentName.Job, 
->                       "b1dd37dd-4633-4cc4-a418-0830d5e35638", 
->                       ['AgreedDateUtc'], 
->                       ['2021-01-01']
->   );
+SW.updateDocument(
+                   SW.DocumentName.Job, 
+                   "b1dd37dd-4633-4cc4-a418-0830d5e35638", 
+                   ['AgreedDateUtc'], 
+                   ['2021-01-01']
+);
 ```

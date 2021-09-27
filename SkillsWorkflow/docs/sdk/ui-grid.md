@@ -57,7 +57,7 @@ This method can be to add buttons in the grid toolbar.
 #### Basic Usage
 
 ```javascript
->    SW.UI.Grid.addToolbarButtons(toolbarEvent, buttonsList);
+SW.UI.Grid.addToolbarButtons(toolbarEvent, buttonsList);
 ```
 
 ---
@@ -111,7 +111,7 @@ This method can be used to calculate summaries with percentages.
 #### Basic Usage
 
 ```javascript
->    SW.UI.Grid.calculatePercentageSummary(options, [1,2,3], [4,5,6]);
+SW.UI.Grid.calculatePercentageSummary(options, [1,2,3], [4,5,6]);
 ```
 #### Response
 
@@ -166,7 +166,7 @@ This method can be used to delete grid rows.
 #### Basic Usage
 
 ```javascript
->    SW.UI.Grid.delete("company", dataGrid);
+SW.UI.Grid.delete("company", dataGrid);
 ```
 
 ---
@@ -220,7 +220,7 @@ This method can be used inside any workspace. To expand or collapse specified Gr
 #### Basic Usage
 
 ```javascript
->    SW.UI.grid.expandCollapseRow(dataGrid.component);
+SW.UI.grid.expandCollapseRow(dataGrid.component);
 ```
 
 #### Response
@@ -270,5 +270,5 @@ This method can be used to import a xlsx file into a datagrid.
 #### Basic Usage
 
 ```javascript
->    SW.UI.grid.importExcel(file, grid);
+SW.UI.grid.importExcel(file, grid);
 ```

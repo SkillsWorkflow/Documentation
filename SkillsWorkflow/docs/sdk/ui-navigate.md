@@ -58,7 +58,7 @@ This method can be used to navigate do the document's feed.
 #### Basic Usage
 
 ```javascript
->    SW.UI.Navigate.toDocument(SW.DocumentName.Client, 'clientId');
+SW.UI.Navigate.toDocument(SW.DocumentName.Client, 'clientId');
 ```
 
 #### Response
@@ -116,7 +116,7 @@ This method can be used to open a page in a new tab.
 #### Basic Usage
 
 ```javascript
->    SW.UI.navigateToNewTab("url");
+SW.UI.navigateToNewTab("url");
 ```
 
 #### Response
@@ -187,7 +187,7 @@ This method can be used to navigate to a workspace.
 #### Basic Usage
 
 ```javascript
->    SW.UI.navigateTo('workspaceId', {documentName: SW.DocumentName.Job, documentId: 'jobId'});
+SW.UI.navigateTo('workspaceId', {documentName: SW.DocumentName.Job, documentId: 'jobId'});
 ```
 
 #### Response

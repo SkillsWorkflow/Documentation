@@ -60,7 +60,7 @@ This method can be used to export data into an excel sheet.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.Export.toWorksheet(['One', 'Two'], 'TestName', 'SheetTestName');
+SW.Utils.Export.toWorksheet(['One', 'Two'], 'TestName', 'SheetTestName');
 ```
 
 #### Response
@@ -112,7 +112,7 @@ This method can be used to export data into an excel sheet.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.Export.toCsv({filename: 'TestName'}, ['One', 'Two'])
+SW.Utils.Export.toCsv({filename: 'TestName'}, ['One', 'Two'])
 ```
 
 #### Response

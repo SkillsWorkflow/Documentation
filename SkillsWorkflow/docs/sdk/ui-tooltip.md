@@ -77,7 +77,7 @@ This method can be used to set a new tooltip to a html element.
 #### Basic Usage
 
 ```javascript 
->    SW.UI.Tooltip.set(element, jobData, { documentName: SW.DocumentName.Job });
+SW.UI.Tooltip.set(element, jobData, { documentName: SW.DocumentName.Job });
 ```
 
 ---
@@ -144,7 +144,7 @@ This method can be used to show a tooptip in a html element. (When used, to hide
 #### Basic Usage
 
 ```javascript 
->    SW.UI.Tooltip.(element, jobData, { documentName: SW.DocumentName.Job });
+SW.UI.Tooltip.(element, jobData, { documentName: SW.DocumentName.Job });
 ```
 
 ---
@@ -185,5 +185,5 @@ This method can be used to hide a tooltip. (Only used when using SW.UI.Tooltip.s
 #### Basic Usage
 
 ```javascript 
->    SW.UI.tooltip.hide(element);
+SW.UI.tooltip.hide(element);
 ```

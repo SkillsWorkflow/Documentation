@@ -19,7 +19,7 @@ This method can be used to convert minutes into a date.
 #### Method(s)
 
 ```javascript
-1    function convertMinToDate(totalMinutes: number): Date
+function convertMinToDate(totalMinutes: number): Date
 ```
 
 <table className="custom-table">
@@ -46,12 +46,12 @@ This method can be used to convert minutes into a date.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.Datetime.convertMinToDate(63984503);
+SW.Utils.Datetime.convertMinToDate(63984503);
 ```
 
 #### Response
 ```javascript
->   "Thu Aug 26 2021 16:23:00 GMT+0100 (Western European Summer Time)"
+"Thu Aug 26 2021 16:23:00 GMT+0100 (Western European Summer Time)"
 ```
 
 ---
@@ -65,7 +65,7 @@ This method can be used to convert a local date to utc date.
 #### Method(s)
 
 ```javascript
-1    function convertToUtc(date: Date): Date
+function convertToUtc(date: Date): Date
 ```
 
 <table className="custom-table">
@@ -92,12 +92,12 @@ This method can be used to convert a local date to utc date.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.Datetime.convertToUtc("Thu Aug 26 2021 16:23:00 GMT+0100 (Western European Summer Time)");
+SW.Utils.Datetime.convertToUtc("Thu Aug 26 2021 16:23:00 GMT+0100 (Western European Summer Time)");
 ```
 
 #### Response
 ```javascript
->   "Thu Aug 26 2021 15:23:00 GMT+0100 (Western European Summer Time)"
+"Thu Aug 26 2021 15:23:00 GMT+0100 (Western European Summer Time)"
 ```
 
 ---
@@ -111,7 +111,7 @@ This method can be used to convert utc date to a local date.
 #### Method(s)
 
 ```javascript
-1    function convertUtcToLocal(utcDate: Date): Date
+function convertUtcToLocal(utcDate: Date): Date
 ```
 
 <table className="custom-table">
@@ -138,12 +138,12 @@ This method can be used to convert utc date to a local date.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.Datetime.convertUtcToLocal("2021-08-25T15:23:26.222Z")
+SW.Utils.Datetime.convertUtcToLocal("2021-08-25T15:23:26.222Z")
 ```
 
 #### Response
 ```javascript
->   "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)"
+"Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)"
 ```
 
 ---
@@ -157,7 +157,7 @@ This method can be used to convert date to string format "yyyy-MM-dd" or "yyyy-M
 #### Method(s)
 
 ```javascript
-1    function formatDateToString(date: Date, params: { includeTime?: boolean } = { includeTime: false }): string
+function formatDateToString(date: Date, params: { includeTime?: boolean } = { includeTime: false }): string
 ```
 
 <table className="custom-table">
@@ -191,15 +191,15 @@ This method can be used to convert date to string format "yyyy-MM-dd" or "yyyy-M
 #### Basic Usage
 
 ```javascript
->   var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
->   SW.Utils.Datetime.formatDateToString(date);
->   SW.Utils.Datetime.formatDateToString(date, {includeTime: true});
+var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
+SW.Utils.Datetime.formatDateToString(date);
+SW.Utils.Datetime.formatDateToString(date, {includeTime: true});
 ```
 
 #### Response
 ```javascript
->   "2021-08-25"
->   "25 August 2021, 16:23"
+"2021-08-25"
+"25 August 2021, 16:23"
 ```
 
 ---
@@ -213,18 +213,18 @@ This method can be used to get the default datetime format.
 #### Method(s)
 
 ```javascript
-1    function getDateTimeFormat(): string
+function getDateTimeFormat(): string
 ```
 
 #### Basic Usage
 
 ```javascript
->   SW.Utils.Datetime.getDateTimeFormat();
+SW.Utils.Datetime.getDateTimeFormat();
 ```
 
 #### Response
 ```javascript
->   "dd/MMM/yyyy HH:mm"
+"dd/MMM/yyyy HH:mm"
 ```
 
 ---
@@ -238,7 +238,7 @@ This method can be used to convert minutes to format HH:mm.
 #### Method(s)
 
 ```javascript
-1    function getMinutesInHHMMformat(minutes: number): string
+function getMinutesInHHMMformat(minutes: number): string
 ```
 
 <table className="custom-table">
@@ -265,12 +265,12 @@ This method can be used to convert minutes to format HH:mm.
 #### Basic Usage
 
 ```javascript
->   SW.Utils.Datetime.getMinutesInHHMMformat(1234)
+SW.Utils.Datetime.getMinutesInHHMMformat(1234)
 ```
 
 #### Response
 ```javascript
->   "20:34"
+"20:34"
 ```
 
 ---
@@ -331,21 +331,21 @@ This method can be used to get a end date by giving a start date and a range.
 #### Basic Usage
 
 ```javascript
->   var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
->   SW.Utils.Datetime.getTimeRange(date, {unit: "HOUR", value: 1, id: "HOUR"});
->   SW.Utils.Datetime.getTimeRange(date, {unit: "HOUR", value: 1, id: "HOUR"}, {centerAroundValue: true});
+var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
+SW.Utils.Datetime.getTimeRange(date, {unit: "HOUR", value: 1, id: "HOUR"});
+SW.Utils.Datetime.getTimeRange(date, {unit: "HOUR", value: 1, id: "HOUR"}, {centerAroundValue: true});
 ```
 
 #### Response
 ```javascript
->   {
->       startDate: "Wed Aug 25 2021 16:00:00 GMT+0100 (Western European Summer Time)",
->       endDate: "Wed Aug 25 2021 17:00:00 GMT+0100 (Western European Summer Time)"
->   }
->   {
->       startDate: "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)",
->       endDate: "Wed Aug 25 2021 17:23:26 GMT+0100 (Western European Summer Time)"
->   }
+{
+   startDate: "Wed Aug 25 2021 16:00:00 GMT+0100 (Western European Summer Time)",
+   endDate: "Wed Aug 25 2021 17:00:00 GMT+0100 (Western European Summer Time)"
+}
+{
+   startDate: "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)",
+   endDate: "Wed Aug 25 2021 17:23:26 GMT+0100 (Western European Summer Time)"
+}
 ```
 
 ---
@@ -397,13 +397,13 @@ This method can be used to get how much time has passed since a given date.
 #### Basic Usage
 
 ```javascript
->   var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
->   SW.Utils.Datetime.timeAgo(date);
->   SW.Utils.Datetime.timeAgo(date, {unitOfTime: 'minutes'});
+var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
+SW.Utils.Datetime.timeAgo(date);
+SW.Utils.Datetime.timeAgo(date, {unitOfTime: 'minutes'});
 ```
 
 #### Response
 ```javascript
->   "a minute ago"
->   1
+"a minute ago"
+1
 ```

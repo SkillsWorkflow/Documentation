@@ -72,10 +72,10 @@ This method can be used to update an assignment field/s.
 #### Basic Usage
 
 ```javascript
->   SW.Document.Assignment.update(
->                                   "dd54bd31-376f-4fe7-b840-102016759b6b", 
->                                   "570f95fe-6b41-43a5-830f-cb644e6285e0", 
->                                   "Skill.Module.BusinessObjects.Deliverable", 
->                                   { newValuesModel: { User: newExecutorId } }
->   );
+SW.Document.Assignment.update(
+                               "dd54bd31-376f-4fe7-b840-102016759b6b", 
+                               "570f95fe-6b41-43a5-830f-cb644e6285e0", 
+                               "Skill.Module.BusinessObjects.Deliverable", 
+                               { newValuesModel: { User: newExecutorId } }
+);
 ```

@@ -57,5 +57,5 @@ This method can be used to get custom tables.
 #### Basic Usage
 
 ```javascript
->    SW.Document.CustomTable.get("Table");
+SW.Document.CustomTable.get("Table");
 ```

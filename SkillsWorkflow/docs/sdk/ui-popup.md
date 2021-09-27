@@ -163,19 +163,19 @@ This method can be used to create a popup with the specified entity and data.
 #### Basic Usage
 
 ```javascript
->    SW.UI.show(['info'], 
->       {
->           documentName: SW.DocumentName.Job,
->           width: 500,
->           height: 200,
->           enableScroll: false,
->           title: 'Popup exemple',
->           openInFullScreen: false,
->           hideTabContainer: false,
->           hideSubHeader: true,
->           closeOnOutsideClick: false   
->       }
->   );
+SW.UI.show(['info'], 
+   {
+       documentName: SW.DocumentName.Job,
+       width: 500,
+       height: 200,
+       enableScroll: false,
+       title: 'Popup exemple',
+       openInFullScreen: false,
+       hideTabContainer: false,
+       hideSubHeader: true,
+       closeOnOutsideClick: false   
+   }
+);
 ```
 
 #### Response
@@ -249,7 +249,7 @@ This method can be used to generate a pop-up to allow editing in bulk.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showBulk(SW.DocumentName.Employee, dataGrid);
+SW.UI.showBulk(SW.DocumentName.Employee, dataGrid);
 ```
 
 #### Response
@@ -324,7 +324,7 @@ This method can be used to add an add button on top, which calls a creation pop-
 #### Basic Usage
 
 ```javascript
->    SW.UI.showCreate(SW.DocumentName.Company);
+SW.UI.showCreate(SW.DocumentName.Company);
 ```
 
 #### Response
@@ -416,16 +416,16 @@ This method can be used to create a new popup with Yes and No buttons. If Yes bu
 #### Basic Usage
 
 ```javascript
->   SW.UI.showConfirmPopup(
->       params: {
->           title: 'Popup title', 
->           text: 'Click one button', 
->           trueButtonText: 'Yes button', 
->           falseButtonText: 'No button', 
->           width: 400, 
->           height: 150
->       }
->   );
+SW.UI.showConfirmPopup(
+   params: {
+       title: 'Popup title', 
+       text: 'Click one button', 
+       trueButtonText: 'Yes button', 
+       falseButtonText: 'No button', 
+       width: 400, 
+       height: 150
+   }
+);
 ```
 
 #### Response
@@ -531,7 +531,7 @@ This method can be used to create a preview popup styled by the entity passed as
 #### Basic Usage
 
 ```javascript
->    SW.UI.showPreview(SW.DocumentName.Client, "ClientId");
+SW.UI.showPreview(SW.DocumentName.Client, "ClientId");
 ```
 
 #### Response
@@ -623,7 +623,7 @@ This method can be used to create a new popup with Yes and No buttons and a text
 #### Basic Usage
 
 ```javascript
->   SW.UI.showPromptPopup(
+SW.UI.showPromptPopup(
         params: {
             title: 'Popup title', 
             text: 'Click one button', 
@@ -706,7 +706,7 @@ This method can be used to open a preview popup styled by the documentName passe
 #### Basic Usage
 
 ```javascript
->    SW.UI.showSystemPreview(SW.DocumentName.Estimate, 'estimateId');
+SW.UI.showSystemPreview(SW.DocumentName.Estimate, 'estimateId');
 ```
 
 #### Response

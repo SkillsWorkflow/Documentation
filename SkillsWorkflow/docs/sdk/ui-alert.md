@@ -30,7 +30,7 @@ This method can be used to clear a toastr that is being displayed.
 #### Basic Usage
 
 ```javascript
->    SW.UI.Alert.clear(),
+SW.UI.Alert.clear(),
 ```
 
 ---
@@ -105,7 +105,7 @@ This method can be used to show a Error toastr in the window and also in the con
 #### Basic Usage
 
 ```javascript
->    SW.UI.Alert.error("Toast error");
+SW.UI.Alert.error("Toast error");
 ```
 #### Response
 
@@ -183,7 +183,7 @@ This method can be used to show a Info toastr in the window and also in the cons
 #### Basic Usage
 
 ```javascript
->    SW.UI.Alert.info("Toast info");
+SW.UI.Alert.info("Toast info");
 ```
 #### Response
 
@@ -262,7 +262,7 @@ This method can be used to show a Success toastr in the window and also in the c
 #### Basic Usage
 
 ```javascript
->    SW.UI.Alert.success("Toast success");
+SW.UI.Alert.success("Toast success");
 ```
 #### Response
 
@@ -349,7 +349,7 @@ This method can be used to show a Warning toastr ine the window and also in the 
 #### Basic Usage
 
 ```javascript
->    SW.UI.Alert.warning("User field is required");
+SW.UI.Alert.warning("User field is required");
 ```
 #### Response
 

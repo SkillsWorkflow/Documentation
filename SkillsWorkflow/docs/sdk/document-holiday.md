@@ -61,5 +61,5 @@ This method can be used to get holidays from a company between two dates.
 #### Basic Usage
 
 ```javascript
->    SW.Document.Holiday.get("bf54366c-4212-4099-b959-7c969b6c878f");
+SW.Document.Holiday.get("bf54366c-4212-4099-b959-7c969b6c878f");
 ```

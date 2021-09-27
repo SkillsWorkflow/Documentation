@@ -1,6 +1,6 @@
 ---
 id:  ui-buttons
-title: ' '
+title: Buttons
 sidebar_label: Buttons
 ---
 
@@ -24,41 +24,41 @@ This method can be used to generate a create button in the sub-header.
 #### Method(s)
 
 ```javascript
-1   function addCreateToSubHeader(documentName: string, component: dxForm,
-2       params: {
-3           onClick?: (dashboardDocumentSaveObject: DashboardDocumentSaveObject) => boolean;
-4           components?: {
-5               description?: dxHtmlEditor;
-6               files?: FileSystemWidgetComponent;
-7           };
-8           mappers?: {
-9               postModel?: (
-10                  postModel: PostModel,
-11                  dashboardDocumentSaveObject: DashboardDocumentSaveObject,
-12                  params: { isDraftModel: boolean }
-13              ) => PostModel;
-14              briefPostModel?: (
-15                  briefPostModel: BriefPostModel,
-16                  dashboardDocumentSaveObject: DashboardDocumentSaveObject
-17              ) => BriefPostModel;
-18          };
-19          postChangesOnFeed?: boolean;
-20          allowDraft?: boolean;
-21          icons?: {
-22              save?: {
-23                  class?: string;
-24                  tooltip?: string;
-25              };
-26              draft?: {
-27                  class?: string;
-28                  tooltip?: string;
-29              };
-30          };
-31      } = {
-32          allowDraft: true,
-33          postChangesOnFeed: false
-34      }
-35  ): void
+function addCreateToSubHeader(documentName: string, component: dxForm,
+    params: {
+        onClick?: (dashboardDocumentSaveObject: DashboardDocumentSaveObject) => boolean;
+        components?: {
+            description?: dxHtmlEditor;
+            files?: FileSystemWidgetComponent;
+        };
+        mappers?: {
+            postModel?: (
+                postModel: PostModel,
+                dashboardDocumentSaveObject: DashboardDocumentSaveObject,
+                params: { isDraftModel: boolean }
+            ) => PostModel;
+            briefPostModel?: (
+                briefPostModel: BriefPostModel,
+                dashboardDocumentSaveObject: DashboardDocumentSaveObject
+            ) => BriefPostModel;
+        };
+        postChangesOnFeed?: boolean;
+        allowDraft?: boolean;
+        icons?: {
+            save?: {
+                class?: string;
+                tooltip?: string;
+            };
+            draft?: {
+                class?: string;
+                tooltip?: string;
+            };
+        };
+    } = {
+        allowDraft: true,
+        postChangesOnFeed: false
+    }
+): void
 ```
 <table className="custom-table">
     <thead>
@@ -203,19 +203,19 @@ This method can be used to generate a create button in the sub-header.
 #### Basic Usage
 
 ```javascript
->   SW.UI.Buttons.addCreateToSubHeader("project", e.component, 
->       {
->           onClick: (postModel, dashboardDocumentSaveObject) => {
->                       postModel["Custom"] = {
->                           JobTypeId: postModel.Actions.Document.Project.ProjectNatureId
->                       };
->                       return postModel;
->                   },
->           components: {
->               description: SW.getComponent("description")
->           }
->       }
->   );
+SW.UI.Buttons.addCreateToSubHeader("project", e.component, 
+   {
+       onClick: (postModel, dashboardDocumentSaveObject) => {
+                   postModel["Custom"] = {
+                       JobTypeId: postModel.Actions.Document.Project.ProjectNatureId
+                   };
+                   return postModel;
+               },
+       components: {
+           description: SW.getComponent("description")
+       }
+   }
+);
 ```
 
 #### Response
@@ -233,21 +233,21 @@ This method can be used to generate a save button in the sub-header.
 #### Method(s)
 
 ```javascript
-1   function addSaveToSubHeader(documentName: string, component: dxForm,
-2       params: {
-3           patchEndpoint?: string;
-4           onClick?: (currentDocument: Document, formComponent: dxForm, otherFields: any) => void;
-5           postChangesOnFeed?: boolean;
-6           icons?: {
-7               save?: {
-8                   class?: string;
-9                   tooltip?: string;
-10              };
-11          };
-12      } = {
-13          postChangesOnFeed: false
-14      }
-15  ): void
+function addSaveToSubHeader(documentName: string, component: dxForm,
+    params: {
+        patchEndpoint?: string;
+        onClick?: (currentDocument: Document, formComponent: dxForm, otherFields: any) => void;
+        postChangesOnFeed?: boolean;
+        icons?: {
+            save?: {
+                class?: string;
+                tooltip?: string;
+            };
+        };
+    } = {
+        postChangesOnFeed: false
+    }
+): void
 ```
 <table className="custom-table">
     <thead>
@@ -315,17 +315,17 @@ This method can be used to generate a save button in the sub-header.
 #### Basic Usage
 
 ```javascript
->   SW.UI.Buttons.addSaveButtonToSubHeader("commercialclient", e.component, 
->       {
->           onClick: (currentDocument, formComponent, othersFields) => {
->                       SW.Toastr.toastr_Success(
->                           SW.getTranslation(currentDocument.TypeName.charAt(0).toUpperCase() 
->                           + currentDocument.TypeName.slice(1) + "Saved"), currentDocument.TypeName);
->                       return true;
->                   },
->           postChangesOnFeed: true
->       }
->   );  
+SW.UI.Buttons.addSaveButtonToSubHeader("commercialclient", e.component, 
+   {
+       onClick: (currentDocument, formComponent, othersFields) => {
+                   SW.Toastr.toastr_Success(
+                       SW.getTranslation(currentDocument.TypeName.charAt(0).toUpperCase() 
+                       + currentDocument.TypeName.slice(1) + "Saved"), currentDocument.TypeName);
+                   return true;
+               },
+       postChangesOnFeed: true
+   }
+);  
 ```
 
 #### Response
@@ -376,7 +376,7 @@ This method can be used to add buttons to the sub-header.
 #### Basic Usage
 
 ```javascript
->    SW.UI.Buttons.addToSubHeader(e.component, buttons);
+SW.UI.Buttons.addToSubHeader(e.component, buttons);
 ```
 :::important
 
@@ -426,5 +426,5 @@ This method can be used to enable or disable buttons.
 #### Basic Usage
 
 ```javascript
->    SW.UI.Buttons.setAllEnabled(true)
+SW.UI.Buttons.setAllEnabled(true)
 ```

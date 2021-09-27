@@ -22,7 +22,7 @@ This method can be used inside any workspace. Refresh a workspace
 ### Basic Usage
 
 ```javascript
->    SW.Shell.Workspace.refresh();
+SW.Shell.Workspace.refresh();
 ```
 
 
@@ -77,7 +77,7 @@ This method can be used inside any workspace. Create a new assignment
 ### Basic Usage
 
 ```javascript
->    SW.Shell.Workspace.setFilter(filter, 20);
+SW.Shell.Workspace.setFilter(filter, 20);
 ```
 
 ## setFilters
@@ -124,7 +124,7 @@ This method can be used inside any workspace. Set multiple filters
 ### Basic Usage
 
 ```javascript
->    SW.Shell.Workspace.setFilters([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
+SW.Shell.Workspace.setFilters([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
 ```
 ## setPanels
 
@@ -169,5 +169,5 @@ This method can be used inside any workspace. Set workspace's panels
 ### Basic Usage
 
 ```javascript
->    SW.Shell.Workspace.setPanels("EF6C7CB6-9798-4A44-B33D-284B38F54931", true);
+SW.Shell.Workspace.setPanels("EF6C7CB6-9798-4A44-B33D-284B38F54931", true);
 ```

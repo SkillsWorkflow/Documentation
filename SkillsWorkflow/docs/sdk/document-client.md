@@ -60,5 +60,5 @@ This method can be used to get clients image url.
 #### Basic Usage
 
 ```javascript
->    SW.Document.Client.getImages(["f6671567-67b2-430c-bf04-dc7a41e99395"]);
+SW.Document.Client.getImages(["f6671567-67b2-430c-bf04-dc7a41e99395"]);
 ```

@@ -53,16 +53,16 @@ This method can be used to convert different variable types to string.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.convertToString(4);
->    SW.Utils.convertToString({first: 1, second: 2});
->    SW.Utils.convertToString(function () {return 2+2});
+SW.Utils.convertToString(4);
+SW.Utils.convertToString({first: 1, second: 2});
+SW.Utils.convertToString(function () {return 2+2});
 ```
 
 #### Response
 ```javascript
->    "4"
->    "{first: 1,second: 2}"
->    "function () {return 2+2}"
+"4"
+"{first: 1,second: 2}"
+"function () {return 2+2}"
 ```
 
 ---
@@ -103,7 +103,7 @@ This method can be used to save text in the clipboard.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.copyToClipboard('SkillsWorkflow')
+SW.Utils.copyToClipboard('SkillsWorkflow')
 ```
 
 #### Response
@@ -148,13 +148,13 @@ This method can be used to convert a string of data into an array of data.
 #### Basic Usage
 
 ```javascript
->    SW.Utils.getDataArrayFromMultipleSelectionFieldString("[{\"name\":\"John\"}, {\"name\":\"Arthur\"}]")
+SW.Utils.getDataArrayFromMultipleSelectionFieldString("[{\"name\":\"John\"}, {\"name\":\"Arthur\"}]")
 ```
 
 #### Response
 
 ```javascript
->   [{name: John}, {name: Arthur}]
+[{name: John}, {name: Arthur}]
 ```
 
 ---
@@ -202,23 +202,23 @@ This method can be used to check if parameter key it's a empty guid.
 #### Basic Usage
 
 ```javascript
->   SW.Utils.getEmptyGuidValue('00000000-0000-0000-0000-000000000000', 
->                               function () {
->                                   return "It's empty guid"
->                               }
->   )
->   SW.Utils.getEmptyGuidValue('72917063-915e-4e23-a699-2a6e78804ed', 
->                               function () {
->                                   return "It's not empty guid"
->                               }
->   )
+SW.Utils.getEmptyGuidValue('00000000-0000-0000-0000-000000000000', 
+                           function () {
+                               return "It's empty guid"
+                           }
+)
+SW.Utils.getEmptyGuidValue('72917063-915e-4e23-a699-2a6e78804ed', 
+                           function () {
+                               return "It's not empty guid"
+                           }
+)
 ```
 
 #### Response
 
 ```javascript
->   Promise<{Id: "00000000-0000-0000-0000-000000000000", Name: "N/A"}>
->   "It's not empty guid"
+Promise<{Id: "00000000-0000-0000-0000-000000000000", Name: "N/A"}>
+"It's not empty guid"
 ```
 
 ---
@@ -259,15 +259,15 @@ This method can be used to check if a given guid is valid.
 #### Basic Usage
 
 ```javascript
->   SW.Utils.isValidGuid('SkillsWorkflow');
->   SW.Utils.isValidGuid('23814aa4-0b56-4480-8ba8-c02991a5fdca');
+SW.Utils.isValidGuid('SkillsWorkflow');
+SW.Utils.isValidGuid('23814aa4-0b56-4480-8ba8-c02991a5fdca');
 ```
 
 #### Response
 
 ```javascript
->   false
->   true
+false
+true
 ```
 
 ---
@@ -322,7 +322,7 @@ This method can be used to append an image to an html element.
 #### Basic Usage
 
 ```javascript
->   SW.Utils.setExternalImage(element, 'small', 'https://test.com/images/logo_new_small.png');
+SW.Utils.setExternalImage(element, 'small', 'https://test.com/images/logo_new_small.png');
 ```
 
 #### Response

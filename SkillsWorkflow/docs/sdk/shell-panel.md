@@ -40,7 +40,7 @@ This method can be used inside any workspace. Refresh the panel
 ### Basic Usage
 
 ```javascript
->    SW.Shell.Panel.refresh('BAF13A4B-B0EE-4F64-B9F7-0543778CE383');
+SW.Shell.Panel.refresh('BAF13A4B-B0EE-4F64-B9F7-0543778CE383');
 ```
 
 
@@ -103,5 +103,5 @@ This method can be used inside any workspace. Refresh the datasource
 ### Basic Usage
 
 ```javascript
->    SW.Shell.Panel.refreshDataSource([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
+SW.Shell.Panel.refreshDataSource([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
 ```

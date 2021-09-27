@@ -57,7 +57,7 @@ This method can be used to get a SelectBox's datasource.
 #### Basic Usage
 
 ```javascript
->    SW.UI.selectBox.getLookupByEndpoint({searchValue: '', skip: 0, take: 20}, "departments/lookup");
+SW.UI.selectBox.getLookupByEndpoint({searchValue: '', skip: 0, take: 20}, "departments/lookup");
 ```
 
 ---
@@ -104,5 +104,5 @@ This method can be used to set a SelectBox's list width according to the largest
 #### Basic Usage
 
 ```javascript
->    SW.UI.selectBox.setListWidth(selectBox);
+SW.UI.selectBox.setListWidth(selectBox);
 ```

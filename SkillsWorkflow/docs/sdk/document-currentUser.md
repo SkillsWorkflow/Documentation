@@ -71,7 +71,7 @@ This method can be used to get current logged user clients.
 #### Basic Usage
 
 ```javascript
->    SW.Document.CurrentUser.getClients({ name:"SkillsWorkflow", skip: 0, take: 20});
+SW.Document.CurrentUser.getClients({ name:"SkillsWorkflow", skip: 0, take: 20});
 ```
 
 ---
@@ -85,17 +85,7 @@ This method can be used to get current logged user companies.
 #### Method(s)
 
 ```js {3}
-1   declare function getCompanies(
-2                               params: {
-3                                   name?: string, 
-4                                   skip?: number, 
-5                                   take?: number
-6                               } = {
-7                                   name: "", 
-8                                   skip: 0, 
-9                                   take: 0
-10                              }
-11  ): Promise<CompanyLookupDto[]>;
+declare function getCompanies(params: { name?: string, skip?: number, take?: number } = { name: "", skip: 0, take: 0 });
 ```
 
 <table className="custom-table">
@@ -136,7 +126,7 @@ This method can be used to get current logged user companies.
 #### Basic Usage
 
 ```javascript
->    SW.Document.CurrentUser.getCompanies({ name:"SkillsWorkflow", skip: 0, take: 20});
+SW.Document.CurrentUser.getCompanies({ name:"SkillsWorkflow", skip: 0, take: 20});
 ```
 
 ---
@@ -150,17 +140,17 @@ This method can be used to get current logged user divisions.
 #### Method(s)
 
 ```js {3}
-1   declare function getDivisions(
-2                               params: {
-3                                   name?: string, 
-4                                   skip?: number, 
-5                                   take?: number
-6                               } = {
-7                                   name: "", 
-8                                   skip: 0, 
-9                                   take: 0
-10                              }
-11  ): Promise<DivisionLookupDto[]>;
+declare function getDivisions(
+   params: {
+       name?: string, 
+       skip?: number, 
+       take?: number
+   } = {
+       name: "", 
+       skip: 0, 
+       take: 0
+   }
+):
 ```
 
 <table className="custom-table">
@@ -201,7 +191,7 @@ This method can be used to get current logged user divisions.
 #### Basic Usage
 
 ```javascript
->    SW.Document.CurrentUser.getDivisions({ name:"SkillsWorkflow", skip: 0, take: 20});
+SW.Document.CurrentUser.getDivisions({ name:"SkillsWorkflow", skip: 0, take: 20});
 ```
 
 ---
@@ -221,7 +211,7 @@ This method can be used to get current logged user information.
 #### Basic Usage
 
 ```javascript
->    SW.Document.CurrentUser.getInfo();
+SW.Document.CurrentUser.getInfo();
 ```
 
 ---
@@ -262,13 +252,13 @@ This method can be used to check if the current logged user has all given roles.
 #### Basic Usage
 
 ```javascript
->    SW.Document.CurrentUser.hasAllRoles(["Admin", "Manager"]);
+SW.Document.CurrentUser.hasAllRoles(["Admin", "Manager"]);
 ```
 
 #### Response
 
 ```javascript
->   false
+false
 ```
 
 ---
@@ -309,13 +299,13 @@ This method can be used to check if the current logged user has any of the given
 #### Basic Usage
 
 ```javascript
->    SW.Document.CurrentUser.hasAnyRoles(["Admin", "Manager"]);
+SW.Document.CurrentUser.hasAnyRoles(["Admin", "Manager"]);
 ```
 
 #### Response
 
 ```javascript
->   true
+true
 ```
 
 ---
@@ -356,13 +346,13 @@ This method can be used to check if the current logged user has the given role.
 #### Basic Usage
 
 ```javascript
->    SW.Document.CurrentUser.hasRole("Admin");
+SW.Document.CurrentUser.hasRole("Admin");
 ```
 
 #### Response
 
 ```javascript
->   false
+false
 ```
 
 ---
@@ -403,11 +393,11 @@ This method can be used to check if the current logged user has each of the give
 #### Basic Usage
 
 ```javascript
->    SW.Document.CurrentUser.hasRoles(["Admin", "Manager"]);
+SW.Document.CurrentUser.hasRoles(["Admin", "Manager"]);
 ```
 
 #### Response
 
 ```javascript
->   { Admin: false, Manager: true }
+{ Admin: false, Manager: true }
 ```

@@ -67,7 +67,7 @@ This method can be used to edit an option in various components.
 #### Basic Usage
 
 ```javascript
->    SW.UI.editComponentsOptionInBulk([dataGrid, chart], 'dataSource', data);
+SW.UI.editComponentsOptionInBulk([dataGrid, chart], 'dataSource', data);
 ```
 
 #### Response
@@ -132,7 +132,7 @@ This method can be used to get entities image.
 #### Basic Usage
 
 ```javascript
->    SW.UI.getEntityImage(element, 'job', { size: 'large' });
+SW.UI.getEntityImage(element, 'job', { size: 'large' });
 ```
 
 #### Response
@@ -212,7 +212,7 @@ This method can be used to set element's attributes.
 #### Basic Usage
 
 ```javascript
->    SW.UI.setAttribute(element, 'style', 'display: contents');
+SW.UI.setAttribute(element, 'style', 'display: contents');
 ```
 
 #### Response
@@ -307,7 +307,7 @@ This method can be used to set element's attributes.
 #### Basic Usage
 
 ```javascript
->    SW.UI.setConditionalColor(element, 'Value', [1>0, 1=0, 1<0], ['Red', 'Green', 'Blue']);
+SW.UI.setConditionalColor(element, 'Value', [1>0, 1=0, 1<0], ['Red', 'Green', 'Blue']);
 ```
 
 #### Response
@@ -392,7 +392,7 @@ This method can be used to display a rag.
 #### Basic Usage
 
 ```javascript
->    SW.UI.setRag(element, "value", true, false, false);
+SW.UI.setRag(element, "value", true, false, false);
 ```
 
 #### Response
@@ -464,7 +464,7 @@ This method can be used to set rag considering two given versions.
 #### Basic Usage
 
 ```javascript
->    SW.UI.setVersionRag(element, 1, 2);
+SW.UI.setVersionRag(element, 1, 2);
 ```
 
 #### Response
@@ -521,7 +521,7 @@ This method can be used to create a new component.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showComponent(element, "List", properties);
+SW.UI.showComponent(element, "List", properties);
 ```
 
 #### Example
@@ -529,12 +529,12 @@ This method can be used to create a new component.
 In the following example you can find a template for an item that will present a List of items:
 
 ```javascript
->   function itemTemplate(itemData, itemIndex, itemElement, workspaceContext) {
->       var properties = {
->           items: [{"id":1, "value":"Blue"}, {"id":2, "value":"Red"}]
->       };
->       SW.UI.showComponent(itemElement, 'List', properties);
->   }
+function itemTemplate(itemData, itemIndex, itemElement, workspaceContext) {
+   var properties = {
+       items: [{"id":1, "value":"Blue"}, {"id":2, "value":"Red"}]
+   };
+   SW.UI.showComponent(itemElement, 'List', properties);
+}
 ```
 
 ---
@@ -628,7 +628,7 @@ This method can be used to display an existing or default Image.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showImage(element, "company", "Skills Workflow", {hasImage: true, id: "companyId"});
+SW.UI.showImage(element, "company", "Skills Workflow", {hasImage: true, id: "companyId"});
 ```
 
 #### Response
@@ -733,7 +733,7 @@ This method can be used to update a user, client or company image.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showImageEditor(element, "company", "companyId");
+SW.UI.showImageEditor(element, "company", "companyId");
 ```
 
 #### Response
@@ -785,7 +785,7 @@ This method can be used to define an element priority.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showPrioruty(element, 1);
+SW.UI.showPrioruty(element, 1);
 ```
 
 #### Response
@@ -861,7 +861,7 @@ This method can be used to display a stage.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showStage(element, "Test", "blue");
+SW.UI.showStage(element, "Test", "blue");
 ```
 
 #### Response
@@ -911,7 +911,7 @@ This method can be used to display tags.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showTags(element, "{Label: Skills, Color: #333}");
+SW.UI.showTags(element, "{Label: Skills, Color: #333}");
 ```
 
 #### Response
@@ -1000,7 +1000,7 @@ This method can be used to display teams.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showTeam(element, data, ["id1, id2, id3"], ["name1, name2, name3"], ["1, 0, 1"], {size: "large"});
+SW.UI.showTeam(element, data, ["id1, id2, id3"], ["name1, name2, name3"], ["1, 0, 1"], {size: "large"});
 ```
 
 #### Response
@@ -1050,7 +1050,7 @@ This method can be used to display assignments workload.
 #### Basic Usage
 
 ```javascript
->    SW.UI.showWorkload(element, 'assignmentId');
+SW.UI.showWorkload(element, 'assignmentId');
 ```
 
 #### Response
