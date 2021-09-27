@@ -198,8 +198,6 @@ In the following example, to hide the client name from the column and keep only 
 
 
 
-
-
 ## caption
 Specifies a caption for the column.
 ## dataType
