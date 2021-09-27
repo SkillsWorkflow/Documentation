@@ -55,16 +55,36 @@ function Feature({ imageUrl, title, description }) {
     </div >
   );
 }
-const BackgroundImageByTheme = () => {
+
+const Header = () => {
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
-  return <section className={styles.section} style={{
-    backgroundImage: isDarkTheme ? 'url(/img/home/homepage-dark.jpg)' : 'url(/img/home/skillsworkflow-homepage.jpg)',
-    position: 'static',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundColor: '#fff',
-    backgroundPosition: 'center'
-  }}></section>;
+  return <header
+    className={clsx('hero hero--primary', styles.heroBanner)}
+    style={{
+      backgroundImage: isDarkTheme ? 'url(/img/home/homepage-dark.jpg)' : 'url(/img/home/skillsworkflow-homepage.jpg)',
+      color: '#0172c6',
+      position: 'static',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundColor: '#fff',
+      backgroundPosition: 'center'
+    }}>
+    <div className="container text--center"
+      style={{
+        backdropFilter: 'blur(2px)'
+      }}>
+      <h1 className="hero__title home-h1"><Translate>Skills Workflow's Documentation</Translate></h1>
+      <p className="hero__subtitle home-p"><Translate>We are here to let you shine! Let's get everything done</Translate></p>
+      <div className={styles.buttons}>
+        <Link
+          className={styles.skills}
+          to={useBaseUrl('docs/')}>
+          <Translate>Get Started</Translate>
+        </Link>
+      </div>
+    </div>
+  </header>
+    ;
 };
 function Home() {
   const context = useDocusaurusContext();
@@ -73,32 +93,7 @@ function Home() {
     <Layout
       title={`Documentation | ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header
-        className={clsx('hero hero--primary', styles.heroBanner)}
-        style={{
-          color: '#0172c6',
-          position: 'static',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundColor: '#fff',
-          backgroundPosition: 'center'
-        }}>
-        <div className="container text--center"
-          style={{
-            backdropFilter: 'blur(2px)'
-          }}>
-          <h1 className="hero__title home-h1"><Translate>Skills Workflow's Documentation</Translate></h1>
-          <p className="hero__subtitle home-p"><Translate>We are here to let you shine! Let's get everything done</Translate></p>
-          <div className={styles.buttons}>
-            <Link
-              className={styles.skills}
-              to={useBaseUrl('docs/')}>
-              <Translate>Get Started</Translate>
-            </Link>
-          </div>
-        </div>
-      </header>
-      <BackgroundImageByTheme />
+      <Header />
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>

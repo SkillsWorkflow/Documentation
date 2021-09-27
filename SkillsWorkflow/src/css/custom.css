@@ -172,14 +172,21 @@ figure p {
 .row {
   margin-bottom: 1.6rem;
 }
-.footer__copyright {
+html[data-theme='light'] .footer__copyright {
   padding-top: 15px;
   border-top: 1px solid rgb(226, 239, 248);
 }
-/* html[data-theme='light']  */
-.footer__col {
+html[data-theme='dark'] .footer__copyright {
+  padding-top: 15px;
+  border-top: 1px solid #e2eff81c;
+}
+
+/* html[data-theme='light'] .footer__col {
   border-left: 1px solid rgb(226, 239, 248);
 }
+html[data-theme='dark'] .footer__col {
+  border-left: 1px solid rgb(226, 239, 248);
+} */
 
 html[data-theme='dark'] header {
   background-color: #333 !important;
