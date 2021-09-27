@@ -313,13 +313,6 @@ html[data-theme='dark'] .DocSearch {
 }
 
 
-html[data-theme='light'] .section_src-pages-styles-module{
-background-image: url(/img/home/skillsworkflow-homepage.jpg);
-}
-html[data-theme='dark'] .section_src-pages-styles-module{
-  background-image: url(/img/home/homepage-dark.jpg);
-}
-
 html[data-theme='dark'] .footer{
   --ifm-footer-background-color: #333;
   --ifm-footer-color: #fff;

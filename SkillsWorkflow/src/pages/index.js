@@ -5,9 +5,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import Translate, {translate} from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import useThemeContext from '@theme/hooks/useThemeContext';
-
 
 const features = [
   {
@@ -56,7 +55,17 @@ function Feature({ imageUrl, title, description }) {
     </div >
   );
 }
-
+const BackgroundImageByTheme = () => {
+  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
+  return <section className={styles.section} style={{
+    backgroundImage: isDarkTheme ? 'url(/img/home/homepage-dark.jpg)' : 'url(/img/home/skillsworkflow-homepage.jpg)',
+    position: 'static',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundColor: '#fff',
+    backgroundPosition: 'center'
+  }}></section>;
+};
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -89,14 +98,7 @@ function Home() {
           </div>
         </div>
       </header>
-      <section className={styles.section} style={{
-        
-        position: 'static',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundColor: '#fff',
-        backgroundPosition: 'center'
-      }}></section>
+      <BackgroundImageByTheme />
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
