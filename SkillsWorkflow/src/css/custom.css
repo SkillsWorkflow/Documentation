@@ -48,6 +48,19 @@
 h1 {
   font-size: 36px !important;
 }
+html[data-theme='light'] h1{
+  color: rgb(26, 26, 26);
+}
+
+html[data-theme='dark'] h1{
+  color: #fff;
+  background-color: #18191a;
+}
+
+html[data-theme='dark'] h2{
+  color: #fff;
+  background-color: transparent;
+}
 
 h4 {
   font-family: 'Varela Round';
