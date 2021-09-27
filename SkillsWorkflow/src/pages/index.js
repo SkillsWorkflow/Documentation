@@ -57,7 +57,7 @@ function Feature({ imageUrl, title, description }) {
 }
 
 const Header = () => {
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
+  const { isDarkTheme } = useThemeContext();
   return <header
     className={clsx('hero hero--primary', styles.heroBanner)}
     style={{

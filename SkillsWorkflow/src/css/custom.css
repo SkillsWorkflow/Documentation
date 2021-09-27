@@ -138,10 +138,6 @@ img[alt=img-with-border]{
   animation: right-to-left 1s linear forwards;
 }
 
-.footer__links {
-  animation: left-to-right 1s linear forwards;
-}
-
 @keyframes right-to-left {
   0% {
     transform: translateX(50px);
@@ -172,6 +168,21 @@ figure p {
 .row {
   margin-bottom: 1.6rem;
 }
+
+.footer__links {
+  animation: left-to-right 1s linear forwards;
+  font-size: 14px;
+}
+
+html[data-theme='dark'] .footer{
+  --ifm-footer-background-color: #333;
+  --ifm-footer-color: #fff;
+}
+
+html[data-theme='light'] .footer{
+  background-image: linear-gradient(rgb(243, 248, 255), rgb(243, 248, 255));
+}
+
 html[data-theme='light'] .footer__copyright {
   padding-top: 15px;
   border-top: 1px solid rgb(226, 239, 248);
@@ -262,6 +273,7 @@ footer li a:hover {
 
 .footer__copyright{
   color:rgb(155, 164, 175);
+  font-size: 14px;
 }
 
 .javascript {
@@ -319,15 +331,6 @@ html[data-theme='dark'] .DocSearch {
   /* --home-text-color: var(--home-text-color: #fff; */
 }
 
-
-html[data-theme='dark'] .footer{
-  --ifm-footer-background-color: #333;
-  --ifm-footer-color: #fff;
-}
-
-html[data-theme='light'] .footer{
-  background-image: linear-gradient(rgb(243, 248, 255), rgb(243, 248, 255));
-}
 /* Custom Table */
 
 .custom-table {
