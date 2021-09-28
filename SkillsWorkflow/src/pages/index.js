@@ -61,7 +61,7 @@ const Header = () => {
   return <header
     className={clsx('hero hero--primary', styles.heroBanner)}
     style={{
-      backgroundImage: isDarkTheme ? 'url(/img/home/homepage-dark.jpg)' : 'url(/img/home/skillsworkflow-homepage.jpg)',
+      backgroundImage: isDarkTheme ? 'url(/img/home/homepage-dark.jpg)' : 'url(/img/home/homepage-light.jpg)',
       color: '#0172c6',
       position: 'static',
       backgroundRepeat: 'no-repeat',
@@ -71,7 +71,7 @@ const Header = () => {
     }}>
     <div className="container text--left"
       style={{
-        backdropFilter: 'blur(1px)'
+        backdropFilter: 'blur(0px)'
       }}>
       <h1 className="hero__title home-h1"><Translate>Skills Workflow's Documentation</Translate></h1>
       <p className="hero__subtitle home-p"><Translate>We are here to let you shine! Let's get everything done</Translate></p>
