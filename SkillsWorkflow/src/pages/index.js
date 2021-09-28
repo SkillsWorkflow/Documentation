@@ -69,9 +69,9 @@ const Header = () => {
       backgroundColor: '#fff',
       backgroundPosition: 'center'
     }}>
-    <div className="container text--center"
+    <div className="container text--left"
       style={{
-        backdropFilter: 'blur(2px)'
+        backdropFilter: 'blur(1px)'
       }}>
       <h1 className="hero__title home-h1"><Translate>Skills Workflow's Documentation</Translate></h1>
       <p className="hero__subtitle home-p"><Translate>We are here to let you shine! Let's get everything done</Translate></p>
