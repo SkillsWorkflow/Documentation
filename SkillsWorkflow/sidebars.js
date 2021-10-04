@@ -54,6 +54,7 @@ module.exports = {
                                 'sdk/shell-panel'
                             ]
                         },
+                        'sdk/store',
                         {
                             UI: [
                                 'sdk/ui',
