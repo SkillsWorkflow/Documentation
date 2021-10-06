@@ -64,7 +64,7 @@ h2 {
   width: auto;
   font-family: 'Varela Round',sans-serif;
   color: #1a1a1a;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
   white-space: normal;
@@ -72,14 +72,14 @@ h2 {
 
 h3 {
   font-family: 'Varela Round';
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: #1a1a1a;
 }
 
 h4 {
   font-family: 'Varela Round';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: #9CA7B0;
 }
@@ -304,6 +304,21 @@ footer li a:hover {
   line-height: var(--ifm-heading-line-height);
   transition: border-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
+
+blockquote{
+  background-color: red;
+}
+
+html[data-theme='dark'] blockquote{
+  color: green;
+}
+
+html[data-theme='light'] blockquote{
+  color: blue;
+}
+
+
+
 
 /* Algolia Search here*/
 html[data-theme='light'] .DocSearch {
