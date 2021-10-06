@@ -1,5 +1,5 @@
 ---
-id:  FTE-dashboard
+id:  fte-dashboard
 title: FTE
 sidebar_label: 10. FTE
 sidebar_position: 10

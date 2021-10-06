@@ -16,9 +16,9 @@
   "dependencies": {
     "@algolia/netlify-plugin-crawler": "^1.0.9",
     "@docsearch/js": "^3.0.0-alpha.40",
-    "@docusaurus/core": "^2.0.0-alpha.40",
-    "@docusaurus/plugin-content-docs": "^2.0.0-alpha.40",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.40",
+    "@docusaurus/core": "^2.0.0-beta.6",
+    "@docusaurus/plugin-content-docs": "^2.0.0-beta.6",
+    "@docusaurus/preset-classic": "^2.0.0-beta.6",
     "@docusaurus/theme-search-algolia": "^2.0.0-alpha.40",
     "@types/node": "^16.4.1",
     "@types/react": "^17.0.14",

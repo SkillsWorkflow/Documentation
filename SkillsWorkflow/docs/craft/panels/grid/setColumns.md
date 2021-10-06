@@ -47,7 +47,7 @@ Column properties define the behavior and appearance of a grid column.
 }
 ```
 
-## entity
+### entity
 Setting up the Entity property, the standard display will be used. 
 If the cell display needs to be configured, the format property allows defining other default displays according to the selected type.
 According to the type to be presented in the column, image, link or text, some additional fields must be available in the data source.
