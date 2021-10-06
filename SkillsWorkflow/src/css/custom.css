@@ -306,15 +306,15 @@ footer li a:hover {
 }
 
 blockquote{
-  background-color: red;
+  background-color: transparent;
 }
 
 html[data-theme='dark'] blockquote{
-  color: green;
+  background-color: transparent;
 }
 
 html[data-theme='light'] blockquote{
-  color: blue;
+  background-color: transparent;
 }
 
 
