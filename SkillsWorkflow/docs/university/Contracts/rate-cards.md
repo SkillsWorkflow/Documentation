@@ -1,25 +1,24 @@
 ---
 id:  rate-cards
-title: Rate Cards
+title: Create Rate Cards
 sidebar_label: 1. Create Rate Cards
 sidebar_position: 1
 ---
 
-## 1. Create Rate Cards
 
 Rate Cards are prices/costs for typology groups and/or users.
 
 You can set multiple Rate Cards and Rate Cards columns in the same table.
 
-###Rate Cards can be managed in two ways:
+## Rate Cards can be managed in two ways:
 
-<h4>Sales values</h4>
+### Sales values
 
 - Add rates based on the sales values for a specific client(including margin and fixed costs).
 - In this case, the bill's team does not need to include margin and fixed costs when creating rates.
 - Some clients have a unique sales rate, which ensures that the bill's team doesn 't send different prices/costs to the same cliente.
 
-<h4>Costs values</h4>
+### Costs values
 
 - Add rates based on the costs values for a user/typology group.
 - In this case, bill's team will have to manage margin and fixed costs for the client.
