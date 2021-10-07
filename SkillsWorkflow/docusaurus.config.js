@@ -82,7 +82,7 @@ module.exports = {
             },
             {
               label: 'SDK',
-              to: 'docs/sdk/ui'
+              to: 'docs/sdk/ui/ui'
             },
             {
               label: 'Integrations',
