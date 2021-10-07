@@ -49,6 +49,12 @@ module.exports = {
           className: 'navbar-item'
         },
         {
+          to: 'docs/university/home',
+          label: 'University',
+          position: 'left',
+          className: 'navbar-item'
+        },
+        {
           label: "API",
           position: 'right',
           className: 'navbar-item',
@@ -102,7 +108,7 @@ module.exports = {
             {
               label: 'Website',
               href: 'https://www.skillsworkflow.com/'
-            }, 
+            },
             {
               label: 'Status',
               href: 'https://status.skillsworkflow.com/'
