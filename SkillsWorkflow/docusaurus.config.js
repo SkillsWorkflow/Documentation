@@ -90,7 +90,7 @@ module.exports = {
             },
             {
               label: 'University',
-              to: 'docs/university/Bills/invoice-authorizations'
+              to: 'docs/university/home'
             }
           ],
         },
