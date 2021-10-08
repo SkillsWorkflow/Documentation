@@ -5,7 +5,7 @@ sidebar_label: 2. Create Expenses
 sidebar_position: 2
 ---
 
-## 2. Create Expenses 
+## Create Expenses 
 
 ### Expenses can be created in two ways:
 

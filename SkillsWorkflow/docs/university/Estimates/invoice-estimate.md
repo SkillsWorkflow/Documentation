@@ -5,7 +5,7 @@ sidebar_label: 2. Invoice an Estimate
 sidebar_postiion: 2
 ---
 
-## 2. Create retainer estimates
+## Create retainer estimates
 
 Estimates can be created as retainers, and the system will automatically display their values.
 

@@ -1,7 +1,7 @@
 ---
 id: create-commercial-product
 title: Create a new commercial product
-sidebar_label: Create commercial product
+sidebar_label: 3. Create commercial product
 ---
 
 import Tabs from '@theme/Tabs';

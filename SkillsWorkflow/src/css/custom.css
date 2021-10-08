@@ -46,12 +46,9 @@
 }
 
 h1 {
-  font-size: 36px !important;
-}
-
-h1 {
   margin: 0 auto;
   font-family: 'Varela Round',sans-serif;
+  font-size: 38px;
   line-height: 48px;
   font-weight: 600;
   text-align: left;
@@ -64,7 +61,7 @@ h2 {
   width: auto;
   font-family: 'Varela Round',sans-serif;
   color: #1a1a1a;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 1px;
   white-space: normal;
@@ -74,14 +71,14 @@ h3 {
   font-family: 'Varela Round';
   font-size: 18px;
   font-weight: 400;
-  color: #1a1a1a;
+  color: #9ba4af;
 }
 
 h4 {
   font-family: 'Varela Round';
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  color: #9CA7B0;
+  color: #9ba4af;
 }
 
 p {
@@ -93,9 +90,17 @@ a {
   text-decoration: none !important;
 }
 
+.home-h1{
+  font-weight: 300;
+  color: var(--home-text-color);
+}
+
+.home-p {
+  color: rgb(170, 169, 169);
+}
 
 html[data-theme='light'] h1{
-  color: rgb(26, 26, 26);
+  color:#1a1a1a;
 }
 
 html[data-theme='dark'] h1{
@@ -138,14 +143,6 @@ html[data-theme='dark'] .skills_src-pages-:hover {
   text-transform: uppercase
 }
 
-.home-h1{
-  font-weight: 300;
-  color: var(--home-text-color);
-}
-
-.home-p {
-  color: rgb(170, 169, 169);
-}
 
 img[alt=small] { width: 30%;}
 
@@ -250,6 +247,38 @@ html[data-theme='dark'] .hero__title {
   color: #fff;
 }
 
+h1 {
+  margin: 0 auto;
+  font-family: 'Varela Round',sans-serif;
+  line-height: 48px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: none;
+  color: #1a1a1a;
+}
+
+h2 {
+  display: block;
+  width: auto;
+  font-family: 'Varela Round',sans-serif;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: normal;
+}
+
+h3 {
+  font-family: 'Varela Round';
+  font-size: 20px;
+  font-weight: 400;
+  color: #9CA7B0;
+}
+
+.footer__col {
+  display: flex !important;
+  justify-content: left;
+}
 
 .footer__col {
   display: flex !important;
@@ -304,21 +333,6 @@ footer li a:hover {
   line-height: var(--ifm-heading-line-height);
   transition: border-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
-
-blockquote{
-  background-color: transparent;
-}
-
-html[data-theme='dark'] blockquote{
-  background-color: transparent;
-}
-
-html[data-theme='light'] blockquote{
-  background-color: transparent;
-}
-
-
-
 
 /* Algolia Search here*/
 html[data-theme='light'] .DocSearch {

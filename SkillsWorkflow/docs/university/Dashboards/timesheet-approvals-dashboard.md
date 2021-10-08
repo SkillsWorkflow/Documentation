@@ -5,7 +5,7 @@ sidebar_label: 8. Missing Timesheet Hours and Approvals Dashboard
 sidebar_position: 8
 ---
 
-## 8. Missing Timesheet Hours and Approvals Dashboard
+## Missing Timesheet Hours and Approvals Dashboard
 
 This dashboard provides real-time information on blocked users due to missing hours, and/or missing approvals of their subordinate's timesheets.
 

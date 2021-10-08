@@ -1,7 +1,7 @@
 ---
 id: create-commercial-client
 title: Create a new commercial client
-sidebar_label: Create commercial client
+sidebar_label: 2. Create commercial client
 ---
 
 To create a new commercial client you must go to the "CRM" module and to the sub-list "Clients".

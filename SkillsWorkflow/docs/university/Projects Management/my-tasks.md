@@ -5,7 +5,7 @@ sidebar_label: 8. My Tasks
 sidebar_position: 8
 ---
 
-## 8. My Tasks
+## My Tasks
 
 ### In Skills Workflow you can create tasks for yourself (if configured at your company).
 

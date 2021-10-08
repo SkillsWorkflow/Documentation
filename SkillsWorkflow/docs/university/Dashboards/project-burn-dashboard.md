@@ -5,7 +5,7 @@ sidebar_label: 2. Project Burn Dashboard
 sidebar_position: 2
 ---
 
-## 2. Project Burn Dashboard
+## Project Burn Dashboard
 
 
 Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.

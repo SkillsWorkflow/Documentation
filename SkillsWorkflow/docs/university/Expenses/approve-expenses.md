@@ -5,7 +5,7 @@ sidebar_label: 3. Approve Expenses
 sidebar_position: 3
 ---
 
-## 3. Approve Expenses
+## Approve Expenses
 
 
 ### Expenses can be approved in two ways:
