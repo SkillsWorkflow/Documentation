@@ -810,6 +810,31 @@ To do so it is required a parameter to be filled:
  }
 ```
 
+## Merge
+
+Merge action allows you to Merge a Json Result from a previous to a property List of key/values. This Action allows to update properties from the Json Body.
+
+#### Configuration
+To do so it is required a parameter to be filled:
+
+* Payload - A Json Body
+* values - The mapped values will be available on the Map action result (Content)
+
+#### Template
+
+```json {3,5-8}
+{  
+   "actionType": "Map",  
+   "name": "Map",  
+   "next": "Exit",
+   "payload":{\"User\": \"string\",\"DocumentType\": \"string\", \"DocumentOid\": \"string\", \"AssignmentType\": \"string\", \"Workload\": 0,  \"Priority\": 0}",
+   "values": {
+       "DocumentType":"{{['GetDocumentTypes']$.Content[:1].DocumentType | ToJson}}",
+       "AssignmentType":"{{['GetAssignments']$.Content[:1].AssignmentType | ToJson}}"
+   }
+ }
+```
+
 ## AzureAdAuthentication
 
 AzureAdAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory 
