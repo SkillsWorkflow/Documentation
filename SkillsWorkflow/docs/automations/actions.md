@@ -824,8 +824,8 @@ To do so it is required a parameter to be filled:
 
 ```json {3,5-8}
 {  
-   "actionType": "Map",  
-   "name": "Map",  
+   "actionType": "Merge",  
+   "name": "Merge",  
    "next": "Exit",
    "payload":{\"User\": \"string\",\"DocumentType\": \"string\", \"DocumentOid\": \"string\", \"AssignmentType\": \"string\", \"Workload\": 0,  \"Priority\": 0}",
    "values": {
