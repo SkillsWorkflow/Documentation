@@ -5,7 +5,7 @@ sidebar_label: 1. Create invoice authorizations
 sidebar_position: 1
 ---
 
-## 1. Create invoice authorizations
+## Create invoice authorizations
 
 You can create invoice orders in the system, and in this way inform the financial team to proceed with the creation / synchronization of the document to the external financial system, and generate the final invoice.
 

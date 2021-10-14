@@ -1,7 +1,7 @@
 ---
 id: create-client-contact
 title: Create a new Client contact
-sidebar_label: Create client contact
+sidebar_label: 1. Create client contact
 ---
 
 In order to create a new client contact with all the client details, you should access the "CLIENTS" module and go into the "Client Contact" tab.

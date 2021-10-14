@@ -5,7 +5,7 @@ sidebar_label: 2. Generate credit notes to clients
 sidebar_position: 2
 ---
 
-## 2. Generate credit notes to clients
+## Generate credit notes to clients
 
 Whenever you change the sales values ​​of the invoiced budget, to a lower value the system will suggest that a credit note be issued.
 

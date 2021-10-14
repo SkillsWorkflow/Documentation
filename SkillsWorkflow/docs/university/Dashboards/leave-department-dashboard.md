@@ -5,7 +5,7 @@ sidebar_label: 7. Leaves My Department Dashboard
 sidebar_position: 7
 ---
 
-## 7. Leaves My Department Dashboard
+## Leaves My Department Dashboard
 
 When scheduling your own leaves or approving leaves submitted by your subordinates, it's important to know if other employees in the same department are also on leave. This prevents the department from being crippled due to a lot of employees being on leave on the same day.
 
