@@ -5,7 +5,7 @@ sidebar_label: 1. Create a Project
 sidebar_position: 1
 ---
 
-## 1. Create a Project
+## Create a Project
 
 ### A Project is an umbrella that groups a bundle of related jobs inside.
 

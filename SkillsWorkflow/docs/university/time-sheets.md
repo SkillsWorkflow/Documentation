@@ -4,7 +4,7 @@ title: Timesheets
 sidebar_label: Timesheets
 ---
 
-## 1. Filling in Time Sheets
+## Filling in Time Sheets
 
 :::note 
 To enter time, navigate to the **Time Sheets** module. 

@@ -5,7 +5,7 @@ sidebar_label: 3. Resource Scheduler
 sidebar_position: 3
 ---
 
-## 3. Resource Scheduler
+## Resource Scheduler
 
 ### Assignments in Skills Workflow can be done in numerous ways.
 
