@@ -111,7 +111,10 @@ html[data-theme='dark'] h2{
   color: #fff;
   background-color: transparent;
 }
-
+html[data-theme='dark'] h3{
+  color: #fff;
+  background-color: transparent;
+}
 
 a:hover {
   color: rgb(26, 26, 26);
@@ -239,9 +242,10 @@ html[data-theme='dark'] .footer__col {
   border-left: 1px solid rgb(226, 239, 248);
 } */
 
+/*
 html[data-theme='dark'] header {
   background-color: #333 !important;
-}
+}*/
 
 html[data-theme='dark'] .hero__title {
   color: #fff;
