@@ -5,7 +5,7 @@ sidebar_label: 9. Environment Dashboard
 sidebar_position: 9
 ---
 
-## 9. Environment Dashboard
+## Environment Dashboard
 
 It is now possible to change the look of Skills Workflow. Make it look like your agency, differentiate it from others, and show off your brand identity to your whole team and clients.
 

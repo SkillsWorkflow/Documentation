@@ -6,7 +6,7 @@ sidebar_position: 11
 ---
 
 
-## 11. Client Staff Plan Summary Dashboard
+## Client Staff Plan Summary Dashboard
 
 The Client Staff Plan Summary Dashboard provides a summary report of all fees and estimates under a company, client group and period selected.
 

@@ -6,7 +6,7 @@ sidebar_position: 2
 ---
 
 
-## 2. Create Jobs
+## Create Jobs
 
 1. To create a new Job, navigate to the "Projects" module.
 

@@ -5,7 +5,7 @@ sidebar_label: 2. Create Contracts and Proposals
 sidebar_position: 2
 ---
 
-## 2. Create Contracts and Proposals
+## Create Contracts and Proposals
 
 It is possible to create and manage contracts associated with specific projects and activities.
 
