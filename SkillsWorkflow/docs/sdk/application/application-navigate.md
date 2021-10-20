@@ -1,16 +1,16 @@
 ---
-id: ui-navigate
+id: application-navigate
 title: " "
 sidebar_label: Navigate
 ---
 
 # Navigate
 
-A sub namespace of UI, exclusive for navigate operations
+A sub namespace of Application, exclusive for navigate operations
 
 ```javascript
-//accessing to ui.navigate methods
-SW.UI.Navigate.{methodName}
+//accessing to application.navigate methods
+SW.Application.Navigate.{methodName}
 ```
 
 ---
@@ -58,7 +58,7 @@ This method can be used to navigate do the document's feed.
 #### Basic Usage
 
 ```javascript
-SW.UI.Navigate.toDocument(SW.DocumentName.Client, 'clientId');
+SW.Application.Navigate.toDocument(SW.DocumentName.Client, 'clientId');
 ```
 
 #### Response
@@ -116,7 +116,7 @@ This method can be used to open a page in a new tab.
 #### Basic Usage
 
 ```javascript
-SW.UI.navigateToNewTab("url");
+SW.Application.navigateToNewTab("url");
 ```
 
 #### Response
@@ -187,7 +187,7 @@ This method can be used to navigate to a workspace.
 #### Basic Usage
 
 ```javascript
-SW.UI.navigateTo('workspaceId', {documentName: SW.DocumentName.Job, documentId: 'jobId'});
+SW.Application.navigateTo('workspaceId', {documentName: SW.DocumentName.Job, documentId: 'jobId'});
 ```
 
 #### Response

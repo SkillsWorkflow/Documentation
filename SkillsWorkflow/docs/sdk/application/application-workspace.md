@@ -1,5 +1,5 @@
 ---
-id: shell-workspace
+id: application-workspace
 title: " "
 sidebar_label: Workspace
 ---
@@ -7,11 +7,11 @@ sidebar_label: Workspace
 
 ## refresh
 
-### Description
+#### Description
 
 This method can be used inside any workspace. Refresh a workspace
 
-### Method(s)
+#### Method(s)
 
 ```javascript
 1   declare function refresh(): void;
@@ -19,20 +19,20 @@ This method can be used inside any workspace. Refresh a workspace
 
 
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
-SW.Shell.Workspace.refresh();
+SW.Application.Workspace.refresh();
 ```
 
 
 ## setFilter
 
-### Description
+#### Description
 
 This method can be used inside any workspace. Create a new assignment
 
-### Method(s)
+#### Method(s)
 
 ```javascript
 1  declare function setFilter(filter: string, value: any, 
@@ -74,19 +74,19 @@ This method can be used inside any workspace. Create a new assignment
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
-SW.Shell.Workspace.setFilter(filter, 20);
+SW.Application.Workspace.setFilter(filter, 20);
 ```
 
 ## setFilters
 
-### Description
+#### Description
 
 This method can be used inside any workspace. Set multiple filters
 
-### Method(s)
+#### Method(s)
 
 ```javascript
 1  declare function setFilters(filtersWithValues: DashboardFilter[], 
@@ -121,17 +121,17 @@ This method can be used inside any workspace. Set multiple filters
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
-SW.Shell.Workspace.setFilters([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
+SW.Application.Workspace.setFilters([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
 ```
 ## setPanels
 
-### Description
+#### Description
 
 This method can be used inside any workspace. Set workspace's panels
-### Method(s)
+#### Method(s)
 
 ```javascript
 1  declare function setPanels(items: IUpdatedLayoutItems, 
@@ -166,8 +166,8 @@ This method can be used inside any workspace. Set workspace's panels
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
-SW.Shell.Workspace.setPanels("EF6C7CB6-9798-4A44-B33D-284B38F54931", true);
+SW.Application.Workspace.setPanels("EF6C7CB6-9798-4A44-B33D-284B38F54931", true);
 ```

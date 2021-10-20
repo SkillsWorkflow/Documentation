@@ -1,16 +1,16 @@
 ---
-id: ui-popup
+id: application-popup
 title: " "
 sidebar_label: Popup
 ---
 
 # Popup
 
-A sub namespace of UI, exclusive for popup operations
+A sub namespace of Application, exclusive for popup operations
 
 ```javascript
-//accessing to ui.popup methods
-SW.UI.Popup.{methodName}
+//accessing to application.popup methods
+SW.Application.Popup.{methodName}
 ```
 
 ---
@@ -163,7 +163,7 @@ This method can be used to create a popup with the specified entity and data.
 #### Basic Usage
 
 ```javascript
-SW.UI.show(['info'], 
+SW.Application.show(['info'], 
    {
        documentName: SW.DocumentName.Job,
        width: 500,
@@ -249,7 +249,7 @@ This method can be used to generate a pop-up to allow editing in bulk.
 #### Basic Usage
 
 ```javascript
-SW.UI.showBulk(SW.DocumentName.Employee, dataGrid);
+SW.Application.showBulk(SW.DocumentName.Employee, dataGrid);
 ```
 
 #### Response
@@ -324,7 +324,7 @@ This method can be used to add an add button on top, which calls a creation pop-
 #### Basic Usage
 
 ```javascript
-SW.UI.showCreate(SW.DocumentName.Company);
+SW.Application.showCreate(SW.DocumentName.Company);
 ```
 
 #### Response
@@ -416,7 +416,7 @@ This method can be used to create a new popup with Yes and No buttons. If Yes bu
 #### Basic Usage
 
 ```javascript
-SW.UI.showConfirmPopup(
+SW.Application.showConfirmPopup(
    params: {
        title: 'Popup title', 
        text: 'Click one button', 
@@ -531,7 +531,7 @@ This method can be used to create a preview popup styled by the entity passed as
 #### Basic Usage
 
 ```javascript
-SW.UI.showPreview(SW.DocumentName.Client, "ClientId");
+SW.Application.showPreview(SW.DocumentName.Client, "ClientId");
 ```
 
 #### Response
@@ -623,7 +623,7 @@ This method can be used to create a new popup with Yes and No buttons and a text
 #### Basic Usage
 
 ```javascript
-SW.UI.showPromptPopup(
+SW.Application.showPromptPopup(
         params: {
             title: 'Popup title', 
             text: 'Click one button', 
@@ -706,7 +706,7 @@ This method can be used to open a preview popup styled by the documentName passe
 #### Basic Usage
 
 ```javascript
-SW.UI.showSystemPreview(SW.DocumentName.Estimate, 'estimateId');
+SW.Application.showSystemPreview(SW.DocumentName.Estimate, 'estimateId');
 ```
 
 #### Response
