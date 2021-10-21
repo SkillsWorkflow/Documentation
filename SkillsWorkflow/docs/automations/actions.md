@@ -5,7 +5,7 @@ sidebar_label: Actions
 ---
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-This section will describe the group of action types available to be set in the Automation Workflow.
+This section will describe the group of action types available to be set in the Automation Workflow. 
 
 ## Start
 
