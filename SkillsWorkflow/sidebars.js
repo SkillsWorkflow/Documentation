@@ -60,7 +60,9 @@ module.exports = {
                                 }
                             ]
                         },
+                        'sdk/branding',
                         'sdk/execute-api',
+                        'sdk/storage',
                         'sdk/store',
                         {
                             UI: [
