@@ -871,7 +871,7 @@ Please check the template description to know which parameters must be sent for 
 * clientSecret - Microsoft App Registration Secret
 
 
-## CreatPdfFromDocument
+## CreatePdfFromDocument
 
 CreatPdfFromDocument action allows you to download a pdf from a existing document using a pre-existing layout
 
@@ -906,3 +906,36 @@ To do so it is required a parameter to be filled:
 * documentId - The Id of the desired Document
 * layoutId - The layout id used to create pdf
 
+## ExecuteSubWorkflow
+
+ExecuteSubWorkFlow action allows you to run a SubWorkflow with a specific Payload. This Action receives a Return action Result from the SubWorkflow.
+
+#### Configuration
+
+To configure this action, there are parameters that can be set:
+
+* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
+* subWorkflows -  The SubWorkflow Name that is intended to run
+
+
+
+
+#### Template
+
+```json {3,5-7}
+{
+    "actionType": "ExecuteSubWorkflow",
+    "name": "RunSubWorkflow",
+    "next": "Exit",
+    "body": "{\"data\":\"value\"}",
+    "subWorkflow": "MySubWorkflow"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is ExecuteSubWorkflow
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* body - The data to be available in the ExecuteSubWorkflow action
+* subWorkflow - The set of actions (e.g. import a list of files) to be performed
