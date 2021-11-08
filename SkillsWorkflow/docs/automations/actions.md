@@ -454,7 +454,7 @@ To do so, it is required some parameters to be filled:
     "subject": "This is the e-mail subject",
     "fromDisplayName": "Notification | Skills Workflow",
     "toAddress": "user@skillsworkflow.com",
-    "attachment": "document.pdf"
+    "attachments": ["document.pdf"]
 }
 ```
 
