@@ -914,10 +914,8 @@ ExecuteSubWorkFlow action allows you to run a SubWorkflow with a specific Payloa
 
 To configure this action, there are parameters that can be set:
 
-* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
 * subWorkflows -  The SubWorkflow Name that is intended to run
-
-
+* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
 
 
 #### Template
@@ -939,3 +937,37 @@ To configure this action, there are parameters that can be set:
 * next - The next action to be executed after the subWorkflow execution reach its Result action
 * body - The data to be available in the ExecuteSubWorkflow action
 * subWorkflow - The set of actions (e.g. import a list of files) to be performed
+
+
+
+## Enqueue
+
+Enqueue action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and continues, it does not wait for the workflow to finish.
+
+#### Configuration
+
+To configure this action, there are parameters that can be set:
+
+* targetWorkflowId -  The Workflow Id that is intended to run
+* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
+
+
+#### Template
+
+```json {3,5-7}
+{
+    "actionType": "Enqueue",
+    "name": "RunWorkflow",
+    "next": "Exit",
+    "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
+    "body": "{"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}"
+}
+```
+
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* body - The data to be available in the ExecuteSubWorkflow action
+* targetWorkflowId - The Id of the workflow Intended to run.
