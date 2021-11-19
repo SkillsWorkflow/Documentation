@@ -940,7 +940,7 @@ To configure this action, there are parameters that can be set:
 
 
 
-## Enqueue
+## EnqueueBackgroundWork
 
 Enqueue action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and continues, it does not wait for the workflow to finish.
 
@@ -971,3 +971,51 @@ To configure this action, there are parameters that can be set:
 * next - The next action to be executed after the subWorkflow execution reach its Result action
 * body - The data to be available in the ExecuteSubWorkflow action
 * targetWorkflowId - The Id of the workflow Intended to run.
+
+
+## XmlMap
+
+XmlMap action allows you to parse a XML string to a property List of key/values using XPath. 
+
+#### Configuration
+
+To configure this action, there are some required parameters that need to be set:
+
+* xmldata -  A Xml String representing a Xml Document
+* Values - The mapped values will be available on the Map action result (Content)
+
+
+#### Template
+
+```json {3,5-7}
+{
+    "actionType": "XmlMap",
+    "name": "XmlMap",
+    "next": "Exit",
+    "xmldata": "",
+    "namespaces": {
+        "cac": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+        "cbc": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+        "ubl": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+    },
+    "values": {
+        "Id": "/cbc:ID",
+        "AccountingSupplierName": "/cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name",
+        "StreetName": "/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName",
+        "PostalCode": "/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:PostalZone",
+        "Name":"/sender/name",
+        "VatNumber":"/sender/id",
+        "Address":"/sender/addressInformation/address",
+        "City":"/sender/addressInformation/city" 
+    }
+}
+```
+
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* namespaces - Xml Namespaces used on Xml Document
+* xmlData -  A Xml String representing a Xml Document
+* Values - The mapped values will be available on the Map action result (Content)
