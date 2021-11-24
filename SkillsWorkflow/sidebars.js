@@ -62,6 +62,8 @@ module.exports = {
                         },
                         'sdk/branding',
                         'sdk/execute-api',
+                        'sdk/filesystem',
+                        'sdk/realtime',
                         'sdk/storage',
                         'sdk/store',
                         {
