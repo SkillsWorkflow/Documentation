@@ -1005,7 +1005,26 @@ SW.UI.showTeam(element, data, "UserIds", "UserNames", "UserHasImages", {size: "l
 ```
 
 #### Response
+<figure>
 
+![img-box-shadow](/img/responses/showTeam_example.png)
+
+</figure>
+
+```javascript {9}
+{
+        dataField: "ExecutorNames",
+        caption: "Assignee",
+        dataType: "string",
+        allowEditing: false,
+        visible: true,
+        cellTemplate: function cellTemplate(e, i) { 
+            if (i.data && i.data.ExecutorNames) { 
+                SW.UI.showTeam(e, i, 'ExecutorIds', 'ExecutorNames', 'ExecutorHasImages', { size: 'small' }) 
+             } 
+        }
+},
+```
 ---
 
 ## showWorkload
