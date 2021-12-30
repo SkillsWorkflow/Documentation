@@ -99,7 +99,6 @@ SW.Utils.Datetime.convertToUtc("Thu Aug 26 2021 16:23:00 GMT+0100 (Western Europ
 ```javascript
 "Thu Aug 26 2021 15:23:00 GMT+0100 (Western European Summer Time)"
 ```
-
 ---
 
 ## convertUtcToLocal
@@ -146,6 +145,31 @@ SW.Utils.Datetime.convertUtcToLocal("2021-08-25T15:23:26.222Z")
 "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)"
 ```
 
+<figure>
+
+![img-box-shadow-200](/img/responses/convertUtcToLocal_example.png)
+
+</figure>
+
+```javascript {13}
+{
+    colCount: 2,
+    dataField: "CreatedOnUtc",
+    editorType: "dxDateBox",
+    label: {
+        text: "Created On"
+    },
+    editorOptions: {
+        type: "datetime",
+        displayFormat: "dd/MMM/yyyy HH:mm",
+        onInitialized: function onInit(e) {
+            var context = workspaceContext;
+            var date = SW.Utils.Datetime.convertUtcToLocal(context.currentDocument.Dto.Request.CreatedOnUtc);
+            e.component.option('value', date);
+        }
+    }
+}
+```
 ---
 
 ## formatDateToString
