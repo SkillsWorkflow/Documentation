@@ -1001,7 +1001,7 @@ This method can be used to display teams.
 ### Basic Usage
 
 ```javascript
-SW.UI.showTeam(element, data, "UserIds", "UserNames", "UserHasImages", {size: "small"});
+SW.UI.showTeam(element, data, "UserIds", "UserNames", "UserHasImages", {size: "large"});
 ```
 
 ### Response
