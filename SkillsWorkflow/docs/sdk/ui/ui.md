@@ -1006,6 +1006,8 @@ SW.UI.showTeam(element, data, "UserIds", "UserNames", "UserHasImages", {size: "l
 
 ### Response
 
+This method will add the user images to the given element..
+
 ### Example
 
 ```javascript {9}
