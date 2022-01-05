@@ -998,18 +998,17 @@ This method can be used to display teams.
     </tbody>
 </table>
 
-#### Basic Usage
+### Basic Usage
 
 ```javascript
 SW.UI.showTeam(element, data, "UserIds", "UserNames", "UserHasImages", {size: "large"});
 ```
 
-#### Response
-<figure>
+### Response
 
-![img-box-shadow](/img/responses/showTeam_example.png)
+This method will add the user images to the given element..
 
-</figure>
+### Example
 
 ```javascript {9}
 {
@@ -1025,6 +1024,13 @@ SW.UI.showTeam(element, data, "UserIds", "UserNames", "UserHasImages", {size: "l
         }
 },
 ```
+<figure>
+
+![img-box-shadow](/img/responses/showTeam_example.png)
+
+</figure>
+
+
 ---
 
 ## showWorkload

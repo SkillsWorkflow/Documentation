@@ -134,22 +134,17 @@ function convertUtcToLocal(utcDate: Date): Date
     </tbody>
 </table>
 
-#### Basic Usage
+### Basic Usage
 
 ```javascript
 SW.Utils.Datetime.convertUtcToLocal("2021-08-25T15:23:26.222Z")
 ```
 
-#### Response
+### Response
 ```javascript
 "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)"
 ```
-
-<figure>
-
-![img-box-shadow-200](/img/responses/convertUtcToLocal_example.png)
-
-</figure>
+### Example
 
 ```javascript {13}
 {
@@ -170,6 +165,13 @@ SW.Utils.Datetime.convertUtcToLocal("2021-08-25T15:23:26.222Z")
     }
 }
 ```
+
+<figure>
+
+![img-box-shadow-200](/img/responses/convertUtcToLocal_example.png)
+
+</figure>
+
 ---
 
 ## formatDateToString
