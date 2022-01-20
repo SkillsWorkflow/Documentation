@@ -6,7 +6,10 @@ sidebar_label: Custom Style
 ### Description
 
 On this page you will find the proccess of how to customize the style of the document.
-<p>To activate one or more proprerties of the the Custom Style, the <b>Use Custom</b> button should be enabled</p>
+
+:::note
+To activate one or more proprerties of the the Custom Style, the Use Custom button should be enabled
+:::
 
 ### Custom Style
 
