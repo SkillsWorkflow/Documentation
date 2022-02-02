@@ -57,7 +57,7 @@ To activate one or more proprerties of the the Custom Style, the Use Custom butt
             <td><code>Singular Name</code></td>
             <td>String</td>
             <td>false</td>
-            <td>Change the name of the document's tooltip </td> 
+            <td>Change the name of the document's tooltip## </td> 
         </tr>
     </tbody>
 </table> 
