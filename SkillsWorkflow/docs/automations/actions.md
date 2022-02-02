@@ -956,7 +956,7 @@ To configure this action, there are parameters that can be set:
 
 ```json {3,5-7}
 {
-    "actionType": "Enqueue",
+    "actionType": "EnqueueBackgroundWork",
     "name": "RunWorkflow",
     "next": "Exit",
     "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
