@@ -654,11 +654,12 @@ This method can be used to open a preview popup styled by the documentName passe
 2       params: {
 3           width?: number;
 4           height?: number;
-5       } = {
-6           width: 750,
-7           height: 500
-8       }
-9   ): void
+5           onClose?: Function;
+6       } = {
+7           width: 750,
+8           height: 500
+9       }
+10  ): void
 ```
 
 <table className="custom-table">
@@ -699,6 +700,13 @@ This method can be used to open a preview popup styled by the documentName passe
             <td>false</td>
             <td>500</td>
             <td>It sets the new pop-up's height (pixels)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>onClose</code></td>
+            <td>function</td>
+            <td>false</td>
+            <td></td>
+            <td>Action/Behaviour to be implemented on closing the pop-up when changes were made</td>
         </tr>
     </tbody>
 </table>
