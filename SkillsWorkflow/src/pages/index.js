@@ -6,8 +6,13 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
-import useThemeContext from '@theme/hooks/useThemeContext';
-
+import {
+  useThemeConfig,
+  useColorMode,
+  useHideableNavbar,
+  useLockBodyScroll,
+  useWindowSize,
+} from '@docusaurus/theme-common';
 const features = [
   {
     title: 'Crafting',
@@ -57,7 +62,8 @@ function Feature({ imageUrl, title, description }) {
 }
 
 const Header = () => {
-  const { isDarkTheme } = useThemeContext();
+  const { isDarkTheme } = useThemeConfig();
+  debugger;
   return <header
     className={clsx('hero hero--primary', styles.heroBanner)}
     style={{
