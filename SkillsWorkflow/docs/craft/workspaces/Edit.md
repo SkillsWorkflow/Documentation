@@ -4,15 +4,13 @@ title: 'Edit Workspace'
 sidebar_label: Edit Workspace
 ---
 
-### Description
-
 On this page you will find how to edit the workspaces.
 
 :::note
 To have access to the these options, you need to click in the Edit workspace to open the workspace configuration.
 :::
 
-## 1. Creating parameters in workspace 
+## 1. Creating parameters
 
 
 <figure>
@@ -22,11 +20,11 @@ To have access to the these options, you need to click in the Edit workspace to 
 
 ### Example
 
-1. Choose the parameters tab and insert the parameter name and value.
+1.1 Choose the parameters tab and insert the parameter name and value.
 
 ![img-box-shadow](/img/craft/workspace/parameter.png)
 
-2. Add the created parameter in the query.
+1.2 Add the created parameter in the query.
 
 ![img-box-shadow](/img/craft/workspace/usingParameter.png)
 

@@ -47,7 +47,7 @@ Column properties define the behavior and appearance of a grid column.
 }
 ```
 
-### entity
+## 1. Entity
 Setting up the Entity property, the standard display will be used. 
 If the cell display needs to be configured, the format property allows defining other default displays according to the selected type.
 According to the type to be presented in the column, image, link or text, some additional fields must be available in the data source.
@@ -104,12 +104,14 @@ Required on data source:
 </TabItem>
 </Tabs>
 
-## format
+## 2. Format
 Formats the cell before it is displayed.
 
 There are some standard formats available. By specifing its type the corresponding format will be displayed.
 
-### mapping
+<!-- ### 2.1 Mapping -->
+
+### <span style={{color: 'black', fontSize: '15px'}}>2.1 Mapping</span> 
 
 If the data source does is not mapping to the defaults fields name, it can be mapped by using the mapping property:
 ```json
@@ -124,7 +126,8 @@ If the data source does is not mapping to the defaults fields name, it can be ma
     }
 }
 ```
-### type
+### <span style={{color: 'black', fontSize: '15px'}}>2.2 Type</span>
+
 Accepted Values: 'undefined' | 'image' | 'link' 
 
 To setup the Image type, it is necessary that data source includes the entity:
@@ -151,7 +154,10 @@ To setup the Image type, it is necessary that data source includes the entity:
     }
 }
 ```
-###  size
+<span style={{color: 'black', fontSize: '15px'}}>2.2.1 Size</span>
+
+
+
 Accepted Values: 'small' | 'medium' | 'large' 
 
 To define the size of the image it should be set the size property.
@@ -165,7 +171,7 @@ To define the size of the image it should be set the size property.
 }
 ```
 
-### properties
+### <span style={{color: 'black', fontSize: '15px'}}>2.3 Properties</span>
 
 Properties withing format property customize the behavior and appearance of a default display.
 
@@ -195,22 +201,19 @@ In the following example, to hide the client name from the column and keep only 
 </TabItem>
 </Tabs>
 
-
-
-
-## caption
+## 3. Caption
 Specifies a caption for the column.
-## dataType
+## 4. DataType
 Casts column values to a specific data type
 
 Accepted Values: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime'
-## dataField
+## 5. DataField
 Binds the column to a field of the dataSource.
-## alignment
+## 6. Alignment
 Aligns the content of the column
 
 Accepted Values: undefined | 'center' | 'left' | 'right'
-## width
+## 7. Width
 Specifies the column's width in pixels or as a percentage. Ignored if it is less than minWidth.
 
 Type: Number | String
@@ -220,5 +223,5 @@ The property supports the following types of values:
 - Number - The column's width in pixels.
 - String - A CSS-accepted column width measurement (for example, "55px", "80%" and "auto") except relative units such as em, ch, vh, etc.
 
-## allowEditing
+## 8. AllowEditing
 A flag to allow column editing

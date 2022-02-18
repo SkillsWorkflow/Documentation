@@ -31,8 +31,12 @@ module.exports = {
                             System: [
                                 'craft/configuration/system/menu'
                             ]
+                        },
+                        {
+                            Transition: [
+                                'craft/configuration/transition/action'
+                            ]
                         }
-        
                     ]
                 },
                 {

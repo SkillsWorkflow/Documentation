@@ -1,7 +1,7 @@
 ---
 id:  EditLayout
-title: 'Edit Layout'
-sidebar_label: Edit Layout
+title: 'Layout'
+sidebar_label: Layout
 ---
 
 ### Description
