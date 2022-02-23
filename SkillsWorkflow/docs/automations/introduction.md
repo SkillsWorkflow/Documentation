@@ -71,6 +71,37 @@ To use these converters you will need to add a Pipe | after the field name.
 * ToJsonString - {{['GetProjectFile']$.Content | ToJsonString}}
 * ToDateUtc - {{['GetProjectFile']$.Content.CreatedOn | ToDateUtc}}
 
+## Templates
+
+Some common used code snipets
+
+### SubWorkflow Template
+
+```
+{
+   "name":"CreateProjectIfNotExistsSubWorkflow",
+   "actions":[
+      {
+          "actionType": "Start",
+          "name": "Starting",
+          "next": "GetJobBrief"
+      },
+      {
+          "actionType": "Result",
+          "name": "Exit",
+          "httpResponse": {
+              "statusCode": 200,
+              "headers": {
+                  "content-type": "application/json"
+              },
+              "body": ""
+          }
+      }
+   ]
+ }
+```
+
+
 
 
 
