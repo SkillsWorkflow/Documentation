@@ -33,8 +33,10 @@ module.exports = {
                             ]
                         },
                         {
-                            Transition: [
-                                'craft/configuration/transition/action'
+                            Action: [
+                                'craft/configuration/action/transition',
+                                'craft/configuration/action/validation',
+                                'craft/configuration/action/team'
                             ]
                         }
                     ]

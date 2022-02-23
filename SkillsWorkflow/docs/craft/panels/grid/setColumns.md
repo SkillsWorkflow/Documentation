@@ -19,34 +19,6 @@ Each grid column is represented in this array by an object containing column set
 
 
 Column properties define the behavior and appearance of a grid column.
-
-### Example
-
-```json
-{
-    entity: "client",
-    format: {
-        type: "image",
-        mapping: {
-            id: "ClientId",
-            name: "ClientName",
-            hasImage: "ClientHasImage"
-        },
-        properties: {
-            hideName: true,
-            size: "small",
-            forceImage: false
-        }
-    },
-    caption: "Client",
-    dataType: "string",
-    dataField: "ClientName",
-    alignment: "center",
-    width: 50,
-    allowEditing: false
-}
-```
-
 ## 1. Entity
 Setting up the Entity property, the standard display will be used. 
 If the cell display needs to be configured, the format property allows defining other default displays according to the selected type.
@@ -225,3 +197,33 @@ The property supports the following types of values:
 
 ## 8. AllowEditing
 A flag to allow column editing
+
+
+
+
+### Example
+
+```json
+{
+    entity: "client",
+    format: {
+        type: "image",
+        mapping: {
+            id: "ClientId",
+            name: "ClientName",
+            hasImage: "ClientHasImage"
+        },
+        properties: {
+            hideName: true,
+            size: "small",
+            forceImage: false
+        }
+    },
+    caption: "Client",
+    dataType: "string",
+    dataField: "ClientName",
+    alignment: "center",
+    width: 50,
+    allowEditing: false
+}
+```

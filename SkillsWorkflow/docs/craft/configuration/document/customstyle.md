@@ -3,15 +3,15 @@ id: customstyle
 title: 'Custom Style'
 sidebar_label: Custom Style
 ---
+
 ### Description
 
-On this page you will find the proccess of how to customize the style of the document.
+On this page you will find the process of how to customize the style of the document.
 
 :::note
-To activate one or more proprerties of the the Custom Style, the Use Custom button should be enabled
+To activate one or more properties of the the Custom Style, the Use Custom button should be enabled
 :::
 
-### Custom Style
 
 <table className="custom-table">
     <thead> 
