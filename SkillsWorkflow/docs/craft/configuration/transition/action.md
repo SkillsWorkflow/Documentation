@@ -102,36 +102,6 @@ When changing the stage of the document places Users in a set of Teams​.
 ![img-box-shadow](/img/craft/configuration/action/assignTeam_example.png)
 </figure>
 
-## Create Tasks from Job Type
-
-When the user change the stage of job, the job automatically generates tasks.
-<table className="custom-table">
-    <thead> 
-        <tr>
-            <th>Parameter</th>
-            <th>Type</th>
-            <th>Required</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr className="selected">
-            <td><code>CurrentDocumentId</code></td>
-            <td>Uniqueidentifier</td>
-            <td>true</td>
-            <td>job Id</td> 
-        </tr>
-    </tbody>
-</table>
-
-
-<h3>Example</h3>
-
-:::note
-- Only works for job
-- The tasks are first created in draft, then passed to the stage defined in the query  
-:::
-
 ## Custom Table Write
 
 Adds or Updates entries in a Custom Table
