@@ -1,12 +1,12 @@
 ---
 id: validation
-title: Validation
-sidebar_label: Validation
+title: Validation Query Name
+sidebar_label: Validation Query
 ---
 
 On this page you will find how to create an action of the type Validation based in Data Source.
 
-## 1.Transition
+## Transition
 
 This method validate if the Transition can be performed.
 
@@ -29,8 +29,7 @@ This method validate if the Transition can be performed.
     </tbody>
 </table>
 
-
-### Example
+<h3>Example</h3>
 
 <figure>
 

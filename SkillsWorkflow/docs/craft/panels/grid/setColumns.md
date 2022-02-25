@@ -8,7 +8,6 @@ slug: /
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Description
 A function used to set grid's columns in a workspace. 
 
 By default, a column is created for each field of a data source object, but in most cases, it is redundant. To specify a set of columns to be created in a grid, assign an array specifying these columns to the columns property.
@@ -19,7 +18,33 @@ Each grid column is represented in this array by an object containing column set
 
 
 Column properties define the behavior and appearance of a grid column.
-## 1. Entity
+
+```json
+{
+    entity: "client",
+    format: {
+        type: "image",
+        mapping: {
+            id: "ClientId",
+            name: "ClientName",
+            hasImage: "ClientHasImage"
+        },
+        properties: {
+            hideName: true,
+            size: "small",
+            forceImage: false
+        }
+    },
+    caption: "Client",
+    dataType: "string",
+    dataField: "ClientName",
+    alignment: "center",
+    width: 50,
+    allowEditing: false
+}
+```
+
+## entity
 Setting up the Entity property, the standard display will be used. 
 If the cell display needs to be configured, the format property allows defining other default displays according to the selected type.
 According to the type to be presented in the column, image, link or text, some additional fields must be available in the data source.
@@ -76,14 +101,13 @@ Required on data source:
 </TabItem>
 </Tabs>
 
-## 2. Format
+## format
 Formats the cell before it is displayed.
 
 There are some standard formats available. By specifing its type the corresponding format will be displayed.
 
-<!-- ### 2.1 Mapping -->
+### mapping
 
-### <span style={{color: 'black', fontSize: '15px'}}>2.1 Mapping</span> 
 
 If the data source does is not mapping to the defaults fields name, it can be mapped by using the mapping property:
 ```json
@@ -98,7 +122,7 @@ If the data source does is not mapping to the defaults fields name, it can be ma
     }
 }
 ```
-### <span style={{color: 'black', fontSize: '15px'}}>2.2 Type</span>
+### type
 
 Accepted Values: 'undefined' | 'image' | 'link' 
 
@@ -126,8 +150,7 @@ To setup the Image type, it is necessary that data source includes the entity:
     }
 }
 ```
-<span style={{color: 'black', fontSize: '15px'}}>2.2.1 Size</span>
-
+### size
 
 
 Accepted Values: 'small' | 'medium' | 'large' 
@@ -143,7 +166,7 @@ To define the size of the image it should be set the size property.
 }
 ```
 
-### <span style={{color: 'black', fontSize: '15px'}}>2.3 Properties</span>
+### properties
 
 Properties withing format property customize the behavior and appearance of a default display.
 
@@ -173,19 +196,19 @@ In the following example, to hide the client name from the column and keep only 
 </TabItem>
 </Tabs>
 
-## 3. Caption
+## caption
 Specifies a caption for the column.
-## 4. DataType
+## dataType
 Casts column values to a specific data type
 
 Accepted Values: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime'
-## 5. DataField
+## dataField
 Binds the column to a field of the dataSource.
-## 6. Alignment
+## alignment
 Aligns the content of the column
 
 Accepted Values: undefined | 'center' | 'left' | 'right'
-## 7. Width
+## width
 Specifies the column's width in pixels or as a percentage. Ignored if it is less than minWidth.
 
 Type: Number | String
@@ -195,35 +218,9 @@ The property supports the following types of values:
 - Number - The column's width in pixels.
 - String - A CSS-accepted column width measurement (for example, "55px", "80%" and "auto") except relative units such as em, ch, vh, etc.
 
-## 8. AllowEditing
+## allowEditing
 A flag to allow column editing
 
 
 
 
-### Example
-
-```json
-{
-    entity: "client",
-    format: {
-        type: "image",
-        mapping: {
-            id: "ClientId",
-            name: "ClientName",
-            hasImage: "ClientHasImage"
-        },
-        properties: {
-            hideName: true,
-            size: "small",
-            forceImage: false
-        }
-    },
-    caption: "Client",
-    dataType: "string",
-    dataField: "ClientName",
-    alignment: "center",
-    width: 50,
-    allowEditing: false
-}
-```

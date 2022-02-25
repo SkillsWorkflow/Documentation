@@ -1,12 +1,12 @@
 ---
 id: team
-title: Team
-sidebar_label: Team
+title: Query
+sidebar_label: Query
 ---
 
-On this page you will find how to create an action the type Team based in Data Source.
+On this page you will find how to create an action of the type Team based in Data Source.
 
-## 1. Document Assignment Type​
+## Query
 
 Specifies which Users to show in each Team.
 <p>Includes Department and Typology.</p>
@@ -31,9 +31,9 @@ Specifies which Users to show in each Team.
     </tbody>
 </table>
 
-### Example
+<h3>Example</h3>
 
 <figure>
 
-![img-box-shadow](/img/craft/configuration/action/documentAssignTeam_example.png)
+![img-box-shadow](/img/craft/configuration/action/documentAssignmentType_example.png)
 </figure>

@@ -1,7 +1,7 @@
 ---
 id:  Edit Workspace
-title: 'Edit Workspace'
-sidebar_label: Edit Workspace
+title: 'Definition'
+sidebar_label: Definition
 ---
 
 On this page you will find how to edit the workspaces.
@@ -15,7 +15,7 @@ To have access to the these options, you need to click in the Edit workspace to 
 
 <figure>
 
-![img-box-shadow](/img/craft/workspace/edit-workspace.png)
+![img-box-shadow](/img/craft/workspace/definition.png)
 </figure>
 
 ### Example
@@ -31,7 +31,6 @@ To have access to the these options, you need to click in the Edit workspace to 
 
 ## 2. Adding Translations
 
-### Description
 
 In this section you will find how to translate the terms of your workspace that don't exist in the system by default.
 
@@ -81,7 +80,6 @@ In this section you will find how to translate the terms of your workspace that 
 
 ## 3. Update Workspace
 
-### Description
 
 In this section you will find how to update the workspace to the version that you want.
 
