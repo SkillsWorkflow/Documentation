@@ -8,7 +8,6 @@ slug: /
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-### Description
 A function used to set grid's columns in a workspace. 
 
 By default, a column is created for each field of a data source object, but in most cases, it is redundant. To specify a set of columns to be created in a grid, assign an array specifying these columns to the columns property.
@@ -19,8 +18,6 @@ Each grid column is represented in this array by an object containing column set
 
 
 Column properties define the behavior and appearance of a grid column.
-
-### Example
 
 ```json
 {
@@ -47,7 +44,7 @@ Column properties define the behavior and appearance of a grid column.
 }
 ```
 
-### entity
+## entity
 Setting up the Entity property, the standard display will be used. 
 If the cell display needs to be configured, the format property allows defining other default displays according to the selected type.
 According to the type to be presented in the column, image, link or text, some additional fields must be available in the data source.
@@ -111,6 +108,7 @@ There are some standard formats available. By specifing its type the correspondi
 
 ### mapping
 
+
 If the data source does is not mapping to the defaults fields name, it can be mapped by using the mapping property:
 ```json
 {
@@ -125,6 +123,7 @@ If the data source does is not mapping to the defaults fields name, it can be ma
 }
 ```
 ### type
+
 Accepted Values: 'undefined' | 'image' | 'link' 
 
 To setup the Image type, it is necessary that data source includes the entity:
@@ -151,7 +150,9 @@ To setup the Image type, it is necessary that data source includes the entity:
     }
 }
 ```
-###  size
+### size
+
+
 Accepted Values: 'small' | 'medium' | 'large' 
 
 To define the size of the image it should be set the size property.
@@ -195,9 +196,6 @@ In the following example, to hide the client name from the column and keep only 
 </TabItem>
 </Tabs>
 
-
-
-
 ## caption
 Specifies a caption for the column.
 ## dataType
@@ -222,3 +220,7 @@ The property supports the following types of values:
 
 ## allowEditing
 A flag to allow column editing
+
+
+
+

@@ -23,6 +23,7 @@
   --home-text-color: black;
 }
 
+
 .menu__list-item {
   margin: 0 !important;
 }
@@ -71,7 +72,7 @@ h3 {
   font-family: 'Varela Round';
   font-size: 18px;
   font-weight: 400;
-  color: #9ba4af;
+  color: #000000;
 }
 
 h4 {

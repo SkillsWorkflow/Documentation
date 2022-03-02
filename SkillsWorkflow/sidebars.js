@@ -31,8 +31,18 @@ module.exports = {
                             System: [
                                 'craft/configuration/system/menu'
                             ]
+                        },
+                        {
+                            Transition: [
+                                'craft/configuration/transition/action',
+                                'craft/configuration/transition/validation'
+                            ]
+                        },
+                        {
+                            Team: [
+                                'craft/configuration/transition/team'
+                            ]
                         }
-        
                     ]
                 },
                 {
