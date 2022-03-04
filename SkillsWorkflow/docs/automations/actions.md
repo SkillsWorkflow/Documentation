@@ -787,6 +787,8 @@ To do so it is required a parameter to be filled:
 * next - The action that will be triggered after the current action been completed
 * url - The URL to download the file
 
+[comment]: <> (--------------------------------------------------------)
+
 ## Map
 
 Map action allows you to Map previous actions Result to a property List of key/values.
@@ -809,6 +811,8 @@ To do so it is required a parameter to be filled:
    }
  }
 ```
+
+[comment]: <> (--------------------------------------------------------)
 
 ## Merge
 
@@ -834,6 +838,8 @@ To do so it is required a parameter to be filled:
    }
  }
 ```
+
+[comment]: <> (--------------------------------------------------------)
 
 ## AzureAdAuthentication
 
@@ -870,6 +876,7 @@ Please check the template description to know which parameters must be sent for 
 * clientId - Microsoft App Registration Id In Azure AD
 * clientSecret - Microsoft App Registration Secret
 
+[comment]: <> (--------------------------------------------------------)
 
 ## CreatePdfFromDocument
 
@@ -906,6 +913,8 @@ To do so it is required a parameter to be filled:
 * documentId - The Id of the desired Document
 * layoutId - The layout id used to create pdf
 
+[comment]: <> (--------------------------------------------------------)
+
 ## ExecuteSubWorkflow
 
 ExecuteSubWorkFlow action allows you to run a SubWorkflow with a specific Payload. This Action receives a Return action Result from the SubWorkflow.
@@ -938,7 +947,7 @@ To configure this action, there are parameters that can be set:
 * body - The data to be available in the ExecuteSubWorkflow action
 * subWorkflow - The set of actions (e.g. import a list of files) to be performed
 
-
+[comment]: <> (--------------------------------------------------------)
 
 ## EnqueueBackgroundWork
 
@@ -972,6 +981,7 @@ To configure this action, there are parameters that can be set:
 * body - The data to be available in the ExecuteSubWorkflow action
 * targetWorkflowId - The Id of the workflow Intended to run.
 
+[comment]: <> (--------------------------------------------------------)
 
 ## XmlMap
 
@@ -1019,3 +1029,147 @@ To configure this action, there are some required parameters that need to be set
 * namespaces - Xml Namespaces used on Xml Document
 * xmlData -  A Xml String representing a Xml Document
 * Values - The mapped values will be available on the Map action result (Content)
+
+[comment]: <> (--------------------------------------------------------)
+
+## CreateList
+
+CreateList action allows to create a list (Array) of values stored as a parameter on the context.
+This parameter can be used globally as it is stored in the parent context.
+
+#### Configuration
+
+To configure this action, there are some required parameters that need to be set:
+* listName - The list name.
+* listValues - The mapped values will be available on the context parameter.
+
+Optional Parameters:
+* distinct - Set to 'true' the list will only store distinct values (remove duplicates).
+* ignoreEmpty - Set to 'true' the list will only store non empty values.
+
+
+#### Template
+```json {3,5-7}
+{
+  "actionType": "CreateList",
+  "name": "CreateList",
+  "next": "UpdateList",
+  "listName": "Mylist",
+  "listValues": [
+    "{{['#HttpRequest'].Host}}",
+    "{{['#HttpRequest'].Body}}",
+    "",
+    "b",
+    "b",
+    "c"
+  ],
+  "distinct": true,
+  "ignoreEmpty": true
+},
+```
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+
+#### Usage
+
+The list can be used calling the context parameter by name: {{['MyList']}}
+
+[comment]: <> (--------------------------------------------------------)
+
+## UpdateList
+
+UpdateList action allows to update an existing list (Array) of values stored as a parameter on the context adding new values to the end.
+
+#### Configuration
+
+#### Template
+```json {3,5-7}
+{
+  "actionType": "AddToList",
+  "name": "UpdateList",
+  "next": "RemoveFromList",
+  "listName": "Mylist",
+  "listValues": [
+    "{{['#HttpRequest'].Method}}",
+    "",
+    "e",
+    "e"
+  ],
+  "distinct": true,
+  "ignoreEmpty": true
+},
+```
+#### Template Description
+
+* actionType - The action type is Enqueue.
+* name - The action name is custom.
+* next - The next action to be executed after the subWorkflow execution reach its Result action.
+* listName - The Name of the list.
+* listValues - Mapped values to the list result.
+* distinct - optional parameter to remove duplicates.
+* ignoreValues - optional parameter to remove empty values.
+
+[comment]: <> (--------------------------------------------------------)
+
+## RemoveFromList
+
+RemoveFromList action allows to remove values from an existing list (Array) of values stored as a parameter on the context.
+
+#### Configuration
+
+#### Template
+```json {3,5-7}
+{
+  "actionType": "removeFromList",
+  "name": "RemoveFromList",
+  "next": "Exit",
+  "listName": "Mylist",
+  "RemoveValues": [
+    "{{['#HttpRequest'].Method}}",
+    "b",
+    "e"
+  ]
+},
+```
+#### Template Description
+
+* actionType - The action type is Enqueue.
+* name - The action name is custom.
+* next - The next action to be executed after the subWorkflow execution reach its Result action.
+* listName - The Name of the list.
+* removeValues - Values to be removed from list result.
+
+
+[comment]: <> (--------------------------------------------------------)
+
+## SetParameter
+
+SetParameter creates parameter on the context with the value as result (variable).
+This parameter can be used globally as it is stored in the parent context.
+
+#### Configuration
+
+#### Template
+```json {3,5-7}
+{
+  "actionType": "SetParameter",
+  "name": "MyParameter",
+  "next": "Exit",
+  "parameterName":"MyParameter",
+  "value":"{{['#HttpRequest'].Host}}"
+},
+```
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* parameterName - The Name of the parameter.
+* value - Value of the parameter.
+
+#### Usage
+
+The list can be used calling the context parameter by name: {{['MyParameter']}}
