@@ -787,8 +787,6 @@ To do so it is required a parameter to be filled:
 * next - The action that will be triggered after the current action been completed
 * url - The URL to download the file
 
-[comment]: <> (--------------------------------------------------------)
-
 ## Map
 
 Map action allows you to Map previous actions Result to a property List of key/values.
@@ -811,8 +809,6 @@ To do so it is required a parameter to be filled:
    }
  }
 ```
-
-[comment]: <> (--------------------------------------------------------)
 
 ## Merge
 
@@ -838,8 +834,6 @@ To do so it is required a parameter to be filled:
    }
  }
 ```
-
-[comment]: <> (--------------------------------------------------------)
 
 ## AzureAdAuthentication
 
@@ -876,8 +870,6 @@ Please check the template description to know which parameters must be sent for 
 * clientId - Microsoft App Registration Id In Azure AD
 * clientSecret - Microsoft App Registration Secret
 
-[comment]: <> (--------------------------------------------------------)
-
 ## CreatePdfFromDocument
 
 CreatPdfFromDocument action allows you to download a pdf from a existing document using a pre-existing layout
@@ -913,8 +905,6 @@ To do so it is required a parameter to be filled:
 * documentId - The Id of the desired Document
 * layoutId - The layout id used to create pdf
 
-[comment]: <> (--------------------------------------------------------)
-
 ## ExecuteSubWorkflow
 
 ExecuteSubWorkFlow action allows you to run a SubWorkflow with a specific Payload. This Action receives a Return action Result from the SubWorkflow.
@@ -947,8 +937,6 @@ To configure this action, there are parameters that can be set:
 * body - The data to be available in the ExecuteSubWorkflow action
 * subWorkflow - The set of actions (e.g. import a list of files) to be performed
 
-[comment]: <> (--------------------------------------------------------)
-
 ## EnqueueBackgroundWork
 
 Enqueue action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and continues, it does not wait for the workflow to finish.
@@ -980,8 +968,6 @@ To configure this action, there are parameters that can be set:
 * next - The next action to be executed after the subWorkflow execution reach its Result action
 * body - The data to be available in the ExecuteSubWorkflow action
 * targetWorkflowId - The Id of the workflow Intended to run.
-
-[comment]: <> (--------------------------------------------------------)
 
 ## XmlMap
 
@@ -1030,8 +1016,6 @@ To configure this action, there are some required parameters that need to be set
 * xmlData -  A Xml String representing a Xml Document
 * Values - The mapped values will be available on the Map action result (Content)
 
-[comment]: <> (--------------------------------------------------------)
-
 ## CreateList
 
 CreateList action allows to create a list (Array) of values stored as a parameter on the context.
@@ -1077,8 +1061,7 @@ Optional Parameters:
 
 The list can be used calling the context parameter by name: {{['MyList']}}
 
-[comment]: <> (--------------------------------------------------------)
-
+[comment]:  (--------------------------------------------------------)
 ## UpdateList
 
 UpdateList action allows to update an existing list (Array) of values stored as a parameter on the context adding new values to the end.
@@ -1112,8 +1095,8 @@ UpdateList action allows to update an existing list (Array) of values stored as 
 * distinct - optional parameter to remove duplicates.
 * ignoreValues - optional parameter to remove empty values.
 
-[comment]: <> (--------------------------------------------------------)
 
+[comment]:  (--------------------------------------------------------)
 ## RemoveFromList
 
 RemoveFromList action allows to remove values from an existing list (Array) of values stored as a parameter on the context.
@@ -1143,8 +1126,7 @@ RemoveFromList action allows to remove values from an existing list (Array) of v
 * removeValues - Values to be removed from list result.
 
 
-[comment]: <> (--------------------------------------------------------)
-
+[comment]:  (--------------------------------------------------------)
 ## SetParameter
 
 SetParameter creates parameter on the context with the value as result (variable).
