@@ -946,7 +946,8 @@ Enqueue action allows you to run a Workflow with a specific Payload. This Action
 To configure this action, there are parameters that can be set:
 
 * targetWorkflowId -  The Workflow Id that is intended to run
-* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
+* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow. The body must be JSON.
+* sessionId (optional) - 60 Characters Maximum. When set will execute synchronously the workflow. In other words, it will wait for the previous to finish before starting the next one.
 
 
 #### Template
@@ -957,7 +958,8 @@ To configure this action, there are parameters that can be set:
     "name": "RunWorkflow",
     "next": "Exit",
     "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
-    "body": "{"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}"
+    "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
+    "sessionId": "MySessionId"
 }
 ```
 
@@ -968,6 +970,7 @@ To configure this action, there are parameters that can be set:
 * next - The next action to be executed after the subWorkflow execution reach its Result action
 * body - The data to be available in the ExecuteSubWorkflow action
 * targetWorkflowId - The Id of the workflow Intended to run.
+* sessionId - The Id of the session so that it can execute synchronously.
 
 ## XmlMap
 
