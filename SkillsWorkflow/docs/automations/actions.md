@@ -1065,9 +1065,9 @@ Optional Parameters:
 The list can be used calling the context parameter by name: {{['MyList']}}
 
 [comment]:  (--------------------------------------------------------)
-## UpdateList
+## AddToList
 
-UpdateList action allows to update an existing list (Array) of values stored as a parameter on the context adding new values to the end.
+AddToList action allows to update an existing list (Array) of values stored as a parameter on the context adding new values to the end.
 
 #### Configuration
 
