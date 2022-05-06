@@ -61,7 +61,7 @@ On this page you will find how to use mentions based on queries.
         </tr>
         <tr className="selected">
             <td><code>@SearchValue</code></td>
-             <td> search value </td>
+             <td> Search value </td>
         </tr>
     </tbody>
 </table> 
