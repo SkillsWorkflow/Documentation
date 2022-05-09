@@ -87,6 +87,10 @@ p {
   font-family: 'Open Sans', sans-serif !important;
 }
 
+.markdown li {
+font-size: 14px;
+}
+
 a {
   text-decoration: none !important;
 }
