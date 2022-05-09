@@ -36,7 +36,8 @@ module.exports = {
                         },
                         {
                             System: [
-                                'craft/configuration/system/menu'
+                                'craft/configuration/system/menu',
+                                'craft/configuration/system/queryMentions'
                             ]
                         },
                         {
