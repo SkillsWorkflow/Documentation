@@ -227,6 +227,155 @@ SW.UI.grid.expandCollapseRow(dataGrid.component);
 
 ---
 
+## exportToPdf
+
+#### Description
+
+This method allows the grid to be exported as PDF.
+
+#### Method(s)
+
+
+```js 
+1 public exportToPdf(
+        dataGrid: dxDataGrid,
+        fileName: string,
+        pdfDataGridOptions: PdfExportDataGridProps = {},
+        pdfOptions?: jsPDFOptions
+    );
+```
+
+
+
+   <table className="custom-table">
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Type</th>
+                <th>Required</th>
+                <th>Defaults</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr className="selected">
+                <td><code>dataGrid</code></td>
+                <td>dxDataGrid</td>
+                <td>true</td>
+                <td></td>
+                <td>Target datagrid</td>
+            </tr>
+            <tr className="selected">
+                <td><code>fileName</code></td>
+                <td>string</td>
+                <td>true</td>
+                <td></td>
+                <td>Chosen file name</td>
+            </tr>
+            <tr className="selected">
+                <td><code>pdfDataGridOptions</code></td>
+                <td>PdfExportDataGridProps</td>
+                <td>true</td>
+                <td></td>
+                <td>PDF Grid related options</td>
+            </tr>
+            <tr className="selected">
+                <td><code>pdfOptions</code></td>
+                <td>jsPDFOptions</td>
+                <td>false</td>
+                <td></td>
+                <td>PDF exporting options </td>
+            </tr>
+        </tbody>
+    </table>
+
+#### PdfExportDataGridProps 
+<table className="custom-table">
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Type</th>
+                <th>Required</th>
+                <th>Defaults</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr className="selected">
+                <td><code>autoTableOptions</code></td>
+                <td>object</td>
+                <td>false</td>
+                <td></td>
+                <td>Options of the generated PDF table. Refer to the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable">jsPDF-autoTable plugin documentation</a> to see the full list of available customizations.
+                  </td>
+            </tr>
+            <tr className="selected">
+                <td><code>selectedRowsOnly</code></td>
+                <td>boolean</td>
+                <td>false</td>
+                <td></td>
+                <td>Specifies whether or not to export only selected rows.</td>
+            </tr>
+            <tr className="selected">
+                <td><code>keepColumnWidths</code></td>
+                <td>boolean</td>
+                <td>false</td>
+                <td></td>
+                <td>Specifies whether columns in the PDF file should have the same width as their source UI component's columns.</td>
+            </tr>
+        </tbody>
+    </table>    
+
+#### jsPDFOptions 
+<table className="custom-table">
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Type</th>
+                <th>Required</th>
+                <th>Defaults</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr className="selected">
+                <td><code>orientation</code></td>
+                <td>string</td>
+                <td>false</td>
+                <td>"p" | "portrait" | "l" | "landscape"</td>
+                <td>Defines the orientation of the grid.</td>
+            </tr>
+        </tbody>
+    </table>
+
+#### Basic Usage
+
+```javascript
+    SW.UI.Grid.exportToPdf(
+        workspaceContext.get("dataGrid"),
+        "Timesheet Report",
+        {
+            keepColumnWidths: true,
+            autoTableOptions: {
+                styles: { fontSize: 8 }
+            }
+        },
+        { orientation: "landscape" });
+```
+#### Example
+
+<figure>
+
+![img-box-shadow](/img/sdk/exportToPdf/exportToPdf-method.png)
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/sdk/exportToPdf/exportToPdf-example.png)
+</figure>
+
+---
+
 ## importExcel
 
 #### Description
@@ -272,3 +421,7 @@ This method can be used to import a xlsx file into a datagrid.
 ```javascript
 SW.UI.grid.importExcel(file, grid);
 ```
+
+
+       
+

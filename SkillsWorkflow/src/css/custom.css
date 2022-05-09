@@ -395,6 +395,7 @@ html[data-theme='dark'] .DocSearch {
   font-size: 14px;
 }
 
+
 .custom-table tr {
   background-color: transparent !important;
   border-bottom: 1px solid #e4e4eb;
@@ -411,6 +412,45 @@ html[data-theme='dark'] .DocSearch {
 } 
 
 .custom-table tbody td code {
+  background-color: rgba(62,123,250,.06);
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+
+
+
+.small-custom-table {
+  box-sizing: border-box;
+  border: 1px solid #e4e4eb;
+  border-radius: 5px  !important;
+  display: table;
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #e4e4eb;
+  font-size: 14px;
+}
+
+
+.small-custom-table tr {
+  background-color: transparent !important;
+  border-bottom: 1px solid #e4e4eb;
+  color: #49495f
+}
+
+.selected:hover {
+  background-color: rgb(240, 240, 240) !important;
+}
+
+.small-custom-table th, .small-custom-table td {
+  border: 0;
+  text-align: center;
+  width: 47%
+} 
+
+.small-custom-table tbody td code {
   background-color: rgba(62,123,250,.06);
   border-radius: 5px;
   padding: 3px 5px;

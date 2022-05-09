@@ -7,7 +7,7 @@ sidebar_label: Menu
 
 On this page you will find how to affect only the icon that appears in the menu.
 :::note
-To activate one or more proprerties of the the new menu, the Show new menu  button should be enabled
+To activate one or more properties of the the new menu, the Show new menu  button should be enabled
 :::
 
 ### Change icon
