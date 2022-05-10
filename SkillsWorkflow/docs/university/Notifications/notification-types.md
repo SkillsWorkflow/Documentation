@@ -31,11 +31,17 @@ The immediate notifications are received in the system over a span of time of up
 - Timesheet disapprovals;
 - Password resetting;
 
-In-system notification (example)
-Screen_Shot_2019-07-16_at_17.26.18.png
+<figure>
 
-E-mail notification (example)
-Screen_Shot_2019-07-16_at_17.45.29.png
+![img-box-shadow](/img/university/notifications/notifications1.png)
+<figcaption>In-system notification</figcaption>
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/university/notifications/notifications2.png)
+<figcaption>E-mail notification</figcaption>
+</figure>
 
 ## Daily Notifications
 The daily notifications are seen as a daily reminder to users. These are sent every day, at a specific time, according to what is set on the "Assistant Alert Time" field and calculated based on the "Default Time Zone" field in the back-office maintenance section.
@@ -52,22 +58,33 @@ These notifications are of the following categories:
 8. To the responsible regarding the resources they are responsible for;
 9. To the resources themselves;
 
+<figure>
 
-In-system notification (example)
-Screen_Shot_2019-07-18_at_16.48.28.png
+![img-box-shadow](/img/university/notifications/notifications3.png)
+<figcaption>In-system notification</figcaption>
+</figure>
 
-E-mail notification (example)
-Screen_Shot_2019-07-18_at_18.00.43.png
+<figure>
+
+![img-box-shadow](/img/university/notifications/notifications4.png)
+<figcaption>E-mail notification</figcaption>
+</figure>
 
 ## Weekly Notifications
 Leaves scheduled for the week after the current one:
 According to the "Leaves Notification Week Day" configuration in the maintenance module of the back-office, the responsibles will receive one single notification on a specific day of the week informing which resources they are responsible for will be on leave on the following week;
-In-system notification (example)
-Screen_Shot_2019-07-18_at_18.07.40.png
 
-E-mail notification (example)
-Screen_Shot_2019-07-18_at_18.07.03.png
- 
+<figure>
+
+![img-box-shadow](/img/university/notifications/notifications5.png)
+<figcaption>In-system notification</figcaption>
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/university/notifications/notifications6.png)
+<figcaption>E-mail notification</figcaption>
+</figure>
 
 ## My Notifications
 In Skills Workflow it is now possible to select which notifications a user wants to receive based on the role they play. This means that a user can opt to receive notifications as a user perspective or as a responsible.
@@ -86,4 +103,9 @@ Responsible Notifications:
 - Timesheets to Approve
 - Leaves to Approve
 
-Screen_Shot_2019-07-25_at_14.55.07.png
+<figure>
+
+![img-box-shadow](/img/university/notifications/notifications7.png)
+<figcaption>Notifications settings</figcaption>
+</figure>
+
