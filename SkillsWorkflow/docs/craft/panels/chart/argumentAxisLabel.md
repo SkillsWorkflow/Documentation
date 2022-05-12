@@ -2,7 +2,6 @@
 id: argument-axis-label
 title: Argument Axis
 sidebar_label: Argument Axis
-slug: /
 ---
 
 import Tabs from '@theme/Tabs';
