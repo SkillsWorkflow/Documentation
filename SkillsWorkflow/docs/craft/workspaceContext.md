@@ -1,17 +1,17 @@
 ---
 id:  context
-title: 'Workspace Context'
-sidebar_label: Workspace Context
+title: 'Context'
+sidebar_label: Context
 ---
 
-## info
+## Info
 
 All settings directly regarding workspaces configuration properties (advanced)
 
 ![img](/img/responses/workspaces_info_usage.png)
 
 
-## contextParameter
+## ContextParameter
 
 ### Description
 

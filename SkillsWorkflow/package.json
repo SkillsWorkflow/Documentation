@@ -14,12 +14,11 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@algolia/netlify-plugin-crawler": "^1.0.14",
     "@docsearch/js": "^3.0.0-alpha.50",
-    "@docusaurus/core": "^2.0.0-beta.15",
-    "@docusaurus/plugin-content-docs": "^2.0.0-beta.15",
-    "@docusaurus/preset-classic": "^2.0.0-beta.15",
-    "@docusaurus/theme-search-algolia": "^2.0.0-beta.15",
+    "@docusaurus/core": "^2.0.0-beta.16",
+    "@docusaurus/plugin-content-docs": "^2.0.0-beta.16",
+    "@docusaurus/preset-classic": "^2.0.0-beta.16",
+    "@docusaurus/theme-search-algolia": "^2.0.0-beta.16",
     "@types/node": "^16.4.1",
     "@types/react": "^17.0.14",
     "clsx": "^1.1.1",
