@@ -55,6 +55,12 @@ module.exports = {
           className: 'navbar-item'
         },
         {
+          to: 'docs/status',
+          label: 'Status',
+          position: 'right',
+          className: 'navbar-item'
+        },
+        {
           label: "API",
           position: 'right',
           className: 'navbar-item',

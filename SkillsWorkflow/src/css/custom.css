@@ -87,7 +87,7 @@ h1 {
   text-align: left;
   letter-spacing: 1px;
   text-transform: none;
-  margin-bottom: 25px !important;
+  margin-bottom: 20px !important;
   margin-top: 10px !important;
   color: #333333;
 }
@@ -106,7 +106,7 @@ h2 {
 h3 {
   font-family: 'Varela Round';
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: #333333;
  
 }
@@ -121,9 +121,8 @@ h3 {
 p {
   font-size: 14px !important;
   font-family: 'Open Sans', sans-serif !important;
-  color: #333333;
+  color: #444444;
   margin-bottom: 10px !important;
-  opacity: 60%;
 }
 
 .markdown li {
