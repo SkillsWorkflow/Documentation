@@ -23,6 +23,18 @@
   --home-text-color: #333333;
 }
 
+.prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module.thin-scrollbar {
+  color: rgb(191, 199, 213) !important;
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 4px !important;
+}
+.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module {
+  background: #efefef;
+}
+
+.token-line {
+  color: rgb(28, 123, 231);
+}
 
 .menu__list-item {
   margin: 0 !important;
@@ -129,9 +141,16 @@ p {
 font-size: 14px;
 }
 
+.markdown ul {
+  font-size: 14px;
+  color: #333;
+}
+
 a {
   text-decoration: none !important;
 }
+
+
 
 .home-h1{
   font-weight: 300;
