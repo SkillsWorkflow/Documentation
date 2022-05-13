@@ -37,7 +37,11 @@ pre {
 }
 
 .token.plain {
-  color: #333;
+  color: #333 !important;
+}
+
+.token.literal-property.property {
+  color: #333 !important;
 }
 
 .token.string {
