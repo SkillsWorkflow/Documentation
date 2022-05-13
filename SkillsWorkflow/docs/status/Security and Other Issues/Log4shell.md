@@ -1,7 +1,7 @@
 ---
 id:  Log4shell
 title: "Log4shell"
-sidebar_label: 1. Log4shell19
+sidebar_label: 1. Log4shell
 sidebar_position: 1
 ---
 
