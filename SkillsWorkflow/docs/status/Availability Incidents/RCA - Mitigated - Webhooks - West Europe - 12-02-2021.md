@@ -1,11 +1,11 @@
 ---
-id:  RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021
-title: "RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021"
-sidebar_label: 5. RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021
-sidebar_position: 5
+id:  RCA - Mitigated - Webhooks - West Europe - 12-02-2021
+title: "RCA - Mitigated - Webhooks - West Europe - 12-02-2021"
+sidebar_label: 6. RCA - Mitigated - Webhooks - West Europe - 12-02-2021
+sidebar_position: 6
 ---
 
-#Impact summary
+# Impact summary
 
 Between 28 February 2022 0:00 UTC and 3 March 2022 12:00 UTC, some users experienced intermittent errors while using the search feature.
 
@@ -15,7 +15,7 @@ After ruling out several components, the team determined that the issue was caus
 
 The team mitigated this issue by disabling diagnostics data on the search service.
 
-#RCA
+# RCA
 
 The search feature includes the possibility of returning diagnostics data to help debug issues such as documents not showing up to the user, etc. This information was returned on HTTP response headers.
 
@@ -23,6 +23,6 @@ On certain situations this data was very large (more than 8KB), and the Azure Lo
 
 After determining the issue, the team changed the way diagnostics data is returned to the client to avoid header size issues with the Azure Load Balancer.
 
-#Next steps
+# Next steps
 
 We understand the impact these issues have on our customers and that's why Skills Workflow is committed to continuously improving our platform.

@@ -5,7 +5,7 @@ sidebar_label: 12. RCA - Mitigated - V1 - West Europe - 20-08-2018
 sidebar_position: 12
 ---
 
-#Impact summary
+# Impact summary
 
 Starting at around 20-08-2018 2:03 UTC until 7:40 UTC a small subset or users using Skills Workflow V1 hosted on the West Europe region may have experienced errors logging in.
 
@@ -15,7 +15,7 @@ The DevOps team mitigated the issue by forcing an application restart on the aff
 
 
 
-#RCA
+# RCA
 
 The affected node could not correctly read a configuration file stored on disk thus causing the requests that needed to read the file to fail.
 
@@ -25,7 +25,7 @@ Failure to read the configuration file was caused by a race condition in certain
 
 
 
-#Next steps
+# Next steps
 
 The team will roll out a fix to prevent the said race condition from happening.
 

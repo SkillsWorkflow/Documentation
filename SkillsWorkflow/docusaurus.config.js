@@ -33,7 +33,11 @@ module.exports = {
       contextualSearch: false,
       selector: 'div#'
     },
-    hideableSidebar: true,
+    docs: {
+      sidebar: {
+        hideable: true
+      }
+    },
     navbar: {
       title: '',
       logo: {
@@ -55,7 +59,7 @@ module.exports = {
           className: 'navbar-item'
         },
         {
-          to: 'docs/status',
+          to: 'docs/status/home',
           label: 'Status',
           position: 'right',
           className: 'navbar-item'
@@ -64,13 +68,13 @@ module.exports = {
           label: "API",
           position: 'right',
           className: 'navbar-item',
-          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger',
+          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
         },
         {
           type: 'localeDropdown',
-          position: 'right',
-        },
-      ],
+          position: 'right'
+        }
+      ]
     },
     footer: {
       style: 'dark',

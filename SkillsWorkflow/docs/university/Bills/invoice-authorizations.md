@@ -17,15 +17,7 @@ Definition of billing conditions:
 
 ### General conditions
 
-To issue a billing request, within the budget approved by the customer, you must navigate to the "billing conditions" option.
-
-If the commercial customer has the financial customer associated, the system will automatically suggest the customer and pre-defined payment terms.
-
-You can define the percentage of billing, reference (PO customer) and dates.
-
-Note that if you have more than one billing condition for most budgets, you can add as many lines as you like and even have different customers.
-
-After establishing the billing conditions you want to apply, navigate to the feed, and change the status of the workflow to bill, generating the necessary invoice authorization (s).
+To issue a billing request, within the budget approved by the customer, you must navigate to the **billing conditions** option. If the commercial customer has the financial customer associated, the system will automatically suggest the customer and pre-defined payment terms. You can define the percentage of billing, reference (PO customer) and dates. Note that if you have more than one billing condition for most budgets, you can add as many lines as you like and even have different customers. After establishing the billing conditions you want to apply, navigate to the feed, and change the status of the workflow to bill, generating the necessary invoice authorization(s).
 
 <figure>
 
