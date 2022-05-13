@@ -4,9 +4,10 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Varela+Round&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #0072c6;
@@ -24,12 +25,15 @@
 
 }
 
-.prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module.thin-scrollbar {
+/* .prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module.thin-scrollbar {
   color: rgb(191, 199, 213) !important;
   background-color: rgb(255, 255, 255) !important;
   border-radius: 4px !important;
   margin-top: 30px !important;
   margin-bottom: 25px !important;
+} */
+pre {
+  background-color: #efefef
 }
 
 .token.plain {
@@ -48,15 +52,15 @@
   color: #FAA45E !important;
 }
 
-.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
+/* .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
   background: #efefef;
-}
+} */
 
 .menu__list-item {
   margin: 0 !important;
 }
 
-.menu__link--sublist::after{
+.menu__link--sublist::after {
   /*content: '';*/
   height: 13px !important;
   width: 13px;
@@ -78,14 +82,16 @@
   margin-top: 10px;
   margin-bottom: 25px;
 }
+
 .markdown h2 {
   margin-bottom: 20px;
 }
+
 .markdown h3 {
   margin-bottom: 10px;
 }
 
-div code-block{ 
+div code-block {
   margin-top: 20px;
 }
 
@@ -108,7 +114,7 @@ div code-block{
 
 h1 {
   margin: 0 auto;
-  font-family: 'Varela Round',sans-serif;
+  font-family: 'Varela Round', sans-serif;
   font-size: 34px;
   line-height: 48px;
   font-weight: 700;
@@ -123,7 +129,7 @@ h1 {
 h2 {
   display: block;
   width: auto;
-  font-family: 'Varela Round',sans-serif;
+  font-family: 'Varela Round', sans-serif;
   color: #333333;
   font-size: 25px;
   font-weight: 600;
@@ -139,7 +145,7 @@ h3 {
   font-weight: 600;
   color: #333333;
   margin-bottom: 20px !important;
- 
+
 }
 
 /* h4 {
@@ -157,7 +163,7 @@ p {
 }
 
 .markdown li {
-font-size: 14px;
+  font-size: 14px;
 }
 
 .markdown ul {
@@ -176,7 +182,7 @@ a {
 
 
 
-.home-h1{
+.home-h1 {
   font-weight: 300;
   color: var(--home-text-color);
 }
@@ -185,23 +191,25 @@ a {
   color: rgb(170, 169, 169);
 }
 
-html[data-theme='light'] h1{
-  color:#333333;
+html[data-theme='light'] h1 {
+  color: #333333;
 }
 
-html[data-theme='dark'] h1{
+html[data-theme='dark'] h1 {
   color: #fff;
 }
 
-html[data-theme='dark'] h2{
+html[data-theme='dark'] h2 {
   color: #fff;
   background-color: transparent;
 }
-html[data-theme='dark'] h3{
+
+html[data-theme='dark'] h3 {
   color: #fff;
   background-color: transparent;
 }
-html[data-theme='dark'] p{
+
+html[data-theme='dark'] p {
   color: #fff;
   background-color: transparent;
   opacity: 80%;
@@ -238,38 +246,42 @@ html[data-theme='dark'] .skills_src-pages-:hover {
 }
 
 
-img[alt=small] { width: 30%;}
+img[alt=small] {
+  width: 30%;
+}
 
-img[alt=crafted-love]{ width: 250px;} 
+img[alt=crafted-love] {
+  width: 250px;
+}
 
-img[alt=img-box-shadow]{ 
+img[alt=img-box-shadow] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey; 
+  border: 2px solid lightgrey;
   border-radius: 5px;
 }
 
-img[alt=img-box-shadow-200]{ 
+img[alt=img-box-shadow-200] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey; 
+  border: 2px solid lightgrey;
   border-radius: 5px;
   width: 200px;
 }
 
-img[alt=img-symbol-box-shadow]{ 
+img[alt=img-symbol-box-shadow] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey; 
+  border: 2px solid lightgrey;
   border-radius: 5px;
   width: 30px;
 }
 
-img[alt=img-box-shadow-sm]{ 
+img[alt=img-box-shadow-sm] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey; 
+  border: 2px solid lightgrey;
   border-radius: 5px;
   width: 250px;
 }
 
-img[alt=img-with-border]{
+img[alt=img-with-border] {
   border: 1px solid lightgray;
   border-radius: 5px;
 }
@@ -282,6 +294,7 @@ img[alt=img-with-border]{
   0% {
     transform: translateX(50px);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -291,10 +304,12 @@ img[alt=img-with-border]{
   0% {
     transform: translateX(-50px);
   }
+
   100% {
     transform: translateX(0);
   }
 }
+
 figure {
   margin: 0;
   margin-bottom: 2rem;
@@ -314,12 +329,12 @@ figure p {
   font-size: 14px;
 }
 
-html[data-theme='dark'] .footer{
+html[data-theme='dark'] .footer {
   --ifm-footer-background-color: #333;
   --ifm-footer-color: #fff;
 }
 
-html[data-theme='light'] .footer{
+html[data-theme='light'] .footer {
   background-image: linear-gradient(rgb(243, 248, 255), rgb(243, 248, 255));
 }
 
@@ -327,6 +342,7 @@ html[data-theme='light'] .footer__copyright {
   padding-top: 15px;
   border-top: 1px solid rgb(226, 239, 248);
 }
+
 html[data-theme='dark'] .footer__copyright {
   padding-top: 15px;
   border-top: 1px solid #e2eff81c;
@@ -356,16 +372,16 @@ html[data-theme='dark'] .hero__title {
   text-transform: uppercase;
 }
 
-html[data-theme='light'] .footer__title{
+html[data-theme='light'] .footer__title {
   color: rgb(26, 26, 26);
 }
 
-html[data-theme='dark'] .footer__title{
+html[data-theme='dark'] .footer__title {
   color: #fff;
 }
 
 .footer__items {
-  height: 80%;  
+  height: 80%;
 }
 
 footer li a {
@@ -377,8 +393,8 @@ footer li a:hover {
   color: rgb(26, 26, 26) !important;
 }
 
-.footer__copyright{
-  color:rgb(155, 164, 175);
+.footer__copyright {
+  color: rgb(155, 164, 175);
   font-size: 14px;
   text-align: left;
 }
@@ -398,7 +414,7 @@ footer li a:hover {
 /* Algolia Search here*/
 html[data-theme='light'] .DocSearch {
   --docsearch-primary-color: var(--ifm-color-primary);
-  --docsearch-text-color: var(--ifm-font-color-base); 
+  --docsearch-text-color: var(--ifm-font-color-base);
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
   --docsearch-container-background: rgba(94, 100, 112, 0.7);
   /* Modal */
@@ -430,11 +446,9 @@ html[data-theme='dark'] .DocSearch {
   --docsearch-hit-background: var(--ifm-color-emphasis-100);
   /* Footer */
   --docsearch-footer-background: var(--ifm-background-surface-color);
-  --docsearch-key-gradient: linear-gradient(
-    -26.5deg,
-    var(--ifm-color-emphasis-200) 0%,
-    var(--ifm-color-emphasis-100) 100%
-  );
+  --docsearch-key-gradient: linear-gradient(-26.5deg,
+      var(--ifm-color-emphasis-200) 0%,
+      var(--ifm-color-emphasis-100) 100%);
   /* --home-text-color: var(--home-text-color: #fff; */
 }
 
@@ -443,7 +457,7 @@ html[data-theme='dark'] .DocSearch {
 .custom-table {
   box-sizing: border-box;
   border: 1px solid #e4e4eb;
-  border-radius: 5px  !important;
+  border-radius: 5px !important;
   display: table;
   width: 100%;
   border-collapse: collapse;
@@ -464,13 +478,14 @@ html[data-theme='dark'] .DocSearch {
   background-color: rgb(240, 240, 240) !important;
 }
 
-.custom-table th, .custom-table td {
+.custom-table th,
+.custom-table td {
   border: 0;
   text-align: center;
-} 
+}
 
 .custom-table tbody td code {
-  background-color: rgba(62,123,250,.06);
+  background-color: rgba(62, 123, 250, .06);
   border-radius: 5px;
   padding: 3px 5px;
 }
@@ -481,7 +496,7 @@ html[data-theme='dark'] .DocSearch {
 .small-custom-table {
   box-sizing: border-box;
   border: 1px solid #e4e4eb;
-  border-radius: 5px  !important;
+  border-radius: 5px !important;
   display: table;
   width: 90%;
   border-collapse: collapse;
@@ -502,14 +517,15 @@ html[data-theme='dark'] .DocSearch {
   background-color: rgb(240, 240, 240) !important;
 }
 
-.small-custom-table th, .small-custom-table td {
+.small-custom-table th,
+.small-custom-table td {
   border: 0;
   text-align: center;
   width: 47%
-} 
+}
 
 .small-custom-table tbody td code {
-  background-color: rgba(62,123,250,.06);
+  background-color: rgba(62, 123, 250, .06);
   border-radius: 5px;
   padding: 3px 5px;
 }
