@@ -2,6 +2,7 @@
 id:  credit-notes
 title: Notas de credito
 sidebar_label: 2. Gerar notas de credito a clientes
+sidebar_position: 2
 ---
 
 ## 2. Gerar notas de credito a clientes

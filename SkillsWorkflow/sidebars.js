@@ -81,7 +81,6 @@ module.exports = {
             type: 'category',
             label: 'Advanced',
             items: [
-
                 {
                     SDK: [
                         {

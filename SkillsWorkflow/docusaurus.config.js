@@ -59,7 +59,7 @@ module.exports = {
           className: 'navbar-item'
         },
         {
-          to: 'docs/status/home',
+          to: 'docs/status',
           label: 'Status',
           position: 'right',
           className: 'navbar-item'

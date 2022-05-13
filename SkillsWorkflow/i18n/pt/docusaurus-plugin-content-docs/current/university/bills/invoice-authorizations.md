@@ -2,6 +2,7 @@
 id:  invoice-authorizations
 title: Autorizações de fatura
 sidebar_label: 1. Criar autorizações de fatura
+sidebar_position: 1
 ---
 
 ## 1. Como criar autorizações de fatura

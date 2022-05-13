@@ -1,7 +1,8 @@
 ---
-id:  contracts
-title: Contracts
+id:  create-contracts-proposals
+title: Create Contracts and Proposals
 sidebar_label: 2. Create Contracts and Proposals
+sidebar_position: 2
 ---
 
 
