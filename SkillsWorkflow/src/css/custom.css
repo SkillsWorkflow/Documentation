@@ -21,19 +21,31 @@
   --ifm-font-family-base: 'Varela Round';
   --ifm-font-family-monospace: 'Open Sans';
   --home-text-color: #333333;
+
 }
 
-.prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module.thin-scrollbar {
+.prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module.thin-scrollbar {
   color: rgb(191, 199, 213) !important;
   background-color: rgb(255, 255, 255) !important;
   border-radius: 4px !important;
+  margin-top: 30px !important;
+  margin-bottom: 25px !important;
 }
-.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module {
+
+
+.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
   background: #efefef;
 }
 
-.token-line {
-  color: rgb(28, 123, 231);
+.token.string {
+  color: rgb(183, 235, 104) !important;
+}
+.token.operator {
+  color: rgb(71, 187, 233);
+}
+
+.span token-line {
+  color: rgb(66, 153, 37) !important;
 }
 
 .menu__list-item {
@@ -93,7 +105,7 @@ div code-block{
 h1 {
   margin: 0 auto;
   font-family: 'Varela Round',sans-serif;
-  font-size: 44px;
+  font-size: 34px;
   line-height: 48px;
   font-weight: 700;
   text-align: left;
@@ -113,6 +125,8 @@ h2 {
   font-weight: 600;
   letter-spacing: 1px;
   white-space: normal;
+  margin-bottom: 20px !important;
+  margin-top: 30px !important;
 }
 
 h3 {
@@ -120,6 +134,7 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   color: #333333;
+  margin-bottom: 20px !important;
  
 }
 
@@ -133,7 +148,7 @@ h3 {
 p {
   font-size: 14px !important;
   font-family: 'Open Sans', sans-serif !important;
-  color: #444444;
+  color: #333;
   margin-bottom: 10px !important;
 }
 
@@ -142,6 +157,11 @@ font-size: 14px;
 }
 
 .markdown ul {
+  font-size: 14px;
+  color: #333;
+}
+
+.markdown ol {
   font-size: 14px;
   color: #333;
 }
