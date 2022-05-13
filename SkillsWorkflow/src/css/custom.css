@@ -25,7 +25,7 @@
 
 }
 
-/* .prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module.thin-scrollbar {
+/* .prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module.thin-scrollbar {data-hte
   color: rgb(191, 199, 213) !important;
   background-color: rgb(255, 255, 255) !important;
   border-radius: 4px !important;
@@ -216,7 +216,18 @@ html[data-theme='dark'] h3 {
 html[data-theme='dark'] p {
   color: #fff;
   background-color: transparent;
-  opacity: 80%;
+}
+
+html[data-theme='dark'] ul {
+  color: #fff;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+html[data-theme='dark'] li {
+  color: #fff;
+  background-color: transparent;
+  font-size: 14px;
 }
 
 a:hover {
