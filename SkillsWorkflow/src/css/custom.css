@@ -24,15 +24,16 @@
 
 }
 
-
-.prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module.thin-scrollbar {
+.prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module.thin-scrollbar {
   color: rgb(191, 199, 213) !important;
   background-color: rgb(255, 255, 255) !important;
   border-radius: 4px !important;
   margin-top: 30px !important;
   margin-bottom: 25px !important;
 }
-.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-styles-module {
+
+
+.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
   background: #efefef;
 }
 
@@ -104,7 +105,7 @@ div code-block{
 h1 {
   margin: 0 auto;
   font-family: 'Varela Round',sans-serif;
-  font-size: 44px;
+  font-size: 34px;
   line-height: 48px;
   font-weight: 700;
   text-align: left;
@@ -156,6 +157,11 @@ font-size: 14px;
 }
 
 .markdown ul {
+  font-size: 14px;
+  color: #333;
+}
+
+.markdown ol {
   font-size: 14px;
   color: #333;
 }
