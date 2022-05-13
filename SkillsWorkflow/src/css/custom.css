@@ -41,7 +41,7 @@ pre {
 }
 
 .token.string {
-  color: #56D180;
+  color: #56D180 !important;
 }
 
 .token.boolean {
