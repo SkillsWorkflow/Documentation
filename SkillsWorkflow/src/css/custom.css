@@ -32,20 +32,24 @@
   margin-bottom: 25px !important;
 }
 
-
-.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
-  background: #efefef;
+.token.plain {
+  color: #333;
 }
 
 .token.string {
-  color: rgb(183, 235, 104) !important;
-}
-.token.operator {
-  color: rgb(71, 187, 233);
+  color: #56D180;
 }
 
-.span token-line {
-  color: rgb(66, 153, 37) !important;
+.token.boolean {
+  color: #E5665E !important;
+}
+
+.token.number {
+  color: #FAA45E !important;
+}
+
+.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
+  background: #efefef;
 }
 
 .menu__list-item {
