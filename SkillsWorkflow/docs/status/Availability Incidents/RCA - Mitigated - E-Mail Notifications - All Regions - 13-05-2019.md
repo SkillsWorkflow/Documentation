@@ -5,7 +5,7 @@ sidebar_label: 10. RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-
 sidebar_position: 10
 ---
 
-#Impact summary
+# Impact summary
 
 Between 13 May 2019 and 14 May 2019, some users failed to receive a notification via e-mail across all regions.
 
@@ -13,7 +13,7 @@ Upon receiving reports from our users regarding this issue our engineers identif
 
 
 
-#RCA
+# RCA
 
 One of our e-mail providers hit a send quota limit without firing any of the alerts in place to allow us to manage the quotas before they are hit.
 
@@ -23,7 +23,7 @@ We found that recent maintenance on the alerts set an invalid alert configuratio
 
 
 
-#Next steps
+# Next steps
 
 We understand the impact these issues have on our customers and that's why Skills Workflow is committed to continuously improving our platform.
 
