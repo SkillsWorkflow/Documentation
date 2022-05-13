@@ -2,6 +2,7 @@
 id:  RCA - Mitigated - SSO - Multiple Regions - 30-06-2021
 title: "RCA - Mitigated - SSO - Multiple Regions - 30-06-2021"
 sidebar_label: 4. RCA - Mitigated - SSO - Multiple Regions - 30-06-2021
+sidebar_position: 4
 ---
 
 # Impact summary
