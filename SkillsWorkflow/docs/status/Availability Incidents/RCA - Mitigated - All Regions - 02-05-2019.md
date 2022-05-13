@@ -1,11 +1,11 @@
 ---
-id:  RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019
-title: "RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019"
-sidebar_label: 11. RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019
+id:  RCA - Mitigated - All Regions - 02-05-2019
+title: "RCA - Mitigated - All Regions - 02-05-2019"
+sidebar_label: 11. RCA - Mitigated - All Regions - 02-05-2019
 sidebar_position: 11
 ---
 
-#Impact summary
+# Impact summary
 
 Between 19:29 UTC and 22:35 UTC on 02 May 2019, users may have experienced errors when using Skills Workflow V1 or V2 on all our regions (West Europe, Brazil South, East US, and Southeast Asia).
 
@@ -14,7 +14,7 @@ Around 21:40 UTC the error rate was negligible and only observable in the East U
 
 
 
-#RCA
+# RCA
 
 Skills Workflow is a multi-service distributed system running on Microsoft Azure on multiple regions. As such, Skills Workflow internal and external services need to communicate with each other and with Azure services on which our platform relies.
 
@@ -46,7 +46,7 @@ More info on the Azure issue can be tracked with Azure issue number: R50C-5RZ
 
 
 
-#Next steps
+# Next steps
 
 We understand the impact these issues have on our customers that's why Skills Workflow relies on world-class Azure services and employ all industry best practices so our customers can rely on our platform 24/7.
 

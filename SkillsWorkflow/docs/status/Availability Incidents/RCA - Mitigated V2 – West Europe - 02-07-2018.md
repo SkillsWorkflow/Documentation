@@ -5,7 +5,7 @@ sidebar_label: 14. RCA - Mitigated V2 – West Europe -  02-07-2018
 sidebar_position: 14
 ---
 
-#Preliminary analysis
+# Preliminary analysis
 
 Starting on 02-07-2018 01:45:43 UTC some users had errors trying to access Skills Workflow V2 on tenants hosted on the West Europe data center
 
@@ -15,13 +15,13 @@ Starting on 02-07-2018 01:45:43 UTC some users had errors trying to access Skill
 - Our engineers are actively working with Azure support to find the cause for the connectivity problems.
 
 
-#Next steps
+# Next steps
 
 - Our team is analysing all available telemetry and working with Azure support to establish a full Root Cause
 - Our DevOps team will improve our issue detection system to employ different probes and error telemetry to detect these kinds of issues early
 - Critical backend services will be improved in order to be more resilient to database connectivity problems.
 
-##Updates 11-07-2018
+## Updates 11-07-2018
 
 This issue is not fully mitigated. We still observed a recurrence today from 5:05 UTC to 6:35 UTC with an impact on about 3% of customer requests.
 
@@ -32,7 +32,7 @@ At this point we have performed the following actions:
 - Microsoft's Azure SQL Database Support team is trying to determine why the reconfiguration is taking much more than 60 seconds
 - In the meantime, to mitigate further the issue while we wait for Microsoft to solve the issue, we are rolling out an update to our backend services to improve their resiliency to transient errors and to improve database connection recovery.
 
-##Next steps 19-07-2018
+## Next steps 19-07-2018
 
 - We will keep working with the Azure SQL Database team to determine what is causing the reconfigurations to take a long time
 - Our DevOps team will keep monitoring the system health to assess the effectiveness of the mitigations we are rolling out;
@@ -41,12 +41,12 @@ Azure SQL Database product team informed that the Root Cause, though not fully e
 
 Based on this feedback, we applied an additional mitigation by disabling the use of in-memory OLTP database features until the full RCA is determined and the Azure SQL Database product team applies a fix for the issue.
 
-##Next steps
+## Next steps
 
 - We will keep working with the Azure SQL Database product team to establish the full Root Cause and to apply a fix
 - Our DevOps team will keep monitoring the system health to assess the effectiveness of the mitigations we are rolled out;
 
-##RCA
+## RCA
 
 Azure SQL Database product team at Microsoft established the root cause to be a silent failure of the internal SQL compiler and linker of the in-memory SQL Feature  causing the long delay during database reconfiguration.
 
