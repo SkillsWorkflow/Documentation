@@ -1,0 +1,42 @@
+{
+  "link.title.Craft": {
+    "message": "Cria",
+    "description": "The title of the footer links column with title=Craft in the footer"
+  },
+  "link.title.Community": {
+    "message": "Comunidade",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "Mais",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Style Guide": {
+    "message": "Guia de Estilos",
+    "description": "The label of footer link with label=Style Guide linking to docs/"
+  },
+  "link.item.label.Help Desk": {
+    "message": "Help Desk",
+    "description": "The label of footer link with label=Help Desk linking to https://helpdesk.skillsworkflow.com"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/skillsworkflow"
+  },
+  "link.item.label.Blog": {
+    "message": "Blogue",
+    "description": "The label of footer link with label=Blog linking to blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/SkillsWorkflow/Documentation"
+  },
+  "link.item.label.Releases": {
+    "message": "Lançamentos",
+    "description": "The label of footer link with label=Releases linking to docs/releases"
+  },
+  "copyright": {
+    "message": "Copyright © 2022 Skills Workflow",
+    "description": "The footer copyright"
+  }
+}
