@@ -21,7 +21,6 @@ To create a new client contact, you should follow the steps below:
 3. To save these changes, it is necessary to fill in the "Name" field.
 4. Save all the changes made by clicking on the dis symbol.
 > To remove a line/client contact, you will only need to click on the "x" button.
-Screen_Shot_2018-08-08_at_14.15.16.png
 
 <figure>
 
