@@ -152,12 +152,6 @@ h3 {
 
 }
 
-/* h4 {
-  font-family: 'Varela Round';
-  font-size: 14px;
-  font-weight: 400;
-  color: #9ba4af;
-} */
 
 p {
   font-size: 14px !important;
@@ -218,11 +212,12 @@ html[data-theme='dark'] p {
   background-color: transparent;
 }
 
+/* Caso esteja ativo estraga o dropdown da seleção de lingua no dark theme
 html[data-theme='dark'] ul {
   color: #fff;
   background-color: transparent;
   font-size: 14px;
-}
+} */
 
 html[data-theme='dark'] li {
   color: #fff;
