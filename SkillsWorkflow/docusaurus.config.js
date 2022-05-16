@@ -68,7 +68,7 @@ module.exports = {
           label: "API",
           position: 'right',
           className: 'navbar-item',
-          href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
+          to: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
         },
         {
           type: 'localeDropdown',
@@ -109,19 +109,19 @@ module.exports = {
           items: [
             {
               label: 'Client API',
-              href: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
+              to: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger'
             },
             {
               label: 'Integration API',
-              href: 'https://integration-api-test.skillsworkflow.com',
+              to: 'https://integration-api-test.skillsworkflow.com',
             },
             {
               label: 'Website',
-              href: 'https://www.skillsworkflow.com/'
+              to: 'https://www.skillsworkflow.com/'
             },
             {
               label: 'Status',
-              href: 'https://status.skillsworkflow.com/'
+              to: 'https://status.skillsworkflow.com/'
             }
           ],
         },
@@ -130,23 +130,23 @@ module.exports = {
           items: [
             {
               label: 'Youtube',
-              href: 'https://www.youtube.com/channel/UCauqHRlHUSkS1H8KUYm4CiA'
+              to: 'https://www.youtube.com/channel/UCauqHRlHUSkS1H8KUYm4CiA'
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/skillsworkflow',
+              to: 'https://twitter.com/skillsworkflow',
             },
             {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/skills-workflow/?viewAsMember=true'
+              to: 'https://www.linkedin.com/company/skills-workflow/?viewAsMember=true'
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/skillsworkflow'
+              to: 'https://www.instagram.com/skillsworkflow'
             },
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/skillsworkflow'
+              to: 'https://www.facebook.com/skillsworkflow'
             }
           ]
         }
