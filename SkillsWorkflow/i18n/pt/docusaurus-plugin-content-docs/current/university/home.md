@@ -1,5 +1,6 @@
 ---
 id:  home
+slug: /university
 title: ''
 sidebar_label: Home
 sidebar_position: 1
