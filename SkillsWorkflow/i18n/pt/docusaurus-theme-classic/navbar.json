@@ -3,6 +3,10 @@
     "message": "Documentos",
     "description": "Navbar item with label Docs"
   },
+  "item.label.University": {
+    "message": "Universidade",
+    "description": "Navbar item with label Docs"
+  },
   "item.label.Blog": {
     "message": "Blogue",
     "description": "Navbar item with label Blog"

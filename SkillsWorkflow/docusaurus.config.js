@@ -100,7 +100,7 @@ module.exports = {
             },
             {
               label: 'University',
-              to: 'docs/university/home'
+              to: 'docs/university'
             }
           ],
         },
