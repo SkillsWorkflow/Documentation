@@ -35,7 +35,6 @@ How to associate an existing client contact to another client.
 
 Select the client you wish to associate a contact to.
 When clicking on the "link" option, the system will show a pop-up box with all the available contacts. You will only have to select the client contact needed and click on the "Save" option.
-Screen_Shot_2018-08-08_at_14.24.08.png
 
 <figure>
 
