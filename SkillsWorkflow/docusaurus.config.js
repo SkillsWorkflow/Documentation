@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'Documentation', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es', 'pt']
+    locales: ['en', 'es', 'pt', 'pt-br']
   },
   themeConfig: {
     colorMode: {
