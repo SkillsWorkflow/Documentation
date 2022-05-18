@@ -1098,8 +1098,6 @@ AddToList action allows to update an existing list (Array) of values stored as a
 * distinct - optional parameter to remove duplicates.
 * ignoreValues - optional parameter to remove empty values.
 
-
-[comment]:  (--------------------------------------------------------)
 ## RemoveFromList
 
 RemoveFromList action allows to remove values from an existing list (Array) of values stored as a parameter on the context.
@@ -1129,7 +1127,6 @@ RemoveFromList action allows to remove values from an existing list (Array) of v
 * removeValues - Values to be removed from list result.
 
 
-[comment]:  (--------------------------------------------------------)
 ## SetParameter
 
 SetParameter creates parameter on the context with the value as result (variable).
@@ -1158,3 +1155,43 @@ This parameter can be used globally as it is stored in the parent context.
 #### Usage
 
 The list can be used calling the context parameter by name: {{['MyParameter']}}
+
+## MapFromObject
+
+MapfromObject allows to Map form names to properties. Passing a object Template with the 
+mapped values from body will generate a new json object similar to data but with the values 
+mapped by name from body.
+
+#### Configuration
+
+To configure this action, there are some required parameters that need to be set:
+* Data - Data Template with values as the body property names.
+* Body - The body with the content.
+
+#### Template
+```json {3,5-7}
+{
+    "actionType": "MapFromObject",
+    "name": "MapFromObject",
+    "next": "Exit",
+    "data":"{\"name\":\"firstName\"\,\"years\":\"age\"}",
+    "body":"{\"firstName\":\"John\,\"lastName\":\"Doe\",\"age\":\30\"}"
+},
+```
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* data - The Template Data from witch to map property name
+* body - The body payload with data to fetch
+
+#### Usage
+
+The result will be in Data format with the values replaced from Body:
+```json {3,5-7}
+{
+  "name": "John",
+  "years": "30" 
+}
+```
