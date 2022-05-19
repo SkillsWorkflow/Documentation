@@ -76,7 +76,7 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs',
+              to: 'docs/documenting/style-guide',
             },
             {
               label: 'Automations',
