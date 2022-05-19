@@ -20,14 +20,7 @@ To serve as an example page when styling markdown based Docusaurus sites.
 
 ### H3 - Create the best documentation
 
-#### H4 - Create the best documentation
-
-##### H5 - Create the best documentation
-
-###### H6 - Create the best documentation
-
 ---
-
 ## Emphasis
 
 Emphasis, aka italics, with *asterisks* or _underscores_.
