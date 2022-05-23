@@ -82,6 +82,8 @@ You can also consult the list of all your invoice authorizations by browsing the
 
 In the list of invoice authorizations you can apply several filters, such as: customer, project, budget.
 
+test!
+
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson1-5.png)
