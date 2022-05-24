@@ -5,6 +5,13 @@ sidebar_label: 1. Create an Estimate
 sidebar_position: 1
 ---
 
+<figure>
+
+![img-box-shadow](/img/university/estimates/estimates-lesson1-1.png)
+<figcaption>Legenda da imagem</figcaption>
+</figure>
+
+
 ## Create an Estimate
 
 Estimates can either be linked to Fees or created directly under a Project or Job.
