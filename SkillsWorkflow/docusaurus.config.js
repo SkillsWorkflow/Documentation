@@ -28,8 +28,7 @@ module.exports = {
     docs: {
       sidebar: {
         hideable: true
-      },
-      editLocalizedFiles: true
+      }
     },
     navbar: {
       title: '',
