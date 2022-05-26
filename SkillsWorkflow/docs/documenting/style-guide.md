@@ -76,15 +76,18 @@ Some text to show that the reference links can follow later.
 
 Here's our logo (hover to see the title text):
 
-Inline-style: ![alt text](../../static/img/icon48.png 'Logo Title Text 1')
-
-Reference-style: ![alt text][logo]
 
 [logo]: ../../static/img/icon48.png 'Logo Title Text 2'
 
 Images from any folder can be used by providing path to file. Path should be relative to markdown file.
 
 ![img](../../static/img/logo.svg)
+
+<figure>
+
+![img-box-shadow](/img/documenting/howtocreatearticles1.png)
+<figcaption>Documentation Repositorie</figcaption>
+</figure>
 
 ---
 
