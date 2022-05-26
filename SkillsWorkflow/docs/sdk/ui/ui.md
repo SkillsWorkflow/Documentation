@@ -88,9 +88,13 @@ This method can be used to get entities image.
 ```javascript
 1    function getEntityImage(element: HTMLElement, documentName: string,
 2       params?: {
-3           size?: Size
+3           size?: Size;
+            hideName?: boolean;
+            title?: string;
 4       } = {
-5           size: Size.SMALL
+5          size: Size.SMALL,
+            hideName: false,
+            title: null
 6       }
 7   ): string;
 ```
@@ -126,6 +130,20 @@ This method can be used to get entities image.
             <td>false</td>
             <td>"small"</td>
             <td>Image's size to be displayed(small, medium, large)</td>
+        </tr>
+         <tr className="selected">
+            <td><code>hideName</code></td>
+            <td>boolean</td>
+            <td>false</td>
+            <td>false</td>
+            <td>Show or hide the name of the field</td>
+        </tr>
+         <tr className="selected">
+            <td><code>Title</code></td>
+            <td>string</td>
+            <td>false</td>
+            <td>false</td>
+            <td>The name displayed in the UI</td>
         </tr>
     </tbody>
 </table>
