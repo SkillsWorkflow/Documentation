@@ -124,7 +124,7 @@ If the data source does is not mapping to the defaults fields name, it can be ma
 ```
 ### type
 
-Accepted Values: 'undefined' | 'image' | 'link' 
+Accepted Values: 'undefined' | 'image' | 'link' | 'document'
 
 To setup the Image type, it is necessary that data source includes the entity:
 - Id
@@ -138,6 +138,7 @@ To setup the Image type, it is necessary that data source includes the entity:
   values={[
     {label: 'Image', value: 'image'},
     {label: 'Link', value: 'link'},
+    {label: 'Document', value: 'document'},
   ]
 }>
 <TabItem value="image">
@@ -193,8 +194,85 @@ In the following example, to hide the client name from the column and keep only 
     }
 }
 ```
+
 </TabItem>
+<TabItem value="document">
+
+The follow examples shows how to display the name and the image of the document together.
+
+1- With entity defined.
+
+```json
+{
+    dataField: "Name",
+    caption: "Title",
+    format: {
+        type: "document",
+        properties: {
+            hideName: false,
+            size: "small"
+        }
+    }
+}
+```
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/document-image-with-entity-property.png)
+
+</figure>
+
+2- Without entity defined.
+
+```json
+{
+    dataField: "Document",
+    caption: "Title",
+    format: {
+        type: "document",
+        properties: {
+            hideName: false,
+            size: "small"
+        },
+        mapping: {
+            documentName: "Document",
+            title: "Name"
+        }
+    }
+}
+```
+
+### documentName
+
+The name defined in the dataField.
+
+### title
+
+Define the name that appears in the UI. Could be different of the name of the dataField.
+
+
+
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/document-image-without-entity-property.png)
+
+
+</figure>
+
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/document-image-example.png)
+
+
+</figure>
+
+
+</TabItem>
+
 </Tabs>
+
+---
 
 ## caption
 Specifies a caption for the column.
