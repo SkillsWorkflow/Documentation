@@ -2,6 +2,7 @@
 id: home
 title: Home guidelines
 sidebar_label: Home
+sidebar_position: 2
 ---
 
 Home workspace is a standard view that shows the most relavant documents for your working day/week.

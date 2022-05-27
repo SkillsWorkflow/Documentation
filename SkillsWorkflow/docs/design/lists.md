@@ -2,6 +2,7 @@
 id: lists
 title: List guidelines
 sidebar_label: List
+sidebar_position: 3
 ---
 
 - Lists should have coloured fields for easier reading and identification.

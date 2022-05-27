@@ -2,6 +2,7 @@
 id: notifications
 title: Notification guidelines
 sidebar_label: Notifications
+sidebar_position: 7
 ---
 
 Notifications are workspaces that have been designed to use this standard template.

@@ -2,6 +2,7 @@
 id: forms
 title: Form guidelines
 sidebar_label: Forms
+sidebar_position: 6
 ---
 
 Forms should have visual elements to easily identify each field. 
