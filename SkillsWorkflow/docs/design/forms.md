@@ -4,7 +4,8 @@ title: Form guidelines
 sidebar_label: Forms
 ---
 
-Forms have now a new set of field rules:
+Forms should have visual elements to easily identify each field. 
+Also a new set of field rules has been applied:
 - Pink - Mandatory unfilled
 - Gray with dark text - Filled editable
 - Gray with light text - Uneditable field
@@ -16,8 +17,6 @@ Forms have now a new set of field rules:
 <figcaption>Form</figcaption>
 </figure>
 
-<figure>
-
 
 Multi line forms should have:
 - Steps at the top of the page
@@ -25,6 +24,7 @@ Multi line forms should have:
 - Save button sticky at the bottom
 - Colors and emoticons
 
+<figure>
 
 ![img-box-shadow](/img/design/design-multi-line-form.png)
 <figcaption>Multi line form</figcaption>

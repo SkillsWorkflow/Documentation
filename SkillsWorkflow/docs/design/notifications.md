@@ -14,7 +14,7 @@ Notifications are workspaces that have been designed to use this standard templa
 
 <figure>
 
-![img-box-shadow](/img/design/design-notifications.png)
+![img-box-shadow](/img/design/design-notifications-device.png)
 <figcaption>Mobile notifications</figcaption>
 </figure>
 

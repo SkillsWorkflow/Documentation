@@ -1,6 +1,6 @@
 ---
 id: home
-title: Home guidelines
+title: Home
 sidebar_label: Home
 ---
 
@@ -12,7 +12,6 @@ Home workspace is a standard view that shows the most relavant documents for you
 - Availability of my team
 - Messages from chat
 - Bottom component will work as a timer to register time sheets
-
 
 
 
