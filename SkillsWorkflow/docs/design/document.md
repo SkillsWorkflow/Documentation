@@ -2,6 +2,7 @@
 id: document
 title: Document guidelines
 sidebar_label: Document
+sidebar_position: 4
 ---
 
 - Document can be show in popup or expanded.

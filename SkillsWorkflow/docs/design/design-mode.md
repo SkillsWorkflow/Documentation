@@ -2,6 +2,7 @@
 id: design-mode
 title: Design mode guidelines
 sidebar_label: Design mode
+sidebar_position: 9
 ---
 
 Design mode should show the Workspace in editing mode.

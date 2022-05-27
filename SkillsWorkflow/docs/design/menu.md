@@ -2,6 +2,7 @@
 id: menu
 title: Menu guidelines
 sidebar_label: Menu
+sidebar_position: 5
 ---
 
 Menu can now be hidden in order to utilize all available screen. This avoids unecessary distractions and focuses the user on the content.

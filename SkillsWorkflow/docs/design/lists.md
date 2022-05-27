@@ -2,13 +2,14 @@
 id: lists
 title: List guidelines
 sidebar_label: List
+sidebar_position: 3
 ---
 
 - Lists should have coloured fields for easier reading and identification.
 - Horizontal lines should be eliminated
-- Vertical lines are dotted
+- Vertical lines should be barely visible
 - Editable fields should show a placeholder
-- Mandatory unfilled fileds should show as pink, using the same form rules
+- Mandatory unfilled fields should show as pink, using the same form rules
 
 <figure>
 
