@@ -4,7 +4,8 @@ title: Dashboard guidelines
 sidebar_label: Dashboard
 sidebar_position: 8
 ---
-Margins workspace will show the balance by company between planned and remaining time. This workspace is intended to measure company profitability.
+
+Margins workspace shows the balance by company between planned and remaining time. This workspace is intended to measure company profitability.
 
 - Graphs have been adjusted and removed unecessary elements (lines)
 - Company images being used to easily identify clients
@@ -17,5 +18,3 @@ Margins workspace will show the balance by company between planned and remaining
 ![img-box-shadow](/img/design/design-ws-margins.png)
 <figcaption>Margin workspace</figcaption>
 </figure>
-
-

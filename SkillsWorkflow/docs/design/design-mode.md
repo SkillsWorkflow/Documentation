@@ -5,7 +5,7 @@ sidebar_label: Design mode
 sidebar_position: 9
 ---
 
-Design mode should show the Workspace in editing mode.
+Design mode shows the Workspace in editing mode.
 - Multi device preview and adjustements
 - Components
 - Layers
