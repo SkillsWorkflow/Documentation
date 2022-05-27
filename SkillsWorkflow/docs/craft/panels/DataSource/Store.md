@@ -35,7 +35,7 @@ On this page you will find how to create a workspace using the Store as DataSour
 
 ##
 ```js
-(query, creators, operators, componentDefinitionId, customOperators, WorkspaceContext) => creators.of(query).pipe(
+(query, creators, operators, componentDefinitionId, customOperators, workspaceContext) => creators.of(query).pipe(
     customOperators.selectDataSource("expense"),
     operators.map(queryData => {
         const data = queryData.Data;
