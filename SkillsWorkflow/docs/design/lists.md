@@ -5,7 +5,7 @@ sidebar_label: List
 sidebar_position: 3
 ---
 
-- Lists should have coloured fields for easier reading and identification.
+- Lists have coloured fields for easier reading and identification.
 - Horizontal lines should be eliminated
 - Vertical lines should be barely visible
 - Editable fields should show a placeholder
