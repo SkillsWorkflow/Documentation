@@ -15,4 +15,10 @@ sidebar_label: Login
 <figcaption>Login</figcaption>
 </figure>
 
+<figure>
+
+![img-box-shadow](/img/design/design-login-error-message.png)
+<figcaption>Login with error message</figcaption>
+</figure>
+
 
