@@ -12,7 +12,7 @@ sidebar_label: List
 
 <figure>
 
-![img-box-shadow](/img/design/design-list.png)
+![img-box-shadow](/img/design/design-standard-list.png)
 <figcaption>Standard list</figcaption>
 </figure>
 
