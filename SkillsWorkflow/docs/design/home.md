@@ -1,6 +1,6 @@
 ---
 id: home
-title: Home
+title: Home guidelines
 sidebar_label: Home
 ---
 

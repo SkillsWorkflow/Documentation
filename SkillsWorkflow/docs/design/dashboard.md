@@ -1,6 +1,6 @@
 ---
 id: dashboard
-title: Dashboard
+title: Dashboard guidelines
 sidebar_label: Dashboard
 ---
 Margins workspace will show the balance by company between planned and remaining time. This workspace is intended to measure company profitability.
