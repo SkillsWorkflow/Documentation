@@ -28,7 +28,7 @@ When there is a failure in the login, an error message is shown on top of the lo
 </figure>
 
 <figure>
-he 
+
 ![img-box-shadow](/img/design/design-login-error-message.png)
 <figcaption>Login with error message</figcaption>
 </figure>
