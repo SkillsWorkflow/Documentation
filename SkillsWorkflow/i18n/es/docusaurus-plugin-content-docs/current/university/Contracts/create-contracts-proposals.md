@@ -1,66 +1,77 @@
 ---
 id:  create-contracts-proposals
-title: Create Contracts and Proposals
-sidebar_label: 2. Create Contracts and Proposals
+title: Cómo crear Fees y Estimaciones
+sidebar_label: 2. Cómo crear Fees y Estimaciones
 sidebar_position: 2
 ---
 
 
-It is possible to create and manage contracts associated with specific projects and activities.
+Es posible crear y administrar fees vinculadas a proyectos y jobs específicos.
 
-The estimate is at a higher level than the project, and allows you to bring together several projects in the same document.
+El fee está en un nivel más alto que el proyecto, y permite reunir varios proyectos bajo el mismo documento.
 
-The main objective is the creation of a contract, with the possibility of negotiation, where it is possible to register the number of hours sold and control the number of hours sold versus the number of real hours placed in various projects / activities belonging to a contract.
+El objetivo principal es crear un fee, con el alcance de la negociación, registrar el número de horas vendidas y controlar la cantidad de horas vendidas en comparación con las horas reales cumplidas en los diversos proyectos / jobs que están consumiendo el fee.
 
-Contracts are associated with a specific client, and must be associated with a Price Table.
+El fees están relacionados con un Cliente específico y deben asociarse con una Tarifa de tabla.
 
-## Create Estimate
+## Para crear una nueva Fee, deberá:
 
-1. Go inside  Project or a Job
+1. Ir al módulo de Clientes;
+2. Seleccione el Cliente deseado;
+3. Presione "+" directamente desde la lista de Clientes y seleccione Fee
 
-2. Click on '+' icon.
-
-<figure>
+<!-- <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
 <figcaption>Estimate creation</figcaption>
-</figure>
+</figure> -->
 
 
-3. Fill in the general header estimate fields.
 
-- Description - Write a brief description about the Estimate. 
-- Title - You can distinguish by giving names to estimates. Ex. WebSite Option 1, WebSite Option2.
-- Department - Choose from a drop-down list of the departments available (this will be very important to choose the workflow of the document).
-- Type - Choose from a drop-down list of the Types available (this will be very important to choose the workflow of the document).
-- Start Date - Choose when the Estimate starts.
-- End Date - Choose when the Estimate ends.
+El sistema generará un número automático, y podrá ver un texto de confirmación. Si hace clic en el mensaje emergente, el sistema fluirá a la Tarifa.
 
-4. Save the estimate by clicking the check icon
+Título: complete un nombre que lo ayude a averiguar una tarifa específica
+Fecha de inicio / Fecha de finalización: elija cuándo comienza la Fee y su fecha de vencimiento.
+Propietario del Contrato - Elija el responsable de esta tasa (que puede ser heredada directamente del Administrador del cliente o puede seleccionar manualmente)
 
----
+<!-- <figure>
 
-## Estimate - Manage Quotes
+![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
+<figcaption>Estimate creation</figcaption>
+</figure> -->
 
-Inside an Estimate on the Quotes tab you can add Deliverables or the product or service you are selling to your client
+Una vez que tenga toda la información en el encabezado del documento, debe presionar Aceptar y enviar la publicación.
 
-<figure>
+El sistema generará un número automático, y podrá ver un texto de confirmación. Si hace clic en el mensaje emergente, el sistema fluirá a la Fee.
 
-![img-box-shadow](/img/university/contracts/university-contracts-2-quotes.png)
-<figcaption>Estimates quotes tab</figcaption>
-</figure>
+<!-- <figure>
 
-1. On the "Quotes" tab, you can add "Deliverables" or the product or service you are selling to your client.
+![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
+<figcaption>Estimate creation</figcaption>
+</figure> -->
 
-2. Add the description that you want your client to see.
+Para crear una nueva estimación, debe presionar "+" directamente desde la Fee.
 
-3. Select the service/product you are selling.
+<!-- <figure>
 
-4. For each Deliverable, you can specify the cost which can either be Third Party, Expenses"or Resources.
+![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
+<figcaption>Estimate creation</figcaption>
+</figure> -->
 
 
-### Attach a file or add a link
+1. Seleccione Estimar en el menú desplegable para crear uno nuevo
+2. Se abrirá una ventana emergente de Estimación con los campos obligatorios para completar
+3. Agregar una descripción
+4. Seleccione el departamento
+5. Elija el tipo
+6. Seleccione la fecha de inicio y la fecha de finalización
+7. Agregar archivos (opcional)
+8. Presiona OK y enviar la publicación
 
-- You can also attach files or add a URL link to the Estimate by going to the "Feed" tab clicking the Add File icon. Choose to Upload file or add link.
+<!-- <figure>
 
-- This is useful for adding brief documents or presentations, in any of the main formats (Word, PPT, Excel, PDF, etc.)
+![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
+<figcaption>Estimate creation</figcaption>
+</figure> -->
+
+Después de crear una nueva Estimación, considerará la cantidad de horas que se utilizarán para este Cliente. Los honorarios siempre están vinculados a un Estimado, como en el Estimado que las horas se venderán al Cliente.
