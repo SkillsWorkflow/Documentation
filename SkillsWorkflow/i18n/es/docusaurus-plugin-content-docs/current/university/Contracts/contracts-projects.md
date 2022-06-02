@@ -1,74 +1,63 @@
 ---
 id:  contracts-projects
-title: Estimate Associated Projects
-sidebar_label: 3. Manage Projects associated to an Estimate
+title: Cómo gestionar proyectos vinculados a una tarifa
+sidebar_label: 3. Gestionar proyectos vinculados a una tarifa
 ---
 
-:::note
-Projects can be associated with a client estimate so that hours sold are deducted from that same contract.
-:::
+Los proyectos se pueden vincular a una tarifa de cliente para deducir las horas vendidas anteriormente.
 
-1. Click on the '+' icon to create a new Project.
+Para crear un proyecto vinculado a una tarifa:
 
-<figure>
+Acceda al documento de tarifa y haga clic en el símbolo "+" para crear un nuevo proyecto.
+
+<!-- <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-projects-1.png)
 <figcaption>Estimate creation</figcaption>
-</figure>
+</figure> -->
 
-2. Fill in all the necessary information in the project header.
+Complete toda la información necesaria en el encabezado del proyecto.
 
-- Title - Add a name for this project.
+- Título: Añadir un nombre a este proyecto
+- Tipo: seleccione el tipo de proyecto de la lista desplegable
+- Fechas de inicio y finalización: seleccione el intervalo de fechas del proyecto
+- Propietario del proyecto: seleccione el usuario responsable del proyecto
+- Tarifa: seleccione la tarifa que desea vincular al proyecto
+- Entregables: seleccione una entrega específica que desee vincular al proyecto (entregas estimadas)
+- Haga clic en "Aceptar" y proceda a enviar la publicación.
 
-- Type - Select the type of project from the dropdown list.
-
-- Start and End Dates - Select the date range for this project.
-
-- Project Owner - Select the user responsible for this project.
-
-- Fee - Select the contract you want to associate with this project.
-
-- Deliverable - Select the deliverable that you want to associate with this project (estimated deliverables).
-
-Click the check icon e submit post.
-
-
-<figure>
+<!-- <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-projects-2.png)
 <figcaption>Estimate creation</figcaption>
-</figure>
+</figure> -->
+
+Después de crear el proyecto, vaya a la pestaña "Tiempo planificado".
+
+Complete la siguiente información:
+
+- Horas contratadas: haga clic en el símbolo "Obtener horas contratadas" (las horas aprobadas en la tarifa correspondiente aparecerán en la columna de Horas contratadas)
+- Horas planificadas: ajuste las horas planificadas para un proyecto específico si fueran diferentes de las horas contratadas
+- Pronóstico: haga clic en el símbolo "Tiempo planificado de pronóstico" (el sistema distribuirá las horas planificadas para el intervalo de fechas del proyecto seleccionado previamente)
 
 
-3. After the project is created, navigate to the "Planned Hours" tab and fill in the form with the following information:
 
-- Contracted Hours - Click on the "Get Contracted Hours" symbol (the hours approved in the associated contract will be used to complete the "Contracted Hours" column).
-
-- Planned Hours - Adjust the planned hours for a specific project, if they differ from the contracted hours.
-
-- Projection - Click on the "Planned Hours Projection" symbol (the system will distribute the planned hours over the previously defined date range, relative to the duration of the project).
-
-
-
-<figure>
+<!-- <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-projects-3.png)
 <figcaption>Estimate creation</figcaption>
-</figure>
+</figure> -->
 
-4. Analyze all the information on the Burn Dashboard:
+Actualiza todos tus datos en el panel con el simbolo de grabar
 
-- Check the number of hours planned for each typology group.
-
-- Check the number of hours filled by all users included in that project / activity.
-
-- Check the number of hours available for each typology group.
-
-- Check the % of utilization by typology group.
+- Verifique el número de horas planificadas para cada grupo de Tipología.
+- Verifique la cantidad de horas completadas por todos los usuarios involucrados en el proyecto / Job
+- Consultar el número de horas disponibles por grupo de tipología.
+- Consultar el porcentaje de utilización por grupo tipológico.
 
 
-<figure>
+<!-- <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-projects-4.png)
 <figcaption>Estimate creation</figcaption>
-</figure>
+</figure> -->
