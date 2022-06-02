@@ -5,50 +5,52 @@ sidebar_label: 2. Gerar notas de credito a clientes
 sidebar_position: 2
 ---
 
-## 2. Gerar notas de credito a clientes
+## 2. Generar Notas de Credito de Cliente
 
-Sempre que alterar os valores de venda de orçamento faturado, para um valor inferior o sistema irá sugerir que seja emitida uma nota de crédito.
+Siempre que cambie el valores  de ventas del presupuesto facturado a un valor inferior, el sistema le sugerirá que se emita una nota de crédito.
 
-Os pedidos de emissão de notas de credito a cliente no sistema, e desta forma informar a equipa financeira para avançar com a criação/sincronização do documento para o sistema financeiro externo, e gerar o credito definitivo. 
+Solicitudes de emisión de notas de crédito al cliente en el sistema informar al equipo financiero para proceder con la creación/sincronización del documento al sistema financiero externo, y generar el crédito definitivo.
 
-### Credito total
+### Crédito total
 
-- Para emitir um pedido de crédito, dentro do orçamento aprovado pelo cliente, deverá navegar para a/s linha/s que pretende creditar ao cliente.
+- Para emitir una solicitud de crédito, dentro del presupuesto aprobado por el cliente, debe navegar hasta la/s línea/s que desea acreditar al cliente
 
-- Para gerar um credito pelo valor total das facturas que já emitiu previamente, nas linhas do orçamento deverá colocar os valores, ou quantidade a 0.
+- Para generar un crédito por el valor total de las facturas que hayas emitido previamente, en las partidas presupuestarias debes poner los valores, o cantidad, a 0.
 
-- Navegue para o Feed e dê instrução ao sistema para facturar novamente. Não se esqueça de validar as condições de facturação, como já descrito na Lição 1.
+- Navegue a Feed e indique al sistema que facture nuevamente. Recordes de validar las condiciones de facturación, como se describe en la Lección 1.
 
-- O sistema irá emitir um documento do tipo nota de credito pelo valor total que será processado pelo departamento financeiro.
+- El sistema emitirá un documento del tipo nota de crédito por el monto total que será procesado por el departamento de finanzas.
 
 ### Credito parcial
 
-- Pode emitir créditos parciais de linhas de cliente, ou seja inicialmente facturou um valor, e precisa de emitir um credito de uma parte.
+- Puede emitir créditos parciales para líneas de clientes, o sea, inicialmente facturó un monto y necesita emitir un crédito para una parte.
 
-- Para tal basta-lhe ir á linha que pretende creditar e ajustar o valor de venda da mesma.
+- Sólo tienes que ir a la línea que quieres acreditar y ajustar su valor de venta.
 
-- Ou seja, no exemplo abaixo a linha foi facturada por 104.100 e pretendemos emitir um credito no valor de 50.600. Assim sendo, teriamos de ir á linha e ajustar o valor de venda para 53.500.
+-Un ejemplo:  la línea se facturó por 104.100 y pretendemos emitir un crédito por un monto de 50.600. Por lo tanto, tendríamos que ir a la línea y ajustar el valor de venta a 53.500.
 
-- Quando terminar deverá ir novamente ao feed e voltar a dar instruções ao sistema para facturar/creditar.
+- Cuando termine, debe volver al feed y dar instrucciones al sistema para facturar/abonar nuevamente.
 
-- Não esquecer de definir as condições de facturação descritas na Lição 1.
+- Recordes de las condiciones de facturación descritas en la Lección 1.
 
  
 
-Pode navegar para a área de notas de credito a cliente, e pode encontrar o documento que acabou de emitir
+Puede navegar al área de notas de crédito del cliente y puede encontrar el documento que acaba de emitir
 
-:::important
-Para a emissão do credito, as facturas que constam no orçamento têm de estar numa etapa "integrado"
+:::Nota: 
+
+Para emitir el crédito, las facturas incluidas en el presupuesto deben estar en una etapa "integrada"
 :::
 
-- Após a criação dos pedidos de crédito, por obrigatoriedades legais, terá que nas linhas identificar o motivo, só desta forma poderá ser integrada no sistema externo.
+- Después de crear las solicitudes de crédito, por obligación legales, deberá identificar el motivo en las líneas, solo así se podrá integrar al sistema externo.
 
-- Para validar a informação, e imprimir deverá navegar para o documento nota de encomenda clicando na linha que pretende validar.
+- Para validar la información e imprimir, debe navegar hasta el documento de orden de compra haciendo clic en la línea que desea validar.
 
-- O sistema vai mostrar o detalhe do documento, valores, serviço contratado, etc
+- El sistema mostrará el detalle del documento, valores, servicio contratado y otras cosas mas.
 
-- Para imprimir basta carregar na opção pdf no canto superior direito, e será gerado um documento em PDF que poderá fazer download e enviar por email para o respectivo fornecedor.
+- Para imprimir, basta baixar a opção pdf no canto superior direito, e será gerado um documento PDF que você poderá baixar e enviar por e-mail para o respectivo provedor.
 
+Para imprimir, simplemente descargue la opción pdf en la esquina superior derecha y se generará un documento PDF que puede descargar y enviar por correo electrónico al proveedor respectivo
 
 <figure>
 
@@ -56,9 +58,9 @@ Para a emissão do credito, as facturas que constam no orçamento têm de estar 
 <figcaption>Detalhe notas de credito</figcaption>
 </figure>
 
-Pode igualmente consultar a lista de todas as suas notas de encomenda navegando pelos modulos no navegador á sua esquerda
+También puede consultar la lista de todas sus órdenes de compra navegando a través de los módulos en el navegador a su izquierda.
 
-Na listagem das notas de encomenda pode aplicar diversos filtros, tais como: cliente, projecto, orçamento
+En la lista de órdenes de compra, puede aplicar diferentes filtros, tales como: cliente, proyecto y presupuesto
 
 <figure>
 
