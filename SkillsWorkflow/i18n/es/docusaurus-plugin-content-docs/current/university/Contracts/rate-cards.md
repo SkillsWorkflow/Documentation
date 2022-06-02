@@ -1,98 +1,89 @@
 ---
 id:  rate-cards
-title: Rate Cards
-sidebar_label: 1. Create Rate Cards
+title: Como administrar tablas Rate Card
+sidebar_label: 1. Administrar tablas Rate Card
 ---
 
-## 1. Create Rate Cards
+## Como administrar tablas de Rate Card
 
-Rate Cards are prices/costs for typology groups and/or users.
+Las tablas de tarifas son precios para grupos de tipología y / o usuarios.
 
-You can set multiple Rate Cards and Rate Cards columns in the same table.
+Puede configurar tantas tablas de tarifas como desee, o establecer más de una columna de tasas dentro de la misma tarifa de mesa.
 
-### Rate Cards can be managed in two ways:
+Se pueden administrar utilizando dos enfoques diferentes:
 
-<h4>Sales values</h4>
+## Vender valores
 
-- Add rates based on the sales values for a specific client(including margin and fixed costs).
-- In this case, the bill's team does not need to include margin and fixed costs when creating rates.
-- Some clients have a unique sales rate, which ensures that the bill's team doesn 't send different prices/costs to the same cliente.
+- Upload del rate basadas en el valor de venta para un cliente específico (incluidos margen y gastos generales).
+- En este caso, el equipo de la cuenta no tiene que aplicar un margen, o gastos generales cuando están creando las cotizaciones del cliente, ya que ya están incluidas.
+- Algunos clientes tienen una tasa de venta específica, por lo que esto garantiza que las cuentas no envíen precios diferentes para el mismo cliente.
 
-<h4>Costs values</h4>
-
-- Add rates based on the costs values for a user/typology group.
-- In this case, bill's team will have to manage margin and fixed costs for the client.
-
-### Create Rate Tables
+## Valores de costo
 
 
-1. Go to the Maintenance and enter the Rate Cards workspace.
+- Tasas de carga basadas en los valores de costo para un grupo / usuario de tipología específico.
+- En este caso, el equipo de cuenta debe administrar el margen y los gastos generales en las cotizaciones de los clientes.
 
 
-<figure>
+## Creando una tabla de tarjeta de tarifa.
 
-![img-box-shadow](/img/university/contracts/university-contracts-rateCards-1.png)
-<figcaption>Maintenance - filtered by Rate Cards</figcaption>
-</figure>
+Vaya a Módulo de Fee Proposal- Tarjeta de tarifa y presione +
 
+Complete la información del encabezado:
 
-2. Click on the '+' icon.
+- Número - agregue manualmente un número interno
+- Compañia - seleccione la compañia a la que se aplicará esta tabla de tarifas.
+- Nombre - Agregar una descripción
+- Fecha de inicio y finalización: seleccione el alcance de la tabla de la tarjeta (Rate Card) de tarifas
 
-
+<!-- 
 <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-rateCards-2.png)
 <figcaption>Rate Cards workspace</figcaption>
-</figure>
+</figure> -->
 
 
-3. Fill atleast the required fields
+Para administrar su tabla de tarifas (rate card), deberá agregar nuevas filas y / o tipologías (como un archivo de Excel):
 
-- Name - Add a description.
-- Number - Add an internal number manually.
-- Company - Select a company on which the rate will be applied.
-- Start Date / End Date - Choose a start and end date for the new rate.
+- Agregue una fila para agregar una tipología específica
+- Seleccione el grupo de tipología
+- Seleccione un usuario específico
+- Agregue la hoja de tarifas(rate card) para la tipología / usuario seleccionado
+- En este ejemplo, en la misma tabla de tarifas tenemos 3 precios disponibles (estándar, con descuento del 30% y Nestlé)
+- Haga clic en la parte superior de cada columna para agregar valores
+- El sistema guardará automáticamente la información
 
-
-:::note
-Rate Cards can be edited on the Rate Cards on Maintanance or in workspace All on Rate Cards module in the Menu.
-:::
-
-
-
-
-To manage the Rate Card, you will need to add new lines, and / or typologies (as in an excel format):
-
-- Add a line to add a specific typology.
-- Select a typology group.
-
-- Select a specific user (if you want to add this detail).
-
-- Add the rate for the selected typology / user.
-
-- In this example, in the same rate table, there are 3 prices / costs available (standard, Discount 10% and Discount 30%).
-
-- Click on the top of each column to add values.
-
-- Click on record on the floppy disk symbol.
-
-
+<!-- 
 <figure>
+
+![img-box-shadow](/img/university/contracts/university-contracts-rateCards-2.png)
+<figcaption>Rate Cards workspace</figcaption>
+</figure> -->
+
+Si desea agregar varios grupos o usuarios de Tipología al mismo tiempo:
+
+- Presione agregar grupos de tipología o usuarios
+- Seleccione en la ventana emergente varias Tipologías o usuarios y agréguelas al mismo tiempo
+- Presiona OK
+- Agregue valores a las líneas y columnas haciendo clic en la parte superior de cada celda
+
+<!-- 
+<figure>
+
+![img-box-shadow](/img/university/contracts/university-contracts-rateCards-2.png)
+<figcaption>Rate Cards workspace</figcaption>
+</figure> -->
+
+## Para vincular una Tabla de tarifas (Rate Card) con un cliente, navegue a CRM
+
+- Seleccione el cliente
+- En detalles: Seleccione la tabla de tarifas que desea y la columna correspondiente
+
+<!-- <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-rateCards-3.png)
 <figcaption>Inserting values in Rate Card table</figcaption>
-</figure>
+</figure> -->
 
-If you want to add several users or groups of typology at the same time:
-
-- Click to add groups of typology or users.
-
-- In the pop-up, select several groups of typology or users and add them simultaneouslyc click "ok".
-
-- Add values ​​to rows and columns by clicking on the top of each cell.
-
-<figure>
-
-![img-box-shadow](/img/university/contracts/university-contracts-rateCards-3.png)
-<figcaption>Inserting multiple values in Rate Card table</figcaption>
-</figure>
+Todos los clientes vinculados con una tabla de Tarjeta de tarifas permitirán que el sistema sepa qué tasa debe aplicarse cuando se crean las cotizaciones.
