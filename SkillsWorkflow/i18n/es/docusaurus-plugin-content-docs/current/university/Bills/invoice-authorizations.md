@@ -1,31 +1,29 @@
 ---
-id:  invoice-authorizations
-title: Autorizações de fatura
-sidebar_label: 1. Criar autorizações de fatura
+id:  factura-autorizaciones
+title: Autorizaciones de facturas
+sidebar_label: 1. Crear autorizaciones de factura
 sidebar_position: 1
 ---
 
-## 1. Como criar autorizações de fatura
+## 1. Cómo crear autorizaciones de factura
 
-Pode criar pedidos de faturas no sistema, e desta forma informar a equipa financeira para avançar com a criação/sincronização do documento para o sistema financeiro externo, e gerar a fatura definitiva.
+Puede crear solicitudes de factura en el sistema y de esta manera informar al equipo financiero para que proceda con la creación/sincronización del documento al sistema financiero externo y genere la factura final.
 
-O que o sistema gera é um pedido de faturação, e não uma fatura definitiva, essa deverá ser sempre gerada no sistema financeiro (Primavera, Sage, NAV, SAP, etc).
-
-Definição das condições de faturação:
-
+Lo que genera el sistema es una solicitud de facturación, no una factura final, esta debe generarse siempre en el sistema financiero (Primavera, Sage, NAV, SAP, etc).
+Definición de condiciones de facturación:
 
 
-### Condições gerais
+### Condiciones generales
 
-Para emitir um pedido de faturação, dentro do orçamento aprovado pelo cliente, deverá navegar para a opção "condições de faturação".
+Para emitir una solicitud de facturación, dentro del presupuesto aprobado por el cliente, debe navegar a la opción "condiciones de facturación".
 
-Se o cliente comercial, tiver o cliente financeiro associado, o sistema automaticamente vai sugerir o cliente e condições de pagamento pre-definidos.
+Si el cliente comercial tiene asociado un cliente financiero, el sistema sugerirá automáticamente el cliente y las condiciones de pago predefinidas.
 
-Poderá definir percentagem de faturação, referencia (PO cliente) e datas.
+Puede definir el porcentaje de facturación, la referencia (orden de compra del cliente) y las fechas.
 
-Note que se para a generalidade do orçamento tiver mais que uma condição de faturação pode adicionar quantas linhas quiser e, inclusivamente ter clientes diferentes.
+Tenga en cuenta que si para el presupuesto general tiene más de una condición de facturación, puede agregar tantas líneas como desee e incluso tener diferentes clientes.
 
-Depois de estabelecer as condições de faturação que pretende aplicar, navegue para o feed, e mude o estado do workflow para faturar, gerando a(s) autorização(ões) de faturas necessárias.
+Después de establecer las condiciones de facturación que desea aplicar, navegue hasta el feed y cambie el estado del flujo de trabajo a Factura, generando las autorizaciones de factura necesarias.
 
 <figure>
 
@@ -33,20 +31,18 @@ Depois de estabelecer as condições de faturação que pretende aplicar, navegu
 <figcaption></figcaption>
 </figure>
 
-### Condições ao entregável
+### Condiciones para el entregable
 
-Pode definir condições de faturação diferentes para as linhas de entregáveis ao cliente.
+Puede establecer diferentes condiciones de facturación para las líneas de entrega de clientes.
+Entonces, si tiene, por ejemplo, un presupuesto anual de tarifas, en el que genera una factura todos los meses, puede hacer el plan de facturación anual, si tiene la orden de compra del cliente.
 
-Assim sendo, se tiver por exemplo um orçamento anual de fee, em que mensalmente gera uma fatura, pode fazer o plano de faturação anual, caso tenha a PO do cliente.
+En las condiciones generales de facturación, debe hacer clic en aplicar a todos. El sistema aplicará las condiciones definidas en la opción general a todos los entregables del cliente.
 
-Nas condições de faturação gerais, deverá clicar em aplicar a todas. O sistema vai aplicar as condições definidas na opção geral a todos os entregáveis ao cliente.
+Puede ir a cada una de las líneas, presionar la opción de detalles y manipular la información de cada una de las líneas si es necesario, ajustando por ejemplo las fechas o PO.
 
-Pode ir a cada uma das linhas, pressionar a opção detalhes, e manipular a informação de cada uma das linhas caso seja necessário, acertando por exemplo as datas ou PO.
+En el ejemplo mencionado anteriormente de planes de facturación anual, debe manipular fechas y órdenes de compra.
 
-No exemplo mencionado acima dos planos anuais de faturação, deverá manipular datas e PO's
-
-Pode definir condições nas linhas quer por percentagem, quer por valor.
-
+Puede establecer condiciones en las líneas ya sea por porcentaje o por valor.
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson1-2.png)
@@ -54,13 +50,13 @@ Pode definir condições nas linhas quer por percentagem, quer por valor.
 </figure>
 
 
-:::important
-Se as condições de facturação forem iguais para mais que uma linha aprovada, quando for ao feed e ajustar o fluxo para "faturar" o sistema gera uma factura com duas linhas.
+:::importante
+Si las condiciones de facturación son las mismas para más de una línea aprobada, al ir al feed y ajustar el flujo a "facturar" el sistema genera una factura con dos líneas.
 
-Se as condições de faturação forem diferentes para todas as linhas o sistema vai gerar tantas faturas quantas condições definidas
+Si las condiciones de facturación son diferentes para todas las líneas, el sistema generará tantas facturas como condiciones definidas
 :::
 
-Ao navegar para o feed e alterar o estado do workflow para "faturar" o sistema ira emitir tantas faturas quantas estiverem definidas nas condições de faturação. Para as consultar poderá navegar para a zona de faturas.
+Al navegar al feed y cambiar el estado del flujo de trabajo a "facturar", el sistema emitirá tantas facturas como se definan en las condiciones de facturación. Para consultarlas, puede navegar hasta el área de facturas.
 
 
 <figure>
@@ -69,16 +65,16 @@ Ao navegar para o feed e alterar o estado do workflow para "faturar" o sistema i
 <figcaption></figcaption>
 </figure>
 
-Note que a autorização de fatura será enviada para o sistema financeiro externo emitindo os documentos finais.
+Tenga en cuenta que la autorización de la factura se enviará al sistema financiero externo que emite los documentos finales.
 
-Caso esteja ativada a integração com o sistema financeiro, o campo do número externo será atualizado com o número definitivo. Pode importar o PDF da fatura, para ficar com acesso rápido ao documento enviado ao cliente.
-Para validar qual o documento final que a sua autorização de fatura gerou, deverá validar o estado do documento (integrado) e o campo com o número externo.
+Si se activa la integración con el sistema financiero, el campo de número externo se actualizará con el número definitivo. Puedes importar el PDF de la factura, para que tengas acceso rápido al documento enviado al cliente.
+Para validar qué documento final generó tu autorización de factura, debes validar el estado del documento (integrado) y el campo con el número externo.
 
-Para imprimir deverá navegar para o documento autorização fatura, clicando na linha que pretende validar.
+Para imprimir, debe navegar hasta el documento de autorización de la factura, haciendo clic en la línea que desea validar.
 
-O sistema vai mostrar o detalhe do documento, valores, serviço contratado, etc
+El sistema mostrará el detalle del documento, valores, servicio contratado, etc.
 
-Para imprimir basta carregar na opção pdf no canto superior direito, e será gerado um documento em PDF que poderá fazer download e enviar por email se necessário.
+Para imprimir, simplemente haga clic en la opción pdf en la esquina superior derecha y se generará un documento PDF que puede descargar y enviar por correo electrónico si es necesario.
 
 <figure>
 
@@ -86,11 +82,11 @@ Para imprimir basta carregar na opção pdf no canto superior direito, e será g
 <figcaption>Detalhe autorização fatura</figcaption>
 </figure>
 
-### Detalhe autorização fatura
+### Detalle de autorización de factura
 
-Pode igualmente consultar a lista de todas as suas autorizações de fatura navegando pelos módulos no navegador à sua esquerda.
+También puede consultar la lista de todas sus autorizaciones de facturas navegando por los módulos en el navegador a su izquierda.
 
-Na listagem de autorizações factura pode aplicar diversos filtros, tais como: cliente, projecto, orçamento
+En la lista de autorizaciones de facturas, puede aplicar diferentes filtros, tales como: cliente, proyecto, presupuesto
 
 <figure>
 
