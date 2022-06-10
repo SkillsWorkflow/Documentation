@@ -1,17 +1,17 @@
 ---
 id:  create-projects
-title: Create Projects
-sidebar_label: 1. Create a Project
+title: Crear Proyecto
+sidebar_label: 1.¿Cómo crear un Proyecto?
 sidebar_position: 1
 ---
 
-## Create a Project
+## ¿Cómo crear un Proyecto?
 
-### A Project is an umbrella that groups a bundle of related jobs inside.
+### Un Proyecto es como un paraguas que agrupa un conjunto de tareas/jobs relacionados.
 
-1. To create a new Project, navigate to the "Clients" module.
+1. Navegue al módulo "Clientes" para crear un nuevo Proyecto.
 
-2. Verify that you can navigate by clicking on Clients in the side bar.
+2. Verifica que es posible navegar, haciendo clic en el menú Clientes, ubicado en la barra lateral izquierda.
 
 <figure>
 
