@@ -1,5 +1,5 @@
 ---
-id:  factura-autorizaciones
+id:  invoice-authorizations
 title: Autorizaciones de factura
 sidebar_label: 1. Crear Autorizaciones de factura
 sidebar_position: 1
