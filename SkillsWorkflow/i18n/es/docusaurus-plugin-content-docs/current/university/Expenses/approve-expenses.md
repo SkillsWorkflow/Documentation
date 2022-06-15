@@ -1,6 +1,6 @@
 ---
-id:  approve-expenses
-title: Approve Expenses
+id:  aprobar-gastos
+title: aprobar-gastos
 sidebar_label: 3. Aprovar Despesas
 ---
 
