@@ -1,5 +1,5 @@
 ---
-id: crear-cliente-contacto
+id: create-client-contact
 title: Crear un nuevo contacto de Cliente
 sidebar_label: 1. Crear contacto de cliente
 ---
