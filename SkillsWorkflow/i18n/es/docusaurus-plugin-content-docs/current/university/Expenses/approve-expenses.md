@@ -1,22 +1,22 @@
 ---
 id:  approve-expenses
 title: Approve Expenses
-sidebar_label: 3. Aprovar Despesas
+sidebar_label: 3. Aprobar Gastos
 ---
 
-## 3. Aprovar Despesas
+## 3. Aprobar Gastos
 
 
-### Despesas podem ser aprovadas de duas maneiras:
+### Los gastos se pueden aprobar de dos maneras:
 
-- Pelo responsavel do Projecto
-- Pelo responsavel do utilizador
+- Por el responsable del proyecto
+- Por el responsable del usuario
 
 
 
-1. Navega para o módulo Expense Sheets.
+1. Navega al módulo Hojas de gastos.
 
-2. Selecciona a lista All.
+2. Seleccione la lista Todos.
 
 <figure>
 
@@ -24,19 +24,19 @@ sidebar_label: 3. Aprovar Despesas
 <figcaption>Módulo de folhas de despesas</figcaption>
 </figure>
 
-3. Escolhe a folha de despesa que queres aprovar.
+3. Elija la hoja de gastos que desea aprobar.
 
 
-Altere o estado da folha de despesas. Caso a folha de despesas seja rejeitada, o sistema solicitará o motivo da reprovação.
-Uma notificação será enviada ao solicitante.
+Cambiar el estado de la hoja de gastos. Si la hoja de gastos es rechazada, el sistema preguntará el motivo de la desaprobación.
+Una notificación será enviada al solicitante.
 
 
-### Approved by the user's responsible
+### Aprobado por el responsable del usuario
 
 
-1. Navega para o módulo de Expenses(Despesas).
+1. Navega al módulo Gastos.
 
-2. Selecciona a lista Approve.
+2. Seleccione la lista Aprobar.
 
 <figure>
 
@@ -44,7 +44,7 @@ Uma notificação será enviada ao solicitante.
 <figcaption>Workspace de aprovação de despesas</figcaption>
 </figure>
 
-3. Clique na despesa que deseja aprovar e verifique o recibo em anexo, adicione um comentário e altere a etapa para aprovado ou reprovado.
+3. Haga clic en el gasto que desea aprobar y verifique el recibo adjunto, agregue un comentario y cambie el paso a aprobado o desaprobado.
 
 <figure>
 
@@ -53,9 +53,9 @@ Uma notificação será enviada ao solicitante.
 </figure>
 
 
-### Approved by the project's responsible
+### Aprobado por el responsable del proyecto
 
-Para aprovar despesas, navegue até o módulo Projeto e selecione um projeto.
+Para aprobar gastos, vaya al módulo Proyecto y seleccione un proyecto.
 
 <figure>
 
@@ -64,9 +64,9 @@ Para aprovar despesas, navegue até o módulo Projeto e selecione um projeto.
 </figure>
 
 
-1. Vá para a aba de despesas
+1. Ir a la pestaña de gastos
 
-2. Clique nas despesas que deseja visualizar e altere a etapa para aprovado ou reprovado.
+2. Haga clic en los gastos que desea ver y cambie el paso para aprobar o reprobar.
 
 
 <figure>
