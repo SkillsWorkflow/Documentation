@@ -1,9 +1,10 @@
 ---
-id:  factura-autorizaciones
-title: Autorizaciones de facturas
-sidebar_label: 1. Crear autorizaciones de factura
+id:  invoice-authorizations
+title: Autorizaciones de factura
+sidebar_label: 1. Crear Autorizaciones de factura
 sidebar_position: 1
 ---
+
 
 ## 1. Cómo crear autorizaciones de factura
 
@@ -17,6 +18,15 @@ Definición de condiciones de facturación:
 
 Para emitir una solicitud de facturación, dentro del presupuesto aprobado por el cliente, debe navegar a la opción "condiciones de facturación".
 
+### Condiciones generales
+
+Para emitir una solicitud de facturación, dentro del presupuesto aprobado por el cliente, debe navegar a la opción "condiciones de facturación".
+
+Si el cliente comercial tiene asociado un cliente financiero, el sistema sugerirá automáticamente el cliente y las condiciones de pago predefinidas.
+
+Puede definir el porcentaje de facturación, la referencia (orden de compra del cliente) y las fechas.
+
+Tenga en cuenta que si para el presupuesto general tiene más de una condición de facturación, puede agregar tantas líneas como desee e incluso tener diferentes clientes.
 Si el cliente comercial tiene asociado un cliente financiero, el sistema sugerirá automáticamente el cliente y las condiciones de pago predefinidas.
 
 Puede definir el porcentaje de facturación, la referencia (orden de compra del cliente) y las fechas.
@@ -25,6 +35,7 @@ Tenga en cuenta que si para el presupuesto general tiene más de una condición 
 
 Después de establecer las condiciones de facturación que desea aplicar, navegue hasta el feed y cambie el estado del flujo de trabajo a Factura, generando las autorizaciones de factura necesarias.
 
+Después de establecer las condiciones de facturación que desea aplicar, navegue hasta el feed y cambie el estado del flujo de trabajo a Factura, generando las autorizaciones de factura necesarias.
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson1-1.png)
@@ -32,6 +43,18 @@ Después de establecer las condiciones de facturación que desea aplicar, navegu
 </figure>
 
 ### Condiciones para el entregable
+
+Puede establecer diferentes condiciones de facturación para las líneas de entrega de clientes.
+
+Entonces, si tiene, por ejemplo, un presupuesto anual de tarifas, en el que genera una factura todos los meses, puede hacer el plan de facturación anual, si tiene la orden de compra del cliente.
+
+En las condiciones generales de facturación, debe hacer clic en aplicar a todos. El sistema aplicará las condiciones definidas en la opción general a todos los entregables del cliente.
+
+Puede ir a cada una de las líneas, presionar la opción de detalles y manipular la información de cada una de las líneas si es necesario, ajustando por ejemplo las fechas o PO.
+
+En el ejemplo mencionado anteriormente de planes de facturación anual, debe manipular fechas y órdenes de compra.
+
+Puede establecer condiciones en las líneas ya sea por porcentaje o por valor.
 
 Puede establecer diferentes condiciones de facturación para las líneas de entrega de clientes.
 Entonces, si tiene, por ejemplo, un presupuesto anual de tarifas, en el que genera una factura todos los meses, puede hacer el plan de facturación anual, si tiene la orden de compra del cliente.
@@ -50,7 +73,7 @@ Puede establecer condiciones en las líneas ya sea por porcentaje o por valor.
 </figure>
 
 
-:::importante
+:::important
 Si las condiciones de facturación son las mismas para más de una línea aprobada, al ir al feed y ajustar el flujo a "facturar" el sistema genera una factura con dos líneas.
 
 Si las condiciones de facturación son diferentes para todas las líneas, el sistema generará tantas facturas como condiciones definidas
