@@ -5,15 +5,18 @@ sidebar_label: 1. Crear Autorizaciones de factura
 sidebar_position: 1
 ---
 
-## 1. Como crear autorizaciones de factura
+
+## 1. Cómo crear autorizaciones de factura
 
 Puede crear solicitudes de factura en el sistema y de esta manera informar al equipo financiero para que proceda con la creación/sincronización del documento al sistema financiero externo y genere la factura final.
 
-Lo que genera el sistema es una solicitud de facturación, y no una factura definitiva, esta debe generarse siempre en el sistema financiero (Primavera, Sage, NAV, SAP, etc).
-
+Lo que genera el sistema es una solicitud de facturación, no una factura final, esta debe generarse siempre en el sistema financiero (Primavera, Sage, NAV, SAP, etc).
 Definición de condiciones de facturación:
 
 
+### Condiciones generales
+
+Para emitir una solicitud de facturación, dentro del presupuesto aprobado por el cliente, debe navegar a la opción "condiciones de facturación".
 
 ### Condiciones generales
 
@@ -24,6 +27,13 @@ Si el cliente comercial tiene asociado un cliente financiero, el sistema sugerir
 Puede definir el porcentaje de facturación, la referencia (orden de compra del cliente) y las fechas.
 
 Tenga en cuenta que si para el presupuesto general tiene más de una condición de facturación, puede agregar tantas líneas como desee e incluso tener diferentes clientes.
+Si el cliente comercial tiene asociado un cliente financiero, el sistema sugerirá automáticamente el cliente y las condiciones de pago predefinidas.
+
+Puede definir el porcentaje de facturación, la referencia (orden de compra del cliente) y las fechas.
+
+Tenga en cuenta que si para el presupuesto general tiene más de una condición de facturación, puede agregar tantas líneas como desee e incluso tener diferentes clientes.
+
+Después de establecer las condiciones de facturación que desea aplicar, navegue hasta el feed y cambie el estado del flujo de trabajo a Factura, generando las autorizaciones de factura necesarias.
 
 Después de establecer las condiciones de facturación que desea aplicar, navegue hasta el feed y cambie el estado del flujo de trabajo a Factura, generando las autorizaciones de factura necesarias.
 <figure>
@@ -46,6 +56,16 @@ En el ejemplo mencionado anteriormente de planes de facturación anual, debe man
 
 Puede establecer condiciones en las líneas ya sea por porcentaje o por valor.
 
+Puede establecer diferentes condiciones de facturación para las líneas de entrega de clientes.
+Entonces, si tiene, por ejemplo, un presupuesto anual de tarifas, en el que genera una factura todos los meses, puede hacer el plan de facturación anual, si tiene la orden de compra del cliente.
+
+En las condiciones generales de facturación, debe hacer clic en aplicar a todos. El sistema aplicará las condiciones definidas en la opción general a todos los entregables del cliente.
+
+Puede ir a cada una de las líneas, presionar la opción de detalles y manipular la información de cada una de las líneas si es necesario, ajustando por ejemplo las fechas o PO.
+
+En el ejemplo mencionado anteriormente de planes de facturación anual, debe manipular fechas y órdenes de compra.
+
+Puede establecer condiciones en las líneas ya sea por porcentaje o por valor.
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson1-2.png)
