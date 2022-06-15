@@ -1,16 +1,16 @@
 ---
 id:  invoice-estimate
 title: Estimates
-sidebar_label: 2.  invoice an Estimate
+sidebar_label: 2.  Facturar un Presupuesto
 ---
 
-## 2.  create retainer estimates
+## 2.  Crear Estimaciones de Retención
 
-Estimates can be created as retainers, and the system will automatically display their values.
+Las estimaciones se pueden crear como anticipos y el sistema mostrará automáticamente sus valores.
 
-Please check how you can create the estimate on Lesson 1 under the "estimates" section.
+Verifique cómo puede crear la estimación en la Lección 1 en la sección "estimates".
 
-To generate a retainer estimate please navigate onto the estimate general info tab, check the "Recurrence" option and hit the save button.
+Para generar una estimación de retención, vaya a la pestaña de información general de la estimación, marque la opción "Recurrencia" y presione el botón Guardar.
 
 <figure>
 
@@ -18,7 +18,7 @@ To generate a retainer estimate please navigate onto the estimate general info t
 <figcaption></figcaption>
 </figure>
 
-The system will display a new field named "Rep. Number" at the deliverable/client level. 
+El sistema mostrará un nuevo campo llamado "Número de representante" a nivel de entregable/cliente.
 
 <figure>
 
@@ -26,9 +26,9 @@ The system will display a new field named "Rep. Number" at the deliverable/clien
 <figcaption></figcaption>
 </figure>
 
-You can adjust the Rep.Number to the number of times the values need to be repeated.
+Puede ajustar Rep.Number al número de veces que se deben repetir los valores.
 
-On the example below, the Rep Number field is marked as 6 (it's a 6 month retainer estimate) and the system will multiply both the cost values and the income values by the Rep Number.
+En el ejemplo a continuación, el campo Número de representante está marcado como 6 (es una estimación de retención de 6 meses) y el sistema multiplicará los valores de costos y los valores de ingresos por el Número de representante.
 
 <figure>
 
@@ -37,12 +37,12 @@ On the example below, the Rep Number field is marked as 6 (it's a 6 month retain
 </figure>
 
 :::note
-Please be aware that the values under Third Party, Expenses and Resources will be displayed with the same values.
+Tenga en cuenta que los valores en Terceros, Gastos y Recursos se mostrarán con los mismos valores.
 :::
 
-After the client approval the system will display the information under the project with the recurrence information
+Después de la aprobación del cliente, el sistema mostrará la información del proyecto con la información de recurrencia.
 
-At the project level third-Party and expenses will be available under "Planned Costs"
+A nivel de proyecto, los gastos de terceros y estarán disponibles en "Costos planificados"
 
  
 
@@ -52,7 +52,7 @@ At the project level third-Party and expenses will be available under "Planned C
 <figcaption></figcaption>
 </figure>
 
-Resources will be available under "Planned Time"
+Los recursos estarán disponibles en "Tiempo planificado"
 
 <figure>
 
