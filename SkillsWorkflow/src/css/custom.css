@@ -34,9 +34,12 @@
 } */
 
 figcaption {
-  color: #f8d54b;
+  color: #86C5FF;
 }
 
+.pagination-nav__label {
+  color: #333;
+}
 
 pre {
   background-color: #efefef
