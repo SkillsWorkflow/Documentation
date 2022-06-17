@@ -1,16 +1,16 @@
 ---
 id:  time-sheets
-title: Folha de Horas
-sidebar_label: Folha de Horas
+title: Hoja de Tiempo
+sidebar_label: Hoja de Tiempo
 ---
 
-## 1. Preencher Folhas de horas
+## 1. Llenar hojas de tiempo
 
 :::note 
-Para preencher horas, navegue para o módulo **Time sheets**
+Para completar las horas, navegue hasta el módulo **Time sheets**
 :::
 
-1. Para preencher horas, navegue para o módulo "Timesheets"
+1. Para completar las horas, navegue hasta el módulo "Timesheets"
 
 <figure>
 
@@ -18,17 +18,17 @@ Para preencher horas, navegue para o módulo **Time sheets**
 <figcaption>Módulo de Folha de Horas</figcaption>
 </figure>
 
-2. Verifique se algumas linhas aparecem em sua grade automaticamente, com base nos trabalhos aos quais você foi atribuído.
+2. Verifique si algunas líneas aparecen en su cuadrícula automáticamente, según los trabajos que se le han asignado.
 
-3. Se você não estiver vendo o trabalho ou projeto de que precisa, clique em "+" para adicionar uma nova entrada à grade do quadro de horários. Um pop-up será aberto.
+3. Si no está viendo el trabajo o el proyecto que necesita, haga clic en "+" para agregar una nueva entrada a la cuadrícula del parte de horas. Se abrirá una ventana emergente.
 
-4. Em seguida, use o campo de pesquisa na parte superior para pesquisar rapidamente o número do trabalho, o nome do cliente ou qualquer outra palavra-chave.
+4. Luego use el campo de búsqueda en la parte superior para buscar rápidamente el número de trabajo, el nombre del cliente o cualquier otra palabra clave.
 
-5. Neste popup você pode encontrar diferentes abas, dependendo de seus acessos.
+5. En esta ventana emergente puede encontrar diferentes pestañas según su acceso.
 
-6. Cada guia possui um ícone "Pesquisar", onde você pode filtrar facilmente as informações.
+6. Cada pestaña tiene un ícono de "Buscar" donde puede filtrar fácilmente la información.
 
-7. Você também pode filtrar ainda mais um campo específico digitando o que está procurando em cada título de coluna.
+7. También puede filtrar aún más un campo específico escribiendo lo que está buscando en el encabezado de cada columna.
 
 <figure>
 
@@ -43,8 +43,7 @@ Para preencher horas, navegue para o módulo **Time sheets**
 </figure>
 
 
-8. É possível especificar o tipo de atividade que você tem feito (por exemplo, pesquisa, reunião, etc.) para cada entrada de tempo. Vá para a coluna do tipo de trabalho e selecione o tipo de trabalho para cada linha na lista suspensa.
-
+8. Puede especificar el tipo de actividad que ha estado realizando (por ejemplo, investigación, reunión, etc.) para cada entrada de tiempo. Vaya a la columna de tipo de trabajo y seleccione el tipo de trabajo para cada fila de la lista desplegable.
 <figure>
 
 ![img-with-border](assets/timesheets/4-selecting-work-type.png)
@@ -52,7 +51,7 @@ Para preencher horas, navegue para o módulo **Time sheets**
 </figure>
 
   
-9. Verifique se os indicadores, no lado direito da folha de horas, mudam conforme insere o tempo.
+9. Verifique que los indicadores en el lado derecho de la hoja de tiempo cambien a medida que ingresa el tiempo.
 
 <figure>
 
@@ -61,7 +60,7 @@ Para preencher horas, navegue para o módulo **Time sheets**
 </figure>
 
 
-10. Verifique se você pode adicionar mais detalhes às suas entradas clicando com o botão direito do mouse e pressionando "detalhes".
+10. Compruebe si puede agregar más detalles a sus entradas haciendo clic derecho y presionando "detalles".
 
 <figure>
 
@@ -71,15 +70,15 @@ Para preencher horas, navegue para o módulo **Time sheets**
 
 
 
-11. Verifique se não há células vermelhas (horas inválidas).
+11. Verifique que no haya celdas rojas (horas no válidas).
 
-12. Eles podem aparecer se você estiver excedendo suas horas diárias máximas ou se tiver inserido o tempo num nível que não tenha permissão para (por exemplo, se inseriu o tempo num projeto e só tiver permissão para inserir o tempo em trabalhos).
+12. Pueden aparecer si está excediendo su máximo de horas diarias o si ha ingresado tiempo a un nivel que no tiene permitido (por ejemplo, si ha ingresado tiempo en un proyecto y solo puede ingresar tiempo en obras).
 
-13. Se for esse o caso, apague essas horas e insira-as novamente na linha correta.
+13. Si ese es el caso, elimine esas horas y vuelva a ingresarlas en la línea correcta.
 
-14. Clique em "+" se a entrada de que precisa ainda não estiver em sua planilha de horas.
+14. Haga clic en "+" si la entrada que necesita no está ya en su hoja de tiempo.
 
-15. Você também pode ter permissão ou não para inserir tempo no fim de semana, feriados ou dias de férias, dependendo da política da sua empresa.
+15. Es posible que se le permita o no ingresar tiempo los fines de semana, feriados o días de vacaciones, según la política de su empresa.
 
 <figure>
 
@@ -88,8 +87,8 @@ Para preencher horas, navegue para o módulo **Time sheets**
 </figure>
     
 
-16. Quando estiver pronto, envie sua planilha de horas para aprovação clicando na seta, na barra de menu da folha de horas.
-17. Verifique se a cor das células muda para verde claro. Espere que seu supervisor aprove sua folha de horas.
+16. Cuando esté listo, envíe su hoja de tiempo para su aprobación haciendo clic en la flecha en la barra de menú de la hoja de tiempo.
+17. Compruebe que el color de las celdas cambia a verde claro. Espere a que su supervisor apruebe su hoja de tiempo.
 
 <figure>
 
@@ -98,9 +97,9 @@ Para preencher horas, navegue para o módulo **Time sheets**
 </figure>
     
 
-18. Verifique a legenda de baixo do calendário para obter detalhes.
-19. Verifique se não há dias / semanas incompletos.
-20. Verifique se não há dias pendentes de envio para aprovação (dias em azul)
+18. Consulte la leyenda debajo del calendario para obtener más detalles.
+19. Asegúrese de que no haya días/semanas incompletas.
+20. Asegúrese de que no haya días pendientes de envío para su aprobación (días en azul)
 
 <figure>
 
@@ -111,10 +110,10 @@ Para preencher horas, navegue para o módulo **Time sheets**
 
 ---
 
-## 2. Aprovar Folhas de Horas
+## 2. Aprobar partes de horas
 
 :::note
-Navegue para o módulo **Time sheets Approval**
+Navegar al módulo **Time sheets Approval**
 :::
 
 <figure>
@@ -123,7 +122,7 @@ Navegue para o módulo **Time sheets Approval**
 <figcaption>Módulo de Folha de Horas</figcaption>
 </figure>
 
-1. Pode aprovar todas as folhas de horas solicitadas clicando no ícone de verificação no lado superior direito.
+1. Puede aprobar todas las hojas de horas solicitadas haciendo clic en el icono de verificación en la parte superior derecha.
 
 <figure>
 
@@ -131,7 +130,7 @@ Navegue para o módulo **Time sheets Approval**
 <figcaption>Aprovar todas as folhas de horas</figcaption>
 </figure>
 
-2. Aprove um grupo clicando no ícone de verificação na barra de grupos.
+2. Aprueba un grupo haciendo clic en el ícono de verificación en la barra de grupos.
 
 <figure>
 
@@ -139,7 +138,7 @@ Navegue para o módulo **Time sheets Approval**
 <figcaption>Aprovar grupo de folhas de horas</figcaption>
 </figure>
 
-3. Aprove apenas o selecionado clicando no ícone de verificação no lado superior direito após selecionar as planilhas de horas pretendidas.
+3. Apruebe solo el seleccionado haciendo clic en el icono de verificación en la parte superior derecha después de seleccionar las hojas de horas deseadas.
 
 <figure>
 
@@ -147,7 +146,7 @@ Navegue para o módulo **Time sheets Approval**
 <figcaption>As folhas de horas selecionadas aparecem em um azul mais escuro.</figcaption>
 </figure>
 
-4. As folhas de horas aprovadas terão um verde mais escuro
+4. Las hojas de horas aprobadas serán de un verde más oscuro
 
 <figure>
 
@@ -157,13 +156,13 @@ Navegue para o módulo **Time sheets Approval**
 
 ---
 
-## 3. Planear e Marcar Ausências
+## 3.Planificación y programación de ausencias
 
 :::note
-No mesmo workspace on as **folhas de horas** são aprovadas.
+En el mismo espacio de trabajo en las **hojas de tiempo** se aprueban.
 :::
 
-1. Também é possível rejeitar todos clicando no ícone X no lado superior direito ao lado do ícone de verificação.
+1. También puede rechazar todo haciendo clic en el ícono X en la parte superior derecha al lado del ícono de verificación.
 
 <figure>
 
@@ -171,7 +170,7 @@ No mesmo workspace on as **folhas de horas** são aprovadas.
 <figcaption>Rejeitar todas as folhas de horas</figcaption>
 </figure>
 
-2. Para rejeitar um grupo, basta ter em **Aprovação da Folha de Horas**. Na barra de grupo, clique no ícone X.
+2. Para rechazar un grupo, simplemente haga clic en **Aprobación de parte de horas**. En la barra de grupos, haga clic en el icono X.
 
 <figure>
 
@@ -179,7 +178,7 @@ No mesmo workspace on as **folhas de horas** são aprovadas.
 <figcaption>Rejeitar um grupo de folha de horas</figcaption>
 </figure>
 
-3. Apenas clicando no ícone X no lado superior direito próximo ao ícone de verificação depois de selecionar as folhas de horas pretendidas.
+3. Simplemente haciendo clic en el ícono X en el lado superior derecho al lado del ícono de verificación después de seleccionar las hojas de horas deseadas.
 
 <figure>
 
