@@ -20,6 +20,7 @@ Para crear un nuevo contacto de cliente, debe seguir los siguientes pasos:
 2. Haga clic en la pestaña "Contacto del cliente" seguido del botón "+" para crear una nueva línea.
 3. Para guardar estos cambios, es necesario completar el campo "Nombre".
 4. Guarde todos los cambios realizados haciendo clic en el símbolo.
+
 > Para eliminar un contacto de línea/cliente, solo deberá hacer clic en el botón "x".
 Screen_Shot_2018-08-08_at_14.15.16.png
 
