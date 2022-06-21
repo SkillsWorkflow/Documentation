@@ -1,11 +1,9 @@
 ---
 id:  contract-dashboard
-title: Contract
+title: Contrato Dashboards
 sidebar_label: 3. Contract Dashboards
 sidebar_position: 3
 ---
-
-## Contrato Dashboards
 
 Dashboards son una característica poderosa que se utiliza para respaldar rápidamente las decisiones relacionadas con un contrato específico.
 
