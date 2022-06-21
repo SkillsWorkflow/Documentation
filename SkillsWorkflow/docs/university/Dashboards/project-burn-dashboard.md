@@ -1,7 +1,7 @@
 ---
 id:  project-burn-dashboard
 title: Project Burn
-sidebar_label: 2. Project Burn Dashboard
+sidebar_label: 2. Proyecto Burn Dashboard
 sidebar_position: 2
 ---
 
