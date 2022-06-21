@@ -1,11 +1,8 @@
 ---
-id: crear-producto-comercial
+id: create-commercial-product
 title: Crear un nuevo producto comercial
 sidebar_label: 3. Crear producto comercial
 ---
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 Para crear un nuevo producto comercial debe ir al módulo "CRM" ya la sublista "Clientes".
 
