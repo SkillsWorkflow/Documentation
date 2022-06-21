@@ -1,5 +1,5 @@
 ---
-id:  cliente-dashboard
+id:  client-dashboard
 title: Clientes
 sidebar_label: 1. Clientes Dashboards
 sidebar_position: 1
