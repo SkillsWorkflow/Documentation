@@ -1,7 +1,7 @@
 ---
-id:  Utilización-dashboard
+id:  utilizzation-dashboard
 title: Utilización
-sidebar_label: 4. Utilización  Dashboard
+sidebar_label: 4. Utilización Dashboard
 sidebar_position: 4
 ---
 
