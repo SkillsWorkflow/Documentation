@@ -1,10 +1,10 @@
 ---
-id:  gastos
+id:  create-expenses
 title: gastos
 sidebar_label: 2. Crear Gastos
 ---
 
-## 2. Cómo Crear Gastos
+## Cómo Crear Gastos
 
 ### Los gastos se pueden crear de dos maneras:
 
