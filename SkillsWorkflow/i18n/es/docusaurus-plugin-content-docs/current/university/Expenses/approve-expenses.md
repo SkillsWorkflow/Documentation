@@ -4,7 +4,7 @@ title: Approve Expenses
 sidebar_label: 3. Aprobar Gastos
 ---
 
-## 3. Aprobar Gastos
+## Aprobar Gastos
 
 
 ### Los gastos se pueden aprobar de dos maneras:
