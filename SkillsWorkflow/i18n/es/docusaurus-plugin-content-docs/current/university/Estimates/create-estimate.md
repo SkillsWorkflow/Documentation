@@ -1,10 +1,8 @@
 ---
-id:  crear-estimate
-title: Estimados
+id:  create-estimate
+title: Crear un Estimado
 sidebar_label: 1.  Crear un Estimado
 ---
-
-## 1.  Crear un Estimado
 
 El estimados pueden vincularse a las tarifas o crearse directamente en un proyecto o trabajo.
 
