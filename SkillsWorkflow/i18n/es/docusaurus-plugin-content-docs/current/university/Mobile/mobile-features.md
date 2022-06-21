@@ -1,6 +1,6 @@
 ---
 id:  mobile-features
-title: "Mobile Features"
+title: "Funciones dispositivos moviles"
 sidebar_label: 1. Mobile Features
 sidebar_position: 2
 ---
