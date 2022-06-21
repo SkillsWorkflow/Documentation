@@ -1,5 +1,5 @@
 ---
-id:  tipos de notificaciones
+id:  notification-types
 title: "Tipos, categorías y periodicidad"
 sidebar_label: 1. Tipos de notificación
 sidebar_position: 1
