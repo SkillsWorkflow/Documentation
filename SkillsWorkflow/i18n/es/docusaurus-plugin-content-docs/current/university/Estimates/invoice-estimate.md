@@ -1,61 +1,50 @@
 ---
-id:  invoice-estimate
-title: Estimates
-sidebar_label: 2.  invoice an Estimate
+id: create-commercial-product
+title: Crear un nuevo producto comercial
+sidebar_label: 3. Crear producto comercial
 ---
 
-## 2.  create retainer estimates
-
-Estimates can be created as retainers, and the system will automatically display their values.
-
-Please check how you can create the estimate on Lesson 1 under the "estimates" section.
-
-To generate a retainer estimate please navigate onto the estimate general info tab, check the "Recurrence" option and hit the save button.
+Para crear un nuevo producto comercial debe ir al módulo "CRM" ya la sublista "Clientes".
 
 <figure>
 
-![img-box-shadow](/img/university/estimates/estimates-lesson2-1.png)
-<figcaption></figcaption>
+![img-box-shadow](/img/university/crm/crm-commercialproduct-1.png)
+
 </figure>
 
-The system will display a new field named "Rep. Number" at the deliverable/client level. 
+Seleccione el cliente comercial en el que necesita crear el producto.
+
+Para crear un nuevo producto, tendrás que:
+- Vaya a la pestaña de productos en la parte inferior
+- Presione el botón "+"
 
 <figure>
 
-![img-box-shadow](/img/university/estimates/estimates-lesson2-2.png)
-<figcaption></figcaption>
+![img-box-shadow](/img/university/crm/crm-commercialproduct-2.png)
+<figcaption>caption</figcaption>
 </figure>
 
-You can adjust the Rep.Number to the number of times the values need to be repeated.
-
-On the example below, the Rep Number field is marked as 6 (it's a 6 month retainer estimate) and the system will multiply both the cost values and the income values by the Rep Number.
+- Escriba el nombre del producto y marque la casilla "Activo"
+- Guarde los cambios haciendo clic en el símbolo del disco.
 
 <figure>
 
-![img-box-shadow](/img/university/estimates/estimates-lesson2-3.png)
-<figcaption></figcaption>
+![img-box-shadow](/img/university/crm/crm-commercialproduct-3.png)
+<figcaption>caption</figcaption>
 </figure>
-
-:::note
-Please be aware that the values under Third Party, Expenses and Resources will be displayed with the same values.
-:::
-
-After the client approval the system will display the information under the project with the recurrence information
-
-At the project level third-Party and expenses will be available under "Planned Costs"
 
  
 
+>Asociación de producto a una empresa específica
+>Esto solo es aplicable si dentro del mismo cliente, ciertos productos solo están disponibles para una empresa y no para las otras.
+Una vez que toda la información esté completa, haga clic en la parte superior del producto para ir a la página del producto.
+
+- En la pestaña CommercialProductCompanies, haga clic en el "+" para agregar la empresa que trabajará con este producto específico.
+- Elija la empresa del menú desplegable y luego guarde haciendo clic en el símbolo del disco.
+- Si tienes productos de facturación también podrás asociarlos a tus productos comerciales.
+
 <figure>
 
-![img-box-shadow](/img/university/estimates/estimates-lesson2-4.png)
-<figcaption></figcaption>
-</figure>
-
-Resources will be available under "Planned Time"
-
-<figure>
-
-![img-box-shadow](/img/university/estimates/estimates-lesson2-5.png)
-<figcaption></figcaption>
+![img-box-shadow](/img/university/crm/crm-commercialproduct-4.png)
+<figcaption>caption</figcaption>
 </figure>
