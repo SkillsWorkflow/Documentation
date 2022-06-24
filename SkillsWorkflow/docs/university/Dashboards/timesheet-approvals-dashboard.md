@@ -1,15 +1,15 @@
 ---
-id:  timesheet-approvals-dashboard
-title: Missing Timesheet Hours and Approvals
-sidebar_label: 8. Missing Timesheet Hours and Approvals Dashboard
+id:  timesheet-aprobaciones-dashboard
+title: Horas de Tiempo en Falta y Aprobaciones
+sidebar_label: 8. Horas de Tiempo en Falta y Aprobaciones Dashboard
 sidebar_position: 8
 ---
 
-## Missing Timesheet Hours and Approvals Dashboard
+## Horas de Tiempo en Falta y Aprobaciones Dashboard
 
-This dashboard provides real-time information on blocked users due to missing hours, and/or missing approvals of their subordinate's timesheets.
+Este dashboard proporciona información en tiempo real sobre los usuarios bloqueados debido a horas faltantes y/o aprobaciones faltantes de las hojas de tiempo de sus subordinados.
 
-To access select “Missing Timesheet Hours and Approvals” under the Timesheet menu.
+Para acceder, seleccione "Horas de Tiempo en Falta y Aprobaciones" en el menú del  Timesheet.
 
 <figure>
 
@@ -17,39 +17,40 @@ To access select “Missing Timesheet Hours and Approvals” under the Timesheet
 <figcaption></figcaption>
 </figure>
 
-The dashboard has 2 sections which show the following:
+El dashboard tiene 2 secciones que muestran lo siguiente:
 
-Graphs
-
-1. Blocked Users – A bar graph showing the number of users blocked for Missing Hours and Missing Approvals. Hovering on the bar will show the number of users.
-
-2. Blocked Users per Department – A pie chart showing the percentage breakdown per department on the number of users blocked. Hovering on the pie will show the number of users blocked in the department.
-
-3. Total of Hours Missing - A bar graph showing the number of delinquent hours for Missing Hours and Missing Approvals. Hovering on the bar will show the number of delinquent hours.
-
-4. Missing Hours per Department - A pie chart showing the percentage breakdown per department on the number of delinquent hours. Hovering on the pie will show the number of delinquent hours in the department.
-
-List of Blocked and Delinquent Users
+Gráficos
 
 
-A list showing the blocked users under each department with the following columns:
+1. Usuarios bloqueados: un gráfico de barras que muestra la cantidad de usuarios bloqueados por horas faltantes y aprobaciones faltantes. Al pasar el cursor sobre la barra se mostrará el número de usuarios.
+
+2. Usuarios bloqueados por departamento: un gráfico circular que muestra el desglose porcentual por departamento en la cantidad de usuarios bloqueados. Al pasar el cursor sobre el gráfico, se mostrará la cantidad de usuarios bloqueados en el departamento.
+
+3. Total Horas de tiempo en falta- Un gráfico de barras que muestra el número de horas en mora para Horas faltantes y Aprobaciones faltantes. Al pasar el cursor sobre la barra se mostrará el número de horas de mora.
+
+4. Horas faltantes por departamento: un gráfico circular que muestra el desglose porcentual por departamento en la cantidad de horas atrasadas. Al pasar el cursor sobre el gráfico, se mostrará el número de horas de morosidad en el departamento.
+
+Lista de usuarios bloqueados y Horas de tiempo en Falta
 
 
-- User Name – Skills User Name of blocked user
+Una lista que muestra los usuarios bloqueados en cada departamento con las siguientes columnas:
 
-- AD User Name – Active Directory User Name of blocked user
 
-- Timesheet Required – Checkbox to indicate if blocked user is required to fill in timesheets
+- Nombre de usuario –Skills User Nombre bloqueado
 
-- Blocked in System – Checkbox showing that user is blocked in Skills
+- Nombre de usuario de AD: nombre de usuario de Active Directory del usuario bloqueado
 
-- Blocked in AD – Checkbox showing that user’s AD is blocked
+- Timesheet Required – Casilla de verificación para indicar si se requiere que el usuario bloqueado con timesheets
 
-- Blocked Reason – Delinquency Reason either Missing Hours or Missing Approvals
+- Bloqueado en el sistema: casilla de verificación que muestra que el usuario está bloqueado en Skills
 
-- Missing Hours – Total delinquent hours to date
+- Bloqueado en AD: casilla de verificación que muestra que el AD del usuario está bloqueado
 
-- Missing Days – Click on View Bar and a window will pop showing the missing days
+- Razón de Bloqueo – Razón de Morosidad ya sea  Horas de tiempo en falta y aprobaciones
+
+- Horas faltantes: total de horas en mora hasta la fecha
+
+- Días que faltan: haga clic en la barra de visualización y aparecerá una ventana que muestra los días que faltan
 
 <figure>
 

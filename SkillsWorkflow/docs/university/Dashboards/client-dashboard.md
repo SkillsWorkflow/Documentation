@@ -54,7 +54,7 @@ This representation will show you a monthly distribution of planned revenue vers
 
 You will also find out the same representation of the corresponding accumulated values
 
- 
+
 
 Profitability Dashboard
 Go to the client module;
@@ -78,7 +78,7 @@ Additionally, you will be able to check the profit margin per project by percent
 <figcaption></figcaption>
 </figure>
 
- 
+
 
 Project Allocation Dashboard
 Go to the client module;
