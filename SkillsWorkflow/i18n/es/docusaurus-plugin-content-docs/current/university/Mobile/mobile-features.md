@@ -1,25 +1,25 @@
 ---
 id:  mobile-features
-title: "Mobile Features"
+title: "Funciones dispositivos moviles"
 sidebar_label: 1. Mobile Features
 sidebar_position: 2
 ---
 
-## Introduction
+## Introducción
 
-Skills Workflow Mobile app is available on all iOS and Android devices. The app accompanys the use of the Web and is constantly being improved and updated. Here is a list of current modules and features available on the app.
+Skills Workflow Mobile app está disponible en todos los dispositivos iOS y Android. La aplicación acompaña el uso de la Web y se mejora y actualiza constantemente. Aquí hay una lista de los módulos y funciones actuales disponibles en la aplicación.
 
-Current modules:
+Módulos actuales:
 
-- Projects
+- Proyectos
 - Jobs
-- Expenses
-- Notifications
+- Gastos
+- Notificaciones
 - Timesheets
 
-### Search
+### Búsqueda
 
-Tap on the search bar and type something to perform a system general search
+Toque en la barra de búsqueda y escriba algo para realizar una búsqueda general del sistema
 
 <figure>
 
@@ -27,7 +27,7 @@ Tap on the search bar and type something to perform a system general search
 <figcaption>Detail credit notes</figcaption>
 </figure>
 
-Tap on the available modules in the system and select from respective lists to show results
+Toque los módulos disponibles en el sistema y seleccione de las listas respectivas para mostrar los resultados
 
 <figure>
 
@@ -36,7 +36,7 @@ Tap on the available modules in the system and select from respective lists to s
 </figure>
 
 
-Type something with the filter on to search within any module
+Escriba algo con el filtro activado para buscar dentro de cualquier módulo
  
 <figure>
 
@@ -44,7 +44,7 @@ Type something with the filter on to search within any module
 <figcaption>List of credit notes</figcaption>
 </figure>
 
-Note: Open, view and navigate through documents
+Nota: Abrir, ver y navegar a través de documentos
 
 <figure>
 
@@ -52,16 +52,16 @@ Note: Open, view and navigate through documents
 <figcaption>List of credit notes</figcaption>
 </figure>
 
-Select and open a document to see its information. Different documents will have different tabs, these are currently available:
+Seleccione y abra un documento para ver su información. Diferentes documentos tendrán diferentes pestañas, estas están disponibles actualmente:
 
 - Feed
 - Info
-- Team
-- Files
+- Equipo
+- Archivos
 - Checklist
-- Additional Info
+- Información adicional
 - Jobs
-- Expenses
+- Gastos
 
 <figure>
 
@@ -77,23 +77,15 @@ Select and open a document to see its information. Different documents will have
 
 Actions
 
-After opening your document you can easily perform document actions by tapping on "What do you want to do?" in the Feed tab. This will open a new comment page where all actions will be added. Tap on the sliding menu to see all options:
+Después de abrir su documento, puede realizar fácilmente acciones en el documento tocando "¿Qué desea hacer?" en la pestaña Feed. Esto abrirá una nueva página de comentarios donde se agregarán todas las acciones. Toque en el menú deslizante para ver todas las opciones:
 
-- Move stage
-- Add images
-- Assign People
-- Change End Date
-- Add time
-- Notify people
-- Additional Information
-
-<figure>
-
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
-</figure>
-
-When you are done, tap ok and post your changes to the document
+- Mover etapa
+- Añadir imágenes
+- Asignar personas
+- Cambiar fecha de finalización
+- Agregar tiempo
+- Notificar a la persona
+- Información Adicional
 
 <figure>
 
@@ -101,11 +93,7 @@ When you are done, tap ok and post your changes to the document
 <figcaption>List of credit notes</figcaption>
 </figure>
 
-Note : Create Documents
-
-The mobile app will have document creation just like in the Web. To do this navigate to the desired document parent and tap on the top right corner "+" to create a new document underneath it. Currently available documents for creation:
-
-- Expenses 
+Cuando haya terminado, toque Aceptar y publique sus cambios en el documento.
 
 <figure>
 
@@ -113,9 +101,11 @@ The mobile app will have document creation just like in the Web. To do this navi
 <figcaption>List of credit notes</figcaption>
 </figure>
 
-Note : Add Time Sheets
+Note : Crear documentos
 
-The timesheet calendar will give you an overview of your hours. Select a day and add time to a document. Enter Timesheet details if you need. That's it.
+La aplicación móvil tendrá la creación de documentos al igual que en la Web. Para hacer esto, navegue hasta el documento principal deseado y toque en la esquina superior derecha "+" para crear un nuevo documento debajo. Documentos actualmente disponibles para la creación:
+
+- Gastos
 
 <figure>
 
@@ -123,4 +113,13 @@ The timesheet calendar will give you an overview of your hours. Select a day and
 <figcaption>List of credit notes</figcaption>
 </figure>
 
-New features and updates available will be added to this article
+Note : Agregar Time Sheets
+
+El timesheet calendario le dará una visión general de sus horas. Seleccione un día y agregue tiempo a un documento. Ingrese los detalles del parte de horas si lo necesita. Eso es todo.
+<figure>
+
+![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
+<figcaption>List of credit notes</figcaption>
+</figure>
+
+Se agregarán nuevas características y actualizaciones disponibles a este artículo.
