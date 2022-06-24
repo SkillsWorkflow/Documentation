@@ -7,16 +7,17 @@ sidebar_position: 6
 
 ## Leaves Dashboard
 
-Al programar nuestras propias licencias o aprobar las licencias enviadas por nuestros subordinados, es importante saber si otros empleados de la empresa también están de licencia el mismo día. Esto evita que la empresa quede paralizada debido a que muchos empleados están de baja el mismo día.
+When scheduling our own leaves or approving leaves submitted by our subordinates, it's important to know if other employees in the company are also on leave on the same day. This prevents the company from being crippled due to a lot of employees being on leave on the same day.
 
-Este dashboard proporciona una vista de calendario que muestra qué usuarios de la misma empresa están de baja cada día laborable del mes natural.
+This dashboard provides a calendar view showing which users from the same company are on leave on each working day of the calendar month.
 
-Para acceder a este panel, seleccione "Leaves" en el menú Espacios de trabajo y se mostrará el calendario del mes actual.
-En el lado derecho del dashboard hay una tabla que muestra a los usuarios cuyas vacaciones enviadas para ese mes calendario aún están pendientes de aprobación.
+To access this dashboard, select "Leaves" from the Workspaces menu and the current month calendar will be displayed.
+On the right side of the dashboard is a table showing users whose leave submitted for that calendar month is still pending approval.
+
 <figure>
 
 ![img-box-shadow](/img/university/dashboards/leaves-dashboard/university-leaves-1.png)
 <figcaption></figcaption>
 </figure>
 
-Para seleccionar el mes deseado, simplemente haga clic en los botones de avance o retroceso al lado del campo de visualización del mes.
+To select the desired month simply click the forward or backward buttons beside the month display field.

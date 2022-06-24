@@ -2,6 +2,7 @@
 id:  create-expenses
 title: gastos
 sidebar_label: 2. Crear Gastos
+sidebar_position: 2
 ---
 
 ## Cómo Crear Gastos

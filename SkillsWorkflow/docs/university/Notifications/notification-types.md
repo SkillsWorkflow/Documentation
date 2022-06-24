@@ -1,34 +1,34 @@
 ---
 id:  notification-types
-title: "Tipos, categorías y periodicidad"
-sidebar_label: 1. Tipos de notificación
+title: "Types, categories and periodicity"
+sidebar_label: 1. Notification Types
 sidebar_position: 1
 ---
 
-Skills Workflow envía dos tipos diferentes de notificaciones:
+Skills Workflow sends out two different types of notifications:
 
-- E-mail notificaciones
-- In-system notificaciones
+- E-mail notifications
+- In-system notifications
 
-En función de sus categorías, las notificaciones pueden tener distintas periodicidades:
+Depending on their categories, notifications can have different periodicities:
 
-- Inmediato (cada 5 minutos)
-- Diario (una vez al día)
-- Semanal (una vez a la semana)
+- Immediate (every 5 minutes)
+- Daily (once a day)
+- Weekly (once a week)
 
-Independientemente de que sean notificaciones inmediatas, diarias o semanales, todas las notificaciones se reciben en el sistema y se pueden enviar por correo electrónico si el indicador "Recibir notificaciones por correo electrónico" está habilitado en el formulario de usuario.
+Regardless of being immediate, daily or weekly notifications, all notifications are received in the system and can be sent via e-mail if the "Receive E-mail Notifications" flag is enabled on the user form.
 
-## Notificaciones inmediatas
+## Immediate Notifications
 
-Las notificaciones inmediatas se reciben en el sistema en un lapso de tiempo de hasta 5 minutos. Se trata principalmente de publicaciones generadas en un documento específico y pertenecen a las siguientes categorías:
+The immediate notifications are received in the system over a span of time of up to 5 minutes. These are mostly about posts generated on a specific document and are of the following categories:
 
-- Cambios en las etapas del flujo de JOB;
-- Cambios en los equipos de documentos;
-- Cambios en las fechas de los documentos;
-- Comentarios agregados al documento de los feed;
-- Etiquetado de notificaciones en el documento de los feed;
-- Dejar aprobaciones/desaprobaciones;
-- Timesheet desaprobaciones;
+- Changes to workflow stages;
+- Changes to document teams;
+- Changes to document dates;
+- Comments added to document feed;
+- Tagging notifications on the document feed;
+- Leave approvals/disapprovals;
+- Timesheet disapprovals;
 - Password resetting;
 
 <figure>
@@ -43,20 +43,20 @@ Las notificaciones inmediatas se reciben en el sistema en un lapso de tiempo de 
 <figcaption>E-mail notification</figcaption>
 </figure>
 
-## Notificaciones diarias
-Las notificaciones diarias se ven como un recordatorio diario para los usuarios. Estos se envían todos los días, a una hora específica, de acuerdo con lo establecido en el campo "Hora de alerta del asistente" y calculado en función del campo "Zona horaria predeterminada" en la sección de mantenimiento de back-office.
+## Daily Notifications
+The daily notifications are seen as a daily reminder to users. These are sent every day, at a specific time, according to what is set on the "Assistant Alert Time" field and calculated based on the "Default Time Zone" field in the back-office maintenance section.
 
-Estas notificaciones son de las siguientes categorías:
+These notifications are of the following categories:
 
-1. Horas pendientes del parte de horas y días de tolerancia restantes;
-2. Aprobaciones de partes de horas pendientes;
-3. Aprobaciones de licencias pendientes;
-4. Alerta de timesheet en falta y bloqueo por falta de horas en el parte de horas:
-5. Al responsable respecto de los recursos a su cargo;
-6. A los propios recursos;
-7. Confirmación de bloqueo debido a la falta de horas en el parte de horas:
-8. Al responsable respecto de los recursos a su cargo;
-9. A los propios recursos;
+1. Pending timesheet hours and tolerance days left;
+2. Pending timesheet approvals;
+3. Pending leave approvals;
+4. Delinquency and blocking alert due to missing timesheet hours:
+5. To the responsible regarding the resources they are responsible for;
+6. To the resources themselves;
+7. Blocking confirmation due to missing timesheet hours:
+8. To the responsible regarding the resources they are responsible for;
+9. To the resources themselves;
 
 <figure>
 
@@ -70,9 +70,9 @@ Estas notificaciones son de las siguientes categorías:
 <figcaption>E-mail notification</figcaption>
 </figure>
 
-## Notificaciones Semanales
-Salidas programadas para la semana siguiente a la actual:
-De acuerdo con la configuración de "Notificación de Bajas Día de la Semana" en el módulo de mantenimiento del back-office, los responsables recibirán una única notificación en un día específico de la semana informando qué recursos de los que son responsables estarán de baja la semana siguiente;
+## Weekly Notifications
+Leaves scheduled for the week after the current one:
+According to the "Leaves Notification Week Day" configuration in the maintenance module of the back-office, the responsibles will receive one single notification on a specific day of the week informing which resources they are responsible for will be on leave on the following week;
 
 <figure>
 
@@ -86,10 +86,10 @@ De acuerdo con la configuración de "Notificación de Bajas Día de la Semana" e
 <figcaption>E-mail notification</figcaption>
 </figure>
 
-## Mis Notificaciones
-En Skills Workflow, ahora es posible seleccionar qué notificaciones desea recibir un usuario según el rol que desempeña. Esto significa que un usuario puede optar por recibir notificaciones como una perspectiva de usuario o como responsable.
+## My Notifications
+In Skills Workflow it is now possible to select which notifications a user wants to receive based on the role they play. This means that a user can opt to receive notifications as a user perspective or as a responsible.
 
-Mis Notificaciones:
+My Notifications:
 - Push
 - Email
 - Timesheets
@@ -97,15 +97,14 @@ Mis Notificaciones:
 - Documents
 - Digest Email
 
-Notificaciones Responsables:
-- Timesheets para expirar
-- Timesheets expirado
+Responsible Notifications:
+- Expiring Timesheets
+- Expired Timesheets
 - Timesheets to Approve
-- Leaves para aprobar 
+- Leaves to Approve
 
 <figure>
 
 ![img-box-shadow](/img/university/notifications/notifications7.png)
 <figcaption>Notifications settings</figcaption>
 </figure>
-
