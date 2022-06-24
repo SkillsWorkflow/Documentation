@@ -1,5 +1,5 @@
 ---
-id:  timesheet-aprobaciones-dashboard
+id:  timesheet-approvals-dashboard
 title: Horas de Tiempo en Falta y Aprobaciones
 sidebar_label: 8. Horas de Tiempo en Falta y Aprobaciones Dashboard
 sidebar_position: 8

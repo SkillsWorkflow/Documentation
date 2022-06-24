@@ -1,5 +1,5 @@
 ---
-id:  cliente-personal-dashboard
+id:  client-staff-dashboard
 title: Resumen del plan de personal del cliente
 sidebar_label: 11. Resumen del plan de personal del cliente Dashboard
 sidebar_position: 11

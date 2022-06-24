@@ -1,5 +1,5 @@
 ---
-id: crear-cliente-comercial
+id: create-commercial-client
 title: Crear un nuevo cliente comercial
 sidebar_label: 2. Crear cliente comercial
 ---
