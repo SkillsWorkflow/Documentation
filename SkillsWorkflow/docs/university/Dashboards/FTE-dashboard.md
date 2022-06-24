@@ -7,9 +7,9 @@ sidebar_position: 10
 
 ## FTE
 
-FTE which stands for Full-Time Equivalent is a unit that measures the workload of an employee. FTE is often used to measure an employee’s involvement in a project. In this dashboard, project managers can analyze the FTE in different levels (i.e. Company, Division, Department, Typology Group, Employee).
+FTE que significa Full-Time Equivalent es una unidad que mide la carga de trabajo de un empleado. FTE se usa a menudo para medir la participación de un empleado en un proyecto. En este tablero, los gerentes de proyecto pueden analizar el FTE en diferentes niveles (es decir, empresa, división, departamento, grupo de tipología, empleado).
 
-To access, select FTE under the Workspaces menu.
+Para acceder, seleccione FTE bajo la Workspaces menú.
 
 <figure>
 
@@ -17,53 +17,54 @@ To access, select FTE under the Workspaces menu.
 <figcaption></figcaption>
 </figure> 
 
-The first section is the selection criteria where you define the following:
+La primera sección son los criterios de selección donde se define lo siguiente:
 
-1. Year
+1. Año
 
-2. Company
+2. Compañía
 
-3. Division
+3. División
 
-4. Department
+4. Departamento
 
-The next section is where you define the period you want to analyze. Slide the start and end date flags through the horizontal calendar to set the period.
+La siguiente sección es donde define el período que desea analizar. Deslice las banderas de fecha de inicio y finalización a través del calendario horizontal para establecer el período.
 
-The last section is a list view showing “Users per Typology Group, Department and Division”. It is presented in a hierarchy from Division to User levels that can be expanded or collapsed. The report has 4 column sections that show the following:
+La última sección es una vista de lista que muestra "Usuarios por grupo de tipología, departamento y división". Se presenta en una jerarquía desde los niveles de División hasta los de Usuario que se pueden expandir o contraer. El informe tiene secciones de 4 columnas que muestran lo siguiente:
 
-People
+Personas
 
-- Active – Headcount with active status
+- Activo: recuento con estado activo
+-
+- FTE – (Capacidad + Tiempo de entrega + Tiempo de vacaciones) / Horas de trabajo
 
-- FTE – (Capacity + LeaveTime + HolidayTime) / WorkHours 
+- Capacidad – Total de horas de trabajo del período – Total de vacaciones en horas – Total de vacaciones en horas
 
-- Capacity – Total Work Hours for the period – Total Holidays in hours – Total Leaves in hours
+Contratado
 
-Contracted
+- Total: total de horas vendidas en la propuesta de tarifa
 
-- Total – Total hours sold in Fee Proposal
+- % Capacidad – (Total Contratado / Capacidad) * 100
 
-- % Capacity – (Total Contracted / Capacity) * 100
+Facturable + Forecast
 
-Billable + Forecast
+- Total: Horas Facturables Reales + Forecast Horas
+- Forecast – Total de Horas Previstas
+- % Contratado – (Total Facturable y Previsto / Total Horas Contratadas) * 100
+- % Capacidad – (Total Facturable y Previsto / Capacidad) * 100
 
-- Total – Actual Billable Hours + Forecast Hours
-- Forecast – Total Forecasted Hours
-- % Contracted – (Total Billable and Forecasted / Total Contracted Hours) * 100
-- % Capacity – (Total Billable and Forecasted / Capacity) * 100
 Actual
 
-- Total – Billable + Non-Billable
+- Total: Facturable + no Facturable
 
-- Billable – Client
+- Facturable – Cliente
 
-- Non-Billable – Administrative
+- No facturable - Administrativo
 
-- Administrative – Actual Hours charged to admin tasks
+- Administrativo: horas reales cobradas a las tareas de administración
 
-- Client – Actual Hours charged to Clients
+- Cliente: horas reales cobradas a los clientes
 
-Expanding the Typology Group level will display the Employees with that Typology Group under that Department and Division. Expanding the Employee will show the breakdown of his time charges per client.
+Al expandir el nivel del Grupo de tipología, se mostrarán los Empleados con ese Grupo de tipología en ese Departamento y División. Al expandir Empleado se mostrará el desglose de sus cargos de tiempo por cliente.
 
 <figure>
 
