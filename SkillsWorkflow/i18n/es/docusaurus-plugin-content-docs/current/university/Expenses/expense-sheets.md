@@ -1,22 +1,21 @@
 ---
 id:  expense-sheets
-title: Expense Sheets
-sidebar_label: 1. Criar Folhas de Despesas
+title: Crear hojas de gastos
+sidebar_label: 1. Crear Hojas de Gastos
+sidebar_position: 1
 ---
 
-## 1. Criar Folhas de Despesas
+Puede crear y administrar gastos relacionados con proyectos y otras actividades.
 
-É possível criar e gerir despesas relativas a projetos e outras atividades.
-
-Todos os custos afetarão a rentabilidade do projeto.
+Todos los costos afectarán la rentabilidad del proyecto.
 
 :::note 
-Para criar uma nova **Folha de Despesas** (folha de agregação de várias despesas), execute as seguintes etapas.
+Para crear una nueva **Hoja de Gastos** (Hoja de Agregación de Gastos Múltiples), realice los siguientes pasos.
 :::
 
-1. Vá para o módulo Folhas de Despesas.
+1. Vaya al módulo Hojas de gastos.
 
-2. Selecione a lista All.
+2. Seleccione la lista Todos.
 
 <figure>
 
@@ -24,7 +23,7 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 <figcaption>Módulo de Folha de Despesas</figcaption>
 </figure>
 
-3. Click on the '+' on the expenses list.
+3. Haga clic en el '+' en la lista de gastos.
 
 <figure>
 
@@ -32,11 +31,11 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 <figcaption>Pop-up de Criação</figcaption>
 </figure>
 
-4. Preencha os campos das Despasas:
+4. Complete los campos de Gastos:
 
-- **Title** -Um nome que ajuda a localizar facilmente uma despesa específica.
-- **Department** - O departamento ao qual o utilizador pertence.
-- **Type** - Selecione o tipo de gasto (esta informação é muito importante, pois definirá o fluxo da despesa).
-- **Start Date / End Date** - Selecione a data de início da despesa e a data de fim (deve refletir a data em que o funcionário é reembolsado).
+- **Título**: Un nombre que lo ayuda a buscar fácilmente un gasto específico.
+- **Departamento**: El departamento al que pertenece el usuario.
+- **Tipo**: Seleccione el tipo de gasto (esta información es muy importante, ya que definirá el flujo de gastos).
+- **Fecha de inicio/Fecha de finalización**: Seleccione la fecha de inicio y la fecha de finalización del gasto (debe reflejar la fecha en que se reembolsa al empleado).
 
 

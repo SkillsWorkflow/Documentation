@@ -108,4 +108,3 @@ Responsible Notifications:
 ![img-box-shadow](/img/university/notifications/notifications7.png)
 <figcaption>Notifications settings</figcaption>
 </figure>
-

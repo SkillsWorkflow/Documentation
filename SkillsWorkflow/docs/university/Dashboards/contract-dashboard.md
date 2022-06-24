@@ -55,12 +55,12 @@ Typology group contracted time
 
 This representation shows the number of contracted hours per typology group, applied to the project previously selected.
 
- 
+
 
 Resources Dashboard
 Inside the previously selected contract
 Click on the "Resources Dashboard" tab
- 
+
 
 <figure>
 
@@ -89,7 +89,7 @@ Also, you will be able to check which user is filling in more hours under your p
 Staffing Dashboard
 Inside the previously selected contract
 Click on the "Staffing Dashboard" tab
- 
+
 
 <figure>
 

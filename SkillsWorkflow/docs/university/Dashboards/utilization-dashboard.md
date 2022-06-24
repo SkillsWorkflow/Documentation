@@ -72,7 +72,7 @@ set selection criteria
 
 
 7. User Projects – By clicking a User line in the Utilization per User Listing, the system will display a     breakdown of the Project/Job/Client charged by the User for the year classified according to Project Type.
- 
+
 Details are as follows:
 
 
