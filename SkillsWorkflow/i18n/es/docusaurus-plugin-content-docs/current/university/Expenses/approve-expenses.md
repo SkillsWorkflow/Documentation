@@ -1,10 +1,10 @@
 ---
 id:  approve-expenses
-title: Approve Expenses
-sidebar_label: 3. Aprobar Gastos
+title: aprobar gastos
+sidebar_label: 3. Aprobar gastos
 ---
 
-## Aprobar Gastos
+## Aprobar gastos Despesas
 
 
 ### Los gastos se pueden aprobar de dos maneras:
