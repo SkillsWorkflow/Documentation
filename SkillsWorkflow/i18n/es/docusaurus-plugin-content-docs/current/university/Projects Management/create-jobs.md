@@ -6,21 +6,21 @@ sidebar_position: 2
 ---
 
 
-## Create Jobs
+## ¿Cómo crear Jobs?
 
-1. To create a new Job, navigate to the "Projects" module.
+1. Para crear un nuevo Job, acceda al módulo "Proyectos".
 
-2. Select the active Project where you want to include the new Job under.
+2. Seleccione el Proyecto activo donde desea incluir el nuevo Job.
 
-3. Go to the tab Jobs inside the Project's page and click on the option "+".
+3. Diríjase a la pestaña de Jobs, dentro de la página del Proyecto y pulse en la opción "+"
 
-4. Fill in the Job creation popup form. 
+4. Completar el formulario de creación del nuevo Job.
 
 
-- **Title** - Name you would like to give to the Job.
-- **Department** - Department/Cost Center to which the job belongs to.
-- **Job Type** - Type of job you want to create (e.g. TVC, Print, etc.)
-- **Start/ End** - Choose when the Job starts and when it will end.
+- **Título** - Nombre que le gustaría dar al Job.
+- **Departamento** - Departamento/Centro de Costos al que pertenece el Job.
+- **Tipo de Job** - Tipo de job que desea crear (e.g. Televisión, Impresión, etc.)
+- **Início/ Fin** - Elija cuándo iniciará y terminará el Job.
 
 
 <figure>
@@ -32,13 +32,13 @@ sidebar_position: 2
 5. Once you complete all the fields click on the option 'check'.
 
 
-### Add Brief and upload files
+### Añadir un Brief y adjuntar archivos
 
-1. Just type in all the information on the description inside the new Job creation popup.
+1. Ingrese toda la información deseada en la descripción, dentro de la ventana de creación del nuevo Job.
 
-2. At any time you can change the Brief. For that you just need to click on the option that says "Edit".
+2. En cualquier momento podrá hacer cambios en el Brief. Para eso tan sólo necesita de pulsar en la opción que dice "Editar".
 
-3. You can also attach files such as briefs, images, emails, by dragging or clicking on the dotted square.
+3. También puede agregar vários tipos de archivos: documentos, presentaciones, imágenes, correos electrónicos, simplemente arrastrandolos para dentro de la ventana o pulsando sobre el botón con puntos.
 
 
 <figure>
@@ -49,14 +49,14 @@ sidebar_position: 2
 
 
 :::info
-After filling in all the information, you will need to activate the Job
+Después de completar la información, necesita de activar el Job.
 :::
 
 ### Activate the job
 
-1. To activate it and generate a job number, close the Job form by clicking on the check, and then on the bottom right side of the popup click on the small blue arrow.
+1. Para activarlo y generar una numeración específica, cierre el formulario del Job en el botón de verificación y luego pulse sobre la flecha azul, ubicada en la parte inferior derecha.
 
-2. A pop-up will appear saying your Job was successfully created. Click on this message to navigate directly to the Job.
+2. Aparecerá un mensaje de aviso que informará al usuario que el job fue creado exitosamente. Haga clic en el mensaje para navegar directamente para el job.
 
 
 <figure>
@@ -66,11 +66,11 @@ After filling in all the information, you will need to activate the Job
 </figure>
 
 
-### Move the Job status
+### Cambiar el estado del Job.
 
-1. Once you activate the Job you will need to continue to move the Job Forward by changing the Job Status.
+1. Después de activar el Job, necesitará de avanzar con el trabajo a través del cambio de estado a lo largo del flujo predeterminado. 
 
-2. For that you just need to click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-2.png) symbol and select one of the available options.
+2. Para eso, tan sólo necesita de pulsar en el botón![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-2.png) y escoger una de la opciones disponibles.
 
 <figure>
 
@@ -78,15 +78,15 @@ After filling in all the information, you will need to activate the Job
 <figcaption></figcaption>
 </figure>
 
-### Add people to the Job's Team
+### Añadir personas al equipo del Job.
 
-1. If you have access to change the Team you will see an Add Assignment symbol bellow the brief section.
+1. Caso tenga permisiones para cambiar el equipo, el botón de Asignar estará visible debajo de la sección del Brief.
 
-2. Add or remove people to each of the groups by clicking on the pencil.
+2. Agregue o remueva personas de cada equipo, pulsando sobre el lápiz.
 
-3. A dropdown will appear with a list of users.
+3. Una lista desplegable aparecerá con el nombre de los usuarios.
 
-4. Select the users that you want and click on the check to add them to the Team.
+4. Seleccione los usuarios que desea asignar y haga clic en el botón de verificación para añadirlos al equipo
 
 <figure>
 
@@ -95,13 +95,13 @@ After filling in all the information, you will need to activate the Job
 </figure>
 
 
-### Add a new file to the Job
+### Adjunte un nuevo archivo al Job
 
-1. To add a new file to the Job you just need to click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-1.png) symbol and submit the post.
+1. Para agregar un nuevo archivo al Job simplemente haga clic en el símbolo  ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-1.png) y haga la publicación.
 
-2. The file will appear automatically on the Job feed, where you can easily download it.
+2. El archivo aparecerá automáticamente en el mural del Job, donde podrá descargarlo fácilmente en cualquier momento.
 
-3. You can also check all Job related files on the tab "Files".
+3. Alternativamente, poderá consultar todos los archivos asociados al job a través de la pestãna "Archivos".
 
 <figure>
 
@@ -110,14 +110,14 @@ After filling in all the information, you will need to activate the Job
 </figure>
 
 :::info
-In order to notify someone on your team about a new post or Job related topics, you can always use the "Notifications" option.
+Para notificar a alguien en su equipo sobre una nueva publicación o temas relacionados con el Job en específico puede usar la opción "Notificaciones" siempre que así lo necesite.
 :::
 
-### Notifications
+### Notificaciones
 
-1. For that click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-3.png) symbol and select the users you want to notify.
+1. Para eso, haga clic en el botón![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-3.png) symbol and select y seleccione los usuarios que desea notificar.
 
-2. The user will be tagged on this comment and a notification will be sent.
+2. El usuario será identificado en el comentario de la publicación y una notificación le será enviada.
 
 <figure>
 
