@@ -1,35 +1,34 @@
 ---
-id:  resource-schedular
-title: Resource Schedular
-sidebar_label: 3. Resource Scheduler
+id:  Recurso-agendado
+title: Recurso Agendado
+sidebar_label: 3. Recurso Agendado
 sidebar_position: 3
 ---
 
-## Resource Scheduler
+## Recurso Agendado
 
-### Assignments in Skills Workflow can be done in numerous ways.
+### Tareas en Skills Workflow se puede hacer de muchas maneras.
 
-- You can assign executors directly on the job through the option "Add Assignment".
+- Puede asignar ejecutores directamente en el trabajo a través de la opción "Agregar Asignación".
 
-- Or you can do it using the Resource Scheduler.
+- O puede hacerlo usando el Programador de recursos.
 
-### On the Resource scheduler you have an overview of your team's workload and capacity.
+### En el Programador de recursos, tiene una descripción general de la capacidad y la carga de trabajo de su equipo.
 
-This feature will help you plan your resources' time more efficiently, by keeping track of each user's assigned jobs.
-
+Esta función lo ayudará a planificar el tiempo de sus recursos de manera más eficiente, al realizar un seguimiento de los trabajos asignados a cada usuario.
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-1.png)
 <figcaption>Resource Scheduler</figcaption>
 </figure>
 
-- On the left are all the resources for whom you are responsible for.
+- A la izquierda están todos los recursos de los que es responsable.
 
-- A user who doesn't have any resources to control will still be able to check his own workload.
+- Un usuario que no tenga ningún recurso que controlar podrá seguir controlando su propia carga de trabajo.
 
-- By using the filters above the calendar you can filter the information by resource, department, Job or Date.
+- Al usar los filtros sobre el calendario, puede filtrar la información por recurso, departamento, Job o fecha.
 
-- The Jobs that have been already assign will appear on the calendar by default.
+- Los trabajos que ya se han asignado aparecerán en el calendario de forma predeterminada.
 
 <figure>
 
@@ -37,19 +36,19 @@ This feature will help you plan your resources' time more efficiently, by keepin
 <figcaption>Resource filters</figcaption>
 </figure>
 
-### Assigning Jobs
+### Asignación de Jobs
 
-- On your right, you can see a list of all the Jobs that are yet to be assigned.
+- A su derecha, puede ver una lista de todos los trabajos que aún no se han asignado.
 
-- Only plannable jobs will show on the list.
+- Solo los trabajos planificables se mostrarán en la lista.
 
-- To define whether a job is plannable go to that Job and on the tab info, check the option "Plannable".
+- Para definir si un trabajo es planificable, vaya a ese trabajo y en la pestaña Información, marque la opción "Planificable".
 
-- If you pass the mouse on top of the Job, a tooltip will give you information about this Job, such as current stage or begining and end date.
+- Si pasa el mouse sobre el Job, una información sobre herramientas le dará información sobre este Job, como la etapa actual o la fecha de inicio y finalización.
 
-- The color of the Job will indicate the stage the Job is in.
+- El color del trabajo indicará la etapa en la que se encuentra el Job.
 
-- You can also use the filter box to search for a specific unassigned Job.
+- También puede usar el cuadro de filtro para buscar un trabajo específico no Job.
 
 <figure>
 
@@ -57,9 +56,9 @@ This feature will help you plan your resources' time more efficiently, by keepin
 <figcaption>Unassigned Jobs</figcaption>
 </figure>
 
-- To assign a specific Job you just need to drag and drop the Job on the calendar on the person you want to assign, considering the defined dates.
+- Para asignar un Job específico, solo necesita arrastrar y soltar el Job en el calendario de la persona que desea asignar, considerando las fechas definidas.
 
-- After assigning a resource, you will be able to move the Job through the calendar and edit the Job's duration by extending or shortening the bar.
+- Después de asignar un recurso, podrá mover el Trabajo a través del calendario y editar la duración del Trabajo extendiendo o acortando la barra.
 
 <figure>
 
@@ -67,17 +66,17 @@ This feature will help you plan your resources' time more efficiently, by keepin
 <figcaption>Assign a Job</figcaption>
 </figure>
 
-### Workload and capacity
+### Carga de trabajo y capacidad
 
-- Each user's daily capacity is defined previously on his profile sheet.
+- El capacidad diario de cada usuario viene definido previamente en su ficha de perfil.
 
-- After assigning the job to someone, you can define how many hours per day the resource will spent working on that Job.
+- Después de asignar el Job a alguien, puede definir cuántas horas por día pasará el recurso Job en ese Job.
 
-- To do so click and the box on the right end of the bar and type the number of hours.
+- Para hacerlo, haga clic en y en el cuadro en el extremo derecho de la barra y escriba el número de horas.
 
-- The numbers shown above the bars are the user's remaining capacity per day given all his assignments.
+- Los números que se muestran arriba de las barras son la capacidad restante del usuario por día dadas todas sus asignaciones.
 
-- They will appear in green colour if the user has spare capacity, or in red if the user is overloaded.
+- Aparecerán en color verde si el usuario tiene capacidad libre, o en rojo si el usuario está sobrecargado.
 
 <figure>
 
@@ -85,10 +84,9 @@ This feature will help you plan your resources' time more efficiently, by keepin
 <figcaption>Resource Availability</figcaption>
 </figure>
 
-- To better help you plan your resources availability, the leaves and vacations will also appear on the calendar.
+- Para ayudarlo a planificar mejor la disponibilidad de sus recursos, las licencias y vacaciones también aparecerán en el calendario.
 
-- They will be marked with a vertical blue color to differentiate from the Jobs.
-
+- Estarán marcados con un color azul vertical para diferenciarlos de los Job.
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-5.png)
