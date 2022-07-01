@@ -1,19 +1,21 @@
 ---
-id:  expenses
-title: Expenses
-sidebar_label: 2. Criar Despesas
+id:  create-expenses
+title: gastos
+sidebar_label: 2. Crear Gastos
+sidebar_position: 2
 ---
 
-## 2. Como criar Despesas 
+## Cómo Crear Gastos
 
-### As despesas podem ser criadas de duas maneiras:
+### Los gastos se pueden crear de dos maneras:
 
-- Diretamente num Projeto
-- Em uma Folha de Despesas
-### Create directly on the Project
+- Directamente en un Proyecto
+- En una hoja de gastos
+
+### Crear directamente en el Proyecto
 
 
-Para criar despesas, navegue até o módulo Projeto e selecione um projeto para adicionar recibos.
+Para crear gastos, navegue hasta el módulo Proyecto y seleccione un proyecto para agregar recibos.
 
 <figure>
 
@@ -21,17 +23,17 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figcaption>Project Item</figcaption>
 </figure>
 
-1. Clique no ícone '+' para criar um novo item de despesa.
+1. Haga clic en el icono '+' para crear una nueva partida de gastos.
 
-2. Adicione uma descrição.
+2. Agrega una descripción.
 
-3. Adicionar um arquivo
+3. Agregar un archivo
 
-4. Preencha os campos restantes
+4. Rellene los campos restantes
 
-5. Clique em 'ok' e envie o post.
+5. Haga clic en 'OK' y envíe la publicación.
 
-6. Repita o processo se houver mais despesas a serem adicionadas ao mesmo projeto.
+6. Repita el proceso si hay más gastos para agregar al mismo proyecto.
 
 <figure>
 
@@ -39,11 +41,11 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figcaption>Lista de despesas do Projecto</figcaption>
 </figure>
 
-### Create on Expense Sheet
+### Crear en hoja de gastos
 
-1. Vá para o módulo Folhas de Despesas.
+1. Vaya al módulo Hojas de gastos.
 
-2. Selecione a lista All.
+2. Seleccione la lista Todos.
 
 <figure>
 
@@ -51,7 +53,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figcaption>Módulo de Folhas de Despesas</figcaption>
 </figure>
 
-3. Selecione uma Folha de Despesas onde pretende adicionar uma Despesa e clique em '+' para criar.
+3. Seleccione una hoja de gastos en la que desee agregar un gasto y haga clic en '+' para crearla.
 
 <figure>
 
@@ -59,7 +61,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figcaption>Folha de Despesas</figcaption>
 </figure>
 
-4. Preencha os campos, clique em 'ok' e submeta o post.
+4. Complete los campos, haga clic en " OK " y envíe la publicación.
 
 <figure>
 
@@ -74,27 +76,27 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figcaption>pop-up Info de Despesas</figcaption>
 </figure>
 
-5. Acrescente uma descrição.
+5. Agrega una descripción.
 
-6. Selecione o tipo de Despesa.
+6. Seleccione el tipo de gasto.
 
-7. Adicione uma imagem com o recibo para adicionar um arquivo.
+7. Agregue una imagen con el recibo para agregar un archivo.
 
-8. No campo Documento, procure o projeto ou cliente que deseja vincular.
+8. En el campo Documento, busque el proyecto o cliente al que desea vincularse.
 
-9. Adicione o valor da despesa.
+9. Agregue el monto del gasto.
 
-10. Clique em 'ok'.
+10. Haga clic en 'ok'.
 
-11. Repita o processo se houver mais de 1 despesa.
+11. Repite el proceso si hay más de 1 gasto.
 
 
 :::note
-Por favor, leve em consideração que todos os campos em amarelo são obrigatórios.
-Dentro da mesma folha de despesas, recibos de projetos diferentes podem ser adicionados.
+Tenga en cuenta que todos los campos en amarillo son obligatorios.
+Dentro de la misma hoja de gastos, se pueden agregar recibos de diferentes proyectos.
 :::
 
-Se tiver vários recibos para a mesma folha, pode repetir o processo usando a opção de duplicar
+Si tiene varios recibos para la misma hoja, puede repetir el proceso usando la opción de duplicado
 
 <figure>
 
@@ -102,10 +104,10 @@ Se tiver vários recibos para a mesma folha, pode repetir o processo usando a op
 <figcaption>Expense List duplicate</figcaption>
 </figure>
 
-1. Selecione a despesa que deseja copiar e clique em duplicar.
+1. Seleccione el gasto que desea copiar y haga clic en duplicar.
 
-2. O sistema irá gerar um número automático e também um pop-up de confirmação.
+2. El sistema generará un número automático y también una ventana emergente de confirmación.
 
-3. Aceda à folha de despesas, no Feed troque a etapa, para enviar para o responsável para aprovação.
+3. Accede a la hoja de gastos, en Feed cambia el paso, para enviarla al responsable para su aprobación.
 
 

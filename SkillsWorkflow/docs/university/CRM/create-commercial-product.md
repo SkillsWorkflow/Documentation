@@ -17,6 +17,7 @@ Seleccione el cliente comercial en el que necesita crear el producto.
 Para crear un nuevo producto, tendrás que:
 - Vaya a la pestaña de productos en la parte inferior
 - Presione el botón "+"
+
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-2.png)
