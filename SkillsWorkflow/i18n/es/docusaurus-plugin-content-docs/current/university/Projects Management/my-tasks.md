@@ -1,39 +1,39 @@
 ---
-id:  my-tasks
-title: My Tasks
-sidebar_label: 8. My Tasks
+id:  mis tareas
+title: Mis tareas
+sidebar_label: 8. Mis tareas
 sidebar_position: 8
 ---
 
-## My Tasks
+## Mis Tareas
 
-### In Skills Workflow you can create tasks for yourself (if configured at your company).
+### En Skills Workflow puede crear tareas para usted mismo (si está configurado en su empresa).
 
-- Tasks are regular jobs that behave a little bit differently throughout the system.
+- Las tareas son trabajos regulares que se comportan de manera un poco diferente en todo el sistema.
 
-- They are created the same way as regular jobs but the workflow is usually much simpler (e.g. To Do> Done).
+- Se crean de la misma manera que los trabajos normales, pero el flujo de trabajo suele ser mucho más simple (p. ej., Tareas > Listo).
 
-- They are also typically on a separate list for easier consultation.
+- Por lo general, también se encuentran en una lista separada para facilitar la consulta.
 
-### Create a new Task
+### Crear una nueva tarea
 
-1. To create a new Task, navigate to the "Projects" module.
+1. Para crear una nueva tarea, navegue hasta el módulo "Proyectos".
 
-2. Select the active Project where you want to include the new Task under.
+2. Seleccione el proyecto activo en el que desea incluir la nueva tarea.
 
-3. Inside the Project's page click on the "+" sign and option "Job".
+3. Dentro de la página del Proyecto haz clic en el signo "+" y en la opción "JOB".
 
-### Filling in the Task creation popup form. 
+### Rellenar el formulario emergente de creación de tareas.
 
-- **Title** - Name you would like to give to the Task.
+- **Título** - Nombre que le gustaría dar a la Tarea.
 
-- **Department** - Choose Task (this defines that this job is actually a task).
+- **Departamento** - Elija Tarea (esto define que este trabajo es en realidad una tarea).
 
-- **Type** - Type of task you want to create-
+- **Tipo** - Tipo de tarea que desea crear-
 
-- **Start/End** - Choose when the Task starts and when it will end.
+- **Inicio /fin** - Elija cuándo comienza la tarea y cuándo finalizará.
 
-Once you complete all the fields click on the option 'check'.
+Una vez que complete todos los campos, haga clic en la opción 'verificar'.
 
 <figure>
 
@@ -41,13 +41,13 @@ Once you complete all the fields click on the option 'check'.
 <figcaption></figcaption>
 </figure>
 
-### Add a Description and upload files
+### Agregar una descripción y cargar archivos
 
-1. Just type in all the information on the description inside the new Task creation popup.
+1. Simplemente escriba toda la información en la descripción dentro de la nueva ventana emergente de creación de tareas.
 
-2. At any time you can change the Description. For that you just need to click on the option that says "Edit".
+2. En cualquier momento puede cambiar la Descripción. Para eso solo necesitas hacer clic en la opción que dice "Editar".
 
-3. You can also attach files such as images, emails, pdfs, by dragging or clicking on the dotted square.
+3. También puede adjuntar archivos como imágenes, correos electrónicos, archivos PDF, arrastrándolos o haciendo clic en el cuadrado punteado.
 
 <figure>
 
@@ -55,13 +55,13 @@ Once you complete all the fields click on the option 'check'.
 <figcaption></figcaption>
 </figure>
 
-After filling in all the information, you will need to activate the Task.
+Después de completar toda la información, deberá activar la Tarea.
 
-### Activate Task
+### Activar tarea
 
-1. To activate it and generate a Task number, close the Task form by clicking on the check, and then on the bottom right side of the popup click on the small blue arrow.
+1. Para activarlo y generar un número de tarea, cierre el formulario de tareas haciendo clic en la marca y luego, en la parte inferior derecha de la ventana emergente, haga clic en la pequeña flecha azul.
 
-2. A pop-up will appear saying it was successfully created. Click on this message to navigate directly to the Task.
+2. Aparecerá una ventana emergente que indica que se creó correctamente. Haga clic en este mensaje para navegar directamente a la tarea.
 
 <figure>
 
@@ -69,19 +69,19 @@ After filling in all the information, you will need to activate the Task.
 <figcaption></figcaption>
 </figure>
 
-### Add a checklist to your Task
+### Agregue una lista de verificación a su tarea
 
-You can add a list of smaller items inside your task in the form of a checklist.
+Puede agregar una lista de elementos más pequeños dentro de su tarea en forma de lista de verificación.
 
-1. On the Task's feed click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson8-symbol-1.PNG) symbol.
+1. En el feed de la tarea, haga clic en el ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson8-symbol-1.PNG) símbolo.
 
-2. Fill the name of the item you want to add.
+2. Complete el nombre del elemento que desea agregar.
 
-3. It will appear with a checkbox on the Task's Description at the top.
+3. Aparecerá con una casilla de verificación en la descripción de la tarea en la parte superior.
 
-4. Once that item is complete you can mark it as such by checking the box.
+4. Una vez que ese elemento esté completo, puede marcarlo como tal marcando la casilla.
 
-5. You can also check all items and delete items previously added on the tab "Items" at the top.
+5. También puede verificar todos los artículos y eliminar los artículos agregados previamente en la pestaña "Artículos" en la parte superior.
 
 <figure>
 
@@ -95,15 +95,15 @@ You can add a list of smaller items inside your task in the form of a checklist.
 <figcaption></figcaption>
 </figure>
 
-### Close the Task
+### Cerrar la tarea
 
-1. Once the task is complete, you can close it yourself.
+1. Una vez completada la tarea, puede cerrarla usted mismo.
 
-2. For that you just need to click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson8-symbol-2.png) symbol and select the available option.
+2.Para eso solo tienes que hacer click en el ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson8-symbol-2.png) símbolo y seleccione la opción disponible.
 
-3. Then click on the blue arrow on the feed post bar to make the status change effective.
+3. Luego haga clic en la flecha azul en la barra de publicación de noticias para que el cambio de estado sea efectivo.
 
-4. The status change will stay posted on the task's feed.
+4. El cambio de estado permanecerá publicado en el feed de la tarea.
 
 <figure>
 
@@ -111,13 +111,13 @@ You can add a list of smaller items inside your task in the form of a checklist.
 <figcaption></figcaption>
 </figure>
 
-### Check the "My Tasks" list
+### Consulte la lista "Mis tareas"
 
-- On the Skills menu bar, under Jobs you will find a list called My Tasks.
+- En la barra de menú Habilidades, en Trabajos, encontrará una lista llamada Mis tareas.
 
-- This list contains all your tasks.
+- Esta lista contiene todas sus tareas.
 
-- Users will only be able to see their own tasks or tasks they've been assigned to.
+- Los usuarios solo podrán ver sus propias tareas o las tareas que les han sido asignadas.
 
 <figure>
 
