@@ -1,5 +1,5 @@
 ---
-id:  horas planificadas
+id:  planned-hours
 title: Horas planificadas
 sidebar_label: 7. Horas planificadas
 sidebar_position: 7
