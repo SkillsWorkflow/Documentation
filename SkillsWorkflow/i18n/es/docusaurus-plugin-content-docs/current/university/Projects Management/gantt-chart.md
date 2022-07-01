@@ -1,11 +1,9 @@
 ---
-id:  Gráfico- Gantt
+id:  gantt-chart
 title: Gráfico de Gantt
 sidebar_label: 4. Gráfico de Gantt
 sidebar_position: 4
 ---
-
-## Gráfico de Gantt
 
 
 ### Una de las muchas formas de visualizar sus Proyectos en Skills Workflow está en un Gráfico de Gantt.
