@@ -6,15 +6,14 @@ sidebar_label: ADP
 
 ### Description
 
-This is the Documentation of how the Integration between the VBS and `Skills Workflow`. This documentation is for Skills Workflow located in the Cloud.
+This is the Documentation of how the Integration between the ADP and `Skills Workflow`.
 
 ---
 
 ### Data Exchange Technology
 
-On Skills Workflow only the employees from one company will be received based on the Company's code.
-An additional application must be installed locally in order to allow the information exchange.
-The scope of data exchanged on this integration is the User's Data.
+ADP places files in an FTP Server that contain infformation on employee.
+The files are encrypted using a PGP certificate.
 
 ---
 
@@ -28,39 +27,61 @@ The data is exchanged with Views available in the system.
 
 `Employees` are received by Skills Workflow. 
 
-New Employees created in HR-Link are automatically created in Skills Workflow.
-After creation, the only fields updated are "IsActive" and "Termination Date".
+New Employees created in ADP are automatically created in Skills Workflow as Users and Employees.
+When an Employee is modified in ADP, the fields affected are:
+- IsActive 
+- Termination Date
+
 Employees Data Exchanged
+The import files contains the following fields (separated by "|"):
+- Matr
+- Nome
+- Empresa
+- CR
+- CRNome
+- Funcao
+- Chefia
+- VinculoEmpregaticio
+- Nascto
+- EMail
+- Telefone
+- Contribuinte
+- Pais
+- Naturalidade
+- Admissao
+- Demissao
 
-The fields that are populated into Skills Workflow:
-
-- Name
-- UserName
-- Company
-- Company Code
-- Department
-- Typology
-- E-mail
-- Phone
-- Hire Date
-- IsActive
+The fields that are populated into Users:
+- Name - Generated based on the "Email" (initial part, before the "@"), replacing "." for spaces and appling proper casing 
+- UserName - Generated based on the "Email"
+- User Type - Is set to "VinculoEmpregaticio"
+- Company - Derived from "Empresa"
+- External ID - Set to "Matr"
+- Department - Taken from "CR"
+- Typology - Mapped using Department and "Funcao"
+- E-mail - Set to "Email"
+- Hire Date - Set to "Admissao"
+- IsActive - Derived from "Demissao" when not empty
 - SSO Username
+- Responsible - The User set in "Chefia"
+- Tax Payer Number - Set to "Contribuinte"
 
-Further, in the External Settings if the fields:
+The fields that are populated into Employees:
+- Name - Set to "Nome"
+- Company - Derived from "Empresa"
+- External ID - Set to "Matr"
+- IsActive - Derived from "Demissao" when not empty
 
-- Department External Id
-- Typology External Id
-
-Are filled, all the employees will have the same department and typology by default even though comes a different one on the file.
-
-All active status coming from VBS should be populated on the field: "User Active Status". i.e, leave status as "L" and active as "A".
+The following entities are created if they do not exist:
+- Department
+- Typologies
+- User Types
 
 Terminated employees will be automatically inactivated in Skills Workflow.
-SSO Username will be populated with e-mail coming from VBS.
-External ID is populated with the user e-mail only in creation.
+SSO Username will be populated with e-mail coming from ADP.
 
 ---
 
 ### Conclusion
 
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
+The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Customers. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.

@@ -1,15 +1,15 @@
 ---
-id:  list-view
-title: Manage List View
-sidebar_label: 5. Manage your List View
+id:  manage-list-view
+title: Administrar Vista de lista
+sidebar_label: 5. Administre su Vista de Lista
 sidebar_position: 5
 ---
 
-### In order for you to find what you are looking for in Skills Workflow, there is a menu on your left organized with different modules.
+### Para que encuentres lo que buscas en Skills Workflow, hay un menú a tu izquierda organizado con diferentes módulos.
 
-1. To navigate to each module just pass your mouse on each icon and a legend will appear identifying the respective module.
+1. Para navegar a cada módulo, simplemente pase el mouse sobre cada ícono y aparecerá una leyenda que identifica el módulo respectivo.
 
-2. After that you just need to click on the module or select one of the sub-lists available.
+2. Después de eso, solo necesita hacer clic en el módulo o seleccionar una de las sublistas disponibles.
 
 <figure>
 
@@ -17,27 +17,27 @@ sidebar_position: 5
 <figcaption></figcaption>
 </figure>
 
-### Whenever you are looking for a specific Job or simply want to search for a job who is grouped in one category, you can always use the sub-lists available.
+### Siempre que esté buscando un trabajo específico o simplemente quiera buscar un trabajo que esté agrupado en una categoría, siempre puede usar las sublistas disponibles.
 
-1. In the Jobs module, there are several sub-lists that shows the different jobs organized by status.
+1. En el módulo Job, hay varias sublistas que muestran los diferentes Job organizados por estado.
 
-2. These sub-lists are available for all users and can be configured according to each agency, meaning you can add new sub-lists to help you organize your jobs view.
+2. Estas sublistas están disponibles para todos los usuarios y se pueden configurar de acuerdo con cada agencia, lo que significa que puede agregar nuevas sublistas para ayudarlo a organizar su vista de Job.
 
-**By default you have the following sub-lists:**
+**Por defecto tienes las siguientes sub-listas:**
 
-- All - In the sub-list “All” you can see all the jobs that you are involved with.
+- Todos: en la sublista "Todos" puede ver todos los Job en los que está involucrado.
 
-- ClientRequests - In the sub-list "ClientRequests" you will see all the jobs requested by your clients.
+- Solicitudes de clientes: en la sublista "Solicitudes de clientes" verá todos los Job solicitados por sus clientes.
 
-- Closed - All the jobs that are closed are automatically moved to the sub-list "Closed".
+- Cerrado: todos los Job que están cerrados se mueven automáticamente a la sublista "Cerrado".
 
-- Delayed - In the sub-list “Delayed”, you may see all the jobs that are delayed. This means that the agreed date has passed and the Job is still not finished/closed.
+- Retrasado: en la sublista "Retrasado", puede ver todos los Job que están retrasados. Esto significa que la fecha acordada ha pasado y el Job aún no está terminado/cerrado.
 
-- Mine - All jobs that are created by you will automatically appear on the sub-list "Mine".
+- Mío: todos los Job creados por usted aparecerán automáticamente en la sublista "Mío".
 
-- MyTeam - If you just want to check your Team's jobs, you will need to access the sub-list "MyTeam".
+- MyTeam: si solo desea verificar los Job de su equipo, deberá acceder a la sublista "MyTeam".
 
-- Pending - In the sub-list “Pending”, you can see the jobs that need your attention and action. For instance, assigning a user or sending for approval.
+- Pendiente: en la sublista "Pendiente", puede ver los Job que necesitan su atención y acción. Por ejemplo, asignar un usuario o enviar para su aprobación.
 
 <figure>
 
@@ -46,9 +46,9 @@ sidebar_position: 5
 </figure>
 
 
-### Once you select the sub-list, you can always customize your own list view in order to organize the fields according to the relevance.
+### Una vez que seleccione la sublista, siempre puede personalizar su propia vista de lista para organizar los campos según la relevancia.
 
-You need to expand your view in order to be able to see all the available fields. For that you just need to click on the symbol that says "Expand".
+Necesita expandir su vista para poder ver todos los campos disponibles. Para eso solo necesitas hacer clic en el símbolo que dice "Expandir".
 
 <figure>
 
@@ -57,11 +57,11 @@ You need to expand your view in order to be able to see all the available fields
 </figure>
 
 
-### To customize your own view, you can drag and drop fields and organize the information according to your needs.
+### Para personalizar su propia vista, puede arrastrar y soltar campos y organizar la información según sus necesidades.
 
-1. You can also remove or add more fields through the option "Column Chooser". For that you just need to click on the option ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson5-symbol-1.png).
+1. También puede eliminar o agregar más campos a través de la opción "Selector de columnas". Para eso solo debes hacer clic en la opción ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson5-symbol-1.png).
 
-2. A box list will pop-up, with all the available fields. To add or remove you just need to check or uncheck accordingly.
+2.Aparecerá un cuadro de lista con todos los campos disponibles. Para agregar o eliminar, solo necesita marcar o desmarcar según corresponda.
 
 <figure>
 
@@ -70,11 +70,11 @@ You need to expand your view in order to be able to see all the available fields
 </figure>
 
 
-### You can also filter the available fields in order to see a specific stage, client, company, etc.
+### También puede filtrar los campos disponibles para ver una etapa específica, cliente, empresa, etc.
 
-1. For that you just need to click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson5-symbol-2.png) symbol.
+1. Para eso solo tienes que hacer click en el ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson5-symbol-2.png) símbolo.
 
-2. After that, you need to select the information you want to check and click ok.
+2. Después de eso, debe seleccionar la información que desea verificar y hacer clic en Aceptar.
 
 <figure>
 
