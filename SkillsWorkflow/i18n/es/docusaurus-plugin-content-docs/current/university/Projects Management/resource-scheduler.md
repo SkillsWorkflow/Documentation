@@ -1,11 +1,10 @@
 ---
-id:  Recurso-agendado
+id:  resource-scheduler
 title: Recurso Agendado
 sidebar_label: 3. Recurso Agendado
 sidebar_position: 3
 ---
 
-## Recurso Agendado
 
 ### Tareas en Skills Workflow se puede hacer de muchas maneras.
 
