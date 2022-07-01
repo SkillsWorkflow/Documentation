@@ -1,15 +1,15 @@
 ---
-id:  planned-hours
-title: Planned Hours
-sidebar_label: 7. Planned hours
+id:  horas planificadas
+title: Horas planificadas
+sidebar_label: 7. Horas planificadas
 sidebar_position: 7
 ---
 
-After creating your Project, you can start planning the amount of time that each resource will spend on this Project.
+Después de crear su Proyecto, puede comenzar a planificar la cantidad de tiempo que cada recurso dedicará a este Proyecto.
 
-1. Go to the tab Planned Hours inside your Project.
+1. Vaya a la pestaña Horas Planificadas dentro de su Proyecto.
 
-2. Click on the plus sign to add a new row to your planned hours table.
+2. Haga clic en el signo más para agregar una nueva fila a su tabla de horas planificadas.
 
 <figure>
 
@@ -17,7 +17,7 @@ After creating your Project, you can start planning the amount of time that each
 <figcaption></figcaption>
 </figure>
 
-3. On the User column, select the specific person that you would like to plan the hours for.
+3. En la columna Usuario, seleccione la persona específica para la que le gustaría planificar las horas.
 
 <figure>
 
@@ -25,11 +25,11 @@ After creating your Project, you can start planning the amount of time that each
 <figcaption></figcaption>
 </figure>
 
-4. The person's typology (i.e. position) will appear automatically on the Typology column.
+4. La tipología de la persona (es decir, la posición) aparecerá automáticamente en la columna Tipología.
 
-5. On the column Planned, enter the amount of hours planned for that person.
+5. En la columna Planificado, ingrese la cantidad de horas planificadas para esa persona.
 
-6. Repeat these steps until you have all the people that you need.
+6. Repita estos pasos hasta que tenga todas las personas que necesita.
 
 <figure>
 
@@ -37,32 +37,32 @@ After creating your Project, you can start planning the amount of time that each
 <figcaption></figcaption>
 </figure>
 
-Alternatively, you may plan the hours for a generic typology without selecting a specific person.
+Alternativamente, puede planificar las horas para una tipología genérica sin seleccionar una persona específica.
 
-1. To do so follow the first two steps as explained above.
+1. Para hacerlo, siga los dos primeros pasos como se explicó anteriormente.
 
-2. On the Typology column select the position that you need to plan the hours for.
+2. En la columna Tipología, seleccione el puesto para el que necesita planificar las horas.
 
-3. Do not fill in the user column.
+3. No rellene la columna de usuario.
 
-4. On the column Planned, enter the amount of hours planned for that typology.
+4. En la columna Planificado, ingrese la cantidad de horas planificadas para esa tipología.
 
-5. Repeat these steps until you have all the needed typologies.
+5. Repita estos pasos hasta que tenga todas las tipologías necesarias.
 
-Once people start entering timesheets for this Project and/or jobs belonging to this Project, those hours will immediately show up on the Actual column. 
+Una vez que las personas comiencen a ingresar hojas de tiempo para este Proyecto y/o trabajos que pertenecen a este Proyecto, esas horas aparecerán inmediatamente en la columna Real. 
 
-You will be able to track the planned vs actual hours in real time for your Projects.
+Podrá realizar un seguimiento de las horas planificadas frente a las reales en tiempo real para sus proyectos.
 
-Planned hours typically come from the contract with the client, and as such the system has specific roles that control whether a user has permission edit this column or not.
+Las horas planificadas generalmente provienen del contrato con el cliente y, como tal, el sistema tiene roles específicos que controlan si un usuario tiene permiso para editar esta columna o no.
 
-**You can also do monthly forecasts by filling in forecasted figures under each month column.**
+**También puede hacer pronósticos mensuales completando las cifras pronosticadas en la columna de cada mes..**
 
-The column called Forecast will show you the sum of all monthly forecasts.
+La columna llamada Pronóstico le mostrará la suma de todos los pronósticos mensuales.
 
-The column Actual and Forecast will show the sum of all monthly forecasts with the actuals up to the previous month (i.e. excluding the current month actuals shown on the stripped column).
+La columna Real y Pronóstico mostrará la suma de todos los pronósticos mensuales con los datos reales hasta el mes anterior (es decir, excluyendo los datos reales del mes actual que se muestran en la columna eliminada).
 
-**On the timesheet grid you may find a column called Remaining time**
-**(if this setting is turned on for your company).**
+**En la cuadrícula del parte de horas, puede encontrar una columna llamada Tiempo restante**
+**(si esta configuración está activada para su empresa).**
 
 <figure>
 
@@ -70,4 +70,4 @@ The column Actual and Forecast will show the sum of all monthly forecasts with t
 <figcaption></figcaption>
 </figure>
 
-This column will show the remaining planned time allocated to you specifically, or to your position.
+Esta columna mostrará el tiempo planificado restante asignado específicamente a usted oa su puesto.
