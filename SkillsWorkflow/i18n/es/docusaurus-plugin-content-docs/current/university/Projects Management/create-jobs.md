@@ -5,20 +5,20 @@ sidebar_label: 2. Create Jobs
 sidebar_position: 2
 ---
 
+1. Para crear un nuevo Job, navegue hasta el módulo "Proyectos".
 
-1. Para crear un nuevo Job, acceda al módulo "Proyectos".
+2. Seleccione el proyecto activo en el que desea incluir el nuevo Job.
 
-2. Seleccione el Proyecto activo donde desea incluir el nuevo Job.
+3.Vaya a la pestaña Trabajos dentro de la página del Proyecto y haga clic en la opción "+".
 
-3. Diríjase a la pestaña de Jobs, dentro de la página del Proyecto y pulse en la opción "+"
-
-4. Completar el formulario de creación del nuevo Job.
+4. Complete el formulario pop-up creación de Job  
 
 
-- **Título** - Nombre que le gustaría dar al Job.
-- **Departamento** - Departamento/Centro de Costos al que pertenece el Job.
-- **Tipo de Job** - Tipo de job que desea crear (e.g. Televisión, Impresión, etc.)
-- **Início/ Fin** - Elija cuándo iniciará y terminará el Job.
+- **Título** - Nombre que le gustaría dar a la Job.
+- **Departamento** - Departamento/Centro de Costo al que pertenece el Job.
+- **Tipo** - Tipo de Job que desea crear (por ejemplo, TVC, Imprimir, etc.)
+- **Fecha de Inicio/ Fecha de Fin** - Elija cuándo comienza el Job y cuándo finalizará.
+
 
 
 <figure>
@@ -27,8 +27,16 @@ sidebar_position: 2
 <figcaption></figcaption>
 </figure>
 
-5. Once you complete all the fields click on the option 'check'.
+5. Una vez que complete todos los campos, haga clic en la opción 'verificar'.
 
+
+### Agregar resumen y cargar archivos
+
+1. Simplemente escriba toda la información en la descripción dentro de la nueva ventana emergente de creación de trabajo.
+
+2. En cualquier momento puedes cambiar el Brief. Para eso solo necesitas hacer clic en la opción que dice "Editar".
+
+3. También puede adjuntar archivos como resúmenes, imágenes, correos electrónicos, arrastrándolos o haciendo clic en el cuadrado punteado.
 
 ### Añadir un Brief y adjuntar archivos
 
@@ -46,12 +54,18 @@ sidebar_position: 2
 </figure>
 
 
-:::info
-Después de completar la información, necesita de activar el Job.
+
+:::Note
+Después de completar toda la información, deberá activar el Job
 :::
 
-### Activate the job
+### activar el Job
 
+
+1. Para activarlo y generar un número de trabajo, cierre el formulario de Job haciendo clic en el cheque y luego, en la parte inferior derecha de la ventana emergente, haga clic en la pequeña flecha azul.
+
+2. Aparecerá una ventana emergente que indica que su Job se creó con éxito. Haga clic en este mensaje para navegar directamente al Job.
+=======
 1. Para activarlo y generar una numeración específica, cierre el formulario del Job en el botón de verificación y luego pulse sobre la flecha azul, ubicada en la parte inferior derecha.
 
 2. Aparecerá un mensaje de aviso que informará al usuario que el job fue creado exitosamente. Haga clic en el mensaje para navegar directamente para el job.
@@ -62,6 +76,7 @@ Después de completar la información, necesita de activar el Job.
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-3.png)
 <figcaption></figcaption>
 </figure>
+
 
 
 ### Cambiar el estado del Job.
@@ -75,6 +90,7 @@ Después de completar la información, necesita de activar el Job.
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-4.png)
 <figcaption></figcaption>
 </figure>
+
 
 ### Añadir personas al equipo del Job.
 
@@ -93,6 +109,7 @@ Después de completar la información, necesita de activar el Job.
 </figure>
 
 
+
 ### Adjunte un nuevo archivo al Job
 
 1. Para agregar un nuevo archivo al Job simplemente haga clic en el símbolo  ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-1.png) y haga la publicación.
@@ -107,8 +124,9 @@ Después de completar la información, necesita de activar el Job.
 <figcaption></figcaption>
 </figure>
 
-:::info
-Para notificar a alguien en su equipo sobre una nueva publicación o temas relacionados con el Job en específico puede usar la opción "Notificaciones" siempre que así lo necesite.
+
+:::Note
+Para notificar a alguien de su equipo sobre una nueva publicación o temas relacionados con el Job, siempre puede usar la opción "Notificaciones".
 :::
 
 ### Notificaciones
@@ -123,17 +141,18 @@ Para notificar a alguien en su equipo sobre una nueva publicación o temas relac
 <figcaption></figcaption>
 </figure>
 
-### At the top of the page you will be able to find various tabs with information about this Job.
+### En la parte superior de la página podrá encontrar varias pestañas con información sobre este Job.
 
 
-- **Feed** - Activity and comments related with the Project.
+- **Feed** - Actividad y comentarios relacionados con el Proyecto.
 
-- **Jobs** - List of existing jobs belonging to this Project.
+- **Jobs** - Lista de trabajos existentes pertenecientes a este Proyecto.
 
-- **Planned Hours** - Planned versus Actual hours per typology and/or user for the Project.
+- **Tiempo planificado** - Tiempo planificado versus horas reales por tipología y/o usuario para el proyecto.
 
-- **Files** - All the files uploaded into this Project will appear on this tab.
+- **Archivos** - Todos los archivos cargados en este proyecto aparecerán en esta pestaña.
 
-- **History** - Track of status changes. You can see for example who created the Project and at what time.
+- **Historico** - Seguimiento de los cambios de estado. Puede ver, por ejemplo, quién creó el proyecto y en qué momento.
 
-- **Others** - You may also find other tabs depending on the modules of the system you have access to.
+- **Otros** - También puede encontrar otras pestañas según los módulos del sistema al que tenga acceso.
+
