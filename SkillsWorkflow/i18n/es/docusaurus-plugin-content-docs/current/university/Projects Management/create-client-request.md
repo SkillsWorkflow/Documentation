@@ -1,17 +1,17 @@
 ---
-id:  client-requests
-title: Create Client Requests
-sidebar_label: 6. Create Client Requests
+id:  solicitudes de clientes
+title: Crear solicitudes de clientes
+sidebar_label: 6. Crear solicitudes de clientes
 sidebar_position: 6
 ---
 
-From the client perspective, you can now create and control your own requests using Skills Workflow.
+Desde la perspectiva del cliente, ahora puede crear y controlar sus propias solicitudes mediante Skills Workflow.
 
-### After collecting your credentials and logging in, the first step is to create your request.
+### Después de recopilar sus credenciales e iniciar sesión, el primer paso es crear su solicitud.
 
-1. For that you just need to access the Project you're involved with, create a new Job.
+1. Para eso solo necesita acceder al Proyecto en el que está involucrado, crear un nuevo Job.
 
-2. You are only going to have access to the Projects you're involved with.
+2. Solo tendrá acceso a los proyectos en los que esté involucrado.
 
 <figure>
 
@@ -19,15 +19,15 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-### Filling in the job creation popup form.
+### Rellenar el formulario emergente de creación de empleo.
 
-- **Title** - name you would like to give to the Job.
+- **Título** - nombre que le gustaría dar al Job.
 
-- **Department** - Department to which the request/Job belongs to.
+- **Departamento** - Departamento al que pertenece la solicitud/Job.
 
-- **Job Type** - Type of Job you want to create (e.g. TVC, Print, etc).
+- **Job Type** - Tipo de trabajo que desea crear(e.g. TVC, Print, etc).
 
-- **Begin/End** - Choose when the Job starts and when it will end.
+- **Empezar/Terminar** - Elija cuándo comienza el trabajo y cuándo terminará.
 
 <figure>
 
@@ -35,13 +35,13 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-### After completing all the details, make sure you submit the post in order to create the Job.
+### Después de completar todos los detalles, asegúrese de enviar la publicación para crear el trabajo.
 
-- Once the Job is created, it will get a number that can be used as a reference.
+- Una vez que se crea el trabajo, obtendrá un número que se puede usar como referencia.
 
-- Don't forget to upload all the relevant information such as files, briefs, etc in order for the Account to be able to fully understand your request.
+-No olvide cargar toda la información relevante, como archivos, resúmenes, etc., para que la Cuenta pueda comprender completamente su solicitud.
 
-- Each Job you create represents a new request for the Agency. You can create as many jobs/requests as you need.
+- Cada Trabajo que crea representa una nueva solicitud para la Agencia. Puede crear tantos trabajos/solicitudes como necesite.
 
 <figure>
 
@@ -49,15 +49,16 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-### Move the Job status
+### Mover el estado del trabajo
 
-1. Once you activate the Job you will need to continue to move the Job Forward by changing the Job Status.
+1. Una vez que active el trabajo, deberá continuar avanzando el trabajo cambiando el estado del trabajo.
 
-2. For that you just need to click on the Screen_Shot_2017-10-10_at_12.21.36.png symbol and select one of the available options.
+2. Fo que sólo tiene que hacer clic en el Screen_Shot_2017-10-10_at_12.21.36.png y seleccione una de las opciones disponibles.
 
-3. Once you send the Job, the Agency will be able to review the request and Assign the team.
+3. Una vez que envíe el trabajo, la agencia podrá revisar la solicitud y asignar el equipo.
 
-4. Please note that all approvals and adjustments should be registered under the same Job/Request. This way it would be easy to track all changes needed, and the history of each request.
+4. Tenga en cuenta que todas las aprobaciones y ajustes deben registrarse en el mismo trabajo/solicitud. De esta manera, sería fácil realizar un seguimiento de todos los cambios necesarios y el historial de cada solicitud.
+
 
 <figure>
 
@@ -65,12 +66,10 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-### Throughout the process, you can always check the stage of your requests by clicking on the Job sub-list "Mine".
+### A lo largo del proceso, siempre puede verificar la etapa de sus solicitudes haciendo clic en la sublista de trabajos "Mío".
 
-1. By clicking on this sub-list you can check in which stage the Job is and also access the details of the Job, such as new posts, comments, etc.
-
-2. Once your Request is complete, you will be notified that the Job is completed.
-
+1. Al hacer clic en esta sublista, puede verificar en qué etapa se encuentra el trabajo y también acceder a los detalles del trabajo, como nuevas publicaciones, comentarios, etc.
+2. Una vez que se complete su solicitud, se le notificará que el trabajo se completó.
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-5.png)
@@ -79,15 +78,15 @@ From the client perspective, you can now create and control your own requests us
 
  
 
-Also it is possible to create Sub-Jobs under a main Job.
+También es posible crear Sub-Job bajo un Trabajo principal.
 
-### Create Sub-Jobs under a main Job
+### Crear sub-trabajos bajo un trabajo principal
 
-1. By clicking on the main job you can create sub-jobs with specific requests related with the main one.
+1. Al hacer clic en el trabajo principal, puede crear sub-trabajos con solicitudes específicas relacionadas con el principal.
 
-2. Inside the Job press on the option "+", create sub-job.
+2. Dentro del Job presionar sobre la opción "+", crear sub-Job.
 
-3. The information needed is the same you need to fill in on a Job.
+3. La información necesaria es la misma que necesita para completar un Job.
 
 <figure>
 
