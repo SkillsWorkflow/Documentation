@@ -1,12 +1,10 @@
 ---
 id:  create-jobs
-title: Create Jobs
+title: ¿Cómo crear Jobs?
 sidebar_label: 2. Create Jobs
 sidebar_position: 2
 ---
 
-
-## ¿Cómo crear Jobs?
 
 1. Para crear un nuevo Job, acceda al módulo "Proyectos".
 
