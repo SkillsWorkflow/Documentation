@@ -1,21 +1,21 @@
 ---
-id:  assign-users
-title: Assign or unassign Users
-sidebar_label: 9. Massively assign or unassign users
+id:  Asignar usuarios
+title: Asignar o desasignar usuarios
+sidebar_label: 9. Asignar o desasignar usuarios de forma masiva
 sidebar_position: 9
 ---
 
-## Massively assign or unassign users
+## Asignar o desasignar usuarios de forma masiva
 
-Follow the next steps to massively assign or unassign users on the Jobs' teams:
+Siga los siguientes pasos para asignar o desasignar masivamente usuarios en los equipos de Jobs:
 
-1. Go to the tab "Jobs".
+1. Vaya a la pestaña "Jobs".
 
-2. Select the desired Jobs from the list.
+2. Seleccione los trabajos deseados de la lista.
 
-3. Click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson9-symbol-1.png) symbol to allocate users.
+3. Haga clic en el ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson9-symbol-1.png) símbolo para asignar usuarios.
 
-4. Select the option allocate users.
+4. Seleccione la opción asignar usuarios.
 
 <figure>
 
@@ -25,7 +25,7 @@ Follow the next steps to massively assign or unassign users on the Jobs' teams:
 
  
 
-- Choose the assignment type (e.g. requester, responsible, executor, etc.)*
+- Elija el tipo de asignación (por ejemplo, solicitante, responsable, ejecutor, etc.)*
 
 <figure>
 
@@ -33,7 +33,7 @@ Follow the next steps to massively assign or unassign users on the Jobs' teams:
 <figcaption></figcaption>
 </figure>
 
-- Choose the intended user (you can type the name for easier finding) and click **OK**
+- Elija el usuario previsto (puede escribir el nombre para encontrarlo más fácilmente) y haga clic en **OK**
 
 <figure>
 
@@ -41,9 +41,9 @@ Follow the next steps to massively assign or unassign users on the Jobs' teams:
 <figcaption></figcaption>
 </figure>
 
-- Repeat this action if more users need to be assigned
+- Repita esta acción si necesita asignar más usuarios
 
-If the intention is to unassign users from the jobs' teams, the process is the same, but select the option remove allocated users instead.
+Si la intención es desasignar usuarios de los equipos de los Job, el proceso es el mismo, pero seleccione la opción eliminar usuarios asignados en su lugar.
 
 <figure>
 
