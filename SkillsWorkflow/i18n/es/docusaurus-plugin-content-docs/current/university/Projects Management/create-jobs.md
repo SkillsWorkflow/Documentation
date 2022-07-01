@@ -1,10 +1,9 @@
 ---
 id:  create-jobs
-title:  Crear Jobs
-sidebar_label: 2. Crear Jobs
+title: ¿Cómo crear Jobs?
+sidebar_label: 2. Create Jobs
 sidebar_position: 2
 ---
-
 
 1. Para crear un nuevo Job, navegue hasta el módulo "Proyectos".
 
@@ -19,6 +18,7 @@ sidebar_position: 2
 - **Departamento** - Departamento/Centro de Costo al que pertenece el Job.
 - **Tipo** - Tipo de Job que desea crear (por ejemplo, TVC, Imprimir, etc.)
 - **Fecha de Inicio/ Fecha de Fin** - Elija cuándo comienza el Job y cuándo finalizará.
+
 
 
 <figure>
@@ -38,6 +38,14 @@ sidebar_position: 2
 
 3. También puede adjuntar archivos como resúmenes, imágenes, correos electrónicos, arrastrándolos o haciendo clic en el cuadrado punteado.
 
+### Añadir un Brief y adjuntar archivos
+
+1. Ingrese toda la información deseada en la descripción, dentro de la ventana de creación del nuevo Job.
+
+2. En cualquier momento podrá hacer cambios en el Brief. Para eso tan sólo necesita de pulsar en la opción que dice "Editar".
+
+3. También puede agregar vários tipos de archivos: documentos, presentaciones, imágenes, correos electrónicos, simplemente arrastrandolos para dentro de la ventana o pulsando sobre el botón con puntos.
+
 
 <figure>
 
@@ -46,15 +54,21 @@ sidebar_position: 2
 </figure>
 
 
+
 :::Note
 Después de completar toda la información, deberá activar el Job
 :::
 
 ### activar el Job
 
+
 1. Para activarlo y generar un número de trabajo, cierre el formulario de Job haciendo clic en el cheque y luego, en la parte inferior derecha de la ventana emergente, haga clic en la pequeña flecha azul.
 
 2. Aparecerá una ventana emergente que indica que su Job se creó con éxito. Haga clic en este mensaje para navegar directamente al Job.
+=======
+1. Para activarlo y generar una numeración específica, cierre el formulario del Job en el botón de verificación y luego pulse sobre la flecha azul, ubicada en la parte inferior derecha.
+
+2. Aparecerá un mensaje de aviso que informará al usuario que el job fue creado exitosamente. Haga clic en el mensaje para navegar directamente para el job.
 
 
 <figure>
@@ -64,11 +78,12 @@ Después de completar toda la información, deberá activar el Job
 </figure>
 
 
-### Mover el estado del Job
 
-1. Una vez que active el Job, deberá continuar avanzando el Job cambiando el estado del Job.
+### Cambiar el estado del Job.
 
-2. Para isso, basta clicar no ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-2.png) ímbolo e selecione uma das opções disponíveis.
+1. Después de activar el Job, necesitará de avanzar con el trabajo a través del cambio de estado a lo largo del flujo predeterminado. 
+
+2. Para eso, tan sólo necesita de pulsar en el botón![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-2.png) y escoger una de la opciones disponibles.
 
 <figure>
 
@@ -76,15 +91,16 @@ Después de completar toda la información, deberá activar el Job
 <figcaption></figcaption>
 </figure>
 
-### Agregar personas al equipo del Job
 
-1. Si tiene acceso para cambiar el equipo, verá un símbolo Agregar asignación debajo de la breve sección.
+### Añadir personas al equipo del Job.
 
-2. Agregue o elimine personas a cada uno de los grupos haciendo clic en el lápiz.
+1. Caso tenga permisiones para cambiar el equipo, el botón de Asignar estará visible debajo de la sección del Brief.
 
-3. Aparecerá un menú desplegable con una lista de usuarios.
+2. Agregue o remueva personas de cada equipo, pulsando sobre el lápiz.
 
-4. Seleccione los usuarios que desee y haga clic en la casilla de verificación para agregarlos al equipo.
+3. Una lista desplegable aparecerá con el nombre de los usuarios.
+
+4. Seleccione los usuarios que desea asignar y haga clic en el botón de verificación para añadirlos al equipo
 
 <figure>
 
@@ -93,18 +109,21 @@ Después de completar toda la información, deberá activar el Job
 </figure>
 
 
-### Agregar un nuevo archivo al Job
 
-1.Para agregar un nuevo archivo al Job solo necesita hacer clic en el ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-1.png) símbolo y enviar la publicación.
+### Adjunte un nuevo archivo al Job
 
-2. El archivo aparecerá automáticamente en la fuente de Job, donde puede descargarlo fácilmente.
+1. Para agregar un nuevo archivo al Job simplemente haga clic en el símbolo  ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-1.png) y haga la publicación.
 
-3. También puede consultar todos los archivos relacionados con el trabajo en la pestaña "Archivos".
+2. El archivo aparecerá automáticamente en el mural del Job, donde podrá descargarlo fácilmente en cualquier momento.
+
+3. Alternativamente, poderá consultar todos los archivos asociados al job a través de la pestãna "Archivos".
+
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-6.png)
 <figcaption></figcaption>
 </figure>
+
 
 :::Note
 Para notificar a alguien de su equipo sobre una nueva publicación o temas relacionados con el Job, siempre puede usar la opción "Notificaciones".
@@ -112,9 +131,9 @@ Para notificar a alguien de su equipo sobre una nueva publicación o temas relac
 
 ### Notificaciones
 
-1.Para ello haga clic en el ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-3.png) símbolo y seleccione los usuarios que desea notificar.
+1. Para eso, haga clic en el botón![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-3.png) symbol and select y seleccione los usuarios que desea notificar.
 
-2. El usuario será etiquetado en este comentario y se le enviará una notificación.
+2. El usuario será identificado en el comentario de la publicación y una notificación le será enviada.
 
 <figure>
 
@@ -136,3 +155,4 @@ Para notificar a alguien de su equipo sobre una nueva publicación o temas relac
 - **Historico** - Seguimiento de los cambios de estado. Puede ver, por ejemplo, quién creó el proyecto y en qué momento.
 
 - **Otros** - También puede encontrar otras pestañas según los módulos del sistema al que tenga acceso.
+
