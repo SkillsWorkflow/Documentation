@@ -1,5 +1,5 @@
 ---
-id:  mis tareas
+id:  my-tasks
 title: Mis tareas
 sidebar_label: 8. Mis tareas
 sidebar_position: 8
