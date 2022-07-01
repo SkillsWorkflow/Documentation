@@ -1,5 +1,5 @@
 ---
-id:  solicitudes de clientes
+id:  create-client-request
 title: Crear solicitudes de clientes
 sidebar_label: 6. Crear solicitudes de clientes
 sidebar_position: 6
