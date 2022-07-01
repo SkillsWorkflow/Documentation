@@ -1,5 +1,5 @@
 ---
-id:  vista de la lista
+id:  manage-list-view
 title: Administrar Vista de lista
 sidebar_label: 5. Administre su Vista de Lista
 sidebar_position: 5
