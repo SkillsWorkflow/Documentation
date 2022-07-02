@@ -4,8 +4,6 @@ title: Crear un nuevo producto comercial
 sidebar_label: 3. Crear producto comercial
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 Para crear un nuevo producto comercial debe ir al módulo "CRM" ya la sublista "Clientes".
 
@@ -37,8 +35,8 @@ Para crear un nuevo producto, tendrás que:
 
  
 
->Asociación de producto a una empresa específica
->Esto solo es aplicable si dentro del mismo cliente, ciertos productos solo están disponibles para una empresa y no para las otras.
+> Asociación de producto a una empresa específica
+> Esto solo es aplicable si dentro del mismo cliente, ciertos productos solo están disponibles para una empresa y no para las otras.
 Una vez que toda la información esté completa, haga clic en la parte superior del producto para ir a la página del producto.
 
 - En la pestaña CommercialProductCompanies, haga clic en el "+" para agregar la empresa que trabajará con este producto específico.
