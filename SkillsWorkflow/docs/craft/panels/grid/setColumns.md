@@ -300,5 +300,23 @@ The property supports the following types of values:
 A flag to allow column editing
 
 
+## required
+Makes a column required to fill
 
+Type: Boolean
+
+```json
+{
+    dataField: "example",
+    required: true
+}
+```
+
+
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/document-image-required.png)
+
+</figure>
 
