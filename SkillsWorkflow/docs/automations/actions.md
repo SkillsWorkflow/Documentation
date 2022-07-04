@@ -1195,3 +1195,40 @@ The result will be in Data format with the values replaced from Body:
   "years": "30" 
 }
 ```
+
+## ConfigurationKeys
+ConfigurationKeys allows to retrieve a Skills Workflow Configuration Key and store the value as a parameter. 
+
+#### Configuration
+
+To configure this action, there is a required parameter that need to be set:
+* value - Key name of the configuration key
+
+#### Template
+```json {3,5-7}
+{
+  "actionType": "ConfigurationKeys",
+    "name": "GetConfigurationKeys",
+    "next": "Exit",
+    "value":"MyServerConfiguration"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is ConfigurationKeys
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* value - Key name of the configuration key
+
+#### Usage
+
+The result will the configuration Keys value parameter:
+```json {3,5-7}
+{
+    "TenantId": "d*******-3***-4***-a***-8***********",
+    "ClientId": "3*******-1***-4***-8***-e***********",
+    "ClientSecret": "y*******.f****~5*******.6**.n*****",
+    "apiUrl": "h****://g*****.c**/S*************/M**********.g**"
+}
+```
