@@ -8,11 +8,11 @@
     "description": "The label for category Craft in sidebar docs"
   },
   "sidebar.docs.category.Panels": {
-    "message": "Paineis",
+    "message": "Paneles",
     "description": "The label for category Panels in sidebar docs"
   },
   "sidebar.docs.category.Advanced": {
-    "message": "Avançado",
+    "message": "Avanzado",
     "description": "The label for category Advanced in sidebar docs"
   },
   "sidebar.docs.category.SDK": {
@@ -28,11 +28,11 @@
     "description": "The label for category Document in sidebar docs"
   },
   "sidebar.docs.category.Integrations": {
-    "message": "Integrações",
+    "message": "Integraciones",
     "description": "The label for category Integrations in sidebar docs"
   },
   "sidebar.university.category.Bills": {
-    "message": "Documentos Financeiros",
+    "message": "Documentos Financieros",
     "description": "The label for category Bills in sidebar university"
   },
   "sidebar.university.category.Contracts": {
@@ -40,19 +40,19 @@
     "description": "The label for category Contracts in sidebar university"
   },
   "sidebar.university.category.Estimates": {
-    "message": "Orçamentos",
+    "message": "Estimados",
     "description": "The label for category Estimates in sidebar university"
   },
   "sidebar.university.category.Expenses": {
-    "message": "Despesas",
+    "message": "Gastos",
     "description": "The label for category Expenses in sidebar university"
   },
   "sidebar.university.category.Notifications": {
-    "message": "Notificações",
+    "message": "Notificaciones",
     "description": "The label for category Notifications in sidebar university"
   },
   "sidebar.university.category.Projects Management": {
-    "message": "Gestão de Projectos",
+    "message": "Gestion de Proyectos",
     "description": "The label for category Notifications in sidebar university"
   }
 }
