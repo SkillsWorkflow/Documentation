@@ -24,9 +24,7 @@ To configure this action, the fields required to be filled are:
 * name
 * next
 
-#### Template
-
-```json {2}
+```json title="Template"
 {  
     "actionType": "Start",  
     "name": "Starting",  
@@ -59,9 +57,7 @@ To have a custom Response you must configure the httpResponse.
   * headers
   * body
 
-#### Template
-
-```json {2,4-10}
+```json title="Template"
 {
     "actionType": "Result",
     "name": "Exit",
@@ -107,9 +103,7 @@ To configure this action, the fields available are:
 * requestHeaders - Key-Value array - [{"name": "","value": ""}]
 * bodyFormData
 
-#### Template
-
-```json {2,5-15}
+```json title="Template"
 {  
     "actionType": "Rest",  
     "name": "",  
@@ -156,7 +150,7 @@ By setting the bodyMediaType as Json, it will automatically assume:
 * Content-Type - Set by default as "application/json"
 * Body - The request body should be set in JSON format and escaped
 
-```json
+```json title="JSON"
 {
   "bodyMediaType": "Json",
   "body": "{\"parameter\":\"value\"}"
@@ -171,7 +165,7 @@ By setting the bodyMediaType as Raw:
 * Content-Type - It is required to set it manually by passing the requestHeaders
 * Request Headers - Use this field to manually set the request headers
 
-```json {2}
+```json title="Raw"
 {
     "bodyMediaType":"Raw",  
     "body":"{\"parameter\":\"value\"}",  
@@ -197,7 +191,7 @@ By setting the bodyMediaType as UrlEncodedFormData:
 * bodyFormData - The request body should be sent in the bodyFormData parameter as an Array of Key -
   Values: [{"key":"value"}]
 
-```json {2}
+```json title="Url Encoded FormData"
 {
     "bodyMediaType":"UrlEncodedFormData",  
     "bodyFormData": [  
@@ -227,7 +221,7 @@ By setting the bodyMediaType as File:
 * Body - The body parameter must contain the file content
 * You can combine the Download action to obtain a file content from any URL
 
-```json {2}
+```json json title="File"
 {
     "actionType": "Download",
     "name": "DownloadFile",
@@ -276,9 +270,7 @@ There are configurations that need to be applied in the automation workflow in o
 
 Please check the template description to know which parameters must be sent for each action.
 
-#### Template
-
-```json {2,5-14}
+```json title="Template"
 {  
    "actionType": "SftpListFiles" or "SftpDownload" or"SftpUpload" or "SftpMoveTo",  
    "name": "SftpListFiles",  
@@ -312,7 +304,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 <TabItem value="sftplistfiles">
 
-```json {2,5-10}
+```json title="Sftp List Files"
 {  
    "actionType": "SftpListFiles",  
    "name": "SftpListFiles",  
@@ -342,7 +334,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 <TabItem value="sftpdownload">
 
-```json {2,5-9}
+```json title="Sftp Download"
 {  
    "actionType": "SftpDownload",  
    "name": "SftpDownload",  
@@ -368,7 +360,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 <TabItem value="sftpupload">
 
-```json {2,5-10}
+```json title="Sftp Upload"
 {  
    "actionType": "SftpUpload",  
    "name": "SftpUpload",  
@@ -400,7 +392,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 <TabItem value="sftpmoveto">
 
-```json {2,5-10} 
+```json title="Sftp Move To"
 {  
    "actionType": "SftpMoveTo",  
    "name": "MoveSftpFileSuccess",  
@@ -443,9 +435,7 @@ To do so, it is required some parameters to be filled:
 * fromDisplayName - The display name that will appear on the sender
 * toAddress - The email address to whom the email should be sent
 
-#### Template
-
-```json {2,5-8}
+```json title="Template"
 {
     "actionType": "Email",
     "name": "SendEmail",
@@ -488,9 +478,7 @@ There are fields required to be filled to have this action working properly:
 
   * Default - The default indicates the path forward if none of the actions has a match
 
-#### Template
-
-```json {2,4-16}
+```json title="Template"
 {
     "actionType": "Case",
     "name": "ExistsGetSharepointSiteUrl",
@@ -551,9 +539,7 @@ To configure this action, there are parameters that can be set:
 * Quote  
   If necessary, you can set the quote that should be used to split the columns values
 
-#### Template
-
-```json {17,21-42}
+```json title="Template"
 [
     {
         "actionType": "Start",
@@ -660,9 +646,7 @@ To configure this action, there are parameters that can be set:
   * Result action
 * When the subWorkflows ends, the next action set up in the Loop action will be triggered
 
-#### Template
-
-```json {2,27,30-31,56-85}
+```json title="Template"
 {
     "name": "ImportUsers",
     "actions": [
@@ -769,9 +753,7 @@ To do so it is required a parameter to be filled:
 
 * url - The URL to download the file
 
-#### Template
-
-```json {3,5}
+```json title="Template"
 {   
     "actionType": "Download",  
     "name": "DownloadFile",  
@@ -796,9 +778,7 @@ To do so it is required a parameter to be filled:
 
 * values - The mapped values will be available on the Map action result (Content)
 
-#### Template
-
-```json {3,5-8}
+```json title="Template"
 {  
    "actionType": "Map",  
    "name": "Map",  
@@ -820,9 +800,7 @@ To do so it is required a parameter to be filled:
 * Payload - A Json Body
 * values - The mapped values will be available on the Map action result (Content)
 
-#### Template
-
-```json {3,5-8}
+```json title="Template"
 {  
    "actionType": "Merge",  
    "name": "Merge",  
@@ -848,9 +826,7 @@ There are configurations that need to be applied in the automation workflow in o
 
 Please check the template description to know which parameters must be sent for each action.
 
-#### Template
-
-```json {3,5-7}
+```json title="Template"
 {  
    "actionType": "AzureAdAuthentication",  
    "name": "GetAzureAdToken",  
@@ -883,9 +859,7 @@ To do so it is required a parameter to be filled:
 * layoutId - The Id of the layout to use to create Pdf
 
 
-#### Template
-
-```json {3,5-7}
+```json title="Template"
 {
     "actionType": "CreatePdfFromDocument",
     "name": "GetPdfFromDocument",
@@ -917,9 +891,7 @@ To configure this action, there are parameters that can be set:
 * body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
 
 
-#### Template
-
-```json {3,5-7}
+```json title="Template"
 {
     "actionType": "ExecuteSubWorkflow",
     "name": "RunSubWorkflow",
@@ -950,9 +922,7 @@ To configure this action, there are parameters that can be set:
 * sessionId (optional) - 60 Characters Maximum. When set will execute synchronously the workflow. In other words, it will wait for the previous to finish before starting the next one.
 
 
-#### Template
-
-```json {3,5-7}
+```json title="Template"
 {
     "actionType": "EnqueueBackgroundWork",
     "name": "RunWorkflow",
@@ -984,9 +954,7 @@ To configure this action, there are some required parameters that need to be set
 * Values - The mapped values will be available on the Map action result (Content)
 
 
-#### Template
-
-```json {3,5-7}
+```json title="Template"
 {
     "actionType": "XmlMap",
     "name": "XmlMap",
@@ -1035,8 +1003,7 @@ Optional Parameters:
 * ignoreEmpty - Set to 'true' the list will only store non empty values.
 
 
-#### Template
-```json {3,5-7}
+```json title="Template"
 {
   "actionType": "CreateList",
   "name": "CreateList",
@@ -1071,8 +1038,7 @@ AddToList action allows to update an existing list (Array) of values stored as a
 
 #### Configuration
 
-#### Template
-```json {3,5-7}
+```json title="Template"
 {
   "actionType": "AddToList",
   "name": "UpdateList",
@@ -1104,8 +1070,7 @@ RemoveFromList action allows to remove values from an existing list (Array) of v
 
 #### Configuration
 
-#### Template
-```json {3,5-7}
+```json title="Template"
 {
   "actionType": "removeFromList",
   "name": "RemoveFromList",
@@ -1134,8 +1099,7 @@ This parameter can be used globally as it is stored in the parent context.
 
 #### Configuration
 
-#### Template
-```json {3,5-7}
+```json title="Template"
 {
   "actionType": "SetParameter",
   "name": "MyParameter",
@@ -1168,8 +1132,7 @@ To configure this action, there are some required parameters that need to be set
 * Data - Data Template with values as the body property names.
 * Body - The body with the content.
 
-#### Template
-```json {3,5-7}
+```json title="Template"
 {
     "actionType": "MapFromObject",
     "name": "MapFromObject",
@@ -1189,7 +1152,8 @@ To configure this action, there are some required parameters that need to be set
 #### Usage
 
 The result will be in Data format with the values replaced from Body:
-```json {3,5-7}
+
+```json title="Example"
 {
   "name": "John",
   "years": "30" 
@@ -1204,8 +1168,7 @@ ConfigurationKeys allows to retrieve a Skills Workflow Configuration Key and sto
 To configure this action, there is a required parameter that need to be set:
 * value - Key name of the configuration key
 
-#### Template
-```json {3,5-7}
+```json title="Template"
 {
   "actionType": "ConfigurationKeys",
     "name": "GetConfigurationKeys",
@@ -1224,7 +1187,8 @@ To configure this action, there is a required parameter that need to be set:
 #### Usage
 
 The result will the configuration Keys value parameter:
-```json {3,5-7}
+
+```json title="Template"
 {
     "TenantId": "d*******-3***-4***-a***-8***********",
     "ClientId": "3*******-1***-4***-8***-e***********",
