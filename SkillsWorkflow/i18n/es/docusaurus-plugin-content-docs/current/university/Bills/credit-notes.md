@@ -5,7 +5,7 @@ sidebar_label: 2. Gerar notas de credito a clientes
 sidebar_position: 2
 ---
 
-## 2. Generar Notas de Credito de Cliente
+## Generar Notas de Credito de Cliente
 
 Siempre que cambie el valores  de ventas del presupuesto facturado a un valor inferior, el sistema le sugerirá que se emita una nota de crédito.
 
