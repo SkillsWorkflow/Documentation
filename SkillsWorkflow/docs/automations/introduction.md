@@ -47,7 +47,7 @@ To invoke the action content use the following statement: {{['actionName']}}
 
 Please see the example below to see  access to the action GetProjectFile and get the Uri:
 
-```json {5} title="Accessing GetProjectFile action's content to use the Uri"
+```json title="Accessing GetProjectFile action's content to use the Uri"
 {   
     "actionType": "Download",  
     "name": "DownloadFile",  
@@ -60,6 +60,8 @@ It is also possible to access the full HttpRequest that triggered the Automation
 
 To do so, you must use the following statement: {{['#HttpRequest']}}
 
+---
+
 ## Converters
 
 It is possible to convert values in order to be able to export files (convert to base 64) or just to encode the URL.
@@ -71,13 +73,27 @@ To use these converters you will need to add a Pipe | after the field name.
 * ToJsonString - {{['GetProjectFile']$.Content | ToJsonString}}
 * ToDateUtc - {{['GetProjectFile']$.Content.CreatedOn | ToDateUtc}}
 
+---
+
+## Preprocessors
+
+Preprocessors are used to apply transformations on part of a expression.
+
+* #eval(< expression >) - Pre-evaluates an expression and replaces the tag with it's value.
+  * Can be used in any part of the expression.
+  ``` json title="Examples"
+  {
+    "example1": "{{['#eval(['MapCustomDatabaseForm'].Name)'].Content}}",
+    "example2": "{{['RecordsList'].Content..#eval(['MapCustomDatabaseForm'].Id)}}",
+    "example3": "{{['RecordsList'].Content..#eval(['MapCustomDatabaseForm'].name).#eval(['MapCustomDatabaseForm'].Id)}}"
+  }
+  ```
+
 ## Templates
 
 Some common used code snipets
 
-### SubWorkflow Template
-
-```
+``` json title="SubWorkflow Template"
 {
    "name":"CreateProjectIfNotExistsSubWorkflow",
    "actions":[
