@@ -6,7 +6,7 @@ sidebar_position: 1
 ---
 
 
-## 1. Cómo crear autorizaciones de factura
+## Cómo crear autorizaciones de factura
 
 Puede crear solicitudes de factura en el sistema y de esta manera informar al equipo financiero para que proceda con la creación/sincronización del documento al sistema financiero externo y genere la factura final.
 
