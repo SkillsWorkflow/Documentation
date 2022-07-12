@@ -1,5 +1,5 @@
 ---
-id:  client-requests
+id: create-client-requests
 title: Create Client Requests
 sidebar_label: 6. Create Client Requests
 sidebar_position: 6
@@ -16,6 +16,7 @@ From the client perspective, you can now create and control your own requests us
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-1.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -32,6 +33,7 @@ From the client perspective, you can now create and control your own requests us
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-2.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -46,6 +48,7 @@ From the client perspective, you can now create and control your own requests us
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-3.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -62,6 +65,7 @@ From the client perspective, you can now create and control your own requests us
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-4.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -74,10 +78,9 @@ From the client perspective, you can now create and control your own requests us
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-5.png)
+
 <figcaption></figcaption>
 </figure>
-
- 
 
 Also it is possible to create Sub-Jobs under a main Job.
 
@@ -92,6 +95,6 @@ Also it is possible to create Sub-Jobs under a main Job.
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-6.png)
+
 <figcaption></figcaption>
 </figure>
-

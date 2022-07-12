@@ -1,7 +1,8 @@
 ---
-id:  expense-sheets
+id: expense-sheets
 title: Expense Sheets
 sidebar_label: 1. Criar Folhas de Despesas
+sidebar_position: 1
 ---
 
 ## 1. Criar Folhas de Despesas
@@ -10,7 +11,7 @@ sidebar_label: 1. Criar Folhas de Despesas
 
 Todos os custos afetarão a rentabilidade do projeto.
 
-:::note 
+:::note
 Para criar uma nova **Folha de Despesas** (folha de agregação de várias despesas), execute as seguintes etapas.
 :::
 
@@ -21,6 +22,7 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expense-sheets-1.png)
+
 <figcaption>Módulo de Folha de Despesas</figcaption>
 </figure>
 
@@ -29,6 +31,7 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expense-sheets-2-creation.png)
+
 <figcaption>Pop-up de Criação</figcaption>
 </figure>
 
@@ -38,5 +41,3 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 - **Department** - O departamento ao qual o utilizador pertence.
 - **Type** - Selecione o tipo de gasto (esta informação é muito importante, pois definirá o fluxo da despesa).
 - **Start Date / End Date** - Selecione a data de início da despesa e a data de fim (deve refletir a data em que o funcionário é reembolsado).
-
-
