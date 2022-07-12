@@ -90,6 +90,7 @@ También es posible crear Sub-Trabajos bajo un Job principal.
 2. Dentro del Job presionar sobre la opción "+", crear sub-Job.
 
 3. La información necesaria es la misma que necesita para completar un Job.
+
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-6.png)
