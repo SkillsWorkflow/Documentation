@@ -60,8 +60,9 @@ Desde la perspectiva del cliente, ahora puede crear y controlar sus propias soli
 3. Una vez que envíe el Job, la agencia podrá revisar la solicitud y asignar el equipo.
 
 4. Tenga en cuenta que todas las aprobaciones y ajustes deben registrarse en el mismo Job/solicitud. De esta manera, sería fácil realizar un seguimiento de todos los cambios necesarios y el historial de cada solicitud.
-<figure>
 
+
+<figure>
 ![img-box-shadow](/img/university/project-management/project-management-lesson6-4.png)
 
 <figcaption></figcaption>
