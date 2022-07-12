@@ -5,7 +5,6 @@ sidebar_label: 1. Clientes Dashboards
 sidebar_position: 1
 ---
 
-## Clientes Dashboards
 
 Dashboards son un recurso poderoso que se utiliza para respaldar rápidamente las decisiones relacionadas con un cliente o proyecto específico.
 
