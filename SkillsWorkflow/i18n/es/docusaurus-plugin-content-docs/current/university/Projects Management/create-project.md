@@ -1,11 +1,10 @@
 ---
 id:  create-project
-title: ¿Cómo crear un Proyecto?
-sidebar_label: 1. ¿Cómo crear un Proyecto?
+title: Cómo crear un Proyecto?
+sidebar_label: 1. Cómo crear un Proyecto?
 sidebar_position: 1
 ---
 
-## ¿Cómo crear un Proyecto?
 
 ### Un Proyecto es como un paraguas que agrupa un conjunto de tareas/jobs relacionados.
 
