@@ -5,9 +5,6 @@ sidebar_label: 2. Proyecto Burn Dashboard
 sidebar_position: 2
 ---
 
-## Proyecto de Burn Dashboard
-
-
 Dashboards una característica poderosa que se utiliza para respaldar rápidamente las decisiones relacionadas con un cliente o proyecto específico.
 
 El objetivo es darle al usuario la capacidad de controlar los procesos de una manera muy amigable y completa.
