@@ -4,8 +4,6 @@ title: Como administrar tablas Rate Card
 sidebar_label: 1. Administrar tablas Rate Card
 ---
 
-## Como administrar tablas de Rate Card
-
 Las tablas de tarifas son precios para grupos de tipología y / o usuarios.
 
 Puede configurar tantas tablas de tarifas como desee, o establecer más de una columna de tasas dentro de la misma tarifa de mesa.
