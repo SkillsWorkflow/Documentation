@@ -1,12 +1,9 @@
 ---
 id:  project-burn-dashboard
-title: Project Burn
+title: Proyecto Burn Dashboard
 sidebar_label: 2. Proyecto Burn Dashboard
 sidebar_position: 2
 ---
-
-## Proyecto de Burn Dashboard
-
 
 Dashboards una característica poderosa que se utiliza para respaldar rápidamente las decisiones relacionadas con un cliente o proyecto específico.
 
