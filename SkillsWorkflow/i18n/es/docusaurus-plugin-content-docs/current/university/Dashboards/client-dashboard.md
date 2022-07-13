@@ -1,6 +1,6 @@
 ---
 id:  client-dashboard
-title: Clientes
+title: Clientes Dashboards
 sidebar_label: 1. Clientes Dashboards
 sidebar_position: 1
 ---
