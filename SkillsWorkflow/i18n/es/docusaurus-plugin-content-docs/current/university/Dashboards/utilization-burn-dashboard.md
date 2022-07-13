@@ -1,8 +1,7 @@
 ---
 id:  utilization-burn-dashboard
 title: Burn y Utilización Dashboards
-
-sidebar_label: 5. Burn and Utilization Dashboards
+sidebar_label: 5. Burn y Utilizacion Dashboards
 sidebar_position: 5
 --- 
 
