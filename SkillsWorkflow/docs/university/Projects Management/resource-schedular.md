@@ -1,6 +1,6 @@
 ---
 id:  resource-schedular
-title: Resource Schedular
+title: Resource Scheduler
 sidebar_label: 3. Resource Scheduler
 sidebar_position: 3
 ---
