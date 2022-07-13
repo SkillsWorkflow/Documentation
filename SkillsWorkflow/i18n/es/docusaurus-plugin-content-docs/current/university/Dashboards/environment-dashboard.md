@@ -1,7 +1,7 @@
 ---
 id:  environment-dashboard
-title: Ambiente
-sidebar_label: 9.Ambiente Dashboard
+title: Ambiente Dashboard
+sidebar_label: 9. Ambiente Dashboard
 sidebar_position: 9
 ---
 
