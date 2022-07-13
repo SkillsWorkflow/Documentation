@@ -1,7 +1,7 @@
 ---
 id:  create-jobs
 title: Cómo crear Jobs?
-sidebar_label: 2. Create Jobs
+sidebar_label: 2. Crear Jobs
 sidebar_position: 2
 ---
 
