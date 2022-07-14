@@ -1,11 +1,9 @@
 ---
 id:  utilization-dashboard
-title: Utilización
+title: Utilización Dashboard
 sidebar_label: 4. Utilización Dashboard
 sidebar_position: 4
 ---
-
-## Utilización Dashboard
 
 Los gerentes de proyecto ponen mucho esfuerzo en la asignación de recursos. En la medida de lo posible, quieren que su equipo esté ocupado con tareas valiosas para la agencia (horas facturables), ya que esto aumentará la rentabilidad. Sin embargo, la asignación de recursos se convierte en un desafío a medida que el equipo crece cuando tiene que asignar recursos a diferentes proyectos que suceden al mismo tiempo.
 
