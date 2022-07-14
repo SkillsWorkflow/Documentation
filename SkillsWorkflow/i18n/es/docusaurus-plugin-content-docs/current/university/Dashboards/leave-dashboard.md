@@ -1,13 +1,11 @@
 ---
 id: leave-dashboard
-title: Leaves
+title: Permisos Dashboard
 sidebar_label: 6. Leaves Dashboard
 sidebar_position: 6
 ---
 
-## Leaves Dashboard
-
-Al programar nuestras propias licencias o aprobar las licencias enviadas por nuestros subordinados, es importante saber si otros empleados de la empresa también están de licencia el mismo día. Esto evita que la empresa quede paralizada debido a que muchos empleados están de baja el mismo día.
+Al programar nuestros proprios permisos o aprobar los permisos enviadas por nuestros subordinados, es importante saber si otros empleados de la empresa también están de licencia el mismo día. Esto evita que la empresa quede paralizada debido a que muchos empleados están de baja el mismo día.
 
 Este dashboard proporciona una vista de calendario que muestra qué usuarios de la misma empresa están de baja cada día laborable del mes natural.
 
