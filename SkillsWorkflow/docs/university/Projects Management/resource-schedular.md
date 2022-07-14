@@ -1,7 +1,7 @@
 ---
 id:  resource-schedular
-title: Resource Scheduler
-sidebar_label: 3. Resource Scheduler
+title: Gestión de Recursos
+sidebar_label: 3. Gestión de Recursos
 sidebar_position: 3
 ---
 
