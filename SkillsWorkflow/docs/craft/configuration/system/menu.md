@@ -3,7 +3,6 @@ id: menu
 title: 'Menu'
 sidebar_label: Menu
 ---
-### Description
 
 On this page you will find how to affect only the icon that appears in the menu.
 :::note
@@ -68,7 +67,7 @@ function onShowing(menus) {
 }
 ```
 
-### Example
+<h3>Example</h3>
 
 <figure>
 
