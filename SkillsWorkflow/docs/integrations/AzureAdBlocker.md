@@ -4,18 +4,18 @@ title: 'AzureAdBlocker'
 sidebar_label: AzureAdBlocker
 ---
 
-# Office 365 AD User Blocker/Unblocker
+# Bloqueador/desbloqueador de usuarios de Office 365 AD
 
-## Enable and Disable User Account using Missing TimeSheets
-### Requirements:
+## Habilitar y deshabilitar la cuenta de usuario usando hojas de horas faltantes
+### Requisitos:
 
 - Azure AD
-- Azure AD App registration with Microsoft Graph Permissions:
+- Azure AD Registro de aplicaciones con permisos de Microsoft Graph:
     - User.ManageIdentities.All
     - User.ReadWrite.All
-- User With adusername = email address
-- user With Timesheet Required
-- Configuration Key "AzureADKeys"
+- Usuario con adusername = dirección de correo electrónico
+- usuario con parte de horas requerida
+- Clave de configuración "AzureADKeys"
 ```
 {
     "TenantId": "*",
@@ -23,28 +23,28 @@ sidebar_label: AzureAdBlocker
     "ClientSecret": "*"
 }
 ```
-- Global Query "GetDelinquentUsers"
+- Consulta global "GetDelinquentUsers"
 ``` 
-SELECT  ssu.Oid, ssu.UserName, u.AdUserName 
-FROM    SecuritySystemUser ssu, [User] u 
-WHERE   ssu.Oid = u.Oid 
-  AND   u.HasToFillTimesheets = 1 
-  AND   u.AdUserName LIKE '%@%.%'
+SELECCIONE  ssu.Oid, ssu.UserName, u.AdUserName 
+DE    SecuritySystemUser ssu, [User] u 
+DÓNDE   ssu.Oid = u.Oid 
+  Y   u.HasToFillTimesheets = 1 
+  Y   u.AdUserName LIKE '%@%.%'
 ```
 
-### Block Workflow
-- Scheduled Automation once a Day
-- Rest - Execute Global Query "GetDelinquentUsers"
-    - **POST** [/api/analytics/globalQuery/execute?queryName=GetDelinquentUsers](https://apiv2-playground-dev-we.skillsworkflow/api/analytics/globalQuery/execute?queryName=GetDelinquentUsers])
-    - Body: ```{}```
-- Loop - Iterate GetDelinquentUsers Payload
-    - Subworkflow
+### Flujo de trabajo de bloques
+- Automatización programada una vez al día
+- Descanso - Ejecutar consulta global "GetDelinquentUsers"
+    - **CORREO** [/api/analytics/globalQuery/execute?queryName=GetDelinquentUsers](https://apiv2-playground-dev-we.skillsworkflow/api/analytics/globalQuery/execute?queryName=GetDelinquentUsers])
+    - Cuerpo: ```{}```
+- Bucle: iterar la carga útil de GetDelinquentUsers
+    - Subflujo de trabajo
         - AzureAdAuthentication using AppId and AppSecret from Azure AD App registration
         - Rest - PATCH MS Graph Api:
-            - **Patch** https://graph.microsoft.com/beta/users/{email}
-                - Body: ```{"accountEnabled":"false"}```
+            - **Parche** https://graph.microsoft.com/beta/users/{email}
+                - Cuerpo: ```{"accountEnabled":"false"}```
 
-#### Payload from GetDelinquentUsers Global Query:
+#### Carga útil de la consulta global GetDelinquentUsers:
 ```
 {
   "Data": [
@@ -58,17 +58,17 @@ WHERE   ssu.Oid = u.Oid
 
 
 
-### Unblock Workflow
-- Webhook for document Type Skill.Module.BusinessObjects.UnblockUserRequest pointing to Automation
-- Automation:
-    - Use Payload from Webhook:
+### Desbloquear flujo de trabajo
+- Webhook para documento Tipo Skill.Module.BusinessObjects.UnblockUserRequest apuntando a Automatización
+- Automatización:
+    - Utilice la carga útil de Webhook:
         - event.details.username
-    - AzureAdAuthentication using AppId and AppSecret from Azure AD App registration
-    - Rest - Patch MS Graph Api:
-        - **Patch** https://graph.microsoft.com/beta/users/{{email}}
-            - Body: ```{"accountEnabled":"true"}```
+    - AzureAdAuthentication usando AppId y AppSecret desde el registro de aplicaciones de Azure AD
+    - Resto - Parche MS Graph Api:
+        - **Parche** https://graph.microsoft.com/beta/users/{{email}}
+            - Cuerpo: ```{"accountEnabled":"true"}```
 
-#### Payload from WebHook Example:
+#### Carga útil del ejemplo de WebHook:
 ```
 {
   "secret": null,
