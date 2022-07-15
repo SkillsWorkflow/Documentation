@@ -1,11 +1,9 @@
 ---
 id:  environment-dashboard
-title: Ambiente
-sidebar_label: 9.Ambiente Dashboard
+title: Ambiente Dashboard
+sidebar_label: 9. Ambiente Dashboard
 sidebar_position: 9
 ---
-
-## Ambiente Dashboard
 
 Ahora es posible cambiar el aspecto de Skills Workflow. Haz que se parezca a tu agencia, diferénciala de las demás y muestra la identidad de tu marca a todo tu equipo y clientes.
 
