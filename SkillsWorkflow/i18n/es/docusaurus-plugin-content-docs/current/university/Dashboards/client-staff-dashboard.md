@@ -5,9 +5,6 @@ sidebar_label: 11. Resumen del plan de personal del cliente Dashboard
 sidebar_position: 11
 ---
 
-
-## Resumen del plan de personal del cliente Dashboard
-
 El panel de resumen del plan de personal del cliente proporciona un informe resumido de todas las tarifas y estimaciones en una empresa, grupo de clientes y período seleccionado.
 
 Se puede acceder a esto seleccionando "Resumen del plan de personal del cliente" Workspaces".
