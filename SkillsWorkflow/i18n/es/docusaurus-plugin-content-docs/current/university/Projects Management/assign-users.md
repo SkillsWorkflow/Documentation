@@ -5,7 +5,7 @@ sidebar_label: 9. Asignar o desasignar usuarios de forma masiva
 sidebar_position: 9
 ---
 
-### Siga los siguientes pasos para asignar o desasignar masivamente usuarios en los equipos de Jobs:
+## Siga los siguientes pasos para asignar o desasignar masivamente usuarios en los equipos de Jobs:
 
 1. Vaya a la pestaña "Jobs".
 
