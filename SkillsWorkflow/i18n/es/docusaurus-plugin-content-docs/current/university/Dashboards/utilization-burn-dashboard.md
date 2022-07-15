@@ -1,11 +1,9 @@
 ---
 id:  utilization-burn-dashboard
-title: Burn and Utilization
-sidebar_label: 5. Burn and Utilization Dashboards
+title: Burn y Utilización Dashboards
+sidebar_label: 5. Burn y Utilizacion Dashboards
 sidebar_position: 5
 --- 
-
-## Burn y Utilización Dashboards
 
 Dashboards son una característica poderosa que se utiliza para respaldar rápidamente las decisiones relacionadas con un contrato específico.
 
