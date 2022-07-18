@@ -126,6 +126,31 @@ This method can be used inside any workspace. Set multiple filters
 ```javascript
 SW.Application.Workspace.setFilters([filters], "98226093-09B6-4E12-B9C6-2AEED2963C31");
 ```
+
+<h3>Example</h3>
+
+```javascript {12}
+{
+    name: "apply",
+    itemType: "button",
+    buttonOptions: {
+        width: 100,
+        text: "Apply",
+        onClick: function () {
+            var from = workspaceContext.get("From").option("value");
+            var to = workspaceContext.get("To").option("value");
+            var includeNew = workspaceContext.get("IncludeNew").option("value");
+            workspaceContext.set("Loading", Date.now());
+            SW.Application.Workspace.setFilters([{ Name: "From", Value: Date.now() }, { Name: "To", Value: Date.now() }]);
+            SW.Application.Workspace.setFilters([{ Name: "From", Value: from }, { Name: "To", Value: to }, { Name: "IncludeNew", Value: includeNew }]);
+        }
+    }
+},
+```
+
+![img-box-shadow](/img/sdk/setFilters/setFilters-example.png)
+
+
 ## setPanels
 
 #### Description
