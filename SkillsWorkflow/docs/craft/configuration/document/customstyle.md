@@ -73,7 +73,6 @@ To activate one or more properties of the the Custom Style, the Use Custom butto
 ![img-box-shadow](/img/craft/configuration/document/properties-example.png)
 </figure>
 
-<!-- ## Example -->
 <h3>Example</h3>
 
 <figure>

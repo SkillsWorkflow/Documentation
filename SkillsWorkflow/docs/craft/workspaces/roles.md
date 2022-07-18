@@ -4,7 +4,6 @@ title: 'Roles'
 sidebar_label: Roles
 ---
 
-### Description
 
 On this page you will find how to add roles to your workspace.
 <p>You can add more than one role to your workspace.</p>
@@ -14,13 +13,14 @@ To have access to the this option, you need to click in the roles section.
 :::
 
 
-### Basic Usage
+<h3>Basic Usage</h3>
+
 <figure>
 
 ![img-box-shadow](/img/craft/workspace/ChooseRole.png)
 </figure>
 
-### Example
+<h3>Example</h3>
 
 <figure>
 

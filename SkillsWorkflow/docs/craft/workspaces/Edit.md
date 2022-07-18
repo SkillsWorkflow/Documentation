@@ -10,7 +10,7 @@ On this page you will find how to edit the workspaces.
 To have access to the these options, you need to click in the Edit workspace to open the workspace configuration.
 :::
 
-## 1. Creating parameters
+## Parameters
 
 
 <figure>
@@ -18,18 +18,18 @@ To have access to the these options, you need to click in the Edit workspace to 
 ![img-box-shadow](/img/craft/workspace/definition.png)
 </figure>
 
-### Example
+<h3>Example</h3>
 
-1.1 Choose the parameters tab and insert the parameter name and value.
+1. Choose the parameters tab and insert the parameter name and value.
 
 ![img-box-shadow](/img/craft/workspace/parameter.png)
 
-1.2 Add the created parameter in the query.
+2. Add the created parameter in the query.
 
 ![img-box-shadow](/img/craft/workspace/usingParameter.png)
 
 
-## 2. Adding Translations
+## Translations
 
 
 In this section you will find how to translate the terms of your workspace that don't exist in the system by default.
@@ -65,7 +65,7 @@ In this section you will find how to translate the terms of your workspace that 
     </tbody>
 </table>
 
-### Example
+<h3>Example</h3>
 
 <figure>
 
@@ -78,7 +78,7 @@ In this section you will find how to translate the terms of your workspace that 
 </figure>
 
 
-## 3. Update Workspace
+## About
 
 
 In this section you will find how to update the workspace to the version that you want.
@@ -120,7 +120,7 @@ In the Version section you have three colors:
 - Grey: Shows a below version of the workspace.
 :::
 
-### Example
+<h3>Example</h3>
 
 <figure>
 
