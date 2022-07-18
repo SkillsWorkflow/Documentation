@@ -5,7 +5,6 @@ sidebar_label: 8. Horas de Tiempo en Falta y Aprobaciones Dashboard
 sidebar_position: 8
 ---
 
-## Horas de Tiempo en Falta y Aprobaciones Dashboard
 
 Este dashboard proporciona información en tiempo real sobre los usuarios bloqueados debido a horas faltantes y/o aprobaciones faltantes de las hojas de tiempo de sus subordinados.
 

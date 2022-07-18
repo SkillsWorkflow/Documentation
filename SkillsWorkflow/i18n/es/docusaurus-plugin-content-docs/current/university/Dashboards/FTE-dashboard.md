@@ -5,8 +5,6 @@ sidebar_label: 10. FTE
 sidebar_position: 10
 ---
 
-## FTE
-
 FTE que significa Full-Time Equivalent es una unidad que mide la carga de trabajo de un empleado. FTE se usa a menudo para medir la participación de un empleado en un proyecto. En este tablero, los gerentes de proyecto pueden analizar el FTE en diferentes niveles (es decir, empresa, división, departamento, grupo de tipología, empleado).
 
 Para acceder, seleccione FTE bajo la Workspaces menú.

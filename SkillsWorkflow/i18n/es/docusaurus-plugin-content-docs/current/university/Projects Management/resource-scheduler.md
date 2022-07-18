@@ -1,13 +1,11 @@
 ---
 id: resource-scheduler
-title: Resource Scheduler
-sidebar_label: 3. Resource Scheduler
+title: Programador de Recursos
+sidebar_label: 3. Programador de Recursos
 sidebar_position: 3
 ---
 
-## Recursos Piendentes
-
-### Las asignaciones en Skills Workflow se pueden realizar de muchas maneras.
+## Las asignaciones en Skills Workflow se pueden realizar de muchas maneras.
 
 - Puede asignar ejecutores directamente en el Job a través de la opción "Agregar Asignación".
 
