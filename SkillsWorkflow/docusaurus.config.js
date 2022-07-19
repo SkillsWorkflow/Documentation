@@ -25,7 +25,7 @@ module.exports = {
       contextualSearch: true,
       selector: 'div#',
       searchPagePath: false,
-      custom_settings: {
+      customSettings: {
         attributesForFaceting: [
           "language",
           "version",
