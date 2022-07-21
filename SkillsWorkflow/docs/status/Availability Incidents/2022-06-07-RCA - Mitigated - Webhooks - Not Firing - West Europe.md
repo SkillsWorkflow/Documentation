@@ -1,8 +1,7 @@
 ---
 id: RCA - Mitigated - Webhooks - Not Firing - West Europe - 07-06-2022
 title: "RCA - Mitigated - Webhooks - Not Firing - West Europe - 07-06-2022"
-sidebar_label: 1. RCA - Mitigated - Webhooks - Not Firing - West Europe - 07-06-2022
-sidebar_position: 1
+sidebar_label: RCA - Mitigated - Webhooks - Not Firing - West Europe - 07-06-2022
 ---
 
 # Impact summary
