@@ -33,6 +33,6 @@ As we use a shared storage account per region for all our functions in the same 
 As next steps the following actions will be taken:
 - Redeploy all Azure Functions with separate storage accounts for added stability and performance as per Azure Support recommendation
 - Optimize this Azure Function to perform better under high loads
-- Design architectural changes to allow for automatic failover or recovry of unhealthy functions
+- Design architectural changes to allow for automatic failover or recovery of unhealthy functions
 
 We understand the impact these incidents have on our customers and that's why Skills Workflow is committed to continuously improving our platform.
