@@ -1,8 +1,7 @@
 ---
-id:  RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019
+id:  2019-05-13-RCA-Mitigated-E-Mail-Notifications-All-Regions
 title: "RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019"
-sidebar_label: 10. RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019
-sidebar_position: 10
+sidebar_label: RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019
 ---
 
 # Impact summary

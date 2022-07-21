@@ -1,8 +1,7 @@
 ---
-id:  RCA - Mitigated - V2 - Brazil South - 26-07-2018
+id:  2018-07-26-RCA-Mitigated-V2-Brazil-South 
 title: "RCA - Mitigated - V2 - Brazil South - 26-07-2018"
-sidebar_label: 13. RCA - Mitigated - V2 - Brazil South - 26-07-2018
-sidebar_position: 13
+sidebar_label: RCA - Mitigated - V2 - Brazil South - 26-07-2018
 ---
 
 # Impact summary

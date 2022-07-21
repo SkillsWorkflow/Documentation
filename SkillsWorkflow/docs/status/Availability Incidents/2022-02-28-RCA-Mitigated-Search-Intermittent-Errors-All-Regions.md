@@ -1,8 +1,7 @@
 ---
-id:  RCA - Mitigated - Webhooks - West Europe - 12-02-2021
-title: "RCA - Mitigated - Webhooks - West Europe - 12-02-2021"
-sidebar_label: 6. RCA - Mitigated - Webhooks - West Europe - 12-02-2021
-sidebar_position: 6
+id:  2022-02-28-RCA-Mitigated-Search-Intermittent-Errors-All-Regions
+title: RCA - Mitigated - Search - Intermittent Errors - All Regions - 28-02-2022
+sidebar_label: RCA - Mitigated - Search - Intermittent Errors - All Regions - 28-02-2022
 ---
 
 # Impact summary

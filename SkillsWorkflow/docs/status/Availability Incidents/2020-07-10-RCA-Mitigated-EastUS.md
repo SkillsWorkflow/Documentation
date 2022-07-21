@@ -1,8 +1,7 @@
 ---
-id:  RCA - Mitigated - East US - 06-07-2020
-title: "RCA - Mitigated - East US - 06-07-2020"
-sidebar_label: 8. RCA - Mitigated - East US - 06-07-2020
-sidebar_position: 8
+id:  2020-07-10-RCA-Mitigated-EastUS
+title: "RCA - Mitigated - East US - 10-07-2020"
+sidebar_label: RCA - Mitigated - East US - 10-07-2020
 ---
 
 # Impact summary

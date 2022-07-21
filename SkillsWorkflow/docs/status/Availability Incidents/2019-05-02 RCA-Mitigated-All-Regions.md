@@ -1,8 +1,7 @@
 ---
-id:  RCA - Mitigated - All Regions - 02-05-2019
+id:  2019-05-02-RCA-Mitigated-All-Regions
 title: "RCA - Mitigated - All Regions - 02-05-2019"
-sidebar_label: 11. RCA - Mitigated - All Regions - 02-05-2019
-sidebar_position: 11
+sidebar_label: RCA - Mitigated - All Regions - 02-05-2019
 ---
 
 # Impact summary
