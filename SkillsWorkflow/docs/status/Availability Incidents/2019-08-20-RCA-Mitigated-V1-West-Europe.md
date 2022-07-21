@@ -1,8 +1,7 @@
 ---
-id:  RCA - Mitigated - V1 - West Europe - 20-08-2018
-title: "RCA - Mitigated - V1 - West Europe - 20-08-2018"
-sidebar_label: 12. RCA - Mitigated - V1 - West Europe - 20-08-2018
-sidebar_position: 12
+id:  2019-08-20-RCA-Mitigated-V1-West-Europe
+title: RCA - Mitigated - V1 - West Europe - 20-08-2018
+sidebar_label: RCA - Mitigated - V1 - West Europe - 20-08-2018
 ---
 
 # Impact summary

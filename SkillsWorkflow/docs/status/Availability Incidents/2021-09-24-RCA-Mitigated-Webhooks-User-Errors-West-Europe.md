@@ -1,8 +1,7 @@
 ---
-id:  RCA - Mitigated - Webhooks, User Errors - West Europe - 24-09-2021
+id:  2021-09-24-RCA-Mitigated-Webhooks-User-Errors-West-Europe
 title: "RCA - Mitigated - Webhooks, User Errors - West Europe - 24-09-2021"
-sidebar_label: 2. RCA - Mitigated - Webhooks, User Errors - West Europe - 24-09-2021
-sidebar_position: 2
+sidebar_label: RCA - Mitigated - Webhooks, User Errors - West Europe - 24-09-2021
 ---
 
 # Impact summary

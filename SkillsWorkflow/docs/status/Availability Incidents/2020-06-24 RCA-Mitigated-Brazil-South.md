@@ -1,8 +1,7 @@
 ---
-id:  RCA - Mitigated - Brazil South - 24-06-2020
+id:  2020-06-24-RCA-Mitigated-Brazil-South
 title: "RCA - Mitigated - Brazil South - 24-06-2020"
-sidebar_label: 9. RCA - Mitigated - Brazil South - 24-06-2020
-sidebar_position: 9
+sidebar_label: RCA - Mitigated - Brazil South - 24-06-2020
 ---
 
 # Impact summary
