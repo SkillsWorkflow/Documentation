@@ -56,8 +56,6 @@ WHERE   ssu.Oid = u.Oid
 }
 ```
 
-
-
 ### Unblock Workflow
 - Webhook for document Type Skill.Module.BusinessObjects.UnblockUserRequest pointing to Automation
 - Automation:
@@ -84,5 +82,3 @@ WHERE   ssu.Oid = u.Oid
   }
 }
 ```
-
-

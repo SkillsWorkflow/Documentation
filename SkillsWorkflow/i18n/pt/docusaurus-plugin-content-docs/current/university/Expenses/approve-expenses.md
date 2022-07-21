@@ -1,18 +1,16 @@
 ---
-id:  approve-expenses
+id: approve-expenses
 title: Approve Expenses
 sidebar_label: 3. Aprovar Despesas
+sidebar_position: 3
 ---
 
 ## 3. Aprovar Despesas
-
 
 ### Despesas podem ser aprovadas de duas maneiras:
 
 - Pelo responsavel do Projecto
 - Pelo responsavel do utilizador
-
-
 
 1. Navega para o módulo Expense Sheets.
 
@@ -21,18 +19,16 @@ sidebar_label: 3. Aprovar Despesas
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expense-sheets-1.png)
+
 <figcaption>Módulo de folhas de despesas</figcaption>
 </figure>
 
 3. Escolhe a folha de despesa que queres aprovar.
 
-
 Altere o estado da folha de despesas. Caso a folha de despesas seja rejeitada, o sistema solicitará o motivo da reprovação.
 Uma notificação será enviada ao solicitante.
 
-
 ### Approved by the user's responsible
-
 
 1. Navega para o módulo de Expenses(Despesas).
 
@@ -41,6 +37,7 @@ Uma notificação será enviada ao solicitante.
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-approve-1.png)
+
 <figcaption>Workspace de aprovação de despesas</figcaption>
 </figure>
 
@@ -49,9 +46,9 @@ Uma notificação será enviada ao solicitante.
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-approve-2.png)
+
 <figcaption>Workspace de aprovação de despesas</figcaption>
 </figure>
-
 
 ### Approved by the project's responsible
 
@@ -60,18 +57,17 @@ Para aprovar despesas, navegue até o módulo Projeto e selecione um projeto.
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-3-project.png)
+
 <figcaption>Project Item</figcaption>
 </figure>
-
 
 1. Vá para a aba de despesas
 
 2. Clique nas despesas que deseja visualizar e altere a etapa para aprovado ou reprovado.
 
-
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-approve-3.png)
+
 <figcaption>Project's expense</figcaption>
 </figure>
-

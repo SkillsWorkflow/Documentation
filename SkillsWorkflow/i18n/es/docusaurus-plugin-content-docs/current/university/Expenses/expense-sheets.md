@@ -2,6 +2,7 @@
 id:  expense-sheets
 title: Crear hojas de gastos
 sidebar_label: 1. Crear Hojas de Gastos
+sidebar_position: 1
 ---
 
 Puede crear y administrar gastos relacionados con proyectos y otras actividades.

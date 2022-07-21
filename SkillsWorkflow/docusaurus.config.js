@@ -23,7 +23,16 @@ module.exports = {
       branch: 'master',
       indexName: 'netlify_d017bb9a-2fd6-4648-8b11-d67021355c27_master_all',
       contextualSearch: true,
-      selector: 'div#'
+      selector: 'div#',
+      searchPagePath: false,
+      customSettings: {
+        attributesForFaceting: [
+          "language",
+          "version",
+          "type",
+          "docusaurus_tag"
+        ]
+      }
     },
     docs: {
       sidebar: {

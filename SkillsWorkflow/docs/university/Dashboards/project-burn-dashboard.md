@@ -7,7 +7,6 @@ sidebar_position: 2
 
 ## Project Burn Dashboard
 
-
 Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.
 
 The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
@@ -38,30 +37,24 @@ Revenue Burn
 This representation shows if the project is already burned in a revenue and costs perspective.
 
 Revenue values are based on planned/contracted hours and the associated value for each typology group. The cost values are inherited by the user cost versus number of real hours filled in. 
-
  
-
- 
-
 <figure>
 
 ![img-box-shadow](/img/university/dashboards/project-burn-dashboard/university-project-burn-dashboard-2.png)
 <figcaption></figcaption>
 </figure>
 
- 
-
 Typology Group Burn
 
 This Dashboard shows which typology is burning your project and is based on actual hours.
 
- 
+
 
 Department Burn
 
 This representation is based on the users' actual hours and shows which department is filling in more hours under a specific project.
 
- 
+
 
 User Burn
 

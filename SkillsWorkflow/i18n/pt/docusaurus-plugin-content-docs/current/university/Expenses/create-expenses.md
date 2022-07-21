@@ -1,23 +1,25 @@
 ---
-id:  expenses
+id: expenses
 title: Expenses
 sidebar_label: 2. Criar Despesas
+sidebar_position: 2
 ---
 
-## 2. Como criar Despesas 
+## 2. Como criar Despesas
 
 ### As despesas podem ser criadas de duas maneiras:
 
 - Diretamente num Projeto
 - Em uma Folha de Despesas
-### Create directly on the Project
 
+### Create directly on the Project
 
 Para criar despesas, navegue até o módulo Projeto e selecione um projeto para adicionar recibos.
 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-3-project.png)
+
 <figcaption>Project Item</figcaption>
 </figure>
 
@@ -36,6 +38,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-6-project-list.png)
+
 <figcaption>Lista de despesas do Projecto</figcaption>
 </figure>
 
@@ -48,6 +51,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expense-sheets-1.png)
+
 <figcaption>Módulo de Folhas de Despesas</figcaption>
 </figure>
 
@@ -56,6 +60,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-1-creation.png)
+
 <figcaption>Folha de Despesas</figcaption>
 </figure>
 
@@ -64,13 +69,14 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-2.png)
+
 <figcaption>pop-up de Criação de Despesas</figcaption>
 </figure>
-
 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-4.png)
+
 <figcaption>pop-up Info de Despesas</figcaption>
 </figure>
 
@@ -88,7 +94,6 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 
 11. Repita o processo se houver mais de 1 despesa.
 
-
 :::note
 Por favor, leve em consideração que todos os campos em amarelo são obrigatórios.
 Dentro da mesma folha de despesas, recibos de projetos diferentes podem ser adicionados.
@@ -99,6 +104,7 @@ Se tiver vários recibos para a mesma folha, pode repetir o processo usando a op
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-5.png)
+
 <figcaption>Expense List duplicate</figcaption>
 </figure>
 
@@ -107,5 +113,3 @@ Se tiver vários recibos para a mesma folha, pode repetir o processo usando a op
 2. O sistema irá gerar um número automático e também um pop-up de confirmação.
 
 3. Aceda à folha de despesas, no Feed troque a etapa, para enviar para o responsável para aprovação.
-
-
