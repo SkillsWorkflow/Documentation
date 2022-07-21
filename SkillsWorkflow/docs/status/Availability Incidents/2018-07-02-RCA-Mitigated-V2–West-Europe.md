@@ -1,6 +1,6 @@
 ---
 id:  2018-07-02-RCA-Mitigated-V2–West-Europe
-title: "RCA - Mitigated V2 – West Europe -  02-07-2018"
+title: RCA - Mitigated V2 – West Europe -  02-07-2018
 sidebar_label: RCA - Mitigated V2 – West Europe -  02-07-2018
 ---
 

@@ -1,6 +1,6 @@
 ---
 id:  2021-02-12-RCA-Mitigated-Webhooks-West-Europe
-title: "RCA - Mitigated - Webhooks - West Europe - 12-02-2021"
+title: RCA - Mitigated - Webhooks - West Europe - 12-02-2021
 sidebar_label: RCA - Mitigated - Webhooks - West Europe - 12-02-2021
 ---
 

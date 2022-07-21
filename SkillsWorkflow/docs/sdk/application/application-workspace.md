@@ -179,10 +179,10 @@ This method can be used inside any workspace. Set workspace's panels
     <tbody>
         <tr className="selected">
             <td><code>items</code></td>
-            <td>IUpdatedLayoutItems</td>
+            <td>IUpdatedLayoutItems[]</td>
             <td>true</td>
             <td></td>
-            <td>Layout items to be updated. Pass the name or id of the item</td>
+            <td>Layout items to be updated. Pass the name or id of the item.<ul><li>x: Moves the panel horizontally</li><li>y: Moves the panel vertically</li><li>cols: Sets the number of columns</li><li>rows: Sets the number of rows</li></ul></td>
         </tr>
         <tr className="selected">
             <td><code>options</code></td>
@@ -197,5 +197,8 @@ This method can be used inside any workspace. Set workspace's panels
 #### Basic Usage
 
 ```javascript
-SW.Application.Workspace.setPanels("EF6C7CB6-9798-4A44-B33D-284B38F54931", true);
+SW.Application.Workspace.setPanels({ 
+    GridName1: { x: 0, y: 0, cols: 10, rows: 10 }, 
+    'Grid Name 2': { x: 10, y: 2, cols: 10, rows: 10 } 
+    })
 ```

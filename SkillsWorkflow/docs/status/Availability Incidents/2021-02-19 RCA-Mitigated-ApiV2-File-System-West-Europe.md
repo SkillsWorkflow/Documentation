@@ -1,6 +1,6 @@
 ---
 id:  2021-02-19-RCA-Mitigated-ApiV2-File-System-West-Europe
-title: "RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021"
+title: RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021
 sidebar_label: RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021
 ---
 

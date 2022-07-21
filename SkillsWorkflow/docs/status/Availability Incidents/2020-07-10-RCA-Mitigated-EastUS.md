@@ -1,6 +1,6 @@
 ---
 id:  2020-07-10-RCA-Mitigated-EastUS
-title: "RCA - Mitigated - East US - 10-07-2020"
+title: RCA - Mitigated - East US - 10-07-2020
 sidebar_label: RCA - Mitigated - East US - 10-07-2020
 ---
 
