@@ -34,7 +34,7 @@ Preencha os seguintes campos:
 En la pestaña Información puede completar los siguientes campos:
 
 - **Condición de Pagamento** - Puede ser heredado del Cliente o elegido manualmente
-- 
+
 - **Moneda** - Se puede heredar de la moneda predeterminada definida en la empresa o elegirse manualmente.
 
 - **Rate Card** and **Rate Card Column** - Se puede heredar del Cliente o seleccionar manualmente.
