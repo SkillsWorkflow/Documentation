@@ -416,7 +416,7 @@ This method can be used to create a new popup with Yes and No buttons. If Yes bu
 #### Basic Usage
 
 ```javascript
-SW.Application.Popup.showConfirmPopup(
+SW.Application.Popup.showConfirmation(
    params: {
        title: 'Popup title', 
        text: 'Click one button', 
@@ -430,7 +430,7 @@ SW.Application.Popup.showConfirmPopup(
 
 #### Response
 
-![img](/img/responses/showConfirmPopup.png)
+![img](/img/responses/showConfirmation.png)
 
 ---
 

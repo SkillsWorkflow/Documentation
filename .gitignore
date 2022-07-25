@@ -8,3 +8,5 @@
 /.vs
 /SkillsWorkflow/config.json
 /ngrok.sh
+.env
+config.json
