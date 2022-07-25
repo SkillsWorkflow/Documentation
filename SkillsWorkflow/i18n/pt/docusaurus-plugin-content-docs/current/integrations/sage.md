@@ -41,7 +41,7 @@ The scope of data exchanged on this integration includes:
 
 ---
 
-###Data Exchange (To Skills Workflow)
+### Data Exchange (To Skills Workflow)
 
 This section describes the Data exchanged between systems. Please see the data exchanged.
 
@@ -693,6 +693,6 @@ The fields that will be populated into SAGE:
 
 </Tabs>
 
-###Conclusion
+### Conclusion
 
 The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
