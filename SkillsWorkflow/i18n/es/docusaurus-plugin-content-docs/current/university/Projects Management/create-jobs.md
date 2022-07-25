@@ -65,10 +65,10 @@ Después de completar toda la información, deberá activar el Job
 1. Para activarlo y generar un número de trabajo, cierre el formulario de Job haciendo clic en el cheque y luego, en la parte inferior derecha de la ventana emergente, haga clic en la pequeña flecha azul.
 
 2. Aparecerá una ventana emergente que indica que su Job se creó con éxito. Haga clic en este mensaje para navegar directamente al Job.
-=======
-1. Para activarlo y generar una numeración específica, cierre el formulario del Job en el botón de verificación y luego pulse sobre la flecha azul, ubicada en la parte inferior derecha.
 
-2. Aparecerá un mensaje de aviso que informará al usuario que el job fue creado exitosamente. Haga clic en el mensaje para navegar directamente para el job.
+3. Para activarlo y generar una numeración específica, cierre el formulario del Job en el botón de verificación y luego pulse sobre la flecha azul, ubicada en la parte inferior derecha.
+
+4. Aparecerá un mensaje de aviso que informará al usuario que el job fue creado exitosamente. Haga clic en el mensaje para navegar directamente para el job.
 
 
 <figure>
