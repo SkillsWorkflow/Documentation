@@ -9,7 +9,7 @@ sidebar_label: Navigate
 A sub namespace of Application, exclusive for navigate operations
 
 ```javascript
-//accessing to application.navigate methods
+//accessing to Application.Navigate methods
 SW.Application.Navigate.{methodName}
 ```
 
@@ -76,7 +76,7 @@ This method can be used to open a page in a new tab.
 #### Method(s)
 
 ```javascript
-1   function navigateToNewTab(url: string, 
+1   function toNewTab(url: string, 
 2       params?: {
 3           useSkillsBaseUrl: boolean
 4       } = {
@@ -116,7 +116,7 @@ This method can be used to open a page in a new tab.
 #### Basic Usage
 
 ```javascript
-SW.Application.navigateToNewTab("url");
+SW.Application.Navigate.toNewTab("url");
 ```
 
 #### Response
@@ -187,7 +187,7 @@ This method can be used to navigate to a workspace.
 #### Basic Usage
 
 ```javascript
-SW.Application.navigateTo('workspaceId', {documentName: SW.DocumentName.Job, documentId: 'jobId'});
+SW.Application.Navigate.toWorkspace('workspaceId', {documentName: SW.DocumentName.Job, documentId: 'jobId'});
 ```
 
 #### Response
