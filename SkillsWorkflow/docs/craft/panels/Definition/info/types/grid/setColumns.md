@@ -124,7 +124,7 @@ If the data source does is not mapping to the defaults fields name, it can be ma
 ```
 ### type
 
-Accepted Values: 'undefined' | 'image' | 'link' | 'document'
+Accepted Values: 'undefined' | 'image' | 'link' | 'document' | 'date'
 
 To setup the Image type, it is necessary that data source includes the entity:
 - Id
@@ -138,7 +138,8 @@ To setup the Image type, it is necessary that data source includes the entity:
   values={[
     {label: 'Image', value: 'image'},
     {label: 'Link', value: 'link'},
-    {label: 'Document', value: 'document'}
+    {label: 'Document', value: 'document'},
+    {label: 'Date', value: 'date'}
   ]
 }>
 
@@ -268,6 +269,110 @@ Define the name that appears in the UI. Could be different of the name of the da
 </figure>
 
 </TabItem>
+
+
+<TabItem value="date">
+
+The follow example shows how to convert an UTC date into local.
+
+By default the date is converted from Utc into local in the format "DD/MMMM/YYYY HH:mm".
+
+```json
+{
+    dataField: "CreatedOnUtc",
+    caption: "Created On",
+    format: {
+        type: "date"
+    }
+}
+```
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/convertUtcDateToLocal-example.png)
+
+</figure>
+
+## properties
+
+The following examples shows how to customize de appearance of the default behavior.
+
+- format: customize the format of the date in the UI.
+
+```json
+{
+    dataField: "CreatedOnUtc",
+    caption: "Created On",
+    format: {
+        type: "date",
+        properties: {
+          format:  "DD/MMM/YYY"
+    }
+}
+```
+
+<table className="custom-table">
+    <thead> 
+        <tr>
+            <th>Format</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>"HH:mm"</code></td>
+            <td>string</td>
+            <td>false</td>
+            <td>12:06</td> 
+        </tr>
+    </tbody>
+     <tbody>
+        <tr className="selected">
+            <td><code>"DD/MM/YYYY"</code></td>
+            <td>string</td>
+            <td>false</td>
+            <td>12/05/2022</td> 
+        </tr>
+    </tbody>
+     <tbody>
+        <tr className="selected">
+            <td><code>"DD/MM/YYYY HH:mm"</code></td>
+            <td>string</td>
+            <td>false</td>
+            <td>12/05/2022 12:06</td>
+        </tr>
+    </tbody>
+     <tbody>
+        <tr className="selected">
+            <td><code>"DD/MMM/YYYY HH:mm"</code></td>
+            <td>string</td>
+            <td>false</td>
+            <td>12/May/2022 12:06</td>
+        </tr>
+    </tbody>
+</table> 
+
+##
+- displayInUtc: Allows to display the date in UTC.
+
+
+```json
+{
+    dataField: "CreatedOnUtc",
+    caption: "Created On",
+    format: {
+        type: "date",
+        properties: {
+          format:  "DD/MMM/YYY",
+          displayInUtC: true
+    }
+}
+```
+
+</TabItem>
+
 
 </Tabs>
 
