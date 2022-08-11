@@ -139,7 +139,8 @@ To setup the Image type, it is necessary that data source includes the entity:
     {label: 'Image', value: 'image'},
     {label: 'Link', value: 'link'},
     {label: 'Document', value: 'document'},
-    {label: 'Date', value: 'date'}
+    {label: 'Date', value: 'date'},
+    {label: 'Currency', value: 'currency'}
   ]
 }>
 
@@ -370,6 +371,50 @@ The following examples shows how to customize de appearance of the default behav
     }
 }
 ```
+
+</TabItem>
+
+<TabItem value="currency">
+
+The follow examples shows how to display the currency symbol in a currency column.
+
+```json
+{
+    dataField: "Cost",
+    caption: "Cost",
+    format: {
+        type: "currency",
+        properties: {
+            precision: 1
+        }
+        mapping: {
+            symbol: "Symbol"
+        }
+    }
+}
+```
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/currency-symbol.png)
+
+</figure>
+
+### precision
+
+To choose how many decimal places are shown.
+
+### symbol
+
+The data field name that has the currency symbols.
+
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/currency-symbol-example.png)
+
+
+</figure>
+
 
 </TabItem>
 
