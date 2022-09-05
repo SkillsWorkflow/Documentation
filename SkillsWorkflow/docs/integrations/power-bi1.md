@@ -1,5 +1,6 @@
 ---
-title: Power BI
+id:  power-bi1
+title: Power BI 1
 sidebar_label: Power BI
 ---
 
