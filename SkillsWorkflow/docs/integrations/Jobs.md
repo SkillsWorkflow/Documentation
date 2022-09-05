@@ -4,6 +4,9 @@ title: Jobs data export
 sidebar_label: Jobs data export
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## Cause
 
 There was a need to export job data from the system to any other platform.

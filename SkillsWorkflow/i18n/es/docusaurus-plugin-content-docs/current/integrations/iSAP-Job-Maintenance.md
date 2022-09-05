@@ -3,6 +3,8 @@ id:  iSAP-Job-Maintenance
 title: iSAP-Job-Maintenance
 sidebar_label: iSAP-Job-Maintenance
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 This article describes how the job maintenance is done in Skills Workflow when there is an interface with iSAP in place.
 

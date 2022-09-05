@@ -3,6 +3,8 @@ id:  time-sheets
 title: Time sheets
 sidebar_label: Time sheets
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ## Cause
 
