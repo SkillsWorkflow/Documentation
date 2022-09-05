@@ -47,8 +47,7 @@ This section describes the Data exchanged between systems. Please see below the 
   ]
 }>
 
-
-<TabItem value="oath">
+<TabItem value="oauth">
 
 ### Skills Workflow Integration API
 
@@ -66,18 +65,18 @@ To use any endpoint from the Skills Workflow Integration API, it is necessary to
 
 <TabItem value="clients">
 
-### Clients
-
 Clients are managed in Skills Workflow. 
 
 - New clients created in Skills Workflow are automatically created in JAM.
 - Any change in the client data is also synched with JAM.
 - The client is known as "Anunciante"
 - In JAM it is only mandatory the client name
-::: It is not possible to edit Client data in JAM since it must be done in Skills Workflow. This module in JAM is disabled when the integration with Skills Workflow is enabled.
+
+:::note 
+It is not possible to edit Client data in JAM since it must be done in Skills Workflow. This module in JAM is disabled when the integration with Skills Workflow is enabled.
 :::
 
-###Client Data Exchanged
+### Client Data Exchanged
 
 Work in Progress
 
@@ -91,33 +90,175 @@ Work in Progress
 
 <TabItem value="products">
 
+Products are managed in Skills Workflow. 
 
+- New products created in Skills Workflow are automatically created in JAM.
+- Any change in the product data is also synched with JAM.
+T- he product is known as "Produto"
+- To create a new product it is mandatory to send the client code, product name and product code
 
-* Oid
-* Name
-owStateId
-* KeepOnError
+:::note
+It is not possible to edit Product data in JAM since it must be done in Skills Workflow. This module in JAM is disabled when the integration with Skills Workflow is enabled.
+:::
+
+### Product Data Exchanged
+
+Work in Progress
+
+Template
+
+```
+Work in Progress
+```
 
 </TabItem>
-<TabItem value="supplierinvoiceitem">
 
-#### Supplier Invoice Item
+<TabItem value="projects">
 
-Supplier Invoices are sent by Skills Workflow.
+Projects are managed in Skills Workflow. 
 
-* New Supplier Invoices created in Skills Workflow are automatically created in SAGE.
-* Any change in the Supplier Invoices data is also synched with SAGE.
+- New projects created in Skills Workflow are automatically sent to JAM.
+- The project is known as "Campanha"
+- To create a new job it is mandatory to send the Project
 
-#### Supplier Invoices Data Exchanged
+### Project Data Exchanged
 
-The fields that will be populated into SAGE:
+Work in Progress
 
-* Oid
-* Name
+Template
 
-* PreviousWorkflowStateId
-* KeepOnError
+```
+Work in Progress
+```
+</TabItem>
 
+<TabItem value="jobs">
+
+Jobs are created in Skills Workflow and sent to JAM.
+
+- The jobs will be sent to JAM when a status transition is done in Skills Workflow.
+- In Skills Workflow it is possible to configure certain actions when the jobs are moved between status.
+- If the action "SendToExternal" is configured in that transition, jobs will be exported to JAM.
+
+### Change Job Status in Skills Workflow
+
+To change the job status it is necessary to pass:
+
+- UserEmail- The user email that changed the status in JAM
+- DocumentTypeName - The document type - "Skill.Module.BusinessObjects.Deliverable"
+- JobNumber- The job number
+- IsVisibleToClient - Send as "True"
+- Text - The post description
+
+- Action - List of actions, in this case, the action to be used is Transition
+- Transition - Mandatory to pass the
+- ExternalId - The status external code to which the job should go 
+- Assignments 
+- userEmail - User email to add to team or remove from team
+- assign - To add user to team send "true", to remove user from team send "false"
+- Files
+- fileLink- The link to open the file. 
+- fileName - The file name to be shown 
+-  Dates
+- requestedDate - Date must be with format 2020-03-23T12:03:21
+
+Please check below how to get each field.
+
+### Steps to change the job's status
+
+1. Change Job Status, Assign users, Add Links
+
+```
+POST /api/posts 
+Host: integration-api-skills-dev-we.azurewebsites.net
+Content-Type: application/json
+X-AppId: {{X-AppId}}
+X-AppSecret: {{X-AppSecret}}
+
+{
+ "companyCode": "{companyCode}",
+ "userEmail": "{userEmail}",
+ "documentTypeName": "Deliverable",
+ "documentNumber": "{jobNumber}",
+ "isVisibleToClient": true,
+ "Text": "{text}"
+ "actions": {
+   "transition": {
+     "externalId": "{externalId}"
+     }
+   },
+   "assignments": [
+     {
+       "userEmail": "{userEmail}",
+       "assignmentTypeName": "Executor",
+       "assign": true
+     },
+     {
+       "userEmail": "{userEmail}",
+       "assignmentTypeName": "Executor",
+       "assign": false
+     }
+   ],
+   "files": [
+     {
+       "name": "{fileName}",
+       "link": "{fileLink}",
+       "isTemp": true,
+       "isFlagged": false
+     },
+     {
+       "name": "{fileName}",
+       "link": "{fileLink}",
+       "isTemp": true,
+       "isFlagged": false
+     }
+  ],
+  "Dates":
+    {
+      "RequestedDateUtc": "{requestedDate}"
+    }
+ }
+}
+```
+
+2. Update JobStatusCode
+
+```
+PUT /api/documentUserFieldValues 
+Host: integration-api-skills-dev-we.azurewebsites.net
+Content-Type: application/json
+X-AppId: {{X-AppId}}
+X-AppSecret: {{X-AppSecret}}
+
+{
+   "documentTypeName": "Deliverable",
+   "documentId": "{jobId}",
+   "documentUserFieldValues": [
+     {
+       "columnName": "JamStatusCode",
+       "value": "{JamStatusCode}"
+     }
+    ]
+}
+```
+
+</TabItem>
+
+<TabItem value="files">
+
+### Files
+
+Work in Progress
+
+### Files Data Exchange
+
+Work in Progress
+
+### Template
+
+```
+Work in Progress
+```
 </TabItem>
 
 </Tabs>
