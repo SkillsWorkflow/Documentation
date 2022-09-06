@@ -25,7 +25,7 @@ After a Job is created in iSAP, it will automatically create a new project and j
 
 <Tabs
   groupId="actions"
-  defaultValue="articles"
+  defaultValue="mappings"
   values={[
     {label: 'Mappings', value: 'mappings'},
     {label: 'Workflow', value: 'workflow'},
