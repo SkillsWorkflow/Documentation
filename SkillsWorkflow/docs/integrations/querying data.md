@@ -3,6 +3,8 @@ id:  querying data
 title: Querying data
 sidebar_label: Querying data
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 This article describes how the job maintenance is done in Skills Workflow when there is an interface with iSAP in place.
 
@@ -31,7 +33,7 @@ Please see below how to export the jobs using the API.
 
 <Tabs
   groupId="actions"
-  defaultValue="articles"
+  defaultValue="authentication"
   values={[
     {label: 'Authentication', value: 'authentication'},
     {label: 'Request', value: 'request'},

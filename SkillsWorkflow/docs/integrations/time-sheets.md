@@ -4,6 +4,9 @@ title: Time sheets
 sidebar_label: Time sheets
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## Cause
 
 There was a need to export timesheet data from the system to any other platform.

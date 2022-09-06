@@ -4,6 +4,9 @@ title: Jobs data export
 sidebar_label: Jobs data export
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## Cause
 
 There was a need to export job data from the system to any other platform.
@@ -74,7 +77,7 @@ Please see below how to export the jobs using the API.
 
 <Tabs
   groupId="actions"
-  defaultValue="articles"
+  defaultValue="authentication"
   values={[
     {label: 'Authentication', value: 'authentication'},
     {label: 'Request', value: 'request'},

@@ -3,6 +3,8 @@ id:  iSAP-Job-Maintenance
 title: iSAP-Job-Maintenance
 sidebar_label: iSAP-Job-Maintenance
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 This article describes how the job maintenance is done in Skills Workflow when there is an interface with iSAP in place.
 
@@ -23,7 +25,7 @@ After a Job is created in iSAP, it will automatically create a new project and j
 
 <Tabs
   groupId="actions"
-  defaultValue="articles"
+  defaultValue="mappings"
   values={[
     {label: 'Mappings', value: 'mappings'},
     {label: 'Workflow', value: 'workflow'},
