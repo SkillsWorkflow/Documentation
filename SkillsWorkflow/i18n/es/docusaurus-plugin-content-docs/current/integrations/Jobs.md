@@ -77,7 +77,7 @@ Please see below how to export the jobs using the API.
 
 <Tabs
   groupId="actions"
-  defaultValue="articles"
+  defaultValue="authentication"
   values={[
     {label: 'Authentication', value: 'authentication'},
     {label: 'Request', value: 'request'},
