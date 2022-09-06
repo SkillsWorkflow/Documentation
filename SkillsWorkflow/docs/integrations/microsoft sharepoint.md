@@ -22,7 +22,7 @@ The integration allows you to:
   defaultValue="process"
   values={[
     {label: 'Process', value: 'process'},
-    {label: 'Configuration ', value: 'configuration'},
+    {label: 'Configuration', value: 'configuration'},
   ]
 }>
 
