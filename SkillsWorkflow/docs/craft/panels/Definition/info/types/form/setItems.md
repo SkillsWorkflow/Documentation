@@ -46,7 +46,9 @@ Accepted Values: 'document' | 'userfield' | 'other'
 
 ```js
 {
-    type: "document"
+    saveOptions: {
+        type: "document"
+    }
 }
 ```
 
@@ -55,7 +57,9 @@ Accepted Values: 'document' | 'userfield' | 'other'
 
 ```js
 {
-    type: "userfield"
+    saveOptions: {
+        type: "userfield"
+    }
 }
 ```
 
@@ -64,7 +68,9 @@ Accepted Values: 'document' | 'userfield' | 'other'
 
 ```js
 {
-    type: "others"
+    saveOptions: {
+        type: "others"
+    }
 }
 ```
 
@@ -213,6 +219,48 @@ To set the userfield lookup field name.
 }
 ```
 
+## format
 
+A function used to set the item format.
 
+```js
+{
+    saveOptions: "document",
+    dataField: "Priority",
+    label: {
+        text: "Priority"
+    },
+    format: {
+        type: "priority"
+    }
+}
+```
+### type
 
+Accepted Values: 'priority'
+
+<Tabs
+  groupId="type"
+  defaultValue="priority"
+  values={[
+    {label: 'priority', value: 'priority'},
+  ]
+}>
+<TabItem value="priority">
+
+```js
+{
+    format: {
+        type: "priority"
+    }
+}
+```
+
+<figure>
+
+![img-box-shadow-popup](/img/craft/form/setItems/item-format-priority.png)
+
+</figure>
+
+</TabItem>
+</Tabs>
