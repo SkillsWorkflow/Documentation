@@ -1,33 +1,33 @@
 ---
 id:  rate-cards
-title: Rate Cards
-sidebar_label: 1. Create Rate Cards
+title: Tabelas de preços
+sidebar_label: 1. Criar tabelas de preços
 sidebar_position: 1
 ---
 
-## Create Rate Cards
+## Criar tabelas de preços
 
-Rate Cards are prices/costs for typology groups and/or users.
+As Tabelas de Preços são preços/custos para grupos de tipologia e/ou usuários.
 
-You can set multiple Rate Cards and Rate Cards columns in the same table.
+Você pode definir várias colunas de Tabelas de preços e Tabelas de preços na mesma tabela.
 
-### Rate Cards can be managed in two ways:
+### As Tabelas de Preços podem ser gerenciadas de duas maneiras:
 
 <h4>Sales values</h4>
 
-- Add rates based on the sales values for a specific client(including margin and fixed costs).
-- In this case, the bill's team does not need to include margin and fixed costs when creating rates.
-- Some clients have a unique sales rate, which ensures that the bill's team doesn 't send different prices/costs to the same cliente.
+- Adicione taxas com base nos valores de vendas para um cliente específico (incluindo margem e custos fixos).
+- Nesse caso, a equipe da fatura não precisa incluir margem e custos fixos na criação das tarifas.
+- Alguns clientes têm uma taxa de venda única, o que garante que a equipe de cobrança não envie preços/custos diferentes para o mesmo cliente.
 
 <h4>Costs values</h4>
 
-- Add rates based on the costs values for a user/typology group.
-- In this case, bill's team will have to manage margin and fixed costs for the client.
+- Adicione taxas com base nos valores de custos para um grupo de usuários/tipologia.
+- Nesse caso, a equipe de Bill terá que gerenciar margem e custos fixos para o cliente.
 
-### Create Rate Tables
+### Criar tabelas de taxas
 
 
-1. Go to the Maintenance and enter the Rate Cards workspace.
+1. Vá para Manutenção e entre na área de trabalho Tabelas de preços.
 
 
 <figure>
@@ -37,7 +37,7 @@ You can set multiple Rate Cards and Rate Cards columns in the same table.
 </figure>
 
 
-2. Click on the '+' icon.
+2. Clique no ícone '+'.
 
 
 <figure>
@@ -47,36 +47,34 @@ You can set multiple Rate Cards and Rate Cards columns in the same table.
 </figure>
 
 
-3. Fill atleast the required fields
+3. Preencha pelo menos os campos obrigatórios
 
-- Name - Add a description.
-- Number - Add an internal number manually.
-- Company - Select a company on which the rate will be applied.
-- Start Date / End Date - Choose a start and end date for the new rate.
-
+- Nome - Adicione uma descrição.
+- Número - Adicione um número interno manualmente.
+- Empresa - Selecione uma empresa na qual a taxa será aplicada.
+- Data de início / Data de término - Escolha uma data de início e término para a nova taxa.
 
 :::note
-Rate Cards can be edited on the Rate Cards on Maintanance or in workspace All on Rate Cards module in the Menu.
+As Tabelas de Preços podem ser editadas nas Tabelas de Preços em Manutenção ou no módulo Todas as Tabelas de Preços da área de trabalho no Menu.
 :::
 
 
 
 
-To manage the Rate Card, you will need to add new lines, and / or typologies (as in an excel format):
+Para gerenciar a Tabela de Preços, você precisará adicionar novas linhas e/ou tipologias (como em formato Excel):
 
-- Add a line to add a specific typology.
-- Select a typology group.
+- Adicione uma linha para adicionar uma tipologia específica.
+- Selecione um grupo de tipologia.
 
-- Select a specific user (if you want to add this detail).
+- Selecione um usuário específico (se desejar adicionar esse detalhe).
 
-- Add the rate for the selected typology / user.
+- Adicione a taxa para a tipologia/usuário selecionado.
 
-- In this example, in the same rate table, there are 3 prices / costs available (standard, Discount 10% and Discount 30%).
+- Neste exemplo, na mesma tabela de tarifas, existem 3 preços/custos disponíveis (padrão, Desconto 10% e Desconto 30%).
 
-- Click on the top of each column to add values.
+- Clique no topo de cada coluna para adicionar valores.
 
-- Click on record on the floppy disk symbol.
-
+- Clique em gravar no símbolo do disquete.
 
 <figure>
 
@@ -84,13 +82,12 @@ To manage the Rate Card, you will need to add new lines, and / or typologies (as
 <figcaption>Inserting values in Rate Card table</figcaption>
 </figure>
 
-If you want to add several users or groups of typology at the same time:
+Se você deseja adicionar vários usuários ou grupos de tipologia ao mesmo tempo:
 
-- Click to add groups of typology or users.
+- Clique para adicionar grupos de tipologia ou usuários.
+- No pop-up, selecione vários grupos de tipologia ou usuários e adicione-os simultaneamentec clique em "ok".
 
-- In the pop-up, select several groups of typology or users and add them simultaneouslyc click "ok".
-
-- Add values ​​to rows and columns by clicking on the top of each cell.
+- Adicione valores às linhas e colunas clicando no topo de cada célula.
 
 <figure>
 
