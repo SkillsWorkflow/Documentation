@@ -1,13 +1,13 @@
 ---
 id: create-commercial-product
-title: Create a new commercial product
-sidebar_label: 3. Create commercial product
+title: Criar um novo produto comercial
+sidebar_label: 3. Criar um novo produto comercial
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-To create a new commercial product you must go to the "CRM" module and to the sub-list "Clients".
+Para criar um novo produto comercial deve ir ao módulo "CRM" e à sub-lista "Clientes".
 
 <figure>
 
@@ -15,11 +15,11 @@ To create a new commercial product you must go to the "CRM" module and to the su
 
 </figure>
 
-Select the commercial client where you need to create the product under.
+Selecione o cliente comercial no qual você precisa criar o produto.
 
-To create a new product, you will have to:
-- Go to the tab products at the bottom;
-- Press on "+" button
+Para criar um novo produto, você terá que:
+- Acesse a aba produtos na parte inferior;
+- Pressione o botão "+"
 
 <figure>
 
@@ -27,8 +27,8 @@ To create a new product, you will have to:
 <figcaption>caption</figcaption>
 </figure>
 
-- Type the product's name, and check the box "Active"
-- Save the changes by clicking on the disk symbol.
+- Digite o nome do produto e marque a caixa "Ativo"
+- Salve as alterações clicando no símbolo do disco.
 
 <figure>
 
@@ -38,13 +38,13 @@ To create a new product, you will have to:
 
  
 
->Associating product to a specific company
->This is only applicable if within the same client, certain products are only available for one company and not the other(s).
-Once all the information is complete click on top of the product to go into the product's page.
+>Associar produto a uma empresa específica
+>Isso só é aplicável se dentro do mesmo cliente, determinados produtos estiverem disponíveis apenas para uma empresa e não para a(s) outra(s).
+Quando todas as informações estiverem completas, clique em cima do produto para entrar na página do produto.
 
-- On the tab CommercialProductCompanies click on the "+" to add the company that will work with this specific product.
-- Choose the company from the dropdown and then save by clicking on the disk symbol.
-- If you have billing products you will also be able to associate them to your commercial products.
+- Na aba CommercialProductCompanies clique no "+" para adicionar a empresa que irá trabalhar com este produto específico.
+- Escolha a empresa no menu suspenso e salve clicando no símbolo do disco.
+- Se você tiver produtos de cobrança, também poderá associá-los aos seus produtos comerciais.
 
 <figure>
 
