@@ -1,96 +1,79 @@
 ---
 id:  resource-schedular
-title: Resource Schedular
-sidebar_label: 3. Resource Scheduler
+title: Planejamento de Equipes
+sidebar_label: 3. Planejamento de Equipes
 sidebar_position: 3
 ---
 
-## Resource Scheduler
+### O planejamento de equipes pode ser feito de diversas formas.
 
-### Assignments in Skills Workflow can be done in numerous ways.
+- Você pode adicionar executores diretamente na atividade através da opção "Atribuir".
+- Ou você pode usar o calendário de recursos.
 
-- You can assign executors directly on the job through the option "Add Assignment".
+### No calendário de recursos tem uma visão geral de sua equipe, horas atribuídas e disponibilidade.
 
-- Or you can do it using the Resource Scheduler.
-
-### On the Resource scheduler you have an overview of your team's workload and capacity.
-
-This feature will help you plan your resources' time more efficiently, by keeping track of each user's assigned jobs.
+O planejamento dos seus recursos ajuda-o a tornar sua disponibilidade mais eficaz monitorizado suas atividades.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-1.png)
-<figcaption>Resource Scheduler</figcaption>
+<figcaption>Calendário Recursos</figcaption>
 </figure>
 
-- On the left are all the resources for whom you are responsible for.
-
-- A user who doesn't have any resources to control will still be able to check his own workload.
-
-- By using the filters above the calendar you can filter the information by resource, department, Job or Date.
-
-- The Jobs that have been already assign will appear on the calendar by default.
+- À esquerda tem todos os recursos de que é responsável.
+- Usuários sem atividade atribuída poderão ser monitorizados.
+- Usando os filtros no topo do calendário verifique informação por funcionário, departamento, atividade ou data.
+- Atividades já atribuídas aparecem no calendário por defeito.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-2.png)
-<figcaption>Resource filters</figcaption>
+<figcaption>Filtros de Equipe</figcaption>
 </figure>
 
-### Assigning Jobs
+### Atribuir atividades
 
-- On your right, you can see a list of all the Jobs that are yet to be assigned.
-
-- Only plannable jobs will show on the list.
-
-- To define whether a job is plannable go to that Job and on the tab info, check the option "Plannable".
-
-- If you pass the mouse on top of the Job, a tooltip will give you information about this Job, such as current stage or begining and end date.
-
-- The color of the Job will indicate the stage the Job is in.
-
-- You can also use the filter box to search for a specific unassigned Job.
+- No seu lado direito pode encontrar todas as atividades por atribuir.
+- Só atividades planeáveis aparecem na lista.
+- Para definir se uma atividade é planeável navegue para a aba info da atividade e selecione "Planeável".
+- Se passar seu rato no topo da atividade, poderá encontrar uma caixa com informação acerca da atividade, como sua etapa, e data de fim. 
+- A cor da atividade indica sua etapa.
+- Poderá usar a caixa de procura para encontrar uma atividade especifica ainda não atribuída. 
 
 <figure>
 
 ![img-box-shadow-sm](/img/university/project-management/project-management-lesson3-3.png)
-<figcaption>Unassigned Jobs</figcaption>
+<figcaption>Atividades não atribuídas</figcaption>
 </figure>
 
-- To assign a specific Job you just need to drag and drop the Job on the calendar on the person you want to assign, considering the defined dates.
-
-- After assigning a resource, you will be able to move the Job through the calendar and edit the Job's duration by extending or shortening the bar.
+- Para atribuir uma atividade específica você arraste e solte a atividade para o funcionário que quer atribuir atendendo ás datas definidas.
+- Depois de atribuir o funcionário, você pode mover a atividade para aumentar ou encurtar sua duração. 
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-4.png)
-<figcaption>Assign a Job</figcaption>
+<figcaption>Atribuir atividades</figcaption>
 </figure>
 
-### Workload and capacity
+### Carga de trabalho e disponibilidade
 
-- Each user's daily capacity is defined previously on his profile sheet.
-
-- After assigning the job to someone, you can define how many hours per day the resource will spent working on that Job.
-
-- To do so click and the box on the right end of the bar and type the number of hours.
-
-- The numbers shown above the bars are the user's remaining capacity per day given all his assignments.
-
-- They will appear in green colour if the user has spare capacity, or in red if the user is overloaded.
+- A capacidade diária de cada funcionário é definida previamente na sua ficha.
+- Depois de atribuir uma atividade a alguém, você pode definir quantas horas por dia esse recurso vai estar trabalhando nessa atividade.
+- Para o fazer pressione a caixa no canto inferior direito da barra e digite o numero de horas.
+- Os números no topo da barra de cada recurso representam sua capacidade atendendo ás atividades atribuídas.
+- A cor verde mostra que o recurso tem disponibilidade, e a vermelha que está sobrecarregado.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-5.png)
-<figcaption>Resource Availability</figcaption>
+<figcaption>Disponibilidade do recurso</figcaption>
 </figure>
 
-- To better help you plan your resources availability, the leaves and vacations will also appear on the calendar.
-
-- They will be marked with a vertical blue color to differentiate from the Jobs.
+- Para o ajudar a planear a disponibilidade de seus recursos, as ausências também são representadas no calendário.
+- Estão marcadas com uma barra vertical azul de forma a se diferenciar das atividades.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-5.png)
-<figcaption>Leaves</figcaption>
+<figcaption>Ausências</figcaption>
 </figure>
