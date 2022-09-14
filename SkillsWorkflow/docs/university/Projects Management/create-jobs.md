@@ -10,9 +10,9 @@ sidebar_position: 2
 
 1. To create a new Job, navigate to the "Projects" module.
 
-2. Select the active Project where you want to include the new Job under.
+2. Select the active Project where you want to include the new Job under, and click the "+" at the top right corner.
 
-3. Go to the tab Jobs inside the Project's page and click on the option "+".
+3. If you want to create a Job inside a Job, you can go to tab Jobs inside the Project's page, select a Job and click on the option "+".
 
 4. Fill in the Job creation popup form. 
 
