@@ -798,7 +798,7 @@ Merge action allows you to Merge a Json Result from a previous to a property Lis
 To do so it is required a parameter to be filled:
 
 * Payload - A Json Body
-* values - The mapped values will be available on the Map action result (Content)
+* values - The mapped values will be available on the Merge action result (Content)
 
 ```json title="Template"
 {  
