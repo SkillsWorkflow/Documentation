@@ -42,7 +42,7 @@ Um projeto é uma campanha que pode ter várias atividades para diferentes depar
 <figcaption></figcaption>
 </figure>
 
-### Attach a file
+### Adicionar ficheiros
 
 1. Você pode também adicionar ficheiros à descrição do Projecto simplesmente arrastando dentro do popup, ou clicando no quadrado tracejado.
 
