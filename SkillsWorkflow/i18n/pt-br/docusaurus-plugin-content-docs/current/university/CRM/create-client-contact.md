@@ -1,10 +1,10 @@
 ---
 id: create-client-contact
-title: Create a new Client contact
-sidebar_label: 1. Create client contact
+title: Como criar um novo contato de cliente
+sidebar_label: 1. Como criar um novo contato de cliente
 ---
 
-In order to create a new client contact with all the client details, you should access the "CLIENTS" module and go into the "Client Contact" tab.
+Para criar um novo contato com os detalhes do cliente, você deve ir para o módulo "CLIENTES" e a sub-lista "Contato do cliente".
 
 <figure>
 
@@ -12,16 +12,15 @@ In order to create a new client contact with all the client details, you should 
 <figcaption>Client module</figcaption>
 </figure>
 
-Select the client you wish to add the contact to.
+Selecione o cliente onde você precisa criar o contato do cliente.
 
-To create a new client contact, you should follow the steps below:
+Para criar um novo contato com o cliente, você deve:
 
-1. Access the "Clients" module and double click to open a specific client page.
-2. Click on the "Client Contact" tab followed by the "+" button to create a new line.
-3. To save these changes, it is necessary to fill in the "Name" field.
-4. Save all the changes made by clicking on the dis symbol.
-> To remove a line/client contact, you will only need to click on the "x" button.
-Screen_Shot_2018-08-08_at_14.15.16.png
+1. Dar um duplo clique no cliente pretendido.
+2. Em seguida, na aba Contacto de Cliente, clique no botão "+" para criar uma nova linha abaixo.
+Para conseguir salvar as alterações, é necessário preencher o campo "Nome"
+3. Salve as alterações clicando no símbolo de disco.
+4. Para remover qualquer linha / contato, basta clicar na opção "x".
 
 <figure>
 
@@ -29,12 +28,12 @@ Screen_Shot_2018-08-08_at_14.15.16.png
 <figcaption>Adding new contact line</figcaption>
 </figure>
 
-Once created, the client contact can also be associated to another client.
+Uma vez criado, o contato de cliente poderá também ser associado a outro cliente.
 
-How to associate an existing client contact to another client.
+Como associar um contato de cliente existente a outro cliente.
 
-Select the client you wish to associate a contact to.
-When clicking on the "link" option, the system will show a pop-up box with all the available contacts. You will only have to select the client contact needed and click on the "Save" option.
+Escolha o cliente a que pretende associar um contato.
+Ao clicar na opção "link", o sistema mostrará uma caixa com todos os contatos disponíveis. Basta selecionar o contato pretendido e clicar na opção Salvar/Guardar.
 Screen_Shot_2018-08-08_at_14.24.08.png
 
 <figure>
@@ -43,9 +42,8 @@ Screen_Shot_2018-08-08_at_14.24.08.png
 <figcaption>Associating client contact with another client</figcaption>
 </figure>
 
-When clicking on the "Save" option, the contact will be automatically available on the client details.
-It won't be necessary to save the changes made, as the system will automatically do ti for you.
-
+Ao clicar na opção Salvar/Guardar, o contato ficará automaticamente disponível no cliente.
+Não será necessário salvar, pois o sistema irá fazê-lo automaticamente. 
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-client1-4.png)
