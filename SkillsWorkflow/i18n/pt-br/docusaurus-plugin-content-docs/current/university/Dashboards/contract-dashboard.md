@@ -1,33 +1,33 @@
 ---
 id:  contract-dashboard
-title: Contract
-sidebar_label: 3. Contract Dashboards
+title: Contrato
+sidebar_label: 3.  Dashboards de Contratos
 sidebar_position: 3
 ---
 
-## Contract Dashboards
+##  Dashboards de Contratos
 
-Dashboards are a powerful feature used to quickly support decisions related to a specific contract.
+Os Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
 
-The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
+O objetivo é dar ao usuário a capacidade de controlar os processos de forma muito amigável e abrangente.
 
-As a project manager, it is very useful to understand the status of a specific client and control the profitability of each project and contract. This way the PM will have the necessary tools to negotiate with their clients.
+Como gerente de projetos, é muito útil entender o status de um cliente específico e controlar a lucratividade de cada projeto e contrato. Desta forma o PM terá as ferramentas necessárias para negociar com seus clientes.
 
-There are several dashboards at the Contract-level available in the system that will display different information.
+Existem vários painéis no nível do contrato disponíveis no sistema que exibirão informações diferentes.
 
 Burn Dashboard
 
-1. Select the contract you want to analyze.
+1. Selecione o contrato que deseja analisar.
 
-2. Click on the "Burn Dashboard" tab.
+2. Clique na guia "Burn Dashboard".
 
-3. Select the project you want to check.
+3. Selecione o projeto que deseja verificar.
 
-You will find several representations that will show you in a glimpse whether your Contract is already burned.
+Você encontrará várias representações que mostrarão rapidamente se o seu Contrato já está queimado.
 
-Also, there's a summary representation that will show you the total planned, contracted, cost and income.
+Além disso, há uma representação resumida que mostrará o total planejado, contratado, custo e receita.
 
-After selecting the project inside the contract you wish to analyze in detail, the system will give you the information of actual hours, actual cost, planned hours, planned income, contribution margin and contracted hours applied under that specific project.
+Após selecionar o projeto dentro do contrato que deseja analisar detalhadamente, o sistema lhe dará as informações de horas reais, custo real, horas planejadas, receita planejada, margem de contribuição e horas contratadas aplicadas naquele projeto específico.
 
 <figure>
 
@@ -35,7 +35,7 @@ After selecting the project inside the contract you wish to analyze in detail, t
 <figcaption></figcaption>
 </figure>
 
-Below you will find several pie representations related to the project you have selected.
+Abaixo você encontrará várias representações de pizza relacionadas ao projeto que você selecionou.
 
 <figure>
 
@@ -43,23 +43,23 @@ Below you will find several pie representations related to the project you have 
 <figcaption></figcaption>
 </figure>
 
-Typology group planned time
+Tempo planejado do grupo de tipologia
 
-This representation shows the number of planned hours per typology group.
+Esta representação mostra o número de horas planejadas por grupo de tipologia.
 
-Typology group actual time
+Tempo real do grupo de tipologia
 
-This representation shows the number of actual hours per typology group.
+Esta representação mostra o número de horas reais por grupo de tipologia.
 
-Typology group contracted time
+Tempo contratado do grupo de tipologia
 
-This representation shows the number of contracted hours per typology group, applied to the project previously selected.
+Esta representação mostra o número de horas contratadas por grupo de tipologia, aplicadas ao projeto previamente selecionado.
 
  
 
-Resources Dashboard
-Inside the previously selected contract
-Click on the "Resources Dashboard" tab
+Dashboard de Recursos
+Dentro do contrato previamente selecionado
+Clique na guia "Painel de Recursos"
  
 
 <figure>
@@ -68,9 +68,9 @@ Click on the "Resources Dashboard" tab
 <figcaption></figcaption>
 </figure>
 
-You will find out a summary with the overall status of your contract, in this example, we can observe that the actual time is almost burning out the contracted hours 
+Você descobrirá um resumo com o status geral do seu contrato, neste exemplo, podemos observar que o tempo real está quase queimando as horas contratadas
 
-Additionally, you will be able to control which typology is filling in more actual hours.
+Além disso, você poderá controlar qual tipologia está preenchendo mais horas reais.
 
 <figure>
 
@@ -78,17 +78,17 @@ Additionally, you will be able to control which typology is filling in more actu
 <figcaption></figcaption>
 </figure>
 
-Typology group burn
+Burn de grupo de tipologia
 
-This representation will allow you to check if the planned hours or actual hours are burning the contracted hours you have previously sold to your client.
+Essa representação permitirá que você verifique se as horas planejadas ou as horas reais estão queimando as horas contratadas que você vendeu anteriormente ao seu cliente.
 
-User burn
+Burn de Usuario
 
-Also, you will be able to check which user is filling in more hours under your project/contract
+Além disso, você poderá verificar qual usuário está preenchendo mais horas no seu projeto/contrato
 
-Staffing Dashboard
-Inside the previously selected contract
-Click on the "Staffing Dashboard" tab
+Dashboard de Pessoas
+Dentro do contrato previamente selecionado
+Clique na guia "Dashboard de Pessoas" 
  
 
 <figure>
@@ -97,11 +97,11 @@ Click on the "Staffing Dashboard" tab
 <figcaption></figcaption>
 </figure>
 
-The first representation works as a pivot table and shows you the planned time per typology group per deliverable (meaning the services you have previously sold/quote to your client)
+A primeira representação funciona como uma tabela dinâmica e mostra o tempo planejado por grupo de tipologia por entregável (ou seja, os serviços que você vendeu/cotou anteriormente para seu cliente)
 
-It works as an Excel pivot table which allows you to re-organize your view if needed, adding information from the column chooser.
+Funciona como uma tabela dinâmica do Excel que permite reorganizar sua visualização, se necessário, adicionando informações do seletor de colunas.
 
-By default, you will be able to check per deliverable the number of planned hours, the related rate and the utilization percentage of a specific typology group.
+Por padrão, você poderá verificar por entrega o número de horas planejadas, a taxa relacionada e a porcentagem de utilização de um grupo de tipologia específica.
 
 <figure>
 
@@ -109,12 +109,12 @@ By default, you will be able to check per deliverable the number of planned hour
 <figcaption></figcaption>
 </figure>
 
-Monthly distribution
+Distribuição mensal
 
-This representation allows you to control on a monthly basis the planned time VS the user's utilization and income.
+Essa representação permite controlar mensalmente o tempo planejado VS a utilização e a renda do usuário.
 
-Typology Contribution
+Contribuição de tipologia
 
-Based on planned VS actual time this representation shows the contribution of each typology group for your contract
+Com base no tempo real planejado VS esta representação mostra a contribuição de cada grupo de tipologia para o seu contrato
 
-Please note that you can print out or export any of the described dashboards
+Observe que você pode imprimir ou exportar qualquer um dos painéis descritos
