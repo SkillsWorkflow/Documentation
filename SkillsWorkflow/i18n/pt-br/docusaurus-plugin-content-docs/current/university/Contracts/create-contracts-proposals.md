@@ -1,24 +1,24 @@
 ---
 id:  create-contracts-proposals
-title: Create Contracts and Proposals
-sidebar_label: 2. Create Contracts and Proposals
+title: Criar Contratos e Propostas
+sidebar_label: 2. Criar Contratos e Propostas
 sidebar_position: 2
 ---
 
 
-It is possible to create and manage contracts associated with specific projects and activities.
+É possível criar e gerenciar contratos associados a projetos e atividades específicas.
 
-The estimate is at a higher level than the project, and allows you to bring together several projects in the same document.
+A estimativa está em um nível superior ao do projeto e permite reunir vários projetos no mesmo documento.
 
-The main objective is the creation of a contract, with the possibility of negotiation, where it is possible to register the number of hours sold and control the number of hours sold versus the number of real hours placed in various projects / activities belonging to a contract.
+O principal objetivo é a criação de um contrato, com possibilidade de negociação, onde seja possível registar o número de horas vendidas e controlar o número de horas vendidas versus o número de horas reais colocadas em vários projetos/atividades pertencentes a um contrato .
 
-Contracts are associated with a specific client, and must be associated with a Price Table.
+Os contratos são associados a um cliente específico e devem ser associados a uma Tabela de Preços.
 
-## Create Estimate
+## Criar Orçamento
 
-1. Go inside  Project or a Job
+1. Entre no Projeto ou em um Job
 
-2. Click on '+' icon.
+2. Clique no ícone '+'.
 
 <figure>
 
@@ -27,22 +27,22 @@ Contracts are associated with a specific client, and must be associated with a P
 </figure>
 
 
-3. Fill in the general header estimate fields.
+3. Preencha os campos gerais de estimativa de cabeçalho.
 
-- Description - Write a brief description about the Estimate. 
-- Title - You can distinguish by giving names to estimates. Ex. WebSite Option 1, WebSite Option2.
-- Department - Choose from a drop-down list of the departments available (this will be very important to choose the workflow of the document).
-- Type - Choose from a drop-down list of the Types available (this will be very important to choose the workflow of the document).
-- Start Date - Choose when the Estimate starts.
-- End Date - Choose when the Estimate ends.
+- Descrição - Escreva uma breve descrição sobre o Orçamento. 
+- Título - Você pode distinguir dando nomes às estimativas. Ex. Opção de site 1, opção de site 2.
+- Departamento - Escolha em uma lista suspensa dos departamentos disponíveis (isso será muito importante para escolher o fluxo de trabalho do documento).
+- Tipo - Escolha em uma lista suspensa dos Tipos disponíveis (isso será muito importante para escolher o fluxo de trabalho do documento).
+- Data de início - Escolha quando a estimativa começa.
+- Data de término - Escolha quando a estimativa termina.
 
-4. Save the estimate by clicking the check icon
+4. Salve a estimativa clicando no ícone de verificação
 
 ---
 
-## Estimate - Manage Quotes
+## Orçamento - Gerenciar Cotações
 
-Inside an Estimate on the Quotes tab you can add Deliverables or the product or service you are selling to your client
+Dentro de um Orçamento na aba Cotações você pode adicionar Entregáveis ou o produto ou serviço que está vendendo ao seu cliente
 
 <figure>
 
@@ -50,17 +50,17 @@ Inside an Estimate on the Quotes tab you can add Deliverables or the product or 
 <figcaption>Estimates quotes tab</figcaption>
 </figure>
 
-1. On the "Quotes" tab, you can add "Deliverables" or the product or service you are selling to your client.
+1. Na aba "Cotações", você pode adicionar "Entregas" ou o produto ou serviço que está vendendo ao seu cliente.
 
-2. Add the description that you want your client to see.
+2. Adicione a descrição que você deseja que seu cliente veja.
 
-3. Select the service/product you are selling.
+3. Selecione o serviço/produto que você está vendendo.
 
-4. For each Deliverable, you can specify the cost which can either be Third Party, Expenses"or Resources.
+4. Para cada Entregável, você pode especificar o custo que pode ser de Terceiros, Despesas" ou Recursos.
 
 
-### Attach a file or add a link
+### Anexar um arquivo ou adicionar um link
 
-- You can also attach files or add a URL link to the Estimate by going to the "Feed" tab clicking the Add File icon. Choose to Upload file or add link.
+- Você também pode anexar arquivos ou adicionar um link de URL à estimativa acessando a guia "Feed" clicando no ícone Adicionar arquivo. Escolha fazer upload do arquivo ou adicionar link.
 
-- This is useful for adding brief documents or presentations, in any of the main formats (Word, PPT, Excel, PDF, etc.)
+- Isso é útil para adicionar documentos ou apresentações breves, em qualquer um dos principais formatos (Word, PPT, Excel, PDF, etc.)
