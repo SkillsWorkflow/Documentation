@@ -2,6 +2,7 @@
 id:  rate-cards
 title: Como administrar tablas Rate Card
 sidebar_label: 1. Administrar tablas Rate Card
+sidebar_position: 1
 ---
 
 Las tablas de tarifas son precios para grupos de tipología y / o usuarios.
