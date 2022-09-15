@@ -2,6 +2,7 @@
 id:  contracts-projects
 title: Cómo gestionar proyectos vinculados a una tarifa
 sidebar_label: 3. Gestionar proyectos vinculados a una tarifa
+sidebar_position: 3
 ---
 
 Los proyectos se pueden vincular a una tarifa de cliente para deducir las horas vendidas anteriormente.
