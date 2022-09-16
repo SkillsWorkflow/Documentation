@@ -1,16 +1,16 @@
 ---
 id:  client-staff-dashboard
-title: Client Staff Plan Summary
-sidebar_label: 11. Client Staff Plan Summary Dashboard
+title: Resumo do Plano de Equipe do Cliente
+sidebar_label: 11. Dashboard de resumo do plano de equipe do cliente
 sidebar_position: 11
 ---
 
 
-## Client Staff Plan Summary Dashboard
+## Dashboard de resumo do plano de equipe do cliente
 
-The Client Staff Plan Summary Dashboard provides a summary report of all fees and estimates under a company, client group and period selected.
+O Dashboard de Resumo do Plano de Equipe do Cliente fornece um relatório resumido de todas as taxas e estimativas de uma empresa, grupo de clientes e período selecionado
 
-This can be accessed by selecting “Client Staff Plan Summary” under “Workspaces” menu.
+Isso pode ser acessado selecionando "Resumo do plano de equipe do cliente" no menu "Espaços de trabalho".
 
 
 <figure>
@@ -19,43 +19,43 @@ This can be accessed by selecting “Client Staff Plan Summary” under “Works
 <figcaption></figcaption>
 </figure>
 
-The dashboard has 2 sections:
+O painel tem 2 seções:
 
-Company and Client Group – This is where you set the criteria to determine the fees and estimates to be included in the report by selecting from the dropdown, values for the following:
-
-
-- Company
-
-- Client Group
-
-- Start Date
-
-- End Date
-
-Deliverables Staffing – A customizable report that shows the staffing plan per estimate selected. The top section contains the unselected fields for the report. The user can customize his own report by dragging and dropping the columns “to and from” the unselected section and report section. Sort and Filter functions are available in each field column.
-
-In the default report format above the following fields are shown:
+Empresa e Grupo de Clientes – É aqui que você define os critérios para determinar as taxas e estimativas a serem incluídas no relatório, selecionando no menu suspenso os valores para os seguintes:
 
 
-- Client – Client where the Fee was created
+- Companhia
 
-- Stage – Current stage of the Estimate
+- Grupo de Cliente
 
-- Version – Version number of the Estimate
+- Data de Inicio
 
-- Division – Division name where the typology group or user in the staff plan belong
+- Data de Fim
 
-- Department – Department name where the typology group or user in the staff plan belong
+Equipe de entregas – Um relatório personalizável que mostra o plano de equipe por estimativa selecionada. A seção superior contém os campos não selecionados para o relatório. O usuário pode personalizar seu próprio relatório arrastando e soltando as colunas “de e para” a seção não selecionada e a seção do relatório. As funções Classificar e Filtrar estão disponíveis em cada coluna de campo.
 
-- Typology Group – Position included in the staff plan of the estimate
+No formato de relatório padrão acima, os seguintes campos são mostrados:
 
-- Name – User Name in instances where staff plan is created per user
 
-- Deliverable – Deliverables defined per estimate
+- Cliente – Cliente onde a Taxa foi criada
 
-- Hours – Contracted hours for the typology group or user for the deliverable
+- Estágio - Estágio atual da Estimativa
 
-- TableRate – Hourly rate for the typology group or user defined in the rate card attached to the fee proposal. Only users with access to the rate card can see values in this field.
+- Versão – Número da versão do Orçamento
+
+- Divisão – Nome da divisão à qual pertence o grupo de tipologia ou usuário no plano de equipe
+
+- Departamento – Nome do departamento ao qual pertence o grupo de tipologia ou usuário no plano de pessoal
+
+- Grupo de Tipologia – Cargo incluído no plano de pessoal do orçamento
+
+- Nome – Nome de usuário nos casos em que o plano de equipe é criado por usuário
+
+- Entregável - Entregáveis definidos por estimativa
+
+- Horas – Horas contratadas para o grupo de tipologia ou usuário para a entrega
+
+- TableRate – Tarifa horária para o grupo de tipologia ou usuário definido na tabela de preços anexada à proposta tarifária. Somente usuários com acesso à tabela de preços podem ver os valores neste campo.
 
 <figure>
 
