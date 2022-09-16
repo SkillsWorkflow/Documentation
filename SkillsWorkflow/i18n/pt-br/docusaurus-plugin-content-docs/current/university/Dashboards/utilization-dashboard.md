@@ -1,17 +1,17 @@
 ---
 id:  utilization-dashboard
-title: Utilization
-sidebar_label: 4. Utilization Dashboard
+title: Utilização
+sidebar_label: 4.Dashboard de Utilização 
 sidebar_position: 4
 ---
 
-## Utilization Dashboard
+## Dashboard de Utilização
 
-Project Managers put a lot of effort on resource allocation. As much as possible, they want their team to be busy with tasks which are valuable to the agency (billable hours) as this will increase profitability. However, resource allocation becomes a challenge as the team grows when you have to assign resources to different projects all happening at the same time.
+Os gerentes de projeto se esforçam muito na alocação de recursos. Tanto quanto possível, eles querem que sua equipe esteja ocupada com tarefas que sejam valiosas para a agência (horas faturáveis), pois isso aumentará a lucratividade. No entanto, a alocação de recursos se torna um desafio à medida que a equipe cresce quando você precisa atribuir recursos a diferentes projetos, todos acontecendo ao mesmo tempo.
 
-One of the easiest ways to check the effectiveness of your resource allocation effort is to track and analyze your team’s utilization. Skills Workflow have developed a Utilization Dashboard giving different views on how users time were spent across different dimensions. This will serve as a powerful tool to improve resource allocation.
+Uma das maneiras mais fáceis de verificar a eficácia de seu esforço de alocação de recursos é rastrear e analisar a utilização de sua equipe. O Skills Workflow desenvolveu um Painel de Utilização que oferece diferentes visualizações sobre como o tempo dos usuários foi gasto em diferentes dimensões. Isso servirá como uma ferramenta poderosa para melhorar a alocação de recursos.
 
-The Utilization Dashboard can be accessed by selecting Workspaces from the menu bar then selecting Utilization:
+O Painel de Utilização pode ser acessado selecionando Áreas de Trabalho na barra de menus e selecionando Utilização:
 
 <figure>
 
@@ -19,26 +19,26 @@ The Utilization Dashboard can be accessed by selecting Workspaces from the menu 
 <figcaption></figcaption>
 </figure>
 
-1. Selection Criteria Section – Define Period, Organization Unit and User Classification by selecting from the dropdown, values for the following fields:
+1. Seção Critérios de Seleção – Defina Período, Unidade Organizacional e Classificação do Usuário selecionando na lista suspensa os valores para os seguintes campos:
 
-- Year
+- Ano
 
-- Company
+- Companhia
 
-- Division
+- Divisão
 
-- Department
+- Departamento
 
-- User Type 
+- Tipo de usuário
 
-2.  Period Selector – Provides a graph of total hours logged per day for the year selected for the set selection criteria
+2.  Seletor de período – fornece um gráfico do total de horas registradas por dia para o ano selecionado para os critérios de seleção definidos
 
-3.  Utilization per Client – Provides a distribution in terms of percentage, hours charged per client based on the set selection criteria
+3.  Utilização por cliente – Fornece uma distribuição em termos de porcentagem, horas cobradas por cliente com base nos critérios de seleção definidos
 
-4. Utilization per Department – Provides a breakdown in terms of percentage, hours charged by the different departments within the
-set selection criteria
+4. Utilização por Departamento – Fornece uma discriminação em termos de percentagem, horas cobradas pelos diferentes departamentos dentro do
+definir critérios de seleção
 
-5.  Utilization per Project Type – Provides a breakdown in terms of percentage, hours charged to different Project Types based on the set selection criteria.
+5.  Utilização por tipo de projeto – Fornece um detalhamento em termos de porcentagem, horas cobradas de diferentes tipos de projeto com base nos critérios de seleção definidos.
 
 <figure>
 
@@ -46,22 +46,22 @@ set selection criteria
 <figcaption></figcaption>
 </figure>
 
-6.   Utilization per User – Provides a listing of Users per Department indicating Position (Typology), Picture, Name, User Type and the following figures:
+6.   Utilização por Usuário – Fornece uma lista de Usuários por Departamento indicando Cargo (Tipologia), Imagem, Nome, Tipo de Usuário e os seguintes números:
 
 
-- Capacity – Total Work Hours for the year less Leave Hours
+- Capacidade - Total de horas de trabalho para o ano menos horas de licença
 
-- Leaves – Leave hours booked for the year
+- Licenças – Horas de licença reservadas para o ano
 
-- Non-Billable – Hours charged to Non-Billable client tasks for the year
+- Não Faturável – Horas cobradas de tarefas de clientes não faturáveis para o ano
 
-- Admin – Hours charged to administrative tasks for the year
+- Admin – Horas cobradas em tarefas administrativas para o ano
 
-- Billable – Hours charged to Billable client tasks for the year
+- Faturável – Horas cobradas de tarefas do cliente Faturáveis para o ano
 
-- Utilization Non-Billable % - (Non-Billable / Capacity) x 100
+- % de utilização não faturável - (não faturável / capacidade) x 100
 
-- Utilization Billable % - (Billable / Capacity) x 100
+- % Faturável de Utilização - (Faturável / Capacidade) x 100
 
 
 <figure>
@@ -71,17 +71,17 @@ set selection criteria
 </figure>
 
 
-7. User Projects – By clicking a User line in the Utilization per User Listing, the system will display a     breakdown of the Project/Job/Client charged by the User for the year classified according to Project Type.
+7. Projetos do Usuário – Ao clicar em uma linha do Usuário na Listagem de Utilização por Usuário, o sistema exibirá um detalhamento do Projeto/Trabalho/Cliente cobrado pelo Usuário no ano classificado de acordo com o Tipo de Projeto.
  
-Details are as follows:
+Detalhes a seguir:
 
 
-- Non-Billable – Non-Billable hours charged by the User to Project/Job/Client
+- Não Faturável – Horas não Faturáveis cobradas pelo Usuário ao Projeto/Trabalho/Cliente
 
-- Billable – Billable hours charged by the User to Project/Job/Client
+- Faturável – Horas faturáveis cobradas pelo usuário ao projeto/trabalho/cliente
 
-- Utilization Non-Billable % - (Non-Billable / Capacity) x 100
+- % de utilização não faturável - (não faturável / capacidade) x 100
 
-- Utilization Billable % - (Billable / Capacity) x 100
+- % Faturável de Utilização - (Faturável / Capacidade) x 100
 
-- Hours – Total Hours per Project/Job/Client
+- Horas - Total de horas por projeto/trabalho/cliente
