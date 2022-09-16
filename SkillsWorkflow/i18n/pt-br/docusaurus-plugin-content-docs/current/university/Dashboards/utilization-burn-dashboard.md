@@ -1,24 +1,25 @@
 ---
 id:  utilization-burn-dashboard
-title: Burn and Utilization
-sidebar_label: 5. Burn and Utilization Dashboards
+title: Burn e Utilização
+sidebar_label: 5. Burn e Dashboards de Utilização
 sidebar_position: 5
 --- 
 
-## Burn and Utilization Dashboards
+## Burn e Utilization de Utilização
 
-Dashboards are a powerful feature used to quickly support decisions related to a specific contract.
+Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
 
-The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
+O objetivo é dar ao usuário a capacidade de controlar os processos de forma muito amigável e abrangente.
 
-As a project manager, it is very useful to understand the status of a specific client and control the profitability of each project and contract. This way the PM will have the necessary tools to negotiate with their clients.
+Como gerente de projetos, é muito útil entender o status de um cliente específico e controlar a lucratividade de cada projeto e contrato. Desta forma o PM terá as ferramentas necessárias para negociar com seus clientes.
 
-There are several dashboards at the Contract-level available in the system that will display different information.
+Existem vários painéis no nível do contrato disponíveis no sistema que exibirão informações diferentes.
 
-Burn and Utilization - Fee
+Burn e Utilização - Fee
 
-1. Select the contract you want to analyze.
-2. Click on the "Burn and Utilization - Fee" tab.
+1. Selecione o contrato que deseja analisar.
+2. Clique na aba "Burn and Utilization - Fee" taxa.
+
 
 <figure>
 
@@ -28,26 +29,26 @@ Burn and Utilization - Fee
 
  
 
-The first part provides a summary total for all projects mapped to the fee of the following:
+A primeira parte fornece um resumo total para todos os projetos mapeados para a taxa do seguinte:
 
-1. Actual Hours – actual timesheet hours logged to each project to date
+1. Horas reais - horas reais do quadro de horários registradas em cada projeto até o momento
 
-2. Planned Hours – planned hours for each project
+2. Horas planejadas - horas planejadas para cada projeto
 
-3. Contracted Hours – contracted/sold hours per fee proposal
+3. Horas Contratadas - horas contratadas/vendidas por proposta de taxa
 
-4. Actual $ - actual hours valued using Rate Card assigned to the Fee Proposal
+4. $ real - horas reais avaliadas usando a tabela de preços atribuída à proposta de taxa
 
-5. Planned $ - planned hours valued using Rate Card assigned to the Fee Proposal
+5. $ planejados - horas planejadas avaliadas usando a tabela de preços atribuída à proposta de taxa
 
-6. Contracted $ - contracted/sold hours valued using Rate Card assigned to the Fee Proposal
+6. $ contratados - horas contratadas/vendidas avaliadas usando a tabela de preços atribuída à proposta de taxa
 
-7. % Contracted $ - (Actual $ / Contracted $) x 100
+7. % $ contratados - ($ reais / $ contratados) x 100
 
-The second part shows the breakdown listing per Project classified and grouped according to Project Stage. Header Filter, Export and Column Chooser features are available for this list.
+A segunda parte mostra a listagem de detalhamento por Projeto classificado e agrupado de acordo com a Etapa do Projeto. Os recursos Filtro de Cabeçalho, Exportação e Seletor de Coluna estão disponíveis para esta lista.
 
-Burn and Utilization Per Role - Fee
-Click on the "Burn and Utilization Per Role - Fee" tab;
+Burn e Utilização  Por Função - Fee
+Clique na guia "Burn e Utilizatição Por Função - Fee";
 
 <figure>
 
@@ -55,23 +56,23 @@ Click on the "Burn and Utilization Per Role - Fee" tab;
 <figcaption></figcaption>
 </figure> 
 
-The first part provides a summary total for all typology groups quoted in the fee and/or logged actual hours to the projects mapped to the fee of the following:
+A primeira parte fornece um resumo total para todos os grupos de tipologia citados na taxa e/ou horas reais registradas para os projetos mapeados para a taxa do seguinte:
 
-1. Actual Hours – actual timesheet hours logged to each project to date
+1. Horas reais - horas reais do quadro de horários registradas em cada projeto até o momento
 
-2. Planned Hours – planned hours for each project
+2. Horas planejadas - horas planejadas para cada projeto
 
-3. Contracted Hours – contracted hours of the fee proposal
+3. Horas Contratadas – horas contratadas da proposta de honorários
 
-4. Actual $ - actual hours valued using actual rates per user
+4. Real $ - horas reais avaliadas usando taxas reais por usuário
 
-5. Planned $ - planned hours valued using Rate Card assigned to the Fee Proposal
+5. $ planejados - horas planejadas avaliadas usando a tabela de preços atribuída à proposta de taxa
 
-6. Contracted $ - contracted hours valued using Rate Card assigned to the Fee Proposal
+6. $ contratados - horas contratadas avaliadas usando a tabela de preços atribuída à proposta de taxa
 
-7. % Contracted $ - (Actual $ / Contracted $) x 100
+7. % $ contratados - ($ reais / $ contratados) x 100
 
-The second part shows the breakdown listing per Typology Group per Department. Header Filter, Export and Column Chooser features are available for this list.
+A segunda parte mostra o detalhamento por Grupo de Tipologia por Departamento. Os recursos Filtro de Cabeçalho, Exportação e Seletor de Coluna estão disponíveis para esta lista.
 
 <figure>
 
@@ -79,15 +80,15 @@ The second part shows the breakdown listing per Typology Group per Department. H
 <figcaption></figcaption>
 </figure>
 
-Monthly Distribution
+Distribuição Mensal
 
-Dollars – A time graph showing Revenue and Cost per Month
+Dólares – Um gráfico de tempo mostrando Receita e Custo por Mês
 
-Hours – A time graph showing Contracted, Forecast and Actual Hours per Month
+Horas - Um gráfico de tempo mostrando as horas contratadas, previstas e reais por mês
 
-Contribution by Typology Group
+Contribuição do Grupo de Tipologia
 
-A pie chart showing the breakdown of actual hours by Typology Group
+Um gráfico de pizza mostrando o detalhamento das horas reais por grupo de tipologia
 
 <figure>
 
@@ -95,10 +96,10 @@ A pie chart showing the breakdown of actual hours by Typology Group
 <figcaption></figcaption>
 </figure> 
 
-Utilization by Typology Group
+Utilização por Grupo de Tipologia
 
-This representation will allow you to check if the planned hours or actual hours are burning the contracted hours you have previously sold to your client.
+Essa representação permitirá que você verifique se as horas planejadas ou as horas reais estão queimando as horas contratadas que você vendeu anteriormente ao seu cliente.
 
-Utilization by User
+Utilização por usuário
 
-Also, you will be able to check which user is filling in more hours under your contract.
+Além disso, você poderá verificar qual usuário está preenchendo mais horas sob seu contrato.
