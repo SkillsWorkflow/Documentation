@@ -1,23 +1,23 @@
 ---
 id:  environment-dashboard
-title: Environment
-sidebar_label: 9. Environment Dashboard
+title: Meio Ambiente
+sidebar_label: 9. Dashboard de Meio Ambiente
 sidebar_position: 9
 ---
 
-## Environment Dashboard
+## Dashboard de Ambiente
 
-It is now possible to change the look of Skills Workflow. Make it look like your agency, differentiate it from others, and show off your brand identity to your whole team and clients.
+Agora é possível alterar a aparência do Skills Workflow. Faça com que pareça com a sua agência, diferencie-a das outras e mostre a identidade da sua marca para toda a sua equipe e clientes.
 
-This can be done through the Environment Dashboard. In order to access it, Users should have the following roles linked to their profile:
+Isso pode ser feito através do Dashboard de Ambiente. Para acessá-lo, os Usuários devem ter as seguintes funções vinculadas ao seu perfil:
 
 - MaintenanceNavigate
 - MaintenanceSave
 - EnvironmentNavigate
 - EnvironmentSave
 
-To access the Environment Dashboard log into Skills Workflow, click on your user name in the upper right-hand corner of the homepage and choose the "Maintenance" option and hit the "Environment" module.
 
+Para acessar o Dashboard de Manutenção  faça login no Skills Workflow, clique no seu nome de usuário no canto superior direito da página inicial e escolha a opção "Manutenção" e clique no módulo "Ambiente".
 <figure>
 
 ![img-box-shadow](/img/university/dashboards/environment-dashboard/university-environment-1.png)
@@ -26,13 +26,13 @@ To access the Environment Dashboard log into Skills Workflow, click on your user
 
  
 
-There are 3 sections in the dashboard where you define the following:
+Existem 3 seções no painel onde você define o seguinte:
 
-1. Images - Pictures to use as background and company logos.
+1. Imagens - Imagens para usar como plano de fundo e logos da empresa.
 
-2. Translations - Terms within the system that can be renamed as need be.
+2. Traduções - Termos dentro do sistema que podem ser renomeados conforme necessário.
 
-3. Colors - Colors to use for the background, icons, bars, and fonts.
+3. Cores - Cores a serem usadas para o plano de fundo, ícones, barras e fontes.
 
 <figure>
 
@@ -40,39 +40,39 @@ There are 3 sections in the dashboard where you define the following:
 <figcaption></figcaption>
 </figure> 
 
-Images
-Login Tab
+Imagens
+Aba de login
 
-- Background Image URL – Enter here the URL address of the image you want to use as the background for the Login page. Select images that can relate to your agency. Avoid images with lots of objects/noise. Prioritize pictures with depth of field.
+- URL da imagem de fundo – Digite aqui o endereço URL da imagem que você deseja usar como plano de fundo para a página de login. Selecione imagens que possam se relacionar com sua agência. Evite imagens com muitos objetos/ruídos. Priorize fotos com profundidade de campo.
 
-- Background Image Style – Enter style properties to be applied to the image.
+- Estilo da imagem de fundo – Insira as propriedades de estilo a serem aplicadas à imagem.
 
-- Company Logo URL – Select a logo that is common to all companies within the instance, preferably using a transparent background.
+- URL do logotipo da empresa – selecione um logotipo comum a todas as empresas da instância, de preferência usando um plano de fundo transparente.
 
-- Company Logo Style – Enter style properties to set the size of the Company Logo.
+- Estilo do logotipo da empresa – Insira as propriedades de estilo para definir o tamanho do logotipo da empresa.
 
-Home Tab
+Aba inicial
 
-- Top Bar Image URL – Logo you want to place on top of the vertical menu bar on the left of the home page. The same logo as the login page can be applied. Logo should not exceed bar limits and should be aligned with breadcrumbs and menu items.
+- URL da imagem da barra superior – logotipo que você deseja colocar no topo da barra de menu vertical à esquerda da página inicial. O mesmo logotipo da página de login pode ser aplicado. O logotipo não deve exceder os limites da barra e deve estar alinhado com as migalhas de pão e os itens do menu.
 
-- Top Bar Image Style – Enter style properties to set the size of the Top Bar Image
+- Estilo da imagem da barra superior – Insira as propriedades de estilo para definir o tamanho da imagem da barra superior
  
 
-Translations
+Traduções
 
-- Hit the + sign to add a new row
-- Select the original term and type in the new one you want to be seen in the system
+- Aperte o sinal + para adicionar uma nova linha
+- Selecione o termo original e digite o novo que você deseja que seja visto no sistema
  
 
-Colors
+Cores
 
-- Login Tab – Define colors for the different components found in the login box in the Login Page.
+- Aba Login – Defina cores para os diferentes componentes encontrados na caixa de login na Página de Login.
 
-- TopBar Tab –  Define colors for the different components found in the top horizontal bar of the Home Page.
+- Aba TopBar – Defina cores para os diferentes componentes encontrados na barra horizontal superior da Home Page.
 
-- SideBar Tab – Define the colors of the different components found in the left vertical bar of the Home Page where the System Menu is displayed.
+- Aba SideBar – Defina as cores dos diferentes componentes encontrados na barra vertical esquerda da Home Page onde o Menu do Sistema é exibido.
 
-To set colors, simply type your color code or click the dropdown and the color guide will be displayed. When selecting colors, ensure there is enough contrast between the background and fonts/icons.
-Hover State should be more visually attractive than normal state
+Para definir as cores, basta digitar o código da cor ou clicar no menu suspenso e o guia de cores será exibido. Ao selecionar as cores, verifique se há contraste suficiente entre o plano de fundo e as fontes/ícones.
+O estado de foco deve ser visualmente mais atraente do que o estado normal
 
-Once you’ve set the Images and Colors, click the Save button to save the changes made.
+Depois de definir as imagens e cores, clique no botão Salvar para salvar as alterações feitas.
