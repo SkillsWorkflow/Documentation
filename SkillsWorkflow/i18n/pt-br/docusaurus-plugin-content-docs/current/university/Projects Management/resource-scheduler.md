@@ -1,5 +1,5 @@
 ---
-id:  resource-schedular
+id:  resource-scheduler
 title: Planejamento de Equipes
 sidebar_label: 3. Planejamento de Equipes
 sidebar_position: 3
@@ -20,7 +20,7 @@ O planejamento dos seus recursos ajuda-o a tornar sua disponibilidade mais efica
 <figcaption>Calendário Recursos</figcaption>
 </figure>
 
-- À esquerda tem todos os recursos de que é responsável.
+- À esquerda tem todos os recursos de que é responsável.s
 - Usuários sem atividade atribuída poderão ser monitorizados.
 - Usando os filtros no topo do calendário verifique informação por funcionário, departamento, atividade ou data.
 - Atividades já atribuídas aparecem no calendário por defeito.
