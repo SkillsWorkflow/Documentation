@@ -14,7 +14,7 @@ sidebar_position: 3
 
 1. Navega para o módulo Expense Sheets.
 
-2. Selecciona a lista All.
+2. Selecionar a lista Todos.
 
 <figure>
 
@@ -50,7 +50,7 @@ Uma notificação será enviada ao solicitante.
 <figcaption>Workspace de aprovação de despesas</figcaption>
 </figure>
 
-### Approved by the project's responsible
+### Aprovado pelo responsável do projeto
 
 Para aprovar despesas, navegue até o módulo Projeto e selecione um projeto.
 
