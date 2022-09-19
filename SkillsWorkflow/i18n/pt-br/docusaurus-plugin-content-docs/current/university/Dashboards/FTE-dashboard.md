@@ -1,7 +1,7 @@
 ---
 id:  fte-dashboard
 title: Contratos
-sidebar_label: 10. Cotratos
+sidebar_label: 10. Contratos
 sidebar_position: 10
 ---
 
