@@ -1,17 +1,17 @@
 ---
 id: create-client-requests
-title: Create Client Requests
-sidebar_label: 6. Create Client Requests
+title: Como criar solicitações de clientes
+sidebar_label: 6. Criar solicitações de clientes
 sidebar_position: 6
 ---
 
-From the client perspective, you can now create and control your own requests using Skills Workflow.
+Da perspectiva do cliente, agora você pode criar e controlar suas próprias solicitações usando o Skills Workflow.
 
-### After collecting your credentials and logging in, the first step is to create your request.
+### Depois de coletar suas credenciais e fazer o login, o primeiro passo é criar sua solicitação.
 
-1. For that you just need to access the Project you're involved with, create a new Job.
+1. Para isso, você só precisa acessar o projeto com o qual está envolvido e criar uma nova atividade.
 
-2. You are only going to have access to the Projects you're involved with.
+2. Você apenas terá acesso aos projetos com os quais está envolvido.
 
 <figure>
 
@@ -20,15 +20,12 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-### Filling in the job creation popup form.
+### Preenchimento do formulário de criação de uma atividade.
 
-- **Title** - name you would like to give to the Job.
-
-- **Department** - Department to which the request/Job belongs to.
-
-- **Job Type** - Type of Job you want to create (e.g. TVC, Print, etc).
-
-- **Begin/End** - Choose when the Job starts and when it will end.
+- Título - nome que você quer dar à atividade
+- Departamento - departamento pertencente à solicitação/atividade
+- Tipo de atividade - Tipo de atividade que pretende criar (exemplo: TVC, Print, etc)
+- Início/Fim - Selecione as datas de início e fim da atividade
 
 <figure>
 
@@ -37,13 +34,11 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-### After completing all the details, make sure you submit the post in order to create the Job.
+### Depois de preencher o formulário com toda a informação, por favor certifique-se de enviar a postagem para que a atividade fique criada no Skills.
 
-- Once the Job is created, it will get a number that can be used as a reference.
-
-- Don't forget to upload all the relevant information such as files, briefs, etc in order for the Account to be able to fully understand your request.
-
-- Each Job you create represents a new request for the Agency. You can create as many jobs/requests as you need.
+- Uma vez que a atividade é criada, o sistema irá atribuir um número a essa mesma atividade que pode ser usada como referência.
+- Não se esqueça de fazer o upload de todas as informações relevantes, como arquivos, resumos, etc., para que o Atendimento possa entender totalmente sua solicitação.
+- Cada atividade que você cria representa uma nova solicitação para o cliente. Você pode criar quantas atividades/solicitações precisar.
 
 <figure>
 
@@ -52,15 +47,15 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-### Move the Job status
+### Movendo a etapa de uma atividade
 
-1. Once you activate the Job you will need to continue to move the Job Forward by changing the Job Status.
+1. Depois de ativar a atividade, você precisará continuar movendo-a para frente, alterando o seu status.
 
-2. For that you just need to click on the Screen_Shot_2017-10-10_at_12.21.36.png symbol and select one of the available options.
+2. Para isso, basta você clicar no ícone ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson5-symbol-2.png) e selecionar uma das opções disponíveis.
 
-3. Once you send the Job, the Agency will be able to review the request and Assign the team.
+3. Assim que você envia a atividade, o cliente terá a possibilidade de ver a solicitação e pautar pessoas da sua equipe.
 
-4. Please note that all approvals and adjustments should be registered under the same Job/Request. This way it would be easy to track all changes needed, and the history of each request.
+4. Por favor tenha em atenção que todas as aprovações e ajustes devem ser registrados sob a mesma atividade/solicitação. Dessa forma, será máis fácil verificar todas as alterações realizadas e o histórico de cada solicitação.
 
 <figure>
 
@@ -69,11 +64,11 @@ From the client perspective, you can now create and control your own requests us
 <figcaption></figcaption>
 </figure>
 
-### Throughout the process, you can always check the stage of your requests by clicking on the Job sub-list "Mine".
+### Ao longo do processo, você sempre poderá verificar a etapa em que a atividade está, clicando na sub-lista de atividades "Minhas".
 
-1. By clicking on this sub-list you can check in which stage the Job is and also access the details of the Job, such as new posts, comments, etc.
+1. Ao clicar nesta sub-lista, você poderá verificar o estado/etapa em que a atividade está, assim como toda a informação e detalhes, como por exemplo, novas postagens, comentários, etc.
 
-2. Once your Request is complete, you will be notified that the Job is completed.
+2. Quando a sua solicitação estiver concluída, você receberá uma notificação informando-o que a atividade foi finalizada.
 
 <figure>
 
@@ -84,13 +79,13 @@ From the client perspective, you can now create and control your own requests us
 
 Also it is possible to create Sub-Jobs under a main Job.
 
-### Create Sub-Jobs under a main Job
+### Também é possível criar sub-atividades sob uma atividade principal.
 
-1. By clicking on the main job you can create sub-jobs with specific requests related with the main one.
+1. Clicando na atividade principal, você poderá criar sub-atividades com solicitações específicas, relacionadas com a atividade principal.
 
-2. Inside the Job press on the option "+", create sub-job.
+2. Dentro da atividade, clique na opção "+" para criar uma sub-atividade.
 
-3. The information needed is the same you need to fill in on a Job.
+3. Os campos de informação que necessitam de ser preenchidos são os mesmos quando você está criando uma atividade.
 
 <figure>
 
