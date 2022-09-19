@@ -1,7 +1,7 @@
 ---
 id:  create-projects
 title: Como criar Projectos
-sidebar_label: 1. Criar um Projecto
+sidebar_label: 1. Criar um Projeto
 sidebar_position: 1
 ---
 
@@ -17,7 +17,7 @@ Um projeto é uma campanha que pode ter várias atividades para diferentes depar
 <figcaption></figcaption>
 </figure>
 
-3. Depois de selecionar um cliente clique no "+" para abrir um novo popup criação de projecto.
+3. Depois de selecionar um cliente clique no "+" para abrir um novo popup criação de projeto.
 4. Preencha todos os campos amarelos (mandatórios).
 
 - **Titulo** - Nome que deseja dar ao seu Projecto.
@@ -34,7 +34,7 @@ Um projeto é uma campanha que pode ter várias atividades para diferentes depar
 ### Adicionar um Briefing a um projeto
 
 1. Você pode escrever um resumo com toda a informação e requisitos do cliente.
-2. Adicione toda a informação necessária dentro do novo popup de criação de projecto
+2. Adicione toda a informação necessária dentro do novo popup de criação de projeto
 
 <figure>
 
@@ -44,13 +44,13 @@ Um projeto é uma campanha que pode ter várias atividades para diferentes depar
 
 ### Adicionar ficheiros
 
-1. Você pode também adicionar ficheiros à descrição do Projecto simplesmente arrastando dentro do popup, ou clicando no quadrado tracejado.
+1. Você pode também adicionar ficheiros à descrição do Projeto simplesmente arrastando dentro do popup, ou clicando no quadrado tracejado.
 
 2. Será útil para adicionar documentos de briefing ou apresentações. Em qualquer formato. (Word, PPT, Excel, PDF, etc.)
 
-### Activar o Projecto
+### Ativar o Projeto
 
-Depois de preencher todos os campos, verifique que activa o Projecto
+Depois de preencher todos os campos, verifique que activa o Projeto
 
 1. Para ativar a atividade e gerar um número, pressione a pequena seta azul para avançar.
 2. Clique nele e o projeto mudará o estado e obterá um código de projeto, deixando de estar no estado de draft.
