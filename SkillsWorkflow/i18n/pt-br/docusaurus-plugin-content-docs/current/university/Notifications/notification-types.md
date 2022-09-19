@@ -1,35 +1,35 @@
 ---
 id:  notification-types
-title: "Types, categories and periodicity"
-sidebar_label: 1. Notification Types
+title: "Tipos, categorias e periodicidade"
+sidebar_label: 1. Tipos de notificação
 sidebar_position: 1
 ---
 
-Skills Workflow sends out two different types of notifications:
+Skills Workflow envia dois tipos diferentes de notificações:
 
-- E-mail notifications
-- In-system notifications
+- Notificações por e-mail
+- Notificações no sistema
 
-Depending on their categories, notifications can have different periodicities:
+Dependendo de suas categorias, as notificações podem ter diferentes periodicidades:
 
-- Immediate (every 5 minutes)
-- Daily (once a day)
-- Weekly (once a week)
+- Imediato (a cada 5 minutos)
+- Diariamente (uma vez por dia)
+- Semanalmente (uma vez por semana)
 
-Regardless of being immediate, daily or weekly notifications, all notifications are received in the system and can be sent via e-mail if the "Receive E-mail Notifications" flag is enabled on the user form.
+Independentemente de serem notificações imediatas, diárias ou semanais, todas as notificações são recebidas no sistema e podem ser enviadas por e-mail se o sinalizador "Receber notificações por e-mail" estiver habilitado no formulário do usuário.
 
-## Immediate Notifications
+## Notificações imediatas
 
-The immediate notifications are received in the system over a span of time of up to 5 minutes. These are mostly about posts generated on a specific document and are of the following categories:
+As notificações imediatas são recebidas no sistema em um período de até 5 minutos. Estes são principalmente sobre postagens geradas em um documento específico e são das seguintes categorias:
 
-- Changes to workflow stages;
-- Changes to document teams;
-- Changes to document dates;
-- Comments added to document feed;
-- Tagging notifications on the document feed;
-- Leave approvals/disapprovals;
-- Timesheet disapprovals;
-- Password resetting;
+- Alterações nos estágios do fluxo de trabalho;
+- Alterações nas equipes de documentos;
+- Alterações nas datas dos documentos;
+- Comentários adicionados ao feed de documentos;
+- Marcando notificações no feed de documentos;
+- Deixar aprovações/reprovações;
+- Reprovações do quadro de horários;
+- Redefinição de senha;
 
 <figure>
 
@@ -43,20 +43,20 @@ The immediate notifications are received in the system over a span of time of up
 <figcaption>E-mail notification</figcaption>
 </figure>
 
-## Daily Notifications
-The daily notifications are seen as a daily reminder to users. These are sent every day, at a specific time, according to what is set on the "Assistant Alert Time" field and calculated based on the "Default Time Zone" field in the back-office maintenance section.
+## Notificações diárias
+As notificações diárias são vistas como um lembrete diário aos usuários. Estes são enviados todos os dias, em um horário específico, de acordo com o que está definido no campo "Horário de alerta do assistente" e calculado com base no campo "Fuso horário padrão" na seção de manutenção de back-office.
 
-These notifications are of the following categories:
+Essas notificações são das seguintes categorias:
 
-1. Pending timesheet hours and tolerance days left;
-2. Pending timesheet approvals;
-3. Pending leave approvals;
-4. Delinquency and blocking alert due to missing timesheet hours:
-5. To the responsible regarding the resources they are responsible for;
-6. To the resources themselves;
-7. Blocking confirmation due to missing timesheet hours:
-8. To the responsible regarding the resources they are responsible for;
-9. To the resources themselves;
+1. Horas pendentes do quadro de horários e dias de tolerância restantes;
+2. Aprovações do quadro de horários pendentes;
+3. Aprovações de licença pendentes;
+4. Alerta de inadimplência e bloqueio devido a falta de horas no quadro de horários:
+5. Aos responsáveis quanto aos recursos pelos quais são responsáveis;
+6. Para os próprios recursos;
+7. Confirmação de bloqueio devido à falta de horas do quadro de horários;
+8. Aos responsáveis quanto aos recursos pelos quais são responsáveis;
+9. Para os próprios recursos;
 
 <figure>
 
@@ -70,9 +70,9 @@ These notifications are of the following categories:
 <figcaption>E-mail notification</figcaption>
 </figure>
 
-## Weekly Notifications
-Leaves scheduled for the week after the current one:
-According to the "Leaves Notification Week Day" configuration in the maintenance module of the back-office, the responsibles will receive one single notification on a specific day of the week informing which resources they are responsible for will be on leave on the following week;
+## Notificações semanais
+Saídas programadas para a semana seguinte à atual:
+De acordo com a configuração "Leaves Notification Week Day" no módulo de manutenção do back-office, os responsáveis receberão uma única notificação em um determinado dia da semana informando quais recursos são de sua responsabilidade que estarão de licença na semana seguinte;
 
 <figure>
 
@@ -86,22 +86,22 @@ According to the "Leaves Notification Week Day" configuration in the maintenance
 <figcaption>E-mail notification</figcaption>
 </figure>
 
-## My Notifications
-In Skills Workflow it is now possible to select which notifications a user wants to receive based on the role they play. This means that a user can opt to receive notifications as a user perspective or as a responsible.
+## Minhas notificações
+Em Skills Workflow agora é possível selecionar quais notificações um usuário deseja receber com base na função que desempenha. Isso significa que um usuário pode optar por receber notificações como uma perspectiva de usuário ou como um responsável.
 
-My Notifications:
+Minhas notificações:
 - Push
 - Email
-- Timesheets
-- Leaves
-- Documents
-- Digest Email
+- Quadro de Horarios
+- Ausencias
+- Documentos
+- E-mail de resumo
 
-Responsible Notifications:
-- Expiring Timesheets
-- Expired Timesheets
-- Timesheets to Approve
-- Leaves to Approve
+Notificações responsáveis:
+- Quadros de Horários Expirando
+- Quadros de Horários Expirados
+- Quadros de Horários para Aprovar
+- Deixa para aprovar
 
 <figure>
 
