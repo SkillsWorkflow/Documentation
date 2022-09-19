@@ -24,7 +24,7 @@ O painel tem 2 seções:
 Empresa e Grupo de Clientes – É aqui que você define os critérios para determinar as taxas e estimativas a serem incluídas no relatório, selecionando no menu suspenso os valores para os seguintes:
 
 
-- Companhia
+- Empresa
 
 - Grupo de Cliente
 
@@ -39,7 +39,7 @@ No formato de relatório padrão acima, os seguintes campos são mostrados:
 
 - Cliente – Cliente onde a Taxa foi criada
 
-- Estágio - Estágio atual da Estimativa
+- Estado - Estado atual da Estimativa
 
 - Versão – Número da versão do Orçamento
 
