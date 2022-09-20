@@ -1,21 +1,21 @@
 ---
 id:  assign-users
-title: Assign or unassign Users
-sidebar_label: 9. Massively assign or unassign users
+title: Atribuir ou cancelar a atribuição de usuários
+sidebar_label: 9. Atribuir ou cancelar a atribuição massivamente de usuários
 sidebar_position: 9
 ---
 
-## Massively assign or unassign users
+## Atribuir ou cancelar a atribuição massivamente de usuários
 
-Follow the next steps to massively assign or unassign users on the Jobs' teams:
+Siga as próximas etapas para atribuir ou cancelar a atribuição massiva de usuários nas equipes dos Jobs:
 
-1. Go to the tab "Jobs".
+1. Vá para a aba "Empregos".
 
-2. Select the desired Jobs from the list.
+2. Selecione os trabalhos desejados na lista.
 
-3. Click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson9-symbol-1.png) symbol to allocate users.
+3. Clique em ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson9-symbol-1.png) símbolo para alocar usuários.
 
-4. Select the option allocate users.
+4. Selecione a opção alocar usuários.
 
 <figure>
 
@@ -25,7 +25,7 @@ Follow the next steps to massively assign or unassign users on the Jobs' teams:
 
  
 
-- Choose the assignment type (e.g. requester, responsible, executor, etc.)*
+- Escolha o tipo de atribuição (por exemplo, solicitante, responsável, executor, etc.)*
 
 <figure>
 
@@ -33,7 +33,7 @@ Follow the next steps to massively assign or unassign users on the Jobs' teams:
 <figcaption></figcaption>
 </figure>
 
-- Choose the intended user (you can type the name for easier finding) and click **OK**
+- Escolha o usuário pretendido (você pode digitar o nome para facilitar a localização) e clique em **OK**
 
 <figure>
 
@@ -41,9 +41,9 @@ Follow the next steps to massively assign or unassign users on the Jobs' teams:
 <figcaption></figcaption>
 </figure>
 
-- Repeat this action if more users need to be assigned
+- Repita esta ação se mais usuários precisarem ser atribuídos
 
-If the intention is to unassign users from the jobs' teams, the process is the same, but select the option remove allocated users instead.
+Se a intenção for desatribuir usuários das equipes de trabalhos, o processo é o mesmo, mas selecione a opção remover usuários alocados.
 
 <figure>
 
