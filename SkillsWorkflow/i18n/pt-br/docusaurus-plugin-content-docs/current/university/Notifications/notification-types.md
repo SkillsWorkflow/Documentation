@@ -40,7 +40,7 @@ As notificações imediatas são recebidas no sistema em um período de até 5 m
 <figure>
 
 ![img-box-shadow](/img/university/notifications/notifications2.png)
-<figcaption>E-mail notification</figcaption>
+<figcaption>Notificação por E-mail</figcaption>
 </figure>
 
 ## Notificações diárias
@@ -61,13 +61,13 @@ Essas notificações são das seguintes categorias:
 <figure>
 
 ![img-box-shadow](/img/university/notifications/notifications3.png)
-<figcaption>In-system notification</figcaption>
+<figcaption>Notificação no Skills Workflow</figcaption>
 </figure>
 
 <figure>
 
 ![img-box-shadow](/img/university/notifications/notifications4.png)
-<figcaption>E-mail notification</figcaption>
+<figcaption>Notificação por E-mail</figcaption>
 </figure>
 
 ## Notificações semanais
@@ -77,13 +77,13 @@ De acordo com a configuração "Leaves Notification Week Day" no módulo de manu
 <figure>
 
 ![img-box-shadow](/img/university/notifications/notifications5.png)
-<figcaption>In-system notification</figcaption>
+<figcaption>Notificação no Skills Workflow</figcaption>
 </figure>
 
 <figure>
 
 ![img-box-shadow](/img/university/notifications/notifications6.png)
-<figcaption>E-mail notification</figcaption>
+<figcaption>Notificação por E-mail</figcaption>
 </figure>
 
 ## Minhas notificações
@@ -106,6 +106,6 @@ Notificações responsáveis:
 <figure>
 
 ![img-box-shadow](/img/university/notifications/notifications7.png)
-<figcaption>Notifications settings</figcaption>
+<figcaption>Configurações das notificações</figcaption>
 </figure>
 
