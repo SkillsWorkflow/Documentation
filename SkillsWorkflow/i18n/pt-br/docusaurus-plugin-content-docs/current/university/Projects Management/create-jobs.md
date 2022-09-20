@@ -1,7 +1,7 @@
 ---
 id:  create-jobs
-title: Como criar activides
-sidebar_label: 2. Criar Actividades
+title: Como criar atividades
+sidebar_label: 2. Criar Atividades
 sidebar_position: 2
 ---
 
@@ -9,7 +9,7 @@ sidebar_position: 2
 
 2. Selecione o projeto onde deseja criar o novo job e clique no "+" no canto superior direito
 
-3. Se quiser criar uma actividade dentro de outra actividade, pode ir a tab Actividades dentro do Projecto, selecionar uma delas e clicar no "+"
+3. Se quiser criar uma atividade dentro de outra atividade, pode ir a tab Atividades dentro do Projeto, selecionar uma delas e clicar no "+"
 
 4. Preencher o formulário de criação
 
@@ -32,7 +32,7 @@ sidebar_position: 2
 
 ### Adicionar ficheiros
 
-1. Você pode também adicionar ficheiros à descrição da actividade simplesmente arrastando dentro do popup, ou clicando no quadrado tracejado.
+1. Você pode também adicionar ficheiros à descrição da atividade simplesmente arrastando dentro do popup, ou clicando no quadrado tracejado.
 2. Será útil para adicionar documentos de briefing ou apresentações. Em qualquer formato. (Word, PPT, Excel, PDF, etc.)
 
 <figure>
@@ -41,9 +41,9 @@ sidebar_position: 2
 <figcaption></figcaption>
 </figure>
 
-### Activar a Actividade
+### Ativar a Atividade
 
-Depois de preencher todos os campos, verifique que activa a actividade
+Depois de preencher todos os campos, verifique que ativa a atividade
 
 1. Para ativar a atividade e gerar um número, pressione a pequena seta azul para avançar.
 2. Irá aparecer uma janela com a mensagem que a atividade foi corretamente criada.
