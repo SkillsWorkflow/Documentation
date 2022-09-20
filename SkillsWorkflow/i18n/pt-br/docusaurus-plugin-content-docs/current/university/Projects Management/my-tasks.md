@@ -5,8 +5,6 @@ sidebar_label: 8. Minhas tarefas
 sidebar_position: 8
 ---
 
-## Minhas tarefas
-
 ### No Skills Workflow você pode criar tarefas para você mesmo (se configurado em sua empresa).
 
 - As tarefas são trabalhos regulares que se comportam de maneira um pouco diferente em todo o sistema.
