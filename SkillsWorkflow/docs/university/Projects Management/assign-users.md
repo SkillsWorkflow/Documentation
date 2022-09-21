@@ -1,11 +1,9 @@
 ---
 id:  assign-users
-title: Assign or unassign Users
+title: Massively assign or unassign users
 sidebar_label: 9. Massively assign or unassign users
 sidebar_position: 9
 ---
-
-## Massively assign or unassign users
 
 Follow the next steps to massively assign or unassign users on the Jobs' teams:
 
