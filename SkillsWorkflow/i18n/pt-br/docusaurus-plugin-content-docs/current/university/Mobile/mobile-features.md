@@ -1,15 +1,15 @@
 ---
 id:  mobile-features
-title: "Mobile app"  
+title: Mobile app 
 sidebar_label: 1. Mobile app
 sidebar_position: 2
 ---
 
-## Introducção
+## Introdução
 
 Skills Workflow Mobile app está disponível em todos os dispositivos iOS e Android. O aplicativo acompanha o uso da Web e está em constante aprimoramento e atualização. Aqui está uma lista dos módulos e recursos atuais disponíveis no aplicativo.
 
-Modulos Atuais
+Módulos atuais:
 
 - Projetos
 - Tarefas
@@ -19,7 +19,7 @@ Modulos Atuais
 
 ### Procurar
 
-Toque na barra de pesquisa e digite algo para executar uma pesquisa geral do sistema
+Toque na barra de pesquisa e digite algo para realizar uma pesquisa geral do sistema
 
 <figure>
 
@@ -52,7 +52,7 @@ Nota: Abra, visualize e navegue pelos documentos
 <figcaption>List of credit notes</figcaption>
 </figure>
 
-Selecione e abra um documento para ver suas informações. Documentos diferentes terão guias diferentes, elas estão disponíveis no momento:
+Selecione e abra um documento para ver suas informações. Documentos diferentes terão guias diferentes, que estão disponíveis no momento:
 
 - Feed
 - Info
@@ -61,6 +61,8 @@ Selecione e abra um documento para ver suas informações. Documentos diferentes
 - Checklist
 - Informação Adicional
 - Tarefas
+- Adicionar Info
+- Tarefa
 - Despesas
 
 <figure>
@@ -87,6 +89,7 @@ Depois de abrir seu documento, você pode facilmente executar ações de documen
 - Notificar Pessoas
 - Informações Adicionais
 
+
 <figure>
 
 ![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
@@ -103,7 +106,7 @@ Quando terminar, toque em ok e poste suas alterações no documento
 
 Nota: Criar Documentos
 
-O aplicativo móvel terá a criação de documentos, como na web. Para fazer isso, navegue até o pai do documento desejado e toque no canto superior direito "+" para criar um novo documento abaixo dele. Documentos atualmente disponíveis para criação:
+O aplicativo móvel terá criação de documentos assim como na Web. Para fazer isso, navegue até o pai do documento desejado e toque no canto superior direito "+" para criar um novo documento abaixo dele. Documentos atualmente disponíveis para criação:
 
 - Despesas
 
@@ -115,7 +118,7 @@ O aplicativo móvel terá a criação de documentos, como na web. Para fazer iss
 
 Nota: Adicionar folhas de horas
 
-O calendário do quadro de horários fornecerá uma visão geral do seu horário. Selecione um dia e adicione tempo a um documento. Digite os detalhes do quadra de horários, se precisar. É isso.
+O calendário do quadro de horários lhe dará uma visão geral de suas horas. Selecione um dia e adicione hora a um documento. Insira os detalhes do Quadro de Horários, se necessário. É isso.
 
 <figure>
 
