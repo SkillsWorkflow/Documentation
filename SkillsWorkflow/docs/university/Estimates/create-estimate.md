@@ -1,11 +1,9 @@
 ---
 id:  create-estimate
-title: Estimates
+title: Create an Estimate
 sidebar_label: 1. Create an Estimate
 sidebar_position: 1
 ---
-
-## Create an Estimate
 
 Estimates can either be linked to Fees or created directly under a Project or Job.
 
