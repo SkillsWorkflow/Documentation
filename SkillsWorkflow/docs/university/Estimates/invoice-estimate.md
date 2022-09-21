@@ -1,6 +1,6 @@
 ---
 id:  invoice-estimate
-title: Estimates
+title: Invoice an Estimate
 sidebar_label: 2. Invoice an Estimate
 sidebar_postiion: 2
 ---
