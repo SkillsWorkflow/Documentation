@@ -1,17 +1,17 @@
 ---
 id:  mobile-features
-title: "Recursos móveis"
-sidebar_label: 1. Recursos móveis
+title: Mobile app 
+sidebar_label: 1. Mobile app
 sidebar_position: 2
 ---
 
 ## Introdução
 
-Skills Workflow Moveis é um app está disponível em todos os dispositivos iOS e Android. O aplicativo acompanha o uso da Web e está em constante aprimoramento e atualização. Aqui está uma lista de módulos e recursos atuais disponíveis no aplicativo.
+Skills Workflow Mobile app está disponível em todos os dispositivos iOS e Android. O aplicativo acompanha o uso da Web e está em constante aprimoramento e atualização. Aqui está uma lista dos módulos e recursos atuais disponíveis no aplicativo.
 
 Módulos atuais:
 
-- Pprojetos
+- Projetos
 - Tarefas
 - Despesas
 - Notificações
@@ -59,6 +59,8 @@ Selecione e abra um documento para ver suas informações. Documentos diferentes
 - Equipe
 - Arquivos
 - Checklist
+- Informação Adicional
+- Tarefas
 - Adicionar Info
 - Tarefa
 - Despesas
@@ -79,13 +81,14 @@ Ações
 
 Depois de abrir seu documento, você pode facilmente executar ações de documento tocando em "O que você quer fazer?" na guia Alimentação. Isso abrirá uma nova página de comentários onde todas as ações serão adicionadas. Toque no menu deslizante para ver todas as opções:
 
-- Mover etapa
-- Adicione imagens
-- Atribuir pessoas
-- Alterar data de término
-- Tempo extra
-- Notificar pessoas
-- informação adicional
+- Mover Etapa
+- Adicione Imagens
+- Atribuir Pessoas
+- Alterar data de Termino
+- Tempo Extra
+- Notificar Pessoas
+- Informações Adicionais
+
 
 <figure>
 
