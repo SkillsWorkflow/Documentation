@@ -351,7 +351,7 @@ This method can be used to refresh a row from a data source.
 #### Method(s)
 
 ```javascript
-1   declare function refresh(dataSourceName: string, rowId: { id: string; value: any }, filters, senderId): Promise<any>;
+1   declare function refresh(dataSourceName: string, rowId: { id: string; value: any }, senderId, filters): Promise<any>;
 ```
 
 <table className="custom-table">
@@ -380,18 +380,18 @@ This method can be used to refresh a row from a data source.
             <td>Row to refresh</td>
         </tr>
         <tr className="selected">
-            <td><code>filters</code></td>
-            <td>DashboardFilter[]</td>
-            <td>false</td>
-            <td></td>
-            <td>Filters to be used in Data Source</td>
-        </tr>
-        <tr className="selected">
             <td><code>senderId</code></td>
             <td>any</td>
             <td>false</td>
             <td></td>
             <td>Sender id</td>
+        </tr>
+         <tr className="selected">
+            <td><code>filters</code></td>
+            <td>DashboardFilter[]</td>
+            <td>false</td>
+            <td></td>
+            <td>Filters to be used in Data Source</td>
         </tr>
     </tbody>
 </table>
@@ -399,7 +399,7 @@ This method can be used to refresh a row from a data source.
 #### Basic Usage
 
 ```javascript
-SW.Store.refresh('dataSourceName', {id: 'rowId', value: 'rowValue'}, [{Name: 'FilterName', Value: 'FilterValue'}]);
+SW.Store.refresh('dataSourceName', {id: 'rowId', value: 'rowValue'}, senderId, [{Name: 'FilterName', Value: 'FilterValue'}]);
 ```
 
 ---
