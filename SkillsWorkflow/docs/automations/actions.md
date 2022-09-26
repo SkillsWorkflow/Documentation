@@ -787,7 +787,7 @@ To do so it is required a parameter to be filled:
        "SubJobs":"{{['GetCompanies']$.Content[:1].SubJobs | ToJson}}",
        "Tasks":"{{['GetCompanies']$.Content[:1].Tasks | ToJson}}"
    }
- }
+ },
 ```
 
 ## Merge
@@ -805,18 +805,18 @@ To do so it is required a parameter to be filled:
    "actionType": "Merge",  
    "name": "Merge",  
    "next": "Exit",
-   "payload":{\"User\": \"string\",\"DocumentType\": \"string\", \"DocumentOid\": \"string\", \"AssignmentType\": \"string\", \"Workload\": 0,  \"Priority\": 0}",
+   "payload": "{\"User\": \"string\",\"DocumentType\": \"string\", \"DocumentOid\": \"string\", \"AssignmentType\": \"string\", \"Workload\": 0,  \"Priority\": 0}",
    "values": {
        "DocumentType":"{{['GetDocumentTypes']$.Content[:1].DocumentType | ToJson}}",
        "AssignmentType":"{{['GetAssignments']$.Content[:1].AssignmentType | ToJson}}"
    }
- }
+ },
 ```
 
 ## AzureAdAuthentication
 
 AzureAdAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory 
-using Microsoft Graph API.
+for a specified Resource using Credentials.
 
 #### Configuration
 
@@ -833,8 +833,9 @@ Please check the template description to know which parameters must be sent for 
    "next": "Exit",  
    "tenantId": "cdda9984-9095-443c-b0bf-131c1e6bdc76",  
    "clientId": "aad39603-3954-4bf7-8128-b41f535ff211",  
-   "clientSecret": "*",   
- }
+   "clientSecret": "*",
+   "resource": "https://graph.microsoft.com"   
+ },
 ```
 
 #### Template Description
@@ -845,6 +846,44 @@ Please check the template description to know which parameters must be sent for 
 * tenantId - Microsoft Active Directory Tenant Id
 * clientId - Microsoft App Registration Id In Azure AD
 * clientSecret - Microsoft App Registration Secret
+* resource - The scope for authorization. Defaults to Microsoft Graph
+
+## AzureAdCertificateAuthentication
+
+AzureAdCertificateAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory
+for a specified Resource using a certificate.
+
+#### Configuration
+
+The Azure Active Directory permissions assigned to the token are defined on the Azure Active Diretory application.
+
+There are configurations that need to be applied in the automation workflow in order to perform the actions properly.
+
+Please check the template description to know which parameters must be sent for each action.
+
+```json title="Template"
+{  
+   "actionType": "AzureAdAuthentication",  
+   "name": "GetAzureAdToken",  
+   "next": "Exit",  
+   "tenantId": "cdda9984-9095-443c-b0bf-131c1e6bdc76",  
+   "clientId": "aad39603-3954-4bf7-8128-b41f535ff211",  
+   "CertificatePfx": "file.pfx",
+   "CertificatePfxPassword": "MyfilePfxPassword",
+   "resource": "https://graph.microsoft.com"   
+ },
+```
+
+#### Template Description
+
+* actionType – The action type is AzureAdAuthentication
+* name - The name of the action
+* next - The action that will be triggered after the current action been completed
+* tenantId - Microsoft Active Directory Tenant Id
+* clientId - Microsoft App Registration Id In Azure AD
+* CertificatePfx - name of the pfx certificate to use.
+* CertificatePfxPassword - password for the pfx certificate.
+* resource - The scope for authorization. Defaults to Microsoft Graph
 
 ## CreatePdfFromDocument
 
