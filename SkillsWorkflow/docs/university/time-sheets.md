@@ -1,195 +1,185 @@
 ---
 id:  time-sheets
-title: Hoja de Tiempo
-sidebar_label: Hoja de Tiempo
+title: Timesheets
+sidebar_label: Timesheets
 ---
 
-## Llenar hojas de tiempo
+## 1. Filling in Time Sheets
 
 :::note 
-Para completar las horas, navegue hasta el módulo **Time sheets**
-
+To enter time, navigate to the **Time Sheets** module. 
 :::
 
-1. Para completar las horas, navegue hasta el módulo "Timesheets"
+1. Verify that you can navigate by clicking on the time sheets section.
 
 <figure>
 
 ![img-with-border](assets/timesheets/1-navigate-to-timesheet-module.png)
-<figcaption>Módulo de Folha de Horas</figcaption>
+<figcaption>Time sheets's module</figcaption>
 </figure>
 
-2. Verifique si algunas líneas aparecen en su cuadrícula automáticamente, según los trabajos que se le han asignado.
-
-3. Si no está viendo el trabajo o el proyecto que necesita, haga clic en "+" para agregar una nueva entrada a la cuadrícula del parte de horas. Se abrirá una ventana emergente.
-
-4. Luego use el campo de búsqueda en la parte superior para buscar rápidamente el número de trabajo, el nombre del cliente o cualquier otra palabra clave.
-
-5. En esta ventana emergente puede encontrar diferentes pestañas según su acceso.
-
-6. Cada pestaña tiene un ícono de "Buscar" donde puede filtrar fácilmente la información.
-
-7. También puede filtrar aún más un campo específico escribiendo lo que está buscando en el encabezado de cada columna.
+2. Verify that some lines appear on your grid automatically, based on the jobs you have been assigned to.
+3. If you are not seeing the Job or Project that you need, click on the "+" to add a new entry to your timesheet grid. A popup will open.
+4. Then use the search field at the top to quickly search for the job number, client name or any other key word.
+5. On this popup you may find different tabs, depending on your accesses.
+6. Each tab has a "Search" icon where you can easily filter the information.
+7. You can also further filter a specific field by typing in what you are looking for under each column title
 
 <figure>
 
 ![img-with-border](assets/timesheets/2-adding-suggestions.png)
-<figcaption>Pop-up Folha de Horas</figcaption>
+<figcaption>Time sheet pop-up</figcaption>
 </figure>
 
 <figure>
 
 ![img-with-border](assets/timesheets/3-searching-suggestions.png)
-<figcaption>Filtrar por um filtro específico</figcaption>
+<figcaption>Filter by a specific filter</figcaption>
 </figure>
 
 
-8. Puede especificar el tipo de actividad que ha estado realizando (por ejemplo, investigación, reunión, etc.) para cada entrada de tiempo. Vaya a la columna de tipo de trabajo y seleccione el tipo de trabajo para cada fila de la lista desplegable.
+8. It is possible to specify the type of activitiy you have been doing (e.g. Research, meeting, etc.) for each time entry. Go to the work type column and select the work type for each line from the drop down list.
 
 <figure>
 
 ![img-with-border](assets/timesheets/4-selecting-work-type.png)
-<figcaption>Insira um tipo de trabalho</figcaption>
+<figcaption>Enter a work type</figcaption>
 </figure>
 
   
-9. Verifique que los indicadores en el lado derecho de la hoja de tiempo cambien a medida que ingresa el tiempo.
+9. Check that the indicators, on the right side of your timesheet, change as you enter time.
 
 <figure>
 
 ![img-with-border](assets/timesheets/5-update-calendar.png)
-<figcaption>Clique em cada célula e apresente as horas que você trabalhou</figcaption>
+<figcaption> Click on each cell and introduce the hours you have worked</figcaption>
 </figure>
 
 
-10. Compruebe si puede agregar más detalles a sus entradas haciendo clic derecho y presionando "detalles".
+10. Verify that you can add more details to your entries by clicking on the right button of your mouse and pressing "details". 
 
 <figure>
 
 ![img-with-border](assets/timesheets/6-adding-details.png)
-<figcaption>Adicione detalhes a cada célula.</figcaption>
+<figcaption>Add details to each cell.</figcaption>
 </figure>
 
 
 
-11. Verifique que no haya celdas rojas (horas no válidas).
-
-12. Pueden aparecer si está excediendo su máximo de horas diarias o si ha ingresado tiempo a un nivel que no tiene permitido (por ejemplo, si ha ingresado tiempo en un proyecto y solo puede ingresar tiempo en obras).
-
-13. Si ese es el caso, elimine esas horas y vuelva a ingresarlas en la línea correcta.
-
-14. Haga clic en "+" si la entrada que necesita no está ya en su hoja de tiempo.
-
-15. Es posible que se le permita o no ingresar tiempo los fines de semana, feriados o días de vacaciones, según la política de su empresa.
+11. Check that there are no red cells (invalid hours)
+12. These can appear if you are exceding your maximum daily hours or if you are entering time on a level that you are not allowed to (e.g. if you enter time on a Project and you are only allowed to enter time on Jobs)
+13. If that is the case, erase those hours and enter them again on the correct line
+14. Click on the "+" if the entry you need is not on your timesheet yet
+15. You may also be allowed or not to enter time on the weekend, holidays or leave days depending on your company's policy 
 
 <figure>
 
 ![img-with-border](assets/timesheets/7-error-on-timesheets.png)
-<figcaption>Horas inválidas e datas bloqueadas</figcaption>
+<figcaption>Invalid hours and locked dates</figcaption>
 </figure>
     
 
-16. Cuando esté listo, envíe su hoja de tiempo para su aprobación haciendo clic en la flecha en la barra de menú de la hoja de tiempo.
-17. Compruebe que el color de las celdas cambia a verde claro. Espere a que su supervisor apruebe su hoja de tiempo.
+16. Once you are ready, submit your timesheet for approval by clicking on the arrow, on the timesheet menu bar.
+17. Verify that the color of the cells changes to light green. Wait for your supervisor to approve your timesheet.
 
 <figure>
 
 ![img-with-border](assets/timesheets/8-sending-for-approval.png)
-<figcaption>Enviados para aprovação</figcaption>
+<figcaption>Sent for approval</figcaption>
 </figure>
     
 
-18. Consulte la leyenda debajo del calendario para obtener más detalles.
-19. Asegúrese de que no haya días/semanas incompletas.
-20. Asegúrese de que no haya días pendientes de envío para su aprobación (días en azul)
+18. Check the legend below the calendar for details. 
+19. Verify that there are no incomplete days/weeks.
+20. Verify that there are no days pending submission for approval (days in blue)
 
 <figure>
 
 ![small](assets/timesheets/9-calendar-overview.png)
-<figcaption>Calendário</figcaption>
+<figcaption>Calendar</figcaption>
 </figure>
 
 
 ---
 
-## 2. Aprobar partes de horas
+## 2. Approving Timesheets
 
 :::note
-Navegar al módulo **Time sheets Approval**
+Go to workspace **Time sheets Approval**
 :::
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_to_approve_response.png)
-<figcaption>Módulo de Folha de Horas</figcaption>
+<figcaption>Time sheets module</figcaption>
 </figure>
 
-1. Puede aprobar todas las hojas de horas solicitadas haciendo clic en el icono de verificación en la parte superior derecha.
+1. You can approve all the requested timesheets by clicking check icon in the right upper side.
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_approve_all_response.png)
-<figcaption>Aprovar todas as folhas de horas</figcaption>
+<figcaption>Approve all timesheets</figcaption>
 </figure>
 
-2. Aprueba un grupo haciendo clic en el ícono de verificación en la barra de grupos.
+2. Approve a group by clicking the check icon on the group bar.
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_approve_group_response.png)
-<figcaption>Aprovar grupo de folhas de horas</figcaption>
+<figcaption>Approve time sheet group</figcaption>
 </figure>
 
-3. Apruebe solo el seleccionado haciendo clic en el icono de verificación en la parte superior derecha después de seleccionar las hojas de horas deseadas.
+3. Approve only the selected by clicking check icon in the right upper side after you select the intended  timesheets.
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_approve_selected_response.png)
-<figcaption>As folhas de horas selecionadas aparecem em um azul mais escuro.</figcaption>
+<figcaption>Selected timesheets appear in darker blue.</figcaption>
 </figure>
 
-4. Las hojas de horas aprobadas serán de un verde más oscuro
+4. The approved timesheets will have a darker green
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_approved_response.png)
-<figcaption>Folhas de horas aprovadas</figcaption>
+<figcaption>Approved time sheets</figcaption>
 </figure>
 
 ---
 
-## 3.Planificación y programación de ausencias
+## 3. Rejecting Time sheets
 
 :::note
-En el mismo espacio de trabajo en las **hojas de tiempo** se aprueban.
+In the same workspace where **time sheets** are approved
 :::
 
-1. También puede rechazar todo haciendo clic en el ícono X en la parte superior derecha al lado del ícono de verificación.
+1. It's also possible to reject all by clicking X icon in the right upper side next to the check icon.
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_reject_all_response.png)
-<figcaption>Rejeitar todas as folhas de horas</figcaption>
+<figcaption>Reject all time sheets</figcaption>
 </figure>
 
-2. Para rechazar un grupo, simplemente haga clic en **Aprobación de parte de horas**. En la barra de grupos, haga clic en el icono X.
+2. To reject a group, just has in **Time sheet Approval**. On the group bar click the X icon.
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_reject_group_response.png)
-<figcaption>Rejeitar um grupo de folha de horas</figcaption>
+<figcaption>Reject a group of time sheets</figcaption>
 </figure>
 
-3. Simplemente haciendo clic en el ícono X en el lado superior derecho al lado del ícono de verificación después de seleccionar las hojas de horas deseadas.
+3. Only by clicking the X icon in the right upper side next to the check icon after you select the intended  timesheets.
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_reject_selected_response.png)
-<figcaption>As folhas de horas selecionadas aparecem em um azul mais escuro.</figcaption>
+<figcaption>Selected timesheets appear in darker blue.</figcaption>
 </figure>
 
 <figure>
 
 ![img-with-border](/img/responses/timesheets_rejected_response.png)
-<figcaption>As folhas de horas rejeitadas aparecerão em vermelho.</figcaption>
+<figcaption>Rejected timesheets will appear in red.</figcaption>
 </figure>
