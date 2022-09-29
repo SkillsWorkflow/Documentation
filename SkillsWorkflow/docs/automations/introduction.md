@@ -55,10 +55,33 @@ Please see the example below to see  access to the action GetProjectFile and get
     "url": "{{['GetProjectFile']$.Content.Uri}}"  
 }
 ```
+## Parameters
 
-It is also possible to access the full HttpRequest that triggered the Automation Workflow.
+### {{['#HttpRequest']}} 
+Full HttpRequest that triggered the Automation Workflow.
 
-To do so, you must use the following statement: {{['#HttpRequest']}}
+```json title="Full Http Request Example"
+{
+  "Scheme": "https",
+  "Host": "integrationworkflow-skills-dev-we.azurewebsites.net",
+  "Path": "/api/tenants/<tenantId>/integration-workflows/<AutomationId>/execute",
+  "Method": "POST",
+  "Query": {
+    "TenantName": [
+      "playground-dev"
+    ]
+  },
+  "Headers": {
+    "Accept": [
+      "application/json"
+      ]
+  },
+  "Body": {
+    "parameter": "value"
+  }
+}
+```
+ 
 
 ---
 
@@ -69,9 +92,14 @@ It is possible to convert values in order to be able to export files (convert to
 To use these converters you will need to add a Pipe | after the field name.
 
 * ToBase64 - {{['CreateCsv']$ | ToBase64}}
+* FromBase64 - {{['CreateCsv']$ | ToBase64}}
 * UrlEncode - {{['GetProjectFile']$.Content.Url | UrlEncode}}
 * ToJsonString - {{['GetProjectFile']$.Content | ToJsonString}}
 * ToDateUtc - {{['GetProjectFile']$.Content.CreatedOn | ToDateUtc}}
+* ToJson - {{['CreateCsv']$ | ToJson}}
+* ToJsonString - {{['CreateCsv']$ | ToJsonString}}
+* FromUnixTimeSeconds - {{['CreateCsv']$ | FromUnixTimeSeconds}}
+* IsNullOrEmpty - {{['CreateCsv']$ | IsNullOrEmpty}}
 
 ---
 
