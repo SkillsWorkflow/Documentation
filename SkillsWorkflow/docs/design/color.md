@@ -24,7 +24,7 @@ Each document in the system is attached to a specific color.
 
 <figure>
 
-![img-box-shadow](/img/design/color-documents.png)
+![img-box-shadow](/img/design/color-docs.png)
 <figcaption>Document Colors</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ This colors are used in graphic representations such as (charts, bars, pie-chart
 
 <figure>
 
-![img-box-shadow](/img/design/color-stages.png)
+![img-box-shadow](/img/design/color-graphs.png)
 <figcaption>Graphs and Stages colors</figcaption>
 </figure>
 
