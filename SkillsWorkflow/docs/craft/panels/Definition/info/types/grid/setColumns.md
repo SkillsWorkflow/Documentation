@@ -469,3 +469,37 @@ Type: Boolean
 
 </figure>
 
+## showZeros
+
+show or hide the zeros values
+
+Type: Boolean
+
+```json
+ {
+        dataField: "From0To60",
+        visible: true,
+        dataType: "number",
+        alignment: "right",
+        format: {
+            type: "fixedPoint",
+            precision: 2,
+        },
+        showZeros: false
+}
+```
+
+
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/showZeros-property-example.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/showZeros-column-example.png)
+
+</figure>
+
