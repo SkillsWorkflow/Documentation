@@ -1,17 +1,17 @@
 ---
 id:  leave-department-dashboard
-title: Leaves My Department
-sidebar_label: 7. Leaves My Department Dashboard
+title: Licenças Meu Departamento
+sidebar_label: 7. Dashboard de Licenças meu Departamento
 sidebar_position: 7
 ---
 
-## Leaves My Department Dashboard
+## Dashboard de Licenças meu Departamento
 
-When scheduling your own leaves or approving leaves submitted by your subordinates, it's important to know if other employees in the same department are also on leave. This prevents the department from being crippled due to a lot of employees being on leave on the same day.
+Ao agendar suas próprias licenças ou aprovar licenças enviadas por seus subordinados, é importante saber se outros funcionários do mesmo departamento também estão de licença. Isso evita que o departamento seja prejudicado devido a muitos funcionários estarem de licença no mesmo dia.
 
-This dashboard provides a calendar view showing which users from your Department are on Leave, for each working day of the calendar month.
+Este Dashboard fornece uma visualização de calendário mostrando quais usuários do seu departamento estão de licença, para cada dia útil do mês do calendário.
 
-To access, select "Leaves - My Department" from the Workspaces menu and the current month calendar will be displayed.
+Para acessar, selecione "Licenças - Meu Departamento" no menu Workspaces e o calendário do mês atual será exibido.
 
 <figure>
 
@@ -19,4 +19,4 @@ To access, select "Leaves - My Department" from the Workspaces menu and the curr
 <figcaption></figcaption>
 </figure>
 
-To select the desired month simply click the forward or backward buttons beside the month display field.
+Para selecionar o mês desejado, basta clicar nos botões avançar ou retroceder ao lado do campo de exibição do mês.

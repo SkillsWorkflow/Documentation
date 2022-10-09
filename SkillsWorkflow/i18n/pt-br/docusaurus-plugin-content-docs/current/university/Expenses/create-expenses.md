@@ -5,8 +5,6 @@ sidebar_label: 2. Criar Despesas
 sidebar_position: 2
 ---
 
-## 2. Como criar Despesas
-
 ### As despesas podem ser criadas de duas maneiras:
 
 - Diretamente num Projeto

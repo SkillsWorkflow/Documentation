@@ -1,18 +1,18 @@
 ---
 id: leave-dashboard
-title: Leaves
-sidebar_label: 6. Leaves Dashboard
+title: Folhas
+sidebar_label: 6.Dashboard de Folhas
 sidebar_position: 6
 ---
 
-## Leaves Dashboard
+## Dashboard de Folhas
 
-When scheduling our own leaves or approving leaves submitted by our subordinates, it's important to know if other employees in the company are also on leave on the same day. This prevents the company from being crippled due to a lot of employees being on leave on the same day.
+Ao agendar nossas próprias licenças ou aprovar licenças enviadas por nossos subordinados, é importante saber se outros funcionários da empresa também estão de licença no mesmo dia. Isso evita que a empresa seja prejudicada devido a muitos funcionários estarem de licença no mesmo dia.
 
-This dashboard provides a calendar view showing which users from the same company are on leave on each working day of the calendar month.
+Esse Dashboard fornece uma visualização de calendário mostrando quais usuários da mesma empresa estão de licença em cada dia útil do mês do calendário.
 
-To access this dashboard, select "Leaves" from the Workspaces menu and the current month calendar will be displayed.
-On the right side of the dashboard is a table showing users whose leave submitted for that calendar month is still pending approval.
+Para acessar este painel, selecione "Folhas" no menu Workspaces e o calendário do mês atual será exibido.
+No lado direito do painel, há uma tabela que mostra os usuários cujas licenças enviadas para esse mês do calendário ainda estão com aprovação pendente.
 
 <figure>
 
@@ -20,4 +20,4 @@ On the right side of the dashboard is a table showing users whose leave submitte
 <figcaption></figcaption>
 </figure>
 
-To select the desired month simply click the forward or backward buttons beside the month display field.
+Para selecionar o mês desejado, basta clicar nos botões avançar ou retroceder ao lado do campo de exibição do mês.

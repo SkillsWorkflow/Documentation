@@ -1,15 +1,15 @@
 ---
 id:  timesheet-approvals-dashboard
-title: Missing Timesheet Hours and Approvals
-sidebar_label: 8. Missing Timesheet Hours and Approvals Dashboard
+title: Horas e Aprovações do Dashboard de Horários Ausentes
+sidebar_label: 8. Dashboard de aprovações e horas do quadro de horários ausentes
 sidebar_position: 8
 ---
 
-## Missing Timesheet Hours and Approvals Dashboard
+## Dashboard de aprovações e horas do quadro de horários ausentes
 
-This dashboard provides real-time information on blocked users due to missing hours, and/or missing approvals of their subordinate's timesheets.
+Esse Dashboard fornece informações em tempo real sobre usuários bloqueados devido à falta de horas e/ou aprovações ausentes das planilhas de horas de seus subordinados.
 
-To access select “Missing Timesheet Hours and Approvals” under the Timesheet menu.
+Para acessar, selecione “Horas e Aprovações do Quadro de Horários em Falta” no menu Quadro de Horários.
 
 <figure>
 
@@ -17,39 +17,39 @@ To access select “Missing Timesheet Hours and Approvals” under the Timesheet
 <figcaption></figcaption>
 </figure>
 
-The dashboard has 2 sections which show the following:
+O dashboard tem 2 seções que mostram o seguinte:
 
-Graphs
+Gráficos
 
-1. Blocked Users – A bar graph showing the number of users blocked for Missing Hours and Missing Approvals. Hovering on the bar will show the number of users.
+1. Usuários bloqueados – um gráfico de barras que mostra o número de usuários bloqueados por horas e aprovações ausentes. Passar o mouse sobre a barra mostrará o número de usuários.
 
-2. Blocked Users per Department – A pie chart showing the percentage breakdown per department on the number of users blocked. Hovering on the pie will show the number of users blocked in the department.
+2. Usuários bloqueados por departamento – um gráfico de pizza que mostra a divisão percentual por departamento no número de usuários bloqueados. Passar o mouse sobre a torta mostrará o número de usuários bloqueados no departamento.
 
-3. Total of Hours Missing - A bar graph showing the number of delinquent hours for Missing Hours and Missing Approvals. Hovering on the bar will show the number of delinquent hours.
+3. Total de Horas Perdidas - Um gráfico de barras que mostra o número de horas inadimplentes para Horas Perdidas e Aprovações Perdidas. Passar o mouse sobre a barra mostrará o número de horas inadimplentes.
 
-4. Missing Hours per Department - A pie chart showing the percentage breakdown per department on the number of delinquent hours. Hovering on the pie will show the number of delinquent hours in the department.
+4. Horas Ausentes por Departamento - Um gráfico de pizza que mostra a divisão percentual por departamento no número de horas inadimplentes. Passar o mouse sobre a torta mostrará o número de horas inadimplentes no departamento.
 
-List of Blocked and Delinquent Users
-
-
-A list showing the blocked users under each department with the following columns:
+Lista de usuários bloqueados e inadimplentes
 
 
-- User Name – Skills User Name of blocked user
+Uma lista mostrando os usuários bloqueados em cada departamento com as seguintes colunas:
 
-- AD User Name – Active Directory User Name of blocked user
 
-- Timesheet Required – Checkbox to indicate if blocked user is required to fill in timesheets
+- Nome de usuário – Nome de usuário de habilidades do usuário bloqueado
 
-- Blocked in System – Checkbox showing that user is blocked in Skills
+- Nome de usuário do AD – nome de usuário do Active Directory do usuário bloqueado
 
-- Blocked in AD – Checkbox showing that user’s AD is blocked
+- Quadro de Horários Necessário – Caixa de seleção para indicar se o usuário bloqueado precisa preencher quadros de horários
 
-- Blocked Reason – Delinquency Reason either Missing Hours or Missing Approvals
+- Bloqueado no Sistema – Caixa de seleção mostrando que o usuário está bloqueado nas Habilidades
 
-- Missing Hours – Total delinquent hours to date
+- Bloqueado no AD – Caixa de seleção mostrando que o AD do usuário está bloqueado
 
-- Missing Days – Click on View Bar and a window will pop showing the missing days
+- Motivo de bloqueio - Motivo de inadimplência ou falta de horas ou falta de aprovações
+
+- Horas ausentes - Total de horas inadimplentes até o momento
+
+- Missing Days – Clique na Barra de Visualização e uma janela irá aparecer mostrando os dias faltantes
 
 <figure>
 

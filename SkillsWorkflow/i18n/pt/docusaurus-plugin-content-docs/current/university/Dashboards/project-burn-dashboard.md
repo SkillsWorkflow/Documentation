@@ -1,31 +1,31 @@
 ---
 id:  project-burn-dashboard
-title: Project Burn
-sidebar_label: 2. Project Burn Dashboard
+title: Projeto Burn
+sidebar_label: 2. Dashboard Projeto Burn 
 sidebar_position: 2
 ---
 
-## Project Burn Dashboard
+## Dashboard Projeto Burn 
 
 
-Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.
+Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um cliente ou projeto específico.
 
-The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
+O objetivo é dar ao usuário a capacidade de controlar os processos de uma forma muito amigável e abrangente.
 
-As a project manager, it is very useful to understand the status of a specific client and control the profitability of each project. This way the PM will have the necessary tools to negotiate with their clients.
+Como gerente de projetos, é muito útil entender o status de um cliente específico e controlar a lucratividade de cada projeto. Desta forma o PM terá as ferramentas necessárias para negociar com seus clientes.
 
-There are several dashboards at the project level available in the system that will display different information.
+Existem vários painéis no nível do projeto disponíveis no sistema que exibirão informações diferentes.
 
-Burn Dashboard
-Select the project you want to analyze;
-Click on the "Burn Dashboard" tab;
-You will find several representations that will show you in a glimpse whether your project is already burned.
+Dashboard Burn
+Selecione o projeto que deseja analisar;
+Clique em "Burn Dashboard";
+Você encontrará várias representações que mostrarão rapidamente se o seu projeto já está gravado.
 
-Please note that the burn dashboard is based on Forecast versus Real hours.
+Observe que o painel de gravação é baseado na previsão versus horas reais.
 
-Time Burn
+Tempo Burn
 
-This representation shows the number of forecasted hours versus number of real hours. Although the graphic is distributed per month, it also shows a sum representation.
+Essa representação mostra o número de horas previstas versus o número de horas reais. Embora o gráfico seja distribuído por mês, ele também mostra uma representação da soma.
 
 <figure>
 
@@ -33,11 +33,11 @@ This representation shows the number of forecasted hours versus number of real h
 <figcaption></figcaption>
 </figure>
 
-Revenue Burn
+Receita Burn
 
-This representation shows if the project is already burned in a revenue and costs perspective.
+Esta representação mostra se o projeto já está queimado em uma perspectiva de receita e custos.
 
-Revenue values are based on planned/contracted hours and the associated value for each typology group. The cost values are inherited by the user cost versus number of real hours filled in. 
+Os valores de receita são baseados nas horas planejadas/contratadas e no valor associado para cada grupo de tipologia. Os valores de custo são herdados pelo custo do usuário versus o número de horas reais preenchidas. 
 
  
 
@@ -51,18 +51,18 @@ Revenue values are based on planned/contracted hours and the associated value fo
 
  
 
-Typology Group Burn
+Grupo de Tipologia Burn
 
-This Dashboard shows which typology is burning your project and is based on actual hours.
-
- 
-
-Department Burn
-
-This representation is based on the users' actual hours and shows which department is filling in more hours under a specific project.
+Este Dashboard mostra qual tipologia está queimando seu projeto e é baseado em horas reais
 
  
 
-User Burn
+Departamento Burn
 
-This representation is based on the users' actual hours and shows which user is filling in more hours under a specific project.
+Essa representação é baseada nas horas reais dos usuários e mostra qual departamento está preenchendo mais horas em um projeto específico.
+
+ 
+
+Usuario Burn
+
+Essa representação é baseada nas horas reais dos usuários e mostra qual usuário está preenchendo mais horas em um projeto específico

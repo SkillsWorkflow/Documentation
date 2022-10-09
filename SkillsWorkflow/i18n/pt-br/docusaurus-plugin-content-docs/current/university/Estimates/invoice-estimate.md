@@ -4,8 +4,6 @@ title: Orçamentos
 sidebar_label: 2.  Faturar um orçamento
 ---
 
-## 2.  Crear Retenção de Orçamento
-
 Os orçamentos podem ser criadas como retentores, e o sistema exibirá automaticamente seus valores.
 
 Verifique como você pode criar a estimativa na Lição 1 na seção "orçamentos".

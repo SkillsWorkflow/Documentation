@@ -1,32 +1,32 @@
 ---
 id:  client-dashboard
-title: Clients
-sidebar_label: 1. Client Dashboards
+title: Clientes
+sidebar_label: 1.  Dashboards de Clientes 
 sidebar_position: 1
 ---
 
-## Client Dashboards
+##  Dashboards de Clientes
 
-Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.
+Os painéis são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um cliente ou projeto específico.
 
-The goal is to give the ability to control processes in a very friendly and comprehensive way.
+O objetivo é dar a capacidade de controlar os processos de uma forma muito amigável e abrangente.
 
-As a project manager is very useful to understand the status of a specific client and control the profitability of each project. This way the PM will have the tools to negotiate with their clients.
+Como gerente de projetos é muito útil entender o status de um cliente específico e controlar a lucratividade de cada projeto. Dessa forma, o PM terá as ferramentas para negociar com seus clientes.
 
-There are several Dashboards at the client level available in the system that will display different information.
+Existem vários Dashboards no nível do cliente disponíveis no sistema que exibirão informações diferentes.
 
 
 ### Burn Dashboard
 
-1. Go to the client module.
+1. Vá para o módulo cliente.
 
-2. Select the client you want to check.
+2. Selecione o cliente que deseja verificar.
 
-3. Press on Burn Dashboard.
+3. Pressione em Burn Dashboard.
 
-You will find out a summary with total indicators:
+Você encontrará um resumo com indicadores totais:
 
-Planned, actual, revenue and cost 
+Planejado, real, receita e custo
 
 
 <figure>
@@ -35,34 +35,32 @@ Planned, actual, revenue and cost
 <figcaption></figcaption>
 </figure>
 
-Select the project you wish to analyze
-The system will display several graphics with detailed information related to the selected project
+Selecione o projeto que deseja analisar
+O sistema exibirá vários gráficos com informações detalhadas relacionadas ao projeto selecionado
 
-You will be able to check total values for that specific project such as contracted hours, planned hours, actual hours, planned revenue, and actual cost.
+Você poderá verificar os valores totais desse projeto específico, como horas contratadas, horas planejadas, horas reais, receita planejada e custo real.
 
-Also, you will be able to find the burn percentage (planned - actual hours)
+Além disso, você poderá encontrar a porcentagem de queima (planejada - horas reais)
 
-Project Time Burn
+Tempo de Projeto  Burn
 
-This representation will show you a monthly distribution of planned versus actual hours.
+Essa representação mostrará uma distribuição mensal de horas planejadas versus horas reais.
 
-You will find out the same representation of the accumulated values as well.
+Você também descobrirá a mesma representação dos valores acumulados.
 
-Project Revenue Burn
+Receita do Projeto Burn
 
-This representation will show you a monthly distribution of planned revenue versus actual cost (based on user cost*actual hours).
-
-You will also find out the same representation of the corresponding accumulated values
-
+Essa representação mostrará uma distribuição mensal da receita planejada versus o custo real (com base no custo do usuário*horas reais).
+Você também descobrirá a mesma representação dos valores acumulados correspondentes
  
 
 Profitability Dashboard
-Go to the client module;
-Select the client you want to check;
-Press on Profitability Dashboard 
-This Dashboard shows you in a glimpse the projects, under the client you have selected, which returns you a higher profit (based on the income value quoted to the client)
+Vá para o módulo cliente;
+Selecione o cliente que deseja verificar;
+Pressione em Profitability Dashboard 
+Este Dashboard mostra-lhe um vislumbre dos projetos, sob o cliente que você selecionou, que lhe retorna um lucro maior (com base no valor da receita cotada para o cliente)
 
-You will be able to analyze the planned profit per project, and per typology.
+Você poderá analisar o lucro planejado por projeto e por tipologia.
 
 <figure>
 
@@ -70,7 +68,7 @@ You will be able to analyze the planned profit per project, and per typology.
 <figcaption></figcaption>
 </figure>
 
-Additionally, you will be able to check the profit margin per project by percentage and value, and the profit per project (based on planned hours income, and actual hours cost) with the Pareto representation
+Além disso, você poderá verificar a margem de lucro por projeto por porcentagem e valor, e o lucro por projeto (com base na receita de horas planejadas e custo de horas reais) com a representação de Pareto
 
 <figure>
 
@@ -80,16 +78,16 @@ Additionally, you will be able to check the profit margin per project by percent
 
  
 
-Project Allocation Dashboard
-Go to the client module;
-Select the client you want to check;
-Press on Project Allocation Dashboard 
-Project Allocation Dashboard will show you a table where you can check the following information per project:
+Alocação do Projeto Dashboard
+Vá para o módulo cliente;
+Selecione o cliente que deseja verificar;
+Pressione no Dashboard de Alocação do Projeto 
+O Dashboard de Alocação de Projetos mostrará uma tabela onde você poderá verificar as seguintes informações por projeto:
 
-Users Capacity;
-Actual hours already registered in the system;
-Billable hours registered;
-Allocation % 
+Capacidade de Usuários;
+Horas reais já registradas no sistema;
+Horas faturáveis registradas
+% de alocação
 
 <figure>
 
@@ -97,9 +95,9 @@ Allocation %
 <figcaption></figcaption>
 </figure>
 
-Please note that this dashboard is a table and allows you to add more fields if needed.
+Observe que este painel é uma tabela e permite adicionar mais campos, se necessário.
 
-To do so you should press on the icon at your right (marked in orange), and the system will show a field chooser as an Excel pivot table.
+Para isso você deve pressionar o ícone à sua direita (marcado em laranja), e o sistema mostrará um seletor de campo como uma tabela dinâmica do Excel.
 
 <figure>
 
@@ -107,4 +105,4 @@ To do so you should press on the icon at your right (marked in orange), and the 
 <figcaption></figcaption>
 </figure>
 
-Please note that you can either export to excel or print out this dashboard by pressing outside the grid with the right function of your mouse.
+Observe que você pode exportar para o Excel ou imprimir este painel pressionando fora da grade com a função direita do mouse.
