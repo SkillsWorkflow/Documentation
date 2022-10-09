@@ -1,10 +1,10 @@
 ---
 id: create-commercial-client
-title: Create a new commercial client
-sidebar_label: 2. Create commercial client
+title: Como criar um Cliente Comercial?
+sidebar_label: 2. Como criar um Cliente Comercial?
 ---
 
-To create a new commercial client you must go to the "CRM" module and to the sub-list "Clients".
+Para criar um cliente comercial, deverá aceder o back-office e navegar para o módulo "CRM", clicando depois na sub-lista "Clientes".
 
 <figure>
 
@@ -12,14 +12,14 @@ To create a new commercial client you must go to the "CRM" module and to the sub
 <figcaption>CRM module</figcaption>
 </figure>
 
-- Click on the option "+ New Commercial Client". Verify that this option will lead you to the Client creation screen.
-- Ensure you fill in the following fields:
-Name - client's name
-Code - client's code (may be used for the project/job code depending on configuration)
-External ID - client ID from the ERP (if applicable)
-Client Manager - user responsible for this client
-Timesheet Approver Type - choose who should approve time for this client (user responsible, project owner, or client manager)
-Timesheet Level - choose the highest level at which users can enter time for this client (Client, Product, Project, Job)
+- Clique na opção "+ Novo Cliente Comercial". Verifique que esta opção fará com que o popup de criação de um cliente apareça.
+- Verifique que você preenche os campos seguintes:
+Nome - nome de cliente
+Código - código de cliente (poderá ser utilizado para a informação de projeto/atividade, dependendo da configuração)
+ID Externo - ID do cliente conforme o que esteja configurado no ERP (se aplicável)
+Gerente de Cliente - usuário responsável por este cliente
+Tipo de Aprovador de Timesheet - escolha quem deverá aprovar as horas de timesheet para este cliente (usuário responsável, responsável de projeto, ou gerente de cliente)
+Nível de Timesheet - selecione até que nível os usuários poderão colocar horas para este cliente (Cliente, Produto, Projeto, Atividade)
 
 <figure>
 
@@ -27,5 +27,6 @@ Timesheet Level - choose the highest level at which users can enter time for thi
 <figcaption>New client creation screen</figcaption>
 </figure>
 
->After saving the Client, several tabs will appear automatically at the bottom of the page, where you can add new products and associate users.
-Once all fields are complete, you will be able to create Projects and Jobs for this client.
+>Após salvar as alterações de cliente, vários sub-módulos irão aparecer automaticamente no final do popup, onde você poderá adicionar novos produtos e associar usuários.
+
+Assim que estes campos estejam preenchidos, você poderá então criar projetos e atividades para este cliente.
