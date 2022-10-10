@@ -53,9 +53,9 @@ This section will describe the tools available on the SDK:
     {label: 'genericPreview', value: 'genericpreview'},
     {label: 'genericNew', value: 'genericnew'},
     {label: 'export', value: 'export'},
-    {label: 'setAtributte', value: 'timesheets'},
+    {label: 'setAttribute', value: 'setattribute'},
     {label: 'setRAG', value: 'setrag'},
-    {label: 'SetDashboardFilter', value: 'setdashboardfilter'},
+    {label: 'setDashboardFilter', value: 'setdashboardfilter'},
     {label: 'componentProperty', value: 'componentproperty'},
     {label: 'getMyCompanies', value: 'getmycompanies'},
     {label: 'getMyClients', value: 'getmyclients'},
@@ -69,6 +69,7 @@ This section will describe the tools available on the SDK:
 
 ```
 This documentation is still under construction
+
 ```
 
 </TabItem>
@@ -77,6 +78,7 @@ This documentation is still under construction
 
 ```
 This documentation is still under construction
+
 ```
 
 </TabItem>
@@ -85,6 +87,7 @@ This documentation is still under construction
 
 ```
 This documentation is still under construction
+
 ```
 
 </TabItem>
@@ -93,6 +96,7 @@ This documentation is still under construction
 
 ```
 This documentation is still under construction
+
 ```
 
 </TabItem>
@@ -115,6 +119,7 @@ Please see below how to use this tool.
 SW.setAttribute(e, null,'style', 'display: flex; align-items: baseline', false);
 SW.setAttribute(e, 'Hello', 'style', 'background-color:red; color:white', true)
 SW.setAttribute(e, null, 'class', 'skillsSquare', false)
+
 ```
 
 </TabItem>
@@ -136,6 +141,7 @@ Please see below how to use this method.
 
 ```
 SW.setRAG(e, value, i.value>15, (i.value>=5 && i.value<15), i.value<5);
+
 ```
 
 ## Arguments
@@ -164,6 +170,7 @@ When using this tool, you will have available:
 
 ```
 SW.setDashboardFilter('Department', 'Creative')
+
 ```
 
 ## Arguments
@@ -187,6 +194,7 @@ This documentation is still under construction
 
 ```
 This documentation is still under construction
+
 ```
 
 </TabItem>
@@ -216,11 +224,12 @@ This method takes no arguments. Implicitly, it uses the logged on user as the us
 
 </TabItem>
 
+
 <TabItem value="showimage">
 
 ## Method
 
-showImage method allows you to add the client's or user's image to the component.
+- showImage method allows you to add the client's or user's image to the component.
 
 ## Syntax
 
@@ -232,6 +241,7 @@ Please see below how to use this method.
 
 ```
 SW.showImage(e, 'client', 'medium', i.data.hasImage, i.data.Client, i.data.ClientId)
+
 ```
 
 ## Arguments
@@ -264,6 +274,7 @@ When using this method, you will have available:
 
 ```
 SW.executeAPI('GET','blockedloginrequests/userstoblock', null, null).then(result => result)
+
 ```
 
 ## Arguments
@@ -297,6 +308,7 @@ When using this, you will have available:
 
 ```
 SW.AzureDevOps.getAzureWorkItemByDocumentId('701cdcc5-7304-4b85-886f-8ab53b4118af', 'Deliverable', 'Work Item', '6', 'Basic AzureAuthKeyHere', false).then(x => alert(JSON.stringify(x)))
+
 ```
 
 ## Arguments
@@ -309,6 +321,8 @@ SW.AzureDevOps.getAzureWorkItemByDocumentId('701cdcc5-7304-4b85-886f-8ab53b4118a
 - errorNotification - When is setting as true throw a toast with the error message case there is an error while executing the method
 
 </TabItem>
+
+</Tabs>
 
 
 
