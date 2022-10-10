@@ -1,15 +1,15 @@
 ---
 id:  contracts-projects
-title: Estimate Associated Projects
-sidebar_label: 3. Manage Projects associated to an Estimate
+title: Orçamento Associado ao Projeto
+sidebar_label: 3. Gerenciar Projetos associados a um Orçamento
 sidebar_position: 3
 ---
 
-:::note
-Projects can be associated with a client estimate so that hours sold are deducted from that same contract.
+:::Nota
+Os projetos podem ser associados a uma estimativa do cliente para que as horas vendidas sejam deduzidas desse mesmo contrato.
 :::
 
-1. Click on the '+' icon to create a new Project.
+1. Clique no ícone '+' para criar um novo projeto.
 
 <figure>
 
@@ -17,21 +17,21 @@ Projects can be associated with a client estimate so that hours sold are deducte
 <figcaption>Estimate creation</figcaption>
 </figure>
 
-2. Fill in all the necessary information in the project header.
+2. Preencha todas as informações necessárias no cabeçalho do projeto.
 
-- Title - Add a name for this project.
+- Título - Adicione um nome para este projeto.
 
-- Type - Select the type of project from the dropdown list.
+- Tipo - Selecione o tipo de projeto na lista suspensa.
 
-- Start and End Dates - Select the date range for this project.
+- Datas de início e término - Selecione o intervalo de datas para este projeto.
 
-- Project Owner - Select the user responsible for this project.
+- Proprietário do Projeto - Selecione o usuário responsável por este projeto.
 
-- Fee - Select the contract you want to associate with this project.
+- Taxa - Selecione o contrato que deseja associar a este projeto.
 
-- Deliverable - Select the deliverable that you want to associate with this project (estimated deliverables).
+- Entrega - Selecione a entrega que você deseja associar a este projeto (entregas estimadas).
 
-Click the check icon e submit post.
+Clique no ícone de verificação e envie a postagem.
 
 
 <figure>
@@ -41,13 +41,13 @@ Click the check icon e submit post.
 </figure>
 
 
-3. After the project is created, navigate to the "Planned Hours" tab and fill in the form with the following information:
+3. Após a criação do projeto, navegue até a aba "Horas Planejadas" e preencha o formulário com as seguintes informações:
 
-- Contracted Hours - Click on the "Get Contracted Hours" symbol (the hours approved in the associated contract will be used to complete the "Contracted Hours" column).
+- Horas Contratadas - Clique no símbolo "Obter Horas Contratadas" (as horas aprovadas no contrato associado serão utilizadas para preencher a coluna "Horas Contratadas").
 
-- Planned Hours - Adjust the planned hours for a specific project, if they differ from the contracted hours.
+- Horas planejadas - Ajuste as horas planejadas para um projeto específico, caso sejam diferentes das horas contratadas.
 
-- Projection - Click on the "Planned Hours Projection" symbol (the system will distribute the planned hours over the previously defined date range, relative to the duration of the project).
+- Projeção - Clique no símbolo "Projeção de Horas Planejadas" (o sistema distribuirá as horas planejadas no intervalo de datas previamente definido, em relação à duração do projeto).
 
 
 
@@ -57,15 +57,15 @@ Click the check icon e submit post.
 <figcaption>Estimate creation</figcaption>
 </figure>
 
-4. Analyze all the information on the Burn Dashboard:
+4. Analise todas as informações do Burn Dashboard:
 
-- Check the number of hours planned for each typology group.
+- Verifique o número de horas previstas para cada grupo de tipologia.
 
-- Check the number of hours filled by all users included in that project / activity.
+- Verifique o número de horas preenchidas por todos os usuários incluídos naquele projeto/atividade.
 
-- Check the number of hours available for each typology group.
+- Verifique o número de horas disponíveis para cada grupo de tipologia.
 
-- Check the % of utilization by typology group.
+- Verifique a % de utilização por grupo de tipologia.
 
 
 <figure>

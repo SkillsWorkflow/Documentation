@@ -1,10 +1,8 @@
 ---
 id:  time-sheets
-title: Folha de Horas
-sidebar_label: Folha de Horas
+title: TimeSheets
+sidebar_label: TimeSheets
 ---
-
-## 1. Preencher Folhas de horas
 
 :::note 
 Para preencher horas, navegue para o módulo **Time sheets**

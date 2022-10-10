@@ -1,15 +1,15 @@
 ---
 id:  fte-dashboard
-title: FTE
-sidebar_label: 10. FTE
+title: Contratos
+sidebar_label: 10. Contratos
 sidebar_position: 10
 ---
 
-## FTE
+## Contratos
 
-FTE which stands for Full-Time Equivalent is a unit that measures the workload of an employee. FTE is often used to measure an employee’s involvement in a project. In this dashboard, project managers can analyze the FTE in different levels (i.e. Company, Division, Department, Typology Group, Employee).
+Os Contratos que significa Full-Time Equivalent é uma unidade que mede a carga de trabalho de um funcionário. O FTE é frequentemente usado para medir o envolvimento de um funcionário em um projeto. Nesse painel, os gerentes de projeto podem analisar o FTE em diferentes níveis (ou seja, Empresa, Divisão, Departamento, Grupo de Tipologia, Funcionário).
 
-To access, select FTE under the Workspaces menu.
+Para acessar, selecione Contratos no menu Workspaces.
 
 <figure>
 
@@ -17,53 +17,54 @@ To access, select FTE under the Workspaces menu.
 <figcaption></figcaption>
 </figure> 
 
-The first section is the selection criteria where you define the following:
+A primeira seção é o critério de seleção onde você define os seguintes:
 
-1. Year
+1. Ano
 
-2. Company
+2. Companhia
 
-3. Division
+3. Divisão
 
-4. Department
+4. Departamento
 
-The next section is where you define the period you want to analyze. Slide the start and end date flags through the horizontal calendar to set the period.
+A próxima seção é onde você define o período que deseja analisar. Deslize os sinalizadores de data inicial e final pelo calendário horizontal para definir o período.
 
-The last section is a list view showing “Users per Typology Group, Department and Division”. It is presented in a hierarchy from Division to User levels that can be expanded or collapsed. The report has 4 column sections that show the following:
+A última seção é uma exibição de lista mostrando “Usuários por Grupo de Tipologia, Departamento e Divisão”. Ele é apresentado em uma hierarquia de níveis de Divisão a Usuários que podem ser expandidos ou recolhidos. O relatório tem 4 seções de coluna que mostram o seguinte:
 
-People
+Pessoas
 
-- Active – Headcount with active status
+- Ativo – Headcount com status ativo
 
-- FTE – (Capacity + LeaveTime + HolidayTime) / WorkHours 
+- Contratos – (Capacidade + Tempo de Licença + Tempo de Férias) / Horário de Trabalho 
 
-- Capacity – Total Work Hours for the period – Total Holidays in hours – Total Leaves in hours
+- Capacidade – Total de Horas de Trabalho do período – Total de Feriados em horas – Total de Licenças em horas
 
-Contracted
+Contratado
 
-- Total – Total hours sold in Fee Proposal
+- Total - Total de horas vendidas na Proposta de Taxa
 
-- % Capacity – (Total Contracted / Capacity) * 100
+- % Capacidade – (Total Contratado / Capacidade) * 100
 
-Billable + Forecast
+Faturável + Previsão
 
-- Total – Actual Billable Hours + Forecast Hours
-- Forecast – Total Forecasted Hours
-- % Contracted – (Total Billable and Forecasted / Total Contracted Hours) * 100
-- % Capacity – (Total Billable and Forecasted / Capacity) * 100
-Actual
+- Total - Horas faturáveis reais + Horas previstas
+- Previsão - Total de horas previstas
+- % Contratado - (Total Faturável e Previsto / Total de Horas Contratadas) * 100
+- % Capacidade – (Total Faturável e Previsto / Capacidade) * 100
 
-- Total – Billable + Non-Billable
+Real
 
-- Billable – Client
+- Total - Faturável + Não Faturável
 
-- Non-Billable – Administrative
+- Faturável - Cliente
 
-- Administrative – Actual Hours charged to admin tasks
+- Não Faturável - Administrativo
 
-- Client – Actual Hours charged to Clients
+- Administrativo - Horas reais cobradas de tarefas administrativas
 
-Expanding the Typology Group level will display the Employees with that Typology Group under that Department and Division. Expanding the Employee will show the breakdown of his time charges per client.
+- Cliente - Horas reais cobradas dos clientes
+
+Expandir o nível do Grupo de Tipologia exibirá os Funcionários com esse Grupo de Tipologia nesse Departamento e Divisão. Expandir o Funcionário mostrará o detalhamento de suas cobranças de tempo por cliente.
 
 <figure>
 

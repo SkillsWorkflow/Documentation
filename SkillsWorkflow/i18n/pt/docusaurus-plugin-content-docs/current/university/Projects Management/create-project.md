@@ -1,17 +1,15 @@
 ---
 id:  create-projects
-title: Create Projects
-sidebar_label: 1. Create a Project
+title: Como criar Projectos
+sidebar_label: 1. Criar um Projeto
 sidebar_position: 1
 ---
 
-## Create a Project
 
-### A Project is an umbrella that groups a bundle of related jobs inside.
+Um projeto é uma campanha que pode ter várias atividades para diferentes departamentos.
 
-1. To create a new Project, navigate to the "Clients" module.
-
-2. Verify that you can navigate by clicking on Clients in the side bar.
+1. Para criar um novo projeto, navegue até ao módulo "Clientes".
+2. Selecione o cliente na barra de navegação á sua esquerda.
 
 <figure>
 
@@ -19,15 +17,13 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-3. After selecting a client click on the "+" to open a new Project creation popup.
+3. Depois de selecionar um cliente clique no "+" para abrir um novo popup criação de projeto.
+4. Preencha todos os campos amarelos (mandatórios).
 
-4. Fill in the yellow (mandatory) fields.
-
-- **Title** - Name you would like to give to the Project.
-- **Begin/End** - Choose when the Project starts and when it will end.
-- **Type** - Choose from a drop-down list. E.g. New Business, Admin, etc.
-- **Product** - Product you are creating this Project for. Select from a dropdown list of Products you have access to.
-
+- **Titulo** - Nome que deseja dar ao seu Projecto.
+- **Inicio/Fim** - Data de inicio e de fim do projecto.
+- **Tipo** - Tipo de Projecto, escolher na lista do campo. (E.g. Novos negócios, Admin, etc.)
+- **Product** - Produto a que este associar a este projecto.
 
 <figure>
 
@@ -35,11 +31,10 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-### Add a Brief to the Project
+### Adicionar um Briefing a um projeto
 
-1. You can add a brief with all the information and customer instructions.
-
-2. Just type in all the information on the description, inside the new Project creation popup.
+1. Você pode escrever um resumo com toda a informação e requisitos do cliente.
+2. Adicione toda a informação necessária dentro do novo popup de criação de projeto
 
 <figure>
 
@@ -47,17 +42,18 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-### Attach a file
+### Adicionar ficheiros
 
-1. You can also attach files to the Project simply by dragging them inside the popup, or by clicking on the dotted square.
+1. Você pode também adicionar ficheiros à descrição do Projeto simplesmente arrastando dentro do popup, ou clicando no quadrado tracejado.
 
-2. This is useful for adding brief documents or presentations, in any of the main formats (Word, PPT, Excel, PDF, etc.)
+2. Será útil para adicionar documentos de briefing ou apresentações. Em qualquer formato. (Word, PPT, Excel, PDF, etc.)
 
-### After filling in all the fields, you will need to activate the project.
+### Ativar o Projeto
 
-1. Click on the check to close the form and select the small blue arrow on the bottom right.
+Depois de preencher todos os campos, verifique que activa o Projeto
 
-2. After clicking on it, the Project will get a number (see Project code at the top) and it will no longer be on the stage Draft.
+1. Para ativar a atividade e gerar um número, pressione a pequena seta azul para avançar.
+2. Clique nele e o projeto mudará o estado e obterá um código de projeto, deixando de estar no estado de draft.
 
 <figure>
 
@@ -65,15 +61,9 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-### Add people to the Project's team
+## Atribuir uma equipe para o seu Projeto
 
-1. If you have access to change the Team you will see an Add Assignment symbol bellow the Brief section.
-
-2. Add or remove people to each of the groups by clicking on the pencil.
-
-3. A dropdown will appear with a list of users.
-
-4. Select the users that you want to assign and click on the check to add them to the Team.
+1. Você pode escolher quem é responsável pelo projeto, os executores e outros funcionários associados, clicando no lápis existente na caixa "Equipe". Verifique que consegue adicionar, e retirar funcionários da equipe. Esta opção depende do perfil que cada pessoa tem.
 
 <figure>
 
@@ -82,17 +72,11 @@ sidebar_position: 1
 </figure>
 
 
-### At the top of the page you will be able to find various tabs with information about this Project
+## No topo da página você poderá encontrar diversa informação acerca de seu Projeto.
 
-
-- **Feed** - Activity and comments related with the Project.
-
-- **Jobs** - List of existing jobs belonging to this Project.
-
-- **Planned Hours** - Planned versus Actual hours per typology and/or user for the Project.
-
-- **Files** - All the files uploaded into this Project will appear on this tab.
-
-- **History** - Track of status changes. You can see for example who created the Project and at what time.
-
-- **Others** - You may also find other tabs depending on the modules of the system you have access to.
+- Feed - Ações e comentários relacionados com o Projeto.
+- Atividades - Lista de Atividades relacionadas com seu Projeto.
+- Horas Planejadas - Horas Planejadas versus horas reais inseridas, se o Projeto for associado a Fees.
+- Ficheiros - Todos os ficheiros subidos no Projeto.
+- Historia - Lista de todas as alterações às etapas. Verifique por exemplo quem criou a atividade e quando.
+- Outros - Poderá encontrar outras opções do sistema dependendo dos seus acessos.

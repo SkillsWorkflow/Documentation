@@ -9,7 +9,7 @@ sidebar_position: 9
 
 Siga as próximas etapas para atribuir ou cancelar a atribuição massiva de usuários nas equipes dos Jobs:
 
-1. Vá para a aba "Empregos".
+1. Vá para a aba "Jobs".
 
 2. Selecione os trabalhos desejados na lista.
 

@@ -4,8 +4,6 @@ title: Orçamentos
 sidebar_label: 1.  Criar um Orçamento
 ---
 
-## 1.  Criar un Orçamento
-
 Os orçamentos podem ser vinculadas a taxas ou criadas diretamente em um projeto ou trabalho
 
 Caso deseje criar um orçamento associado a uma Taxa específica, consulte nossa lição 3 na seção de contratos.
@@ -22,7 +20,7 @@ Preencha os seguintes campos:
 
 - **Departamento** - O sistema sugerirá o departamento do usuário por padrão, mas você pode selecionar outros departamentos planejáveis e configurar diferentes fluxos de trabalho, se necessário.
 
-- *Tipo de Orçamento** - Você pode ter vários tipos de estimativa que permitirão diferentes configurações, como fluxos de trabalho, relatórios de saída, etc.
+- **Tipo de Orçamento** - Você pode ter vários tipos de estimativa que permitirão diferentes configurações, como fluxos de trabalho, relatórios de saída, etc.
 
 - Clique em ok e envie o post. O sistema mostrará uma mensagem pop-up com a confirmação de que o orçamento foi criado com sucesso.
 
