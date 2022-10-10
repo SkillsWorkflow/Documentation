@@ -503,3 +503,81 @@ Type: Boolean
 
 </figure>
 
+## header
+
+Customize the column header's
+
+by default the background color is grey and the label has the the default style of the system.
+
+Type: object
+
+```json
+{
+    dataField: "People",
+    alignment: "center",
+    header: {
+        color: "green",
+        label: {
+            color: "white",
+            font: {
+                size: "25px",
+                family: "Times New Roman"
+            }
+        }
+    }
+}
+```
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/headerColor-column-customize-example.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/headerColor-customize-example.png)
+
+</figure>
+
+
+### color
+
+Change the background color of the Header.
+
+Type: string
+
+Accepted Values: name of the color, HEX code, RGB code
+
+### label
+
+Customize the label of the column.
+
+Type: object
+
+### color
+
+Change the color of the text.
+
+Type: string
+
+Accepted Values: name of the color, HEX code, RGB code
+### font
+
+Change the font's size and family.
+
+
+Type: string
+
+- size: the value must be in pixels
+- family: font's family name
+
+
+
+
+<figure>
+
+<!-- ![img-box-shadow](/img/craft/grid/setColumns/document-image-required.png) -->
+
+</figure>
+
