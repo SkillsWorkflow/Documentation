@@ -1,7 +1,7 @@
 ---
-id:  automation-workflows
-title: Automation Workflows
-sidebar_label: Automation Workflows
+id:  eas-integration
+title: EAS Integration
+sidebar_label: EAS Integration
 ---
 
 import Tabs from '@theme/Tabs';
