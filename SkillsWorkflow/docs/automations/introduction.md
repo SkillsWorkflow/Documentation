@@ -81,7 +81,7 @@ Full HttpRequest that triggered the Automation Workflow.
   }
 }
 ```
- ## Functions
+## Functions
 Functions replace evaluated value with a function that runs a specific Task.
 * {{NewGuid}} - Returns a new Guid
 * {{NewDateUtc(value[Required])}} - returns a new Utc DateTime
