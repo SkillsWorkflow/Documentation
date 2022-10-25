@@ -81,15 +81,19 @@ Full HttpRequest that triggered the Automation Workflow.
   }
 }
 ```
- 
+## Functions
+Functions replace evaluated value with a function that runs a specific Task.
+* {{NewGuid}} - Returns a new Guid
+* {{NewDateUtc(value[Required])}} - returns a new Utc DateTime
+  * value:
+    * {{NewDateUtc(Now)}} -returns a new Utc DateTime with current time
+    * {{NewDateUtc(Today)}} - returns a new Utc DateTime with time set to MidNight (00:00:00)
 
 ---
-
-## Converters
-
-It is possible to convert values in order to be able to export files (convert to base 64) or just to encode the URL.
-
-To use these converters you will need to add a Pipe | after the field name.
+## Pipe Functions
+Pipe Functions enable transformations on evaluated values using '|' modifier after the value and a specific Pipe Function.
+Pipe Functions support arguments between parentheses 
+### Converters
 
 * ToBase64 - {{['CreateCsv']$ | ToBase64}}
 * FromBase64 - {{['CreateCsv']$ | ToBase64}}
@@ -99,9 +103,16 @@ To use these converters you will need to add a Pipe | after the field name.
 * ToJson - {{['CreateCsv']$ | ToJson}}
 * ToJsonString - {{['CreateCsv']$ | ToJsonString}}
 * FromUnixTimeSeconds - {{['CreateCsv']$ | FromUnixTimeSeconds}}
-* IsNullOrEmpty - {{['CreateCsv']$ | IsNullOrEmpty}}
-
 ---
+### Boolean Operators
+* IsNullOrEmpty - {{['CreateCsv']$ | IsNullOrEmpty}}
+---
+### Arithmetic And Date Operators
+* AddDecimal(value) - {{['MyIntValue'] | AddDecimal(2)}}
+* AddMonths(value) - {{['StartDate'] | AddMonths(2)}}
+* AddDays(value) - {{['StartDate'] | AddDays(-1)}}
+* AddHours(value) - {{['StartDate'] | AddHours(12)}}
+* AddMinutes(value) - {{['StartDate'] | AddMinutes(2)}}
 
 ## Preprocessors
 
@@ -117,7 +128,7 @@ Preprocessors are used to apply transformations on part of a expression.
   }
   ```
 
-## Templates
+# Templates
 
 Some common used code snipets
 
