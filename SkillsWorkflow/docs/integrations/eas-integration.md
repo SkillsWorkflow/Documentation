@@ -68,7 +68,7 @@ This section will describe the JSON templates for the currently known exchange p
 
 <Tabs
   groupId="actions"
-  defaultValue="start"
+  defaultValue="users"
   values={[
     {label: 'Users', value: 'users'},
     {label: 'Leaves', value: 'leaves'},
