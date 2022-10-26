@@ -49,7 +49,7 @@ Setting up the Entity property, the standard display will be used.
 If the cell display needs to be configured, the format property allows defining other default displays according to the selected type.
 According to the type to be presented in the column, image, link or text, some additional fields must be available in the data source.
 
-Accepted Values: 'client' | 'company' | 'stage' | 'user' 
+Accepted Values: 'client' | 'company' | 'stage' | 'user' | 'team'
 
 <Tabs
   groupId="entity"
@@ -59,6 +59,7 @@ Accepted Values: 'client' | 'company' | 'stage' | 'user'
     {label: 'Company', value: 'company'},
     {label: 'Stage', value: 'stage'},
     {label: 'User', value: 'user'},
+    {label: 'Team', value: 'team'}
   ]
 }>
 <TabItem value="client">
@@ -75,6 +76,7 @@ Required on data source:
 - HasImage (if type is image)
 
 </TabItem>
+
 <TabItem value="company">
 
 ```json
@@ -83,6 +85,7 @@ Required on data source:
 }
 ```
 </TabItem>
+
 <TabItem value="stage">
 
 ```json
@@ -91,6 +94,7 @@ Required on data source:
 }
 ```
 </TabItem>
+
 <TabItem value="user">
 
 ```json
@@ -98,6 +102,16 @@ Required on data source:
     entity: "user"
 }
 ```
+</TabItem>
+
+<TabItem value="team">
+
+```json
+{
+    entity: "team"
+}
+```
+
 </TabItem>
 </Tabs>
 
@@ -109,19 +123,40 @@ There are some standard formats available. By specifing its type the correspondi
 ### mapping
 
 
-If the data source does is not mapping to the defaults fields name, it can be mapped by using the mapping property:
-```json
+If the data source does not mapping to the defaults fields name, it can be mapped by using the mapping property:
+
+```json 
 {
-    entity: "client",
+    caption: "Requesters",
+    dataType: "string",
+    dataField: "RequestersNames",
+    visible: false,
+    alignment: "center",
+    width: 150,
+    entity: "team",
     format: {
         mapping: {
-            id: "ClientId",
-            name: "ClientName",
-            hasImage: "ClientHasImage"
+            id: "RequestersIds",
+            name: "RequestersNames",
+            hasImage: "RequestersHasImage"
         }
     }
 }
+
 ```
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/entity-team-mapping-example.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/entity-team-example.png)
+
+</figure>
+
 ### type
 
 Accepted Values: 'undefined' | 'image' | 'link' | 'document' | 'date'
@@ -500,6 +535,84 @@ Type: Boolean
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/showZeros-column-example.png)
+
+</figure>
+
+## header
+
+Customize the column header's
+
+by default the background color is grey and the label has the the default style of the system.
+
+Type: object
+
+```json
+{
+    dataField: "People",
+    alignment: "center",
+    header: {
+        color: "green",
+        label: {
+            color: "white",
+            font: {
+                size: "25px",
+                family: "Times New Roman"
+            }
+        }
+    }
+}
+```
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/headerColor-column-customize-example.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/headerColor-customize-example.png)
+
+</figure>
+
+
+### color
+
+Change the background color of the Header.
+
+Type: string
+
+Accepted Values: name of the color, HEX code, RGB code
+
+### label
+
+Customize the label of the column.
+
+Type: object
+
+### color
+
+Change the color of the text.
+
+Type: string
+
+Accepted Values: name of the color, HEX code, RGB code
+### font
+
+Change the font's size and family.
+
+
+Type: string
+
+- size: the value must be in pixels
+- family: font's family name
+
+
+
+
+<figure>
+
+<!-- ![img-box-shadow](/img/craft/grid/setColumns/document-image-required.png) -->
 
 </figure>
 

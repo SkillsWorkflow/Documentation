@@ -112,12 +112,3 @@ If the user has All Access Role: it will have access to all documents, respectin
 
 - #8 - If the User does not have AllSupplierNotesAccess Role: it will have access only to Supplier Notes where the User is currently assigned and the assignment type allows read or write access in the Supplier Note Stage;
 - #9 – If the User has AllSupplierNotesAccess Role: it has access to all Supplier Notes inside the User Company, as this document has no hierarchy;
-
-
-
-
-
-
-
-
-
