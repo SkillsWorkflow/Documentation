@@ -1,7 +1,7 @@
 ---
-id:  automation-workflows
-title: Automation Workflows
-sidebar_label: Automation Workflows
+id:  eas-integration
+title: EAS Integration
+sidebar_label: EAS Integration
 ---
 
 import Tabs from '@theme/Tabs';
@@ -68,7 +68,7 @@ This section will describe the JSON templates for the currently known exchange p
 
 <Tabs
   groupId="actions"
-  defaultValue="start"
+  defaultValue="users"
   values={[
     {label: 'Users', value: 'users'},
     {label: 'Leaves', value: 'leaves'},
