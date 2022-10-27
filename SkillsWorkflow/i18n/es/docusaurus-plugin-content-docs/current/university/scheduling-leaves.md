@@ -1,7 +1,7 @@
 ---
 id:  scheduling-leaves
-title: Scheduling Leaves
-sidebar_label: Scheduling Leaves
+title: Programar Permisos/Vacaciones
+sidebar_label: Programar Permisos/Vacaciones
 ---
 
 

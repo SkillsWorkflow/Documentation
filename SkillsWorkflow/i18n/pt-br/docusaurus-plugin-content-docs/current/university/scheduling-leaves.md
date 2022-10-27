@@ -1,9 +1,8 @@
 ---
 id:  scheduling-leaves
-title: Scheduling Leaves
-sidebar_label: Scheduling Leaves
+title: Planejar Ausências
+sidebar_label: Planejar Ausências
 ---
-
 
 :::info
 Navegue para o módulo **ausências**. 
