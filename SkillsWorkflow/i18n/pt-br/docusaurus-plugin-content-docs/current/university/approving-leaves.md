@@ -1,10 +1,8 @@
 ---
 id:  approving-leaves
-title: Approving Leaves
-sidebar_label: Approving Leaves
+title: Aprovar Ausências
+sidebar_label: Aprovar ausências
 ---
-
-
 
 ## Notificações de ausências a aprovar.
 
