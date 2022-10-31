@@ -504,9 +504,9 @@ Type: Boolean
 
 </figure>
 
-## showZeros
+## showZeroes
 
-show or hide the zeros values
+show or hide the zeroes values
 
 Type: Boolean
 
@@ -520,7 +520,7 @@ Type: Boolean
             type: "fixedPoint",
             precision: 2,
         },
-        showZeros: false
+        showZeroes: false
 }
 ```
 
