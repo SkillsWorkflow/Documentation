@@ -1,11 +1,11 @@
 ---
 id: what-is-a-team
-title: What is a Team and what does each Group represent?
+title: O que é uma Equipe e o que cada Grupo representa?
 sidebar_label: What is a Team and what does each Group represent?
 sidebar_position: 10
 ---
 
-- Each Project and Job has an assigned team
+- Cada Projeto e Job tem uma equipe designada
 
 
 <figure>
@@ -15,34 +15,34 @@ sidebar_position: 10
 <figcaption></figcaption>
 </figure>
 
-- Whoever is on the team will have access to the information shared on the Project and/or Job
-- The team members, depending on their role, should update the job description with the brief, keynotes from meetings, e-mails exchanged with the client and upload the relevant files (e.g. last versions of the final work/output)
-- It is possible to define which teams have access to change the Start and End date of the Jobs.
+- Quem estiver na equipe terá acesso às informações compartilhadas no Projeto e/ou Job
+- Os membros da equipe, dependendo de sua função, devem atualizar a descrição do Job com o brief, as palestras das reuniões, os e-mails trocados com o cliente e fazer o upload dos arquivos relevantes (por exemplo, últimas versões do Job/resultado final)
+- É possível definir quais equipes têm acesso para alterar a data de início e término dos Jobs.
 
-The team is typically comprised by the following groups:
+A equipe geralmente é composta pelos seguintes grupos:
 
-## Requester
-The person who requests/creates the Job or Project
-The Accounts involved in this job
+## Solicitante
+A pessoa que solicita/cria o Job ou Projeto
+As contas envolvidas neste Job
 
-## Responsible
-The person who is responsible for supervising the job
-Typically the department heads or client responsible
+## Responsável
+A pessoa que é responsável por supervisionar o Job
+Normalmente, os chefes de departamento ou o cliente responsável
 
-## Traffic
-The person who assigns the creatives to each job
-The person who controls the workload of creatives
+## Tráfego
+A pessoa que atribui os criativos a cada job
+A pessoa que controla a carga de trabalho dos criativos
 
 ## Executor
-The person who executes the job, e.g. creatives, analytics, copywriters, strategists, etc.
+A pessoa que executa o Job, por ex. criativos, analíticos, redatores, estrategistas, etc.
 
-## Finance
-Finance team who has visibility on all jobs and is usually responsible for job closing
+## Finança
+Equipe de finanças que tem visibilidade de todos os Jobs e geralmente é responsável pelo fechamento do Job
 
-However, there is no exact definition for these groups as the team can be customized to have more or fewer groups as per the company's structure.
+No entanto, não há uma definição exata para esses grupos, pois a equipe pode ser customizada para ter mais ou menos grupos conforme a estrutura da empresa.
 
-The names can also be customized based on company needs.
+Os nomes também podem ser personalizados com base nas necessidades da empresa.
 
-1. Each group plays a different part with a different set of responsibilities
-2. For each phase of the process, a person may be able to move a job forward on the workflow or not, based on the group he or she belongs to
-3. Each person knows what jobs depend on his or her own actions
+1. Cada grupo desempenha um papel diferente com um conjunto diferente de responsabilidades
+2. Para cada fase do processo, uma pessoa pode avançar ou não um Job no fluxo de Job, com base no grupo ao qual pertence
+3. Cada pessoa sabe quais Jobs dependem de suas próprias ações
