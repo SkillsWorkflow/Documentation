@@ -29,7 +29,7 @@ Las cuentas involucradas en este Job
 La persona que es responsable de supervisar el Job.
 Por lo general, los jefes de departamento o los responsables del cliente
 
-## Tráfico
+## Associado
 La persona que asigna las creatividades a cada Job.
 The person who controls the workload of creatives
 
