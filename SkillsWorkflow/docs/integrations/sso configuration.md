@@ -1,23 +1,23 @@
 ---
 id:  sso configuration
-title: SSO Configuration
-sidebar_label: SSO Configuration
+title: SSO Configuração 
+sidebar_label: SSO Configuração 
 ---
 
-Regarding the SSO, the standard that is in use is in #Production:
+Em relação ao SSO, o padrão que está em uso está em #Produção:
 
-- The client’s SSO Identity Provider should provide SAML 2.0 Protocol (e.g. #Okta, #OnePass or #Office365) 
-- There should be a User Identification Claim agreed between the parties, either E-Mail (recommended) or AD User Name
+- O provedor de identidade SSO do cliente deve fornecer o protocolo SAML 2.0 (e.g. #Okta, #OnePass or #Office365) 
+- Deve haver uma Reivindicação de Identificação do Usuário acordada entre as partes, seja E-Mail (recommended) ou nome de usuário AD
 
-## Configuration
+## Configuração 
 
-1. The system’s metadata for #Production is available at https://auth.skillsworkflow.com/saml2/metadata
-2. Setup the metadata in the Identity Provider
-3. Set the user identity Claim in the Identity Provider - http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
-- Usually it is sent the AD UPN
-4. Get the metadata of the Identity Provider 
-5. Install the Identity Provider’s metadata in the system
-6. Make sure that users are correctly mapped in both systems - In the AD and in Skills Workflow 
+1. Os metadados do sistema para #Produção estão disponíveis em https://auth.skillsworkflow.com/saml2/metadata
+2. Configure os metadados no provedor de identidade
+3. Definir a declaração de identidade do usuário no provedor de identidade - http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
+- Normalmente é enviado o AD UPN
+4. Obtenha os metadados do provedor de identidade 
+5. Instale os metadados do provedor de identidade no sistema
+6. Certifique-se de que os usuários estejam mapeados corretamente em ambos os sistemas - no AD e no Skills Workflow 
 
 <figure>
 
@@ -26,21 +26,21 @@ Regarding the SSO, the standard that is in use is in #Production:
 </figure>
 
 :::info
-Skills Workflow's SSO Login does not support identity provider-initiated login. The login process must begin on Skills Workflow.
+Skills Workflow's SSO Login não suporta login iniciado pelo provedor de identidade. O processo de login deve começar em Skills Workflow.
 :::
 
-## Requirements
+## Requisitos
 
 - SHA-1
 - SP initiated only
 - SAML 2.0 Protocol
 
 
-## Test environment
+## Ambiente de teste
 
-There is also the possibility to set SSO in the #Test environment (not to be confused with #UAT that is also a PROD environment):
+Há também a possibilidade de definir SSO no ambiente #Test (não confundir com #UAT que também é um ambiente PROD):
 
-The client’s SSO Identity Provider should provide SAML 2.0 Protocol
-Get the metadata of the Identity Provider from their #Preview environment (e.g. tenant in #Okta, #OnePass or #Office365)
-Install the Identity Provider’s metadata in the system in the #Test tenant
-The system’s metadata for #Test is available at https://auth-test.skillsworkflow.com/saml2/metadata
+O provedor de identidade SSO do cliente deve fornecer o protocolo SAML 2.0
+Obtenha os metadados do provedor de identidade de seu ambiente #Preview (por exemplo, locatário em #Okta, #OnePass ou #Office365)
+Instale os metadados do provedor de identidade no sistema no locatário #Test
+Os metadados do sistema para #Test estão disponíveis em https://auth-test.skillsworkflow.com/saml2/metadata
