@@ -17,7 +17,7 @@ import {
 const features = [
   {
     title: 'Crafting',
-    imageUrl: 'img/home01.svg',
+    imageUrl: 'img/homefeat01.svg',
     description: (
       <>
         Unleash the creativity in you. Why not craft
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: 'Integrations',
-    imageUrl: 'img/home02.svg',
+    imageUrl: 'img/homefeat02.svg',
     description: (
       <>
         An wide variaty of integrations is available for you!
@@ -37,7 +37,7 @@ const features = [
   },
   {
     title: 'University',
-    imageUrl: 'img/home03.svg',
+    imageUrl: 'img/homefeat03.svg',
     description: (
       <>
         Want to become a system expert? Explore our walkthrough
@@ -68,7 +68,7 @@ const Header = () => {
   return <header
     className={clsx('hero hero--primary', styles.heroBanner)}
     style={{
-      backgroundImage: isDarkTheme ? 'url(/img/home/homepage-dark.jpg)' : 'url(/img/home/homepage-light.jpg)',
+
       color: '#0172c6',
       position: 'static',
       backgroundRepeat: 'no-repeat',
