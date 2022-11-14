@@ -12,12 +12,12 @@ Respecto al SSO, el estándar que está en uso es en #Producción:
 ## Configuración
 
 1. Los metadatos del sistema para #Producción están disponibles en https://auth.skillsworkflow.com/saml2/metadata
-2. Sconfigurar los metadatos en el proveedor de identidad
+2. Configurar los metadatos en el proveedor de identidad
 3. Establecer el reclamo de identidad del usuario en el proveedor de identidad - http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
 - Normalmente se envía el AD UPN
 4. Obtenga los metadatos del proveedor de identidad 
 5. Instalar los metadatos del proveedor de identidad en el sistema
-6. Asegúrese de que los usuarios estén correctamente mapeados en ambos sistemas: en el AD y en Skills Workflow 
+6. Asegúrese de que los usuarios estén correctamente mapeados en ambos sistemas: en la AD y en Skills Workflow 
 
 <figure>
 
