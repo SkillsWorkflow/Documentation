@@ -1,7 +1,7 @@
 ---
 id: what-is-a-team
 title: Qué es un Equipo y qué representa cada Grupo?
-sidebar_label: Qué es un Equipo y qué representa cada Grupo?
+sidebar_label: 10. Qué es un Equipo y qué representa cada Grupo?
 sidebar_position: 10
 ---
 

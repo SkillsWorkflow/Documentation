@@ -780,14 +780,14 @@ To do so it is required a parameter to be filled:
 
 ```json title="Template"
 {  
-   "actionType": "Map",  
-   "name": "Map",  
-   "next": "Exit",  
-   "values": {
-       "SubJobs":"{{['GetCompanies']$.Content[:1].SubJobs | ToJson}}",
-       "Tasks":"{{['GetCompanies']$.Content[:1].Tasks | ToJson}}"
-   }
- },
+  "actionType": "Map",  
+  "name": "Map",  
+  "next": "Exit",  
+  "values": {
+     "SubJobs":"{{['GetCompanies']$.Content[:1].SubJobs | ToJson}}",
+     "Tasks":"{{['GetCompanies']$.Content[:1].Tasks | ToJson}}"
+  }
+},
 ```
 
 ## Merge

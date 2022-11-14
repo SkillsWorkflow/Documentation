@@ -8,4 +8,4 @@ sidebar_position: 1
 
 ### Bienvenido a la Universidad
 
-Desea saber más? Vea nuestros pasos simples y fáciles para mejorar su conocimiento en el uso del sistema.
+Desea saber más? Vea nuestras lecciones simples y fáciles para mejorar su conocimiento sobre el uso del sistema.
