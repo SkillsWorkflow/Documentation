@@ -1,6 +1,6 @@
 ---
 id:  sso configuration
-title: SSO Configuración
+title: Configuración SSO
 sidebar_label: SSO Configuración
 ---
 
