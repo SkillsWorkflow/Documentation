@@ -5,11 +5,11 @@ sidebar_label: Marketplace
 ---
 
 On this page you will find how to upload workspaces to the marketplace.
-For new workspaces that are not standard you can choose into two sections: Customers and Shared (Generics).
+For new workspaces that are not standard you can choose between two sections: Customers and Shared (generics).
 
 <figure>
 
-![img](/img/marketplace/path-to-upload-new-workspace.png)
+![img-box-shadow-popup](/img/marketplace/path-to-upload-new-workspace.png)
 </figure>
 
 Locations available:
@@ -21,24 +21,28 @@ Locations available:
 
 <figure>
 
-![img](/img/marketplace/folders-structure-VsCode.png)
+![img-box-shadow-popup](/img/marketplace/folders-structure-VsCode.png)
 </figure>
 
 ### Non-standard
 
 :::important
 - The path must be written without "{}"
-- The name of the folder should be in English
+- The name of the folder and the name of the workspace should be in English
 :::
+
 
 #### Customer
 
 
-- Customers Workspaces are workspaces specifically for a Client normally contains custom fields or specific teams.
+- Customers Workspaces are workspaces specifically for a Client, normally contains custom fields or specific teams.
 
-a) Menu
+Menu
+
+ - Non-standard/Customer/{Client}/{Location}/{name of the folder for the workspace}/{name of the workspace}
 
         Non-standard/Customer/SkillsWorkflow/Menu/New Workspace/Upload Workspace  
+
 
 #### Shared
 
@@ -46,15 +50,15 @@ a) Menu
    These workspaces must be upload to Non-standard/Shared/Cloud
 
 
-a) Menu
+Menu
 
  - Non-standard/Shared/Cloud/Menu/{name of the folder for the Workspace}/{name of the Workspace}
 
         Non-standard/Shared/Cloud/Menu/New Workspace/Upload Workspace 
 
-b) Document
+Document
 
-- Non-standard/Shared/Cloud/Document/{name of the Document's folder}/{name of the folder for the workspace}
+- Non-standard/Shared/Cloud/Document/{name of the document's folder}/{name of the folder for the workspace}
 
         Non-standard/Shared/Cloud/Document/Job/New Workspace/Upload Workspace
 
