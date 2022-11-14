@@ -17,7 +17,7 @@ import {
 const features = [
   {
     title: 'Crafting',
-    imageUrl: 'img/undraw_building_websites_crafting.svg',
+    imageUrl: 'img/home01.svg',
     description: (
       <>
         Unleash the creativity in you. Why not craft
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: 'Integrations',
-    imageUrl: 'img/undraw_Image_folder_store.svg',
+    imageUrl: 'img/home02.svg',
     description: (
       <>
         An wide variaty of integrations is available for you!
@@ -37,7 +37,7 @@ const features = [
   },
   {
     title: 'University',
-    imageUrl: 'img/undraw_graduation_university.svg',
+    imageUrl: 'img/home03.svg',
     description: (
       <>
         Want to become a system expert? Explore our walkthrough
