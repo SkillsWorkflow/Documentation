@@ -6,6 +6,6 @@ sidebar_label: Home
 sidebar_position: 1
 ---
 
-### Bem vindo à Universidade
+### Bienvenido a la Universidad
 
-Queres saber mais? Veja as nossas lições simples e fáceis para melhorar seu conhecimento na utilização do sistema.
+Desea saber más? Vea nuestras lecciones simples y fáciles para mejorar su conocimiento sobre el uso del sistema.
