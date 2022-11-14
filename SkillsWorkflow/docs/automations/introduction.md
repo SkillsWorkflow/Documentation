@@ -94,7 +94,6 @@ Functions replace evaluated value with a function that runs a specific Task.
 Pipe Functions enable transformations on evaluated values using '|' modifier after the value and a specific Pipe Function.
 Pipe Functions support arguments between parentheses 
 ### Converters
-
 * ToBase64 - {{['CreateCsv']$ | ToBase64}}
 * FromBase64 - {{['CreateCsv']$ | ToBase64}}
 * UrlEncode - {{['GetProjectFile']$.Content.Url | UrlEncode}}
@@ -113,7 +112,10 @@ Pipe Functions support arguments between parentheses
 * AddDays(value) - {{['StartDate'] | AddDays(-1)}}
 * AddHours(value) - {{['StartDate'] | AddHours(12)}}
 * AddMinutes(value) - {{['StartDate'] | AddMinutes(2)}}
-
+### String Formatting
+* RemoveLeading('value') - {{['MyText'] | RemoveLeading('Text To Remove from start')}}
+* RemoveTrailing('value') - {{['MyText'] | RemoveTrailing('Text To Remove from End')}}
+* Trim - {{['MyText'] | Trim}}
 ## Preprocessors
 
 Preprocessors are used to apply transformations on part of a expression.
