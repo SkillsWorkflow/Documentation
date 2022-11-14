@@ -36,11 +36,11 @@ El inicio de sesión SSO de Skills Workflow no admite el inicio de sesión inici
 - SAML 2.0 Protocol
 
 
-## Entorno de prueba
+## Ambiente de pruebas
 
-También existe la posibilidad de establecer SSO en el entorno #Test (no confundir con #UAT que también es un entorno PROD):
+También existe la posibilidad de establecer SSO en el ambiente de #Test (no confundir con #UAT que también es un ambiente en PROD):
 
 El proveedor de identidad SSO del cliente debe proporcionar el protocolo SAML 2.0
-Obtenga los metadatos del proveedor de identidad de su entorno de vista previa (por ejemplo, arrendatario en #Okta, #OnePass u #Office365)
-Instale los metadatos del proveedor de identidad en el sistema en el inquilino #Test
+Obtenga los metadatos del proveedor de identidad de su ambiente de vista previa (por ejemplo, arrendatario en #Okta, #OnePass u #Office365)
+Instale los metadatos del proveedor de identidad en el sistema en el ambiente #Test
 Los metadatos del sistema para #Test están disponibles en https://auth-test.skillsworkflow.com/saml2/metadata
