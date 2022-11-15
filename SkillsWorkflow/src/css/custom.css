@@ -250,17 +250,12 @@ html[data-theme='dark'] li {
 
 
 /* Home Image */
-
-html[data-theme='dark'] .hero.hero--primary.heroBanner_src-pages-styles-module {
+html[data-theme='dark'] .home-page-image {
   background-image: url(/img/home/homepage-dark.jpg);
-
 }
 
-.hero.hero--primary.heroBanner_src-pages-styles-module {
+.home-page-image {
   background-image: url(/img/home/homepage-light.jpg);
-  
-  ;
-
 }
 
 html[data-theme='dark'] a:hover {

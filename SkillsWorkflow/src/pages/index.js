@@ -64,11 +64,9 @@ function Feature({ imageUrl, title, description }) {
 
 const Header = () => {
   const { isDarkTheme } = useThemeConfig();
-  debugger;
   return <header
-    className={clsx('hero hero--primary', styles.heroBanner)}
+    className={clsx('hero hero--primary', styles.heroBanner, 'home-page-image')}
     style={{
-
       color: '#0172c6',
       position: 'static',
       backgroundRepeat: 'no-repeat',
