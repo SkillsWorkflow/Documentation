@@ -65,6 +65,12 @@ pre {
   color: #FAA45E !important;
 }
 
+
+.codeBlockContent_---node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
 /* .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
   background: #efefef;
 } */
@@ -82,6 +88,11 @@ pre {
 .header-home {
   height: 60vh;
 }
+
+.buttons_src-pages-styles-module {
+  margin-top: 30px;
+}
+
 
 * {
   font-family: 'Varela Round', sans-serif;
@@ -134,7 +145,7 @@ h1 {
   text-align: left;
   letter-spacing: 1px;
   text-transform: none;
-  margin-bottom: 20px !important;
+  margin-bottom: 15px !important;
   margin-top: 10px !important;
   color: #333333;
 }
@@ -144,20 +155,21 @@ h2 {
   width: auto;
   font-family: 'Varela Round', sans-serif;
   color: #333333;
-  font-size: 25px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 26px;
+  font-weight: 600 !important;
+  letter-spacing: 0.20px;
   white-space: normal;
-  margin-bottom: 20px !important;
-  margin-top: 30px !important;
+  margin-top: 10px !important;
+  margin-bottom: 15px !important;
 }
 
 h3 {
   font-family: 'Varela Round';
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #333333;
-  margin-bottom: 20px !important;
+  margin-bottom: 15px !important;
+  margin-top: 10px !important;
 
 }
 
@@ -166,7 +178,7 @@ p {
   font-size: 14px !important;
   font-family: 'Open Sans', sans-serif !important;
   color: #333;
-  margin-bottom: 10px !important;
+  margin-bottom: 20px !important;
 }
 
 .markdown li {
@@ -192,10 +204,12 @@ a {
 .home-h1 {
   font-weight: 300;
   color: var(--home-text-color);
+  margin-bottom: 15px !important;
 }
 
 .home-p {
-  color: rgb(170, 169, 169);
+  color: #333;
+  font-size: 16px !important;
 }
 
 html[data-theme='light'] h1 {
@@ -234,8 +248,19 @@ html[data-theme='dark'] li {
   font-size: 14px;
 }
 
-a:hover {
-  color: rgb(26, 26, 26);
+
+/* Home Image */
+
+html[data-theme='dark'] .hero.hero--primary.heroBanner_src-pages-styles-module {
+  background-image: url(/img/home/homepage-dark.jpg);
+
+}
+
+.hero.hero--primary.heroBanner_src-pages-styles-module {
+  background-image: url(/img/home/homepage-light.jpg);
+  
+  ;
+
 }
 
 html[data-theme='dark'] a:hover {
@@ -309,8 +334,11 @@ img[alt=img-box-shadow-popup] {
 
 img[alt=img-with-border] {
   border: 1px solid lightgray;
-  border-radius: 5px;
+  border-radius: 6px;
+  margin-bottom: 10px !important;
+  margin-top: 0px;
 }
+
 
 .left {
   animation: right-to-left 1s linear forwards;
