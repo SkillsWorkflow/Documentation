@@ -128,13 +128,20 @@ The query result must return the following columns:
     </tbody>
 </table>
 
-
 <h3>Example</h3>
 
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/action/assignTeam_example.png)
 </figure>
+
+```sql title="Query to add the current user to the Executor team"
+select  @CurrentUserId as UserId,
+        t.oid as TeamId
+from	Deliverable d, AssignmentType t
+where	d.Oid = @CurrentDocumentId and
+        t.Name = 'Executor'
+```
 
 ## Custom Table Write
 
@@ -167,14 +174,6 @@ Adds or Updates entries in a Custom Table
     
 ![img-box-shadow](/img/craft/configuration/action/customTable_example.png)
 </figure>
-
-```sql
-select  @CurrentUserId as UserId,
-        t.oid as TeamId
-from	Deliverable d, AssignmentType t
-where	d.Oid = @CurrentDocumentId and
-        t.Name = 'Executor'
-```
 
 :::note
 - Options: name of the custom table; name of the query
