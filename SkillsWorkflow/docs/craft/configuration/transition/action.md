@@ -164,6 +164,7 @@ Adds or Updates entries in a Custom Table
 <h3>Example</h3>
 
 <figure>
+    
 ![img-box-shadow](/img/craft/configuration/action/customTable_example.png)
 </figure>
 
