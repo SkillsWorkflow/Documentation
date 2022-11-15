@@ -14,8 +14,7 @@ Can have access in two ways:
 2- If already exists a function and doesn't has the this parameter, it could be add manually.
 
 
-
-WorkspaceContext is a function and has three main properties:
+WorkspaceContext is a function that has three main properties:
 
 - Set
 - Get
@@ -25,28 +24,10 @@ WorkspaceContext is a function and has three main properties:
 It allows you to set a context variable in a workspace and access that variable in another workspace under the same routing scope.
 :::
 
-![img-box-shadow-popup](/img/responses/workspaces_info_usage.png) <!-- pôr imagem com o set default>
-
-
-```js
-function onPointClick(e, context){ }
-```
-
 ### Set
 
 Used to set the the value in a variable to use posteriorly
 
-![img-box-shadow](/img/responses/context_set_usage.png)
-
-:::note
-
-Variable ExecutorName set on workspace A
-:::
-
-
-```js
-    WorkspaceContext.set('name', value);
-```
 <table className="custom-table">
     <thead>
         <tr>
@@ -72,20 +53,21 @@ Variable ExecutorName set on workspace A
     </tbody>
 </table>
 
+##
+```js
+    workspaceContext.set('name', value);
+```
+
+![img](/img/responses/context_set_usage.png)
+
+:::tip
+- Variable updateClient set at function onInitialized, to save the component
+:::
+
 ### Get
 
 Used to get the value saved previously
 
-
-![img](/img/responses/context_get_usage.png)
-
-:::note
-Get used on workspace B to access variable ExecutorName previously set on Workspace A
-:::
-
-```js
-WorkspaceContext.get('name');
-```
 <table className="custom-table">
     <thead>
         <tr>
@@ -105,14 +87,21 @@ WorkspaceContext.get('name');
     </tbody>
 </table>
 
+#
+```js
+    workspaceContext.get('name');
+```
+
+![img](/img/responses/context_get_usage.png)
+
+:::tip
+- Getting the value saved at variable updateClient 
+:::
 
 ### Subscribe
 
-Subscribe context's variable you want to listen
+Subscribe the context's variable you want to listen
 
-```js {3}
-1 context.get('name', callBack function);
-```
 <table className="custom-table">
     <thead>
         <tr>
@@ -140,15 +129,19 @@ Subscribe context's variable you want to listen
     </tbody>
 </table>
 
-
-### Basic Usage
-
+#
+```js
+ workspaceContext.get('name', callBack function(){});
+```
 
 ![img](/img/responses/context_subscribe_usage.png)
+![img](/img/responses/show-pop-up-confirmation.png)
 
-:::note
 
-Subscribe the variable previously set on worskpace A. Use the new value to make the necessary changes everytime the variable value is updated.
+:::tip
+
+- Subscribe the variable updateClient seted at the beggining. In this case the value was used to show a pop-up if the client exists
+- Use the new value to make the necessary changes everytime the variable value is updated.
 :::
 
 <!-- falta fazer ligação com a página do método do sdk -->
