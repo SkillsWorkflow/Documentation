@@ -102,6 +102,7 @@ Below are the parameters available to execute the query:
     </tbody>
 </table>
 
+
 The query result must return the following columns:
 <table className="custom-table">
     <thead> 
@@ -136,10 +137,12 @@ The query result must return the following columns:
 </figure>
 
 ```sql title="Query to add the current user to the Executor team"
-select  @CurrentUserId as UserId,
+select  
+        @CurrentUserId as UserId,
         t.oid as TeamId
 from	Deliverable d, AssignmentType t
-where	d.Oid = @CurrentDocumentId and
+where	
+        d.Oid = @CurrentDocumentId and
         t.Name = 'Executor'
 ```
 
