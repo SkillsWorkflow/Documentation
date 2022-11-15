@@ -72,10 +72,11 @@ Affects the Stage of the Documents listed.
 </figure>
 
 
-## Assign Team​
+## Assign Team
 
-When changing the stage of the document places Users in a set of Teams​.
+When changing the stage of the document places Users in a set of Teams.
 
+Below are the parameters available to execute the query:
 <table className="custom-table">
     <thead> 
         <tr>
@@ -87,13 +88,46 @@ When changing the stage of the document places Users in a set of Teams​.
     </thead>
     <tbody>
         <tr className="selected">
-            <td><code>Document Id</code></td>
+            <td><code>CurrentDocumentId</code></td>
             <td>Uniqueidentifier</td>
             <td>true</td>
-            <td>Id of the document</td> 
+            <td>The Id of the document that is executing the action</td> 
+        </tr>
+        <tr className="selected">
+            <td><code>CurrentUserId</code></td>
+            <td>Uniqueidentifier</td>
+            <td>false</td>
+            <td>The Id of the current user that trigger the action execution</td> 
         </tr>
     </tbody>
 </table>
+
+The query result must return the following columns:
+<table className="custom-table">
+    <thead> 
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>UserId</code></td>
+            <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>The Id of the user to be added to the document</td> 
+        </tr>
+        <tr className="selected">
+            <td><code>TeamId</code></td>
+            <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>The Assigment Type Id which the user will be added</td> 
+        </tr>
+    </tbody>
+</table>
+
 
 <h3>Example</h3>
 
@@ -130,9 +164,16 @@ Adds or Updates entries in a Custom Table
 <h3>Example</h3>
 
 <figure>
-
 ![img-box-shadow](/img/craft/configuration/action/customTable_example.png)
 </figure>
+
+```sql
+select  @CurrentUserId as UserId,
+        t.oid as TeamId
+from	Deliverable d, AssignmentType t
+where	d.Oid = @CurrentDocumentId and
+        t.Name = 'Executor'
+```
 
 :::note
 - Options: name of the custom table; name of the query
