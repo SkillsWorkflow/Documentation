@@ -41,7 +41,7 @@ This action returns a list of documents that were blocked or unblocked according
 :::
 
 
-## Change Documents Stage​
+## Change Documents Stage
 
 Affects the Stage of the Documents listed.
 
@@ -183,3 +183,85 @@ Adds or Updates entries in a Custom Table
 <!-- - The name of the columns in the custom table and in the query must be equal otherwise this action doesn't work. -->
 :::
 
+## UpdateFieldValues
+
+When the transition is executed, userfields will be updated accordingly.
+
+Below are the parameters available to execute the query:
+<table className="custom-table">
+    <thead> 
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>CurrentDocumentId</code></td>
+            <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>The Id of the document that is executing the action</td> 
+        </tr>
+        <tr className="selected">
+            <td><code>CurrentUserId</code></td>
+            <td>Uniqueidentifier</td>
+            <td>false</td>
+            <td>The Id of the current user that trigger the action execution</td> 
+        </tr>
+    </tbody>
+</table>
+
+
+The query result must return the following columns:
+<table className="custom-table">
+    <thead> 
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>DocumentTypeName</code></td>
+            <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>The Document Type Name to be updated</td> 
+        </tr>
+        <tr className="selected">
+            <td><code>DocumentId</code></td>
+            <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>The Id of the document to be updated</td> 
+        </tr>
+        <tr className="selected">
+            <td><code>FieldName</code></td>
+            <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>The userfield column name</td> 
+        </tr>
+        <tr className="selected">
+            <td><code>Value</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td>The value to update the userfield</td> 
+        </tr>
+    </tbody>
+</table>
+
+<h3>Example</h3>
+
+```sql title="Query to update the Version of a specific Deliverable"
+select 'Deliverable' as DocumentTypeName,
+		j.Oid as DocumentId,
+		'PreviousVersion' as FieldName,
+		[Version] as Value
+from	Deliverable_UserFields j 
+where	ProofID is null 
+		and [Version] is not null
+		and j.Oid = @CurrentDocumentId
+		and charindex('.', [Version], 0) > 0
+```
