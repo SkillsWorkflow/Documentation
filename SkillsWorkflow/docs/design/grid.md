@@ -16,12 +16,12 @@ For every Grid, explain that the following has to be set:
 - Column aligment and default sizes beetween data types:
 
 - Data types widths & alignment:
-- Client - 200, Left
+- Client - 160, Left
 - Title - 300, Left
-- Number - 150, Left
+- Number - 100, Left
 - Date - 100, Right
 - Value -
-- Type - 200, Left
+- Type - 100, Left
 - Stage - 200, Left
 - Task type - 80, left
 
