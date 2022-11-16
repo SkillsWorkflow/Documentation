@@ -62,19 +62,17 @@ function Feature({ imageUrl, title, description }) {
           color: '#333',
           backgroundColor: '#F3F8FF',
           borderRadius: '5px',
-          marginBottom: '50px'
+          marginBottom: '20px',
          
         }}>
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
       <div style={{
-          color: 'green',
-          backgroundColor: '',
+          backgroundColor: 'white',
           borderRadius: '5px',
-          borderColor: 'green'
-          
-         
+          paddingLeft: '40px',
+          paddingRight: '40px'
         }}>
       <h3>{title}</h3>
       <p>{description}</p>
