@@ -5,13 +5,13 @@ sidebar_label: WorkspaceContext
 ---
 
 
-Most of the workspaces have the possibility to access to his context. <!-- falta mais texto introdutório>
+All of the workspaces have the possibility to access the context, where it is possible to find the info of the components, the workspace and perform operations like get, set and subscribe
 
 Can have access in two ways:
 
-1- clicking on the button "set default value", and shows the default parameteres of the functions, that includes the workspaceContext
+1- clicking on the button "set default value", and shows the default parameters of the functions, that includes the workspaceContext
 
-2- If already exists a function and doesn't has the this parameter, it could be add manually.
+2- If a function already exists and the context parameter isn't declared, it could be added manually.
 
 
 WorkspaceContext is a function that has three main properties:
@@ -19,6 +19,8 @@ WorkspaceContext is a function that has three main properties:
 - Set
 - Get
 - Subscribe
+- Definition
+- ComponentDefinition
 
 :::note
 It allows you to set a context variable in a workspace and access that variable in another workspace under the same routing scope.
@@ -140,8 +142,6 @@ Subscribe the context's variable you want to listen
 
 :::tip
 
-- Subscribe the variable updateClient seted at the beggining. In this case the value was used to show a pop-up if the client exists
+- Subscribe the variable updateClient defined at the beggining. In this case the value was used to show a pop-up if the client exists
 - Use the new value to make the necessary changes everytime the variable value is updated.
 :::
-
-<!-- falta fazer ligação com a página do método do sdk -->

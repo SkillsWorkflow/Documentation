@@ -264,3 +264,31 @@ Accepted Values: 'priority'
 
 </TabItem>
 </Tabs>
+
+## useCache
+
+This property allows to cache the data and must be used for fields that has the entity defined
+
+By default the value is false 
+
+##
+
+```js
+{
+    saveOptions: "document",
+    dataField: "Client",
+    entity: "commercialclient",
+    label: {
+        text: "Client"
+    },
+    editorType: "dxSelectBox",
+    useCache: true
+}
+```
+:::note
+
+It will not work for the following entities:
+- stage
+- user
+
+:::
