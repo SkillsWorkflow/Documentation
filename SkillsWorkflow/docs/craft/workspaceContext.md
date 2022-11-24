@@ -1,41 +1,41 @@
 ---
 id:  context
-title: 'Context'
-sidebar_label: Context
+title: 'WorkspaceContext'
+sidebar_label: WorkspaceContext
 ---
 
-## Info
 
-All settings directly regarding workspaces configuration properties (advanced)
+All of the workspaces have the possibility to access the context, where it is possible to find the info of the components, the workspace and perform operations like get, set and subscribe
 
-![img](/img/responses/workspaces_info_usage.png)
+Can have access in two ways:
+
+1- clicking on the button "set default value", and shows the default parameters of the functions, that includes the workspaceContext
+
+2- If a function already exists and the context parameter isn't declared, it could be added manually.
 
 
-## ContextParameter
+WorkspaceContext is a function that has three main properties:
 
-### Description
+- Set
+- Get
+- Subscribe
+- Definition
+- ComponentDefinition
 
-All the workspaces configuration functions have context as last parameter. Context is of type function and has 3 properties.
-Set, Get and Subscribe. It allows you set a context variable in workspace and access that variable in another workspace under the same routing scope.
-
-### Typical function
-
-```js {3}
-1 function onPointClick(e, context){ }
-```
+:::note
+It allows you to set a context variable in a workspace and access that variable in another workspace under the same routing scope.
+:::
 
 ### Set
 
-```js {3}
-1 context.set('name', value);
-```
+Used to set the the value in a variable to use posteriorly
+
 <table className="custom-table">
     <thead>
         <tr>
             <th>Parameter</th>
             <th>Type</th>
             <th>Required</th>
-            <th>Defaults</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -44,42 +44,38 @@ Set, Get and Subscribe. It allows you set a context variable in workspace and ac
             <td><code>name</code></td>
             <td>String</td>
             <td>true</td>
-            <td></td>
-            <td>Name to reference the passed value</td>
+            <td>Name to reference the valued passed</td>
         </tr>
          <tr className="selected">
             <td><code>value</code></td>
-            <td>any</td>
+            <td>Any</td>
             <td>true</td>
-            <td></td>
             <td>Any type of value can be passed</td>
         </tr>
     </tbody>
 </table>
 
-
-### Basic Usage
-
+##
+```js
+    workspaceContext.set('name', value);
+```
 
 ![img](/img/responses/context_set_usage.png)
 
-:::note
-
-Variable ExecutorName set on workspace A
+:::tip
+- Variable updateClient set at function onInitialized, to save the component
 :::
 
 ### Get
 
-```js {3}
-1 context.get('name');
-```
+Used to get the value saved previously
+
 <table className="custom-table">
     <thead>
         <tr>
             <th>Parameter</th>
             <th>Type</th>
             <th>Required</th>
-            <th>Defaults</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -88,37 +84,32 @@ Variable ExecutorName set on workspace A
             <td><code>name</code></td>
             <td>String</td>
             <td>true</td>
-            <td></td>
-            <td>Name to reference the passed value</td>
+            <td>Name of the reference passed previously</td>
         </tr>
     </tbody>
 </table>
 
-
-### Basic Usage
-
+#
+```js
+    workspaceContext.get('name');
+```
 
 ![img](/img/responses/context_get_usage.png)
 
-:::note
-
-Get used on workspace B to access variable ExecutorName previously set on Workspace A
+:::tip
+- Getting the value saved at variable updateClient 
 :::
 
 ### Subscribe
 
-Subscribe context's variable you want to listen
+Subscribe the context's variable you want to listen
 
-```js {3}
-1 context.get('name', callBack function);
-```
 <table className="custom-table">
     <thead>
         <tr>
             <th>Parameter</th>
             <th>Type</th>
             <th>Required</th>
-            <th>Defaults</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -127,7 +118,6 @@ Subscribe context's variable you want to listen
             <td><code>name</code></td>
             <td>String</td>
             <td>true</td>
-            <td></td>
             <td>Name to reference the passed value</td>
         </tr>
     </tbody>
@@ -136,19 +126,22 @@ Subscribe context's variable you want to listen
             <td><code>callBack</code></td>
             <td>String</td>
             <td>true</td>
-            <td></td>
             <td>A callBack function</td>
         </tr>
     </tbody>
 </table>
 
-
-### Basic Usage
-
+#
+```js
+ workspaceContext.get('name', callBack function(){});
+```
 
 ![img](/img/responses/context_subscribe_usage.png)
+![img](/img/responses/show-pop-up-confirmation.png)
 
-:::note
 
-Subscribe to variable previously set on worspace A. Use the new value to make the necessary changes everytime the variable value is updated.
+:::tip
+
+- Subscribe the variable updateClient defined at the beggining. In this case the value was used to show a pop-up if the client exists
+- Use the new value to make the necessary changes everytime the variable value is updated.
 :::
