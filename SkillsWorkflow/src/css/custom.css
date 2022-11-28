@@ -256,6 +256,7 @@ html[data-theme='dark'] .home-page-image {
 
 .home-page-image {
   background-image: url(/img/home/homepage-light.jpg);
+  margin-bottom: 40px;
 }
 
 html[data-theme='dark'] a:hover {

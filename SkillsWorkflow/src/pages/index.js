@@ -50,14 +50,33 @@ const features = [
 function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx('col col--4', styles.feature)}
+    style={{
+      color: '#333',
+      backgroundColor: '#fff',
+    }} 
+    >
       {imgUrl && (
-        <div className="text--center">
+        <div className="text--center" 
+        style={{
+          color: '#333',
+          backgroundColor: '#F3F8FF',
+          borderRadius: '5px',
+          marginBottom: '20px',
+         
+        }}>
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
+      <div style={{
+          backgroundColor: 'white',
+          borderRadius: '5px',
+          paddingLeft: '40px',
+          paddingRight: '40px'
+        }}>
       <h3>{title}</h3>
       <p>{description}</p>
+      </div>
     </div >
   );
 }
