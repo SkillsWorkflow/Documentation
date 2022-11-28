@@ -1,6 +1,6 @@
 ---
 id: expense-sheets
-title: Expense Sheets
+title: Folhas de Despesas
 sidebar_label: 1. Criar Folhas de Despesas
 sidebar_position: 1
 ---
@@ -26,7 +26,7 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 <figcaption>Módulo de Folha de Despesas</figcaption>
 </figure>
 
-3. Click on the '+' on the expenses list.
+3. Clique no '+' na lista de despesas.
 
 <figure>
 
@@ -37,7 +37,7 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 
 4. Preencha os campos das Despasas:
 
-- **Title** -Um nome que ajuda a localizar facilmente uma despesa específica.
-- **Department** - O departamento ao qual o utilizador pertence.
-- **Type** - Selecione o tipo de gasto (esta informação é muito importante, pois definirá o fluxo da despesa).
-- **Start Date / End Date** - Selecione a data de início da despesa e a data de fim (deve refletir a data em que o funcionário é reembolsado).
+- **Titulo** -Um nome que ajuda a localizar facilmente uma despesa específica.
+- **Departamento** - O departamento ao qual o utilizador pertence.
+- **Tipo** - Selecione o tipo de gasto (esta informação é muito importante, pois definirá o fluxo da despesa).
+- **Data Inicio / Data Fim** - Selecione a data de início da despesa e a data de fim (deve refletir a data em que o funcionário é reembolsado).
