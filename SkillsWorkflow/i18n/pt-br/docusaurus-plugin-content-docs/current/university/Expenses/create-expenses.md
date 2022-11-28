@@ -1,6 +1,6 @@
 ---
 id: expenses
-title: Expenses
+title: Despesas
 sidebar_label: 2. Criar Despesas
 sidebar_position: 2
 ---
@@ -10,7 +10,7 @@ sidebar_position: 2
 - Diretamente num Projeto
 - Em uma Folha de Despesas
 
-### Create directly on the Project
+### Criar diretamente no projeto
 
 Para criar despesas, navegue até o módulo Projeto e selecione um projeto para adicionar recibos.
 
@@ -40,7 +40,7 @@ Para criar despesas, navegue até o módulo Projeto e selecione um projeto para 
 <figcaption>Lista de despesas do Projecto</figcaption>
 </figure>
 
-### Create on Expense Sheet
+### Criar na Folha de Despesas
 
 1. Vá para o módulo Folhas de Despesas.
 
