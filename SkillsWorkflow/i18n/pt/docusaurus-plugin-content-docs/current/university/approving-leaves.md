@@ -1,7 +1,7 @@
 ---
 id:  approving-leaves
-title: Approving Leaves
-sidebar_label: Approving Leaves
+title: Aprovando Ausências
+sidebar_label: Aprovando Ausencias 
 ---
 
 
