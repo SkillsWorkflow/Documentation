@@ -1,6 +1,6 @@
 ---
 id: approve-expenses
-title: Approve Expenses
+title: Aprovar Despesas
 sidebar_label: 3. Aprovar Despesas
 sidebar_position: 3
 ---
