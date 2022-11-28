@@ -1,6 +1,6 @@
 ---
 id: approve-expenses
-title: Approve Expenses
+title: Aprovar Despesas
 sidebar_label: 3. Aprovar Despesas
 sidebar_position: 3
 ---
@@ -28,11 +28,11 @@ sidebar_position: 3
 Altere o estado da folha de despesas. Caso a folha de despesas seja rejeitada, o sistema solicitará o motivo da reprovação.
 Uma notificação será enviada ao solicitante.
 
-### Approved by the user's responsible
+### Aprovado pelo responsável do usuário
 
 1. Navega para o módulo de Expenses(Despesas).
 
-2. Selecciona a lista Approve.
+2. Seleciona a lista Aprovar.
 
 <figure>
 
@@ -50,7 +50,7 @@ Uma notificação será enviada ao solicitante.
 <figcaption>Workspace de aprovação de despesas</figcaption>
 </figure>
 
-### Approved by the project's responsible
+### Aprovado pelo Responsavel do Projeto
 
 Para aprovar despesas, navegue até o módulo Projeto e selecione um projeto.
 
