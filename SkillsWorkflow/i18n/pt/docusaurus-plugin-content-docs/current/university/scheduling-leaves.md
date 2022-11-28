@@ -1,7 +1,7 @@
 ---
 id:  scheduling-leaves
-title: Scheduling Leaves
-sidebar_label: Scheduling Leaves
+title: Agendamento de Ausências 
+sidebar_label: Agendamento de Ausências 
 ---
 
 
