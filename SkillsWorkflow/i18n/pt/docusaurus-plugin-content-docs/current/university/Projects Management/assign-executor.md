@@ -1,12 +1,13 @@
 ---
 id:  assign-executor
-title: Assign an executor
-sidebar_label: Assign an executor
+title: Atribuir um Executor
+sidebar_label:11. Atribuir um Executor
 sidebar_position: 11
 ---
 
 
-From the Job List, select and click Job you want to assign an Executor.
+
+Na Lista de Atividades, selecione e clique uma Atividade que deseja atribuir a um Executor.
 
 <figure>
 
@@ -15,7 +16,7 @@ From the Job List, select and click Job you want to assign an Executor.
 </figure>
 
 
-Click "Add Assignment" icon (People) then place the cursor beside "Executor". The pencil icon will appear then click. 
+Clique no ícone "Adicionar Atribuição" (Pessoas) e coloque o cursor ao lado de "Executor". O ícone de lápis aparecerá e clique.
  
 
 <figure>
@@ -24,7 +25,7 @@ Click "Add Assignment" icon (People) then place the cursor beside "Executor". Th
 <figcaption></figcaption>
 </figure>
 
-- A List of Resources will be displayed for selection:
+- Uma lista de recursos será exibida para seleção:
 
 
 <figure>
@@ -33,7 +34,7 @@ Click "Add Assignment" icon (People) then place the cursor beside "Executor". Th
 <figcaption></figcaption>
 </figure>
 
-Choose a particular Resource then click "Submit Post" icon (Right Arrow Head) to Save.
+Escolha um recurso específico e clique no ícone "Enviar postagem" (seta para a direita) para salvar.
 
 <figure>
 
