@@ -19,7 +19,7 @@ Você pode definir várias colunas de Tabelas de preços e Tabelas de preços na
 - Nesse caso, a equipe da fatura não precisa incluir margem e custos fixos na criação das tarifas.
 - Alguns clientes têm uma taxa de venda única, o que garante que a equipe de cobrança não envie preços/custos diferentes para o mesmo cliente.
 
-<h4>Costs values</h4>
+<h4> Valores de Custos </h4>
 
 - Adicione taxas com base nos valores de custos para um grupo de usuários/tipologia.
 - Nesse caso, a equipe de Bill terá que gerenciar margem e custos fixos para o cliente.
