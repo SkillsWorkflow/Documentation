@@ -53,7 +53,7 @@ function Feature({ imageUrl, title, description }) {
     <div className={clsx('col col--4', styles.feature)}
     style={{
       color: '#333',
-      backgroundColor: '#fff',
+      backgroundColor: '',
     }} 
     >
       {imgUrl && (
@@ -69,7 +69,7 @@ function Feature({ imageUrl, title, description }) {
         </div>
       )}
       <div style={{
-          backgroundColor: 'white',
+          backgroundColor: '',
           borderRadius: '5px',
           paddingLeft: '40px',
           paddingRight: '40px'
