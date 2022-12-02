@@ -175,14 +175,12 @@ h2 {
 }
 
 h3 {
-  font-family: 'Open Sans Bold', sans-serif !important;
-  font-size: 18px;
-  font-weight: 600 !important;
+  font-family: 'Open Sans', sans-serif !important;
+  font-style: bold;
+  font-size: 16px;
   color: #333333;
   margin-top: 20px !important;
   margin-bottom: 10px !important;
-
-
 }
 
 
