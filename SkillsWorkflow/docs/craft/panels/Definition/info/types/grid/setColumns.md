@@ -159,7 +159,7 @@ If the data source does not mapping to the defaults fields name, it can be mappe
 
 ### type
 
-Accepted Values: 'undefined' | 'image' | 'link' | 'document' | 'date'
+Accepted Values: 'undefined' | 'image' | 'link' | 'document' | 'date' | 'currency' | 'read'
 
 To setup the Image type, it is necessary that data source includes the entity:
 - Id
@@ -175,7 +175,8 @@ To setup the Image type, it is necessary that data source includes the entity:
     {label: 'Link', value: 'link'},
     {label: 'Document', value: 'document'},
     {label: 'Date', value: 'date'},
-    {label: 'Currency', value: 'currency'}
+    {label: 'Currency', value: 'currency'},
+    {label: 'Read', value: 'read'}
   ]
 }>
 
@@ -446,6 +447,36 @@ The data field name that has the currency symbols.
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/currency-symbol-example.png)
+
+
+</figure>
+
+
+</TabItem>
+
+<TabItem value="read">
+
+The follow examples shows how to display the read/unread symbol in a boolean column.
+
+```json
+{
+    dataField: "AlreadyRead",
+    caption: "Read",
+    format: {
+        type: "read"
+    }
+}
+```
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/read-symbol-config.png)7
+
+</figure>
+
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/read-symbol-example.png)
 
 
 </figure>
