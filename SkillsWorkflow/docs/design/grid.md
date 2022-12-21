@@ -5,6 +5,16 @@ sidebar_label: Grid column sizes guidelines
 sidebar_position: 10
 ---
 
+ <!-- 1 isto são dataTypes ? 
+2- o que é o task type é ? 
+3- datatime é dateTime
+
+- Booleans - 100, center
+- Task type - 80, left
+- Datatime - 120, center
+- Datetime - 150, center -->
+
+ 
 ## For every Grid, explain that the following has to be set:
 
 <table className="custom-table">
@@ -44,16 +54,7 @@ sidebar_position: 10
 
 <!-- - Column aligment and default sizes beetween data types: -->
 
-<!-- 1 isto são dataTypes ? 
-2- o que é o task type é ? 
-3- datatime é dateTime
 
-- Booleans - 100, center
-- Task type - 80, left
-- Datatime - 120, center
-- Datetime - 150, center
-
---> 
 ## Data types widths & alignment:
 
 
