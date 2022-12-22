@@ -22,16 +22,10 @@
   --ifm-font-family-base: 'Varela Round';
   --ifm-font-family-monospace: 'Open Sans';
   --home-text-color: #333333;
+  --docusaurus-highlighted-code-line-bg: #EBEBEB;
 
 }
 
-/* .prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module.thin-scrollbar {data-hte
-  color: rgb(191, 199, 213) !important;
-  background-color: rgb(255, 255, 255) !important;
-  border-radius: 4px !important;
-  margin-top: 30px !important;
-  margin-bottom: 25px !important;
-} */
 
 figcaption {
   color: #86C5FF;
@@ -44,8 +38,14 @@ figcaption {
   color: #333;
 }
 
+.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  background-color: #0072C6;
+  color: #fafafa;
+  font-size: 16px !important;
+}
+
 pre {
-  background-color: #efefef;
+  background-color: #F3F8FF  
 }
 
 .language-js.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module.theme-code-block {
@@ -59,22 +59,31 @@ pre {
   color: #333 !important;
 }
 
+
+
 .token.literal-property.property {
   color: #333 !important;
 }
 
 .token.string {
-  color: #56D180 !important;
+  color: #26ABA4 !important;
 }
 
 .token.boolean {
-  color: #E5665E !important;
+  color: #F2536D !important;
 }
 
 .token.number {
-  color: #FAA45E !important;
+  color: #ff7f00 !important;
 }
 
+.token-line {
+  color: #333 !important;
+}
+
+.theme-code-block-highlighted-line {
+  background-color: #0072c6;
+}
 
 .codeBlockContent_---node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
   margin-top: 25px;
@@ -215,6 +224,32 @@ dt {
 .markdown ol {
   font-size: 14px;
   color: #333;
+}
+
+ol {
+  list-style: none;
+  counter-reset: item;
+  font-size: 14px;
+  color: #333;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 5px;
+  align-items: baseline;
+  display: flex;
+}
+ol li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: #86C5FF;
+  border-radius: 100%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+  align-items: baseline;
 }
 
 a {
