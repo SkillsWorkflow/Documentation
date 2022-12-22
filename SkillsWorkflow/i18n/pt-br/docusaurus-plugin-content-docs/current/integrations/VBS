@@ -1,0 +1,129 @@
+---
+id:  VBS
+title: VBS
+sidebar_label: VBS
+---
+## Descrição
+
+Esta é a documentação de como a integração entre o VBS e o SkillsWorkflow funciona.
+A integração é feita através da API, e tem uma tarefa associada que corre diariamente.
+A integração tem sempre em conta o campo “Data Ultima Alteração”, de forma que a informação criada/actualizada diariamente só está relacionada com ajustes ou criação de informação do dia, optimizando a integração em termos de performance. 
+ 
+### Troca de dados
+
+Através da API de ambos os sistemas.
+
+Será necessário configurar no VBS: 
+
+1. Habilitar usuário para acesso às Api’s listadas abaixo
+2. Enviar hash de acesso
+ 
+As Api’s usamos : http://vbsall.com.br/docs/api/
+
+1. FT/FTCAMP/FT0001
+2. UP/UPENCM/POST
+3. AT/ATACPJ/POST
+4. AT/ATTJOB/POST
+5. AT/ATTJOB/GET
+6. CR/CRCLIE/GET
+7. CR/CRCLIE/CR0001
+8. FT/FTPROD/FT0001
+9. FT/FTPROD/GET    
+10. TS/TSHRAD/TS0001
+11. TS/TSTSIT/DELETE
+12. TS/TSTSIT/POST
+13. TS/TSTSIT/PUT
+14. TS/TSTSIT/DELETE
+15. FP/FPFUNC/FP0001
+
+O ERP está instalado localmente num servidor do cliente.
+
+A troca de dados inclui a troca de informação dos seguintes campos:
+
+### De VBS para Skills Workflow
+- Dados mestre
+ - Clientes
+ - Fornecedores
+ - Produtos
+### De Skills Workflow para VBS
+ - Projetos
+ - Timesheets
+ 
+### Data Exchange (To Skills Workflow)
+Esta secção descreve a troca de informação entre os sistemas. Por favor, veja abaixo a lista de dados trocados entre os sistemas.
+Estes dados são trocados através da API de ambos os sistemas.
+
+
+## Clientes
+Os Clientes são recebidos no Skills Workflow.
+- Novos clientes criados no VBS são criados automaticamente no Skills Workflow.
+- Qualquer mudança efectuada na informação dos clientes é actualizada no Skills Workflow, tendo em conta a “data da última alteração”.
+- Os clientes são criados na tabela de clientes de faturamento, e clientes comerciais
+- Os clientes VBS ficam com o campo “External ID” identificado com o código VBS
+- Na tabela de clientes comerciais no Skills Workflow a associação ao cliente de faturamento é efectuada tendo em conta a filial (empresas)
+
+### Dados trocados na criação dos clientes 
+### Dados que são criados no Skills Workflow:
+- Nome
+- Empresa
+- Morada
+- CNPJ
+- Provincia
+- Código cliente
+- ExternalId
+- Activo / Desactivo
+
+Nota: Os clientes estão classificados, campo indicador tipo de registo, com os códigos P (prospect) e C (cliente) para tratamento de New Business
+Dados trocados na criação dos produtos
+
+### Dados que são criados no Skills Workflow:
+- Nome
+- Empresa
+- Codigo
+- ExternalId
+- Associação ao cliente
+- Desactivo 
+
+Nota: Os produtos por defeito são importados como desactivos, e devem ser activos pela agencia conforme queiram usar.
+       A tabela de produtos em casos de clientes partilhados é comum a todas as agencias.
+       
+## Dados trocados na criação dos fornecedores
+
+### Dados que são criados no Skills Workflow:
+
+- Nome
+- Empresa
+- ExternalId
+- Activo
+- Imposto
+- Morada
+- Morada 2
+- Condição Pagamento
+- Pais
+- Cidade
+- Estado
+
+Nota: As entidades acima referidas ficam activas ou desactivas conforme a informação que é colocada no VBS, em excepção dos produtos
+
+## Interface de Timesheets
+
+O Skills Workflow envia as horas reais apontadas para o VBS.
+
+São enviados do Skills Workflow para o VBS os projectos (campanhas), e os Jobs (projetos), para ser possível enviar os dados das horas registadas nos vários niveis.
+As horas administrativas (não ligadas a clientes) também são enviadas.
+
+### Dados trocados no envio de Horas
+
+### Dados que são enviados pelo Skills Workflow:
+
+- Usuário
+-- Os usuários têm de estar devidamente mapeados com o UserExternalId para quando o SW envia a informação ao VBS se consiga identificar a que usuário pertence
+- Projecto
+-- O projecto no SW corresponde á campanha no VBS
+- Atividade
+-- A atividade no SW corresponde ao projeto no VBS
+
+Nota: A criação é feita através da configuração do fluxo, com a acção “send to external”, o documento tem de estar marcado como “Timehseets”
+É enviada a informação do cliente, produto, nome projecto ou atividade, data de inicio, e data de fim.
+O VBS quando cria o documento envia para o Skills Workflow uma mensagem de com o código e centro de custo.
+
