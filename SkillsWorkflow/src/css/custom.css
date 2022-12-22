@@ -226,31 +226,10 @@ dt {
   color: #333;
 }
 
-ol {
-  list-style: none;
-  counter-reset: item;
-  font-size: 14px;
-  color: #333;
-}
-
-ol li {
-  counter-increment: item;
-  margin-bottom: 5px;
-  align-items: baseline;
-  display: flex;
-}
-ol li:before {
-  margin-right: 10px;
-  content: counter(item);
-  background: #86C5FF;
-  border-radius: 100%;
-  color: white;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  display: inline-block;
-  align-items: baseline;
-}
+::marker {
+  color: #0072C6;
+  font-size: 18px;
+  }
 
 a {
   text-decoration: none !important;

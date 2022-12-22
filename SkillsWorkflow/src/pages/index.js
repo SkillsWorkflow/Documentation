@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
+import url from 'https://fonts.googleapis.com/css2?family=Varela+Round&display=swap';
 
 import {
   useThemeConfig,
@@ -74,7 +75,10 @@ function Feature({ imageUrl, title, description }) {
           paddingLeft: '40px',
           paddingRight: '40px'
         }}>
-      <h3>{title}</h3>
+      <h3 style={{
+          fontfamily: 'Varela Round',
+          color: '#333',
+        }}> {title}</h3>
       <p>{description}</p>
       </div>
     </div >
