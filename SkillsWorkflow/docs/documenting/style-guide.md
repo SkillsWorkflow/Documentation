@@ -156,6 +156,32 @@ There must be at least 3 dashes separating each header cell. The outer pipes (|)
 
 ---
 
+## Custom Table
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>name</code></td>
+            <td>String</td>
+           
+            <td>Name to reference the valued passed</td>
+        </tr>
+         <tr className="selected">
+            <td><code>value</code></td>
+            <td>Any</td>
+            
+            <td>Any type of value can be passed</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Blockquotes
 
 > Blockquotes are very handy in email to emulate reply text. This line is part of the same quote.
@@ -182,9 +208,7 @@ Quote break.
 
 Here's a line for us to start with.
 
-This line is separated from the one above by two newlines, so it will be a _separate paragraph_.
-
-This line is also a separate paragraph, but... This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
+This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
 
 ---
 

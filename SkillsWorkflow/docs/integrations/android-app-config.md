@@ -1,7 +1,7 @@
 ---
 id:  android-app-config
-title: iOS App User Configuration
-sidebar_label: iOS App User Configuration
+title: Android App User Configuration
+sidebar_label: Android App User Configuration
 ---
 
 To configure your Skills Workflow on Android, first you will need to download our app from the Play Store.
