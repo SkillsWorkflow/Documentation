@@ -1,28 +1,26 @@
 ## Description
 
-Please replace this text with a summary of the change or which issue was fixed.
+*Please describe your changes as below.*
 
-  - Change 1
-  - Issue 1
+- Change 1 - Describe the changes that were applied
+- Change 2 - ....
 
 ## Type of change
 
-Please delete options that are not relevant.
+*Please delete options that are not relevant.*
+- Added new file
+- Updated details to the file
+- Updated a translation in the file
 
-- [ ] Added new file
-- [ ] Added new details to the file
-- [ ] Updated a translation in the file
+Thank you for your contribution to the Documentation.
+
+The details below are required for the Pull Request approver.
+Before approving and submitting this PR to the origin/main branch, please **click on each checklist item** below to mark it as verified.
 
 ## Checklist:
 
-Please delete options that are not relevant.
-
-- [ ] I have updated the english file and the path is: 
-
-    > Documentation/SkillsWorkflow/docs
-
-- [ ] I have updated a translated file - **BR/PT/ES file** - and the path is correct:
+- [ ] I've checked that changed files are in the correct folder 
+  > English translations - /SkillsWorkflow/***docs/{path to the file}***
+  > BR/ES/PT translations - /SkillsWorkflow/***i18n/**(es/br/pt)**/docusaurus-plugin-content-docs/current/{path to the file}*
    
-    > [ ] *Documentation/SkillsWorkflow/i18n/**(es/br/pt)**/docusaurus-plugin-content-docs/current/*
-   
-- [ ] Other relevant notes
+- [ ] I've checked that there are no branch conflicts
