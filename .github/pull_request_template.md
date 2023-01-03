@@ -17,7 +17,7 @@ Thank you for your contribution to the Documentation.
 The details below are required for the Pull Request approver.
 Before approving and submitting this PR to the origin/main branch, please **click on each checklist item** below to mark it as verified.
 
-## Checklist:
+## Checklist
 
 - [ ] I've checked that changed files are in the correct folder 
   > English translations - /SkillsWorkflow/***docs/{path to the file}***
