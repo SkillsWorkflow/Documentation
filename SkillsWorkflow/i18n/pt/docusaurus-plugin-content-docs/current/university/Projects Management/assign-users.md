@@ -5,8 +5,6 @@ sidebar_label: 9. Atribuir ou cancelar a atribuição massivamente de usuários
 sidebar_position: 9
 ---
 
-## Atribuir ou cancelar a atribuição massivamente de usuários
-
 Siga as próximas etapas para atribuir ou cancelar a atribuição massiva de usuários nas equipes dos Jobs:
 
 1. Vá para a aba "Jobs".
