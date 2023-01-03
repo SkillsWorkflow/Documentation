@@ -5,8 +5,6 @@ sidebar_label: 5. Burn e Dashboards de Utilização
 sidebar_position: 5
 --- 
 
-## Burn e Utilization de Utilização
-
 Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
 
 O objetivo é dar ao usuário a capacidade de controlar os processos de forma muito amigável e abrangente.
