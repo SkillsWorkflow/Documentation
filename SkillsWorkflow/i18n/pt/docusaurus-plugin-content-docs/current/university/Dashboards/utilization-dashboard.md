@@ -5,8 +5,6 @@ sidebar_label: 4.Dashboard de Utilização
 sidebar_position: 4
 ---
 
-## Dashboard de Utilização
-
 Os gerentes de projeto se esforçam muito na alocação de recursos. Tanto quanto possível, eles querem que sua equipe esteja ocupada com tarefas que sejam valiosas para a agência (horas faturáveis), pois isso aumentará a lucratividade. No entanto, a alocação de recursos se torna um desafio à medida que a equipe cresce quando você precisa atribuir recursos a diferentes projetos, todos acontecendo ao mesmo tempo.
 
 Uma das maneiras mais fáceis de verificar a eficácia de seu esforço de alocação de recursos é rastrear e analisar a utilização de sua equipe. O Skills Workflow desenvolveu um Painel de Utilização que oferece diferentes visualizações sobre como o tempo dos usuários foi gasto em diferentes dimensões. Isso servirá como uma ferramenta poderosa para melhorar a alocação de recursos.
