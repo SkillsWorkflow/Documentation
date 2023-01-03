@@ -5,8 +5,6 @@ sidebar_label: 1. Criar tabelas de preços
 sidebar_position: 1
 ---
 
-## Criar tabelas de preços
-
 As Tabelas de Preços são preços/custos para grupos de tipologia e/ou usuários.
 
 Você pode definir várias colunas de Tabelas de preços e Tabelas de preços na mesma tabela.
