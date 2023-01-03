@@ -28,6 +28,12 @@ Se pueden administrar utilizando dos enfoques diferentes:
 
 Vaya a Módulo de Fee Proposal- Tarjeta de tarifa y presione +
 
+<figure>
+
+![img-box-shadow](/img/university/contracts/university-contracts-rateCards-1.png)
+<figcaption>Maintenance - filtered by Rate Cards</figcaption>
+</figure>
+
 Complete la información del encabezado:
 
 - Número - agregue manualmente un número interno
