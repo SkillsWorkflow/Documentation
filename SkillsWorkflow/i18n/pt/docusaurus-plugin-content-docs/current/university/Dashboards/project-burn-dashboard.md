@@ -5,9 +5,6 @@ sidebar_label: 2. Dashboard Projeto Burn
 sidebar_position: 2
 ---
 
-## Dashboard Projeto Burn 
-
-
 Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um cliente ou projeto específico.
 
 O objetivo é dar ao usuário a capacidade de controlar os processos de uma forma muito amigável e abrangente.
