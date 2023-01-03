@@ -5,8 +5,6 @@ sidebar_label: 8. Dashboard de aprovações e horas do quadro de horários ausen
 sidebar_position: 8
 ---
 
-## Dashboard de aprovações e horas do quadro de horários ausentes
-
 Esse Dashboard fornece informações em tempo real sobre usuários bloqueados devido à falta de horas e/ou aprovações ausentes das planilhas de horas de seus subordinados.
 
 Para acessar, selecione “Horas e Aprovações do Quadro de Horários em Falta” no menu Quadro de Horários.
