@@ -5,8 +5,6 @@ sidebar_label: 1. Create a Project
 sidebar_position: 1
 ---
 
-## Create a Project
-
 ### A Project is an umbrella that groups a bundle of related jobs inside.
 
 1. To create a new Project, navigate to the "Clients" module.
