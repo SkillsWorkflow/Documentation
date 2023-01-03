@@ -210,7 +210,7 @@ This method can be used to get a row in a data source.
          <tr className="selected">
             <td><code>rowId</code></td>
             <td>IDashboardStoreRow</td>
-            <td>true</td>
+            <td>false</td>
             <td></td>
             <td>Row to get</td>
         </tr>
