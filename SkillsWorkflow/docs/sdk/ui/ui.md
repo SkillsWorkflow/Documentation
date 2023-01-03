@@ -569,10 +569,19 @@ In the following example you can find a template for an item that will present a
 
 ```javascript
 function itemTemplate(itemData, itemIndex, itemElement, workspaceContext) {
-   var properties = {
-       items: [{"id":1, "value":"Blue"}, {"id":2, "value":"Red"}]
-   };
-   SW.UI.showComponent(itemElement, 'List', properties);
+    var properties = {
+        items: [
+            {
+                "id": 1, 
+                "value": "Blue"
+            }, 
+            {
+                "id":2, 
+                "value": "Red"
+            }
+         ]
+     };
+    SW.UI.showComponent(itemElement, 'List', properties);
 }
 ```
 
@@ -587,18 +596,18 @@ This method can be used to display an existing or default Image.
 #### Method(s)
 
 ```javascript
-1   function showImage(element: HTMLElement, documentName: "user" | "client" | "company", name: string,
-2       params: { 
-3           hasImage?: boolean; 
-4           size?: Size; 
-5           id?: string; 
-6           showName: boolean
-7       } = {
-8           hasImage: false,
-9           size: Size.SMALL,
-10          showName: false
-11      }
-12   ): HTMLElement
+function showImage(element: HTMLElement, documentName: "user" | "client" | "company", name: string,
+    params: { 
+        hasImage?: boolean; 
+        size?: Size; 
+        id?: string; 
+        showName: boolean
+    } = {
+        hasImage: false,
+        size: Size.SMALL,
+        showName: false
+    }
+): HTMLElement
 ```
 
 <table className="custom-table">
@@ -683,7 +692,7 @@ This method can be used to update a user, client or company image.
 #### Method(s)
 
 ```javascript
-1    function showImageEditor(element: HTMLElement, documentName: "user" | "client" | "company", documentId: string,
+1   function showImageEditor(element: HTMLElement, documentName: "user" | "client" | "company", documentId: string,
 2       params: {
 3           endpoint?: string;
 4           size?: Size;
