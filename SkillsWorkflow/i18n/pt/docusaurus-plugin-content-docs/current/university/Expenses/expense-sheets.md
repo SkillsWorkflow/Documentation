@@ -5,8 +5,6 @@ sidebar_label: 1. Criar Folhas de Despesas
 sidebar_position: 1
 ---
 
-## 1. Criar Folhas de Despesas
-
 É possível criar e gerir despesas relativas a projetos e outras atividades.
 
 Todos os custos afetarão a rentabilidade do projeto.
