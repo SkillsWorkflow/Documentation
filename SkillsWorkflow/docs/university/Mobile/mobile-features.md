@@ -5,8 +5,6 @@ sidebar_label: 1. Mobile Features
 sidebar_position: 2
 ---
 
-## Mobile Features
-
 Skills Workflow Mobile app is available on all iOS and Android devices. The app accompanys the use of the Web and is constantly being improved and updated. Here is a list of current modules and features available on the app.
 
 Current modules:
