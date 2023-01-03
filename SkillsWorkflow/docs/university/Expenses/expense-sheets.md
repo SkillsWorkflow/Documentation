@@ -5,8 +5,6 @@ sidebar_label: 1. Create Expense Sheets
 sidebar_position: 1
 ---
 
-## Create Expenses Sheets
-
 It's possible to create and manage expenses relative to projects and other activities.
 
 All costs will afect the project's profitability, for that reason
