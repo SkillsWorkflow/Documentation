@@ -27,7 +27,7 @@ This method can be used to edit an option in various components.
 #### Method(s)
 
 ```javascript
-1    function editComponentsOptionInBulk(components: any[], option: string, value: any): void
+function editComponentsOptionInBulk(components: any[], option: string, value: any): void
 ```
 
 <table className="custom-table">
@@ -86,17 +86,17 @@ This method can be used to get entities image.
 #### Method(s)
 
 ```javascript
-1    function getEntityImage(element: HTMLElement, documentName: string,
-2       params?: {
-3           size?: Size;
-            hideName?: boolean;
-            title?: string;
-4       } = {
-5          size: Size.SMALL,
-            hideName: false,
-            title: null
-6       }
-7   ): string;
+function getEntityImage(element: HTMLElement, documentName: string,
+   params?: {
+       size?: Size;
+       hideName?: boolean;
+       title?: string;
+   } = {
+      size: Size.SMALL,
+       hideName: false,
+       title: null
+   }
+): string;
 ```
 
 <table className="custom-table">
@@ -169,14 +169,14 @@ This method can be used to set element's attributes.
 #### Method(s)
 
 ```javascript
-1    function setAttribute(element: HTMLElement, attribute: string, attributeValue: string,
-2       params: { 
-3           text?: string; 
-4           createContainer?: boolean 
-5       } = { 
-6           createContainer: true 
-7       }
-8   ): HTMLElement
+function setAttribute(element: HTMLElement, attribute: string, attributeValue: string,
+    params: { 
+        text?: string; 
+        createContainer?: boolean 
+    } = { 
+        createContainer: true 
+    }
+): HTMLElement
 ```
 
 <table className="custom-table">
@@ -249,15 +249,15 @@ This method can be used to set element's attributes.
 #### Method(s)
 
 ```javascript
-1   function setConditionalColor(element: HTMLElement, value: string, conditions: boolean[], colors: string[],
-2       params: { 
-3           createContainer?: boolean; 
-4           bold?: boolean; 
-5           italic?: boolean 
-6       } = { 
-7           createContainer: true 
-8       }
-9   ): void
+function setConditionalColor(element: HTMLElement, value: string, conditions: boolean[], colors: string[],
+    params: { 
+        createContainer?: boolean; 
+        bold?: boolean; 
+        italic?: boolean 
+    } = { 
+        createContainer: true 
+    }
+): void
 ```
 
 <table className="custom-table">
@@ -344,12 +344,12 @@ This method allows you to set an element as Red, Ambar or Green according to its
 #### Method(s)
 
 ```javascript
-1   function setRag(element: any, value: string, 
-2           condition1: boolean,
-3           condition2: boolean, 
-4           condition3: boolean,
-5           params: { createContainer?: boolean } = { createContainer: true }
-6   ): string;
+function setRag(element: any, value: string, 
+        condition1: boolean,
+        condition2: boolean, 
+        condition3: boolean,
+        params: { createContainer?: boolean } = { createContainer: true }
+): string;
 ```
 
 <table className="custom-table">
@@ -449,13 +449,13 @@ This method can be used to set rag considering two given versions.
 #### Method(s)
 
 ```javascript
-1   function setVersionRag(element: HTMLElement, version1: number, version2: number,
-2       params: { 
-3           createContainer?: boolean 
-4       } = { 
-5           createContainer: true 
-6       }
-7   ): void 
+function setVersionRag(element: HTMLElement, version1: number, version2: number,
+    params: { 
+        createContainer?: boolean 
+        } = { 
+        createContainer: true 
+    }
+): void 
 ```
 
 <table className="custom-table">
@@ -519,7 +519,7 @@ This method can be used to create a new component.
 #### Method(s)
 
 ```javascript
-1    function showComponent(element: HTMLElement, type: string, properties: object): void;
+function showComponent(element: HTMLElement, type: string, properties: object): void;
 ```
 
 <table className="custom-table">
@@ -692,19 +692,19 @@ This method can be used to update a user, client or company image.
 #### Method(s)
 
 ```javascript
-1   function showImageEditor(element: HTMLElement, documentName: "user" | "client" | "company", documentId: string,
-2       params: {
-3           endpoint?: string;
-4           size?: Size;
-5           width?: number;
-6           height?: number;
-7           imageStyle?: string;
-8       } = {
-9           size: Size.LARGE,
-10          width: 100,
-11          height: 100
-12      }
-13  ): HTMLElement
+function showImageEditor(element: HTMLElement, documentName: "user" | "client" | "company", documentId: string,
+    params: {
+        endpoint?: string;
+        size?: Size;
+        width?: number;
+        height?: number;
+        imageStyle?: string;
+    } = {
+        size: Size.LARGE,
+        width: 100,
+        height: 100
+    }
+): HTMLElement
 
 ```
 
@@ -799,7 +799,7 @@ This method can be used to define an element priority.
 #### Method(s)
 
 ```javascript
-1    function showPriority(element: HTMLElement, priorityValue: number): void;
+function showPriority(element: HTMLElement, priorityValue: number): void;
 ```
 
 <table className="custom-table">
@@ -849,12 +849,12 @@ This method can be used to display a stage.
 #### Method(s)
 
 ```javascript
-1   function showStage(element: HTMLElement, name: string, color: string,
-2       params: { 
-3           grouping?: boolean; 
-4           groupCount?: number 
-5       } = {}
-6   ): void
+function showStage(element: HTMLElement, name: string, color: string,
+    params: { 
+        grouping?: boolean; 
+        groupCount?: number 
+    } = {}
+): void
 ```
 
 <table className="custom-table">
@@ -925,7 +925,7 @@ This method can be used to display tags.
 #### Method(s)
 
 ```javascript
-1    function showTags(element: HTMLElement, tags: string = null): void;
+function showTags(element: HTMLElement, tags: string = null): void;
 ```
 
 <table className="custom-table">
@@ -975,18 +975,18 @@ This method can be used to display teams.
 #### Method(s)
 
 ```javascript
-1   function showTeam(
-2       element: HTMLElement, 
-3       data: any, 
-4       idsFieldName: string, 
-5       namesFieldName: string, 
-6       hasImageFieldName: string,
-7       params: { 
-8           size?: Size 
-9       } = { 
-10          size: Size.SMALL 
-11      }
-12  ): void
+function showTeam(
+    element: HTMLElement, 
+    data: any, 
+    idsFieldName: string, 
+    namesFieldName: string, 
+    hasImageFieldName: string,
+    params: { 
+        size?: Size 
+    } = { 
+        size: Size.SMALL 
+    }
+): void
 ```
 
 <table className="custom-table">
@@ -1089,7 +1089,7 @@ This method can be used to display assignments workload.
 #### Method(s)
 
 ```javascript
-1    function showWorkload(element: string | HTMLElement, assignmentId: string): Promise<void>
+function showWorkload(element: string | HTMLElement, assignmentId: string): Promise<void>
 ```
 
 <table className="custom-table">
