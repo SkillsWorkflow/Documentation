@@ -5,8 +5,6 @@ sidebar_label: 1.  Dashboards de Clientes
 sidebar_position: 1
 ---
 
-##  Dashboards de Clientes
-
 Os painéis são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um cliente ou projeto específico.
 
 O objetivo é dar a capacidade de controlar os processos de uma forma muito amigável e abrangente.
