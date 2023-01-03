@@ -5,8 +5,6 @@ sidebar_label: 2. Create Expenses
 sidebar_position: 2
 ---
 
-## Create Expenses 
-
 ### Expenses can be created in two ways:
 
 - Directly on a Project
