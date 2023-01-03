@@ -5,9 +5,6 @@ sidebar_label: 2. Create Jobs
 sidebar_position: 2
 ---
 
-
-## Create Jobs
-
 1. To create a new Job, navigate to the "Projects" module.
 
 2. Select the active Project where you want to include the new Job under, and click the "+" at the top right corner.
