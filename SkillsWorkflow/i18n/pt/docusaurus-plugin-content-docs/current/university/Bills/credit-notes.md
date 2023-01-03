@@ -5,8 +5,6 @@ sidebar_label: 2. Gerar notas de credito a clientes
 sidebar_position: 2
 ---
 
-## Gerar notas de credito a clientes
-
 Sempre que alterar os valores de venda de orçamento faturado, para um valor inferior o sistema irá sugerir que seja emitida uma nota de crédito.
 
 Os pedidos de emissão de notas de credito a cliente no sistema, e desta forma informar a equipa financeira para avançar com a criação/sincronização do documento para o sistema financeiro externo, e gerar o credito definitivo. 
