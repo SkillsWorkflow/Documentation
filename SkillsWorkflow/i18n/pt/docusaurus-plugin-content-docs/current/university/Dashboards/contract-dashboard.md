@@ -5,8 +5,6 @@ sidebar_label: 3.  Dashboards de Contratos
 sidebar_position: 3
 ---
 
-##  Dashboards de Contratos
-
 Os Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
 
 O objetivo é dar ao usuário a capacidade de controlar os processos de forma muito amigável e abrangente.
