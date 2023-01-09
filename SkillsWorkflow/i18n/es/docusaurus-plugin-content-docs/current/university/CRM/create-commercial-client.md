@@ -9,7 +9,7 @@ Para crear un nuevo cliente comercial debe ir al módulo "Mantenimiento" ya la s
 <figure>
 
 ![img-box-shadow](/img/university/crm/Maintenance-Clients.png)
-<figcaption>CRM module</figcaption>
+<figcaption>Modulo CRM</figcaption>
 </figure>
 
 - Haga clic en la opción "+ Nuevo Cliente Comercial". Verifique que esta opción lo llevará a la pantalla de creación de Cliente.
@@ -24,7 +24,7 @@ Timesheet Level - elija el nivel más alto en el que los usuarios pueden ingresa
 <figure>
 
 ![img-box-shadow](/img/university/crm/Client.png)
-<figcaption>New client creation screen</figcaption>
+<figcaption>Nueva creacion de cliente</figcaption>
 </figure>
 
 >Después de guardar el Cliente, automáticamente aparecerán varias pestañas en la parte superior de la página, donde puede agregar nuevos productos, contactos, informacion adicional, compañias, diviones, idiomas, asociar usuarios, etc.
