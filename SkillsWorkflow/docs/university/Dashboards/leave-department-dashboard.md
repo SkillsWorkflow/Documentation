@@ -1,11 +1,9 @@
 ---
 id:  leave-departmento-dashboard
-title: Leaves My Apartment
-sidebar_label: 7. Leaves My Apartment
+title: Leaves My Department
+sidebar_label: 7. Leaves My Department
 sidebar_position: 7
 ---
-
-
 
 When scheduling your own leaves or approving leaves submitted by your subordinates, it's important to know if other employees in the same department are also on leave. This prevents the department from being paralyzed due to many employees being off work on the same day.
 
