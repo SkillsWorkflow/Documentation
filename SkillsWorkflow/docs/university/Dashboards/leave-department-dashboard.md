@@ -1,5 +1,5 @@
 ---
-id:  leave-departmento-dashboard
+id:  leave-department-dashboard
 title: Leaves My Department
 sidebar_label: 7. Leaves My Department
 sidebar_position: 7
