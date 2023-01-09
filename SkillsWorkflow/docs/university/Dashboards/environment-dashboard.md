@@ -1,11 +1,9 @@
 ---
 id:  Ambiente-dashboard
-title: Ambient
-sidebar_label: 9.Dashboard Ambient
+title: Environment
+sidebar_label: 9.Environment Workspace
 sidebar_position: 9
 ---
-
-
 
 It is now possible to change the appearance of Skills Workflow. Make it look like your agency, differentiate it from the others and show your brand identity to all your team and clients.
 
