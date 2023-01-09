@@ -5,8 +5,6 @@ sidebar_label: 10. Contratos
 sidebar_position: 10
 ---
 
-## Contratos
-
 Os Contratos que significa Full-Time Equivalent é uma unidade que mede a carga de trabalho de um funcionário. O FTE é frequentemente usado para medir o envolvimento de um funcionário em um projeto. Nesse painel, os gerentes de projeto podem analisar o FTE em diferentes níveis (ou seja, Empresa, Divisão, Departamento, Grupo de Tipologia, Funcionário).
 
 Para acessar, selecione Contratos no menu Workspaces.
