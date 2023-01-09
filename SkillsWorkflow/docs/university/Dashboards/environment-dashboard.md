@@ -37,10 +37,6 @@ There are 3 sections in the Dashboard where the following are defined:
 <figcaption></figcaption>
 </figure> 
 
-Images
-
-login tab
-
 - Background Image URL – Enter here the URL of the image you want to use as the background for the login page. Select images that can relate to your agency. Avoid images with lots of objects/noise. Prioritize images with depth of field.
 
 - Background Image Style – Enter the style properties to apply to the image.
