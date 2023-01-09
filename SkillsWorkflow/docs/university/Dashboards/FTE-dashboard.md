@@ -5,11 +5,10 @@ sidebar_label: 10. FTE
 sidebar_position: 10
 ---
 
-## FTE
 
-FTE que significa Full-Time Equivalent es una unidad que mide la carga de trabajo de un empleado. FTE se usa a menudo para medir la participación de un empleado en un proyecto. En este tablero, los gerentes de proyecto pueden analizar el FTE en diferentes niveles (es decir, empresa, división, departamento, grupo de tipología, empleado).
+FTE which stands for Full-Time Equivalent is a unit that measures the workload of an employee. FTE is often used to measure an employee's involvement in a project. On this dashboard, project managers can analyze FTE at different levels (ie company, division, department, typology group, employee).
 
-Para acceder, seleccione FTE bajo la Workspaces menú.
+To access, select FTE under the Workspaces menu.
 
 <figure>
 
@@ -17,54 +16,54 @@ Para acceder, seleccione FTE bajo la Workspaces menú.
 <figcaption></figcaption>
 </figure> 
 
-La primera sección son los criterios de selección donde se define lo siguiente:
+The first section is the selection criteria where the following are defined:
 
-1. Año
+1. Year
 
-2. Compañía
+2. Company
 
-3. División
+3. Division
 
-4. Departamento
+4. Department
 
-La siguiente sección es donde define el período que desea analizar. Deslice las banderas de fecha de inicio y finalización a través del calendario horizontal para establecer el período.
+The next section is where you define the period you want to analyze. Slide the start and end date flags across the horizontal calendar to set the period.
 
-La última sección es una vista de lista que muestra "Usuarios por grupo de tipología, departamento y división". Se presenta en una jerarquía desde los niveles de División hasta los de Usuario que se pueden expandir o contraer. El informe tiene secciones de 4 columnas que muestran lo siguiente:
+The last section is a list view showing "Users by Type Group, Department, and Division." It is presented in a hierarchy from Division to User levels that can be expanded or collapsed. The report has 4 column sections showing the following:
 
-Personas
+People
 
-- Activo: recuento con estado activo
--
-- FTE – (Capacidad + Tiempo de entrega + Tiempo de vacaciones) / Horas de trabajo
+- Active: count with active status
 
-- Capacidad – Total de horas de trabajo del período – Total de vacaciones en horas – Total de vacaciones en horas
+- FTE – (Capacity + Delivery Time + Vacation Time) / Working Hours
 
-Contratado
+- Capacity – Total working hours for the period – Total vacations in hours – Total vacations in hours
 
-- Total: total de horas vendidas en la propuesta de tarifa
+Hired
 
-- % Capacidad – (Total Contratado / Capacidad) * 100
+- Total: total hours sold in the rate proposal
 
-Facturable + Forecast
+- % Capacity – (Total Contracted / Capacity) * 100
 
-- Total: Horas Facturables Reales + Forecast Horas
-- Forecast – Total de Horas Previstas
-- % Contratado – (Total Facturable y Previsto / Total Horas Contratadas) * 100
-- % Capacidad – (Total Facturable y Previsto / Capacidad) * 100
+Billable + Forecast
+
+- Total: Actual Billable Hours + Forecast Hours
+- Forecast – Total Scheduled Hours
+- % Hired – (Total Billable and Forecast / Total Hours Hired) * 100
+- % Capacity – (Total Billable and Forecast / Capacity) * 100
 
 Actual
 
-- Total: Facturable + no Facturable
+- Total: Billable + Non-Billable
 
-- Facturable – Cliente
+- Billable – Customer
 
-- No facturable - Administrativo
+- Non-Billable - Administrative
 
-- Administrativo: horas reales cobradas a las tareas de administración
+- Administrative: Actual hours charged for administration tasks
 
-- Cliente: horas reales cobradas a los clientes
+- Customer: actual hours charged to customers
 
-Al expandir el nivel del Grupo de tipología, se mostrarán los Empleados con ese Grupo de tipología en ese Departamento y División. Al expandir Empleado se mostrará el desglose de sus cargos de tiempo por cliente.
+Expanding the Type Group level will display the Employees with that Type Group in that Department and Division. Expanding Employee will show the breakdown of your time charges by client.
 
 <figure>
 
