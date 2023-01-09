@@ -1,6 +1,6 @@
 ---
 id: create-commercial-product
-title: Create a new commercial product
+title: Crear Producto Comercial
 sidebar_label: 3. Create commercial product
 ---
 
