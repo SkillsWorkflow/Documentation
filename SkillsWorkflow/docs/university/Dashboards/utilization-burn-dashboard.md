@@ -5,8 +5,6 @@ sidebar_label: 5. Burn and Utilization Dashboards
 sidebar_position: 5
 --- 
 
-## Burn and Utilization Dashboards
-
 Dashboards are a powerful feature used to quickly support decisions related to a specific contract.
 
 The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
@@ -31,17 +29,11 @@ Burn and Utilization - Fee
 The first part provides a summary total for all projects mapped to the fee of the following:
 
 1. Actual Hours – actual timesheet hours logged to each project to date
-
 2. Planned Hours – planned hours for each project
-
 3. Contracted Hours – contracted/sold hours per fee proposal
-
 4. Actual $ - actual hours valued using Rate Card assigned to the Fee Proposal
-
 5. Planned $ - planned hours valued using Rate Card assigned to the Fee Proposal
-
 6. Contracted $ - contracted/sold hours valued using Rate Card assigned to the Fee Proposal
-
 7. % Contracted $ - (Actual $ / Contracted $) x 100
 
 The second part shows the breakdown listing per Project classified and grouped according to Project Stage. Header Filter, Export and Column Chooser features are available for this list.
@@ -58,17 +50,11 @@ Click on the "Burn and Utilization Per Role - Fee" tab;
 The first part provides a summary total for all typology groups quoted in the fee and/or logged actual hours to the projects mapped to the fee of the following:
 
 1. Actual Hours – actual timesheet hours logged to each project to date
-
 2. Planned Hours – planned hours for each project
-
 3. Contracted Hours – contracted hours of the fee proposal
-
 4. Actual $ - actual hours valued using actual rates per user
-
 5. Planned $ - planned hours valued using Rate Card assigned to the Fee Proposal
-
 6. Contracted $ - contracted hours valued using Rate Card assigned to the Fee Proposal
-
 7. % Contracted $ - (Actual $ / Contracted $) x 100
 
 The second part shows the breakdown listing per Typology Group per Department. Header Filter, Export and Column Chooser features are available for this list.
@@ -79,13 +65,13 @@ The second part shows the breakdown listing per Typology Group per Department. H
 <figcaption></figcaption>
 </figure>
 
-Monthly Distribution
+#### Monthly Distribution
 
 Dollars – A time graph showing Revenue and Cost per Month
 
 Hours – A time graph showing Contracted, Forecast and Actual Hours per Month
 
-Contribution by Typology Group
+#### Contribution by Typology Group
 
 A pie chart showing the breakdown of actual hours by Typology Group
 
@@ -95,10 +81,10 @@ A pie chart showing the breakdown of actual hours by Typology Group
 <figcaption></figcaption>
 </figure> 
 
-Utilization by Typology Group
+#### Utilization by Typology Group
 
 This representation will allow you to check if the planned hours or actual hours are burning the contracted hours you have previously sold to your client.
 
-Utilization by User
+#### Utilization by User
 
 Also, you will be able to check which user is filling in more hours under your contract.

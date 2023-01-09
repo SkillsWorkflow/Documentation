@@ -5,8 +5,6 @@ sidebar_label: 2. Create Expenses
 sidebar_position: 2
 ---
 
-## Create Expenses 
-
 ### Expenses can be created in two ways:
 
 - Directly on a Project
@@ -21,17 +19,12 @@ To create expenses navigate to Project module and select a project to add receip
 ![img-box-shadow](/img/university/expenses/university-expenses-3-project.png)
 <figcaption>Project Item</figcaption>
 </figure>
-´`˝
+
 1. Click on the icon '+' to create a new Expense Item.
-
-2. Add a description.
-
+2. Add a description
 3. Add a file
-
 4. Fill the remaining fields
-
 5. Click 'ok' and submit post.
-
 6. Repeat the process if there are more expense to add to the same project.
 
 <figure>
@@ -43,7 +36,6 @@ To create expenses navigate to Project module and select a project to add receip
 ### Create on Expense Sheet
 
 1. Go the Expense Sheets module.
-
 2. Select All list.
 
 <figure>
@@ -68,7 +60,6 @@ To create expenses navigate to Project module and select a project to add receip
 <figcaption>Expense creation pop-up</figcaption>
 </figure>
 
-
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-4.png)
@@ -76,17 +67,11 @@ To create expenses navigate to Project module and select a project to add receip
 </figure>
 
 5. Add a description.
-
 6. Select the type of Expense.
-
 7. Add an image with the recit to add a file.
-
 8. In the field Document search for the project or client you want to link.
-
 9. Add expense's value.
-
 10. Click 'ok'.
-
 11. Repeat the process if there's more than 1 expense.
 
 
@@ -104,9 +89,5 @@ If you have several receipts for the same sheet you can repeat the process using
 </figure>
 
 1. Select the expense you which to copy and click on duplicate.
-
 2. The system will generate an automatic number and also a confirmation pop-up.
-
 3. Go to the expense sheet, in the Feed exchange the stage in order to send for the responsible for approval.
-
-

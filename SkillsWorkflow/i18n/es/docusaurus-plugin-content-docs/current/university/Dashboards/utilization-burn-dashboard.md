@@ -13,7 +13,7 @@ Como gestor de proyectos, es muy útil conocer el estado de un cliente específi
 
 Hay varios dashboards a nivel de contrato disponibles en el sistema que mostrarán información diferente.
 
-Burn y Utilización - Fee
+#### Burn y Utilización - Fee
 
 1. Seleccione el contrato que desea analizar.
 2. Haga clic en el "Burn y Utilización - Fee".
@@ -24,23 +24,15 @@ Burn y Utilización - Fee
 <figcaption></figcaption>
 </figure>
 
- 
-
 La primera parte proporciona un resumen total de todos los proyectos asignados a la tarifa de lo siguiente:
 
 1. Horas reales: horas reales de la hoja de horas registradas en cada proyecto hasta la fecha
-
-2.Horas planificadas: horas planificadas para cada proyecto
-
+2. Horas planificadas: horas planificadas para cada proyecto
 3. Horas contratadas: horas contratadas/vendidas por propuesta de tarifa
-
 4. $ Reales: horas reales valoradas utilizando la hoja de tarifas asignada a la propuesta de tarifas
-
 5. $ Planificados: horas planificadas valoradas utilizando la hoja de tarifas asignada a la propuesta de tarifa
-
 6. $ Contratados: horas contratadas/vendidas valoradas utilizando la hoja de tarifas asignada a la propuesta de tarifa
-
-7.% $ Contratado - ($ real / $ contratado) x 100
+7. % $ Contratado - ($ real / $ contratado) x 100
 
 La segunda parte muestra el listado desglosado por Proyecto clasificado y agrupado según Etapa del Proyecto. Las funciones de filtro de encabezado, exportación y selector de columnas están disponibles para esta lista.
 
@@ -55,17 +47,11 @@ Haga clic en la pestaña "Burn y utilizar por rol - Fee";
 La primera parte proporciona un resumen total para todos los grupos de tipología cotizados en la tarifa y/o las horas reales registradas en los proyectos asignados a la tarifa de lo siguiente:
 
 1. Horas reales: horas reales de la hoja de horas registradas en cada proyecto hasta la fecha
-
 2. Horas planificadas: horas planificadas para cada proyecto
-
 3. Horas contratadas - horas contratadas de la propuesta de tarifa
-
 4. $ Reales: horas reales valoradas utilizando tarifas reales por usuario
-
 5. $ Planificados: horas planificadas valoradas utilizando la hoja de tarifas asignada a la propuesta de tarifa
-
 6. $ Contratados: horas contratadas valoradas utilizando la hoja de tarifas asignada a la propuesta de tarifa
-
 7. % $ Contratado - ($ real / $ contratado) x 100
 
 La segunda parte muestra el listado desglosado por Grupo Tipológico por Departamento. Las funciones de filtro de encabezado, exportación y selector de columnas están disponibles para esta lista.
@@ -76,13 +62,13 @@ La segunda parte muestra el listado desglosado por Grupo Tipológico por Departa
 <figcaption></figcaption>
 </figure>
 
-Distribución Mensual
+#### Distribución Mensual
 
 Dólares: un gráfico de tiempo que muestra los ingresos y el costo por mes
 
 Horas: un gráfico de tiempo que muestra las horas contratadas, previstas y reales por mes
 
-Aportación por Tipología Grupo
+#### Aportación por Tipología Grupo
 
 Un gráfico circular que muestra el desglose de las horas reales por grupo de tipología
 
@@ -92,10 +78,10 @@ Un gráfico circular que muestra el desglose de las horas reales por grupo de ti
 <figcaption></figcaption>
 </figure> 
 
-Grupo de Utilización por Tipología
+#### Grupo de Utilización por Tipología
 
 Esta representación te permitirá comprobar si las horas planificadas o las horas reales están quemando las horas contratadas que has vendido previamente a tu cliente.
 
-Utilización por Usuario
+#### Utilización por Usuario
 
 Además, podrás comprobar qué usuario está realizando más horas en tu contrato.

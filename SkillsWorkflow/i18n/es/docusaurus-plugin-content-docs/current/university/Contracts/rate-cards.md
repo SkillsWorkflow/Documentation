@@ -19,10 +19,8 @@ Se pueden administrar utilizando dos enfoques diferentes:
 
 ## Valores de costo
 
-
 - Tasas de carga basadas en los valores de costo para un grupo / usuario de tipología específico.
 - En este caso, el equipo de cuenta debe administrar el margen y los gastos generales en las cotizaciones de los clientes.
-
 
 ## Creando una tabla de tarjeta de tarifa.
 

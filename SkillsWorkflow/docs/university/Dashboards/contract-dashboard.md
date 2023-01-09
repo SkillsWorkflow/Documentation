@@ -5,8 +5,6 @@ sidebar_label: 3. Contract Dashboards
 sidebar_position: 3
 ---
 
-## Contract Dashboards
-
 Dashboards are a powerful feature used to quickly support decisions related to a specific contract.
 
 The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
@@ -15,12 +13,10 @@ As a project manager, it is very useful to understand the status of a specific c
 
 There are several dashboards at the Contract-level available in the system that will display different information.
 
-Burn Dashboard
+#### Burn Dashboard
 
 1. Select the contract you want to analyze.
-
 2. Click on the "Burn Dashboard" tab.
-
 3. Select the project you want to check.
 
 You will find several representations that will show you in a glimpse whether your Contract is already burned.
@@ -35,7 +31,7 @@ After selecting the project inside the contract you wish to analyze in detail, t
 <figcaption></figcaption>
 </figure>
 
-Below you will find several pie representations related to the project you have selected.
+4. Below you will find several pie representations related to the project you have selected.
 
 <figure>
 
@@ -43,24 +39,22 @@ Below you will find several pie representations related to the project you have 
 <figcaption></figcaption>
 </figure>
 
-Typology group planned time
+#### Typology group planned time
 
 This representation shows the number of planned hours per typology group.
 
-Typology group actual time
+#### Typology group actual time
 
 This representation shows the number of actual hours per typology group.
 
-Typology group contracted time
+#### Typology group contracted time
 
 This representation shows the number of contracted hours per typology group, applied to the project previously selected.
 
+### Resources Dashboard
 
-
-Resources Dashboard
-Inside the previously selected contract
-Click on the "Resources Dashboard" tab
-
+1. Inside the previously selected contract
+2. Click on the "Resources Dashboard" tab
 
 <figure>
 
@@ -78,18 +72,17 @@ Additionally, you will be able to control which typology is filling in more actu
 <figcaption></figcaption>
 </figure>
 
-Typology group burn
+#### Typology group burn
 
 This representation will allow you to check if the planned hours or actual hours are burning the contracted hours you have previously sold to your client.
 
-User burn
+#### User burn
 
 Also, you will be able to check which user is filling in more hours under your project/contract
 
-Staffing Dashboard
-Inside the previously selected contract
-Click on the "Staffing Dashboard" tab
-
+### Staffing Dashboard
+- Inside the previously selected contract
+- Click on the "Staffing Dashboard" tab
 
 <figure>
 
@@ -109,11 +102,11 @@ By default, you will be able to check per deliverable the number of planned hour
 <figcaption></figcaption>
 </figure>
 
-Monthly distribution
+#### Monthly distribution
 
 This representation allows you to control on a monthly basis the planned time VS the user's utilization and income.
 
-Typology Contribution
+#### Typology Contribution
 
 Based on planned VS actual time this representation shows the contribution of each typology group for your contract
 

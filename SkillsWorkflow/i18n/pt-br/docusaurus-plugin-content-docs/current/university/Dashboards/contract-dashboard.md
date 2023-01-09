@@ -5,8 +5,6 @@ sidebar_label: 3.  Dashboards de Contratos
 sidebar_position: 3
 ---
 
-##  Dashboards de Contratos
-
 Os Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
 
 O objetivo é dar ao usuário a capacidade de controlar os processos de forma muito amigável e abrangente.
@@ -15,15 +13,13 @@ Como gerente de projetos, é muito útil entender o status de um cliente especí
 
 Existem vários painéis no nível do contrato disponíveis no sistema que exibirão informações diferentes.
 
-Burn Dashboard
+### Burn Dashboard
 
 1. Selecione o contrato que deseja analisar.
-
 2. Clique na guia "Burn Dashboard".
-
 3. Selecione o projeto que deseja verificar.
 
-Você encontrará várias representações que mostrarão rapidamente se o seu Contrato já está queimado.
+Você encontrará várias representações que mostrarão rapidamente se o seu Contrato já foi consumido.
 
 Além disso, há uma representação resumida que mostrará o total planejado, contratado, custo e receita.
 
@@ -43,24 +39,21 @@ Abaixo você encontrará várias representações de pizza relacionadas ao proje
 <figcaption></figcaption>
 </figure>
 
-Tempo planejado do grupo de tipologia
+#### Tempo planejado do grupo de tipologia
 
 Esta representação mostra o número de horas planejadas por grupo de tipologia.
 
-Tempo real do grupo de tipologia
+#### Tempo real do grupo de tipologia
 
 Esta representação mostra o número de horas reais por grupo de tipologia.
 
-Tempo contratado do grupo de tipologia
+#### Tempo contratado do grupo de tipologia
 
 Esta representação mostra o número de horas contratadas por grupo de tipologia, aplicadas ao projeto previamente selecionado.
 
- 
-
-Dashboard de Recursos
-Dentro do contrato previamente selecionado
-Clique na guia "Painel de Recursos"
- 
+### Dashboard de Recursos
+1. Dentro do contrato previamente selecionado
+2. Clique na guia "Painel de Recursos"
 
 <figure>
 
@@ -78,17 +71,17 @@ Além disso, você poderá controlar qual tipologia está preenchendo mais horas
 <figcaption></figcaption>
 </figure>
 
-Burn de grupo de tipologia
+#### Burn de grupo de tipologia
 
 Essa representação permitirá que você verifique se as horas planejadas ou as horas reais estão queimando as horas contratadas que você vendeu anteriormente ao seu cliente.
 
-Burn de Usuario
+#### Burn de Usuario
 
 Além disso, você poderá verificar qual usuário está preenchendo mais horas no seu projeto/contrato
 
-Dashboard de Pessoas
-Dentro do contrato previamente selecionado
-Clique na guia "Dashboard de Pessoas" 
+### Dashboard de Pessoas
+1. Dentro do contrato previamente selecionado
+2. Clique na guia "Dashboard de Pessoas" 
  
 
 <figure>
@@ -109,11 +102,11 @@ Por padrão, você poderá verificar por entrega o número de horas planejadas, 
 <figcaption></figcaption>
 </figure>
 
-Distribuição mensal
+#### Distribuição mensal
 
 Essa representação permite controlar mensalmente o tempo planejado VS a utilização e a renda do usuário.
 
-Contribuição de tipologia
+#### Contribuição de tipologia
 
 Com base no tempo real planejado VS esta representação mostra a contribuição de cada grupo de tipologia para o seu contrato
 

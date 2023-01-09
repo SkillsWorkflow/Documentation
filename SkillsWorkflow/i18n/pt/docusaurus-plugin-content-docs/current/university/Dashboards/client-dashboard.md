@@ -5,8 +5,6 @@ sidebar_label: 1.  Dashboards de Clientes
 sidebar_position: 1
 ---
 
-##  Dashboards de Clientes
-
 Os painéis são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um cliente ou projeto específico.
 
 O objetivo é dar a capacidade de controlar os processos de uma forma muito amigável e abrangente.
@@ -19,14 +17,11 @@ Existem vários Dashboards no nível do cliente disponíveis no sistema que exib
 ### Burn Dashboard
 
 1. Vá para o módulo cliente.
-
 2. Selecione o cliente que deseja verificar.
-
 3. Pressione em Burn Dashboard.
 
 Você encontrará um resumo com indicadores totais:
-
-Planejado, real, receita e custo
+- Planejado, real, receita e custo
 
 
 <figure>
@@ -54,11 +49,11 @@ Essa representação mostrará uma distribuição mensal da receita planejada ve
 Você também descobrirá a mesma representação dos valores acumulados correspondentes
  
 
-Profitability Dashboard
-Vá para o módulo cliente;
-Selecione o cliente que deseja verificar;
-Pressione em Profitability Dashboard 
-Este Dashboard mostra-lhe um vislumbre dos projetos, sob o cliente que você selecionou, que lhe retorna um lucro maior (com base no valor da receita cotada para o cliente)
+### Profitability Dashboard
+1. Vá para o módulo cliente;
+2. Selecione o cliente que deseja verificar;
+3. Pressione em Profitability Dashboard 
+4. Este Dashboard mostra-lhe um vislumbre dos projetos, sob o cliente que você selecionou, que lhe retorna um lucro maior (com base no valor da receita cotada para o cliente)
 
 Você poderá analisar o lucro planejado por projeto e por tipologia.
 
@@ -78,16 +73,15 @@ Além disso, você poderá verificar a margem de lucro por projeto por porcentag
 
  
 
-Alocação do Projeto Dashboard
-Vá para o módulo cliente;
-Selecione o cliente que deseja verificar;
-Pressione no Dashboard de Alocação do Projeto 
-O Dashboard de Alocação de Projetos mostrará uma tabela onde você poderá verificar as seguintes informações por projeto:
-
-Capacidade de Usuários;
-Horas reais já registradas no sistema;
-Horas faturáveis registradas
-% de alocação
+### Alocação do Projeto Dashboard
+1. Vá para o módulo cliente;
+2. Selecione o cliente que deseja verificar;
+3. Pressione no Dashboard de Alocação do Projeto 
+4. O Dashboard de Alocação de Projetos mostrará uma tabela onde você poderá verificar as seguintes informações por projeto:
+   - Capacidade de Usuários;
+   - Horas reais já registradas no sistema;
+   - Horas faturáveis registradas
+   - % de alocação
 
 <figure>
 
