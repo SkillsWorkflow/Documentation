@@ -1,7 +1,7 @@
 ---
 id:  assign-executor
 title: Atribuir um Executor
-sidebar_label:11. Atribuir um Executor
+sidebar_label: 11. Atribuir um Executor
 sidebar_position: 11
 ---
 
