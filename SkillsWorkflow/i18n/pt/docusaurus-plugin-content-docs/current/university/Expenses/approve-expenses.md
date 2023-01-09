@@ -5,8 +5,6 @@ sidebar_label: 3. Aprovar Despesas
 sidebar_position: 3
 ---
 
-## 3. Aprovar Despesas
-
 ### Despesas podem ser aprovadas de duas maneiras:
 
 - Pelo responsavel do Projecto
