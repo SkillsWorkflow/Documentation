@@ -8,7 +8,7 @@ Para crear un nuevo cliente comercial debe ir al módulo "Mantenimiento" ya la s
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialclient-1.png)
+![img-box-shadow](/img/university/crm/Maintenance-Clients.png)
 <figcaption>CRM module</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ Timesheet Level - elija el nivel más alto en el que los usuarios pueden ingresa
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialclient-2.png)
+![img-box-shadow](/img/university/crm/Client.png)
 <figcaption>New client creation screen</figcaption>
 </figure>
 
