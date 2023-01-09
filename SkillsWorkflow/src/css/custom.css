@@ -22,58 +22,78 @@
   --ifm-font-family-base: 'Varela Round';
   --ifm-font-family-monospace: 'Open Sans';
   --home-text-color: #333333;
+  --docusaurus-highlighted-code-line-bg: #EBEBEB;
 
 }
 
-/* .prism-code.language-json.codeBlock_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module.thin-scrollbar {data-hte
-  color: rgb(191, 199, 213) !important;
-  background-color: rgb(255, 255, 255) !important;
-  border-radius: 4px !important;
-  margin-top: 30px !important;
-  margin-bottom: 25px !important;
-} */
 
 figcaption {
   color: #86C5FF;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
+
 
 .pagination-nav__label {
   color: #333;
 }
 
+.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  background-color: #0072C6;
+  color: #fafafa;
+  font-size: 16px !important;
+}
+
 pre {
-  background-color: #efefef
+  background-color: #F3F8FF  
+}
+
+.language-js.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module.theme-code-block {
+  --prism-color: #bfc7d5;
+  --prism-background-color: #292d3e;
+  margin-top: 20px !important;
+  margin-bottom: 30px !important;
 }
 
 .token.plain {
   color: #333 !important;
 }
 
+
+
 .token.literal-property.property {
   color: #333 !important;
 }
 
 .token.string {
-  color: #56D180 !important;
+  color: #26ABA4 !important;
 }
 
 .token.boolean {
-  color: #E5665E !important;
+  color: #F2536D !important;
 }
 
 .token.number {
-  color: #FAA45E !important;
+  color: #ff7f00 !important;
 }
 
+.token-line {
+  color: #333 !important;
+}
+
+.theme-code-block-highlighted-line {
+  background-color: #0072c6;
+}
 
 .codeBlockContent_---node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
-  margin-bottom: 25px;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
   background: #efefef;
 } */
+
 
 .menu__list-item {
   margin: 0 !important;
@@ -99,7 +119,7 @@ pre {
 }
 
 .menu {
-  font-size: 14px !important;
+  font-size: 15px !important;
 }
 
 .markdown h1:first-child {
@@ -139,14 +159,14 @@ div code-block {
 h1 {
   margin: 0 auto;
   font-family: 'Varela Round', sans-serif;
-  font-size: 34px;
+  font-size: 42px;
   line-height: 48px;
   font-weight: 700;
   text-align: left;
   letter-spacing: 1px;
   text-transform: none;
-  margin-bottom: 15px !important;
-  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  margin-top: 15px !important;
   color: #333333;
 }
 
@@ -154,23 +174,22 @@ h2 {
   display: block;
   width: auto;
   font-family: 'Varela Round', sans-serif;
-  color: #333333;
-  font-size: 26px;
+  color: #0072C6;
+  font-size: 28px;
   font-weight: 600 !important;
-  letter-spacing: 0.20px;
+  letter-spacing: 0.15px;
   white-space: normal;
-  margin-top: 10px !important;
-  margin-bottom: 15px !important;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
 }
 
 h3 {
-  font-family: 'Varela Round';
+  font-family: 'Open Sans', sans-serif !important;
+  font-style: bold;
   font-size: 18px;
-  font-weight: 600;
-  color: #333333;
-  margin-bottom: 15px !important;
-  margin-top: 10px !important;
-
+  color: #0072C6;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
 }
 
 
@@ -178,7 +197,19 @@ p {
   font-size: 14px !important;
   font-family: 'Open Sans', sans-serif !important;
   color: #333;
-  margin-bottom: 20px !important;
+  margin-bottom: 5px !important;
+}
+
+dl {
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #333;
+}
+
+dt {
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #333;
 }
 
 .markdown li {
@@ -195,8 +226,38 @@ p {
   color: #333;
 }
 
+ol {
+  list-style: none;
+  counter-reset: item;
+  font-size: 14px;
+  color: #333;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 5px;
+  align-items: baseline;
+  display: flex;
+}
+ol li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: #86C5FF;
+  border-radius: 100%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  display: inline-block;
+  align-items: baseline;
+}
+
 a {
   text-decoration: none !important;
+}
+
+hr {
+  background-color: #EBEBEB;
 }
 
 
@@ -256,6 +317,7 @@ html[data-theme='dark'] .home-page-image {
 
 .home-page-image {
   background-image: url(/img/home/homepage-light.jpg);
+  margin-bottom: 40px;
 }
 
 html[data-theme='dark'] a:hover {
@@ -284,6 +346,12 @@ html[data-theme='dark'] .skills_src-pages-:hover {
   text-transform: uppercase
 }
 
+
+
+.theme-admonition {
+  margin-top: 15px ;
+  margin-bottom: 25px !important;
+}
 
 img[alt=small] {
   width: 30%;
@@ -361,12 +429,12 @@ img[alt=img-with-border] {
 
 figure {
   margin: 0;
-  margin-bottom: 2rem;
   text-align: center;
 }
 
 figure p {
-  margin-bottom: 0;
+  margin-bottom: 0px !important;
+  margin-top: 5px !important;
 }
 
 .row {
@@ -503,7 +571,7 @@ html[data-theme='dark'] .DocSearch {
 
 /* Custom Table */
 
-.custom-table {
+table {
   box-sizing: border-box;
   border: 1px solid #e4e4eb;
   border-radius: 5px !important;
@@ -511,13 +579,19 @@ html[data-theme='dark'] .DocSearch {
   width: 100%;
   border-collapse: collapse;
   margin: auto;
+  margin-top: 20px !important;
+  margin-bottom: 30px !important;
   border-style: hidden;
   box-shadow: 0 0 0 1px #e4e4eb;
   font-size: 14px;
 }
 
+table .selected:hover {
+  background-color: rgb(240, 240, 240) !important;
+}
 
-.custom-table tr {
+
+table tr {
   background-color: transparent !important;
   border-bottom: 1px solid #e4e4eb;
   color: #49495f
@@ -527,19 +601,17 @@ html[data-theme='dark'] .DocSearch {
   background-color: rgb(240, 240, 240) !important;
 }
 
-.custom-table th,
-.custom-table td {
+table th,
+table td {
   border: 0;
   text-align: center;
 }
 
-.custom-table tbody td code {
+table tbody td code {
   background-color: rgba(62, 123, 250, .06);
   border-radius: 5px;
   padding: 3px 5px;
 }
-
-
 
 
 .small-custom-table {

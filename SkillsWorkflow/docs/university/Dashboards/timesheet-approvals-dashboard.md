@@ -1,13 +1,11 @@
 ---
 id:  timesheet-aprobaciones-dashboard
-title: Horas de Tiempo en Falta y Aprobaciones
-sidebar_label: 8. Horas de Tiempo en Falta y Aprobaciones Dashboard
+title: Missing Time Hours and Approvals
+sidebar_label: 8. Missing Time Hours and Approvals Dashboard
 sidebar_position: 8
 ---
 
-## Horas de Tiempo en Falta y Aprobaciones Dashboard
-
-Este dashboard proporciona información en tiempo real sobre los usuarios bloqueados debido a horas faltantes y/o aprobaciones faltantes de las hojas de tiempo de sus subordinados.
+This dashboard provides real-time information on users blocked due to missing hours and/or missing timesheet approvals from their subordinates.
 
 Para acceder, seleccione "Horas de Tiempo en Falta y Aprobaciones" en el menú del  Timesheet.
 
@@ -17,44 +15,30 @@ Para acceder, seleccione "Horas de Tiempo en Falta y Aprobaciones" en el menú d
 <figcaption></figcaption>
 </figure>
 
-El dashboard tiene 2 secciones que muestran lo siguiente:
+The dashboard has 2 sections that show the following:
 
-Gráficos
+Graphics
 
+1. Blocked Users – A bar chart showing the number of users blocked by missing hours and missing approvals. Hovering over the bar will display the number of users.
+2. Blocked Users by Department - A pie chart showing the percentage breakdown by department in the number of blocked users. Hovering over the graph will display the number of blocked users in the department.
+3. Total Hours of Missing Time- A bar graph showing the number of hours in arrears for Missing Hours and Missing Approvals. Hovering over the bar will display the number of hours past due.
+4. Missing Hours by Department: A pie chart showing the percentage breakdown by department in the number of hours overdue. Hovering over the graph will display the number of hours delinquent in the department.
 
-1. Usuarios bloqueados: un gráfico de barras que muestra la cantidad de usuarios bloqueados por horas faltantes y aprobaciones faltantes. Al pasar el cursor sobre la barra se mostrará el número de usuarios.
+Blocked Users List and Missing Time Hours
 
-2. Usuarios bloqueados por departamento: un gráfico circular que muestra el desglose porcentual por departamento en la cantidad de usuarios bloqueados. Al pasar el cursor sobre el gráfico, se mostrará la cantidad de usuarios bloqueados en el departamento.
+A list showing blocked users in each department with the following columns:
 
-3. Total Horas de tiempo en falta- Un gráfico de barras que muestra el número de horas en mora para Horas faltantes y Aprobaciones faltantes. Al pasar el cursor sobre la barra se mostrará el número de horas de mora.
-
-4. Horas faltantes por departamento: un gráfico circular que muestra el desglose porcentual por departamento en la cantidad de horas atrasadas. Al pasar el cursor sobre el gráfico, se mostrará el número de horas de morosidad en el departamento.
-
-Lista de usuarios bloqueados y Horas de tiempo en Falta
-
-
-Una lista que muestra los usuarios bloqueados en cada departamento con las siguientes columnas:
-
-
-- Nombre de usuario –Skills User Nombre bloqueado
-
-- Nombre de usuario de AD: nombre de usuario de Active Directory del usuario bloqueado
-
-- Timesheet Required – Casilla de verificación para indicar si se requiere que el usuario bloqueado con timesheets
-
-- Bloqueado en el sistema: casilla de verificación que muestra que el usuario está bloqueado en Skills
-
-- Bloqueado en AD: casilla de verificación que muestra que el AD del usuario está bloqueado
-
-- Razón de Bloqueo – Razón de Morosidad ya sea  Horas de tiempo en falta y aprobaciones
-
-- Horas faltantes: total de horas en mora hasta la fecha
-
-- Días que faltan: haga clic en la barra de visualización y aparecerá una ventana que muestra los días que faltan
+- Username –Skills User Blocked name
+- AD Username: Active Directory username of the blocked user
+- Timesheet Required – Checkbox to indicate if locked user with timesheets is required
+- Locked In System – Checkbox showing that the user is locked in Skills
+- AD Locked – Checkbox showing that the user's AD is locked
+- Reason for Blocking – Reason for Delinquency either Hours of time in lack and approvals
+- Missing Hours: Total hours in arrears to date
+- Days left: Click on the display bar and a window will pop up showing the days left
 
 <figure>
 
 ![img-box-shadow](/img/university/dashboards/missing-timesheets-dashboard/university-missing-timesheets-2.png)
 <figcaption></figcaption>
 </figure> 
-

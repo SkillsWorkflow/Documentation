@@ -5,8 +5,6 @@ sidebar_label: 1. Create invoice authorizations
 sidebar_position: 1
 ---
 
-## Create invoice authorizations
-
 You can create invoice orders in the system, and in this way inform the financial team to proceed with the creation / synchronization of the document to the external financial system, and generate the final invoice.
 
 What the system generates is an invoice request, not a final invoice, it must always be generated in the financial system (Primavera, Sage, NAV, SAP, etc.).

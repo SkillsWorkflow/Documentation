@@ -10,7 +10,7 @@ A sub namespace of Utils, exclusive for date operations
 
 ---
 
-## convertMinToDate
+## convertMinutesToDate
 
 #### Description
 
@@ -46,7 +46,7 @@ function convertMinToDate(totalMinutes: number): Date
 #### Basic Usage
 
 ```javascript
-SW.Utils.Datetime.convertMinToDate(63984503);
+SW.Utils.Datetime.convertMinutesToDate(63984503);
 ```
 
 #### Response

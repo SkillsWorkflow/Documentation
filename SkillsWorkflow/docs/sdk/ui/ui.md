@@ -5,7 +5,7 @@ sidebar_label: Introduction
 sidebar_position: 1
 ---
 
-# User Inteface
+# User Interface
 
 With this namespace, you can quickly provide methods to show UI.
 
@@ -339,7 +339,7 @@ It will add the value text to the element with the background color correspondin
 
 #### Description
 
-This method can be used to display a rag.
+This method allows you to set an element as Red, Ambar or Green according to its value.
 
 #### Method(s)
 
@@ -378,25 +378,25 @@ This method can be used to display a rag.
             <td>Value to show</td>
         </tr>
         <tr className="selected">
-            <td><code>condition1</code></td>
+            <td><code>red</code></td>
             <td>boolean</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>return the value with background color in red</td>
         </tr>
         <tr className="selected">
-            <td><code>condition2</code></td>
+            <td><code>ambar</code></td>
             <td>boolean</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>return the value with the background color in ambar</td>
         </tr>
         <tr className="selected">
-            <td><code>condition3</code></td>
+            <td><code>green</code></td>
             <td>boolean</td>
             <td>true</td>
             <td></td>
-            <td></td>
+            <td>return the value with the background color in green</td>
         </tr>
         <tr className="selected">
             <td><code>createContainer</code></td>
@@ -411,12 +411,32 @@ This method can be used to display a rag.
 #### Basic Usage
 
 ```javascript
-SW.UI.setRag(element, "value", true, false, false);
+SW.setRAG(e, value, i.value > 15, (i.value >= 5 && i.value < 15), i.value < 5);
 ```
 
 #### Response
 
-It will add the value text to the element with the background color corresponding to the condition that is true. (case condition1 is true color = "#f7412d", condition2 color = "#ffc720", condition3 color = "#7ec880")
+It will add the value text to the element with the background color corresponding to the condition that is true. 
+
+### Example
+
+```javascript {7}
+{
+    dataField: "MarginPercentage",
+    dataType: "number",
+    alignment: "center",
+    format: "percent",
+    width: 120,
+    cellTemplate: function(e, i) {
+        SW.UI.setRag(e, i.text, i.value < 0.01, i.value >= 0.01 && i.value < 0.99, i.value >= 0.99);
+    }
+},
+```
+<figure>
+
+![img-box-shadow](/img/responses/rag_example.png)
+
+</figure>
 
 ---
 

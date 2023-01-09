@@ -13,14 +13,15 @@ Como gerente de proyectos, es muy útil para comprender el estado de un cliente 
 
 Hay varios tableros a nivel de proyecto disponibles en el sistema que mostrarán información diferente.
 
-Burn Dashboard
-Seleccione el proyecto que desea analizar;
-Haga clic en el "Burn Dashboard" pestaña;
-Encontrarás varias representaciones que te mostrarán de un vistazo si tu proyecto ya está quemado.
+#### Burn Dashboard
+
+1. Seleccione el proyecto que desea analizar;
+2. Haga clic en el "Burn Dashboard" pestaña;
+3. Encontrarás varias representaciones que te mostrarán de un vistazo si tu proyecto ya está quemado.
 
 Tenga en cuenta que el panel de control de grabación se basa en la previsión frente a las horas reales.
 
-Time Burn
+#### Time Burn
 
 Esta representación muestra el número de horas previstas frente al número de horas reales. Aunque el gráfico se distribuye por mes, también muestra una representación de suma.
 
@@ -30,15 +31,11 @@ Esta representación muestra el número de horas previstas frente al número de 
 <figcaption></figcaption>
 </figure>
 
-Revenue Burn
+#### Revenue Burn
 
 Esta representación muestra si el proyecto ya está quemado en una perspectiva de ingresos y costos.
 
-Los valores de ingresos se basan en horas planificadas/contratadas y el valor asociado para cada grupo de tipología. Los valores de costo son heredados por el costo de usuario versus el número de horas reales completadas.
-
- 
-
- 
+Los valores de ingresos se basan en horas planificadas/contratadas y el valor asociado para cada grupo de tipología. Los valores de costo son heredados por el costo de usuario versus el número de horas reales completadas. 
 
 <figure>
 
@@ -46,20 +43,14 @@ Los valores de ingresos se basan en horas planificadas/contratadas y el valor as
 <figcaption></figcaption>
 </figure>
 
- 
-
-Tipología Grupo Burn
+#### Tipología Grupo Burn
 
 Este panel muestra qué tipología está grabando su proyecto y se basa en horas reales.
 
- 
-
-Departmento Burn
+#### Departmento Burn
 
 Esta representación se basa en las horas reales de los usuarios y muestra qué departamento está completando más horas en un proyecto específico.
 
- 
-
-User Burn
+#### User Burn
 
 Esta representación se basa en las horas reales de los usuarios y muestra qué usuario está completando más horas en un proyecto específico.
