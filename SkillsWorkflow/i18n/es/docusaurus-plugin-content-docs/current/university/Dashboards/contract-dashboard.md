@@ -13,12 +13,10 @@ Como gestor de proyectos, es muy útil conocer el estado de un cliente específi
 
 Hay varios tableros a nivel de contrato disponibles en el sistema que mostrarán información diferente.
 
-Burn Dashboard
+### Burn Dashboard
 
 1. Seleccione el contrato que desea analizar.
-
 2. Haga clic en la pestaña "Burn Dashboard".
-
 3. Seleccione el proyecto que desea consultar.
 
 Encontrará varias representaciones que le mostrarán de un vistazo si su Contrato ya está Bruned.
@@ -41,24 +39,22 @@ A continuación encontrará varias representaciones circulares relacionadas con 
 <figcaption></figcaption>
 </figure>
 
-Tipología grupo tiempo previsto
+####  Tipología grupo tiempo previsto
 
 Esta representación muestra el número de horas planificadas por grupo de tipología.
 
-Tipología grupo tiempo real
+#### Tipología grupo tiempo real
 
 Esta representación muestra el número de horas reales por grupo tipológico.
 
-Tipología grupo tiempo contratado
+#### Tipología grupo tiempo contratado
 
 Esta representación muestra el número de horas contratadas por grupo tipológico, aplicado al proyecto previamente seleccionado.
 
- 
+### Recursos Dashboard
 
-Recursos Dashboard
-Dentro del contrato previamente seleccionado
-Haga clic en la ventana "Recursos Dashboard" 
- 
+1. Dentro del contrato previamente seleccionado
+2. Haga clic en la ventana "Recursos Dashboard"  
 
 <figure>
 
@@ -66,7 +62,7 @@ Haga clic en la ventana "Recursos Dashboard"
 <figcaption></figcaption>
 </figure>
 
-Encontrarás un resumen con el estado general de tu contrato, en este ejemplo podemos observar que el tiempo real casi se está agotando las horas contratadas
+3. Encontrarás un resumen con el estado general de tu contrato, en este ejemplo podemos observar que el tiempo real casi se está agotando las horas contratadas
 
 Además, podrás controlar qué tipología está llenando más horas reales.
 
@@ -76,17 +72,18 @@ Además, podrás controlar qué tipología está llenando más horas reales.
 <figcaption></figcaption>
 </figure>
 
-Grupo de tipología burn
+#### Grupo de tipología burn
 
 Esta representación te permitirá comprobar si las horas planificadas o las horas reales están quemando las horas contratadas que has vendido previamente a tu cliente.
 
-User burn
+#### User burn
 
 Además, podrá verificar qué usuario está completando más horas en su proyecto/contrato
 
-Staffing Dashboard
-Dentro del contrato previamente seleccionado
-Haga clic en la pestaña "Staffing Dashboard" 
+### Staffing Dashboard
+
+1. Dentro del contrato previamente seleccionado
+2. Haga clic en la pestaña "Staffing Dashboard" 
  
 
 <figure>
@@ -107,11 +104,11 @@ De manera predeterminada, podrá verificar por entregable la cantidad de horas p
 <figcaption></figcaption>
 </figure>
 
-Distribución mensual
+#### Distribución mensual
 
 Esta representación le permite controlar mensualmente el tiempo planificado VS la utilización e ingresos del usuario.
 
-Tipología Contribución
+#### Tipología Contribución
 
 Basado en el tiempo planificado VS real, esta representación muestra la contribución de cada grupo de tipología para su contrato
 

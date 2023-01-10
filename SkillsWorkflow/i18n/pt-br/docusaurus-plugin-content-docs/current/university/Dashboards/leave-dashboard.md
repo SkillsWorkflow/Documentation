@@ -5,8 +5,6 @@ sidebar_label: 6.Dashboard de Folhas
 sidebar_position: 6
 ---
 
-## Dashboard de Folhas
-
 Ao agendar nossas próprias licenças ou aprovar licenças enviadas por nossos subordinados, é importante saber se outros funcionários da empresa também estão de licença no mesmo dia. Isso evita que a empresa seja prejudicada devido a muitos funcionários estarem de licença no mesmo dia.
 
 Esse Dashboard fornece uma visualização de calendário mostrando quais usuários da mesma empresa estão de licença em cada dia útil do mês do calendário.

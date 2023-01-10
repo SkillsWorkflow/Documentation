@@ -5,8 +5,6 @@ sidebar_label: 1. Client Dashboards
 sidebar_position: 1
 ---
 
-## Client Dashboards
-
 Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.
 
 The goal is to give the ability to control processes in a very friendly and comprehensive way.
@@ -19,9 +17,7 @@ There are several Dashboards at the client level available in the system that wi
 ### Burn Dashboard
 
 1. Go to the client module.
-
 2. Select the client you want to check.
-
 3. Press on Burn Dashboard.
 
 You will find out a summary with total indicators:
@@ -55,12 +51,12 @@ This representation will show you a monthly distribution of planned revenue vers
 You will also find out the same representation of the corresponding accumulated values
 
 
+### Profitability Dashboard
 
-Profitability Dashboard
-Go to the client module;
-Select the client you want to check;
-Press on Profitability Dashboard 
-This Dashboard shows you in a glimpse the projects, under the client you have selected, which returns you a higher profit (based on the income value quoted to the client)
+1. Go to the client module;
+2. Select the client you want to check;
+3. Press on Profitability Dashboard 
+4. This Dashboard shows you in a glimpse the projects, under the client you have selected, which returns you a higher profit (based on the income value quoted to the client)
 
 You will be able to analyze the planned profit per project, and per typology.
 
@@ -78,18 +74,17 @@ Additionally, you will be able to check the profit margin per project by percent
 <figcaption></figcaption>
 </figure>
 
+### Project Allocation Dashboard
 
-
-Project Allocation Dashboard
-Go to the client module;
-Select the client you want to check;
-Press on Project Allocation Dashboard 
-Project Allocation Dashboard will show you a table where you can check the following information per project:
+1. Go to the client module;
+2. Select the client you want to check;
+3. Press on Project Allocation Dashboard 
+4. Project Allocation Dashboard will show you a table where you can check the following information per project:
 
 Users Capacity;
-Actual hours already registered in the system;
-Billable hours registered;
-Allocation % 
+- Actual hours already registered in the system;
+- Billable hours registered;
+- Allocation % 
 
 <figure>
 

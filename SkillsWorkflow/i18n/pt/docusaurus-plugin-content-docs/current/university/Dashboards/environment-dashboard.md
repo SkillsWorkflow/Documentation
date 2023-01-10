@@ -5,8 +5,6 @@ sidebar_label: 9. Dashboard de Meio Ambiente
 sidebar_position: 9
 ---
 
-## Dashboard de Ambiente
-
 Agora é possível alterar a aparência do Skills Workflow. Faça com que pareça com a sua agência, diferencie-a das outras e mostre a identidade da sua marca para toda a sua equipe e clientes.
 
 Isso pode ser feito através do Dashboard de Ambiente. Para acessá-lo, os Usuários devem ter as seguintes funções vinculadas ao seu perfil:

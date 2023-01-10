@@ -5,9 +5,6 @@ sidebar_label: 11. Dashboard de resumo do plano de equipe do cliente
 sidebar_position: 11
 ---
 
-
-## Dashboard de resumo do plano de equipe do cliente
-
 O Dashboard de Resumo do Plano de Equipe do Cliente fornece um relatório resumido de todas as taxas e estimativas de uma empresa, grupo de clientes e período selecionado
 
 Isso pode ser acessado selecionando "Resumo do plano de equipe do cliente" no menu "Espaços de trabalho".

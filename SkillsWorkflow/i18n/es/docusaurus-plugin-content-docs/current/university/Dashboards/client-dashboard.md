@@ -17,9 +17,7 @@ Hay varios Dashboards a nivel de cliente disponibles en el sistema que mostrará
 ### Burn Dashboard
 
 1. Ir al módulo de cliente.
-
 2. Seleccione el cliente que desea consultar.
-
 3. Haga clic en Burn Dashboard.
 
 Encontrarás un resumen con indicadores totales:
@@ -53,11 +51,11 @@ Esta representación le mostrará una distribución mensual de los ingresos plan
 También encontrará la misma representación de los valores acumulados correspondientes
  
 
-Profitability Dashboard
-Vaya al módulo de cliente;
-Seleccione el cliente que desea consultar;
-Haga clic en Profitability Dashboard 
-El Dashboard le muestra de un vistazo los proyectos, bajo el cliente que ha seleccionado, lo que le devuelve una mayor ganancia (basado en el valor de ingresos cotizado al cliente)
+### Profitability Dashboard
+1. Vaya al módulo de cliente;
+2. Seleccione el cliente que desea consultar;
+3. Haga clic en Profitability Dashboard 
+4. El Dashboard le muestra de un vistazo los proyectos, bajo el cliente que ha seleccionado, lo que le devuelve una mayor ganancia (basado en el valor de ingresos cotizado al cliente)
 
 Podrás analizar el beneficio planificado por proyecto y por tipología.
 <figure>
@@ -76,16 +74,15 @@ Además, podrá consultar el margen de beneficio por proyecto por porcentaje y v
 
  
 
-Asignación de proyectos Dashboard
-Ir al módulo de cliente;
-Seleccione el cliente que desea consultar;
-Pulse en Asignación de proyectos Dashboard 
-Asignación de proyectos Dashboard te mostrará una tabla donde puedes consultar la siguiente información por proyecto:
-
-Capacidad de Usuarios;
-Horas reales ya registradas en el sistema;
-Horas facturables registradas;
-Asignación % 
+### Asignación de proyectos Dashboard
+1. Ir al módulo de cliente;
+2. Seleccione el cliente que desea consultar;
+3. Pulse en Asignación de proyectos Dashboard 
+4. Asignación de proyectos Dashboard te mostrará una tabla donde puedes consultar la siguiente información por proyecto:
+    - Capacidad de Usuarios;
+    - Horas reales ya registradas en el sistema;
+    - Horas facturables registradas;
+    - Asignación % 
 
 <figure>
 

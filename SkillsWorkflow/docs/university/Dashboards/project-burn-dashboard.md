@@ -5,8 +5,6 @@ sidebar_label: 2. Project Burn Dashboard
 sidebar_position: 2
 ---
 
-## Project Burn Dashboard
-
 Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.
 
 The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
@@ -15,14 +13,14 @@ As a project manager, it is very useful to understand the status of a specific c
 
 There are several dashboards at the project level available in the system that will display different information.
 
-Burn Dashboard
-Select the project you want to analyze;
-Click on the "Burn Dashboard" tab;
-You will find several representations that will show you in a glimpse whether your project is already burned.
+### Burn Dashboard
+1. Select the project you want to analyze;
+2. Click on the "Burn Dashboard" tab;
+3. You will find several representations that will show you in a glimpse whether your project is already burned.
 
 Please note that the burn dashboard is based on Forecast versus Real hours.
 
-Time Burn
+#### Time Burn
 
 This representation shows the number of forecasted hours versus number of real hours. Although the graphic is distributed per month, it also shows a sum representation.
 
@@ -32,7 +30,7 @@ This representation shows the number of forecasted hours versus number of real h
 <figcaption></figcaption>
 </figure>
 
-Revenue Burn
+#### Revenue Burn
 
 This representation shows if the project is already burned in a revenue and costs perspective.
 
@@ -44,18 +42,15 @@ Revenue values are based on planned/contracted hours and the associated value fo
 <figcaption></figcaption>
 </figure>
 
-Typology Group Burn
+#### Typology Group Burn
 
 This Dashboard shows which typology is burning your project and is based on actual hours.
 
 
-
-Department Burn
+#### Department Burn
 
 This representation is based on the users' actual hours and shows which department is filling in more hours under a specific project.
 
-
-
-User Burn
+#### User Burn
 
 This representation is based on the users' actual hours and shows which user is filling in more hours under a specific project.

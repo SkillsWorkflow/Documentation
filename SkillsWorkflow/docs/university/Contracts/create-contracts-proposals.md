@@ -5,8 +5,6 @@ sidebar_label: 2. Create Contracts and Proposals
 sidebar_position: 2
 ---
 
-## Create Contracts and Proposals
-
 It is possible to create and manage contracts associated with specific projects and activities.
 
 The estimate is at a higher level than the project, and allows you to bring together several projects in the same document.

@@ -4,19 +4,12 @@ title: Approve Expenses
 sidebar_label: 3. Approve Expenses
 sidebar_position: 3
 ---
-
-## Approve Expenses
-
-
 ### Expenses can be approved in two ways:
 
 - By the project's responsible
 - By the user's responsible
 
-
-
 1. Go the Expense Sheets module.
-
 2. Select All list.
 
 <figure>
@@ -30,12 +23,9 @@ sidebar_position: 3
 Change the expense sheet stage. In case the expense sheet is rejected the system will ask for a disapproval reason.
 A notification will be sent to the requester.
 
-
 ### Approved by the user's responsible
 
-
 1. Go the Expense module.
-
 2. Select Approve list.
 
 <figure>
@@ -52,7 +42,6 @@ A notification will be sent to the requester.
 <figcaption>Expense Approve workspace</figcaption>
 </figure>
 
-
 ### Approved by the project's responsible
 
 To approve expenses navigate to Project module and select a project.
@@ -63,15 +52,11 @@ To approve expenses navigate to Project module and select a project.
 <figcaption>Project Item</figcaption>
 </figure>
 
-
 1. Go the the expenses tab
-
 2. Click on the expenses you which to visualize and change the stage to approved or disaproved
-
 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-approve-3.png)
 <figcaption>Project's expense</figcaption>
 </figure>
-
