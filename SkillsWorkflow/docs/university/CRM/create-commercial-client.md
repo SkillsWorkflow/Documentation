@@ -8,7 +8,7 @@ To create a new commercial client you must go to the "CRM" module and to the sub
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialclient-1.png)
+![img-box-shadow](/img/university/crm/Maintenance-Clients.png)
 <figcaption>CRM module</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ Timesheet Level - choose the highest level at which users can enter time for thi
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialclient-2.png)
+![img-box-shadow](/img/university/crm/Client.png)
 <figcaption>New client creation screen</figcaption>
 </figure>
 
