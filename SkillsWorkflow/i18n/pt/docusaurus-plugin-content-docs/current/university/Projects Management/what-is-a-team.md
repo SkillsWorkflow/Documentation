@@ -7,7 +7,6 @@ sidebar_position: 10
 
 - Cada projeto e Atividade tem uma equipe designada
 
-
 <figure>
 
 ![img-box-shadow](/img/university/project-management/what-is-a-team1.png)
@@ -22,21 +21,26 @@ sidebar_position: 10
 A equipe é normalmente composta pelos seguintes grupos:
 
 ## Solicitante
+
 A pessoa que solicita/cria a Atividade ou Projeto
 As contas envolvidas nesta Atividade
 
 ## Responsável
+
 A pessoa que é responsável por supervisionar a Atividade
 Normalmente, os chefes de departamento ou responsáveis pelo cliente
 
 ## Tráfego
+
 A pessoa que atribui os criativos a cada Atividade
 A pessoa que controla a carga de trabalho dos criativos
 
 ## Executor
+
 A pessoa que executa a Atividade, por ex. criativos, analíticos, redatores, estrategistas, etc.
 
 ## Finança
+
 Equipe financeira que tem visibilidade de todos os trabalhos e geralmente é responsável pelo fechamento do trabalho
 
 No entanto, não há uma definição exata para esses grupos, pois a equipe pode ser customizada para ter mais ou menos grupos de acordo com a estrutura da empresa.
