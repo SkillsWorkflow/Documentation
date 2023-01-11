@@ -59,8 +59,6 @@ pre {
   color: #333 !important;
 }
 
-
-
 .token.literal-property.property {
   color: #333 !important;
 }
@@ -84,6 +82,43 @@ pre {
 .theme-code-block-highlighted-line {
   background-color: #0072c6;
 }
+
+span.token.constant {
+  color: #57c7fa !important;
+}
+span.token.function {
+  color: #57c7fa !important;
+}
+span.token.method.function.property-access {
+  color: #57c7fa !important;
+}
+.span.token.known-class-name.class-name {
+  color: #F7D44B !important;
+}
+span.token.parameter.known-class-name.class-name {
+  color: #F7A452 !important;
+}
+span.token.punctuation {
+  color: #9D53F2 !important;
+}
+span.token.parameter.punctuation {
+  color: #9D53F2 !important;
+}
+span.token.parameter.operator {
+  color: #4899EA !important;
+}
+span.token.operator {
+  color: #4899EA !important;
+}
+span.token.arrow.operator {
+  color: #4899EA !important;
+}
+span.token.comment {
+  color: #999999 !important;
+}
+
+
+
 
 .codeBlockContent_---node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
   margin-top: 25px;
