@@ -20,11 +20,9 @@ El fees están relacionados con un Cliente específico y deben asociarse con una
 2. Seleccione el Cliente deseado;
 3. Presione "+" directamente desde la lista de Clientes y seleccione Fee
 
-<!-- <figure>
-
 ![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
 <figcaption>Estimate creation</figcaption>
-</figure> -->
+</figure>
 
 
 
