@@ -8,7 +8,7 @@ Para criar um cliente comercial, você deverá aceder o back-office e navegar pa
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialclient-1.png)
+![img-box-shadow](/img/university/crm/Maintenance-Clients.png)
 <figcaption>CRM module</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ Nível de Timesheet - selecione até que nível os usuários poderão colocar ho
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialclient-2.png)
+![img-box-shadow](/img/university/crm/Client.png)
 <figcaption>New client creation screen</figcaption>
 </figure>
 
