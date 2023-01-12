@@ -159,4 +159,10 @@ It will return a new set of data aggregated by UserName with the fields:
 
 It will be sorted by the fields AggregatedName and MaxAge in an ascendent order and it will remove rows where the SumAge is equal to zero.
 
----
+### Example
+
+<figure>
+
+![img-box-shadow](/img/sdk/data/aggregate_method.png)
+<figcaption></figcaption>
+</figure>
