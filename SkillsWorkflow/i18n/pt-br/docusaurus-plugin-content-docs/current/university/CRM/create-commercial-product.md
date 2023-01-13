@@ -11,7 +11,7 @@ Para criar um novo produto comercial deve ir ao módulo "CRM" e à sub-lista "Cl
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-V1.png)
+![img-box-shadow](/img/university/crm/Maintenance-Clients.png.png)
 
 </figure>
 
