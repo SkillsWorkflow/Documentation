@@ -48,6 +48,6 @@ Quando todas as informações estiverem completas, clique em cima do produto par
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-V4.png
+![img-box-shadow](/img/university/crm/crm-commercialproduct-V4.png)
 <figcaption>caption</figcaption>
 </figure>
