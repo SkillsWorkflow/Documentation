@@ -32,20 +32,25 @@ Vaya a Módulo de Fee Proposal- Tarjeta de tarifa y presione +
 <figcaption>Maintenance - filtered by Rate Cards</figcaption>
 </figure>
 
-Complete la información del encabezado:
+
+2. Haga clic en el icono '+'.
+
+<figure>
+
+![img-box-shadow](/img/university/contracts/university-contracts-rateCards-2.png)
+<figcaption>Rate Cards workspace</figcaption>
+</figure>
+
+ 3. Complete la información del encabezado:
 
 - Número - agregue manualmente un número interno
 - Compañia - seleccione la compañia a la que se aplicará esta tabla de tarifas.
 - Nombre - Agregar una descripción
 - Fecha de inicio y finalización: seleccione el alcance de la tabla de la tarjeta (Rate Card) de tarifas
 
-<!-- 
-<figure>
-
-![img-box-shadow](/img/university/contracts/university-contracts-rateCards-2.png)
-<figcaption>Rate Cards workspace</figcaption>
-</figure> -->
-
+:::note
+Las hojas de tarifas se pueden editar en las hojas de tarifas en mantenimiento o en el espacio de trabajo Todo en el módulo de hojas de tarifas en el menú.
+:::
 
 Para administrar su tabla de tarifas (rate card), deberá agregar nuevas filas y / o tipologías (como un archivo de Excel):
 
@@ -57,12 +62,11 @@ Para administrar su tabla de tarifas (rate card), deberá agregar nuevas filas y
 - Haga clic en la parte superior de cada columna para agregar valores
 - El sistema guardará automáticamente la información
 
-<!-- 
 <figure>
 
-![img-box-shadow](/img/university/contracts/university-contracts-rateCards-2.png)
-<figcaption>Rate Cards workspace</figcaption>
-</figure> -->
+![img-box-shadow](/img/university/contracts/university-contracts-rateCards-3.png)
+<figcaption>Inserting values in Rate Card table</figcaption>
+</figure>
 
 Si desea agregar varios grupos o usuarios de Tipología al mismo tiempo:
 
@@ -71,12 +75,11 @@ Si desea agregar varios grupos o usuarios de Tipología al mismo tiempo:
 - Presiona OK
 - Agregue valores a las líneas y columnas haciendo clic en la parte superior de cada celda
 
-<!-- 
 <figure>
 
-![img-box-shadow](/img/university/contracts/university-contracts-rateCards-2.png)
-<figcaption>Rate Cards workspace</figcaption>
-</figure> -->
+![img-box-shadow](/img/university/contracts/university-contracts-rateCards-3.png)
+<figcaption>Inserting multiple values in Rate Card table</figcaption>
+</figure>
 
 ## Para vincular una Tabla de tarifas (Rate Card) con un cliente, navegue a CRM
 
