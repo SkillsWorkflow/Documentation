@@ -23,7 +23,8 @@ Para criar um novo produto, você terá que:
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-V2.png)
+![img-box-shadow](/img/university/crm/crm-commercialproduct-V2.png
+
 <figcaption>caption</figcaption>
 </figure>
 
@@ -32,7 +33,9 @@ Para criar um novo produto, você terá que:
 
 <figure>
 
+
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-v3.png)
+
 <figcaption></figcaption>
 </figure>
 
