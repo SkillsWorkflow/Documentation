@@ -7,23 +7,24 @@ sidebar_label: 3. Criar produto Comercial
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Para criar um novo produto comercial deve ir ao módulo "CRM" e à sub-lista "Clientes".
+Para criar um novo produto comercial deve ir ao módulo "Manutenção" e à sub-lista "Clientes".
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-V1.png
+![img-box-shadow](/img/university/crm/crm-commercialproduct-V1.png)
 
 </figure>
 
 Selecione o cliente comercial onde quiser criar o produto.
 
 Para criar um novo produto, você terá que:
-- Acesse a tab produtos na parte inferior;
+- Acesse a tab produtos na parte superior;
 - Clicar no botão "+"
 
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-V2.png
+
 <figcaption>caption</figcaption>
 </figure>
 
@@ -32,7 +33,9 @@ Para criar um novo produto, você terá que:
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-v3.png
+
+![img-box-shadow](/img/university/crm/crm-commercialproduct-v3.png)
+
 <figcaption></figcaption>
 </figure>
 
