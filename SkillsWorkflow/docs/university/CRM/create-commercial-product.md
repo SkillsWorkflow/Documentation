@@ -4,11 +4,11 @@ title: Create a new commercial product
 sidebar_label: 3. Create commercial product
 ---
 
-To create a new commercial product you must go to the "CRM" module and to the sub-list "Clients".
+To create a new commercial product you must go to the "Maintenance" module and to the sub-list "Clients".
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-1.png)
+![img-box-shadow](/img/university/crm/crm-commercialproduct-V1.png)
 
 </figure>
 
@@ -21,7 +21,7 @@ To create a new product, you will have to:
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-2.png)
+![img-box-shadow](/img/university/crm/crm-commercialproduct-V2.png)
 
 <figcaption>caption</figcaption>
 </figure>
@@ -31,7 +31,7 @@ To create a new product, you will have to:
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-3.png)
+![img-box-shadow](/img/university/crm/crm-commercialproduct-v3.png)
 
 <figcaption>caption</figcaption>
 </figure>
@@ -46,7 +46,7 @@ To create a new product, you will have to:
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-4.png)
+![img-box-shadow](/img/university/crm/crm-commercialproduct-V4.png)
 
 <figcaption>caption</figcaption>
 </figure>

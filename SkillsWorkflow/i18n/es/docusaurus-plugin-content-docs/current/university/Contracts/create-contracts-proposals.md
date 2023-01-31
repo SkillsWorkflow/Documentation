@@ -34,29 +34,18 @@ Título: complete un nombre que lo ayude a averiguar una tarifa específica
 Fecha de inicio / Fecha de finalización: elija cuándo comienza la Fee y su fecha de vencimiento.
 Propietario del Contrato - Elija el responsable de esta tasa (que puede ser heredada directamente del Administrador del cliente o puede seleccionar manualmente)
 
-<!-- <figure>
+<figure>
 
-![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
+![img-box-shadow](/img/university/contracts/university-contracts-2-quotes.png)
 <figcaption>Estimate creation</figcaption>
-</figure> -->
+</figure>
 
 Una vez que tenga toda la información en el encabezado del documento, debe presionar Aceptar y enviar la publicación.
 
 El sistema generará un número automático, y podrá ver un texto de confirmación. Si hace clic en el mensaje emergente, el sistema fluirá a la Fee.
 
-<!-- <figure>
-
-![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
-<figcaption>Estimate creation</figcaption>
-</figure> -->
 
 Para crear una nueva estimación, debe presionar "+" directamente desde la Fee.
-
-<!-- <figure>
-
-![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
-<figcaption>Estimate creation</figcaption>
-</figure> -->
 
 
 1. Seleccione Estimar en el menú desplegable para crear uno nuevo
@@ -68,10 +57,5 @@ Para crear una nueva estimación, debe presionar "+" directamente desde la Fee.
 7. Agregar archivos (opcional)
 8. Presiona OK y enviar la publicación
 
-<!-- <figure>
-
-![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
-<figcaption>Estimate creation</figcaption>
-</figure> -->
 
 Después de crear una nueva Estimación, considerará la cantidad de horas que se utilizarán para este Cliente. Los honorarios siempre están vinculados a un Estimado, como en el Estimado que las horas se venderán al Cliente.

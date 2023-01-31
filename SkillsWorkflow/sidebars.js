@@ -127,6 +127,7 @@ module.exports = {
                             ]
                         },
                         'sdk/branding',
+                        'sdk/data',
                         'sdk/execute-api',
                         'sdk/filesystem',
                         'sdk/realtime',
