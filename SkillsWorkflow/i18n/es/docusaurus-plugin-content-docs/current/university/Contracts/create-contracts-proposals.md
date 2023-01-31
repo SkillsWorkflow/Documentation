@@ -20,11 +20,11 @@ El fees están relacionados con un Cliente específico y deben asociarse con una
 2. Seleccione el Cliente deseado;
 3. Presione "+" directamente desde la lista de Clientes y seleccione Fee
 
-<!-- <figure>
+<figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-1-create.png)
 <figcaption>Estimate creation</figcaption>
-</figure> -->
+</figure>
 
 
 
@@ -34,11 +34,11 @@ Título: complete un nombre que lo ayude a averiguar una tarifa específica
 Fecha de inicio / Fecha de finalización: elija cuándo comienza la Fee y su fecha de vencimiento.
 Propietario del Contrato - Elija el responsable de esta tasa (que puede ser heredada directamente del Administrador del cliente o puede seleccionar manualmente)
 
-<!-- <figure>
+<figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-2-quotes.png)
-<figcaption>Estimate creation</figcaption>
-</figure> -->
+<figcaption>Estimates quotes tab</figcaption>
+</figure>
 
 Una vez que tenga toda la información en el encabezado del documento, debe presionar Aceptar y enviar la publicación.
 
