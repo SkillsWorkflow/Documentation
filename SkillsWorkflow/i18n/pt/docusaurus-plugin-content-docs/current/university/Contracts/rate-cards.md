@@ -63,6 +63,7 @@ Para gerenciar a Tabela de Preços, você precisará adicionar novas linhas e/ou
 - Clique no topo de cada coluna para adicionar valores.
 - Clique em gravar no símbolo do disquete.
 
+
 <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-rateCards-3.png)
