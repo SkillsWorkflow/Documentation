@@ -2,7 +2,6 @@
 id: what-is-a-team
 title: O que é uma Equipa e o que cada Grupo representa?
 sidebar_label: 10. O que é uma Equipa e o que cada Grupo representa?
-sidebar_position: 10
 ---
 
 - Cada projeto e Atividade tem uma equipa designada.
