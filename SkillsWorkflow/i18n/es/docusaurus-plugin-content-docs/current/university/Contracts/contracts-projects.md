@@ -70,4 +70,4 @@ Complete la siguiente información:
 
 ![img-box-shadow](/img/university/contracts/university-contracts-projects-4.png)
 <figcaption>Estimate creation</figcaption>
-</figure
+</figure>
