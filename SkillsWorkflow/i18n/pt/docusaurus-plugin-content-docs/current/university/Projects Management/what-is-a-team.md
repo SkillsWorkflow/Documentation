@@ -1,24 +1,23 @@
 ---
 id: what-is-a-team
-title: O que é uma Equipe e o que cada Grupo representa?
-sidebar_label: 10. O que é uma Equipe e o que cada Grupo representa?
+title: O que é uma Equipa e o que cada Grupo representa?
+sidebar_label: 10. O que é uma Equipa e o que cada Grupo representa?
 sidebar_position: 10
 ---
 
-- Cada projeto e Atividade tem uma equipe designada
+- Cada projeto e Atividade tem uma equipa designada.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/what-is-a-team1.png)
-
 <figcaption></figcaption>
 </figure>
 
 - Quem estiver na equipe terá acesso às informações compartilhadas no Projeto e/ou Atividades
-- Os membros da equipe, dependendo de sua função, devem atualizar a descrição da Atividade com o brief, keynotes de reuniões, e-mails trocados com o cliente e fazer upload dos arquivos relevantes (por exemplo, últimas versões do trabalho/resultado final)
-- É possível definir quais equipes têm acesso para alterar a data de início e término das Atividades
+- Os membros da equipa, dependendo de sua função, devem atualizar a descrição da Atividade com o brief, keynotes de reuniões, e-mails trocados com o cliente e fazer upload dos arquivos relevantes (por exemplo, últimas versões do trabalho/resultado final)
+- É possível definir quais equipas têm acesso para alterar a data de início e término das Atividades
 
-A equipe é normalmente composta pelos seguintes grupos:
+A equipa é normalmente composta pelos seguintes grupos:
 
 ## Solicitante
 
@@ -39,9 +38,9 @@ A pessoa que controla a carga de trabalho dos criativos
 
 A pessoa que executa a Atividade, por ex. criativos, analíticos, redatores, estrategistas, etc.
 
-## Finança
+## Financeiro
 
-Equipe financeira que tem visibilidade de todos os trabalhos e geralmente é responsável pelo fechamento do trabalho
+Equipa financeira que tem visibilidade de todos os trabalhos e geralmente é responsável pelo fechamento do trabalho
 
 No entanto, não há uma definição exata para esses grupos, pois a equipe pode ser customizada para ter mais ou menos grupos de acordo com a estrutura da empresa.
 
