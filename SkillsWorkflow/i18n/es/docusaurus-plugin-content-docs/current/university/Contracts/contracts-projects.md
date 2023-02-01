@@ -6,12 +6,11 @@ sidebar_position: 3
 ---
 
 
-
-:::note
+::: note
 Los proyectos se pueden vincular a una tarifa de cliente para deducir las horas vendidas anteriormente.
 :::
 
-1.Para crear un proyecto vinculado a una tarifa:
+1. Para crear un proyecto vinculado a una tarifa:
 Acceda al documento de tarifa y haga clic en el símbolo "+" para crear un nuevo proyecto.
 
 
@@ -22,7 +21,7 @@ Acceda al documento de tarifa y haga clic en el símbolo "+" para crear un nuevo
 </figure>
 
 
-2.Complete toda la información necesaria en el encabezado del proyecto.
+2. Complete toda la información necesaria en el encabezado del proyecto.
 
 - Título: Añadir un nombre a este proyecto
 
@@ -44,13 +43,13 @@ Acceda al documento de tarifa y haga clic en el símbolo "+" para crear un nuevo
 <figcaption>Estimate creation</figcaption>
 </figure>
 
-3.Después de crear el proyecto, vaya a la pestaña "Tiempo planificado".
+3. Después de crear el proyecto, vaya a la pestaña "Tiempo planificado".
 
 Complete la siguiente información:
 
-- Horas contratadas: haga clic en el símbolo "Obtener horas contratadas" (las horas aprobadas en la tarifa correspondiente aparecerán en la columna de Horas contratadas)
+- Horas contratadas: haga clic en el símbolo "Obtener horas contratadas" (las horas aprobadas en la tarifa correspondiente aparecerán en la columna de Horas contratadas).
 - Horas planificadas: ajuste las horas planificadas para un proyecto específico si fueran diferentes de las horas contratadas
-- Pronóstico: haga clic en el símbolo "Tiempo planificado de pronóstico" (el sistema distribuirá las horas planificadas para el intervalo de fechas del proyecto seleccionado previamente)
+- Pronóstico: haga clic en el símbolo "Tiempo planificado de pronóstico" (el sistema distribuirá las horas planificadas para el intervalo de fechas del proyecto seleccionado previamente).
 
 
 <figure>
@@ -60,7 +59,7 @@ Complete la siguiente información:
 </figure>
 
 
-4.Actualiza todos tus datos en el panel con el simbolo de grabar
+4. Actualiza todos tus datos en el panel con el simbolo de grabar
 
 - Verifique el número de horas planificadas para cada grupo de Tipología.
 - Verifique la cantidad de horas completadas por todos los usuarios involucrados en el proyecto / Job
