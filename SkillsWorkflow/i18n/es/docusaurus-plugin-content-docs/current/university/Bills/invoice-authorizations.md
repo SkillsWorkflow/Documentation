@@ -14,9 +14,6 @@ Lo que genera el sistema es una solicitud de facturación, no una factura final,
 Definición de condiciones de facturación:
 
 
-### Condiciones generales
-
-Para emitir una solicitud de facturación, dentro del presupuesto aprobado por el cliente, debe navegar a la opción "condiciones de facturación".
 
 ### Condiciones generales
 
