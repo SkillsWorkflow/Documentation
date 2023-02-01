@@ -13,8 +13,8 @@ sidebar_position: 10
 <figcaption></figcaption>
 </figure>
 
-- Quem estiver na equipe terá acesso às informações compartilhadas no Projeto e/ou Atividades
-- Os membros da equipa, dependendo de sua função, devem atualizar a descrição da Atividade com o brief, keynotes de reuniões, e-mails trocados com o cliente e fazer upload dos arquivos relevantes (por exemplo, últimas versões do trabalho/resultado final)
+- Quem estiver na equipe terá acesso às informações compartilhadas no Projeto e/ou Atividades.
+- Os membros da equipa, dependendo de sua função, devem atualizar a descrição da Atividade com o brief, keynotes de reuniões, e-mails trocados com o cliente e fazer upload dos arquivos relevantes (por exemplo, últimas versões do trabalho/resultado final).
 - É possível definir quais equipas têm acesso para alterar a data de início e término das Atividades
 
 A equipa é normalmente composta pelos seguintes grupos:
