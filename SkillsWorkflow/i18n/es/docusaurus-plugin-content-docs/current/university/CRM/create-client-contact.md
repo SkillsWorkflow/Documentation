@@ -22,7 +22,6 @@ Para crear un nuevo contacto de cliente, debe seguir los siguientes pasos:
 4. Guarde todos los cambios realizados haciendo clic en el símbolo.
 
 > Para eliminar un contacto de línea/cliente, solo deberá hacer clic en el botón "x".
-Screen_Shot_2018-08-08_at_14.15.16.png
 
 <figure>
 
@@ -37,7 +36,6 @@ Cómo asociar un contacto de cliente existe a otro cliente
 
 Seleccione el cliente al que desea asociar un contacto.
 Al hacer clic en la opción "enlace", el sistema mostrará un cuadro emergente con todos los contactos disponibles. Solo tendrá que seleccionar el contacto del cliente que necesita y hacer clic en la opción "Guardar".
-Screen_Shot_2018-08-08_at_14.24.08.png
 
 <figure>
 

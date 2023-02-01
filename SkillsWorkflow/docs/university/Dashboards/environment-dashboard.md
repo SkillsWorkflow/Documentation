@@ -1,22 +1,20 @@
 ---
-id:  Ambiente-dashboard
-title: Ambiente
-sidebar_label: 9.Ambiente Dashboard
+id:  environment-dashboard
+title: Environment
+sidebar_label: 9.Environment Workspace
 sidebar_position: 9
 ---
 
-## Ambiente Dashboard
+It is now possible to change the appearance of Skills Workflow. Make it look like your agency, differentiate it from the others and show your brand identity to all your team and clients.
 
-Ahora es posible cambiar el aspecto de Skills Workflow. Haz que se parezca a tu agencia, diferénciala de las demás y muestra la identidad de tu marca a todo tu equipo y clientes.
-
-Esto se puede hacer a través del Dashboard de Medio Ambiente. Para poder acceder al mismo, los Usuarios deberán tener vinculados a su perfil los siguientes profile:
+This can be done through the Environment Dashboard. In order to access it, Users must have the following profiles linked to their profile:
 
 - MaintenanceNavigate
 - MaintenanceSave
 - EnvironmentNavigate
 - EnvironmentSave
 
-Para acceder al Dasnboard del Ambiente, inicie sesión en Skills Workflow, haga clic en su nombre de usuario en la esquina superior derecha de la página de inicio, seleccione la opción "Mantenimiento" y presione el módulo "Ambiente".
+To access the Environment Dashboard, log in to Skills Workflow, click on your username in the top right corner of the home page, select the "Maintenance" option and press the "Ambient" module.
 
 <figure>
 
@@ -25,13 +23,13 @@ Para acceder al Dasnboard del Ambiente, inicie sesión en Skills Workflow, haga 
 </figure> 
 
  
-Hay 3 secciones en el Dashboard donde se define lo siguiente:
+There are 3 sections in the Dashboard where the following are defined:
 
-1. Imágenes: imágenes para usar como fondo y logotipos de la empresa.
+1. Images: images to use as background and company logos.
 
-2. Traducciones: términos dentro del sistema que se pueden renombrar según sea necesario.
+2. Translations: terms within the system that can be renamed as needed.
 
-3. Colores: colores que se utilizarán para el fondo, los iconos, las barras y las fuentes.
+3. Colors: Colors to be used for the background, icons, bars, and fonts.
 
 <figure>
 
@@ -39,39 +37,35 @@ Hay 3 secciones en el Dashboard donde se define lo siguiente:
 <figcaption></figcaption>
 </figure> 
 
-Imágenes
-Pestaña de inicio de sesión
+- Background Image URL – Enter here the URL of the image you want to use as the background for the login page. Select images that can relate to your agency. Avoid images with lots of objects/noise. Prioritize images with depth of field.
 
-- URL de la imagen de fondo: ingrese aquí la dirección URL de la imagen que desea usar como fondo para la página de inicio de sesión. Seleccione imágenes que puedan relacionarse con su agencia. Evite imágenes con muchos objetos/ruido. Prioriza las imágenes con profundidad de campo.
+- Background Image Style – Enter the style properties to apply to the image.
 
-- Estilo de imagen de fondo: ingrese las propiedades de estilo que se aplicarán a la imagen.
+- Company Logo URL – Select a logo that is common to all companies within the instance, preferably with a transparent background.
 
-- URL del logotipo de la empresa: seleccione un logotipo que sea común a todas las empresas dentro de la instancia, preferiblemente con un fondo transparente.
+- Company Logo Style – Enter the style properties to set the size of the company logo.
 
-- Estilo del logotipo de la empresa: ingrese las propiedades de estilo para establecer el tamaño del logotipo de la empresa.
+Home tab
 
-Pestaña Inicio
+- Top Bar Image URL – Logo you want to place at the top of the vertical menu bar on the left of the home page. The same logo as the login page can be applied. The logo must not exceed the limits of the bar and must be aligned with the breadcrumbs and menu items.
 
-- URL de la imagen de la barra superior: logotipo que desea colocar en la parte superior de la barra de menú vertical a la izquierda de la página de inicio. Se puede aplicar el mismo logotipo que la página de inicio de sesión. El logotipo no debe exceder los límites de la barra y debe estar alineado con las migas de pan y los elementos del menú.
+- Top Bar Image Style – Enter the style properties to set the size of the top bar image
+ 
+Translations
 
-- Estilo de imagen de la barra superior: ingrese las propiedades de estilo para establecer el tamaño de la imagen de la barra superior
+- Press the + sign to add a new row
+- Select the original term and write the new one that you want to see in the system
  
 
-Traducciones
+Colors
 
-- Presione el signo + para agregar una nueva fila
-- Seleccione el término original y escriba el nuevo que desea que se vea en el sistema
- 
+- Login Tab – Define the colors for the different components found in the login box on the login page.
 
-Colores
+- Top Bar Tab – Define the colors for the different components found on the top horizontal bar of the home page.
 
-- Pestaña de inicio de sesión: defina los colores para los diferentes componentes que se encuentran en el cuadro de inicio de sesión en la página de inicio de sesión.
+- Sidebar tab: defines the colors of the different components found in the left vertical bar of the home page where the system menu is displayed.
 
-- Pestaña de la barra superior: defina los colores para los diferentes componentes que se encuentran en la barra horizontal superior de la página de inicio.
+To configure the colors, simply type in your color code or click the dropdown menu and the color guide will be displayed. When selecting colors, make sure there is enough contrast between the background and the fonts/icons.
+Hover State should be more visually appealing than normal state
 
-- Pestaña de barra lateral: define los colores de los diferentes componentes que se encuentran en la barra vertical izquierda de la página de inicio donde se muestra el menú del sistema.
-
-Para configurar los colores, simplemente escriba su código de color o haga clic en el menú desplegable y se mostrará la guía de colores. Al seleccionar colores, asegúrese de que haya suficiente contraste entre el fondo y las fuentes/iconos.
-Hover State debería ser más atractivo visualmente que el estado normal
-
-Una vez que haya configurado las imágenes y los colores, haga clic en el botón Guardar para guardar los cambios realizados.
+Once you have configured the images and colors, click the Save button to save your changes.

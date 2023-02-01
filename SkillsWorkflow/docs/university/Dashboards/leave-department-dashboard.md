@@ -9,7 +9,6 @@ When scheduling your own leaves or approving leaves submitted by your subordinat
 
 This dashboard provides a calendar view that shows which users in your department are on leave, for each business day of the calendar month.
 
-
 To access, select "Leaves - My Department" in the Workspaces and the current month's calendar will be displayed.
 
 <figure>
