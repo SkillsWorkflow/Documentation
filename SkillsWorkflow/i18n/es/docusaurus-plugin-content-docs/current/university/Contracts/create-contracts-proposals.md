@@ -37,7 +37,7 @@ Propietario del Contrato - Elija el responsable de esta tasa (que puede ser here
 <figure>
 
 ![img-box-shadow](/img/university/contracts/university-contracts-2-quotes.png)
-<figcaption>Estimate creation</figcaption>
+<figcaption>Estimates quotes tab</figcaption>
 </figure>
 
 Una vez que tenga toda la información en el encabezado del documento, debe presionar Aceptar y enviar la publicación.

@@ -20,14 +20,13 @@ Solicitudes de emisión de notas de crédito al cliente en el sistema informar a
 
 - Puede emitir créditos parciales para líneas de clientes, o sea, inicialmente facturó un monto y necesita emitir un crédito para una parte.
 - Sólo tienes que ir a la línea que quieres acreditar y ajustar su valor de venta.
-  - Un ejemplo:  la línea se facturó por 104.100 y pretendemos emitir un crédito por un monto de 50.600. Por lo tanto, tendríamos que ir a la línea y ajustar el valor de venta a 53.500.
+- Un ejemplo:  la línea se facturó por 104.100 y pretendemos emitir un crédito por un monto de 50.600. Por lo tanto, tendríamos que ir a la línea y ajustar el valor de venta a 53.500.
 - Cuando termine, debe volver al feed y dar instrucciones al sistema para facturar/abonar nuevamente.
 - Recordes de las condiciones de facturación descritas en la Lección 1.
 
 Puede navegar al área de notas de crédito del cliente y puede encontrar el documento que acaba de emitir
 
-:::Nota: 
-
+::: Nota
 Para emitir el crédito, las facturas incluidas en el presupuesto deben estar en una etapa "integrada"
 :::
 
