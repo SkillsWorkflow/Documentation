@@ -7,6 +7,11 @@ sidebar_label: Aprobación de Permisos/Vacaciones
 
 ## Notificaciones de Permisos/Vacaciones por Aprobar
 
+:::Nota
+Navegue para el **Módulo Hojas**. 
+:::
+
+
 1. Compruebe que recibe una notificación cuando los usuarios envían permisos/vacaciones para aprobar.
 
 <figure>
