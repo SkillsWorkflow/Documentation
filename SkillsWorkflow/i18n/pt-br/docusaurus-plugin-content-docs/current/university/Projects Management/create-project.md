@@ -1,6 +1,6 @@
 ---
-id:  create-projects
-title: Como criar Projectos
+id:  create-projets
+title: Como criar Projetos
 sidebar_label: 1. Criar um Projeto
 sidebar_position: 1
 ---
@@ -42,15 +42,15 @@ Um projeto é uma campanha que pode ter várias atividades para diferentes depar
 <figcaption></figcaption>
 </figure>
 
-### Adicionar ficheiros
+### Adicionar Arquivo
 
-1. Você pode também adicionar ficheiros à descrição do Projeto simplesmente arrastando dentro do popup, ou clicando no quadrado tracejado.
+1. Você pode também adicionar arquivos à descrição do Projeto simplesmente arrastando dentro do popup, ou clicando no quadrado tracejado.
 
 2. Será útil para adicionar documentos de briefing ou apresentações. Em qualquer formato. (Word, PPT, Excel, PDF, etc.)
 
 ### Ativar o Projeto
 
-Depois de preencher todos os campos, verifique que activa o Projeto
+Depois de preencher todos os campos, verifique que ativa o Projeto
 
 1. Para ativar a atividade e gerar um número, pressione a pequena seta azul para avançar.
 2. Clique nele e o projeto mudará o estado e obterá um código de projeto, deixando de estar no estado de draft.
