@@ -53,12 +53,12 @@ Receita do Projeto Burn
 Essa representação mostrará uma distribuição mensal da receita planejada versus o custo real (com base no custo do usuário*horas reais).
 Você também descobrirá a mesma representação dos valores acumulados correspondentes
  
-
-Profitability Dashboard
-Vá para o módulo cliente;
-Selecione o cliente que deseja verificar;
-Pressione em Profitability Dashboard 
-Este Dashboard mostra-lhe um vislumbre dos projetos, sob o cliente que você selecionou, que lhe retorna um lucro maior (com base no valor da receita cotada para o cliente)
+ ### Painel de Rentabilidade
+ 
+1. Vá para o módulo cliente;
+2. Selecione o cliente que deseja verificar;
+3. Pressione em Profitability Dashboard 
+4. Este Dashboard mostra-lhe um vislumbre dos projetos, sob o cliente que você selecionou, que lhe retorna um lucro maior (com base no valor da receita cotada para o cliente)
 
 Você poderá analisar o lucro planejado por projeto e por tipologia.
 
@@ -77,17 +77,18 @@ Além disso, você poderá verificar a margem de lucro por projeto por porcentag
 </figure>
 
  
+### Painel de Alocação de Projetos
 
-Alocação do Projeto Dashboard
-Vá para o módulo cliente;
-Selecione o cliente que deseja verificar;
-Pressione no Dashboard de Alocação do Projeto 
-O Dashboard de Alocação de Projetos mostrará uma tabela onde você poderá verificar as seguintes informações por projeto:
+1. Vá para o módulo cliente;
+2. Selecione o cliente que deseja verificar;
+3. Pressione no Dashboard de Alocação do Projeto 
+4. O Dashboard de Alocação de Projetos mostrará uma tabela onde você poderá verificar as seguintes informações por projeto:
 
 Capacidade de Usuários;
-Horas reais já registradas no sistema;
-Horas faturáveis registradas
-% de alocação
+
+1. Horas reais já registradas no sistema;
+2.Horas faturáveis registradas
+3.% de alocação
 
 <figure>
 
