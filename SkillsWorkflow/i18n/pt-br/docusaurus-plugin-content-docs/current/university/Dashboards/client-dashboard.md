@@ -86,9 +86,9 @@ Além disso, você poderá verificar a margem de lucro por projeto por porcentag
 
 Capacidade de Usuários;
 
-1. Horas reais já registradas no sistema;
-2.Horas faturáveis registradas
-3.% de alocação
+.Horas reais já registradas no sistema;
+.Horas faturáveis registradas
+.% de alocação
 
 <figure>
 
