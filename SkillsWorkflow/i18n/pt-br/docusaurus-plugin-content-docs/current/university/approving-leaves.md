@@ -6,6 +6,10 @@ sidebar_label: Aprovar ausências
 
 ## Notificações de ausências a aprovar.
 
+:::info
+Navegue para o **Módulo Folhas**. 
+:::
+
 1. Verifique que você recebe uma notificação quando os usuários enviam seus dias de ausências para aprovação.
 
 <figure>
