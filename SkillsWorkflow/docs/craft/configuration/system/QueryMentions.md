@@ -63,6 +63,10 @@ On this page you will find how to use mentions based on queries.
             <td><code>@SearchValue</code></td>
              <td> Search value </td>
         </tr>
+        <tr className="selected">
+            <td><code>@DocumentTypeName</code></td>
+             <td> Name of the document type </td>
+        </tr>
     </tbody>
 </table> 
 

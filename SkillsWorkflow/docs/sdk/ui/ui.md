@@ -345,9 +345,9 @@ This method allows you to set an element as Red, Ambar or Green according to its
 
 ```javascript
 1   function setRag(element: any, value: string, 
-2           condition1: boolean,
-3           condition2: boolean, 
-4           condition3: boolean,
+2           red: boolean,
+3           ambar: boolean, 
+4           green: boolean,
 5           params: { createContainer?: boolean } = { createContainer: true }
 6   ): string;
 ```
