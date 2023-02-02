@@ -74,9 +74,9 @@ Depois de preencher todos os campos, verifique que activa o Projeto
 
 ## No topo da página você poderá encontrar diversa informação acerca de seu Projeto.
 
-- Feed - Ações e comentários relacionados com o Projeto.
-- Atividades - Lista de Atividades relacionadas com seu Projeto.
-- Horas Planejadas - Horas Planejadas versus horas reais inseridas, se o Projeto for associado a Fees.
-- Ficheiros - Todos os ficheiros subidos no Projeto.
-- Historia - Lista de todas as alterações às etapas. Verifique por exemplo quem criou a atividade e quando.
-- Outros - Poderá encontrar outras opções do sistema dependendo dos seus acessos.
+- **Feed** - Ações e comentários relacionados com o Projeto.
+- **Atividades** - Lista de Atividades relacionadas com seu Projeto.
+- **Horas Planejadas** - Horas Planejadas versus horas reais inseridas, se o Projeto for associado a Fees.
+- **Ficheiros** - Todos os ficheiros subidos no Projeto.
+- **Historia** - Lista de todas as alterações às etapas. Verifique por exemplo quem criou a atividade e quando.
+- **Outros** - Poderá encontrar outras opções do sistema dependendo dos seus acessos.
