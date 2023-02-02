@@ -32,7 +32,7 @@ La última sección es una vista de lista que muestra "Usuarios por grupo de tip
 Personas
 
 - Activo: recuento con estado activo
--
+
 - FTE – (Capacidad + Tiempo de entrega + Tiempo de vacaciones) / Horas de trabajo
 
 - Capacidad – Total de horas de trabajo del período – Total de vacaciones en horas – Total de vacaciones en horas
