@@ -13,14 +13,15 @@ Como gerente de projetos, é muito útil entender o status de um cliente especí
 
 Existem vários painéis no nível do projeto disponíveis no sistema que exibirão informações diferentes.
 
-Dashboard Burn
-Selecione o projeto que deseja analisar;
-Clique em "Burn Dashboard";
-Você encontrará várias representações que mostrarão rapidamente se o seu projeto já está gravado.
+### Burn Dashboard
+
+1. Selecione o projeto que deseja analisar;
+2. Clique em "Burn Dashboard";
+3. Você encontrará várias representações que mostrarão rapidamente se o seu projeto já está gravado.
 
 Observe que o painel de gravação é baseado na previsão versus horas reais.
 
-Tempo Burn
+#### Tempo Burn
 
 Essa representação mostra o número de horas previstas versus o número de horas reais. Embora o gráfico seja distribuído por mês, ele também mostra uma representação da soma.
 
@@ -30,7 +31,7 @@ Essa representação mostra o número de horas previstas versus o número de hor
 <figcaption></figcaption>
 </figure>
 
-Receita Burn
+#### Receita Burn
 
 Esta representação mostra se o projeto já está queimado em uma perspectiva de receita e custos.
 
@@ -47,19 +48,17 @@ Os valores de receita são baseados nas horas planejadas/contratadas e no valor 
 </figure>
 
  
-
-Grupo de Tipologia Burn
+#### Grupo de tipologia Burn
 
 Este Dashboard mostra qual tipologia está queimando seu projeto e é baseado em horas reais
 
  
 
-Departamento Burn
+#### Departamento Burn
 
 Essa representação é baseada nas horas reais dos usuários e mostra qual departamento está preenchendo mais horas em um projeto específico.
 
  
-
-Usuario Burn
+#### Usuario Burn
 
 Essa representação é baseada nas horas reais dos usuários e mostra qual usuário está preenchendo mais horas em um projeto específico
