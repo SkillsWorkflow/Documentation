@@ -1,5 +1,5 @@
 ---
-id:  approve-expenses
+id:  1-approve-expenses
 title: Aprobar gastos
 sidebar_label: 3. Aprobar gastos
 sidebar_position: 3
