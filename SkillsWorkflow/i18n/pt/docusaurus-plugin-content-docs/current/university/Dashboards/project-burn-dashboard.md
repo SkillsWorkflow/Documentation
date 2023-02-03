@@ -14,7 +14,6 @@ Como gerente de projetos, é muito útil entender o status de um cliente especí
 Existem vários painéis no nível do projeto disponíveis no sistema que exibirão informações diferentes.
 
 ### Burn Dashboard
-
 1. Selecione o projeto que deseja analisar;
 2. Clique em "Burn Dashboard";
 3. Você encontrará várias representações que mostrarão rapidamente se o seu projeto já está gravado.
