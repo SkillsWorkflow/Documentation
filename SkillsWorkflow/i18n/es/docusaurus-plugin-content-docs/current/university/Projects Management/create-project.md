@@ -5,7 +5,6 @@ sidebar_label: 1. Cómo crear un Proyecto?
 sidebar_position: 1
 ---
 
-
 ### Un Proyecto es como un paraguas que agrupa un conjunto de tareas/jobs relacionados.
 
 1. Navegue al módulo "Clientes" para crear un nuevo Proyecto.
