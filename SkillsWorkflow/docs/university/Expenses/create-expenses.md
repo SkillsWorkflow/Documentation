@@ -1,5 +1,5 @@
 ---
-id:  2-expenses
+id:  create-expenses
 title: Expenses
 sidebar_label: 2. Create Expenses
 sidebar_position: 2
