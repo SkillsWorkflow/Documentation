@@ -79,10 +79,12 @@ Además, podrá consultar el margen de beneficio por proyecto por porcentaje y v
 2. Seleccione el cliente que desea consultar;
 3. Pulse en Asignación de proyectos Dashboard 
 4. Asignación de proyectos Dashboard te mostrará una tabla donde puedes consultar la siguiente información por proyecto:
-    - Capacidad de Usuarios;
-    - Horas reales ya registradas en el sistema;
-    - Horas facturables registradas;
-    - Asignación % 
+
+Capacidad de Usuarios;
+
+.Horas reales ya registradas en el sistema;
+.Horas facturables registradas;
+.Asignación % 
 
 <figure>
 
