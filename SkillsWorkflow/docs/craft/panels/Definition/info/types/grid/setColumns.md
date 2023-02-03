@@ -59,7 +59,8 @@ Accepted Values: 'client' | 'company' | 'stage' | 'user' | 'team'
     {label: 'Company', value: 'company'},
     {label: 'Stage', value: 'stage'},
     {label: 'User', value: 'user'},
-    {label: 'Team', value: 'team'}
+    {label: 'Team', value: 'team'},
+    {label: 'label color', value: 'color'}
   ]
 }>
 <TabItem value="client">
@@ -103,7 +104,6 @@ Required on data source:
 }
 ```
 </TabItem>
-
 <TabItem value="team">
 
 ```json
@@ -111,6 +111,90 @@ Required on data source:
     entity: "team"
 }
 ```
+
+</TabItem>
+
+<TabItem value="color">
+
+
+
+Customize the text and the background of the type's label using the column's entity.
+
+By default the background color appears without color and the text appears in black.
+
+To choose the color for each entity, first you need to go to the maintenance and define the colors for the background and the text
+
+Accept entities: "jobtype" | "leavetype"
+
+#
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/configuration-color-for-jobtype-example.png)
+
+</figure>
+
+<table className="custom-table">
+    <thead> 
+        <tr>
+            <th>Column name</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>StyleJson</code></td>
+            <td>Json</td>
+            <td>true</td>
+            <td>Add the column StyleJson in the DataSource</td> 
+        </tr>
+    </tbody>
+</table>
+
+````json {6}
+{
+    dataField: "JobType",
+    caption: "Job Type",
+    entity: "jobtype",
+    format: {
+        style: "style"
+    },
+    dataType: "string"
+
+}
+````
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/style-query.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/format-column-style-example.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/grid-colorType-example.png)
+
+</figure>
+
+:::note
+To use the entity without the format, the dataSource expects the  "name of the entity + style" as column name.
+:::
+
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/queryColorType.png)
+
+</figure>
+
 
 </TabItem>
 </Tabs>
@@ -621,7 +705,7 @@ Customize the label of the column.
 
 Type: object
 
-### color
+#### color
 
 Change the color of the text.
 
@@ -639,11 +723,4 @@ Type: string
 - family: font's family name
 
 
-
-
-<figure>
-
-<!-- ![img-box-shadow](/img/craft/grid/setColumns/document-image-required.png) -->
-
-</figure>
 
