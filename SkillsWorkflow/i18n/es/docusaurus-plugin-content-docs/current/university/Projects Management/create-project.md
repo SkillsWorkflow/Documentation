@@ -1,5 +1,5 @@
 ---
-id:  create-project
+id:  create-projects
 title: Cómo crear un Proyecto?
 sidebar_label: 1. Cómo crear un Proyecto?
 sidebar_position: 1
