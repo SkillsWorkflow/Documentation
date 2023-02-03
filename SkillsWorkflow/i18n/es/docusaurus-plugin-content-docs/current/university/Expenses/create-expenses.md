@@ -1,20 +1,18 @@
 ---
-id:  create-expenses
-title: Gastos
-sidebar_label: 2. Crear Gastos
+id:  2-expenses
+title: Expenses
+sidebar_label: 2. Create Expenses
 sidebar_position: 2
 ---
 
+### Expenses can be created in two ways:
 
-### Los gastos se pueden crear de dos maneras:
+- Directly on a Project
+- On an Expense Sheet
 
-- Directamente en un Proyecto
-- En una hoja de gastos
+### Create directly on the Project
 
-### Crear directamente en el Proyecto
-
-
-Para crear gastos, navegue hasta el módulo Proyecto y seleccione un proyecto para agregar recibos.
+To create expenses navigate to Project module and select a project to add receipts.
 
 <figure>
 
@@ -22,80 +20,67 @@ Para crear gastos, navegue hasta el módulo Proyecto y seleccione un proyecto pa
 <figcaption>Project Item</figcaption>
 </figure>
 
-1. Haga clic en el icono '+' para crear una nueva partida de gastos.
-
-2. Agrega una descripción.
-
-3. Agregar un archivo
-
-4. Rellene los campos restantes
-
-5. Haga clic en 'OK' y envíe la publicación.
-
-6. Repita el proceso si hay más gastos para agregar al mismo proyecto.
+1. Click on the icon '+' to create a new Expense Item.
+2. Add a description
+3. Add a file
+4. Fill the remaining fields
+5. Click 'ok' and submit post.
+6. Repeat the process if there are more expense to add to the same project.
 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-6-project-list.png)
-<figcaption>Lista de despesas do Projecto</figcaption>
+<figcaption>Project's expense list</figcaption>
 </figure>
 
-### Crear en hoja de gastos
+### Create on Expense Sheet
 
-1. Vaya al módulo Hojas de gastos.
-
-2. Seleccione la lista Todos.
+1. Go the Expense Sheets module.
+2. Select All list.
 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expense-sheets-1.png)
-<figcaption>Módulo de Folhas de Despesas</figcaption>
+<figcaption>Expense Sheets module</figcaption>
 </figure>
 
-3. Seleccione una hoja de gastos en la que desee agregar un gasto y haga clic en '+' para crearla.
+3. Select a Expense Sheet where you intend to add an Expense and click on the '+' to create.
 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-1-creation.png)
-<figcaption>Folha de Despesas</figcaption>
+<figcaption>Expense Sheet</figcaption>
 </figure>
 
-4. Complete los campos, haga clic en " OK " y envíe la publicación.
+4. Fill the fields, click 'ok' and submit the post.
 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-2.png)
-<figcaption>pop-up de Criação de Despesas</figcaption>
+<figcaption>Expense creation pop-up</figcaption>
 </figure>
-
 
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expenses-4.png)
-<figcaption>pop-up Info de Despesas</figcaption>
+<figcaption>Expense pop-up info</figcaption>
 </figure>
 
-5. Agrega una descripción.
-
-6. Seleccione el tipo de gasto.
-
-7. Agregue una imagen con el recibo para agregar un archivo.
-
-8. En el campo Documento, busque el proyecto o cliente al que desea vincularse.
-
-9. Agregue el monto del gasto.
-
-10. Haga clic en 'ok'.
-
-11. Repite el proceso si hay más de 1 gasto.
+5. Add a description.
+6. Select the type of Expense.
+7. Add an image with the recit to add a file.
+8. In the field Document search for the project or client you want to link.
+9. Add expense's value.
+10. Click 'ok'.
+11. Repeat the process if there's more than 1 expense.
 
 
 :::note
-Tenga en cuenta que todos los campos en amarillo son obligatorios.
-Dentro de la misma hoja de gastos, se pueden agregar recibos de diferentes proyectos.
+Please, take into account that all fields in yellow are mandatory. 
+Inside the same expense sheet different project's receipts can be added.
 :::
 
-Si tiene varios recibos para la misma hoja, puede repetir el proceso usando la opción de duplicado
+If you have several receipts for the same sheet you can repeat the process using the duplicate option
 
 <figure>
 
@@ -103,10 +88,6 @@ Si tiene varios recibos para la misma hoja, puede repetir el proceso usando la o
 <figcaption>Expense List duplicate</figcaption>
 </figure>
 
-1. Seleccione el gasto que desea copiar y haga clic en duplicar.
-
-2. El sistema generará un número automático y también una ventana emergente de confirmación.
-
-3. Accede a la hoja de gastos, en Feed cambia el paso, para enviarla al responsable para su aprobación.
-
-
+1. Select the expense you which to copy and click on duplicate.
+2. The system will generate an automatic number and also a confirmation pop-up.
+3. Go to the expense sheet, in the Feed exchange the stage in order to send for the responsible for approval.
