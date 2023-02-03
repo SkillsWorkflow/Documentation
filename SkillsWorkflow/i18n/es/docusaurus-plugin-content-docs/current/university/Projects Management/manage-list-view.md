@@ -1,7 +1,7 @@
 ---
-id:  manage-list-view
-title: Administrar Vista de lista
-sidebar_label: 5. Administre su Vista de Lista
+id:  list-view
+title: Manage List View
+sidebar_label: 5. Manage your List View
 sidebar_position: 5
 ---
 
