@@ -37,9 +37,6 @@ Esta representação mostra se o projeto já está queimado em uma perspectiva d
 
 Os valores de receita são baseados nas horas planejadas/contratadas e no valor associado para cada grupo de tipologia. Os valores de custo são herdados pelo custo do usuário versus o número de horas reais preenchidas. 
 
- 
-
- 
 
 <figure>
 
@@ -52,7 +49,6 @@ Os valores de receita são baseados nas horas planejadas/contratadas e no valor 
 
 Este Dashboard mostra qual tipologia está queimando seu projeto e é baseado em horas reais
 
- 
 
 #### Departamento Burn
 
