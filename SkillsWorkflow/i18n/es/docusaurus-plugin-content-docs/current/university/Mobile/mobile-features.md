@@ -23,33 +23,32 @@ Toque en la barra de búsqueda y escriba algo para realizar una búsqueda genera
 
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>Detail credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat1.png)
+<figcaption>General search terms</figcaption>
 </figure>
 
 Toque los módulos disponibles en el sistema y seleccione de las listas respectivas para mostrar los resultados
 
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat2.png)
+<figcaption>Project lists</figcaption>
 </figure>
-
 
 Escriba algo con el filtro activado para buscar dentro de cualquier módulo
  
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat3.png)
+<figcaption>Search terms with projects filter</figcaption>
 </figure>
 
 Nota: Abrir, ver y navegar a través de documentos
 
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat4.png)
+<figcaption>Home Feed documents in card view</figcaption>
 </figure>
 
 Seleccione y abra un documento para ver su información. Diferentes documentos tendrán diferentes pestañas, estas están disponibles actualmente:
@@ -65,15 +64,16 @@ Seleccione y abra un documento para ver su información. Diferentes documentos t
 
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat5.png)
+<figcaption>Jobs tab inside Project</figcaption>
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat6.png)
+<figcaption>Job Feed</figcaption>
 </figure>
+
 
 Actions
 
@@ -89,16 +89,16 @@ Después de abrir su documento, puede realizar fácilmente acciones en el docume
 
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat7.png)
+<figcaption>New comment page with open sliding menu with actions</figcaption>
 </figure>
 
 Cuando haya terminado, toque Aceptar y publique sus cambios en el documento.
 
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat8.png)
+<figcaption>Job comment page with pending actions</figcaption>
 </figure>
 
 Note : Crear documentos
@@ -109,17 +109,20 @@ La aplicación móvil tendrá la creación de documentos al igual que en la Web.
 
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat9.png)
+<figcaption>Expense creation under Job</figcaption>
 </figure>
 
-Note : Agregar Time Sheets
-
+ :::note
+ 
 El timesheet calendario le dará una visión general de sus horas. Seleccione un día y agregue tiempo a un documento. Ingrese los detalles del parte de horas si lo necesita. Eso es todo.
+ 
+ :::
+
 <figure>
 
-![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
-<figcaption>List of credit notes</figcaption>
+![img-box-shadow](/img/university/mobile/mobilefeat10.png)
+<figcaption>Timesheet calendar</figcaption>
 </figure>
 
 Se agregarán nuevas características y actualizaciones disponibles a este artículo.
