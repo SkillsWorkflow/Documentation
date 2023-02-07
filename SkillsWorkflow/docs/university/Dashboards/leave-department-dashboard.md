@@ -5,9 +5,7 @@ sidebar_label: 7. Leaves My Department
 sidebar_position: 7
 ---
 
-When scheduling your own leaves or approving leaves submitted by your subordinates, it's important to know if other employees in the same department are also on leave. This prevents the department from being paralyzed due to many employees being off work on the same day.
-
-This dashboard provides a calendar view that shows which users in your department are on leave, for each business day of the calendar month.
+Al programar sus propias licencias o aprobar las licencias enviadas por sus subordinados, es importante saber si otros empleados del mismo departamento también están de licencia. Esto evita que el departamento quede paralizado debido a que muchos empleados están de baja el mismo día.
 
 To access, select "Leaves - My Department" in the Workspaces and the current month's calendar will be displayed.
 
