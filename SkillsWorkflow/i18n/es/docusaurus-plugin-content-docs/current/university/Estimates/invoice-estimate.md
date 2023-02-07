@@ -1,50 +1,61 @@
+id:  invoice-estimate
+title: factura an Presupuesto
+sidebar_label: 2. factura an Presupuesto
+sidebar_postiion: 2
 ---
-id: create-commercial-product
-title: Crear un nuevo producto comercial
-sidebar_label: 3. Crear producto comercial
----
 
-Para crear un nuevo producto comercial debe ir al módulo "CRM" ya la sublista "Clientes".
+## Crear Presupuestos de retención
 
-<figure>
+Los Presupuestos se pueden crear como anticipos y el sistema mostrará automáticamente sus valores.
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-1.png)
+Verifique cómo puede crear la estimación en la Lección 1 en la sección "Presupuestos".
 
-</figure>
-
-Seleccione el cliente comercial en el que necesita crear el producto.
-
-Para crear un nuevo producto, tendrás que:
-- Vaya a la pestaña de productos en la parte inferior
-- Presione el botón "+"
+Para generar un presupuesto de retención, vaya a la pestaña de información general de la estimación, marque la opción "Recurrencia" y presione el botón Guardar.
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-2.png)
-<figcaption>caption</figcaption>
+![img-box-shadow](/img/university/estimates/estimates-lesson2-1.png)
+<figcaption></figcaption>
 </figure>
 
-- Escriba el nombre del producto y marque la casilla "Activo"
-- Guarde los cambios haciendo clic en el símbolo del disco.
+El sistema mostrará un nuevo campo llamado "Número de representante" a nivel de entregable/cliente. 
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-3.png)
-<figcaption>caption</figcaption>
+![img-box-shadow](/img/university/estimates/estimates-lesson2-2.png)
+<figcaption></figcaption>
 </figure>
+
+Puede ajustar Rep.Number al número de veces que se deben repetir los valores.
+
+En el ejemplo a continuación, el campo Número de representante está marcado como 6 (es una estimación de retención de 6 meses) y el sistema multiplicará los valores de costos y los valores de ingresos por el Número de representante.
+
+<figure>
+
+![img-box-shadow](/img/university/estimates/estimates-lesson2-3.png)
+<figcaption></figcaption>
+</figure>
+
+:::nota
+Tenga en cuenta que los valores en Terceros, Gastos y Recursos se mostrarán con los mismos valores.
+:::
+
+Después de la aprobación del cliente, el sistema mostrará la información del proyecto con la información de recurrencia.
+
+A nivel de proyecto, los gastos de terceros y estarán disponibles en "Costos planificados"
 
  
 
->Asociación de producto a una empresa específica
->Esto solo es aplicable si dentro del mismo cliente, ciertos productos solo están disponibles para una empresa y no para las otras.
-Una vez que toda la información esté completa, haga clic en la parte superior del producto para ir a la página del producto.
+<figure>
 
-- En la pestaña CommercialProductCompanies, haga clic en el "+" para agregar la empresa que trabajará con este producto específico.
-- Elija la empresa del menú desplegable y luego guarde haciendo clic en el símbolo del disco.
-- Si tienes productos de facturación también podrás asociarlos a tus productos comerciales.
+![img-box-shadow](/img/university/estimates/estimates-lesson2-4.png)
+<figcaption></figcaption>
+</figure>
+
+Los recursos estarán disponibles en "Tiempo planificado"
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-4.png)
-<figcaption>caption</figcaption>
+![img-box-shadow](/img/university/estimates/estimates-lesson2-5.png)
+<figcaption></figcaption>
 </figure>
