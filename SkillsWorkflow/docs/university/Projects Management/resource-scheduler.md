@@ -1,21 +1,21 @@
 ---
 id:  resource-scheduler
-title: Planejamento de Equipes 
-sidebar_label: 3. Planejamento de Equipes 
+title: Resource Scheduler 
+sidebar_label: 3. Resource Scheduler
 sidebar_position: 3
 ---
 
-### O planejamento de equipes pode ser feito de diversas formas
+### The Resource Scheduler can be done in several ways
 
-- Você pode adicionar executores diretamente na atividade através da opção "Atribuir".
+- You can add executors directly to the activity via the "Assign" option.
 
-- Ou você pode usar o calendário de recursos.
-
-
-### No calendário de recursos tem uma visão geral de sua equipe, horas atribuídas e disponibilidade.
+- Or you can use the resource calendar.
 
 
-O planejamento dos seus recursos ajuda-o a tornar sua disponibilidade mais eficaz monitorizado suas atividades.
+### In the resource calendar you have an overview of your team, assigned hours and availability.
+
+
+Planning your resources helps you to make your availability more effective by monitoring your activities.
 
 <figure>
 
@@ -23,13 +23,13 @@ O planejamento dos seus recursos ajuda-o a tornar sua disponibilidade mais efica
 <figcaption>Resource Scheduler</figcaption>
 </figure>
 
-- À esquerda tem todos os recursos pelos quais você é responsável.
+- On the left are all the resources you are responsible for.
 
-- Usuários sem atividade atribuída poderão ser monitorizados
+- Users with no assigned activity may be monitored
 
-- Usando os filtros no topo do calendário verifique informação por funcionário, departamento, atividade ou data.
+- Using the filters at the top of the calendar, check information by employee, department, activity or date.
 
-- Atividades já atribuídas aparecem no calendário por default
+- Activities already assigned appear on the calendar by default
 
 <figure>
 
@@ -37,19 +37,19 @@ O planejamento dos seus recursos ajuda-o a tornar sua disponibilidade mais efica
 <figcaption>Resource filters</figcaption>
 </figure>
 
-### Atribuir Atividades 
+### Assign Activities 
 
-- No seu lado direito pode encontrar todas as atividades por atribuir.
+- On your right side you can find all the activities to be assigned.
 
-- Só atividades planeáveis aparecem na lista
+- Only planable activities appear in the list
 
-- Para definir se uma atividade é planeável navegue para a aba info da atividade e selecione "Planeável".
+- To define whether an activity is planable navigate to the activity's info tab and select "Planable".
 
-- Se passar seu rato no topo da atividade, poderá encontrar uma caixa com informação acerca da atividade, como sua etapa, e data de fim
+- If you hover your mouse over the top of the activity, you can find a box with information about the activity, such as its stage, and end date.
 
-- Poderá usar a caixa de procura para encontrar uma atividade especifica ainda não atribuída
+- You can use the search box to find a specific activity that has not yet been assigned.
 
-- A cor da atividade indica sua etapa.
+- The color of the activity indicates its step.
 
 <figure>
 
@@ -57,9 +57,9 @@ O planejamento dos seus recursos ajuda-o a tornar sua disponibilidade mais efica
 <figcaption>Unassigned Jobs</figcaption>
 </figure>
 
-- Para atribuir uma atividade específica você arraste e solte a atividade para o funcionário que quer atribuir atendendo ás datas definidas.
+- To assign a specific activity, drag and drop the activity to the employee you want to assign to the defined dates..
 
-- Depois de atribuir o funcionário, você pode mover a atividade para aumentar ou encurtar sua duração.
+- After assigning the employee, you can move the activity to lengthen or shorten its duration.
 
 <figure>
 
@@ -67,17 +67,17 @@ O planejamento dos seus recursos ajuda-o a tornar sua disponibilidade mais efica
 <figcaption>Assign a Job</figcaption>
 </figure>
 
-### Carga de trabalho e disponibilidade
+### Workload and availability
 
-- A capacidade diária de cada funcionário é definida previamente na sua ficha.
+- The daily capacity of each employee is defined in advance on their file.
 
-- Depois de atribuir uma atividade a alguém, você pode definir quantas horas por dia esse recurso vai estar trabalhando nessa atividade.
+- After assigning an activity to someone, you can define how many hours a day that resource will be working on that activity.
 
-- Para o fazer pressione a caixa no canto inferior direito da barra e digite o numero de horas.
+- To do so press the box in the lower right corner of the bar and type the number of hours.
 
-- Os números no topo da barra de cada recurso representam sua capacidade atendendo ás atividades atribuídas.
+- The numbers at the top of each resource's bar represent its ability to fulfill assigned activities.
 
-- A cor verde mostra que o recurso tem disponibilidade, e a vermelha que está sobrecarregado.
+- The green color shows that the resource is available, and the red one that it is overloaded.
 
 <figure>
 
@@ -85,9 +85,9 @@ O planejamento dos seus recursos ajuda-o a tornar sua disponibilidade mais efica
 <figcaption>Resource Availability</figcaption>
 </figure>
 
-- Para o ajudar a planear a disponibilidade de seus recursos, as ausências também são representadas no calendário.
+- To help you plan your resource availability, absences are also represented in the calendar.
 
-- Estão marcadas com uma barra vertical azul de forma a se diferenciar das atividades.
+- They are marked with a vertical blue bar in order to differentiate them from the activities.
 
 <figure>
 
