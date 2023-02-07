@@ -44,7 +44,9 @@ Una vez que tenga toda la información en el encabezado del documento, debe pres
 
 El sistema generará un número automático, y podrá ver un texto de confirmación. Si hace clic en el mensaje emergente, el sistema fluirá a la Fee.
 
+
 Para crear una nueva estimación, debe presionar "+" directamente desde la Fee.
+
 
 1. Seleccione Estimar en el menú desplegable para crear uno nuevo
 2. Se abrirá una ventana emergente de Estimación con los campos obligatorios para completar

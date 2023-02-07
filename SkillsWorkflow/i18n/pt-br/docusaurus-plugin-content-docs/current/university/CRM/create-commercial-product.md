@@ -11,7 +11,7 @@ Para criar um novo produto comercial deve ir ao módulo "Manutenção" e à sub-
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-1.png)
+![img-box-shadow](/img/university/crm/crm-commercialproduct-V1.png)
 
 </figure>
 
@@ -32,7 +32,7 @@ Para criar um novo produto, você terá que:
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-vv3.png)
+![img-box-shadow](/img/university/crm/crm-commercialproduct-v3.png)
 <figcaption>caption</figcaption>
 </figure>
 
@@ -48,6 +48,8 @@ Quando todas as informações estiverem completas, clique em cima do produto par
 
 <figure>
 
+
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-V4.png
+
 <figcaption>caption</figcaption>
 </figure>
