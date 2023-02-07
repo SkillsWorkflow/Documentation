@@ -1,7 +1,7 @@
 ---
 id:  contracts-projects
-title: Cómo gestionar proyectos vinculados a una tarifa
-sidebar_label: 3. Gestionar proyectos vinculados a una tarifa
+title: Presupuesto asociado al proyecto
+sidebar_label: 3. Presupuesto asociado al proyecto
 sidebar_position: 3
 ---
 
