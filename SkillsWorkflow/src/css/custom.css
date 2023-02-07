@@ -22,8 +22,6 @@
   --ifm-font-family-base: 'Varela Round';
   --ifm-font-family-monospace: 'Open Sans';
   --home-text-color: #333333;
-  --docusaurus-highlighted-code-line-bg: #EBEBEB;
-
 }
 
 
@@ -38,57 +36,40 @@ figcaption {
   color: #333;
 }
 
-.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
-  background-color: #0072C6;
-  color: #fafafa;
-  font-size: 16px !important;
+span.token.constant {
+  color: #57c7fa !important;
+}
+span.token.function {
+  color: #57c7fa !important;
+}
+span.token.method.function.property-access {
+  color: #57c7fa !important;
+}
+.span.token.known-class-name.class-name {
+  color: #F7D44B !important;
+}
+span.token.parameter.known-class-name.class-name {
+  color: #F7A452 !important;
+}
+span.token.punctuation {
+  color: #9D53F2 !important;
+}
+span.token.parameter.punctuation {
+  color: #9D53F2 !important;
+}
+span.token.parameter.operator {
+  color: #4899EA !important;
+}
+span.token.operator {
+  color: #4899EA !important;
+}
+span.token.arrow.operator {
+  color: #4899EA !important;
+}
+span.token.comment {
+  color: #999999 !important;
 }
 
-pre {
-  background-color: #F3F8FF  
-}
-
-.language-js.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module.theme-code-block {
-  --prism-color: #bfc7d5;
-  --prism-background-color: #292d3e;
-  margin-top: 20px !important;
-  margin-bottom: 30px !important;
-}
-
-.token.plain {
-  color: #333 !important;
-}
-
-
-
-.token.literal-property.property {
-  color: #333 !important;
-}
-
-.token.string {
-  color: #26ABA4 !important;
-}
-
-.token.boolean {
-  color: #F2536D !important;
-}
-
-.token.number {
-  color: #ff7f00 !important;
-}
-
-.token-line {
-  color: #333 !important;
-}
-
-.theme-code-block-highlighted-line {
-  background-color: #0072c6;
-}
-
-.codeBlockContent_---node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
 
 /* .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
   background: #efefef;
