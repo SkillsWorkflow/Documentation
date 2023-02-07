@@ -35,7 +35,6 @@ Toque nos módulos disponíveis no sistema e selecione nas respectivas listas pa
 <figcaption>Project lists</figcaption>
 </figure>
 
-
 Digite algo com o filtro ativado para pesquisar em qualquer módulo
  
 <figure>
@@ -51,7 +50,6 @@ Nota: Abra, visualize e navegue pelos documentos
 ![img-box-shadow](/img/university/mobile/mobilefeat4.png)
 <figcaption>Home Feed documents in card view</figcaption>
 </figure>
-
 Selecione e abra um documento para ver suas informações. Documentos diferentes terão guias diferentes, que estão disponíveis no momento:
 
 - Feed
@@ -70,6 +68,7 @@ Selecione e abra um documento para ver suas informações. Documentos diferentes
 ![img-box-shadow](/img/university/mobile/mobilefeat5.png)
 <figcaption>Jobs tab inside Project</figcaption>
 </figure>
+
 
 <figure>
 
@@ -116,14 +115,15 @@ O aplicativo móvel terá criação de documentos assim como na Web. Para fazer 
 <figcaption>Expense creation under Job</figcaption>
 </figure>
 
-Nota: Adicionar folhas de horas
+:::nota Adicionar folhas de horas
 
 O calendário do quadro de horários lhe dará uma visão geral de suas horas. Selecione um dia e adicione hora a um documento. Insira os detalhes do Quadro de Horários, se necessário. É isso.
+
+:::
 
 <figure>
 
 ![img-box-shadow](/img/university/mobile/mobilefeat10.png)
 <figcaption>Timesheet calendar</figcaption>
 </figure>
-
 Novos recursos e atualizações disponíveis serão adicionados a este artigo
