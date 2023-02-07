@@ -1,5 +1,5 @@
 ---
-id:  2-expenses
+id:  create-expenses
 title: Expenses
 sidebar_label: 2. Create Expenses
 sidebar_position: 2
@@ -66,11 +66,11 @@ To create expenses navigate to Project module and select a project to add receip
 <figcaption>Expense pop-up info</figcaption>
 </figure>
 
-5. Add a description.
-6. Select the type of Expense.
-7. Add an image with the recit to add a file.
-8. In the field Document search for the project or client you want to link.
-9. Add expense's value.
+5.  Add a description.
+6.  Select the type of Expense.
+7.  Add an image with the recit to add a file.
+8.  In the field Document search for the project or client you want to link.
+9.  Add expense's value.
 10. Click 'ok'.
 11. Repeat the process if there's more than 1 expense.
 
