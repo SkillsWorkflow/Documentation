@@ -8,7 +8,7 @@ In order to create a new client contact with all the client details, you should 
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-client1-1.png)
+<!-- ![img-box-shadow](/img/university/crm/crm-client1-1.png) -->
 <figcaption>Client module</figcaption>
 </figure>
 
@@ -24,7 +24,7 @@ To create a new client contact, you should follow the steps below:
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-client1-2.png)
+<!-- ![img-box-shadow](/img/university/crm/crm-client1-2.png) -->
 <figcaption>Adding new contact line</figcaption>
 </figure>
 
