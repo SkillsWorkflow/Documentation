@@ -36,3 +36,4 @@ Se abrirá la pantalla de creación de días festivos
   :::
   
 Al final del proceso de creación, haga clic en Aceptar para guardar.
+
