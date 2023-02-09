@@ -18,18 +18,17 @@ The Utilization Dashboard can be accessed by selecting Workspaces from the menu 
 </figure>
 
 1. Selection Criteria Section – Define Period, Organization Unit and User Classification by selecting from the dropdown, values for the following fields:
+- Year
+- Company
+- Division
+- Department
+- User Type 
 
-   - Year
-   - Company
-   - Division
-   - Department
-   - User Type 
-
-2.  Period Selector – Provides a graph of total hours logged per day for the year selected for the set selection criteria
-3.  Utilization per Client – Provides a distribution in terms of percentage, hours charged per client based on the set selection criteria
+2. Period Selector – Provides a graph of total hours logged per day for the year selected for the set selection criteria
+3. Utilization per Client – Provides a distribution in terms of percentage, hours charged per client based on the set selection criteria
 4. Utilization per Department – Provides a breakdown in terms of percentage, hours charged by the different departments within the
 set selection criteria
-5.  Utilization per Project Type – Provides a breakdown in terms of percentage, hours charged to different Project Types based on the set selection criteria.
+5. Utilization per Project Type – Provides a breakdown in terms of percentage, hours charged to different Project Types based on the set selection criteria.
 
 <figure>
 
@@ -37,8 +36,7 @@ set selection criteria
 <figcaption></figcaption>
 </figure>
 
-6.   Utilization per User – Provides a listing of Users per Department indicating Position (Typology), Picture, Name, User Type and the following figures:
-
+6. Utilization per User – Provides a listing of Users per Department indicating Position (Typology), Picture, Name, User Type and the following figures:
 - Capacity – Total Work Hours for the year less Leave Hours
 - Leaves – Leave hours booked for the year
 - Non-Billable – Hours charged to Non-Billable client tasks for the year
