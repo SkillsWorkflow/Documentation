@@ -15,6 +15,8 @@ To create a holiday, go to "Maintenance" and look for the "Holiday".
 
 Click on the "+" icon located in the upper right corner of the screen.
 
+The Holiday creation screen will open.
+
 <figure>
 
 ![img-box-shadow](/img/Holiday.png)
