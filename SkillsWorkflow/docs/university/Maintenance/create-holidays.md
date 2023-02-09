@@ -33,7 +33,7 @@ The Holiday creation screen will open.
   :::Note
   
     If your company does not allow the insertion of hours in the Timesheet on Holidays, uncheck this option.
-    
+   
   :::
   
 At the end of the creation process, click OK to save.
