@@ -23,8 +23,6 @@ The Holiday creation screen will open.
 <figcaption></figcaption>
 </figure>
 
-  
-The Holiday creation screen will open.
 
 - **Name** - In the name field, enter the name of the holiday and the specific date of the holiday. 
 - **Date** - The date when the holiday will occur.
