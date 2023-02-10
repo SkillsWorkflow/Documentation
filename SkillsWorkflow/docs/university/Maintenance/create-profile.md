@@ -28,4 +28,3 @@ By default, the system flags the first five notifications that allow you to rece
 
 Make the desired changes and at the end click on the icon in the upper right corner of the screen.
 
-
