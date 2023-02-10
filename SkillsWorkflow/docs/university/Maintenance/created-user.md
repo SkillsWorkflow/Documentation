@@ -1,8 +1,8 @@
 ---
 id:  create-user
 title: Create User
-sidebar_label: Create User
-sidebar_position: 
+sidebar_label: 1. Create User
+sidebar_position:1 
 ---
 
 Navigate to Maintenance and enter the "User" module
