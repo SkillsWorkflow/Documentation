@@ -5,7 +5,6 @@ sidebar_label: 3. Create Profile
 sidebar_position: 3
 ---
 
-
 On the Skill Workflow Home page, at the top of the page you will see your name.
 When you click on your name you will have the option to edit your profile
 
