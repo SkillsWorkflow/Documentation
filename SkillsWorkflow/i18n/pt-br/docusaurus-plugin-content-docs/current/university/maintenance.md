@@ -29,7 +29,6 @@ It is necessary to choose which type of document will receive this template
 In the free field you can create the document and format it as you wish.
 To save click OK
 
-
 After creating the Briefing, it is necessary to link it to the Department that will use it and to the Activity Types.
 
 Go to Maintenance and look for the "types" module
