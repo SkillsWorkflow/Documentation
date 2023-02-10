@@ -1,5 +1,5 @@
 ---
-id:  created-user
+id:  create-user
 title: "Create User"
 sidebar_label: Create User
 sidebar_position: 
