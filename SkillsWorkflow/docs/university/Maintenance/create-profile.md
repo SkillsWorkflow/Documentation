@@ -1,5 +1,5 @@
 ---
-id: profile
+id: create-profile
 title: Create Profile
 sidebar_label: 3. Create Profile
 sidebar_position: 3
