@@ -1,41 +1,59 @@
 ---
 id:  created-leaves
-title: Created Leaves
-sidebar_label: Created Leaves
+title: Creacion de Permisos/Vacaciones
+sidebar_label: Creacion de Permisos/Vacaciones
 ---
 
+En una compañia se pueden crear varios tipos de permisos, como el ejemplo:  Licencia Médica, Licencia por Maternidad, Vacaciones y otras.
 
-Several types of absences can be created in a company, such as Medical Leave, Maternity Leave, Vacations, among others.
+Para crear un tipo de Permiso, navegue hasta "Mantenimiento" y busque el módulo "Tipo de Ausencias"
 
-Para criar uma ausencia, navegue para "Manutençãi e procure o módulo "Tipo de Aus|ências"
-click in the upper right corner on the "+" icon
+haga clic en la esquina superior derecha en el icono "+"
 
 
-A screen will open to register the desired Absence.
+<figure>
 
-:::Note
-for the absence to be visible to users, it must have the **Active** and **Planned** items checked.
+![img-box-shadow](/img/university/created_leaves1.png)
+<figure>
+
+
+Se abrirá una ventana para registrar el tipo de Permiso.
+ 
+:::Nota
+Para que el Permiso/Vacaciones sea visible para los usuarios, debe tener marcados los ítems **Activo** y **Planificado**.
 :::
 
-Company (it is important to fill it in, especially in environments that are shared with other Group companies), mark your company name in this field.
-Total Dys of of Absences: Numerically enter the number of days equivalent to this absence.
-
-**Allow half-day**: Check if this absence allows part-time departure. 
-
-**Allow weekend selection**: Enable on absences that may have this permission, such as Vacations.
-
-**Allow Vacation Selection**: Allows you to insert vacations during the period of this absence.
-
-**Accounted in Timesheets** : Signed by Default, it means that the absence in question will appear in the timesheet.
-
-**HR Approved Only**: Requires HR department approval.
-
-**Leave in Hours** : For absences that can be set in hours, such as a Doctor's Appointment absence.
-
-**Planable**: Required field that activates the absence.
-
-**Mandatory Files**: When you need to attach files, such as a medical certificate.
-
-
  
+ Empresa (es importante cumplimentarlo, especialmente en entornos que se comparten con otras empresas del Grupo), marque el nombre de su empresa en este 
+ campo.
+
+ Toal de dias de vacaciones: Ingrese numéricamente el número de días equivalentes a este permiso.
+ 
+ 
+ <figure>
+
+![img-box-shadow](/img/university/created_leaves2.png)
+<figure>
+ 
+ 
+ 
+
+-**Permitir medio día**: La opcion "Pemitir Mediodia" tiene que estar activada
+
+-**Permitir selección de fin de semana**: Habilite la opcion que puedan tener este permiso, como Vacaciones.
+
+-**Permitir selección de vacaciones**: Le permite insertar vacaciones durante el período de esta ausencia.
+
+-**Contabilizado en Hojas de Tiempo** : Firmado por defecto, significa que la ausencia en cuestión aparecerá en la hoja de tiempo.
+
+-**Aprobado solo por RH**: Requiere la aprobación del departamento de RH.
+
+-**Vacaciones en Horas**: Para ausencias que se pueden establecer en horas, como una ausencia por cita médica.
+
+-**Planificable**: Campo obligatorio que activa la ausencia.
+
+-**Archivos obligatorios**: cuando necesite adjuntar archivos, como un certificado médico.
+
+
+
 
