@@ -7,34 +7,53 @@ sidebar_label: Created Leaves
 
 Several types of absences can be created in a company, such as Medical Leave, Maternity Leave, Vacations, among others.
 
-Para criar uma ausencia, navegue para "Manutençãi e procure o módulo "Tipo de Aus|ências"
+To create an absence, navigate to "Maintenance" and look for the module "Type of Absences"
 click in the upper right corner on the "+" icon
+
+
+<figure>
+
+![img-box-shadow](/img/university/created_leaves1.png)
+<figure>
+
 
 
 A screen will open to register the desired Absence.
 
+ 
 :::Note
 for the absence to be visible to users, it must have the **Active** and **Planned** items checked.
 :::
 
+ 
 Company (it is important to fill it in, especially in environments that are shared with other Group companies), mark your company name in this field.
 Total Dys of of Absences: Numerically enter the number of days equivalent to this absence.
+ 
+ 
+ <figure>
 
-**Allow half-day**: Check if this absence allows part-time departure. 
+![img-box-shadow](/img/university/created_leaves2.png)
+<figure>
+ 
+ 
+ 
+ 
 
-**Allow weekend selection**: Enable on absences that may have this permission, such as Vacations.
+-**Allow half-day**: Check if this absence allows part-time departure. 
 
-**Allow Vacation Selection**: Allows you to insert vacations during the period of this absence.
+-**Allow weekend selection**: Enable on absences that may have this permission, such as Vacations.
 
-**Accounted in Timesheets** : Signed by Default, it means that the absence in question will appear in the timesheet.
+-**Allow Vacation Selection**: Allows you to insert vacations during the period of this absence.
 
-**HR Approved Only**: Requires HR department approval.
+-**Accounted in Timesheets** : Signed by Default, it means that the absence in question will appear in the timesheet.
 
-**Leave in Hours** : For absences that can be set in hours, such as a Doctor's Appointment absence.
+-**HR Approved Only**: Requires HR department approval.
 
-**Planable**: Required field that activates the absence.
+-**Leave in Hours** : For absences that can be set in hours, such as a Doctor's Appointment absence.
 
-**Mandatory Files**: When you need to attach files, such as a medical certificate.
+-**Planable**: Required field that activates the absence.
+
+-**Mandatory Files**: When you need to attach files, such as a medical certificate.
 
 
  
