@@ -1,41 +1,57 @@
 ---
 id:  created-leaves
-title: Created Leaves
-sidebar_label: Created Leaves
+title: Criar Ausências 
+sidebar_label: Criar Ausências 
 ---
 
 
-Several types of absences can be created in a company, such as Medical Leave, Maternity Leave, Vacations, among others.
+Vários tipos de ausências podem ser criadas em uma empresa, como Licença Médica, Licença Maternidade, Férias, entre outras.
 
-Para criar uma ausencia, navegue para "Manutençãi e procure o módulo "Tipo de Aus|ências"
-click in the upper right corner on the "+" icon
+Para criar uma ausencia, navegue para "Manutenção" e procure o módulo "Tipo de Aus|ências"
+
+Clique no canto superior direito no ícone "+"
+
+<figure>
+
+![img-box-shadow](/img/university/created_leaves1.png)
+<figure>
 
 
-A screen will open to register the desired Absence.
 
-:::Note
-for the absence to be visible to users, it must have the **Active** and **Planned** items checked.
+Será aberta uma tela para cadastrar a Ausência desejada.
+
+:::Nota
+Para que a ausência fique visível aos usuários, ela deve ter os itens **Ativos** e **Planejados** marcados.
 :::
 
-Company (it is important to fill it in, especially in environments that are shared with other Group companies), mark your company name in this field.
-Total Dys of of Absences: Numerically enter the number of days equivalent to this absence.
+Empresa (é importante preenchê-lo, principalmente em ambientes compartilhados com outras empresas do Grupo), marque neste campo o nome da sua empresa.
+ 
+Total de Dias de Ausências: Insira numericamente o número de dias equivalentes a esta ausência.
+ 
+ 
+  <figure>
 
-**Allow half-day**: Check if this absence allows part-time departure. 
+![img-box-shadow](/img/university/created_leaves2.png)
+<figure>
+ 
 
-**Allow weekend selection**: Enable on absences that may have this permission, such as Vacations.
+**Permitir meio-período**: Verifique se esta ausência permite saída em meio-período 
 
-**Allow Vacation Selection**: Allows you to insert vacations during the period of this absence.
+**Permitir seleção de fim de semana**: Habilite em ausências que possam ter esta permissão, como Férias.
 
-**Accounted in Timesheets** : Signed by Default, it means that the absence in question will appear in the timesheet.
+**Permitir Seleção de Férias**: Permite inserir férias durante o período desta ausência.
 
-**HR Approved Only**: Requires HR department approval.
+**Contabilizado em Quadros de Horários** : Assinado por Padrão, significa que a ausência em questão aparecerá no quadro de horários.
 
-**Leave in Hours** : For absences that can be set in hours, such as a Doctor's Appointment absence.
+**HR Approved Only**: Requer aprovação do departamento de RH.
 
-**Planable**: Required field that activates the absence.
+**Licença em Horas** : Para ausências que podem ser definidas em horas, como ausência de consulta médica.
 
-**Mandatory Files**: When you need to attach files, such as a medical certificate.
+**Planeável**: Campo obrigatório que ativa a ausência.
+ 
+**Arquivos Obrigatórios**: Quando for necessário anexar arquivos, como atestado médico.
 
 
  
-
+ 
+ 
