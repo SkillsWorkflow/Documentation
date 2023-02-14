@@ -37,6 +37,7 @@ Para crear gastos, vaya al módulo Proyectos y selecione un proyecto para agrega
 
 1. Vaya al módulo Hojas de gastos
 2. Selleccione Toda la lista
+
 <figure>
 
 ![img-box-shadow](/img/university/expenses/university-expense-sheets-1.png)
