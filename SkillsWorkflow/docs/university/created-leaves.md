@@ -29,14 +29,9 @@ for the absence to be visible to users, it must have the **Active** and **Planne
 Company (it is important to fill it in, especially in environments that are shared with other Group companies), mark your company name in this field.
 Total Dys of of Absences: Numerically enter the number of days equivalent to this absence.
  
- 
  <figure>
-
 ![img-box-shadow](/img/university/created_leaves2.png)
 <figure>
- 
- 
- 
  
 
 -**Allow half-day**: Check if this absence allows part-time departure. 
