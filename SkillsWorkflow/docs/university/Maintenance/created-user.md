@@ -13,7 +13,6 @@ Path 1:
 Create a user and fill in all required fields (they are marked with a red dot) and follow all the steps below
 
 
-
 Path 2: 
 Duplicate an existing user
 
