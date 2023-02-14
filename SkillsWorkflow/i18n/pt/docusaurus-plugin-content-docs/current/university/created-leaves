@@ -7,7 +7,7 @@ sidebar_label: Criar Ausências
 
 Vários tipos de ausências podem ser criadas em uma empresa, como Licença Médica, Licença Maternidade, Férias, entre outras.
 
-Para criar uma ausencia, navegue para "Manutenção" e procure o módulo "Tipo de Aus|ências"
+Para criar uma ausência, navegue para "Manutenção" e procure o módulo "Tipo de Ausências"
 
 Clique no canto superior direito no ícone "+"
 
@@ -35,7 +35,7 @@ Total de Dias de Ausências: Insira numericamente o número de dias equivalentes
 <figure>
  
 
-**Permitir meio-período**: Verifique se esta ausência permite saída em meio-período 
+**Permitir meio-período**: Verifique se esta ausência permite saída em meio-período.
 
 **Permitir seleção de fim de semana**: Habilite em ausências que possam ter esta permissão, como Férias.
 
