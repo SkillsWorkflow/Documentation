@@ -9,9 +9,11 @@ sidebar_position: 2
 
 2. Seleccione el proyecto activo en el que desea incluir el nuevo Job.
 
-3.Vaya a la pestaña Trabajos dentro de la página del Proyecto y haga clic en la opción "+".
+3. Vaya a la pestaña Trabajos dentro de la página del Proyecto y haga clic en la opción "+".
 
 4. Complete el formulario pop-up creación de Job  
+
+5. Una vez que complete todos los campos, haga clic en la opción 'verificar'.
 
 
 - **Título** - Nombre que le gustaría dar a la Job.
@@ -27,7 +29,7 @@ sidebar_position: 2
 <figcaption></figcaption>
 </figure>
 
-5. Una vez que complete todos los campos, haga clic en la opción 'verificar'.
+ 
 
 
 ### Agregar resumen y cargar archivos
@@ -55,8 +57,10 @@ sidebar_position: 2
 
 
 
-:::Note
+::::Note
+
 Después de completar toda la información, deberá activar el Job
+
 :::
 
 ### activar el Job
@@ -125,8 +129,10 @@ Después de completar toda la información, deberá activar el Job
 </figure>
 
 
-:::Note
+::::Note
+
 Para notificar a alguien de su equipo sobre una nueva publicación o temas relacionados con el Job, siempre puede usar la opción "Notificaciones".
+
 :::
 
 ### Notificaciones
