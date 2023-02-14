@@ -6,12 +6,6 @@ sidebar_label: 1. Como criar um novo contato de cliente
 
 Para criar um novo contato com os detalhes do cliente, você deve ir para o módulo "CLIENTES" e a sub-lista "Contato do cliente".
 
-<figure>
-
-<!-- ![img-box-shadow](/img/university/crm/crm-client1-1.png) -->
-<figcaption>Client module</figcaption>
-</figure>
-
 Selecione o cliente onde você precisa criar o contato do cliente.
 
 Para criar um novo contato com o cliente, você deve:
