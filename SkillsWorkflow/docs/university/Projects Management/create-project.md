@@ -1,14 +1,14 @@
 ---
 id:  create-projects
-title: Create Projects
-sidebar_label: 1. Create a Project
+title: Crear proyectos
+sidebar_label: 1. Crear proyectos
 sidebar_position: 1
 ---
 
-### A Project is an umbrella that groups a bundle of related jobs inside.
+### Un proyecto es un paraguas que agrupa un paquete de trabajos relacionados en su interior.
 
-1. To create a new Project, navigate to the "Clients" module.
-2. Verify that you can navigate by clicking on Clients in the side bar.
+1. Para crear un nuevo Proyecto, navegue hasta el módulo "Clientes".
+2. Verifique que puede navegar haciendo clic en Clientes en la barra lateral.
 
 <figure>
 
@@ -16,13 +16,13 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-3. After selecting a client click on the "+" to open a new Project creation popup.
-4. Fill in the yellow (mandatory) fields.
+3. Después de seleccionar un cliente, haga clic en "+" para abrir una nueva ventana emergente de creación de proyectos.
+4. Rellene los campos amarillos (obligatorios)
 
-- **Title** - Name you would like to give to the Project.
-- **Begin/End** - Choose when the Project starts and when it will end.
-- **Type** - Choose from a drop-down list. E.g. New Business, Admin, etc.
-- **Product** - Product you are creating this Project for. Select from a dropdown list of Products you have access to.
+- **Título** - Nombre que le gustaría dar al Proyecto.
+- **Fecha de Inicio/Fecha de Fin**: Elija cuándo comienza el proyecto y cuándo finalizará.
+- **Tipo**: Elija de una lista desplegable. P.ej. Nuevo negocio, administración, etc..
+- **Producto**: Producto para el que está creando este proyecto. Seleccione de una lista desplegable de Productos a los que tiene acceso.
 
 <figure>
 
@@ -30,10 +30,10 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-### Add a Brief to the Project
+### Agregar un resumen al proyecto
 
-1. You can add a brief with all the information and customer instructions.
-2. Just type in all the information on the description, inside the new Project creation popup.
+1. Puedes añadir un brief con toda la información e instrucciones del cliente.
+2. Simplemente escriba toda la información en la descripción, dentro de la nueva ventana emergente de creación de Proyecto.
 
 <figure>
 
@@ -41,15 +41,15 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-### Attach a file
+### Adjuntar un archivo
 
-1. You can also attach files to the Project simply by dragging them inside the popup, or by clicking on the dotted square.
-2. This is useful for adding brief documents or presentations, in any of the main formats (Word, PPT, Excel, PDF, etc.)
+1. También puede adjuntar archivos al proyecto simplemente arrastrándolos dentro de la ventana emergente o haciendo clic en el cuadrado punteado
+2. Esto es útil para agregar documentos breves o presentaciones, en cualquiera de los formatos principales (Word, PPT, Excel, PDF, etc.)
 
-### After filling in all the fields, you will need to activate the project.
+### Después de completar todos los campos, deberá activar el proyecto.
 
-1. Click on the check to close the form and select the small blue arrow on the bottom right.
-2. After clicking on it, the Project will get a number (see Project code at the top) and it will no longer be on the stage Draft.
+1. Haga clic en el cheque para cerrar el formulario y seleccione la pequeña flecha azul en la parte inferior derecha.
+2. Después de hacer clic en él, el proyecto obtendrá un número (consulte el código del proyecto en la parte superior) y ya no estará en el borrador del escenario.
 
 <figure>
 
@@ -57,12 +57,12 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-### Add people to the Project's team
+### Agregar personas al equipo del Proyecto
 
-1. If you have access to change the Team you will see an Add Assignment symbol bellow the Brief section.
-2. Add or remove people to each of the groups by clicking on the pencil.
-3. A dropdown will appear with a list of users.
-4. Select the users that you want to assign and click on the check to add them to the Team.
+1. Si tiene acceso para cambiar el equipo, verá un símbolo Agregar asignación debajo de la sección Resumen.
+2. Agregue o elimine personas a cada uno de los grupos haciendo clic en el lápiz.
+3. Aparecerá un menú desplegable con una lista de usuarios.
+4. Seleccione los usuarios que desea asignar y haga clic en la casilla de verificación para agregarlos al Equipo.
 
 <figure>
 
@@ -70,11 +70,11 @@ sidebar_position: 1
 <figcaption></figcaption>
 </figure>
 
-### At the top of the page you will be able to find various tabs with information about this Project
+### En la parte superior de la página podrá encontrar varias pestañas con información sobre este Proyecto
 
-- **Feed** - Activity and comments related with the Project.
-- **Jobs** - List of existing jobs belonging to this Project.
-- **Planned Hours** - Planned versus Actual hours per typology and/or user for the Project.
-- **Files** - All the files uploaded into this Project will appear on this tab.
-- **History** - Track of status changes. You can see for example who created the Project and at what time.
-- **Others** - You may also find other tabs depending on the modules of the system you have access to.
+- **Feed** - Actividad y comentarios relacionados con el Proyecto.
+- **Jobs** - Lista de trabalhos existentes pertencentes a este Projeto.
+- **Tiempo Planificado** - Tiempo Planificado versus horas reais por tipologia e/ou utilizador para o Projeto.
+- **Archivos** - Todos los archivos cargados en este Proyecto aparecerán en esta pestaña.
+- **Histórico** - Seguimiento de los cambios de estado. Puede ver, por ejemplo, quién creó el proyecto y en qué momento.
+- **Otros** - También puede encontrar otras pestañas según los módulos del sistema al que tenga acceso.
