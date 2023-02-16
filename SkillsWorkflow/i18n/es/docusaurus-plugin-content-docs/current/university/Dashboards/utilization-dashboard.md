@@ -19,11 +19,11 @@ la utilización Dashboard se puede acceder seleccionando Espacios de trabajo en 
 
 1. Sección Criterios de selección: defina el período, la unidad organizativa y la clasificación de usuarios seleccionando en el menú desplegable valores para los siguientes campos:
 
-   - Año
-   - Compañía
-   - División
-   - Departamento
-   - Tipo de usuario
+- Año
+- Compañía
+- División
+- Departamento
+- Tipo de usuario
 
 2. Selector de período: proporciona un gráfico del total de horas registradas por día para el año seleccionado para los criterios de selección establecidos
 3. Utilización por cliente: proporciona una distribución en términos de porcentaje, horas cobradas por cliente según los criterios de selección establecidos
@@ -39,13 +39,13 @@ establecer criterios de selección
 
 6. Utilización por Usuario – Proporciona un listado de Usuarios por Departamento indicando Puesto (Tipología), Imagen, Nombre, Tipo de Usuario y las siguientes cifras:
     
-    - Capacidad: horas de trabajo totales del año menos horas de licencia
-    - Licencias – Horas de licencia reservadas para el año
-    - No facturables: horas cargadas a tareas de clientes no facturables durante el año
-    - Admin: horas cargadas a tareas administrativas durante el año.
-    - Facturable: horas cargadas a las tareas facturables del cliente durante el año
-    - % de utilización no facturable - (no facturable/capacidad) x 100
-    - % facturable de utilización - (facturable/capacidad) x 100
+ - Capacidad: horas de trabajo totales del año menos horas de licencia
+ - Licencias – Horas de licencia reservadas para el año
+ - No facturables: horas cargadas a tareas de clientes no facturables durante el año
+ - Admin: horas cargadas a tareas administrativas durante el año.
+ - Facturable: horas cargadas a las tareas facturables del cliente durante el año
+ - % de utilización no facturable - (no facturable/capacidad) x 100
+ - % facturable de utilización - (facturable/capacidad) x 100
 
 
 <figure>
@@ -57,8 +57,8 @@ establecer criterios de selección
 7. Proyectos de usuario: al hacer clic en una línea de Usuario en la Lista de utilización por usuario, el sistema mostrará un desglose del Proyecto/Trabajo/Cliente cobrado por el Usuario para el año clasificado según el Tipo de proyecto.
  
 Los detalles son los siguientes:
-   - No facturable: horas no facturables cobradas por el usuario al proyecto/Job/cliente
-   - Facturable: horas facturables cobradas por el usuario al proyecto/job/cliente
-   - % de utilización no facturable - (no facturable/capacidad) x 100
-   - % facturable de utilización - (facturable/capacidad) x 100
-   - Horas: horas totales por proyecto/job/cliente
+- No facturable: horas no facturables cobradas por el usuario al proyecto/Job/cliente
+- Facturable: horas facturables cobradas por el usuario al proyecto/job/cliente
+- % de utilización no facturable - (no facturable/capacidad) x 100
+- % facturable de utilización - (facturable/capacidad) x 100
+- Horas: horas totales por proyecto/job/cliente
