@@ -2,7 +2,7 @@
 id:  create-user
 title: Create User
 sidebar_label: 1. Create User
-sidebar_position:1 
+sidebar_position: 1 
 ---
 
 Navigate to Maintenance and enter the "User" module
@@ -11,7 +11,6 @@ To create a new user there are two ways
 
 Path 1:
 Create a user and fill in all required fields (they are marked with a red dot) and follow all the steps below
-
 
 Path 2: 
 Duplicate an existing user
