@@ -144,7 +144,7 @@ if the name of the field doesn't match with the original name (the that exists i
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/allowInline/saveOptionsUserfieldColumn.png)
+![img-box-shadow](/img/craft/grid/allowInline/userfieldColumn.png)
 
 
 </figure>
