@@ -95,7 +95,6 @@ if the name of the field doesn't match with the  name used in the patch endpoint
 <figure>
 
 ![img-box-shadow](/img/craft/grid/allowInline/saveOptionsDocumentColumn.png)
-
 </figure>
 
 
