@@ -140,11 +140,12 @@ if the name of the field doesn't match with the original name (the that exists i
     dataType: 'string',
     allowEditing: true
 }
-````
+```
 
 <figure>
 
 ![img-box-shadow](/img/craft/grid/allowInline/saveOptionsUserfieldColumn.png)
+
 
 </figure>
 
