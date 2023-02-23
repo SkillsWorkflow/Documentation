@@ -13,25 +13,29 @@ click in the upper right corner on the "+" icon
 
 <figure>
 
-![img-box-shadow](/img/university/created_leaves1.png)
-<figure>
-
+![img-box-shadow](/img/university/createdLeaves.png)
+<figcaption></figcaption>
+</figure>
 
 
 A screen will open to register the desired Absence.
 
  
-:::Note
+:::note
 for the absence to be visible to users, it must have the **Active** and **Planned** items checked.
 :::
 
  
 Company (it is important to fill it in, especially in environments that are shared with other Group companies), mark your company name in this field.
 Total Dys of of Absences: Numerically enter the number of days equivalent to this absence.
- 
- <figure>
-![img-box-shadow](/img/university/created_leaves2.png)
+
 <figure>
+
+![img-box-shadow](/img/university/created_leaves2.png)
+<figcaption></figcaption>
+</figure>
+ 
+ 
  
 
 -**Allow half-day**: Check if this absence allows part-time departure. 
