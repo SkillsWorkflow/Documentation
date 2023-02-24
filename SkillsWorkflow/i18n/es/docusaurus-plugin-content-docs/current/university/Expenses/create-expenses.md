@@ -75,7 +75,7 @@ Para crear gastos, vaya al módulo Proyectos y selecione un proyecto para agrega
 11. Repita el proceso si hay más de 1 gasto.
 
 
-:::nota
+:::note
 Por favor, tenga en cuenta que todos los campos en amarillo son obligatorios.
 Dentro de la misma hoja de gasto se pueden agregar recibos de diferentes proyectos.
 :::
