@@ -18,12 +18,11 @@ la utilización Dashboard se puede acceder seleccionando Espacios de trabajo en 
 </figure>
 
 1. Sección Criterios de selección: defina el período, la unidad organizativa y la clasificación de usuarios seleccionando en el menú desplegable valores para los siguientes campos:
-
-   - Año
-   - Compañía
-   - División
-   - Departamento
-   - Tipo de usuario
+ - Año
+ - Compañía
+ - División
+ - Departamento
+ - Tipo de usuario
 
 2. Selector de período: proporciona un gráfico del total de horas registradas por día para el año seleccionado para los criterios de selección establecidos
 3. Utilización por cliente: proporciona una distribución en términos de porcentaje, horas cobradas por cliente según los criterios de selección establecidos
@@ -37,16 +36,14 @@ establecer criterios de selección
 <figcaption></figcaption>
 </figure>
 
-6. Utilización por Usuario – Proporciona un listado de Usuarios por Departamento indicando Puesto (Tipología), Imagen, Nombre, Tipo de Usuario y las siguientes cifras:
-    
-    - Capacidad: horas de trabajo totales del año menos horas de licencia
-    - Licencias – Horas de licencia reservadas para el año
-    - No facturables: horas cargadas a tareas de clientes no facturables durante el año
-    - Admin: horas cargadas a tareas administrativas durante el año.
-    - Facturable: horas cargadas a las tareas facturables del cliente durante el año
-    - % de utilización no facturable - (no facturable/capacidad) x 100
-    - % facturable de utilización - (facturable/capacidad) x 100
-
+6. Utilización por Usuario – Proporciona un listado de Usuarios por Departamento indicando Puesto (Tipología), Imagen, Nombre, Tipo de Usuario y las siguientes cifras:  
+ - Capacidad: horas de trabajo totales del año menos horas de licencia
+ - Licencias – Horas de licencia reservadas para el año
+ - No facturables: horas cargadas a tareas de clientes no facturables durante el año
+ - Admin: horas cargadas a tareas administrativas durante el año.
+ - Facturable: horas cargadas a las tareas facturables del cliente durante el año
+ - % de utilización no facturable - (no facturable/capacidad) x 100
+ - % facturable de utilización - (facturable/capacidad) x 100
 
 <figure>
 
