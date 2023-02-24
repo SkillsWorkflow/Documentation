@@ -45,7 +45,6 @@ Después de la aprobación del cliente, el sistema mostrará la información del
 
 A nivel de proyecto, los gastos de terceros y estarán disponibles en "Costos planificados"
 
- 
 
 <figure>
 
