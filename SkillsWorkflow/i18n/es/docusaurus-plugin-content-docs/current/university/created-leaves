@@ -4,7 +4,7 @@ title: Creación de Permisos/Vacaciones
 sidebar_label: Creación de Permisos/Vacaciones
 ---
 
-En una compañia se pueden crear varios tipos de permisos, como el ejemplo:  Licencia Médica, Licencia por Maternidad, Vacaciones y otras.
+En una compañia se pueden crear varios tipos de permisos, como el ejemplo: Licencia Médica, Licencia por Maternidad, Vacaciones y otras.
 
 Para crear un tipo de Permiso, navegue hasta "Mantenimiento" y busque el módulo "Tipo de Ausencias"
 
@@ -19,7 +19,7 @@ Haga clic en la esquina superior derecha en el icono "+"
 
 Se abrirá una ventana para registrar el tipo de Permiso.
  
-:::Nota
+:::nota
 Para que el Permiso/Vacaciones sea visible para los usuarios, debe tener marcados los ítems **Activo** y **Planificado**.
 :::
 
