@@ -1,3 +1,4 @@
+---
 id:  invoice-estimate
 title: Factura an Presupuesto
 sidebar_label: 2. Factura an Presupuesto
@@ -36,7 +37,7 @@ En el ejemplo a continuación, el campo Número de representante está marcado c
 <figcaption></figcaption>
 </figure>
 
-:::nota
+:::note
 Tenga en cuenta que los valores en Terceros, Gastos y Recursos se mostrarán con los mismos valores.
 :::
 
@@ -44,7 +45,6 @@ Después de la aprobación del cliente, el sistema mostrará la información del
 
 A nivel de proyecto, los gastos de terceros y estarán disponibles en "Costos planificados"
 
- 
 
 <figure>
 
