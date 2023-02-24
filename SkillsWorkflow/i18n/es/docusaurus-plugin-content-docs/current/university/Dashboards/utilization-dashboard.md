@@ -45,7 +45,6 @@ establecer criterios de selección
     - % de utilización no facturable - (no facturable/capacidad) x 100
     - % facturable de utilización - (facturable/capacidad) x 100
 
-
 <figure>
 
 ![img-box-shadow](/img/university/dashboards/utilization-dashboard/university-utilization-dashboard-3.png)

@@ -8,7 +8,7 @@ Para crear un nuevo contacto de cliente con todos los datos del cliente, debe ac
 
 <figure>
 
-<!-- ![img-box-shadow](/img/university/crm/crm-client1-1.png) -->
+<!-- ![img-box-shadow](/img/university/crm/Client contact.png) -->
 <figcaption>Client module</figcaption>
 </figure>
 
@@ -23,11 +23,6 @@ Para crear un nuevo contacto de cliente, debe seguir los siguientes pasos:
 
 > Para eliminar un contacto de línea/cliente, solo deberá hacer clic en el botón "x".
 
-<figure>
-
-<!-- ![img-box-shadow](/img/university/crm/crm-client1-2.png) -->
-<figcaption>Adding new contact line</figcaption>
-</figure>
 
 
 Una vez creado, el contacto del ccliente también se puede asociar a otro cliente

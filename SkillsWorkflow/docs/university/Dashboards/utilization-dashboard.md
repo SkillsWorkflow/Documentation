@@ -19,11 +19,11 @@ The Utilization Dashboard can be accessed by selecting Workspaces from the menu 
 
 1. Selection Criteria Section – Define Period, Organization Unit and User Classification by selecting from the dropdown, values for the following fields:
 
-   - Year
-   - Company
-   - Division
-   - Department
-   - User Type 
+- Year
+- Company
+- Division
+- Department
+- User Type 
 
 2.  Period Selector – Provides a graph of total hours logged per day for the year selected for the set selection criteria
 3.  Utilization per Client – Provides a distribution in terms of percentage, hours charged per client based on the set selection criteria

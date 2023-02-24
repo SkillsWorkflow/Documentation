@@ -8,7 +8,7 @@ In order to create a new client contact with all the client details, you should 
 
 <figure>
 
-<!-- ![img-box-shadow](/img/university/crm/crm-client1-1.png) -->
+<!-- ![img-box-shadow](/img/university/crm/Client contact.png) -->
 <figcaption>Client module</figcaption>
 </figure>
 
@@ -22,11 +22,7 @@ To create a new client contact, you should follow the steps below:
 4. Save all the changes made by clicking on the dis symbol.
 > To remove a line/client contact, you will only need to click on the "x" button.
 
-<figure>
 
-<!-- ![img-box-shadow](/img/university/crm/crm-client1-2.png) -->
-<figcaption>Adding new contact line</figcaption>
-</figure>
 
 Once created, the client contact can also be associated to another client.
 

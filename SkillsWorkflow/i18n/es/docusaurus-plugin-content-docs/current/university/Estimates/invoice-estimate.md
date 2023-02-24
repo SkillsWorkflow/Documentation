@@ -2,7 +2,7 @@
 id:  invoice-estimate
 title: Factura an Presupuesto
 sidebar_label: 2. Factura an Presupuesto
-sidebar_postiion: 2
+sidebar_postion: 2
 ---
 
 ## Crear Presupuestos de retención
