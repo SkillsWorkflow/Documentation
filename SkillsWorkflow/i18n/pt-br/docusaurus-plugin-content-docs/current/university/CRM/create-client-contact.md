@@ -8,7 +8,7 @@ Para criar um novo contato com os detalhes do cliente, você deve ir para o mód
 
 <figure>
 
-<!-- ![img-box-shadow](/img/university/crm/Client contact.png) -->
+<!-- ![img-box-shadow](/img/university/crm/crm-client1-1.png) -->
 <figcaption>Client module</figcaption>
 </figure>
 
@@ -22,6 +22,11 @@ Para conseguir salvar as alterações, é necessário preencher o campo "Nome"
 3. Salve as alterações clicando no símbolo de disco.
 4. Para remover qualquer linha / contato, basta clicar na opção "x".
 
+<figure>
+
+<!-- ![img-box-shadow](/img/university/crm/crm-client1-2.png) -->
+<figcaption>Adding new contact line</figcaption>
+</figure>
 
 Uma vez criado, o contato de cliente poderá também ser associado a outro cliente.
 
