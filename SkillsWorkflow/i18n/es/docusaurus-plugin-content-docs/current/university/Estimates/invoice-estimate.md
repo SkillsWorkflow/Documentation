@@ -1,6 +1,7 @@
+---
 id:  invoice-estimate
-title: factura an Presupuesto
-sidebar_label: 2. factura an Presupuesto
+title: Factura an Presupuesto
+sidebar_label: 2. Factura an Presupuesto
 sidebar_postiion: 2
 ---
 
@@ -36,7 +37,7 @@ En el ejemplo a continuación, el campo Número de representante está marcado c
 <figcaption></figcaption>
 </figure>
 
-:::nota
+:::note
 Tenga en cuenta que los valores en Terceros, Gastos y Recursos se mostrarán con los mismos valores.
 :::
 
