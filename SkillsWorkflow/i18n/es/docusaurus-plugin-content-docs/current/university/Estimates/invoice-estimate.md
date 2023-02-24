@@ -1,7 +1,7 @@
 ---
 id:  invoice-estimate
-title: Factura an Presupuesto
-sidebar_label: 2. Factura an Presupuesto
+title: Factura un Presupuesto
+sidebar_label: 2. Factura un Presupuesto
 sidebar_postion: 2
 ---
 
