@@ -4,7 +4,6 @@ title: Approving Leaves
 sidebar_label: Approving Leaves
 ---
 
-
 :::info
 Navigate to the **Leaves module**. 
 :::

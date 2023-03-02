@@ -14,7 +14,7 @@ Haga clic en la esquina superior derecha en el icono "+"
 <figure>
 
 ![img-box-shadow](/img/university/created_leaves1.png)
-<figure>
+</figure>
 
 
 Se abrirá una ventana para registrar el tipo de Permiso.
@@ -33,23 +33,13 @@ Para que el Permiso/Vacaciones sea visible para los usuarios, debe tener marcado
  <figure>
 
 ![img-box-shadow](/img/university/created_leaves2.png)
-<figure>
+</figure>
 
-
-
-
--**Permitir medio día**: La opción "Pemitir Mediodia" tiene que estar activada
-
--**Permitir selección de fin de semana**: Habilite la opción que puedan tener este permiso, como Vacaciones.
-
--**Permitir selección de vacaciones**: Le permite insertar vacaciones durante el período de esta ausencia.
-
--**Contabilizado en Hojas de Tiempo** : Firmado por defecto, significa que la ausencia en cuestión aparecerá en la hoja de tiempo.
-
--**Aprobado solo por RH**: Requiere la aprobación del departamento de RH.
-
--**Vacaciones en Horas**: Para ausencias que se pueden establecer en horas, como una ausencia por cita médica.
-
--**Planificable**: Campo obligatorio que activa la ausencia.
-
--**Archivos obligatorios**: cuando necesite adjuntar archivos, como un certificado médico.
+- Permitir medio día: La opción Pemitir Mediodia tiene que estar activada
+- Permitir selección de fin de semana: Habilite la opción que puedan tener este permiso, como Vacaciones.
+- Permitir selección de vacaciones: Le permite insertar vacaciones durante el período de esta ausencia.
+- Contabilizado en Hojas de Tiempo : Firmado por defecto, significa que la ausencia en cuestión aparecerá en la hoja de tiempo.
+- Aprobado solo por RH: Requiere la aprobación del departamento de RH.
+- Vacaciones en Horas: Para ausencias que se pueden establecer en horas, como una ausencia por cita médica.
+- Planificable: Campo obligatorio que activa la ausencia.
+- Archivos obligatorios: cuando necesite adjuntar archivos, como un certificado médico.
