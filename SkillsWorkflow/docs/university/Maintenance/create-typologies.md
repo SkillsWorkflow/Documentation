@@ -1,7 +1,8 @@
 ---
 id: create-typologies 
 title: Create Typologies
-sidebar_label: Create Typologies
+sidebar_label: 2. Create Typologies
+sidebar_position: 2
 ---
 
 Users have a position in the company they work for and all users registered in the Skill have a position linked in their Typologies
