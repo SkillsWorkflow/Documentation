@@ -1,5 +1,5 @@
 ---
-id: briefing
+id: description-templates
 title: Descrição de Templates
 sidebar_label: 4. Descrição de Templates
 sidebar_position: 4
