@@ -1,8 +1,7 @@
 ---
 id:  create-expenses
-title: Gasto
-sidebar_label: 2. Crear gasto
-sidebar_position: 2
+title: Crear Gastos 
+sidebar_label: 2. Crear Gastos 
 ---
 
 ### Los gastos se pueden crear de dos maneras:
@@ -74,13 +73,11 @@ Para crear gastos, vaya al módulo Proyectos y selecione un proyecto para agrega
 10. Haga clic en "Aceptar"
 11. Repita el proceso si hay más de 1 gasto.
 
-
 :::note
 Por favor, tenga en cuenta que todos los campos en amarillo son obligatorios.
-Dentro de la misma hoja de gasto se pueden agregar recibos de diferentes proyectos.
+Dentro de la misma hoja de gastos se pueden agregar recibos de diferentes proyectos.
 :::
-
-Si tienes varios recibos para la misma hoja puedes repetir el proceso usando la opción de duplicado.
+Si tienes varios recibos para la misma hoja puedes repetir el proceso usando la opción de duplicado
 
 <figure>
 
@@ -89,6 +86,6 @@ Si tienes varios recibos para la misma hoja puedes repetir el proceso usando la 
 </figure>
 
 1. Seleccione el gasto que desea copiar y haga clic en duplicar.
-2. El sistema generará un número automático y también una ventana emergente de confirmación
-3. Vaya a la hoja de gastos, en el feed cambiar la etapa para enviar al responsable para su aprobacion
+2. El sistema generará un número automático y también una ventana emergente de confirmación.
+3. Vaya a la hoja de gastos, en el intercambio de Feed, la etapa para enviar al responsable para su aprobación.
 
