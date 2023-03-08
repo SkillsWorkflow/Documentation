@@ -163,7 +163,7 @@ This method can be used to create a popup with the specified entity and data.
 #### Basic Usage
 
 ```javascript
-SW.Application.Popup.show(['info'], 
+SW.Application.Popup.show([{ Id: '63a12710-3dcd-4d99-85f4-1214d6a4d55e', Title: 'Info' }], 
    {
        documentName: SW.DocumentName.Job,
        width: 500,

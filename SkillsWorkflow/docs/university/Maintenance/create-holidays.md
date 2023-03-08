@@ -30,7 +30,7 @@ The Holiday creation screen will open.
 - **Is Plannable** - Allows the holiday to be visible to users.
 - **Allows Time Sheets** - Allows users to enter hours on this day.
 
-  :::Note
+  :::note
     If your company does not allow the insertion of hours in the Timesheet on Holidays, uncheck this option.
   :::
   

@@ -6,22 +6,23 @@ sidebar_label: RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021
 
 # Impact summary
 
-Between 28 February 2022 0:00 UTC and 3 March 2022 12:00 UTC, some users experienced intermittent errors while using the search feature.
+Starting 19 February 2021 at around 13:37 UTC until 16:05 UTC, some users experienced errors and degraded response time performing some operations on our West Europe region.
 
-While investigating, the team determined that the errors were "502 Bad Gateway" and happened intermittently on all regions.
+Affected operations were saving and opening some documents, viewing files, among others.
 
-After ruling out several components, the team determined that the issue was caused by a large amount of diagnostics data being included on the service response.
+Upon investigation, the team found that one replica of a backend service responsible for managing the file system became unhealthy after an automatic infrastructure platform update. 
 
-The team mitigated this issue by disabling diagnostics data on the search service.
+About 0.3% of all requests were effected.
 
 # RCA
 
-The search feature includes the possibility of returning diagnostics data to help debug issues such as documents not showing up to the user, etc. This information was returned on HTTP response headers.
+After investigation, the team found that a file system service upgrade rolled out on 18th of February at 9:54 contained a bad configuration parameter. Unfortunately, that bad parameter did not affect the service when it was rolled out and the new service version kept working healthy until Azure made a platform update on the 19th from 13:37 to 13:47 on one of the nodes running an instance of the file system service. That node became unhealthy and all requests to it resulted in error (about 30% of all service requests).
 
-On certain situations this data was very large (more than 8KB), and the Azure Load Balancer would drop the connection and issue a 502 Bad Gateway response to the client due to exceeding the maximum header size, leading to the error experienced by the affected users.
-
-After determining the issue, the team changed the way diagnostics data is returned to the client to avoid header size issues with the Azure Load Balancer.
+The team quickly mitigated the issue by manually fixing the bad configuration parameter.
 
 # Next steps
 
 We understand the impact these issues have on our customers and that's why Skills Workflow is committed to continuously improving our platform.
+Since this incident the file system service team has already globally rolled out a fix with the correct parameter.
+Service health checking was improved on the load balancer so that unhealthy nodes are removed from rotation until they recover.
+Monitoring will be improved to make sure that we catch these issues earlier.
