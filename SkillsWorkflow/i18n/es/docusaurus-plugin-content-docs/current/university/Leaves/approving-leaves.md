@@ -7,7 +7,9 @@ sidebar_label: Aprobación de Permisos/Vacaciones
 
 ## Notificaciones de Permisos/Vacaciones por Aprobar
 
-:::Nota
+
+
+:::note
 Navegue para el **Módulo Hojas**. 
 :::
 

@@ -143,7 +143,7 @@ module.exports = {
       apiKey: "87094cef7d341d5684d9762da858c498",
       indexName: "sw_documentation",
       appId: "XB27C2B9IL",
-      contextualSeach: true,
+      contextualSearch: true,
       selector: 'div#'
     }
   },

@@ -2,17 +2,16 @@
 id:  create-expenses
 title: Crear Gastos 
 sidebar_label: 2. Crear Gastos 
-sidebar_position: 2
 ---
 
 ### Los gastos se pueden crear de dos maneras:
 
-- Directamente en un proyecto
+- Directamente en un Proyecto
 - En una hoja de gastos
 
-### Crear directamente en el Proyecto
+### Crear directamente en el proyecto
 
-Para crear gastos, vaya al módulo Proyecto y seleccione un proyecto para agregar recibos.
+Para crear gastos, vaya al módulo Proyectos y selecione un proyecto para agregar recibos.
 
 <figure>
 
@@ -20,12 +19,12 @@ Para crear gastos, vaya al módulo Proyecto y seleccione un proyecto para agrega
 <figcaption>Project Item</figcaption>
 </figure>
 
-1. Haga clic en el icono '+' para crear un nueva hoja de gastos.
-2. Agregar una descripción
+1. Haga clic en el icono '+' para crear una nuevo gasto
+2. Agregar una descrición
 3. Agregar un archivo
 4. Rellene los campos restantes
-5. Haga clic en 'Aceptar' y envíe la publicación.
-6. Repita el proceso si hay más gastos para agregar al mismo proyecto.
+5. Haga clic en "Aceptar" y envie la publicación
+6. Repita el proceso si hay más gastos para agregar al mismo proyecto
 
 <figure>
 
@@ -35,8 +34,8 @@ Para crear gastos, vaya al módulo Proyecto y seleccione un proyecto para agrega
 
 ### Crear en hoja de gastos
 
-1. Vaya al módulo Hojas de gastos.
-2. Seleccione Toda la lista.
+1. Vaya al módulo Hojas de gastos
+2. Selleccione Toda la lista
 
 <figure>
 
@@ -44,7 +43,7 @@ Para crear gastos, vaya al módulo Proyecto y seleccione un proyecto para agrega
 <figcaption>Expense Sheets module</figcaption>
 </figure>
 
-3. Seleccione una hoja de gastos donde desee agregar un gasto y haga clic en el '+' para crear.
+3. Seleccione una hoja de gastos en la que desea agregar un gasto y haga clic en el '+' para crear.
 
 <figure>
 
@@ -52,7 +51,7 @@ Para crear gastos, vaya al módulo Proyecto y seleccione un proyecto para agrega
 <figcaption>Expense Sheet</figcaption>
 </figure>
 
-4. Complete los campos, haga clic en "Aceptar" y envíe la publicación.
+4. Complete los campos, haga clic en "Aceptar" y envie la publicación.
 
 <figure>
 
@@ -66,20 +65,18 @@ Para crear gastos, vaya al módulo Proyecto y seleccione un proyecto para agrega
 <figcaption>Expense pop-up info</figcaption>
 </figure>
 
-5.  Agrega una descripción.
-6.  Selecciona el tipo de Gasto.
-7.  Agregue una imagen con el recitado para agregar un archivo.
-8.  En el campo Documento busca el proyecto o cliente que quieras vincular.
-9.  Agregue el valor del gasto.
-10. Haga clic en Aceptar'.
-11. Repite el proceso si hay más de 1 gasto.
-
+5.  Agregue una descripción
+6.  Seleccione el tipo de Gasto
+7.  Agrega una imagen con el recitado para agregar un archivo
+8.  En el campo Documento busca el proyecto o cliente que quieras vincular
+9.  Agregue el valor del gasto
+10. Haga clic en "Aceptar"
+11. Repita el proceso si hay más de 1 gasto.
 
 :::note
 Por favor, tenga en cuenta que todos los campos en amarillo son obligatorios.
 Dentro de la misma hoja de gastos se pueden agregar recibos de diferentes proyectos.
 :::
-
 Si tienes varios recibos para la misma hoja puedes repetir el proceso usando la opción de duplicado
 
 <figure>
