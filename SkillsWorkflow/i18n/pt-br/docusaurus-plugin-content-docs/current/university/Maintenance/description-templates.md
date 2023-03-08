@@ -50,8 +50,6 @@ Para salvar clique em "OK"
 <figcaption>Maintenance module</figcaption>
 </figure>
 
-</figure>
-
 
 
 - Você deve dar um nome/título a este documento
@@ -61,15 +59,11 @@ Para salvar clique em "OK"
 
 Após a criação do Template, é necessário vinculá-lo ao Departamento que o utilizará e aos Tipos de Atividade.
 
--Vá para Manutenção e procure o módulo "tipos"
-
-Pode criar um tipo ou alocar um Template criado para um tipo existente
-
-Dentro do tipo, no campo de descrição do Template, localize o título do modelo que você criou
-
-Para salvar as informações clique em OK
-
-Você pode criar um tipo ou pode associá-lo a um tipo já criado, escolhendo no campo "Descrição do Template"
+- Vá para Manutenção e procure o módulo "tipos"
+- Pode criar um tipo ou alocar um Template criado para um tipo existente
+- Dentro do tipo, no campo de descrição do Template, localize o título do modelo que você criou
+- Para salvar as informações clique em OK
+- Você pode criar um tipo ou pode associá-lo a um tipo já criado, escolhendo no campo "Descrição do Template"
 
 
 <figure>
