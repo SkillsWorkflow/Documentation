@@ -22,6 +22,7 @@
   --ifm-font-family-base: 'Varela Round';
   --ifm-font-family-monospace: 'Open Sans';
   --home-text-color: #333333;
+  --docusaurus-highlighted-code-line-bg: rgb(215, 215, 215);
 }
 
 
