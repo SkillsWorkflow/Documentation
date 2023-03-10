@@ -1,7 +1,7 @@
 ---
 id: create-typologies 
-title: Crear Tipologias
-sidebar_label: 2. Crear Tipologias
+title: Criar Tipologias
+sidebar_label: 2. Criar Tipologias
 sidebar_position: 2
 ---
 
