@@ -243,7 +243,7 @@ If the data source does not mapping to the defaults fields name, it can be mappe
 
 ### type
 
-Accepted Values: 'undefined' | 'image' | 'link' | 'document' | 'date' | 'currency' | 'read'
+Accepted Values: 'undefined' | 'image' | 'link' | 'document' | 'date' | 'currency' | 'read' | 'priority' | 'stage'
 
 To setup the Image type, it is necessary that data source includes the entity:
 - Id
@@ -260,7 +260,9 @@ To setup the Image type, it is necessary that data source includes the entity:
     {label: 'Document', value: 'document'},
     {label: 'Date', value: 'date'},
     {label: 'Currency', value: 'currency'},
-    {label: 'Read', value: 'read'}
+    {label: 'Read', value: 'read'},
+    {label: 'Priority', value: 'priority'},
+    {label: 'Stage', value: 'stage'}
   ]
 }>
 
@@ -564,6 +566,69 @@ The follow examples shows how to display the read/unread symbol in a boolean col
 
 
 </figure>
+
+
+</TabItem>
+
+
+<TabItem value="priority">
+
+The follow example shows how to display the priority type.
+
+```json
+{
+    dataField: "Priority",
+    caption: "priority",
+    format: {
+        type: "priority"
+    }
+}
+```
+</TabItem>
+
+<TabItem value="stage">
+
+The follow examples shows how to display the stage type.
+
+```json
+{
+
+    dataField: "Name",
+    entity: "stage",
+    format: {
+        mapping: {
+            color: "Color",
+            stage: "Name"
+        }
+    }
+}         
+```
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/query-stage.png)
+
+</figure>
+
+### stage
+A property to map the name of the stage.
+
+### color
+A property to map the color of the stage.
+#
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/query-column.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/type-stage-example.png)
+
+</figure>
+
 
 
 </TabItem>
