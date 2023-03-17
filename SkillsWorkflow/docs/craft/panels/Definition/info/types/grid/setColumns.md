@@ -555,7 +555,7 @@ The follow examples shows how to display the read/unread symbol in a boolean col
 ```
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/read-symbol-config.png)7
+![img-box-shadow](/img/craft/grid/setColumns/read-symbol-config.png)
 
 </figure>
 
@@ -578,12 +578,28 @@ The follow example shows how to display the priority type.
 ```json
 {
     dataField: "Priority",
-    caption: "priority",
+    caption: "Priority",
+    dataType: "number",
     format: {
         type: "priority"
     }
 }
 ```
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/priority-column.png)
+
+</figure>
+
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/priority-example.png)
+
+
+</figure>
+
 </TabItem>
 
 <TabItem value="stage">
