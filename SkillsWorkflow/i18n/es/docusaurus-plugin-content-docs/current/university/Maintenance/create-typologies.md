@@ -11,21 +11,8 @@ Los usuarios tienen un cargo en la empresa para la que trabajan y todos los usua
 
 ![img-box-shadow](/img/static/img/Typologies.png)
 
-
-
 Para crear la tipología navegue hasta Mantenimiento y ubique la opción "Tipologías"
-
 
 Haga clic en el icono "+" ubicado en la esquina superior derecha de la pantalla.
 
-
 Es necesario rellenar los campos registrados en rojo
-
-
-
-
-
-
-
-
-
