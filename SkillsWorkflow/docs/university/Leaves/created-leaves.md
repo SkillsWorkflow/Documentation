@@ -13,7 +13,7 @@ Haga clic en la esquina superior derecha en el icono "+"
 
 <figure>
 
-![img-box-shadow](/img/university/created_leaves1.png)
+![img-box-shadow](/img/university/maintenance/created_leaves1.png)
 </figure>
 
 
@@ -32,7 +32,7 @@ Para que el Permiso/Vacaciones sea visible para los usuarios, debe tener marcado
 
  <figure>
 
-![img-box-shadow](/img/university/created_leaves2.png)
+![img-box-shadow](/img/university/maintenance/created_leaves2.png)
 </figure>
 
 - Permitir medio día: La opción Pemitir Mediodia tiene que estar activada

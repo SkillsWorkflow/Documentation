@@ -24,7 +24,7 @@ Los tamples se pueden utilizar para crear proyectos, contratos, trabajos y presu
 
 <figure>
 
-![img-box-shadow](/img/university/description.png) 
+![img-box-shadow](/img/university/maintenance/description.png) 
 <figcaption>Maintenance module</figcaption>
 
 </figure>
@@ -49,7 +49,7 @@ Para guardar haga clic en "Aceptar"
 
 <figure>
 
-![img-box-shadow](/img/university/description.templates.png) 
+![img-box-shadow](/img/university/maintenance/description-templates.png) 
 <figcaption>Maintenance module</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ Puede crear un tipo o puede asociarlo con un tipo ya creado eligiendo en el camp
 
 <figure>
 
-![img-box-shadow](/img/university/Types.png)
+![img-box-shadow](/img/university/maintenance/types.png)
 
 </figure>
 
