@@ -31,14 +31,11 @@ Total de Dias de Ausências: Insira numericamente o número de dias equivalentes
 ![img-box-shadow](/img/university/created_leaves2.png)
 </figure>
  
-**Permitir meio-período**: Verifique se esta ausência permite saída em meio-período.
-**Permitir seleção de fim de semana**: Habilite em ausências que possam ter esta permissão, como Férias.
-**Permitir Seleção de Férias**: Permite inserir férias durante o período desta ausência.
-**Contabilizado em Quadros de Horários** : Assinado por Padrão, significa que a ausência em questão aparecerá no quadro de horários.
-**HR Approved Only**: Requer aprovação do departamento de RH.
-**Licença em Horas** : Para ausências que podem ser definidas em horas, como ausência de consulta médica.
-**Planeável**: Campo obrigatório que ativa a ausência.
- 
-**Arquivos Obrigatórios**: Quando for necessário anexar arquivos, como atestado médico.
- 
- 
+- **Permitir meio-período** - Verifique se esta ausência permite saída em meio-período.
+- **Permitir seleção de fim de semana** - Habilite em ausências que possam ter esta permissão, como Férias.
+- **Permitir Seleção de Férias** - Permite inserir férias durante o período desta ausência.
+- **Contabilizado em Quadros de Horários** - Assinado por Padrão, significa que a ausência em questão aparecerá no quadro de horários.
+- **HR Approved Only** - Requer aprovação do departamento de RH.
+- **Licença em Horas** - Para ausências que podem ser definidas em horas, como ausência de consulta médica.
+- **Planeável** - Campo obrigatório que ativa a ausência. 
+- **Arquivos Obrigatórios** - Quando for necessário anexar arquivos, como atestado médico.
