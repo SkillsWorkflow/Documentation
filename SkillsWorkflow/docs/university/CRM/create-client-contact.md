@@ -6,11 +6,6 @@ sidebar_label: 1. Create client contact
 
 In order to create a new client contact with all the client details, you should access the "CLIENTS" module and go into the "Client Contact" tab.
 
-<figure>
-
-<!-- ![img-box-shadow](/img/university/crm/crm-client1-1.png) -->
-<figcaption>Client module</figcaption>
-</figure>
 
 Select the client you wish to add the contact to.
 
@@ -22,11 +17,7 @@ To create a new client contact, you should follow the steps below:
 4. Save all the changes made by clicking on the dis symbol.
 > To remove a line/client contact, you will only need to click on the "x" button.
 
-<figure>
 
-<!-- ![img-box-shadow](/img/university/crm/crm-client1-2.png) -->
-<figcaption>Adding new contact line</figcaption>
-</figure>
 
 Once created, the client contact can also be associated to another client.
 

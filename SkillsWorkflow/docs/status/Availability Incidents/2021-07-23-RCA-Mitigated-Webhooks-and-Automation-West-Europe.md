@@ -1,7 +1,7 @@
 ---
 id:  2021-07-23-RCA-Mitigated-Webhooks-and-Automation-West-Europe
 title: RCA - Mitigated - Webhooks and Automation - West Europe - 23-07-2021
-sidebar_label: RCA - Mitigated - Search - Intermittent Errors - All Regions - 28-02-2022
+sidebar_label: RCA - Mitigated - Webhooks and Automation - West Europe - 23-07-2021
 ---
 
 # Impact summary
