@@ -32,7 +32,7 @@ To create a new **Expense Sheet** (multi-expense aggregating sheet), take the fo
 
 4. Fill the Expense's fields:
 
-. **Title** - A name which helps to easly find a specific expense.
-. **Department** - The department to which the user belongs to.
-. **Type** - Select the type of expense (this information is very important, it will define the flow of the expense).
-. **Start Date / End Date** - Select the start date of the expense and the end date (should reflect the date on which the employee is reimbursed).
+- **Title** - A name which helps to easly find a specific expense.
+- **Department** - The department to which the user belongs to.
+- **Type** - Select the type of expense (this information is very important, it will define the flow of the expense).
+- **Start Date / End Date** - Select the start date of the expense and the end date (should reflect the date on which the employee is reimbursed).
