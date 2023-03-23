@@ -13,7 +13,7 @@ click in the upper right corner on the "+" icon
 
 <figure>
 
-![img-box-shadow](/img/university/createdLeaves.png)
+![img-box-shadow](/img/university/maintenance/createdLeaves.png)
 <figcaption></figcaption>
 </figure>
 
@@ -31,28 +31,28 @@ Total Dys of of Absences: Numerically enter the number of days equivalent to thi
 
 <figure>
 
-![img-box-shadow](/img/university/created_leaves2.png)
+![img-box-shadow](/img/university/maintenance/created_leaves2.png)
 <figcaption></figcaption>
 </figure>
  
  
  
 
--**Allow half-day**: Check if this absence allows part-time departure. 
+-**Allow half-day** - Check if this absence allows part-time departure. 
 
--**Allow weekend selection**: Enable on absences that may have this permission, such as Vacations.
+-**Allow weekend selection** - Enable on absences that may have this permission, such as Vacations.
 
--**Allow Vacation Selection**: Allows you to insert vacations during the period of this absence.
+-**Allow Vacation Selection** - Allows you to insert vacations during the period of this absence.
 
--**Accounted in Timesheets** : Signed by Default, it means that the absence in question will appear in the timesheet.
+-**Accounted in Timesheets** - Signed by Default, it means that the absence in question will appear in the timesheet.
 
--**HR Approved Only**: Requires HR department approval.
+-**HR Approved Only** - Requires HR department approval.
 
--**Leave in Hours** : For absences that can be set in hours, such as a Doctor's Appointment absence.
+-**Leave in Hours** - For absences that can be set in hours, such as a Doctor's Appointment absence.
 
--**Planable**: Required field that activates the absence.
+-**Planable** - Required field that activates the absence.
 
--**Mandatory Files**: When you need to attach files, such as a medical certificate.
+-**Mandatory Files** - When you need to attach files, such as a medical certificate.
 
 
  
