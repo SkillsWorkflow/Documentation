@@ -28,7 +28,7 @@ Screen_Shot_2018-08-08_at_14.24.08.png
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-client1-3.png)
-<figcaption>Associating client contact with another client</figcaption>
+<figcaption>Associando o contato do cliente a outro cliente</figcaption>
 </figure>
 
 Ao clicar na opção Salvar/Guardar, o contato ficará automaticamente disponível no cliente.
@@ -36,6 +36,6 @@ Não será necessário salvar, pois o sistema irá fazê-lo automaticamente.
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-client1-4.png)
-<figcaption>Contact details automatically saved</figcaption>
+<figcaption>Detalhes de contato salvos automaticamente</figcaption>
 </figure>
 
