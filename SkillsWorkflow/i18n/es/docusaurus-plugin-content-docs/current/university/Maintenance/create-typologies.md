@@ -9,7 +9,7 @@ Los usuarios tienen un cargo en la empresa para la que trabajan y todos los usua
 
 <figure>
 
-![img-box-shadow](/img/static/img/Typologies.png)
+![img-box-shadow](/img/university/maintenance/typologies.png)
 
 Para crear la tipología navegue hasta Mantenimiento y ubique la opción "Tipologías"
 
