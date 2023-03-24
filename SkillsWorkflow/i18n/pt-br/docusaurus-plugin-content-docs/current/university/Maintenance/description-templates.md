@@ -22,7 +22,7 @@ Temples podem ser usados para criar projetos, contratos, trabalhos e estimativas
 
 <figure>
 
-![img-box-shadow](/img/university/description.png) 
+![img-box-shadow](/img/university/maintenance/description.png) 
 <figcaption>Maintenance module</figcaption>
 
 </figure>
@@ -46,7 +46,7 @@ Para salvar clique em "OK"
 
 <figure>
 
-![img-box-shadow](/img/university/description.templates.png) 
+![img-box-shadow](/img/university/maintenance/description-templates.png) 
 <figcaption>Maintenance module</figcaption>
 </figure>
 
@@ -68,6 +68,6 @@ Após a criação do Template, é necessário vinculá-lo ao Departamento que o 
 
 <figure>
 
-![img-box-shadow](/img/university/Types.png)
+![img-box-shadow](/img/university/maintenance/types.png)
 
 </figure>
