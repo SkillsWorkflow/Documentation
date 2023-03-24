@@ -9,7 +9,7 @@ Os usuários possuem um cargo na empresa em que trabalham e todos os usuários c
 
 <figure>
 
-![img-box-shadow](/static/img/Typologies.png)
+![img-box-shadow](/img/university/maintenance/typologies.png)
 </figure>
 
 Para criar a tipologia navegue até Manutenção e localize a opção "Tipologias"
