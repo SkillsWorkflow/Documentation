@@ -9,19 +9,6 @@ Users have a position in the company they work for and all users registered in t
 
 To create the tipologie navigate to Maintenance and locate the "Typologies" option
 
-
 Click on the "+" icon located in the upper right corner of the screen.
 
-
-
-It is necessary to fill in the fields registered in red
-
-
-
-
-
-
-
-
-
-
+It is necessary to fill in the fields registered in red.
