@@ -315,17 +315,7 @@ function addSaveToSubHeader(documentName: string, component: dxForm,
 #### Basic Usage
 
 ```javascript
-SW.UI.Buttons.addSaveButtonToSubHeader("commercialclient", e.component, 
-   {
-       onClick: (currentDocument, formComponent, othersFields) => {
-                   SW.Toastr.toastr_Success(
-                       SW.getTranslation(currentDocument.TypeName.charAt(0).toUpperCase() 
-                       + currentDocument.TypeName.slice(1) + "Saved"), currentDocument.TypeName);
-                   return true;
-               },
-       postChangesOnFeed: true
-   }
-);  
+SW.UI.Buttons.addSaveButtonToSubHeader("commercialclient", e.component, {postChangesOnFeed: true });  
 ```
 
 #### Response
