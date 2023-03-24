@@ -1,10 +1,8 @@
 ---
-id:  created-leaves
-id: created-leaves.md
+id: created-leaves
 title: Criar Ausências
 sidebar_label: Criar Ausências 
 ---
-
 
 Vários tipos de ausências podem ser criadas em uma empresa, como por exemplo Licença Médica, Licença Maternidade, Férias, entre outras.
 
@@ -13,7 +11,8 @@ Para criar uma ausência, navegue para "Manutenção" e procure o módulo "Tipo 
 Clique no canto superior direito no ícone "+"
 
 <figure>
-![img-box-shadow](/img/university/created_leaves1.png)
+
+![img-box-shadow](/img/university/maintenance/created_leaves1.png)
 </figure>
 
 Será aberta uma tela para cadastrar a Ausência desejada.
@@ -26,9 +25,9 @@ Empresa (é importante preenchê-lo, principalmente em ambientes compartilhados 
  
 Total de Dias de Ausências: Insira numericamente o número de dias equivalentes a esta ausência.
  
- 
 <figure>
-![img-box-shadow](/img/university/created_leaves2.png)
+
+![img-box-shadow](/img/university/maintenance/created_leaves2.png)
 </figure>
  
 - **Permitir meio-período** - Verifique se esta ausência permite saída em meio-período.
