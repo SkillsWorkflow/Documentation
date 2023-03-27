@@ -1,11 +1,9 @@
 ---
-title: 'Okta SSO integration'
-description: Learn how to configure single sign-on between Okt and Skills Workflow.
+title: 'Okta SSO'
+sidebar_label: Okta SSO
 ---
 
-# Okta SSO integration
-
-In this article, you'll learn how to integrate with Okta. When you integrate Skills Workflow with Okta, you can:
+In this article, you'll learn how to integrate with Okta SSO. When you integrate Skills Workflow with Okta, you can:
 
 * Control in Okta who has access to Skills Workflow.
 * Enable your users to be automatically signed-in to Skills Workflow with their Okta accounts.
@@ -17,11 +15,8 @@ To get started, you need the following items:
 * An Okta subscription.
 * Skills Workflow single sign-on (SSO) enabled subscription.
 
-## Scenario description
-
-In this tutorial, you configure and test Azure AD SSO in a test environment.
-
-* It is only supported **SP** initiated SSO.
+:::note Currently it is only supported **SP** initiated SSO.
+:::
 
 <!-- to be added once app is available on Okta App Gallery
 
@@ -57,9 +52,10 @@ To configure and test Okta SSO, perform the following steps:
 
 Follow these steps to enable Okta SSO in the Admin center.
 
-1. In the Admin center, on the left pane navigate to "Applications" and click on "Create New App".   
+1. In the **Admin center**, on the left pane navigate to **Applications** and click on **Create New App**.   
 
     ![Screenshot shows button to create a new App.](/img/integrations/okta/1-Okta-Applications.png "Create New App")
+    ![Screenshot shows button to create a new App.](/img/integrations/okta/1-Okta-Create-App-Integration.png "Create New App")
 
 2. For Sign-in method, select **SAML 2.0**, and click **Next**.   
 
@@ -67,11 +63,11 @@ Follow these steps to enable Okta SSO in the Admin center.
 
 3. On the **General Settings**, configure the  **App Name** and **App Logo**.
 
-   ![Screenshot shows button to add an App.](/img/integrations/okta/3-Okta-AppNameImage.png "App Name and Image")
+   ![Screenshot shows button to add an App.](/img/integrations/okta/3-Okta-AppNameImage.png "App Name and Logo")
 
 4. On the **SAML Settings** section, perform the following steps:
 
-    - In the **Sign-on URL** text box, type the URL: `https://auth.skillsworkflow.com/saml2/acs`
+    - In the **Single Sign-on URL** text box, type the URL: `https://auth.skillsworkflow.com/saml2/acs`
     - In the **Audiance URI (SP Entity ID)** text box, type the URL: `https://auth.skillsworkflow.com/saml2`
     - Leave the other settings with the default values
 
@@ -79,11 +75,11 @@ Follow these steps to enable Okta SSO in the Admin center.
         ![Screenshot shows button to add an App.](/img/integrations/okta/5-Okta-Complete-SAML2.png "App Name and Image")
     
     
-5. On the **Are you a Customer or a Partner** section, select the  **I'm an Okta customer adding an internal app**. And the click on **Finish**.
+5. On the **Are you a Customer or partner** section, select the  **I'm an Okta customer adding an internal app**, and then click on **Finish**.
 
 	![Screenshot shows the Certificate download link.](/img/integrations/okta/6-Okta-Finish-SAML2.png "Finish")
 
-6. On the **Assignments** tab, assign the people or groups that will have access to use the SSO App.
+6. Once the app is created, go to the **Assignments** tab, assign the people or groups that will have access to use the SSO App.
 
 	![Screenshot shows how to assing people](/img/integrations/okta/7-Okta-Assign-People.png "Metadata")
 
@@ -99,3 +95,24 @@ Follow these steps to enable Okta SSO in the Admin center.
 
     ![Screenshot shows Okta Configuration.](/img/integrations/okta/9-Okta-SignOn-Data-Configuration.png "Metadata Configuration")
     ![Screenshot shows Skills Workflow SSO Configuration.](/img/integrations/okta/10-Okta-SkillsWorkflow-SSO-Setup.png "Metadata Configuration")
+
+## Improving user experience
+
+To provide a better user experience while using OKTA and Skills Workflow integration, it is recommended to:
+
+   -   Not displaying the SSO app to the users
+   -   But create a Bookmark App within OKTA that will provide the full SSO user experience
+
+Please proceed with the following steps:
+
+1. On the **General tab**, set the **application visibility** as **not visible** to the users
+
+    ![Screenshot shows Okta App Visibility.](/img/integrations/okta/11-Okta-Hide-App-Icon.png "Do not display application icon to users")
+
+3. Go to **Applications**, and create a **Bookmark App**. 
+   
+   - Set the **Application Name** as Skills Workflow
+   - Set the **URL** with the Tenant URL followed by /SSOLogin
+   - And assign the users to this new **Bookmark App**
+
+    ![Screenshot shows Okta App Visibility.](/img/integrations/okta/12-Okta-Create-Bookmark-App.png "Do not display application icon to users")
