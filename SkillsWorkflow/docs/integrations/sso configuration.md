@@ -22,7 +22,7 @@ Regarding the SSO, the standard that is in use is in #Production:
 <figure>
 
 ![img-box-shadow](/img/integrations/ssoconfiguration1.png)
-<figcaption>Project created in Skills Workflow</figcaption>
+<figcaption>Login Page</figcaption>
 </figure>
 
 :::info
