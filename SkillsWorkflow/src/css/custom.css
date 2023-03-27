@@ -208,7 +208,7 @@ dt {
   color: #333;
 }
 
-ol {
+/* ol {
   list-style: none;
   counter-reset: item;
   font-size: 14px;
@@ -216,14 +216,16 @@ ol {
 }
 
 ol li {
-  counter-increment: item;
+  counter-increment: item; 
   margin-bottom: 5px;
   align-items: baseline;
   display: flex;
+  flex-wrap: wrap;
 }
+
 ol li:before {
   margin-right: 10px;
-  content: counter(item);
+  content: counter(item); 
   background: #86C5FF;
   border-radius: 100%;
   color: white;
@@ -232,7 +234,7 @@ ol li:before {
   text-align: center;
   display: inline-block;
   align-items: baseline;
-}
+}  */
 
 a {
   text-decoration: none !important;
@@ -327,8 +329,6 @@ html[data-theme='dark'] .skills_src-pages-:hover {
   font-weight: 600;
   text-transform: uppercase
 }
-
-
 
 .theme-admonition {
   margin-top: 15px ;

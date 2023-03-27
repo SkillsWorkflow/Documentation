@@ -24,13 +24,6 @@ sidebar_label: AzureAdBlocker
 }
 ```
 - Global Query "GetDelinquentUsers"
-``` 
-SELECT  ssu.Oid, ssu.UserName, u.AdUserName 
-FROM    SecuritySystemUser ssu, [User] u 
-WHERE   ssu.Oid = u.Oid 
-  AND   u.HasToFillTimesheets = 1 
-  AND   u.AdUserName LIKE '%@%.%'
-```
 
 ### Block Workflow
 - Scheduled Automation once a Day
