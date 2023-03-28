@@ -114,5 +114,8 @@ Please proceed with the following steps:
    - Set the **Application Name** as Skills Workflow
    - Set the **URL** with the Tenant URL followed by /SSOLogin
    - And assign the users to this new **Bookmark App**
+   - Once it is created, go back to Bookmark App settings and under **General** tab, add a **Logo** to the Bookmark App
 
-    ![Screenshot shows Okta App Visibility.](/img/integrations/okta/12-Okta-Create-Bookmark-App.png "Do not display application icon to users")
+    ![Screenshot shows Okta App Visibility.](/img/integrations/okta/12-Okta-Create-Bookmark-App.png "Configuring Bookmark app")
+    ![Screenshot shows Okta App Visibility.](/img/integrations/okta/13-Okta-Edit-Bookmark-App-Logo.png "Adding Bookmark app Logo")
+    ![Screenshot shows Okta App Visibility.](/img/integrations/okta/14-Okta-End-User.png "Okta End User App")
