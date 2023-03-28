@@ -26,7 +26,7 @@ Solicitudes de emisión de notas de crédito al cliente en el sistema informar a
 
 Puede navegar al área de notas de crédito del cliente y puede encontrar el documento que acaba de emitir
 
-::: Nota
+:::note
 Para emitir el crédito, las facturas incluidas en el presupuesto deben estar en una etapa "integrada"
 :::
 
