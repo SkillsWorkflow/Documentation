@@ -30,7 +30,7 @@ Para crear un nuevo producto, tendrás que:
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-v3.png)
-<figcaption>caption</figcaption>
+<figcaption></figcaption>
 </figure>
 
 > Asociación de producto a una empresa específica
@@ -44,5 +44,5 @@ Para crear un nuevo producto, tendrás que:
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-V4.png)
-<figcaption>caption</figcaption>
+<figcaption></figcaption>
 </figure>
