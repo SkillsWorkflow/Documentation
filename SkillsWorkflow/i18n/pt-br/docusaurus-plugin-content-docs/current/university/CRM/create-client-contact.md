@@ -23,7 +23,6 @@ Como associar um contato de cliente existente a outro cliente.
 
 Escolha o cliente a que pretende associar um contato.
 Ao clicar na opção "link", o sistema mostrará uma caixa com todos os contatos disponíveis. Basta selecionar o contato pretendido e clicar na opção Salvar/Guardar.
-Screen_Shot_2018-08-08_at_14.24.08.png
 
 <figure>
 
