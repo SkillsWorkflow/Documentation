@@ -23,7 +23,7 @@ To create a new product, you will have to:
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-V2.png)
 
-<figcaption>caption</figcaption>
+<figcaption></figcaption>
 </figure>
 
 - Type the product's name, and check the box "Active"
@@ -33,7 +33,7 @@ To create a new product, you will have to:
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-v3.png)
 
-<figcaption>caption</figcaption>
+<figcaption></figcaption>
 </figure>
 
 > Associating product to a specific company
@@ -48,5 +48,5 @@ To create a new product, you will have to:
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-V4.png)
 
-<figcaption>caption</figcaption>
+<figcaption></figcaption>
 </figure>
