@@ -1,10 +1,10 @@
 ---
 id:  ui-selectBox
 title: ' '
-sidebar_label: SelectBox
+sidebar_label: Select Box
 ---
 
-# SelectBox
+# Select Box
 
 A sub namespace of UI, exclusive for select box operations
 
