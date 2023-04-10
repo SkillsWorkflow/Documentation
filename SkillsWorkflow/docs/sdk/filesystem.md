@@ -1,10 +1,10 @@
 ---
 id: filesystem
 title: " "
-sidebar_label: FileSystem
+sidebar_label: File System
 ---
 
-# FileSystem
+# File System
 
 The namespace FileSystem provides to developers a method to easily upload files to a folder.
 
