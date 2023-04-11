@@ -6,22 +6,16 @@ sidebar_label: Mark as Saved
 
 #### Description
 
-This method indicates that the data was not saved yet.
+After editing a field in a workspace and before saving the changes. 
+When you try to navigate to another page, the method will use that information to show a prompt to confirm if you want to navigate without saving the changes.
 
-e.g. if you edit a field in a Workspace, and you haven't saved, when you try to to navigate to the other page, it will use the information that you passed previously, to show you a "prompt" asking if you want to navigate even without saving.
 
 ---
 
 #### Method(s)
 
 ```javascript
-1    public markAsSaved(dashboardDefinitionId: string): void {
-        const eventData: IMarkAsSaved = {
-            Name: DashboardEventName.MarkAsSaved,
-            DashboardDefinitionId: dashboardDefinitionId
-        };
-        this.eventHubService.triggerApplicationEvent(new ApplicationEvent(ApplicationEventType.MarkAsSaved, eventData));
-    }
+SW.markAsSaved()
 ```
 
 <table className="custom-table">
