@@ -33,7 +33,7 @@ Para criar um novo produto, você terá que:
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-v3.png)
-<figcaption>caption</figcaption>
+<figcaption></figcaption>
 </figure>
 
  
@@ -51,5 +51,5 @@ Quando todas as informações estiverem completas, clique em cima do produto par
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-V4.png
 
-<figcaption>caption</figcaption>
+<figcaption></figcaption>
 </figure>
