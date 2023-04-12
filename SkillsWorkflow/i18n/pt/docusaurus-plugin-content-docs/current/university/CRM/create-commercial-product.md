@@ -23,8 +23,8 @@ Para criar um novo produto, você terá que:
 
 <figure>
 
-![img-box-shadow](/img/university/crm/crm-commercialproduct-V2.png
-<figcaption>caption</figcaption>
+![img-box-shadow](/img/university/crm/crm-commercialproduct-V2.png)
+<figcaption></figcaption>
 </figure>
 
 - Escreva o nome do produto e marque a caixa "Activo"
@@ -51,5 +51,5 @@ Quando todas as informações estiverem completas, clique em cima do produto par
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-commercialproduct-V4.png)
-<figcaption>caption</figcaption>
+<figcaption></figcaption>
 </figure>
