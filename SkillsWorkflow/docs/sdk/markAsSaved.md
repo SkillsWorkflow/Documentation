@@ -6,9 +6,7 @@ sidebar_label: Mark as Saved
 
 #### Description
 
-After editing a field in a workspace and before saving the changes. 
-When you try to navigate to another page, the method will use that information to show a prompt to confirm if you want to navigate without saving the changes.
-
+This method can be used to mark changes as saved, so when navigating, the prompt will not be shown saying that are changes that were not saved
 
 ---
 
