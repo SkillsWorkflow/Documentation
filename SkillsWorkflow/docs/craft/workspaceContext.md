@@ -1,7 +1,7 @@
 ---
 id:  context
-title: 'WorkspaceContext'
-sidebar_label: WorkspaceContext
+title: 'Workspace Context'
+sidebar_label: Workspace Context
 ---
 
 

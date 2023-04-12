@@ -1,6 +1,6 @@
 ---
 id: tagbox
-title: TagBoxs
+title: TagBox
 sidebar_label: TagBox
 ---
 
