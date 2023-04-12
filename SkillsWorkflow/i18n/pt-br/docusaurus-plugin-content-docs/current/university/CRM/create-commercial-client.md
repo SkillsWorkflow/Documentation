@@ -24,7 +24,7 @@ Nível de Timesheet - selecione até que nível os usuários poderão colocar ho
 <figure>
 
 ![img-box-shadow](/img/university/crm/Client.png)
-<figcaption>New client creation screen</figcaption>
+<figcaption>Ecrã de criação de novo cliente</figcaption>
 </figure>
 
 >Após salvar as alterações de cliente, vários sub-módulos irão aparecer automaticamente no final da tela, onde você poderá adicionar novos produtos e associar usuários.
