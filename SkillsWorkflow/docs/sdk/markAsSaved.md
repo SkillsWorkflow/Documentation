@@ -13,7 +13,7 @@ This method can be used to mark changes as saved, so when navigating, the prompt
 #### Method(s)
 
 ```javascript
-SW.markAsSaved()
+function markAsSaved(dashboardDefinitionId: string): void
 ```
 
 <table className="custom-table">
