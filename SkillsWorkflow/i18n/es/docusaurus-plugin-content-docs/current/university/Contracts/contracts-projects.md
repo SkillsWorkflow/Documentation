@@ -5,8 +5,7 @@ sidebar_label: 3. Presupuesto asociado al proyecto
 sidebar_position: 3
 ---
 
-
-::: note
+:::note
 Los proyectos se pueden vincular a una tarifa de cliente para deducir las horas vendidas anteriormente.
 :::
 
