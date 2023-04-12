@@ -29,6 +29,6 @@ Para validar la emisión correcta de documentos, simplemente navegue al área de
 
 <figure>
 
-![img-box-shadow](/img/university/bills/purchase-orders1.png)
+![img-box-shadow](/img/university/bills/bills-lesson1-5.png)
 <figcaption></figcaption>
 </figure>
