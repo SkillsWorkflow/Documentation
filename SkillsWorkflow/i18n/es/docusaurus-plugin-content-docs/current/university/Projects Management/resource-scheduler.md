@@ -34,7 +34,7 @@ Esta función lo ayudará a planificar el tiempo de sus recursos de manera más 
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-2.png)
 
-<figcaption>Resource filters</figcaption>
+<figcaption>Filtros de recursos</figcaption>
 </figure>
 
 ### Asignación de Jobs
@@ -55,7 +55,7 @@ Esta función lo ayudará a planificar el tiempo de sus recursos de manera más 
 
 ![img-box-shadow-sm](/img/university/project-management/project-management-lesson3-3.png)
 
-<figcaption>Unassigned Jobs</figcaption>
+<figcaption>Trabajos no asignados</figcaption>
 </figure>
 
 - Para asignar un Job específico, solo necesita arrastrar y soltar el Job en el calendario de la persona que desea asignar, considerando las fechas definidas.
@@ -66,7 +66,7 @@ Esta función lo ayudará a planificar el tiempo de sus recursos de manera más 
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-4.png)
 
-<figcaption>Assign a Job</figcaption>
+<figcaption>Asignar un trabajo</figcaption>
 </figure>
 
 ### Carga de trabajo y capacidad
@@ -85,7 +85,7 @@ Esta función lo ayudará a planificar el tiempo de sus recursos de manera más 
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-5.png)
 
-<figcaption>Resource Availability</figcaption>
+<figcaption>Disponibilidad de recursos</figcaption>
 </figure>
 
 - Para ayudarlo a planificar mejor la disponibilidad de sus recursos, las licencias y vacaciones también aparecerán en el calendario.
@@ -96,5 +96,5 @@ Esta función lo ayudará a planificar el tiempo de sus recursos de manera más 
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-5.png)
 
-<figcaption>Leaves</figcaption>
+<figcaption>Ausencias</figcaption>
 </figure>
