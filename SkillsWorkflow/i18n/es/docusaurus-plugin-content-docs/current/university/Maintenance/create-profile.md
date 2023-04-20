@@ -1,7 +1,7 @@
 ---
 id: create-profile
-title: Crear Perfil
-sidebar_label: 3. Crear Perfil
+title: Editar Perfil
+sidebar_label: 3. Editar Perfil
 sidebar_position: 3
 ---
 
