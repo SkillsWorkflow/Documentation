@@ -34,7 +34,7 @@ Planning your resources helps you to make your availability more effective by mo
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-2.png)
-<figcaption>Resource filters</figcaption>
+<figcaption>Resource filtros</figcaption>
 </figure>
 
 ### Assign Activities 
@@ -64,7 +64,7 @@ Planning your resources helps you to make your availability more effective by mo
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-4.png)
-<figcaption>Assign a Job</figcaption>
+<figcaption>Atribuir um Job</figcaption>
 </figure>
 
 ### Workload and availability
@@ -82,7 +82,7 @@ Planning your resources helps you to make your availability more effective by mo
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-5.png)
-<figcaption>Resource Availability</figcaption>
+<figcaption>Resource Disponibilidade</figcaption>
 </figure>
 
 - To help you plan your resource availability, absences are also represented in the calendar.
@@ -92,5 +92,5 @@ Planning your resources helps you to make your availability more effective by mo
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson3-5.png)
-<figcaption>Leaves</figcaption>
+<figcaption>Ausências</figcaption>
 </figure>
