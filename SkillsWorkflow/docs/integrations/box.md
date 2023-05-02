@@ -4,7 +4,7 @@ title: Box
 sidebar_label: Box
 ---
 
-Skills Workflow integrates with Box.
+### Description
 
 The integration allows you to:
 
@@ -13,7 +13,9 @@ The integration allows you to:
 - Let you team get quick and easy access to the files
 - Share the direct link to the files
 
-## Files
+---
+
+### Files
 
 When a file is uploaded into Box, it is automatically available in Skills Workflow.
 
@@ -27,8 +29,9 @@ When a file is uploaded into Box, it is automatically available in Skills Workfl
 <figcaption>Posting file's link on the Project's feed</figcaption>
 </figure>
 
+---
 
-## Folders
+### Folders
 
 Not all folders are synched between the two systems:
 - To launch Box, click on the Cloud icon
@@ -99,14 +102,18 @@ When a folder is created in Skills Workflow, it is created automatically in Box.
 <figcaption>Folder structure in Box</figcaption>
 </figure>
 
-## Synching
+---
+
+### Synching
 The synching is performed by a background process. Whenever a document is created or his folder name is changed in Skills Workflow, the process will replicate it in Box.
 
 - The synching process is bi-directional
 - Skills Workflow has a reference of the ID of the files and folders in Box
 - The users will see the same file structure (starting on the root) in both systems
 
-## Configuring 
+---
+
+### Configuring 
 To configure Box integration, it is necessary to:
 
 1. Authorise a new Custom Application in the agency Box's enterprise settings.

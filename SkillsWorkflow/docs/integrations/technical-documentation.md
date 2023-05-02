@@ -1,5 +1,5 @@
 ---
-id:  technical documentation
+id:  technical-documentation
 title: Technical Documentation
 sidebar_label: Technical Documentation
 ---
@@ -12,14 +12,15 @@ API URLs:
 
 You can try the API directly from the documentation, or you can use other application (e.g. PostMan) 
 
-To use the API you will need to send 2 Headers in the request, as required in the documentation: X-AppId e X-AppSecret
+To use the API you will need to send 3 Headers in the request, as required in the documentation: X-AppTenant, X-AppId and X-AppSecret
 
 You can also check our open source site and check some examples of using the API: https://github.com/SkillsWorkflow/api-demos
 
 If you need to, please request the test (UAT) environment credentials for your Agency:
 
-- AppId
-- AppSecret
+- X-AppTenant
+- X-AppId
+- X-AppSecret
 
 Example on how to get all companies:
 
@@ -29,11 +30,9 @@ Example on how to get all companies:
 <figcaption>GET call for all companies </figcaption>
 </figure>
 
-
 The API is constantly evolving (but never having breaking changes):
 
 - If you need something that you do not find in the API, do not hesitate to ask and we will analyze the feasibility of adding to the API
-
 
 <figure>
 

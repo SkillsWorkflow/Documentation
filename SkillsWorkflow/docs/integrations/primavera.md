@@ -673,11 +673,10 @@ The fields that will be populated into Primavera:
 
 </TabItem>
 </Tabs>
+
 ---
 
 ### Conclusion
 
 The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies.
 The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
-

@@ -1,7 +1,7 @@
 ---
-id: create-profile
-title: Criar Perfil
-sidebar_label: 3. Criar Perfil
+id: edit-profile
+title: Editar Perfil
+sidebar_label: 3. Editar Perfil
 sidebar_position: 3
 ---
 
@@ -22,6 +22,4 @@ em seu SkillsWorkflow.
 Por padrão, o sistema sinaliza as cinco primeiras notificações que permitem receber alertas por push e email para todas as alterações do sistema.
 :::
 
-
 Faça as alterações desejadas e, no final, clique no ícone no canto superior direito da tela.
-

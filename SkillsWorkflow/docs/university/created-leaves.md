@@ -10,7 +10,7 @@ To create a leave, navigate to "Maintenance" and look for the module "Leave Type
 
 <figure>
 
-![img-box-shadow](/img/university/maintenance/created_leaves1.png)
+![img-box-shadow](/img/university/maintenance/create_leaves1.png)
 <figcaption>Leave Type module</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ For the leave to be visible to users, it must have the **Active** and **Planned*
 
 <figure>
 
-![img-box-shadow](/img/university/maintenance/created_leaves2.png)
+![img-box-shadow](/img/university/maintenance/create_leaves2.png)
 <figcaption>Create leave form</figcaption>
 </figure>
 
