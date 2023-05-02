@@ -68,7 +68,7 @@ To have a custom Response you must configure the httpResponse.
             },
         "body": "{{['SendExpenseFile']}}"
     }
-}     
+}
 ```
 
 #### Template Description
@@ -102,6 +102,8 @@ To configure this action, the fields available are:
 * body
 * requestHeaders - Key-Value array - [{"name": "","value": ""}]
 * bodyFormData
+* IsApiCall - Default False
+* EnsureSuccessStatusCode - Default False
 
 ```json title="Template"
 {  
@@ -111,7 +113,9 @@ To configure this action, the fields available are:
     "Method": "GET/POST/PUT/PATCH/DELETE",  
     "bodyMediaType": "Json/Raw/UrlEncodedFormData/MultipartFormData/File",  
     "url": "",  
-    "body": "",  
+    "body": "",
+    "isApiCall":true,
+    "ensureSuccessStatusCode":false,
     "requestHeaders": [  
         {  
             "name": "",  
@@ -129,6 +133,8 @@ To configure this action, the fields available are:
 * next - The action that will be triggered after the current action been completed
 * Method - Should be set according to the method to be applied
 * url - The URL to be called
+* isApiCall - Is set, will append tenant Api Authority to request and add authentication Headers. Defaults to `true`
+* ensureSuccessStatusCode - If set, ensures that the response is a success Status Code (200 - 299). If not will throw an error and stop execution. Defaults to `False`
 * bodyMediaType - Allows you to manage the Request headers and body.
   * Please see on the tabs below the bodyMediaType available:
 
