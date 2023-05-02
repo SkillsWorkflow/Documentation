@@ -1,25 +1,27 @@
 ---
-id:  utilpro-integration
-title: UtilPro integration
-sidebar_label: UtilPro integration
+id:  utilpro
+title: UtilPro
+sidebar_label: UtilPro
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## File Transfer Technology
+### File Transfer Technology
 
 The CSV files are transferred via an SFTP server. The server must be set up by the Agency and credentials must be given to Skills Workflow. Files pertaining to data transfers should be placed in the Data directory on the SFTP server. Files pertaining to process requests should be placed in the Process directory on the SFTP server.
 
-## File Naming Conventions
+---
+
+### File Naming Conventions
 
 Each CSV filename will have a body and suffix. The name will convey information to both Agency and Skills Workflow as to the intent and content of the file as described below. The file name format will be as follows: body_suffix.csv
 
-### Body
+#### Body
 
 The body of the filename is simply used to give a friendly name or to designate specific content.
 
-### Suffix
+#### Suffix
 
 The filename suffix is used to ensure a unique file name and implies a process order when multiple files with the same prefix and body exist. The suffix is simply the date and time relevant to the content of the file in the following format: YYYYMMDDHHmmss.
 
@@ -30,37 +32,35 @@ HH – The two character hour, in 24 hour format, left padded with zero when nec
 mm – The two character minute, left padded with zero when necessary (00-59)
 ss – The two character second, left padded with zero when necessary (00-59)
 
-### File Naming Examples
+#### File Naming Examples
 
 The following are examples of file names. 
 
 - Users_20180815090119.csv – File originated by Agency, containing Users data to be consumed by Skills Workflow.
 
-## CSV Templates
+---
+
+### CSV Templates
 
 This section will describe the CSV templates for the currently known exchange processes. The consumer of the CSV files will move the file to the "Success" folder from the SFTP server when it has been processed successfully and to "Failure" folder when the process result fails.
 
-## Users
+---
 
-### User File
+### Users
+
+#### User File
 
 This will contain the user information requested by Skills Workflow. The frequency will be at least once per day. The user data is based on UltiPro information.
 
-### File Name
+#### File Name
 
 The file name that will always be used for this file: Users_YYYYMMDDHHmmss.csv where the YYYYMMDDHHmmss suffix indicates the as of date. This overrides any previous files information.
 
-### File Directory
+#### File Directory
 
 This file is to be placed in the Data directory on the SFTP server.
 
-Template
-
-````
-Please add here the template.
-```
-
-
+#### Template
 
 Template Description
 

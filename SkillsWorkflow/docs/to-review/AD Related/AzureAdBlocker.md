@@ -1,10 +1,7 @@
 ---
-id:  AzureAdBlocker
-title: 'AzureAdBlocker'
-sidebar_label: AzureAdBlocker
+id:  AzureAdUserBlocking
+title: Azure AD User Blocking
 ---
-
-# Office 365 AD User Blocker/Unblocker
 
 ## Enable and Disable User Account using Missing TimeSheets
 ### Requirements:
@@ -38,6 +35,7 @@ sidebar_label: AzureAdBlocker
                 - Body: ```{"accountEnabled":"false"}```
 
 #### Payload from GetDelinquentUsers Global Query:
+
 ```
 {
   "Data": [

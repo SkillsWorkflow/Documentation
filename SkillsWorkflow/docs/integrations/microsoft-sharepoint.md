@@ -1,5 +1,5 @@
 ---
-id:  microsoft sharepoint
+id:  microsoft-sharepoint
 title: Microsoft Sharepoint
 sidebar_label: Microsoft Sharepoint
 ---
@@ -28,7 +28,7 @@ The integration allows you to:
 
 <TabItem value="process">
 
-## Files
+### Files
 
 When a file is uploaded into SharePoint, it is automatically available in Skills Workflow.
 
@@ -41,8 +41,8 @@ When a file is uploaded in a comment from the Hard Drive:
 - A link is created and posted in the comment
 - A thumbnail will be also available in the comment
 
-
-## Mappings
+---
+### Mappings
 
  Sharepoint integration requires mappings between:
 
@@ -63,7 +63,8 @@ When a file is uploaded in a comment from the Hard Drive:
 <figcaption>Mapping Project to Sharepoint Sub-Site</figcaption>
 </figure>
 
-## Files
+---
+### Files
 
 When a file is uploaded in Skills Workflow, it will be available on the corresponding Sharepoint Sub-Site.
 
@@ -97,7 +98,8 @@ Whenever a document is created in Skills Workflow, a folder is created under its
 <figcaption>Access to the Sharepoint/One Drive</figcaption>
 </figure>
 
-## Synching
+---
+### Synching
 
 The synching is performed by a background process. Whenever a document is created or his folder name is changed in Skills Workflow, the process will replicate it in Sharepoint.
 
@@ -109,7 +111,8 @@ The synching is performed by a background process. Whenever a document is create
 
 <TabItem value="configuration">
 
-## Auth
+---
+### Auth
 
 The integration with SharePoint requires:
 
@@ -149,9 +152,5 @@ Please check below step by step how to configure an App:
 ![img-box-shadow](/img/integrations/msharepoint4.png)
 <figcaption>Select the permissions that the App will have when managing data</figcaption>
 </figure>
-
-
 </TabItem>
-
-
 </Tabs>

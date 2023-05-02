@@ -4,20 +4,24 @@ title: Reach
 sidebar_label: Reach
 ---
 
+### Description
+
 This article describes how to exchange data between Reach (SAP SuccessFactors) and Skills Workflow.
 
-## File Transfer Technology
+---
+### File Transfer Technology
 
 - The .csv files will be transferred via an SFTP server.
 - The server must be set up by the Agency and credentials must be given to Skills Workflow.
 - Files pertaining to data transfers are to be placed in the Data directory on the SFTP server.
 - Files pertaining to process requests are to be placed in the Process directory on the SFTP server.
 
-## File Naming Conventions
+---
+### File Naming Conventions
 
 Each filename will have a prefix, body, and suffix. The name will convey information to both Agency and Skills Workflow as to the intent and content of the file as described below. The file name format will be as follows: prefix_body_suffix.csv
 
-### Prefix
+#### Prefix
 
 The filename prefix will consist of two characters. The first character indicates the originator of the file. The second character indicates the type of information contained in the file.
 
@@ -32,11 +36,11 @@ Second Character
 - P – Process Command
 - R – Data/Process Results
 
-### Body
+#### Body
 
 The body of the filename is simply used to give a friendly name or to designate specific content.
 
-### Suffix
+#### Suffix
 
 The filename suffix is used to ensure a unique file name and implies a process order when multiple files with the same prefix and body exist. The suffix is simply the date and time relevant to the content of the file in the following format: YYYYMMDDHHmmss.
 
@@ -47,30 +51,31 @@ The filename suffix is used to ensure a unique file name and implies a process o
 - mm – The two character minute, left padded with zero when necessary (00-59)
 - ss – The two character second, left padded with zero when necessary (00-59)
 
-### File Naming Examples
+#### File Naming Examples
 
 The following are examples of file names. The CSV template details will follow.
 
 - AD_UserAccounts_20180815090119.csv – File originated by Agency, containing Users Accounts data to be consumed by Skills Workflow
 
-## CSV Templates
+---
+### CSV Templates
 
 This section will describe the CSV templates for the currently known exchange processes. The consumer of the CSV files will delete the file from the SFTP server when it has been processed regardless of the process results: success, failure or otherwise.
 
 
-### User Accounts
+#### User Accounts
 
 This will contain the user information requested by Skills Workflow. The frequency will be at least once per day but may be a few times per day. The user data is based on a combination of Reach information. Reach data is only captured once per day. The file will contain the list of users whose data has changed.
 
-### File Name
+#### File Name
 
 The file name that will always be used for this file: AD_UserAccounts_YYYYMMDDHHmmss.csv where the YYYYMMDDHHmmss suffix indicates the as of date. This overrides any previous files information.
 
-### File Directory
+#### File Directory
 
 This file is to be placed in the Data directory on the SFTP server.
 
-### Template
+#### Template
 
 ```
 { 
@@ -106,7 +111,8 @@ This file is to be placed in the Data directory on the SFTP server.
 }
 ```
 
-## Template Description
+---
+### Template Description
 
 users – Object that contains a list of users' data, where only the users, where it only contains users who have changed (delta files)
 
@@ -142,6 +148,7 @@ Additionally to the above, there is another field being managed:
 - Set as True - When the userType is Regular/Permanent
 - Set as False - When the userType is Temporary
 
-## Conclusion
+---
+### Conclusion
 
 The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.

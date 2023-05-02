@@ -8,7 +8,8 @@ In this article, you'll learn how to integrate with Okta SSO. When you integrate
 * Control in Okta who has access to Skills Workflow.
 * Enable your users to be automatically signed-in to Skills Workflow with their Okta accounts.
 
-## Prerequisites
+---
+### Prerequisites
 
 To get started, you need the following items:
 
@@ -48,7 +49,8 @@ To configure and test Okta SSO, perform the following steps:
     1. **[Create Skills Workflow test user](#create-skills-workflow-test-user)** - to have a counterpart of B.Simon in Skills Workflow that is linked to the Azure AD representation of user.
 3. **[Test SSO](#test-sso)** - to verify whether the configuration works. -->
 
-## Configure Okta SSO
+---
+### Configure Okta SSO
 
 Follow these steps to enable Okta SSO in the Admin center.
 
@@ -96,7 +98,8 @@ Follow these steps to enable Okta SSO in the Admin center.
     ![Screenshot shows Okta Configuration.](/img/integrations/okta/9-Okta-SignOn-Data-Configuration.png "Metadata Configuration")
     ![Screenshot shows Skills Workflow SSO Configuration.](/img/integrations/okta/10-Okta-SkillsWorkflow-SSO-Setup.png "Metadata Configuration")
 
-## Improving user experience
+---
+### Improving user experience
 
 To provide a better user experience while using OKTA and Skills Workflow integration, it is recommended to:
 

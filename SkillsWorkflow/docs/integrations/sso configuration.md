@@ -9,7 +9,8 @@ Regarding the SSO, the standard that is in use is in #Production:
 - The client’s SSO Identity Provider should provide SAML 2.0 Protocol (e.g. #Okta, #OnePass or #Office365) 
 - There should be a User Identification Claim agreed between the parties, either E-Mail (recommended) or AD User Name
 
-## Configuration
+---
+### Configuration
 
 1. The system’s metadata for #Production is available at https://auth.skillsworkflow.com/saml2/metadata
 2. Setup the metadata in the Identity Provider
@@ -29,14 +30,15 @@ Regarding the SSO, the standard that is in use is in #Production:
 Skills Workflow's SSO Login does not support identity provider-initiated login. The login process must begin on Skills Workflow.
 :::
 
-## Requirements
+---
+### Requirements
 
 - SHA-1
 - SP initiated only
 - SAML 2.0 Protocol
 
-
-## Test environment
+---
+### Test environment
 
 There is also the possibility to set SSO in the #Test environment (not to be confused with #UAT that is also a PROD environment):
 

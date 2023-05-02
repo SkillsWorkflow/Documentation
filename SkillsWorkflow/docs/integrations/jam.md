@@ -7,11 +7,12 @@ sidebar_label: Jam
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Cause
+### Description
 
 There was a need to exchange data between JAM and Skills Workflow
 
-## Data Exchange Technology
+---
+### Data Exchange Technology
 
 Service REST.
 
@@ -29,10 +30,10 @@ The scope of data exchanged on this integration includes:
 - From JAM to Skills Workflow
 - Uploaded into Skills Workflow's job feed
 
-## Data Exchange
+---
+### Data Exchange
 
 This section describes the Data exchanged between systems. Please see below the data exchanged.
-
 
 <Tabs
   groupId="actions"
@@ -49,7 +50,7 @@ This section describes the Data exchanged between systems. Please see below the 
 
 <TabItem value="oauth">
 
-### Skills Workflow Integration API
+#### Skills Workflow Integration API
 
 To use any endpoint from the Skills Workflow Integration API, it is necessary to pass the following Headers:
 
@@ -76,7 +77,7 @@ Clients are managed in Skills Workflow.
 It is not possible to edit Client data in JAM since it must be done in Skills Workflow. This module in JAM is disabled when the integration with Skills Workflow is enabled.
 :::
 
-### Client Data Exchanged
+#### Client Data Exchanged
 
 Work in Progress
 
@@ -101,7 +102,7 @@ T- he product is known as "Produto"
 It is not possible to edit Product data in JAM since it must be done in Skills Workflow. This module in JAM is disabled when the integration with Skills Workflow is enabled.
 :::
 
-### Product Data Exchanged
+#### Product Data Exchanged
 
 Work in Progress
 
@@ -121,7 +122,7 @@ Projects are managed in Skills Workflow.
 - The project is known as "Campanha"
 - To create a new job it is mandatory to send the Project
 
-### Project Data Exchanged
+#### Project Data Exchanged
 
 Work in Progress
 
@@ -140,7 +141,7 @@ Jobs are created in Skills Workflow and sent to JAM.
 - In Skills Workflow it is possible to configure certain actions when the jobs are moved between status.
 - If the action "SendToExternal" is configured in that transition, jobs will be exported to JAM.
 
-### Change Job Status in Skills Workflow
+#### Change Job Status in Skills Workflow
 
 To change the job status it is necessary to pass:
 
@@ -164,7 +165,7 @@ To change the job status it is necessary to pass:
 
 Please check below how to get each field.
 
-### Steps to change the job's status
+#### Steps to change the job's status
 
 1. Change Job Status, Assign users, Add Links
 
@@ -246,15 +247,15 @@ X-AppSecret: {{X-AppSecret}}
 
 <TabItem value="files">
 
-### Files
+#### Files
 
 Work in Progress
 
-### Files Data Exchange
+#### Files Data Exchange
 
 Work in Progress
 
-### Template
+#### Template
 
 ```
 Work in Progress
@@ -263,6 +264,6 @@ Work in Progress
 
 </Tabs>
 
-### Conclusion
+#### Conclusion
 
 The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
