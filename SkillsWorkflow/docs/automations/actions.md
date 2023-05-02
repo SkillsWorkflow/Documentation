@@ -29,7 +29,7 @@ To configure this action, the fields required to be filled are:
     "actionType": "Start",  
     "name": "Starting",  
     "next": "GetJobBrief"  
-}
+},
 ```
 
 #### Template Description
@@ -68,7 +68,7 @@ To have a custom Response you must configure the httpResponse.
             },
         "body": "{{['SendExpenseFile']}}"
     }
-}
+},
 ```
 
 #### Template Description
@@ -100,7 +100,7 @@ To configure this action, the fields available are:
 * bodyMediaType - Json/Raw/UrlEncodedFormData/MultipartFormData/File
 * url
 * body
-* requestHeaders - Key-Value array - [{"name": "","value": ""}]
+* requestHeaders - Key-Value array - `[{"name": "","value": ""}]`
 * bodyFormData
 * IsApiCall - Default False
 * EnsureSuccessStatusCode - Default False
@@ -123,7 +123,7 @@ To configure this action, the fields available are:
         }  
     ],  
     "bodyFormData": []  
-}
+},
 ```
 
 #### Template Description
@@ -185,7 +185,7 @@ By setting the bodyMediaType as Raw:
             "value":"Bearer {Token}"  
         }  
     ]
-}
+},
 ```
 
 </TabItem>
@@ -214,7 +214,7 @@ By setting the bodyMediaType as UrlEncodedFormData:
             "value": "5eKItuYeV3iZ1mxY8ktNWYY1bbKOgTO+POIR123/g="  
         }  
     ]
-}
+},
 ```
 
 </TabItem>
@@ -228,13 +228,14 @@ By setting the bodyMediaType as File:
 * You can combine the Download action to obtain a file content from any URL
 
 ```json json title="File"
-{
+[
+  {
     "actionType": "Download",
     "name": "DownloadFile",
     "next": "UploadFile",
     "url": "{{['GetProjectFile']$.Content.Uri}}"
-},
-{
+  },
+  {
     "actionType": "Rest",
     "name": "UploadFile",
     "next": "Exit",
@@ -252,7 +253,8 @@ By setting the bodyMediaType as File:
             "value": "Bearer {Token}"
         }
     ]
-}
+  }
+]
 ```
 
 </TabItem>
@@ -292,7 +294,7 @@ Please check the template description to know which parameters must be sent for 
    "fileNameEndsWith": "",  
    "fileName": "",  
    "fileType": "Csv"  
- }
+ },
 ```
 
 #### Template Description
@@ -321,7 +323,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
    "filePath": "/path",  
    "fileNameContains": "",  
    "fileNameEndsWith": ""  
-}
+},
 ```
 
 * actionType – The action type must be one of the following: SftpListFiles,
@@ -350,7 +352,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
    "ftpPassword": "",  
    "ftpPath": "/path",  
    "fileName": "{{['#ImportFile']}}"  
-}
+},
 ```
 
 * actionType – The action type must be one of the following: SftpDownload,
@@ -377,7 +379,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
    "ftpPath": "/path",
    "filePath": "C:\\TempFolder\test.png",  
    "fileName": "NewFilename.csv"  
-}
+},
 ```
 
 * actionType – The action type must be one of the following: SftpUpload
@@ -409,7 +411,7 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
    "ftpPath": "/path",  
    "ftpToPath": "/toPath",  
    "fileName": "{{['#ImportFile']}}"  
-}
+},
 ```
 
 * actionType – The action type must be one of the following: SftpMoveTo
@@ -451,7 +453,7 @@ To do so, it is required some parameters to be filled:
     "fromDisplayName": "Notification | Skills Workflow",
     "toAddress": "user@skillsworkflow.com",
     "attachments": ["document.pdf"]
-}
+},
 ```
 
 #### Template Description
@@ -501,7 +503,7 @@ There are fields required to be filled to have this action working properly:
             "name": "Exit"
         }
     ]
-}
+},
 ```
 
 #### Template Description
@@ -765,7 +767,7 @@ To do so it is required a parameter to be filled:
     "name": "DownloadFile",  
     "next": "UploadFile",  
     "url": "{{['GetProjectFile']$.Content.Uri}}"  
-}
+},
 ```
 
 #### Template Description
@@ -816,7 +818,7 @@ To do so it is required a parameter to be filled:
        "DocumentType":"{{['GetDocumentTypes']$.Content[:1].DocumentType | ToJson}}",
        "AssignmentType":"{{['GetAssignments']$.Content[:1].AssignmentType | ToJson}}"
    }
- },
+},
 ```
 
 ## AzureAdAuthentication
@@ -912,7 +914,7 @@ To do so it is required a parameter to be filled:
     "documentType":"Expense",
     "documentId":"8b0412b4-37bc-47c9-9269-fa570f1f1f60",
     "layoutId":"20"
-}
+},
 ```
 
 #### Template Description
@@ -975,7 +977,7 @@ To configure this action, there are parameters that can be set:
     "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
     "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
     "sessionId": "MySessionId"
-}
+},
 ```
 
 #### Template Description
@@ -1020,7 +1022,7 @@ To configure this action, there are some required parameters that need to be set
         "Address":"/sender/addressInformation/address",
         "City":"/sender/addressInformation/city" 
     }
-}
+},
 ```
 
 #### Template Description
@@ -1076,7 +1078,6 @@ Optional Parameters:
 
 The list can be used calling the context parameter by name: {{['MyList']}}
 
-[comment]:  (--------------------------------------------------------)
 ## AddToList
 
 AddToList action allows to update an existing list (Array) of values stored as a parameter on the context adding new values to the end.
@@ -1182,8 +1183,8 @@ To configure this action, there are some required parameters that need to be set
     "actionType": "MapFromObject",
     "name": "MapFromObject",
     "next": "Exit",
-    "data":"{\"name\":\"firstName\"\,\"years\":\"age\"}",
-    "body":"{\"firstName\":\"John\,\"lastName\":\"Doe\",\"age\":\30\"}"
+    "data":"{\"name\":\"firstName\",\"years\":\"age\"}",
+    "body":"{\"firstName\":\"John\",\"lastName\":\"Doe\",\"age\":\"30\"}"
 },
 ```
 #### Template Description
@@ -1231,7 +1232,7 @@ To configure this action, there is a required parameter that need to be set:
 
 #### Usage
 
-The result will the configuration Keys value parameter:
+The result will be the configuration Keys value parameter:
 
 ```json title="Template"
 {
@@ -1239,5 +1240,93 @@ The result will the configuration Keys value parameter:
     "ClientId": "3*******-1***-4***-8***-e***********",
     "ClientSecret": "y*******.f****~5*******.6**.n*****",
     "apiUrl": "h****://g*****.c**/S*************/M**********.g**"
+},
+```
+
+## ConvertFromJsonDataTable
+Allows to convert JSON between formats. It converts from the "DataTable" format to standard format.
+
+#### Configuration
+
+To configure this action, there is a required parameter that need to be set:
+* columns - Array With Column Definition `[{"name":"Timestamp","type":"string"},{"name":"Timestamp","type":"datetime"}]`
+* rows - Array With row values `["SkillsWorkflow","2023-05-02T00:00:00Z"]`
+
+```json title="Template"
+{
+  "actionType": "ConvertFromJsonDataTable",
+  "name": "ConvertFromJsonDatatable",
+  "next": "Exit",
+  "columns": "{{['GetAppInsightsData'].Content.tables[0].columns}}",
+  "rows": "{{['GetAppInsightsData'].Content.tables[0].rows}}"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is ConvertFromJsonDataTable
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* columns - Array With Column Definition
+* rows - Array With row values
+
+#### Usage
+```json title="Column Definition Available Types"
+["bool", "datetime", "dynamic", "guid", "int", "long", "real", "string", "decimal"]
+
+```
+
+The original JSON:
+
+```json title="DataTable Json"
+{
+  "tables": [
+    {
+      "name": "PrimaryResult",
+      "columns": [
+        {
+          "name": "Timestamp",
+          "type": "datetime"
+        },
+        {
+          "name": "Id",
+          "type": "string"
+        },
+        {
+          "name": "Tenant",
+          "type": "string"
+        },
+        {
+          "name": "WorkspaceId",
+          "type": "string"
+        },
+        {
+          "name": "Count",
+          "type": "long"
+        }
+      ],
+      "rows": [
+        [
+          "2023-05-02T00:00:00Z",
+          "2023-05-02_Zas_1fabe874-e561-4b9e-86a5-4183234e0af6",
+          "hogarth",
+          "1fabe874-e561-4b9e-86a5-4183234e0af6",
+          9
+        ]
+      ]
+    }
+  ]
+}
+```
+
+The result will be the transformed JSON:
+
+```json title="Standard Json"
+{
+  "Timestamp": "2023-05-02T00: 00: 00+00: 00",
+  "Id": "2023-05-02_Zas_1fabe874-e561-4b9e-86a5-4183234e0af6",
+  "Tenant": "Zas",
+  "WorkspaceId": "1fabe874-e561-4b9e-86a5-4183234e0af6",
+  "Count": 9
 }
 ```
