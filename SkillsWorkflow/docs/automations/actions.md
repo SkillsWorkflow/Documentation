@@ -1330,3 +1330,58 @@ The result will be the transformed JSON:
   "Count": 9
 }
 ```
+
+## OAuth2Authentication
+Creates an OAuth2 Authentication based on Authorization Code Flow (defined in [OAuth 2.0 RFC 6749, section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1)) 
+
+<i> Because regular web apps are server-side apps where the source code is not publicly exposed, they can use the Authorization Code Flow, 
+which exchanges an Authorization Code for a token. Your app must be server-side because during this exchange, you must also pass along your application's Client Secret, 
+which must always be kept secure, and you will have to store it in your client. </i>
+
+#### Configuration
+
+To configure this action, there is a required parameter that need to be set:
+* OAuthClientId - Client Id
+* OAuthClientSecret - Client Password
+* OAuthBaseUrl - Authorization Server Url
+* OAuthScope - Application Filter to limit access
+* OAuthCallbackUrl - Return Address defined by provider in Authorized redirect URIs 
+* OAuthUseStateVerification - If set, enables CSRF attacks Verification - Defaults to `False`
+* 
+```json title="Template"
+{
+  "actionType": "OAuth2Authentication",
+  "name": "GetToken",
+  "next": "Exit",
+  "oauthClientId": "MyClientId",
+  "oauthClientSecret": "MyClientSecret",
+  "oauthBaseUrl": "https://auth.Server/oauth",
+  "oauthScope": "commercial",
+  "oauthCallbackUrl": "http://127.0.0.1:4080/oauth/callback",
+  "OauthUseStateVerification": true
+},
+```
+#### Template Description
+
+* actionType - The action type is OAuth2Authentication
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* oauthClientId - Client Id
+* oauthClientSecret - Client Secret
+* oauthBaseUrl - Auth Server base Url
+* oauthScope - Auth Scope
+* oauthCallbackUrl - Return Url
+* OauthUseStateVerification - CSRF attacks Verification
+
+#### Usage
+
+The result will be the configuration Keys value parameter:
+
+```json title="Example Result"
+{
+  "access_token": "c11e9a70ecfc6b9e2197ed42c4a3a68cc8e676ace0d4e28ae9e222fccd32456e",
+  "expires_in": 14400,
+  "refresh_token": "1160745-2655f33f8219b5b9f5fa50cabea4bade08d956d1485db3247bb323ca9951ea35",
+  "token_type": "Bearer"
+}
+```
