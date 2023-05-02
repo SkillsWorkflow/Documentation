@@ -105,6 +105,8 @@ Pipe Functions support arguments between parentheses
 ---
 ### Boolean Operators
 * IsNullOrEmpty - {{['CreateCsv']$ | IsNullOrEmpty}}
+* Contains - {{['MyText'] | Contains('Text to check if exists')}}
+* Join - {{['MyText'] | Join('Text to append')}}
 ---
 ### Arithmetic And Date Operators
 * AddDecimal(value) - {{['MyIntValue'] | AddDecimal(2)}}
@@ -116,6 +118,7 @@ Pipe Functions support arguments between parentheses
 * RemoveLeading('value') - {{['MyText'] | RemoveLeading('Text To Remove from start')}}
 * RemoveTrailing('value') - {{['MyText'] | RemoveTrailing('Text To Remove from End')}}
 * Trim - {{['MyText'] | Trim}}
+
 ## Preprocessors
 
 Preprocessors are used to apply transformations on part of a expression.
@@ -140,8 +143,8 @@ Some common used code snipets
    "actions":[
       {
           "actionType": "Start",
-          "name": "Starting",
-          "next": "GetJobBrief"
+          "name": "Start",
+          "next": "Exit"
       },
       {
           "actionType": "Result",
