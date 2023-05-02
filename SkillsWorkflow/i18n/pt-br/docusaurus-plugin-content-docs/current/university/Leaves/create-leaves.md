@@ -1,5 +1,5 @@
 ---
-id: created-leaves
+id: create-leaves
 title: Criar Ausências
 sidebar_label: Criar Ausências 
 ---
@@ -12,7 +12,7 @@ Clique no canto superior direito no ícone "+"
 
 <figure>
 
-![img-box-shadow](/img/university/maintenance/created_leaves1.png)
+![img-box-shadow](/img/university/maintenance/create_leaves1.png)
 </figure>
 
 Será aberta uma tela para cadastrar a Ausência desejada.
@@ -27,7 +27,7 @@ Total de Dias de Ausências: Insira numericamente o número de dias equivalentes
  
 <figure>
 
-![img-box-shadow](/img/university/maintenance/created_leaves2.png)
+![img-box-shadow](/img/university/maintenance/create_leaves2.png)
 </figure>
  
 - **Permitir meio-período** - Verifique se esta ausência permite saída em meio-período.
