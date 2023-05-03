@@ -2,7 +2,7 @@
 id:  purchase-orders
 title: Autorizaciones de factura
 sidebar_label: 3. Cómo crear órdenes de compra para proveedores
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 Puede crear solicitudes de pedidos de compra de proveedores en el sistema y, por lo tanto, informar al equipo financiero para que proceda con la creación / sincronización del documento con el sistema financiero externo y para poder validar con la factura final que reciben del tercero.
