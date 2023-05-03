@@ -1,7 +1,7 @@
 ---
 id:  client-staff-dashboard
 title: Client Staff Plan Summary
-sidebar_label: 11. Client Staff Plan Summary Dashboard
+sidebar_label: 3. Client Staff Plan Summary Dashboard
 sidebar_position: 3
 ---
 
