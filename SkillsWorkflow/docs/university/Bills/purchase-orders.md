@@ -1,8 +1,8 @@
 ---
 id:  client-staff-dashboard
 title: Client Staff Plan Summary
-sidebar_label: 11. Client Staff Plan Summary Dashboard
-sidebar_position: 11
+sidebar_label: 3. Client Staff Plan Summary Dashboard
+sidebar_position: 3
 ---
 
 The Client Staff Plan Summary Dashboard provides a summary report of all fees and estimates under a company, client group and period selected.
