@@ -16,7 +16,8 @@ import {
 } from '@docusaurus/theme-common';
 const features = [
   {
-    title: 'Crafting',
+    link: "docs/craft/panels/grid/allow-inline",
+    title: <span>Crafting</span>,
     imageUrl: 'img/homefeat01.svg',
     description: (
       <>
@@ -26,7 +27,8 @@ const features = [
     ),
   },
   {
-    title: 'Integrations',
+    link: 'docs/integrations/adp',
+    title: <span>Integrations</span>,
     imageUrl: 'img/homefeat02.svg',
     description: (
       <>
@@ -36,7 +38,8 @@ const features = [
     ),
   },
   {
-    title: 'University',
+    link:'docs/university',
+    title: <span>University</span> ,
     imageUrl: 'img/homefeat03.svg',
     description: (
       <>
@@ -47,24 +50,12 @@ const features = [
   },
 ];
 
-function Feature({ imageUrl, title, description }) {
+function Feature({ imageUrl, title, description, link }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}
-    style={{
-      color: '#333',
-      backgroundColor: '',
-    }} 
-    >
+    <div className={clsx('col col-4', styles.cardWrapper)} onClick={() => window.location.href=link}>
       {imgUrl && (
-        <div className="text--center" 
-        style={{
-          color: '#333',
-          backgroundColor: '#F3F8FF',
-          borderRadius: '5px',
-          marginBottom: '20px',
-         
-        }}>
+        <div className="home-page-options">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
@@ -97,19 +88,16 @@ const Header = () => {
       style={{
         backdropFilter: 'blur(0px)'
       }}>
-      <h1 className="hero__title home-h1"><Translate>Skills Workflow's Documentation</Translate></h1>
+      <h1 className="hero__title home-h1"><Translate> Skills Workflow's</Translate></h1>
+      <h1 className="hero__title home-h1" ><Translate> Documentation</Translate></h1>
       <p className="hero__subtitle home-p"><Translate>We are here to let you shine! Let's get everything done</Translate></p>
       <div className={styles.buttons}>
-        <Link
-          className={styles.skills}
-          to={useBaseUrl('docs/')}>
-          <Translate>Get Started</Translate>
-        </Link>
       </div>
     </div>
   </header>
     ;
 };
+
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;

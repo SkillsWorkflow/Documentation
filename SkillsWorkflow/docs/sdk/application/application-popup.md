@@ -169,7 +169,7 @@ SW.Application.Popup.show([{ Id: '63a12710-3dcd-4d99-85f4-1214d6a4d55e', Title: 
        width: 500,
        height: 200,
        enableScroll: false,
-       title: 'Popup exemple',
+       title: 'Job',
        openInFullScreen: false,
        hideTabContainer: false,
        hideSubHeader: true,
