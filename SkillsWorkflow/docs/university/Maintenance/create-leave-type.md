@@ -41,3 +41,23 @@ Follow the steps below to create a new leave type:
 :::note Important settings
 Each leave type might require additional specific configurations.
 :::
+
+- Company: It is important to fill in this information, specially in environments shared with other Group Companies. Select your company name in this field.
+
+- Total Leave Days: Numerically enter the number of days equivalent to this leave type. Example: If users are entitled to a anniversary leave day, add the value “1” in this field.
+
+- Expiration Date: Final date where users are allowed to book days for this leave type.
+
+- Allow Half Days: Option to be checked if particular leave types allows users to book half days.
+
+- Allow Weekend Selection: Option to be checked if particular leave type allows users to book leaves on weekends, for example, Maternity Leave.
+
+- Allow Holiday Selection: Option to be check if particular leave type allows users to book leaves on holidays.
+
+- Accountable in Timesheets: Option checked by default. It shows this particular leave type in timesheets scheduler.
+
+- HR Approval Only: Requires Human Resources approval.
+
+- Leave in Hours: Option to add leaves in hours instead of full/half day, for exemple, Medical Leave.
+
+- Requires Attachments: It’s mandatory to add attachments, for example, medical certificate.
