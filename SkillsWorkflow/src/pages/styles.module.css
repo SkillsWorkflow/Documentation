@@ -31,6 +31,38 @@
   width: 100%;
 }
 
+
+.cardWrapper{
+  color: #333;
+  width: auto;
+  background-color: '';
+  border-radius: 8px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  transition: all 0.4s;
+}
+
+
+.cardWrapper:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0,0,0,.1);
+  cursor: pointer
+  
+}
+
+html[data-theme='dark'] .cardWrapper{
+  color: #333;
+  width: auto;
+  background-color: #1b1b1d;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
 .featureImage {
   height: 200px;
   width: 200px;
