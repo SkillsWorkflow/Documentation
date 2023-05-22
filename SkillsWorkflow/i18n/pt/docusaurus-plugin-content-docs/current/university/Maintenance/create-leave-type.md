@@ -1,63 +1,62 @@
 ---
 id:  create-leave-type
-title: Crear Tipos de Vacaciones
-sidebar_label: 6. Crear Tipos de Vacaciones
+title: Criar Tipos de Ausências
+sidebar_label: 6. Criar tipos de ausências
 ---
 
 :::info
-Vaya a "Mantenimiento" y seleccione el módulo "Tipos de Permiso".  
+Aceda a "Manutenção" e seleccione o módulo "Tipos de ausências".  
 :::
 
-En una empresa pueden crearse varios tipos de permiso, como:
-- Baja médica
-- Baja por maternidad
-- Vacaciones
+Podem ser criados vários tipos de ausências numa empresa, tais como:
+- Licença médica
+- Licença de maternidade
+- Licença de férias
 
-Siga los pasos que se indican a continuación para crear un nuevo tipo de permiso:
+Siga os passos abaixo para criar um novo tipo de ausência:
 
-
-1. Acceda al área de Mantenimiento y busque "Tipos de permiso".
+1. Aceder à área Manutenção e procurar "Tipos de ausência".
 
     <figure>
 
     ![img-with-border](/img/university/maintenance/create_leaves1.png)
     </figure>
 
-2. Haga clic en el icono "+", en la esquina superior derecha.
+2. Clique no ícone "+" no canto superior direito.
 
     <!-- <figure>
     ![img-with-border](/img/university/leaves/ )
     </figure> -->
 
-3. Una ventana emergente mostrará un formulario para rellenar y crear el Tipo de Permiso deseado.
+3. Uma janela pop-up apresentará um formulário para preencher e criar o tipo de autorização pretendido.
  
     <figure>
 
     ![img-with-border](/img/university/maintenance/create_leaves2.png)
     </figure>
 
-4. Después de rellenar toda la información, haga clic en "Aceptar" para guardar.
+4. Depois de preencher todas as informações, clique em "OK" para guardar.
  
-:::note Configuración Importante
-Cada tipo de permiso puede requerir configuraciones específicas adicionales.
+:::note Configurações importantes
+Cada tipo de autorização pode exigir configurações específicas adicionais.
 :::
 
-- Empresa: Es importante rellenar esta información, especialmente en entornos compartidos con otras Empresas del Grupo. Seleccione el nombre de su empresa en este campo.
+- Empresa: É importante preencher esta informação, especialmente em ambientes partilhados com outras empresas do grupo. Seleccione o nome da sua empresa neste campo.
 
-- Total Días de Vacaciones: Introduzca numéricamente el número de días equivalentes a este tipo de vacaciones. Ejemplo: Si los usuarios tienen derecho a un día de vacaciones por aniversario, añada el valor "1" en este campo.
+- Total de dias de férias: Informe numericamente a quantidade de dias equivalentes a este tipo de férias. Exemplo: Se os utilizadores têm direito a um dia de férias por aniversário, adicione o valor "1" neste campo.
 
-- Fecha de Vencimiento: Fecha final en la que los usuarios pueden reservar días para este tipo de permiso.
+- Data de Vencimento: Data limite para que os utilizadores possam reservar dias para este tipo de férias.
 
-- Permitir Medio Día: Opción que debe ser marcada si un tipo de permiso en particular permite a los usuarios reservar medios días.
+- Permitir meio-dia: Opção a ser verificada se um determinado tipo de férias permite que os utilizadores reservem meio-dia.
 
-- Permitir Selección de Fin de Semana: Opción a marcar si un tipo de permiso en particular permite a los usuarios reservar permisos en fines de semana, por ejemplo, Permiso de Maternidad.
+- Permitir selecção de fim-de-semana: Opção a ser assinalada se um determinado tipo de férias permitir que os utilizadores reservem férias aos fins-de-semana, por exemplo, Licença de maternidade.
 
-- Permitir Selección de Vacaciones: Opción que debe marcarse si un tipo de permiso concreto permite a los usuarios reservar permisos en días festivos.
+- Permitir selecção de feriados: Opção a assinalar se um determinado tipo de férias permitir aos utilizadores marcarem férias nos feriados.
 
-- Contable en Hojas de Tiempo: Opción marcada por defecto. Muestra este tipo de permiso en el planificador de timesheets.
+- Contável em folhas de horas: Opção assinalada por defeito. Apresenta este tipo de férias no planeador de folhas de tempos.
 
-- Sólo Aprobación RRHH: Requiere aprobación de Recursos Humanos.
+- Apenas aprovação de RH: requer aprovação de RH.
 
-- Licencia en Horas: Opción para agregar licencias por horas en lugar de por día completo/medio día, por ejemplo, Licencia Médica.
+- Licença por hora: Opção para adicionar licença por hora em vez de licença de dia inteiro/meio dia, por exemplo, Licença médica.
 
-- Requiere Anexos: Es obligatorio agregar anexos, por ejemplo, certificado médico.
+- Requer anexos: Obrigatório para adicionar anexos, por exemplo, atestado médico.
