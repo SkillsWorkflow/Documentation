@@ -1,7 +1,8 @@
 ---
 id:  scheduling-leaves
 title: Agendamento de Ausências 
-sidebar_label: Agendamento de Ausências 
+sidebar_label: 3.Agendamento de Ausências 
+sidebar_position: 3
 ---
 
 
