@@ -1,7 +1,7 @@
 ---
 id:  created-leaves
 title: Creación de Permisos/Vacaciones
-sidebar_label: 1.Creación de Permisos/Vacaciones
+sidebar_label: 1. Creación de Permisos/Vacaciones
 sidebar_position: 1
 ---
 
