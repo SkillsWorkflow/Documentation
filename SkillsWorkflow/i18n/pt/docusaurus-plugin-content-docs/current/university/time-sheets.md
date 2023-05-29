@@ -1,7 +1,7 @@
 ---
 id:  time-sheets
 title: TimeSheets
-sidebar_label: TimeSheets
+sidebar_label: Timesheets
 ---
 
 :::note 
