@@ -1,7 +1,7 @@
 ---
 id:  environment-dashboard
 title: Environment
-sidebar_label: 9.Environment Workspace
+sidebar_label: 9. Environment Workspace
 sidebar_position: 9
 ---
 
