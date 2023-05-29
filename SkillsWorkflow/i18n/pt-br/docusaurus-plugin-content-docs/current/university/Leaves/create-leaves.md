@@ -1,7 +1,8 @@
 ---
 id: create-leaves
 title: Criar Ausências
-sidebar_label: Criar Ausências 
+sidebar_label: 1. Criar Ausências
+sidebar_position: 1
 ---
 
 Vários tipos de ausências podem ser criadas em uma empresa, como por exemplo Licença Médica, Licença Maternidade, Férias, entre outras.
