@@ -1,7 +1,7 @@
 ---
 id: create-leaves
 title: Criar Ausências
-sidebar_label: 1.Criar Ausências
+sidebar_label: 1. Criar Ausências
 sidebar_position: 1
 ---
 
