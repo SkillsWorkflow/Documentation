@@ -1,7 +1,7 @@
 ---
 id:  create-leaves
 title: Create Leaves
-sidebar_label: 1.Create Leaves
+sidebar_label: 1. Create Leaves
 sidebar_position: 1.
 ---
 
