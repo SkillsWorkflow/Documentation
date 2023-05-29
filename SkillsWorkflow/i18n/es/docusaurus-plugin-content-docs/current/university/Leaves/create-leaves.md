@@ -1,7 +1,8 @@
 ---
 id:  created-leaves
 title: Creación de Permisos/Vacaciones
-sidebar_label: Creación de Permisos/Vacaciones
+sidebar_label: 1. Creación de Permisos/Vacaciones
+sidebar_position: 1
 ---
 
 En una compañia se pueden crear varios tipos de permisos, como el ejemplo: Licencia Médica, Licencia por Maternidad, Vacaciones y otras.
