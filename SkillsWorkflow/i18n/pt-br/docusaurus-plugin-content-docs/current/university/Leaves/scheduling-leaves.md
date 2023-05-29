@@ -1,7 +1,8 @@
 ---
 id:  scheduling-leaves
 title: Planejar Ausências
-sidebar_label: Planejar Ausências
+sidebar_label: 1. Planejar Ausências
+sidebar_position: 1
 ---
 
 :::info
