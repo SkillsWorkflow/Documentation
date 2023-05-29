@@ -1,7 +1,7 @@
 ---
 id:  approving-leaves
 title: Aprovando Ausências
-sidebar_label: 2.Aprovando Ausencias 
+sidebar_label: 2. Aprovando Ausencias 
 sidebar_position: 2
 ---
 
