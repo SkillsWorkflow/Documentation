@@ -1,7 +1,8 @@
 ---
 id:  create-leaves
 title: Create Leaves
-sidebar_label: Create Leaves
+sidebar_label: 1.Create Leaves
+sidebar_position: 1.
 ---
 
 Several types of leaves can be created in a company, such as Medical Leave, Maternity Leave, Vacations, among others.
