@@ -1,7 +1,7 @@
 ---
 id:  approving-leaves
 title: Aprobación de Permisos/Vacaciones
-sidebar_label: 2.Aprobación de Permisos/Vacaciones
+sidebar_label: 2. Aprobación de Permisos/Vacaciones
 sidebar_position: 2
 ---
 
