@@ -1,8 +1,8 @@
 ---
 id:  scheduling-leaves
 title: Scheduling Leaves
-sidebar_label: 3. Scheduling Leaves
-sidebar_position: 3
+sidebar_label: 1. Scheduling Leaves
+sidebar_position: 1
 ---
 
 
