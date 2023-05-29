@@ -1,7 +1,8 @@
 ---
 id:  approving-leaves
 title: Approving Leaves
-sidebar_label: Approving Leaves
+sidebar_label: 2.Approving Leaves
+sidebar_position: 2
 ---
 
 :::info
