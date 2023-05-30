@@ -1,7 +1,7 @@
 ---
 id: description-templates
-title: Description Templates
-sidebar_label: 4. Description Templates
+title: Descrição de Templates
+sidebar_label: 4. Descrição de Templates
 sidebar_position: 4
 ---
 
