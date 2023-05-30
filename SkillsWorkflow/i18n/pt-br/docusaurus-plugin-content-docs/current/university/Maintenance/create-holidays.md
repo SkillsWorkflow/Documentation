@@ -5,7 +5,7 @@ sidebar_label: 5. Registrar feriados
 sidebar_position: 5
 ---
 
-Para criar um feriado, vá para "Maintenance" (Manutenção) e procure por "Holiday" (Feriado).
+Para criar um feriado, vá para "Manutenção" e procure por "Feriado".
 
 <figure>
 
@@ -25,7 +25,7 @@ A tela de criação de feriados será aberta.
 </figure>
 
 
-- **Nome** - No campo de nome, digite o nome do feriado e a data específica do feriado.
+- **Nome** - No campo de nome, digite o nome do feriado.
 - **Data** - A data em que o feriado ocorrerá.
 - **Empresa** - O campo empresa não precisa ser preenchido, só é necessário colocar a empresa se for um grupo de muitas empresas e esse feriado for específico para uma empresa dentro do grupo.
 - **Permite TimeSheets** - Permite que os usuários insiram horas nesse dia.
