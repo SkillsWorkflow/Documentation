@@ -38,7 +38,7 @@ Siga as etapas abaixo para criar um novo tipo de licença:
 
 4. Depois de preencher todas as informações, clique em "OK" para salvar.
  
-:::note Important settings
+:::note Configurações importantes
 Cada tipo de licença pode exigir configurações específicas adicionais.
 :::
 
