@@ -276,37 +276,39 @@ To setup the Image type, it is necessary that data source includes the entity:
     }
 }
 ```
-### size
-
-
-Accepted Values: 'small' | 'medium' | 'large' 
-
-To define the size of the image it should be set the size property.
-```json
-{
-    entity: "client",
-    format: {
-        type: "image",
-        size: "small"
-    }
-}
-```
 
 ### properties
 
 Properties withing format property customize the behavior and appearance of a default display.
 
-In the following example, to hide the client name from the column and keep only the client image, hideName property should be set as true.
+<p><b>hideName:</b> To hide the client name from the column and keep only the client image, set this property as true.</p>
+
+<p><b>size:</b> To define the size of the image. Accepted Values: 'small' | 'medium' | 'large'</p>
+
 ```json
 {
     entity: "client",
     format: {
         type: "image",
         properties: {
-            hideName: true
+            hideName: true,
+            size: "small"
         }
 }
 ```
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/client_image_normal.png)
+
+</figure>
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/client_image_grouped.png)
+
+</figure>
+
+
 </TabItem>
 
 <TabItem value="link">
