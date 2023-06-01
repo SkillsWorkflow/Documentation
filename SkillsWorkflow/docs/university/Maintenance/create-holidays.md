@@ -1,11 +1,11 @@
 ---
 id: create-holidays  
-title: Holidays
-sidebar_label: 5. Register Holidays
+title: Feriados
+sidebar_label: 5. Registo de feriados
 sidebar_position: 5
 ---
 
-To create a holiday, go to "Maintenance" and look for the "Holiday".
+Para criar um feriado, vá a "Manutenção" e procure o "Feriado".
 
 <figure>
 
@@ -14,9 +14,9 @@ To create a holiday, go to "Maintenance" and look for the "Holiday".
 </figure>
 
 
-Click on the "+" icon located in the upper right corner of the screen.
+Clique no ícone "+" localizado no canto superior direito do ecrã.
 
-The Holiday creation screen will open.
+Abre-se o ecrã de criação de férias.
 
 <figure>
 
@@ -25,14 +25,13 @@ The Holiday creation screen will open.
 </figure>
 
 
-- **Name** - In the name field, enter the name of the holiday and the specific date of the holiday. 
-- **Date** - The date when the holiday will occur.
-- **Company** - The company field does not need to be filled in, it is only necessary to put the company if it is a group of many companies and this holiday is specific to a company within the group.
-- **Is Plannable** - Allows the holiday to be visible to users.
-- **Allows Time Sheets** - Allows users to enter hours on this day.
+- **Nome** - No campo do nome, introduza o nome do feriado.
+- **Date** - A data em que o feriado irá ocorrer.
+- **Empresa** - O campo empresa não precisa de ser preenchido, só é necessário colocar a empresa se for um grupo de muitas empresas e este feriado for específico para uma empresa dentro do grupo.
+- **Permitir Horas** - Permite que os utilizadores insiram horas neste dia.
 
   :::note
-    If your company does not allow the insertion of hours in the Timesheet on Holidays, uncheck this option.
+    Se a sua empresa não permitir a inserção de horas na folha de horas nos feriados, desmarque esta opção.
   :::
   
-At the end of the creation process, click OK to save.
+  No final do processo de criação, clique em OK para guardar.
