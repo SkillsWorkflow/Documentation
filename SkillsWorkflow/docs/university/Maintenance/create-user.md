@@ -12,9 +12,18 @@ To create a new user there are two ways
 Path 1:
 Create a user and fill in all required fields (they are marked with a red dot) and follow all the steps below
 
+<figure>
+
+![img-box-shadow](/img/maintenance/Create New user.png)
+</figure>
+
 Path 2: 
 Duplicate an existing user
 
+<figure>
+
+![img-box-shadow](/img/maintenance/duplicate_user.png)
+</figure>
 Select an active user already registered from the same department and position of this new user you want to create
 
 Go to the upper right corner of the screen and click on the three dots. A menu will open and in it select DUPLICATE USER.
