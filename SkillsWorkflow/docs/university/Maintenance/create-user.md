@@ -9,10 +9,16 @@ Navigate to Maintenance and enter the "User" module
 
 To create a new user there are two ways
 
-Path 1:
+### Create
 Create a user and fill in all required fields (they are marked with a red dot) and follow all the steps below
 
-Path 2: 
+<figure>
+
+![img-box-shadow](/img/university/maintenance/create_new_user.png)
+</figure>
+
+### Duplicate
+
 Duplicate an existing user
 
 Select an active user already registered from the same department and position of this new user you want to create
@@ -24,3 +30,14 @@ at the end, click on DUPLICATE. Try looking at users created to follow the upper
 
 
 The new user is created. The screen will open with his data. Make the necessary adjustments, and click the Diskette icon to Save.
+
+
+
+<figure>
+
+![img-box-shadow](/img/university/maintenance/duplicate_user.png)
+</figure>
+
+
+
+
