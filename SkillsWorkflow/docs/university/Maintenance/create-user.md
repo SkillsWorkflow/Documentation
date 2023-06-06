@@ -14,7 +14,7 @@ Create a user and fill in all required fields (they are marked with a red dot) a
 
 <figure>
 
-![img-box-shadow](/img/maintenance/Create New user.png)
+![img-box-shadow](/img/university/maintenance/Create New user.png)
 </figure>
 
 Path 2: 
@@ -22,7 +22,7 @@ Duplicate an existing user
 
 <figure>
 
-![img-box-shadow](/img/maintenance/duplicate_user.png)
+![img-box-shadow](/img/university/maintenance/duplicate_user.png)
 </figure>
 Select an active user already registered from the same department and position of this new user you want to create
 
