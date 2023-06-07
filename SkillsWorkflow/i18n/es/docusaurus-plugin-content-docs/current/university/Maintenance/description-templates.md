@@ -25,7 +25,7 @@ Los tamples se pueden utilizar para crear proyectos, contratos, trabajos y presu
 <figure>
 
 ![img-box-shadow](/img/university/maintenance/description.png) 
-<figcaption>Maintenance module</figcaption>
+<figcaption>Descripción de Templates</figcaption>
 
 </figure>
 
