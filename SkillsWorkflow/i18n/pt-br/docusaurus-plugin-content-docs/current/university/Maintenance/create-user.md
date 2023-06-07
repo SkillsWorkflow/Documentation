@@ -9,10 +9,15 @@ Navegue para Manutenção e entre no modulo "Usuario"
 
 Para criar um novo usuário, existem duas maneiras
 
-Opção 1:
+### Criar
 Crie um usuário e preencha todos os campos obrigatórios (estão marcados com um ponto vermelho) e siga todos os passos abaixo
 
-Opção 2: 
+<figure>
+
+![img-box-shadow](/img/university/maintenance/create_new_user.png)
+</figure>
+
+### Duplicar
 Duplicar um usuário existente
 
 Selecione um usuário ativo já cadastrado do mesmo departamento e função deste novo usuário que você deseja criar
@@ -24,3 +29,8 @@ no final, clique em DUPLICATE. Tente olhar para os usuários criados para seguir
 
 
 O novo usuário é criado. A tela será aberta com os dados dele. Faça os ajustes necessários e clique no ícone Disquete para Salvar.
+
+<figure>
+
+![img-box-shadow](/img/university/maintenance/duplicate_user.png)
+</figure>
