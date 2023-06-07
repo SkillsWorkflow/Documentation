@@ -11,7 +11,7 @@ Go to "Maintenance" and click on the module "Template Description"
 <figure>
 
 ![img-box-shadow](/img/university/maintenance/description.png) 
-<figcaption>Maintenance module</figcaption>
+<figcaption>Description Template</figcaption>
 </figure>
 
 
@@ -20,7 +20,7 @@ A screen for creating the Briefing will open.
 <figure>
 
 ![img-box-shadow](/img/university/maintenance/description-templates.png) 
-<figcaption>Maintenance module</figcaption>
+<figcaption>Form Template</figcaption>
 </figure>
 
 
