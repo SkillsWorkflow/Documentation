@@ -88,6 +88,9 @@ Functions replace evaluated value with a function that runs a specific Task.
   * value:
     * {{NewDateUtc(Now)}} -returns a new Utc DateTime with current time
     * {{NewDateUtc(Today)}} - returns a new Utc DateTime with time set to MidNight (00:00:00)
+    * {{NewDateUtc(Yesterday)}} - returns a new Utc DateTime with time set to Yesterday's MidNight (00:00:00)
+    * {{NewDateUtc(FirstDayOfYear)}} - returns a new Utc DateTime with time set to new Years Day at MidNight (00:00:00)
+    * {{NewDateUtc(LastDayOfYear)}} - returns a new Utc DateTime with time set to last day of the current Year at MidNight (00:00:00)
 
 ---
 ## Pipe Functions
@@ -102,6 +105,7 @@ Pipe Functions support arguments between parentheses
 * ToJson - {{['CreateCsv']$ | ToJson}}
 * ToJsonString - {{['CreateCsv']$ | ToJsonString}}
 * FromUnixTimeSeconds - {{['CreateCsv']$ | FromUnixTimeSeconds}}
+* FromUnixTimeMilliSeconds - {{['CreateCsv']$ | FromUnixTimeMilliSeconds}}
 ---
 ### Boolean Operators
 * IsNullOrEmpty - {{['CreateCsv']$ | IsNullOrEmpty}}
