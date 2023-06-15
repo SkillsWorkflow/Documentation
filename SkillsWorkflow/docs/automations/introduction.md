@@ -137,7 +137,7 @@ Preprocessors are used to apply transformations on part of a expression.
   }
   ```
 
-# Templates
+## Templates
 
 Some common used code snipets
 
@@ -164,6 +164,94 @@ Some common used code snipets
    ]
  }
 ```
+
+## JSONPath expressions
+
+JSONPath expressions always refer to a JSON structure and can apply transformations and filtering.
+
+JSONPath expressions can use the dot–notation 
+`$.store.book[0].title`
+or the bracket–notation 
+`$['store']['book'][0]['title']` 
+for input path's. 
+Internal or output path's will always be converted to the more general bracket–notation.
+
+
+JSONPath allows the wildcard symbol `*` for member names and array indices. 
+It borrows the descendant operator `..` from E4X and the array slice syntax proposal `[start : end : step]` from ECMASCRIPT 4.
+Expressions of the underlying scripting language `(<expr>)` can be used as an alternative to explicit names or indices as in `$.store.book[(@.length-1)].title` using the symbol `@` for the current object.
+Filter expressions are supported via the syntax `?(<boolean expr>)` as in `$.store.book[?(@.price < 10)].title` .
+
+### Here is a complete overview:
+
+| Syntax               | Description                                                                |
+|----------------------|----------------------------------------------------------------------------|
+| $                    | the root object/element                                                    |
+| @                    | the current object/element                                                 |
+| . or [ ]             | child operator                                                             |
+| ..                   | recursive descent. JSONPath borrows this syntax from E4X.                  |
+| *                    | wildcard. All objects/elements regardless their names.                     |
+| [ ]                  | subscript operator. In JSON it is the native array operator.               |
+| [ , ]                | Union operator. JSONPath allows alternate names or array indices as a set. |
+| [start : end : step] | array slice operator borrowed from ES4.                                    |
+| ?()                  | 	applies a filter (script) expression.                                     |
+| ()	                  | script expression, using the underlying script engine.                     |
+
+
+
+```json title="Json Example"
+{
+  "documents": {
+    "client": [
+      {
+        "Id": "38ed55ac-cb45-4cbb-b89e-2f3cf480cb11",
+        "Name": "Allbirds",
+        "Code": "ABD",
+        "HasContracts": false,
+        "CommercialPaymentConditionId": "00000000-0000-0000-0000-000000000000",
+        "FullTimeEmployeeTime": 1800.0,
+        "FileSystemRootId": "7ba972ac-afaa-4c86-bb0c-9b564276a109"
+      },
+      {
+        "Id": "3f826c2c-96c1-4d75-82d9-c29b4e50d4ef",
+        "Name": "Amazon",
+        "Code": "AMZ",
+        "HasContracts": false,
+        "CommercialPaymentConditionId": "00000000-0000-0000-0000-000000000000",
+        "FullTimeEmployeeTime": 0.0,
+        "FileSystemRootId": "1160f5d7-062a-4f78-a66b-e678a08052bb"
+      },
+      {
+        "Id": "682823e1-0651-4e8d-a655-ab3f8bcc8f6f",
+        "Name": "Americanas",
+        "Code": "",
+        "HasContracts": false,
+        "CommercialPaymentConditionId": "00000000-0000-0000-0000-000000000000",
+        "FullTimeEmployeeTime": 0.0,
+        "FileSystemRootId": "e56023d9-56db-49c9-97fd-96635e7cb251"
+      }
+    ]
+  }
+}
+```
+### Expression Cheat Sheet:
+
+| Syntax                                    | Result                                                       |
+|-------------------------------------------|--------------------------------------------------------------|
+| $.documents.client[*].Name                | the names of all clients in the documents                    |
+| $..name                                   | all names                                                    |
+| $.documents.*                             | all things in documents, which are some clients.             |
+| $.documents..code                         | the code of everything in the documents.                     |
+| $..client[2]                              | the third client                                             |
+| $..client[(@.length-1)] or $..client[-1:] | the last client in order.                                    |
+| $..client[0,1] or $..client[:2]           | the first two client                                         |
+| $..client[?(@.code)]                      | filter all clients with code Name                            |
+| $..client[?(@.FullTimeEmployeeTime>1800)] | filter all clients with FullTimeEmployeeTime greater than 10 |
+| $..client[?(@.Name=='Americanas')]        | filter all clients with name "Americanas"                    |  
+| $..*                                      | All members of JSON structure                                |
+
+
+
 
 
 
