@@ -5,15 +5,14 @@ sidebar_label: 2. Create Typologies
 sidebar_position: 2
 ---
 
-Users have a position in the company they work for and all users registered in the Skill have a position linked in their Typologies.
-
+As every person has his specific role inside the company, every user registered in Skills has his position linked to a specific "typology".
 <figure>
 
 ![img-box-shadow](/img/university/maintenance/typologies.png)
 </figure>
 
-To create the tipologie navigate to Maintenance and locate the "Typologies" option
+To create a typology, navigate to Maintenance and locate the "Typologies" option
 
 Click on the "+" icon located in the upper right corner of the screen.
 
-It is necessary to fill in the fields registered in red.
+Fill the mandatory fields registered in red."
