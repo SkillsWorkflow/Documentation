@@ -22,7 +22,7 @@ Duplicar um utilizador existente
 
 Selecione um utilizador ativo já criado no mesmo departamento e com a mesma função do nosso utilizador.
 
-Vá para o canto superior direito da ecrã e clique nos três pontos. Abrira uma nova janela e selecione a opção DUPLICATE USER.
+Vá para o canto superior direito da ecrã e clique nos três pontos. Abrirá uma nova janela e selecione a opção DUPLICATE USER.
 
 No ecrã de duplicação do utilizador preencha o nome e sobrenome e grave.
 No final, clique em DUPLICATE.
