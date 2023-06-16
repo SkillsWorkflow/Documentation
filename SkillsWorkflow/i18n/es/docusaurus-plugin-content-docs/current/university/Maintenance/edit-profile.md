@@ -17,7 +17,7 @@ Se abrirá una pantalla con su perfil registrado previamente.
 
 En esta pantalla, puede insertar su foto y completar/cambiar sus datos, así como modificar las notificaciones que desea recibir en su SkillsWorkflow
 
-:::nota
+:::note
 De manera predeterminada, el sistema marca las primeras cinco notificaciones que le permiten recibir alertas a través de push y correo electrónico 
 para cada cambio en el sistema.
 :::
