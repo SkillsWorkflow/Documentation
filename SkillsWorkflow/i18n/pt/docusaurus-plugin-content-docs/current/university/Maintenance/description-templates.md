@@ -40,7 +40,7 @@ Para salvar clique em "OK"
 <figure>
 
 ![img-box-shadow](/img/university/maintenance/description-templates.png) 
-<figcaption>Formulario de Templates</figcaption>
+<figcaption>Formulário de Templates</figcaption>
 
 </figure>
 
