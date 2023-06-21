@@ -512,7 +512,7 @@ The follow examples shows how to display the currency symbol in a currency colum
             precision: 1
         }
         mapping: {
-            symbol: "Symbol"
+            code: "CurrencyCode"
         }
     }
 }
