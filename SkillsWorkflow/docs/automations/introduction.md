@@ -112,12 +112,19 @@ Pipe Functions support arguments between parentheses
 * Contains - {{['MyText'] | Contains('Text to check if exists')}}
 * Join - {{['MyText'] | Join('Text to append')}}
 ---
-### Arithmetic And Date Operators
+### Arithmetic Operators
 * AddDecimal(value) - {{['MyIntValue'] | AddDecimal(2)}}
+* Sum - {{['ArrayOfValues']$ | Sum}}
+* Min - {{['ArrayOfValues']$ | Min}}
+* Max - {{['ArrayOfValues']$ | Max}}
+* Avg - {{['ArrayOfValues']$ | Avg}}
+
+### Date Operators
 * AddMonths(value) - {{['StartDate'] | AddMonths(2)}}
 * AddDays(value) - {{['StartDate'] | AddDays(-1)}}
 * AddHours(value) - {{['StartDate'] | AddHours(12)}}
 * AddMinutes(value) - {{['StartDate'] | AddMinutes(2)}}
+
 ### String Formatting
 * RemoveLeading('value') - {{['MyText'] | RemoveLeading('Text To Remove from start')}}
 * RemoveTrailing('value') - {{['MyText'] | RemoveTrailing('Text To Remove from End')}}
