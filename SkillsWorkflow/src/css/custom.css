@@ -413,6 +413,11 @@ img[alt=img-with-border] {
   margin-top: 0px;
 }
 
+img[alt=home-image-size] {
+  width: 800px;
+  padding: 50px
+}
+
 
 .left {
   animation: right-to-left 1s linear forwards;
@@ -700,3 +705,4 @@ table tbody td code {
   border-radius: 5px;
   padding: 3px 5px;
 }
+

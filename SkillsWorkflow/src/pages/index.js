@@ -16,7 +16,7 @@ import {
 } from '@docusaurus/theme-common';
 const features = [
   {
-    link: "docs/craft/panels/grid/allow-inline",
+    link: "docs/home",
     title: <span>Crafting</span>,
     imageUrl: 'img/homefeat01.svg',
     description: (
