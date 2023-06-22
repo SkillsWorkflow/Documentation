@@ -17,11 +17,12 @@ Temples podem ser usados para criar projetos, contratos, trabalhos e estimativas
 
 2. Clique em Descrição dos Templates
 
-<figure> 
+<figure>
 
 ![img-box-shadow](/img/university/maintenance/description.png) 
-</figure>
+<figcaption>Descrição de Templates</figcaption>
 
+</figure>
 
 ## Descrição de Templates
 
@@ -39,6 +40,7 @@ Para salvar clique em "OK"
 <figure>
 
 ![img-box-shadow](/img/university/maintenance/description-templates.png) 
+<figcaption>Formulário de Templates</figcaption>
 
 </figure>
 
@@ -58,4 +60,6 @@ Após a criação do Template, é necessário vinculá-lo ao Departamento que o 
 <figure>
 
 ![img-box-shadow](/img/university/maintenance/types.png)
+<figcaption>Descrição do Template</figcaption>
+
 </figure>
