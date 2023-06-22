@@ -46,7 +46,7 @@ module.exports = {
                                 }
                             ]
                         },
-                        'craft/context'
+                        'craft/context'                       
                     ],
                 },
                 {
