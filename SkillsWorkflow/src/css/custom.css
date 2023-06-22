@@ -415,6 +415,7 @@ img[alt=img-with-border] {
 
 img[alt=home-image-size] {
   width: 800px;
+  padding: 50px
 }
 
 
