@@ -12,4 +12,5 @@ Wanna learn more? Here you can get some easy lessons to improve your knowledge o
 <figure>
 
 ![home-image-size](/img/homefeat01.svg)
+
 </figure>
