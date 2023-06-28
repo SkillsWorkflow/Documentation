@@ -93,7 +93,7 @@ When a folder is created in Skills Workflow, it is created automatically in Goog
 
 <figure>
 
-![img-box-shadow](/img/integrations/box8.png)
+![img-box-shadow](/img/integrations/google-drive-folder-structure.png)
 <figcaption>Folder structure in Google Drive</figcaption>
 </figure>
 
