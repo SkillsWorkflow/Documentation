@@ -1,7 +1,8 @@
 ---
-id:  technical-documentation
-title: Technical Documentation
-sidebar_label: Technical Documentation
+id:  api
+title: API
+sidebar_label: API
+sidebar_position: 1
 ---
 
 API URLs:
