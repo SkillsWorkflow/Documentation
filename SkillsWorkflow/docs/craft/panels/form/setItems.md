@@ -292,3 +292,110 @@ It will not work for the following entities:
 - user
 
 :::
+
+## lookup
+
+```js
+{
+        dataField: "CompanyId",
+        label: {
+            text: "CompanyId"
+        },
+        editorType: "dxSelectBox",
+        entity: "company",   
+        editorOptions: {
+            name: "CompanyId"
+            lookup:{
+                endpoint: {
+                    load: "v3/payment-conditions/lookup", 
+                    byKey: "v3/payment-conditions" 
+                },
+                dataSource: "", 
+                name: "lookupTemplate", 
+                dependencyEditor: "DivisionId", 
+                filterEditors: ["DivsionId", "DepartmentId"], 
+                filters: [   
+                    { 
+                        name: "DocumentTypeName",  
+                        value: "Skill.Module.BusinessObjects.PriceTable" 
+                    },
+                ]
+            }
+        }
+    }
+```
+## custom editorOptions
+```js
+{
+        dataField: "CompanyId",
+        label: {
+            text: "CompanyId"
+        },
+        editorType: "dxSelectBox",
+        editorOptions: {
+            name: "CompanyId",
+            ...SW.UI.SelectBox.getEditorOptions(
+                "v3/company",
+                {
+                    endpointByKey: "v3/company"
+                    onBeforeLoad: function(a){
+                    }
+                }
+            )
+        }
+    }
+```
+
+### entity
+
+uses the default lookup of the entity
+
+### name
+
+used to save the component (string)
+
+### load
+
+the endpoint to use for the load of the selectBox (string or function)
+
+### byKey
+    
+the endpoint to use as key of the selectBox (if it is used as a string it will put "/" + key + "lookup") (string or function)  
+
+### dataSource
+
+under development
+### name (inside the property lookup)
+
+the name of the lookup that is not default (string)
+
+### dependencyEditor
+
+the name of the field that will unlock the current field. The field could be a dxSelectBox, dxNumberBox, dxDateBox
+
+(string)
+### filterEditors
+
+the name of the field that will unlock the current field. The field could be a dxSelectBox, dxNumberBox, dxDateBox
+
+(string or array)
+        
+### filters
+
+name: the name of the filter (string)
+value: the value of the filter (boolean, string)
+
+
+<figure>
+
+![img-box-shadow-popup](/img/craft/form/setItems/info-cascade-example.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow-popup](/img/craft/form/setItems/info-example.png)
+
+</figure>
+
+
