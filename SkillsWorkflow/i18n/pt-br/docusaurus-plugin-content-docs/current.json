@@ -56,7 +56,11 @@
     "description": "The label for category Notifications in sidebar university"
   },
   "sidebar.university.category.Leaves": {
-    "message": "Ausência",
-    "description": "The label for category Contracts in sidebar university"
+    "message": "Ausências",
+    "description": "The label for category Leaves in sidebar university"
+  },
+  "sidebar.university.category.Maintenance": {
+    "message": "Manutenção",
+    "description": "The label for category Maintenance in sidebar university"
   }
 }
