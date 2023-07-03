@@ -89,7 +89,7 @@ Navegue para el **Módulo Hojas**.
 </figure>
 
 
-## evisar los Permisos/Vacaciones rechazadas
+## Revisar los Permisos/Vacaciones rechazadas
 
 1. Cuándo un responsable rechaza permisos/vacaciones, el usuario es notificado de que su permiso fue rechazado y de que necesita de revisarlo y enviarlo a aprobación nuevamente.
 2. Verifique que el usuario recibe una notificación del sistema con el motivo del rechazo.
