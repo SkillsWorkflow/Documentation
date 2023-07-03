@@ -1,11 +1,11 @@
 ---
 id: create-holidays  
-title: Holidays
-sidebar_label: 5. Register Holidays
+title: Vacaciones
+sidebar_label: 5. Registro Vacaciones
 sidebar_position: 5
 ---
 
-To create a holiday, go to "Maintenance" and look for the "Holiday".
+Para crear un día festivo, vaya a "Mantenimiento" y busque "Día festivo".
 
 <figure>
 
@@ -14,9 +14,9 @@ To create a holiday, go to "Maintenance" and look for the "Holiday".
 </figure>
 
 
-Click on the "+" icon located in the upper right corner of the screen.
+Haga clic en el icono "+" situado en la esquina superior derecha de la pantalla.
 
-The Holiday creation screen will open.
+Se abrirá la pantalla de creación de Vacaciones.
 
 <figure>
 
@@ -25,14 +25,14 @@ The Holiday creation screen will open.
 </figure>
 
 
-- **Name** - In the name field, enter the name of the holiday and the specific date of the holiday. 
-- **Date** - The date when the holiday will occur.
-- **Company** - The company field does not need to be filled in, it is only necessary to put the company if it is a group of many companies and this holiday is specific to a company within the group.
-- **Is Plannable** - Allows the holiday to be visible to users.
-- **Allows Time Sheets** - Allows users to enter hours on this day.
+- **Nombre** - En el campo nombre, introduzca el nombre de la festividad y la fecha concreta de la misma. 
+- **Fecha** - La fecha en la que se producirá la festividad.
+- **Empresa** - No es necesario rellenar el campo empresa, sólo es necesario poner la empresa si se trata de un grupo de muchas empresas y este festivo es específico para una empresa dentro del grupo.
+- **Es Planificable** - Permite que las vacaciones sean visibles para los usuarios.
+- **Permite Hojas de Tiempo** - Permite a los usuarios introducir horas en este día.
 
   :::note
-    If your company does not allow the insertion of hours in the Timesheet on Holidays, uncheck this option.
+     Si su empresa no permite la inserción de horas en el parte de horas en días festivos, desmarque esta opción.
   :::
-  
-At the end of the creation process, click OK to save.
+
+  Al final del proceso de creación, haga clic en Aceptar para guardar.
