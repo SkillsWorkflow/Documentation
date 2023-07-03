@@ -1,16 +1,17 @@
 ---
-id:  home
+id: home
 slug: /university
-title: ''
+title: Home
 sidebar_label: Home
 sidebar_position: 1
 ---
 
 ### Bem vindo à Universidade
 
-Queres saber mais? Veja as nossas lições simples e fáceis para melhorar seu conhecimento na utilização do sistema.
+Quer saber mais? Veja as nossas lições simples e fáceis para melhorar seu conhecimento na utilização do sistema.
 
 <figure>
 
 ![home-image-size](/img/homefeat03.svg)
+
 </figure>

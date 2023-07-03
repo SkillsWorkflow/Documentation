@@ -1,7 +1,7 @@
 ---
-id:  home
+id: home
 slug: /university
-title: ''
+title: Home
 sidebar_label: Home
 sidebar_position: 1
 ---
@@ -13,4 +13,5 @@ Desea saber más? Vea nuestras lecciones simples y fáciles para mejorar su cono
 <figure>
 
 ![home-image-size](/img/homefeat03.svg)
+
 </figure>
