@@ -1,7 +1,8 @@
 ---
-id:  create-leave-type
+id: create-leave-type
 title: Crear Tipos de Vacaciones
 sidebar_label: 6. Crear Tipos de Vacaciones
+sidebar_position: 6
 ---
 
 :::info
@@ -9,35 +10,35 @@ Vaya a "Mantenimiento" y seleccione el módulo "Tipos de Permiso".
 :::
 
 En una empresa pueden crearse varios tipos de permiso, como:
+
 - Baja médica
 - Baja por maternidad
 - Vacaciones
 
 Siga los pasos que se indican a continuación para crear un nuevo tipo de permiso:
 
-
 1. Acceda al área de Mantenimiento y busque "Tipos de permiso".
 
-    <figure>
+   <figure>
 
-    ![img-with-border](/img/university/maintenance/create_leaves1.png)
-    </figure>
+   ![img-with-border](/img/university/maintenance/create_leaves1.png)
+   </figure>
 
 2. Haga clic en el icono "+", en la esquina superior derecha.
 
-    <!-- <figure>
-    ![img-with-border](/img/university/leaves/ )
-    </figure> -->
+<!-- <figure>
+![img-with-border](/img/university/leaves/ )
+</figure> -->
 
 3. Una ventana emergente mostrará un formulario para rellenar y crear el Tipo de Permiso deseado.
- 
-    <figure>
 
-    ![img-with-border](/img/university/maintenance/create_leaves2.png)
-    </figure>
+   <figure>
+
+   ![img-with-border](/img/university/maintenance/create_leaves2.png)
+   </figure>
 
 4. Después de rellenar toda la información, haga clic en "Aceptar" para guardar.
- 
+
 :::note Configuración Importante
 Cada tipo de permiso puede requerir configuraciones específicas adicionales.
 :::

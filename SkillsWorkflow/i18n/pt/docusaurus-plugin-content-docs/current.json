@@ -54,5 +54,13 @@
   "sidebar.university.category.Projects Management": {
     "message": "Gestão de Projectos",
     "description": "The label for category Notifications in sidebar university"
+  },
+  "sidebar.university.category.Leaves": {
+    "message": "Ausências",
+    "description": "The label for category Leaves in sidebar university"
+  },
+  "sidebar.university.category.Maintenance": {
+    "message": "Manutenção",
+    "description": "The label for category Maintenance in sidebar university"
   }
 }
