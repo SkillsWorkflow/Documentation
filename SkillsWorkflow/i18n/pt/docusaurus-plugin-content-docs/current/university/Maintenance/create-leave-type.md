@@ -1,7 +1,8 @@
 ---
-id:  create-leave-type
+id: create-leave-type
 title: Criar Tipos de Ausências
 sidebar_label: 6. Criar tipos de ausências
+sidebar_position: 6
 ---
 
 :::info
@@ -9,6 +10,7 @@ Aceda a "Manutenção" e seleccione o módulo "Tipos de ausências".
 :::
 
 Podem ser criados vários tipos de ausências numa empresa, tais como:
+
 - Licença médica
 - Licença de maternidade
 - Licença de férias
@@ -17,26 +19,26 @@ Siga os passos abaixo para criar um novo tipo de ausência:
 
 1. Aceder à área Manutenção e procurar "Tipos de ausência".
 
-    <figure>
+   <figure>
 
-    ![img-with-border](/img/university/maintenance/create_leaves1.png)
-    </figure>
+   ![img-with-border](/img/university/maintenance/create_leaves1.png)
+   </figure>
 
 2. Clique no ícone "+" no canto superior direito.
 
-    <!-- <figure>
-    ![img-with-border](/img/university/leaves/ )
-    </figure> -->
+<!-- <figure>
+![img-with-border](/img/university/leaves/ )
+</figure> -->
 
 3. Uma janela pop-up apresentará um formulário para preencher e criar o tipo de autorização pretendido.
- 
-    <figure>
 
-    ![img-with-border](/img/university/maintenance/create_leaves2.png)
-    </figure>
+   <figure>
+
+   ![img-with-border](/img/university/maintenance/create_leaves2.png)
+   </figure>
 
 4. Depois de preencher todas as informações, clique em "OK" para guardar.
- 
+
 :::note Configurações importantes
 Cada tipo de autorização pode exigir configurações específicas adicionais.
 :::
