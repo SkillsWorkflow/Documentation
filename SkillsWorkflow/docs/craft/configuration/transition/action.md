@@ -83,6 +83,20 @@ Affects the Stage of the Documents listed.
 ![img-box-shadow](/img/craft/configuration/action/changeDocumentStage.png)
 </figure>
 
+```sql title="Query to return the list of Deliverable children of a given Deliverable to be updated to Cancelled"
+select	'Deliverable' as DocumentTypeName,
+	sd.oid as DocumentId,
+	ws.Oid as WorkflowStageId
+from    Deliverable d, WorkflowState dws, Deliverable sd, Document doc, WorkflowState ws, WorkflowState sdws
+where   d.Oid = @CurrentDocumentId
+	and dws.Oid = d.WorkflowState
+        and sd.Parent = d.Oid
+	and sd.WorkflowState = sdws.Oid
+	and sdws.Name not in ('Delivered', 'Completed', 'Cancelled')
+	and doc.TypeName = 'Skill.Module.BusinessObjects.Deliverable'
+        and ws.Document = doc.Oid
+        and ws.Name = 'Cancelled'
+```
 
 ## Assign Team
 
