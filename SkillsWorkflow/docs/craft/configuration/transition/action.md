@@ -56,10 +56,22 @@ Affects the Stage of the Documents listed.
     </thead>
     <tbody>
         <tr className="selected">
-            <td><code>CurrentDocumentId</code></td>
-            <td>Uniqueidentifier</td>
+            <td><code>DocumentTypeName</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td>The document type name: Estimate, Project, Deliverable...</td> 
+        </tr>
+	<tr className="selected">
+            <td><code>DocumentId</code></td>
+             <td>Uniqueidentifier</td>
             <td>true</td>
             <td>Id of the document</td> 
+        </tr>
+	<tr className="selected">
+            <td><code>WorkflowStageId</code></td>
+             <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>Id of the stage</td> 
         </tr>
     </tbody>
 </table>
@@ -97,7 +109,7 @@ Below are the parameters available to execute the query:
             <td><code>CurrentUserId</code></td>
             <td>Uniqueidentifier</td>
             <td>false</td>
-            <td>The Id of the current user that trigger the action execution</td> 
+            <td>The Id of the current user that triggers the action execution</td> 
         </tr>
     </tbody>
 </table>
@@ -124,7 +136,7 @@ The query result must return the following columns:
             <td><code>TeamId</code></td>
             <td>Uniqueidentifier</td>
             <td>true</td>
-            <td>The Assigment Type Id which the user will be added</td> 
+            <td>The Assignment Type Id which the user will be added</td> 
         </tr>
     </tbody>
 </table>
@@ -149,7 +161,7 @@ where
 ## Custom Table Write
 
 Adds or Updates entries in a Custom Table
-<p>Returns the entries to added in the Table​</p>
+<p>Returns the entries to add in the Table​</p>
 <p>Useful to save Additional Information​</p>
 
 <table className="custom-table">
