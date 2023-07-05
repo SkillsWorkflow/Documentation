@@ -5,7 +5,7 @@ sidebar_label: 6. Create an estimate
 sidebar_position: 6
 ---
 
-Estimates can either be linked to Fees or created directly under a Company, Leads or Activity.
+Estimates can either be linked to Fees or created directly under a Company, Leads, or Activity.
 
 Should you wish to create an estimate associated with a specific Fee, please check our lesson 3 under the contracts section.
 
@@ -37,6 +37,8 @@ On the Info tab, you can fill in the following fields:
 - **Rate Card** and **Rate Card Column** - It can be inherited from the Client or manually picked.
 - **Overheads** and **Margins** - Defined manually for each Estimate (optional).
 
+### Create Quotes
+
 To start building your Estimate details navigate to the Quotes tab where you will find 4 different sections:
 
 - **Deliverables** - these are the services sold to the client (each line can represent actual deliverables, i.e. projects/jobs; a monthly fee, or any other structure you want to use for breaking down your Estimate).
@@ -53,7 +55,6 @@ To start building your Estimate details navigate to the Quotes tab where you wil
 To create new Quotes you should:
 
 1. Press on "+" to create a deliverable to estimate.
-
 2. Each deliverable can represent a month in the retainer fee; a service, etc.
 
 <figure>
@@ -64,12 +65,11 @@ To create new Quotes you should:
 
 3. For each Deliverable you should include:
 
- - **Description** - Fill in a name that describes what you are selling to the Client.
-
+- **Description** - Fill in a name that describes what you are selling to the Client.
 - **Service** - Choose the type of service you are Quoting.
-
 - **Tax**- Can come directly from the Client or be manually entered.
- 
+
+#### Quoting Third Party
 
 To start quoting the Third Party, click on the word Third Party and the section will open up.
 
@@ -83,7 +83,7 @@ To start quoting the Third Party, click on the word Third Party and the section 
 8. Repeat the process if you need to add several external costs.
 
 :::note
-Please note that you can have several external cost under one client line. It will depend on how you want to show the estimate details to clients.
+Please note that you can have several external costs under one client line. It will depend on how you want to show the estimate details to clients.
 :::
 
 <figure>
@@ -92,6 +92,7 @@ Please note that you can have several external cost under one client line. It wi
 <figcaption></figcaption>
 </figure>
 
+#### Quoting Expenses
 
 To start quoting expenses, click on the "Expense" word and the section will open up.
 
@@ -108,7 +109,7 @@ To start quoting expenses, click on the "Expense" word and the section will open
 <figcaption></figcaption>
 </figure>
 
- 
+#### Quoting Resources 
 
 To start quoting the resources, click on the "Resources" word and the section will open up.
 
@@ -144,4 +145,4 @@ As you fill in the values, the total per Deliverable on the Deliverables section
 
 Note that each individual column on the Estimate is controlled by access roles. 
 
-Please note that you can have several external costs, expenses and resources under one client line. It will depend how you want to show the estimate details to clients
+Please note that you can have several external costs, expenses, and resources under one client line. It will depend on how you want to show the estimate details to clients
