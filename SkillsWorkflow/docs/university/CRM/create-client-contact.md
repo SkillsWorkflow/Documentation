@@ -1,6 +1,6 @@
 ---
 id: create-client-contact
-title: Create a new Client contact
+title: Create a client contact
 sidebar_label: 2. Create client contact
 sidebar_position: 2
 ---
@@ -41,4 +41,3 @@ It won't be necessary to save the changes made, as the system will automatically
 ![img-box-shadow](/img/university/crm/crm-client1-4.png)
 <figcaption>Contact details automatically saved</figcaption>
 </figure>
-
