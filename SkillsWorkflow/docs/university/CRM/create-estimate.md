@@ -37,7 +37,7 @@ On the Info tab, you can fill in the following fields:
 - **Rate Card** and **Rate Card Column** - It can be inherited from the Client or manually picked.
 - **Overheads** and **Margins** - Defined manually for each Estimate (optional).
 
-### Create Quotes
+## Create Quotes
 
 To start building your Estimate details navigate to the Quotes tab where you will find 4 different sections:
 
@@ -69,7 +69,7 @@ To create new Quotes you should:
 - **Service** - Choose the type of service you are Quoting.
 - **Tax**- Can come directly from the Client or be manually entered.
 
-#### Quoting Third Party
+### Quoting Third Party
 
 To start quoting the Third Party, click on the word Third Party and the section will open up.
 
@@ -92,7 +92,7 @@ Please note that you can have several external costs under one client line. It w
 <figcaption></figcaption>
 </figure>
 
-#### Quoting Expenses
+### Quoting Expenses
 
 To start quoting expenses, click on the "Expense" word and the section will open up.
 
@@ -109,7 +109,7 @@ To start quoting expenses, click on the "Expense" word and the section will open
 <figcaption></figcaption>
 </figure>
 
-#### Quoting Resources 
+### Quoting Resources 
 
 To start quoting the resources, click on the "Resources" word and the section will open up.
 
