@@ -1,6 +1,6 @@
 ---
 id: create-commercial-product
-title: Create a new commercial product
+title: Create a commercial product
 sidebar_label: 3. Create commercial product
 sidebar_position: 3
 ---
@@ -13,7 +13,7 @@ To create a new commercial product you must go to the "Maintenance" module and t
 
 </figure>
 
-Select the commercial client where you need to create the product under.
+Select the commercial client which you need to create the product under.
 
 To create a new product, you will have to:
 
@@ -39,11 +39,11 @@ To create a new product, you will have to:
 
 > Associating product to a specific company
 > This is only applicable if within the same client, certain products are only available for one company and not the other(s).
-> Once all the information is complete click on top of the product to go into the product's page.
+> Once all the information is complete click on the top of the product to go to the product's page.
 
-- On the tab CommercialProductCompanies click on the "+" to add the company that will work with this specific product.
+- On the tab, CommercialProductCompanies click on the "+" to add the company that will work with this specific product.
 - Choose the company from the dropdown and then save by clicking on the disk symbol.
-- If you have billing products you will also be able to associate them to your commercial products.
+- If you have billing products you will also be able to associate them with your commercial products.
 
 <figure>
 
