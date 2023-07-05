@@ -1,12 +1,12 @@
 ---
 id:  create-activity
-title: Create an Activity
-sidebar_label: 5. Create Activity
+title: Create an activity
+sidebar_label: 5. Create activity
 sidebar_position: 5
 ---
 
 1. To create a new Activity, navigate to the CRM > Company module.
-2. Select the active Company where you want to include the new Activity under, and click the "+" at the top right corner.
+2. Select the active Company which you want to include the new Activity under, and click the "+" at the top right corner.
 3. Fill in the Activity creation popup form. 
    - **Title** - Name you would like to give to the Activity.
    - **Type** - Type of activity you want to create (e.g. Email, Call, Meeting, etc.)
@@ -20,11 +20,11 @@ sidebar_position: 5
 
 5. Once you complete all the fields click on the option 'check'.
 
-### Add description and upload files
+### Add a description and upload files
 
-1. Just type in all the information on the description inside the new Activity creation popup.
-2. At any time you can change the Description. For that you just need to click on the option that says "Edit".
-3. You can also attach files such as images, emails, by dragging or clicking on the dotted square.
+1. Just type in all the information on the description inside the creation popup.
+2. At any time you can change the Description. For that, you just need to click on the option that says "Edit".
+3. You can also attach files such as images, and emails, by dragging or clicking on the dotted square.
 
 <figure>
 
@@ -55,9 +55,9 @@ sidebar_position: 5
 <figcaption></figcaption>
 </figure>
 
-### Add people to the Activity's Team
+### Add people to the Team
 
-1. If you have access to change the Team you will see an Add Assignment symbol bellow the description section.
+1. If you have access to change the Team you will see an Add Assignment symbol below the description section.
 2. Add or remove people to each of the groups by clicking on the pencil.
 3. A dropdown will appear with a list of users.
 4. Select the users that you want and click on the check to add them to the Team.
@@ -82,7 +82,7 @@ sidebar_position: 5
 </figure>
 
 :::info
-In order to notify someone on your team about a new post or Activity related topics, you can always use the "Notifications" option.
+In order to notify someone on your team about a new post or Activity related topic, you can always use the "Notifications" option.
 :::
 
 ### Notifications
@@ -98,7 +98,7 @@ In order to notify someone on your team about a new post or Activity related top
 
 ### At the top of the page you will be able to find various tabs with information about this Activity
 
-- **Feed** - Activity and comments related with the Activity.
+- **Feed** - Activity and comments related to the Activity.
 - **Files** - All the files uploaded into this Activity will appear on this tab.
 - **History** - Track of status changes. You can see for example who created the Activity and at what time.
 - **Others** - You may also find other tabs depending on the modules of the system you have access to.
