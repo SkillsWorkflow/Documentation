@@ -11,6 +11,7 @@ sidebar_position: 5
    - **Title** - Name you would like to give to the Activity.
    - **Type** - Type of activity you want to create (e.g. Email, Call, Meeting, etc.)
    - **Start/End** - Choose when the Job starts and when it will end.
+4. Once you complete all the fields click on the check mark icon.
 
 <figure>
 
@@ -18,31 +19,20 @@ sidebar_position: 5
 <figcaption></figcaption>
 </figure>
 
-5. Once you complete all the fields click on the option 'check'.
 
-### Add a description and upload files
+### Add a description and files
 
 1. Just type in all the information on the description inside the creation popup.
 2. At any time you can change the Description. For that, you just need to click on the option that says "Edit".
 3. You can also attach files such as images, and emails, by dragging or clicking on the dotted square.
+4. Save it, close the Activity form by clicking on the check, and then on the bottom right side of the popup click on the small blue arrow.
+5. A pop-up will appear saying your Activity was successfully created. Click on this message to navigate directly to the Activity.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-2.png)
 <figcaption></figcaption>
 </figure>
-
-### Save the Activity 
-
-1. Save it, close the Activity form by clicking on the check, and then on the bottom right side of the popup click on the small blue arrow.
-2. A pop-up will appear saying your Activity was successfully created. Click on this message to navigate directly to the Activity.
-
-<figure>
-
-![img-box-shadow](/img/university/project-management/project-management-lesson2-3.png)
-<figcaption></figcaption>
-</figure>
-
 
 ### Move the Activity status
 
@@ -85,7 +75,7 @@ sidebar_position: 5
 In order to notify someone on your team about a new post or Activity related topic, you can always use the "Notifications" option.
 :::
 
-### Notifications
+### Notificatify people
 
 1. For that click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-3.png) symbol and select the users you want to notify.
 2. The user will be tagged on this comment and a notification will be sent.
@@ -96,7 +86,9 @@ In order to notify someone on your team about a new post or Activity related top
 <figcaption></figcaption>
 </figure>
 
-### At the top of the page you will be able to find various tabs with information about this Activity
+### Document tabs
+
+At the top of the page, you will be able to find various tabs with information about this Activity
 
 - **Feed** - Activity and comments related to the Activity.
 - **Files** - All the files uploaded into this Activity will appear on this tab.
