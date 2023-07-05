@@ -5,19 +5,13 @@ sidebar_label: 4. Create lead
 sidebar_position: 4
 ---
 
-### A Lead is an umbrella that groups a bundle of related activities and deals.
+:::info
+A Lead is an umbrella that groups a bundle of related activities and deals.
+:::
 
 1. To create a new Lead, navigate to the "Clients" module.
-2. Verify that you can navigate by clicking on Clients in the sidebar.
-
-<figure>
-
-![img-box-shadow](/img/university/project-management/project-management-lesson1-1.png)
-<figcaption></figcaption>
-</figure>
-
-3. After selecting a client click on the "+" to open a new Lead creation popup.
-4. Fill in the yellow (mandatory) fields.
+2. After selecting a client click on the "+" to open a new Lead creation popup.
+3. Fill in the yellow (mandatory) fields.
 
 - **Name** - Name you would like to give to the Lead.
 - **Type** - Choose from a drop-down list. E.g. Partnership, Direct Sales, etc.
@@ -26,36 +20,24 @@ sidebar_position: 4
 
 <figure>
 
-![img-box-shadow](/img/university/project-management/project-management-lesson1-2.png)
-<figcaption></figcaption>
-</figure>
-
-### Add a description
-
-1. You can add a description with all the information and instructions.
-2. Just type in all the information on the description field, inside the creation popup.
-
-<figure>
-
 ![img-box-shadow](/img/university/project-management/project-management-lesson1-3.png)
 <figcaption></figcaption>
 </figure>
 
-### Attach a file
+### Add a description and files
 
-1. You can also attach files by dragging them inside the popup, or by clicking on the dotted square.
-2. This is useful for adding documents or presentations, in any of the main formats (Word, PPT, Excel, PDF, etc.)
-
-### Activate the Lead.
-
-1. Click on the check to close the form and select the small blue arrow on the bottom right.
-2. After clicking on it, the Lead will get a number (see Lead code at the top) and it will no longer be on the stage Draft.
+1. You can add a description with all the information and instructions.
+2. Just type in all the information on the description field, inside the creation popup.
+3. You can also attach files by dragging them inside the popup, or by clicking on the dotted square.
+4. This is useful for adding documents or presentations, in any of the main formats (Word, PPT, Excel, PDF, etc.)
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson1-4.png)
 <figcaption></figcaption>
 </figure>
+
+
 
 ### Add people to the team
 
@@ -70,7 +52,9 @@ sidebar_position: 4
 <figcaption></figcaption>
 </figure>
 
-### At the top of the page you will be able to find various tabs with information about this Lead
+### Document tabs
+
+At the top of the page, you will be able to find various tabs with information about this Lead:
 
 - **Feed** - All the stages and comments related to the Lead.
 - **Activities** - List of existing activities belonging to this Lead.
