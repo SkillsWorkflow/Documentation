@@ -1,15 +1,15 @@
 ---
 id:  create-estimate
 title: Create an Estimate
-sidebar_label: 6. Create an Estimate
+sidebar_label: 6. Create an estimate
 sidebar_position: 6
 ---
 
-Estimates can either be linked to Fees or created directly under a Company or Activity.
+Estimates can either be linked to Fees or created directly under a Company, Leads or Activity.
 
-Should you wish to create an estimate associated to a specific Fee, please check our lesson 3 under contracts section.
+Should you wish to create an estimate associated with a specific Fee, please check our lesson 3 under the contracts section.
 
-To generate a estimate under a Company or Activity you should navigate onto the document you wish to generate the estimate, press on the option + and choose "estimate"
+To generate an estimate under a Company or Activity you should navigate onto the document you wish to generate the estimate, press on the option +, and choose "estimate"
 
 <figure>
 
@@ -20,7 +20,7 @@ To generate a estimate under a Company or Activity you should navigate onto the 
 Fill in the following fields:
 
 - **Department** - The system will suggest the user department by default, but you can select other planable departments and set up different workflows if needed.
-- **Estimate Type** - You can have several estimate types which will allow different configurations such as workflows, pull out reports, etc.
+- **Estimate Type** - You can have several estimate types which will allow different configurations such as workflows, pull-out reports, etc.
 - Click on the check mark to submit the post. The system will show a popup message with the confirmation that the estimate was successfully created.
 
 
@@ -30,14 +30,14 @@ Fill in the following fields:
 <figcaption></figcaption>
 </figure>
 
-On the Info tab you can fill in the following fields:
+On the Info tab, you can fill in the following fields:
 
 - **Payment Condition** - It can be inherited from the Client or manually chosen.
 - **Currency** - It can be inherited from the default currency defined in the Company or manually chosen.
 - **Rate Card** and **Rate Card Column** - It can be inherited from the Client or manually picked.
 - **Overheads** and **Margins** - Defined manually for each Estimate (optional).
 
-To start building your Estimate details navigate on the Quotes tab where you will find 4 different sections:
+To start building your Estimate details navigate to the Quotes tab where you will find 4 different sections:
 
 - **Deliverables** - these are the services sold to the client (each line can represent actual deliverables, i.e. projects/jobs; a monthly fee, or any other structure you want to use for breaking down your Estimate).
 - **Third Party Costs** - this is the first component of the estimate. These relate to external suppliers.
@@ -83,7 +83,7 @@ To start quoting the Third Party, click on the word Third Party and the section 
 8. Repeat the process if you need to add several external costs.
 
 :::note
-Please note that you can have several external cost under one client line. It will depend how you want to show the estimate details to clients.
+Please note that you can have several external cost under one client line. It will depend on how you want to show the estimate details to clients.
 :::
 
 <figure>
@@ -98,7 +98,7 @@ To start quoting expenses, click on the "Expense" word and the section will open
 1. Select the deliverable you want to quote for from the dropdown.
 2. Press on "+" to add Estimate Details.
 3. Select the expense type you need to quote (eg. Meals, Hotel).
-4. Fill in the unit cost, and quantity #.
+4. Fill in the unit cost and quantity #.
 5. Click on the Save icon.
 6. Repeat the process if you need to add several expenses.
 
