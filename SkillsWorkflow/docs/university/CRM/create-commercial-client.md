@@ -1,6 +1,6 @@
 ---
 id: create-commercial-client
-title: Create a new commercial client
+title: Create a commercial client
 sidebar_label: 1. Create commercial client
 sidebar_position: 1
 ---
