@@ -5,8 +5,8 @@ sidebar_label: 5. Create activity
 sidebar_position: 5
 ---
 
-1. To create a new Activity, navigate to the CRM > Company module.
-2. Select the active Company which you want to include the new Activity under, and click the "+" at the top right corner.
+1. To create a new Activity, navigate to the Lead.
+2. Select the active Lead under which you want to include the new Activity under, and click the "+" at the top right corner.
 3. Fill in the Activity creation popup form. 
    - **Title** - Name you would like to give to the Activity.
    - **Type** - Type of activity you want to create (e.g. Email, Call, Meeting, etc.)
