@@ -5,7 +5,7 @@ sidebar_label: Home
 sidebar_position: 1
 ---
 
-### Welcome to Skills Workflow's University
+### Welcome to Skills Workflow's Documentation
 
 Wanna learn more? Here you can get some easy lessons to improve your knowledge of Skills Workflow.
 
