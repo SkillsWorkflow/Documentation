@@ -104,9 +104,9 @@ In order to notify someone on your team about a new post or Job related topics, 
 
 ### At the top of the page you will be able to find various tabs with information about this Job.
 
-- **Feed** - Activity and comments related with the Project.
-- **Jobs** - List of existing jobs belonging to this Project.
-- **Planned Hours** - Planned versus Actual hours per typology and/or user for the Project.
+- **Feed** - Activity and comments related with the Job.
+- **Jobs** - List of existing jobs belonging to this Job.
 - **Files** - All the files uploaded into this Project will appear on this tab.
 - **History** - Track of status changes. You can see for example who created the Project and at what time.
+- **Additional Information** - All the non-standard Job's fields.
 - **Others** - You may also find other tabs depending on the modules of the system you have access to.
