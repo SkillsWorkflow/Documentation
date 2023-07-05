@@ -1,14 +1,14 @@
 ---
 id:  create-lead
-title: Create a Lead
-sidebar_label: 4. Create Lead
+title: Create a lead
+sidebar_label: 4. Create lead
 sidebar_position: 4
 ---
 
 ### A Lead is an umbrella that groups a bundle of related activities and deals.
 
 1. To create a new Lead, navigate to the "Clients" module.
-2. Verify that you can navigate by clicking on Clients in the side bar.
+2. Verify that you can navigate by clicking on Clients in the sidebar.
 
 <figure>
 
