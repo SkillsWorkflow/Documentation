@@ -1,6 +1,6 @@
 ---
 id:  create-estimate
-title: Create an Estimate
+title: Create an estimate
 sidebar_label: 6. Create an estimate
 sidebar_position: 6
 ---
