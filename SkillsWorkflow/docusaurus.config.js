@@ -33,7 +33,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/home',
+          to: 'docs',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',

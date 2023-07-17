@@ -16,7 +16,7 @@ import {
 } from '@docusaurus/theme-common';
 const features = [
   {
-    link: "docs/home",
+    link: "docs",
     title: <span>Crafting</span>,
     imageUrl: 'img/homefeat01.svg',
     description: (
@@ -38,8 +38,8 @@ const features = [
     ),
   },
   {
-    link:'docs/university',
-    title: <span>University</span> ,
+    link: 'docs/university',
+    title: <span>University</span>,
     imageUrl: 'img/homefeat03.svg',
     description: (
       <>
@@ -53,20 +53,20 @@ const features = [
 function Feature({ imageUrl, title, description, link }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col-4', styles.cardWrapper)} onClick={() => window.location.href=link}>
+    <div className={clsx('col col-4', styles.cardWrapper)} onClick={() => window.location.href = link}>
       {imgUrl && (
         <div className="home-page-options">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
       <div style={{
-          backgroundColor: '',
-          borderRadius: '5px',
-          paddingLeft: '40px',
-          paddingRight: '40px'
-        }}>
-      <h3>{title}</h3>
-      <p>{description}</p>
+        backgroundColor: '',
+        borderRadius: '5px',
+        paddingLeft: '40px',
+        paddingRight: '40px'
+      }}>
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
     </div >
   );
