@@ -4,7 +4,7 @@ title: RCA - Mitigated - Automations - West Europe - 12-10-2022
 sidebar_label: RCA - Mitigated - Automations - West Europe - 12-10-2022
 ---
 
-# Impact summary
+### Impact summary
 
 On 12 October 2022, between 08:30 UTC and 09:55 UTC, some customers reported failures on automation execution on our West Europe region. This was during a rollout operation in this region.
 
@@ -12,7 +12,7 @@ The incident response team verified that automations were not executing correctl
 
 After some more investigation it was found that some configuration keys were missing in the integration API. The incident team immediately added the missing configuration mitigating the situation.
 
-# RCA
+### RCA
 
 In the course of the investigation to the causes of this incident, engineering team identified an issue in the integration API deployment task.
 
@@ -22,7 +22,7 @@ In this process, the configuration already in place in production changed as wel
 
 The engineering team changed the way integration API deployment is done. Configuration is now slot specific. Configuration changes only takes place when swapping is done between a staging slot and the production slot.
 
-# Next steps
+### Next steps
 
 Our costumers rely on Skills Workflow and we understand the impact these incidents have and that's why we are committed to continuously improve our platform.
 

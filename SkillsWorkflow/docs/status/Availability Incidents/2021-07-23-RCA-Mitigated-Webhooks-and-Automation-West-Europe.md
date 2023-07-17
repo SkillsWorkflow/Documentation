@@ -4,7 +4,7 @@ title: RCA - Mitigated - Webhooks and Automation - West Europe - 23-07-2021
 sidebar_label: RCA - Mitigated - Webhooks and Automation - West Europe - 23-07-2021
 ---
 
-# Impact summary
+### Impact summary
 
 Starting 23 July 2021 - 09:56 UTC until 16:25 UTC, customers have experienced failures on webhook and automation execution on our West Europe region. 
 
@@ -15,7 +15,7 @@ Upon investigation, the team found that the backend queue responsible for broadc
 At 16:20 UTC the backend service was restored successfully.
 
 At 16:25 UTC the team determined that all affected services were healthy and automations were being triggered correctly.
-# RCA
+### RCA
 
 After investigation, the team determined that a service that subscribes from event message queue started to fail. All messages that caused the service to error were then piled in an internal dead lettering queue. This queue is part of the queue service itself. This behavior led to the queue service reaching its maximum size limit quota after some time. This led to all new event messages being refused which then caused downstream subscribers -- webhook service -- to not receive events.
 
@@ -24,7 +24,7 @@ No alarms were triggered for this incident due to several reasons. No errors wer
 After determining the issue, the team quickly mitigated the problem increasing the queue service maximum size quota and draining the dead letter queue.
 
 
-# Next steps
+### Next steps
 
 We understand the impact these issues have on our customers and that's why Skills Workflow is committed to continuously improving our platform.
 

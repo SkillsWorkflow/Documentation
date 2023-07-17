@@ -4,7 +4,7 @@ title: RCA - Mitigated - APIv2 - West Europe - 21-07-2022
 sidebar_label: RCA - Mitigated - APIv2 - West Europe - 21-07-2022
 ---
 
-# Impact summary
+### Impact summary
 
 On 21 July 2022, between 03:48 UTC and 08:15 UTC, many customers experienced errors or extreme delays accessing the Web Application, APIv2, and other APIs on our West Europe region.
 During the peak of the incident, Skills Workflow was practically unusable on the affected region with multiple systems failing.
@@ -19,16 +19,15 @@ As the majority of data on our platform is stored on multiple SQL Databases, thi
 
 As the Azure team started rolling out a mitigation we began to see an improvement on our error rates, and by 8:15 UTC we had no errors, despite the Azure mitigation just being completed by 13:30 UTC. 
 
-# RCA
+### RCA
 
 Skills Workflow is highly dependant on several data services, being Azure SQL Database our main data store technology, so any issue with this service has a high impact on our services.
 
 SQL Database is highly dependable, but, as any service, it can have issues and on this occasion it had an impact on our system availability. 
 Azure is tracking this incident (tracking ID: 3TBL-PD8) and will, eventually, provide a full RCA on their side. 
 
-# Next steps
+### Next steps
 
 Our costumers rely on Skills Workflow and we understand the impact these incidents have and that's why we are committed to continuously improve our platform.
 
 As next steps we will try to find ways to reduce the impact these kinds of issues have on our system as well as continue to rely on Azure to continually improve their services' reliability. 
-

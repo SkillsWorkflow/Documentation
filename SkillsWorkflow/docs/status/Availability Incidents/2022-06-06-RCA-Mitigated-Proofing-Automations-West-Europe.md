@@ -4,7 +4,7 @@ title: RCA - Mitigated - Proofing Automations - West Europe - 06-06-2022
 sidebar_label: RCA - Mitigated - Proofing Automations - West Europe - 06-06-2022
 ---
 
-# Impact summary
+### Impact summary
 
 Between 23 March 16:28 UTC and 31 March 15:29, users reported some tasks getting stuck at the "Proof ID Generated" stage despite of already having Proofs created.
 
@@ -12,7 +12,7 @@ After conducting an investigation, the team figured there was a misconfiguration
 
 The cases where the issue was reported where manually dealt by the team. Later on, the fix was applied, tested and put in Production to mitigate possible future cases.
 
-# RCA
+### RCA
 
 Whenever a Proof is created, 2 automations run on the background: one to generate a proof ID and another to create the proof.
 
@@ -22,7 +22,7 @@ In summary, proofs were being created without an ID and the task was being kept 
 
 To correct the issue, the team created a dependency so that the second automation (Proof creation) would only start running after the first one (Proof ID generation) was finished.
 
-# Next Steps
+### Next Steps
 
 We understand the impact these issues have on our customers and that's why Skills Workflow is committed to continuously improving our platform.
 

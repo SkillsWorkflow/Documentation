@@ -4,7 +4,7 @@ title: RCA - Mitigated - SSO - Multiple Regions - 30-06-2021
 sidebar_label: RCA - Mitigated - SSO - Multiple Regions - 30-06-2021
 ---
 
-# Impact summary
+### Impact summary
 
 Starting 30 June 2021 - 14:16 UTC until 1 July 10:00 UTC, some users intermittently experienced errors using Single Sign On authentication (SSO) on our Brazil South, Southeast Asia and East US regions.
 
@@ -20,9 +20,7 @@ By 10:29 UTC, the team determined that the affected regions were healthy and sta
 
 At 11:30 UTC SSO traffic routing was restored to the usual configuration so users would hit the closest datacenter, as usual, for reduced latency.
 
-
-
-# RCA
+### RCA
 
 While investigating this incident, the team engaged the Azure App Services Support team and Product Group to help determine why the keys became out of sync across nodes on the same server farm.
 
@@ -32,7 +30,7 @@ Worker nodes on the server farm use a shared storage to store all service data (
 
 The above mentioned Azure platform update triggered new keys to be generated, but it didn't restart the nodes in order to sync the keys.
 
-# Next steps
+### Next steps
 
 We understand the impact these issues have on our customers and that's why Skills Workflow is committed to continuously improve our platform.
 

@@ -4,7 +4,7 @@ title: RCA - Mitigated - Webhooks - Not Firing - West Europe - 06-06-2022
 sidebar_label: RCA - Mitigated - Webhooks - Not Firing - West Europe - 06-06-2022
 ---
 
-# Impact summary
+### Impact summary
 
 On 6 June 2022, between 14:57 UTC and 18:48 UTC, webhooks were not invoked in response to system events. 
 That meant that any downstream actions that responded to webhooks were not executed during the impact period.
@@ -15,7 +15,7 @@ After trying to manually restart the Azure Function, using several different app
 
 The new function instance quickly processed all pending event messages; by 18:48 UTC all pending webhooks were invoked and no work was lost.
 
-# RCA
+### RCA
 
 The Webhooks system on Skills Workflow uses an Azure Function whose responsibility is to determine for each event which webhooks are relevant and invoke them through HTTP REST calls. This function consumes event messages from the event queue to do its processing and during the impact period it completely stopped consuming messages.
 
@@ -28,7 +28,7 @@ This behavior was caused by an open issue on Azure Functions runtime when multip
 
 As we use a shared storage account per region for all our functions in the same region, we were affected by this issue.
 
-# Next steps
+### Next steps
 
 As next steps the following actions will be taken:
 - Redeploy all Azure Functions with separate storage accounts for added stability and performance as per Azure Support recommendation
