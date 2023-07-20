@@ -36,7 +36,7 @@ This action returns a list of documents that were blocked or unblocked according
 </figure>
 
 :::note
-- Select: choose the name of the action
+- Select: choose the name of the action - **BlockDocuments**
 - Options: write the name of the query
 :::
 
@@ -76,12 +76,49 @@ Affects the Stage of the Documents listed.
     </tbody>
 </table>
 
+The query result must return the following columns:
+<table className="custom-table">
+    <thead> 
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>DocumentTypeName</code></td>
+            <td>String</td>
+            <td>true</td>
+            <td>The Name of the Document to be updated</td> 
+        </tr>
+        <tr className="selected">
+            <td><code>DocumentId</code></td>
+            <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>The Id of the document to be updated</td> 
+        </tr>
+        <tr className="selected">
+            <td><code>WorkflowStageId</code></td>
+            <td>Uniqueidentifier</td>
+            <td>true</td>
+            <td>The Workflow Stage Id to move the given document</td> 
+        </tr>
+    </tbody>
+</table>
+
 <h3>Example</h3>
 
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/action/changeDocumentStage.png)
 </figure>
+
+:::note
+- Select: choose the name of the action - **ChangeDocumentsStage**
+- Options: write the name of the query
+:::
 
 ```sql title="Query to return the list of Deliverable children of a given Deliverable to be updated to Cancelled"
 select	'Deliverable' as DocumentTypeName,
@@ -162,6 +199,11 @@ The query result must return the following columns:
 ![img-box-shadow](/img/craft/configuration/action/assignTeam_example.png)
 </figure>
 
+:::note
+- Select: choose the name of the action - **AssignTeam**
+- Options: write the name of the query
+:::
+
 ```sql title="Query to add the current user to the Executor team"
 select  
         @CurrentUserId as UserId,
@@ -200,11 +242,12 @@ Adds or Updates entries in a Custom Table
 <h3>Example</h3>
 
 <figure>
-    
+
 ![img-box-shadow](/img/craft/configuration/action/customTable_example.png)
 </figure>
 
 :::note
+- Select: choose the name of the action - **CustomTableWrite**
 - Options: name of the custom table; name of the query
 <!-- - The name of the columns in the custom table and in the query must be equal otherwise this action doesn't work. -->
 :::
