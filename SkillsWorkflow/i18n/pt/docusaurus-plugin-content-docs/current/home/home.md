@@ -1,16 +1,17 @@
 ---
-id:  home
-slug: /university
-title: ''
+id: home
+title: ""
 sidebar_label: Home
 sidebar_position: 1
+slug: /
 ---
 
-### Bem vindo à Universidade
+### Welcome to Skills Workflow's Documentation
 
-Queres saber mais? Veja as nossas lições simples e fáceis para melhorar seu conhecimento na utilização do sistema.
+Wanna learn more? Here you can get some easy lessons to improve your knowledge of Skills Workflow.
 
 <figure>
 
-![home-image-size](/img/homefeat03.svg)
+![home-image-size](/img/homefeat01.svg)
+
 </figure>
