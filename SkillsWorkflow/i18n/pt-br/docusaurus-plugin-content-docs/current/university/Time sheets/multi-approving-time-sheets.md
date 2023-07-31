@@ -4,6 +4,7 @@ title: Aprovação múltipla de Timesheets
 sidebar_label: 4. Aprovação múltipla de Timesheets
 sidebar_position: 4
 ---
+
 ### Empresa
 
 1. Se a aprovação for igual para todos os clientes o tipo de aprovação de timesheet pode ser selecionada na empresa.
@@ -18,7 +19,7 @@ sidebar_position: 4
 ### Cliente
 
 2. Se a aprovação de timesheet for diferente por cliente:
-Ir a manutenção, selecionar o cliente e escolher que tipo de aprovação de timesheet.
+   Ir a manutenção, selecionar o cliente e escolher que tipo de aprovação de timesheet.
 
 <figure>
 
@@ -33,7 +34,7 @@ Ir a manutenção, selecionar o cliente e escolher que tipo de aprovação de ti
 
 <figure>
 
-![img-with-border](/img/timesheets/11-Configuration_Customer.png)
+![img-with-border](/img/timesheets/12-Configuration_responsables.png)
 
 <figcaption>Tipo de Aprovador de Timesheets</figcaption>
 </figure>
@@ -49,7 +50,8 @@ Se o responsável hierárquico ordem 1 rejeitar, todos os aprovadores e usuário
 <figcaption>Aprovação de Timesheets</figcaption>
 </figure>
 
-Una vez que el jefe de proyecto ha aprobado, el jefe de nivel 0 considera que ha llegado el momento de aprobar. 
+Una vez que el jefe de proyecto ha aprobado, el jefe de nivel 0 considera que ha llegado el momento de aprobar.
+
 <figure>
 
 ![img-with-border](/img/timesheets/14-Timesheets_approved.png)
@@ -76,4 +78,3 @@ Quando o aprovador de ordem 0 aprova, as horas vão para o aprovador de ordem 1 
 </figure>
 
 As horas administrativas seguem a aprovação estabelecida para os utilizadores e respetivos níveis.
-
