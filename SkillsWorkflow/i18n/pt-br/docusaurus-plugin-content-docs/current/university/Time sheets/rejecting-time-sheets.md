@@ -1,7 +1,7 @@
 ---
 id: rejecting-time-sheets
-title: Rejecting Time sheets
-sidebar_label: 3. Rejecting Time sheets
+title: Rejeitar Folhas de horas
+sidebar_label: 3. Rejeitar Folhas de horas
 sidebar_position: 3
 ---
 
