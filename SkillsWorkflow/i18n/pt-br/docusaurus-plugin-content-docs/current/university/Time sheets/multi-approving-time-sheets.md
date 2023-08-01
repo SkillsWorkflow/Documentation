@@ -41,8 +41,8 @@ sidebar_position: 4
 
 ### Aprovação pelo PM
 
-4. Se a opção de aprovação de timesheets configurada for a do responsável do projeto, quando o usuário coloca horas e envia para aprovação o sistema vai enviar para o responsável do projeto, quando este aprova segue para o responsável hierárquico ordem 0, quando este aprova segue para o responsável hierárquico ordem 1, e por aí em diante.
-Se o responsável hierárquico ordem 1 rejeitar, todos os aprovadores e usuário vão ver as horas como rejeitadas e a tooltip com o respetivo motivo.
+4. Se a opção de aprovação de timesheets configurada for a do responsável do projeto, quando o usuário coloca horas e envia para aprovação o sistema vai enviar para o responsável do projeto, quando este aprova segue para o responsável hierárquico ordem 0, quando este aprova segue para o responsável hierárquico ordem 1, e por aí em diante. Se o responsável hierárquico ordem 1 rejeitar, todos os aprovadores e usuário vão ver as horas como rejeitadas e a tooltip com o respetivo motivo.
+
 <figure>
 
 ![img-with-border](/img/timesheets/13-Every hours to Approve.png)
