@@ -7,7 +7,7 @@ sidebar_position: 4
 
 ### Empresa
 
-1. Se a aprovação for igual para todos os clientes o tipo de aprovação de timesheet pode ser selecionada na empresa.
+Se a aprovação for igual para todos os clientes o tipo de aprovação de timesheet pode ser selecionada na empresa.
 
 <figure>
 
@@ -18,8 +18,8 @@ sidebar_position: 4
 
 ### Cliente
 
-2. Se a aprovação de timesheet for diferente por cliente:
-   Ir a manutenção, selecionar o cliente e escolher que tipo de aprovação de timesheet.
+Se a aprovação de timesheet for diferente por cliente:
+Ir a manutenção, selecionar o cliente e escolher que tipo de aprovação de timesheet.
 
 <figure>
 
@@ -30,7 +30,7 @@ sidebar_position: 4
 
 ### Usuário
 
-3. Manutenção – Users – responsáveis – estabelecer vários utilizadores responsáveis, e a respetiva ordem.
+Aceder a manutenção na lista de usuários, separador responsáveis e estabelecer vários utilizadores responsáveis, e a respetiva ordem.
 
 <figure>
 
@@ -41,7 +41,7 @@ sidebar_position: 4
 
 ### Aprovação pelo PM
 
-4. Se a opção de aprovação de timesheets configurada for a do responsável do projeto, quando o usuário coloca horas e envia para aprovação o sistema vai enviar para o responsável do projeto, quando este aprova segue para o responsável hierárquico ordem 0, quando este aprova segue para o responsável hierárquico ordem 1, e por aí em diante. Se o responsável hierárquico ordem 1 rejeitar, todos os aprovadores e usuário vão ver as horas como rejeitadas e a tooltip com o respetivo motivo.
+Se a opção de aprovação de timesheets configurada for a do responsável do projeto, quando o usuário coloca horas e envia para aprovação o sistema vai enviar para o responsável do projeto, quando este aprova segue para o responsável hierárquico ordem 0, quando este aprova segue para o responsável hierárquico ordem 1, e por aí em diante. Se o responsável hierárquico ordem 1 rejeitar, todos os aprovadores e usuário vão ver as horas como rejeitadas e a tooltip com o respetivo motivo.
 
 <figure>
 
@@ -50,7 +50,7 @@ sidebar_position: 4
 <figcaption>Aprovação de Timesheets</figcaption>
 </figure>
 
-Una vez que el jefe de proyecto ha aprobado, el jefe de nivel 0 considera que ha llegado el momento de aprobar.
+Depois de o gestor de projeto ter aprovado, o gestor de nível 0 considera que chegou a altura de aprovar.
 
 <figure>
 
