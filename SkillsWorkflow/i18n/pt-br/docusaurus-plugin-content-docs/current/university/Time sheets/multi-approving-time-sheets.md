@@ -11,7 +11,7 @@ Se a aprovação for igual para todos os clientes o tipo de aprovação de times
 
 <figure>
 
-![img-with-border](/img/timesheets/10 - setting-in-the-company.png)
+![img-with-border](/img/timesheets/10-setting-in-the-company.png)
 
 <figcaption>Configuração na Empresa</figcaption>
 </figure>
@@ -63,7 +63,7 @@ Depois do responsável do projeto aprovar, o responsável hierárquico nível 0 
 
 <figure>
 
-![img-with-border](/img/timesheets/15-Hours unapproved.png)
+![img-with-border](/img/timesheets/15-Hours_unapproved.png)
 
 <figcaption>Timesheets Aprovadas</figcaption>
 </figure>
@@ -72,7 +72,7 @@ Quando o aprovador de ordem 0 aprova, as horas vão para o aprovador de ordem 1 
 
 <figure>
 
-![img-with-border](/img/timesheets/16-Approved,unapproved and returned hours.png)
+![img-with-border](/img/timesheets/16-Approved_unapproved_returned.png)
 
 <figcaption>Modulo de Timesheets</figcaption>
 </figure>
