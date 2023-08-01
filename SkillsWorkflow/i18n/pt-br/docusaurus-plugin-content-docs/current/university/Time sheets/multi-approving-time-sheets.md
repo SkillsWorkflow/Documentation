@@ -45,7 +45,7 @@ Se a opção de aprovação de timesheets configurada for a do responsável do p
 
 <figure>
 
-![img-with-border](/img/timesheets/13-Every hours to Approve.png)
+![img-with-border](/img/timesheets/13-Every_hours_Approve.png)
 
 <figcaption>Aprovação de Timesheets</figcaption>
 </figure>
