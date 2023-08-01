@@ -13,7 +13,7 @@ Se a aprovação for igual para todos os clientes o tipo de aprovação de times
 
 ![img-with-border](/img/timesheets/10 - setting-in-the-company.png)
 
-<figcaption>Tipo de Aprovador de Timesheets</figcaption>
+<figcaption>Configuração na Empresa</figcaption>
 </figure>
 
 ### Cliente
@@ -36,7 +36,7 @@ Aceder a manutenção na lista de usuários, separador responsáveis e estabelec
 
 ![img-with-border](/img/timesheets/12-Configuration_responsables.png)
 
-<figcaption>Tipo de Aprovador de Timesheets</figcaption>
+<figcaption>Configuração de Responsáveis no Usuário</figcaption>
 </figure>
 
 ### Aprovação pelo PM
