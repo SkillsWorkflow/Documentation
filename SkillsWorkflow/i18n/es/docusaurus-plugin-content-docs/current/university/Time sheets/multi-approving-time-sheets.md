@@ -1,7 +1,7 @@
 ---
 id: multi-approving-time-sheets
-title: Niveles de Aprobación de Timesheet
-sidebar_label: 4. Niveles de Aprobación de Timesheet
+title: Niveles de Aprobación Timesheet
+sidebar_label: 4. Niveles de Aprobación Timesheet
 sidebar_position: 4
 ---
 
