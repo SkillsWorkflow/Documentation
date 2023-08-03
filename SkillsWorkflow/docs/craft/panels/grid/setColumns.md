@@ -615,7 +615,7 @@ The follow examples shows how to display the stage type.
     format: {
         mapping: {
             color: "Color",
-            stage: "Name"
+            name: "Name"
         }
     }
 }         
