@@ -26,16 +26,16 @@ The data is exchanged with Views available in the system.
 **Employees are received by Skills Workflow:**
 New Employees created Bamboo:
 
-•	User – Takes the ID frm Bamboo HR into BambooId 
-•	UserName - Gets the user’s email from Bamboo HR 
-•	Name - Gets the user’s full name from Bamboo HR
-•	Typology – Is created if it doesn’t exist 
-•	Typology Group – Is created if it doesn’t exist 
-•	Department – Takes the ID to BambooId in Department 
-•	Responsible – Gets the user’s supervisor from Bamboo 
-•	Required Hours – Takes working hours from Bamboo HR 
-•	Email – Gets the user’s email from Bamboo HR
-•	Hire date - Gets the user’s Hire date from Bamboo HR
+- User – Takes the ID frm Bamboo HR into BambooId
+- UserName - Gets the user’s email from Bamboo HR 
+- Name - Gets the user’s full name from Bamboo HR
+- Typology – Is created if it doesn’t exist 
+- Typology Group – Is created if it doesn’t exist 
+- Department – Takes the ID to BambooId in Department 
+- Responsible – Gets the user’s supervisor from Bamboo
+- Required Hours – Takes working hours from Bamboo HR
+- Email – Gets the user’s email from Bamboo HR
+- Hire date - Gets the user’s Hire date from Bamboo HR
 
 ---
 
