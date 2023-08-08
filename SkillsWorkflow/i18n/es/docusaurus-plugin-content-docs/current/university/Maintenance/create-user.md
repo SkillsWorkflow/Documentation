@@ -5,9 +5,11 @@ sidebar_label: 1. Crear Usuario
 sidebar_position: 1 
 ---
 
+:::note
 Navegue a Mantenimiento e ingrese al módulo "Usuario"
+:::
 
-Para crear un nuevo usuario hay dos formas
+Para crear un nuevo usuario hay dos formas:
 
 ### Crear
 Cree un usuario y complete todos los campos obligatorios (están marcados con un punto rojo) y siga todos los pasos a continuación
