@@ -1,5 +1,5 @@
 ---
-id:  create-activity
+id: create-activity
 title: Crear una actividad
 sidebar_label: 5. Crear una actividad
 sidebar_position: 5
@@ -7,7 +7,7 @@ sidebar_position: 5
 
 1. Para crear una nueva Actividad, navegue hasta el módulo.
 2. Seleccione el cliente potencial activo en el que desea incluir la nueva actividad y haga clic en el signo "+" en la esquina superior derecha.
-3. Rellene el formulario emergente de creación de Actividad. 
+3. Rellene el formulario emergente de creación de Actividad.
    - **Título** - Nombre que desea dar a la Actividad.
    - **Tipo** - Tipo de actividad que desea crear (por ejemplo, correo electrónico, llamada, reunión, etc.).
    - **Inicio/Fin** - Elija cuándo comienza y cuándo terminará la Actividad
@@ -16,9 +16,9 @@ sidebar_position: 5
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-1.png)
+
 <figcaption></figcaption>
 </figure>
-
 
 ### Añadir una descripción y archivos
 
@@ -27,9 +27,11 @@ sidebar_position: 5
 3. También puedes adjuntar archivos como imágenes, y correos electrónicos, arrastrando o haciendo clic en el cuadrado punteado.
 4. Guárdalo, cierra el formulario de Actividad haciendo clic en el check, y luego en la parte inferior derecha de la ventana emergente haz clic en la pequeña flecha azul.
 5. Aparecerá un mensaje diciendo que su Actividad ha sido creada con éxito. Haga clic en este mensaje para navegar directamente a la Actividad.
+
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-2.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -41,6 +43,7 @@ sidebar_position: 5
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-4.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -54,9 +57,9 @@ sidebar_position: 5
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-5.png)
+
 <figcaption></figcaption>
 </figure>
-
 
 ### Añadir un nuevo archivo a la Actividad
 
@@ -67,6 +70,7 @@ sidebar_position: 5
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-6.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -82,6 +86,7 @@ Para notificar a alguien de tu equipo sobre un nuevo post o tema relacionado con
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-7.png)
+
 <figcaption></figcaption>
 </figure>
 
