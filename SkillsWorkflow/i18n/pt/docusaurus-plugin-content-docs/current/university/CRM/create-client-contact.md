@@ -1,7 +1,8 @@
 ---
 id: create-client-contact
 title: Como criar um novo contato de cliente
-sidebar_label: 1. Como criar um novo contato de cliente
+sidebar_label: 2. Como criar um novo contato de cliente
+sidebar_position: 2
 ---
 
 Para criar um novo contato com os detalhes do cliente, deverá ir para o módulo "CLIENTES" e a sub-lista "Contato do cliente".
@@ -11,10 +12,9 @@ Para criar um novo contato com o cliente:
 
 1. Dar um duplo clique no cliente pretendido.
 2. Em seguida, na aba Contacto de Cliente, clique no botão "+" para criar uma nova linha abaixo.
-Para conseguir salvar as alterações, é necessário preencher o campo "Nome"
+   Para conseguir salvar as alterações, é necessário preencher o campo "Nome"
 3. Salve as alterações clicando no símbolo de disco.
 4. Para remover qualquer linha / contato, basta clicar na opção "x".
-
 
 Uma vez criado, o contato de cliente poderá também ser associado a outro cliente.
 
@@ -27,14 +27,16 @@ Screen_Shot_2018-08-08_at_14.24.08.png
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-client1-3.png)
+
 <figcaption>Associating client contact with another client</figcaption>
 </figure>
 
 Ao clicar na opção Salvar/Guardar, o contato ficará automaticamente disponível no cliente.
-Não será necessário salvar, pois o sistema irá fazê-lo automaticamente. 
+Não será necessário salvar, pois o sistema irá fazê-lo automaticamente.
+
 <figure>
 
 ![img-box-shadow](/img/university/crm/crm-client1-4.png)
+
 <figcaption>Contact details automatically saved</figcaption>
 </figure>
-

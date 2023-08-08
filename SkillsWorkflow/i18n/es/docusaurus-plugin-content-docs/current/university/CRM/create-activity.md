@@ -1,96 +1,100 @@
 ---
-id:  create-activity
-title: Create an activity
-sidebar_label: 5. Create activity
+id: create-activity
+title: Crear una actividad
+sidebar_label: 5. Crear una actividad
 sidebar_position: 5
 ---
 
-1. To create a new Activity, navigate to the Lead.
-2. Select the active Lead under which you want to include the new Activity under, and click the "+" at the top right corner.
-3. Fill in the Activity creation popup form. 
-   - **Title** - Name you would like to give to the Activity.
-   - **Type** - Type of activity you want to create (e.g. Email, Call, Meeting, etc.)
-   - **Start/End** - Choose when the Job starts and when it will end.
-4. Once you complete all the fields click on the check mark icon.
+1. Para crear una nueva Actividad, navegue hasta el módulo.
+2. Seleccione el cliente potencial activo en el que desea incluir la nueva actividad y haga clic en el signo "+" en la esquina superior derecha.
+3. Rellene el formulario emergente de creación de Actividad.
+   - **Título** - Nombre que desea dar a la Actividad.
+   - **Tipo** - Tipo de actividad que desea crear (por ejemplo, correo electrónico, llamada, reunión, etc.).
+   - **Inicio/Fin** - Elija cuándo comienza y cuándo terminará la Actividad
+4. Una vez completados todos los campos haga clic en el icono de marca de verificación.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-1.png)
+
 <figcaption></figcaption>
 </figure>
 
+### Añadir una descripción y archivos
 
-### Add a description and files
-
-1. Just type in all the information on the description inside the creation popup.
-2. At any time you can change the Description. For that, you just need to click on the option that says "Edit".
-3. You can also attach files such as images, and emails, by dragging or clicking on the dotted square.
-4. Save it, close the Activity form by clicking on the check, and then on the bottom right side of the popup click on the small blue arrow.
-5. A pop-up will appear saying your Activity was successfully created. Click on this message to navigate directly to the Activity.
+1. Sólo tienes que escribir toda la información de la descripción dentro de la ventana emergente de creación.
+2. En cualquier momento puedes cambiar la Descripción. Para ello, basta con hacer clic en la opción que dice "Editar".
+3. También puedes adjuntar archivos como imágenes, y correos electrónicos, arrastrando o haciendo clic en el cuadrado punteado.
+4. Guárdalo, cierra el formulario de Actividad haciendo clic en el check, y luego en la parte inferior derecha de la ventana emergente haz clic en la pequeña flecha azul.
+5. Aparecerá un mensaje diciendo que su Actividad ha sido creada con éxito. Haga clic en este mensaje para navegar directamente a la Actividad.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-2.png)
+
 <figcaption></figcaption>
 </figure>
 
-### Move the Activity status
+### Mover el estado de la Actividad
 
-1. Once you create the Activity you will need to continue to move the Activity Forward by changing the Activity Status.
-2. For that, you just need to click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-2.png) symbol and select one of the available options.
+1. Una vez que haya creado la Actividad, necesitará continuar moviéndola hacia adelante cambiando el Estado de la Actividad.
+2. Para ello, simplemente haga clic en el símbolo ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-2.png) y seleccione una de las opciones disponibles.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-4.png)
+
 <figcaption></figcaption>
 </figure>
 
-### Add people to the Team
+### Añadir personas al Equipo
 
-1. If you have access to change the Team you will see an Add Assignment symbol below the description section.
-2. Add or remove people to each of the groups by clicking on the pencil.
-3. A dropdown will appear with a list of users.
-4. Select the users that you want and click on the check to add them to the Team.
+1. Si tiene acceso para cambiar el Equipo verá un símbolo de Añadir Asignación debajo de la sección de descripción.
+2. Añade o elimina personas a cada uno de los grupos haciendo clic en el lápiz.
+3. Aparecerá un desplegable con una lista de usuarios
+4. Seleccione los usuarios que desee y pulse sobre el check para añadirlos al Equipo.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-5.png)
+
 <figcaption></figcaption>
 </figure>
 
+### Añadir un nuevo archivo a la Actividad
 
-### Add a new file to the Activity
-
-1. To add a new file to the Activity you just need to click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-1.png) symbol and submit the post.
-2. The file will appear automatically on the Activity feed, where you can easily download it.
-3. You can also check all Activity related files on the tab "Files".
+1. Para añadir un nuevo archivo a la Actividad sólo tiene que hacer clic en el ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-1.png) símbolo y enviar el mensaje.
+2. El archivo aparecerá automáticamente en el feed de Actividad, donde podrás descargarlo fácilmente.
+3. También puedes consultar todos los archivos relacionados con la Actividad en la pestaña "Archivos".
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-6.png)
+
 <figcaption></figcaption>
 </figure>
 
 :::info
-In order to notify someone on your team about a new post or Activity related topic, you can always use the "Notifications" option.
+Para notificar a alguien de tu equipo sobre un nuevo post o tema relacionado con la Actividad, siempre puedes utilizar la opción "Notificaciones".
 :::
 
-### Notificatify people
+### Notificar a la gente
 
-1. For that click on the ![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-3.png) symbol and select the users you want to notify.
-2. The user will be tagged on this comment and a notification will be sent.
+1. Para ello pulse sobre el símbolo![img-symbol-box-shadow](/img/university/project-management/project-management-lesson2-symbol-3.png) y seleccione los usuarios a los que desea notificar.
+2. El usuario será etiquetado en este comentario y se le enviará una notificación.
 
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson2-7.png)
+
 <figcaption></figcaption>
 </figure>
 
-### Document tabs
+### Pestaña de los documentos
 
-At the top of the page, you will be able to find various tabs with information about this Activity
+En la parte superior de la página, encontrará varias pestañas con información sobre esta actividad
 
-- **Feed** - Activity and comments related to the Activity.
-- **Files** - All the files uploaded into this Activity will appear on this tab.
-- **History** - Track of status changes. You can see for example who created the Activity and at what time.
-- **Others** - You may also find other tabs depending on the modules of the system you have access to.
+- **Feed** - Actividad y comentarios relacionados con la actividad.
+- **Archivos** - Todos los archivos subidos a esta actividad aparecerán en esta pestaña.
+- **Historial** - Seguimiento de los cambios de estado. Puede ver, por ejemplo, quién creó la actividad y en qué momento.
+- **Otros** - También puede encontrar otras pestañas, dependiendo de los módulos del sistema a los que tenga acceso.
