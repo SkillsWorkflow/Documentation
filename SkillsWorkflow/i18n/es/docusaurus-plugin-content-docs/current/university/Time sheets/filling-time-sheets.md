@@ -5,7 +5,7 @@ sidebar_label: 1. Llenar Timesheets
 sidebar_position: 1
 ---
 
-:::note
+:::info
 Para completar las horas de trabajo, navegue hasta el módulo **Time sheets**
 :::
 
