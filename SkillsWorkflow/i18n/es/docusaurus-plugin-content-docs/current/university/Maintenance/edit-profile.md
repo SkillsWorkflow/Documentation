@@ -6,7 +6,8 @@ sidebar_position: 3
 ---
 
 En la página de inicio del SkillsWorkflow, en la parte superior de la página verá su nombre.
-Cuando haga clic en su nombre, tendrá la opción de editar su perfil
+
+Cuando haga clic en su nombre, tendrá la opción de editar su perfil.
 
 <figure>
 
