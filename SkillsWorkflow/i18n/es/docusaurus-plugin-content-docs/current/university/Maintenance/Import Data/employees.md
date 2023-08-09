@@ -29,7 +29,7 @@ Preparar su fichero de datos:
 - Tenga en cuenta las directrices o restricciones específicas de formato de datos que se indican en la documentación del sistema.
 - Compruebe que no haya incoherencias o errores en los datos para evitar problemas durante el proceso de importación.
 
-:::peligro Importar empleados para usuarios existentes
+:::danger Importar empleados para usuarios existentes
 Al importar un empleado para un usuario que ya está vinculado a un recurso, se creará una nueva entrada de empleado. 
 
 Sin embargo, tenga en cuenta que:
