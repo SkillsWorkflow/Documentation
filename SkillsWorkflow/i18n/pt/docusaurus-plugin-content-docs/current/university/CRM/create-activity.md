@@ -1,6 +1,6 @@
 ---
 id:  create-activity
-title: Create an activity
+title: Crear Atividade
 sidebar_label: 5. Create activity
 sidebar_position: 5
 ---
