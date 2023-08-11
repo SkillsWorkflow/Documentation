@@ -1385,3 +1385,36 @@ The result will be the configuration Keys value parameter:
   "token_type": "Bearer"
 }
 ```
+
+## JsonValidation
+Validate Required fields on a specific json payload. A list of properties is verified for missing, null or empty.
+In this case the action will return a list of errors and will exit on ExitOnError.
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+* payload 
+* requiredProperties 
+* next 
+* nextOnError 
+
+```json title="Template"
+{
+  "actionType": "ValidateJson",
+  "name": "ValidateJson",
+  "payload":"{{['Payload']}}",
+  "requiredProperties": [
+    "name",
+    "company",
+    ""
+  ],
+  "next":"Exit",
+  "nextOnError":"ExitOnError"
+},
+```
+#### Template Description
+
+* payload - json payload to verify
+* requiredProperties - List of property names to verify
+* next - next Action in case everything is verified
+* nextOnError - Next Action if any of the required properties is missing or is null
