@@ -11,8 +11,8 @@ In this article, we will guide you through the simple steps required to efficien
 
 
 The typology group import process:
-- 1.	Navigate to Maintenance.
-- 2.	And search for the Typology Group listing.
+- Navigate to Maintenance.
+- And search for the Typology Group listing.
 
 <ReactPlayer controls muted url='/video/import-typology-group.mov' />
 
