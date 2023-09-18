@@ -15,7 +15,7 @@ El proceso de importación de empleados:
 
 <ReactPlayer controls muted url='/video/import-employee.mp4' />
 
-:::precaución
+:::caution
 Para importar los datos correctamente, asegúrese de que no hay entradas duplicadas en el sistema. 
 
 La siguiente combinación debe ser única:
