@@ -18,7 +18,7 @@ Para criar um novo cliente em potencial, siga estas etapas
 - **Tipo** - Escolha a partir de uma lista suspensa, por exemplo, Associação, Venda Direta, etc.
 - **Proprietário do cliente em potencial** - O proprietário do cliente em potencial.
 - **Domínio** - O domínio do site do cliente em potencial.
-- 
+
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson1-3.png)
