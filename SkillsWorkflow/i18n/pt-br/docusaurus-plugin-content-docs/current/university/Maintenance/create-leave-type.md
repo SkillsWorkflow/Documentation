@@ -1,7 +1,8 @@
 ---
-id:  create-leave-type
+id: create-leave-type
 title: Criar Tipos de Licença
 sidebar_label: 6. Criar Tipos de Licença
+sidebar_position: 6
 ---
 
 :::info
@@ -9,35 +10,35 @@ Navegue até "Manutenção" e selecione o módulo "Tipos de Licença".
 :::
 
 Diversos tipos de licença podem ser criados em uma empresa, tais como:
+
 - Licença médica
 - Licença maternidade
 - Férias
 
-Siga as etapas abaixo para criar um novo tipo de licença: 
-
+Siga as etapas abaixo para criar um novo tipo de licença:
 
 1. Acesse a área de Manutenção e procure por "Tipos de licença"
 
-    <figure>
+   <figure>
 
-    ![img-with-border](/img/university/maintenance/create_leaves1.png)
-    </figure>
+   ![img-with-border](/img/university/maintenance/create_leaves1.png)
+   </figure>
 
 2. Clique no ícone "+", no canto superior direito.
 
-    <!-- <figure>
-    ![img-with-border](/img/university/leaves/ )
-    </figure> -->
+<!-- <figure>
+![img-with-border](/img/university/leaves/ )
+</figure> -->
 
 3. Uma janela pop-up mostrará um formulário para ser preenchido e para criar o tipo de licença desejado.
- 
-    <figure>
 
-    ![img-with-border](/img/university/maintenance/create_leaves2.png)
-    </figure>
+   <figure>
+
+   ![img-with-border](/img/university/maintenance/create_leaves2.png)
+   </figure>
 
 4. Depois de preencher todas as informações, clique em "OK" para salvar.
- 
+
 :::note Configurações importantes
 Cada tipo de licença pode exigir configurações específicas adicionais.
 :::
@@ -61,4 +62,3 @@ Cada tipo de licença pode exigir configurações específicas adicionais.
 - Licença em horas: Opção para adicionar licenças em horas em vez de dia inteiro/meio dia, por exemplo, licença médica.
 
 - Requer anexos: É obrigatório adicionar anexos, por exemplo, atestado médico.
-

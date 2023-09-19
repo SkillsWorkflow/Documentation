@@ -1,148 +1,154 @@
 ---
-id:  create-estimate
-title: Create an estimate
-sidebar_label: 6. Create an estimate
+id: create-estimate
+title: Crear un presupuesto
+sidebar_label: 6. Crear un presupuesto
 sidebar_position: 6
 ---
 
-Estimates can either be linked to Fees or created directly under a Company, Leads, or Activity.
+Los presupuestos pueden estar vinculados a tarifas o crearse directamente bajo una Compañía, Prospectos o Actividades.
 
-Should you wish to create an estimate associated with a specific Fee, please check our lesson 3 under the contracts section.
+Si desea crear un presupuesto asociado a una tarifa específica, por favor consulte nuestra lección 3 en la sección de contratos.
 
-To generate an estimate under a Company or Activity you should navigate onto the document you wish to generate the estimate, press on the option +, and choose "estimate"
+Para generar un presupuesto bajo una Compañía o Actividad, debe navegar hasta el documento en el que desea generar el presupuesto, presionar la opción + y seleccionar "presupuesto".
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-1.png)
+
 <figcaption></figcaption>
 </figure>
 
-Fill in the following fields:
+Complete los siguientes campos:
 
-- **Department** - The system will suggest the user department by default, but you can select other planable departments and set up different workflows if needed.
-- **Estimate Type** - You can have several estimate types which will allow different configurations such as workflows, pull-out reports, etc.
-- Click on the check mark to submit the post. The system will show a popup message with the confirmation that the estimate was successfully created.
-
+- **Departamento** - El sistema sugerirá el departamento del usuario por defecto, pero puede seleccionar otros departamentos planificables y configurar flujos de trabajo diferentes si es necesario.
+- **Tipo de presupuesto** - Puede tener varios tipos de presupuesto que permitirán diferentes configuraciones, como flujos de trabajo, informes extraíbles, etc.
+- Haga clic en la marca de verificación para enviar la publicación. El sistema mostrará un mensaje emergente con la confirmación de que el presupuesto se ha creado correctamente.
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-2.png)
+
 <figcaption></figcaption>
 </figure>
 
-On the Info tab, you can fill in the following fields:
+En la pestaña de Información, puede completar los siguientes campos:
 
-- **Payment Condition** - It can be inherited from the Client or manually chosen.
-- **Currency** - It can be inherited from the default currency defined in the Company or manually chosen.
-- **Rate Card** and **Rate Card Column** - It can be inherited from the Client or manually picked.
-- **Overheads** and **Margins** - Defined manually for each Estimate (optional).
+- **Condición de pago** - Puede ser heredada del Cliente o elegida manualmente.
+- **Moneda** - Puede ser heredada de la moneda predeterminada definida en la Compañía o elegida manualmente.
+- **Tarjeta de tarifas** y **Columna de tarjeta de tarifas** - Puede ser heredada del Cliente o seleccionada manualmente.
+- **Overheads** and **Márgenes** - Definidos manualmente para cada presupuesto (opcional).
 
-## Create Quotes
+## Crear Cotizaciones
 
-To start building your Estimate details navigate to the Quotes tab where you will find 4 different sections:
+Para comenzar a construir los detalles de su presupuesto, diríjase a la pestaña de Cotizaciones donde encontrará 4 secciones diferentes:
 
-- **Deliverables** - these are the services sold to the client (each line can represent actual deliverables, i.e. projects/jobs; a monthly fee, or any other structure you want to use for breaking down your Estimate).
-- **Third Party Costs** - this is the first component of the estimate. These relate to external suppliers.
-- **Expenses** - this is the second component of the estimate. Transportation, meals, hotel, are just some examples of expenses that can be estimated here.
-- **Resources** - this is the final component of the estimate. Represents internal resources/man-hours being scoped for.
+- **Entregables** - estos son los servicios vendidos al cliente (cada línea puede representar entregables reales, es decir, proyectos/trabajos; una tarifa mensual u cualquier otra estructura que desee utilizar para desglosar su presupuesto).
+- **Costos de Terceros** - este es el primer componente del presupuesto. Estos se relacionan con proveedores externos.
+- **Gastos** - este es el segundo componente del presupuesto. Transporte, comidas, hotel, son solo algunos ejemplos de gastos que se pueden estimar aquí.
+- **Resources** - este es el último componente del presupuesto. Representa los recursos internos/horas de trabajo que se están contemplando.
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-3.png)
+
 <figcaption></figcaption>
 </figure>
 
-To create new Quotes you should:
+Para crear nuevas Cotizaciones, debes:
 
-1. Press on "+" to create a deliverable to estimate.
-2. Each deliverable can represent a month in the retainer fee; a service, etc.
+1. Presiona el símbolo "+" para crear un entregable que deseas estimar.
+2. Cada entregable puede representar un mes en la tarifa de retención, un servicio, etc.
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-4.png)
+
 <figcaption></figcaption>
 </figure>
 
-3. For each Deliverable you should include:
+3. Para cada entregable, debes incluir lo siguiente:
 
-- **Description** - Fill in a name that describes what you are selling to the Client.
-- **Service** - Choose the type of service you are Quoting.
-- **Tax**- Can come directly from the Client or be manually entered.
+- **Descripción** - Ingresa un nombre que describa lo que estás vendiendo al cliente.
+- **Servicio** - Selecciona el tipo de servicio que estás cotizando.
+- **Impuesto**- Puede provenir directamente del Cliente o ingresarse manualmente.
 
-### Quoting Third Party
+### Cotizando Terceros
 
-To start quoting the Third Party, click on the word Third Party and the section will open up.
+Para cotizar Terceros, sigue estos pasos:
 
-1. Select the deliverable you want to quote for from the dropdown.
-2. Press on "+" to add Estimate Details.
-3. The description, and service will be inhered from the deliverable line.
-4. Select the supplier (external costs), supplier payment conditions.
-5. Unit cost, and quantity cost (#).
-6. Fill in the % Fee, or value to get your sell value.
-7. Click on the Save icon.
-8. Repeat the process if you need to add several external costs.
+1. Selecciona el entregable para el cual deseas hacer una cotización en el menú desplegable.
+2. Presiona el símbolo "+" para agregar Detalles de la Estimación.
+3. La descripción y el servicio se heredarán de la línea del entregable.
+4. Selecciona el proveedor (costos externos) y las condiciones de pago del proveedor.
+5. Costo unitario y costo por cantidad (#).
+6. Rellena el % de tarifa o el valor para obtener tu valor de venta.
+7. Haz clic en el ícono de Guardar.
+8. Repite el proceso si necesitas agregar varios costos externos.
 
 :::note
-Please note that you can have several external costs under one client line. It will depend on how you want to show the estimate details to clients.
+Por favor, ten en cuenta que puedes tener varios costos externos bajo una línea de cliente. Dependerá de cómo desees mostrar los detalles del presupuesto a los clientes.
 :::
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-5.png)
+
 <figcaption></figcaption>
 </figure>
 
-### Quoting Expenses
+### Cotización de Gastos
 
-To start quoting expenses, click on the "Expense" word and the section will open up.
+Para empezar a cotizar gastos, haz clic en la palabra "Gasto" y se abrirá la sección.
 
-1. Select the deliverable you want to quote for from the dropdown.
-2. Press on "+" to add Estimate Details.
-3. Select the expense type you need to quote (eg. Meals, Hotel).
-4. Fill in the unit cost and quantity #.
-5. Click on the Save icon.
-6. Repeat the process if you need to add several expenses.
+1. Selecciona el entregable para el cual deseas hacer una cotización en el menú desplegable.
+2. Presiona el signo "+" para agregar Detalles de la Estimación.
+3. Selecciona el tipo de gasto que necesitas cotizar (por ejemplo, Comidas, Hotel).
+4. Completa el costo unitario y la cantidad #.
+5. Haz clic en el ícono de Guardar.
+6. Repite el proceso si necesitas agregar varios gastos.
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-6.png)
+
 <figcaption></figcaption>
 </figure>
 
-### Quoting Resources 
+### Cotización de Recursos
 
-To start quoting the resources, click on the "Resources" word and the section will open up.
+Para comenzar a cotizar los recursos, haz clic en la palabra "Recursos" y se abrirá la sección.
 
-1. Select the deliverable you want to quote for from the dropdown.
-2. Press on "+" to add Estimate Details or add multiple Typologies at once by clicking on the button Typologies icon.
-3. You can scope based on typologies (i.e. titles) and/or specific Users.
-
+1. Selecciona el entregable para el cual deseas hacer una cotización en el menú desplegable.
+2. Presiona el símbolo "+" para agregar Detalles de la Estimación o añade múltiples Tipologías a la vez haciendo clic en el ícono de Tipologías.
+3. Puedes definir el alcance basado en tipologías (por ejemplo, títulos) y/o usuarios específicos.
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-7.png)
+
 <figcaption></figcaption>
 </figure>
 
-For each Typology you will have to fill in the following required fields:
+Para cada tipología, deberás completar los siguientes campos obligatorios:
 
-- **Table Rate** - Inherited automatically from the Table Rate chosen before on the Info tab.
-- **Unit Cost** - Automatically the same as the table rate, but could be manually changed. Used only if you want to use a different rate that the one from the chosen Rate Card (table rate).
-- **Hours** - Number of hours being sold to the Client.
-- **Total Cost** - Hours x Unit Cost.
-- **Unit Income** - Unit Cost + Margin*.
-- **Total Sell** - Total Cost + Margin* or Unit Income x Hours.
+- **Tabla Rate** - Heredada automáticamente de la tabla de rates elegida anteriormente en la pestaña de Información.
+- **Costo Unitario** - Automáticamente el mismo que la tarifa de tabla, pero podría cambiarse manualmente. Se utiliza solo si deseas utilizar una tarifa diferente a la de la Tarjeta de Tarifas elegida (tarifa de tabla).
+- **Horas** - Número de horas que se venden al cliente.
+- **Costo Total** - Horas x Costo Unitario.
+- **Valor Unitario** - Costo Unitario + Margen\*.
+- **Venta Total** - Costo Total + Margen\* o Ingreso Unitario x Horas.
 
-* The Margin is the one defined on the Estimate's Info tab.
+* El Margen es el que se define en la pestaña de Información del Presupuesto.
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-8.png)
+
 <figcaption></figcaption>
 </figure>
 
-As you fill in the values, the total per Deliverable on the Deliverables section at the top will be automatically updated. 
+A medida que completes los valores, el total por Entregable en la sección de Entregables en la parte superior se actualizará automáticamente.
 
-Note that each individual column on the Estimate is controlled by access roles. 
+Ten en cuenta que cada columna individual en el Presupuesto está controlada por roles de acceso.
 
-Please note that you can have several external costs, expenses, and resources under one client line. It will depend on how you want to show the estimate details to clients
+Por favor, ten en cuenta que puedes tener varios costos externos, gastos y recursos bajo una línea de cliente. Dependerá de cómo desees mostrar los detalles del presupuesto a los clientes.
