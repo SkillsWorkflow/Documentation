@@ -1,7 +1,7 @@
 ---
-id:  create-estimate
-title: Crear un presupuesto 
-sidebar_label: 6. Crear un presupuesto 
+id: create-estimate
+title: Crear un presupuesto
+sidebar_label: 6. Crear un presupuesto
 sidebar_position: 6
 ---
 
@@ -14,40 +14,43 @@ Para generar un presupuesto bajo una Compañía o Actividad, debe navegar hasta 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-1.png)
+
 <figcaption></figcaption>
 </figure>
 
 Complete los siguientes campos:
 
-- **Departamento** - El sistema sugerirá el departamento del usuario por defecto, pero puede seleccionar otros departamentos planificables y configurar flujos de trabajo diferentes si es necesario. 
+- **Departamento** - El sistema sugerirá el departamento del usuario por defecto, pero puede seleccionar otros departamentos planificables y configurar flujos de trabajo diferentes si es necesario.
 - **Tipo de presupuesto** - Puede tener varios tipos de presupuesto que permitirán diferentes configuraciones, como flujos de trabajo, informes extraíbles, etc.
 - Haga clic en la marca de verificación para enviar la publicación. El sistema mostrará un mensaje emergente con la confirmación de que el presupuesto se ha creado correctamente.
-
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-2.png)
+
 <figcaption></figcaption>
 </figure>
 
-En la pestaña de Información, puede completar los siguientes campos: 
+En la pestaña de Información, puede completar los siguientes campos:
 
 - **Condición de pago** - Puede ser heredada del Cliente o elegida manualmente.
-- **Moneda** -  Puede ser heredada de la moneda predeterminada definida en la Compañía o elegida manualmente. 
+- **Moneda** - Puede ser heredada de la moneda predeterminada definida en la Compañía o elegida manualmente.
 - **Tarjeta de tarifas** y **Columna de tarjeta de tarifas** - Puede ser heredada del Cliente o seleccionada manualmente.
 - **Overheads** and **Márgenes** - Definidos manualmente para cada presupuesto (opcional).
 
 ## Crear Cotizaciones
 
-Para comenzar a construir los detalles de su presupuesto, diríjase a la pestaña de Cotizaciones donde encontrará 4 secciones diferentes: 
+Para comenzar a construir los detalles de su presupuesto, diríjase a la pestaña de Cotizaciones donde encontrará 4 secciones diferentes:
 
 - **Entregables** - estos son los servicios vendidos al cliente (cada línea puede representar entregables reales, es decir, proyectos/trabajos; una tarifa mensual u cualquier otra estructura que desee utilizar para desglosar su presupuesto).
 - **Costos de Terceros** - este es el primer componente del presupuesto. Estos se relacionan con proveedores externos.
 - **Gastos** - este es el segundo componente del presupuesto. Transporte, comidas, hotel, son solo algunos ejemplos de gastos que se pueden estimar aquí.
 - **Resources** - este es el último componente del presupuesto. Representa los recursos internos/horas de trabajo que se están contemplando.
+
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-3.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -59,12 +62,13 @@ Para crear nuevas Cotizaciones, debes:
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-4.png)
+
 <figcaption></figcaption>
 </figure>
 
-3. Para cada entregable, debes incluir lo siguiente: 
+3. Para cada entregable, debes incluir lo siguiente:
 
-- **Descripción** - Ingresa un nombre que describa lo que estás vendiendo al cliente. 
+- **Descripción** - Ingresa un nombre que describa lo que estás vendiendo al cliente.
 - **Servicio** - Selecciona el tipo de servicio que estás cotizando.
 - **Impuesto**- Puede provenir directamente del Cliente o ingresarse manualmente.
 
@@ -88,6 +92,7 @@ Por favor, ten en cuenta que puedes tener varios costos externos bajo una línea
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-5.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -105,10 +110,11 @@ Para empezar a cotizar gastos, haz clic en la palabra "Gasto" y se abrirá la se
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-6.png)
+
 <figcaption></figcaption>
 </figure>
 
-### Cotización de Recursos 
+### Cotización de Recursos
 
 Para comenzar a cotizar los recursos, haz clic en la palabra "Recursos" y se abrirá la sección.
 
@@ -119,6 +125,7 @@ Para comenzar a cotizar los recursos, haz clic en la palabra "Recursos" y se abr
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-7.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -128,18 +135,19 @@ Para cada tipología, deberás completar los siguientes campos obligatorios:
 - **Costo Unitario** - Automáticamente el mismo que la tarifa de tabla, pero podría cambiarse manualmente. Se utiliza solo si deseas utilizar una tarifa diferente a la de la Tarjeta de Tarifas elegida (tarifa de tabla).
 - **Horas** - Número de horas que se venden al cliente.
 - **Costo Total** - Horas x Costo Unitario.
-- **Valor Unitario** - Costo Unitario + Margen*.
-- **Venta Total** - Costo Total + Margen* o Ingreso Unitario x Horas.
-  
+- **Valor Unitario** - Costo Unitario + Margen\*.
+- **Venta Total** - Costo Total + Margen\* o Ingreso Unitario x Horas.
+
 * El Margen es el que se define en la pestaña de Información del Presupuesto.
-  
+
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-8.png)
+
 <figcaption></figcaption>
 </figure>
 
-A medida que completes los valores, el total por Entregable en la sección de Entregables en la parte superior se actualizará automáticamente. 
+A medida que completes los valores, el total por Entregable en la sección de Entregables en la parte superior se actualizará automáticamente.
 
 Ten en cuenta que cada columna individual en el Presupuesto está controlada por roles de acceso.
 
