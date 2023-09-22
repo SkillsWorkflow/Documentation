@@ -27,7 +27,7 @@ Prepare o seu ficheiro de dados:
 - Garanta que os dados estejam organizados e estruturados num formato compatível.
 - Verifique se todos os campos obrigatórios estão incluídos e preenchidos corretamente.
 - Esteja ciente das diretrizes ou restrições específicas de formato de dados mencionadas na documentação do sistema.
-- erifique se não há inconsistências ou erros nos dados para evitar problemas durante o processo de importação.
+- Verifique se não há inconsistências ou erros nos dados para evitar problemas durante o processo de importação.
 
 ### FAQ
 
