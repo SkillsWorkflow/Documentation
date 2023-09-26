@@ -14,7 +14,7 @@ Navegue para o módulo **ausências**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves1.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_1.png)
 <figcaption></figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ Navegue para o módulo **ausências**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves2.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_2.png)
 <figcaption></figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ Clique para selecionar. Não há necessidade de salvar, pois o sistema salva aut
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves3.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_3.png)
 <figcaption></figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Para associar um formulário de ausência a um dia ou a um grupo de dias, clique
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves4.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_4.png)
 <figcaption></figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Para associar um formulário de ausência a um dia ou a um grupo de dias, clique
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves5.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_5.png)
 <figcaption> </figcaption>
 </figure>
 
