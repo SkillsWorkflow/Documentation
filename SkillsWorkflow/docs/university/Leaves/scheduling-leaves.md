@@ -14,7 +14,7 @@ Navigate to the **Leaves module**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves1.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_1.png)
 <figcaption></figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ Navigate to the **Leaves module**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves2.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_2.png)
 <figcaption></figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ Click on the days you want to book. There is no need to save. The system automat
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves3.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_3.png)
 <figcaption></figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Click on the days you want to book. There is no need to save. The system automat
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves4.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_4.png)
 <figcaption></figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Click on the days you want to book. There is no need to save. The system automat
 
 <figure>
 
-![img-with-border](/img/university/leaves/scheduling-leaves5.png)
+![img-with-border](/img/university/leaves/scheduling-leaves_5.png)
 <figcaption> </figcaption>
 </figure>
 
