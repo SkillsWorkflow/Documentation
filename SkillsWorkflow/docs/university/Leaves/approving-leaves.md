@@ -80,6 +80,6 @@ You can provide the user with a motive for rejecting his leave.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves6.png)
+![img-with-border](/img/university/leaves/approve-leaves_6.png)
 <figcaption> </figcaption>
 </figure>
