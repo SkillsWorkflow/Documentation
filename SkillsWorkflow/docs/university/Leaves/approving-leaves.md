@@ -13,7 +13,7 @@ Navigate to the **Leaves module**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves1.png)
+![img-with-border](/img/university/leaves/approve-leaves_1.png)
 <figcaption></figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ Navigate to the **Leaves module**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves2.png)
+![img-with-border](/img/university/leaves/approve-leaves_2.png)
 <figcaption></figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Navigate to the **Leaves module**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves3.png)
+![img-with-border](/img/university/leaves/approve-leaves_3.png)
 <figcaption></figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Navigate to the **Leaves module**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves4.png)
+![img-with-border](/img/university/leaves/approve-leaves_4.png)
 <figcaption></figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ You can provide the user with a motive for rejecting his leave.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves5.png)
+![img-with-border](/img/university/leaves/approve-leaves_5.png)
 <figcaption> </figcaption>
 </figure>
 
@@ -80,6 +80,6 @@ You can provide the user with a motive for rejecting his leave.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves6.png)
+![img-with-border](/img/university/leaves/approve-leaves_6.png)
 <figcaption> </figcaption>
 </figure>

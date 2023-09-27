@@ -5,32 +5,18 @@ sidebar_label: 2. Aprobación de Permisos/Vacaciones
 sidebar_position: 2
 ---
 
+## Acceder al módulo de Permisos/Vacaciones
 
-## Notificaciones de Permisos/Vacaciones por Aprobar
-
-
-
-:::note
-Navegue para el **Módulo Hojas**. 
+:::info
+Navegue para el **Módulo Permisos**. 
 :::
 
-
-1. Compruebe que recibe una notificación cuando los usuarios envían permisos/vacaciones para aprobar.
-
-<figure>
-
-![img-with-border](/img/university/leaves/approve-leaves10.png)
-<figcaption></figcaption>
-</figure>
-
-
-## Acceder al módulo de Permisos/Vacaciones
 
 1. Para aprobar/rechazar permisos, entre en el menú de "Aprobación".
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves1.png)
+![img-with-border](/img/university/leaves/approve-leaves_1.png)
 <figcaption></figcaption>
 </figure>
 
@@ -44,7 +30,7 @@ Navegue para el **Módulo Hojas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves2.png)
+![img-with-border](/img/university/leaves/approve-leaves_2.png)
 <figcaption></figcaption>
 </figure>
 
@@ -59,7 +45,7 @@ Navegue para el **Módulo Hojas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves3.png)
+![img-with-border](/img/university/leaves/approve-leaves_3.png)
 <figcaption></figcaption>
 </figure>
 
@@ -72,7 +58,7 @@ Navegue para el **Módulo Hojas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves4.png)
+![img-with-border](/img/university/leaves/approve-leaves_4.png)
 <figcaption></figcaption>
 </figure>
 
@@ -84,7 +70,7 @@ Navegue para el **Módulo Hojas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves5.png)
+![img-with-border](/img/university/leaves/approve-leaves_5.png)
 <figcaption> </figcaption>
 </figure>
 

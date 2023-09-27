@@ -5,28 +5,17 @@ sidebar_label: 2. Aprovar ausências
 sidebar_position: 2
 ---
 
-## Notificações de ausências a aprovar.
+## Navegue para o módulo "Ausências"
 
 :::info
-Navegue para o **Módulo Folhas**. 
+Navegue para o **Módulo Ausências**. 
 :::
-
-1. Verifique que você recebe uma notificação quando os usuários enviam seus dias de ausências para aprovação.
-
-<figure>
-
-![img-with-border](/img/university/leaves/approve-leaves10.png)
-<figcaption></figcaption>
-</figure>
-
-
-## Navegue para o módulo "Ausências"
 
 1. Para aprovar/reprovar ausências, navegue até ao módulo "Ausências", e selecione a lista "Aprovação", que se encontra do lado direito.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves1.png)
+![img-with-border](/img/university/leaves/approve-leaves_1.png)
 <figcaption></figcaption>
 </figure>
 
@@ -40,7 +29,7 @@ Navegue para o **Módulo Folhas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves2.png)
+![img-with-border](/img/university/leaves/approve-leaves_2.png)
 <figcaption></figcaption>
 </figure>
 
@@ -55,7 +44,7 @@ Navegue para o **Módulo Folhas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves3.png)
+![img-with-border](/img/university/leaves/approve-leaves_3.png)
 <figcaption></figcaption>
 </figure>
 
@@ -69,7 +58,7 @@ Navegue para o **Módulo Folhas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves4.png)
+![img-with-border](/img/university/leaves/approve-leaves_4.png)
 <figcaption></figcaption>
 </figure>
 
@@ -82,7 +71,7 @@ Navegue para o **Módulo Folhas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves5.png)
+![img-with-border](/img/university/leaves/approve-leaves_5.png)
 <figcaption> </figcaption>
 </figure>
 
@@ -94,6 +83,6 @@ Navegue para o **Módulo Folhas**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves6.png)
+![img-with-border](/img/university/leaves/approve-leaves_6.png)
 <figcaption> </figcaption>
 </figure>
