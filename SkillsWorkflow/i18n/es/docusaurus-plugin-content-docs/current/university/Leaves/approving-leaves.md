@@ -82,6 +82,6 @@ Navegue para el **Módulo Permisos**.
 
 <figure>
 
-![img-with-border](/img/university/leaves/approve-leaves6.png)
+![img-with-border](/img/university/leaves/approve-leaves_6.png)
 <figcaption> </figcaption>
 </figure>
