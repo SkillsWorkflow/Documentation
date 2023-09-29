@@ -1,7 +1,7 @@
 ---
 id: typologies
-title: Typologies
-sidebar_label: Typologies
+title: Importação das Tipologias
+sidebar_label: Importação das Tipologias
 sidebar_position: 3
 ---
 
