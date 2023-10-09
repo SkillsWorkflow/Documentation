@@ -243,19 +243,27 @@ Filter expressions are supported via the syntax `?(<boolean expr>)` as in `$.sto
 ```
 ### Expression Cheat Sheet:
 
-| Syntax                                    | Result                                                       |
-|-------------------------------------------|--------------------------------------------------------------|
-| $.documents.client[*].Name                | the names of all clients in the documents                    |
-| $..name                                   | all names                                                    |
-| $.documents.*                             | all things in documents, which are some clients.             |
-| $.documents..code                         | the code of everything in the documents.                     |
-| $..client[2]                              | the third client                                             |
-| $..client[(@.length-1)] or $..client[-1:] | the last client in order.                                    |
-| $..client[0,1] or $..client[:2]           | the first two client                                         |
-| $..client[?(@.code)]                      | filter all clients with code Name                            |
-| $..client[?(@.FullTimeEmployeeTime>1800)] | filter all clients with FullTimeEmployeeTime greater than 10 |
-| $..client[?(@.Name=='Americanas')]        | filter all clients with name "Americanas"                    |  
-| $..*                                      | All members of JSON structure                                |
+| Syntax                                          | Result                                                        |
+|-------------------------------------------------|---------------------------------------------------------------|
+| $.documents.client[*].Name                      | the names of all clients in the documents                     |
+| $..name                                         | all names                                                     |
+| $.documents.*                                   | all things in documents, which are some clients.              |
+| $.documents..code                               | the code of everything in the documents.                      |
+| $..client[2]                                    | the third client                                              |
+| $..client[(@.length-1)] or $..client[-1:]       | the last client in order.                                     |
+| $..client[0,1] or $..client[:2]                 | the first two client                                          |
+| $..client[?(@.code)]                            | filter all clients with code Name                             |
+| $..client[?(@.FullTimeEmployeeTime>1800)]       | filter all clients with FullTimeEmployeeTime greater than 10  |
+| $..client[?(@.Name=='Americanas')]              | filter all clients with name "Americanas"                     |  
+| $..client[?(@.Name=='Amazon' && @.code ='AMZ')] | filter all clients with name "Amazon" and Code "AMZ"          |
+| $..client[?(@.Name=='Amazon' \|\| @.code ='AMZ')] | filter all clients with name "Amazon" or Code "AMZ"           |
+| $..*                                            | All members of JSON structure                                 |
+
+> **note:** #eval() sintax can be included in in JsonPath Expressions ex:  
+> `$..client[?(@.code=='#eval(#eval(NewDateUtc(Today) | AddDays(-1)))')`
+
+
+
 
 
 
