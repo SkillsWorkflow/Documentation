@@ -804,5 +804,24 @@ Type: string
 - size: the value must be in pixels
 - family: font's family name
 
+## caretPosition
 
+When setting the property, it will set the cursor in a certain position.
+By representing the cursor with a | , please check the example below:
 
+- editorOptions: {caretPosition: 0} the cursor will be placed in the position 0 = |00:00
+- editorOptions: {caretPosition: 1} the cursor will be placed in the position 1 = 0|0:00
+
+```json
+{...
+    editorOptions: {
+        caretPosition: 1
+    }
+}
+```
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/caretPosition-example.png)
+
+</figure>
