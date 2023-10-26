@@ -104,6 +104,7 @@ To configure this action, the fields available are:
 * bodyFormData
 * IsApiCall - Default False
 * EnsureSuccessStatusCode - Default False
+* responseHeaders - Array - `["date","x-api-version"]`
 
 ```json title="Template"
 {  
@@ -122,7 +123,8 @@ To configure this action, the fields available are:
             "value": ""  
         }  
     ],  
-    "bodyFormData": []  
+    "bodyFormData": [],
+    "responseHeaders":[]
 },
 ```
 
@@ -133,8 +135,9 @@ To configure this action, the fields available are:
 * next - The action that will be triggered after the current action been completed
 * Method - Should be set according to the method to be applied
 * url - The URL to be called
-* isApiCall - Is set, will append tenant Api Authority to request and add authentication Headers. Defaults to `true`
+* isApiCall - If set, will append tenant Api Authority to request and add authentication Headers. Defaults to `true`
 * ensureSuccessStatusCode - If set, ensures that the response is a success Status Code (200 - 299). If not will throw an error and stop execution. Defaults to `False`
+* responseHeaders - If set, returns the response will bring the headers values for the keys defined.
 * bodyMediaType - Allows you to manage the Request headers and body.
   * Please see on the tabs below the bodyMediaType available:
 
