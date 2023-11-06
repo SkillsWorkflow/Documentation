@@ -1,22 +1,23 @@
 ---
 id:  create-lead
-title: Create a lead
-sidebar_label: 4. Create lead
+title: Criar um Lead
+sidebar_label: 4. Criar um Lead
 sidebar_position: 4
 ---
 
 :::info
-A Lead is an umbrella that groups a bundle of related activities and deals.
+Um Lead é um guarda-chuva que agrupa um conjunto de atividades e negócios relacionados.
+Para criar um novo cliente em potencial, siga estas etapas
 :::
 
-1. To create a new Lead, navigate to the "Clients" module.
-2. After selecting a client click on the "+" to open a new Lead creation popup.
-3. Fill in the yellow (mandatory) fields.
-
-- **Name** - Name you would like to give to the Lead.
-- **Type** - Choose from a drop-down list. E.g. Partnership, Direct Sales, etc.
-- **Lead Owner** - The owner of the Lead.
-- **Domain** - The website domain of the Lead.
+1. Vá para o módulo "Clientes".
+2. Selecione um cliente e clique no símbolo "+" para abrir uma janela pop-up para criar uma nova iniciativa.
+3. Preencha os campos em amarelo (obrigatórios).
+   
+- **Nome** - O nome que você deseja dar ao cliente em potencial.
+- **Tipo** - Escolha a partir de uma lista suspensa, por exemplo, Associação, Venda Direta, etc.
+- **Proprietário do cliente em potencial** - O proprietário do cliente em potencial.
+- **Domínio** - O domínio do site do cliente em potencial.
 
 <figure>
 
@@ -39,12 +40,12 @@ A Lead is an umbrella that groups a bundle of related activities and deals.
 
 
 
-### Add people to the team
+### Adicionar pessoas à equipe
 
-1. If you have access to change the Team you will see an Add Assignment symbol below the Description section.
-2. Add or remove people to each of the groups by clicking on the pencil.
-3. A dropdown will appear with a list of users.
-4. Select the users that you want to assign and click on the check to add them to the Team.
+1. Se você tiver acesso para alterar a equipe, verá um símbolo de Adicionar Atribuição abaixo da seção de Descrição.
+2. Adicione ou remova pessoas de cada um dos grupos clicando no lápis.
+3. Um menu suspenso aparecerá com uma lista de usuários.
+4. Selecione os usuários que deseja atribuir e clique na marca de seleção para adicioná-los à equipe.
 
 <figure>
 
@@ -52,12 +53,12 @@ A Lead is an umbrella that groups a bundle of related activities and deals.
 <figcaption></figcaption>
 </figure>
 
-### Document tabs
+### Guias de Documentos
 
-At the top of the page, you will be able to find various tabs with information about this Lead:
+Na parte superior da página, você encontrará várias guias com informações sobre este Lead:
 
-- **Feed** - All the stages and comments related to the Lead.
-- **Activities** - List of existing activities belonging to this Lead.
-- **Files** - All the files uploaded to this Lead will appear on this tab.
-- **History** - Track of status changes. You can see for example who created the Lead and at what time.
-- **Others** - You may also find other tabs depending on the modules of the system you have access to.
+- **Feed** - Todas as etapas e comentários relacionados ao Lead.
+- **Atividades** - Lista de atividades existentes relacionadas a este Lead.
+- **Arquivos** - Todos os arquivos carregados para este Lead aparecerão nesta aba.
+- **Histórico** - Registro de mudanças de status. Você pode ver, por exemplo, quem criou o Lead e em que momento.
+- **Outros** - Você também pode encontrar outras abas, dependendo dos módulos do sistema aos quais você tem acesso.
