@@ -11,12 +11,12 @@ Neste artigo, iremos guiá-lo através dos passos simples necessários para impo
 
 O processo de importação dos projetos irá:
 - Criar um projeto associado ao cliente.
-- Associar o estado definido no ficheiro.
+- Associar o estado definido no arquivo.
 
 <ReactPlayer controls muted url='/video/Import_Project.mov' />
 
 :::caution
-Para importar os dados com sucesso, certifique-se de que o workflow esta criado com a etapa de inicio e fim definidas.
+Para importar os dados com sucesso, certifique-se de que o workflow está criado com a etapa de início e fim definidas.
 
 A seguinte combinação deve ser única:
 - Nome | Número | Cliente | Producto | Moeda | Responsável do Projeto | Tipo de Projeto | WorkflowState | Classificação | Data de inicio | Data de Fim
