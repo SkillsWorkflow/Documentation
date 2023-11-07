@@ -2,7 +2,7 @@
 id: typology-groups
 title: Grupos de Tipologías
 sidebar_label: Grupos de Tipologías
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 import ReactPlayer from 'react-player';
@@ -10,6 +10,7 @@ import ReactPlayer from 'react-player';
 En este artículo, le guiaremos a través de los sencillos pasos necesarios para importar de forma eficiente los datos de los grupos de tipologías, asegurando un proceso de incorporación sin problemas.
 
 El proceso de importación de grupo de tipologías:
+
 - Navegar a Mantenimiento
 - Y buscar el listado de Grupo de Tipologías
 
@@ -19,10 +20,12 @@ El proceso de importación de grupo de tipologías:
 Para importar los datos correctamente, asegúrese de que no hay entradas duplicadas en el sistema.
 
 La siguiente combinación debe ser única:
+
 - Nombre | Empresa | Active
-:::
+  :::
 
 Preparar su fichero de datos:
+
 - Fórmate correctamente su fichero de datos de grupo de tipología para una importación sin problemas.
 - Asegúrese de que los datos están organizados y estructurados en un formato compatible.
 - Compruebe que todos los campos obligatorios están incluidos y rellenados correctamente.
