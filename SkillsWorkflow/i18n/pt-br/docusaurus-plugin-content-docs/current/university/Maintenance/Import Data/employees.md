@@ -1,7 +1,7 @@
 ---
 id: employees  
-title: Importar Funcionários
-sidebar_label: Importar Funcionários
+title: Funcionários
+sidebar_label: Funcionários
 sidebar_position: 1
 ---
 
