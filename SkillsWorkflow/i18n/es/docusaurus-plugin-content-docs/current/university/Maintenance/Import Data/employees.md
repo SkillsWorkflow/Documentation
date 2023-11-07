@@ -1,6 +1,6 @@
 ---
 id: employees  
-title: Importación de empleados
+title: Empleados
 sidebar_label: Empleados
 sidebar_position: 1
 ---
