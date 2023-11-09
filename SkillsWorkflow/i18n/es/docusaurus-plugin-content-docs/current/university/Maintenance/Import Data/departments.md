@@ -22,7 +22,7 @@ Para importar los datos con éxito, asegúrate de que no existan entradas duplic
 
 La siguiente combinación debe ser única:
 
-- Nombre | Activo | Empresa | División | Tipo Departamento | Planificable | Código
+- Nombre | Activo | Empresa | División | Tipo Departamento |
   :::
 
 Preparando tu archivo de datos:
