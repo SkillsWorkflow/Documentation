@@ -22,7 +22,7 @@ To successfully import the data, make sure there are no duplicate entries in the
 
 The following combination must be unique:
 
-- Name | Active | Company | Division | Department Type| Plannable | Code
+- Name | Active | Company | Division | Department Type|
   :::
 
 Preparing your data file:
