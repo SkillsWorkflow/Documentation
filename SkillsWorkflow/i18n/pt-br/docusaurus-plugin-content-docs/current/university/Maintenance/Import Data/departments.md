@@ -5,7 +5,6 @@ sidebar_label: Departamentos
 sidebar_position: 1
 ---
 
-Departments
 import ReactPlayer from 'react-player';
 
 Neste artigo, iremos guiá-lo através dos passos simples necessários para importar eficientemente os departamentos, garantindo um processo de integração sem problemas.
