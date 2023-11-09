@@ -2,7 +2,7 @@
 id: typology-groups
 title: Grupos de Tipologías
 sidebar_label: Grupos de Tipologías
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 import ReactPlayer from 'react-player';

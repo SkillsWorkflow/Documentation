@@ -2,7 +2,7 @@
 id: projects
 title: Projetos
 sidebar_label: Projetos
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 import ReactPlayer from 'react-player';

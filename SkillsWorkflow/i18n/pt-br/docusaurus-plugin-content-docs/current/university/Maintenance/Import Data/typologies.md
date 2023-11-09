@@ -2,7 +2,7 @@
 id: typologies
 title: Typologies
 sidebar_label: Typologies
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 import ReactPlayer from 'react-player';

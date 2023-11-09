@@ -2,7 +2,7 @@
 id: departments
 title: Departments
 sidebar_label: Departments
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import ReactPlayer from 'react-player';
@@ -13,7 +13,7 @@ The department import process will:
 
 - Create the department
 - Associate it with the company, division configured in the import file
-  
+
 <ReactPlayer controls muted url='/video/Import_Department.mov' />
 
 :::caution
@@ -31,4 +31,3 @@ Preparing your data file:
 - Verify that all mandatory fields are included and filled in correctly.
 - Consider any specific data formatting guidelines or restrictions mentioned in the system documentation.
 - Carefully check for the existence of inconsistencies or errors in the data to avoid issues during the import process.
-
