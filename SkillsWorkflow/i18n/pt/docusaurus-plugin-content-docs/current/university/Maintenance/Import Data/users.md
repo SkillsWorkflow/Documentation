@@ -21,7 +21,7 @@ Para importar os dados com sucesso, certifique-se de que não existem entradas d
 
 A seguinte combinação deve ser única:
 
-- Username | Name | IsActive | Company | Divisón | Departamento | Tipo Departamento | Tipologia
+- Username | Name | IsActive | Company | Division | Department | DepartmentType| Typology
   :::
 
 Preparando seu ficheiro de dados:
