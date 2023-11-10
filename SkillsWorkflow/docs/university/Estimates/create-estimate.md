@@ -156,11 +156,11 @@ For each Typology you will have to fill in the following required fields:
 
 - **Total Cost** - Hours x Unit Cost.
 
-- **Unit Income** - Unit Cost + Margin\*.
+- **Unit Income** - Unit Cost + Margin.
 
-- **Total Sell** - Total Cost + Margin\* or Unit Income x Hours.
+- **Total Sell** - Total Cost + Margin or Unit Income x Hours.
 
-  \*The Margin is the one defined on the Estimate's Info tab.
+  The Margin is the one defined on the Estimate's Info tab.
 
 <figure>
 

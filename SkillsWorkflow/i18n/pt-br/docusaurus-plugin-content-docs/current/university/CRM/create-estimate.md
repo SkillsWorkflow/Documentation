@@ -135,8 +135,8 @@ For each Typology you will have to fill in the following required fields:
 - **Unit Cost** - Automatically the same as the table rate, but could be manually changed. Used only if you want to use a different rate that the one from the chosen Rate Card (table rate).
 - **Hours** - Number of hours being sold to the Client.
 - **Total Cost** - Hours x Unit Cost.
-- **Unit Income** - Unit Cost + Margin\*.
-- **Total Sell** - Total Cost + Margin\* or Unit Income x Hours.
+- **Unit Income** - Unit Cost + Margin.
+- **Total Sell** - Total Cost + Margin or Unit Income x Hours.
 
 * The Margin is the one defined on the Estimate's Info tab.
 
