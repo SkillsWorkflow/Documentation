@@ -2,7 +2,7 @@
 id: employees
 title: Funcionários
 sidebar_label: Funcionários
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import ReactPlayer from 'react-player';

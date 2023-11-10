@@ -135,8 +135,8 @@ Para cada tipología, deberás completar los siguientes campos obligatorios:
 - **Costo Unitario** - Automáticamente el mismo que la tarifa de tabla, pero podría cambiarse manualmente. Se utiliza solo si deseas utilizar una tarifa diferente a la de la Tarjeta de Tarifas elegida (tarifa de tabla).
 - **Horas** - Número de horas que se venden al cliente.
 - **Costo Total** - Horas x Costo Unitario.
-- **Valor Unitario** - Costo Unitario + Margen\*.
-- **Venta Total** - Costo Total + Margen\* o Ingreso Unitario x Horas.
+- **Valor Unitario** - Costo Unitario + Margen.
+- **Venta Total** - Costo Total + Margen o Ingreso Unitario x Horas.
 
 * El Margen es el que se define en la pestaña de Información del Presupuesto.
 

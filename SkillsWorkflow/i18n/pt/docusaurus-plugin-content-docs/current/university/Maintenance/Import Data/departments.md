@@ -2,7 +2,7 @@
 id: departments
 title: Departamentos
 sidebar_label: Departamentos
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import ReactPlayer from 'react-player';
@@ -13,7 +13,7 @@ O processo de importação de departamentos irá:
 
 - Criar o departamento
 - Associar à empresa, divisão configurada no ficheiro de importação
-  
+
 <ReactPlayer controls muted url='/video/Import_Department.mov' />
 
 :::caution
@@ -31,4 +31,3 @@ Preparando seu ficheiro de dados:
 - Verifique se todos os campos obrigatórios estão incluídos e preenchidos corretamente.
 - Considere quaisquer diretrizes específicas de formatação de dados ou restrições mencionadas na documentação do sistema.
 - Verifique cuidadosamente a existência de inconsistências ou erros nos dados para evitar problemas durante o processo de importação.
-

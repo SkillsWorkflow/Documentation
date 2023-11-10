@@ -1,7 +1,7 @@
 ---
-id:  create-estimate
-title: Create an estimate
-sidebar_label: 6. Create an estimate
+id: create-estimate
+title: Create estimate
+sidebar_label: 6. Create estimate
 sidebar_position: 6
 ---
 
@@ -14,6 +14,7 @@ To generate an estimate under a Company or Activity you should navigate onto the
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-1.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -23,10 +24,10 @@ Fill in the following fields:
 - **Estimate Type** - You can have several estimate types which will allow different configurations such as workflows, pull-out reports, etc.
 - Click on the check mark to submit the post. The system will show a popup message with the confirmation that the estimate was successfully created.
 
-
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-2.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -49,6 +50,7 @@ To start building your Estimate details navigate to the Quotes tab where you wil
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-3.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -60,6 +62,7 @@ To create new Quotes you should:
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-4.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -89,6 +92,7 @@ Please note that you can have several external costs under one client line. It w
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-5.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -106,10 +110,11 @@ To start quoting expenses, click on the "Expense" word and the section will open
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-6.png)
+
 <figcaption></figcaption>
 </figure>
 
-### Quoting Resources 
+### Quoting Resources
 
 To start quoting the resources, click on the "Resources" word and the section will open up.
 
@@ -117,10 +122,10 @@ To start quoting the resources, click on the "Resources" word and the section wi
 2. Press on "+" to add Estimate Details or add multiple Typologies at once by clicking on the button Typologies icon.
 3. You can scope based on typologies (i.e. titles) and/or specific Users.
 
-
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-7.png)
+
 <figcaption></figcaption>
 </figure>
 
@@ -130,19 +135,20 @@ For each Typology you will have to fill in the following required fields:
 - **Unit Cost** - Automatically the same as the table rate, but could be manually changed. Used only if you want to use a different rate that the one from the chosen Rate Card (table rate).
 - **Hours** - Number of hours being sold to the Client.
 - **Total Cost** - Hours x Unit Cost.
-- **Unit Income** - Unit Cost + Margin*.
-- **Total Sell** - Total Cost + Margin* or Unit Income x Hours.
+- **Unit Income** - Unit Cost + Margin.
+- **Total Sell** - Total Cost + Margin or Unit Income x Hours.
 
 * The Margin is the one defined on the Estimate's Info tab.
 
 <figure>
 
 ![img-box-shadow](/img/university/estimates/estimates-lesson1-8.png)
+
 <figcaption></figcaption>
 </figure>
 
-As you fill in the values, the total per Deliverable on the Deliverables section at the top will be automatically updated. 
+As you fill in the values, the total per Deliverable on the Deliverables section at the top will be automatically updated.
 
-Note that each individual column on the Estimate is controlled by access roles. 
+Note that each individual column on the Estimate is controlled by access roles.
 
 Please note that you can have several external costs, expenses, and resources under one client line. It will depend on how you want to show the estimate details to clients

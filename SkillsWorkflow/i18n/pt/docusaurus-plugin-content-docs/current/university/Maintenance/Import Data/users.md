@@ -2,7 +2,7 @@
 id: users
 title: Usuários
 sidebar_label: Usuários
-sidebar_position: 6
+sidebar_position: 8
 ---
 
 import ReactPlayer from 'react-player';
