@@ -9,6 +9,12 @@ Regarding the SSO, the standard that is in use is in #Production:
 - The client’s SSO Identity Provider should provide SAML 2.0 Protocol (e.g. #Okta, #OnePass or #Office365) 
 - There should be a User Identification Claim agreed between the parties, either E-Mail (recommended) or AD User Name
 
+### Installation via Gallery
+Please follow the instructions from Microsoft website
+
+[Tutorial: Microsoft Entra SSO integration with Skills Workflow](https://learn.microsoft.com/pt-pt/entra/identity/saas-apps/skills-workflow-tutorial)
+
+
 ---
 ### Configuration
 
