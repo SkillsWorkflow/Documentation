@@ -4,7 +4,7 @@ title: Bamboo
 sidebar_label: Bamboo
 ---
 
-### Bamboo
+### Bamboo HR
 
 This is the documentation about the integration between Bamboo and Skills Workflow. This documentation is for Skills Workflow localised in the Cloud.
 
