@@ -32,4 +32,8 @@ Feito o procedimento anterior, abrirá um popup de atribuição de ausências.
 
    ![img-with-border](/img/university/maintenance/Leave_Type.png)
    </figure>
-  
+ 
+ :::note
+Para eliminar atribuição, é no popup da atribuição de ausência, seleccionando a opção Apagar.
+:::
+
