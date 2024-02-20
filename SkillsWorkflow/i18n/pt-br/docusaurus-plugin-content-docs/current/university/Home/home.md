@@ -4,6 +4,7 @@ slug: /university
 title: Home
 sidebar_label: Home
 sidebar_position: 1
+hide_table_of_contents: true
 ---
 
 ### Bem vindo à Universidade
