@@ -9,9 +9,13 @@ import TabItem from '@theme/TabItem';
 
 This article describes how the job maintenance is done in Skills Workflow when there is an interface with iSAP in place.
 
+---
+
 ### Job Creation in Skills Workflow
 
 After a Job is created in Skills Workflow, it will automatically flow to iSAP. Every time a job is modified it will update the information in iSAP. Once complete, the job needs to be closed in iSAP.
+
+---
 
 ### Job Creation in iSAP
 

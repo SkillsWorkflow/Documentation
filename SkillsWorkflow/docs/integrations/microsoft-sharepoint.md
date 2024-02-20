@@ -27,7 +27,7 @@ values={[
 
 <TabItem value="process">
 
-### Files
+<h4>Files</h4>
 
 When a file is uploaded into SharePoint, it is automatically available in Skills Workflow.
 
@@ -42,7 +42,7 @@ When a file is uploaded into SharePoint, it is automatically available in Skills
 
 ---
 
-### Mappings
+<h4>Mappings</h4>
 
 Sharepoint integration requires mappings between:
 
@@ -66,7 +66,7 @@ Sharepoint integration requires mappings between:
 
 ---
 
-### Files
+<h4>Files</h4>
 
 When a file is uploaded in Skills Workflow, it will be available on the corresponding Sharepoint Sub-Site.
 
@@ -106,7 +106,7 @@ Whenever a document is created in Skills Workflow, a folder is created under its
 
 ---
 
-### Synching
+<h4>Synching</h4>
 
 The synching is performed by a background process. Whenever a document is created or his folder name is changed in Skills Workflow, the process will replicate it in Sharepoint.
 
@@ -118,7 +118,7 @@ The synching is performed by a background process. Whenever a document is create
 
 <TabItem value="configuration">
 
-### Auth
+<h4>Auth</h4>
 
 The integration with SharePoint requires:
 

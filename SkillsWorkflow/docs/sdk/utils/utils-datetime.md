@@ -50,8 +50,9 @@ SW.Utils.Datetime.convertMinutesToDate(63984503);
 ```
 
 #### Response
+
 ```javascript
-"Thu Aug 26 2021 16:23:00 GMT+0100 (Western European Summer Time)"
+"Thu Aug 26 2021 16:23:00 GMT+0100 (Western European Summer Time)";
 ```
 
 ---
@@ -92,13 +93,17 @@ function convertToUtc(date: Date): Date
 #### Basic Usage
 
 ```javascript
-SW.Utils.Datetime.convertToUtc("Thu Aug 26 2021 16:23:00 GMT+0100 (Western European Summer Time)");
+SW.Utils.Datetime.convertToUtc(
+  "Thu Aug 26 2021 16:23:00 GMT+0100 (Western European Summer Time)"
+);
 ```
 
 #### Response
+
 ```javascript
-"Thu Aug 26 2021 15:23:00 GMT+0100 (Western European Summer Time)"
+"Thu Aug 26 2021 15:23:00 GMT+0100 (Western European Summer Time)";
 ```
+
 ---
 
 ## convertUtcToLocal
@@ -134,17 +139,19 @@ function convertUtcToLocal(utcDate: Date): Date
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
-SW.Utils.Datetime.convertUtcToLocal("2021-08-25T15:23:26.222Z")
+SW.Utils.Datetime.convertUtcToLocal("2021-08-25T15:23:26.222Z");
 ```
 
-### Response
+#### Response
+
 ```javascript
-"Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)"
+"Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
 ```
-### Example
+
+#### Example
 
 ```javascript {13}
 {
@@ -219,13 +226,14 @@ function formatDateToString(date: Date, params: { includeTime?: boolean } = { in
 ```javascript
 var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
 SW.Utils.Datetime.formatDateToString(date);
-SW.Utils.Datetime.formatDateToString(date, {includeTime: true});
+SW.Utils.Datetime.formatDateToString(date, { includeTime: true });
 ```
 
 #### Response
+
 ```javascript
-"2021-08-25"
-"25 August 2021, 16:23"
+"2021-08-25";
+"25 August 2021, 16:23";
 ```
 
 ---
@@ -249,8 +257,9 @@ SW.Utils.Datetime.getDateTimeFormat();
 ```
 
 #### Response
+
 ```javascript
-"dd/MMM/yyyy HH:mm"
+"dd/MMM/yyyy HH:mm";
 ```
 
 ---
@@ -291,12 +300,13 @@ function getMinutesInHHMMformat(minutes: number): string
 #### Basic Usage
 
 ```javascript
-SW.Utils.Datetime.getMinutesInHHMMformat(1234)
+SW.Utils.Datetime.getMinutesInHHMMformat(1234);
 ```
 
 #### Response
+
 ```javascript
-"20:34"
+"20:34";
 ```
 
 ---
@@ -310,11 +320,11 @@ This method can be used to get a end date by giving a start date and a range.
 #### Method(s)
 
 ```javascript
-1   function getTimeRange(value: Date, shift: DateShift, 
-        params: { 
-            centerAroundValue?: boolean 
-        } = { 
-            centerAroundValue: false 
+1   function getTimeRange(value: Date, shift: DateShift,
+        params: {
+            centerAroundValue?: boolean
+        } = {
+            centerAroundValue: false
         }
     ): { startDate: Date, endDate: Date }
 ```
@@ -358,11 +368,16 @@ This method can be used to get a end date by giving a start date and a range.
 
 ```javascript
 var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
-SW.Utils.Datetime.getTimeRange(date, {unit: "HOUR", value: 1, id: "HOUR"});
-SW.Utils.Datetime.getTimeRange(date, {unit: "HOUR", value: 1, id: "HOUR"}, {centerAroundValue: true});
+SW.Utils.Datetime.getTimeRange(date, { unit: "HOUR", value: 1, id: "HOUR" });
+SW.Utils.Datetime.getTimeRange(
+  date,
+  { unit: "HOUR", value: 1, id: "HOUR" },
+  { centerAroundValue: true }
+);
 ```
 
 #### Response
+
 ```javascript
 {
    startDate: "Wed Aug 25 2021 16:00:00 GMT+0100 (Western European Summer Time)",
@@ -425,11 +440,12 @@ This method can be used to get how much time has passed since a given date.
 ```javascript
 var date = "Wed Aug 25 2021 16:23:26 GMT+0100 (Western European Summer Time)";
 SW.Utils.Datetime.timeAgo(date);
-SW.Utils.Datetime.timeAgo(date, {unitOfTime: 'minutes'});
+SW.Utils.Datetime.timeAgo(date, { unitOfTime: "minutes" });
 ```
 
 #### Response
+
 ```javascript
-"a minute ago"
-1
+"a minute ago";
+1;
 ```
