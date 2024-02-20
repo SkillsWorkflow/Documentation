@@ -1,14 +1,16 @@
 ---
 id: customstyle
-title: 'Custom Style'
+title: "Custom Style"
 sidebar_label: Custom Style
 ---
+
 On this page you will find the process of how to customize the style of the document.
 
 :::note
 To activate one or more properties of the the Custom Style, the Use Custom button should be enabled
 :::
 
+<h3>Basic Usage</h3>
 
 <table className="custom-table">
     <thead> 
@@ -57,20 +59,14 @@ To activate one or more properties of the the Custom Style, the Use Custom butto
             <td>Change the name of the document's tooltip </td> 
         </tr>
     </tbody>
-</table> 
-
+</table>
 
 ##
-<figure>
-
-![img-box-shadow](/img/craft/configuration/document/properties.png)
-</figure>
-
-<h3>Basic Usage</h3>
 
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/document/properties-example.png)
+
 </figure>
 
 <h3>Example</h3>
@@ -78,6 +74,5 @@ To activate one or more properties of the the Custom Style, the Use Custom butto
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/document/customStyle-example.png)
+
 </figure>
-
-
