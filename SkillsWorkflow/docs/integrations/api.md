@@ -1,17 +1,18 @@
 ---
-id:  api
+id: api
 title: API
 sidebar_label: API
 sidebar_position: 1
 ---
 
+### Description
+
 API URLs:
 
 - API: https://integration-api-we.skillsworkflow.com/
 - Docs: https://integration-api-we.skillsworkflow.com/swagger/ui/index
- 
 
-You can try the API directly from the documentation, or you can use other application (e.g. PostMan) 
+You can try the API directly from the documentation, or you can use other application (e.g. PostMan)
 
 To use the API you will need to send 3 Headers in the request, as required in the documentation: X-AppTenant, X-AppId and X-AppSecret
 
@@ -28,6 +29,7 @@ Example on how to get all companies:
 <figure>
 
 ![img-box-shadow](/img/integrations/technical1.png)
+
 <figcaption>GET call for all companies </figcaption>
 </figure>
 
@@ -38,5 +40,6 @@ The API is constantly evolving (but never having breaking changes):
 <figure>
 
 ![img-box-shadow](/img/integrations/technical2.png)
+
 <figcaption>API Documentation</figcaption>
 </figure>

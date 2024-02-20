@@ -1,15 +1,16 @@
 ---
 id: menu
-title: 'Menu'
+title: "Menu"
 sidebar_label: Menu
+hide_table_of_contents: true
 ---
+
+### Description
 
 On this page you will find how to affect only the icon that appears in the menu.
 :::note
-To activate one or more properties of the the new menu, the Show new menu  button should be enabled
+To activate one or more properties of the the new menu, the Show new menu button should be enabled
 :::
-
-### Change icon
 
 <table className="custom-table">
     <thead> 
@@ -46,24 +47,25 @@ To activate one or more properties of the the new menu, the Show new menu  butto
              <td>A function that is executed before the context menu is shown.</td> 
         </tr>
     </tbody>
-</table> 
-
+</table>
 
 ##
+
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/system/properties.png)
+
 </figure>
 
 ### Basic Usage
 
 ```javascript
 function onShowing(menus) {
-    let obj = menus.find(a => a.id == "Contracts");
-    if (obj) {
-        obj.icon = 'far fa-calendar-alt'
-    }
-    return menus
+  let obj = menus.find((a) => a.id == "Contracts");
+  if (obj) {
+    obj.icon = "far fa-calendar-alt";
+  }
+  return menus;
 }
 ```
 
@@ -72,11 +74,11 @@ function onShowing(menus) {
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/system/menu-icon-property-example.png)
+
 </figure>
 
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/system/menu-icon-example.png)
+
 </figure>
-
-

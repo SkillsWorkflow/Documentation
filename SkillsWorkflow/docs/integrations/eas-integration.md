@@ -11,9 +11,13 @@ import TabItem from '@theme/TabItem';
 
 There was a need to exchange data between EAS and Skills Workflow
 
+---
+
 ### File Transfer Technology
 
 The JSON files will be transferred via an SFTP server. The server must be set up by the Agency and credentials must be given to Skills Workflow. Files pertaining to data transfers are to be placed in the Data directory on the SFTP server. Files pertaining to process requests are to be placed in the Process directory on the SFTP server.
+
+---
 
 ### File Naming Conventions
 
@@ -190,10 +194,6 @@ contracttype Full-Time/Part-Time/Freelancer User UserType
 hiredate Actual Hire date for employees, Active Directory created date for Freelancers User HireDate
 enddate Actual Term date for employees, Active Directory expires date for Freelancers User EndDate
 
-<h3> Conclusion </h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
 
 <TabItem value="leaves">
@@ -364,10 +364,6 @@ leaveentitlement – Main Object
   - hours – The number of hours taken
   - days – The number calculated days taken based on the hours
 
-<h3> Conclusion </h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
 
 <TabItem value="time sheets">
@@ -433,10 +429,6 @@ timebatch – Main object
   - createdate – The specific date/time the time record was created
   - hours – The number of hours (quarter hour increments) that was posted
 
-<h3> Conclusion</h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
 
 <TabItem value="client group">
@@ -444,10 +436,6 @@ The contents of this document create the foundation for data and process communi
 <h3></h3>
 
 To be added to the documentation according to the new definition.
-
-<h3>Conclusion</h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
 
 </TabItem>
 
@@ -523,10 +511,6 @@ clientbatch – Main object
   - clientstatus – 0 = Active, 1 = Inactive - Billing Client Status
   - clientcreatedate – Date client record was created in External Source. - N/a
   - clientmodifydate – Date of last change recorded for the client record in External Source - N/a
-
-<h3>Conclusion </h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
 
 </TabItem>
 
@@ -633,10 +617,6 @@ productbatch – Main object
   - clientcreatedate – Date client record was created in External Source. - N/a
   - clientmodifydate – Date of last change recorded for the client record in External Source. - N/a
 
-<h3>Conclusion </h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
 
 <TabItem value="job jacket">
@@ -702,10 +682,6 @@ process – Main object
       - displayname – The approvers full name
       - email – The approvers email address
 
-<h3> Conclusion</h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 <h2> Result</h2>
 
 <h3> Create a Job Jacket Result</h3>
@@ -764,10 +740,6 @@ process_results – Main object
     - name – Always “jobjacketurl”
     - value – The url that links to the specific job jacket in Nuxeo
 
-<h3> Conclusion </h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
 
 <TabItem value="data result">
@@ -813,10 +785,10 @@ data_results – Main object
   - uid – The unique identifier for the data being processed. In this document, this field is designated by the (UID) indicator.
   - error – The error specific to the record indicated by the uid
 
-<h3> Conclusion </h3>
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
 
 </Tabs>
+
+### Conclusion
+
+The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.

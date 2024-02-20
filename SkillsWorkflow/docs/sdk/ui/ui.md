@@ -68,12 +68,12 @@ This method can be used to edit an option in various components.
 #### Basic Usage
 
 ```javascript
-SW.UI.editComponentsOptionInBulk([dataGrid, chart], 'dataSource', data);
+SW.UI.editComponentsOptionInBulk([dataGrid, chart], "dataSource", data);
 ```
 
 #### Response
 
-It will set dataGrid and chart dataSources with the variable data passed. 
+It will set dataGrid and chart dataSources with the variable data passed.
 
 ---
 
@@ -151,7 +151,7 @@ This method can be used to get entities image.
 #### Basic Usage
 
 ```javascript
-SW.UI.getEntityImage(element, 'job', { size: 'large' });
+SW.UI.getEntityImage(element, "job", { size: "large" });
 ```
 
 #### Response
@@ -170,11 +170,11 @@ This method can be used to set element's attributes.
 
 ```javascript
 1    function setAttribute(element: HTMLElement, attribute: string, attributeValue: string,
-2       params: { 
-3           text?: string; 
-4           createContainer?: boolean 
-5       } = { 
-6           createContainer: true 
+2       params: {
+3           text?: string;
+4           createContainer?: boolean
+5       } = {
+6           createContainer: true
 7       }
 8   ): HTMLElement
 ```
@@ -231,7 +231,7 @@ This method can be used to set element's attributes.
 #### Basic Usage
 
 ```javascript
-SW.UI.setAttribute(element, 'style', 'display: contents');
+SW.UI.setAttribute(element, "style", "display: contents");
 ```
 
 #### Response
@@ -250,12 +250,12 @@ This method can be used to set element's attributes.
 
 ```javascript
 1   function setConditionalColor(element: HTMLElement, value: string, conditions: boolean[], colors: string[],
-2       params: { 
-3           createContainer?: boolean; 
-4           bold?: boolean; 
-5           italic?: boolean 
-6       } = { 
-7           createContainer: true 
+2       params: {
+3           createContainer?: boolean;
+4           bold?: boolean;
+5           italic?: boolean
+6       } = {
+7           createContainer: true
 8       }
 9   ): void
 ```
@@ -344,9 +344,9 @@ This method allows you to set an element as Red, Ambar or Green according to its
 #### Method(s)
 
 ```javascript
-1   function setRag(element: any, value: string, 
+1   function setRag(element: any, value: string,
 2           red: boolean,
-3           ambar: boolean, 
+3           ambar: boolean,
 4           green: boolean,
 5           params: { createContainer?: boolean } = { createContainer: true }
 6   ): string;
@@ -411,14 +411,14 @@ This method allows you to set an element as Red, Ambar or Green according to its
 #### Basic Usage
 
 ```javascript
-SW.setRAG(e, value, i.value > 15, (i.value >= 5 && i.value < 15), i.value < 5);
+SW.setRAG(e, value, i.value > 15, i.value >= 5 && i.value < 15, i.value < 5);
 ```
 
 #### Response
 
-It will add the value text to the element with the background color corresponding to the condition that is true. 
+It will add the value text to the element with the background color corresponding to the condition that is true.
 
-### Example
+#### Example
 
 ```javascript {7}
 {
@@ -432,6 +432,7 @@ It will add the value text to the element with the background color correspondin
     }
 },
 ```
+
 <figure>
 
 ![img-box-shadow](/img/responses/rag_example.png)
@@ -450,12 +451,12 @@ This method can be used to set rag considering two given versions.
 
 ```javascript
 1   function setVersionRag(element: HTMLElement, version1: number, version2: number,
-2       params: { 
-3           createContainer?: boolean 
-4       } = { 
-5           createContainer: true 
+2       params: {
+3           createContainer?: boolean
+4       } = {
+5           createContainer: true
 6       }
-7   ): void 
+7   ): void
 ```
 
 <table className="custom-table">
@@ -569,10 +570,13 @@ In the following example you can find a template for an item that will present a
 
 ```javascript
 function itemTemplate(itemData, itemIndex, itemElement, workspaceContext) {
-   var properties = {
-       items: [{"id":1, "value":"Blue"}, {"id":2, "value":"Red"}]
-   };
-   SW.UI.showComponent(itemElement, 'List', properties);
+  var properties = {
+    items: [
+      { id: 1, value: "Blue" },
+      { id: 2, value: "Red" },
+    ],
+  };
+  SW.UI.showComponent(itemElement, "List", properties);
 }
 ```
 
@@ -588,10 +592,10 @@ This method can be used to display an existing or default Image.
 
 ```javascript
 1   function showImage(element: HTMLElement, documentName: "user" | "client" | "company", name: string,
-2       params: { 
-3           hasImage?: boolean; 
-4           size?: Size; 
-5           id?: string; 
+2       params: {
+3           hasImage?: boolean;
+4           size?: Size;
+5           id?: string;
 6           showName: boolean
 7       } = {
 8           hasImage: false,
@@ -667,7 +671,10 @@ This method can be used to display an existing or default Image.
 #### Basic Usage
 
 ```javascript
-SW.UI.showImage(element, "company", "Skills Workflow", {hasImage: true, id: "companyId"});
+SW.UI.showImage(element, "company", "Skills Workflow", {
+  hasImage: true,
+  id: "companyId",
+});
 ```
 
 #### Response
@@ -841,9 +848,9 @@ This method can be used to display a stage.
 
 ```javascript
 1   function showStage(element: HTMLElement, name: string, color: string,
-2       params: { 
-3           grouping?: boolean; 
-4           groupCount?: number 
+2       params: {
+3           grouping?: boolean;
+4           groupCount?: number
 5       } = {}
 6   ): void
 ```
@@ -967,15 +974,15 @@ This method can be used to display teams.
 
 ```javascript
 1   function showTeam(
-2       element: HTMLElement, 
-3       data: any, 
-4       idsFieldName: string, 
-5       namesFieldName: string, 
+2       element: HTMLElement,
+3       data: any,
+4       idsFieldName: string,
+5       namesFieldName: string,
 6       hasImageFieldName: string,
-7       params: { 
-8           size?: Size 
-9       } = { 
-10          size: Size.SMALL 
+7       params: {
+8           size?: Size
+9       } = {
+10          size: Size.SMALL
 11      }
 12  ): void
 ```
@@ -1036,17 +1043,19 @@ This method can be used to display teams.
     </tbody>
 </table>
 
-### Basic Usage
+#### Basic Usage
 
 ```javascript
-SW.UI.showTeam(element, data, "UserIds", "UserNames", "UserHasImages", {size: "large"});
+SW.UI.showTeam(element, data, "UserIds", "UserNames", "UserHasImages", {
+  size: "large",
+});
 ```
 
-### Response
+#### Response
 
 This method will add the user images to the given element..
 
-### Example
+#### Example
 
 ```javascript {9}
 {
@@ -1055,19 +1064,19 @@ This method will add the user images to the given element..
         dataType: "string",
         allowEditing: false,
         visible: true,
-        cellTemplate: function cellTemplate(e, i) { 
-            if (i.data && i.data.ExecutorNames) { 
-                SW.UI.showTeam(e, i, 'ExecutorIds', 'ExecutorNames', 'ExecutorHasImages', { size: 'small' }) 
-             } 
+        cellTemplate: function cellTemplate(e, i) {
+            if (i.data && i.data.ExecutorNames) {
+                SW.UI.showTeam(e, i, 'ExecutorIds', 'ExecutorNames', 'ExecutorHasImages', { size: 'small' })
+             }
         }
 },
 ```
+
 <figure>
 
 ![img-box-shadow](/img/responses/showTeam_example.png)
 
 </figure>
-
 
 ---
 
@@ -1114,7 +1123,7 @@ This method can be used to display assignments workload.
 #### Basic Usage
 
 ```javascript
-SW.UI.showWorkload(element, 'assignmentId');
+SW.UI.showWorkload(element, "assignmentId");
 ```
 
 #### Response

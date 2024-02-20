@@ -8,8 +8,6 @@ sidebar_label: Mark as Saved
 
 This method can be used to mark changes as saved, so when navigating, the prompt will not be shown saying that are changes that were not saved
 
----
-
 #### Method(s)
 
 ```javascript
@@ -38,15 +36,13 @@ function markAsSaved(dashboardDefinitionId: string): void
 #### Basic Usage
 
 ```javascript
-SW.markAsSaved(workspaceContext.definition.Id)
+SW.markAsSaved(workspaceContext.definition.Id);
 ```
 
 ![img-box-shadow](/img/sdk/markAsSaved/markAsSavedMethod.png)
 
-
-#### Response 
+#### Response
 
 ![img-box-shadow](/img/sdk/markAsSaved/markAsSaved-message.png)
-
 
 ---

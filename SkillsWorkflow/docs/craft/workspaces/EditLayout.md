@@ -2,6 +2,7 @@
 id: EditLayout
 title: "Edit Layout"
 sidebar_label: Edit Layout
+hide_table_of_contents: true
 ---
 
 ### Description

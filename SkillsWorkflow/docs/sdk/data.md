@@ -134,7 +134,7 @@ It can also remove rows where a field is equal to zero (noZeros) and order them 
 #### Basic Usage
 
 ```javascript
-SW.Data.aggregate(dataArray, [{Name: 'AggregatedName', Field: 'UserName'}], 
+SW.Data.aggregate(dataArray, [{Name: 'AggregatedName', Field: 'UserName'}],
 {
     operations: [
         {Name: 'SumAge', Field: 'Age', OperationType: 'sum'},
@@ -151,18 +151,15 @@ SW.Data.aggregate(dataArray, [{Name: 'AggregatedName', Field: 'UserName'}],
 
 #### Response
 
-It will return a new set of data aggregated by UserName with the fields:
-    - AggregatedName: choosen name for the aggregation field
-    - SumAge: sum of the age where the UserName is the same
-    - MaxAge: max age where the UserName is the same
-    - CountRows: count of the rows where the UserName is the same
+It will return a new set of data aggregated by UserName with the fields: - AggregatedName: choosen name for the aggregation field - SumAge: sum of the age where the UserName is the same - MaxAge: max age where the UserName is the same - CountRows: count of the rows where the UserName is the same
 
 It will be sorted by the fields AggregatedName and MaxAge in an ascendent order and it will remove rows where the SumAge is equal to zero.
 
-### Example
+#### Example
 
 <figure>
 
 ![img-box-shadow](/img/sdk/data/aggregate_method.png)
+
 <figcaption></figcaption>
 </figure>
