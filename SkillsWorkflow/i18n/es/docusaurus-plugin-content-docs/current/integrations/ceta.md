@@ -1,5 +1,5 @@
 ---
-id:  ceta
+id: ceta
 title: CETA
 sidebar_label: CETA
 ---
@@ -7,11 +7,13 @@ sidebar_label: CETA
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Cause
+### Description
 
 There was a need to exchange data between CETA and Skills Workflow
 
-## Data Exchange Technology
+---
+
+### Data Exchange Technology
 
 Service REST.
 
@@ -31,33 +33,32 @@ The scope of data exchanged on this integration includes:
 - Approved Timesheets
 - From Skills Workflow into CETA
 
+---
 
-## Data Exchange
+### Data Exchange
 
 This section describes the Data exchanged between systems. Please see below the data exchanged.
 
-
 <Tabs
-  groupId="actions"
-  defaultValue="clients"
-  values={[
-    {label: 'Clients', value: 'clients'},
-    {label: 'Products', value: 'products'},
-    {label: 'Projects', value: 'projects'},
-    {label: 'Jobs', value: 'jobs'},
-    {label: 'Timesheets', value: 'timesheets'},
-  ]
+groupId="actions"
+defaultValue="clients"
+values={[
+{label: 'Clients', value: 'clients'},
+{label: 'Products', value: 'products'},
+{label: 'Projects', value: 'projects'},
+{label: 'Jobs', value: 'jobs'},
+{label: 'Timesheets', value: 'timesheets'},
+]
 }>
 
 <TabItem value="clients">
 
-Clients are managed in Skills Workflow. 
+Clients are managed in Skills Workflow.
 
 - New clients created in Skills Workflow are automatically created in CETA.
 - Any change in the client data is also synched with CETA.
 
-
-### Client Data Exchanged
+#### Client Data Exchanged
 
 Fields that are populated in CETA are:
 
@@ -69,7 +70,7 @@ Fields that are populated in CETA are:
 - Country
 - Client Manager
 
-### Mappings
+#### Mappings
 
 ```
 Name - Client Name - Name
@@ -85,12 +86,12 @@ Client Manager - Client Manager -  (?)
 
 <TabItem value="products">
 
-Products are managed in Skills Workflow. 
+Products are managed in Skills Workflow.
 
 New products created in Skills Workflow are automatically created in CETA.
 Any change in the client data is also synched with CETA.
 
-### Product Data Exchanged
+#### Product Data Exchanged
 
 Fields that are populated in CETA:
 
@@ -98,8 +99,7 @@ Fields that are populated in CETA:
 - External Id
 - Status
 
-
-### Template
+#### Template
 
 ```
 Client Name - Client Name - Company Name (?)
@@ -117,7 +117,7 @@ Projects are created in CETA and sent to Skills Workflow when in New state.
 - The project gets Confirmed as soon as the first Bid/Job is confirmed
 - As soon as the project status changes, it will be updated in Skills Workflow
 
-### Project Data Exchanged
+#### Project Data Exchanged
 
 Fields that are populated into Skills:
 
@@ -131,7 +131,7 @@ Fields that are populated into Skills:
 - Start Date
 - End Date
 
-### Template
+#### Template
 
 ```
 Title - Project Title - Title
@@ -154,7 +154,7 @@ Jobs are created in CETA and sent to Skills Workflow.
 - All non-confirmed status jobs are imported
 - Only confirmed jobs prepopulate the user's timesheet
 
-### Jobs Data Exchanged
+#### Jobs Data Exchanged
 
 The fields that are populated into Skills Workflow:
 
@@ -170,8 +170,7 @@ The fields that are populated into Skills Workflow:
 - Resources
 - Status
 
-
-### Template
+#### Template
 
 ```
 Number - Job Number - Id
@@ -184,6 +183,7 @@ Title - Job Title
 Start Date - Job Start Date
 End Date - Job End Date
 ```
+
 </TabItem>
 
 <TabItem value="timesheets">
@@ -192,7 +192,7 @@ Timesheets are inputted in Skills Workflow and sent to CETA.
 
 - Only approved hours are sent to CETA
 
-### Time Sheet Data Exchanged
+#### Time Sheet Data Exchanged
 
 The fields that will be populated into CETA:
 
@@ -212,8 +212,7 @@ The fields that will be populated into CETA:
 - Approval date
 - Hours
 
-
-### Template
+#### Template
 
 ```
 Id - Unique Id
@@ -232,6 +231,7 @@ Create date - Created On Date
 Approval date - Approval On Date
 Hours - Amount of hours
 ```
+
 </TabItem>
 
 </Tabs>

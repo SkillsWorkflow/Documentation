@@ -1,5 +1,5 @@
 ---
-id:  iSAP-Job-Maintenance
+id: iSAP-Job-Maintenance
 title: iSAP-Job-Maintenance
 sidebar_label: iSAP-Job-Maintenance
 ---
@@ -9,28 +9,28 @@ import TabItem from '@theme/TabItem';
 
 This article describes how the job maintenance is done in Skills Workflow when there is an interface with iSAP in place.
 
-## Job Creation in Skills Workflow
+### Job Creation in Skills Workflow
 
 After a Job is created in Skills Workflow, it will automatically flow to iSAP. Every time a job is modified it will update the information in iSAP. Once complete, the job needs to be closed in iSAP.
 
-## Job Creation in iSAP
+### Job Creation in iSAP
 
 After a Job is created in iSAP, it will automatically create a new project and job in Skills Workflow.
 
 <figure>
 
 ![img-box-shadow](/img/integrations/isap-job-maintenance.png)
+
 <figcaption>Fields coming from iSAP</figcaption>
 </figure>
 
-
 <Tabs
-  groupId="actions"
-  defaultValue="mappings"
-  values={[
-    {label: 'Mappings', value: 'mappings'},
-    {label: 'Workflow', value: 'workflow'},
-  ]
+groupId="actions"
+defaultValue="mappings"
+values={[
+{label: 'Mappings', value: 'mappings'},
+{label: 'Workflow', value: 'workflow'},
+]
 }>
 
 <TabItem value="mappings">
@@ -69,6 +69,5 @@ Every time a job is modified in the system, it is sent to iSAP.
 - The closing state is defined in the integration settings
 
 </TabItem>
-
 
 </Tabs>

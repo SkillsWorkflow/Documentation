@@ -1,5 +1,5 @@
 ---
-id:  ceta
+id: ceta
 title: CETA
 sidebar_label: CETA
 ---
@@ -39,26 +39,24 @@ The scope of data exchanged on this integration includes:
 
 This section describes the Data exchanged between systems. Please see below the data exchanged.
 
-
 <Tabs
-  groupId="actions"
-  defaultValue="clients"
-  values={[
-    {label: 'Clients', value: 'clients'},
-    {label: 'Products', value: 'products'},
-    {label: 'Projects', value: 'projects'},
-    {label: 'Jobs', value: 'jobs'},
-    {label: 'Timesheets', value: 'timesheets'},
-  ]
+groupId="actions"
+defaultValue="clients"
+values={[
+{label: 'Clients', value: 'clients'},
+{label: 'Products', value: 'products'},
+{label: 'Projects', value: 'projects'},
+{label: 'Jobs', value: 'jobs'},
+{label: 'Timesheets', value: 'timesheets'},
+]
 }>
 
 <TabItem value="clients">
 
-Clients are managed in Skills Workflow. 
+Clients are managed in Skills Workflow.
 
 - New clients created in Skills Workflow are automatically created in CETA.
 - Any change in the client data is also synched with CETA.
-
 
 #### Client Data Exchanged
 
@@ -88,11 +86,10 @@ Client Manager - Client Manager -  (?)
 
 <TabItem value="products">
 
-Products are managed in Skills Workflow. 
+Products are managed in Skills Workflow.
 
 New products created in Skills Workflow are automatically created in CETA.
 Any change in the client data is also synched with CETA.
-
 
 #### Product Data Exchanged
 
@@ -101,7 +98,6 @@ Fields that are populated in CETA:
 - Name
 - External Id
 - Status
-
 
 #### Template
 
@@ -174,7 +170,6 @@ The fields that are populated into Skills Workflow:
 - Resources
 - Status
 
-
 #### Template
 
 ```
@@ -188,6 +183,7 @@ Title - Job Title
 Start Date - Job Start Date
 End Date - Job End Date
 ```
+
 </TabItem>
 
 <TabItem value="timesheets">
@@ -216,7 +212,6 @@ The fields that will be populated into CETA:
 - Approval date
 - Hours
 
-
 #### Template
 
 ```
@@ -236,10 +231,11 @@ Create date - Created On Date
 Approval date - Approval On Date
 Hours - Amount of hours
 ```
+
 </TabItem>
 
 </Tabs>
 
-#### Conclusion
+### Conclusion
 
 The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agencies. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
