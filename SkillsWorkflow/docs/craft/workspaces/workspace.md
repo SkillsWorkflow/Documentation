@@ -1,18 +1,17 @@
 ---
-id:  craft-workspaces
-title: 'Workspaces'
+id: craft-workspaces
+title: "Workspaces"
 sidebar_label: Workspaces
+hide_table_of_contents: true
 ---
 
-
-:::note 
-To create  workspace, navigate to the **Workspaces** in the Configuration. 
+:::note
+To create workspace, navigate to the **Workspaces** in the Configuration.
 :::
 
 ## Creating workspaces in Configuration
 
 ![img](/img/responses/craft_configuration_workspaces_menu_evidence.png)
-
 
 1. Click on the add icon to open the creation pop-up.
 

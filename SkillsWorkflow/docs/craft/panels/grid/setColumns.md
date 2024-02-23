@@ -7,7 +7,7 @@ sidebar_label: Set Columns
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-A function used to set grid's columns in a workspace. 
+A function used to set grid's columns in a workspace.
 
 By default, a column is created for each field of a data source object, but in most cases, it is redundant. To specify a set of columns to be created in a grid, assign an array specifying these columns to the columns property.
 
@@ -15,10 +15,9 @@ Each object in it configures a single column. If a column does not need to be cu
 
 Each grid column is represented in this array by an object containing column settings or by a data source field that this column is bound to.
 
-
 Column properties define the behavior and appearance of a grid column.
 
-```json
+```javascript
 {
     entity: "client",
     format: {
@@ -44,78 +43,125 @@ Column properties define the behavior and appearance of a grid column.
 ```
 
 ## entity
-Setting up the Entity property, the standard display will be used. 
+
+Setting up the Entity property, the standard display will be used.
 If the cell display needs to be configured, the format property allows defining other default displays according to the selected type.
 According to the type to be presented in the column, image, link or text, some additional fields must be available in the data source.
 
 Accepted Values: 'client' | 'company' | 'stage' | 'user' | 'team'
 
 <Tabs
-  groupId="entity"
-  defaultValue="client"
-  values={[
-    {label: 'Client', value: 'client'},
-    {label: 'Company', value: 'company'},
-    {label: 'Stage', value: 'stage'},
-    {label: 'User', value: 'user'},
-    {label: 'Team', value: 'team'},
-    {label: 'label color', value: 'color'}
-  ]
+groupId="entity"
+defaultValue="client"
+values={[
+{label: 'Client', value: 'client'},
+{label: 'Company', value: 'company'},
+{label: 'Stage', value: 'stage'},
+{label: 'User', value: 'user'},
+{label: 'Team', value: 'team'},
+{label: 'Entities with color', value: 'color'}
+]
 }>
 <TabItem value="client">
 
-```json
+<h3>Basic Usage</h3>
+
+```javascript
 {
-    entity: "client"
+  entity: "client";
 }
 ```
-
-Required on data source:
-- Id
-- Name
-- HasImage (if type is image)
 
 </TabItem>
 
 <TabItem value="company">
 
-```json
+<h3>Basic Usage</h3>
+
+```javascript
 {
-    entity: "company"
+  entity: "company";
 }
 ```
+
 </TabItem>
 
 <TabItem value="stage">
 
-```json
+<h3>Basic Usage</h3>
+
+```javascript
 {
-    entity: "stage"
+  entity: "stage";
 }
 ```
+
 </TabItem>
 
 <TabItem value="user">
 
-```json
+<h3>Basic Usage</h3>
+
+```javascript
 {
-    entity: "user"
+  entity: "user";
 }
 ```
+
 </TabItem>
 <TabItem value="team">
 
-```json
+<h3>Basic Usage</h3>
+
+```javascript
 {
-    entity: "team"
+  entity: "team";
 }
 ```
+
+<h4> mapping </h4>
+
+If the data source does not mapping to the defaults fields name, it can be mapped by using the mapping property:
+
+```javascript
+{
+    caption: "Requesters",
+    dataType: "string",
+    dataField: "RequestersNames",
+    visible: false,
+    alignment: "center",
+    width: 150,
+    entity: "team",
+    format: {
+        mapping: {
+            id: "RequestersIds",
+            name: "RequestersNames",
+            hasImage: "RequestersHasImage"
+        }
+    }
+}
+
+```
+
+<h3>Example</h3>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/entity-team-mapping-example.png)
+
+</figure>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/entity-team-example.png)
+
+</figure>
 
 </TabItem>
 
 <TabItem value="color">
 
-
+<h3>Description</h3>
 
 Customize the text and the background of the type's label using the column's entity.
 
@@ -132,6 +178,8 @@ Accept entities: "jobtype" | "leavetype"
 ![img-box-shadow](/img/craft/grid/setColumns/configuration-color-for-jobtype-example.png)
 
 </figure>
+
+<h3>Basic Usage</h3>
 
 <table className="custom-table">
     <thead> 
@@ -152,7 +200,7 @@ Accept entities: "jobtype" | "leavetype"
     </tbody>
 </table>
 
-````json {6}
+```javascript {6}
 {
     dataField: "JobType",
     caption: "Job Type",
@@ -163,7 +211,9 @@ Accept entities: "jobtype" | "leavetype"
     dataType: "string"
 
 }
-````
+```
+
+<h3>Example</h3>
 
 <figure>
 
@@ -184,9 +234,8 @@ Accept entities: "jobtype" | "leavetype"
 </figure>
 
 :::note
-To use the entity without the format, the dataSource expects the  "name of the entity + style" as column name.
+To use the entity without the format, the dataSource expects the "name of the entity + style" as column name.
 :::
-
 
 <figure>
 
@@ -194,80 +243,47 @@ To use the entity without the format, the dataSource expects the  "name of the e
 
 </figure>
 
-
 </TabItem>
 </Tabs>
 
+---
+
 ## format
+
 Formats the cell before it is displayed.
 
 There are some standard formats available. By specifing its type the corresponding format will be displayed.
-
-### mapping
-
-
-If the data source does not mapping to the defaults fields name, it can be mapped by using the mapping property:
-
-```json 
-{
-    caption: "Requesters",
-    dataType: "string",
-    dataField: "RequestersNames",
-    visible: false,
-    alignment: "center",
-    width: 150,
-    entity: "team",
-    format: {
-        mapping: {
-            id: "RequestersIds",
-            name: "RequestersNames",
-            hasImage: "RequestersHasImage"
-        }
-    }
-}
-
-```
-
-<figure>
-
-![img-box-shadow](/img/craft/grid/setColumns/entity-team-mapping-example.png)
-
-</figure>
-
-<figure>
-
-![img-box-shadow](/img/craft/grid/setColumns/entity-team-example.png)
-
-</figure>
 
 ### type
 
 Accepted Values: 'undefined' | 'image' | 'link' | 'document' | 'date' | 'currency' | 'read' | 'priority' | 'stage'
 
 To setup the Image type, it is necessary that data source includes the entity:
+
 - Id
 - Name
 - HasImage
 
-
 <Tabs
-  groupId="type"
-  defaultValue="image"
-  values={[
-    {label: 'Image', value: 'image'},
-    {label: 'Link', value: 'link'},
-    {label: 'Document', value: 'document'},
-    {label: 'Date', value: 'date'},
-    {label: 'Currency', value: 'currency'},
-    {label: 'Read', value: 'read'},
-    {label: 'Priority', value: 'priority'},
-    {label: 'Stage', value: 'stage'}
-  ]
+groupId="type"
+defaultValue="image"
+values={[
+{label: 'Image', value: 'image'},
+{label: 'Link', value: 'link'},
+{label: 'Document', value: 'document'},
+{label: 'Date', value: 'date'},
+{label: 'Currency', value: 'currency'},
+{label: 'Read', value: 'read'},
+{label: 'Priority', value: 'priority'},
+{label: 'Stage', value: 'stage'}
+]
 }>
 
 <TabItem value="image">
 
-```json
+<h3>Basic Usage</h3>
+
+```javacript
 {
     entity: "client",
     format: {
@@ -276,15 +292,11 @@ To setup the Image type, it is necessary that data source includes the entity:
 }
 ```
 
-### properties
+<h4>properties</h4>
 
 Properties withing format property customize the behavior and appearance of a default display.
 
-<p><b>hideName:</b> To hide the client name from the column and keep only the client image, set this property as true.</p>
-
-<p><b>size:</b> To define the size of the image. Accepted Values: 'small' | 'medium' | 'large'</p>
-
-```json
+```javacript
 {
     entity: "client",
     format: {
@@ -295,6 +307,16 @@ Properties withing format property customize the behavior and appearance of a de
         }
 }
 ```
+
+<h5>hideName:</h5> 
+<p>To hide the client name from the column and keep only the client image, set this property as true.</p>
+
+<h5>size:</h5>
+
+<p>To define the size of the image. </p>
+<p>Accepted Values: 'small' | 'medium' | 'large'</p>
+
+<h3>Example</h3>
 
 <figure>
 
@@ -307,12 +329,13 @@ Properties withing format property customize the behavior and appearance of a de
 
 </figure>
 
-
 </TabItem>
 
 <TabItem value="link">
 
-```json
+<h3>Basic Usage</h3>
+
+```javacript
 {
     entity: "client",
     format: {
@@ -325,11 +348,13 @@ Properties withing format property customize the behavior and appearance of a de
 
 <TabItem value="document">
 
+<h3>Basic Usage</h3>
+
 The follow examples shows how to display the name and the image of the document together.
 
-1- With entity defined.
+- With entity defined.
 
-```json
+```javacript
 {
     dataField: "Name",
     caption: "Title",
@@ -342,15 +367,16 @@ The follow examples shows how to display the name and the image of the document 
     }
 }
 ```
+
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/document-image-with-entity-property.png)
 
 </figure>
 
-2- Without entity defined.
+- Without entity defined.
 
-```json
+```javacript
 {
     dataField: "Document",
     caption: "Title",
@@ -368,40 +394,41 @@ The follow examples shows how to display the name and the image of the document 
 }
 ```
 
-### documentName
+<h4>properties</h4>
+
+<h5>documentName:</h5>
 
 The name defined in the dataField.
 
-### title
+<h5>title:</h5>
 
 Define the name that appears in the UI. Could be different of the name of the dataField.
 
+<h3>Example</h3>
 
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/document-image-without-entity-property.png)
 
-
 </figure>
-
 
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/document-image-example.png)
 
-
 </figure>
 
 </TabItem>
 
-
 <TabItem value="date">
+
+<h3>Basic Usage</h3>
 
 The follow example shows how to convert an UTC date into local.
 
 By default the date is converted from Utc into local in the format "DD/MMMM/YYYY HH:mm".
 
-```json
+```javascript
 {
     dataField: "CreatedOnUtc",
     caption: "Created On",
@@ -411,19 +438,14 @@ By default the date is converted from Utc into local in the format "DD/MMMM/YYYY
 }
 ```
 
-<figure>
-
-![img-box-shadow](/img/craft/grid/setColumns/convertUtcDateToLocal-example.png)
-
-</figure>
-
-## properties
+<h4>properties</h4>
 
 The following examples shows how to customize de appearance of the default behavior.
 
-- format: customize the format of the date in the UI.
+<h5>format:</h5> 
+<p>Customize the format of the date in the UI.</p>
 
-```json
+```javascript
 {
     dataField: "CreatedOnUtc",
     caption: "Created On",
@@ -476,13 +498,13 @@ The following examples shows how to customize de appearance of the default behav
             <td>12/May/2022 12:06</td>
         </tr>
     </tbody>
-</table> 
+</table>
 
-##
-- displayInUtc: Allows to display the date in UTC.
+<h5>displayInUtc:</h5>
 
+<p>Allows to display the date in UTC.</p>
 
-```json
+```javascript
 {
     dataField: "CreatedOnUtc",
     caption: "Created On",
@@ -495,13 +517,23 @@ The following examples shows how to customize de appearance of the default behav
 }
 ```
 
+<h3>Example</h3>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/convertUtcDateToLocal-example.png)
+
+</figure>
+
 </TabItem>
 
 <TabItem value="currency">
 
+<h3>Basic Usage</h3>
+
 The follow examples shows how to display the currency symbol in a currency column.
 
-```json
+```javascript
 {
     dataField: "Cost",
     caption: "Cost",
@@ -516,28 +548,30 @@ The follow examples shows how to display the currency symbol in a currency colum
     }
 }
 ```
+
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/currency-symbol.png)
 
 </figure>
 
-### precision
+<h4>properties</h4>
+
+<h5>precision:</h5>
 
 To choose how many decimal places are shown.
 
-### symbol
+<h5>symbol:</h5>
 
 The data field name that has the currency symbols.
 
+<h3>Example</h3>
 
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/currency-symbol-example.png)
 
-
 </figure>
-
 
 </TabItem>
 
@@ -545,7 +579,7 @@ The data field name that has the currency symbols.
 
 The follow examples shows how to display the read/unread symbol in a boolean column.
 
-```json
+```javascript
 {
     dataField: "AlreadyRead",
     caption: "Read",
@@ -554,29 +588,26 @@ The follow examples shows how to display the read/unread symbol in a boolean col
     }
 }
 ```
+
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/read-symbol-config.png)
 
 </figure>
 
-
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/read-symbol-example.png)
 
-
 </figure>
 
-
 </TabItem>
-
 
 <TabItem value="priority">
 
 The follow example shows how to display the priority type.
 
-```json
+```javascript
 {
     dataField: "Priority",
     caption: "Priority",
@@ -593,11 +624,9 @@ The follow example shows how to display the priority type.
 
 </figure>
 
-
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/priority-example.png)
-
 
 </figure>
 
@@ -607,7 +636,7 @@ The follow example shows how to display the priority type.
 
 The follow examples shows how to display the stage type.
 
-```json
+```javascript
 {
 
     dataField: "Name",
@@ -618,7 +647,7 @@ The follow examples shows how to display the stage type.
             name: "Name"
         }
     }
-}         
+}
 ```
 
 <figure>
@@ -627,12 +656,15 @@ The follow examples shows how to display the stage type.
 
 </figure>
 
-### stage
+<h3> properties </h3>
+
+<h4> stage </h4>
+
 A property to map the name of the stage.
 
-### color
+<h4> color </h4>
+
 A property to map the color of the stage.
-#
 
 <figure>
 
@@ -646,28 +678,34 @@ A property to map the color of the stage.
 
 </figure>
 
-
-
 </TabItem>
-
 
 </Tabs>
 
 ---
 
 ## caption
+
 Specifies a caption for the column.
+
 ## dataType
+
 Casts column values to a specific data type
 
 Accepted Values: 'string' | 'number' | 'date' | 'boolean' | 'object' | 'datetime'
+
 ## dataField
+
 Binds the column to a field of the dataSource.
+
 ## alignment
+
 Aligns the content of the column
 
 Accepted Values: undefined | 'center' | 'left' | 'right'
+
 ## width
+
 Specifies the column's width in pixels or as a percentage. Ignored if it is less than minWidth.
 
 Type: Number | String
@@ -678,22 +716,21 @@ The property supports the following types of values:
 - String - A CSS-accepted column width measurement (for example, "55px", "80%" and "auto") except relative units such as em, ch, vh, etc.
 
 ## allowEditing
+
 A flag to allow column editing
 
-
 ## required
+
 Makes a column required to fill
 
 Type: Boolean
 
-```json
+```javascript
 {
     dataField: "example",
     required: true
 }
 ```
-
-
 
 <figure>
 
@@ -707,7 +744,7 @@ show or hide the zeroes values
 
 Type: Boolean
 
-```json
+```javascript
  {
         dataField: "From0To60",
         visible: true,
@@ -720,8 +757,6 @@ Type: Boolean
         showZeroes: false
 }
 ```
-
-
 
 <figure>
 
@@ -743,7 +778,7 @@ by default the background color is grey and the label has the the default style 
 
 Type: object
 
-```json
+```javascript
 {
     dataField: "People",
     alignment: "center",
@@ -772,7 +807,6 @@ Type: object
 
 </figure>
 
-
 ### color
 
 Change the background color of the Header.
@@ -794,10 +828,10 @@ Change the color of the text.
 Type: string
 
 Accepted Values: name of the color, HEX code, RGB code
+
 ### font
 
 Change the font's size and family.
-
 
 Type: string
 
@@ -812,7 +846,7 @@ By representing the cursor with a | , please check the example below:
 - editorOptions: {caretPosition: 0} the cursor will be placed in the position 0 = |00:00
 - editorOptions: {caretPosition: 1} the cursor will be placed in the position 1 = 0|0:00
 
-```json
+```javascript
 {...
     editorOptions: {
         caretPosition: 1

@@ -1,7 +1,8 @@
 ---
-id:  EditLayout
-title: 'Edit Layout'
+id: EditLayout
+title: "Edit Layout"
 sidebar_label: Edit Layout
+hide_table_of_contents: true
 ---
 
 ### Description
@@ -13,24 +14,26 @@ This option allows the user to change the size and position of the panels in the
 To have access to the this option, you need to click in the Edit Layout.
 :::
 
-
 <figure>
 
 ![img-box-shadow](/img/craft/workspace/EditLayout.png)
+
 </figure>
 
 ### Example
 
-### Before
+#### Before
 
 <figure>
 
 ![img-box-shadow](/img/craft/workspace/EditLayout-example-before.png)
+
 </figure>
 
+#### After
 
-### After
 <figure>
 
 ![img-box-shadow](/img/craft/workspace/EditLayout-example-After.png)
+
 </figure>

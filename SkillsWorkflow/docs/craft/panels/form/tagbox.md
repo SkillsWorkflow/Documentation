@@ -2,6 +2,7 @@
 id: tagbox
 title: TagBox
 sidebar_label: TagBox
+hide_table_of_contents: true
 ---
 
 On this page you will find TagBoxs examples as well as how to setup a TagBox.
@@ -13,6 +14,7 @@ On this page you will find TagBoxs examples as well as how to setup a TagBox.
 ### Description
 
 This example shows how to configure a TagBox inside a Form that:
+
 - Uses Custom Fields
 - Multiple Selection custom field
 - Lookup data from Workspace Store (query)
@@ -51,7 +53,9 @@ This example shows how to configure a TagBox inside a Form that:
 ```
 
 #### Query defined in Workspace Store
+
 <figure>
 
 ![img-box-shadow](/img/craft/panels/form/tagbox/query-data.png)
+
 </figure>

@@ -29,60 +29,29 @@ A function used to save User, Document and other fields in the form.
     editorType: "dxDateBox"
 }
 ```
+
 ### type
 
 Accepted Values: 'document' | 'userfield' | 'other'
 
 <Tabs
-  groupId="type"
-  defaultValue="document"
-  values={[
-    {label: 'document', value: 'document'},
-    {label: 'userfield', value: 'userfield'},
-    {label: 'others', value: 'others'},
-  ]
+groupId="type"
+defaultValue="document"
+values={[
+{label: 'document', value: 'document'},
+{label: 'userfield', value: 'userfield'},
+{label: 'others', value: 'others'},
+]
 }>
 <TabItem value="document">
 
 ```js
 {
-    saveOptions: {
-        type: "document"
-    }
+  saveOptions: {
+    type: "document";
+  }
 }
 ```
-
-</TabItem>
-<TabItem value="userfield">
-
-```js
-{
-    saveOptions: {
-        type: "userfield"
-    }
-}
-```
-
-</TabItem>
-<TabItem value="others">
-
-```js
-{
-    saveOptions: {
-        type: "others"
-    }
-}
-```
-
-</TabItem>
-
-</Tabs>
-
-:::note
- - If the type is set as 'others', no further parameter needs to be passed into the saveOptions.
-
- - If is specified as parameter instead of an object. The value passed will set the 'type'. 
-:::
 
 ```js
 {
@@ -100,8 +69,41 @@ Accepted Values: 'document' | 'userfield' | 'other'
 }
 ```
 
-### fieldName
+</TabItem>
+<TabItem value="userfield">
 
+```js
+{
+  saveOptions: {
+    type: "userfield";
+  }
+}
+```
+
+</TabItem>
+<TabItem value="others">
+
+```js
+{
+  saveOptions: {
+    type: "others";
+  }
+}
+```
+
+</TabItem>
+
+</Tabs>
+
+:::note
+
+- If the type is set as 'others', no further parameter needs to be passed into the saveOptions.
+
+- If is specified as parameter instead of an object. The value passed will set the 'type'.
+
+:::
+
+### fieldName
 
 To assign the name you want to save the field.
 
@@ -121,21 +123,12 @@ To assign the name you want to save the field.
 If no value is passed, it will use the dataField value.
 :::
 
-```js
-{
-   saveOptions: {
-       type: "userField"
-   },
-   dataField: "Priority"
-   editorType: "dxSelectBox"
-}
-```
 ### dataType
 
 To pass the User Data Type Id, it takes a value of type number.
 
 :::note
- Properties only valid if the type propertie is set to 'userfield'
+Properties only valid if the type propertie is set to 'userfield'
 :::
 
 ```js
@@ -148,6 +141,7 @@ To pass the User Data Type Id, it takes a value of type number.
    editorType: "dxSelectBox"
 }
 ```
+
 <table className="custom-table">
     <thead> 
         <tr>
@@ -183,7 +177,7 @@ To pass the User Data Type Id, it takes a value of type number.
             <td></td>
         </tr>
     </tbody>
-</table> 
+</table>
 
 ### isMultipleSelection
 
@@ -202,6 +196,7 @@ Default value: false.
    editorType: "dxSelectBox"
 }
 ```
+
 ### lookupFieldName
 
 To set the userfield lookup field name.
@@ -219,6 +214,8 @@ To set the userfield lookup field name.
 }
 ```
 
+---
+
 ## format
 
 A function used to set the item format.
@@ -235,24 +232,25 @@ A function used to set the item format.
     }
 }
 ```
+
 ### type
 
 Accepted Values: 'priority'
 
 <Tabs
-  groupId="type"
-  defaultValue="priority"
-  values={[
-    {label: 'priority', value: 'priority'},
-  ]
+groupId="type"
+defaultValue="priority"
+values={[
+{label: 'priority', value: 'priority'},
+]
 }>
 <TabItem value="priority">
 
 ```js
 {
-    format: {
-        type: "priority"
-    }
+  format: {
+    type: "priority";
+  }
 }
 ```
 
@@ -265,13 +263,13 @@ Accepted Values: 'priority'
 </TabItem>
 </Tabs>
 
+---
+
 ## useCache
 
 This property allows to cache the data and must be used for fields that has the entity defined
 
-By default the value is false 
-
-##
+By default the value is false
 
 ```js
 {
@@ -285,13 +283,17 @@ By default the value is false
     useCache: true
 }
 ```
+
 :::note
 
 It will not work for the following entities:
+
 - stage
 - user
 
 :::
+
+---
 
 ## lookup
 
@@ -302,29 +304,33 @@ It will not work for the following entities:
             text: "CompanyId"
         },
         editorType: "dxSelectBox",
-        entity: "company",   
+        entity: "company",
         editorOptions: {
             name: "CompanyId"
             lookup:{
                 endpoint: {
-                    load: "v3/payment-conditions/lookup", 
-                    byKey: "v3/payment-conditions" 
+                    load: "v3/payment-conditions/lookup",
+                    byKey: "v3/payment-conditions"
                 },
-                dataSource: "", 
-                name: "lookupTemplate", 
-                dependencyEditor: "DivisionId", 
-                filterEditors: ["DivsionId", "DepartmentId"], 
-                filters: [   
-                    { 
-                        name: "DocumentTypeName",  
-                        value: "Skill.Module.BusinessObjects.PriceTable" 
+                dataSource: "",
+                name: "lookupTemplate",
+                dependencyEditor: "DivisionId",
+                filterEditors: ["DivsionId", "DepartmentId"],
+                filters: [
+                    {
+                        name: "DocumentTypeName",
+                        value: "Skill.Module.BusinessObjects.PriceTable"
                     },
                 ]
             }
         }
     }
 ```
+
+---
+
 ## custom editorOptions
+
 ```js
 {
         dataField: "CompanyId",
@@ -359,12 +365,13 @@ used to save the component (string)
 the endpoint to use for the load of the selectBox (string or function)
 
 ### byKey
-    
-the endpoint to use as key of the selectBox (if it is used as a string it will put "/" + key + "lookup") (string or function)  
+
+the endpoint to use as key of the selectBox (if it is used as a string it will put "/" + key + "lookup") (string or function)
 
 ### dataSource
 
 under development
+
 ### name (inside the property lookup)
 
 the name of the lookup that is not default (string)
@@ -374,17 +381,17 @@ the name of the lookup that is not default (string)
 the name of the field that will unlock the current field. The field could be a dxSelectBox, dxNumberBox, dxDateBox
 
 (string)
+
 ### filterEditors
 
 the name of the field that will unlock the current field. The field could be a dxSelectBox, dxNumberBox, dxDateBox
 
 (string or array)
-        
+
 ### filters
 
 name: the name of the filter (string)
 value: the value of the filter (boolean, string)
-
 
 <figure>
 
@@ -397,5 +404,3 @@ value: the value of the filter (boolean, string)
 ![img-box-shadow-popup](/img/craft/form/setItems/info-example.png)
 
 </figure>
-
-

@@ -6,6 +6,8 @@ sidebar_label: Store
 
 On this page you will find how to create a workspace using the Store as DataSource.
 
+<h3>Basic Usage</h3>
+
 <table className="custom-table">
     <thead> 
         <tr>
@@ -31,35 +33,44 @@ On this page you will find how to create a workspace using the Store as DataSour
             <td>Use this parameter to have access to the context of the workspace</td> 
         </tr>
     </tbody>
-</table> 
+</table>
 
 ##
+
 ```js
-(query, creators, operators, componentDefinitionId, customOperators, workspaceContext) => creators.of(query).pipe(
+(
+  query,
+  creators,
+  operators,
+  componentDefinitionId,
+  customOperators,
+  workspaceContext
+) =>
+  creators.of(query).pipe(
     customOperators.selectDataSource("expense"),
-    operators.map(queryData => {
-        const data = queryData.Data;
-        return { Data: [...data], Filters: query.Filters }
+    operators.map((queryData) => {
+      const data = queryData.Data;
+      return { Data: [...data], Filters: query.Filters };
     })
-)
- ```
+  );
+```
 
 <h3>Example</h3>
 
 <figure>
 
 ![img-box-shadow](/img/craft/panels/dataSource/query-store.png)
+
 </figure>
 
 <figure>
 
 ![img-box-shadow](/img/craft/panels/dataSource/store-function-example.png)
+
 </figure>
 
 <figure>
 
 ![img-box-shadow](/img/craft/panels/dataSource/grid-store-example.png)
+
 </figure>
-
-
-

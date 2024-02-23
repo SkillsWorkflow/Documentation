@@ -1,5 +1,5 @@
 ---
-id:  eas-integration
+id: eas-integration
 title: EAS Integration
 sidebar_label: EAS Integration
 ---
@@ -7,15 +7,19 @@ sidebar_label: EAS Integration
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Cause
+### Cause
 
 There was a need to exchange data between EAS and Skills Workflow
 
-## File Transfer Technology
+---
+
+### File Transfer Technology
 
 The JSON files will be transferred via an SFTP server. The server must be set up by the Agency and credentials must be given to Skills Workflow. Files pertaining to data transfers are to be placed in the Data directory on the SFTP server. Files pertaining to process requests are to be placed in the Process directory on the SFTP server.
 
-## File Naming Conventions
+---
+
+### File Naming Conventions
 
 Each JSON filename will have a prefix, body and suffix. The name will convey information to both Agency and Skills Workflow as to the intent and content of the file as described below. The file name format will be as follows: prefix_body_suffix.json
 
@@ -34,11 +38,11 @@ Second Character
 - P – Process Command
 - R – Data/Process Results
 
-### Body
+#### Body
 
 The body of the filename is simply used to give a friendly name or to designate specific content.
 
-### Suffix
+#### Suffix
 
 The filename suffix is used to ensure a unique file name and implies a process order when multiple files with the same prefix and body exist. The suffix is simply the date and time relevant to the content of the file in the following format: YYYYMMDDHHmmss.
 
@@ -49,7 +53,7 @@ The filename suffix is used to ensure a unique file name and implies a process o
 - mm – The two character minute, left padded with zero when necessary (00-59)
 - ss – The two character second, left padded with zero when necessary (00-59)
 
-### File Naming Examples
+#### File Naming Examples
 
 The following are examples of file names. The JSON template details will follow.
 
@@ -60,28 +64,28 @@ The following are examples of file names. The JSON template details will follow.
 - SP_CreateJobJacket_20180815144600.json – File originated by Skills Workflow with the process command to create a job jacket.
 - AR_CreateJobJacket_20180815144600.json – Results file from Agency in response to the command (SP_CreateJobJacket_20180815144600.json) request to create a job jacket
 
-
-## JSON Templates
+### JSON Templates
 
 This section will describe the JSON templates for the currently known exchange processes. The consumer of the JSON files will delete the file from the SFTP server when it has been processed regardless of the process results: success, failure or otherwise.
 
-
 <Tabs
-  groupId="actions"
-  defaultValue="users"
-  values={[
-    {label: 'Users', value: 'users'},
-    {label: 'Leaves', value: 'leaves'},
-    {label: 'Time Sheets', value: 'time sheets'},
-    {label: 'Client Group', value: 'client group'},
-    {label: 'Client', value: 'client'},
-    {label: 'Product', value: 'product'},
-    {label: 'Job Jacket', value: 'job jacket'},
-    {label: 'Data Result', value: 'data result'},
-  ]
+groupId="actions"
+defaultValue="users"
+values={[
+{label: 'Users', value: 'users'},
+{label: 'Leaves', value: 'leaves'},
+{label: 'Time Sheets', value: 'time sheets'},
+{label: 'Client Group', value: 'client group'},
+{label: 'Client', value: 'client'},
+{label: 'Product', value: 'product'},
+{label: 'Job Jacket', value: 'job jacket'},
+{label: 'Data Result', value: 'data result'},
+]
 }>
 
 <TabItem value="users">
+
+<h3> </h3>
 
 This will contain the user information requested by Skills Workflow. The frequency will be at least once per day but may be a few times per day. The user data is based on a combination of Reach and Active Directory information. Reach data is only captured once per day but Active Directory changes can occur at any time.
 
@@ -91,8 +95,7 @@ In order for users not to be inactivated because they are not in the file, there
 
 - Expiration Days
 
-
-## File Name
+<h3> File Name </h3>
 
 The file name that will always be used for this file: AD_UserAccounts_YYYYMMDDHHmmss.json where the YYYYMMDDHHmmss suffix indicates the as of date. This overrides any previous files information.
 
@@ -100,7 +103,7 @@ File Directory
 
 This file is to be placed in the Data directory on the SFTP server.
 
-### Template
+<h3> Template </h3>
 
 ```
 {
@@ -150,15 +153,13 @@ This file is to be placed in the Data directory on the SFTP server.
 }
 ```
 
-### Template Description
-
 useraccounts – Main object
 
 - asofdate – Date from which the data is relevant
 - recordcount – The number of user records contained in the users object list
 - users – Object that contains a list of user objects.
   - userid – (UID) - Unique string identifier for a user record - In this case is sent to Skills Workflow the SAM Account Name.
-  - personalid - (UID) - Unique string identifier for a user record - The personalid of the user in EAS. - 
+  - personalid - (UID) - Unique string identifier for a user record - The personalid of the user in EAS. -
   - company – The code of the company assigned to the user
   - fullname – The full name of the user
   - divisionid – The divisionid - will be checked with the SW Division Code
@@ -174,42 +175,38 @@ useraccounts – Main object
   - hiredate – Actual Hire date for employees, Active Directory created date for Freelancers
   - enddate – Actual Term date for employees, Active Directory expires date for Freelancers
 
-UserAccount file	Skills Workflow 	Description 
+UserAccount file Skills Workflow Description
 
-userid	SAM Account Name	User	ExternalId	(UID) - Unique string identifier for a user record
-personalid	User Id	User	ExternalNumber	(UID) - Unique string identifier for a user record - it changes everytime that the user change his contract type
-company	CompanyCode	Company	CompanyCode	The code of the company assigned to the user
-fullname	User full name	Employee	Name	The full name of the user
-divisionid	Division Id	Division	DivisionCode	  The value must exist in Skills Workflow
-departmentid	Department ID	Department	DepartmentCode	  The value must exist in Skills Workflow
-position	User title	User	UserType	 The value must exist in Skills Workflow
-directmanagerid	 The SAM Account Name of the Direct Manager	User	 ResponsibleExternalId	 
-timeapproverid	 Timesheet Approver	 N/a	 N/a	 
-workphone	 Work phone number of the user	 User	 Phone	 
-email	 Email address of the user	 User	 E-mail	 
-username	 SamAccountName (login name) of the user	 User	 SSOUsername	 
-scheduledhours	 Number of hours the user is scheduled to work in a week	 User	 Minimum Weekly Hours	For minimum daily hours we split the value by 5
-contracttype	 Full-Time/Part-Time/Freelancer	 User	 UserType	 
-hiredate	 Actual Hire date for employees, Active Directory created date for Freelancers	 User	 HireDate	 
-enddate	 Actual Term date for employees, Active Directory expires date for Freelancers	 User	 EndDate	 
-
-##Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
+userid SAM Account Name User ExternalId (UID) - Unique string identifier for a user record
+personalid User Id User ExternalNumber (UID) - Unique string identifier for a user record - it changes everytime that the user change his contract type
+company CompanyCode Company CompanyCode The code of the company assigned to the user
+fullname User full name Employee Name The full name of the user
+divisionid Division Id Division DivisionCode The value must exist in Skills Workflow
+departmentid Department ID Department DepartmentCode The value must exist in Skills Workflow
+position User title User UserType The value must exist in Skills Workflow
+directmanagerid The SAM Account Name of the Direct Manager User ResponsibleExternalId
+timeapproverid Timesheet Approver N/a N/a
+workphone Work phone number of the user User Phone
+email Email address of the user User E-mail
+username SamAccountName (login name) of the user User SSOUsername
+scheduledhours Number of hours the user is scheduled to work in a week User Minimum Weekly Hours For minimum daily hours we split the value by 5
+contracttype Full-Time/Part-Time/Freelancer User UserType
+hiredate Actual Hire date for employees, Active Directory created date for Freelancers User HireDate
+enddate Actual Term date for employees, Active Directory expires date for Freelancers User EndDate
 
 </TabItem>
 
 <TabItem value="leaves">
 
-## Leave Entitlement
+<h3></h3>
 
 This will contain the yearly entitlement for the specific leave types for each employee as well as the time taken for each leave type.
 
-## File Name
+<h3> File Name </h3>
 
 The file name that will always be used for this file: AD_LeaveEntitlement_YYYYMMDDHHmmss.json where the YYYYMMDDHHmmss suffix indicates the as of date. This overrides any previous files information.
 
-## File Directory
+<h3> File Directory </h3>
 
 This file is to be placed in the Data directory on the SFTP server.
 
@@ -315,15 +312,12 @@ Template
 }
 ```
 
-### Template Description
-
 - actionType – The actionType must be Rest for Rest actions
 - name - The name of the action
 - next - The action that will be triggered after the current action been completed
 - Method - Should be set according to the method to be applied
 - url - The URL to be called
 - bodyMediaType - Allows you to manage the Request headers and body.
-
 
 leaveentitlement – Main Object
 
@@ -370,22 +364,15 @@ leaveentitlement – Main Object
   - hours – The number of hours taken
   - days – The number calculated days taken based on the hours
 
-
-## Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
-
-
 </TabItem>
 
-<TabItem value="times heets">
+<TabItem value="time sheets">
 
-## Time Batch
+<h3></h3>
 
 This will contain the time posted as requested by Skills Workflow to facilitate time reconciliation. Each file will contain only the time posted since the last file was consumed by Skills Workflow. The frequency will be at least once per day but may be a few times per day. The user data is based on EAS information which can change any time.
 
-## File Name
+<h3> File Name</h3>
 
 The file name that will always be used for this file: AD_TimeBatch_YYYYMMDDHHmmss.json where the YYYYMMDDHHmmss suffix indicates the start date/time for this batch of posted time. Each file is unique and does not overwrite any previous data.
 
@@ -393,7 +380,7 @@ File Directory
 
 This file is to be placed in the Data directory on the SFTP server.
 
-## Template
+<h3> Template</h3>
 
 ```
 {
@@ -427,8 +414,6 @@ This file is to be placed in the Data directory on the SFTP server.
  }
 ```
 
-#Template Description
-
 timebatch – Main object
 
 - batchid – Unique integer id for each batch
@@ -444,43 +429,33 @@ timebatch – Main object
   - createdate – The specific date/time the time record was created
   - hours – The number of hours (quarter hour increments) that was posted
 
-
-## Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
 
 <TabItem value="client group">
 
-## Client Group
+<h3></h3>
 
 To be added to the documentation according to the new definition.
-
-## Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 
 </TabItem>
 
 <TabItem value="client">
 
-## Client
+<h3></h3>
 
 The first batch should contain all active clients. All other batches must contain new clients or changes to existing clients only.
 
 Note: This file must be consumed before the Product Batch file because the data in the Product Batch file depends on the data from the Client Batch file.
 
-## File Name
+<h3>File Name</h3>
 
 The file name that will always be used for this file: AD_ClientBatch_YYYYMMDDHHmmss.json where the YYYYMMDDHHmmss suffix indicates the start date/time for this batch of clients. Each file is unique and does not overwrite any previous data.
 
-## File Directory
+<h3>File Directory</h3>
 
 This file is to be placed in the Data directory on the SFTP server.
 
-## Template
+<h3>Template</h3>
 
 ```
 {
@@ -516,11 +491,8 @@ This file is to be placed in the Data directory on the SFTP server.
       }
     ]
   }
-}     
- ```
-
-
-## Template Description
+}
+```
 
 clientbatch – Main object
 
@@ -540,30 +512,25 @@ clientbatch – Main object
   - clientcreatedate – Date client record was created in External Source. - N/a
   - clientmodifydate – Date of last change recorded for the client record in External Source - N/a
 
-## Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
-
 </TabItem>
 
 <TabItem value="product">
 
-## Product
+<h3></h3>
 
 The first batch will contain all active products for all active clients. All other batches will contain new products or changes to existing products only.
 
 Note: This file must be consumed after the Client Batch file because the data in the Product Batch file depends on the data from the Client Batch file.
 
-## File Name
+<h3>File Name</h3>
 
 The file name that will always be used for this file: AD_ProductBatch_YYYYMMDDHHmmss.json where the YYYYMMDDHHmmss suffix indicates the start date/time for this batch of products. Each file is unique and does not overwrite any previous data.
 
-## File Directory
+<h3>File Directory</h3>
 
 This file is to be placed in the Data directory on the SFTP server.
 
-## Template
+<h3>Template</h3>
 
 ```
 {
@@ -614,14 +581,11 @@ This file is to be placed in the Data directory on the SFTP server.
     ]
   }
 }
- ```
-
-
-## Template Description
+```
 
 - actionType - The action type is CreateCsv
 - name - The action name is custom
-- next - The next action 
+- next - The next action
 - hasHeaderRecord - The field to indicate if when exporting the headers should be included
 - data - The data in JSON to be considered to be exported
 - dataColumns - The columns that should be exported
@@ -653,30 +617,25 @@ productbatch – Main object
   - clientcreatedate – Date client record was created in External Source. - N/a
   - clientmodifydate – Date of last change recorded for the client record in External Source. - N/a
 
-## Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
 
 <TabItem value="job jacket">
 
-## Request
+<h2> Request</h2>
 
-### Create a Job Jacket Request
+<h3> Create a Job Jacket Request</h3>
 
 This will contain instructions that Agency will use to create a job jacket in Nuxeo. This file will be generated when a work order request workflow is in the approved stage in Skills Workflow.
 
-### File Name
+<h3> File Name</h3>
 
-The file name that will always be used for this file: SP_[JOBNUMBER]_YYYYMMDDHHmmss.json where the placeholder [JOBNUMBER] is replaced by the Job Number indicated in the workflow and the YYYYMMDDHHmmss suffix indicates the date/time that the request was made.
+The file name that will always be used for this file: SP\_[JOBNUMBER]\_YYYYMMDDHHmmss.json where the placeholder [JOBNUMBER] is replaced by the Job Number indicated in the workflow and the YYYYMMDDHHmmss suffix indicates the date/time that the request was made.
 
-File Directory
+<h3> File Directory</h3>
 
 This file is to be placed in the Process directory on the SFTP server.
 
-
-### Template
+<h3> Template</h3>
 
 ```
 {
@@ -705,10 +664,7 @@ This file is to be placed in the Process directory on the SFTP server.
       ]
    }
 }
- ```
-
-
-### Template Description
+```
 
 process – Main object
 
@@ -726,26 +682,21 @@ process – Main object
       - displayname – The approvers full name
       - email – The approvers email address
 
+<h2> Result</h2>
 
-### Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
-## Result
-
-### Create a Job Jacket Result
+<h3> Create a Job Jacket Result</h3>
 
 This will contain results of creating a Job Jacket in Nuxeo for a specific Create Job Jacket Request file.
 
-### File Name
+<h3> File Name</h3>
 
-The file name that will always be used for this file: AR_[BODY]_[SUFFIX].json where the [BODY] and [SUFFIX] of the file name will match the Create Job Jacket Request file body and suffix.
+The file name that will always be used for this file: AR*[BODY]*[SUFFIX].json where the [BODY] and [SUFFIX] of the file name will match the Create Job Jacket Request file body and suffix.
 
-### File Directory
+<h3> File Directory</h3>
 
 This file is to be placed in the Process directory on the SFTP server.
 
-### Template
+<h3> Template</h3>
 
 ```
 {
@@ -771,7 +722,7 @@ This file is to be placed in the Process directory on the SFTP server.
 }
 ```
 
-### Template Description
+<h3> Template Description</h3>
 
 process_results – Main object
 
@@ -789,30 +740,23 @@ process_results – Main object
     - name – Always “jobjacketurl”
     - value – The url that links to the specific job jacket in Nuxeo
 
-
-### Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
-
-
 </TabItem>
 
 <TabItem value="data result">
 
-## Data Results File
+<h3> Data Results File </h3>
 
 This will contain the results of the data file transaction process. The same format is used for all data file transactions.
 
 File Name
 
-The file name that will always be used for this file: SR_[BODY]_[SUFFIX].json where the [BODY] and [SUFFIX] values are replaced with the respective body and suffix of the data file that was processed.
+The file name that will always be used for this file: SR*[BODY]*[SUFFIX].json where the [BODY] and [SUFFIX] values are replaced with the respective body and suffix of the data file that was processed.
 
 File Directory
 
 This file is to be placed in the Data directory on the SFTP server.
 
-## Template
+<h3> Template </h3>
 
 ```
 {
@@ -833,8 +777,6 @@ This file is to be placed in the Data directory on the SFTP server.
 }
 ```
 
-## Template Description
-
 data_results – Main object
 
 - status – Status of process SUCCEEDED/FAILED
@@ -843,13 +785,10 @@ data_results – Main object
   - uid – The unique identifier for the data being processed. In this document, this field is designated by the (UID) indicator.
   - error – The error specific to the record indicated by the uid
 
-
-## Conclusion
-
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
-
 </TabItem>
-
 
 </Tabs>
 
+### Conclusion
+
+The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.

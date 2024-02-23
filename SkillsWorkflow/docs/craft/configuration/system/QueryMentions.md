@@ -1,22 +1,28 @@
 ---
 id: queryMentions
-title: 'Query Mentions'
+title: "Query Mentions"
 sidebar_label: Query Mentions
+hide_table_of_contents: true
 ---
+
+### Description
+
 On this page you will find how to use mentions based on queries.
 
-1- In SQL playground create the query.
+1. In SQL playground create the query.
 
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/system/queryMentions/query.png)
+
 </figure>
 
-2- Select the query that you created.
+2. Select the query that you created.
 
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/system/queryMentions/query-mentions-configuration.png)
+
 </figure>
 
 <h3>Example</h3>
@@ -24,8 +30,8 @@ On this page you will find how to use mentions based on queries.
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/system/queryMentions/query-mentions-example.png)
-</figure>
 
+</figure>
 
 <table className="custom-table">
     <thead> 
@@ -68,7 +74,4 @@ On this page you will find how to use mentions based on queries.
              <td> Name of the document type </td>
         </tr>
     </tbody>
-</table> 
-
-
-
+</table>

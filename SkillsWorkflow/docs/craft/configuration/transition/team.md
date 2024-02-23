@@ -2,19 +2,21 @@
 id: team
 title: Query
 sidebar_label: Query
+hide_table_of_contents: true
 ---
+
+### Description
 
 On this page you will find how to create an action of the type Team based in Data Source.
 
-## Query
-
 Specifies which Users to show in each Team.
+
 <p>Includes Department and Typology.</p>
 <p>Placed as Data Source in the Team.</p>
 
+<h3>Basic Usage</h3>
 
-
-### Available filters
+#### Available filters
 
 <table className="custom-table">
     <thead> 
@@ -53,7 +55,7 @@ Specifies which Users to show in each Team.
     </tbody>
 </table>
 
-### Required fields for Query
+#### Required fields for Query
 
 - UserId
 - UserName
@@ -62,12 +64,11 @@ Specifies which Users to show in each Team.
 - TypologyName
 - DepartmentName
 
-
 ```sql
 select u.Oid as UserId,
            u.Name as Username,
            u.[Name] as [Name],
-           u.HasImage as UserhasImage, 
+           u.HasImage as UserhasImage,
            uty.Name as TypologyName,
            dep.Name as DepartmentName
 from   [User] u
@@ -77,13 +78,9 @@ where  u.[Name] like concat('%', @SearchValue, '%') or @SearchValue = ''
 order bY u.[Name]
 
 ```
+
 <figure>
 
 ![img-box-shadow](/img/craft/configuration/action/documentAssignmentType_example.png)
+
 </figure>
-
-
-
-
-
-

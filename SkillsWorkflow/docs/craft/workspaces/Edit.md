@@ -1,6 +1,6 @@
 ---
-id:  Edit Workspace
-title: 'Definition'
+id: Edit Workspace
+title: "Definition"
 sidebar_label: Definition
 ---
 
@@ -10,12 +10,14 @@ On this page you will find how to edit the workspaces.
 To have access to the these options, you need to click in the Edit workspace to open the workspace configuration.
 :::
 
-## Parameters
+---
 
+## Parameters
 
 <figure>
 
 ![img-box-shadow](/img/craft/workspace/definition.png)
+
 </figure>
 
 <h3>Example</h3>
@@ -28,9 +30,9 @@ To have access to the these options, you need to click in the Edit workspace to 
 
 ![img-box-shadow](/img/craft/workspace/usingParameter.png)
 
+---
 
 ## Translations
-
 
 In this section you will find how to translate the terms of your workspace that don't exist in the system by default.
 
@@ -70,16 +72,18 @@ In this section you will find how to translate the terms of your workspace that 
 <figure>
 
 ![img-box-shadow](/img/craft/workspace/Translation.png)
+
 </figure>
 
 <figure>
 
 ![img-box-shadow](/img/craft/workspace/Translation-example.png)
+
 </figure>
 
+---
 
 ## About
-
 
 In this section you will find how to update the workspace to the version that you want.
 
@@ -113,19 +117,17 @@ In this section you will find how to update the workspace to the version that yo
 #
 
 :::note
-In the Version section you have three colors: 
+In the Version section you have three colors:
 
-- Green: Indicates the current version of the workspace, 
-- Yellow: Shows a higher version of the current version workspace, 
+- Green: Indicates the current version of the workspace,
+- Yellow: Shows a higher version of the current version workspace,
 - Grey: Shows a below version of the workspace.
-:::
+  :::
 
 <h3>Example</h3>
 
 <figure>
 
-
 ![img-box-shadow](/img/craft/workspace/About-example.png)
+
 </figure>
-
-
