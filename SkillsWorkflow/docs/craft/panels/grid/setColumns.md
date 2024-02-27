@@ -513,6 +513,7 @@ The following examples shows how to customize de appearance of the default behav
         properties: {
           format:  "DD/MMM/YYY",
           displayInUtC: true
+        }
     }
 }
 ```
@@ -522,6 +523,34 @@ The following examples shows how to customize de appearance of the default behav
 <figure>
 
 ![img-box-shadow](/img/craft/grid/setColumns/convertUtcDateToLocal-example.png)
+
+</figure>
+
+<h4>enableColoring</h4>
+
+<p>If enabled, it sets the background color of a date according to the following conditions:</p>
+<ul>
+  <li>Red, if the date has already expired;</li>
+  <li>Orange, if the date is due in two or less days;</li>
+  <li>Green, if the date is due in more than 2 days.</li>
+</ul>
+
+```javascript
+{
+    dataField: "CreatedOnUtc",
+    caption: "Created On",
+    format: {
+        type: "date",
+        enableColoring: true
+    }
+}
+```
+
+<h3>Example</h3>
+
+<figure>
+
+![img-box-shadow](/img/craft/grid/setColumns/enableColoring-example.jpg)
 
 </figure>
 
