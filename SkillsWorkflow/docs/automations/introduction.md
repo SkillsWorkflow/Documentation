@@ -111,7 +111,7 @@ Pipe Functions support arguments between parentheses
 * IsNullOrEmpty - {{['CreateCsv']$ | IsNullOrEmpty}}
 * Contains - {{['MyText'] | Contains('Text to check if exists')}}
 * Join - {{['MyText'] | Join('Text to append')}}
-* Split - {{['My/Text'] | Split('<char>Separator')}}
+* Split - {{['My/Text'] | Split('Separator Char')}}
 ---
 ### Arithmetic Operators
 * AddDecimal(value) - {{['MyIntValue'] | AddDecimal(2)}}
