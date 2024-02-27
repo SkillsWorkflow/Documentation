@@ -550,7 +550,7 @@ The following examples shows how to customize de appearance of the default behav
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/enableColoring-example.jpg)
+![img-box-shadow](/img/craft/grid/setColumns/enableColoring-example.png)
 
 </figure>
 
