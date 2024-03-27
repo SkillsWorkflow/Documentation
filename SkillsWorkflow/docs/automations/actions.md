@@ -1421,3 +1421,34 @@ To configure this action, there are required parameters that need to be set:
 * requiredProperties - List of property names to verify
 * next - next Action in case everything is verified
 * nextOnError - Next Action if any of the required properties is missing or is null
+
+
+## ClearContext
+ClearContext Action allows to remove unused Context created properties that are not really necessary anymore.
+User can clear all properties or select a list of properties to be removed.
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+* listValues
+* clearAll # optional
+
+```json title="Template"
+{
+  "actionType": "ClearContext",
+  "name": "ClearContext",
+  "listValues": [
+    "property",
+    "property1"
+  ],
+  "clearAll": false,
+  "next":"Exit",
+},
+```
+#### Template Description
+
+* actionType - The action type is OAuth2Authentication
+* name - The action name is custom
+* next - The next action to be executed
+* listValues - List of properties to bem removed. #Optional
+* clearAll - Flag to remove all properties #Defaults to false
