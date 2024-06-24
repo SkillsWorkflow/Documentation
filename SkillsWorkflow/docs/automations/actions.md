@@ -1447,8 +1447,35 @@ To configure this action, there are required parameters that need to be set:
 ```
 #### Template Description
 
-* actionType - The action type is OAuth2Authentication
+* actionType - The action type is ClearContext
 * name - The action name is custom
 * next - The next action to be executed
 * listValues - List of properties to bem removed. #Optional
 * clearAll - Flag to remove all properties #Defaults to false
+
+
+## ExecuteIntegrationWorkflow
+ExecuteIntegrationWorkflow action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and waits for the workflow to finish and returns the result.
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+* body # optional
+* targetWorkflowId 
+
+```json title="Template"
+{
+  "actionType": "ExecuteIntegrationWorkflow",
+  "name": "ExecuteIntegrationWorkflow",
+  "next": "Exit",
+  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
+  "targetWorkflowId": "152e8a13-ea4e-469d-be39-f8d4ad0dd919"
+},
+```
+#### Template Description
+
+* actionType - The action type is ExecuteIntegrationWorkflow
+* name - The action name is custom
+* next - The next action to be executed
+* body - The data to be available in the ExecuteIntegrationWorkflow action
+* targetWorkflowId - The Id of the workflow Intended to run.
