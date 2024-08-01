@@ -5,6 +5,8 @@ sidebar_label: API
 sidebar_position: 1
 ---
 
+## Authentication
+
 API URLs:
 
 - API: https://integration-api-we.skillsworkflow.com/

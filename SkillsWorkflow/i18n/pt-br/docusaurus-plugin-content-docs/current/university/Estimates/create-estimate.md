@@ -96,7 +96,7 @@ Para começar a citar o Terceiro, clique na palavra Terceiro e a seção se abri
 
 8. Repita o processo se precisar adicionar vários custos externos.
 
-:::Nota
+:::note
 Observe que você pode ter vários custos externos em uma linha de cliente. Dependerá de como você deseja mostrar os detalhes da estimativa aos clientes.
 :::
 

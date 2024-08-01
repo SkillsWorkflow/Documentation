@@ -41,7 +41,7 @@ Everytime an action is executed, it will produce a result, made available in the
 
 It is possible to access an action result by invocating its "Content".
 
-To invoke the action content use the following statement: {{['actionName']}}
+To invoke the action content use the following statement: `{{['actionName']}}`
 
 * It can be evaluated using JsonPath syntax
 
@@ -52,19 +52,19 @@ Please see the example below to see  access to the action GetProjectFile and get
     "actionType": "Download",  
     "name": "DownloadFile",  
     "next": "UploadFile",  
-    "url": "{{['GetProjectFile']$.Content.Uri}}"  
+    "url": "{{['GetProjectFile']$.Content.Uri}}`"  
 }
 ```
 ## Parameters
 
-### {{['#HttpRequest']}} 
+### `{{['#HttpRequest']}}` 
 Full HttpRequest that triggered the Automation Workflow.
 
 ```json title="Full Http Request Example"
 {
   "Scheme": "https",
   "Host": "integrationworkflow-skills-dev-we.azurewebsites.net",
-  "Path": "/api/tenants/<tenantId>/integration-workflows/<AutomationId>/execute",
+  "Path": "/api/tenants/{tenantId}/integration-workflows/{AutomationId}/execute",
   "Method": "POST",
   "Query": {
     "TenantName": [
@@ -83,65 +83,68 @@ Full HttpRequest that triggered the Automation Workflow.
 ```
 ## Functions
 Functions replace evaluated value with a function that runs a specific Task.
-* {{NewGuid}} - Returns a new Guid
-* {{NewDateUtc(value[Required])}} - returns a new Utc DateTime
+* `{{NewGuid}}` - Returns a new Guid
+* `{{NewDateUtc(value[Required])}}` - returns a new Utc DateTime
   * value:
-    * {{NewDateUtc(Now)}} -returns a new Utc DateTime with current time
-    * {{NewDateUtc(Today)}} - returns a new Utc DateTime with time set to MidNight (00:00:00)
-    * {{NewDateUtc(Yesterday)}} - returns a new Utc DateTime with time set to Yesterday's MidNight (00:00:00)
-    * {{NewDateUtc(FirstDayOfYear)}} - returns a new Utc DateTime with time set to new Years Day at MidNight (00:00:00)
-    * {{NewDateUtc(LastDayOfYear)}} - returns a new Utc DateTime with time set to last day of the current Year at MidNight (00:00:00)
-
----
+    * `{{NewDateUtc(Now)}}` -returns a new Utc DateTime with current time
+    * `{{NewDateUtc(Today)}}` - returns a new Utc DateTime with time set to MidNight (00:00:00)
+    * `{{NewDateUtc(Yesterday)}}` - returns a new Utc DateTime with time set to Yesterday's MidNight (00:00:00)
+    * `{{NewDateUtc(FirstDayOfYear)}}` - returns a new Utc DateTime with time set to new Years Day at MidNight (00:00:00)
+    * `{{NewDateUtc(LastDayOfYear)}}` - returns a new Utc DateTime with time set to last day of the current Year at MidNight (00:00:00)
+___
 ## Pipe Functions
 Pipe Functions enable transformations on evaluated values using '|' modifier after the value and a specific Pipe Function.
 Pipe Functions support arguments between parentheses 
 ### Converters
-* ToBase64 - {{['CreateCsv']$ | ToBase64}}
-* FromBase64 - {{['CreateCsv']$ | ToBase64}}
-* UrlEncode - {{['GetProjectFile']$.Content.Url | UrlEncode}}
-* ToJsonString - {{['GetProjectFile']$.Content | ToJsonString}}
-* ToDateUtc - {{['GetProjectFile']$.Content.CreatedOn | ToDateUtc}}
-* ToJson - {{['CreateCsv']$ | ToJson}}
-* ToJsonString - {{['CreateCsv']$ | ToJsonString}}
-* FromUnixTimeSeconds - {{['CreateCsv']$ | FromUnixTimeSeconds}}
-* FromUnixTimeMilliSeconds - {{['CreateCsv']$ | FromUnixTimeMilliSeconds}}
+* ToBase64 - `{{['CreateCsv']$ | ToBase64}}`
+* FromBase64 - `{{['CreateCsv']$ | ToBase64}}`
+* UrlEncode - `{{['GetProjectFile']$.Content.Url | UrlEncode}}`
+* ToJsonString - `{{['GetProjectFile']$.Content | ToJsonString}}`
+* ToDateUtc - `{{['GetProjectFile']$.Content.CreatedOn | ToDateUtc}}`
+* ToJson - `{{['CreateCsv']$ | ToJson}}`
+* ToJsonString - `{{['CreateCsv']$ | ToJsonString}}`
+* FromUnixTimeSeconds - `{{['CreateCsv']$ | FromUnixTimeSeconds}}`
+* FromUnixTimeMilliSeconds - `{{['CreateCsv']$ | FromUnixTimeMilliSeconds}}`
+
 ---
+
 ### Boolean Operators
-* IsNullOrEmpty - {{['CreateCsv']$ | IsNullOrEmpty}}
-* Contains - {{['MyText'] | Contains('Text to check if exists')}}
-* Join - {{['MyText'] | Join('Text to append')}}
-* Split - {{['My/Text'] | Split('Separator Char')}}
+* IsNullOrEmpty - `{{['CreateCsv']$ | IsNullOrEmpty}}`
+* Contains - `{{['MyText'] | Contains('Text to check if exists')}}`
+* Join - `{{['MyText'] | Join('Text to append')}}`
+* Split - `{{['My/Text'] | Split('Separator Char')}}`
+
 ---
+
 ### Arithmetic Operators
-* AddDecimal(value) - {{['MyIntValue'] | AddDecimal(2)}}
-* Sum - {{['ArrayOfValues']$ | Sum}}
-* Min - {{['ArrayOfValues']$ | Min}}
-* Max - {{['ArrayOfValues']$ | Max}}
-* Avg - {{['ArrayOfValues']$ | Avg}}
+* AddDecimal(value) - `{{['MyIntValue'] | AddDecimal(2)}}`
+* Sum - `{{['ArrayOfValues']$ | Sum}}`
+* Min - `{{['ArrayOfValues']$ | Min}}`
+* Max - `{{['ArrayOfValues']$ | Max}}`
+* Avg - `{{['ArrayOfValues']$ | Avg}}`
 
 ### Date Operators
-* AddMonths(value) - {{['StartDate'] | AddMonths(2)}}
-* AddDays(value) - {{['StartDate'] | AddDays(-1)}}
-* AddHours(value) - {{['StartDate'] | AddHours(12)}}
-* AddMinutes(value) - {{['StartDate'] | AddMinutes(2)}}
+* AddMonths(value) - `{{['StartDate'] | AddMonths(2)}}`
+* AddDays(value) - `{{['StartDate'] | AddDays(-1)}}`
+* AddHours(value) - `{{['StartDate'] | AddHours(12)}}`
+* AddMinutes(value) - `{{['StartDate'] | AddMinutes(2)}}`
 
 ### String Formatting
-* RemoveLeading('value') - {{['MyText'] | RemoveLeading('Text To Remove from start')}}
-* RemoveTrailing('value') - {{['MyText'] | RemoveTrailing('Text To Remove from End')}}
-* Trim - {{['MyText'] | Trim}}
+* RemoveLeading('value') - `{{['MyText'] | RemoveLeading('Text To Remove from start')}}`
+* RemoveTrailing('value') - `{{['MyText'] | RemoveTrailing('Text To Remove from End')}}`
+* Trim - `{{['MyText'] | Trim}}`
 
 ## Preprocessors
 
 Preprocessors are used to apply transformations on part of a expression.
 
-* #eval(< expression >) - Pre-evaluates an expression and replaces the tag with it's value.
+* `#eval(< expression >)` - Pre-evaluates an expression and replaces the tag with it's value.
   * Can be used in any part of the expression.
   ``` json title="Examples"
   {
-    "example1": "{{['#eval(['MapCustomDatabaseForm'].Name)'].Content}}",
-    "example2": "{{['RecordsList'].Content..#eval(['MapCustomDatabaseForm'].Id)}}",
-    "example3": "{{['RecordsList'].Content..#eval(['MapCustomDatabaseForm'].name).#eval(['MapCustomDatabaseForm'].Id)}}"
+    "example1": "{{['#eval(['MapCustomDatabaseForm'].Name)'].Content}}`",
+    "example2": "{{['RecordsList'].Content..#eval(['MapCustomDatabaseForm'].Id)}}`",
+    "example3": "{{['RecordsList'].Content..#eval(['MapCustomDatabaseForm'].name).#eval(['MapCustomDatabaseForm'].Id)}}`"
   }
   ```
 
@@ -262,14 +265,3 @@ Filter expressions are supported via the syntax `?(<boolean expr>)` as in `$.sto
 
 > **note:** #eval() sintax can be included in in JsonPath Expressions ex:  
 > `$..client[?(@.code=='#eval(#eval(NewDateUtc(Today) | AddDays(-1)))')`
-
-
-
-
-
-
-
-
-
-
-

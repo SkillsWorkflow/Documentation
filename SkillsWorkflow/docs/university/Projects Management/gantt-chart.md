@@ -46,7 +46,7 @@ The Gantt view will give a more visual representation of all the jobs of a Proje
 
 ### Check completeness of each job.
 
-- On the field "% Done" you can check how much has been done on a given job and whether it has already finished (100% done) or is still in progress (<100% done).
+- On the field "% Done" you can check how much has been done on a given job and whether it has already finished (100% done) or is still in progress (\<100% done).
 
 - These percentages are pre-defined based on the Workflow Stage the job is in.
 E.g. You can define that when a job reaches the stage "Waiting Client Approval " it is 70% complete.

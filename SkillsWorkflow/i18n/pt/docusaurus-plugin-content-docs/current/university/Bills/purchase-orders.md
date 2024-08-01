@@ -45,8 +45,7 @@ Para imprimir basta carregar na opção pdf no canto superior direito, e será g
 
 ![img-box-shadow](/img/university/bills/credit-notes2.png)
 
-<figcaption>Detalhe notas de encomenda
-</figcaption>
+<figcaption>Detalhe notas de encomenda</figcaption>
 </figure>
 
 Pode igualmente consultar a lista de todas as suas notas de encomenda navegando pelos modulos no navegador á sua esquerda

@@ -306,8 +306,7 @@ This method allows the grid to be exported as PDF.
                 <td>object</td>
                 <td>false</td>
                 <td></td>
-                <td>Options of the generated PDF table. Refer to the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable">jsPDF-autoTable plugin documentation</a> to see the full list of available customizations.
-                  </td>
+                <td>Options of the generated PDF table. Refer to the <a href="https://github.com/simonbengtsson/jsPDF-AutoTable">jsPDF-autoTable plugin documentation</a> to see the full list of available customizations.</td>
             </tr>
             <tr className="selected">
                 <td><code>selectedRowsOnly</code></td>

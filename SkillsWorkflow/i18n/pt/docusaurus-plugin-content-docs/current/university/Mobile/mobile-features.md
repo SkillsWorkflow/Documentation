@@ -118,7 +118,7 @@ O aplicativo móvel terá criação de documentos assim como na Web. Para fazer 
 </figure>
 
 
-:::Nota 
+:::note 
 
 O calendário do quadro de horários lhe dará uma visão geral de suas horas. Selecione um dia e adicione hora a um documento. Insira os detalhes do Quadro de Horários, se necessário. É isso.
 

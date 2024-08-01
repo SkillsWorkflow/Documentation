@@ -57,7 +57,7 @@ sidebar_position: 2
 
 
 
-::::Note
+::::note
 
 Después de completar toda la información, deberá activar el Job
 
@@ -129,7 +129,7 @@ Después de completar toda la información, deberá activar el Job
 </figure>
 
 
-::::Note
+::::note
 
 Para notificar a alguien de su equipo sobre una nueva publicación o temas relacionados con el Job, siempre puede usar la opción "Notificaciones".
 

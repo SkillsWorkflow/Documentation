@@ -48,8 +48,8 @@ This article describes how the job maintenance is done in Skills Workflow when t
 <figcaption>Creating a new application</figcaption>
 </figure>
 
-8. Go to Settings, then Properties and fill the Home Page URL with https://login.microsoftonline.com/{DirectoryID}/SAML2
-9. Use the same URL to Logout URL https://login.microsoftonline.com/{DirectoryID}/SAML2
+8. Go to Settings, then Properties and fill the Home Page URL with https://login.microsoftonline.com/`{DirectoryID}`/SAML2
+9. Use the same URL to Logout URL https://login.microsoftonline.com/`{DirectoryID}`/SAML2
 
 <figure>
 
@@ -57,7 +57,7 @@ This article describes how the job maintenance is done in Skills Workflow when t
 <figcaption>Configuring the application settings </figcaption>
 </figure>
 
-10. Remember to replace {DirectoryId} with the directory value initially copied in Step 4 and save your changes
+10. Remember to replace `{DirectoryId}` with the directory value initially copied in Step 4 and save your changes
 11. Check Reply URLs and add https://auth.skillsworkflow.com/saml2/acs
 
 <figure>

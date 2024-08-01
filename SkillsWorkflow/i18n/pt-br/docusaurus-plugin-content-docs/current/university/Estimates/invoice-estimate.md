@@ -34,7 +34,7 @@ No exemplo abaixo, o campo Número do Rep é marcado como 6 (é uma estimativa d
 <figcaption></figcaption>
 </figure>
 
-:::Nota
+:::note
 Esteja ciente de que os valores em Terceiros, Despesas e Recursos serão exibidos com os mesmos valores.
 :::
 
