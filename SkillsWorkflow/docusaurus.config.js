@@ -1,3 +1,5 @@
+import { themes as prismThemes } from 'prism-react-renderer';
+
 module.exports = {
   title: 'Skills Workflow’s Documentation',
   tagline: 'We are here to let you shine! Let´s get everything done',
@@ -13,6 +15,11 @@ module.exports = {
     locales: ['en', 'es', 'pt', 'pt-br']
   },
   themeConfig: {
+    prism: {
+      themes: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: ["bash", "diff", "json", "javascript"],
+    },
     colorMode: {
       respectPrefersColorScheme: true
     },
@@ -60,7 +67,6 @@ module.exports = {
       ]
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Craft',

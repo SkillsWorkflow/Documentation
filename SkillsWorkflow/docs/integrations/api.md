@@ -55,7 +55,7 @@ To add a new Billing Client, you must specify the following properties:
 
 The External Id should match the unique identifier of the Billing Client in the external system. If the client already exists, it will be updated using the External Id and Company Code as the key.
 
-```
+``` json
 Method: POST
 Endpoint: /api/billingclients
 Payload:
@@ -101,11 +101,10 @@ To create a Commercial Client, you must specify the following properties
 
 The External Id used for the Commercial Client should match the unique identifier of the Billing Client in the external system (the same External Id used when creating the Billing Client).
 
-```
+``` json
 Method: POST
 Endpoint: /api/commercialclients
 Payload:
-
 {
     "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
     "name": "string",
@@ -142,11 +141,10 @@ Payload:
 
 To associate a commercial client with a billing client, you must indicate the id of the commercial client creation response, the id and the companyId of the billing client creation response, so as to be unique per company.
 
-```
+``` json
 Method: POST
 Endpoint: /api/commercial-client-companies
 Payload:
-
 {
     "companyId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
     "commercialClientId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -167,11 +165,10 @@ To create a supplier, you must specify the follwing properties:
  
 The externalId should match the unique identifier of the supplier in the external system. If the supplier already exists, it will be updated using the externalId and companyCode as the key.
 
-```
+``` json
 Method: POST
 Endpoint: /api/suppliers
 Payload:
-
 {
     "name": "string",
     "externalId": "string",
