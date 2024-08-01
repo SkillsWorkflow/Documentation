@@ -5,7 +5,7 @@ sidebar_label: 3. Gerenciar Projetos associados a um Orçamento
 sidebar_position: 3
 ---
 
-:::Nota
+:::note
 Os projetos podem ser associados a uma estimativa do cliente para que as horas vendidas sejam deduzidas desse mesmo contrato.
 :::
 
