@@ -872,8 +872,8 @@ Type: string
 When setting the property, it will set the cursor in a certain position.
 By representing the cursor with a | , please check the example below:
 
-- editorOptions: {caretPosition: 0} the cursor will be placed in the position 0 = |00:00
-- editorOptions: {caretPosition: 1} the cursor will be placed in the position 1 = 0|0:00
+- editorOptions: `{caretPosition: 0}` the cursor will be placed in the position 0 = |00:00
+- editorOptions: `{caretPosition: 1}` the cursor will be placed in the position 1 = 0|0:00
 
 ```javascript
 {...

@@ -31,7 +31,7 @@ Locations available:
 
 :::important
 
-- The path must be written without "{}"
+- The path must be written without `{}`
 - The name of the folder and the name of the workspace should be in English
   :::
 
@@ -41,7 +41,7 @@ Locations available:
 
 ##### Menu
 
-- Non-standard/Customer/{Client}/{Location}/{name of the folder for the workspace}/{name of the workspace}
+- Non-standard/Customer/`{Client}`/`{Location}`/`{name of the folder for the workspace}`/`{name of the workspace}`
 
        Non-standard/Customer/SkillsWorkflow/Menu/New Workspace/Upload Workspace
 
@@ -52,12 +52,12 @@ Locations available:
 
 ##### Menu
 
-- Non-standard/Shared/Cloud/Menu/{name of the folder for the Workspace}/{name of the Workspace}
+- Non-standard/Shared/Cloud/Menu/`{name of the folder for the Workspace}`/`{name of the Workspace}`
 
        Non-standard/Shared/Cloud/Menu/New Workspace/Upload Workspace
 
 ##### Document
 
-- Non-standard/Shared/Cloud/Document/{name of the document's folder}/{name of the folder for the workspace}
+- Non-standard/Shared/Cloud/Document/`{name of the document's folder}`/`{name of the folder for the workspace}`
 
         Non-standard/Shared/Cloud/Document/Job/New Workspace/Upload Workspace

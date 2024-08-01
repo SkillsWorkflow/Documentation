@@ -22,22 +22,19 @@ More info on the Azure issue can be tracked with Azure issue number: R50C-5RZ
 <figure>
 
 ![img-box-shadow](/img/status/rcas/rca1.png)
-<figcaption>Azure R50C-5RZ - Asia Pacific
-</figcaption>
+<figcaption>Azure R50C-5RZ - Asia Pacific</figcaption>
 </figure>
 
 <figure>
 
 ![img-box-shadow](/img/status/rcas/rca2.png)
-<figcaption>Azure R50C-5RZ - Europe
-</figcaption>
+<figcaption>Azure R50C-5RZ - Europe</figcaption>
 </figure>
 
 <figure>
 
 ![img-box-shadow](/img/status/rcas/rca3.png)
-<figcaption>Azure R50C-5RZ - Americas
-</figcaption>
+<figcaption>Azure R50C-5RZ - Americas</figcaption>
 </figure>
 
 

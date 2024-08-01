@@ -45,7 +45,7 @@ La vista de Gantt brindará una representación más visual de todos los trabajo
 
 ### Compruebe la integridad de cada Job.
 
-- En el campo "% Terminado" puede verificar cuánto se ha hecho en un trabajo determinado y si ya ha terminado (100% terminado) o aún está en progreso (<100% terminado).
+- En el campo "% Terminado" puede verificar cuánto se ha hecho en un trabajo determinado y si ya ha terminado (100% terminado) o aún está en progreso (\<100% terminado).
 
 - Estos porcentajes están predefinidos en función de la etapa del flujo de Job en la que se encuentra el Job
 p.ej. Puede definir que cuando un trabajo llegue a la etapa "Esperando la aprobación del cliente" esté completo en un 70 %.

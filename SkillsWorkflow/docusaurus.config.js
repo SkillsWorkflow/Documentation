@@ -13,10 +13,6 @@ module.exports = {
     locales: ['en', 'es', 'pt', 'pt-br']
   },
   themeConfig: {
-    prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/vsDark'),
-    },
     colorMode: {
       respectPrefersColorScheme: true
     },

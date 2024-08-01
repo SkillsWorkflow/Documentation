@@ -46,7 +46,7 @@ Você poderá ajustar suas atividades:
 
 ### Verifique a percentagem de acabamento de cada atividade.
 
-- No campo "% Terminado" poderá verificar todo o trabalho feito numa determinada atividade, se já ficou completa (= 100%) ou se ainda se encontra em progresso (<100% done).
+- No campo "% Terminado" poderá verificar todo o trabalho feito numa determinada atividade, se já ficou completa (= 100%) ou se ainda se encontra em progresso (\<100% done).
 
 - Estas percentagens são pré-definidas no estado da etapa em que as atividades se encontram.
 Exemplo: Você poderá definir que quando uma atividade se encontra no estado  "Aguardando Aprovação de Cliente" se encontra 70% completa.

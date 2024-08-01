@@ -5,7 +5,7 @@ sidebar_label: API
 sidebar_position: 1
 ---
 
-API URLs:
+## Authentication
 
 - API: https://integration-api-we.skillsworkflow.com/
 - Docs: https://integration-api-we.skillsworkflow.com/swagger/ui/index

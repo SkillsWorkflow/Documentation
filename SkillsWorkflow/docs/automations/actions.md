@@ -14,7 +14,7 @@ The Start action must be the first action set in the Automation Workflow.
 Without this action, the Automation Workflow will not be saved nor started, since this is the action that indicates that
 the workflow should begin.
 
-When this action is triggered, the payload will be loaded into the {{['#HttpRequest']$.Body}}.
+When this action is triggered, the payload will be loaded into the `"{{['#HttpRequest']$.Body}}"`.
 
 #### Configurations
 
@@ -198,7 +198,7 @@ By setting the bodyMediaType as UrlEncodedFormData:
 
 * Content-Type - Set by default as "application/x-www-form-urlencoded"
 * bodyFormData - The request body should be sent in the bodyFormData parameter as an Array of Key -
-  Values: [{"key":"value"}]
+  Values: `[{"key":"value"}]`
 
 ```json title="Url Encoded FormData"
 {
@@ -1079,7 +1079,7 @@ Optional Parameters:
 
 #### Usage
 
-The list can be used calling the context parameter by name: {{['MyList']}}
+The list can be used calling the context parameter by name: `{{['MyList']}}`
 
 ## AddToList
 
@@ -1167,7 +1167,7 @@ This parameter can be used globally as it is stored in the parent context.
 
 #### Usage
 
-The list can be used calling the context parameter by name: {{['MyParameter']}}
+The list can be used calling the context parameter by name: `{{['MyParameter']}}`
 
 ## MapFromObject
 
