@@ -1,19 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import Translate, { translate } from '@docusaurus/Translate';
+import Translate from '@docusaurus/Translate';
 
-import {
-  useThemeConfig,
-  useColorMode,
-  useHideableNavbar,
-  useLockBodyScroll,
-  useWindowSize,
-} from '@docusaurus/theme-common';
 const features = [
   {
     link: "docs",
@@ -73,7 +65,6 @@ function Feature({ imageUrl, title, description, link }) {
 }
 
 const Header = () => {
-  const { isDarkTheme } = useThemeConfig();
   return <header
     className={clsx('hero hero--primary', styles.heroBanner, 'home-page-image')}
     style={{
