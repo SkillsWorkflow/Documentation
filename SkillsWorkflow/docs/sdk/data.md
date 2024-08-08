@@ -34,7 +34,7 @@ It can also remove rows where a field is equal to zero (noZeros) and order them 
                 {
                     Name: string;
                     Field: string;
-                    OperationType: "sum" | "count" | "max" | "custom";
+                    OperationType: "sum" | "count" | "max" | "percent" | "custom";
                     CustomFunction?: Function;
                 }
             ];
