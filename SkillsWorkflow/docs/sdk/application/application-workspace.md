@@ -153,7 +153,6 @@ SW.Application.Workspace.setFilters([filters], "98226093-09B6-4E12-B9C6-2AEED296
 
 
 
-
 ## setPanels
 
 #### Description
@@ -201,4 +200,42 @@ SW.Application.Workspace.setPanels({
     GridName1: { x: 0, y: 0, cols: 10, rows: 10 }, 
     'Grid Name 2': { x: 10, y: 2, cols: 10, rows: 10 } 
     })
+```
+
+## getParameter
+
+#### Description
+
+Retrieves the value of a specified parameter from the workspace.
+#### Method(s)
+
+```javascript
+1  declare function getParameter(name: string): any;
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>name</code></td>
+            <td>string[]</td>
+            <td>true</td>
+            <td></td>
+            <td>The name of the parameter to fetch the value from.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+SW.Application.Workspace.getParameter('parameterName')
 ```
