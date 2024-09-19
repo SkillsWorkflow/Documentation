@@ -970,7 +970,8 @@ To configure this action, there are parameters that can be set:
 * targetWorkflowId -  The Workflow Id that is intended to run
 * body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow. The body must be JSON.
 * sessionId (optional) - 60 Characters Maximum. When set will execute synchronously the workflow. In other words, it will wait for the previous to finish before starting the next one.
-
+* ExecuteOnUtc (Optional) - DateTime (YYYY-MM-ddTHH:mm:ss) Schedules execution for specific date and time.
+* Wait (Optional) - TimeSpan (dd:HH:mm:ss) Countdown Timer to execution.
 
 ```json title="Template"
 {
@@ -979,7 +980,9 @@ To configure this action, there are parameters that can be set:
     "next": "Exit",
     "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
     "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
-    "sessionId": "MySessionId"
+    "sessionId": "MySessionId",
+    "executeOnUtc":"2024-09-18T18:30",
+    "wait":"00:00:30"
 },
 ```
 
