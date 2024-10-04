@@ -133,6 +133,8 @@ Pipe Functions support arguments between parentheses
 * RemoveLeading('value') - `{{['MyText'] | RemoveLeading('Text To Remove from start')}}`
 * RemoveTrailing('value') - `{{['MyText'] | RemoveTrailing('Text To Remove from End')}}`
 * Trim - `{{['MyText'] | Trim}}`
+* ToLowerCase - `{{['MyText'] | ToLowerCase}}`
+* * ToUpperCase - `{{['MyText'] | ToUpperCase}}`
 
 ## Preprocessors
 
