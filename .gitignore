@@ -11,3 +11,5 @@
 .env
 config.json
 node_modules
+**/.idea
+**/yarn.lock
