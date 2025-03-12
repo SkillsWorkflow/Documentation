@@ -1482,3 +1482,32 @@ To configure this action, there are required parameters that need to be set:
 * next - The next action to be executed
 * body - The data to be available in the ExecuteIntegrationWorkflow action
 * targetWorkflowId - The Id of the workflow Intended to run.
+
+## ApplyTemplate
+ApplyTemplate template is a engine based on the Liquid template language. 
+Liquid It's a secure template language that is also very accessible for non-programmer audiences.
+
+>  [Liquid language Documentation](https://shopify.github.io/liquid/basics/introduction/)
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+* body 
+* data
+
+```json title="Template"
+{
+  "actionType": "ApplyTemplate",
+  "name": "ApplyTemplate",
+  "next": "Exit",
+  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
+  "data": "<p>Document Type: {{documentType}}</p>"
+},
+```
+#### Template Description
+
+* actionType - The action type is ApplyTemplate
+* name - The action name is custom
+* next - The next action to be executed
+* body - The data to be available in the ApplyTemplate action
+* data - The Template to Render.
