@@ -1511,3 +1511,28 @@ To configure this action, there are required parameters that need to be set:
 * next - The next action to be executed
 * body - The data to be available in the ApplyTemplate action
 * data - The Template to Render.
+
+## AnalyticsNamedQuery
+AnalyticsNamedQuery action allows to run a Named Query on the Analytics Service.
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+* body
+* NamedQuery
+
+```json title="Template"
+{
+  "actionType": "AnalyticsNamedQuery",
+  "name": "AnalyticsNamedQuery",
+  "next": "Exit",
+  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
+  "namedQuery": "Example - Named Query"
+},
+```
+#### Template Description
+* actionType - The action type is AnalyticsNamedQuery
+* name - The action name is custom
+* next - The next action to be executed
+* body - The Query Parameters to be available
+* NamedQuery - The name of the Query.
