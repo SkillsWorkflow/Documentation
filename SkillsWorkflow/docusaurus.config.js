@@ -69,7 +69,7 @@ module.exports = {
     footer: {
       links: [
         {
-          title: 'Craft',
+          title: 'Customization',
           items: [
             {
               label: 'Style Guide',
@@ -82,6 +82,10 @@ module.exports = {
             {
               label: 'SDK',
               to: 'docs/sdk/ui'
+            },
+            {
+              label: 'API',
+              to: 'docs/api/client'
             },
             {
               label: 'Integrations',
