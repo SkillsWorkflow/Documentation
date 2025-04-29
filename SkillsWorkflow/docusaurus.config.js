@@ -85,7 +85,7 @@ module.exports = {
             },
             {
               label: 'API',
-              to: 'docs/api/client'
+              to: 'docs/api/client-api'
             },
             {
               label: 'Integrations',

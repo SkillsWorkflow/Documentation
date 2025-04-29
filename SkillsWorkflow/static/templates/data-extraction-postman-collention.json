@@ -1,0 +1,2923 @@
+{
+	"info": {
+		"_postman_id": "6f499899-264e-4f66-9ecb-d77a01989365",
+		"name": "Data Extraction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10769466"
+	},
+	"item": [
+		{
+			"name": "Attendences",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/11/07\",\n        \"To\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Attendences/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Attendences",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assignments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"queryBuilder\": {\n      \"skip\": 0,\n      \"take\": 100,\n      \"orderBy\": [\n        {\n          \"field\": \"User\",\n          \"direction\": \"asc\" \n        }\n      ],\n      \"fields\": [\"Team\", \"UserId\"],\n      \"filters\": [  \n        [\"Team\", \"=\", \"Executor\"],   \n        \"or\", \n        [\"Team\", \"=\", \"Requester\"]\n      ]\n    } \n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Assignments/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Assignments",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brands",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Brands/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Brands",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Countries/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Countries",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clients",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Clients/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Clients",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ClientsCompanies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ClientsCompanies/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ClientsCompanies",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contracts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"ContractNumber\": null,\n        \"ContractId\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Contracts/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Contracts",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Companies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Companies/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Companies",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CompaniesAdditionalInformation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-CompaniesAdditionalInformation/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-CompaniesAdditionalInformation",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Countries",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Countries/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Countries",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currencies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Currencies/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Currencies",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Departments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Departments/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-Departments",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Descriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Descriptions/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-Descriptions",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Divisions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Divisions/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Divisions",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employees",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Employees/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-Employees",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstimatedPlannedActualMonthly",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatedPlannedActualMonthly/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-EstimatedPlannedActualMonthly",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estimates",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"EstimateId\": null,\n        \"EstimateNumber\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Estimates/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-Estimates",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstimatesCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"EstimateId\": null,\n        \"EstimateNumber\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatesCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-EstimatesCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstimatesQuotes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatesQuotes/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-EstimatesQuotes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstimatesQuotesMonth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatesQuotesMonth/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-EstimatesQuotesMonth",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstimatesQuotesMonthCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatesQuotesMonthCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-EstimatesQuotesMonthCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ExpenseTypes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ExpenseTypes/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ExpenseTypes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Expenses",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Expenses/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Expenses",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ExpenseSheets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ExpenseSheets/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ExpenseSheets",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Holidays",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Holidays/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Holidays",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jobs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"JobId\": null,\n        \"JobNumber\": \"2024 - 00196\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Jobs/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Jobs",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JobsCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"JobId\": null,\n        \"JobNumber\": \"2024 - 00196\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-JobsCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-JobsCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Leaves",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Leaves/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Leaves",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LeavesCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-LeavesCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-LeavesCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LeavesDeleted",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-LeavesDeleted/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-LeavesDeleted",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LeavesDeletedCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-LeavesDeletedCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-LeavesDeletedCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Products/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Products",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Projects",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n      \"skip\": 0,\n      \"take\": 100,\n      \"orderBy\": [\n        {\n          \"field\": \"Project\",\n          \"direction\": \"asc\" \n        }\n      ],\n      \"fields\": [\"ProjectId\", \"Project\"],\n      \"filters\": [  \n        [\"ProjectNumber\", \"=\", \"2024 / 00258\"],   \n        \"or\", \n        [\"ProjectNumber\", \"=\", \"2024 / 00257\"]\n      ]\n    },\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"ProjectNumber\": null,\n        \"ProjectId\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Projects/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Projects",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProjectsCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ProjectsCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ProjectsCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProjectsAdditionalInformation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ProjectsAdditionalInformation/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ProjectsAdditionalInformation",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProjectsPlannedTime",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ProjectsPlannedTime/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ProjectsPlannedTime",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProjectsPlannedTimeCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ProjectsPlannedTimeCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ProjectsPlannedTimeCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RateCardsColumns",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-RateCardsColumns/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-RateCardsColumns",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Stages/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Stages",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Suppliers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Suppliers/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Suppliers",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TimeSheets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100,\n        \"orderBy\": [{\n            \"field\": \"Project\",\n            \"direction\": \"asc\" \n            }],\n        \"fields1\": [\"ProjectId\", \"Project\"],\n        \"filters\": [  \n            [\"Day\", \">=\", \"11/01/2024\"],   \n            \"and\", \n            [\"Day\", \"<=\", \"12/30/2024\"]\n        ]\n    },\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"ProjectNumber\": null,\n        \"ProjectId\": null,\n        \"From\": null,\n        \"To\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TimeSheets/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-TimeSheets",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TimeSheetsCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TimeSheetsCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-TimeSheetsCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TimeSheetsDeleted",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null,\n        \"ModifiedFrom\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TimeSheetsDeleted/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-TimeSheetsDeleted",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TimeSheetsDeletedCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null,\n        \"ModifiedFrom\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TimeSheetsDeletedCount/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-TimeSheetsDeletedCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Typologies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Typologies/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Typologies",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TypologyGroups",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TypologyGroups/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-TypologyGroups",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserCosts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Users/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-Users",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Users/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-Users",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsersToBlock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-UsersToBlock/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-UsersToBlock",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsersToUnblock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-UsersToUnblock/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-UsersToUnblock",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserTypes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-UserTypes/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-UserTypes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UsersAdditionalInformation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-UsersAdditionalInformation/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"",
+						"DE-UsersAdditionalInformation",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WorkTypes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-WorkTypes/dynamic-execute",
+					"protocol": "https",
+					"host": [
+						"apiv2-{{Tenant}}",
+						"skillsworkflow",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-WorkTypes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Tenant",
+			"value": ""
+		},
+		{
+			"key": "TenantId",
+			"value": ""
+		},
+		{
+			"key": "AppId",
+			"value": ""
+		},
+		{
+			"key": "AppSecret",
+			"value": ""
+		},
+		{
+			"key": "UserId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Version",
+			"value": "17",
+			"type": "string"
+		},
+		{
+			"key": "Id",
+			"value": "739b9986-184b-4a59-ae0e-2233b075bb25",
+			"type": "string"
+		}
+	]
+}

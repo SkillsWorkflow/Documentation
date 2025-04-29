@@ -50,6 +50,15 @@ Each environment has its own base URL:
 https://apiv2-<Tenant>.skillsworkflow.com/api/v3/analytics
 ```
 
+### Postman Collection
+
+To facilitate testing of the available queries, we provide a Postman collection file with all endpoints configured. You can download it from the link below:
+
+[Download Postman Collection - Data Extraction](../../static/templates/data-extraction-postman-collention.json)
+
+After downloading, make sure to configure the variables `{{Tenant}}`, `{{TenantId}}`, `{{AppId}}`, `{{AppSecret}}`, and `{{UserId}}` according to the credentials you have been given.
+
+
 ---
 
 ## Shaping Your Query: the `queryBuilder` Parameter
