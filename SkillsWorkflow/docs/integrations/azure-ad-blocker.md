@@ -47,7 +47,7 @@ Using Microsoft Entra ID it is necessary to create a app registration to enable 
 
 The creation of the App Registration should have a combination of the following:
 
-- TenantID
+- TenantId
 - ClientId
 - Client Secret (created on step above)
 

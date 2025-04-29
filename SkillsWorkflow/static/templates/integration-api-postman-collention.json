@@ -68,7 +68,7 @@
 						"header": [
 							{
 								"key": "X-AppTenant",
-								"value": "{{Tenant}}",
+								"value": "{{TenantId}}",
 								"type": "text"
 							},
 							{
@@ -124,7 +124,7 @@
 						"header": [
 							{
 								"key": "X-AppTenant",
-								"value": "{{Tenant}}",
+								"value": "{{TenantId}}",
 								"type": "text"
 							},
 							{
@@ -194,11 +194,6 @@
 		}
 	],
 	"variable": [
-		{
-			"key": "Tenant",
-			"value": "",
-			"type": "string"
-		},
 		{
 			"key": "TenantId",
 			"value": "",

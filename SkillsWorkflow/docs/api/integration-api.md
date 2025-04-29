@@ -9,9 +9,28 @@ sidebar_position: 2
 
 ## Overview
 
-The **Integration API** allows you to _integrate_ documents and entities in Skills Workflow from external systems by linking them via an **External ID**. It is **not** intended for data extraction—use it to push or synchronize data (e.g. from financial systems, project-management tools, ERPs, attendance systems, etc.) into Skills Workflow.  
+The Integration API allows you to integrate documents and entities in Skills Workflow from external systems by linking them via an External ID. It is not intended for data extraction—use it to push or synchronize data (e.g. from financial systems, project-management tools, ERPs, attendance systems, etc.) into Skills Workflow.
 
-> **Note:** If you need to _read_ or _query_ Skills Workflow data, or replicate parts of its behavior inside your own application, please use the **Client API** instead.
+### Purpose
+
+The Integration API is designed to enable seamless synchronization of data between Skills Workflow and external systems. It facilitates the creation, updating, and linking of entities in Skills Workflow with external applications through the use of unique External IDs.
+
+### Use Cases
+
+Integrate Skills Workflow with external systems such as:
+- Financial systems (e.g., QuickBooks, Xero)
+- Project management tools (e.g., Asana, Jira, Trello)
+- ERPs and CRMs
+- Attendance or time-tracking systems
+- Custom data synchronization or push solutions
+
+### Key Limitations
+- External ID linkage required: Entities in Skills Workflow must be linked to external systems using an External ID.
+- Not for data extraction: Use the Data Extraction API for querying or extracting data.
+- No direct reporting or analysis: This API is for synchronization and data pushing, not for reporting purposes.
+- Rate limits may apply: High-frequency synchronization should be managed to avoid hitting API rate limits.
+- Data consistency: Ensure the external systems are correctly mapped to prevent data mismatches during synchronization.
+  > **Note:** If you need to _read_ or _query_ Skills Workflow data, or replicate parts of its behavior inside your own application, please use the **Client API** instead.
 
 ## Getting Started
 
@@ -23,7 +42,18 @@ Before calling any endpoint, you must obtain the following credentials from our 
 - **App Secret** (`X-AppSecret`)  
 - **Tenant ID** (`X-AppTenant`)
 
-Include these in every request’s headers (see “Common Headers” below). Optionally, you may also set `X-AppUser` to identify an application user context.
+> These are provided by the support team upon request.
+
+Include them in each request via HTTP headers:
+
+```http
+X-AppTenant:  <X-AppTenant>
+X-AppId:      <X-AppId>
+X-AppSecret:  <X-AppSecret>
+X-AppUser:    <UserId>     # Optional, if user-scoped filtering is required
+Content-Type: application/json
+```
+
 
 ### Environments
 
@@ -44,24 +74,14 @@ To facilitate testing of the available queries, we provide a Postman collection 
 
 [Download Postman Collection - Integration API](../../static/templates/integration-api-postman-collention.json)
 
-After downloading, make sure to configure the variables `{{Tenant}}`, `{{TenantId}}`, `{{AppId}}`, `{{AppSecret}}`, and `{{UserId}}` according to the credentials you have been given.
+After downloading, make sure to configure the variables `{{Environment}}`, `{{TenantId}}`, `{{AppId}}`, `{{AppSecret}}`, and `{{UserId}}` according to the credentials you have been given.
 
-## Rate Limits
+### Rate Limits
 
 All calls to the Integration API are capped at **30 seconds** execution time. To avoid timeouts:
 
 - Use **filters** on query endpoints  
 - Implement **pagination** via `skip` and `take` query parameters  
-
-## Common Request Headers
-
-```
-X-AppTenant:   {your-tenant-id}
-X-AppId:       {your-app-key}
-X-AppSecret:   {your-app-secret}
-X-AppUser:     {optional-user-context}
-Content-Type:  application/json
-```
 
 ---
 
