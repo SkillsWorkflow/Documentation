@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "5bb1146b-4f6d-4f6d-bf05-897fa85a7521",
+		"name": "Integration API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10769466"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Password\": {\r\n        \"value\": {}\r\n    }, // string; não enviar senão for para atualizar\r\n    \"EntryTimeTotalMinutes\": {\r\n        \"value\": {}\r\n    }, // int; não enviar senão for para atualizar\r\n    \"ExitTimeTotalMinutes\": {\r\n        \"value\": {}\r\n    }, // int; não enviar senão for para atualizar\r\n    \"EntryTimeToleranceTotalMinutes\": {\r\n        \"value\": {}\r\n    }, // int; não enviar senão for para atualizar\r\n    \"ExitTimeToleranceTotalMinutes\": {\r\n        \"value\": {}\r\n    }, // int; não enviar senão for para atualizar\r\n    \"OffsetTotalMinutes\": {\r\n        \"value\": {}\r\n    }, // int; não enviar senão for para atualizar\r\n    \"PaidUndertime\": {\r\n        \"value\": {}\r\n    }, // bool; não enviar senão for para atualizar\r\n    \"PaidOvertime\": {\r\n        \"value\": {}\r\n    }, // bool; não enviar senão for para atualizar\r\n    \"StartDate\": {\r\n        \"value\": {}\r\n    }, // DateTime; não enviar senão for para atualizar\r\n    \"ExpirationDate\": {\r\n        \"value\": {}\r\n    }, // DateTime; não enviar senão for para atualizar\r\n    \"UserName\": {\r\n        \"value\": {}\r\n    }, // string; não enviar senão for para atualizar\r\n    \"Name\": {\r\n        \"value\": {}\r\n    }, // string; não enviar senão for para atualizar\r\n    \"ExternalId\": {\r\n        \"value\": {}\r\n    }, // string; não enviar senão for para atualizar\r\n    \"CompanyId\": {\r\n        \"value\": {}\r\n    }, // Guid; não enviar senão for para atualizar\r\n    \"EmployeeId\": {\r\n        \"value\": {}\r\n    }, // Guid; não enviar senão for para atualizar\r\n    \"DepartmentId\": {\r\n        \"value\": {}\r\n    }, // Guid; não enviar senão for para atualizar\r\n    \"TypologyId\": {\r\n        \"value\": {}\r\n    }, // Guid; não enviar senão for para atualizar\r\n    \"IsActive\": {\r\n        \"value\": {}\r\n    }, // bool; não enviar senão for para atualizar\r\n    \"HireDate\": {\r\n        \"value\": {}\r\n    }, // DateTime; não enviar senão for para atualizar\r\n    \"SsoUserName\": {\r\n        \"value\": {}\r\n    }, // string; não enviar senão for para atualizar\r\n    \"RequiredHours\": {\r\n        \"value\": {}\r\n    }, // double; não enviar senão for para atualizar\r\n    \"LeaveDayHours\": {\r\n        \"value\": {}\r\n    }, // double; não enviar senão for para atualizar\r\n    \"RequiredWeeklyHours\": {\r\n        \"value\": {}\r\n    }, // double; não enviar senão for para atualizar\r\n    \"ResponsibleId\": {\r\n        \"value\": {}\r\n    }, // Guid; não enviar senão for para atualizar\r\n    \"UserTypeId\": {\r\n        \"value\": {}\r\n    }, // Guid; não enviar senão for para atualizar\r\n    \"WeeklyOvertimeThresholdHours\": {\r\n        \"value\": {}\r\n    }, // double; não enviar senão for para atualizar\r\n    \"ExternalNumber\": {\r\n        \"value\": {}\r\n    }, // string; não enviar senão for para atualizar\r\n    \"Phone\": {\r\n        \"value\": {}\r\n    }, // string; não enviar senão for para atualizar\r\n    \"CityId\": {\r\n        \"value\": {}\r\n    }, // Guid; não enviar senão for para atualizar\r\n    \"SsoOnly\": {\r\n        \"value\": {}\r\n    }, // bool; não enviar senão for para atualizar\r\n    \"AdUserName\": {\r\n        \"value\": {}\r\n    }, // string; não enviar senão for para atualizar\r\n    \"Tolerance\": {\r\n        \"value\": {}\r\n    }, // int; não enviar senão for para atualizar\r\n    \"ChangePasswordOnFirstLogon\": {\r\n        \"value\": {}\r\n    }, // bool; não enviar senão for para atualizar\r\n    \"TaxPayerNumber\": {\r\n        \"value\": {}\r\n    } // string; não enviar senão for para atualizar\r\n}"
+						},
+						"url": {
+							"raw": "https://integration-api-{{Environment}}.skillsworkflow.com/api/users/{id}",
+							"protocol": "https",
+							"host": [
+								"integration-api-{{Environment}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{Tenant}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "// Enviar o Id ou ExternalId para criar ou atualizar\r\n{\r\n    \"Id\": \"\", // Guid ; não é necessário enviar\r\n    \"UserName\": \"\", // [Required]  string; \r\n    \"Name\": \"\", // string \r\n    \"ExternalId\": \"\", // [Required] string \r\n    \"EmployeeId\": \"\", // employee id previously created.\r\n    \"CompanyCode\": \"\", // [Required] string \r\n    \"DepartmentExternalId\": \"\", // [Required] string \r\n    \"TypologyExternalId\": \"\", // [Required] string \r\n    \"Mail\": \"\", // string \r\n    \"IsActive\": \"\", // [Required] bool \r\n    \"HireDate\": \"\", // DateTime \r\n    \"SsoUserName\": \"\", // string\r\n    \"ExpirationDate\": \"\", // DateTime\r\n    \"RequiredWeeklyHours\": \"\", // double\r\n    \"RequiredHours\": \"\", // double\r\n    \"LeaveDayHours\": \"\", // double\r\n    \"ResponsibleId\": \"\", // Guid\r\n    \"UserTypeId\": \"\", // Guid\r\n    \"WeeklyOvertimeThresholdHours\": \"\", // double\r\n    \"Phone\": \"\", // string\r\n    \"SsoOnly\": \"\", // bool\r\n    \"AdUserName\": \"\", // string\r\n    \"Tolerance\": \"\", // int\r\n    \"ChangePasswordOnFirstLogon\": \"\", // bool\r\n    \"TaxPayerNumber\": \"\", // string\r\n    \"StartDate\": \"\" // DateTime\r\n}"
+						},
+						"url": {
+							"raw": "https://integration-api-{{Environment}}.skillsworkflow.com/api/users",
+							"protocol": "https",
+							"host": [
+								"integration-api-{{Environment}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{Tenant}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "// Enviar o Id ou ExternalId para criar ou atualizar\r\n{\r\n    \"Id\": \"\", // Guid ; não é necessário enviar\r\n    \"Name\": \"\", //[Required]  string; \r\n    \"ExternalId\": \"\", // [Required] string\r\n    \"CompanyId\": \"\", // [Required] Guid\r\n    \"IsActive\": true\r\n}"
+						},
+						"url": {
+							"raw": "https://integration-api-{{Environment}}.skillsworkflow.com/api/employees",
+							"protocol": "https",
+							"host": [
+								"integration-api-{{Environment}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Tenant",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "TenantId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "AppSecret",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "AppId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "UserId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Version",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "Id",
+			"value": "98f30295-19f0-4fe1-9166-805a7016fda2",
+			"type": "string"
+		},
+		{
+			"key": "Environment",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

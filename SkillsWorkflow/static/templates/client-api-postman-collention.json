@@ -1,0 +1,1100 @@
+{
+	"info": {
+		"_postman_id": "bff78938-4507-4484-bbb5-cc465f3e8741",
+		"name": "Client API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10769466"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Duplicate User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{Tenant}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"OperationType\": 1,\r\n    \"DuplicateModel\": {\r\n        \"UserToDuplicateId\": \"\", // required\r\n        \"Name\": \"\",     // required\r\n        \"UserName\": \"\" // required\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/users",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TimesheetRequired\": {\r\n        \"value\": true\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/users/17a35770-213d-4ceb-9a97-0a50568a2e5f",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"17a35770-213d-4ceb-9a97-0a50568a2e5f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Description",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"DocumentId\": \"\",           // UserId\r\n    \"DocumentTypeName\": \"user\",\r\n    \"Text\": \"<p>teste e</p>\",   // Description\r\n    \"Actions\": {},\r\n    \"PlainText\": \"teste e\"      // Description\r\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/documentBriefs",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"documentBriefs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CommercialClient User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"OperationType\": \"Create\",\r\n    \"CreateModel\": {\r\n         \"CommercialClientId\": \"\",   // Guid commercial client id\r\n        \"UserId\": \"\",               // Guid user id\r\n        \"Active\": true\r\n    },\r\n    \"CreateManyModel\": null\r\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/commercial-client-users",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"commercial-client-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Type\": 2, // 0-Create, 1-Duplicate, 2-Create Many\r\n    \"CreateModel\": {\r\n        \"UserName\": \"UserName_1\",\r\n        \"Name\": \"Name_1\",\r\n        \"ExternalId\": \"\",\r\n        \"CompanyId\": \"c525b1b4-8303-4eda-b010-9bc0c59c431d\",\r\n        \"DivisionId\": \"51aef59c-84d8-49b2-b7e1-d37a0611f3bb\",\r\n        \"DepartmentId\": \"8249190b-4eb3-476f-9349-ab7a3b412c59\",\r\n        \"TypologyId\": \"f2928b87-9183-4987-9cc0-fef52d34254e\",\r\n        \"Mail\": \"mail\",\r\n        \"IsActive\": true,\r\n        \"SsoUserName\": \"\",\r\n        \"RequiredHours\": 8,\r\n        \"ResponsibleId\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"UserTypeId\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"TimesheetRequired\": false,\r\n        \"AdUserName\": \"\",\r\n        \"TaxpayerNumber\": \"\"\r\n    },\r\n    \"CreateManyModel\": [\r\n        {\r\n            \"UserName\": \"UserName_\",\r\n            \"Name\": \"Name_\",\r\n            \"ExternalId\": \"\",\r\n            \"CompanyId\": \"4BEB6E8D-5DEA-430F-BED6-8DEAC4F55C1D\",\r\n            \"DivisionId\": \"FA0860AB-4508-4BE1-9B6E-2D94F4C5F623\",\r\n            \"DepartmentId\": \"DA116CF5-EF29-4FD2-994F-B256C9C5F8E1\",\r\n            \"TypologyId\": \"4AEE30BA-C02A-4328-9449-57F01F23C948\",\r\n            \"Mail\": \"mail\",\r\n            \"IsActive\": true,\r\n            \"SsoUserName\": \"\",\r\n            \"RequiredHours\": 8,\r\n            \"ResponsibleId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"UserTypeId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"TimesheetRequired\": false,\r\n            \"AdUserName\": \"\",\r\n            \"TaxpayerNumber\": \"\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/users",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users To Unblock",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/unblockuserrequests?countryName=&countryId&companyName&companyId=",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"unblockuserrequests"
+							],
+							"query": [
+								{
+									"key": "countryName",
+									"value": ""
+								},
+								{
+									"key": "countryId",
+									"value": null
+								},
+								{
+									"key": "companyName",
+									"value": null
+								},
+								{
+									"key": "companyId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users To Block",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"packages": {},
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/blockedloginrequests/userstoblock?countryName=&companyName&companyId=&countryId=",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"blockedloginrequests",
+								"userstoblock"
+							],
+							"query": [
+								{
+									"key": "countryName",
+									"value": ""
+								},
+								{
+									"key": "companyName",
+									"value": null
+								},
+								{
+									"key": "companyId",
+									"value": ""
+								},
+								{
+									"key": "countryId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "Project Additional Information",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"DocumentUserFieldValues\": {\r\n        \"value\": {\r\n            \"Forecasting\": true,\r\n            \"Pipeline_Stage\": \"100% - Delivered\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/projects/488457ba-17bc-4750-a24a-4c2f161e6744",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"projects",
+								"488457ba-17bc-4750-a24a-4c2f161e6744"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Project",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"DocumentUserFieldValues\": {\n        \"value\": {\n            \"Pipeline_Stage\": \"100% - Delivered\",\n            \"Forecasting\": false\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/projects/488457ba-17bc-4750-a24a-4c2f161e6744",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"projects",
+								"488457ba-17bc-4750-a24a-4c2f161e6744"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Project from Contract",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}"
+							},
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Packaging Adap I\",\n    \"BrandId\": \"85A78ABB-F444-4074-89A7-B499DEBCC931\",\n        \"CompanyId\": \"3051CAC2-714E-4048-873C-C48C1CC5288D\",\n        \"ClientId\" : \"84278B47-E756-4BA3-8D73-62E4F78C86A1\",\n        //\"ClientContactId\": null,\n        //\"ParentJobId\": null,\n       // \"ProductId\": null,\n        \"ContractId\": \"D82DCE08-4CEA-4132-B62F-DD751BF1B4CF\",\n        //\"ContractDeliverableId\": null,\n        \"DepartmentId\": \"2EF078B9-FC2A-482A-8ECE-BC1747E997E9\",\n        \"JobTypeId\" : \"FBA4883D-C109-4259-B613-A83C88A2BF0B\",\n        \"JobClassificationId\" : \"9AA9F85D-32A3-4C02-9A19-53F616735EC0\",\n        \"ProjectId\": \"5F822443-A7FF-4558-8F23-DAE327457C96\",\n        \"BusinessObjectTypeId\": \"2B5F272E-6550-418A-A4FD-1F397B0F54FB\",\n        \"EntryDate\": \"2021-01-16 11:42:21.647\",\n        \"EntryDateUtc\": \"2021-01-16 11:42:21.647\",\n        \"AgreedDate\": \"2021-01-16 19:42:21.647\",\n        \"AgreedDateUtc\": \"2021-01-16 19:42:21.647\",\n        \"RequestedDate\": \"2021-01-16 13:41:09.300\",\n        \"RequestedDateUtc\": \"2021-01-16 13:41:09.300\",\n        \"DescriptionPlainText\": \"\",\n        \"DocumentChangesPlainText\": \"\",\n        \"Number\": \"\",\n        \"ExternalId\": \"\",\n        \"ExternalError\": \"\",\n        \"Investment\": 100,\n        \"DocymentTypeId\": \"90329122-170E-4191-85DD-9CF3A80FDB79\",\n        \"IsDraft\": true,\n        \"Plannable\": false,\n       // \"WorkflowStateId\": null,        \n        \"Priority\": 0,    \n        \"Effort\": 0,    \n        \"BusinessValue\": 0,    \n        \"AllowsTimesheet\": false,\n        \"IsDeliverable\": true,\n        \"ToIntegrate\": false,\n        \"ForceDatesAreLocal\": false,\n        \"IsActivated\": false,        \n        \"MarketId\": \"2EAAA529-7CDC-4496-BF09-DBCCB8E423AD\",\n        \"IdiomId\": null,\n        \"IsDelivery\": true,\n        \"DocumentUserFieldValues\": {\"Media Type\": null,\"ProofID\": \"x\"}        \n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/contracts/EEE0C262-ABBE-4CCF-9E44-A126402586BC/projects/new",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"contracts",
+								"EEE0C262-ABBE-4CCF-9E44-A126402586BC",
+								"projects",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}"
+							},
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"DocumentId\": \"00000000-0000-0000-0000-000000000000\",\n    \"DocumentTypeName\": \"Project\",\n    \"Text\": \"Comment to be added initially to the newly created project's feed.\",\n    \"Actions\": {\n        \"Transition\": {\n            \"StatusId\": \"e8e4651f-f6e2-4053-918b-1fb25ac7b6f6\",\n            \"TransitionId\": \"2a0f65ab-408c-4696-8454-757a444dea9e\"\n        },\n        \"Document\": {\n            \"DocumentType\": \"Project\",\n            \"Project\": {\n                \"ClassificationId\": \"7d16465d-b535-44f1-822a-3ab449dab77b\",\n                \"ClientId\": \"94177d4d-670b-47b9-a3ff-f05bb4deaf6e\",\n                \"CompanyId\": \"92768571-b454-4cdc-8b68-6f7c6aa8e386\",\n                \"ContractId\": \"eee0c262-abbe-4ccf-9e44-a126402586bc\",\n                \"CurrencyId\": \"12bb8ac2-1729-4be3-a587-0705c4888211\",\n                \"BeginDateUtc\": \"2024-05-31T23:22:07.3520703Z\",\n                \"EndDateUtc\": \"2024-12-01T00:22:07.3520703Z\",\n                \"Investment\": 0.0,\n                \"IsDraft\": true,\n                \"ProductId\": \"8f77ad60-228d-4d07-a3f5-ff5ee2e64d8e\",\n                \"ProjectNatureId\": \"00000000-0000-0000-0000-000000000000\",\n                \"ProjectOwnerId\": \"00000000-0000-0000-0000-000000000000\",\n                \"ProjectManagerId\": \"00000000-0000-0000-0000-000000000000\",\n                \"ProjectType\": 0,\n                \"AllowsTimesheet\": true,\n                \"IsDeliverable\": true,\n                \"IsActivated\": false,\n                \"BusinessObjectTypeId\": \"0649680b-3f6c-4329-95b4-92e213bc3dcd\"\n            },\n            \"DocumentBrief\": {\n                \"DocumentTypeName\": \"Project\",\n                \"Text\": \"\"\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/posts",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Workflow",
+			"item": [
+				{
+					"name": "Workflows By Document",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}"
+							},
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"OperationType\": \"Duplicate\",\n    \"DuplicateModel\": {\n        \"Id\": \"3051cac2-714e-4048-873c-c48c1cc5288d\",\n        \"Name\": \"zik company x\",\n        \"Code\": \"zik x\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/document-types/52933DD5-B15C-4E92-9EC2-0C12D3013161/workflows?expandTransitions=true",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"document-types",
+								"52933DD5-B15C-4E92-9EC2-0C12D3013161",
+								"workflows"
+							],
+							"query": [
+								{
+									"key": "expandTransitions",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assignments",
+			"item": [
+				{
+					"name": "Assignment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}"
+							},
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"AssignmentPostModels\": [\n        {\n            \"User\": \"\",                         // User id\n            \"DocumentType\": \"Skill.Module.BusinessObjects.Project\",         \n            \"DocumentOid\": \"\",                  // Project Id\n            \"AssignmentType\": \"Team Name\"       // Team name\n        }\n    ],\n    \"AssignmentDeleteModels\": [\n        {\n            \"User\": \"\",                         // User id\n            \"DocumentId\": \"\",                   // Project Id\n            \"AssignmentTypeId\": \"\"              // Team Id\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/assignments/batch",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"assignments",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Commercial Client",
+			"item": [
+				{
+					"name": "Commercial Client",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Type\": 2,\r\n    \"CreateManyModel\": [\r\n        {\r\n            \"Name\": \"ClientName_\",          // required  \r\n            \"ExternalId\": \"\",\r\n            \"Code\": \"\",\r\n            \"Number\": \"\",\r\n            \"Street\": \"\",\r\n            \"Street2\": \"\",\r\n            \"StateProvince\": \"\",\r\n            \"TaxpayerNumber\": \"\",\r\n            \"ZipPostal\": \"\",\r\n            \"Website\": \"\",\r\n            \"Email\": \"\",\r\n            \"Phone\": \"\",\r\n            \"HeadOffice\": \"\",\r\n            \"FullTimeEmployeeTime\": 0,\r\n            \"LinkCompaniesDisabled\": false,\r\n            \"Overheads\": 0,\r\n            \"Margin\": 0,\r\n            \"SupplierMargin\": 0,           \r\n            \"CommercialClientCountryId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"CommercialClientCityId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"CommercialPaymentConditionId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"ClientGroupId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"ProjectOwnerId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"ProjectManagerId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"TimesheetLevelId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"RateCardSuggestionId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"RateCardColumnSuggestionId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"RateCardColumnSellSuggestionId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"PriceTableSuggestionId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"PriceTableColumnSuggestionId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"SectorId\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"ClientClassificationId\": \"00000000-0000-0000-0000-000000000000\"\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/commercial-clients",
+							"protocol": "https",
+							"host": [
+								"apiv2-{{Tenant}}",
+								"skillsworkflow",
+								"com"
+							],
+							"path": [
+								"api",
+								"v3",
+								"commercial-clients"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Expense",
+			"item": [
+				{
+					"name": "Create Expense",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}"
+							},
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{     \r\n    \"ExpenseItemTypeId\": \"\",    // Guid required\r\n    \"ExpenseItemGroup\": \"\",     // Int required (Advanced = 0, Order = 1, Refund = 2)\r\n    \"ExpenseSheetId\": \"\",       // Guid required\r\n    \"EmployeeId\": \"\",           // Guid\r\n    \"ValueWithVat\": 0,          // Value with taxes\r\n    \"ValueWithoutVat\": 0,       // Value with no taxes\r\n    \"VatId\": \"\",                // Tax Guid\r\n    \"Number\": \"\",               // Optional string\r\n    \"Status\": 0,                // Int ToApprove = 0\r\n    \"Paid\": false,\r\n    \"KilometersValue\": 0,       \r\n    \"Kilometers\": 0,\r\n    \"Destination\": \"\",          // Optional string\r\n    \"Origin\": \"\",               // Optional string\r\n    \"Participants\": \"\",         // Optional string   \r\n    \"Vehicle\": \"\",              // Optional string\r\n    \"StartOn\": \"\",              // DateTime\r\n    \"EndOn\": \"\",                // DateTime\r\n    \"CountryId\": \"\",            // Guid\r\n    \"SupplierId\": \"\",           // Guid\r\n    \"JobTypeId\": \"\",            // Guid\r\n    \"DepartmentId\": \"\",         // Guid\r\n    \"Correction\": 0,            // Tax correction value\r\n    \"ClientId\": \"\",             // Guid - depends on the level of the expense item type\r\n    \"ProjectId\": \"\",            // Guid - depends on the level of the expense item type\r\n    \"DeliverableId\": \"\",        // Guid - depends on the level of the expense item type\r\n    \"EstimateId\": \"\",           // Guid - depends on the level of the expense item type\r\n    \"ProductId\": \"\",            // Guid - depends on the level of the expense item type\r\n    \"Motive\": \"\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SkillsHost}}/api/expenses/{ExpenseSheetId}/items",
+							"host": [
+								"{{SkillsHost}}"
+							],
+							"path": [
+								"api",
+								"expenses",
+								"{ExpenseSheetId}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Expense Sheet",
+			"item": [
+				{
+					"name": "Create Expense Sheet",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}"
+							},
+							{
+								"key": "X-AppTenant",
+								"value": "{{TenantId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{     \r\n    \"CompanyId\": \"\",            // Guid required\r\n    \"DepartmentId\": \"\",         // Guid - Type or department to set workflow\r\n    \"CurrencyId\": \"\",           // Guid \r\n    \"PaymentConditionId\": \"\",   // Guid\r\n    \"SupplierId\": \"\",           // Guid\r\n    \"EmployeeId\": \"\",           // Guid\r\n    \"TypeId\": \"\",               // Guid - Type or department to set workflow\r\n    \"Emission\": \"\",             // DateTime required\r\n    \"Due\": \"\",                  // DateTime required\r\n    \"EntryDate\": \"\",            // DateTime\r\n    \"Exchange\": 1,              // Exchange Rate\r\n    \"ExternalDocumentType\": \"\", // Optional string\r\n    \"DocumentNumber\": \"\"        // Optional string\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SkillsHost}}/api/expenses",
+							"host": [
+								"{{SkillsHost}}"
+							],
+							"path": [
+								"api",
+								"expenses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Typology",
+			"item": [
+				{
+					"name": "Typology History",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{Tenant}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"UserId\": { \"Value\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\"},\r\n    \"DepartmentId\": { \"Value\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\"},\r\n    \"TypologyGroupId\": { \"Value\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\"},\r\n    \"TypologyId\": { \"Value\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\"},\r\n    \"UserTypeId\": { \"Value\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\"},\r\n    \"StartDate\": { \"Value\": \"2025-01-01T00:00:00\"},\r\n    \"EndDate\": { \"Value\": \"2025-12-31T00:00:00\"}\r\n}"
+						},
+						"url": {
+							"raw": "{{Tenant}}/api/v3/user-typology-histories/EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8",
+							"host": [
+								"{{Tenant}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"user-typology-histories",
+								"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Typology History",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AppTenant",
+								"value": "{{Tenant}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppId",
+								"value": "{{AppId}}",
+								"type": "text"
+							},
+							{
+								"key": "X-AppSecret",
+								"value": "{{AppSecret}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-AppUser",
+								"value": "{{UserId}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"OperationType\": 0,\r\n    \"CreateModel\": {\r\n        \"UserId\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\",           // required\r\n        \"DepartmentId\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\", \r\n        \"TypologyGroupId\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\", \r\n        \"TypologyId\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\",       // required\r\n        \"UserTypeId\": \"EBA25B09-E2E0-4606-AB8C-5D8CC22FADA8\", \r\n        \"StartDate\": \"2025-01-01T00:00:00\",                         // required\r\n        \"EndDate\": \"2025-12-31T00:00:00\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{Tenant}}/api/v3/user-typology-histories",
+							"host": [
+								"{{Tenant}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"user-typology-histories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Tenant",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "TenantId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "AppSecret",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "AppId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Version",
+			"value": "4",
+			"type": "string"
+		},
+		{
+			"key": "UserId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Id",
+			"value": "59689893-fa5e-4b36-8927-bf3bf048c921",
+			"type": "string"
+		}
+	]
+}
