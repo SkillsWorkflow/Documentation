@@ -11,26 +11,45 @@ sidebar_position: 1
 
 The Data Extraction API enables you to export data from Skills Workflow into external tools and systems—such as Excel, Power BI, or custom applications—by dynamically querying named data sets.
 
+### Purpose
+
+The Data Extraction API is intended for reading and exporting data from Skills Workflow in a structured and efficient way. It is ideal for reporting, dashboards, and integration with external BI or analytics tools.
+
+### Use Cases
+
+Export data from Skills Workflow to:
+- Excel, Power BI, Google Sheets
+- Custom dashboards or internal reporting systems
+- Third-party analytics tools
+- Automation tools like Zapier or Make (Integromat)
+- Data warehouses or ETL pipelines
+
+### Key Limitations
+- Read-only: This API does not support creating or updating records.
+- Depends on predefined data sets.
+- Pagination recommended: Use pagination (skip/take) for large queries to avoid timeouts or incomplete results.
+- Rate limits may apply: For high-frequency requests, consider caching or batching.
+
 ---
 
 ## Getting Started
 
 ### Authentication
 
-Before calling any endpoint, you must obtain three credentials:
+Before calling any endpoint, you must obtain the following credentials from our Support team:
 
-- **AppKey**  
-- **AppSecret**  
-- **TenantID**  
+- **App Key** (`X-AppId`)  
+- **App Secret** (`X-AppSecret`)  
+- **Tenant ID** (`X-AppTenant`)
 
 > These are provided by the support team upon request.
 
 Include them in each request via HTTP headers:
 
 ```http
-X-AppTenant:  <TenantID>
-X-AppId:      <AppKey>
-X-AppSecret:  <AppSecret>
+X-AppTenant:  <X-AppTenant>
+X-AppId:      <X-AppId>
+X-AppSecret:  <X-AppSecret>
 X-AppUser:    <UserId>     # Optional, if user-scoped filtering is required
 Content-Type: application/json
 ```
@@ -47,7 +66,7 @@ The API is available in four environments, depending on your subscription plan:
 Each environment has its own base URL:
 
 ```
-https://apiv2-<Tenant>.skillsworkflow.com/api/v3/analytics
+{{ApiUrl}}/api/v3/analytics
 ```
 
 ### Postman Collection
@@ -56,12 +75,17 @@ To facilitate testing of the available queries, we provide a Postman collection 
 
 [Download Postman Collection - Data Extraction](../../static/templates/data-extraction-postman-collention.json)
 
-After downloading, make sure to configure the variables `{{Tenant}}`, `{{TenantId}}`, `{{AppId}}`, `{{AppSecret}}`, and `{{UserId}}` according to the credentials you have been given.
+After downloading, make sure to configure the variables `{{ApiUrl}}`, `{{TenantId}}`, `{{AppId}}`, `{{AppSecret}}`, and `{{UserId}}` according to the credentials you have been given.
+
+### Rate Limits
+
+> **Note:** Each request must complete within **30 seconds**.
+
+- **Apply filters** to narrow the data set.  
+- **Use pagination** (`skip` / `take`) to retrieve large data sets in chunks.
 
 
----
-
-## Shaping Your Query: the `queryBuilder` Parameter
+### Filtering Data
 
 To flexibly extract data, use the **`queryBuilder`** object in your POST body. It supports:
 
@@ -93,23 +117,14 @@ To flexibly extract data, use the **`queryBuilder`** object in your POST body. I
 
 ---
 
-## Rate Limiting & Performance
-
-> **Note:** Each request must complete within **30 seconds**.
-
-- **Apply filters** to narrow the data set.  
-- **Use pagination** (`skip` / `take`) to retrieve large data sets in chunks.
-
----
-
-## Discovering Available Fields
+### Discovering Available Fields
 
 To know which fields you can request, perform an initial call with only pagination:
 
 ```bash
-POST https://apiv2-<Tenant>.skillsworkflow.com/api/v3/analytics/named-query/DE-Clients/dynamic-execute
+POST {{ApiUrl}}/api/v3/analytics/named-query/DE-Clients/dynamic-execute
 Headers:
-  X-AppTenant: <TenantID>
+  X-AppTenant: <TenantId>
   X-AppId:     <AppKey>
   X-AppSecret: <AppSecret>
 Body:
@@ -196,9 +211,9 @@ Where `{NamedQuery}` is one of:
 ### Retrieve Filtered Assignments
 
 ```bash
-POST https://apiv2-<Tenant>.skillsworkflow.com/api/v3/analytics/named-query/DE-Assignments/dynamic-execute
+POST {{ApiUrl}}/api/v3/analytics/named-query/DE-Assignments/dynamic-execute
 Headers:
-  X-AppTenant: <TenantID>
+  X-AppTenant: <TenantId>
   X-AppId:     <AppKey>
   X-AppSecret: <AppSecret>
   X-AppUser:   <UserId>

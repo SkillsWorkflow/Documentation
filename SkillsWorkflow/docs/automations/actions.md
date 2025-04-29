@@ -842,8 +842,8 @@ Please check the template description to know which parameters must be sent for 
    "actionType": "AzureAdAuthentication",  
    "name": "GetAzureAdToken",  
    "next": "Exit",  
-   "tenantId": "cdda9984-9095-443c-b0bf-131c1e6bdc76",  
-   "clientId": "aad39603-3954-4bf7-8128-b41f535ff211",  
+   "tenantId": "s*******-3***-4***-a***-8***********",  
+   "clientId": "a*******-l***-5***-c***-1***********",  
    "clientSecret": "*",
    "resource": "https://graph.microsoft.com"   
  },
@@ -877,8 +877,8 @@ Please check the template description to know which parameters must be sent for 
    "actionType": "AzureAdAuthentication",  
    "name": "GetAzureAdToken",  
    "next": "Exit",  
-   "tenantId": "cdda9984-9095-443c-b0bf-131c1e6bdc76",  
-   "clientId": "aad39603-3954-4bf7-8128-b41f535ff211",  
+   "tenantId": "s*******-3***-4***-a***-8***********",  
+   "clientId": "3*******-1***-4***-8***-e***********",
    "CertificatePfx": "file.pfx",
    "CertificatePfxPassword": "MyfilePfxPassword",
    "resource": "https://graph.microsoft.com"   
@@ -1331,7 +1331,7 @@ The result will be the transformed JSON:
 {
   "Timestamp": "2023-05-02T00: 00: 00+00: 00",
   "Id": "2023-05-02_Zas_1fabe874-e561-4b9e-86a5-4183234e0af6",
-  "Tenant": "Zas",
+  "Tenant": "Test",
   "WorkspaceId": "1fabe874-e561-4b9e-86a5-4183234e0af6",
   "Count": 9
 }

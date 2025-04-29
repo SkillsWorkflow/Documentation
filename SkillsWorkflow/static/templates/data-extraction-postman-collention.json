@@ -38,12 +38,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/11/07\",\n        \"To\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Attendences/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Attendences/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -89,12 +87,10 @@
 					"raw": "{\n   \"queryBuilder\": {\n      \"skip\": 0,\n      \"take\": 100,\n      \"orderBy\": [\n        {\n          \"field\": \"User\",\n          \"direction\": \"asc\" \n        }\n      ],\n      \"fields\": [\"Team\", \"UserId\"],\n      \"filters\": [  \n        [\"Team\", \"=\", \"Executor\"],   \n        \"or\", \n        [\"Team\", \"=\", \"Requester\"]\n      ]\n    } \n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Assignments/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Assignments/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -144,12 +140,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Brands/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Brands/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -199,12 +193,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Countries/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Countries/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -254,12 +246,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Clients/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Clients/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -309,12 +299,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ClientsCompanies/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ClientsCompanies/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -364,12 +352,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"ContractNumber\": null,\n        \"ContractId\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Contracts/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Contracts/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -419,12 +405,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Companies/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Companies/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -474,12 +458,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-CompaniesAdditionalInformation/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-CompaniesAdditionalInformation/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -529,12 +511,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Countries/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Countries/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -584,12 +564,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Currencies/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Currencies/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -639,12 +617,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Departments/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Departments/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -695,12 +671,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Descriptions/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Descriptions/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -751,12 +725,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Divisions/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Divisions/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -806,12 +778,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Employees/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Employees/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -858,12 +828,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatedPlannedActualMonthly/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatedPlannedActualMonthly/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -910,12 +878,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"EstimateId\": null,\n        \"EstimateNumber\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Estimates/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Estimates/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -962,12 +928,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"EstimateId\": null,\n        \"EstimateNumber\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatesCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1014,12 +978,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatesQuotes/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesQuotes/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1066,12 +1028,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatesQuotesMonth/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesQuotesMonth/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1118,12 +1078,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-EstimatesQuotesMonthCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesQuotesMonthCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1170,12 +1128,10 @@
 					"raw": "{\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ExpenseTypes/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ExpenseTypes/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1221,12 +1177,10 @@
 					"raw": "{\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Expenses/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Expenses/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1272,12 +1226,10 @@
 					"raw": "{\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ExpenseSheets/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ExpenseSheets/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1327,12 +1279,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Holidays/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Holidays/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1382,12 +1332,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"JobId\": null,\n        \"JobNumber\": \"2024 - 00196\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Jobs/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Jobs/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1437,12 +1385,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"JobId\": null,\n        \"JobNumber\": \"2024 - 00196\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-JobsCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-JobsCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1492,12 +1438,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Leaves/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Leaves/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1547,12 +1491,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-LeavesCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-LeavesCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1602,12 +1544,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-LeavesDeleted/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-LeavesDeleted/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1657,12 +1597,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-LeavesDeletedCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-LeavesDeletedCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1712,12 +1650,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Products/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Products/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1767,12 +1703,10 @@
 					"raw": "{\n    \"queryBuilder\": {\n      \"skip\": 0,\n      \"take\": 100,\n      \"orderBy\": [\n        {\n          \"field\": \"Project\",\n          \"direction\": \"asc\" \n        }\n      ],\n      \"fields\": [\"ProjectId\", \"Project\"],\n      \"filters\": [  \n        [\"ProjectNumber\", \"=\", \"2024 / 00258\"],   \n        \"or\", \n        [\"ProjectNumber\", \"=\", \"2024 / 00257\"]\n      ]\n    },\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"ProjectNumber\": null,\n        \"ProjectId\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Projects/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Projects/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1822,12 +1756,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ProjectsCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1873,12 +1805,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ProjectsAdditionalInformation/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsAdditionalInformation/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1928,12 +1858,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ProjectsPlannedTime/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsPlannedTime/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -1983,12 +1911,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-ProjectsPlannedTimeCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsPlannedTimeCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2034,12 +1960,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-RateCardsColumns/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-RateCardsColumns/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2089,12 +2013,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Stages/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Stages/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2144,12 +2066,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Suppliers/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Suppliers/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2195,12 +2115,10 @@
 					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100,\n        \"orderBy\": [{\n            \"field\": \"Project\",\n            \"direction\": \"asc\" \n            }],\n        \"fields1\": [\"ProjectId\", \"Project\"],\n        \"filters\": [  \n            [\"Day\", \">=\", \"11/01/2024\"],   \n            \"and\", \n            [\"Day\", \"<=\", \"12/30/2024\"]\n        ]\n    },\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"ProjectNumber\": null,\n        \"ProjectId\": null,\n        \"From\": null,\n        \"To\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TimeSheets/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TimeSheets/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2246,12 +2164,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TimeSheetsCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TimeSheetsCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2297,12 +2213,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null,\n        \"ModifiedFrom\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TimeSheetsDeleted/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TimeSheetsDeleted/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2348,12 +2262,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null,\n        \"ModifiedFrom\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TimeSheetsDeletedCount/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TimeSheetsDeletedCount/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2403,12 +2315,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Typologies/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Typologies/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2458,12 +2368,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-TypologyGroups/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TypologyGroups/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2513,12 +2421,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Users/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Users/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2569,12 +2475,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-Users/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Users/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2625,12 +2529,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-UsersToBlock/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UsersToBlock/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2681,12 +2583,10 @@
 					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-UsersToUnblock/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UsersToUnblock/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2737,12 +2637,10 @@
 					"raw": "{\n}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-UserTypes/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UserTypes/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2789,12 +2687,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-UsersAdditionalInformation/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UsersAdditionalInformation/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2845,12 +2741,10 @@
 					"raw": "{}"
 				},
 				"url": {
-					"raw": "https://apiv2-{{Tenant}}.skillsworkflow.com/api/v3/analytics/named-query/DE-WorkTypes/dynamic-execute",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-WorkTypes/dynamic-execute",
 					"protocol": "https",
 					"host": [
-						"apiv2-{{Tenant}}",
-						"skillsworkflow",
-						"com"
+						"{{ApiUrl}}"
 					],
 					"path": [
 						"api",
@@ -2889,7 +2783,7 @@
 	],
 	"variable": [
 		{
-			"key": "Tenant",
+			"key": "ApiUrl",
 			"value": ""
 		},
 		{
