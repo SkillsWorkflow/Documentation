@@ -247,3 +247,46 @@ Body:
   "totalCount": 124
 }
 ```
+
+## Scheduled Data Extraction
+
+You can configure **Schedules** in Skills Workflow to automate recurring data exports.
+
+This method is ideal for generating files (e.g., CSV) that can be directly consumed by external tools such as Power BI, Excel, Tableau, and others.
+
+### Overview
+
+Schedules allow you to:
+
+- Define a **Query** to extract data (same data source as the API).
+- Choose an export **Format** (e.g., `.csv`).
+- Set a **Cron Expression** to determine when the export should occur.
+
+Once scheduled, the system will run the query at the specified time and generate a downloadable file.
+
+### Configuration Example
+
+Here’s a configuration example of a schedule set up to export timesheet data every day at 5:00 AM UTC:
+<figure>
+
+![img](/img/api/data-extraction-api/schedule-timesheet.png)
+<figcaption>Schedule Configuration Screenshot</figcaption>
+</figure>
+
+
+_The above screenshot shows the “DE-TimeSheets” query being scheduled to export daily._
+
+
+### Cron Expression
+
+The **Cron Expression (UTC)** field defines when the job should run. For example:
+
+```
+5 0 * * *
+```
+
+This runs the job daily at 5:00 AM UTC.
+
+:::tip Best Practice
+We recommend running schedules outside working hours to minimize system load and ensure the data is complete.
+:::
