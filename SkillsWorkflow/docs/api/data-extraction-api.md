@@ -79,7 +79,9 @@ After downloading, make sure to configure the variables `{{ApiUrl}}`, `{{TenantI
 
 ### Rate Limits
 
-> **Note:** Each request must complete within **30 seconds**.
+:::note
+Each request must complete within **30 seconds**.
+:::
 
 - **Apply filters** to narrow the data set.  
 - **Use pagination** (`skip` / `take`) to retrieve large data sets in chunks.

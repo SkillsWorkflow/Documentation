@@ -30,7 +30,10 @@ Integrate Skills Workflow with external systems such as:
 - No direct reporting or analysis: This API is for synchronization and data pushing, not for reporting purposes.
 - Rate limits may apply: High-frequency synchronization should be managed to avoid hitting API rate limits.
 - Data consistency: Ensure the external systems are correctly mapped to prevent data mismatches during synchronization.
-  > **Note:** If you need to _read_ or _query_ Skills Workflow data, or replicate parts of its behavior inside your own application, please use the **Client API** instead.
+  
+:::note
+If you need to _read_ or _query_ Skills Workflow data, or replicate parts of its behavior inside your own application, please use the **Client API** instead.
+:::
 
 ## Getting Started
 
