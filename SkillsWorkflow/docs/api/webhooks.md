@@ -107,4 +107,6 @@ Fill out the form as follows:
   The expected value that will trigger the webhook when the condition is met.  
   _Example_: `Is Customization`
 
-> 💡 **Note**: Filters allow fine-tuning of when a webhook should be executed to avoid triggering actions unnecessarily.
+:::note 
+Filters allow fine-tuning of when a webhook should be executed to avoid triggering actions unnecessarily.
+:::
