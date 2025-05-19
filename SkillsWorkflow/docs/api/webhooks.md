@@ -4,6 +4,8 @@ title: Webhooks
 sidebar_label: Webhooks
 sidebar_position: 3
 ---
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+
 
 # Webhooks
 
@@ -77,9 +79,40 @@ Fill out the form as follows:
 - **Automation**  
   Toggle to activate an automation workflow instead of a standard HTTP call.
 
+
+<Tabs groupId="destination-url"
+defaultValue="url"
+values={[{label: "Url", value: 'url'}, {label: 'Automation Workflow' , value: 'automation'}]}>
+
+<TabItem value="url">
+
+- **URL**  
+  If the webhook triggers an external url.  
+  _Example_: `https://example.com/webhooks/my-webhook`
+
+  <figure>
+
+  ![img-box-shadow](/img/api/webhooks/url.png)
+  <figcaption>URL</figcaption>
+  </figure>
+
+</TabItem>
+<TabItem value="automation">
+
 - **Automation Workflow**  
   If the webhook triggers an internal automation (e.g., an Azure DevOps integration), select the appropriate workflow from the list.  
   _Example_: `Azure DevOps – Create Work Item in Visual Studio`
+
+  <figure>
+
+  ![img-box-shadow](/img/api/webhooks/automation.png)
+  <figcaption>Automation Workflow</figcaption>
+  </figure>
+
+</TabItem>
+</Tabs>
+
+
 
 - **Secret**  
   A secure key used to authenticate the webhook request with the external system.
