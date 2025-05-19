@@ -302,7 +302,7 @@ Please check the template description to know which parameters must be sent for 
 
 #### Template Description
 
-<Tabs groupId="rest-actions"
+<Tabs groupId="sftp-actions"
 defaultValue="sftplistfiles"
 values={[
 {
