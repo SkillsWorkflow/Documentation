@@ -261,6 +261,12 @@ dt {
   display: none !important;
 }
 
+iframe.iframe-with-border {
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
+  border: 1px solid lightgrey;
+}
+
 /* ol {
   list-style: none;
   counter-reset: item;
@@ -469,6 +475,7 @@ img[alt="home-image-size"] {
   width: 800px;
   padding: 50px;
 }
+
 
 .left {
   animation: right-to-left 1s linear forwards;
