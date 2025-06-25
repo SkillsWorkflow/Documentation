@@ -34,9 +34,5 @@
   "link.item.label.Releases": {
     "message": "Lançamentos",
     "description": "The label of footer link with label=Releases linking to docs/releases"
-  },
-  "copyright": {
-    "message": "Copyright © 2022 Skills Workflow",
-    "description": "The footer copyright"
   }
 }
