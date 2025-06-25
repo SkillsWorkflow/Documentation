@@ -25,8 +25,7 @@ We’re proud of our performance in independent third-party security assessments
 
 We follow industry best practices and standards to ensure your data is handled securely:
 
-- SOC 2 Type II *(in progress / completed)*
-- ISO 27001 *(if applicable)*
+- SOC 2 Type II
 - GDPR compliance
 
 ---
