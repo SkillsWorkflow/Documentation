@@ -151,60 +151,65 @@ POST /api/v3/analytics/named-query/{NamedQuery}/dynamic-execute
 ```
 
 Where `{NamedQuery}` is one of:
+### Named Queries and Available Filters
 
-- `DE-Attendences`  
-- `DE-Assignments`  
-- `DE-Brands`  
-- `DE-Cities`  
-- `DE-Clients`  
-- `DE-ClientsCompanies`  
-- `DE-Contracts`  
-- `DE-Companies`  
-- `DE-CompaniesAdditionalInformation`  
-- `DE-Countries`  
-- `DE-Currencies`  
-- `DE-Departments`  
-- `DE-Descriptions`  
-- `DE-Divisions`  
-- `DE-Employees`  
-- `DE-EstimatedPlannedActualMonthly`  
-- `DE-Estimates`  
-- `DE-EstimatesCount`  
-- `DE-EstimatesQuotes`  
-- `DE-EstimatesQuotesMonth`  
-- `DE-EstimatesQuotesMonthCount`  
-- `DE-ExpenseTypes`  
-- `DE-Expenses`  
-- `DE-ExpenseSheets`  
-- `DE-Holidays`  
-- `DE-Jobs`  
-- `DE-JobsCount`  
-- `DE-Leaves`  
-- `DE-LeavesCount`  
-- `DE-LeavesDeleted`  
-- `DE-LeavesDeletedCount`  
-- `DE-Products`  
-- `DE-Projects`  
-- `DE-ProjectsCount`  
-- `DE-ProjectsAdditionalInformation`  
-- `DE-ProjectsPlannedTime`  
-- `DE-ProjectsPlannedTimeCount`  
-- `DE-RateCardsColumns`  
-- `DE-Stages`  
-- `DE-Suppliers`  
-- `DE-TimeSheets`  
-- `DE-TimeSheetsCount`  
-- `DE-TimeSheetsDeleted`  
-- `DE-TimeSheetsDeletedCount`  
-- `DE-Typologies`  
-- `DE-TypologyGroups`  
-- `DE-UserCosts`  
-- `DE-Users`  
-- `DE-UsersToBlock`  
-- `DE-UsersToUnblock`  
-- `DE-UserTypes`  
-- `DE-UsersAdditionalInformation`  
-- `DE-WorkTypes`  
+Below is a list of available Named Queries and their applicable filters (if any).
+
+| NamedQuery                         | Filters                                |
+|-----------------------------------|----------------------------------------|
+| DE-Attendences                    | From, To                               |
+| DE-Assignments                    |                                        |
+| DE-Brands                         | ModifiedFrom                           |
+| DE-Cities                         |                                        |
+| DE-Clients                        | ModifiedFrom                           |
+| DE-ClientsCompanies               |                                        |
+| DE-Contracts                      | ModifiedFrom, ContractNumber, ContractId |
+| DE-Companies                      |                                        |
+| DE-CompaniesAdditionalInformation| ModifiedFrom                           |
+| DE-Countries                      |                                        |
+| DE-Currencies                     |                                        |
+| DE-Departments                    |                                        |
+| DE-Descriptions                   |                                        |
+| DE-Divisions                      |                                        |
+| DE-Employees                      |                                        |
+| DE-EstimatedPlannedActualMonthly |                                        |
+| DE-Estimates                      | EstimateId, EstimateNumber             |
+| DE-EstimatesCount                 | ModifiedFrom, EstimateId, EstimateNumber |
+| DE-EstimatesQuotes                |                                        |
+| DE-EstimatesQuotesMonth          |                                        |
+| DE-EstimatesQuotesMonthCount     |                                        |
+| DE-ExpenseTypes                  |                                        |
+| DE-Expenses                       |                                        |
+| DE-ExpenseSheets                 |                                        |
+| DE-Holidays                       | ModifiedFrom                           |
+| DE-Jobs                           |                                        |
+| DE-JobsCount                      | ModifiedFrom, JobId, JobNumber         |
+| DE-Leaves                         |                                        |
+| DE-LeavesCount                    | ModifiedFrom, To, From                 |
+| DE-LeavesDeleted                  | ModifiedFrom                           |
+| DE-LeavesDeletedCount            | ModifiedFrom                           |
+| DE-Products                       | ModifiedFrom                           |
+| DE-Projects                       | ModifiedFrom, ProjectId, ProjectNumber |
+| DE-ProjectsCount                  |                                        |
+| DE-ProjectsAdditionalInformation | ProjectId, ProjectNumber              |
+| DE-ProjectsPlannedTime           | ProjectId, ProjectNumber              |
+| DE-ProjectsPlannedTimeCount      | ProjectId, ProjectNumber              |
+| DE-RateCardsColumns              |                                        |
+| DE-Stages                         |                                        |
+| DE-Suppliers                      |                                        |
+| DE-TimeSheets                     |                                        |
+| DE-TimeSheetsCount                | From, To, ModifiedFrom, ProjectId, ProjectNumber |
+| DE-TimeSheetsDeleted             | ModifiedFrom                           |
+| DE-TimeSheetsDeletedCount        | ModifiedFrom                           |
+| DE-Typologies                     |                                        |
+| DE-TypologyGroups                 |                                        |
+| DE-UserCosts                      |                                        |
+| DE-Users                          |                                        |
+| DE-UsersToBlock                   |                                        |
+| DE-UsersToUnblock                 |                                        |
+| DE-UserTypes                      |                                        |
+| DE-UsersAdditionalInformation    |                                        |
+| DE-WorkTypes                      |                                        |
 
 ---
 
