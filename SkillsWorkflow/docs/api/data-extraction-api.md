@@ -192,9 +192,12 @@ Below is a list of available Named Queries and their applicable filters (if any)
 | DE-Projects                       | ModifiedFrom, ProjectId, ProjectNumber |
 | DE-ProjectsCount                  |                                        |
 | DE-ProjectsAdditionalInformation | ProjectId, ProjectNumber              |
-| DE-ProjectsPlannedTime           | ProjectId, ProjectNumber              |
+| DE-ProjectsPlannedTime           |                                         |
 | DE-ProjectsPlannedTimeCount      | ProjectId, ProjectNumber              |
 | DE-RateCardsColumns              |                                        |
+| DE-Requests                      |                                        |
+| DE-Services                       |                                        |
+| DE-ServiceGroups                  |                                        |
 | DE-Stages                         |                                        |
 | DE-Suppliers                      |                                        |
 | DE-TimeSheets                     |                                        |
@@ -209,6 +212,7 @@ Below is a list of available Named Queries and their applicable filters (if any)
 | DE-UsersToUnblock                 |                                        |
 | DE-UserTypes                      |                                        |
 | DE-UsersAdditionalInformation    |                                        |
+| DE-Workloads                      |                                        |
 | DE-WorkTypes                      |                                        |
 
 ---
