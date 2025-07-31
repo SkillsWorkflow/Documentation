@@ -181,6 +181,7 @@ Below is a list of available Named Queries and their applicable filters (if any)
 | DE-ExpenseTypes                  |                                        |
 | DE-Expenses                       |                                        |
 | DE-ExpenseSheets                 |                                        |
+| DE-History                        |                                        |
 | DE-Holidays                       | ModifiedFrom                           |
 | DE-Jobs                           |                                        |
 | DE-JobsCount                      | ModifiedFrom, JobId, JobNumber         |
@@ -189,7 +190,7 @@ Below is a list of available Named Queries and their applicable filters (if any)
 | DE-LeavesDeleted                  | ModifiedFrom                           |
 | DE-LeavesDeletedCount            | ModifiedFrom                           |
 | DE-Products                       | ModifiedFrom                           |
-| DE-Projects                       | ModifiedFrom, ProjectId, ProjectNumber |
+| DE-Projects                       |                                        |
 | DE-ProjectsCount                  |                                        |
 | DE-ProjectsAdditionalInformation | ProjectId, ProjectNumber              |
 | DE-ProjectsPlannedTime           |                                         |
