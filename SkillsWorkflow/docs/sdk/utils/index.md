@@ -1,8 +1,7 @@
 ---
 id: utils
-title: " "
-sidebar_label: Introduction
-sidebar_position: 1
+title: Utils
+sidebar_label: Utils
 ---
 
 # Utils
