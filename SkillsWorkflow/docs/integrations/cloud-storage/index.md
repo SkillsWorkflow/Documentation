@@ -25,7 +25,7 @@ Currently supported providers include:
 
 <figure>
 
-![img-box-shadow](/img/integrations/cloudstorage.png)
+![img](/img/integrations/cloudstorage.png)
 <figcaption>External file picker embedded in Skills Workflow</figcaption>
 </figure>
 

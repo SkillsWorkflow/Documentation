@@ -15,13 +15,10 @@ A sub namespace of Document, exclusive for client operations
 The same methods that are presented in the Document Introduction but do not take the first param documentName, 
 because you're already in a Client document
 :::
-[Get Custom Fields](../document#getcustomfields)
-
-[Get Lookup](../document#getlookup)
-
-[Set Custom Fields](../document#setcustomfields)
-
-[Update](../document#update)
+[Get Custom Fields](./#getcustomfields)
+[Get Lookup](./#getlookup)
+[Set Custom Fields](./#setcustomfields)
+[Update](./#update)
 
 ---
 

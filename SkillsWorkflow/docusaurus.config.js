@@ -77,11 +77,11 @@ module.exports = {
             },
             {
               label: 'Automations',
-              to: 'docs/automations/introduction'
+              to: 'docs/customization/Automations'
             },
             {
               label: 'SDK',
-              to: 'docs/sdk/ui'
+              to: 'docs/sdk'
             },
             {
               label: 'API',

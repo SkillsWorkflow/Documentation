@@ -1,8 +1,7 @@
 ---
 id: document
-title: " "
-sidebar_label: Introduction
-sidebar_position: 1
+title: Document
+sidebar_label: Document
 ---
 
 # Document

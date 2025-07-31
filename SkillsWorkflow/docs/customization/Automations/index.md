@@ -1,31 +1,53 @@
 ---
-id: introduction 
-title: Introduction
-sidebar_label: Introduction
+id: automations 
+title: Automations
+sidebar_label: Automations
 sidebar_position: 0
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-## Cause
+## Overview
 
-There was a need to:
+Automations in Skills Workflow allow users to configure business rules that are triggered automatically based on system events. These automations can be used to streamline processes such as sending notifications, updating data, or integrating with external systems via webhooks.
 
-* Exchange data between Skills Workflow and any other platforms
-* Automate internally tasks in the system
+The automation process is composed of:
+
+1. **Trigger** – Defines the event that starts the automation.
+2. **Condition** – An optional filter to limit when the automation should proceed.
+3. **Actions** – Defines what should happen once the automation is triggered and conditions are met.
+
+Automations are a powerful way to respond to internal changes in the system or to interact with external services in real-time.
 
 ---
 
 ## Technology
 
-Automation Workflows is a technology that allows you to create actions:
+The **Automation Workflows** feature allows you to create and chain multiple automatic actions in response to system events. These actions are configurable and support a wide variety of operations.
 
-* Rests API calls
-* SFTP connection to download, upload and move files
-* Convert data into CSV files
-* Send e-mails with actions results
-* Logical actions
-* HTTP response for the automation workflow result
+The full list of supported actions is available in the [official Actions documentation](actions), where you can find descriptions, expected JSON structures and practical examples for each type.
+
+### Supported Actions
+
+Here is an overview of the most commonly used actions:
+
+- **REST API Call**  
+  Sends HTTP requests to external APIs, including contextual data from the workflow. Ideal for integrations with other systems.
+
+- **SFTP**  
+  Connects to SFTP servers to download, upload or move files. Useful for interacting with secure file storage systems.
+
+- **CSV Converter**  
+  Converts arrays of data into CSV files, useful for reporting or formatted data exports.
+
+- **Send Email**  
+  Sends emails based on the automation results, with support for attachments and customizable content.
+
+- **Logical Action**  
+  Controls the workflow execution flow with conditions, validations or loops.
+
+- **HTTP Response**  
+  Returns a structured HTTP response, useful for synchronous integrations where the triggering system expects a result.
 
 ---
 

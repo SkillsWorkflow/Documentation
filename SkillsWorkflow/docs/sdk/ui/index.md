@@ -1,8 +1,7 @@
 ---
 id: ui
-title: " "
-sidebar_label: Introduction
-sidebar_position: 1
+title: UI
+sidebar_label: UI
 ---
 
 # User Interface
