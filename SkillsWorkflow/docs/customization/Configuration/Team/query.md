@@ -1,5 +1,6 @@
 ---
-id: team
+id: query
+
 title: Query
 sidebar_label: Query
 hide_table_of_contents: true

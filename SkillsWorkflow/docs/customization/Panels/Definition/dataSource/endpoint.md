@@ -1,5 +1,5 @@
 ---
-id: Endpoint
+id: endpoint
 title: Endpoint
 sidebar_label: Endpoint
 ---
