@@ -2,7 +2,6 @@
 id: google-suite
 title: Google Suite
 sidebar_label: Google Suite
-hide_table_of_contents: true
 ---
 
 In this article, you'll learn how to integrate with Google Suite SSO. When you integrate Skills Workflow with Google Suite, you can:

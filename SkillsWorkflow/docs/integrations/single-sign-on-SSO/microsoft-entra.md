@@ -2,7 +2,6 @@
 id: microsoft-entra
 title: Microsoft Entra
 sidebar_label: Microsoft Entra
-hide_table_of_contents: true
 ---
 
 In this article, you'll learn how to integrate with Microsoft Entra. When you integrate Skills Workflow with Microsoft Entra, you can:
