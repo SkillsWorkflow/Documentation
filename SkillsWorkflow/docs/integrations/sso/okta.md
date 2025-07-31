@@ -1,6 +1,7 @@
 ---
-title: 'Okta SSO'
-sidebar_label: Okta SSO
+id: okta
+title: 'Okta'
+sidebar_label: Okta
 ---
 
 In this article, you'll learn how to integrate with Okta SSO. When you integrate Skills Workflow with Okta, you can:
@@ -50,7 +51,7 @@ To configure and test Okta SSO, perform the following steps:
 3. **[Test SSO](#test-sso)** - to verify whether the configuration works. -->
 
 ---
-### Configure Okta SSO
+### Installation
 
 Follow these steps to enable Okta SSO in the Admin center.
 

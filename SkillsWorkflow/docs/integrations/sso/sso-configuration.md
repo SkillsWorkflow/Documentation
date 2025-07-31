@@ -1,5 +1,5 @@
 ---
-id:  sso configuration
+id:  sso-configuration
 title: SSO Configuration
 sidebar_label: SSO Configuration
 ---
@@ -8,12 +8,6 @@ Regarding the SSO, the standard that is in use is in #Production:
 
 - The client’s SSO Identity Provider should provide SAML 2.0 Protocol (e.g. #Okta, #OnePass or #Office365) 
 - There should be a User Identification Claim agreed between the parties, either E-Mail (recommended) or AD User Name
-
-### Installation via Gallery
-Please follow the instructions from Microsoft website
-
-[Tutorial: Microsoft Entra SSO integration with Skills Workflow](https://learn.microsoft.com/pt-pt/entra/identity/saas-apps/skills-workflow-tutorial)
-
 
 ---
 ### Configuration
@@ -33,7 +27,14 @@ Please follow the instructions from Microsoft website
 </figure>
 
 :::info
-Skills Workflow's SSO Login does not support identity provider-initiated login. The login process must begin on Skills Workflow.
+Skills Workflow’s SSO login does not support identity provider-initiated login. The login process must start from the Skills Workflow platform.
+:::
+
+:::tip
+To simplify access for your users, you can create a custom bookmark or button in your Identity Provider dashboard (or internal portal) that links directly to:
+https://{tenant-name}.skillsworkflow.com/ssologin
+
+This ensures that login is always initiated on the Service Provider side, which is required for SSO to work properly.
 :::
 
 ---
