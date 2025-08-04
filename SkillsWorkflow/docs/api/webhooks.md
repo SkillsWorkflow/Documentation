@@ -134,7 +134,7 @@ values={[{label: "Url", value: 'url'}, {label: 'Automation Workflow' , value: 'a
 
 - **Condition**  
   The condition to match.  
-  _Options_: `Equal`, `Not Equal`, `Contains`, `Does Not Contain`, etc.
+  _Options_: `Equal`, `Not Equal`, `Contains`, `Does Not Contain`, `In`, `NotIn`.
 
 - **Value**  
   The expected value that will trigger the webhook when the condition is met.  
@@ -143,3 +143,27 @@ values={[{label: "Url", value: 'url'}, {label: 'Automation Workflow' , value: 'a
 :::note 
 Filters allow fine-tuning of when a webhook should be executed to avoid triggering actions unnecessarily.
 :::
+
+### Dynamic Filter Values
+
+You can use **System Parameters** as dynamic values in filters. To reference a system parameter:
+
+- Use the format: `{{SystemPreferenceName/KeyName}}`
+- _Example_: `{{MyAutomationPreferences/departments}}`
+
+```json title="MyAutomationPreferences"
+{
+  "user": "skills-user",
+  "password": "my-strong-password",
+  "departments": [
+    "6f51b21e-2dcc-4f5e-aebb-491b54800bf1",
+    "a733e914-18ea-4c92-94b4-59491badc974",
+    "ecc30504-1f5c-4b3b-a864-da85d04ebabe",
+    "d42168e4-f690-4546-8197-54ba344a1806"
+  ]
+}
+```
+
+* Example Usage:
+  ![img-box-shadow](/img/api/webhooks/dynamic-filter.png)
+
