@@ -99,6 +99,18 @@ To flexibly extract data, use the **`queryBuilder`** object in your POST body. I
 | `fields`   | array    | List of field names to include in the response.                                                   |
 | `filters`  | array    | Complex filters combining expressions, e.g. `[["Status","=","Open"],"and",["Priority",">",2]]`.  |
 
+### Filter Operations
+The following table lists available filter operations by data type. 
+The Query Builder uses the first operation in each array as the default operation for the specified data type.
+
+| Data Type      | Filter Operations                                                                                 |
+|----------------|---------------------------------------------------------------------------------------------------|
+| `string`       | `contains`, `notcontains`, `startswith`, `endswith`, `=`, `<>`, `isblank`, `isnotblank`           |
+| `numeric`      | `=`, `<>`, `<`, `>`, `<=`, `>=`, `between`, `isblank`, `isnotblank`                                |
+| `date`, `datetime` | `=`, `<>`, `<`, `>`, `<=`, `>=`, `between`, `isblank`, `isnotblank`                            |
+| `boolean`      | `=`, `<>`, `isblank`, `isnotblank`                                                                 |
+| `object`       | `isblank`, `isnotblank`                                                                            |
+
 ```json
 {
   "queryBuilder": {
