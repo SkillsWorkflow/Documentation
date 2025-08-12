@@ -1,8 +1,7 @@
 ---
-id: trust
-slug: /trust
-title: Trust
-sidebar_label: Trust
+id: home
+title: Home
+sidebar_label: Home
 sidebar_position: 1
 ---
 
@@ -37,7 +36,7 @@ We're here to help.
 ## Trust & Security
 
 Want to learn more about how we protect your data and ensure platform reliability?  
-Check our [Security & Trust page](trust/security)
+Check our [Security & Trust page](/docs/trust/security)
 
 -------------------------
 
