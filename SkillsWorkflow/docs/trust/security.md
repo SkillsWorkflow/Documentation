@@ -2,7 +2,6 @@
 id:  security
 title: Security
 sidebar_label: Security
-sidebar_position: 2
 ---
 
 ## Our Commitment to Security
@@ -54,7 +53,7 @@ We use modern cloud infrastructure and robust operational practices to maintain 
 - High availability with auto-scaling, load balancing and data redundancy
 - Daily backups and disaster recovery plan
 - 24/7 monitoring and alerting  
-  [Check live uptime status](status.md)
+  [Check live uptime status](index.md)
 
 ---
 

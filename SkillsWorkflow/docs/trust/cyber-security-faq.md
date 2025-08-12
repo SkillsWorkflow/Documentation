@@ -2,7 +2,6 @@
 id: cyber-security-faq
 title: Cyber Security FAQ
 sidebar_label: Cyber Security FAQ
-sidebar_position: 12
 ---
 
 ## Overview

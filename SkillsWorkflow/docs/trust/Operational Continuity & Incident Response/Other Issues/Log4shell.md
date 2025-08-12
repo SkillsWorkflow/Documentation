@@ -2,7 +2,6 @@
 id:  Log4shell
 title: "Log4shell"
 sidebar_label: 1. Log4shell
-sidebar_position: 1
 ---
 
 In this article, we clarify our clients about the newly found CVE-2021-44228 also known as "log4shell" and how it impacts (or not) SkillsWorkflow.
@@ -23,7 +22,7 @@ However, this vulnerability does not expose Skill Workflow, taking into account 
 
  
 
-##Mitigation
+## Mitigation
 
 We recommend all customers review their own code and services for any use of this component and upgrade or apply one of the mitigations to keep themselves secure.
 

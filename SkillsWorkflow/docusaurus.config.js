@@ -49,8 +49,8 @@ module.exports = {
           className: 'navbar-item'
         },
         {
-          to: 'docs/status',
-          label: 'Status',
+          to: 'docs/trust',
+          label: 'Trust',
           position: 'right',
           className: 'navbar-item'
         },

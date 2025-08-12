@@ -231,6 +231,20 @@ p {
   margin-bottom: 5px !important;
 }
 
+ticket {
+  display: inline-block;
+  background-color: #999999;
+  font-family: "Open Sans", sans-serif !important;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: white;
+  
+  a {
+    color: white;
+  }
+}
+
 dl {
   font-size: 14px !important;
   font-family: "Open Sans", sans-serif !important;
