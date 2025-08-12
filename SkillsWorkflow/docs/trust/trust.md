@@ -1,14 +1,12 @@
 ---
-id: status
-slug: /status
-title: Status
-sidebar_label: Status
+id: trust
+slug: /trust
+title: Trust
+sidebar_label: Trust
 sidebar_position: 1
 ---
 
-# Platform Status
-
-Welcome to the **Skills Workflow Status Page**.
+Welcome to the **Skills Workflow Trust Page**.
 
 We’re committed to transparency and reliability. This page provides real-time updates on the availability of our systems, scheduled maintenance, and any incidents that might impact your experience.
 
@@ -39,7 +37,7 @@ We're here to help.
 ## Trust & Security
 
 Want to learn more about how we protect your data and ensure platform reliability?  
-Check our [Security & Trust page](status/security)
+Check our [Security & Trust page](trust/security)
 
 -------------------------
 
