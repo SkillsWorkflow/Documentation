@@ -1536,3 +1536,51 @@ To configure this action, there are required parameters that need to be set:
 * next - The next action to be executed
 * body - The Query Parameters to be available
 * NamedQuery - The name of the Query.
+
+## Reduce
+
+The Reduce action allows you to group data by one or more property names and perform an aggregation operation over another property. Supported operations are SUM, MIN, MAX, AVG, or NONE (returns the first value).
+
+#### Configuration
+To configure this action, the following parameters need to be set:
+- data
+- GroupBy
+- Operation
+- OperationResult
+
+```json title='Template'
+{
+  "actionType": "Reduce",
+  "name": "SumGroupedBy",
+  "next": "Exit",
+  "data": "{{['smallDataSet']}}",
+  "GroupBy": [
+    "prop1",
+    "prop2"
+  ],
+  "Operation": "SUM",
+  "OperationResult": "value"
+}
+  ```
+
+```json title='Example DataSet'
+[
+  { "prop1": "A", "prop2": "X", "value": 30 },
+  { "prop1": "A", "prop2": "Y", "value": 70 },
+  { "prop1": "B", "prop2": "X", "value": 110 }
+]
+```
+
+#### Template Description
+- actionType - The action type is Reduce
+- name - The action name is custom
+- next - The next action to be executed
+- data - The dataset on which the operation will be performed
+- GroupBy - List of property names to group the data by
+- Operation - The aggregation operation to apply:
+  - SUM – aggregate values by summing them
+  - MIN – the minimal value in the group
+  - MAX – the maximum value in the group
+  - AVG – the average value in the group
+  - NONE – the first value in the group
+- OperationResult - The target property on which the operation is applied
