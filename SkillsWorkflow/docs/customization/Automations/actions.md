@@ -3,9 +3,10 @@ id: actions
 title: Actions
 sidebar_label: Actions
 ---
+
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-This section will describe the group of action types available to be set in the Automation Workflow. 
+This section will describe the group of action types available to be set in the Automation Workflow.
 
 ## Start
 
@@ -25,10 +26,10 @@ To configure this action, the fields required to be filled are:
 * next
 
 ```json title="Template"
-{  
-    "actionType": "Start",  
-    "name": "Starting",  
-    "next": "GetJobBrief"  
+{
+  "actionType": "Start",
+  "name": "Starting",
+  "next": "GetJobBrief"
 },
 ```
 
@@ -53,21 +54,21 @@ The default Result action does not require any additional field other than actio
 To have a custom Response you must configure the httpResponse.
 
 * httpResponse
-  * statusCode
-  * headers
-  * body
+    * statusCode
+    * headers
+    * body
 
 ```json title="Template"
 {
-    "actionType": "Result",
-    "name": "Exit",
-    "httpResponse": {
-        "statusCode": 200,
-        "headers": {
-            "content-type": "application/json"
-            },
-        "body": "{{['SendExpenseFile']}}"
-    }
+  "actionType": "Result",
+  "name": "Exit",
+  "httpResponse": {
+    "statusCode": 200,
+    "headers": {
+      "content-type": "application/json"
+    },
+    "body": "{{['SendExpenseFile']}}"
+  }
 },
 ```
 
@@ -76,13 +77,14 @@ To have a custom Response you must configure the httpResponse.
 * actionType - The action type is Result
 * name - The action name is custom
 * httpResponse - Optional
-  * statusCode - The value to be sent in the HttpResponse statusCode
-  * headers - The headers to be sent in the HttpResponse headers
-  * body - The body to be sent in the HttpResponse body
+    * statusCode - The value to be sent in the HttpResponse statusCode
+    * headers - The headers to be sent in the HttpResponse headers
+    * body - The body to be sent in the HttpResponse body
 
 ---
 
 ## Rest
+
 The Rest action allows doing Rest calls by setting in the Method parameter:
 
 * GET
@@ -107,24 +109,24 @@ To configure this action, the fields available are:
 * responseHeaders - Array - `["date","x-api-version"]`
 
 ```json title="Template"
-{  
-    "actionType": "Rest",  
-    "name": "",  
-    "next": "",  
-    "Method": "GET/POST/PUT/PATCH/DELETE",  
-    "bodyMediaType": "Json/Raw/UrlEncodedFormData/MultipartFormData/File",  
-    "url": "",  
-    "body": "",
-    "isApiCall":true,
-    "ensureSuccessStatusCode":false,
-    "requestHeaders": [  
-        {  
-            "name": "",  
-            "value": ""  
-        }  
-    ],  
-    "bodyFormData": [],
-    "responseHeaders":[]
+{
+  "actionType": "Rest",
+  "name": "",
+  "next": "",
+  "Method": "GET/POST/PUT/PATCH/DELETE",
+  "bodyMediaType": "Json/Raw/UrlEncodedFormData/MultipartFormData/File",
+  "url": "",
+  "body": "",
+  "isApiCall": true,
+  "ensureSuccessStatusCode": false,
+  "requestHeaders": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "bodyFormData": [],
+  "responseHeaders": []
 },
 ```
 
@@ -136,10 +138,11 @@ To configure this action, the fields available are:
 * Method - Should be set according to the method to be applied
 * url - The URL to be called
 * isApiCall - If set, will append tenant Api Authority to request and add authentication Headers. Defaults to `true`
-* ensureSuccessStatusCode - If set, ensures that the response is a success Status Code (200 - 299). If not will throw an error and stop execution. Defaults to `False`
+* ensureSuccessStatusCode - If set, ensures that the response is a success Status Code (200 - 299). If not will throw an error and stop
+  execution. Defaults to `False`
 * responseHeaders - If set, returns the response will bring the headers values for the keys defined.
 * bodyMediaType - Allows you to manage the Request headers and body.
-  * Please see on the tabs below the bodyMediaType available:
+    * Please see on the tabs below the bodyMediaType available:
 
 <Tabs groupId="rest-actions"
 defaultValue="json"
@@ -176,18 +179,18 @@ By setting the bodyMediaType as Raw:
 
 ```json title="Raw"
 {
-    "bodyMediaType":"Raw",  
-    "body":"{\"parameter\":\"value\"}",  
-    "requestHeaders": [  
-        {  
-            "name":"Content-Type",   
-            "value":"application/json-patch+json"  
-        },   
-        {  
-            "name":"Authorization",  
-            "value":"Bearer {Token}"  
-        }  
-    ]
+  "bodyMediaType": "Raw",
+  "body": "{\"parameter\":\"value\"}",
+  "requestHeaders": [
+    {
+      "name": "Content-Type",
+      "value": "application/json-patch+json"
+    },
+    {
+      "name": "Authorization",
+      "value": "Bearer {Token}"
+    }
+  ]
 },
 ```
 
@@ -202,21 +205,21 @@ By setting the bodyMediaType as UrlEncodedFormData:
 
 ```json title="Url Encoded FormData"
 {
-    "bodyMediaType":"UrlEncodedFormData",  
-    "bodyFormData": [  
-        {  
-            "key": "grant_type",  
-            "value": "client_credentials"  
-        },  
-        {  
-            "key": "client_id",  
-            "value": "fb3ccf6c-b672-45af-8389-51bfba06"  
-        },  
-        {  
-            "key": "client_secret",  
-            "value": "5eKItuYeV3iZ1mxY8ktNWYY1bbKOgTO+POIR123/g="  
-        }  
-    ]
+  "bodyMediaType": "UrlEncodedFormData",
+  "bodyFormData": [
+    {
+      "key": "grant_type",
+      "value": "client_credentials"
+    },
+    {
+      "key": "client_id",
+      "value": "fb3ccf6c-b672-45af-8389-51bfba06"
+    },
+    {
+      "key": "client_secret",
+      "value": "5eKItuYeV3iZ1mxY8ktNWYY1bbKOgTO+POIR123/g="
+    }
+  ]
 },
 ```
 
@@ -247,14 +250,14 @@ By setting the bodyMediaType as File:
     "body": "{{['DownloadFile']$.Content}}",
     "bodyMediaType": "File",
     "RequestHeaders": [
-        {
-            "name": "Accept",
-            "value": "application/json; odata=verbose"
-        },
-        {
-            "name": "Authorization",
-            "value": "Bearer {Token}"
-        }
+      {
+        "name": "Accept",
+        "value": "application/json; odata=verbose"
+      },
+      {
+        "name": "Authorization",
+        "value": "Bearer {Token}"
+      }
     ]
   }
 ]
@@ -282,22 +285,28 @@ There are configurations that need to be applied in the automation workflow in o
 Please check the template description to know which parameters must be sent for each action.
 
 ```json title="Template"
-{  
-   "actionType": "SftpListFiles" or "SftpDownload" or"SftpUpload" or "SftpMoveTo",  
-   "name": "SftpListFiles",  
-   "next": "Exit",  
-   "ftpHostIp": "sftp.skillsworkflow.com",  
-   "ftpUsername": "SkillsWorkflow",  
-   "ftpPassword": "*",
-   "ftpPrivateKeyFile": "PrivateKeyFile"
-   "ftpPath":"",  
-   "ftpToPath":"",  
-   "filePath": "",  
-   "fileNameContains": "",  
-   "fileNameEndsWith": "",  
-   "fileName": "",  
-   "fileType": "Csv"  
- },
+{
+  "actionType": "SftpListFiles"
+  or
+  "SftpDownload"
+  or
+  "SftpUpload"
+  or
+  "SftpMoveTo",
+  "name": "SftpListFiles",
+  "next": "Exit",
+  "ftpHostIp": "sftp.skillsworkflow.com",
+  "ftpUsername": "SkillsWorkflow",
+  "ftpPassword": "*",
+  "ftpPrivateKeyFile": "PrivateKeyFile"
+  "ftpPath": "",
+  "ftpToPath": "",
+  "filePath": "",
+  "fileNameContains": "",
+  "fileNameEndsWith": "",
+  "fileName": "",
+  "fileType": "Csv"
+},
 ```
 
 #### Template Description
@@ -306,9 +315,9 @@ Please check the template description to know which parameters must be sent for 
 defaultValue="sftplistfiles"
 values={[
 {
-label: 'Sftp List Files', value: 'sftplistfiles'}, 
-{label: 'Sftp Download', value: 'sftpdownload'}, 
-{label: 'Sftp Upload', value: 'sftpupload'}, 
+label: 'Sftp List Files', value: 'sftplistfiles'},
+{label: 'Sftp Download', value: 'sftpdownload'},
+{label: 'Sftp Upload', value: 'sftpupload'},
 {label: 'Sftp Move To', value: 'sftpmoveto'}
 ]
 }>
@@ -316,16 +325,16 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 <TabItem value="sftplistfiles">
 
 ```json title="Sftp List Files"
-{  
-   "actionType": "SftpListFiles",  
-   "name": "SftpListFiles",  
-   "next": "Loop",  
-   "ftpHostIp": "sftp.skillsworkflow.com",  
-   "ftpUsername": "SkillsWorkflow.Sftp.QA",  
-   "ftpPassword": "",  
-   "filePath": "/path",  
-   "fileNameContains": "",  
-   "fileNameEndsWith": ""  
+{
+  "actionType": "SftpListFiles",
+  "name": "SftpListFiles",
+  "next": "Loop",
+  "ftpHostIp": "sftp.skillsworkflow.com",
+  "ftpUsername": "SkillsWorkflow.Sftp.QA",
+  "ftpPassword": "",
+  "filePath": "/path",
+  "fileNameContains": "",
+  "fileNameEndsWith": ""
 },
 ```
 
@@ -346,15 +355,15 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 <TabItem value="sftpdownload">
 
 ```json title="Sftp Download"
-{  
-   "actionType": "SftpDownload",  
-   "name": "SftpDownload",  
-   "next": "ReadFileData",  
-   "ftpHostIp": "sftp.skillsworkflow.com",  
-   "ftpUsername": "SkillsWorkflow.Sftp.QA",  
-   "ftpPassword": "",  
-   "ftpPath": "/path",  
-   "fileName": "{{['#ImportFile']}}"  
+{
+  "actionType": "SftpDownload",
+  "name": "SftpDownload",
+  "next": "ReadFileData",
+  "ftpHostIp": "sftp.skillsworkflow.com",
+  "ftpUsername": "SkillsWorkflow.Sftp.QA",
+  "ftpPassword": "",
+  "ftpPath": "/path",
+  "fileName": "{{['#ImportFile']}}"
 },
 ```
 
@@ -372,16 +381,16 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 <TabItem value="sftpupload">
 
 ```json title="Sftp Upload"
-{  
-   "actionType": "SftpUpload",  
-   "name": "SftpUpload",  
-   "next": "Exit",  
-   "ftpHostIp": "sftp.skillsworkflow.com",  
-   "ftpUsername": "SkillsWorkflow.Sftp.QA",  
-   "ftpPassword": "",  
-   "ftpPath": "/path",
-   "filePath": "C:\\TempFolder\test.png",  
-   "fileName": "NewFilename.csv"  
+{
+  "actionType": "SftpUpload",
+  "name": "SftpUpload",
+  "next": "Exit",
+  "ftpHostIp": "sftp.skillsworkflow.com",
+  "ftpUsername": "SkillsWorkflow.Sftp.QA",
+  "ftpPassword": "",
+  "ftpPath": "/path",
+  "filePath": "C:\\TempFolder\test.png",
+  "fileName": "NewFilename.csv"
 },
 ```
 
@@ -404,16 +413,16 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 <TabItem value="sftpmoveto">
 
 ```json title="Sftp Move To"
-{  
-   "actionType": "SftpMoveTo",  
-   "name": "MoveSftpFileSuccess",  
-   "next": "Exit",  
-   "ftpHostIp": "sftp.skillsworkflow.com",  
-   "ftpUsername": "SkillsWorkflow.Sftp.QA",  
-   "ftpPassword": "*",  
-   "ftpPath": "/path",  
-   "ftpToPath": "/toPath",  
-   "fileName": "{{['#ImportFile']}}"  
+{
+  "actionType": "SftpMoveTo",
+  "name": "MoveSftpFileSuccess",
+  "next": "Exit",
+  "ftpHostIp": "sftp.skillsworkflow.com",
+  "ftpUsername": "SkillsWorkflow.Sftp.QA",
+  "ftpPassword": "*",
+  "ftpPath": "/path",
+  "ftpToPath": "/toPath",
+  "fileName": "{{['#ImportFile']}}"
 },
 ```
 
@@ -448,14 +457,16 @@ To do so, it is required some parameters to be filled:
 
 ```json title="Template"
 {
-    "actionType": "Email",
-    "name": "SendEmail",
-    "next": "Exit",
-    "body": "This body can also be HTML.",
-    "subject": "This is the e-mail subject",
-    "fromDisplayName": "Notification | Skills Workflow",
-    "toAddress": "user@skillsworkflow.com",
-    "attachments": ["document.pdf"]
+  "actionType": "Email",
+  "name": "SendEmail",
+  "next": "Exit",
+  "body": "This body can also be HTML.",
+  "subject": "This is the e-mail subject",
+  "fromDisplayName": "Notification | Skills Workflow",
+  "toAddress": "user@skillsworkflow.com",
+  "attachments": [
+    "document.pdf"
+  ]
 },
 ```
 
@@ -468,7 +479,7 @@ To do so, it is required some parameters to be filled:
 * subject - The email's subject
 * fromDisplayName - The display name that will appear on the sender
 * toAddress - The email address to whom the email should be sent
-* attachment - Name of the File to attach in email 
+* attachment - Name of the File to attach in email
 
 ---
 
@@ -487,25 +498,25 @@ There are fields required to be filled to have this action working properly:
 * nextActions - The next actions include the value to be compared, and the path forward (action name) if the values that
   are compared are the same
 
-  * Default - The default indicates the path forward if none of the actions has a match
+    * Default - The default indicates the path forward if none of the actions has a match
 
 ```json title="Template"
 {
-    "actionType": "Case",
-    "name": "ExistsGetSharepointSiteUrl",
-    "test": "{{['PreviousActionName']$.field}}",
-    "nextActions": [
-        {
-            "default": false,
-            "value": "200",
-            "name": "GetConfigFile"
-        },
-        {
-            "default": true,
-            "value": "",
-            "name": "Exit"
-        }
-    ]
+  "actionType": "Case",
+  "name": "ExistsGetSharepointSiteUrl",
+  "test": "{{['PreviousActionName']$.field}}",
+  "nextActions": [
+    {
+      "default": false,
+      "value": "200",
+      "name": "GetConfigFile"
+    },
+    {
+      "default": true,
+      "value": "",
+      "name": "Exit"
+    }
+  ]
 },
 ```
 
@@ -515,9 +526,9 @@ There are fields required to be filled to have this action working properly:
 * name - The action name is custom
 * test - The value that will be evaluated. Usually, it is the result/value of a previous action
 * nextActions - It is possible to have more than 2 nextAction to evaluate the test
-  * default - True/false field and it is mandatory to have one nextAction with the default set as true
-  * value - The value that will be compared against the value that is being in the test field
-  * name - The name of the action to be triggered
+    * default - True/false field and it is mandatory to have one nextAction with the default set as true
+    * value - The value that will be compared against the value that is being in the test field
+    * name - The name of the action to be triggered
 
 ---
 
@@ -538,7 +549,7 @@ To configure this action, there are parameters that can be set:
   This field should be populated with a data array  
   "Data" field usually comes from the previous action result
 
-  * i.e. the Automation Workflow has an action to get the data from the Execute Global Query
+    * i.e. the Automation Workflow has an action to get the data from the Execute Global Query
 
 * DataColumns  
   This field should contain a list of Headers to be considered from the action with the data  
@@ -552,72 +563,72 @@ To configure this action, there are parameters that can be set:
 
 ```json title="Template"
 [
-    {
-        "actionType": "Start",
-        "name": "Starting",
-        "next": "GetExpenseFileData"
-    },
-    {
-        "actionType": "Rest",
-        "name": "GetExpenseFileData",
-        "next": "CreateCsv",
-        "Method": "POST",
-        "url": "https://apiv2-demo-dev-we.skillsworkflow.com/api/analytics/globalQuery/Expense - Export/execute",
-        "body": "{}",
-        "bodyMediaType": "Json"
-    },
-    {
-        "actionType": "CreateCsv",
-        "name": "CreateCsv",
-        "next": "SendExpenseFile",
-        "hasHeaderRecord": false,
-        "delimiter": ",",
-        "quote": "\"",
-        "data": "{{['GetExpenseFileData'].Content.Data}}",
-        "dataColumns": [
-            "CompanyCode",
-            "SentDate",
-            "SentTime",
-            "ExpenseSheetEmission",
-            "Employee",
-            "CostCenter",
-            "CPF",
-            "TotalValue",
-            "TotalCashAdvance",
-            "Filial",
-            "Number",
-            "ExpenseDate",
-            "Client",
-            "Job",
-            "Motive",
-            "ValueWithVat",
-            "EncryptedString"
-        ]
-    },
-    {
-        "actionType": "Rest",
-        "name": "SendExpenseFile",
-        "next": "Exit",
-        "Method": "Post",
-        "url": "https://e09905cd.ngrok.io/WS_DataTransfer.asmx?wsdl",
-        "body": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"https://tempuri.org/\"><soap:Header/><soap:Body><tem:CreateNewTicket><!--Optional:--><tem:Params> {\"IdCompania\":\"4\", \"IDCategora\":\"6\", \"IDSubcategoria\":\"143\",\"Descripcion\":\"Skills Workflow test3\", \"solicitanteEmail\":\"bruno.moscao@wmccann.com\"}</tem:Params><!--Optional:--><tem:adjuntos>[{\"nombre\":\"teste.xlsx\", \"contenido\":\"{{['CreateCsv']$|ToBase64}}\"}]</tem:adjuntos></tem:CreateNewTicket></soap:Body></soap:Envelope>",
-        "bodyMediaType": "Raw",
-        "requestHeaders": [
-            {
-                "name": "Content-Type",
-                "value": "text/xml"
-            }
-        ]
-    },
-    {
-        "actionType": "Result",
-        "name": "Exit",
-        "httpResponse": {
-            "statusCode": 200,
-            "headers": {},
-            "body": "{{['SendExpenseFile']}}"
-        }
+  {
+    "actionType": "Start",
+    "name": "Starting",
+    "next": "GetExpenseFileData"
+  },
+  {
+    "actionType": "Rest",
+    "name": "GetExpenseFileData",
+    "next": "CreateCsv",
+    "Method": "POST",
+    "url": "https://apiv2-demo-dev-we.skillsworkflow.com/api/analytics/globalQuery/Expense - Export/execute",
+    "body": "{}",
+    "bodyMediaType": "Json"
+  },
+  {
+    "actionType": "CreateCsv",
+    "name": "CreateCsv",
+    "next": "SendExpenseFile",
+    "hasHeaderRecord": false,
+    "delimiter": ",",
+    "quote": "\"",
+    "data": "{{['GetExpenseFileData'].Content.Data}}",
+    "dataColumns": [
+      "CompanyCode",
+      "SentDate",
+      "SentTime",
+      "ExpenseSheetEmission",
+      "Employee",
+      "CostCenter",
+      "CPF",
+      "TotalValue",
+      "TotalCashAdvance",
+      "Filial",
+      "Number",
+      "ExpenseDate",
+      "Client",
+      "Job",
+      "Motive",
+      "ValueWithVat",
+      "EncryptedString"
+    ]
+  },
+  {
+    "actionType": "Rest",
+    "name": "SendExpenseFile",
+    "next": "Exit",
+    "Method": "Post",
+    "url": "https://e09905cd.ngrok.io/WS_DataTransfer.asmx?wsdl",
+    "body": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"https://tempuri.org/\"><soap:Header/><soap:Body><tem:CreateNewTicket><!--Optional:--><tem:Params> {\"IdCompania\":\"4\", \"IDCategora\":\"6\", \"IDSubcategoria\":\"143\",\"Descripcion\":\"Skills Workflow test3\", \"solicitanteEmail\":\"bruno.moscao@wmccann.com\"}</tem:Params><!--Optional:--><tem:adjuntos>[{\"nombre\":\"teste.xlsx\", \"contenido\":\"{{['CreateCsv']$|ToBase64}}\"}]</tem:adjuntos></tem:CreateNewTicket></soap:Body></soap:Envelope>",
+    "bodyMediaType": "Raw",
+    "requestHeaders": [
+      {
+        "name": "Content-Type",
+        "value": "text/xml"
+      }
+    ]
+  },
+  {
+    "actionType": "Result",
+    "name": "Exit",
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {},
+      "body": "{{['SendExpenseFile']}}"
     }
+  }
 ]
 ```
 
@@ -632,7 +643,7 @@ To configure this action, there are parameters that can be set:
 * delimiter - The columns delimiter e.g. "," , "\t" , ";", etc
 * quote - The value of the column will be within the character set in the quote e.g. "\"" to make the column values
   between "
-  
+
 ---
 
 ## Loop
@@ -653,96 +664,96 @@ To configure this action, there are parameters that can be set:
 * subWorkflows  
   This field is at the Automation Workflow level and can be accessed from any Loop action  
   subWorkflows are like the principal automation workflow, where it is required to have:
-  * Start action
-  * Result action
+    * Start action
+    * Result action
 * When the subWorkflows ends, the next action set up in the Loop action will be triggered
 
 ```json title="Template"
 {
-    "name": "ImportUsers",
-    "actions": [
+  "name": "ImportUsers",
+  "actions": [
+    {
+      "actionType": "Start",
+      "name": "Starting",
+      "next": "SftpDownload"
+    },
+    {
+      "actionType": "SftpDownload",
+      "name": "SftpDownload",
+      "next": "ReadFileData",
+      "ftpHostIp": "sftp.skillsworkflow.com",
+      "ftpUsername": "*",
+      "ftpPassword": "",
+      "filePath": "/Users",
+      "fileName": "Users.csv",
+      "fileType": "Csv"
+    },
+    {
+      "actionType": "ReadFileData",
+      "name": "ReadFileData",
+      "next": "LoopFileData",
+      "fileName": "{{['SftpDownload']}}"
+    },
+    {
+      "actionType": "Loop",
+      "name": "LoopFileData",
+      "next": "MoveSftpFileSuccess",
+      "body": "{{['ReadFileData']}}",
+      "subWorkflow": "ImportFileData"
+    },
+    {
+      "actionType": "SftpMoveTo",
+      "name": "MoveSftpFileSuccess",
+      "next": "ExitSftpSucess",
+      "ftpHostIp": "sftp.skillsworkflow.com",
+      "ftpUsername": "",
+      "ftpPassword": "*",
+      "filePath": "/Users",
+      "toFilePath": "/Users/Success",
+      "fileName": "{{['#ImportFile']}}",
+      "fileType": "Csv",
+      "hasHeaderRecord": false
+    },
+    {
+      "actionType": "Result",
+      "name": "ExitSftpSucess",
+      "httpResponse": {
+        "statusCode": 200,
+        "headers": {},
+        "body": "File moved to Success folder."
+      }
+    }
+  ],
+  "subWorkflow": [
+    {
+      "name": "ImportFileData",
+      "actions": [
         {
-            "actionType": "Start",
-            "name": "Starting",
-            "next": "SftpDownload"
+          "actionType": "Start",
+          "name": "Starting",
+          "next": "ImportUser"
         },
         {
-            "actionType": "SftpDownload",
-            "name": "SftpDownload",
-            "next": "ReadFileData",
-            "ftpHostIp": "sftp.skillsworkflow.com",
-            "ftpUsername": "*",
-            "ftpPassword": "",
-            "filePath": "/Users",
-            "fileName": "Users.csv",
-            "fileType": "Csv"
+          "actionType": "Rest",
+          "name": "ImportUser",
+          "next": "CheckUserCreated",
+          "Method": "Post",
+          "url": "https://integration-api-skills-dev-we.azurewebsites.net/api/users",
+          "body": "{\"userName\":\"{{['#ImportFileData'].username}}\",\"name\":\"{{['#ImportFileData'].Name}}\",\"externalId\":\"{{['#ImportFileData'].externalId}}\",\"companyCode\":\"{{['#ImportFileData'].CompanyCode}}\",\"departmentExternalId\":\"{{['#ImportFileData'].departmentid}}\",\"mail\":\"{{['#ImportFileData'].email}}\",\"isActive\":true,\"hireDate\":\"{{['#ImportFileData'].hiredate}}\",\"ssoUserName\":\"{{['#ImportFileData'].ssoUsername}}\",\"ssoUserNameUpdatable\":true,\"expirationDate\":\"{{['#ImportFileData'].expirationDate}}\",\"requiredWeeklyHours\":\"{{['#ImportFileData'].weeklyRequiredHours}}\",\"externalNumberUpdatable\":true,\"externalNumber\":\"{{['#ImportFileData'].externalNumber}}\",\"phone\":\"{{['#ImportFileData'].workphone}}\",\"isActive\":\"{{['#ImportFileData'].isActive}}\"}",
+          "bodyMediaType": "Json"
         },
         {
-            "actionType": "ReadFileData",
-            "name": "ReadFileData",
-            "next": "LoopFileData",
-            "fileName": "{{['SftpDownload']}}"
-        },
-        {
-            "actionType": "Loop",
-            "name": "LoopFileData",
-            "next": "MoveSftpFileSuccess",
-            "body": "{{['ReadFileData']}}",
-            "subWorkflow": "ImportFileData"
-        },
-        {
-            "actionType": "SftpMoveTo",
-            "name": "MoveSftpFileSuccess",
-            "next": "ExitSftpSucess",
-            "ftpHostIp": "sftp.skillsworkflow.com",
-            "ftpUsername": "",
-            "ftpPassword": "*",
-            "filePath": "/Users",
-            "toFilePath": "/Users/Success",
-            "fileName": "{{['#ImportFile']}}",
-            "fileType": "Csv",
-            "hasHeaderRecord": false
-        },
-        {
-            "actionType": "Result",
-            "name": "ExitSftpSucess",
-            "httpResponse": {
-                "statusCode": 200,
-                "headers": {},
-                "body": "File moved to Success folder."
-            }
+          "actionType": "Result",
+          "name": "ExitUserNotCreated",
+          "httpResponse": {
+            "statusCode": 200,
+            "headers": {},
+            "body": "User {{['ImportUser'].Content.userName}} imported.."
+          }
         }
-    ],
-    "subWorkflow": [
-        {
-            "name": "ImportFileData",
-            "actions": [
-                {
-                    "actionType": "Start",
-                    "name": "Starting",
-                    "next": "ImportUser"
-                },
-                {
-                    "actionType": "Rest",
-                    "name": "ImportUser",
-                    "next": "CheckUserCreated",
-                    "Method": "Post",
-                    "url": "https://integration-api-skills-dev-we.azurewebsites.net/api/users",
-                    "body": "{\"userName\":\"{{['#ImportFileData'].username}}\",\"name\":\"{{['#ImportFileData'].Name}}\",\"externalId\":\"{{['#ImportFileData'].externalId}}\",\"companyCode\":\"{{['#ImportFileData'].CompanyCode}}\",\"departmentExternalId\":\"{{['#ImportFileData'].departmentid}}\",\"mail\":\"{{['#ImportFileData'].email}}\",\"isActive\":true,\"hireDate\":\"{{['#ImportFileData'].hiredate}}\",\"ssoUserName\":\"{{['#ImportFileData'].ssoUsername}}\",\"ssoUserNameUpdatable\":true,\"expirationDate\":\"{{['#ImportFileData'].expirationDate}}\",\"requiredWeeklyHours\":\"{{['#ImportFileData'].weeklyRequiredHours}}\",\"externalNumberUpdatable\":true,\"externalNumber\":\"{{['#ImportFileData'].externalNumber}}\",\"phone\":\"{{['#ImportFileData'].workphone}}\",\"isActive\":\"{{['#ImportFileData'].isActive}}\"}",
-                    "bodyMediaType": "Json"
-                },
-                {
-                    "actionType": "Result",
-                    "name": "ExitUserNotCreated",
-                    "httpResponse": {
-                        "statusCode": 200,
-                        "headers": {},
-                        "body": "User {{['ImportUser'].Content.userName}} imported.."
-                    }
-                }
-            ]
-        }
-    ]
+      ]
+    }
+  ]
 }
 ```
 
@@ -765,11 +776,11 @@ To do so it is required a parameter to be filled:
 * url - The URL to download the file
 
 ```json title="Template"
-{   
-    "actionType": "Download",  
-    "name": "DownloadFile",  
-    "next": "UploadFile",  
-    "url": "{{['GetProjectFile']$.Content.Uri}}"  
+{
+  "actionType": "Download",
+  "name": "DownloadFile",
+  "next": "UploadFile",
+  "url": "{{['GetProjectFile']$.Content.Uri}}"
 },
 ```
 
@@ -785,48 +796,51 @@ To do so it is required a parameter to be filled:
 Map action allows you to Map previous actions Result to a property List of key/values.
 
 #### Configuration
+
 To do so it is required a parameter to be filled:
 
 * values - The mapped values will be available on the Map action result (Content)
 
 ```json title="Template"
-{  
-  "actionType": "Map",  
-  "name": "Map",  
-  "next": "Exit",  
+{
+  "actionType": "Map",
+  "name": "Map",
+  "next": "Exit",
   "values": {
-     "SubJobs":"{{['GetCompanies']$.Content[:1].SubJobs | ToJson}}",
-     "Tasks":"{{['GetCompanies']$.Content[:1].Tasks | ToJson}}"
+    "SubJobs": "{{['GetCompanies']$.Content[:1].SubJobs | ToJson}}",
+    "Tasks": "{{['GetCompanies']$.Content[:1].Tasks | ToJson}}"
   }
 },
 ```
 
 ## Merge
 
-Merge action allows you to Merge a Json Result from a previous to a property List of key/values. This Action allows to update properties from the Json Body.
+Merge action allows you to Merge a Json Result from a previous to a property List of key/values. This Action allows to update properties
+from the Json Body.
 
 #### Configuration
+
 To do so it is required a parameter to be filled:
 
 * Payload - A Json Body
 * values - The mapped values will be available on the Merge action result (Content)
 
 ```json title="Template"
-{  
-   "actionType": "Merge",  
-   "name": "Merge",  
-   "next": "Exit",
-   "payload": "{\"User\": \"string\",\"DocumentType\": \"string\", \"DocumentOid\": \"string\", \"AssignmentType\": \"string\", \"Workload\": 0,  \"Priority\": 0}",
-   "values": {
-       "DocumentType":"{{['GetDocumentTypes']$.Content[:1].DocumentType | ToJson}}",
-       "AssignmentType":"{{['GetAssignments']$.Content[:1].AssignmentType | ToJson}}"
-   }
+{
+  "actionType": "Merge",
+  "name": "Merge",
+  "next": "Exit",
+  "payload": "{\"User\": \"string\",\"DocumentType\": \"string\", \"DocumentOid\": \"string\", \"AssignmentType\": \"string\", \"Workload\": 0,  \"Priority\": 0}",
+  "values": {
+    "DocumentType": "{{['GetDocumentTypes']$.Content[:1].DocumentType | ToJson}}",
+    "AssignmentType": "{{['GetAssignments']$.Content[:1].AssignmentType | ToJson}}"
+  }
 },
 ```
 
 ## AzureAdAuthentication
 
-AzureAdAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory 
+AzureAdAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory
 for a specified Resource using Credentials.
 
 #### Configuration
@@ -838,15 +852,15 @@ There are configurations that need to be applied in the automation workflow in o
 Please check the template description to know which parameters must be sent for each action.
 
 ```json title="Template"
-{  
-   "actionType": "AzureAdAuthentication",  
-   "name": "GetAzureAdToken",  
-   "next": "Exit",  
-   "tenantId": "s*******-3***-4***-a***-8***********",  
-   "clientId": "a*******-l***-5***-c***-1***********",  
-   "clientSecret": "*",
-   "resource": "https://graph.microsoft.com"   
- },
+{
+  "actionType": "AzureAdAuthentication",
+  "name": "GetAzureAdToken",
+  "next": "Exit",
+  "tenantId": "s*******-3***-4***-a***-8***********",
+  "clientId": "a*******-l***-5***-c***-1***********",
+  "clientSecret": "*",
+  "resource": "https://graph.microsoft.com"
+},
 ```
 
 #### Template Description
@@ -873,16 +887,16 @@ There are configurations that need to be applied in the automation workflow in o
 Please check the template description to know which parameters must be sent for each action.
 
 ```json title="Template"
-{  
-   "actionType": "AzureAdAuthentication",  
-   "name": "GetAzureAdToken",  
-   "next": "Exit",  
-   "tenantId": "s*******-3***-4***-a***-8***********",  
-   "clientId": "3*******-1***-4***-8***-e***********",
-   "CertificatePfx": "file.pfx",
-   "CertificatePfxPassword": "MyfilePfxPassword",
-   "resource": "https://graph.microsoft.com"   
- },
+{
+  "actionType": "AzureAdAuthentication",
+  "name": "GetAzureAdToken",
+  "next": "Exit",
+  "tenantId": "s*******-3***-4***-a***-8***********",
+  "clientId": "3*******-1***-4***-8***-e***********",
+  "CertificatePfx": "file.pfx",
+  "CertificatePfxPassword": "MyfilePfxPassword",
+  "resource": "https://graph.microsoft.com"
+},
 ```
 
 #### Template Description
@@ -908,15 +922,14 @@ To do so it is required a parameter to be filled:
 * documentId - The id of the document
 * layoutId - The Id of the layout to use to create Pdf
 
-
 ```json title="Template"
 {
-    "actionType": "CreatePdfFromDocument",
-    "name": "GetPdfFromDocument",
-    "next": "SendEmail",
-    "documentType":"Expense",
-    "documentId":"8b0412b4-37bc-47c9-9269-fa570f1f1f60",
-    "layoutId":"20"
+  "actionType": "CreatePdfFromDocument",
+  "name": "GetPdfFromDocument",
+  "next": "SendEmail",
+  "documentType": "Expense",
+  "documentId": "8b0412b4-37bc-47c9-9269-fa570f1f1f60",
+  "layoutId": "20"
 },
 ```
 
@@ -931,23 +944,23 @@ To do so it is required a parameter to be filled:
 
 ## ExecuteSubWorkflow
 
-ExecuteSubWorkFlow action allows you to run a SubWorkflow with a specific Payload. This Action receives a Return action Result from the SubWorkflow.
+ExecuteSubWorkFlow action allows you to run a SubWorkflow with a specific Payload. This Action receives a Return action Result from the
+SubWorkflow.
 
 #### Configuration
 
 To configure this action, there are parameters that can be set:
 
-* subWorkflows -  The SubWorkflow Name that is intended to run
+* subWorkflows - The SubWorkflow Name that is intended to run
 * body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
-
 
 ```json title="Template"
 {
-    "actionType": "ExecuteSubWorkflow",
-    "name": "RunSubWorkflow",
-    "next": "Exit",
-    "body": "{\"data\":\"value\"}",
-    "subWorkflow": "MySubWorkflow"
+  "actionType": "ExecuteSubWorkflow",
+  "name": "RunSubWorkflow",
+  "next": "Exit",
+  "body": "{\"data\":\"value\"}",
+  "subWorkflow": "MySubWorkflow"
 },
 ```
 
@@ -961,28 +974,31 @@ To configure this action, there are parameters that can be set:
 
 ## EnqueueBackgroundWork
 
-Enqueue action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and continues, it does not wait for the workflow to finish.
+Enqueue action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and continues, it does not wait for the
+workflow to finish.
 
 #### Configuration
 
 To configure this action, there are parameters that can be set:
 
-* targetWorkflowId -  The Workflow Id that is intended to run
-* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow. The body must be JSON.
-* sessionId (optional) - 60 Characters Maximum. When set will execute synchronously the workflow. In other words, it will wait for the previous to finish before starting the next one.
+* targetWorkflowId - The Workflow Id that is intended to run
+* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow. The body
+  must be JSON.
+* sessionId (optional) - 60 Characters Maximum. When set will execute synchronously the workflow. In other words, it will wait for the
+  previous to finish before starting the next one.
 * ExecuteOnUtc (Optional) - DateTime (YYYY-MM-ddTHH:mm:ss) Schedules execution for specific date and time.
 * Wait (Optional) - TimeSpan (dd:HH:mm:ss) Countdown Timer to execution.
 
 ```json title="Template"
 {
-    "actionType": "EnqueueBackgroundWork",
-    "name": "RunWorkflow",
-    "next": "Exit",
-    "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
-    "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
-    "sessionId": "MySessionId",
-    "executeOnUtc":"2024-09-18T18:30",
-    "wait":"00:00:30"
+  "actionType": "EnqueueBackgroundWork",
+  "name": "RunWorkflow",
+  "next": "Exit",
+  "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
+  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
+  "sessionId": "MySessionId",
+  "executeOnUtc": "2024-09-18T18:30",
+  "wait": "00:00:30"
 },
 ```
 
@@ -997,37 +1013,36 @@ To configure this action, there are parameters that can be set:
 
 ## XmlMap
 
-XmlMap action allows you to parse a XML string to a property List of key/values using XPath. 
+XmlMap action allows you to parse a XML string to a property List of key/values using XPath.
 
 #### Configuration
 
 To configure this action, there are some required parameters that need to be set:
 
-* xmldata -  A Xml String representing a Xml Document
+* xmldata - A Xml String representing a Xml Document
 * Values - The mapped values will be available on the Map action result (Content)
-
 
 ```json title="Template"
 {
-    "actionType": "XmlMap",
-    "name": "XmlMap",
-    "next": "Exit",
-    "xmldata": "",
-    "namespaces": {
-        "cac": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
-        "cbc": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
-        "ubl": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
-    },
-    "values": {
-        "Id": "/cbc:ID",
-        "AccountingSupplierName": "/cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name",
-        "StreetName": "/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName",
-        "PostalCode": "/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:PostalZone",
-        "Name":"/sender/name",
-        "VatNumber":"/sender/id",
-        "Address":"/sender/addressInformation/address",
-        "City":"/sender/addressInformation/city" 
-    }
+  "actionType": "XmlMap",
+  "name": "XmlMap",
+  "next": "Exit",
+  "xmldata": "",
+  "namespaces": {
+    "cac": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+    "cbc": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+    "ubl": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+  },
+  "values": {
+    "Id": "/cbc:ID",
+    "AccountingSupplierName": "/cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name",
+    "StreetName": "/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName",
+    "PostalCode": "/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:PostalZone",
+    "Name": "/sender/name",
+    "VatNumber": "/sender/id",
+    "Address": "/sender/addressInformation/address",
+    "City": "/sender/addressInformation/city"
+  }
 },
 ```
 
@@ -1037,7 +1052,7 @@ To configure this action, there are some required parameters that need to be set
 * name - The action name is custom
 * next - The next action to be executed after the subWorkflow execution reach its Result action
 * namespaces - Xml Namespaces used on Xml Document
-* xmlData -  A Xml String representing a Xml Document
+* xmlData - A Xml String representing a Xml Document
 * Values - The mapped values will be available on the Map action result (Content)
 
 ## CreateList
@@ -1048,13 +1063,14 @@ This parameter can be used globally as it is stored in the parent context.
 #### Configuration
 
 To configure this action, there are some required parameters that need to be set:
+
 * listName - The list name.
 * listValues - The mapped values will be available on the context parameter.
 
 Optional Parameters:
+
 * distinct - Set to 'true' the list will only store distinct values (remove duplicates).
 * ignoreEmpty - Set to 'true' the list will only store non empty values.
-
 
 ```json title="Template"
 {
@@ -1074,6 +1090,7 @@ Optional Parameters:
   "ignoreEmpty": true
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is Enqueue
@@ -1106,6 +1123,7 @@ AddToList action allows to update an existing list (Array) of values stored as a
   "ignoreEmpty": true
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is Enqueue.
@@ -1135,6 +1153,7 @@ RemoveFromList action allows to remove values from an existing list (Array) of v
   ]
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is Enqueue.
@@ -1142,7 +1161,6 @@ RemoveFromList action allows to remove values from an existing list (Array) of v
 * next - The next action to be executed after the subWorkflow execution reach its Result action.
 * listName - The Name of the list.
 * removeValues - Values to be removed from list result.
-
 
 ## SetParameter
 
@@ -1156,10 +1174,11 @@ This parameter can be used globally as it is stored in the parent context.
   "actionType": "SetParameter",
   "name": "MyParameter",
   "next": "Exit",
-  "parameterName":"MyParameter",
-  "value":"{{['#HttpRequest'].Host}}"
+  "parameterName": "MyParameter",
+  "value": "{{['#HttpRequest'].Host}}"
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is Enqueue
@@ -1174,25 +1193,27 @@ The list can be used calling the context parameter by name: `{{['MyParameter']}}
 
 ## MapFromObject
 
-MapfromObject allows to Map form names to properties. Passing a object Template with the 
-mapped values from body will generate a new json object similar to data but with the values 
+MapfromObject allows to Map form names to properties. Passing a object Template with the
+mapped values from body will generate a new json object similar to data but with the values
 mapped by name from body.
 
 #### Configuration
 
 To configure this action, there are some required parameters that need to be set:
+
 * Data - Data Template with values as the body property names.
 * Body - The body with the content.
 
 ```json title="Template"
 {
-    "actionType": "MapFromObject",
-    "name": "MapFromObject",
-    "next": "Exit",
-    "data":"{\"name\":\"firstName\",\"years\":\"age\"}",
-    "body":"{\"firstName\":\"John\",\"lastName\":\"Doe\",\"age\":\"30\"}"
+  "actionType": "MapFromObject",
+  "name": "MapFromObject",
+  "next": "Exit",
+  "data": "{\"name\":\"firstName\",\"years\":\"age\"}",
+  "body": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"age\":\"30\"}"
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is Enqueue
@@ -1208,24 +1229,26 @@ The result will be in Data format with the values replaced from Body:
 ```json title="Example"
 {
   "name": "John",
-  "years": "30" 
+  "years": "30"
 }
 ```
 
 ## ConfigurationKeys
-ConfigurationKeys allows to retrieve a Skills Workflow Configuration Key and store the value as a parameter. 
+
+ConfigurationKeys allows to retrieve a Skills Workflow Configuration Key and store the value as a parameter.
 
 #### Configuration
 
 To configure this action, there is a required parameter that need to be set:
+
 * value - Key name of the configuration key
 
 ```json title="Template"
 {
   "actionType": "ConfigurationKeys",
-    "name": "GetConfigurationKeys",
-    "next": "Exit",
-    "value":"MyServerConfiguration"
+  "name": "GetConfigurationKeys",
+  "next": "Exit",
+  "value": "MyServerConfiguration"
 },
 ```
 
@@ -1242,19 +1265,21 @@ The result will be the configuration Keys value parameter:
 
 ```json title="Template"
 {
-    "TenantId": "d*******-3***-4***-a***-8***********",
-    "ClientId": "3*******-1***-4***-8***-e***********",
-    "ClientSecret": "y*******.f****~5*******.6**.n*****",
-    "apiUrl": "h****://g*****.c**/S*************/M**********.g**"
+  "TenantId": "d*******-3***-4***-a***-8***********",
+  "ClientId": "3*******-1***-4***-8***-e***********",
+  "ClientSecret": "y*******.f****~5*******.6**.n*****",
+  "apiUrl": "h****://g*****.c**/S*************/M**********.g**"
 },
 ```
 
 ## ConvertFromJsonDataTable
+
 Allows to convert JSON between formats. It converts from the "DataTable" format to standard format.
 
 #### Configuration
 
 To configure this action, there is a required parameter that need to be set:
+
 * columns - Array With Column Definition `[{"name":"Timestamp","type":"string"},{"name":"Timestamp","type":"datetime"}]`
 * rows - Array With row values `["SkillsWorkflow","2023-05-02T00:00:00Z"]`
 
@@ -1277,8 +1302,19 @@ To configure this action, there is a required parameter that need to be set:
 * rows - Array With row values
 
 #### Usage
+
 ```json title="Column Definition Available Types"
-["bool", "datetime", "dynamic", "guid", "int", "long", "real", "string", "decimal"]
+[
+  "bool",
+  "datetime",
+  "dynamic",
+  "guid",
+  "int",
+  "long",
+  "real",
+  "string",
+  "decimal"
+]
 
 ```
 
@@ -1338,7 +1374,9 @@ The result will be the transformed JSON:
 ```
 
 ## OAuth2Authentication
-Creates an OAuth2 Authentication based on Authorization Code Flow (defined in [OAuth 2.0 RFC 6749, section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1)) 
+
+Creates an OAuth2 Authentication based on Authorization Code Flow (defined
+in [OAuth 2.0 RFC 6749, section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1))
 
 <i> Because regular web apps are server-side apps where the source code is not publicly exposed, they can use the Authorization Code Flow, 
 which exchanges an Authorization Code for a token. Your app must be server-side because during this exchange, you must also pass along your application's Client Secret, 
@@ -1347,13 +1385,15 @@ which must always be kept secure, and you will have to store it in your client. 
 #### Configuration
 
 To configure this action, there is a required parameter that need to be set:
+
 * OAuthClientId - Client Id
 * OAuthClientSecret - Client Password
 * OAuthBaseUrl - Authorization Server Url
 * OAuthScope - Application Filter to limit access
-* OAuthCallbackUrl - Return Address defined by provider in Authorized redirect URIs 
+* OAuthCallbackUrl - Return Address defined by provider in Authorized redirect URIs
 * OAuthUseStateVerification - If set, enables CSRF attacks Verification - Defaults to `False`
-* 
+*
+
 ```json title="Template"
 {
   "actionType": "OAuth2Authentication",
@@ -1367,6 +1407,7 @@ To configure this action, there is a required parameter that need to be set:
   "OauthUseStateVerification": true
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is OAuth2Authentication
@@ -1393,31 +1434,34 @@ The result will be the configuration Keys value parameter:
 ```
 
 ## JsonValidation
+
 Validate Required fields on a specific json payload. A list of properties is verified for missing, null or empty.
 In this case the action will return a list of errors and will exit on ExitOnError.
 
 #### Configuration
 
 To configure this action, there are required parameters that need to be set:
-* payload 
-* requiredProperties 
-* next 
-* nextOnError 
+
+* payload
+* requiredProperties
+* next
+* nextOnError
 
 ```json title="Template"
 {
   "actionType": "ValidateJson",
   "name": "ValidateJson",
-  "payload":"{{['Payload']}}",
+  "payload": "{{['Payload']}}",
   "requiredProperties": [
     "name",
     "company",
     ""
   ],
-  "next":"Exit",
-  "nextOnError":"ExitOnError"
+  "next": "Exit",
+  "nextOnError": "ExitOnError"
 },
 ```
+
 #### Template Description
 
 * payload - json payload to verify
@@ -1425,14 +1469,15 @@ To configure this action, there are required parameters that need to be set:
 * next - next Action in case everything is verified
 * nextOnError - Next Action if any of the required properties is missing or is null
 
-
 ## ClearContext
+
 ClearContext Action allows to remove unused Context created properties that are not really necessary anymore.
 User can clear all properties or select a list of properties to be removed.
 
 #### Configuration
 
 To configure this action, there are required parameters that need to be set:
+
 * listValues
 * clearAll # optional
 
@@ -1445,9 +1490,10 @@ To configure this action, there are required parameters that need to be set:
     "property1"
   ],
   "clearAll": false,
-  "next":"Exit",
+  "next": "Exit"
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is ClearContext
@@ -1456,15 +1502,17 @@ To configure this action, there are required parameters that need to be set:
 * listValues - List of properties to bem removed. #Optional
 * clearAll - Flag to remove all properties #Defaults to false
 
-
 ## ExecuteIntegrationWorkflow
-ExecuteIntegrationWorkflow action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and waits for the workflow to finish and returns the result.
+
+ExecuteIntegrationWorkflow action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and waits for the
+workflow to finish and returns the result.
 
 #### Configuration
 
 To configure this action, there are required parameters that need to be set:
+
 * body # optional
-* targetWorkflowId 
+* targetWorkflowId
 
 ```json title="Template"
 {
@@ -1475,6 +1523,7 @@ To configure this action, there are required parameters that need to be set:
   "targetWorkflowId": "152e8a13-ea4e-469d-be39-f8d4ad0dd919"
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is ExecuteIntegrationWorkflow
@@ -1484,15 +1533,17 @@ To configure this action, there are required parameters that need to be set:
 * targetWorkflowId - The Id of the workflow Intended to run.
 
 ## ApplyTemplate
-ApplyTemplate template is a engine based on the Liquid template language. 
+
+ApplyTemplate template is a engine based on the Liquid template language.
 Liquid It's a secure template language that is also very accessible for non-programmer audiences.
 
->  [Liquid language Documentation](https://shopify.github.io/liquid/basics/introduction/)
+> [Liquid language Documentation](https://shopify.github.io/liquid/basics/introduction/)
 
 #### Configuration
 
 To configure this action, there are required parameters that need to be set:
-* body 
+
+* body
 * data
 
 ```json title="Template"
@@ -1504,6 +1555,7 @@ To configure this action, there are required parameters that need to be set:
   "data": "<p>Document Type: {{documentType}}</p>"
 },
 ```
+
 #### Template Description
 
 * actionType - The action type is ApplyTemplate
@@ -1513,11 +1565,13 @@ To configure this action, there are required parameters that need to be set:
 * data - The Template to Render.
 
 ## AnalyticsNamedQuery
+
 AnalyticsNamedQuery action allows to run a Named Query on the Analytics Service.
 
 #### Configuration
 
 To configure this action, there are required parameters that need to be set:
+
 * body
 * NamedQuery
 
@@ -1530,7 +1584,9 @@ To configure this action, there are required parameters that need to be set:
   "namedQuery": "Example - Named Query"
 },
 ```
+
 #### Template Description
+
 * actionType - The action type is AnalyticsNamedQuery
 * name - The action name is custom
 * next - The next action to be executed
@@ -1539,10 +1595,13 @@ To configure this action, there are required parameters that need to be set:
 
 ## Reduce
 
-The Reduce action allows you to group data by one or more property names and perform an aggregation operation over another property. Supported operations are SUM, MIN, MAX, AVG, or NONE (returns the first value).
+The Reduce action allows you to group data by one or more property names and perform an aggregation operation over another property.
+Supported operations are SUM, MIN, MAX, AVG, or NONE (returns the first value).
 
 #### Configuration
+
 To configure this action, the following parameters need to be set:
+
 - data
 - GroupBy
 - Operation
@@ -1559,28 +1618,62 @@ To configure this action, the following parameters need to be set:
     "prop2"
   ],
   "Operation": "SUM",
-  "OperationResult": "value"
+  "OperationResult": "value",
+  "InnerArrayStrategy": "FIRST"
 }
   ```
 
 ```json title='Example DataSet'
 [
-  { "prop1": "A", "prop2": "X", "value": 30 },
-  { "prop1": "A", "prop2": "Y", "value": 70 },
-  { "prop1": "B", "prop2": "X", "value": 110 }
+  {
+    "prop1": "A",
+    "prop2": "X",
+    "array": [
+      0,
+      1
+    ],
+    "value": 30
+  },
+  {
+    "prop1": "A",
+    "prop2": "Y",
+    "array": [
+      1,
+      2
+    ],
+    "value": 70
+  },
+  {
+    "prop1": "B",
+    "prop2": "X",
+    "array": [
+      2,
+      3
+    ],
+    "value": 110
+  }
 ]
 ```
 
 #### Template Description
+
 - actionType - The action type is Reduce
 - name - The action name is custom
 - next - The next action to be executed
 - data - The dataset on which the operation will be performed
-- GroupBy - List of property names to group the data by
-- Operation - The aggregation operation to apply:
-  - SUM – aggregate values by summing them
-  - MIN – the minimal value in the group
-  - MAX – the maximum value in the group
-  - AVG – the average value in the group
-  - NONE – the first value in the group
-- OperationResult - The target property on which the operation is applied
+- groupBy - List of property names to group the data by
+- operation - The aggregation operation to apply:
+    - SUM – aggregate values by summing them
+    - MIN – the minimal value in the group
+    - MAX – the maximum value in the group
+    - AVG – the average value in the group
+    - NONE – the first value in the group
+- operationResult - The target property on which the operation is applied
+- innerArrayStrategy - The default strategy to use when Data contains nested arrays:
+    - NONE - the operation returns the entire array (default)
+    - MIN - the operation returns the minimum value in the array
+    - MAX - the operation returns to the maximum value in the array
+    - FIRST - the operation returns the first value in the array
+    - LAST - the operation returns the last value in the array
+
+> Note: The InnerArrayStrategy parameter `MIN` and `MAX` will only handle numeric values, it will ignore null or other type of values.
