@@ -1677,3 +1677,31 @@ To configure this action, the following parameters need to be set:
     - LAST - the operation returns the last value in the array
 
 > Note: The InnerArrayStrategy parameter `MIN` and `MAX` will only handle numeric values, it will ignore null or other type of values.
+
+## Await
+
+The **Await** action allows the workflow to pause execution for a given duration before proceeding.
+
+#### Configuration
+
+To configure this action, there is one required parameter that must be set:
+
+* **duration** – The time to wait. Supported formats:
+    * **ms** → milliseconds (`500ms`)
+    * **s** → seconds (`1s`, `30s`)
+    * **m** → minutes (`1m`, `5m`)
+
+```json title="Template"
+{
+  "actionType": "Await",
+  "name": "AwaitOneSecond",
+  "next": "Exit",
+  "duration": "1s"
+}
+```
+
+#### Template Description
+- actionType – The action type is Await
+- name – The action name is custom
+- next – The next action to be executed after the wait period
+- duration – The wait time before continuing (e.g., 500ms, 1s, 1m)
