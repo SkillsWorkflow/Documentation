@@ -1,5 +1,5 @@
 ---
-id: document
+id: document-guidelines
 title: Document guidelines
 sidebar_label: Document
 sidebar_position: 4

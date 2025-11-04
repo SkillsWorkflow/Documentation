@@ -4,153 +4,108 @@ title: Box
 sidebar_label: Box
 ---
 
-### Description
+# Box Integration
 
-The integration allows you to:
+## 1. Overview
+The **Box integration** allows automatic management of folders and files directly from the Skills Workflow platform, maintaining a synchronized hierarchy of clients, projects, and jobs with the organization’s Box environment.  
+The goal is to centralize document and file management within Skills Workflow while retaining Box’s collaboration and security features.
 
-- Create automatically and organize a file structure in Box
-- Access to the folders and files available in Box
-- Let you team get quick and easy access to the files
-- Share the direct link to the files
-
----
-
-### Files
-
-When a file is uploaded into Box, it is automatically available in Skills Workflow.
-
-- You can share your file by going into your document and easily select the file
-- It will be available to add it into the document's description
-- Or to post it on document's feed
-
-<figure>
-
-![img-box-shadow](/img/integrations/box1.png)
-
-<figcaption>Posting file's link on the Project's feed</figcaption>
-</figure>
+<!-- image: general integration diagram -->
 
 ---
 
-### Folders
+## 2. Authentication
+The integration uses the **OAuth2 Client Credentials** flow configured in a custom **Box App**.
 
-Not all folders are synched between the two systems:
+**Required configuration in the Box App:**
+- Enable the following options:
+  - “Allow as-user header”
+  - “Generate user access token”
 
-- To launch Box, click on the Cloud icon
+**Keys and tokens:**
+- `Client ID` and `Client Secret` are obtained from the Box App and configured in the Skills Workflow **System Parameters**.
+- Access tokens are generated through an **automation workflow** in Skills Workflow.
+  - Application tokens are used to create global folders.
+  - User tokens are used to upload and access files according to user permissions.
+- The **refresh token** is automatically managed by the backend through an automation workflow.
 
-<figure>
-
-![img-box-shadow](/img/integrations/box2.png)
-
-<figcaption>Cloud button to open box</figcaption>
-</figure>
-
-- There's a root folder setup in Skills Workflow and in Box
-
-<figure>
-
-![img-box-shadow](/img/integrations/box3.png)
-
-<figcaption>Root folder in Box</figcaption>
-</figure>
-
-- Projects must be active and marked as "Deliverable" in the tab "Info"
-
-<figure>
-
-![img-box-shadow](/img/integrations/box4.png)
-
-<figcaption>Mark as Deliverable in the option available in the "Info" tab</figcaption>
-</figure>
-
-- Jobs must be active, marked as "Deliverable" and his parent as well
-- To automatically create the Template Sub-Folders, it is necessary to mark both options in the Additional Information tab of Job
-
-<figure>
-
-![img-box-shadow](/img/integrations/box5.png)
-
-<figcaption>Automate job's folder creation in Box</figcaption>
-</figure>
-
-<figure>
-
-![img-box-shadow](/img/integrations/box6.png)
-
-<figcaption>Automate job's folder creation in Box</figcaption>
-</figure>
-
-Box Folder field available in the Additional Information tab of each document:
-
-- Will let you map to an existent folder's name
-- Or to change the respective folder's name
-
-Whenever a document is created in Skills Workflow, a folder is created under its parent document folder. The structure of the folders in Skills Workflow is:
-
-- Root
-  - Client
-  - Project
-    - Jobs
-    - Sub-Jobs template
-  - Estimate
-  - Expense
-- User
-
-<figure>
-
-![img-box-shadow](/img/integrations/box7.png)
-
-<figcaption>Files structure is created automatically</figcaption>
-</figure>
-
-When a folder is created in Skills Workflow, it is created automatically in Box.
-
-<figure>
-
-![img-box-shadow](/img/integrations/box8.png)
-
-<figcaption>Folder structure in Box</figcaption>
-</figure>
+<!-- image: Box app configuration with enabled options -->
 
 ---
 
-### Synching
+## 3. Supported Flows
+- Automatic folder creation based on the Skills structure:
+- Client > Project > Job > Job folders template (Job folders templates are defined in the System Parameters.)
+- File uploads are performed directly in Skills through the embedded **Box widget**, respecting the mapped Box folder.
+- File preview directly inside Skills.
+- Synchronization of shared links between Box and Skills.
+- Automatic folder creation when new objects (Clients, Projects, Jobs) are created in Skills.
 
-The synching is performed by a background process. Whenever a document is created or his folder name is changed in Skills Workflow, the process will replicate it in Box.
-
-- The synching process is bi-directional
-- Skills Workflow has a reference of the ID of the files and folders in Box
-- The users will see the same file structure (starting on the root) in both systems
+<!-- image: folder structure example (Skills > Box) -->
 
 ---
 
-### Configuring
+## 4. Folder Configuration (User Field)
+Each **Job** or **Document** includes a *User Field* named `Box Folder` that stores the **Box Folder ID**.  
+This ID is used by the Box uploader to associate uploaded files with the correct folder.
 
-To configure Box integration, it is necessary to:
+<!-- image: example of user field "Box Folder" -->
 
-1. Authorise a new Custom Application in the agency Box's enterprise settings.
+---
 
-   - Skills Workflow key: 0sywrz73q25ejuk6lfo1xx7su6rsd1bi
+## 5. Webhooks
+Webhooks are configured within **Skills Workflow** to trigger **folder creation in Box** when documents or jobs are created.  
+These webhooks are internal to Skills Workflow and connect directly to automation workflows responsible for folder management.
 
-2. Configure in Skills Workflow the agency box's Enterprise ID (available in Account & Billing Box's menu)
+<!-- image: webhook configuration example -->
 
-<figure>
+---
 
-![img-box-shadow](/img/integrations/box9.png)
+## 6. Automation Workflows
+**Automation workflows** can automatically create and map Box folders.
 
-<figcaption>Authorize new app in box</figcaption>
-</figure>
+**Example:**
+- **Trigger:** `Job Created`
+- **Actions:**
+1. `Create Box Folder`
+2. Update the `Box Folder` user field in the Job.
 
-<figure>
+This ensures every new job is immediately associated with its corresponding Box folder following the defined hierarchy.
 
-![img-box-shadow](/img/integrations/box10.png)
+<!-- image: automation workflow example -->
 
-<figcaption>Fill in Skills Workflow API Key</figcaption>
-</figure>
+---
 
-<figure>
+## 7. Skills Workflow Configuration
 
-![img-box-shadow](/img/integrations/box11.png)
+### Global Activation
+Navigate to:  
+`Maintenance > Configurations > System > Preview > Box Integration`  
+Enable the option: **Enabled**
 
-<figcaption>Box's Enterprise ID</figcaption>
-</figure>
+### Additional Options
+- Enable **Box Annotations** to allow commenting directly in Box.  
+- Define file **access levels** according to user roles.  
+- At document level:  
+`Document > Configurations > FileSystem > Enable Box`
+
+### User Mapping
+- User mapping is based on the **email address** in the user’s Skills profile.  
+- The same email must exist in Box.  
+- The Box App User must have access to these users to obtain their **Box User ID** and perform file operations under their permissions.
+
+<!-- image: configuration screen showing Enable Box and user mapping -->
+
+---
+
+## 8. Common Errors and Debugging
+
+| Issue | Probable Cause | Solution |
+|--------|----------------|-----------|
+| “BoxNoFolderConfigured” | Missing *Box Folder* field value | Verify if the automation workflow created the folder correctly |
+| Token expired | Session expired or refresh token error | Trigger new OAuth2 authentication |
+| Upload not visible in Box | Folder creation automation failed | Check automation workflow logs |
+| User cannot access file | Incorrect email mapping | Confirm user email in Box matches Skills profile |
+| Webhook not triggering | Incorrect configuration | Review webhook or automation trigger setup |
+
+<!-- image: example of automation or integration log output -->

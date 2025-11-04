@@ -1,4 +1,6 @@
 import { themes as prismThemes } from 'prism-react-renderer';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
 
 module.exports = {
   title: 'Skills Workflow’s Documentation',
@@ -6,19 +8,18 @@ module.exports = {
   url: 'https://documentation.skillsworkflow.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: { hooks: { onBrokenMarkdownLinks: 'warn' } },
   favicon: 'img/favicon.ico',
-  organizationName: 'SkillsWorkflow', // Usually your GitHub org/user name.
-  projectName: 'Documentation', // Usually your repo name.
+  organizationName: 'SkillsWorkflow',
+  projectName: 'Documentation',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es', 'pt', 'pt-br']
   },
   themeConfig: {
     prism: {
-      themes: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-      additionalLanguages: ["bash", "diff", "json", "javascript"],
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula
     },
     colorMode: {
       respectPrefersColorScheme: true
@@ -159,8 +160,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
+          sidebarPath: require.resolve('./sidebars.cjs'),
           editUrl: 'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow',
           editLocalizedFiles: true
         },
