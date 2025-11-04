@@ -10,7 +10,6 @@ sidebar_position: 4
 - In line editing
 - Optional background image
 
-
 <figure>
 
 ![img-box-shadow](/img/design/design-document-popup.png)
