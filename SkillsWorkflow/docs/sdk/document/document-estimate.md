@@ -1,11 +1,9 @@
 ---
 id: estimate
-title: ""
+title: Estimate
 sidebar_label: Estimate
 
 ---
-
-# Estimate
 
 A sub namespace of Document, exclusive for estimate operations
 

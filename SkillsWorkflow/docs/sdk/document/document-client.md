@@ -1,11 +1,9 @@
 ---
 id: client
-title: ""
+title: Client
 sidebar_label: Client
 
 ---
-
-# Client
 
 A sub namespace of Document, exclusive for client operations
 

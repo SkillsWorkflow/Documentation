@@ -4,8 +4,6 @@ title: Document
 sidebar_label: Document
 ---
 
-# Document
-
 With this namespace, you can quickly provide methods to manipulate documents.
 
 The namespace Document provides to developers, methods to easily create, update, retrieve document data.

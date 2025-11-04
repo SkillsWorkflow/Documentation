@@ -1,11 +1,9 @@
 ---
 id: user
-title: ""
+title: User
 sidebar_label: User
 
 ---
-
-# User
 
 A sub namespace of Document, exclusive for user operations
 

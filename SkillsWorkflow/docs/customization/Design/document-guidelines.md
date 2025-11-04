@@ -1,7 +1,7 @@
 ---
-id: document
+id: document-guidelines
 title: Document guidelines
-sidebar_label: Document
+sidebar_label: Document Guidelines
 sidebar_position: 4
 ---
 
@@ -9,7 +9,6 @@ sidebar_position: 4
 - Horizontal scroll should be available for popup when a collection of documents are available.
 - In line editing
 - Optional background image
-
 
 <figure>
 

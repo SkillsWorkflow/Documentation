@@ -1,11 +1,9 @@
 ---
 id: currentUser
-title: " "
+title: Current User
 sidebar_label: Current User
 
 ---
-
-# Current User
 
 A sub namespace of Document, exclusive for the current logged user operations
 

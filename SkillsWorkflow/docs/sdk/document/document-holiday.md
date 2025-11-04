@@ -1,11 +1,9 @@
 ---
 id: holiday
-title: " "
+title: Holiday
 sidebar_label: Holiday
 
 ---
-
-# Holiday
 
 A sub namespace of Document, exclusive for holiday operations
 
