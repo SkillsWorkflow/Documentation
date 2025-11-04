@@ -85,7 +85,7 @@ module.exports = {
     algolia: {
       appId: 'XB27C2B9IL',
       apiKey: '87094cef7d341d5684d9762da858c498', // chave pública
-      indexName: 'sw_documentation',
+      indexName: 'documentation_skillsworkflow_com_xb27c2b9il_pages',
       contextualSearch: true,
       searchPagePath: 'search'
     }
