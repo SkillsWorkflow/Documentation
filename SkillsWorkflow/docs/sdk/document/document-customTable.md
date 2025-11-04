@@ -1,11 +1,9 @@
 ---
 id: customTable
-title: " "
+title: Custom Table
 sidebar_label: Custom Table
 
 ---
-
-# Custom Table
 
 A sub namespace of Document, exclusive for the custom tables operations
 

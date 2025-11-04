@@ -1,10 +1,8 @@
 ---
 id: assignment
-title: " "
+title: Assignment
 sidebar_label: Assignment
 ---
-
-# Assignment
 
 A sub namespace of Document, exclusive for assignment operations
 

@@ -1,7 +1,7 @@
 ---
 id: document-guidelines
 title: Document guidelines
-sidebar_label: Document
+sidebar_label: Document Guidelines
 sidebar_position: 4
 ---
 

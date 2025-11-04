@@ -1,11 +1,8 @@
 ---
 id: sdk
 title: SDK
-
 sidebar_position: 0
 ---
-
-# SDK Documentation
 
 The Skills Workflow SDK provides a set of namespaces with utility functions accessible through the global `SW` object. These functions allow secure and controlled interaction with the platform, supporting integrations, customizations and automations within Custom Scripts or Automation Workflows.
 
