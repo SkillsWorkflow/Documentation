@@ -5,8 +5,6 @@ sidebar_label: Data Extraction API
 sidebar_position: 1
 ---
 
-# Data Extraction API
-
 ## Overview
 
 The Data Extraction API enables you to export data from Skills Workflow into external tools and systems—such as Excel, Power BI, or custom applications—by dynamically querying named data sets.

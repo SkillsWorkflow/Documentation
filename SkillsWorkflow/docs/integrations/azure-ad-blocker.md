@@ -4,8 +4,6 @@ title: Azure AD Blocker
 sidebar_label: Azure AD Blocker
 ---
 
-# Azure AD Blocker
-
 ## Azure Portal Configuration
 
 Using Microsoft Entra ID it is necessary to create a app registration to enable Integration authentication with AD allowing to update users:

@@ -5,8 +5,6 @@ sidebar_label: Integration API
 sidebar_position: 2
 ---
 
-# Integration API
-
 ## Overview
 
 The Integration API allows you to integrate documents and entities in Skills Workflow from external systems by linking them via an External ID. It is not intended for data extraction—use it to push or synchronize data (e.g. from financial systems, project-management tools, ERPs, attendance systems, etc.) into Skills Workflow.

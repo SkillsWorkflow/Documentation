@@ -4,8 +4,6 @@ title: Box
 sidebar_label: Box
 ---
 
-# Box Integration
-
 ## 1. Overview
 The **Box integration** allows automatic management of folders and files directly from the Skills Workflow platform, maintaining a synchronized hierarchy of clients, projects, and jobs with the organization’s Box environment.  
 The goal is to centralize document and file management within Skills Workflow while retaining Box’s collaboration and security features.

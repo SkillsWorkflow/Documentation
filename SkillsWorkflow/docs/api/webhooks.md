@@ -6,9 +6,6 @@ sidebar_position: 3
 ---
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-
-# Webhooks
-
 ## Overview
 
 Webhooks in Skills Workflow allow for seamless integration between the platform and external systems by triggering automated actions in response to specific events. When a configured event occurs (e.g., a field is updated or a document is created), the webhook sends a payload to a predefined destination, allowing you to keep systems in sync or trigger automated processes.
