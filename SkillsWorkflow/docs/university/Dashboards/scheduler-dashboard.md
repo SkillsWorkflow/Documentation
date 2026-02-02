@@ -17,52 +17,52 @@ The Scheduler module provides multiple scheduling views tailored to different pl
 ## Scheduler Feature Matrix
 
 **Legend:**  
-✅ Supported &nbsp;&nbsp; ❌ Not supported &nbsp;&nbsp; — Not applicable
+✔︎ Supported &nbsp;&nbsp; ✖︎ Not supported &nbsp;&nbsp; — Not applicable
 
 | Category | Feature | Team Scheduler | My Scheduler | Daily Scheduler |
 |--------|--------|---------------|--------------|-----------------|
-| **Recurrences** | View Recurrence | ✅ | ✅ | ✅ |
-|  | Create Recurrence | ✅ | ✅ | ❌ |
-|  | Occurrence Exceptions | ❌ | ❌ | ❌ |
-|  | Adjust Task Start / End | ✅ | ✅ | — |
-| **Resources** | Side-by-side View | ✅ | ❌ | ✅ |
-|  | Assign on Drag | ✅ | — | ✅ |
-|  | Unassign on Remove | ❌ | — | ✅ |
-|  | Name / Title / Department | ✅ | — | ✅ |
-|  | Shift / Location | ✅ | — | ❌ |
-|  | Role / Type | ✅ | — | ✅ |
-|  | Tags / Skills | ✅ | — | ❌ |
-|  | Filtering | ✅ | — | ✅ |
-| **Event Types** | Task (Workload) | ✅ | ✅ | ✅ |
-|  | Administrative | ✅ | ✅ | ❌ |
-|  | Leaves | ✅ | ✅ | ✅ |
-|  | Holidays | ✅ | ✅ | ✅ |
-| **Timeline View** | Daily / Weekly / Monthly Scale | ✅ | — | ✅ |
-|  | Show Task Bars | ❌ | — | ✅ |
-|  | Working Time | ✅ | — | ❌ |
-|  | Timezone Support | ✅ | — | ❌ |
-| **Calendar View** | Work Week / Week Scale | ✅ | ✅ | — |
-|  | Timezone Support | ✅ | — | ❌ |
-| **Tasks List** | Create Task | ✅ | ❌ | ✅ |
-|  | Client / Project / Deliverable | ✅ | ✅ | ✅ |
-|  | Brand / Product | ❌ | ❌ | ✅ |
-|  | Company / Department | ✅ | ✅ | ✅ |
-|  | Additional Information | ✅ | ✅ | ❌ |
-| **Workload / Task Card** | Title / Client / Project | ✅ | ✅ | ✅ |
-|  | Work Type | ✅ | — | ✅ |
-|  | Team | ✅ | ✅ | — |
-|  | Priority | ✅ | ✅ | ❌ |
-| **Popup Document Access** | Task | ✅ | ✅ | ✅ |
-|  | Deliverable | ✅ | ✅ | ❌ |
-|  | Project | ✅ | ✅ | ❌ |
-| **Indicators** | Capacity | ✅ | ✅ | ✅ |
-|  | Effort | ✅ | ✅ | ✅ |
-|  | Timesheet | ✅ | ✅ | ❌ |
-|  | Accumulated Workload | ✅ | — | ❌ |
-| **Coloring** | Project | ✅ | ❌ | ✅ |
-|  | Stage | ✅ | ✅ | ✅ |
-|  | User | ✅ | — | ❌ |
-| **Time Sheet** | Time Entry | — | ✅ | — |
+| **Recurrences** | View Recurrence | ✔︎ | ✔︎ | ✔︎ |
+|  | Create Recurrence | ✔︎ | ✔︎ | ✖︎ |
+|  | Occurrence Exceptions | ✖︎ | ✖︎ | ✖︎ |
+|  | Adjust Task Start / End | ✔︎ | ✔︎ | — |
+| **Resources** | Side-by-side View | ✔︎ | ✖︎ | ✔︎ |
+|  | Assign on Drag | ✔︎ | — | ✔︎ |
+|  | Unassign on Remove | ✖︎ | — | ✔︎ |
+|  | Name / Title / Department | ✔︎ | — | ✔︎ |
+|  | Shift / Location | ✔︎ | — | ✖︎ |
+|  | Role / Type | ✔︎ | — | ✔︎ |
+|  | Tags / Skills | ✔︎ | — | ✖︎ |
+|  | Filtering | ✔︎ | — | ✔︎ |
+| **Event Types** | Task (Workload) | ✔︎ | ✔︎ | ✔︎ |
+|  | Administrative | ✔︎ | ✔︎ | ✖︎ |
+|  | Leaves | ✔︎ | ✔︎ | ✔︎ |
+|  | Holidays | ✔︎ | ✔︎ | ✔︎ |
+| **Timeline View** | Daily / Weekly / Monthly Scale | ✔︎ | — | ✔︎ |
+|  | Show Task Bars | ✖︎ | — | ✔︎ |
+|  | Working Time | ✔︎ | — | ✖︎ |
+|  | Timezone Support | ✔︎ | — | ✖︎ |
+| **Calendar View** | Work Week / Week Scale | ✔︎ | ✔︎ | — |
+|  | Timezone Support | ✔︎ | — | ✖︎ |
+| **Tasks List** | Create Task | ✔︎ | ✖︎ | ✔︎ |
+|  | Client / Project / Deliverable | ✔︎ | ✔︎ | ✔︎ |
+|  | Brand / Product | ✖︎ | ✖︎ | ✔︎ |
+|  | Company / Department | ✔︎ | ✔︎ | ✔︎ |
+|  | Additional Information | ✔︎ | ✔︎ | ✖︎ |
+| **Workload / Task Card** | Title / Client / Project | ✔︎ | ✔︎ | ✔︎ |
+|  | Work Type | ✔︎ | — | ✔︎ |
+|  | Team | ✔︎ | ✔︎ | — |
+|  | Priority | ✔︎ | ✔︎ | ✖︎ |
+| **Popup Document Access** | Task | ✔︎ | ✔︎ | ✔︎ |
+|  | Deliverable | ✔︎ | ✔︎ | ✖︎ |
+|  | Project | ✔︎ | ✔︎ | ✖︎ |
+| **Indicators** | Capacity | ✔︎ | ✔︎ | ✔︎ |
+|  | Effort | ✔︎ | ✔︎ | ✔︎ |
+|  | Timesheet | ✔︎ | ✔︎ | ✖︎ |
+|  | Accumulated Workload | ✔︎ | — | ✖︎ |
+| **Coloring** | Project | ✔︎ | ✖︎ | ✔︎ |
+|  | Stage | ✔︎ | ✔︎ | ✔︎ |
+|  | User | ✔︎ | — | ✖︎ |
+| **Time Sheet** | Time Entry | — | ✔︎ | — |
 
 ---
 
