@@ -26,7 +26,9 @@ function loadLocalEnv() {
   }
 }
 
-loadLocalEnv();
+if (process.env.NODE_ENV !== 'production') {
+  loadLocalEnv();
+}
 const fontAwesomeKitId = process.env.FONTAWESOME_KIT_ID;
 
 module.exports = {
