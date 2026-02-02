@@ -1,8 +1,8 @@
 ---
 id: what-is-a-team
 title: What is a Team and what does each Group represent?
-sidebar_label: 10. What is a Team and what does each Group represent?
-sidebar_position: 10
+sidebar_label: 11. What is a Team and what does each Group represent?
+sidebar_position: 11
 ---
 
 - Each Project and Job has an assigned team

@@ -1,8 +1,8 @@
 ---
 id:  planned-hours
 title: Planned Hours
-sidebar_label: 7. Planned hours
-sidebar_position: 7
+sidebar_label: 8. Planned hours
+sidebar_position: 8
 ---
 
 After creating your Project, you can start planning the amount of time that each resource will spend on this Project.
