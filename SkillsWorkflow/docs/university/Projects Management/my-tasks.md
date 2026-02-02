@@ -1,8 +1,8 @@
 ---
 id:  my-tasks
 title: My Tasks
-sidebar_label: 8. My Tasks
-sidebar_position: 8
+sidebar_label: 9. My Tasks
+sidebar_position: 9
 ---
 
 ### In Skills Workflow you can create tasks for yourself (if configured at your company).
@@ -122,4 +122,3 @@ You can add a list of smaller items inside your task in the form of a checklist.
 ![img-box-shadow](/img/university/project-management/project-management-lesson8-7.png)
 <figcaption></figcaption>
 </figure>
-

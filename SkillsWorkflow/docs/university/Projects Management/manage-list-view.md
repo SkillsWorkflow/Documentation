@@ -1,8 +1,8 @@
 ---
 id:  list-view
 title: Manage List View
-sidebar_label: 5. Manage your List View
-sidebar_position: 5
+sidebar_label: 6. Manage your List View
+sidebar_position: 6
 ---
 
 ### In order for you to find what you are looking for in Skills Workflow, there is a menu on your left organized with different modules.

@@ -63,7 +63,7 @@ To activate one or more properties of the the new menu, the Show new menu button
 function onShowing(menus) {
   let obj = menus.find((a) => a.id == "Contracts");
   if (obj) {
-    obj.icon = "far fa-calendar-alt";
+    obj.icon = "fas fa-calendar-alt";
   }
   return menus;
 }
