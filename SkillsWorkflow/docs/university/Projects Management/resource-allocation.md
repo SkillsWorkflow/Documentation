@@ -37,6 +37,7 @@ The Resource Allocation module provides multiple scheduling views tailored to di
 |  | Administrative | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-times"></i> |
 |  | Leaves | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
 |  | Holidays | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> |
+|  | Reservations | <i class="fas fa-times"></i> | <i class="fas fa-times"></i> | <i class="fas fa-check"></i> |
 | **Timeline View** | Daily / Weekly / Monthly Scale | <i class="fas fa-check"></i> | <i class="fas fa-minus"></i> | <i class="fas fa-check"></i> |
 |  | Show Task Bars | <i class="fas fa-times"></i> | <i class="fas fa-minus"></i> | <i class="fas fa-check"></i> |
 |  | Working Time | <i class="fas fa-check"></i> | <i class="fas fa-minus"></i> | <i class="fas fa-times"></i> |
