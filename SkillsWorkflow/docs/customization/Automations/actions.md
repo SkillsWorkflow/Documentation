@@ -646,6 +646,225 @@ To configure this action, there are parameters that can be set:
 
 ---
 
+## CSVMap
+
+The CSVMap action converts CSV (Comma-Separated Values) data into a JSON array. This is useful when external APIs return responses as CSV files or strings that need to be processed as JSON objects.
+
+#### Configuration
+
+To configure this action, the following parameters need to be set:
+
+* **data** - The CSV string content to be parsed (can use interpolation e.g., `{{['csvResponse']}}`)
+* **namesInFirstRow** - Boolean indicating if the first row contains column headers. If false, columns are auto-named as Field1, Field2, etc.
+* **delimiter** (optional) - The delimiter character. Defaults to comma (,)
+* **selectColumns** (optional) - Array of column names to include in the output. Ignored when namesInFirstRow is false
+* **next** - The next action to be executed after CSV parsing is complete
+* **ignoreSaveToContext** (optional) - If true, result is not saved to context
+
+```json title="Template"
+{
+  "actionType": "CSVMap",
+  "name": "MapCSV",
+  "next": "Exit",
+  "data": "{{['CSVData']}}",
+  "delimiter": ";",
+  "namesInFirstRow": true,
+  "selectColumns": [
+    "Nome do funcionário",
+    "ID do funcionário",
+    "Entrada 1",
+    "Saída 1"
+  ]
+}
+```
+
+#### Template Description
+
+* **actionType** - The action type is CSVMap
+* **name** - The action name is custom
+* **next** - The next action to be executed after CSV parsing is complete
+* **data** - The CSV string content to parse (can reference previous action results)
+* **namesInFirstRow** - Boolean (required). If true, the first row contains column headers. If false, columns are auto-named as Field1, Field2, etc.
+* **delimiter** - Optional. The delimiter character for separating values (default: ","). Other common delimiters: "\t" (tab), ";" (semicolon)
+* **selectColumns** - Optional. Array of column names to filter and include in the result (only available when namesInFirstRow is true). Case-insensitive matching
+* **ignoreSaveToContext** - Optional. If true, result is not saved to context
+
+#### Output Format
+
+The CSVMap action converts CSV rows into a JSON array of objects.
+
+##### With Headers (namesInFirstRow: true)
+
+Input CSV data:
+
+```csv
+Name,Age,City
+John,30,NewYork
+Jane,25,London
+```
+
+Output:
+
+```json title="Output"
+[
+  {"Name":"John","Age":"30","City":"NewYork"},
+  {"Name":"Jane","Age":"25","City":"London"}
+]
+```
+
+##### Without Headers (namesInFirstRow: false)
+
+When no headers are present, columns are automatically named as Field1, Field2, Field3, etc.
+
+Input CSV data:
+
+```csv
+John,30,NewYork
+Jane,25,London
+```
+
+Output:
+
+```json title="Output"
+[
+  {"Field1":"John","Field2":"30","Field3":"NewYork"},
+  {"Field1":"Jane","Field2":"25","Field3":"London"}
+]
+```
+
+#### Usage Examples
+
+##### Example 1: Header Row with Column Selection
+
+Input CSV data (semicolon-delimited):
+
+```csv
+Nome do funcionário;ID do funcionário;Departamento;Entrada 1;Saída 1;Entrada 2;Saída 2
+John Doe;12345;Engineering;09:00;12:00;13:00;18:00
+Jane Smith;67890;Marketing;08:30;12:30;13:30;17:30
+```
+
+Configuration:
+
+```json title="Example"
+{
+  "actionType": "CSVMap",
+  "name": "ParseTimesheet",
+  "next": "ProcessData",
+  "data": "{{['DownloadFile']}}",
+  "delimiter": ";",
+  "namesInFirstRow": true,
+  "selectColumns": [
+    "Nome do funcionário",
+    "ID do funcionário",
+    "Entrada 1",
+    "Saída 1"
+  ]
+}
+```
+
+Result (accessed via `{{['ParseTimesheet']$.Content}}`):
+
+```json title="Output"
+[
+  {
+    "Nome do funcionário": "John Doe",
+    "ID do funcionário": "12345",
+    "Entrada 1": "09:00",
+    "Saída 1": "12:00"
+  },
+  {
+    "Nome do funcionário": "Jane Smith",
+    "ID do funcionário": "67890",
+    "Entrada 1": "08:30",
+    "Saída 1": "12:30"
+  }
+]
+```
+
+##### Example 2: Header Row with All Columns
+
+If `selectColumns` is not specified, all columns will be included:
+
+```json title="Example"
+{
+  "actionType": "CSVMap",
+  "name": "ParseAllColumns",
+  "next": "ProcessData",
+  "data": "Name,Email,Department\nJohn Doe,john@example.com,Engineering\nJane Smith,jane@example.com,Marketing",
+  "namesInFirstRow": true,
+  "delimiter": ","
+}
+```
+
+Result:
+
+```json title="Output"
+[
+  {
+    "Name": "John Doe",
+    "Email": "john@example.com",
+    "Department": "Engineering"
+  },
+  {
+    "Name": "Jane Smith",
+    "Email": "jane@example.com",
+    "Department": "Marketing"
+  }
+]
+```
+
+##### Example 3: Without Header Row (Auto-naming)
+
+When CSV data doesn't have headers, column names are automatically generated as Field1, Field2, Field3, etc.
+
+Input CSV data:
+
+```csv
+John Doe,john@example.com,Engineering
+Jane Smith,jane@example.com,Marketing
+```
+
+Configuration:
+
+```json title="Example"
+{
+  "actionType": "CSVMap",
+  "name": "ParseNoHeaders",
+  "next": "ProcessData",
+  "data": "{{['CSVData']}}",
+  "namesInFirstRow": false,
+  "delimiter": ","
+}
+```
+
+Result (auto-named columns):
+
+```json title="Output"
+[
+  {
+    "Field1": "John Doe",
+    "Field2": "john@example.com",
+    "Field3": "Engineering"
+  },
+  {
+    "Field1": "Jane Smith",
+    "Field2": "jane@example.com",
+    "Field3": "Marketing"
+  }
+]
+```
+
+
+#### Logging
+
+The action logs:
+* Number of records being processed
+* Selected columns (when column filter is applied)
+* Auto-generated column names (when no headers present)
+
+---
+
 ## Loop
 
 The Loop action allows you to trigger a Sub-Workflow.
