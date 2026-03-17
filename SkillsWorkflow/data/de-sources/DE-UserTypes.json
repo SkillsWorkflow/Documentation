@@ -1,0 +1,1 @@
+{"Id":"ed4067c7-2ef7-42f8-985d-f58f0a610b6e","Name":"DE-UserTypes","Number":1,"Description":"Extracts the user types.","Statement":"select  ust.Oid as UserTypeId,\n        ust.Name as UserType\nfrom    UserType ust","Category":"Data Extraction","Version":1,"Parameters":{},"Module":"","IsSystem":false}

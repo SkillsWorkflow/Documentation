@@ -1,0 +1,702 @@
+[
+  {
+    "name": "DE-Bills",
+    "description": "Extracts data for bills.",
+    "parameters": [],
+    "columnCount": 54,
+    "tableCount": 19,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Leaves",
+    "description": "#Description\nContains documents with information about vacations from employees\n#Fields\n- CompanyId: unique identifier for the company (?string)\n- Company: name of the company (?string)\n- LeaveId: unique identifier for the leave (?string)\n- LeaveTypeId: unique identifier for the leave type (?string)\n- LeaveType: type of leave (?string - can be: 'Sick Leave', 'Vacation', 'Compensation')\n- UserId: unique identifier for the user (?string)\n- User: name of the user (?string)\n- Day: the date of the leave (?string, format yyyy-mm-ddTHH:MM:SS)\n- IsHalfDay: indicates if the leave is for half a day (bool)\n- Hours: leave duration in hours (int)\n- LeaveTypeYear: the year of the leave type (integer)\n- LeaveTypeExpiresOn: the date when the leave type expires (?string, format yyyy-mm-ddTHH:MM:SS)\n- ModifiedOn: date and time when the leave was last modified (?string, format yyyy-mm-ddTHH:MM:SS.SSS)\n- RequestedApproval: indicates if the leave was requested for approval (bool)\n- Status: status of the leave (?string - can be: 'New', 'Approved', 'Rejected')\n#Rules\n- If the user doesn't mention the year or month, assume the present.\n- If the user asks about a specific user, filter by the 'User' field.\n- If the user asks about a specific leave type, filter by the 'LeaveType' field.\n- If the user asks about a specific company, filter by the 'Company' field.\n- If the user asks about half-day leaves, filter by the 'IsHalfDay' field.\n- If the user asks about leaves within a specific date range, filter by the 'Day' field using >= and <= operators.\n- If the user doesn't specify a status, include all statuses.",
+    "parameters": [],
+    "columnCount": 17,
+    "tableCount": 8,
+    "version": 7,
+    "category": "Data Extraction",
+    "isSystem": true
+  },
+  {
+    "name": "DE-Assignments",
+    "description": "Extracts the teams of users associated with each document.",
+    "parameters": [],
+    "columnCount": 10,
+    "tableCount": 4,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Attendances",
+    "description": "Extracts data on attendances.",
+    "parameters": [],
+    "columnCount": 16,
+    "tableCount": 3,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Brands",
+    "description": "Extracts the list of brands.",
+    "parameters": [],
+    "columnCount": 5,
+    "tableCount": 2,
+    "version": 4,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-BusinessObjectTypes",
+    "description": "Extracts business object types.",
+    "parameters": [],
+    "columnCount": 6,
+    "tableCount": 2,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Cities",
+    "description": "Extracts all cities.",
+    "parameters": [],
+    "columnCount": 4,
+    "tableCount": 2,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Clients",
+    "description": "Extracts the list of clients.",
+    "parameters": [],
+    "columnCount": 30,
+    "tableCount": 6,
+    "version": 11,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ClientsCompanies",
+    "description": "Extracts the information about what companies have access to what clients.",
+    "parameters": [],
+    "columnCount": 4,
+    "tableCount": 3,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Comments",
+    "description": "Extracts comments from the feed.",
+    "parameters": [],
+    "columnCount": 13,
+    "tableCount": 2,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-CommentsReplies",
+    "description": "Extracts replies of comments.",
+    "parameters": [],
+    "columnCount": 12,
+    "tableCount": 3,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Companies",
+    "description": "Extracts the list of companies.",
+    "parameters": [],
+    "columnCount": 25,
+    "tableCount": 5,
+    "version": 5,
+    "category": "Data Extraction",
+    "isSystem": true
+  },
+  {
+    "name": "DE-CompaniesAdditionalInformation",
+    "description": "Extracts the custom fields associated with the companies.",
+    "parameters": [],
+    "columnCount": 3,
+    "tableCount": 2,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Contracts",
+    "description": "Extracts contracts information.",
+    "parameters": [],
+    "columnCount": 0,
+    "tableCount": 0,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Countries",
+    "description": "Extracts the list of countries.",
+    "parameters": [],
+    "columnCount": 2,
+    "tableCount": 1,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Currencies",
+    "description": "Extracts the list of currencies.",
+    "parameters": [],
+    "columnCount": 5,
+    "tableCount": 1,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Departments",
+    "description": "Extracts the list of departments.",
+    "parameters": [],
+    "columnCount": 7,
+    "tableCount": 3,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Descriptions",
+    "description": "Extracts the different versions of the descriptions of documents.",
+    "parameters": [],
+    "columnCount": 12,
+    "tableCount": 2,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Divisions",
+    "description": "Extracts the list of divisions.",
+    "parameters": [],
+    "columnCount": 4,
+    "tableCount": 2,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Employees",
+    "description": "Extracts employees.",
+    "parameters": [],
+    "columnCount": 9,
+    "tableCount": 3,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "EstimatedPlannedActualMonthly",
+    "description": "System generic extraction of estimated, planned and actual, per currency, including time, costs, income, profit.",
+    "parameters": [],
+    "columnCount": 45,
+    "tableCount": 12,
+    "version": 1,
+    "category": "Scheduler",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Estimates",
+    "description": "Extracts the list of estimates.",
+    "parameters": [],
+    "columnCount": 0,
+    "tableCount": 0,
+    "version": 11,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-EstimatesBillingConditions",
+    "description": "",
+    "parameters": [],
+    "columnCount": 21,
+    "tableCount": 6,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-EstimatesCount",
+    "description": "Gets the count of estimates for the given filters.",
+    "parameters": [],
+    "columnCount": 1,
+    "tableCount": 3,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-EstimatesQuotes",
+    "description": "Extracts the estimate details.",
+    "parameters": [],
+    "columnCount": 62,
+    "tableCount": 19,
+    "version": 8,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-EstimatesQuotesCount",
+    "description": "Counts the occurrences of quotes.",
+    "parameters": [],
+    "columnCount": 1,
+    "tableCount": 18,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-EstimatesQuotesMonthCount",
+    "description": "Gets the count of estimate quotes for the given filters.",
+    "parameters": [],
+    "columnCount": 0,
+    "tableCount": 0,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ExpenseSheets",
+    "description": "Extracts expense sheets for integration purposes.",
+    "parameters": [],
+    "columnCount": 22,
+    "tableCount": 4,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ExpenseType",
+    "description": "Extracts expense items types.",
+    "parameters": [],
+    "columnCount": 15,
+    "tableCount": 5,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Expenses",
+    "description": "Extracts expenses for integration purposes.",
+    "parameters": [],
+    "columnCount": 20,
+    "tableCount": 7,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-History",
+    "description": "Extract history of documents.",
+    "parameters": [],
+    "columnCount": 17,
+    "tableCount": 4,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Holidays",
+    "description": "Extracts the list of holidays.",
+    "parameters": [],
+    "columnCount": 6,
+    "tableCount": 2,
+    "version": 4,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Jobs",
+    "description": "Extracts the list of jobs.",
+    "parameters": [],
+    "columnCount": 44,
+    "tableCount": 15,
+    "version": 16,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-JobsCount",
+    "description": "Gets the count of jobs for the given filters.",
+    "parameters": [],
+    "columnCount": 1,
+    "tableCount": 4,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-LeavesCount",
+    "description": "",
+    "parameters": [],
+    "columnCount": 1,
+    "tableCount": 1,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-LeavesDeleted",
+    "description": "Extracts deleted leaves using the parameter ModifiedFrom to filter data on the ModifiedOn field.",
+    "parameters": [],
+    "columnCount": 2,
+    "tableCount": 1,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-LeavesDeletedCount",
+    "description": "Gets the count of deleted leaves for the filters provided.",
+    "parameters": [],
+    "columnCount": 1,
+    "tableCount": 1,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Products",
+    "description": "Extracts the list of products.",
+    "parameters": [],
+    "columnCount": 7,
+    "tableCount": 3,
+    "version": 6,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Projects",
+    "description": "Extracts a list of projects.",
+    "parameters": [],
+    "columnCount": 53,
+    "tableCount": 19,
+    "version": 14,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ProjectsClassifications",
+    "description": "Extract project classifications.",
+    "parameters": [],
+    "columnCount": 9,
+    "tableCount": 2,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ProjectsCount",
+    "description": "Gets the count of projects for the provided filters.",
+    "parameters": [],
+    "columnCount": 0,
+    "tableCount": 0,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ProjectsAdditionalInformation",
+    "description": "Extracts additional information from projects.",
+    "parameters": [],
+    "columnCount": 4,
+    "tableCount": 2,
+    "version": 4,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ProjectsPlannedTime",
+    "description": "Extract projects.",
+    "parameters": [],
+    "columnCount": 27,
+    "tableCount": 17,
+    "version": 6,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ProjectsPlannedTimeCount",
+    "description": "Gets the count of projects planned time for the provided filters.",
+    "parameters": [],
+    "columnCount": 0,
+    "tableCount": 0,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-ProjectsTypes",
+    "description": "Extract projects types.",
+    "parameters": [],
+    "columnCount": 11,
+    "tableCount": 3,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-PurchaseOrders",
+    "description": "Extracts purchase orders data from the system.",
+    "parameters": [],
+    "columnCount": 49,
+    "tableCount": 21,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-RateCardsColumns",
+    "description": "Extraction of rate cards' columns.",
+    "parameters": [],
+    "columnCount": 20,
+    "tableCount": 9,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Requests",
+    "description": "Extracts requests data.",
+    "parameters": [],
+    "columnCount": 51,
+    "tableCount": 26,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Services",
+    "description": "Extracts the existing services.",
+    "parameters": [],
+    "columnCount": 16,
+    "tableCount": 3,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": true
+  },
+  {
+    "name": "DE-ServicesGroups",
+    "description": "Extracts the services groups.",
+    "parameters": [],
+    "columnCount": 6,
+    "tableCount": 2,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": true
+  },
+  {
+    "name": "DE-Stages",
+    "description": "Extracts the list of stages of the workflows.",
+    "parameters": [],
+    "columnCount": 4,
+    "tableCount": 2,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Suppliers",
+    "description": "Extracts suppliers for integration purposes.",
+    "parameters": [],
+    "columnCount": 37,
+    "tableCount": 13,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Taxes",
+    "description": "Extracts information about taxes.",
+    "parameters": [],
+    "columnCount": 9,
+    "tableCount": 2,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-TimeSheets",
+    "description": "Extracts the time entered in time sheets.",
+    "parameters": [],
+    "columnCount": 38,
+    "tableCount": 15,
+    "version": 19,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-TimeSheetsCount",
+    "description": "Gets the count of time sheets for the filters provided.",
+    "parameters": [],
+    "columnCount": 0,
+    "tableCount": 0,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-TimeSheetsDeleted",
+    "description": "Extracts time sheets that have been deleted.",
+    "parameters": [],
+    "columnCount": 2,
+    "tableCount": 1,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-TimeSheetsDeletedCount",
+    "description": "Gets the count of deleted time sheet for the provided filters.",
+    "parameters": [],
+    "columnCount": 1,
+    "tableCount": 1,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Transitions",
+    "description": "Extracts the list of existing transitions.",
+    "parameters": [],
+    "columnCount": 27,
+    "tableCount": 11,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Types",
+    "description": "Extracts job types.",
+    "parameters": [],
+    "columnCount": 39,
+    "tableCount": 12,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Typologies",
+    "description": "Extracts the list of typologies of users.",
+    "parameters": [],
+    "columnCount": 15,
+    "tableCount": 5,
+    "version": 4,
+    "category": "Data Extraction",
+    "isSystem": true
+  },
+  {
+    "name": "DE-TypologyGroups",
+    "description": "Extracts user typology groups of user typologies.",
+    "parameters": [],
+    "columnCount": 4,
+    "tableCount": 2,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-TypologyGroupsCompanies",
+    "description": "Extracts typology grous associated to companies",
+    "parameters": [],
+    "columnCount": 5,
+    "tableCount": 3,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-TypologyGroupsDepartments",
+    "description": "Extracts typology groups associated to departments.",
+    "parameters": [],
+    "columnCount": 5,
+    "tableCount": 3,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": true
+  },
+  {
+    "name": "DE-UserCosts",
+    "description": "Extracts cost of users.",
+    "parameters": [],
+    "columnCount": 12,
+    "tableCount": 4,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-UserTypes",
+    "description": "Extracts the user types.",
+    "parameters": [],
+    "columnCount": 2,
+    "tableCount": 1,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Users",
+    "description": "Extracts the list of users.",
+    "parameters": [],
+    "columnCount": 30,
+    "tableCount": 9,
+    "version": 14,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-UsersAdditionalInformation",
+    "description": "",
+    "parameters": [],
+    "columnCount": 3,
+    "tableCount": 2,
+    "version": 2,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-WorkTypes",
+    "description": "Extracts the work types list.",
+    "parameters": [],
+    "columnCount": 4,
+    "tableCount": 2,
+    "version": 4,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Workloads",
+    "description": "Extracts data from Workloads.",
+    "parameters": [],
+    "columnCount": 13,
+    "tableCount": 7,
+    "version": 1,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-EstimatesQuotesMonth",
+    "description": "Extracts all data from estimates.",
+    "parameters": [],
+    "columnCount": 32,
+    "tableCount": 15,
+    "version": 11,
+    "category": "Data Extraction",
+    "isSystem": false
+  }
+]

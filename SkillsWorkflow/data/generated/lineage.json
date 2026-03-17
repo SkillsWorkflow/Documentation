@@ -1,0 +1,7618 @@
+{
+  "DE-Bills": {
+    "tables": [
+      {
+        "name": "Bill",
+        "alias": "doc",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Client",
+        "alias": "bcl",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ClientGroup",
+        "alias": "clg",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mod",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "PaymentCondition",
+        "alias": "pcn",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "DocumentType",
+        "alias": "dt",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserFavorite",
+        "alias": "uf",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Project",
+        "alias": "prj",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Contract",
+        "alias": "cnt",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Estimate",
+        "alias": "est",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Department",
+        "alias": "dep",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "BaseObjectRead",
+        "alias": "bor",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "cut",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Oid",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "BillId",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Bill",
+        "sourceTable": "doc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "BillNumber",
+        "sourceTable": "doc",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "Due",
+        "sourceTable": "doc",
+        "sourceColumn": "Due"
+      },
+      {
+        "alias": "Date",
+        "sourceTable": "doc",
+        "sourceColumn": "Date"
+      },
+      {
+        "alias": "ManagementDate",
+        "sourceTable": "doc",
+        "sourceColumn": "ManagementDate"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "com",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ClientGroup",
+        "sourceTable": "clg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ClientHasImage",
+        "sourceTable": "cli",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "BillingClient",
+        "sourceTable": "bcl",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "doc",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "cre",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "doc",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "ModifiedBy",
+        "sourceTable": "mod",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "mod",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedByHasImage",
+        "sourceTable": "mod",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": "prj",
+        "sourceColumn": "NameAndExternalId"
+      },
+      {
+        "alias": "ContractId",
+        "sourceTable": "cnt",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Contract",
+        "sourceTable": "cnt",
+        "sourceColumn": "NameAndExternalId"
+      },
+      {
+        "alias": "EstimateId",
+        "sourceTable": "est",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Estimate",
+        "sourceTable": "est",
+        "sourceColumn": "NumberAndName"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cur",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CurrencyIsoCode",
+        "sourceTable": "cur",
+        "sourceColumn": "IsoCode"
+      },
+      {
+        "alias": "CurrencySymbol",
+        "sourceTable": "cur",
+        "sourceColumn": "Symbol"
+      },
+      {
+        "alias": "PaymentCondition",
+        "sourceTable": "pcn",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "YourReference",
+        "sourceTable": "doc",
+        "sourceColumn": "YourReference"
+      },
+      {
+        "alias": "ValueWithoutVat",
+        "sourceTable": "doc",
+        "sourceColumn": "ValueWithoutVat"
+      },
+      {
+        "alias": "VatValue",
+        "sourceTable": "doc",
+        "sourceColumn": "VatValue"
+      },
+      {
+        "alias": "ValueWithVat",
+        "sourceTable": "doc",
+        "sourceColumn": "ValueWithVat"
+      },
+      {
+        "alias": "External",
+        "sourceTable": "doc",
+        "sourceColumn": "External"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "doc",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "ExternalError",
+        "sourceTable": "doc",
+        "sourceColumn": "ExternalError"
+      },
+      {
+        "alias": "Paid",
+        "sourceTable": "doc",
+        "sourceColumn": "Paid"
+      },
+      {
+        "alias": "PaidValue",
+        "sourceTable": "doc",
+        "sourceColumn": "PaidValue"
+      },
+      {
+        "alias": "Remarks",
+        "sourceTable": "doc",
+        "sourceColumn": "Remarks"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": "wfs",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageColor",
+        "sourceTable": "wfs",
+        "sourceColumn": "Color"
+      },
+      {
+        "alias": "StateType",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageType",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "AlreadyRead",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserInTeam",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "BaseObjectReadId",
+        "sourceTable": "bor",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "FavoriteId",
+        "sourceTable": "uf",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "IsFavorite",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.Bill"
+    ]
+  },
+  "DE-Leaves": {
+    "tables": [
+      {
+        "name": "UserVacation",
+        "alias": "lev",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserInfoVacation",
+        "alias": "uiv",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserVacationType",
+        "alias": "lvt",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usl",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "User",
+        "alias": "usr",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "apr",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "apr",
+        "alias": "hra",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "LeaveId",
+        "sourceTable": "lev",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "LeaveTypeId",
+        "sourceTable": "lvt",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "LeaveType",
+        "sourceTable": "lvt",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserId",
+        "sourceTable": "usl",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usl",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Day",
+        "sourceTable": "lev",
+        "sourceColumn": "Day"
+      },
+      {
+        "alias": "IsHalfDay",
+        "sourceTable": "lev",
+        "sourceColumn": "HalfDay"
+      },
+      {
+        "alias": "Hours",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "LeaveTypeYear",
+        "sourceTable": "uiv",
+        "sourceColumn": "Year"
+      },
+      {
+        "alias": "LeaveTypeExpiresOn",
+        "sourceTable": "uiv",
+        "sourceColumn": "ExpirationDate"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "lev",
+        "sourceColumn": "ModifiedOn"
+      },
+      {
+        "alias": "RequestedApproval",
+        "sourceTable": "lev",
+        "sourceColumn": "RequestedApproval"
+      },
+      {
+        "alias": "Status",
+        "sourceTable": null,
+        "sourceColumn": "CASE(...)"
+      },
+      {
+        "alias": "Approvers",
+        "sourceTable": "apr",
+        "sourceColumn": "Approvers"
+      },
+      {
+        "alias": "HRApprovers",
+        "sourceTable": "hra",
+        "sourceColumn": "Approvers"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Assignments": {
+    "tables": [
+      {
+        "name": "Assignment",
+        "alias": "ass",
+        "joinType": "FROM"
+      },
+      {
+        "name": "AssignmentType",
+        "alias": "ast",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usr",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mod",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentId",
+        "sourceTable": "ass",
+        "sourceColumn": "DocumentOid"
+      },
+      {
+        "alias": "DocumentType",
+        "sourceTable": null,
+        "sourceColumn": "right(...)"
+      },
+      {
+        "alias": "DocumentSubType",
+        "sourceTable": "ass",
+        "sourceColumn": "BusinessObjectTypeName"
+      },
+      {
+        "alias": "TeamId",
+        "sourceTable": "ast",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Team",
+        "sourceTable": "ast",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserId",
+        "sourceTable": "usr",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "ass",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "mod",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedBy",
+        "sourceTable": "mod",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Attendances": {
+    "tables": [
+      {
+        "name": "Attendance",
+        "alias": "atc",
+        "joinType": "FROM"
+      },
+      {
+        "name": "AttendanceDetail",
+        "alias": "atd",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usl",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Day",
+        "sourceTable": null,
+        "sourceColumn": "Day"
+      },
+      {
+        "alias": "UserId",
+        "sourceTable": "usl",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usl",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Hours",
+        "sourceTable": null,
+        "sourceColumn": "Hours"
+      },
+      {
+        "alias": "Minutes",
+        "sourceTable": null,
+        "sourceColumn": "Minutes"
+      },
+      {
+        "alias": "OffSetTotalMinutes",
+        "sourceTable": null,
+        "sourceColumn": "OffSetTotalMinutes"
+      },
+      {
+        "alias": "TardinessTotalMinutes",
+        "sourceTable": null,
+        "sourceColumn": "TardinessTotalMinutes"
+      },
+      {
+        "alias": "BreakTotalMinutes",
+        "sourceTable": null,
+        "sourceColumn": "BreakTotalMinutes"
+      },
+      {
+        "alias": "HomeOffice",
+        "sourceTable": null,
+        "sourceColumn": "HomeOffice"
+      },
+      {
+        "alias": "HalfDay",
+        "sourceTable": null,
+        "sourceColumn": "HalfDay"
+      },
+      {
+        "alias": "Time",
+        "sourceTable": null,
+        "sourceColumn": "Time"
+      },
+      {
+        "alias": "Type",
+        "sourceTable": null,
+        "sourceColumn": "Type"
+      },
+      {
+        "alias": "AdjustedTime",
+        "sourceTable": null,
+        "sourceColumn": "AdjustedTime"
+      },
+      {
+        "alias": "Motive",
+        "sourceTable": null,
+        "sourceColumn": "Motive"
+      },
+      {
+        "alias": "Offset",
+        "sourceTable": null,
+        "sourceColumn": "Offset"
+      },
+      {
+        "alias": "OffsetMinutes",
+        "sourceTable": null,
+        "sourceColumn": "OffsetMinutes"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Brands": {
+    "tables": [
+      {
+        "name": "Brand",
+        "alias": "brd",
+        "joinType": "FROM"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cli",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "BrandId",
+        "sourceTable": "brd",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Brand",
+        "sourceTable": "brd",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "brd",
+        "sourceColumn": "ModifiedOn"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-BusinessObjectTypes": {
+    "tables": [
+      {
+        "name": "BusinessObjectType",
+        "alias": "bot",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Document",
+        "alias": "doc",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "BusinessObjectTypeId",
+        "sourceTable": "bot",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "BusinessObjectType",
+        "sourceTable": "bot",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Default",
+        "sourceTable": "bot",
+        "sourceColumn": "Default"
+      },
+      {
+        "alias": "Document",
+        "sourceTable": "doc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DocumentId",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "HasConfiguration",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Cities": {
+    "tables": [
+      {
+        "name": "City",
+        "alias": "cit",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Country",
+        "alias": "con",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CityId",
+        "sourceTable": "cit",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "City",
+        "sourceTable": "cit",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CountryId",
+        "sourceTable": "con",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Country",
+        "sourceTable": "con",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Clients": {
+    "tables": [
+      {
+        "name": "CommercialClient",
+        "alias": "cli",
+        "joinType": "FROM"
+      },
+      {
+        "name": "ClientGroup",
+        "alias": "clg",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mng",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "own",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "cli",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "cli",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "Code",
+        "sourceTable": "cli",
+        "sourceColumn": "Code"
+      },
+      {
+        "alias": "Email",
+        "sourceTable": "cli",
+        "sourceColumn": "Email"
+      },
+      {
+        "alias": "Phone",
+        "sourceTable": "cli",
+        "sourceColumn": "Phone"
+      },
+      {
+        "alias": "HeadOffice",
+        "sourceTable": "cli",
+        "sourceColumn": "HeadOffice"
+      },
+      {
+        "alias": "Street",
+        "sourceTable": "cli",
+        "sourceColumn": "Street"
+      },
+      {
+        "alias": "Street2",
+        "sourceTable": "cli",
+        "sourceColumn": "Street2"
+      },
+      {
+        "alias": "Location",
+        "sourceTable": "cli",
+        "sourceColumn": "City"
+      },
+      {
+        "alias": "CreatedOn",
+        "sourceTable": "cli",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "cli",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "AllowsTimesheet",
+        "sourceTable": "cli",
+        "sourceColumn": "AllowsTimesheet"
+      },
+      {
+        "alias": "ClientGroupId",
+        "sourceTable": "clg",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ClientGroup",
+        "sourceTable": "clg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "TaxPayerNumber",
+        "sourceTable": "cli",
+        "sourceColumn": "TaxPayerNumber"
+      },
+      {
+        "alias": "Margin",
+        "sourceTable": "cli",
+        "sourceColumn": "Margin"
+      },
+      {
+        "alias": "FullTimeEmployeeTime",
+        "sourceTable": "cli",
+        "sourceColumn": "FullTimeEmployeeTime"
+      },
+      {
+        "alias": "SupplierMargin",
+        "sourceTable": "cli",
+        "sourceColumn": "SupplierMargin"
+      },
+      {
+        "alias": "StageId",
+        "sourceTable": "wfs",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": "wfs",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageTypeId",
+        "sourceTable": "wst",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "StageType",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ManagerId",
+        "sourceTable": "mng",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ManagerName",
+        "sourceTable": "mng",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ManagerHasImage",
+        "sourceTable": "mng",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "OwnerId",
+        "sourceTable": "own",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "OwnerName",
+        "sourceTable": "own",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "OwnerHasImage",
+        "sourceTable": "own",
+        "sourceColumn": "HasImage"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.CommercialClient"
+    ]
+  },
+  "DE-ClientsCompanies": {
+    "tables": [
+      {
+        "name": "CommercialClient",
+        "alias": "cli",
+        "joinType": "FROM"
+      },
+      {
+        "name": "CommercialClientCompany",
+        "alias": "ccc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Comments": {
+    "tables": [
+      {
+        "name": "Post",
+        "alias": "cmt",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CommentsId",
+        "sourceTable": null,
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "DocumentType",
+        "sourceTable": null,
+        "sourceColumn": "DocumentTypeName"
+      },
+      {
+        "alias": "DocumentId",
+        "sourceTable": null,
+        "sourceColumn": "DocumentOid"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "cre",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": null,
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": null,
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "Text",
+        "sourceTable": null,
+        "sourceColumn": "Text"
+      },
+      {
+        "alias": "IsVisibleToClient",
+        "sourceTable": null,
+        "sourceColumn": "IsVisibleToClient"
+      },
+      {
+        "alias": "Actions",
+        "sourceTable": null,
+        "sourceColumn": "ActionsJson"
+      },
+      {
+        "alias": "Reactions",
+        "sourceTable": null,
+        "sourceColumn": "ReactionsJson"
+      },
+      {
+        "alias": "HasReplies",
+        "sourceTable": null,
+        "sourceColumn": "HasComments"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-CommentsReplies": {
+    "tables": [
+      {
+        "name": "PostComment",
+        "alias": "rpl",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Post",
+        "alias": "cmt",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ReplyId",
+        "sourceTable": "rpl",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CommentsId",
+        "sourceTable": "cmt",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "DocumentId",
+        "sourceTable": "cmt",
+        "sourceColumn": "DocumentOid"
+      },
+      {
+        "alias": "DocumentType",
+        "sourceTable": "cmt",
+        "sourceColumn": "DocumentTypeName"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "cre",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "Text",
+        "sourceTable": "rpl",
+        "sourceColumn": "Text"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "rpl",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "rpl",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "Reactions",
+        "sourceTable": "rpl",
+        "sourceColumn": "ReactionsJson"
+      },
+      {
+        "alias": "Mentions",
+        "sourceTable": "rpl",
+        "sourceColumn": "MentionsJson"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Companies": {
+    "tables": [
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mod",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Article",
+        "alias": "art",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Name",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Code",
+        "sourceTable": "com",
+        "sourceColumn": "Code"
+      },
+      {
+        "alias": "Oid",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "com",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cur",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CurrencyId",
+        "sourceTable": "cur",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TimesheetStart",
+        "sourceTable": "com",
+        "sourceColumn": "TimesheetStart"
+      },
+      {
+        "alias": "ResourceType",
+        "sourceTable": "com",
+        "sourceColumn": "GanttChartResourceType"
+      },
+      {
+        "alias": "ProjectArticle",
+        "sourceTable": "com",
+        "sourceColumn": "ProjectArticle"
+      },
+      {
+        "alias": "HoursType",
+        "sourceTable": "com",
+        "sourceColumn": "HoursType"
+      },
+      {
+        "alias": "RequiredHours",
+        "sourceTable": "com",
+        "sourceColumn": "RequiredHours"
+      },
+      {
+        "alias": "MarginType",
+        "sourceTable": "com",
+        "sourceColumn": "MarginType"
+      },
+      {
+        "alias": "Article",
+        "sourceTable": "art",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ArticleId",
+        "sourceTable": "art",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "com",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "cre",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "com",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "com",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "mod",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedBy",
+        "sourceTable": "mod",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedByHasImage",
+        "sourceTable": "mod",
+        "sourceColumn": "HasImage"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-CompaniesAdditionalInformation": {
+    "tables": [
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company_UserFields",
+        "alias": "cuf",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "*",
+        "sourceTable": "cuf",
+        "sourceColumn": "*"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Contracts": {
+    "tables": [],
+    "columns": [],
+    "customFields": []
+  },
+  "DE-Countries": {
+    "tables": [
+      {
+        "name": "Country",
+        "alias": "cou",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CountryId",
+        "sourceTable": "cou",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Country",
+        "sourceTable": "cou",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Currencies": {
+    "tables": [
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CurrencyId",
+        "sourceTable": "cur",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cur",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "IsoCode",
+        "sourceTable": "cur",
+        "sourceColumn": "IsoCode"
+      },
+      {
+        "alias": "Symbol",
+        "sourceTable": "cur",
+        "sourceColumn": "Symbol"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "cur",
+        "sourceColumn": "ModifiedOnUtc"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Departments": {
+    "tables": [
+      {
+        "name": "Department",
+        "alias": "dep",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Division",
+        "alias": "div",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DivisionId",
+        "sourceTable": "div",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "div",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "dep",
+        "sourceColumn": "ModifiedOnUtc"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Descriptions": {
+    "tables": [
+      {
+        "name": "DocumentBrief",
+        "alias": "des",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DescriptionId",
+        "sourceTable": null,
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Description",
+        "sourceTable": null,
+        "sourceColumn": "PlainText"
+      },
+      {
+        "alias": "DescriptionHtml",
+        "sourceTable": null,
+        "sourceColumn": "Text"
+      },
+      {
+        "alias": "Version",
+        "sourceTable": null,
+        "sourceColumn": "Version"
+      },
+      {
+        "alias": "LatestVersion",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "IsLastVersion",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "DocumentId",
+        "sourceTable": null,
+        "sourceColumn": "DocumentOid"
+      },
+      {
+        "alias": "Document",
+        "sourceTable": null,
+        "sourceColumn": "DocumentTypeName"
+      },
+      {
+        "alias": "CreatedOn",
+        "sourceTable": null,
+        "sourceColumn": "CreatedOn"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "des",
+        "sourceColumn": "EditedOn"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Divisions": {
+    "tables": [
+      {
+        "name": "Division",
+        "alias": "div",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DivisionId",
+        "sourceTable": "div",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "div",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Employees": {
+    "tables": [
+      {
+        "name": "Employee",
+        "alias": "e",
+        "joinType": "FROM"
+      },
+      {
+        "name": "User",
+        "alias": "u",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "c",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "EmployeeId",
+        "sourceTable": "e",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Employee",
+        "sourceTable": "e",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "c",
+        "sourceColumn": "name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "c",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "u",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserId",
+        "sourceTable": "u",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "e",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "MaxValue",
+        "sourceTable": "e",
+        "sourceColumn": "MaxValue"
+      },
+      {
+        "alias": "Active",
+        "sourceTable": "e",
+        "sourceColumn": "Active"
+      }
+    ],
+    "customFields": []
+  },
+  "EstimatedPlannedActualMonthly": {
+    "tables": [
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Division",
+        "alias": "div",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Department",
+        "alias": "dep",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Currency",
+        "alias": "ccr",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Project",
+        "alias": "prj",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "prc",
+        "joinType": "FROM"
+      },
+      {
+        "name": "CommercialClient",
+        "alias": "cli",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "pro",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookUp",
+        "alias": "usl",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserType",
+        "alias": "ust",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "com",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "div",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "TypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientHasImage",
+        "sourceTable": "cli",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "pro",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": "prj",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserId",
+        "sourceTable": "usl",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usl",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserHasImage",
+        "sourceTable": "usl",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "UserType",
+        "sourceTable": "ust",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "FromMonth",
+        "sourceTable": null,
+        "sourceColumn": "datefromparts(...)"
+      },
+      {
+        "alias": "ToMonth",
+        "sourceTable": null,
+        "sourceColumn": "datefromparts(...)"
+      },
+      {
+        "alias": "Month",
+        "sourceTable": null,
+        "sourceColumn": "datefromparts(...)"
+      },
+      {
+        "alias": "ContractedTime",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "PlannedContractedTime",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "PlannedTime",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ActualTime",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ContractedCost",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "PlannedCost",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ActualCost",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ContractedIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "PlannedIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ActualIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ContractedProfit",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "PlannedProfit",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ActualProfit",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyContractedCost",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyPlannedCost",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyActualCost",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyContractedIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyPlannedIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyActualIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyContractedProfit",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyPlannedProfit",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CompanyActualProfit",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "Exchange",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CurrencySymbol",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "CurrencyCompany",
+        "sourceTable": "prc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CurrencyCompanySymbol",
+        "sourceTable": "ccr",
+        "sourceColumn": "Symbol"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Estimates": {
+    "tables": [],
+    "columns": [],
+    "customFields": []
+  },
+  "DE-EstimatesBillingConditions": {
+    "tables": [
+      {
+        "name": "BillingCondition",
+        "alias": "bic",
+        "joinType": "FROM"
+      },
+      {
+        "name": "PaymentCondition",
+        "alias": "pmc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Client",
+        "alias": "bcl",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Estimate",
+        "alias": "est",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CommercialClient",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "BillingConditionId",
+        "sourceTable": "bic",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "EstimateId",
+        "sourceTable": "est",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Estimate",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateNumber",
+        "sourceTable": "est",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "BillingClientId",
+        "sourceTable": "bic",
+        "sourceColumn": "BillingClient"
+      },
+      {
+        "alias": "BillingClient",
+        "sourceTable": "bcl",
+        "sourceColumn": "NameAndExternalId"
+      },
+      {
+        "alias": "Type",
+        "sourceTable": "bic",
+        "sourceColumn": "Type"
+      },
+      {
+        "alias": "Frequency",
+        "sourceTable": "bic",
+        "sourceColumn": "Frequency"
+      },
+      {
+        "alias": "PaymentCondition",
+        "sourceTable": "pmc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "PaymentConditionId",
+        "sourceTable": "bic",
+        "sourceColumn": "PaymentCondition"
+      },
+      {
+        "alias": "AmountType",
+        "sourceTable": "bic",
+        "sourceColumn": "AmountType"
+      },
+      {
+        "alias": "Percentage",
+        "sourceTable": "bic",
+        "sourceColumn": "Percentage"
+      },
+      {
+        "alias": "Value",
+        "sourceTable": "bic",
+        "sourceColumn": "Value"
+      },
+      {
+        "alias": "YourReference",
+        "sourceTable": "bic",
+        "sourceColumn": "YourReference"
+      },
+      {
+        "alias": "Date",
+        "sourceTable": "bic",
+        "sourceColumn": "Date"
+      },
+      {
+        "alias": "DayOfMonth",
+        "sourceTable": "bic",
+        "sourceColumn": "DayOfMonth"
+      },
+      {
+        "alias": "DayOfWeek",
+        "sourceTable": "bic",
+        "sourceColumn": "DayOfWeek"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "est",
+        "sourceColumn": "Company"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "est",
+        "sourceColumn": "Client"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-EstimatesCount": {
+    "tables": [
+      {
+        "name": "Estimate",
+        "alias": "est",
+        "joinType": "FROM"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Count",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-EstimatesQuotes": {
+    "tables": [
+      {
+        "name": "Estimate",
+        "alias": "est",
+        "joinType": "FROM"
+      },
+      {
+        "name": "EstimateItem",
+        "alias": "eit",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "EstimateItemDetail",
+        "alias": "eid",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "JobType",
+        "alias": "typ",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ProjectLookup",
+        "alias": "prj",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ContractLookup",
+        "alias": "cnt",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "pro",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Brand",
+        "alias": "brd",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "dep",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "ddp",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Supplier",
+        "alias": "sup",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Article",
+        "alias": "art",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Article",
+        "alias": "ari",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "EstimateId",
+        "sourceTable": "est",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Estimate",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateNumber",
+        "sourceTable": "est",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "est",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "StageId",
+        "sourceTable": "wfs",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": "wfs",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Contract",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ContractId",
+        "sourceTable": "cnt",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateItemId",
+        "sourceTable": "eit",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "EstimateItem",
+        "sourceTable": "eit",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDescription",
+        "sourceTable": "eit",
+        "sourceColumn": "Description"
+      },
+      {
+        "alias": "EstimateItemDetailDescription",
+        "sourceTable": "eid",
+        "sourceColumn": "Description"
+      },
+      {
+        "alias": "SupplierId",
+        "sourceTable": "sup",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Supplier",
+        "sourceTable": "sup",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ServiceId",
+        "sourceTable": "art",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Service",
+        "sourceTable": "art",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailType",
+        "sourceTable": "eid",
+        "sourceColumn": "Type"
+      },
+      {
+        "alias": "EstimateItemDetailDepartmentId",
+        "sourceTable": "ddp",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "EstimateItemDetailDepartment",
+        "sourceTable": "ddp",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailTypologyGroupId",
+        "sourceTable": "eid",
+        "sourceColumn": "UserTypologyGroup"
+      },
+      {
+        "alias": "EstimateItemDetailTypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailUserId",
+        "sourceTable": "eid",
+        "sourceColumn": "User"
+      },
+      {
+        "alias": "EstimateItemDetailUser",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProductId",
+        "sourceTable": "pro",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "pro",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "BrandId",
+        "sourceTable": "brd",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Brand",
+        "sourceTable": "brd",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailId",
+        "sourceTable": "eid",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CurrencyId",
+        "sourceTable": "est",
+        "sourceColumn": "Currency"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cur",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Exchange",
+        "sourceTable": "est",
+        "sourceColumn": "Exchange"
+      },
+      {
+        "alias": "EstimateItemServiceId",
+        "sourceTable": "ari",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "EstimateItemService",
+        "sourceTable": "ari",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemRetainer",
+        "sourceTable": "eit",
+        "sourceColumn": "Retainer"
+      },
+      {
+        "alias": "EstimateItemQuantityIncome",
+        "sourceTable": "eit",
+        "sourceColumn": "QuantityIncome"
+      },
+      {
+        "alias": "EstimateItemValueWithoutVatIncome",
+        "sourceTable": "eit",
+        "sourceColumn": "ValueWithoutVatIncome"
+      },
+      {
+        "alias": "EstimateItemVatValueIncome",
+        "sourceTable": "eit",
+        "sourceColumn": "VatValueIncome"
+      },
+      {
+        "alias": "EstimateItemValueWithVatIncome",
+        "sourceTable": "eit",
+        "sourceColumn": "ValueWithVatIncome"
+      },
+      {
+        "alias": "EstimateItemClientDirectTotal",
+        "sourceTable": "eit",
+        "sourceColumn": "ClientDirectTotal"
+      },
+      {
+        "alias": "EstimateItemValueWithVatIncomeWithClientDirect",
+        "sourceTable": "eit",
+        "sourceColumn": "ValueWithVatIncomeWithClientDirect"
+      },
+      {
+        "alias": "EstimateItemDetailCost",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateItemDetailIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateItemDetailTableRate",
+        "sourceTable": "eid",
+        "sourceColumn": "TableRate"
+      },
+      {
+        "alias": "EstimateItemDetailUnitPriceCost",
+        "sourceTable": "eid",
+        "sourceColumn": "UnitPriceCost"
+      },
+      {
+        "alias": "EstimateItemDetailUnitPriceIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "DiscountCost",
+        "sourceTable": "eid",
+        "sourceColumn": "DiscountCost"
+      },
+      {
+        "alias": "QuantityCost",
+        "sourceTable": "eid",
+        "sourceColumn": "QuantityCost"
+      },
+      {
+        "alias": "ValueWithoutVatCost",
+        "sourceTable": "eid",
+        "sourceColumn": "ValueWithoutVatCost"
+      },
+      {
+        "alias": "VatValueCost",
+        "sourceTable": "eid",
+        "sourceColumn": "VatValueCost"
+      },
+      {
+        "alias": "ValueWithVatCost",
+        "sourceTable": "eid",
+        "sourceColumn": "ValueWithVatCost"
+      },
+      {
+        "alias": "DiscountIncome",
+        "sourceTable": "eid",
+        "sourceColumn": "DiscountIncome"
+      },
+      {
+        "alias": "QuantityIncome",
+        "sourceTable": "eid",
+        "sourceColumn": "QuantityIncome"
+      },
+      {
+        "alias": "AgencyCommissionValue",
+        "sourceTable": "eid",
+        "sourceColumn": "AgencyCommissionValue"
+      },
+      {
+        "alias": "ValueWithoutVatIncome",
+        "sourceTable": "eid",
+        "sourceColumn": "ValueWithoutVatIncome"
+      },
+      {
+        "alias": "Margin",
+        "sourceTable": "eid",
+        "sourceColumn": "Margin"
+      },
+      {
+        "alias": "MarginPercentage",
+        "sourceTable": "eid",
+        "sourceColumn": "MarginPercentage"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-EstimatesQuotesCount": {
+    "tables": [
+      {
+        "name": "Estimate",
+        "alias": "est",
+        "joinType": "FROM"
+      },
+      {
+        "name": "EstimateItem",
+        "alias": "eit",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "EstimateItemDetail",
+        "alias": "eid",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "JobType",
+        "alias": "typ",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ProjectLookup",
+        "alias": "prj",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ContractLookup",
+        "alias": "cnt",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "pro",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Brand",
+        "alias": "brd",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Department",
+        "alias": "dep",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Supplier",
+        "alias": "sup",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Article",
+        "alias": "art",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Article",
+        "alias": "ari",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Count",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-EstimatesQuotesMonthCount": {
+    "tables": [],
+    "columns": [],
+    "customFields": []
+  },
+  "DE-ExpenseSheets": {
+    "tables": [
+      {
+        "name": "Expense",
+        "alias": "exp",
+        "joinType": "FROM"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mod",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ExpenseSheetId",
+        "sourceTable": "exp",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ExpenseSheet",
+        "sourceTable": "exp",
+        "sourceColumn": "DocumentNumber"
+      },
+      {
+        "alias": "ExpenseSheetNumber",
+        "sourceTable": "exp",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "ExternalName",
+        "sourceTable": "exp",
+        "sourceColumn": "ExternalName"
+      },
+      {
+        "alias": "ExternalError",
+        "sourceTable": "exp",
+        "sourceColumn": "ExternalError"
+      },
+      {
+        "alias": "Emission",
+        "sourceTable": "exp",
+        "sourceColumn": "Emission"
+      },
+      {
+        "alias": "Due",
+        "sourceTable": "exp",
+        "sourceColumn": "Due"
+      },
+      {
+        "alias": "Exchange",
+        "sourceTable": "exp",
+        "sourceColumn": "Exchange"
+      },
+      {
+        "alias": "Blocked",
+        "sourceTable": "exp",
+        "sourceColumn": "Blocked"
+      },
+      {
+        "alias": "Paid",
+        "sourceTable": "exp",
+        "sourceColumn": "Paid"
+      },
+      {
+        "alias": "PaidValue",
+        "sourceTable": "exp",
+        "sourceColumn": "PaidValue"
+      },
+      {
+        "alias": "ValueWithVat",
+        "sourceTable": "exp",
+        "sourceColumn": "ValueWithVat"
+      },
+      {
+        "alias": "ValueWithoutVat",
+        "sourceTable": "exp",
+        "sourceColumn": "ValueWithoutVat"
+      },
+      {
+        "alias": "VatValue",
+        "sourceTable": "exp",
+        "sourceColumn": "VatValue"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "exp",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "exp",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "CreatedByName",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedByName",
+        "sourceTable": "mod",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "mod",
+        "sourceColumn": "Id"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-ExpenseType": {
+    "tables": [
+      {
+        "name": "ExpenseItemType",
+        "alias": "eit",
+        "joinType": "FROM"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Vat",
+        "alias": "vat",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mod",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ExpenseTypeId",
+        "sourceTable": "eit",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ExpenseType",
+        "sourceTable": "eit",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Vat",
+        "sourceTable": "vat",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "eit",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "VatDeductiblePercentage",
+        "sourceTable": "eit",
+        "sourceColumn": "VatDeductiblePercentage"
+      },
+      {
+        "alias": "Value",
+        "sourceTable": "eit",
+        "sourceColumn": "Value"
+      },
+      {
+        "alias": "Active",
+        "sourceTable": "eit",
+        "sourceColumn": "Active"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "eit",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "eit",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "CreatedByName",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedByName",
+        "sourceTable": "mod",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "mod",
+        "sourceColumn": "Id"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Expenses": {
+    "tables": [
+      {
+        "name": "ExpenseItem",
+        "alias": "eim",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Expense",
+        "alias": "exp",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ExpenseItemType",
+        "alias": "eit",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Vat",
+        "alias": "vat",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mod",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ExpenseId",
+        "sourceTable": "eim",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ExpenseNumber",
+        "sourceTable": "eim",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "Billable",
+        "sourceTable": "eim",
+        "sourceColumn": "Billable"
+      },
+      {
+        "alias": "Motive",
+        "sourceTable": "eim",
+        "sourceColumn": "Motive"
+      },
+      {
+        "alias": "ExpenseTypeId",
+        "sourceTable": "eit",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ExpenseType",
+        "sourceTable": "eit",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "VatId",
+        "sourceTable": "vat",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Vat",
+        "sourceTable": "vat",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "VatPercentage",
+        "sourceTable": "vat",
+        "sourceColumn": "Percentage"
+      },
+      {
+        "alias": "ValueWithVat",
+        "sourceTable": "eim",
+        "sourceColumn": "ValueWithVat"
+      },
+      {
+        "alias": "VatValue",
+        "sourceTable": "eim",
+        "sourceColumn": "VatValue"
+      },
+      {
+        "alias": "ValueWithVat",
+        "sourceTable": "eim",
+        "sourceColumn": "ValueWithVat"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "eim",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "eim",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "CreatedByName",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedByName",
+        "sourceTable": "mod",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "mod",
+        "sourceColumn": "Id"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-History": {
+    "tables": [
+      {
+        "name": "History",
+        "alias": "hst",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usr",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "HistoryId",
+        "sourceTable": "hst",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "DocumentType",
+        "sourceTable": "hst",
+        "sourceColumn": "DocumentTypeName"
+      },
+      {
+        "alias": "DocumentId",
+        "sourceTable": "hst",
+        "sourceColumn": "DocumentOid"
+      },
+      {
+        "alias": "Version",
+        "sourceTable": null,
+        "sourceColumn": "Version"
+      },
+      {
+        "alias": "StartDate",
+        "sourceTable": "hst",
+        "sourceColumn": "StartDate"
+      },
+      {
+        "alias": "EndDate",
+        "sourceTable": "hst",
+        "sourceColumn": "EndDate"
+      },
+      {
+        "alias": "UserId",
+        "sourceTable": "usr",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserHasImage",
+        "sourceTable": "usr",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "Action",
+        "sourceTable": null,
+        "sourceColumn": "Action"
+      },
+      {
+        "alias": "StageId",
+        "sourceTable": "wfs",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": "wfs",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageColor",
+        "sourceTable": "wfs",
+        "sourceColumn": "Color"
+      },
+      {
+        "alias": "StageTypeId",
+        "sourceTable": "wst",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "StageType",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageTypeColor",
+        "sourceTable": "wst",
+        "sourceColumn": "Color"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": null,
+        "sourceColumn": "CreatedOnUtc"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Holidays": {
+    "tables": [
+      {
+        "name": "Holiday",
+        "alias": "hol",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Day",
+        "sourceTable": "hol",
+        "sourceColumn": "Date"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "HolidayId",
+        "sourceTable": "hol",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Holiday",
+        "sourceTable": "hol",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "hol",
+        "sourceColumn": "ModifiedOn"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Jobs": {
+    "tables": [
+      {
+        "name": "Deliverable",
+        "alias": "job",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mod",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ProjectLookup",
+        "alias": "prj",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "pro",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "JobType",
+        "alias": "typ",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "dep",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "DivisionLookup",
+        "alias": "div",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "cut",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "BaseObjectRead",
+        "alias": "bor",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "his",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "job",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientHasImage",
+        "sourceTable": "cli",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": "prj",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectNumber",
+        "sourceTable": "prj",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "JobId",
+        "sourceTable": "job",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Job",
+        "sourceTable": "job",
+        "sourceColumn": "Subject"
+      },
+      {
+        "alias": "JobNumber",
+        "sourceTable": "job",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "BusinessValue",
+        "sourceTable": "job",
+        "sourceColumn": "BusinessValue"
+      },
+      {
+        "alias": "ProductId",
+        "sourceTable": "pro",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "pro",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageId",
+        "sourceTable": "wfs",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": "wfs",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageColor",
+        "sourceTable": "wfs",
+        "sourceColumn": "Color"
+      },
+      {
+        "alias": "StageTypeId",
+        "sourceTable": "wst",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "StageType",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageTypeColor",
+        "sourceTable": "wst",
+        "sourceColumn": "Color"
+      },
+      {
+        "alias": "TypeId",
+        "sourceTable": "typ",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Type",
+        "sourceTable": "typ",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "com",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "DivisionId",
+        "sourceTable": "div",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "div",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StartDate",
+        "sourceTable": "job",
+        "sourceColumn": "EntryDateUtc"
+      },
+      {
+        "alias": "EndDate",
+        "sourceTable": "job",
+        "sourceColumn": "AgreedDateUtc"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "cre",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ModifiedId",
+        "sourceTable": "mod",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedBy",
+        "sourceTable": "mod",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedHasImage",
+        "sourceTable": "mod",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "job",
+        "sourceColumn": "ModifiedOn"
+      },
+      {
+        "alias": "AlreadyRead",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserInTeam",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserPending",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "IsDelayed",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "Delayed",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "Version",
+        "sourceTable": "job",
+        "sourceColumn": "Version"
+      },
+      {
+        "alias": "Motive",
+        "sourceTable": "his",
+        "sourceColumn": "Motive"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.Deliverable"
+    ]
+  },
+  "DE-JobsCount": {
+    "tables": [
+      {
+        "name": "JobLookup",
+        "alias": "job",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Deliverable",
+        "alias": "del",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Count",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-LeavesCount": {
+    "tables": [
+      {
+        "name": "UserVacation",
+        "alias": "lev",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Count",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-LeavesDeleted": {
+    "tables": [
+      {
+        "name": "LeaveDeleted",
+        "alias": "lev",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "LeaveId",
+        "sourceTable": null,
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": null,
+        "sourceColumn": "ModifiedOnUtc"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-LeavesDeletedCount": {
+    "tables": [
+      {
+        "name": "LeaveDeleted",
+        "alias": "lev",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Count",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Products": {
+    "tables": [
+      {
+        "name": "CommercialClientProduct",
+        "alias": "pro",
+        "joinType": "FROM"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Brand",
+        "alias": "brd",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProductId",
+        "sourceTable": "pro",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "pro",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "BrandId",
+        "sourceTable": "brd",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Brand",
+        "sourceTable": "brd",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "pro",
+        "sourceColumn": "ModifiedOnUtc"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Projects": {
+    "tables": [
+      {
+        "name": "Project",
+        "alias": "prj",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "cre",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "mod",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ContractLookup",
+        "alias": "cnt",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "pro",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Brand",
+        "alias": "brd",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ProjectClassification",
+        "alias": "cls",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ProjectNature",
+        "alias": "nat",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "est",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "RateCard",
+        "alias": "rtc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "RateCardColumn",
+        "alias": "rcc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "cut",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "BaseObjectRead",
+        "alias": "bor",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "dld",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "prj",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "com",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientHasImage",
+        "sourceTable": "cli",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ContractId",
+        "sourceTable": "cnt",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Contract",
+        "sourceTable": "cnt",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ContractNumber",
+        "sourceTable": "cnt",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": "prj",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectNumber",
+        "sourceTable": "prj",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "StartDate",
+        "sourceTable": "prj",
+        "sourceColumn": "BeginDate"
+      },
+      {
+        "alias": "EndDate",
+        "sourceTable": "prj",
+        "sourceColumn": "EndDate"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "prj",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "BrandId",
+        "sourceTable": "brd",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Brand",
+        "sourceTable": "brd",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProductId",
+        "sourceTable": "pro",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "pro",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClassificationId",
+        "sourceTable": "cls",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Classification",
+        "sourceTable": "cls",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "NatureId",
+        "sourceTable": "nat",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Nature",
+        "sourceTable": "nat",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageId",
+        "sourceTable": "wfs",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": "wfs",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageColor",
+        "sourceTable": "wfs",
+        "sourceColumn": "Color"
+      },
+      {
+        "alias": "StageTypeId",
+        "sourceTable": "wst",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "StageType",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageTypeColor",
+        "sourceTable": "wst",
+        "sourceColumn": "Color"
+      },
+      {
+        "alias": "CurrencyId",
+        "sourceTable": "cur",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cur",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Investment",
+        "sourceTable": "prj",
+        "sourceColumn": "Investment"
+      },
+      {
+        "alias": "ProjectType",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "RateCard",
+        "sourceTable": "rtc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RateCardColumn",
+        "sourceTable": "rcc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimatedWithoutTaxCost",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "EstimatedTaxCost",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "EstimatedWithTaxCost",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "EstimatedWithoutTaxSell",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "EstimatedTaxSell",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "EstimatedWithTaxSell",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "cre",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "cre",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "cre",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ModifiedId",
+        "sourceTable": "mod",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedBy",
+        "sourceTable": "mod",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedHasImage",
+        "sourceTable": "mod",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "AlreadyRead",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserInTeam",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserPending",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "IsDelayed",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "Delayed",
+        "sourceTable": "dld",
+        "sourceColumn": "Delayed"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.Project"
+    ]
+  },
+  "DE-ProjectsClassifications": {
+    "tables": [
+      {
+        "name": "ProjectClassification",
+        "alias": "pcl",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "c",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ProjectClassificationId",
+        "sourceTable": "pcl",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ProjectClassification",
+        "sourceTable": "pcl",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Active",
+        "sourceTable": "pcl",
+        "sourceColumn": "Active"
+      },
+      {
+        "alias": "Billable",
+        "sourceTable": "pcl",
+        "sourceColumn": "Billable"
+      },
+      {
+        "alias": "Code",
+        "sourceTable": "pcl",
+        "sourceColumn": "Code"
+      },
+      {
+        "alias": "Default",
+        "sourceTable": "pcl",
+        "sourceColumn": "Default"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "c",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "c",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "c",
+        "sourceColumn": "Oid"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-ProjectsCount": {
+    "tables": [],
+    "columns": [],
+    "customFields": []
+  },
+  "DE-ProjectsAdditionalInformation": {
+    "tables": [
+      {
+        "name": "Project",
+        "alias": "prj",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Project_UserFields",
+        "alias": "puf",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": "prj",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectNumber",
+        "sourceTable": "prj",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "*",
+        "sourceTable": "puf",
+        "sourceColumn": "*"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-ProjectsPlannedTime": {
+    "tables": [
+      {
+        "name": "Project",
+        "alias": "prj",
+        "joinType": "FROM"
+      },
+      {
+        "name": "CommercialClient",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "pro",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ProjectClassification",
+        "alias": "cls",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ProjectNature",
+        "alias": "nat",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "PlannedHoursDeliverableTotal",
+        "alias": "pnh",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "PlannedHoursDeliverableAdjustment",
+        "alias": "phd",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "User",
+        "alias": "usr",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "EstimateItemDetail",
+        "alias": "eid",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "EstimateItem",
+        "alias": "eit",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Estimate",
+        "alias": "est",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Department",
+        "alias": "dep",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Division",
+        "alias": "div",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ProjectNumber",
+        "sourceTable": "prj",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "ProductId",
+        "sourceTable": "pro",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "pro",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClassificationId",
+        "sourceTable": "cls",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Classification",
+        "sourceTable": "cls",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "NatureId",
+        "sourceTable": "nat",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Nature",
+        "sourceTable": "nat",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "eid",
+        "sourceColumn": "Department"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectPlannedUserTypologyGroupId",
+        "sourceTable": "phd",
+        "sourceColumn": "UserTypologyGroup"
+      },
+      {
+        "alias": "ProjectPlannedUserTypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectPlannedUserId",
+        "sourceTable": "phd",
+        "sourceColumn": "User"
+      },
+      {
+        "alias": "ProjectPlannedUser",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailId",
+        "sourceTable": "eid",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ProjectPlannedContractedTime",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ProjectPlannedTime",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ProjectPlannedIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "Month",
+        "sourceTable": "phd",
+        "sourceColumn": "Date"
+      },
+      {
+        "alias": "ActualSellRate",
+        "sourceTable": "pnh",
+        "sourceColumn": "SellRate"
+      },
+      {
+        "alias": "ContractedSellRate",
+        "sourceTable": "eid",
+        "sourceColumn": "TableRateSell"
+      },
+      {
+        "alias": "RateCardSellRate",
+        "sourceTable": "eid",
+        "sourceColumn": "TableRate"
+      },
+      {
+        "alias": "Comments",
+        "sourceTable": "pnh",
+        "sourceColumn": "Comments"
+      },
+      {
+        "alias": "Description",
+        "sourceTable": "pnh",
+        "sourceColumn": "Description"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-ProjectsPlannedTimeCount": {
+    "tables": [],
+    "columns": [],
+    "customFields": []
+  },
+  "DE-ProjectsTypes": {
+    "tables": [
+      {
+        "name": "ProjectNature",
+        "alias": "prt",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "FROM"
+      },
+      {
+        "name": "DocumentType",
+        "alias": "dct",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "prt",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ProjectTypeId",
+        "sourceTable": "prt",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ProjectType",
+        "sourceTable": "prt",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "com",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "DocumentType",
+        "sourceTable": "dct",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "TemplateFileName",
+        "sourceTable": "prt",
+        "sourceColumn": "TemplateFileName"
+      },
+      {
+        "alias": "AllowsTimesheet",
+        "sourceTable": "prt",
+        "sourceColumn": "AllowsTimesheet"
+      },
+      {
+        "alias": "IsDeliverable",
+        "sourceTable": "prt",
+        "sourceColumn": "IsDeliverable"
+      },
+      {
+        "alias": "Active",
+        "sourceTable": "prt",
+        "sourceColumn": "Active"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-PurchaseOrders": {
+    "tables": [
+      {
+        "name": "PurchaseOrder",
+        "alias": "doc",
+        "joinType": "FROM"
+      },
+      {
+        "name": "ProjectLookup",
+        "alias": "p",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ContractLookup",
+        "alias": "cnt",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "c",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Estimate",
+        "alias": "e",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "d",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "curr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Supplier",
+        "alias": "s",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usrCb",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usrMb",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "BaseObjectRead",
+        "alias": "bor",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "ws",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Configuration",
+        "alias": "cfg",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "LocalizationLanguage",
+        "alias": "lol",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Localization",
+        "alias": "loc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "cut",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "art",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Oid",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Name",
+        "sourceTable": "doc",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "Number",
+        "sourceTable": "doc",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "Status",
+        "sourceTable": "doc",
+        "sourceColumn": "Status"
+      },
+      {
+        "alias": "FinancialStatus",
+        "sourceTable": "doc",
+        "sourceColumn": "FinancialStatus"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "doc",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "doc",
+        "sourceColumn": "CreatedBy"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "usrCb",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "usrCb",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "doc",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "doc",
+        "sourceColumn": "ModifiedBy"
+      },
+      {
+        "alias": "ModifiedBy",
+        "sourceTable": "usrMb",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedByHasImage",
+        "sourceTable": "usrMb",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "StartDate",
+        "sourceTable": "doc",
+        "sourceColumn": "Date"
+      },
+      {
+        "alias": "DeliveryDate",
+        "sourceTable": "doc",
+        "sourceColumn": "DeliveryDate"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cc",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ClientHasImage",
+        "sourceTable": "cc",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "d",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ContractId",
+        "sourceTable": "cnt",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Contract",
+        "sourceTable": "cnt",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "p",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Estimate",
+        "sourceTable": "e",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateId",
+        "sourceTable": "e",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "c",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "c",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "c",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "Supplier",
+        "sourceTable": "s",
+        "sourceColumn": "NameAndExternalId"
+      },
+      {
+        "alias": "ValueWithoutVat",
+        "sourceTable": "doc",
+        "sourceColumn": "ValueWithoutVat"
+      },
+      {
+        "alias": "ValueWithVat",
+        "sourceTable": "doc",
+        "sourceColumn": "ValueWithVat"
+      },
+      {
+        "alias": "VatValue",
+        "sourceTable": "doc",
+        "sourceColumn": "VatValue"
+      },
+      {
+        "alias": "Invoiced",
+        "sourceTable": "doc",
+        "sourceColumn": "Invoiced"
+      },
+      {
+        "alias": "InvoicedValue",
+        "sourceTable": "doc",
+        "sourceColumn": "InvoicedValue"
+      },
+      {
+        "alias": "ControlledValue",
+        "sourceTable": "doc",
+        "sourceColumn": "ControlledValue"
+      },
+      {
+        "alias": "External",
+        "sourceTable": "doc",
+        "sourceColumn": "External"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "doc",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "ExternalError",
+        "sourceTable": "doc",
+        "sourceColumn": "ExternalError"
+      },
+      {
+        "alias": "StageType",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "Color",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "AlreadyRead",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserInTeam",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserPending",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserInDepartment",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrencyIsoCode",
+        "sourceTable": "curr",
+        "sourceColumn": "IsoCode"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "curr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Articles",
+        "sourceTable": "art",
+        "sourceColumn": "Articles"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.PurchaseOrder"
+    ]
+  },
+  "DE-RateCardsColumns": {
+    "tables": [
+      {
+        "name": "RateCard",
+        "alias": "rtc",
+        "joinType": "FROM"
+      },
+      {
+        "name": "RateCardItem",
+        "alias": "rci",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "RateCardItemValue",
+        "alias": "riv",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "RateCardColumn",
+        "alias": "rcc",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "User",
+        "alias": "usr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Department",
+        "alias": "dep",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "RateCardId",
+        "sourceTable": "rtc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "RateCard",
+        "sourceTable": "rtc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RateCardColumnId",
+        "sourceTable": "rcc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "RateCardColumn",
+        "sourceTable": "rcc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RateCardItemId",
+        "sourceTable": "rci",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "RateCardItemValueId",
+        "sourceTable": "riv",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Active",
+        "sourceTable": "rtc",
+        "sourceColumn": "Active"
+      },
+      {
+        "alias": "StartDate",
+        "sourceTable": "rtc",
+        "sourceColumn": "BeginDate"
+      },
+      {
+        "alias": "EndDate",
+        "sourceTable": "rtc",
+        "sourceColumn": "EndDate"
+      },
+      {
+        "alias": "CurrencyId",
+        "sourceTable": "cur",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cur",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RateCardItemDepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "RateCardItemDepartment",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RateCardItemTypologyGroupId",
+        "sourceTable": "utg",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "RateCardItemTypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RateCardItemUserId",
+        "sourceTable": "usr",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "RateCardItemUser",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Cost",
+        "sourceTable": "riv",
+        "sourceColumn": "Cost"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Requests": {
+    "tables": [
+      {
+        "name": "Request",
+        "alias": "doc",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserFavorite",
+        "alias": "uf",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usrMb",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "c",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Clientlookup",
+        "alias": "cclu",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ClientGroup",
+        "alias": "clg",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ClientClassification",
+        "alias": "ccl",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "JobType",
+        "alias": "jt",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "dep",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DivisionLookup",
+        "alias": "div",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "ccp",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Brand",
+        "alias": "brd",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usrCb",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "uc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ContractLookup",
+        "alias": "con",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "ws",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Configuration",
+        "alias": "cfg",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "LocalizationLanguage",
+        "alias": "lol",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Localization",
+        "alias": "loc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "curr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DocumentType",
+        "alias": "wkf",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "cut",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "BaseObjectRead",
+        "alias": "bor",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "RequestId",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Request",
+        "sourceTable": "doc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RequestNumber",
+        "sourceTable": "doc",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "BeginDateUtc",
+        "sourceTable": "doc",
+        "sourceColumn": "BeginDateUtc"
+      },
+      {
+        "alias": "EndDateUtc",
+        "sourceTable": "doc",
+        "sourceColumn": "EndDateUtc"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "doc",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "doc",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "Days",
+        "sourceTable": null,
+        "sourceColumn": "datediff(...)"
+      },
+      {
+        "alias": "TagsJson",
+        "sourceTable": "doc",
+        "sourceColumn": "TagsJson"
+      },
+      {
+        "alias": "IsActivated",
+        "sourceTable": "doc",
+        "sourceColumn": "IsActivated"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "usrCb",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "usrCb",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "usrCb",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "CreatedByTags",
+        "sourceTable": "usrCb",
+        "sourceColumn": "TagsJson"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "c",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "c",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "c",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ClientGroup",
+        "sourceTable": "clg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cclu",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cclu",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ClientHasImage",
+        "sourceTable": "cclu",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ClientClassification",
+        "sourceTable": "ccl",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Type",
+        "sourceTable": "jt",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "TypeStyle",
+        "sourceTable": "jt",
+        "sourceColumn": "StyleJson"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "ccp",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Brand",
+        "sourceTable": "brd",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Contract",
+        "sourceTable": "con",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ContractId",
+        "sourceTable": "con",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "StageColor",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "ModifiedBy",
+        "sourceTable": "usrMb",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "usrMb",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedByHasImage",
+        "sourceTable": "usrMb",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "IsDraft",
+        "sourceTable": "doc",
+        "sourceColumn": "IsDraft"
+      },
+      {
+        "alias": "CreatedByCompanyId",
+        "sourceTable": "uc",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedByCompany",
+        "sourceTable": "uc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedByCompanyHasImage",
+        "sourceTable": "uc",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "StageType",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "AlreadyRead",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CurrentUserInTeam",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "BaseObjectReadId",
+        "sourceTable": "bor",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "FavoriteId",
+        "sourceTable": "uf",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "IsFavorite",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "Workflow",
+        "sourceTable": "wkf",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Priority",
+        "sourceTable": "doc",
+        "sourceColumn": "Priority"
+      },
+      {
+        "alias": "Version",
+        "sourceTable": "doc",
+        "sourceColumn": "Version"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "div",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DivisionId",
+        "sourceTable": "div",
+        "sourceColumn": "Id"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.Request"
+    ]
+  },
+  "DE-Services": {
+    "tables": [
+      {
+        "name": "Article",
+        "alias": "a",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "c",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "ArticleGroup",
+        "alias": "ag",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Oid",
+        "sourceTable": "a",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ServiceId",
+        "sourceTable": "a",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Service",
+        "sourceTable": "a",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "c",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "c",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "c",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "Active",
+        "sourceTable": "a",
+        "sourceColumn": "Active"
+      },
+      {
+        "alias": "InternalService",
+        "sourceTable": "a",
+        "sourceColumn": "InternalService"
+      },
+      {
+        "alias": "DepartmentRequired",
+        "sourceTable": "a",
+        "sourceColumn": "DepartmentRequired"
+      },
+      {
+        "alias": "UnitHour",
+        "sourceTable": "a",
+        "sourceColumn": "UnitHour"
+      },
+      {
+        "alias": "DefaultMargin",
+        "sourceTable": "a",
+        "sourceColumn": "DefaultMargin"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "a",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "VatDeductiblePercentage",
+        "sourceTable": "a",
+        "sourceColumn": "VatDeductiblePercentage"
+      },
+      {
+        "alias": "Unit",
+        "sourceTable": "a",
+        "sourceColumn": "Unit"
+      },
+      {
+        "alias": "ServiceGroupId",
+        "sourceTable": "ag",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ServiceGroup",
+        "sourceTable": "ag",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-ServicesGroups": {
+    "tables": [
+      {
+        "name": "ArticleGroup",
+        "alias": "ag",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "c",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Oid",
+        "sourceTable": "ag",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ServiceGroupId",
+        "sourceTable": "ag",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ServiceGroup",
+        "sourceTable": "ag",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "c",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "c",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "c",
+        "sourceColumn": "HasImage"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Stages": {
+    "tables": [
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "FROM"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "StageId",
+        "sourceTable": "wfs",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": "wfs",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "TypeId",
+        "sourceTable": "wst",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Type",
+        "sourceTable": "wst",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Suppliers": {
+    "tables": [
+      {
+        "name": "Supplier",
+        "alias": "s",
+        "joinType": "FROM"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Division",
+        "alias": "d",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Department",
+        "alias": "dp",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Department",
+        "alias": "depRelated",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "companyRelated",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "cr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Vat",
+        "alias": "v",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "PaymentCondition",
+        "alias": "pc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "createdBy",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "modifiedBy",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Country",
+        "alias": "country",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "City",
+        "alias": "city",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "s",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "SupplierId",
+        "sourceTable": "s",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Supplier",
+        "sourceTable": "s",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "d",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DivisionId",
+        "sourceTable": "d",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dp",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dp",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CurrencyId",
+        "sourceTable": "cr",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "VatId",
+        "sourceTable": "v",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Vat",
+        "sourceTable": "v",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "s",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "IsActive",
+        "sourceTable": "s",
+        "sourceColumn": "Active"
+      },
+      {
+        "alias": "PaymentConditionId",
+        "sourceTable": "pc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "PaymentCondition",
+        "sourceTable": "pc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Category",
+        "sourceTable": "s",
+        "sourceColumn": "Category"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "createdBy",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedBy",
+        "sourceTable": "createdBy",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "modifiedBy",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedBy",
+        "sourceTable": "modifiedBy",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedOnUtc",
+        "sourceTable": "s",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": "s",
+        "sourceColumn": "ModifiedOnUtc"
+      },
+      {
+        "alias": "Mail",
+        "sourceTable": "s",
+        "sourceColumn": "Mail"
+      },
+      {
+        "alias": "Remarks",
+        "sourceTable": "s",
+        "sourceColumn": "Remarks"
+      },
+      {
+        "alias": "DiscountPercentage",
+        "sourceTable": "s",
+        "sourceColumn": "DiscountPercentage"
+      },
+      {
+        "alias": "VolumeDiscountPercentage",
+        "sourceTable": "s",
+        "sourceColumn": "VolumeDiscountPercentage"
+      },
+      {
+        "alias": "OtherCreditor",
+        "sourceTable": "s",
+        "sourceColumn": "OtherCreditor"
+      },
+      {
+        "alias": "Street",
+        "sourceTable": "s",
+        "sourceColumn": "Street"
+      },
+      {
+        "alias": "TaxPayerNumber",
+        "sourceTable": "s",
+        "sourceColumn": "TaxPayerNumber"
+      },
+      {
+        "alias": "RelatedDepartment",
+        "sourceTable": "depRelated",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RelatedDepartmentId",
+        "sourceTable": "depRelated",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "RelatedCompany",
+        "sourceTable": "companyRelated",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "RelatedCompanyId",
+        "sourceTable": "companyRelated",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Country",
+        "sourceTable": "country",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "City",
+        "sourceTable": "city",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.Supplier"
+    ]
+  },
+  "DE-Taxes": {
+    "tables": [
+      {
+        "name": "vat",
+        "alias": null,
+        "joinType": "FROM"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "com",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "TaxId",
+        "sourceTable": "vat",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Tax",
+        "sourceTable": "vat",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Percentage",
+        "sourceTable": "vat",
+        "sourceColumn": "Percentage"
+      },
+      {
+        "alias": "IsActive",
+        "sourceTable": "vat",
+        "sourceColumn": "Active"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "vat",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "Default",
+        "sourceTable": "vat",
+        "sourceColumn": "Default"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-TimeSheets": {
+    "tables": [
+      {
+        "name": "Timesheet",
+        "alias": "tim",
+        "joinType": "FROM"
+      },
+      {
+        "name": "JobLookup",
+        "alias": "job",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ProjectLookup",
+        "alias": "prj",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usl",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "ucm",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkType",
+        "alias": "wrk",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "ClientLookup",
+        "alias": "cli",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "prd",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Brand",
+        "alias": "brd",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "dep",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserTypology",
+        "alias": "utg",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "JobType",
+        "alias": "typ",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "tap",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "apr",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "TimesheetId",
+        "sourceTable": "tim",
+        "sourceColumn": "oid"
+      },
+      {
+        "alias": "UserId",
+        "sourceTable": "usl",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usl",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserCompanyId",
+        "sourceTable": "ucm",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "UserCompany",
+        "sourceTable": "ucm",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserDepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "UserDepartment",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "UserEmail",
+        "sourceTable": "usl",
+        "sourceColumn": "Mail"
+      },
+      {
+        "alias": "TypologyId",
+        "sourceTable": "utg",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Typology",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Day",
+        "sourceTable": "tim",
+        "sourceColumn": "Date"
+      },
+      {
+        "alias": "Hours",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": "prj",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectNumber",
+        "sourceTable": "prj",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "JobId",
+        "sourceTable": "job",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Job",
+        "sourceTable": "job",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "JobNumber",
+        "sourceTable": "job",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "JobType",
+        "sourceTable": "typ",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "IsBillable",
+        "sourceTable": null,
+        "sourceColumn": "iif(...)"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProductId",
+        "sourceTable": "prd",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "prd",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProductCode",
+        "sourceTable": "prd",
+        "sourceColumn": "Code"
+      },
+      {
+        "alias": "ProductExternalId",
+        "sourceTable": "prd",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "BrandId",
+        "sourceTable": "brd",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Brand",
+        "sourceTable": "brd",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "WorkTypeId",
+        "sourceTable": "wrk",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "WorkType",
+        "sourceTable": "wrk",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Status",
+        "sourceTable": null,
+        "sourceColumn": "CASE(...)"
+      },
+      {
+        "alias": "Approvers",
+        "sourceTable": null,
+        "sourceColumn": "isnull(...)"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "tim",
+        "sourceColumn": "ModifiedOn"
+      },
+      {
+        "alias": "RequestedApproval",
+        "sourceTable": "tim",
+        "sourceColumn": "RequestedApproval"
+      },
+      {
+        "alias": "HourlyUserCost",
+        "sourceTable": null,
+        "sourceColumn": "HourlyUserCost"
+      },
+      {
+        "alias": "TotalUserCost",
+        "sourceTable": null,
+        "sourceColumn": "TotalUserCost"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-TimeSheetsCount": {
+    "tables": [],
+    "columns": [],
+    "customFields": []
+  },
+  "DE-TimeSheetsDeleted": {
+    "tables": [
+      {
+        "name": "TimesheetDeleted",
+        "alias": "tim",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "TimesheetId",
+        "sourceTable": null,
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ModifiedOnUtc",
+        "sourceTable": null,
+        "sourceColumn": "ModifiedOnUtc"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-TimeSheetsDeletedCount": {
+    "tables": [
+      {
+        "name": "TimesheetDeleted",
+        "alias": "tim",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Count",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Transitions": {
+    "tables": [
+      {
+        "name": "WorkflowStateTransition",
+        "alias": "wt",
+        "joinType": "FROM"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "fws",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "tws",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Document",
+        "alias": "doc",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "DocumentType",
+        "alias": "dty",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "typ",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "mot",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "act",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "pro",
+        "alias": "fpr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "pro",
+        "alias": "tpr",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "rol",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Oid",
+        "sourceTable": "wt",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TransitionId",
+        "sourceTable": "wt",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Transition",
+        "sourceTable": "wt",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Document",
+        "sourceTable": "doc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DocumentId",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Workflow",
+        "sourceTable": "dty",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "WorkflowId",
+        "sourceTable": "dty",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "FromWorkflowState",
+        "sourceTable": "fws",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "FromWorkflowStateId",
+        "sourceTable": "fws",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ToWorkflowState",
+        "sourceTable": "tws",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ToWorkflowStateId",
+        "sourceTable": "tws",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "wt",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "Order",
+        "sourceTable": "wt",
+        "sourceColumn": "Order"
+      },
+      {
+        "alias": "RequestConfirmation",
+        "sourceTable": "wt",
+        "sourceColumn": "RequestConfirmation"
+      },
+      {
+        "alias": "MustSendNotification",
+        "sourceTable": "wt",
+        "sourceColumn": "MustSendNotification"
+      },
+      {
+        "alias": "CommentRequired",
+        "sourceTable": "wt",
+        "sourceColumn": "CommentRequired"
+      },
+      {
+        "alias": "HoursRequired",
+        "sourceTable": "wt",
+        "sourceColumn": "HoursRequired"
+      },
+      {
+        "alias": "FileUploadRequired",
+        "sourceTable": "wt",
+        "sourceColumn": "FileUploadRequired"
+      },
+      {
+        "alias": "FileUploadFolder",
+        "sourceTable": "wt",
+        "sourceColumn": "FileUploadFolder"
+      },
+      {
+        "alias": "QueryValidation",
+        "sourceTable": "wt",
+        "sourceColumn": "QueryValidation"
+      },
+      {
+        "alias": "Motives",
+        "sourceTable": "mot",
+        "sourceColumn": "Motives"
+      },
+      {
+        "alias": "Actions",
+        "sourceTable": "act",
+        "sourceColumn": "Actions"
+      },
+      {
+        "alias": "FromAllowWriteTeams",
+        "sourceTable": "fpr",
+        "sourceColumn": "Teams"
+      },
+      {
+        "alias": "ToAllowWriteTeams",
+        "sourceTable": "tpr",
+        "sourceColumn": "Teams"
+      },
+      {
+        "alias": "Roles",
+        "sourceTable": "rol",
+        "sourceColumn": "Roles"
+      },
+      {
+        "alias": "TypeIds",
+        "sourceTable": "typ",
+        "sourceColumn": "TypeIds"
+      },
+      {
+        "alias": "Types",
+        "sourceTable": "typ",
+        "sourceColumn": "Types"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Types": {
+    "tables": [
+      {
+        "name": "JobType",
+        "alias": "j",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Department",
+        "alias": "d",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "c",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Division",
+        "alias": "v",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Document",
+        "alias": "doc",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DocumentType",
+        "alias": "w",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "BusinessObjectType",
+        "alias": "bot",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "BriefingTemplate",
+        "alias": "bt",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "u",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "us",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "Article",
+        "alias": "ar",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "WorkType",
+        "alias": "wt",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "TypeId",
+        "sourceTable": "j",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "j",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Type",
+        "sourceTable": "j",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Code",
+        "sourceTable": "j",
+        "sourceColumn": "Code"
+      },
+      {
+        "alias": "DurationDays",
+        "sourceTable": "j",
+        "sourceColumn": "DurationDays"
+      },
+      {
+        "alias": "Active",
+        "sourceTable": "j",
+        "sourceColumn": "Active"
+      },
+      {
+        "alias": "IsRetainer",
+        "sourceTable": "j",
+        "sourceColumn": "IsRetainer"
+      },
+      {
+        "alias": "Plannable",
+        "sourceTable": "j",
+        "sourceColumn": "Plannable"
+      },
+      {
+        "alias": "IsDeliverable",
+        "sourceTable": "j",
+        "sourceColumn": "IsDeliverable"
+      },
+      {
+        "alias": "AllowAllJobTypes",
+        "sourceTable": "j",
+        "sourceColumn": "AllowAllJobTypes"
+      },
+      {
+        "alias": "CreatedOn",
+        "sourceTable": "j",
+        "sourceColumn": "CreatedOn"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "j",
+        "sourceColumn": "ModifiedOn"
+      },
+      {
+        "alias": "BriefingTemplate",
+        "sourceTable": "bt",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "BriefingTemplateId",
+        "sourceTable": "bt",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "BusinessObjectType",
+        "sourceTable": "bot",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "BusinessObjectTypeId",
+        "sourceTable": "bot",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "c",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "c",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "v",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DivisionId",
+        "sourceTable": "v",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "d",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "d",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Document",
+        "sourceTable": "doc",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DocumentId",
+        "sourceTable": "doc",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Workflow",
+        "sourceTable": "w",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "WorkflowId",
+        "sourceTable": "w",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CreatedByName",
+        "sourceTable": "u",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ModifiedByName",
+        "sourceTable": "us",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedById",
+        "sourceTable": "u",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "ModifiedById",
+        "sourceTable": "us",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "CreatedByHasImage",
+        "sourceTable": "u",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "ModifiedByHasImage",
+        "sourceTable": "us",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "TypeStyle",
+        "sourceTable": "j",
+        "sourceColumn": "StyleJson"
+      },
+      {
+        "alias": "AccessibleToAllDepartments",
+        "sourceTable": "j",
+        "sourceColumn": "AccessibleToAllDepartments"
+      },
+      {
+        "alias": "AllowsTimesheet",
+        "sourceTable": "j",
+        "sourceColumn": "AllowsTimesheet"
+      },
+      {
+        "alias": "ServiceId",
+        "sourceTable": "ar",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Service",
+        "sourceTable": "ar",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "WorkType",
+        "sourceTable": "wt",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "WorkTypeId",
+        "sourceTable": "wt",
+        "sourceColumn": "Oid"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.JobType"
+    ]
+  },
+  "DE-Typologies": {
+    "tables": [
+      {
+        "name": "UserTypology",
+        "alias": "utp",
+        "joinType": "FROM"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "dep",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "DivisionLookup",
+        "alias": "div",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "utp",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TypologyId",
+        "sourceTable": "utp",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Typology",
+        "sourceTable": "utp",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "TypologyGroupId",
+        "sourceTable": "utg",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyHasImage",
+        "sourceTable": "com",
+        "sourceColumn": "HasImage"
+      },
+      {
+        "alias": "DivisionId",
+        "sourceTable": "div",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "div",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Plannable",
+        "sourceTable": "utp",
+        "sourceColumn": "Plannable"
+      },
+      {
+        "alias": "IsActive",
+        "sourceTable": "utp",
+        "sourceColumn": "Active"
+      },
+      {
+        "alias": "HourlyValue",
+        "sourceTable": "utp",
+        "sourceColumn": "HourlyValue"
+      }
+    ],
+    "customFields": [
+      "Skill.Module.BusinessObjects.UserTypology"
+    ]
+  },
+  "DE-TypologyGroups": {
+    "tables": [
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "TypologyGroupId",
+        "sourceTable": "utg",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-TypologyGroupsCompanies": {
+    "tables": [
+      {
+        "name": "UserTypologyGroupCompany",
+        "alias": "tgd",
+        "joinType": "FROM"
+      },
+      {
+        "name": "CompanyLookup",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Id",
+        "sourceTable": "tgd",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TypologyGroupId",
+        "sourceTable": "utg",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-TypologyGroupsDepartments": {
+    "tables": [
+      {
+        "name": "UserTypologyGroupDepartment",
+        "alias": "tgd",
+        "joinType": "FROM"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "dep",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "Id",
+        "sourceTable": "tgd",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TypologyGroupId",
+        "sourceTable": "utg",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "TypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-UserCosts": {
+    "tables": [
+      {
+        "name": "UserMonthlyValue",
+        "alias": "umv",
+        "joinType": "FROM"
+      },
+      {
+        "name": "User",
+        "alias": "usr",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "UserId",
+        "sourceTable": "usr",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "MonthlyValue",
+        "sourceTable": "umv",
+        "sourceColumn": "MonthlyValue"
+      },
+      {
+        "alias": "HourlyValue",
+        "sourceTable": "umv",
+        "sourceColumn": "HourlyValue"
+      },
+      {
+        "alias": "StartDate",
+        "sourceTable": "umv",
+        "sourceColumn": "StartDate"
+      },
+      {
+        "alias": "EndDate",
+        "sourceTable": "umv",
+        "sourceColumn": "EndDate"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CurrencyId",
+        "sourceTable": "cur",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cur",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CreatedOn",
+        "sourceTable": "umv",
+        "sourceColumn": "CreatedOnUtc"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "umv",
+        "sourceColumn": "ModifiedOnUtc"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-UserTypes": {
+    "tables": [
+      {
+        "name": "UserType",
+        "alias": "ust",
+        "joinType": "FROM"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "UserTypeId",
+        "sourceTable": "ust",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "UserType",
+        "sourceTable": "ust",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Users": {
+    "tables": [
+      {
+        "name": "User",
+        "alias": "usr",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Department",
+        "alias": "dep",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Division",
+        "alias": "div",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserTypology",
+        "alias": "utp",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserType",
+        "alias": "ust",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usl",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Country",
+        "alias": "cou",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "cli",
+        "alias": null,
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "DocumentOid",
+        "sourceTable": "usr",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "UserId",
+        "sourceTable": "usr",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "IsActive",
+        "sourceTable": "usl",
+        "sourceColumn": "IsActive"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "DivisionId",
+        "sourceTable": "div",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Division",
+        "sourceTable": "div",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "TypologyId",
+        "sourceTable": "utp",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Typology",
+        "sourceTable": "utp",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "TypeId",
+        "sourceTable": "ust",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Type",
+        "sourceTable": "ust",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CountryId",
+        "sourceTable": "cou",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Country",
+        "sourceTable": "cou",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "HireDate",
+        "sourceTable": "usr",
+        "sourceColumn": "HireDate"
+      },
+      {
+        "alias": "TerminationDate",
+        "sourceTable": "usr",
+        "sourceColumn": "ExpirationDate"
+      },
+      {
+        "alias": "InactivatedOnUtc",
+        "sourceTable": "usl",
+        "sourceColumn": "InactivatedOnUtc"
+      },
+      {
+        "alias": "Email",
+        "sourceTable": "usr",
+        "sourceColumn": "Mail"
+      },
+      {
+        "alias": "RequiredHours",
+        "sourceTable": "usr",
+        "sourceColumn": "RequiredHours"
+      },
+      {
+        "alias": "CompanyRequiredHours",
+        "sourceTable": "com",
+        "sourceColumn": "RequiredHours"
+      },
+      {
+        "alias": "HourlyValue",
+        "sourceTable": "usr",
+        "sourceColumn": "HourlyValue"
+      },
+      {
+        "alias": "CityId",
+        "sourceTable": "usr",
+        "sourceColumn": "City"
+      },
+      {
+        "alias": "ModifiedOn",
+        "sourceTable": "usr",
+        "sourceColumn": "ModifiedOn"
+      },
+      {
+        "alias": "TaxPayerNumber",
+        "sourceTable": "usr",
+        "sourceColumn": "TaxPayerNumber"
+      },
+      {
+        "alias": "ExternalId",
+        "sourceTable": "usr",
+        "sourceColumn": "ExternalId"
+      },
+      {
+        "alias": "IsClient",
+        "sourceTable": "usr",
+        "sourceColumn": "IsClient"
+      },
+      {
+        "alias": "ClientIds",
+        "sourceTable": "cli",
+        "sourceColumn": "ClientIds"
+      },
+      {
+        "alias": "Clients",
+        "sourceTable": "cli",
+        "sourceColumn": "Clients"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-UsersAdditionalInformation": {
+    "tables": [
+      {
+        "name": "User",
+        "alias": "usr",
+        "joinType": "FROM"
+      },
+      {
+        "name": "User_UserFields",
+        "alias": "puf",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "UserId",
+        "sourceTable": "usr",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "*",
+        "sourceTable": "puf",
+        "sourceColumn": "*"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-WorkTypes": {
+    "tables": [
+      {
+        "name": "WorkType",
+        "alias": "wrk",
+        "joinType": "FROM"
+      },
+      {
+        "name": "Company",
+        "alias": "com",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "WorkTypeId",
+        "sourceTable": "wrk",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "WorkType",
+        "sourceTable": "wrk",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "CompanyId",
+        "sourceTable": "com",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Company",
+        "sourceTable": "com",
+        "sourceColumn": "Name"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-Workloads": {
+    "tables": [
+      {
+        "name": "DailyWorkload",
+        "alias": "dw",
+        "joinType": "FROM"
+      },
+      {
+        "name": "DailyWorkloadTimesheet",
+        "alias": "dwt",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "AssignmentType",
+        "alias": "ast",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "UserLookup",
+        "alias": "usr",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Deliverable",
+        "alias": "job",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Project",
+        "alias": "prj",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CommercialClient",
+        "alias": "cli",
+        "joinType": "JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "WorkloadId",
+        "sourceTable": "dw",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "DayUtc",
+        "sourceTable": "dw",
+        "sourceColumn": "DayUtc"
+      },
+      {
+        "alias": "Workload",
+        "sourceTable": "dw",
+        "sourceColumn": "Workload"
+      },
+      {
+        "alias": "JobId",
+        "sourceTable": "dw",
+        "sourceColumn": "DocumentOid"
+      },
+      {
+        "alias": "TimesheetId",
+        "sourceTable": "dwt",
+        "sourceColumn": "Timesheet"
+      },
+      {
+        "alias": "UserIs",
+        "sourceTable": "usr",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "User",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "cli",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "prj",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "JobId",
+        "sourceTable": "job",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Job",
+        "sourceTable": "job",
+        "sourceColumn": "NameAndExternalId"
+      }
+    ],
+    "customFields": []
+  },
+  "DE-EstimatesQuotesMonth": {
+    "tables": [
+      {
+        "name": "Estimate",
+        "alias": "est",
+        "joinType": "FROM"
+      },
+      {
+        "name": "EstimateItem",
+        "alias": "eit",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "EstimateItemDetail",
+        "alias": "eid",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "EstimateItemDetailMonth",
+        "alias": "edm",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "JobType",
+        "alias": "typ",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowState",
+        "alias": "wfs",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "WorkflowStateType",
+        "alias": "wst",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "CommercialClient",
+        "alias": "cli",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Project",
+        "alias": "prj",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "CommercialClientProduct",
+        "alias": "pro",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "UserTypologyGroup",
+        "alias": "utg",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "Currency",
+        "alias": "cur",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "dep",
+        "joinType": "JOIN"
+      },
+      {
+        "name": "DepartmentLookup",
+        "alias": "ddp",
+        "joinType": "LEFT JOIN"
+      },
+      {
+        "name": "User",
+        "alias": "usr",
+        "joinType": "LEFT JOIN"
+      }
+    ],
+    "columns": [
+      {
+        "alias": "EstimateId",
+        "sourceTable": "est",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Estimate",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateNumber",
+        "sourceTable": "est",
+        "sourceColumn": "Number"
+      },
+      {
+        "alias": "DepartmentId",
+        "sourceTable": "dep",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "Department",
+        "sourceTable": "dep",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "StageId",
+        "sourceTable": "wfs",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "Stage",
+        "sourceTable": "wfs",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ClientId",
+        "sourceTable": "est",
+        "sourceColumn": "Client"
+      },
+      {
+        "alias": "Client",
+        "sourceTable": "cli",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "ProjectId",
+        "sourceTable": "est",
+        "sourceColumn": "Project"
+      },
+      {
+        "alias": "Project",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateItem",
+        "sourceTable": "eit",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDescription",
+        "sourceTable": "eit",
+        "sourceColumn": "Description"
+      },
+      {
+        "alias": "EstimateItemDetailDepartmentId",
+        "sourceTable": "ddp",
+        "sourceColumn": "Id"
+      },
+      {
+        "alias": "EstimateItemDetailDepartment",
+        "sourceTable": "ddp",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailTypologyGroupId",
+        "sourceTable": "eid",
+        "sourceColumn": "UserTypologyGroup"
+      },
+      {
+        "alias": "EstimateItemDetailTypologyGroup",
+        "sourceTable": "utg",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailUserId",
+        "sourceTable": "eid",
+        "sourceColumn": "User"
+      },
+      {
+        "alias": "EstimateItemDetailUser",
+        "sourceTable": "usr",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailDescription",
+        "sourceTable": "eid",
+        "sourceColumn": "Description"
+      },
+      {
+        "alias": "ProductId",
+        "sourceTable": "est",
+        "sourceColumn": "Product"
+      },
+      {
+        "alias": "Product",
+        "sourceTable": "pro",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "EstimateItemDetailId",
+        "sourceTable": "eid",
+        "sourceColumn": "Oid"
+      },
+      {
+        "alias": "CurrencyId",
+        "sourceTable": "est",
+        "sourceColumn": "Currency"
+      },
+      {
+        "alias": "Currency",
+        "sourceTable": "cur",
+        "sourceColumn": "Name"
+      },
+      {
+        "alias": "Exchange",
+        "sourceTable": "est",
+        "sourceColumn": "Exchange"
+      },
+      {
+        "alias": "EstimateItemDetailTime",
+        "sourceTable": "edm",
+        "sourceColumn": "Hours"
+      },
+      {
+        "alias": "EstimateItemDetailCost",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateItemDetailIncome",
+        "sourceTable": null,
+        "sourceColumn": "(expression)"
+      },
+      {
+        "alias": "EstimateItemDetailMonth",
+        "sourceTable": "edm",
+        "sourceColumn": "DateUtc"
+      },
+      {
+        "alias": "EstimateItemDetailTableRate",
+        "sourceTable": "eid",
+        "sourceColumn": "TableRate"
+      },
+      {
+        "alias": "EstimateItemDetailUnitPriceCost",
+        "sourceTable": "eid",
+        "sourceColumn": "UnitPriceCost"
+      }
+    ],
+    "customFields": []
+  }
+}

@@ -1,0 +1,1 @@
+{"Id":"e9c0ff6d-360c-4dc5-beb8-2ca78aa62710","Name":"DE-UsersAdditionalInformation","Number":1,"Description":"","Statement":"select  usr.Oid as UserId,\n        usr.Name as [User],\n        puf.*\nfrom    [User] usr\n            left join User_UserFields puf on puf.Oid = usr.Oid","Category":"Data Extraction","Version":2,"Parameters":{},"Module":"","IsSystem":false}

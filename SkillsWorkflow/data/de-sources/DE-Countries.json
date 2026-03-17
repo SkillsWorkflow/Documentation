@@ -1,0 +1,1 @@
+{"Id":"b8ed49eb-9ee9-48b9-b14a-5d02d22175ec","Name":"DE-Countries","Number":1,"Description":"Extracts the list of countries.","Statement":"select  cou.Oid as CountryId, \n        cou.Name as Country\nfrom    Country cou","Category":"Data Extraction","Version":3,"Parameters":{},"IsSystem":false}
