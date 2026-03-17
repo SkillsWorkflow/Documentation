@@ -1,0 +1,23 @@
+{
+    "Id": "63da0de0-7859-4a5f-97df-160a0874b1ba",
+    "Name": "DE-Clients",
+    "Number": 1,
+    "Description": "Extracts the list of clients.",
+    "Statement": "-- +CUSTOMFIELDS(Skill.Module.BusinessObjects.CommercialClient)\nselect  cli.Oid as DocumentOid,\n        cli.Oid as ClientId,\n        cli.Name as Client,\n        cli.ExternalId,\n        cli.Code as Code,\n        cli.Email,\n        cli.Phone,\n        cli.HeadOffice,\n        cli.Street,\n        cli.Street2,\n        cli.City as Location,\n        cli.CreatedOnUtc as CreatedOn,\n        cli.ModifiedOnUtc as ModifiedOn,\n        cli.AllowsTimesheet,\n        clg.Oid as ClientGroupId,\n        clg.Name as ClientGroup,\n        cli.TaxPayerNumber,\n        cli.Margin as Margin,\n        cli.FullTimeEmployeeTime,\n        cli.SupplierMargin,\n        wfs.Oid as StageId,\n        wfs.Name as Stage,\n        wst.Oid as StageTypeId,\n        wst.Name as StageType,\n        mng.Id as ManagerId,\n        mng.Name as ManagerName,\n        mng.HasImage as ManagerHasImage,\n        own.Id as OwnerId,\n        own.Name as OwnerName,\n        own.HasImage as OwnerHasImage\nfrom    CommercialClient cli\n            left join ClientGroup clg on clg.Oid = cli.ClientGroup\n            join WorkflowState wfs on wfs.Oid = cli.WorkflowState\n            join WorkflowStateType wst on wst.Oid = wfs.WorkflowStateType\n            left Join UserLookup mng on mng.Id = cli.ProjectManager\n            left Join UserLookup own on own.Id = cli.ProjectOwner\nwhere   wst.Status != 1",
+    "Category": "Data Extraction",
+    "Version": 11,
+    "Parameters": {},
+    "IsSystem": false,
+    "Tags": [],
+    "Roles": [
+        {
+            "Id": "ab9028fe-e04f-42b7-90be-05fc79d50d66",
+            "Name": "Administrator",
+            "RoleId": "ab9028fe-e04f-42b7-90be-05fc79d50d66",
+            "RoleName": "Administrator",
+            "IsAdministrative": true,
+            "CanEditModel": true,
+            "Mandatory": false
+        }
+    ]
+}

@@ -11,14 +11,17 @@
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "generate:de": "node scripts/generate-de-docs.mjs"
   },
   "dependencies": {
+    "@dagrejs/dagre": "^2.0.4",
     "@docusaurus/core": "^3.9.2",
     "@docusaurus/plugin-content-docs": "^3.9.2",
     "@docusaurus/preset-classic": "^3.9.2",
     "@mdx-js/react": "^3.0.0",
     "@types/react": "^17.0.14",
+    "@xyflow/react": "^12.10.1",
     "clsx": "^2.1.1",
     "postcss": "^8.4.40",
     "prism-react-renderer": "^2.3.1",
@@ -39,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/plugin-client-redirects": "^3.9.2"
+    "@docusaurus/plugin-client-redirects": "^3.9.2",
+    "node-sql-parser": "^5.4.0"
   }
 }

@@ -1,0 +1,1 @@
+{"Id":"ef0eba63-da90-43b6-a4f1-b583a42937d9","Name":"DE-Cities","Number":1,"Description":"Extracts all cities.","Statement":"select  cit.Oid as CityId,\n        cit.Name as City,\n        con.Oid as CountryId,\n        con.Name as Country\nfrom    City cit, Country con\nwhere   con.Oid = cit.Country","Category":"Data Extraction","Version":1,"Parameters":{},"IsSystem":false}
