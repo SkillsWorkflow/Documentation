@@ -1,10 +1,12 @@
-import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import {
   ReactFlow,
   Background,
   Controls,
   useNodesState,
   useEdgesState,
+  useReactFlow,
+  ReactFlowProvider,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
@@ -15,9 +17,11 @@ import { buildFullGraph, buildFocusGraph, getColumnsForDE } from './lineageAdapt
 const SELECTED_BORDER = '3px solid #fbbf24';
 const SELECTED_SHADOW = '0 0 0 3px rgba(251,191,36,0.4)';
 
-export default function LineageGraph() {
+function LineageGraphInner() {
+  const { fitView } = useReactFlow();
   const [focusDE, setFocusDE] = useState('');
   const [selectedDE, setSelectedDE] = useState(null);
+  const focusVersion = useRef(0);
 
   const { nodes: graphNodes, edges: graphEdges } = useMemo(
     () => (focusDE ? buildFocusGraph(focusDE) : buildFullGraph()),
@@ -27,12 +31,20 @@ export default function LineageGraph() {
   const [nodes, setNodes, onNodesChange] = useNodesState(graphNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(graphEdges);
 
-  // Sync nodes/edges when focus changes
+  // Sync nodes/edges when focus changes, then fitView
   useEffect(() => {
     setNodes(graphNodes);
     setEdges(graphEdges);
     setSelectedDE(focusDE || null);
-  }, [graphNodes, graphEdges, setNodes, setEdges, focusDE]);
+    focusVersion.current += 1;
+    const v = focusVersion.current;
+    // fitView after React Flow processes the new nodes
+    requestAnimationFrame(() => {
+      if (v === focusVersion.current) {
+        fitView({ padding: 0.3, duration: 200 });
+      }
+    });
+  }, [graphNodes, graphEdges, setNodes, setEdges, focusDE, fitView]);
 
   // Highlight selected node
   useEffect(() => {
@@ -156,5 +168,13 @@ export default function LineageGraph() {
         </p>
       )}
     </div>
+  );
+}
+
+export default function LineageGraph() {
+  return (
+    <ReactFlowProvider>
+      <LineageGraphInner />
+    </ReactFlowProvider>
   );
 }
