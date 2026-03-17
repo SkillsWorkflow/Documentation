@@ -26,7 +26,7 @@ This query has no parameters.
 | Default | bot | Default |
 | Document | doc | Name |
 | DocumentId | doc | Oid |
-| HasConfiguration | — | [object Object](...) |
+| HasConfiguration | — | iif(...) |
 
 ## Source Tables
 

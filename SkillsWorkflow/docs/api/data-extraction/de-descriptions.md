@@ -25,8 +25,8 @@ This query has no parameters.
 | Description | — | PlainText |
 | DescriptionHtml | — | Text |
 | Version | — | Version |
-| LatestVersion | — | — |
-| IsLastVersion | — | [object Object](...) |
+| LatestVersion | — | (expression) |
+| IsLastVersion | — | iif(...) |
 | DocumentId | — | DocumentOid |
 | Document | — | DocumentTypeName |
 | CreatedOn | — | CreatedOn |

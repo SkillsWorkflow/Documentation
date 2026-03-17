@@ -346,12 +346,12 @@
       {
         "alias": "AlreadyRead",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserInTeam",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "BaseObjectReadId",
@@ -366,7 +366,7 @@
       {
         "alias": "IsFavorite",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       }
     ],
     "customFields": [
@@ -465,7 +465,7 @@
       {
         "alias": "Hours",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "LeaveTypeYear",
@@ -490,7 +490,7 @@
       {
         "alias": "Status",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "CASE(...)"
       },
       {
         "alias": "Approvers",
@@ -537,7 +537,7 @@
       {
         "alias": "DocumentType",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "right(...)"
       },
       {
         "alias": "DocumentSubType",
@@ -768,7 +768,7 @@
       {
         "alias": "HasConfiguration",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       }
     ],
     "customFields": []
@@ -1552,12 +1552,12 @@
       {
         "alias": "LatestVersion",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "IsLastVersion",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "DocumentId",
@@ -1843,137 +1843,137 @@
       {
         "alias": "FromMonth",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "datefromparts(...)"
       },
       {
         "alias": "ToMonth",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "datefromparts(...)"
       },
       {
         "alias": "Month",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "datefromparts(...)"
       },
       {
         "alias": "ContractedTime",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "PlannedContractedTime",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "PlannedTime",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ActualTime",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ContractedCost",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "PlannedCost",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ActualCost",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ContractedIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "PlannedIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ActualIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ContractedProfit",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "PlannedProfit",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ActualProfit",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyContractedCost",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyPlannedCost",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyActualCost",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyContractedIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyPlannedIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyActualIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyContractedProfit",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyPlannedProfit",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CompanyActualProfit",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "Exchange",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CurrencySymbol",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "CurrencyCompany",
@@ -2040,7 +2040,7 @@
       {
         "alias": "Estimate",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateNumber",
@@ -2157,7 +2157,7 @@
       {
         "alias": "Count",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       }
     ],
     "customFields": []
@@ -2269,7 +2269,7 @@
       {
         "alias": "Estimate",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateNumber",
@@ -2314,7 +2314,7 @@
       {
         "alias": "Contract",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ContractId",
@@ -2329,7 +2329,7 @@
       {
         "alias": "Project",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateItemId",
@@ -2494,12 +2494,12 @@
       {
         "alias": "EstimateItemDetailCost",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateItemDetailIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateItemDetailTableRate",
@@ -2514,7 +2514,7 @@
       {
         "alias": "EstimateItemDetailUnitPriceIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "DiscountCost",
@@ -2671,7 +2671,7 @@
       {
         "alias": "Count",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       }
     ],
     "customFields": []
@@ -3493,27 +3493,27 @@
       {
         "alias": "AlreadyRead",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserInTeam",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserPending",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "IsDelayed",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "Delayed",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "Version",
@@ -3557,7 +3557,7 @@
       {
         "alias": "Count",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       }
     ],
     "customFields": []
@@ -3574,7 +3574,7 @@
       {
         "alias": "Count",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       }
     ],
     "customFields": []
@@ -3613,7 +3613,7 @@
       {
         "alias": "Count",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       }
     ],
     "customFields": []
@@ -3942,7 +3942,7 @@
       {
         "alias": "ProjectType",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "RateCard",
@@ -3957,32 +3957,32 @@
       {
         "alias": "EstimatedWithoutTaxCost",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "EstimatedTaxCost",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "EstimatedWithTaxCost",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "EstimatedWithoutTaxSell",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "EstimatedTaxSell",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "EstimatedWithTaxSell",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "CreatedById",
@@ -4017,22 +4017,22 @@
       {
         "alias": "AlreadyRead",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserInTeam",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserPending",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "IsDelayed",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "Delayed",
@@ -4255,7 +4255,7 @@
       {
         "alias": "Project",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ProjectNumber",
@@ -4330,17 +4330,17 @@
       {
         "alias": "ProjectPlannedContractedTime",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ProjectPlannedTime",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ProjectPlannedIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "Month",
@@ -4679,7 +4679,7 @@
       {
         "alias": "Project",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ProjectId",
@@ -4769,32 +4769,32 @@
       {
         "alias": "Stage",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "Color",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "AlreadyRead",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserInTeam",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserPending",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserInDepartment",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrencyIsoCode",
@@ -5145,7 +5145,7 @@
       {
         "alias": "Days",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "datediff(...)"
       },
       {
         "alias": "TagsJson",
@@ -5250,12 +5250,12 @@
       {
         "alias": "Stage",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "StageColor",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "ModifiedBy",
@@ -5300,12 +5300,12 @@
       {
         "alias": "AlreadyRead",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CurrentUserInTeam",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "BaseObjectReadId",
@@ -5320,7 +5320,7 @@
       {
         "alias": "IsFavorite",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "Workflow",
@@ -6006,7 +6006,7 @@
       {
         "alias": "Hours",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "ClientId",
@@ -6056,7 +6056,7 @@
       {
         "alias": "IsBillable",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "iif(...)"
       },
       {
         "alias": "CompanyId",
@@ -6111,12 +6111,12 @@
       {
         "alias": "Status",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "CASE(...)"
       },
       {
         "alias": "Approvers",
         "sourceTable": null,
-        "sourceColumn": "[object Object](...)"
+        "sourceColumn": "isnull(...)"
       },
       {
         "alias": "ModifiedOn",
@@ -6180,7 +6180,7 @@
       {
         "alias": "Count",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       }
     ],
     "customFields": []
@@ -7358,7 +7358,7 @@
       {
         "alias": "Project",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "JobId",
@@ -7460,7 +7460,7 @@
       {
         "alias": "Estimate",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateNumber",
@@ -7505,7 +7505,7 @@
       {
         "alias": "Project",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateItem",
@@ -7590,12 +7590,12 @@
       {
         "alias": "EstimateItemDetailCost",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateItemDetailIncome",
         "sourceTable": null,
-        "sourceColumn": ""
+        "sourceColumn": "(expression)"
       },
       {
         "alias": "EstimateItemDetailMonth",

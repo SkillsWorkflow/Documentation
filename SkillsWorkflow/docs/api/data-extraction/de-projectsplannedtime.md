@@ -24,7 +24,7 @@ This query has no parameters.
 | ClientId | cli | Oid |
 | Client | cli | Name |
 | ProjectId | prj | Oid |
-| Project | — | — |
+| Project | — | (expression) |
 | ProjectNumber | prj | Number |
 | ProductId | pro | Oid |
 | Product | pro | Name |
@@ -39,9 +39,9 @@ This query has no parameters.
 | ProjectPlannedUserId | phd | User |
 | ProjectPlannedUser | usr | Name |
 | EstimateItemDetailId | eid | Oid |
-| ProjectPlannedContractedTime | — | — |
-| ProjectPlannedTime | — | — |
-| ProjectPlannedIncome | — | — |
+| ProjectPlannedContractedTime | — | (expression) |
+| ProjectPlannedTime | — | (expression) |
+| ProjectPlannedIncome | — | (expression) |
 | Month | phd | Date |
 | ActualSellRate | pnh | SellRate |
 | ContractedSellRate | eid | TableRateSell |

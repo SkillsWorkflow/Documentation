@@ -22,7 +22,7 @@ This query has no parameters.
 | Column | Source Table | Source Column |
 |--------|-------------|---------------|
 | EstimateId | est | Oid |
-| Estimate | — | — |
+| Estimate | — | (expression) |
 | EstimateNumber | est | Number |
 | DepartmentId | dep | Id |
 | Department | dep | Name |
@@ -31,7 +31,7 @@ This query has no parameters.
 | ClientId | est | Client |
 | Client | cli | Name |
 | ProjectId | est | Project |
-| Project | — | — |
+| Project | — | (expression) |
 | EstimateItem | eit | Name |
 | EstimateItemDescription | eit | Description |
 | EstimateItemDetailDepartmentId | ddp | Id |
@@ -48,8 +48,8 @@ This query has no parameters.
 | Currency | cur | Name |
 | Exchange | est | Exchange |
 | EstimateItemDetailTime | edm | Hours |
-| EstimateItemDetailCost | — | — |
-| EstimateItemDetailIncome | — | — |
+| EstimateItemDetailCost | — | (expression) |
+| EstimateItemDetailIncome | — | (expression) |
 | EstimateItemDetailMonth | edm | DateUtc |
 | EstimateItemDetailTableRate | eid | TableRate |
 | EstimateItemDetailUnitPriceCost | eid | UnitPriceCost |

@@ -29,6 +29,7 @@ Contains documents with information about vacations from employees
 - If the user asks about a specific leave type, filter by the 'LeaveType' field.
 - If the user asks about a specific company, filter by the 'Company' field.
 - If the user asks about half-day leaves, filter by the 'IsHalfDay' field.
+- If the user asks about leaves within a specific date range, filter by the 'Day' field using `>=` and `<=` operators.
 - If the user doesn't specify a status, include all statuses.
 
 ## Endpoint
@@ -54,12 +55,12 @@ This query has no parameters.
 | User | usl | Name |
 | Day | lev | Day |
 | IsHalfDay | lev | HalfDay |
-| Hours | — | [object Object](...) |
+| Hours | — | iif(...) |
 | LeaveTypeYear | uiv | Year |
 | LeaveTypeExpiresOn | uiv | ExpirationDate |
 | ModifiedOn | lev | ModifiedOn |
 | RequestedApproval | lev | RequestedApproval |
-| Status | — | — |
+| Status | — | CASE(...) |
 | Approvers | apr | Approvers |
 | HRApprovers | hra | Approvers |
 

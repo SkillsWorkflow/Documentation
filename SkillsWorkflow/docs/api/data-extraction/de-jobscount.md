@@ -21,7 +21,7 @@ This query has no parameters.
 
 | Column | Source Table | Source Column |
 |--------|-------------|---------------|
-| Count | — | — |
+| Count | — | (expression) |
 
 ## Source Tables
 

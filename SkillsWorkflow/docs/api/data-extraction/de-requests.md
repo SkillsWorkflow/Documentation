@@ -29,7 +29,7 @@ This query has no parameters.
 | EndDateUtc | doc | EndDateUtc |
 | CreatedOnUtc | doc | CreatedOnUtc |
 | ModifiedOnUtc | doc | ModifiedOnUtc |
-| Days | — | [object Object](...) |
+| Days | — | datediff(...) |
 | TagsJson | doc | TagsJson |
 | IsActivated | doc | IsActivated |
 | CreatedBy | usrCb | Name |
@@ -50,8 +50,8 @@ This query has no parameters.
 | Brand | brd | Name |
 | Contract | con | Name |
 | ContractId | con | Id |
-| Stage | — | [object Object](...) |
-| StageColor | — | [object Object](...) |
+| Stage | — | isnull(...) |
+| StageColor | — | isnull(...) |
 | ModifiedBy | usrMb | Name |
 | ModifiedById | usrMb | Id |
 | ModifiedByHasImage | usrMb | HasImage |
@@ -60,11 +60,11 @@ This query has no parameters.
 | CreatedByCompany | uc | Name |
 | CreatedByCompanyHasImage | uc | HasImage |
 | StageType | wst | Name |
-| AlreadyRead | — | [object Object](...) |
-| CurrentUserInTeam | — | [object Object](...) |
+| AlreadyRead | — | iif(...) |
+| CurrentUserInTeam | — | iif(...) |
 | BaseObjectReadId | bor | Oid |
 | FavoriteId | uf | Oid |
-| IsFavorite | — | [object Object](...) |
+| IsFavorite | — | iif(...) |
 | Workflow | wkf | Name |
 | Priority | doc | Priority |
 | Version | doc | Version |

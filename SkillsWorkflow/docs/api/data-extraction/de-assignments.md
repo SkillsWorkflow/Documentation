@@ -22,7 +22,7 @@ This query has no parameters.
 | Column | Source Table | Source Column |
 |--------|-------------|---------------|
 | DocumentId | ass | DocumentOid |
-| DocumentType | — | [object Object](...) |
+| DocumentType | — | right(...) |
 | DocumentSubType | ass | BusinessObjectTypeName |
 | TeamId | ast | Oid |
 | Team | ast | Name |

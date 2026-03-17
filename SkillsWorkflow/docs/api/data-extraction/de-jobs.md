@@ -58,11 +58,11 @@ This query has no parameters.
 | ModifiedBy | mod | Name |
 | ModifiedHasImage | mod | HasImage |
 | ModifiedOn | job | ModifiedOn |
-| AlreadyRead | — | [object Object](...) |
-| CurrentUserInTeam | — | [object Object](...) |
-| CurrentUserPending | — | [object Object](...) |
-| IsDelayed | — | [object Object](...) |
-| Delayed | — | [object Object](...) |
+| AlreadyRead | — | iif(...) |
+| CurrentUserInTeam | — | iif(...) |
+| CurrentUserPending | — | iif(...) |
+| IsDelayed | — | iif(...) |
+| Delayed | — | iif(...) |
 | Version | job | Version |
 | Motive | his | Motive |
 

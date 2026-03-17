@@ -21,7 +21,7 @@ This query has no parameters.
 |--------|-------------|---------------|
 | BillingConditionId | bic | Oid |
 | EstimateId | est | Oid |
-| Estimate | — | — |
+| Estimate | — | (expression) |
 | EstimateNumber | est | Number |
 | BillingClientId | bic | BillingClient |
 | BillingClient | bcl | NameAndExternalId |

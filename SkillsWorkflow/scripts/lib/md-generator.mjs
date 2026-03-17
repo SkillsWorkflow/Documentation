@@ -109,7 +109,9 @@ export async function generateDePages(deList, outputDir) {
             for (const col of parsed.columns) {
                 const alias = col.alias || col.sourceColumn || '';
                 const tbl = col.sourceTable || '—';
-                const src = col.sourceColumn || '—';
+                const src = (typeof col.sourceColumn === 'string' && !col.sourceColumn.includes('[object Object]'))
+                    ? col.sourceColumn
+                    : '(expression)';
                 if (hasDescriptions) {
                     const desc = override.columnDescriptions?.[alias] || '';
                     lines.push(`| ${alias} | ${tbl} | ${src} | ${desc} |`);

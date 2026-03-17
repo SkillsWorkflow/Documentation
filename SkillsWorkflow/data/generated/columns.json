@@ -297,13 +297,13 @@
     "deName": "DE-Bills",
     "alias": "AlreadyRead",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Bills",
     "alias": "CurrentUserInTeam",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Bills",
@@ -321,7 +321,7 @@
     "deName": "DE-Bills",
     "alias": "IsFavorite",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Leaves",
@@ -381,7 +381,7 @@
     "deName": "DE-Leaves",
     "alias": "Hours",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Leaves",
@@ -411,7 +411,7 @@
     "deName": "DE-Leaves",
     "alias": "Status",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "CASE(...)"
   },
   {
     "deName": "DE-Leaves",
@@ -435,7 +435,7 @@
     "deName": "DE-Assignments",
     "alias": "DocumentType",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "right(...)"
   },
   {
     "deName": "DE-Assignments",
@@ -645,7 +645,7 @@
     "deName": "DE-BusinessObjectTypes",
     "alias": "HasConfiguration",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Cities",
@@ -1305,13 +1305,13 @@
     "deName": "DE-Descriptions",
     "alias": "LatestVersion",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-Descriptions",
     "alias": "IsLastVersion",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Descriptions",
@@ -1527,163 +1527,163 @@
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "FromMonth",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "datefromparts(...)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ToMonth",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "datefromparts(...)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "Month",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "datefromparts(...)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ContractedTime",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "PlannedContractedTime",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "PlannedTime",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ActualTime",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ContractedCost",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "PlannedCost",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ActualCost",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ContractedIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "PlannedIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ActualIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ContractedProfit",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "PlannedProfit",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "ActualProfit",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyContractedCost",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyPlannedCost",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyActualCost",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyContractedIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyPlannedIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyActualIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyContractedProfit",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyPlannedProfit",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CompanyActualProfit",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "Exchange",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
     "alias": "CurrencySymbol",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "EstimatedPlannedActualMonthly",
@@ -1713,7 +1713,7 @@
     "deName": "DE-EstimatesBillingConditions",
     "alias": "Estimate",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesBillingConditions",
@@ -1827,7 +1827,7 @@
     "deName": "DE-EstimatesCount",
     "alias": "Count",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -1839,7 +1839,7 @@
     "deName": "DE-EstimatesQuotes",
     "alias": "Estimate",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -1893,7 +1893,7 @@
     "deName": "DE-EstimatesQuotes",
     "alias": "Contract",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -1911,7 +1911,7 @@
     "deName": "DE-EstimatesQuotes",
     "alias": "Project",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -2109,13 +2109,13 @@
     "deName": "DE-EstimatesQuotes",
     "alias": "EstimateItemDetailCost",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "EstimateItemDetailIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -2133,7 +2133,7 @@
     "deName": "DE-EstimatesQuotes",
     "alias": "EstimateItemDetailUnitPriceIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -2205,7 +2205,7 @@
     "deName": "DE-EstimatesQuotesCount",
     "alias": "Count",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-ExpenseSheets",
@@ -2913,31 +2913,31 @@
     "deName": "DE-Jobs",
     "alias": "AlreadyRead",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Jobs",
     "alias": "CurrentUserInTeam",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Jobs",
     "alias": "CurrentUserPending",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Jobs",
     "alias": "IsDelayed",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Jobs",
     "alias": "Delayed",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Jobs",
@@ -2955,13 +2955,13 @@
     "deName": "DE-JobsCount",
     "alias": "Count",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-LeavesCount",
     "alias": "Count",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-LeavesDeleted",
@@ -2979,7 +2979,7 @@
     "deName": "DE-LeavesDeletedCount",
     "alias": "Count",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-Products",
@@ -3225,7 +3225,7 @@
     "deName": "DE-Projects",
     "alias": "ProjectType",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Projects",
@@ -3243,37 +3243,37 @@
     "deName": "DE-Projects",
     "alias": "EstimatedWithoutTaxCost",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-Projects",
     "alias": "EstimatedTaxCost",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-Projects",
     "alias": "EstimatedWithTaxCost",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-Projects",
     "alias": "EstimatedWithoutTaxSell",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-Projects",
     "alias": "EstimatedTaxSell",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-Projects",
     "alias": "EstimatedWithTaxSell",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-Projects",
@@ -3315,25 +3315,25 @@
     "deName": "DE-Projects",
     "alias": "AlreadyRead",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Projects",
     "alias": "CurrentUserInTeam",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Projects",
     "alias": "CurrentUserPending",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Projects",
     "alias": "IsDelayed",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Projects",
@@ -3441,7 +3441,7 @@
     "deName": "DE-ProjectsPlannedTime",
     "alias": "Project",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-ProjectsPlannedTime",
@@ -3531,19 +3531,19 @@
     "deName": "DE-ProjectsPlannedTime",
     "alias": "ProjectPlannedContractedTime",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-ProjectsPlannedTime",
     "alias": "ProjectPlannedTime",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-ProjectsPlannedTime",
     "alias": "ProjectPlannedIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-ProjectsPlannedTime",
@@ -3783,7 +3783,7 @@
     "deName": "DE-PurchaseOrders",
     "alias": "Project",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-PurchaseOrders",
@@ -3891,37 +3891,37 @@
     "deName": "DE-PurchaseOrders",
     "alias": "Stage",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-PurchaseOrders",
     "alias": "Color",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-PurchaseOrders",
     "alias": "AlreadyRead",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-PurchaseOrders",
     "alias": "CurrentUserInTeam",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-PurchaseOrders",
     "alias": "CurrentUserPending",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-PurchaseOrders",
     "alias": "CurrentUserInDepartment",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-PurchaseOrders",
@@ -4113,7 +4113,7 @@
     "deName": "DE-Requests",
     "alias": "Days",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "datediff(...)"
   },
   {
     "deName": "DE-Requests",
@@ -4239,13 +4239,13 @@
     "deName": "DE-Requests",
     "alias": "Stage",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-Requests",
     "alias": "StageColor",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-Requests",
@@ -4299,13 +4299,13 @@
     "deName": "DE-Requests",
     "alias": "AlreadyRead",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Requests",
     "alias": "CurrentUserInTeam",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Requests",
@@ -4323,7 +4323,7 @@
     "deName": "DE-Requests",
     "alias": "IsFavorite",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-Requests",
@@ -4869,7 +4869,7 @@
     "deName": "DE-TimeSheets",
     "alias": "Hours",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-TimeSheets",
@@ -4929,7 +4929,7 @@
     "deName": "DE-TimeSheets",
     "alias": "IsBillable",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-TimeSheets",
@@ -4995,13 +4995,13 @@
     "deName": "DE-TimeSheets",
     "alias": "Status",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "CASE(...)"
   },
   {
     "deName": "DE-TimeSheets",
     "alias": "Approvers",
     "sourceTable": null,
-    "sourceColumn": "[object Object](...)"
+    "sourceColumn": "isnull(...)"
   },
   {
     "deName": "DE-TimeSheets",
@@ -5043,7 +5043,7 @@
     "deName": "DE-TimeSheetsDeletedCount",
     "alias": "Count",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-Transitions",
@@ -5985,7 +5985,7 @@
     "deName": "DE-Workloads",
     "alias": "Project",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-Workloads",
@@ -6009,7 +6009,7 @@
     "deName": "DE-EstimatesQuotesMonth",
     "alias": "Estimate",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotesMonth",
@@ -6063,7 +6063,7 @@
     "deName": "DE-EstimatesQuotesMonth",
     "alias": "Project",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotesMonth",
@@ -6165,13 +6165,13 @@
     "deName": "DE-EstimatesQuotesMonth",
     "alias": "EstimateItemDetailCost",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotesMonth",
     "alias": "EstimateItemDetailIncome",
     "sourceTable": null,
-    "sourceColumn": null
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotesMonth",

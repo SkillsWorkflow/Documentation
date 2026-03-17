@@ -105,7 +105,13 @@ function expressionToString(expr) {
     if (expr.column) {
         return expr.table ? `${expr.table}.${expr.column}` : expr.column;
     }
-    if (expr.type === 'function') return `${expr.name}(...)`;
+    if (expr.type === 'function') {
+        const name = typeof expr.name === 'string'
+            ? expr.name
+            : expr.name?.name?.[0]?.value ?? '(expression)';
+        return `${name}(...)`;
+    }
+    if (expr.type === 'case') return 'CASE(...)';
     if (expr.value !== undefined) return String(expr.value);
-    return '';
+    return '(expression)';
 }

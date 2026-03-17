@@ -32,7 +32,7 @@ This query has no parameters.
 | TypologyId | utg | Oid |
 | Typology | utg | Name |
 | Day | tim | Date |
-| Hours | — | — |
+| Hours | — | (expression) |
 | ClientId | cli | Id |
 | Client | cli | Name |
 | ProjectId | prj | Id |
@@ -42,7 +42,7 @@ This query has no parameters.
 | Job | job | Name |
 | JobNumber | job | Number |
 | JobType | typ | Name |
-| IsBillable | — | [object Object](...) |
+| IsBillable | — | iif(...) |
 | CompanyId | com | Id |
 | Company | com | Name |
 | ProductId | prd | Oid |
@@ -53,8 +53,8 @@ This query has no parameters.
 | Brand | brd | Name |
 | WorkTypeId | wrk | Oid |
 | WorkType | wrk | Name |
-| Status | — | — |
-| Approvers | — | [object Object](...) |
+| Status | — | CASE(...) |
+| Approvers | — | isnull(...) |
 | ModifiedOn | tim | ModifiedOn |
 | RequestedApproval | tim | RequestedApproval |
 | HourlyUserCost | — | HourlyUserCost |

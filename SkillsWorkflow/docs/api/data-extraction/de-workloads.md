@@ -31,7 +31,7 @@ This query has no parameters.
 | ClientId | cli | Oid |
 | Client | cli | Name |
 | ProjectId | prj | Oid |
-| Project | — | — |
+| Project | — | (expression) |
 | JobId | job | Oid |
 | Job | job | NameAndExternalId |
 

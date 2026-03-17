@@ -70,11 +70,11 @@ This query has no parameters.
 | StageColor | wfs | Color |
 | StateType | wst | Name |
 | StageType | wst | Name |
-| AlreadyRead | — | [object Object](...) |
-| CurrentUserInTeam | — | [object Object](...) |
+| AlreadyRead | — | iif(...) |
+| CurrentUserInTeam | — | iif(...) |
 | BaseObjectReadId | bor | Oid |
 | FavoriteId | uf | Oid |
-| IsFavorite | — | [object Object](...) |
+| IsFavorite | — | iif(...) |
 
 ## Source Tables
 

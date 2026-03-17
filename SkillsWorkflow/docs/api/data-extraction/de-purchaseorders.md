@@ -43,7 +43,7 @@ This query has no parameters.
 | Department | d | Name |
 | ContractId | cnt | Id |
 | Contract | cnt | Name |
-| Project | — | — |
+| Project | — | (expression) |
 | ProjectId | p | Id |
 | Estimate | e | Name |
 | EstimateId | e | Oid |
@@ -61,12 +61,12 @@ This query has no parameters.
 | ExternalId | doc | ExternalId |
 | ExternalError | doc | ExternalError |
 | StageType | wst | Name |
-| Stage | — | [object Object](...) |
-| Color | — | [object Object](...) |
-| AlreadyRead | — | [object Object](...) |
-| CurrentUserInTeam | — | [object Object](...) |
-| CurrentUserPending | — | [object Object](...) |
-| CurrentUserInDepartment | — | [object Object](...) |
+| Stage | — | isnull(...) |
+| Color | — | isnull(...) |
+| AlreadyRead | — | iif(...) |
+| CurrentUserInTeam | — | iif(...) |
+| CurrentUserPending | — | iif(...) |
+| CurrentUserInDepartment | — | iif(...) |
 | CurrencyIsoCode | curr | IsoCode |
 | Currency | curr | Name |
 | Articles | art | Articles |

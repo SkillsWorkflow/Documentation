@@ -22,7 +22,7 @@ This query has no parameters.
 | Column | Source Table | Source Column |
 |--------|-------------|---------------|
 | EstimateId | est | Oid |
-| Estimate | — | — |
+| Estimate | — | (expression) |
 | EstimateNumber | est | Number |
 | DepartmentId | dep | Id |
 | Department | dep | Name |
@@ -31,10 +31,10 @@ This query has no parameters.
 | Stage | wfs | Name |
 | ClientId | cli | Id |
 | Client | cli | Name |
-| Contract | — | — |
+| Contract | — | (expression) |
 | ContractId | cnt | Id |
 | ProjectId | prj | Id |
-| Project | — | — |
+| Project | — | (expression) |
 | EstimateItemId | eit | Oid |
 | EstimateItem | eit | Name |
 | EstimateItemDescription | eit | Description |
@@ -67,11 +67,11 @@ This query has no parameters.
 | EstimateItemValueWithVatIncome | eit | ValueWithVatIncome |
 | EstimateItemClientDirectTotal | eit | ClientDirectTotal |
 | EstimateItemValueWithVatIncomeWithClientDirect | eit | ValueWithVatIncomeWithClientDirect |
-| EstimateItemDetailCost | — | — |
-| EstimateItemDetailIncome | — | — |
+| EstimateItemDetailCost | — | (expression) |
+| EstimateItemDetailIncome | — | (expression) |
 | EstimateItemDetailTableRate | eid | TableRate |
 | EstimateItemDetailUnitPriceCost | eid | UnitPriceCost |
-| EstimateItemDetailUnitPriceIncome | — | — |
+| EstimateItemDetailUnitPriceIncome | — | (expression) |
 | DiscountCost | eid | DiscountCost |
 | QuantityCost | eid | QuantityCost |
 | ValueWithoutVatCost | eid | ValueWithoutVatCost |

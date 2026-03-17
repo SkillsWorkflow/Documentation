@@ -54,25 +54,25 @@ This query has no parameters.
 | CurrencyId | cur | Oid |
 | Currency | cur | Name |
 | Investment | prj | Investment |
-| ProjectType | — | [object Object](...) |
+| ProjectType | — | iif(...) |
 | RateCard | rtc | Name |
 | RateCardColumn | rcc | Name |
-| EstimatedWithoutTaxCost | — | [object Object](...) |
-| EstimatedTaxCost | — | [object Object](...) |
-| EstimatedWithTaxCost | — | [object Object](...) |
-| EstimatedWithoutTaxSell | — | [object Object](...) |
-| EstimatedTaxSell | — | [object Object](...) |
-| EstimatedWithTaxSell | — | [object Object](...) |
+| EstimatedWithoutTaxCost | — | isnull(...) |
+| EstimatedTaxCost | — | isnull(...) |
+| EstimatedWithTaxCost | — | isnull(...) |
+| EstimatedWithoutTaxSell | — | isnull(...) |
+| EstimatedTaxSell | — | isnull(...) |
+| EstimatedWithTaxSell | — | isnull(...) |
 | CreatedById | cre | Id |
 | CreatedBy | cre | Name |
 | CreatedByHasImage | cre | HasImage |
 | ModifiedId | mod | Id |
 | ModifiedBy | mod | Name |
 | ModifiedHasImage | mod | HasImage |
-| AlreadyRead | — | [object Object](...) |
-| CurrentUserInTeam | — | [object Object](...) |
-| CurrentUserPending | — | [object Object](...) |
-| IsDelayed | — | [object Object](...) |
+| AlreadyRead | — | iif(...) |
+| CurrentUserInTeam | — | iif(...) |
+| CurrentUserPending | — | iif(...) |
+| IsDelayed | — | iif(...) |
 | Delayed | dld | Delayed |
 
 ## Source Tables
