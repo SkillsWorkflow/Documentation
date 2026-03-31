@@ -1,7 +1,7 @@
 import Dagre from '@dagrejs/dagre';
-import { HIERARCHY, ALL_DE_NAMES } from './deGraphConfig';
+import { HIERARCHY, ALL_ENTITY_NAMES } from './wfGraphConfig';
 
-const NODE_WIDTH = 180;
+const NODE_WIDTH = 160;
 const NODE_HEIGHT = 40;
 
 // ── Styles ──────────────────────────────────────────────
@@ -35,21 +35,22 @@ const EDGE_LABEL_BG = { fill: '#f1f5f9', fillOpacity: 0.9 };
 // ── Precomputed lookups ─────────────────────────────────
 
 const childrenOf = new Map();
-const parentOf = new Map();
+const parentsOf = new Map();
 
 for (const { parent, child } of HIERARCHY) {
     if (!childrenOf.has(parent)) childrenOf.set(parent, []);
     childrenOf.get(parent).push(child);
-    parentOf.set(child, parent);
+    if (!parentsOf.has(child)) parentsOf.set(child, []);
+    if (!parentsOf.get(child).includes(parent)) parentsOf.get(child).push(parent);
 }
 
-const rootSet = new Set(ALL_DE_NAMES.filter((n) => !parentOf.has(n)));
+const rootSet = new Set(ALL_ENTITY_NAMES.filter((n) => !parentsOf.has(n)));
 
 // ── Layout with dagre ───────────────────────────────────
 
 function applyDagreLayout(nodes, edges) {
     const g = new Dagre.graphlib.Graph().setDefaultEdgeLabel(() => ({}));
-    g.setGraph({ rankdir: 'TB', nodesep: 40, ranksep: 80 });
+    g.setGraph({ rankdir: 'TB', nodesep: 50, ranksep: 90 });
 
     for (const node of nodes) {
         g.setNode(node.id, { width: NODE_WIDTH, height: NODE_HEIGHT });
@@ -84,9 +85,9 @@ function makeNode(id) {
     };
 }
 
-function makeEdge({ parent, child, via }) {
+function makeEdge({ parent, child, via }, idx) {
     return {
-        id: `${parent}->${child}`,
+        id: `${parent}->${child}:${idx}`,
         source: parent,
         target: child,
         label: via ?? '',
@@ -102,26 +103,26 @@ function makeEdge({ parent, child, via }) {
 // ── Public API ──────────────────────────────────────────
 
 /**
- * Build the full graph with all DEs.
+ * Build the full graph with all workflow entities.
  */
 export function buildFullGraph() {
-    const nodes = ALL_DE_NAMES.map(makeNode);
+    const nodes = ALL_ENTITY_NAMES.map(makeNode);
     const edges = HIERARCHY.map(makeEdge);
     const laid = applyDagreLayout(nodes, edges);
     return { nodes: laid, edges };
 }
 
 /**
- * Build a focused subgraph: the selected DE + its parent + its children,
- * with the connecting edges only.
+ * Build a focused subgraph: the selected entity + its parent + its children.
  */
-export function buildFocusGraph(deName) {
-    const related = new Set([deName]);
+export function buildFocusGraph(entityName) {
+    const related = new Set([entityName]);
 
-    const p = parentOf.get(deName);
-    if (p) related.add(p);
+    for (const p of parentsOf.get(entityName) ?? []) {
+        related.add(p);
+    }
 
-    for (const c of childrenOf.get(deName) ?? []) {
+    for (const c of childrenOf.get(entityName) ?? []) {
         related.add(c);
     }
 
@@ -132,15 +133,4 @@ export function buildFocusGraph(deName) {
 
     const laid = applyDagreLayout(nodes, edges);
     return { nodes: laid, edges };
-}
-
-/**
- * Get the list of output columns for a given DE.
- */
-export function getColumnsForDE(lineageData, deName) {
-    return (lineageData[deName]?.columns ?? []).map((c) => ({
-        alias: c.alias,
-        sourceTable: c.sourceTable,
-        sourceColumn: c.sourceColumn,
-    }));
 }
