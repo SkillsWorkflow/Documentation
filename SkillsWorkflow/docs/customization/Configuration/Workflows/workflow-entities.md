@@ -7,11 +7,9 @@ sidebar_position: 1
 
 import WorkflowGraph from '@site/src/components/WorkflowEntities/WorkflowGraph';
 
-
 ## Overview
 
 Workflows define how documents move through their lifecycle in Skills Workflow. Every document type — Projects, Deliverables, Estimates, and others — has its own workflow that controls which stages it passes through and what happens at each step.
-
 
 ### Purpose
 
@@ -23,7 +21,6 @@ A workflow lets you model the approval and processing steps for any document typ
 - Who is **allowed** to execute each transition (role-based permissions)
 - Whether a **reason** (motive) must be provided
 
-
 ### Use Cases
 
 - Design approval flows for creative deliverables
@@ -32,7 +29,6 @@ A workflow lets you model the approval and processing steps for any document typ
 - Restrict stage transitions to specific security roles
 - Require motives for rejections or cancellations
 - Map stages across related workflows (e.g. a Project and its Deliverables)
-
 
 ---
 
