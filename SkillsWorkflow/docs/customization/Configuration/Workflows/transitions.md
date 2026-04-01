@@ -276,14 +276,14 @@ Below is the complete list of action types available for transitions, organized 
 
 | Action Type | Description | Options |
 |-------------|-------------|---------|
-| `RequestMotive` | Shows a motive selection popup. | — |
+| `RequestMotive` | Shows a motive selection popup. | `MotiveId1;MotiveId2;...` — (optional) restricts selectable motives to the listed IDs. If empty, all motives are available. |
 | `RequestReference` | Prompts the user to enter a reference. | — |
 | `RequestMotiveWithRequestedDate` | Shows a motive popup that also asks for a requested date. | — |
 | `RequestComment` | Prompts the user to enter a comment. | — |
-| `RequestFlaggedAssignment` | Prompts for a flagged assignment selection. | — |
+| `RequestFlaggedAssignment` | Prompts for a flagged assignment selection. | `AssignmentType1;AssignmentType2;...` — (optional) restricts selectable assignment types. |
 | `RemoveFlaggedAssignments` | Removes existing flagged assignments. | — |
-| `RequestClientUserFields` | Shows a popup with client-specific user fields. | — |
-| `RequestUserFields` | Shows a popup with user-defined fields. | — |
+| `RequestClientUserFields` | Shows a popup with client-specific user fields. | `FieldName1;FieldName2;...` — list user field names to make them **required** in the popup. If empty, all user fields are optional. |
+| `RequestUserFields` | Shows a popup with user-defined fields. | `FieldName1;FieldName2;...` — list user field names to make them **required** in the popup. If empty, all user fields are optional. |
 
 #### Document & Field Management
 

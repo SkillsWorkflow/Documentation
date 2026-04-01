@@ -1,0 +1,56 @@
+---
+title: Assistente de Documentos
+sidebar_label: Assistente de Documentos
+sidebar_position: 2
+---
+
+## Em que ajuda
+
+O Assistente de Documentos ajuda a trabalhar com documentos no Skills Workflow, especialmente jobs e deliverables.
+
+É útil para tarefas como:
+
+- criar um novo documento
+- atualizar um brief ou descrição
+- duplicar um documento existente
+- mover um documento para outro stage
+- encontrar um documento na plataforma
+- usar anexos para apoiar o pedido
+
+## Quando usar
+
+Use este assistente quando quer fazer uma alteração na plataforma e não apenas melhorar texto.
+
+Bons exemplos incluem:
+
+- criar um novo job a partir de um pedido de cliente
+- atualizar o brief de um deliverable
+- duplicar um documento e mudar o título
+- mover um job para um novo stage
+- encontrar um projeto, job ou outro documento
+
+## Exemplos de pedidos
+
+- `Create a job from this bug report`
+- `Duplicate this job and change the title`
+- `Update the brief with this new requirement`
+- `Move this job to In Development`
+- `Find all open projects for Acme`
+
+## O que convém ter preparado
+
+- o nome do documento, se ele já existir
+- o nome do cliente ou projeto, se souber
+- o texto que quer colocar no brief ou descrição
+- screenshots ou ficheiros que ajudem a explicar o pedido
+- o stage de destino, se quiser mover o documento
+
+## Quando não usar
+
+- Se só quer reescrever ou melhorar texto, use o [Assistente de Escrita](writing-agent.md).
+- Se quer alterar regras ou stages de workflow, use o [Assistente de Workflows](workflow-agent.md).
+- Se quer editar um workspace ou dashboard, use o [Assistente de Workspaces](workspace-agent.md).
+
+## O que esperar
+
+O assistente pode fazer algumas perguntas de seguimento antes de criar ou atualizar um documento. Isto é normal quando faltam detalhes importantes, como o projeto, o título ou o stage de destino.

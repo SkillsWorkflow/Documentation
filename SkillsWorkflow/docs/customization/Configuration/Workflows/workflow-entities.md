@@ -1,7 +1,7 @@
 ---
 id: workflow-entities
-title: Workflow Configuration
-sidebar_label: Workflow Configuration
+title: Workflow
+sidebar_label: Workflow
 sidebar_position: 1
 ---
 
@@ -52,7 +52,7 @@ The states a document passes through (e.g. Draft, In Review, Approved). Includes
 
 ### [Stage Types](stage-types.md)
 
-Classify stages into categories (Initial, Active, Closed) for reporting and automation. [Read more →](stage-types.md)
+Classify stages so reporting, automation, and visual rules stay consistent across the workflow. [Read more →](stage-types.md)
 
 ### [Transitions](transitions.md)
 
