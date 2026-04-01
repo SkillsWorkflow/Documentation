@@ -69,37 +69,33 @@ In that query:
 | `Approved` | `10` | `#F88A07` |
 | `Production` | `11` | `#FF5E3A` |
 | `QualityControl` | `12` | `#A2845E` |
-| `Returned` | `13` | `#` |
-| `Expired` | `14` | `#` |
-| `ToPresent` | `15` | `#` |
-| `NotApproved` | `16` | `#` |
-| `Hidden` | `17` | `#` |
-| `Rejected` | `18` | `#` |
-| `Sent` | `19` | `#` |
-| `NotBilled` | `20` | `#` |
-| `WaitYourReference` | `21` | `#` |
-| `Billing` | `22` | `#` |
-| `PartiallyBilled` | `23` | `#` |
-| `Billed` | `24` | `#` |
-| `Activated` | `25` | `#` |
-| `Deactivated` | `26` | `#` |
-| `ExternalRefused` | `27` | `#` |
-| `ToIntegrate` | `28` | `#` |
-| `Integrated` | `29` | `#` |
-| `PartiallyApproved` | `30` | `#` |
-| `Current` | `31` | `#` |
-| `ToEmit` | `32` | `#` |
-| `Invoiced` | `33` | `#` |
-| `NotExpectingInvoice` | `34` | `#` |
-| `PartiallyInvoiced` | `35` | `#` |
-| `PartiallyPaid` | `36` | `#` |
-| `Paid` | `37` | `#` |
+| `Returned` | `13` | `—` |
+| `Expired` | `14` | `—` |
+| `ToPresent` | `15` | `—` |
+| `NotApproved` | `16` | `—` |
+| `Hidden` | `17` | `—` |
+| `Rejected` | `18` | `—` |
+| `Sent` | `19` | `—` |
+| `NotBilled` | `20` | `—` |
+| `WaitYourReference` | `21` | `—` |
+| `Billing` | `22` | `—` |
+| `PartiallyBilled` | `23` | `—` |
+| `Billed` | `24` | `—` |
+| `Activated` | `25` | `—` |
+| `Deactivated` | `26` | `—` |
+| `ExternalRefused` | `27` | `—` |
+| `ToIntegrate` | `28` | `—` |
+| `Integrated` | `29` | `—` |
+| `PartiallyApproved` | `30` | `—` |
+| `Current` | `31` | `—` |
+| `ToEmit` | `32` | `—` |
+| `Invoiced` | `33` | `—` |
+| `NotExpectingInvoice` | `34` | `—` |
+| `PartiallyInvoiced` | `35` | `—` |
+| `PartiallyPaid` | `36` | `—` |
+| `Paid` | `37` | `—` |
 
 </details>
-
-:::note
-Some default entries use `#` as the default color. In practice, treat these as unspecified defaults and confirm the final color in your own environment if color is important for configuration or reporting.
-:::
 
 ---
 
