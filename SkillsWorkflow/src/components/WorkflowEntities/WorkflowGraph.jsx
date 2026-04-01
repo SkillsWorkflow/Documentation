@@ -28,7 +28,7 @@ const ENTITY_INFO = {
   },
   Stage: {
     description: 'A step in the workflow that a document passes through (e.g. Draft, In Review, Approved).',
-    examples: 'Each stage has a name, a color, and an optional stage type.',
+    examples: 'Each stage has a name, a color, and a stage type.',
     docPath: './stages',
   },
   Transition: {
@@ -42,8 +42,8 @@ const ENTITY_INFO = {
     docPath: './stage-mappings',
   },
   'Stage Type': {
-    description: 'A classification for stages (e.g. Initial, Active, Closed).',
-    examples: 'Used to group stages for reporting and automation rules.',
+    description: 'A classification linked to a stage through WorkflowStateType.',
+    examples: 'Use DE-Stages to see the real stage type values configured in an environment.',
     docPath: './stage-types',
   },
   'Stage Team': {

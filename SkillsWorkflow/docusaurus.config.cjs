@@ -51,6 +51,12 @@ module.exports = {
   },
 
   themeConfig: {
+    image: 'img/social/skillsworkflow-docs-share.jpg',
+    metadata: [
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Skills Workflow Documentation' },
+      { name: 'twitter:site', content: '@skillsworkflow' }
+    ],
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula

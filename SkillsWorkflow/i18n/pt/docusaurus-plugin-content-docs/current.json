@@ -31,6 +31,14 @@
     "message": "Integrações",
     "description": "The label for category Integrations in sidebar docs"
   },
+  "sidebar.docs.category.AI": {
+    "message": "IA",
+    "description": "The label for category AI in sidebar docs"
+  },
+  "sidebar.docs.category.Agents": {
+    "message": "Agentes",
+    "description": "The label for category Agents in sidebar docs"
+  },
   "sidebar.university.category.Bills": {
     "message": "Documentos Financeiros",
     "description": "The label for category Bills in sidebar university"

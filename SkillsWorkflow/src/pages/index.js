@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Translate from '@docusaurus/Translate';
@@ -90,12 +89,9 @@ const Header = () => {
 };
 
 function Home() {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Documentation | ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Official Skills Workflow documentation for workflow configuration, integrations, APIs, SDK guides, training resources, and trust documentation.">
       <Header />
       <main>
         {features && features.length > 0 && (
