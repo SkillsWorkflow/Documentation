@@ -1,0 +1,30 @@
+Todos os endpoints exigem autenticação pelo cabeçalho `X-AccessToken`.
+
+**Base path:** `api/v3`
+
+### Endpoints
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Método</th>
+            <th>Rota</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables</code></td><td>Lista as tabelas personalizadas</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows/values</code></td><td>Retorna todas as linhas</td></tr>
+        <tr className="selected"><td><strong>POST</strong></td><td><code>/custom-tables/&#123;tableName&#125;</code></td><td>Cria a tabela ou adiciona colunas</td></tr>
+        <tr className="selected"><td><strong>PUT</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows</code></td><td>Insere ou atualiza linhas</td></tr>
+        <tr className="selected"><td><strong>DELETE</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows</code></td><td>Remove linhas</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/export</code></td><td>Exporta para JSON</td></tr>
+        <tr className="selected"><td><strong>PUT</strong></td><td><code>/custom-tables/&#123;tableName&#125;/import</code></td><td>Importa de JSON</td></tr>
+    </tbody>
+</table>
+
+---
+
+### Leitura por query
+
+Use `CustomTable` como namespace nas queries e consulte `[customtables]`.

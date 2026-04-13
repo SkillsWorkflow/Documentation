@@ -1,7 +1,7 @@
 ---
 id: create-assign-type
 title: Assigning Absence Types
-sidebar_label: 7. Absence Types
+sidebar_label: Absence Types
 sidebar_position: 7
 ---
 

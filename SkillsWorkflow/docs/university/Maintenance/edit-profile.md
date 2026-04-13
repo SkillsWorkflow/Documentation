@@ -1,7 +1,7 @@
 ---
 id: edit-profile
 title: Edit Profile
-sidebar_label: 3. Edit Profile
+sidebar_label: Edit Profile
 sidebar_position: 3
 ---
 

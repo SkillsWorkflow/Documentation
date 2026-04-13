@@ -1,7 +1,7 @@
 ---
 id: workflow-actions
 title: Workflow Actions
-sidebar_label: 8. Workflow Actions
+sidebar_label: Workflow Actions
 sidebar_position: 8
 ---
 

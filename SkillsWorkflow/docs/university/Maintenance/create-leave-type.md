@@ -1,7 +1,7 @@
 ---
 id:  create-leave-type
 title: Create Leave Types
-sidebar_label: 6. Create Leave Types
+sidebar_label: Create Leave Types
 sidebar_position: 6
 ---
 

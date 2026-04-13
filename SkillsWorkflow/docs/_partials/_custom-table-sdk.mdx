@@ -1,0 +1,324 @@
+{/* Shared partial: Custom Table SDK reference. Imported by SDK page and university guide. */}
+
+### get
+
+#### Description
+
+Fetches all rows from a custom table and returns them as flat JavaScript objects (column names as keys).
+Optionally sorts the result by a column on the client side.
+
+#### Method(s)
+
+```js
+declare function get(
+    customTableName: string,
+    orderByColumnName?: string
+): Promise<object[]>
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>customTableName</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td></td>
+            <td>Name of the custom table</td>
+        </tr>
+        <tr className="selected">
+            <td><code>orderByColumnName</code></td>
+            <td>string</td>
+            <td>false</td>
+            <td>null</td>
+            <td>Column name to sort the results by (client-side)</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+// Get all rows from the "ProductCatalog" table
+const rows = await SW.Document.CustomTable.get("ProductCatalog");
+
+// Get rows sorted by "Name"
+const sorted = await SW.Document.CustomTable.get("ProductCatalog", "Name");
+```
+
+---
+
+### create
+
+#### Description
+
+Creates a new custom table definition, or adds columns to an existing table.
+Defines the key column and the schema (column names and data types).
+
+#### Method(s)
+
+```js
+declare function create(
+    customTableName: string,
+    model: CustomTablePostModel
+): Promise<any>
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>customTableName</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td></td>
+            <td>Name of the custom table to create</td>
+        </tr>
+        <tr className="selected">
+            <td><code>model</code></td>
+            <td>CustomTablePostModel</td>
+            <td>true</td>
+            <td></td>
+            <td>Table definition including key column and columns</td>
+        </tr>
+    </tbody>
+</table>
+
+**CustomTablePostModel**
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>KeyColumnName</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td>Name of the primary key column (e.g. <code>"Oid"</code>)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>KeyDataTypeId</code></td>
+            <td>number</td>
+            <td>false</td>
+            <td>Data type of the key column (see Data Types table below)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>Columns</code></td>
+            <td>CustomTableColumnPostModel[]</td>
+            <td>true</td>
+            <td>Array of column definitions</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+await SW.Document.CustomTable.create("ProductCatalog", {
+    KeyColumnName: "Oid",
+    KeyDataTypeId: 9, // UniqueIdentifier
+    Columns: [
+        { ColumnName: "Name", ColumnDataTypeId: 6 },       // Varchar100
+        { ColumnName: "Price", ColumnDataTypeId: 4 },       // Money
+        { ColumnName: "IsActive", ColumnDataTypeId: 0 },    // Boolean
+    ]
+});
+```
+
+---
+
+### insert
+
+#### Description
+
+Inserts or updates one or more rows in a custom table.
+Accepts a single row or an array of rows. Each row defines its key and column values.
+
+#### Method(s)
+
+```js
+declare function insert(
+    customTableName: string,
+    rows: CustomTableRowPostModel | CustomTableRowPostModel[]
+): Promise<any[]>
+```
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Defaults</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>customTableName</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td></td>
+            <td>Name of the custom table</td>
+        </tr>
+        <tr className="selected">
+            <td><code>rows</code></td>
+            <td>CustomTableRowPostModel | CustomTableRowPostModel[]</td>
+            <td>true</td>
+            <td></td>
+            <td>One row or an array of rows to insert/update</td>
+        </tr>
+    </tbody>
+</table>
+
+**CustomTableRowPostModel**
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>KeyValue</code></td>
+            <td>any</td>
+            <td>false</td>
+            <td>Value of the key column for this row (e.g. a GUID)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>KeyColumnName</code></td>
+            <td>string</td>
+            <td>false</td>
+            <td>Name of the key column (e.g. <code>"Oid"</code>)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>Columns</code></td>
+            <td>CustomTableRowColumnPostModel[]</td>
+            <td>true</td>
+            <td>Array of column name/value pairs for this row</td>
+        </tr>
+    </tbody>
+</table>
+
+**CustomTableRowColumnPostModel**
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected">
+            <td><code>ColumnName</code></td>
+            <td>string</td>
+            <td>true</td>
+            <td>Column name</td>
+        </tr>
+        <tr className="selected">
+            <td><code>ColumnDataTypeId</code></td>
+            <td>number</td>
+            <td>false</td>
+            <td>Data type ID (see Data Types table)</td>
+        </tr>
+        <tr className="selected">
+            <td><code>Value</code></td>
+            <td>any</td>
+            <td>true</td>
+            <td>The value to store</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Basic Usage
+
+```javascript
+// Insert a single row
+await SW.Document.CustomTable.insert("ProductCatalog", {
+    KeyValue: SW.Utils.Guid.getNew(),
+    KeyColumnName: "Oid",
+    Columns: [
+        { ColumnName: "Name", ColumnDataTypeId: 6, Value: "Widget A" },
+        { ColumnName: "Price", ColumnDataTypeId: 4, Value: 29.99 },
+        { ColumnName: "IsActive", ColumnDataTypeId: 0, Value: true },
+    ]
+});
+
+// Insert multiple rows at once
+await SW.Document.CustomTable.insert("ProductCatalog", [
+    {
+        KeyValue: SW.Utils.Guid.getNew(),
+        KeyColumnName: "Oid",
+        Columns: [
+            { ColumnName: "Name", Value: "Widget A" },
+            { ColumnName: "Price", Value: 29.99 },
+        ]
+    },
+    {
+        KeyValue: SW.Utils.Guid.getNew(),
+        KeyColumnName: "Oid",
+        Columns: [
+            { ColumnName: "Name", Value: "Widget B" },
+            { ColumnName: "Price", Value: 49.99 },
+        ]
+    }
+]);
+```
+
+---
+
+### Data Types Reference
+
+Each column has a `ColumnDataTypeId` that defines the SQL data type used for storage.
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><code>0</code></td><td>Boolean</td><td>True / False</td></tr>
+        <tr className="selected"><td><code>1</code></td><td>Date</td><td>Date value</td></tr>
+        <tr className="selected"><td><code>2</code></td><td>Float</td><td>Decimal number</td></tr>
+        <tr className="selected"><td><code>3</code></td><td>Integer</td><td>Whole number</td></tr>
+        <tr className="selected"><td><code>4</code></td><td>Money</td><td>Currency value</td></tr>
+        <tr className="selected"><td><code>5</code></td><td>Varchar50</td><td>Text (max 50 chars)</td></tr>
+        <tr className="selected"><td><code>6</code></td><td>Varchar100</td><td>Text (max 100 chars)</td></tr>
+        <tr className="selected"><td><code>7</code></td><td>VarcharMax</td><td>Text (unlimited)</td></tr>
+        <tr className="selected"><td><code>8</code></td><td>Text</td><td>Large text</td></tr>
+        <tr className="selected"><td><code>9</code></td><td>UniqueIdentifier</td><td>GUID / UUID</td></tr>
+        <tr className="selected"><td><code>10</code></td><td>Varchar200</td><td>Text (max 200 chars)</td></tr>
+    </tbody>
+</table>

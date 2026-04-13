@@ -1,7 +1,7 @@
 ---
 id: create-holidays  
 title: Holidays
-sidebar_label: 5. Register Holidays
+sidebar_label: Register Holidays
 sidebar_position: 5
 ---
 

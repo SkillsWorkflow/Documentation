@@ -1,0 +1,148 @@
+---
+id: custom-tables
+title: Custom Tables
+sidebar_label: Custom Tables
+sidebar_position: 10
+slug: /university/maintenance/custom-tables
+---
+
+import SdkReference from '@site/docs/_partials/_custom-table-sdk.mdx';
+import ApiReference from '@site/docs/_partials/_custom-table-api.mdx';
+
+## Overview
+
+Custom Tables allow you to extend the Skills Workflow data model by creating your own tables with custom columns and data types.
+They are ideal for storing additional structured data that does not fit into standard document fields — for example, product catalogs, specification mappings, or lookup tables.
+
+Custom tables support:
+- **Custom schema** — define your own columns with specific data types
+- **Role-based permissions** — control who can read and who can write
+- **Full CRUD** — create, read, update, and delete via the UI, SDK, or API
+- **Query integration** — read data using SQL queries with the `CustomTable` namespace
+- **Import / Export** — bulk data management via JSON files
+
+---
+
+## Navigating to Custom Tables
+
+1. Go to **Maintenance** in the main menu
+2. Select the **Custom Tables** module
+
+You will see a list of all existing custom tables in the system.
+
+<figure>
+
+![img-box-shadow](pathname:///img/university/maintenance/custom_tables_list.png)
+<figcaption>Custom Tables list in Maintenance</figcaption>
+</figure>
+
+---
+
+## Creating a Custom Table
+
+To create a new custom table:
+
+1. Click the **+** button in the Custom Tables list
+2. Enter the **Table Name** (must be unique, no spaces — use PascalCase, e.g. `ProductCatalog`)
+3. Define the **Key Column** — typically `Oid` with data type `UniqueIdentifier` (GUID)
+4. Add **Columns** with their names and data types
+
+<figure>
+
+![img-box-shadow](pathname:///img/university/maintenance/custom_tables_create.png)
+<figcaption>Creating a new custom table</figcaption>
+</figure>
+
+:::note
+Column names should use PascalCase (e.g. `ProductName`, `IsActive`). Once a column is created, its data type cannot be changed — only new columns can be added.
+:::
+
+---
+
+## Managing Permissions
+
+Each custom table has two permission roles:
+
+- **Read Role** — determines which users can read data from the table
+- **Save Role** — determines which users can insert, update, or delete data
+
+To configure permissions:
+
+1. Select a custom table from the list
+2. In the **Permissions** panel, set the **Read Role** and **Save Role**
+3. Click **Save**
+
+<figure>
+
+![img-box-shadow](pathname:///img/university/maintenance/custom_tables_permissions.png)
+<figcaption>Configuring Read and Save roles</figcaption>
+</figure>
+
+---
+
+## Viewing Data
+
+After selecting a custom table, the data grid displays all stored rows with their column values.
+
+The grid shows:
+- The **key column** (e.g. Oid)
+- All custom columns and their current values
+- A **row count** at the bottom
+
+<figure>
+
+![img-box-shadow](pathname:///img/university/maintenance/custom_tables_data.png)
+<figcaption>Custom table data grid</figcaption>
+</figure>
+
+---
+
+## Reading Data via Queries
+
+To read custom table data using SQL queries:
+
+1. Navigate to **Maintenance → Queries**
+2. Create or edit a query
+3. Set the **Namespace** to `CustomTable`
+4. Write your SQL referencing the table as `[customtables].[YourTableName]`
+
+**Example:**
+
+```sql
+SELECT Oid, Name, Price, IsActive
+FROM [customtables].[ProductCatalog]
+WHERE IsActive = 1
+ORDER BY Name
+```
+
+:::note
+The `CustomTable` namespace is required for the query engine to resolve custom table references at runtime. Without it, the query will not find your tables.
+:::
+
+---
+
+## SDK Reference
+
+Use the SDK methods below to interact with custom tables programmatically from workspaces, automations, or any JavaScript context inside Skills Workflow.
+
+**Namespace:** `SW.Document.CustomTable`
+
+<details>
+<summary><strong>View SDK Methods</strong></summary>
+
+<SdkReference />
+
+</details>
+
+---
+
+## API Reference
+
+For external integrations or direct HTTP calls, use the REST API endpoints below.
+
+<details>
+<summary><strong>View API Endpoints</strong></summary>
+
+<ApiReference />
+
+</details>
