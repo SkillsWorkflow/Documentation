@@ -114,7 +114,7 @@ If the data source doesn't match the mapping to the default fields, it can be ma
 
 <figure>
 
-![img-box-shadow](/img/craft/panels/chart/argumentAxis/image-label-properties.png)
+![img-box-shadow](/img/craft/panels/chart/argumentaxis/image-label-properties.png)
 
 </figure>
 
@@ -122,6 +122,6 @@ If the data source doesn't match the mapping to the default fields, it can be ma
 
 <figure>
 
-![img-box-shadow](/img/craft/panels/chart/argumentAxis/argument-axis-ui.png)
+![img-box-shadow](/img/craft/panels/chart/argumentaxis/argument-axis-ui.png)
 
 </figure>

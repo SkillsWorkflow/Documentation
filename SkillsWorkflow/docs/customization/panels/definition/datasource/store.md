@@ -59,18 +59,18 @@ On this page you will find how to create a workspace using the Store as DataSour
 
 <figure>
 
-![img-box-shadow](/img/craft/panels/dataSource/query-store.png)
+![img-box-shadow](/img/craft/panels/datasource/query-store.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/panels/dataSource/store-function-example.png)
+![img-box-shadow](/img/craft/panels/datasource/store-function-example.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/panels/dataSource/grid-store-example.png)
+![img-box-shadow](/img/craft/panels/datasource/grid-store-example.png)
 
 </figure>

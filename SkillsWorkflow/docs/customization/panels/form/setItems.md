@@ -256,7 +256,7 @@ values={[
 
 <figure>
 
-![img-box-shadow-popup](/img/craft/form/setItems/item-format-priority.png)
+![img-box-shadow-popup](/img/craft/form/setitems/item-format-priority.png)
 
 </figure>
 
@@ -395,12 +395,12 @@ value: the value of the filter (boolean, string)
 
 <figure>
 
-![img-box-shadow-popup](/img/craft/form/setItems/info-cascade-example.png)
+![img-box-shadow-popup](/img/craft/form/setitems/info-cascade-example.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow-popup](/img/craft/form/setItems/info-example.png)
+![img-box-shadow-popup](/img/craft/form/setitems/info-example.png)
 
 </figure>

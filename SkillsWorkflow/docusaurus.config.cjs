@@ -3,6 +3,22 @@ const fs = require('fs');
 const path = require('path');
 const { themes: prismThemes } = require('prism-react-renderer');
 
+const SIDEBAR_ACRONYMS = new Map([
+  ['ad', 'AD'],
+  ['api', 'API'],
+  ['crm', 'CRM'],
+  ['fte', 'FTE'],
+  ['hr', 'HR'],
+  ['isap', 'iSAP'],
+  ['pdf', 'PDF'],
+  ['sdk', 'SDK'],
+  ['sla', 'SLA'],
+  ['sso', 'SSO'],
+  ['ui', 'UI'],
+  ['ux', 'UX'],
+  ['vbs', 'VBS']
+]);
+
 function loadLocalEnv() {
   const envPath = path.resolve(__dirname, '.env');
   if (!fs.existsSync(envPath)) return;
@@ -30,6 +46,50 @@ if (process.env.NODE_ENV !== 'production') {
   loadLocalEnv();
 }
 const fontAwesomeKitId = process.env.FONTAWESOME_KIT_ID;
+
+function humanizeSidebarLabel(label) {
+  const normalized = label
+    .trim()
+    .replace(/[-_]+/g, ' ')
+    .replace(/\s+/g, ' ');
+
+  if (!normalized || normalized !== normalized.toLowerCase()) {
+    return label;
+  }
+
+  return normalized
+    .split(' ')
+    .map((word) => {
+      const acronym = SIDEBAR_ACRONYMS.get(word);
+      if (acronym) return acronym;
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(' ');
+}
+
+function normalizeSidebarCategories(items) {
+  return items.map((item) => {
+    if (item.type !== 'category') {
+      return item;
+    }
+
+    const normalizedItem = {
+      ...item,
+      items: item.items ? normalizeSidebarCategories(item.items) : item.items
+    };
+
+    if (typeof item.label === 'string') {
+      normalizedItem.label = humanizeSidebarLabel(item.label);
+    }
+
+    return normalizedItem;
+  });
+}
+
+async function sidebarItemsGenerator(args) {
+  const items = await args.defaultSidebarItemsGenerator(args);
+  return normalizeSidebarCategories(items);
+}
 
 module.exports = {
   title: 'Skills Workflow’s Documentation',
@@ -87,7 +147,7 @@ module.exports = {
           title: 'Customization',
           items: [
             { label: 'Style Guide', to: 'docs/documenting/style-guide' },
-            { label: 'Automations', to: 'docs/customization/Automations' },
+            { label: 'Automations', to: 'docs/customization/automations' },
             { label: 'SDK', to: 'docs/sdk' },
             { label: 'API', to: 'docs/api/client-api' },
             { label: 'Integrations', to: 'docs/integrations/hr-link' },
@@ -136,6 +196,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.cjs'),
+          sidebarItemsGenerator,
           editUrl:
             'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow',
           editLocalizedFiles: true

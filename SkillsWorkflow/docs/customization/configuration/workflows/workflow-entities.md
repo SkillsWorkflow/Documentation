@@ -5,7 +5,7 @@ sidebar_label: Workflow
 sidebar_position: 1
 ---
 
-import WorkflowGraph from '@site/src/components/WorkflowEntities/WorkflowGraph';
+import WorkflowGraph from '@site/src/components/workflowentities/WorkflowGraph';
 
 ## Overview
 

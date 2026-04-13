@@ -13,7 +13,7 @@ On this page you will find how to use mentions based on queries.
 
 <figure>
 
-![img-box-shadow](/img/craft/configuration/system/queryMentions/query.png)
+![img-box-shadow](/img/craft/configuration/system/querymentions/query.png)
 
 </figure>
 
@@ -21,7 +21,7 @@ On this page you will find how to use mentions based on queries.
 
 <figure>
 
-![img-box-shadow](/img/craft/configuration/system/queryMentions/query-mentions-configuration.png)
+![img-box-shadow](/img/craft/configuration/system/querymentions/query-mentions-configuration.png)
 
 </figure>
 
@@ -29,7 +29,7 @@ On this page you will find how to use mentions based on queries.
 
 <figure>
 
-![img-box-shadow](/img/craft/configuration/system/queryMentions/query-mentions-example.png)
+![img-box-shadow](/img/craft/configuration/system/querymentions/query-mentions-example.png)
 
 </figure>
 

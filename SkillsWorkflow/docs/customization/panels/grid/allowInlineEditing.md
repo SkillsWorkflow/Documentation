@@ -24,13 +24,13 @@ By default all the columns appear not editable.
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/allowInlineEditing/allowInline-property.png)
+![img-box-shadow](/img/craft/grid/allowinlineediting/allowInline-property.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/allowInlineEditing/gridExample.png)
+![img-box-shadow](/img/craft/grid/allowinlineediting/gridExample.png)
 
 </figure>
 
@@ -102,13 +102,13 @@ if the name of the field doesn't match with the original name (the that exists i
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/allowInlineEditing/queryExample.png)
+![img-box-shadow](/img/craft/grid/allowinlineediting/queryExample.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/allowInlineEditing/UserfieldTextColumnExample.png)
+![img-box-shadow](/img/craft/grid/allowinlineediting/UserfieldTextColumnExample.png)
 
 </figure>
 

@@ -24,12 +24,12 @@ function returnEndpoint(mapper) {
 
 <figure>
 
-![img-box-shadow](/img/craft/panels/dataSource/endpoint-datasource.png)
+![img-box-shadow](/img/craft/panels/datasource/endpoint-datasource.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/panels/dataSource/endpoint-datasource-example.png)
+![img-box-shadow](/img/craft/panels/datasource/endpoint-datasource-example.png)
 
 </figure>

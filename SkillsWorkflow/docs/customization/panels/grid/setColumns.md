@@ -147,13 +147,13 @@ If the data source does not mapping to the defaults fields name, it can be mappe
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/entity-team-mapping-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/entity-team-mapping-example.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/entity-team-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/entity-team-example.png)
 
 </figure>
 
@@ -175,7 +175,7 @@ Accept entities: "jobtype" | "leavetype"
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/configuration-color-for-jobtype-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/configuration-color-for-jobtype-example.png)
 
 </figure>
 
@@ -217,19 +217,19 @@ Accept entities: "jobtype" | "leavetype"
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/style-query.png)
+![img-box-shadow](/img/craft/grid/setcolumns/style-query.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/format-column-style-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/format-column-style-example.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/grid-colorType-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/grid-colorType-example.png)
 
 </figure>
 
@@ -239,7 +239,7 @@ To use the entity without the format, the dataSource expects the "name of the en
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/queryColorType.png)
+![img-box-shadow](/img/craft/grid/setcolumns/queryColorType.png)
 
 </figure>
 
@@ -320,12 +320,12 @@ Properties withing format property customize the behavior and appearance of a de
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/client_image_normal.png)
+![img-box-shadow](/img/craft/grid/setcolumns/client_image_normal.png)
 
 </figure>
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/client_image_grouped.png)
+![img-box-shadow](/img/craft/grid/setcolumns/client_image_grouped.png)
 
 </figure>
 
@@ -370,7 +370,7 @@ The follow examples shows how to display the name and the image of the document 
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/document-image-with-entity-property.png)
+![img-box-shadow](/img/craft/grid/setcolumns/document-image-with-entity-property.png)
 
 </figure>
 
@@ -408,13 +408,13 @@ Define the name that appears in the UI. Could be different of the name of the da
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/document-image-without-entity-property.png)
+![img-box-shadow](/img/craft/grid/setcolumns/document-image-without-entity-property.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/document-image-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/document-image-example.png)
 
 </figure>
 
@@ -522,7 +522,7 @@ The following examples shows how to customize de appearance of the default behav
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/convertUtcDateToLocal-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/convertUtcDateToLocal-example.png)
 
 </figure>
 
@@ -550,7 +550,7 @@ The following examples shows how to customize de appearance of the default behav
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/enableColoring-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/enableColoring-example.png)
 
 </figure>
 
@@ -580,7 +580,7 @@ The follow examples shows how to display the currency symbol in a currency colum
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/currency-symbol.png)
+![img-box-shadow](/img/craft/grid/setcolumns/currency-symbol.png)
 
 </figure>
 
@@ -598,7 +598,7 @@ The data field name that has the currency symbols.
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/currency-symbol-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/currency-symbol-example.png)
 
 </figure>
 
@@ -620,13 +620,13 @@ The follow examples shows how to display the read/unread symbol in a boolean col
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/read-symbol-config.png)
+![img-box-shadow](/img/craft/grid/setcolumns/read-symbol-config.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/read-symbol-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/read-symbol-example.png)
 
 </figure>
 
@@ -649,13 +649,13 @@ The follow example shows how to display the priority type.
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/priority-column.png)
+![img-box-shadow](/img/craft/grid/setcolumns/priority-column.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/priority-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/priority-example.png)
 
 </figure>
 
@@ -681,7 +681,7 @@ The follow examples shows how to display the stage type.
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/query-stage.png)
+![img-box-shadow](/img/craft/grid/setcolumns/query-stage.png)
 
 </figure>
 
@@ -697,13 +697,13 @@ A property to map the color of the stage.
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/query-column.png)
+![img-box-shadow](/img/craft/grid/setcolumns/query-column.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/type-stage-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/type-stage-example.png)
 
 </figure>
 
@@ -763,7 +763,7 @@ Type: Boolean
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/document-image-required.png)
+![img-box-shadow](/img/craft/grid/setcolumns/document-image-required.png)
 
 </figure>
 
@@ -789,13 +789,13 @@ Type: Boolean
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/showZeros-property-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/showZeros-property-example.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/showZeros-column-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/showZeros-column-example.png)
 
 </figure>
 
@@ -826,13 +826,13 @@ Type: object
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/headerColor-column-customize-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/headerColor-column-customize-example.png)
 
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/headerColor-customize-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/headerColor-customize-example.png)
 
 </figure>
 
@@ -885,6 +885,6 @@ By representing the cursor with a | , please check the example below:
 
 <figure>
 
-![img-box-shadow](/img/craft/grid/setColumns/caretPosition-example.png)
+![img-box-shadow](/img/craft/grid/setcolumns/caretPosition-example.png)
 
 </figure>

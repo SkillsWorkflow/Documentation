@@ -365,12 +365,12 @@ This method allows the grid to be exported as PDF.
 
 <figure>
 
-![img-box-shadow](/img/sdk/exportToPdf/exportToPdf-method.png)
+![img-box-shadow](/img/sdk/exporttopdf/exportToPdf-method.png)
 </figure>
 
 <figure>
 
-![img-box-shadow](/img/sdk/exportToPdf/exportToPdf-example.png)
+![img-box-shadow](/img/sdk/exporttopdf/exportToPdf-example.png)
 </figure>
 
 ---

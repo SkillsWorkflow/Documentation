@@ -21,7 +21,7 @@ lineage.json       ← only used for DE output columns (generated)
 
 1. Add a new JSON source file under `data/de-sources/` (if applicable).
 2. Run `npm run generate:de` to regenerate `data/generated/lineage.json`.
-3. Open `src/components/DataExtraction/deGraphConfig.js`.
+3. Open `src/components/dataextraction/deGraphConfig.js`.
 4. Add a `{ parent, child, via }` entry to `HIERARCHY`.
 5. If the DE has no parent, add it to `ROOTS`.
 6. Build to verify: `npm run build`.
