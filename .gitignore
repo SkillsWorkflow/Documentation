@@ -13,3 +13,5 @@ config.json
 node_modules
 **/.idea
 **/yarn.lock
+# Local Netlify folder
+.netlify
