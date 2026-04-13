@@ -1,0 +1,97 @@
+Todos los endpoints requieren autenticación mediante la cabecera `X-AccessToken`.
+
+**Ruta base:** `api/v3`
+
+### Endpoints
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Método</th>
+            <th>Ruta</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables</code></td><td>Lista todas las tablas personalizadas</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;</code></td><td>Obtiene el esquema de la tabla</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows/values</code></td><td>Obtiene todas las filas</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/row</code></td><td>Obtiene una fila por clave</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows/columnValue</code></td><td>Obtiene un valor de columna</td></tr>
+        <tr className="selected"><td><strong>POST</strong></td><td><code>/custom-tables/&#123;tableName&#125;</code></td><td>Crea la tabla o agrega columnas</td></tr>
+        <tr className="selected"><td><strong>PUT</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows</code></td><td>Inserta o actualiza filas</td></tr>
+        <tr className="selected"><td><strong>PUT</strong></td><td><code>/custom-table-definitions/&#123;id&#125;</code></td><td>Actualiza permisos</td></tr>
+        <tr className="selected"><td><strong>DELETE</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows</code></td><td>Elimina filas</td></tr>
+        <tr className="selected"><td><strong>DELETE</strong></td><td><code>/custom-tables/&#123;tableName&#125;</code></td><td>Elimina la tabla</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/export</code></td><td>Exporta a JSON</td></tr>
+        <tr className="selected"><td><strong>PUT</strong></td><td><code>/custom-tables/&#123;tableName&#125;/import</code></td><td>Importa desde JSON</td></tr>
+    </tbody>
+</table>
+
+---
+
+### Insertar / Actualizar filas
+
+**PUT** `/api/v3/custom-tables/{tableName}/rows`
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>OperationType</th>
+            <th>Valor</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><code>Update</code></td><td>0</td><td>Actualiza una fila</td></tr>
+        <tr className="selected"><td><code>UpdateMany</code></td><td>1</td><td>Inserta o actualiza múltiples filas</td></tr>
+        <tr className="selected"><td><code>UpsertMany</code></td><td>2</td><td>Inserta si no existe y actualiza si existe</td></tr>
+    </tbody>
+</table>
+
+```json
+{
+  "OperationType": "UpdateMany",
+  "UpdateManyModel": [
+    {
+      "KeyColumnName": "Oid",
+      "KeyValue": "a1b2c3d4-0000-0000-0000-000000000001",
+      "KeyDataTypeId": 9,
+      "Columns": [
+        { "ColumnName": "Name", "Value": "Product A" },
+        { "ColumnName": "Category", "Value": "Electronics" }
+      ]
+    }
+  ]
+}
+```
+
+---
+
+### Eliminar filas
+
+**DELETE** `/api/v3/custom-tables/{tableName}/rows`
+
+```json
+{
+  "OperationType": "Delete",
+  "DeleteModel": {
+    "KeyColumnName": "Oid",
+    "KeyValue": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  }
+}
+```
+
+---
+
+### Leer datos mediante consultas
+
+Al crear consultas SQL en Mantenimiento → Consultas, use `CustomTable` como **namespace**.
+El esquema físico de base de datos es `[customtables]`.
+
+```sql
+SELECT Oid, Name, Price, IsActive
+FROM [customtables].[ProductCatalog]
+WHERE IsActive = 1
+ORDER BY Name
+```

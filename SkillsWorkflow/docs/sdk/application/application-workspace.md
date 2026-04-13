@@ -147,9 +147,9 @@ SW.Application.Workspace.setFilters([filters], "98226093-09B6-4E12-B9C6-2AEED296
     }
 },
 ```
-![img-box-shadow](/img/sdk/setFilters/apply-button.png)
+![img-box-shadow](/img/sdk/setfilters/apply-button.png)
 
-![img-box-shadow](/img/sdk/setFilters/setFilters-example.png)
+![img-box-shadow](/img/sdk/setfilters/setFilters-example.png)
 
 
 

@@ -1,0 +1,88 @@
+### get
+
+#### Descrição
+
+Obtém todas as linhas de uma tabela personalizada e devolve-as como objetos JavaScript simples.
+Opcionalmente ordena o resultado por uma coluna no cliente.
+
+#### Método(s)
+
+```js
+declare function get(
+    customTableName: string,
+    orderByColumnName?: string
+): Promise<object[]>
+```
+
+#### Utilização básica
+
+```javascript
+const rows = await SW.Document.CustomTable.get("ProductCatalog");
+const sorted = await SW.Document.CustomTable.get("ProductCatalog", "Name");
+```
+
+---
+
+### create
+
+#### Descrição
+
+Cria a definição de uma tabela personalizada ou adiciona colunas a uma tabela já existente.
+
+```javascript
+await SW.Document.CustomTable.create("ProductCatalog", {
+    KeyColumnName: "Oid",
+    KeyDataTypeId: 9,
+    Columns: [
+        { ColumnName: "Name", ColumnDataTypeId: 6 },
+        { ColumnName: "Price", ColumnDataTypeId: 4 },
+        { ColumnName: "IsActive", ColumnDataTypeId: 0 }
+    ]
+});
+```
+
+---
+
+### insert
+
+#### Descrição
+
+Insere ou atualiza uma ou várias linhas numa tabela personalizada.
+
+```javascript
+await SW.Document.CustomTable.insert("ProductCatalog", {
+    KeyValue: SW.Utils.Guid.getNew(),
+    KeyColumnName: "Oid",
+    Columns: [
+        { ColumnName: "Name", ColumnDataTypeId: 6, Value: "Widget A" },
+        { ColumnName: "Price", ColumnDataTypeId: 4, Value: 29.99 }
+    ]
+});
+```
+
+---
+
+### Referência de tipos de dados
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tipo</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><code>0</code></td><td>Boolean</td><td>Verdadeiro / Falso</td></tr>
+        <tr className="selected"><td><code>1</code></td><td>Date</td><td>Data</td></tr>
+        <tr className="selected"><td><code>2</code></td><td>Float</td><td>Número decimal</td></tr>
+        <tr className="selected"><td><code>3</code></td><td>Integer</td><td>Número inteiro</td></tr>
+        <tr className="selected"><td><code>4</code></td><td>Money</td><td>Valor monetário</td></tr>
+        <tr className="selected"><td><code>5</code></td><td>Varchar50</td><td>Texto até 50 caracteres</td></tr>
+        <tr className="selected"><td><code>6</code></td><td>Varchar100</td><td>Texto até 100 caracteres</td></tr>
+        <tr className="selected"><td><code>7</code></td><td>VarcharMax</td><td>Texto sem limite prático</td></tr>
+        <tr className="selected"><td><code>8</code></td><td>Text</td><td>Texto longo</td></tr>
+        <tr className="selected"><td><code>9</code></td><td>UniqueIdentifier</td><td>GUID / UUID</td></tr>
+        <tr className="selected"><td><code>10</code></td><td>Varchar200</td><td>Texto até 200 caracteres</td></tr>
+    </tbody>
+</table>

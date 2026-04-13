@@ -1,0 +1,49 @@
+### get
+
+#### Descrição
+
+Obtém todas as linhas de uma tabela personalizada e retorna como objetos JavaScript simples.
+
+#### Uso básico
+
+```javascript
+const rows = await SW.Document.CustomTable.get("ProductCatalog");
+```
+
+---
+
+### create
+
+#### Descrição
+
+Cria a definição de uma tabela personalizada ou adiciona colunas a uma tabela existente.
+
+```javascript
+await SW.Document.CustomTable.create("ProductCatalog", {
+    KeyColumnName: "Oid",
+    KeyDataTypeId: 9,
+    Columns: [
+        { ColumnName: "Name", ColumnDataTypeId: 6 },
+        { ColumnName: "Price", ColumnDataTypeId: 4 }
+    ]
+});
+```
+
+---
+
+### insert
+
+#### Descrição
+
+Insere ou atualiza linhas em uma tabela personalizada.
+
+```javascript
+await SW.Document.CustomTable.insert("ProductCatalog", {
+    KeyValue: SW.Utils.Guid.getNew(),
+    KeyColumnName: "Oid",
+    Columns: [
+        { ColumnName: "Name", ColumnDataTypeId: 6, Value: "Widget A" },
+        { ColumnName: "Price", ColumnDataTypeId: 4, Value: 29.99 }
+    ]
+});
+```

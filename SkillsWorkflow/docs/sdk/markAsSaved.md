@@ -39,10 +39,10 @@ function markAsSaved(dashboardDefinitionId: string): void
 SW.markAsSaved(workspaceContext.definition.Id);
 ```
 
-![img-box-shadow](/img/sdk/markAsSaved/markAsSavedMethod.png)
+![img-box-shadow](/img/sdk/markassaved/markAsSavedMethod.png)
 
 #### Response
 
-![img-box-shadow](/img/sdk/markAsSaved/markAsSaved-message.png)
+![img-box-shadow](/img/sdk/markassaved/markAsSaved-message.png)
 
 ---

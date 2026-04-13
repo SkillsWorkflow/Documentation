@@ -1,0 +1,220 @@
+{/* Shared partial: Custom Table API reference. Imported by API page and university guide. */}
+
+All endpoints require authentication via the `X-AccessToken` header.
+
+**Base path:** `api/v3`
+
+### Endpoints
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Method</th>
+            <th>Route</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables</code></td><td>List all custom tables</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;</code></td><td>Get table schema and columns</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows/values</code></td><td>Get all rows with column values</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/row</code></td><td>Get a single row by key</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows/columnValue</code></td><td>Get a specific column value from a row</td></tr>
+        <tr className="selected"><td><strong>POST</strong></td><td><code>/custom-tables/&#123;tableName&#125;</code></td><td>Create table / add columns</td></tr>
+        <tr className="selected"><td><strong>PUT</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows</code></td><td>Insert or update rows</td></tr>
+        <tr className="selected"><td><strong>PUT</strong></td><td><code>/custom-table-definitions/&#123;id&#125;</code></td><td>Update table permissions (Read/Save roles)</td></tr>
+        <tr className="selected"><td><strong>DELETE</strong></td><td><code>/custom-tables/&#123;tableName&#125;/rows</code></td><td>Delete rows</td></tr>
+        <tr className="selected"><td><strong>DELETE</strong></td><td><code>/custom-tables/&#123;tableName&#125;</code></td><td>Drop the entire table</td></tr>
+        <tr className="selected"><td><strong>GET</strong></td><td><code>/custom-tables/&#123;tableName&#125;/export</code></td><td>Export table to JSON file</td></tr>
+        <tr className="selected"><td><strong>PUT</strong></td><td><code>/custom-tables/&#123;tableName&#125;/import</code></td><td>Import table from JSON file</td></tr>
+    </tbody>
+</table>
+
+---
+
+### Insert / Update Rows
+
+**PUT** `/api/v3/custom-tables/{tableName}/rows`
+
+The request body uses `OperationType` to control the behavior:
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>OperationType</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><code>Update</code></td><td>0</td><td>Update a single row</td></tr>
+        <tr className="selected"><td><code>UpdateMany</code></td><td>1</td><td>Insert or update multiple rows (batch)</td></tr>
+        <tr className="selected"><td><code>UpsertMany</code></td><td>2</td><td>Insert if not exists, update if exists (batch)</td></tr>
+    </tbody>
+</table>
+
+#### Single row (Update)
+
+```json
+{
+    "OperationType": "Update",
+    "UpdateModel": {
+        "KeyColumnName": "Oid",
+        "KeyValue": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "KeyDataTypeId": 9,
+        "Columns": [
+            { "ColumnName": "Name", "Value": "Updated Product" },
+            { "ColumnName": "Price", "Value": 39.99 }
+        ]
+    }
+}
+```
+
+#### Multiple rows (UpdateMany)
+
+```json
+{
+    "OperationType": "UpdateMany",
+    "UpdateManyModel": [
+        {
+            "KeyColumnName": "Oid",
+            "KeyValue": "a1b2c3d4-0000-0000-0000-000000000001",
+            "KeyDataTypeId": 9,
+            "Columns": [
+                { "ColumnName": "Name", "Value": "Product A" },
+                { "ColumnName": "Category", "Value": "Electronics" }
+            ]
+        },
+        {
+            "KeyColumnName": "Oid",
+            "KeyValue": "a1b2c3d4-0000-0000-0000-000000000002",
+            "KeyDataTypeId": 9,
+            "Columns": [
+                { "ColumnName": "Name", "Value": "Product B" },
+                { "ColumnName": "Category", "Value": "Furniture" }
+            ]
+        }
+    ]
+}
+```
+
+---
+
+### Delete Rows
+
+**DELETE** `/api/v3/custom-tables/{tableName}/rows`
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>OperationType</th>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><code>Delete</code></td><td>0</td><td>Delete a single row by key</td></tr>
+        <tr className="selected"><td><code>DeleteAll</code></td><td>1</td><td>Delete all rows in the table</td></tr>
+        <tr className="selected"><td><code>DeleteMany</code></td><td>2</td><td>Delete multiple rows by key values</td></tr>
+    </tbody>
+</table>
+
+#### Single row (Delete)
+
+```json
+{
+    "OperationType": "Delete",
+    "DeleteModel": {
+        "KeyColumnName": "Oid",
+        "KeyValue": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+    }
+}
+```
+
+#### Multiple rows (DeleteMany)
+
+```json
+{
+    "OperationType": "DeleteMany",
+    "DeleteManyModel": {
+        "KeyColumnName": "Oid",
+        "KeyValues": [
+            "a1b2c3d4-0000-0000-0000-000000000001",
+            "a1b2c3d4-0000-0000-0000-000000000002"
+        ]
+    }
+}
+```
+
+#### All rows (DeleteAll)
+
+```json
+{
+    "OperationType": "DeleteAll"
+}
+```
+
+---
+
+### Create Table
+
+**POST** `/api/v3/custom-tables/{tableName}`
+
+Creates a new custom table with the specified schema. If the table already exists, adds the new columns.
+
+```json
+{
+    "KeyColumnName": "Oid",
+    "KeyDataTypeId": 9,
+    "Columns": [
+        { "ColumnName": "Name", "ColumnDataTypeId": 6 },
+        { "ColumnName": "Price", "ColumnDataTypeId": 4 },
+        { "ColumnName": "IsActive", "ColumnDataTypeId": 0 }
+    ]
+}
+```
+
+---
+
+### Get Row Values
+
+**GET** `/api/v3/custom-tables/{tableName}/rows/values`
+
+Returns all rows in the table. Each row includes the `KeyColumnName`, `KeyValue`, and a `Columns` array:
+
+```json
+[
+    {
+        "TableName": "ProductCatalog",
+        "KeyValue": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "KeyColumnName": "Oid",
+        "KeyDataTypeId": 9,
+        "Columns": [
+            { "ColumnName": "Name", "ColumnDataTypeId": 6, "Value": "Product A" },
+            { "ColumnName": "Price", "ColumnDataTypeId": 4, "Value": 29.99 }
+        ]
+    }
+]
+```
+
+---
+
+### Reading Data via Queries
+
+You can also read custom table data using **Queries** (created in Maintenance → Queries).
+When writing SQL queries that reference custom tables, use `CustomTable` as the **namespace** (schema context).
+
+The actual database schema is `[customtables]`, so the table is accessible as `[customtables].[YourTableName]` in SQL.
+
+**Example query:**
+
+```sql
+SELECT Oid, Name, Price, IsActive
+FROM [customtables].[ProductCatalog]
+WHERE IsActive = 1
+ORDER BY Name
+```
+
+:::note
+Queries must be created with the namespace set to **CustomTable** in the query configuration to resolve the correct schema context at runtime.
+:::

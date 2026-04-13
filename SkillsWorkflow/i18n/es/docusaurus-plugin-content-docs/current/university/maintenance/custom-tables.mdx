@@ -1,0 +1,111 @@
+---
+id: custom-tables
+title: Tablas Personalizadas
+sidebar_label: Tablas Personalizadas
+sidebar_position: 10
+slug: /university/maintenance/custom-tables
+---
+
+import SdkReference from '../../_partials/_custom-table-sdk.mdx';
+import ApiReference from '../../_partials/_custom-table-api.mdx';
+
+## Resumen
+
+Las Tablas Personalizadas le permiten ampliar el modelo de datos de Skills Workflow creando sus propias tablas, columnas y tipos de datos.
+
+Soportan:
+- esquema personalizado
+- permisos por rol
+- CRUD completo desde UI, SDK o API
+- consultas SQL con el namespace `CustomTable`
+- importación y exportación en JSON
+
+---
+
+## Navegación a Tablas Personalizadas
+
+1. Vaya a **Maintenance** en el menú principal
+2. Seleccione el módulo **Custom Tables**
+
+<figure>
+
+![img-box-shadow](pathname:///img/university/maintenance/custom_tables_list.png)
+<figcaption>Lista de tablas personalizadas en Maintenance</figcaption>
+</figure>
+
+---
+
+## Crear una tabla personalizada
+
+1. Haga clic en **+**
+2. Defina el nombre de la tabla
+3. Configure la columna clave, normalmente `Oid` con tipo `UniqueIdentifier`
+4. Agregue las columnas necesarias y sus tipos de datos
+
+<figure>
+
+![img-box-shadow](pathname:///img/university/maintenance/custom_tables_create.png)
+<figcaption>Creación de una nueva tabla personalizada</figcaption>
+</figure>
+
+---
+
+## Gestionar permisos
+
+Cada tabla personalizada tiene dos roles:
+
+- **Read Role** para leer datos
+- **Save Role** para insertar, actualizar o eliminar
+
+<figure>
+
+![img-box-shadow](pathname:///img/university/maintenance/custom_tables_permissions.png)
+<figcaption>Configuración de permisos de lectura y escritura</figcaption>
+</figure>
+
+---
+
+## Ver datos
+
+La cuadrícula muestra la columna clave, las columnas personalizadas y el conteo total de filas.
+
+<figure>
+
+![img-box-shadow](pathname:///img/university/maintenance/custom_tables_data.png)
+<figcaption>Cuadrícula de datos de la tabla personalizada</figcaption>
+</figure>
+
+---
+
+## Leer datos mediante consultas
+
+Al crear consultas en **Maintenance → Queries**, configure el namespace como `CustomTable` y consulte el esquema `[customtables]`.
+
+```sql
+SELECT Oid, Name, Price, IsActive
+FROM [customtables].[ProductCatalog]
+WHERE IsActive = 1
+ORDER BY Name
+```
+
+---
+
+## Referencia del SDK
+
+<details>
+<summary><strong>Ver métodos del SDK</strong></summary>
+
+<SdkReference />
+
+</details>
+
+---
+
+## Referencia de API
+
+<details>
+<summary><strong>Ver endpoints de API</strong></summary>
+
+<ApiReference />
+
+</details>

@@ -5,7 +5,7 @@ sidebar_label: Data Extraction API
 sidebar_position: 1
 ---
 
-import LineageGraph from '@site/src/components/DataExtraction/LineageGraph';
+import LineageGraph from '@site/src/components/dataextraction/LineageGraph';
 
 ## Overview
 
