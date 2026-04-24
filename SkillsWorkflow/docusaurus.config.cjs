@@ -210,14 +210,14 @@ module.exports = {
   plugins: [
     ...(isProductionBuild
       ? [
-          [
-            require.resolve('docusaurus-lunr-search'),
-            {
-              languages: ['en', 'pt', 'es'],
-              indexBaseUrl: true
-            }
-          ]
+        [
+          require.resolve('docusaurus-lunr-search'),
+          {
+            languages: ['en', 'pt', 'es'],
+            indexBaseUrl: true
+          }
         ]
+      ]
       : []),
     [
       '@docusaurus/plugin-client-redirects',
