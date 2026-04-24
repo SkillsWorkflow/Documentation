@@ -14,7 +14,7 @@ El proceso de importación de empleados:
 - Crear un empleado
 - Vincular el empleado al usuario y a la empresa
 
-<ReactPlayer controls muted url='/video/import-employee.mp4' />
+<ReactPlayer controls url='https://youtu.be/9dWZfUy7byU' />
 
 :::caution
 Para importar los datos correctamente, asegúrese de que no hay entradas duplicadas en el sistema.

@@ -14,7 +14,7 @@ The user import process will:
 - Create a user
 - Associate the user with the company, division, department, and typology.
 
-<ReactPlayer controls muted url='/video/Import_Users.mov' />
+<ReactPlayer controls url='https://youtu.be/iYVZw8EZpLc' />
 
 :::caution
 To successfully import the data, ensure that there are no duplicate entries in the system.

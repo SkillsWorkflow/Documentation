@@ -14,7 +14,7 @@ El proceso de importación de proyectos realizará lo siguiente:
 - Crear un proyecto asociado al cliente.
 - Asociar el estado definido en el archivo.
 
-<ReactPlayer controls muted url='/video/Import_Project.mov' />
+<ReactPlayer controls url='https://youtu.be/IiGlBKVv_gE' />
 
 :::caution
 Para importar los datos con éxito, asegúrese de que el flujo de trabajo esté creado con las etapas de inicio y fin definidas.

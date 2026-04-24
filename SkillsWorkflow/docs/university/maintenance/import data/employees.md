@@ -14,7 +14,7 @@ The employee importation process will:
 - Create an employee
 - Link the employee to the User and Company
 
-<ReactPlayer controls muted url='/video/import-employee.mp4' />
+<ReactPlayer controls url='https://youtu.be/9dWZfUy7byU' />
 
 :::caution
 To import the data successfully, ensure that there is no duplicated entries in the system.

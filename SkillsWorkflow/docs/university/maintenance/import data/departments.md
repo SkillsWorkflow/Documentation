@@ -14,7 +14,7 @@ The department import process will:
 - Create the department
 - Associate it with the company, division configured in the import file
 
-<ReactPlayer controls muted url='/video/Import_Department.mov' />
+<ReactPlayer controls url='https://youtu.be/QO7Upi8Xl2w' />
 
 :::caution
 To successfully import the data, make sure there are no duplicate entries in the system.
