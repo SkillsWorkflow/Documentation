@@ -8,6 +8,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "start:search": "docusaurus build && docusaurus serve",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -26,6 +27,7 @@
     "@types/react": "^19.2.14",
     "@xyflow/react": "^12.10.2",
     "clsx": "^2.1.1",
+    "docusaurus-lunr-search": "^3.6.0",
     "postcss": "^8.5.8",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.4",
@@ -47,5 +49,9 @@
   "devDependencies": {
     "@docusaurus/plugin-client-redirects": "^3.10.0",
     "node-sql-parser": "^5.4.0"
+  },
+  "resolutions": {
+    "webpack": "5.95.0",
+    "webpackbar": "6.0.1"
   }
 }

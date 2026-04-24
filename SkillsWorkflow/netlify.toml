@@ -1,4 +1,5 @@
 [build]
+  command = "yarn build"
   publish = "build"
 
 [build.environment]
@@ -8,3 +9,23 @@
   for = "/*"
   [headers.values]
     Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://ka-f.fontawesome.com; script-src-elem 'self' 'unsafe-inline' https://kit.fontawesome.com https://ka-f.fontawesome.com; style-src 'self' 'unsafe-inline' https://ka-f.fontawesome.com https://fonts.googleapis.com; style-src-elem 'self' 'unsafe-inline' https://ka-f.fontawesome.com https://fonts.googleapis.com; font-src 'self' https://ka-f.fontawesome.com https://ka-p.fontawesome.com https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://ka-f.fontawesome.com https://ka-p.fontawesome.com; frame-src 'self'"
+
+[[headers]]
+  for = "/lunr-index*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/search-doc*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*/lunr-index*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*/search-doc*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
