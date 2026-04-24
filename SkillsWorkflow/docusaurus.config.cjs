@@ -46,6 +46,7 @@ if (process.env.NODE_ENV !== 'production') {
   loadLocalEnv();
 }
 const fontAwesomeKitId = process.env.FONTAWESOME_KIT_ID;
+const isProductionBuild = process.env.NODE_ENV === 'production';
 
 function humanizeSidebarLabel(label) {
   const normalized = label
@@ -178,15 +179,6 @@ module.exports = {
         }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Skills Workflow`
-    },
-
-    // Algolia (DocSearch hospedado)
-    algolia: {
-      appId: 'XB27C2B9IL',
-      apiKey: '87094cef7d341d5684d9762da858c498', // chave pública
-      indexName: 'documentation_skillsworkflow_com_xb27c2b9il_pages',
-      contextualSearch: true,
-      searchPagePath: 'search'
     }
   },
 
@@ -216,6 +208,17 @@ module.exports = {
   ],
 
   plugins: [
+    ...(isProductionBuild
+      ? [
+          [
+            require.resolve('docusaurus-lunr-search'),
+            {
+              languages: ['en', 'pt', 'es'],
+              indexBaseUrl: true
+            }
+          ]
+        ]
+      : []),
     [
       '@docusaurus/plugin-client-redirects',
       {

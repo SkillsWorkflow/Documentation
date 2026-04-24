@@ -621,43 +621,104 @@ footer li a:hover {
 html[data-theme="light"] .DocSearch {
   --docsearch-primary-color: var(--ifm-color-primary);
   --docsearch-text-color: var(--ifm-font-color-base);
-  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  --docsearch-muted-color: var(--ifm-color-primary-dark);
+  --docsearch-container-background: rgba(0, 114, 198, 0.35);
   /* Modal */
-  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  --docsearch-modal-background: #f3f9ff;
   /* Search box */
-  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-background: #e6f2ff;
   --docsearch-searchbox-focus-background: var(--ifm-color-white);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
   --docsearch-hit-active-color: var(--ifm-color-white);
-  --docsearch-hit-background: var(--ifm-color-white);
+  --docsearch-hit-background: #edf5ff;
   /* Footer */
-  --docsearch-footer-background: var(--ifm-color-white);
+  --docsearch-footer-background: #e6f2ff;
   --home-text-color: black;
 }
 
 html[data-theme="dark"] .DocSearch {
+  --docsearch-primary-color: var(--ifm-color-primary-light);
   --docsearch-text-color: var(--ifm-font-color-base);
-  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  --docsearch-muted-color: var(--ifm-color-primary-lightest);
+  --docsearch-container-background: rgba(0, 34, 59, 0.82);
   /* Modal */
-  --docsearch-modal-background: var(--ifm-background-color);
+  --docsearch-modal-background: #0e2539;
   /* Search box */
-  --docsearch-searchbox-background: var(--ifm-background-color);
-  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  --docsearch-searchbox-background: #12324c;
+  --docsearch-searchbox-focus-background: #0b2234;
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
   --docsearch-hit-active-color: var(--ifm-color-white);
-  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  --docsearch-hit-background: #143952;
   /* Footer */
-  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-footer-background: #12324c;
   --docsearch-key-gradient: linear-gradient(
     -26.5deg,
     var(--ifm-color-emphasis-200) 0%,
     var(--ifm-color-emphasis-100) 100%
   );
   /* --home-text-color: var(--home-text-color: #fff; */
+}
+
+.DocSearch-Modal {
+  border-radius: 16px !important;
+  border: 1px solid rgba(0, 114, 198, 0.28);
+  box-shadow: 0 20px 44px rgba(0, 57, 99, 0.22);
+}
+
+.DocSearch-SearchBar,
+.DocSearch-Form {
+  border-radius: 16px !important;
+  border: 1px solid rgba(0, 114, 198, 0.24);
+}
+
+.DocSearch-Hit a {
+  border-radius: 12px;
+}
+
+/* Lunr Search dropdown (algolia-autocomplete classes) */
+.algolia-autocomplete .ds-dropdown-menu {
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: 0 20px 44px rgba(0, 57, 99, 0.22);
+}
+
+.algolia-autocomplete .ds-dropdown-menu:before {
+  background: var(--ifm-color-primary) !important;
+  border-top-color: var(--ifm-color-primary) !important;
+  border-right-color: var(--ifm-color-primary) !important;
+}
+
+.algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-'] {
+  border-radius: 16px !important;
+  background: #f3f9ff;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+  background-color: var(--ifm-color-primary) !important;
+  color: #ffffff;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
+  background-color: #f3f9ff;
+}
+
+.algolia-autocomplete .ds-cursor .algolia-docsearch-suggestion--wrapper {
+  background: #e6f2ff;
+  box-shadow: inset -3px 0 0 var(--ifm-color-primary);
+}
+
+html[data-theme='dark'] .algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-'] {
+  background: #0e2539;
+}
+
+html[data-theme='dark'] .algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
+  background-color: #0e2539;
+}
+
+html[data-theme='dark'] .algolia-autocomplete .ds-cursor .algolia-docsearch-suggestion--wrapper {
+  background: #12324c;
 }
 
 /* Custom Table */
