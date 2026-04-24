@@ -14,7 +14,7 @@ El proceso de importación de usuarios incluirá:
 - Crear un usuario
 - Asociar al usuario con la empresa, división, departamento y tipología.
 
-<ReactPlayer controls muted url='/video/Import_Users.mov' />
+<ReactPlayer controls url='https://youtu.be/iYVZw8EZpLc' />
 
 :::caution
 Para importar los datos con éxito, asegúrate de que no haya entradas duplicadas en el sistema.

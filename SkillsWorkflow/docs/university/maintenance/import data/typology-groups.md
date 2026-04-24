@@ -14,7 +14,7 @@ The typology group import process:
 - Navigate to Maintenance.
 - And search for the Typology Group listing.
 
-<ReactPlayer controls muted url='/video/import-typology-group.mov' />
+<ReactPlayer controls url='https://youtu.be/30DA76CVAdI' />
 
 :::caution
 To import the data correctly, please ensure there are no duplicate entries in the system.

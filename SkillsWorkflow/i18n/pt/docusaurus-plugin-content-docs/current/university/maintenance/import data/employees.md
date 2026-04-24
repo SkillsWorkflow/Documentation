@@ -14,7 +14,7 @@ O processo de importação de funcionários irá:
 - Criar um funcionário
 - Associar o funcionário ao usuário e à empresa
 
-<ReactPlayer controls muted url='/video/import-employee.mp4' />
+<ReactPlayer controls url='https://youtu.be/9dWZfUy7byU' />
 
 :::caution
 Para importar os dados com sucesso, certifique-se de que não existem entradas duplicadas no sistema.

@@ -14,7 +14,7 @@ O processo de importação das tipologias é o seguinte:
 - Navegar até Manutenção
 - Procurar a lista de Tipologias
 
-<ReactPlayer controls muted url='/video/import-typologies.mov' />
+<ReactPlayer controls url='https://youtu.be/sy9D8FqyC-A' />
 
 :::caution
 Para importar os dados corretamente, assegure-se de que não existem entradas duplicadas no sistema.

@@ -14,7 +14,7 @@ The project import process will:
 - Create a project associated with the client.
 - Associate the state defined in the file.
 
-<ReactPlayer controls muted url='/video/Import_Project.mov' />
+<ReactPlayer controls url='https://youtu.be/IiGlBKVv_gE' />
 
 :::caution
 To successfully import the data, make sure that the workflow is created with the start and end steps defined.

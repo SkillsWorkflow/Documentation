@@ -14,7 +14,7 @@ El proceso de importación de grupo de tipologías:
 - Navegar a Mantenimiento
 - Y buscar el listado de Grupo de Tipologías
 
-<ReactPlayer controls muted url='/video/import-typology-group.mov' />
+<ReactPlayer controls url='https://youtu.be/30DA76CVAdI' />
 
 :::caution
 Para importar los datos correctamente, asegúrese de que no hay entradas duplicadas en el sistema.

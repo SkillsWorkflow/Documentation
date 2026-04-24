@@ -14,7 +14,7 @@ O processo de importação de usuários irá:
 - Criar um usuário
 - Associar o usuário à empresa, divisão, departamento e tipologia.
 
-<ReactPlayer controls muted url='/video/Import_Users.mov' />
+<ReactPlayer controls url='https://youtu.be/iYVZw8EZpLc' />
 
 :::caution
 Para importar os dados com sucesso, certifique-se de que não existem entradas duplicadas no sistema.

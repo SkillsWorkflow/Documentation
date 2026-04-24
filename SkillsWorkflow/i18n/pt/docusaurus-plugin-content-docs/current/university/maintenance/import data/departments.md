@@ -14,7 +14,7 @@ O processo de importação de departamentos irá:
 - Criar o departamento
 - Associar à empresa, divisão configurada no ficheiro de importação
 
-<ReactPlayer controls muted url='/video/Import_Department.mov' />
+<ReactPlayer controls url='https://youtu.be/QO7Upi8Xl2w' />
 
 :::caution
 Para importar os dados com sucesso, certifique-se de que não existem entradas duplicadas no sistema.

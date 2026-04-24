@@ -14,7 +14,7 @@ The process of importing the typologies:
 - Navigate to Maintenance
 - And search for the Typologies list
 
-<ReactPlayer controls muted url='/video/import-typologies.mov' />
+<ReactPlayer controls url='https://youtu.be/sy9D8FqyC-A' />
 
 :::caution
 To import the data correctly, make sure there are no duplicate entries in the system.
