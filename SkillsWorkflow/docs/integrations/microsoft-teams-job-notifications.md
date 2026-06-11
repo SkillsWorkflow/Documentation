@@ -27,9 +27,9 @@ This is a good fit when you want a support, operations, or production channel to
 
 To enable this integration, import all four package items:
 
-| Element | Purpose |
-|---|---|---|
-| Configuration Keys / System Parameters | Store the tenant-specific values used by the integration |
+| Item | Description |
+|---|---|
+| System Parameters | Store the tenant-specific values used by the integration |
 | Named Query | Loads the Deliverable number, project, title, created date, and latest brief text |
 | Automation Workflow | Receives the webhook payload, loads the Deliverable details, and posts to Teams |
 | Webhook | Triggers the automation when a Deliverable moves to the configured stage |
