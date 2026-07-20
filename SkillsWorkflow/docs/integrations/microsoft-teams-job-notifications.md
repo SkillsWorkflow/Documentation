@@ -98,14 +98,54 @@ Before installing the package, make sure you have:
 
 - Access to the **Marketplace**
 - A Microsoft Teams channel that should receive the notification
-- A valid Microsoft Teams incoming webhook URL for that channel
+- A valid Microsoft Teams incoming webhook URL for that channel (see [Section 7](#7-configuring-the-incoming-webhook-in-microsoft-teams) to create one)
 - The tenant values required by the imported Configuration Keys or System Parameters
 
 <!-- image: Teams channel connector or incoming webhook configuration -->
 
 ---
 
-## 7. Summary
+## 7. Configuring the Incoming Webhook in Microsoft Teams
+
+:::note
+Classic Office 365 Connectors (the original "Incoming Webhook" connector type) are being retired by Microsoft. Teams now generates webhook URLs through the **Workflows** app, which is powered by Power Automate. The steps below reflect this current approach. See [Microsoft's official documentation](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook) for the most up-to-date instructions.
+:::
+
+To generate the webhook URL required by the package's Configuration Keys or System Parameters (see [Section 4](#4-configuration)):
+
+1. In **Microsoft Teams**, go to the team and channel that should receive the Deliverable notifications.
+2. Select **More options (...)** next to the channel name.
+3. Select **Workflows**.
+4. Search for and select the **Send webhook alerts to a channel** template.
+5. Configure the workflow:
+   - Give it a recognizable name, for example `Skills Workflow Deliverable Notifications`.
+   - Confirm the target team and channel.
+   - Sign in or authorize the connection if prompted.
+6. Select **Create** (or **Save**).
+7. Once the workflow is created, copy the generated **webhook URL**.
+8. Paste this URL into the Skills Workflow **Configuration Keys** or **System Parameters** value for the Microsoft Teams incoming webhook.
+
+<!-- image: Workflows template "Send webhook alerts to a channel" selection and parameter screen -->
+
+### Permissions
+
+- Creating a workflow requires access to the **Workflows** app in Teams and, depending on tenant Power Automate licensing and policies, may require admin approval.
+- Team owners can control who is allowed to create, update, or remove connectors and workflows for a channel under **Team settings > Member permissions > Allow members to create, update, and remove connectors**.
+
+### Managing the webhook later
+
+To disable or remove the integration on the Teams side:
+
+1. Open the **Workflows** app in Teams.
+2. Scroll to the **Your workflows** section.
+3. Select **More actions (...)** next to the workflow you created.
+4. Choose **Turn off** to pause it, or **Delete** to remove it permanently.
+
+Turning off or deleting the workflow stops new Teams notifications but does not change the Skills Workflow package configuration. If you create a replacement workflow, update the stored webhook URL in the Configuration Keys or System Parameters accordingly.
+
+---
+
+## 8. Summary
 
 This integration should be documented and used as a **Marketplace package**:
 
