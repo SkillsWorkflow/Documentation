@@ -27,18 +27,20 @@ This is a good fit when you want a support, operations, or production channel to
 
 To enable this integration, import all four package items:
 
-| Item | Description |
+| Item (Marketplace name) | Description |
 |---|---|
 | System Parameters | Store the tenant-specific values used by the integration |
 | Named Query | Loads the Deliverable number, project, title, created date, and latest brief text |
 | Automation Workflow | Receives the webhook payload, loads the Deliverable details, and posts to Teams |
 | Webhook | Triggers the automation when a Deliverable moves to the configured stage |
 
+The **Item** column lists the exact name each component uses in the Marketplace. Since the Marketplace is available in every tenant, these names can be used to locate a component regardless of whether you're searching in your own tenant or guiding a client to find it in theirs — no tenant-specific link needed.
+
 ---
 
 ## 3. Installation
 
-Install the integration from the **Marketplace**.
+Search for **Microsoft Teams Deliverable Notifications** in the **Marketplace** and install it. This is the exact package name, so it resolves the same way in any tenant.
 
 Import all four items from the package:
 
@@ -116,16 +118,33 @@ To generate the webhook URL required by the package's Configuration Keys or Syst
 1. In **Microsoft Teams**, go to the team and channel that should receive the Deliverable notifications.
 2. Select **More options (...)** next to the channel name.
 3. Select **Workflows**.
-4. Search for and select the **Send webhook alerts to a channel** template.
-5. Configure the workflow:
-   - Give it a recognizable name, for example `Skills Workflow Deliverable Notifications`.
-   - Confirm the target team and channel.
-   - Sign in or authorize the connection if prompted.
-6. Select **Create** (or **Save**).
-7. Once the workflow is created, copy the generated **webhook URL**.
-8. Paste this URL into the Skills Workflow **Configuration Keys** or **System Parameters** value for the Microsoft Teams incoming webhook.
+4. In the search box, type `Send webhook alerts to a channel` and select it from the **Templates** list.
 
-<!-- image: Workflows template "Send webhook alerts to a channel" selection and parameter screen -->
+   <figure>
+
+   ![img-box-shadow](/img/integrations/microsoft-teams/workflow-template-select.png)
+   <figcaption>Selecting the Send webhook alerts to a channel template</figcaption>
+   </figure>
+
+5. Under **Parameters**, confirm the **Team the channel is in** and the **Channel**, then select **Save**.
+
+   <figure>
+
+   ![img-box-shadow](/img/integrations/microsoft-teams/workflow-parameters.png)
+   <figcaption>Setting the team and channel for the workflow</figcaption>
+   </figure>
+
+   The workflow is named automatically, for example `Send webhook alerts to Announcements` based on the channel. You can rename it later using the pencil icon next to the title.
+
+6. The workflow opens showing it as **Active**. Select **Copy webhook link** to copy the generated webhook URL.
+
+   <figure>
+
+   ![img-box-shadow](/img/integrations/microsoft-teams/workflow-copy-link.png)
+   <figcaption>Copying the webhook link from the created workflow</figcaption>
+   </figure>
+
+7. Paste this URL into the Skills Workflow **Configuration Keys** or **System Parameters** value for the Microsoft Teams incoming webhook.
 
 ### Permissions
 
@@ -134,12 +153,7 @@ To generate the webhook URL required by the package's Configuration Keys or Syst
 
 ### Managing the webhook later
 
-To disable or remove the integration on the Teams side:
-
-1. Open the **Workflows** app in Teams.
-2. Scroll to the **Your workflows** section.
-3. Select **More actions (...)** next to the workflow you created.
-4. Choose **Turn off** to pause it, or **Delete** to remove it permanently.
+To disable or remove the integration on the Teams side, open the workflow itself (as shown in the screenshot above) and select **Turn off** to pause it or **Delete** to remove it permanently. You can also reach the same workflow from the **Workflows** app, under **Your workflows**, by selecting **More actions (...)** next to it.
 
 Turning off or deleting the workflow stops new Teams notifications but does not change the Skills Workflow package configuration. If you create a replacement workflow, update the stored webhook URL in the Configuration Keys or System Parameters accordingly.
 
