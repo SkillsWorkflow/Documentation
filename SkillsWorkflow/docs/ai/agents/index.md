@@ -9,6 +9,8 @@ sidebar_position: 1
 
 Skills Workflow includes focused AI assistants. Each assistant is built for a different kind of task, so it is easier to get the result you want without using overly technical prompts.
 
+New to AI in Skills Workflow? Start with the [AI Overview](../overview.md) to see everything AI can do for your agency.
+
 ## Available assistants
 
 | Assistant | Best for | Example request |
@@ -17,6 +19,7 @@ Skills Workflow includes focused AI assistants. Each assistant is built for a di
 | [Workflow Assistant](workflow-agent.md) | Reviewing or changing workflow stages, transitions, and approval paths | `Show me the workflow for Deliverables` |
 | [Writing Assistant](writing-agent.md) | Rewriting, polishing, shortening, or clarifying text | `Rewrite this in a more professional tone` |
 | [Workspace Assistant](workspace-agent.md) | Adjusting workspaces, dashboards, panels, filters, and widgets | `Add a kanban panel to this workspace` |
+| [Workspace Studio](workspace-studio.md) | Making code-level changes to a workspace's components, data sources, or configuration | `Fix the bug in this grid's column setup` |
 
 ## Which one should I use?
 
@@ -24,6 +27,7 @@ Skills Workflow includes focused AI assistants. Each assistant is built for a di
 - Use the [Workflow Assistant](workflow-agent.md) when you want to change how documents move from one stage to another.
 - Use the [Writing Assistant](writing-agent.md) when you only need help with text.
 - Use the [Workspace Assistant](workspace-agent.md) when you want to change a workspace or dashboard.
+- Use the [Workspace Studio](workspace-studio.md) when you need to change the actual code behind a workspace, not just its panels and settings.
 
 ## Tips for better results
 
@@ -38,3 +42,4 @@ Skills Workflow includes focused AI assistants. Each assistant is built for a di
 - Read [Workflow Assistant](workflow-agent.md) if you manage workflow setup and approvals.
 - Read [Writing Assistant](writing-agent.md) if you want help writing or rewriting text.
 - Read [Workspace Assistant](workspace-agent.md) if you want to improve dashboards and workspace layouts.
+- Read [Workspace Studio](workspace-studio.md) if you need code-level control over a workspace.

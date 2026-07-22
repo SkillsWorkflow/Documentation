@@ -49,6 +49,7 @@ Good examples include:
 - If you want to create or move documents, use the [Document Assistant](document-agent.md).
 - If you want to change workflow stages or transitions, use the [Workflow Assistant](workflow-agent.md).
 - If you only want help with text, use the [Writing Assistant](writing-agent.md).
+- If you need to change the actual code behind a component, use [Workspace Studio](workspace-studio.md).
 
 ## What to expect
 
