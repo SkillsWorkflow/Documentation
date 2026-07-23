@@ -21,8 +21,8 @@
   --sw-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Courier New", monospace;
 
-  --sw-primary: #2563eb;
-  --sw-primary-strong: #0f4bd8;
+  --sw-primary: #0072c6;
+  --sw-primary-strong: #00508b;
   --sw-accent: #00b8d9;
   --sw-heading: #0a0d14;
   --sw-body: #374151;
@@ -33,13 +33,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2563eb;
-  --ifm-color-primary-dark: #1453dd;
-  --ifm-color-primary-darker: #134ecf;
-  --ifm-color-primary-darkest: #1040aa;
-  --ifm-color-primary-light: #4177ee;
-  --ifm-color-primary-lighter: #4f81ef;
-  --ifm-color-primary-lightest: #749cf2;
+  --ifm-color-primary: #0072c6;
+  --ifm-color-primary-dark: #00508b;
+  --ifm-color-primary-darker: #003963;
+  --ifm-color-primary-darkest: #00223b;
+  --ifm-color-primary-light: #0294ff;
+  --ifm-color-primary-lighter: #2aa5ff;
+  --ifm-color-primary-lightest: #52b5ff;
   --ifm-font-color-base: var(--sw-body);
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: var(--sw-font-sans);
@@ -49,15 +49,9 @@
   --docusaurus-highlighted-code-line-bg: rgb(215, 215, 215);
 }
 
-/* Dark mode: lift the primary so it keeps contrast on dark surfaces. */
+/* Dark mode: only the neutrals flip; the brand blue stays #0072c6 as in the
+   website and the product. */
 html[data-theme="dark"] {
-  --ifm-color-primary: #749cf2;
-  --ifm-color-primary-dark: #4f81ef;
-  --ifm-color-primary-darker: #4177ee;
-  --ifm-color-primary-darkest: #2563eb;
-  --ifm-color-primary-light: #8fb0f5;
-  --ifm-color-primary-lighter: #9dbaf6;
-  --ifm-color-primary-lightest: #c2d4fa;
   --ifm-font-color-base: #e5e7eb;
   --sw-heading: #ffffff;
   --sw-body: #e5e7eb;
@@ -213,7 +207,7 @@ h3 {
   font-family: var(--sw-font-display) !important;
   font-weight: 600;
   font-size: 18px;
-  color: var(--ifm-color-primary-light);
+  color: #6ea5dc;
   margin-top: 20px !important;
   margin-bottom: 10px !important;
   margin-left: 20px;
