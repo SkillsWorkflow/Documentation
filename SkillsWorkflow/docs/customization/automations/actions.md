@@ -1753,35 +1753,101 @@ To configure this action, there are required parameters that need to be set:
 
 ## ApplyTemplate
 
-ApplyTemplate template is a engine based on the Liquid template language.
-Liquid It's a secure template language that is also very accessible for non-programmer audiences.
+The `ApplyTemplate` action renders dynamic text or HTML using the [Liquid template language](https://shopify.github.io/liquid/).
 
-> [Liquid language Documentation](https://shopify.github.io/liquid/basics/introduction/)
+The action receives:
+
+- **body** – A JSON object containing the values available to the Liquid template.
+- **data** – The Liquid template to render.
+
+Liquid supports:
+
+- **Objects** to display values: `{{ variable }}`
+- **Tags** for conditions and loops: `{% if %}`, `{% for %}`
+- **Filters** to transform values: `{{ value | upcase }}`
 
 #### Configuration
 
-To configure this action, there are required parameters that need to be set:
-
-* body
-* data
-
-```json title="Template"
+```json
 {
   "actionType": "ApplyTemplate",
-  "name": "ApplyTemplate",
+  "name": "BuildDocumentTypeMessage",
   "next": "Exit",
   "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
-  "data": "<p>Document Type: {{documentType}}</p>"
-},
+  "data": "<p>Document Type: {{ documentType }}</p>"
+}
 ```
 
-#### Template Description
+The rendered result is:
 
-* actionType - The action type is ApplyTemplate
-* name - The action name is custom
-* next - The next action to be executed
-* body - The data to be available in the ApplyTemplate action
-* data - The Template to Render.
+```html
+<p>Document Type: Skill.Module.BusinessObjects.CommercialClient</p>
+```
+
+#### Conditional content
+
+Use Liquid tags to render content conditionally.
+
+```json
+{
+  "actionType": "ApplyTemplate",
+  "name": "BuildStatusMessage",
+  "next": "Exit",
+  "body": "{\"documentName\":\"Campaign Brief\",\"approved\":true}",
+  "data": "{% if approved %}<p>{{ documentName }} was approved.</p>{% else %}<p>{{ documentName }} is awaiting approval.</p>{% endif %}"
+}
+```
+
+#### Iterating over arrays
+
+Use the `for` tag to iterate through arrays.
+
+```json
+{
+  "actionType": "ApplyTemplate",
+  "name": "BuildUserList",
+  "next": "Exit",
+  "body": "{\"users\":[{\"name\":\"Adam\"},{\"name\":\"Maria\"}]}",
+  "data": "<ul>{% for user in users %}<li>{{ user.name }}</li>{% endfor %}</ul>"
+}
+```
+
+The rendered result is:
+
+```html
+<ul>
+  <li>Adam</li>
+  <li>Maria</li>
+</ul>
+```
+
+#### Using filters
+
+Filters transform values before they are rendered.
+
+```liquid
+{{ documentName | upcase }}
+{{ userName | default: "Unknown user" }}
+{{ description | escape }}
+```
+
+Filters can be chained:
+
+```liquid
+{{ userName | capitalize | prepend: "Hello " }}
+```
+
+#### Parameters
+
+| Parameter | Description |
+|-----------|-------------|
+| `actionType` | Must be `ApplyTemplate`. |
+| `name` | Unique action name. |
+| `next` | Next action to execute. |
+| `body` | JSON object whose properties are available inside the Liquid template. |
+| `data` | The Liquid template to render. |
+
+> **Note:** Since `body` and `data` are JSON strings inside the automation definition, remember to escape quotation marks (`\"`) where required.
 
 ## AnalyticsNamedQuery
 
