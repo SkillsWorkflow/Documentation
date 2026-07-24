@@ -6,7 +6,7 @@ sidebar_position: 2
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
-import ActionCatalog from '@site/src/components/automations/ActionCatalog';
+import ActionCatalog from '@site/src/components/automations/ActionCatalog.jsx';
 
 This section describes the action types available in an Automation Workflow. Browse them by category below — each card jumps to that action's full reference, with its configuration, JSON template and examples.
 
