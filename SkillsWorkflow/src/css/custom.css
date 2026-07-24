@@ -4,9 +4,32 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Varela+Round&display=swap");
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Brand tokens — kept in sync with the institutional website
+   (web-site/css/style.css :root) and the WebApp product
+   (SkillsWorkflow.WebApp ClientApp/css/skills_Base.css).
+
+   Two-font system, same as the website and the product:
+     - display (headings) → Varela Round   [product: --system-primary-font]
+     - sans (body copy)   → Open Sans      [product: --system-secondary-font]
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  --sw-font-display: "Varela Round", system-ui, sans-serif;
+  --sw-font-sans: "Open Sans", system-ui, sans-serif;
+  --sw-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+
+  --sw-primary: #0072c6;
+  --sw-primary-strong: #00508b;
+  --sw-accent: #00b8d9;
+  --sw-heading: #0a0d14;
+  --sw-body: #374151;
+  --sw-muted: #868c98;
+  --sw-line: rgba(15, 23, 42, 0.12);
+  --sw-bg-alt: #ebf2ff;
+}
 
 /* You can override the default Infima variables here. */
 :root {
@@ -17,12 +40,24 @@
   --ifm-color-primary-light: #0294ff;
   --ifm-color-primary-lighter: #2aa5ff;
   --ifm-color-primary-lightest: #52b5ff;
-  --ifm-font-color-base: var(--ifm-color-secondary-darkest);
+  --ifm-font-color-base: var(--sw-body);
   --ifm-code-font-size: 95%;
-  --ifm-font-family-base: "Varela Round";
-  --ifm-font-family-monospace: "Open Sans";
-  --home-text-color: #333333;
+  --ifm-font-family-base: var(--sw-font-sans);
+  --ifm-heading-font-family: var(--sw-font-display);
+  --ifm-font-family-monospace: var(--sw-font-mono);
+  --home-text-color: var(--sw-heading);
   --docusaurus-highlighted-code-line-bg: rgb(215, 215, 215);
+}
+
+/* Dark mode: only the neutrals flip; the brand blue stays #0072c6 as in the
+   website and the product. */
+html[data-theme="dark"] {
+  --ifm-font-color-base: #e5e7eb;
+  --sw-heading: #ffffff;
+  --sw-body: #e5e7eb;
+  --sw-muted: #9ca3af;
+  --sw-line: rgba(255, 255, 255, 0.14);
+  --sw-bg-alt: #1f2430;
 }
 
 figcaption {
@@ -34,7 +69,7 @@ figcaption {
 }
 
 .pagination-nav__label {
-  color: #333;
+  color: var(--sw-body);
 }
 
 span.token.constant {
@@ -133,23 +168,23 @@ div code-block {
 
 h1 {
   margin: 0 auto;
-  font-family: "Varela Round", sans-serif;
+  font-family: var(--sw-font-display);
   font-size: 42px;
   line-height: 48px;
   font-weight: 700;
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: -0.02em;
   text-transform: none;
   margin-bottom: 20px !important;
   margin-top: 20px !important;
-  color: #333333;
+  color: var(--sw-heading);
 }
 
 h2 {
   display: block;
   width: auto;
-  font-family: "Varela Round", sans-serif;
-  color: #0072c6;
+  font-family: var(--sw-font-display);
+  color: var(--ifm-color-primary);
   font-size: 25px;
   font-weight: 600 !important;
   letter-spacing: 0.15px;
@@ -169,8 +204,8 @@ h2 ~ figure {
 }
 
 h3 {
-  font-family: "Open Sans", sans-serif !important;
-  font-style: bold;
+  font-family: var(--sw-font-display) !important;
+  font-weight: 600;
   font-size: 18px;
   color: #6ea5dc;
   margin-top: 20px !important;
@@ -188,7 +223,7 @@ h3 ~ figure {
 }
 
 h4 {
-  color: #000000;
+  color: var(--sw-heading);
   margin-bottom: 8px !important;
   margin-left: 30px;
   font-size: 14px;
@@ -205,7 +240,7 @@ h4 ~ figure {
 }
 
 h5 {
-  color: #606770;
+  color: var(--sw-muted);
   /* margin-bottom: 8px !important; */
   margin-left: 40px;
   font-size: 14px;
@@ -226,15 +261,15 @@ h5 ~ figure {
 
 p {
   font-size: 14px !important;
-  font-family: "Open Sans", sans-serif !important;
-  color: #333;
+  font-family: var(--sw-font-sans) !important;
+  color: var(--sw-body);
   margin-bottom: 5px !important;
 }
 
 ticket {
   display: inline-block;
   background-color: #999999;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: var(--sw-font-sans) !important;
   padding: 2px 8px;
   border-radius: 12px;
   font-size: 0.8rem;
@@ -247,14 +282,14 @@ ticket {
 
 dl {
   font-size: 14px !important;
-  font-family: "Open Sans", sans-serif !important;
-  color: #333;
+  font-family: var(--sw-font-sans) !important;
+  color: var(--sw-body);
 }
 
 dt {
   font-size: 14px !important;
-  font-family: "Open Sans", sans-serif !important;
-  color: #333;
+  font-family: var(--sw-font-sans) !important;
+  color: var(--sw-body);
 }
 
 .markdown li {
@@ -263,12 +298,12 @@ dt {
 
 .markdown ul {
   font-size: 14px;
-  color: #333;
+  color: var(--sw-body);
 }
 
 .markdown ol {
   font-size: 14px;
-  color: #333;
+  color: var(--sw-body);
 }
 
 .hidden {
@@ -324,7 +359,7 @@ hr {
 }
 
 .home-p {
-  color: #333;
+  color: var(--sw-body);
   font-size: 16px !important;
 }
 
@@ -334,26 +369,12 @@ hr {
   transform: rotateY(359deg);
 }
 
-html[data-theme="light"] h1 {
-  color: #333333;
-}
-
-html[data-theme="dark"] h1 {
-  color: #fff;
-}
-
-html[data-theme="dark"] h2 {
-  color: #fff;
-  background-color: transparent;
-}
-
-html[data-theme="dark"] h3 {
-  color: #fff;
-  background-color: transparent;
-}
-
+/* Heading/body colours come from the brand tokens, which already swap per
+   theme (see the html[data-theme="dark"] token block at the top). These rules
+   only need to clear the inherited backgrounds in dark mode. */
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
 html[data-theme="dark"] p {
-  color: #fff;
   background-color: transparent;
 }
 
@@ -376,19 +397,17 @@ html[data-theme="dark"] .home-page-image {
 }
 
 .home-page-options {
-  color: #333;
-  background-color: #f3f8ff;
+  color: var(--sw-body);
+  background-color: var(--sw-bg-alt);
   border-radius: 5px;
   margin-bottom: 20px;
   text-align: center;
 }
 
+/* Was #333 text on a #333333 background — effectively invisible in dark mode. */
 html[data-theme="dark"] .home-page-options {
-  color: #333;
-  background-color: #333333;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  text-align: center;
+  color: var(--sw-body);
+  background-color: #1f2430;
 }
 
 .home-page-image {

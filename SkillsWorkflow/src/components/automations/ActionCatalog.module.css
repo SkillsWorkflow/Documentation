@@ -1,0 +1,85 @@
+/* Browsable catalog of automation actions.
+   Colors use Infima theme variables so light/dark are handled automatically. */
+
+.catalog {
+  margin: 1rem 0 2rem;
+}
+
+.category {
+  margin-bottom: 1.75rem;
+}
+
+.categoryHead {
+  margin-bottom: 0.75rem;
+}
+
+.categoryTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.categoryTitle::before {
+  content: '';
+  width: 4px;
+  height: 1.05em;
+  border-radius: 2px;
+  background: var(--ifm-color-primary);
+  display: inline-block;
+}
+
+.categoryBlurb {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.card {
+  display: block;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.cardName {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ifm-color-primary);
+  word-break: break-word;
+}
+
+.cardDesc {
+  margin: 0.3rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+  .card:hover {
+    transform: none;
+  }
+}

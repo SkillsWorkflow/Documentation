@@ -6,18 +6,25 @@ sidebar_position: 0
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import AutomationGraph from '@site/src/components/automations/AutomationGraph';
 
 ## Overview
 
-Automations in Skills Workflow allow users to configure business rules that are triggered automatically based on system events. These automations can be used to streamline processes such as sending notifications, updating data, or integrating with external systems via webhooks.
+Automations in Skills Workflow let you configure business rules that run automatically in response to system events — sending notifications, updating data, or integrating with external systems via webhooks.
+
+Every automation follows the same shape. An **event** triggers it, an optional **condition** decides whether it should run, and a chain of **actions** does the work — bookended by the mandatory **Start** and **Result** actions.
+
+<AutomationGraph />
 
 The automation process is composed of:
 
-1. **Trigger** – Defines the event that starts the automation.
-2. **Condition** – An optional filter to limit when the automation should proceed.
-3. **Actions** – Defines what should happen once the automation is triggered and conditions are met.
+1. **Trigger** – The system event that starts the automation.
+2. **Condition** – An optional filter that limits when the automation should proceed.
+3. **Actions** – What happens once the automation is triggered and the condition is met.
 
-Automations are a powerful way to respond to internal changes in the system or to interact with external services in real-time.
+:::tip Getting oriented
+Click any step in the diagram above to see what it does and jump to its reference. The rest of this page covers how actions share data and the expression language you use to wire them together.
+:::
 
 ---
 

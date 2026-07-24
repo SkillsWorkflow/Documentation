@@ -156,6 +156,37 @@ The request body uses `OperationType` to control the behavior:
 
 ---
 
+### Column Data Types
+
+When creating a table or defining a `KeyDataTypeId` / `ColumnDataTypeId`, use one of the following values from the `ColumnDataType` enum:
+
+<table className="custom-table">
+    <thead>
+        <tr>
+            <th>Value</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr className="selected"><td><code>0</code></td><td><code>Boolean</code></td><td>True/false value</td></tr>
+        <tr className="selected"><td><code>1</code></td><td><code>Date</code></td><td>Date value</td></tr>
+        <tr className="selected"><td><code>2</code></td><td><code>Float</code></td><td>Floating-point number</td></tr>
+        <tr className="selected"><td><code>3</code></td><td><code>Integer</code></td><td>Integer number</td></tr>
+        <tr className="selected"><td><code>4</code></td><td><code>Money</code></td><td>Decimal monetary value</td></tr>
+        <tr className="selected"><td><code>5</code></td><td><code>Varchar50</code></td><td>Text, up to 50 characters</td></tr>
+        <tr className="selected"><td><code>6</code></td><td><code>Varchar100</code></td><td>Text, up to 100 characters</td></tr>
+        <tr className="selected"><td><code>7</code></td><td><code>VarcharMax</code></td><td>Text, unbounded length</td></tr>
+        <tr className="selected"><td><code>8</code></td><td><code>Text</code></td><td>Long text value</td></tr>
+        <tr className="selected"><td><code>9</code></td><td><code>UniqueIdentifier</code></td><td>GUID/UUID value</td></tr>
+        <tr className="selected"><td><code>10</code></td><td><code>Varchar200</code></td><td>Text, up to 200 characters</td></tr>
+        <tr className="selected"><td><code>11</code></td><td><code>VarcharOther</code></td><td>Text with a custom/other length</td></tr>
+        <tr className="selected"><td><code>12</code></td><td><code>VarBinary</code></td><td>Binary data</td></tr>
+    </tbody>
+</table>
+
+---
+
 ### Create Table
 
 **POST** `/api/v3/custom-tables/{tableName}`
