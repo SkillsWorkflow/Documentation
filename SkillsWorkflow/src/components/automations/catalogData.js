@@ -3,7 +3,7 @@
  *
  * This drives the browsable card grid at the top of actions.md.
  * Each action's `anchor` must match the auto-generated heading id of
- * its `## <Name>` section further down that page (github-slugger:
+ * its `### <Name>` section further down that page (github-slugger:
  * lowercased, spaces → "-").
  *
  * When you document a new action in actions.md, add it here too.

@@ -22,6 +22,12 @@ The automation process is composed of:
 2. **Condition** – An optional filter that limits when the automation should proceed.
 3. **Actions** – What happens once the automation is triggered and the condition is met.
 
+### Triggers and webhooks
+
+A trigger can come from a Skills Workflow event or from a [webhook](../../api/webhooks) configured to run an Automation Workflow. This is useful when an event should start a workflow that calls external systems, transforms data, sends notifications, or returns a structured response.
+
+For example, a webhook can listen for a document event such as `Created` on the `Project` document type, then use an Automation Workflow as its destination. The automation receives the request context through `{{['#HttpRequest']}}`, so later actions can use values from the webhook payload.
+
 :::tip Getting oriented
 Click any step in the diagram above to see what it does and jump to its reference. The rest of this page covers how actions share data and the expression language you use to wire them together.
 :::

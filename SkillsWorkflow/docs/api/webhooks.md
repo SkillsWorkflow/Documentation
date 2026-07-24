@@ -27,6 +27,16 @@ That's it — the webhook is ready. Read on to understand each section of the fo
 
 ---
 
+## Using Webhooks with Automations
+
+Webhooks can also act as entry points for [Automation Workflows](../customization/automations/). Instead of sending the event to an external URL, enable **Automation** and select an **Automation Workflow** as the destination.
+
+Use this pattern when the event should start a controlled workflow: call one or more APIs, map data, generate files, send emails, or return a structured response. The automation can access the webhook request through `{{['#HttpRequest']}}`, including its body, headers, query values and other request context.
+
+For the automation model, expression syntax and available actions, see [Automations](../customization/automations/) and the [Actions reference](../customization/automations/actions).
+
+---
+
 ## Configuring a Webhook
 
 Navigate to **Maintenance > Webhooks** and click **Create New Webhook**.
