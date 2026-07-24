@@ -15,7 +15,7 @@
   --ai-ink: #0c1a26;
   --ai-ink-soft: #4c5f6e;
   --ai-line: #dfe7ef;
-  --ai-blue: #0172c6;
+  --ai-blue: #0072c6;
   --ai-blue-deep: #084b85;
   --ai-blue-bg: #e8f2fb;
   --ai-pink: #ec2f77;
@@ -27,8 +27,8 @@
   --ai-crit-bg: #f8e3e1;
 
   /* type */
-  --ai-serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
-  --ai-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Varela Round", sans-serif;
+  --ai-display: "Varela Round", system-ui, sans-serif;
+  --ai-sans: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --ai-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
 
   --ai-max: 1040px;
@@ -76,7 +76,7 @@
   font-weight: 600;
 }
 .ai-landing .ai-h2 {
-  font-family: var(--ai-serif);
+  font-family: var(--ai-display);
   font-weight: 600;
   font-size: clamp(1.55rem, 3.4vw, 2.15rem);
   line-height: 1.12;
@@ -97,7 +97,7 @@
   padding: clamp(2.4rem, 7vw, 4.8rem) 0 clamp(2rem, 5vw, 3.4rem);
 }
 .ai-landing .ai-hero__title {
-  font-family: var(--ai-serif);
+  font-family: var(--ai-display);
   font-weight: 600;
   font-size: clamp(2.3rem, 6vw, 3.7rem);
   line-height: 1.04;
@@ -128,7 +128,7 @@
   padding: clamp(1.8rem, 5vw, 3rem) 0 0.5rem;
 }
 .ai-landing .ai-head__title {
-  font-family: var(--ai-serif);
+  font-family: var(--ai-display);
   font-weight: 600;
   font-size: clamp(2rem, 4.5vw, 2.9rem);
   line-height: 1.06;
@@ -229,7 +229,7 @@
   box-shadow: 0 12px 28px -18px rgba(1, 114, 198, 0.55);
 }
 .ai-landing .ai-card__title {
-  font-family: var(--ai-serif);
+  font-family: var(--ai-display);
   font-size: 1.16rem;
   font-weight: 600;
   color: var(--ai-ink);
@@ -343,7 +343,7 @@
   margin-bottom: 1rem;
 }
 .ai-landing .ai-answer__who {
-  font-family: var(--ai-serif);
+  font-family: var(--ai-display);
   font-weight: 600;
   font-size: 1.05rem;
   color: var(--ai-ink);
@@ -466,7 +466,7 @@
   color: var(--ai-pink);
 }
 .ai-landing .ai-track__name {
-  font-family: var(--ai-serif);
+  font-family: var(--ai-display);
   font-size: 1.12rem;
   font-weight: 600;
   color: var(--ai-ink);
@@ -507,7 +507,7 @@
   padding: clamp(2.6rem, 7vw, 4.4rem) 0 1rem;
 }
 .ai-landing .ai-close__line {
-  font-family: var(--ai-serif);
+  font-family: var(--ai-display);
   font-size: clamp(1.5rem, 3.6vw, 2.2rem);
   font-weight: 600;
   color: var(--ai-ink);
@@ -516,7 +516,7 @@
   max-width: 20ch;
 }
 .ai-landing .ai-sig {
-  font-family: var(--ai-serif);
+  font-family: var(--ai-display);
   font-style: italic;
   font-size: 1.1rem;
   background: linear-gradient(92deg, var(--ai-pink), var(--ai-blue));
@@ -586,4 +586,122 @@
 @media (prefers-reduced-motion: reduce) {
   .ai-landing .ai-reveal { animation: none; }
   .ai-landing .ai-card { transition: none; }
+}
+
+/* =========================================================
+   Use-case detail pages
+   ========================================================= */
+
+/* Screenshot / figure */
+.ai-landing .ai-shot {
+  margin: 2rem 0 0;
+}
+
+.ai-landing .ai-shot__frame {
+  border: 1px solid var(--ai-line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--ai-surface);
+  box-shadow: 0 12px 34px rgba(12, 26, 38, 0.08);
+}
+
+.ai-landing .ai-shot__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Portrait shots (e.g. a phone capture) should not span the full column. */
+.ai-landing .ai-shot--portrait .ai-shot__frame {
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+.ai-landing .ai-shot__cap {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  color: var(--ai-ink-soft);
+  text-align: center;
+}
+
+/* "What you can do" bullet list */
+.ai-landing .ai-does {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.ai-landing .ai-does li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--ai-ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.ai-landing .ai-does li::before {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ai-blue);
+}
+
+/* Prev/next strip between use cases */
+.ai-landing .ai-hop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ai-line);
+}
+
+.ai-landing .ai-hop a {
+  color: var(--ai-blue);
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.ai-landing .ai-hop a:hover {
+  text-decoration: underline;
+}
+
+/* Index grid of all use cases */
+.ai-landing .ai-card__kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ai-blue);
+  font-family: var(--ai-sans);
+}
+
+/* Image slot still to be filled — deliberately loud so it cannot ship by
+   accident. Remove the wrapper and use .ai-shot__frame once the asset exists. */
+.ai-landing .ai-shot--todo .ai-shot__frame {
+  border: 2px dashed var(--ai-blue);
+  background: var(--ai-blue-bg);
+  box-shadow: none;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.ai-landing .ai-shot--todo .ai-shot__todo-label {
+  margin: 0 0 0.5rem;
+  font-family: var(--ai-display);
+  font-size: 1rem;
+  color: var(--ai-blue-deep);
+}
+
+.ai-landing .ai-shot--todo .ai-shot__todo-body {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ai-ink-soft);
 }
