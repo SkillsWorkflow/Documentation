@@ -12,7 +12,11 @@ This section describes the action types available in an Automation Workflow. Bro
 
 <ActionCatalog />
 
-## Start
+## Flow control & structure
+
+Shape how the automation runs: start, finish, branch, loop, wait, and compose workflows.
+
+### Start
 
 The Start action must be the first action set in the Automation Workflow.
 
@@ -43,7 +47,7 @@ To configure this action, the fields required to be filled are:
 * name - The name of the action
 * next - The action that will be triggered after the current action been completed
 
-## Result
+### Result
 
 The Result action is the action responsible to finish the Automation Workflow.
 
@@ -87,7 +91,424 @@ To have a custom Response you must configure the httpResponse.
 
 ---
 
-## Rest
+### Case
+
+Case action works as a validator.
+
+It allows you to choose the path to follow according to a comparison of values.
+
+#### Configuration
+
+There are fields required to be filled to have this action working properly:
+
+* actionType - Case
+* test - The value that will be evaluated
+* nextActions - The next actions include the value to be compared, and the path forward (action name) if the values that
+  are compared are the same
+
+    * Default - The default indicates the path forward if none of the actions has a match
+
+```json title="Template"
+{
+  "actionType": "Case",
+  "name": "ExistsGetSharepointSiteUrl",
+  "test": "{{['PreviousActionName']$.field}}",
+  "nextActions": [
+    {
+      "default": false,
+      "value": "200",
+      "name": "GetConfigFile"
+    },
+    {
+      "default": true,
+      "value": "",
+      "name": "Exit"
+    }
+  ]
+},
+```
+
+#### Template Description
+
+* actionType - The action type is Case
+* name - The action name is custom
+* test - The value that will be evaluated. Usually, it is the result/value of a previous action
+* nextActions - It is possible to have more than 2 nextAction to evaluate the test
+    * default - True/false field and it is mandatory to have one nextAction with the default set as true
+    * value - The value that will be compared against the value that is being in the test field
+    * name - The name of the action to be triggered
+
+---
+
+### Loop
+
+The Loop action allows you to trigger a Sub-Workflow.
+
+To do so, it is required 2 parameters to be filled:
+
+* body
+* subWorkflow
+
+#### Configuration
+
+To configure this action, there are parameters that can be set:
+
+* body
+  This field is at the Action level and must be populated with the data that should be used in the subWorkflow
+* subWorkflows
+  This field is at the Automation Workflow level and can be accessed from any Loop action
+  subWorkflows are like the principal automation workflow, where it is required to have:
+    * Start action
+    * Result action
+* When the subWorkflows ends, the next action set up in the Loop action will be triggered
+
+```json title="Template"
+{
+  "name": "ImportUsers",
+  "actions": [
+    {
+      "actionType": "Start",
+      "name": "Starting",
+      "next": "SftpDownload"
+    },
+    {
+      "actionType": "SftpDownload",
+      "name": "SftpDownload",
+      "next": "ReadFileData",
+      "ftpHostIp": "sftp.skillsworkflow.com",
+      "ftpUsername": "*",
+      "ftpPassword": "",
+      "filePath": "/Users",
+      "fileName": "Users.csv",
+      "fileType": "Csv"
+    },
+    {
+      "actionType": "ReadFileData",
+      "name": "ReadFileData",
+      "next": "LoopFileData",
+      "fileName": "{{['SftpDownload']}}"
+    },
+    {
+      "actionType": "Loop",
+      "name": "LoopFileData",
+      "next": "MoveSftpFileSuccess",
+      "body": "{{['ReadFileData']}}",
+      "subWorkflow": "ImportFileData"
+    },
+    {
+      "actionType": "SftpMoveTo",
+      "name": "MoveSftpFileSuccess",
+      "next": "ExitSftpSucess",
+      "ftpHostIp": "sftp.skillsworkflow.com",
+      "ftpUsername": "",
+      "ftpPassword": "*",
+      "filePath": "/Users",
+      "toFilePath": "/Users/Success",
+      "fileName": "{{['#ImportFile']}}",
+      "fileType": "Csv",
+      "hasHeaderRecord": false
+    },
+    {
+      "actionType": "Result",
+      "name": "ExitSftpSucess",
+      "httpResponse": {
+        "statusCode": 200,
+        "headers": {},
+        "body": "File moved to Success folder."
+      }
+    }
+  ],
+  "subWorkflow": [
+    {
+      "name": "ImportFileData",
+      "actions": [
+        {
+          "actionType": "Start",
+          "name": "Starting",
+          "next": "ImportUser"
+        },
+        {
+          "actionType": "Rest",
+          "name": "ImportUser",
+          "next": "CheckUserCreated",
+          "Method": "Post",
+          "url": "https://integration-api-skills-dev-we.azurewebsites.net/api/users",
+          "body": "{\"userName\":\"{{['#ImportFileData'].username}}\",\"name\":\"{{['#ImportFileData'].Name}}\",\"externalId\":\"{{['#ImportFileData'].externalId}}\",\"companyCode\":\"{{['#ImportFileData'].CompanyCode}}\",\"departmentExternalId\":\"{{['#ImportFileData'].departmentid}}\",\"mail\":\"{{['#ImportFileData'].email}}\",\"isActive\":true,\"hireDate\":\"{{['#ImportFileData'].hiredate}}\",\"ssoUserName\":\"{{['#ImportFileData'].ssoUsername}}\",\"ssoUserNameUpdatable\":true,\"expirationDate\":\"{{['#ImportFileData'].expirationDate}}\",\"requiredWeeklyHours\":\"{{['#ImportFileData'].weeklyRequiredHours}}\",\"externalNumberUpdatable\":true,\"externalNumber\":\"{{['#ImportFileData'].externalNumber}}\",\"phone\":\"{{['#ImportFileData'].workphone}}\",\"isActive\":\"{{['#ImportFileData'].isActive}}\"}",
+          "bodyMediaType": "Json"
+        },
+        {
+          "actionType": "Result",
+          "name": "ExitUserNotCreated",
+          "httpResponse": {
+            "statusCode": 200,
+            "headers": {},
+            "body": "User {{['ImportUser'].Content.userName}} imported.."
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Template Description
+
+* actionType - The action type is Loop
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* body - The data to be available in the Loop action
+* subWorkflow - The set of actions (e.g. import a list of files) to be performed
+
+### Reduce
+
+The Reduce action allows you to group data by one or more property names and perform an aggregation operation over another property.
+Supported operations are SUM, MIN, MAX, AVG, or NONE (returns the first value).
+
+#### Configuration
+
+To configure this action, the following parameters need to be set:
+
+- data
+- GroupBy
+- Operation
+- OperationResult
+
+```json title='Template'
+{
+  "actionType": "Reduce",
+  "name": "SumGroupedBy",
+  "next": "Exit",
+  "data": "{{['smallDataSet']}}",
+  "GroupBy": [
+    "prop1",
+    "prop2"
+  ],
+  "Operation": "SUM",
+  "OperationResult": "value",
+  "InnerArrayStrategy": "FIRST"
+}
+  ```
+
+```json title='Example DataSet'
+[
+  {
+    "prop1": "A",
+    "prop2": "X",
+    "array": [
+      0,
+      1
+    ],
+    "value": 30
+  },
+  {
+    "prop1": "A",
+    "prop2": "Y",
+    "array": [
+      1,
+      2
+    ],
+    "value": 70
+  },
+  {
+    "prop1": "B",
+    "prop2": "X",
+    "array": [
+      2,
+      3
+    ],
+    "value": 110
+  }
+]
+```
+
+#### Template Description
+
+- actionType - The action type is Reduce
+- name - The action name is custom
+- next - The next action to be executed
+- data - The dataset on which the operation will be performed
+- groupBy - List of property names to group the data by
+- operation - The aggregation operation to apply:
+    - SUM – aggregate values by summing them
+    - MIN – the minimal value in the group
+    - MAX – the maximum value in the group
+    - AVG – the average value in the group
+    - NONE – the first value in the group
+- operationResult - The target property on which the operation is applied
+- innerArrayStrategy - The default strategy to use when Data contains nested arrays:
+    - NONE - the operation returns the entire array (default)
+    - MIN - the operation returns the minimum value in the array
+    - MAX - the operation returns to the maximum value in the array
+    - FIRST - the operation returns the first value in the array
+    - LAST - the operation returns the last value in the array
+
+> Note: The InnerArrayStrategy parameter `MIN` and `MAX` will only handle numeric values, it will ignore null or other type of values.
+
+### Await
+
+The **Await** action allows the workflow to pause execution for a given duration before proceeding.
+
+#### Configuration
+
+To configure this action, there is one required parameter that must be set:
+
+* **duration** – The time to wait. Supported formats:
+    * **ms** → milliseconds (`500ms`)
+    * **s** → seconds (`1s`, `30s`)
+    * **m** → minutes (`1m`, `5m`)
+
+```json title="Template"
+{
+  "actionType": "Await",
+  "name": "AwaitOneSecond",
+  "next": "Exit",
+  "duration": "1s"
+}
+```
+
+#### Template Description
+- actionType – The action type is Await
+- name – The action name is custom
+- next – The next action to be executed after the wait period
+- duration – The wait time before continuing (e.g., 500ms, 1s, 1m)
+
+### ExecuteSubWorkflow
+
+ExecuteSubWorkFlow action allows you to run a SubWorkflow with a specific Payload. This Action receives a Return action Result from the
+SubWorkflow.
+
+#### Configuration
+
+To configure this action, there are parameters that can be set:
+
+* subWorkflows - The SubWorkflow Name that is intended to run
+* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
+
+```json title="Template"
+{
+  "actionType": "ExecuteSubWorkflow",
+  "name": "RunSubWorkflow",
+  "next": "Exit",
+  "body": "{\"data\":\"value\"}",
+  "subWorkflow": "MySubWorkflow"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is ExecuteSubWorkflow
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* body - The data to be available in the ExecuteSubWorkflow action
+* subWorkflow - The set of actions (e.g. import a list of files) to be performed
+
+### ExecuteIntegrationWorkflow
+
+ExecuteIntegrationWorkflow action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and waits for the
+workflow to finish and returns the result.
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+
+* body # optional
+* targetWorkflowId
+
+```json title="Template"
+{
+  "actionType": "ExecuteIntegrationWorkflow",
+  "name": "ExecuteIntegrationWorkflow",
+  "next": "Exit",
+  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
+  "targetWorkflowId": "152e8a13-ea4e-469d-be39-f8d4ad0dd919"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is ExecuteIntegrationWorkflow
+* name - The action name is custom
+* next - The next action to be executed
+* body - The data to be available in the ExecuteIntegrationWorkflow action
+* targetWorkflowId - The Id of the workflow Intended to run.
+
+### EnqueueBackgroundWork
+
+Enqueue action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and continues, it does not wait for the
+workflow to finish.
+
+#### Configuration
+
+To configure this action, there are parameters that can be set:
+
+* targetWorkflowId - The Workflow Id that is intended to run
+* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow. The body
+  must be JSON.
+* sessionId (optional) - 60 Characters Maximum. When set will execute synchronously the workflow. In other words, it will wait for the
+  previous to finish before starting the next one.
+* ExecuteOnUtc (Optional) - DateTime (YYYY-MM-ddTHH:mm:ss) Schedules execution for specific date and time.
+* Wait (Optional) - TimeSpan (dd:HH:mm:ss) Countdown Timer to execution.
+
+```json title="Template"
+{
+  "actionType": "EnqueueBackgroundWork",
+  "name": "RunWorkflow",
+  "next": "Exit",
+  "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
+  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
+  "sessionId": "MySessionId",
+  "executeOnUtc": "2024-09-18T18:30",
+  "wait": "00:00:30"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* body - The data to be available in the ExecuteSubWorkflow action
+* targetWorkflowId - The Id of the workflow Intended to run.
+* sessionId - The Id of the session so that it can execute synchronously.
+
+### ClearContext
+
+ClearContext Action allows to remove unused Context created properties that are not really necessary anymore.
+User can clear all properties or select a list of properties to be removed.
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+
+* listValues
+* clearAll # optional
+
+```json title="Template"
+{
+  "actionType": "ClearContext",
+  "name": "ClearContext",
+  "listValues": [
+    "property",
+    "property1"
+  ],
+  "clearAll": false,
+  "next": "Exit"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is ClearContext
+* name - The action name is custom
+* next - The next action to be executed
+* listValues - List of properties to bem removed. #Optional
+* clearAll - Flag to remove all properties #Defaults to false
+
+## Integration & authentication
+
+Connect to external systems and obtain the tokens needed to reach them.
+
+### Rest
 
 The Rest action allows doing Rest calls by setting in the Method parameter:
 
@@ -273,7 +694,7 @@ By setting the bodyMediaType as File:
 
 ---
 
-## Sftp
+### Sftp
 
 There are actions available to do actions related to SFTP:
 
@@ -446,97 +867,540 @@ label: 'Sftp List Files', value: 'sftplistfiles'},
 
 ---
 
-## E-mail
+### OAuth2Authentication
 
-Email action allows you to send e-mails.
+Creates an OAuth2 Authentication based on Authorization Code Flow (defined
+in [OAuth 2.0 RFC 6749, section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1))
 
-#### Configurations
-
-To do so, it is required some parameters to be filled:
-
-* body - The e-mail's body
-* subject - The email's subject
-* fromDisplayName - The display name that will appear on the sender
-* toAddress - The email address to whom the email should be sent
-
-```json title="Template"
-{
-  "actionType": "Email",
-  "name": "SendEmail",
-  "next": "Exit",
-  "body": "This body can also be HTML.",
-  "subject": "This is the e-mail subject",
-  "fromDisplayName": "Notification | Skills Workflow",
-  "toAddress": "user@skillsworkflow.com",
-  "attachments": [
-    "document.pdf"
-  ]
-},
-```
-
-#### Template Description
-
-* actionType – The action type is Email
-* name - The name of the action
-* next - The action that will be triggered after the current action been completed
-* body - The body that should be sent in the e-mail's body. It also supports HTML
-* subject - The email's subject
-* fromDisplayName - The display name that will appear on the sender
-* toAddress - The email address to whom the email should be sent
-* attachment - Name of the File to attach in email
-
----
-
-## Case
-
-Case action works as a validator.
-
-It allows you to choose the path to follow according to a comparison of values.
+<i> Because regular web apps are server-side apps where the source code is not publicly exposed, they can use the Authorization Code Flow,
+which exchanges an Authorization Code for a token. Your app must be server-side because during this exchange, you must also pass along your application's Client Secret,
+which must always be kept secure, and you will have to store it in your client. </i>
 
 #### Configuration
 
-There are fields required to be filled to have this action working properly:
+To configure this action, there is a required parameter that need to be set:
 
-* actionType - Case
-* test - The value that will be evaluated
-* nextActions - The next actions include the value to be compared, and the path forward (action name) if the values that
-  are compared are the same
-
-    * Default - The default indicates the path forward if none of the actions has a match
+* OAuthClientId - Client Id
+* OAuthClientSecret - Client Password
+* OAuthBaseUrl - Authorization Server Url
+* OAuthScope - Application Filter to limit access
+* OAuthCallbackUrl - Return Address defined by provider in Authorized redirect URIs
+* OAuthUseStateVerification - If set, enables CSRF attacks Verification - Defaults to `False`
+*
 
 ```json title="Template"
 {
-  "actionType": "Case",
-  "name": "ExistsGetSharepointSiteUrl",
-  "test": "{{['PreviousActionName']$.field}}",
-  "nextActions": [
-    {
-      "default": false,
-      "value": "200",
-      "name": "GetConfigFile"
-    },
-    {
-      "default": true,
-      "value": "",
-      "name": "Exit"
-    }
-  ]
+  "actionType": "OAuth2Authentication",
+  "name": "GetToken",
+  "next": "Exit",
+  "oauthClientId": "MyClientId",
+  "oauthClientSecret": "MyClientSecret",
+  "oauthBaseUrl": "https://auth.Server/oauth",
+  "oauthScope": "commercial",
+  "oauthCallbackUrl": "http://127.0.0.1:4080/oauth/callback",
+  "OauthUseStateVerification": true
 },
 ```
 
 #### Template Description
 
-* actionType - The action type is Case
+* actionType - The action type is OAuth2Authentication
 * name - The action name is custom
-* test - The value that will be evaluated. Usually, it is the result/value of a previous action
-* nextActions - It is possible to have more than 2 nextAction to evaluate the test
-    * default - True/false field and it is mandatory to have one nextAction with the default set as true
-    * value - The value that will be compared against the value that is being in the test field
-    * name - The name of the action to be triggered
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* oauthClientId - Client Id
+* oauthClientSecret - Client Secret
+* oauthBaseUrl - Auth Server base Url
+* oauthScope - Auth Scope
+* oauthCallbackUrl - Return Url
+* OauthUseStateVerification - CSRF attacks Verification
 
----
+#### Usage
 
-## Csv
+The result will be the configuration Keys value parameter:
+
+```json title="Example Result"
+{
+  "access_token": "c11e9a70ecfc6b9e2197ed42c4a3a68cc8e676ace0d4e28ae9e222fccd32456e",
+  "expires_in": 14400,
+  "refresh_token": "1160745-2655f33f8219b5b9f5fa50cabea4bade08d956d1485db3247bb323ca9951ea35",
+  "token_type": "Bearer"
+}
+```
+
+### AzureAdAuthentication
+
+AzureAdAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory
+for a specified Resource using Credentials.
+
+#### Configuration
+
+The Azure Active Directory permissions assigned to the token are defined on the Azure Active Diretory application.
+
+There are configurations that need to be applied in the automation workflow in order to perform the actions properly.
+
+Please check the template description to know which parameters must be sent for each action.
+
+```json title="Template"
+{
+  "actionType": "AzureAdAuthentication",
+  "name": "GetAzureAdToken",
+  "next": "Exit",
+  "tenantId": "s*******-3***-4***-a***-8***********",
+  "clientId": "a*******-l***-5***-c***-1***********",
+  "clientSecret": "*",
+  "resource": "https://graph.microsoft.com"
+},
+```
+
+#### Template Description
+
+* actionType – The action type is AzureAdAuthentication
+* name - The name of the action
+* next - The action that will be triggered after the current action been completed
+* tenantId - Microsoft Active Directory Tenant Id
+* clientId - Microsoft App Registration Id In Azure AD
+* clientSecret - Microsoft App Registration Secret
+* resource - The scope for authorization. Defaults to Microsoft Graph
+
+### AzureAdCertificateAuthentication
+
+AzureAdCertificateAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory
+for a specified Resource using a certificate.
+
+#### Configuration
+
+The Azure Active Directory permissions assigned to the token are defined on the Azure Active Diretory application.
+
+There are configurations that need to be applied in the automation workflow in order to perform the actions properly.
+
+Please check the template description to know which parameters must be sent for each action.
+
+```json title="Template"
+{
+  "actionType": "AzureAdAuthentication",
+  "name": "GetAzureAdToken",
+  "next": "Exit",
+  "tenantId": "s*******-3***-4***-a***-8***********",
+  "clientId": "3*******-1***-4***-8***-e***********",
+  "CertificatePfx": "file.pfx",
+  "CertificatePfxPassword": "MyfilePfxPassword",
+  "resource": "https://graph.microsoft.com"
+},
+```
+
+#### Template Description
+
+* actionType – The action type is AzureAdAuthentication
+* name - The name of the action
+* next - The action that will be triggered after the current action been completed
+* tenantId - Microsoft Active Directory Tenant Id
+* clientId - Microsoft App Registration Id In Azure AD
+* CertificatePfx - name of the pfx certificate to use.
+* CertificatePfxPassword - password for the pfx certificate.
+* resource - The scope for authorization. Defaults to Microsoft Graph
+
+## Data & mapping
+
+Reshape, validate, query, and store data as it moves between actions.
+
+### Map
+
+Map action allows you to Map previous actions Result to a property List of key/values.
+
+#### Configuration
+
+To do so it is required a parameter to be filled:
+
+* values - The mapped values will be available on the Map action result (Content)
+
+```json title="Template"
+{
+  "actionType": "Map",
+  "name": "Map",
+  "next": "Exit",
+  "values": {
+    "SubJobs": "{{['GetCompanies']$.Content[:1].SubJobs | ToJson}}",
+    "Tasks": "{{['GetCompanies']$.Content[:1].Tasks | ToJson}}"
+  }
+},
+```
+
+### MapFromObject
+
+MapfromObject allows to Map form names to properties. Passing a object Template with the
+mapped values from body will generate a new json object similar to data but with the values
+mapped by name from body.
+
+#### Configuration
+
+To configure this action, there are some required parameters that need to be set:
+
+* Data - Data Template with values as the body property names.
+* Body - The body with the content.
+
+```json title="Template"
+{
+  "actionType": "MapFromObject",
+  "name": "MapFromObject",
+  "next": "Exit",
+  "data": "{\"name\":\"firstName\",\"years\":\"age\"}",
+  "body": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"age\":\"30\"}"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* data - The Template Data from witch to map property name
+* body - The body payload with data to fetch
+
+#### Usage
+
+The result will be in Data format with the values replaced from Body:
+
+```json title="Example"
+{
+  "name": "John",
+  "years": "30"
+}
+```
+
+### Merge
+
+Merge action allows you to Merge a Json Result from a previous to a property List of key/values. This Action allows to update properties
+from the Json Body.
+
+#### Configuration
+
+To do so it is required a parameter to be filled:
+
+* Payload - A Json Body
+* values - The mapped values will be available on the Merge action result (Content)
+
+```json title="Template"
+{
+  "actionType": "Merge",
+  "name": "Merge",
+  "next": "Exit",
+  "payload": "{\"User\": \"string\",\"DocumentType\": \"string\", \"DocumentOid\": \"string\", \"AssignmentType\": \"string\", \"Workload\": 0,  \"Priority\": 0}",
+  "values": {
+    "DocumentType": "{{['GetDocumentTypes']$.Content[:1].DocumentType | ToJson}}",
+    "AssignmentType": "{{['GetAssignments']$.Content[:1].AssignmentType | ToJson}}"
+  }
+},
+```
+
+### XmlMap
+
+XmlMap action allows you to parse a XML string to a property List of key/values using XPath.
+
+#### Configuration
+
+To configure this action, there are some required parameters that need to be set:
+
+* xmldata - A Xml String representing a Xml Document
+* Values - The mapped values will be available on the Map action result (Content)
+
+```json title="Template"
+{
+  "actionType": "XmlMap",
+  "name": "XmlMap",
+  "next": "Exit",
+  "xmldata": "",
+  "namespaces": {
+    "cac": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
+    "cbc": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
+    "ubl": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+  },
+  "values": {
+    "Id": "/cbc:ID",
+    "AccountingSupplierName": "/cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name",
+    "StreetName": "/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName",
+    "PostalCode": "/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:PostalZone",
+    "Name": "/sender/name",
+    "VatNumber": "/sender/id",
+    "Address": "/sender/addressInformation/address",
+    "City": "/sender/addressInformation/city"
+  }
+},
+```
+
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* namespaces - Xml Namespaces used on Xml Document
+* xmlData - A Xml String representing a Xml Document
+* Values - The mapped values will be available on the Map action result (Content)
+
+### ConvertFromJsonDataTable
+
+Allows to convert JSON between formats. It converts from the "DataTable" format to standard format.
+
+#### Configuration
+
+To configure this action, there is a required parameter that need to be set:
+
+* columns - Array With Column Definition `[{"name":"Timestamp","type":"string"},{"name":"Timestamp","type":"datetime"}]`
+* rows - Array With row values `["SkillsWorkflow","2023-05-02T00:00:00Z"]`
+
+```json title="Template"
+{
+  "actionType": "ConvertFromJsonDataTable",
+  "name": "ConvertFromJsonDatatable",
+  "next": "Exit",
+  "columns": "{{['GetAppInsightsData'].Content.tables[0].columns}}",
+  "rows": "{{['GetAppInsightsData'].Content.tables[0].rows}}"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is ConvertFromJsonDataTable
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* columns - Array With Column Definition
+* rows - Array With row values
+
+#### Usage
+
+```json title="Column Definition Available Types"
+[
+  "bool",
+  "datetime",
+  "dynamic",
+  "guid",
+  "int",
+  "long",
+  "real",
+  "string",
+  "decimal"
+]
+
+```
+
+The original JSON:
+
+```json title="DataTable Json"
+{
+  "tables": [
+    {
+      "name": "PrimaryResult",
+      "columns": [
+        {
+          "name": "Timestamp",
+          "type": "datetime"
+        },
+        {
+          "name": "Id",
+          "type": "string"
+        },
+        {
+          "name": "Tenant",
+          "type": "string"
+        },
+        {
+          "name": "WorkspaceId",
+          "type": "string"
+        },
+        {
+          "name": "Count",
+          "type": "long"
+        }
+      ],
+      "rows": [
+        [
+          "2023-05-02T00:00:00Z",
+          "2023-05-02_Zas_1fabe874-e561-4b9e-86a5-4183234e0af6",
+          "hogarth",
+          "1fabe874-e561-4b9e-86a5-4183234e0af6",
+          9
+        ]
+      ]
+    }
+  ]
+}
+```
+
+The result will be the transformed JSON:
+
+```json title="Standard Json"
+{
+  "Timestamp": "2023-05-02T00: 00: 00+00: 00",
+  "Id": "2023-05-02_Zas_1fabe874-e561-4b9e-86a5-4183234e0af6",
+  "Tenant": "Test",
+  "WorkspaceId": "1fabe874-e561-4b9e-86a5-4183234e0af6",
+  "Count": 9
+}
+```
+
+### JsonValidation
+
+Validate Required fields on a specific json payload. A list of properties is verified for missing, null or empty.
+In this case the action will return a list of errors and will exit on ExitOnError.
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+
+* payload
+* requiredProperties
+* next
+* nextOnError
+
+```json title="Template"
+{
+  "actionType": "ValidateJson",
+  "name": "ValidateJson",
+  "payload": "{{['Payload']}}",
+  "requiredProperties": [
+    "name",
+    "company",
+    ""
+  ],
+  "next": "Exit",
+  "nextOnError": "ExitOnError"
+},
+```
+
+#### Template Description
+
+* payload - json payload to verify
+* requiredProperties - List of property names to verify
+* next - next Action in case everything is verified
+* nextOnError - Next Action if any of the required properties is missing or is null
+
+### SetParameter
+
+SetParameter creates parameter on the context with the value as result (variable).
+This parameter can be used globally as it is stored in the parent context.
+
+#### Configuration
+
+```json title="Template"
+{
+  "actionType": "SetParameter",
+  "name": "MyParameter",
+  "next": "Exit",
+  "parameterName": "MyParameter",
+  "value": "{{['#HttpRequest'].Host}}"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is Enqueue
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* parameterName - The Name of the parameter.
+* value - Value of the parameter.
+
+#### Usage
+
+The list can be used calling the context parameter by name: `{{['MyParameter']}}`
+
+### ConfigurationKeys
+
+ConfigurationKeys allows to retrieve a Skills Workflow Configuration Key and store the value as a parameter.
+
+#### Configuration
+
+To configure this action, there is a required parameter that need to be set:
+
+* value - Key name of the configuration key
+
+```json title="Template"
+{
+  "actionType": "ConfigurationKeys",
+  "name": "GetConfigurationKeys",
+  "next": "Exit",
+  "value": "MyServerConfiguration"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is ConfigurationKeys
+* name - The action name is custom
+* next - The next action to be executed after the subWorkflow execution reach its Result action
+* value - Key name of the configuration key
+
+#### Usage
+
+The result will be the configuration Keys value parameter:
+
+```json title="Template"
+{
+  "TenantId": "d*******-3***-4***-a***-8***********",
+  "ClientId": "3*******-1***-4***-8***-e***********",
+  "ClientSecret": "y*******.f****~5*******.6**.n*****",
+  "apiUrl": "h****://g*****.c**/S*************/M**********.g**"
+},
+```
+
+### AnalyticsNamedQuery
+
+AnalyticsNamedQuery action allows to run a Named Query on the Analytics Service.
+
+#### Configuration
+
+To configure this action, there are required parameters that need to be set:
+
+* body
+* NamedQuery
+
+```json title="Template"
+{
+  "actionType": "AnalyticsNamedQuery",
+  "name": "AnalyticsNamedQuery",
+  "next": "Exit",
+  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
+  "namedQuery": "Example - Named Query"
+},
+```
+
+#### Template Description
+
+* actionType - The action type is AnalyticsNamedQuery
+* name - The action name is custom
+* next - The next action to be executed
+* body - The Query Parameters to be available
+* NamedQuery - The name of the Query.
+
+## Files & documents
+
+Move files and produce structured documents from workflow data.
+
+### Download
+
+Download action allows you to download the content of a file from a specific URL.
+
+#### Configurations
+
+To do so it is required a parameter to be filled:
+
+* url - The URL to download the file
+
+```json title="Template"
+{
+  "actionType": "Download",
+  "name": "DownloadFile",
+  "next": "UploadFile",
+  "url": "{{['GetProjectFile']$.Content.Uri}}"
+},
+```
+
+#### Template Description
+
+* actionType – The action type is Download
+* name - The name of the action
+* next - The action that will be triggered after the current action been completed
+* url - The URL to download the file
+
+### Csv
 
 The CreateCsv action allows you to export data as a CSV file.
 
@@ -549,20 +1413,20 @@ To do so, it is required 2 parameters to be filled:
 
 To configure this action, there are parameters that can be set:
 
-* Data  
-  This field should be populated with a data array  
+* Data
+  This field should be populated with a data array
   "Data" field usually comes from the previous action result
 
     * i.e. the Automation Workflow has an action to get the data from the Execute Global Query
 
-* DataColumns  
-  This field should contain a list of Headers to be considered from the action with the data  
+* DataColumns
+  This field should contain a list of Headers to be considered from the action with the data
   This field works as a filter to select which columns should be populated into the .CSV file
-* Delimiter  
+* Delimiter
   The delimiter that will be used to separate the data and dataColumns
-* HasHeaderRecord  
+* HasHeaderRecord
   True/false field to make the header appear on the first row when exporting the .CSV
-* Quote  
+* Quote
   If necessary, you can set the quote that should be used to split the columns values
 
 ```json title="Template"
@@ -650,7 +1514,7 @@ To configure this action, there are parameters that can be set:
 
 ---
 
-## CSVMap
+### CSVMap
 
 The CSVMap action converts CSV (Comma-Separated Values) data into a JSON array. This is useful when external APIs return responses as CSV files or strings that need to be processed as JSON objects.
 
@@ -869,271 +1733,7 @@ The action logs:
 
 ---
 
-## Loop
-
-The Loop action allows you to trigger a Sub-Workflow.
-
-To do so, it is required 2 parameters to be filled:
-
-* body
-* subWorkflow
-
-#### Configuration
-
-To configure this action, there are parameters that can be set:
-
-* body  
-  This field is at the Action level and must be populated with the data that should be used in the subWorkflow
-* subWorkflows  
-  This field is at the Automation Workflow level and can be accessed from any Loop action  
-  subWorkflows are like the principal automation workflow, where it is required to have:
-    * Start action
-    * Result action
-* When the subWorkflows ends, the next action set up in the Loop action will be triggered
-
-```json title="Template"
-{
-  "name": "ImportUsers",
-  "actions": [
-    {
-      "actionType": "Start",
-      "name": "Starting",
-      "next": "SftpDownload"
-    },
-    {
-      "actionType": "SftpDownload",
-      "name": "SftpDownload",
-      "next": "ReadFileData",
-      "ftpHostIp": "sftp.skillsworkflow.com",
-      "ftpUsername": "*",
-      "ftpPassword": "",
-      "filePath": "/Users",
-      "fileName": "Users.csv",
-      "fileType": "Csv"
-    },
-    {
-      "actionType": "ReadFileData",
-      "name": "ReadFileData",
-      "next": "LoopFileData",
-      "fileName": "{{['SftpDownload']}}"
-    },
-    {
-      "actionType": "Loop",
-      "name": "LoopFileData",
-      "next": "MoveSftpFileSuccess",
-      "body": "{{['ReadFileData']}}",
-      "subWorkflow": "ImportFileData"
-    },
-    {
-      "actionType": "SftpMoveTo",
-      "name": "MoveSftpFileSuccess",
-      "next": "ExitSftpSucess",
-      "ftpHostIp": "sftp.skillsworkflow.com",
-      "ftpUsername": "",
-      "ftpPassword": "*",
-      "filePath": "/Users",
-      "toFilePath": "/Users/Success",
-      "fileName": "{{['#ImportFile']}}",
-      "fileType": "Csv",
-      "hasHeaderRecord": false
-    },
-    {
-      "actionType": "Result",
-      "name": "ExitSftpSucess",
-      "httpResponse": {
-        "statusCode": 200,
-        "headers": {},
-        "body": "File moved to Success folder."
-      }
-    }
-  ],
-  "subWorkflow": [
-    {
-      "name": "ImportFileData",
-      "actions": [
-        {
-          "actionType": "Start",
-          "name": "Starting",
-          "next": "ImportUser"
-        },
-        {
-          "actionType": "Rest",
-          "name": "ImportUser",
-          "next": "CheckUserCreated",
-          "Method": "Post",
-          "url": "https://integration-api-skills-dev-we.azurewebsites.net/api/users",
-          "body": "{\"userName\":\"{{['#ImportFileData'].username}}\",\"name\":\"{{['#ImportFileData'].Name}}\",\"externalId\":\"{{['#ImportFileData'].externalId}}\",\"companyCode\":\"{{['#ImportFileData'].CompanyCode}}\",\"departmentExternalId\":\"{{['#ImportFileData'].departmentid}}\",\"mail\":\"{{['#ImportFileData'].email}}\",\"isActive\":true,\"hireDate\":\"{{['#ImportFileData'].hiredate}}\",\"ssoUserName\":\"{{['#ImportFileData'].ssoUsername}}\",\"ssoUserNameUpdatable\":true,\"expirationDate\":\"{{['#ImportFileData'].expirationDate}}\",\"requiredWeeklyHours\":\"{{['#ImportFileData'].weeklyRequiredHours}}\",\"externalNumberUpdatable\":true,\"externalNumber\":\"{{['#ImportFileData'].externalNumber}}\",\"phone\":\"{{['#ImportFileData'].workphone}}\",\"isActive\":\"{{['#ImportFileData'].isActive}}\"}",
-          "bodyMediaType": "Json"
-        },
-        {
-          "actionType": "Result",
-          "name": "ExitUserNotCreated",
-          "httpResponse": {
-            "statusCode": 200,
-            "headers": {},
-            "body": "User {{['ImportUser'].Content.userName}} imported.."
-          }
-        }
-      ]
-    }
-  ]
-}
-```
-
-#### Template Description
-
-* actionType - The action type is Loop
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* body - The data to be available in the Loop action
-* subWorkflow - The set of actions (e.g. import a list of files) to be performed
-
-## Download
-
-Download action allows you to download the content of a file from a specific URL.
-
-#### Configurations
-
-To do so it is required a parameter to be filled:
-
-* url - The URL to download the file
-
-```json title="Template"
-{
-  "actionType": "Download",
-  "name": "DownloadFile",
-  "next": "UploadFile",
-  "url": "{{['GetProjectFile']$.Content.Uri}}"
-},
-```
-
-#### Template Description
-
-* actionType – The action type is Download
-* name - The name of the action
-* next - The action that will be triggered after the current action been completed
-* url - The URL to download the file
-
-## Map
-
-Map action allows you to Map previous actions Result to a property List of key/values.
-
-#### Configuration
-
-To do so it is required a parameter to be filled:
-
-* values - The mapped values will be available on the Map action result (Content)
-
-```json title="Template"
-{
-  "actionType": "Map",
-  "name": "Map",
-  "next": "Exit",
-  "values": {
-    "SubJobs": "{{['GetCompanies']$.Content[:1].SubJobs | ToJson}}",
-    "Tasks": "{{['GetCompanies']$.Content[:1].Tasks | ToJson}}"
-  }
-},
-```
-
-## Merge
-
-Merge action allows you to Merge a Json Result from a previous to a property List of key/values. This Action allows to update properties
-from the Json Body.
-
-#### Configuration
-
-To do so it is required a parameter to be filled:
-
-* Payload - A Json Body
-* values - The mapped values will be available on the Merge action result (Content)
-
-```json title="Template"
-{
-  "actionType": "Merge",
-  "name": "Merge",
-  "next": "Exit",
-  "payload": "{\"User\": \"string\",\"DocumentType\": \"string\", \"DocumentOid\": \"string\", \"AssignmentType\": \"string\", \"Workload\": 0,  \"Priority\": 0}",
-  "values": {
-    "DocumentType": "{{['GetDocumentTypes']$.Content[:1].DocumentType | ToJson}}",
-    "AssignmentType": "{{['GetAssignments']$.Content[:1].AssignmentType | ToJson}}"
-  }
-},
-```
-
-## AzureAdAuthentication
-
-AzureAdAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory
-for a specified Resource using Credentials.
-
-#### Configuration
-
-The Azure Active Directory permissions assigned to the token are defined on the Azure Active Diretory application.
-
-There are configurations that need to be applied in the automation workflow in order to perform the actions properly.
-
-Please check the template description to know which parameters must be sent for each action.
-
-```json title="Template"
-{
-  "actionType": "AzureAdAuthentication",
-  "name": "GetAzureAdToken",
-  "next": "Exit",
-  "tenantId": "s*******-3***-4***-a***-8***********",
-  "clientId": "a*******-l***-5***-c***-1***********",
-  "clientSecret": "*",
-  "resource": "https://graph.microsoft.com"
-},
-```
-
-#### Template Description
-
-* actionType – The action type is AzureAdAuthentication
-* name - The name of the action
-* next - The action that will be triggered after the current action been completed
-* tenantId - Microsoft Active Directory Tenant Id
-* clientId - Microsoft App Registration Id In Azure AD
-* clientSecret - Microsoft App Registration Secret
-* resource - The scope for authorization. Defaults to Microsoft Graph
-
-## AzureAdCertificateAuthentication
-
-AzureAdCertificateAuthentication action allows you to obtain an Authentication Token from the Azure Active Directory
-for a specified Resource using a certificate.
-
-#### Configuration
-
-The Azure Active Directory permissions assigned to the token are defined on the Azure Active Diretory application.
-
-There are configurations that need to be applied in the automation workflow in order to perform the actions properly.
-
-Please check the template description to know which parameters must be sent for each action.
-
-```json title="Template"
-{
-  "actionType": "AzureAdAuthentication",
-  "name": "GetAzureAdToken",
-  "next": "Exit",
-  "tenantId": "s*******-3***-4***-a***-8***********",
-  "clientId": "3*******-1***-4***-8***-e***********",
-  "CertificatePfx": "file.pfx",
-  "CertificatePfxPassword": "MyfilePfxPassword",
-  "resource": "https://graph.microsoft.com"
-},
-```
-
-#### Template Description
-
-* actionType – The action type is AzureAdAuthentication
-* name - The name of the action
-* next - The action that will be triggered after the current action been completed
-* tenantId - Microsoft Active Directory Tenant Id
-* clientId - Microsoft App Registration Id In Azure AD
-* CertificatePfx - name of the pfx certificate to use.
-* CertificatePfxPassword - password for the pfx certificate.
-* resource - The scope for authorization. Defaults to Microsoft Graph
-
-## CreatePdfFromDocument
+### CreatePdfFromDocument
 
 CreatPdfFromDocument action allows you to download a pdf from a existing document using a pre-existing layout
 
@@ -1165,120 +1765,11 @@ To do so it is required a parameter to be filled:
 * documentId - The Id of the desired Document
 * layoutId - The layout id used to create pdf
 
-## ExecuteSubWorkflow
+## Lists
 
-ExecuteSubWorkFlow action allows you to run a SubWorkflow with a specific Payload. This Action receives a Return action Result from the
-SubWorkflow.
+Create and update lists held in the workflow context.
 
-#### Configuration
-
-To configure this action, there are parameters that can be set:
-
-* subWorkflows - The SubWorkflow Name that is intended to run
-* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow
-
-```json title="Template"
-{
-  "actionType": "ExecuteSubWorkflow",
-  "name": "RunSubWorkflow",
-  "next": "Exit",
-  "body": "{\"data\":\"value\"}",
-  "subWorkflow": "MySubWorkflow"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is ExecuteSubWorkflow
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* body - The data to be available in the ExecuteSubWorkflow action
-* subWorkflow - The set of actions (e.g. import a list of files) to be performed
-
-## EnqueueBackgroundWork
-
-Enqueue action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and continues, it does not wait for the
-workflow to finish.
-
-#### Configuration
-
-To configure this action, there are parameters that can be set:
-
-* targetWorkflowId - The Workflow Id that is intended to run
-* body(optional) - This field is at the Action level and can be populated with the data that should be used in the subWorkflow. The body
-  must be JSON.
-* sessionId (optional) - 60 Characters Maximum. When set will execute synchronously the workflow. In other words, it will wait for the
-  previous to finish before starting the next one.
-* ExecuteOnUtc (Optional) - DateTime (YYYY-MM-ddTHH:mm:ss) Schedules execution for specific date and time.
-* Wait (Optional) - TimeSpan (dd:HH:mm:ss) Countdown Timer to execution.
-
-```json title="Template"
-{
-  "actionType": "EnqueueBackgroundWork",
-  "name": "RunWorkflow",
-  "next": "Exit",
-  "targetWorkflowId": "0243dbd0-8c4b-4af1-a8fc-a26ae2ffa3e6",
-  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
-  "sessionId": "MySessionId",
-  "executeOnUtc": "2024-09-18T18:30",
-  "wait": "00:00:30"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is Enqueue
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* body - The data to be available in the ExecuteSubWorkflow action
-* targetWorkflowId - The Id of the workflow Intended to run.
-* sessionId - The Id of the session so that it can execute synchronously.
-
-## XmlMap
-
-XmlMap action allows you to parse a XML string to a property List of key/values using XPath.
-
-#### Configuration
-
-To configure this action, there are some required parameters that need to be set:
-
-* xmldata - A Xml String representing a Xml Document
-* Values - The mapped values will be available on the Map action result (Content)
-
-```json title="Template"
-{
-  "actionType": "XmlMap",
-  "name": "XmlMap",
-  "next": "Exit",
-  "xmldata": "",
-  "namespaces": {
-    "cac": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2",
-    "cbc": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",
-    "ubl": "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
-  },
-  "values": {
-    "Id": "/cbc:ID",
-    "AccountingSupplierName": "/cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name",
-    "StreetName": "/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName",
-    "PostalCode": "/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:PostalZone",
-    "Name": "/sender/name",
-    "VatNumber": "/sender/id",
-    "Address": "/sender/addressInformation/address",
-    "City": "/sender/addressInformation/city"
-  }
-},
-```
-
-#### Template Description
-
-* actionType - The action type is Enqueue
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* namespaces - Xml Namespaces used on Xml Document
-* xmlData - A Xml String representing a Xml Document
-* Values - The mapped values will be available on the Map action result (Content)
-
-## CreateList
+### CreateList
 
 CreateList action allows to create a list (Array) of values stored as a parameter on the context.
 This parameter can be used globally as it is stored in the parent context.
@@ -1324,7 +1815,7 @@ Optional Parameters:
 
 The list can be used calling the context parameter by name: `{{['MyList']}}`
 
-## AddToList
+### AddToList
 
 AddToList action allows to update an existing list (Array) of values stored as a parameter on the context adding new values to the end.
 
@@ -1357,7 +1848,7 @@ AddToList action allows to update an existing list (Array) of values stored as a
 * distinct - optional parameter to remove duplicates.
 * ignoreValues - optional parameter to remove empty values.
 
-## RemoveFromList
+### RemoveFromList
 
 RemoveFromList action allows to remove values from an existing list (Array) of values stored as a parameter on the context.
 
@@ -1385,377 +1876,52 @@ RemoveFromList action allows to remove values from an existing list (Array) of v
 * listName - The Name of the list.
 * removeValues - Values to be removed from list result.
 
-## SetParameter
+## Messaging & templates
 
-SetParameter creates parameter on the context with the value as result (variable).
-This parameter can be used globally as it is stored in the parent context.
+Reach people and render content from templates.
 
-#### Configuration
+### E-mail
+
+Email action allows you to send e-mails.
+
+#### Configurations
+
+To do so, it is required some parameters to be filled:
+
+* body - The e-mail's body
+* subject - The email's subject
+* fromDisplayName - The display name that will appear on the sender
+* toAddress - The email address to whom the email should be sent
 
 ```json title="Template"
 {
-  "actionType": "SetParameter",
-  "name": "MyParameter",
+  "actionType": "Email",
+  "name": "SendEmail",
   "next": "Exit",
-  "parameterName": "MyParameter",
-  "value": "{{['#HttpRequest'].Host}}"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is Enqueue
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* parameterName - The Name of the parameter.
-* value - Value of the parameter.
-
-#### Usage
-
-The list can be used calling the context parameter by name: `{{['MyParameter']}}`
-
-## MapFromObject
-
-MapfromObject allows to Map form names to properties. Passing a object Template with the
-mapped values from body will generate a new json object similar to data but with the values
-mapped by name from body.
-
-#### Configuration
-
-To configure this action, there are some required parameters that need to be set:
-
-* Data - Data Template with values as the body property names.
-* Body - The body with the content.
-
-```json title="Template"
-{
-  "actionType": "MapFromObject",
-  "name": "MapFromObject",
-  "next": "Exit",
-  "data": "{\"name\":\"firstName\",\"years\":\"age\"}",
-  "body": "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"age\":\"30\"}"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is Enqueue
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* data - The Template Data from witch to map property name
-* body - The body payload with data to fetch
-
-#### Usage
-
-The result will be in Data format with the values replaced from Body:
-
-```json title="Example"
-{
-  "name": "John",
-  "years": "30"
-}
-```
-
-## ConfigurationKeys
-
-ConfigurationKeys allows to retrieve a Skills Workflow Configuration Key and store the value as a parameter.
-
-#### Configuration
-
-To configure this action, there is a required parameter that need to be set:
-
-* value - Key name of the configuration key
-
-```json title="Template"
-{
-  "actionType": "ConfigurationKeys",
-  "name": "GetConfigurationKeys",
-  "next": "Exit",
-  "value": "MyServerConfiguration"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is ConfigurationKeys
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* value - Key name of the configuration key
-
-#### Usage
-
-The result will be the configuration Keys value parameter:
-
-```json title="Template"
-{
-  "TenantId": "d*******-3***-4***-a***-8***********",
-  "ClientId": "3*******-1***-4***-8***-e***********",
-  "ClientSecret": "y*******.f****~5*******.6**.n*****",
-  "apiUrl": "h****://g*****.c**/S*************/M**********.g**"
-},
-```
-
-## ConvertFromJsonDataTable
-
-Allows to convert JSON between formats. It converts from the "DataTable" format to standard format.
-
-#### Configuration
-
-To configure this action, there is a required parameter that need to be set:
-
-* columns - Array With Column Definition `[{"name":"Timestamp","type":"string"},{"name":"Timestamp","type":"datetime"}]`
-* rows - Array With row values `["SkillsWorkflow","2023-05-02T00:00:00Z"]`
-
-```json title="Template"
-{
-  "actionType": "ConvertFromJsonDataTable",
-  "name": "ConvertFromJsonDatatable",
-  "next": "Exit",
-  "columns": "{{['GetAppInsightsData'].Content.tables[0].columns}}",
-  "rows": "{{['GetAppInsightsData'].Content.tables[0].rows}}"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is ConvertFromJsonDataTable
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* columns - Array With Column Definition
-* rows - Array With row values
-
-#### Usage
-
-```json title="Column Definition Available Types"
-[
-  "bool",
-  "datetime",
-  "dynamic",
-  "guid",
-  "int",
-  "long",
-  "real",
-  "string",
-  "decimal"
-]
-
-```
-
-The original JSON:
-
-```json title="DataTable Json"
-{
-  "tables": [
-    {
-      "name": "PrimaryResult",
-      "columns": [
-        {
-          "name": "Timestamp",
-          "type": "datetime"
-        },
-        {
-          "name": "Id",
-          "type": "string"
-        },
-        {
-          "name": "Tenant",
-          "type": "string"
-        },
-        {
-          "name": "WorkspaceId",
-          "type": "string"
-        },
-        {
-          "name": "Count",
-          "type": "long"
-        }
-      ],
-      "rows": [
-        [
-          "2023-05-02T00:00:00Z",
-          "2023-05-02_Zas_1fabe874-e561-4b9e-86a5-4183234e0af6",
-          "hogarth",
-          "1fabe874-e561-4b9e-86a5-4183234e0af6",
-          9
-        ]
-      ]
-    }
+  "body": "This body can also be HTML.",
+  "subject": "This is the e-mail subject",
+  "fromDisplayName": "Notification | Skills Workflow",
+  "toAddress": "user@skillsworkflow.com",
+  "attachments": [
+    "document.pdf"
   ]
-}
-```
-
-The result will be the transformed JSON:
-
-```json title="Standard Json"
-{
-  "Timestamp": "2023-05-02T00: 00: 00+00: 00",
-  "Id": "2023-05-02_Zas_1fabe874-e561-4b9e-86a5-4183234e0af6",
-  "Tenant": "Test",
-  "WorkspaceId": "1fabe874-e561-4b9e-86a5-4183234e0af6",
-  "Count": 9
-}
-```
-
-## OAuth2Authentication
-
-Creates an OAuth2 Authentication based on Authorization Code Flow (defined
-in [OAuth 2.0 RFC 6749, section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1))
-
-<i> Because regular web apps are server-side apps where the source code is not publicly exposed, they can use the Authorization Code Flow, 
-which exchanges an Authorization Code for a token. Your app must be server-side because during this exchange, you must also pass along your application's Client Secret, 
-which must always be kept secure, and you will have to store it in your client. </i>
-
-#### Configuration
-
-To configure this action, there is a required parameter that need to be set:
-
-* OAuthClientId - Client Id
-* OAuthClientSecret - Client Password
-* OAuthBaseUrl - Authorization Server Url
-* OAuthScope - Application Filter to limit access
-* OAuthCallbackUrl - Return Address defined by provider in Authorized redirect URIs
-* OAuthUseStateVerification - If set, enables CSRF attacks Verification - Defaults to `False`
-*
-
-```json title="Template"
-{
-  "actionType": "OAuth2Authentication",
-  "name": "GetToken",
-  "next": "Exit",
-  "oauthClientId": "MyClientId",
-  "oauthClientSecret": "MyClientSecret",
-  "oauthBaseUrl": "https://auth.Server/oauth",
-  "oauthScope": "commercial",
-  "oauthCallbackUrl": "http://127.0.0.1:4080/oauth/callback",
-  "OauthUseStateVerification": true
 },
 ```
 
 #### Template Description
 
-* actionType - The action type is OAuth2Authentication
-* name - The action name is custom
-* next - The next action to be executed after the subWorkflow execution reach its Result action
-* oauthClientId - Client Id
-* oauthClientSecret - Client Secret
-* oauthBaseUrl - Auth Server base Url
-* oauthScope - Auth Scope
-* oauthCallbackUrl - Return Url
-* OauthUseStateVerification - CSRF attacks Verification
+* actionType – The action type is Email
+* name - The name of the action
+* next - The action that will be triggered after the current action been completed
+* body - The body that should be sent in the e-mail's body. It also supports HTML
+* subject - The email's subject
+* fromDisplayName - The display name that will appear on the sender
+* toAddress - The email address to whom the email should be sent
+* attachment - Name of the File to attach in email
 
-#### Usage
+---
 
-The result will be the configuration Keys value parameter:
-
-```json title="Example Result"
-{
-  "access_token": "c11e9a70ecfc6b9e2197ed42c4a3a68cc8e676ace0d4e28ae9e222fccd32456e",
-  "expires_in": 14400,
-  "refresh_token": "1160745-2655f33f8219b5b9f5fa50cabea4bade08d956d1485db3247bb323ca9951ea35",
-  "token_type": "Bearer"
-}
-```
-
-## JsonValidation
-
-Validate Required fields on a specific json payload. A list of properties is verified for missing, null or empty.
-In this case the action will return a list of errors and will exit on ExitOnError.
-
-#### Configuration
-
-To configure this action, there are required parameters that need to be set:
-
-* payload
-* requiredProperties
-* next
-* nextOnError
-
-```json title="Template"
-{
-  "actionType": "ValidateJson",
-  "name": "ValidateJson",
-  "payload": "{{['Payload']}}",
-  "requiredProperties": [
-    "name",
-    "company",
-    ""
-  ],
-  "next": "Exit",
-  "nextOnError": "ExitOnError"
-},
-```
-
-#### Template Description
-
-* payload - json payload to verify
-* requiredProperties - List of property names to verify
-* next - next Action in case everything is verified
-* nextOnError - Next Action if any of the required properties is missing or is null
-
-## ClearContext
-
-ClearContext Action allows to remove unused Context created properties that are not really necessary anymore.
-User can clear all properties or select a list of properties to be removed.
-
-#### Configuration
-
-To configure this action, there are required parameters that need to be set:
-
-* listValues
-* clearAll # optional
-
-```json title="Template"
-{
-  "actionType": "ClearContext",
-  "name": "ClearContext",
-  "listValues": [
-    "property",
-    "property1"
-  ],
-  "clearAll": false,
-  "next": "Exit"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is ClearContext
-* name - The action name is custom
-* next - The next action to be executed
-* listValues - List of properties to bem removed. #Optional
-* clearAll - Flag to remove all properties #Defaults to false
-
-## ExecuteIntegrationWorkflow
-
-ExecuteIntegrationWorkflow action allows you to run a Workflow with a specific Payload. This Action invokes a Workflow and waits for the
-workflow to finish and returns the result.
-
-#### Configuration
-
-To configure this action, there are required parameters that need to be set:
-
-* body # optional
-* targetWorkflowId
-
-```json title="Template"
-{
-  "actionType": "ExecuteIntegrationWorkflow",
-  "name": "ExecuteIntegrationWorkflow",
-  "next": "Exit",
-  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
-  "targetWorkflowId": "152e8a13-ea4e-469d-be39-f8d4ad0dd919"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is ExecuteIntegrationWorkflow
-* name - The action name is custom
-* next - The next action to be executed
-* body - The data to be available in the ExecuteIntegrationWorkflow action
-* targetWorkflowId - The Id of the workflow Intended to run.
-
-## ApplyTemplate
+### ApplyTemplate
 
 The `ApplyTemplate` action renders dynamic text or HTML using the [Liquid template language](https://shopify.github.io/liquid/).
 
@@ -1852,145 +2018,3 @@ Filters can be chained:
 | `data` | The Liquid template to render. |
 
 > **Note:** Since `body` and `data` are JSON strings inside the automation definition, remember to escape quotation marks (`\"`) where required.
-
-## AnalyticsNamedQuery
-
-AnalyticsNamedQuery action allows to run a Named Query on the Analytics Service.
-
-#### Configuration
-
-To configure this action, there are required parameters that need to be set:
-
-* body
-* NamedQuery
-
-```json title="Template"
-{
-  "actionType": "AnalyticsNamedQuery",
-  "name": "AnalyticsNamedQuery",
-  "next": "Exit",
-  "body": "{\"documentType\":\"Skill.Module.BusinessObjects.CommercialClient\"}",
-  "namedQuery": "Example - Named Query"
-},
-```
-
-#### Template Description
-
-* actionType - The action type is AnalyticsNamedQuery
-* name - The action name is custom
-* next - The next action to be executed
-* body - The Query Parameters to be available
-* NamedQuery - The name of the Query.
-
-## Reduce
-
-The Reduce action allows you to group data by one or more property names and perform an aggregation operation over another property.
-Supported operations are SUM, MIN, MAX, AVG, or NONE (returns the first value).
-
-#### Configuration
-
-To configure this action, the following parameters need to be set:
-
-- data
-- GroupBy
-- Operation
-- OperationResult
-
-```json title='Template'
-{
-  "actionType": "Reduce",
-  "name": "SumGroupedBy",
-  "next": "Exit",
-  "data": "{{['smallDataSet']}}",
-  "GroupBy": [
-    "prop1",
-    "prop2"
-  ],
-  "Operation": "SUM",
-  "OperationResult": "value",
-  "InnerArrayStrategy": "FIRST"
-}
-  ```
-
-```json title='Example DataSet'
-[
-  {
-    "prop1": "A",
-    "prop2": "X",
-    "array": [
-      0,
-      1
-    ],
-    "value": 30
-  },
-  {
-    "prop1": "A",
-    "prop2": "Y",
-    "array": [
-      1,
-      2
-    ],
-    "value": 70
-  },
-  {
-    "prop1": "B",
-    "prop2": "X",
-    "array": [
-      2,
-      3
-    ],
-    "value": 110
-  }
-]
-```
-
-#### Template Description
-
-- actionType - The action type is Reduce
-- name - The action name is custom
-- next - The next action to be executed
-- data - The dataset on which the operation will be performed
-- groupBy - List of property names to group the data by
-- operation - The aggregation operation to apply:
-    - SUM – aggregate values by summing them
-    - MIN – the minimal value in the group
-    - MAX – the maximum value in the group
-    - AVG – the average value in the group
-    - NONE – the first value in the group
-- operationResult - The target property on which the operation is applied
-- innerArrayStrategy - The default strategy to use when Data contains nested arrays:
-    - NONE - the operation returns the entire array (default)
-    - MIN - the operation returns the minimum value in the array
-    - MAX - the operation returns to the maximum value in the array
-    - FIRST - the operation returns the first value in the array
-    - LAST - the operation returns the last value in the array
-
-> Note: The InnerArrayStrategy parameter `MIN` and `MAX` will only handle numeric values, it will ignore null or other type of values.
-
-## Await
-
-The **Await** action allows the workflow to pause execution for a given duration before proceeding.
-
-#### Configuration
-
-To configure this action, there is one required parameter that must be set:
-
-* **duration** – The time to wait. Supported formats:
-    * **ms** → milliseconds (`500ms`)
-    * **s** → seconds (`1s`, `30s`)
-    * **m** → minutes (`1m`, `5m`)
-
-```json title="Template"
-{
-  "actionType": "Await",
-  "name": "AwaitOneSecond",
-  "next": "Exit",
-  "duration": "1s"
-}
-```
-
-#### Template Description
-- actionType – The action type is Await
-- name – The action name is custom
-- next – The next action to be executed after the wait period
-- duration – The wait time before continuing (e.g., 500ms, 1s, 1m)
