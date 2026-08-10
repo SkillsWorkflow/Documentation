@@ -1,53 +1,101 @@
 ---
 id: bamboo
-title: Bamboo
-sidebar_label: Bamboo
+title: 'BambooHR'
+sidebar_label: BambooHR
 ---
 
-### Bamboo HR
+### Description
 
-This is the documentation about the integration between Bamboo and Skills Workflow. This documentation is for Skills Workflow localised in the Cloud.
+This article describes the integration between **BambooHR** and `Skills Workflow`.
+
+BambooHR is where the agency's people and their time off are managed. This integration keeps Skills Workflow aligned with it on two fronts:
+
+- **People** — employees created in BambooHR become users in Skills Workflow.
+- **Time off** — leave requested and approved in BambooHR appears as leave in Skills Workflow.
+
+The second one is what makes the difference day to day. Resourcing, scheduling, FTE and timesheets all depend on knowing who is actually available; if leave only lives in BambooHR, every one of those views is wrong. This integration means people book their holiday once, in HR, and the whole platform knows about it.
 
 ---
 
 ### Data Exchange Technology
 
-The Automations are triggered by Bamboo HR
-User changes fire Webhooks in Bamboo HR
-The Automations call the system API to save data Existing Users and Absences are linked by the Bamboo ID
+The integration is delivered as a **Marketplace automation**, not as a scheduled job. It is event-driven:
+
+1. A change in BambooHR — a new employee, or a time-off request being created or decided — fires a webhook.
+2. The webhook triggers the automation in Skills Workflow.
+3. The automation calls the BambooHR API to read the current state of that employee.
+4. Skills Workflow is updated to match.
+
+Because it reads the current state rather than trusting the event payload, an event that arrives late or out of order still leaves Skills Workflow correct.
 
 ---
 
 ### Data Exchange (To Skills Workflow)
 
-This section describes the Data exchanged between systems. Please see the data exchanged. 
-The data is exchanged with Views available in the system.
+**Employees**
 
-**Employees are received by Skills Workflow:**
-New Employees created Bamboo:
+New employees in BambooHR are created as Users in Skills Workflow:
 
-- User – Takes the ID frm Bamboo HR into BambooId
-- UserName - Gets the user’s email from Bamboo HR 
-- Name - Gets the user’s full name from Bamboo HR
-- Typology – Is created if it doesn’t exist 
-- Typology Group – Is created if it doesn’t exist 
-- Department – Takes the ID to BambooId in Department 
-- Responsible – Gets the user’s supervisor from Bamboo
-- Required Hours – Takes working hours from Bamboo HR
-- Email – Gets the user’s email from Bamboo HR
-- Hire date - Gets the user’s Hire date from Bamboo HR
+| Field | Source |
+| --- | --- |
+| User | The BambooHR ID, stored in **BambooId** |
+| UserName | The user's e-mail from BambooHR |
+| Name | The user's full name |
+| Typology | Created if it does not exist |
+| Typology Group | Created if it does not exist |
+| Department | The BambooHR ID, stored in **BambooId** on the department |
+| Responsible | The user's supervisor in BambooHR |
+| Required Hours | The working hours held in BambooHR |
+| E-mail | The user's e-mail |
+| Hire Date | The user's hire date |
+
+**Time off**
+
+For each employee, the automation reads their time-off requests from BambooHR across **every** status — approved, denied, requested, superseded and cancelled — and reflects them in Skills Workflow:
+
+- A request that does not yet exist in Skills Workflow is created as leave and sent for approval.
+- The leave is then approved or rejected so that its state matches the decision recorded in BambooHR.
+
+Reading all statuses, rather than only approved ones, is what allows a holiday that was later cancelled or denied in BambooHR to be corrected in Skills Workflow instead of being left blocking the calendar.
+
+Leave is matched per employee and per day, so re-running the automation does not create duplicates.
 
 ---
 
-### Examples of places where data from Bamboo HR is Shown
+### Where This Data Is Used
 
-User data will be shown in the User Profile and everywhere The Absence data is show in approvals, scheduling, etc. FTE & Time Sheet make use of User and Absence data Resourcing and Contracted time uses User data.
+- **User data** appears in the User Profile, and in Resourcing and Contracted Time.
+- **Absence data** appears in approvals and scheduling.
+- **FTE and Timesheets** use both.
+
+---
+
+### What the Agency Needs to Provide
+
+- A BambooHR account with API access, the company domain, and an API key.
+- Webhooks configured in BambooHR for employee changes and time-off changes, pointing at the Skills Workflow automation.
+- Confirmation of which Skills Workflow leave types the BambooHR time-off types map onto.
+
+---
+
+### Package Contents
+
+To enable this integration, install the package from the Marketplace. It contains the automation workflow that performs the sync, and the named query used to look up existing leave before creating new records.
 
 ---
 
 ### Security
 
-Automations are public but require a shared Key
-The shared key is set by the agency and is unique
-All data is encrypted in transit and at rest
-PII (e.g., GDPR compliance) is controlled by Bamboo HR
+- The automation endpoint is public but requires a **shared key**.
+- The shared key is set by the agency and is unique to it.
+- All data is encrypted in transit and at rest.
+- PII, and therefore GDPR compliance for the source data, remains controlled by BambooHR.
+- The BambooHR API key is stored in Skills Workflow as a configuration key, not inside the automation.
+
+---
+
+### Good to Know
+
+- Users and leave are matched by the BambooHR ID. It should not be edited manually.
+- The integration is one-way. Leave approved in Skills Workflow does not create a request in BambooHR — HR remains the place where time off is booked.
+- Because it is event-driven, leave that already existed before the integration was switched on is not backfilled automatically.

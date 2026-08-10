@@ -2,7 +2,20 @@
 id:  zonza
 title: 'Zonza'
 sidebar_label: Zonza
+unlisted: true
 ---
+
+:::caution Unpublished — content not verified
+This page is hidden from the site.
+
+No Zonza integration was found in the platform. The only trace of Zonza in the codebase is a
+button on one customer-specific home dashboard that opens `https://skills.zonza.tv/upload/`
+in a new tab — a deep link, not a data exchange.
+
+The content below was copied from the HR-Link page and describes an employee feed that this
+integration does not provide. It is kept only for history. Either replace it with the real
+behaviour, or delete the file.
+:::
 
 ### Description
 
