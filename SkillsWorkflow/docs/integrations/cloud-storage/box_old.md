@@ -2,7 +2,7 @@
 id: box_old
 title: Box Old
 sidebar_label: Box
-draft: true
+unlisted: true
 ---
 
 ### Description

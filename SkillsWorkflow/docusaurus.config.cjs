@@ -150,7 +150,7 @@ module.exports = {
             { label: 'Automations', to: 'docs/customization/automations' },
             { label: 'SDK', to: 'docs/sdk' },
             { label: 'API', to: 'docs/api/client-api' },
-            { label: 'Integrations', to: 'docs/integrations/hr-link' },
+            { label: 'Integrations', to: 'docs/integrations' },
             { label: 'University', to: 'docs/university' }
           ]
         },
@@ -211,12 +211,33 @@ module.exports = {
       require.resolve('docusaurus-lunr-search'),
       {
         languages: ['en', 'pt', 'es'],
-        indexBaseUrl: true
+        indexBaseUrl: true,
+        // This plugin does not honour Docusaurus `unlisted: true` — it indexes the built
+        // HTML regardless of the noindex tag. Any page marked unlisted must also be listed
+        // here, or it stays findable through site search. Patterns cover every locale.
+        excludeRoutes: [
+          '**/docs/integrations/zonza',
+          '**/docs/integrations/cloud-storage/box_old'
+        ]
       }
     ],
     [
       '@docusaurus/plugin-client-redirects',
       {
+        redirects: [
+          {
+            from: '/docs/integrations/iSAP-Job-Maintenance',
+            to: '/docs/integrations/isap/job-maintenance'
+          },
+          {
+            from: '/docs/integrations/eas-integration',
+            to: '/docs/integrations/eas'
+          },
+          {
+            from: '/docs/integrations/eas-integration/reference',
+            to: '/docs/integrations/eas/reference'
+          }
+        ],
         createRedirects(existingPath) {
           if (existingPath.endsWith('/index')) {
             return [existingPath.replace(/\/index$/, '')];
