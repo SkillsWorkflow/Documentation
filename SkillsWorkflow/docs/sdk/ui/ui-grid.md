@@ -1,6 +1,7 @@
 ---
 id:  ui-grid
 title: ' '
+description: "A sub namespace of UI, exclusive for grid operations ---"
 sidebar_label: Grid
 ---
 

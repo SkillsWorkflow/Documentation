@@ -1,6 +1,7 @@
 ---
 id: stages
 title: Stages
+description: "A stage represents a state that a document can be in at any point during its lifecycle."
 sidebar_label: Stages
 sidebar_position: 2
 ---

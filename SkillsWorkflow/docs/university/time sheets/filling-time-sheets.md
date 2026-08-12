@@ -1,6 +1,7 @@
 ---
 id: filling-time-sheets
 title: Filling in Time Sheets
+description: "Verify that you can navigate by clicking on the time sheets section."
 sidebar_label: 1. Filling in Time Sheets
 sidebar_position: 1
 ---

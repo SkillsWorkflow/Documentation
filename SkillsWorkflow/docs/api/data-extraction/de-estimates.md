@@ -1,6 +1,7 @@
 ---
 id: de-estimates
 title: DE-Estimates
+description: "Extracts the list of estimates."
 sidebar_label: Estimates
 sidebar_position: 1
 ---

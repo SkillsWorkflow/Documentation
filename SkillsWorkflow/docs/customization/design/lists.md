@@ -1,6 +1,7 @@
 ---
 id: lists
 title: List guidelines
+description: "Lists have coloured fields for easier reading and identification."
 sidebar_label: List
 sidebar_position: 3
 ---

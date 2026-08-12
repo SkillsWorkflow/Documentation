@@ -1,6 +1,7 @@
 ---
 id:  mobile-features
 title: "Mobile Features"
+description: "Skills Workflow Mobile app is available on all iOS and Android devices."
 sidebar_label: 1. Mobile Features
 sidebar_position: 2
 ---

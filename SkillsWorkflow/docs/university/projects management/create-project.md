@@ -1,6 +1,7 @@
 ---
 id:  create-projects
 title: Create Projects
+description: "To create a new Project, navigate to the “Clients” module."
 sidebar_label: 1. Create a Project
 sidebar_position: 1
 ---

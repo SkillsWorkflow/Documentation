@@ -1,6 +1,7 @@
 ---
 id:  leave-department-dashboard
 title: Leaves My Department
+description: "Al programar sus propias licencias o aprobar las licencias enviadas por sus subordinados, es importante saber si otros empleados del mismo departamento…"
 sidebar_label: 7. Leaves My Department
 sidebar_position: 7
 ---

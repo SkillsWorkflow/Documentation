@@ -1,6 +1,7 @@
 ---
 id: automations 
 title: Automations
+description: "Automations in Skills Workflow let you configure business rules that run automatically in response to system events — sending notifications, updating data, or…"
 sidebar_label: Automations
 sidebar_position: 0
 ---

@@ -1,6 +1,7 @@
 ---
 id:  2019-08-20-RCA-Mitigated-V1-West-Europe
 title: RCA - Mitigated - V1 - West Europe - 20-08-2018
+description: "Starting at around 20-08-2018 2:03 UTC until 7:40 UTC a small subset or users using Skills Workflow V1 hosted on the West Europe region may have experienced…"
 sidebar_label: RCA - Mitigated - V1 - West Europe - 20-08-2018
 ---
 

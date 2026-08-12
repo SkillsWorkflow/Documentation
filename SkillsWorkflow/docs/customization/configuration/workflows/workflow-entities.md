@@ -1,6 +1,7 @@
 ---
 id: workflow-entities
 title: Workflow
+description: "Workflows define how documents move through their lifecycle in Skills Workflow."
 sidebar_label: Workflow
 sidebar_position: 1
 ---

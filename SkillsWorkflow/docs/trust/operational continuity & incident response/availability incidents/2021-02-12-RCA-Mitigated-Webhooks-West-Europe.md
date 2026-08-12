@@ -1,6 +1,7 @@
 ---
 id:  2021-02-12-RCA-Mitigated-Webhooks-West-Europe
 title: RCA - Mitigated - Webhooks - West Europe - 12-02-2021
+description: "Between 28 February 2022 0:00 UTC and 3 March 2022 12:00 UTC, some users experienced intermittent errors while using the search feature."
 sidebar_label: RCA - Mitigated - Webhooks - West Europe - 12-02-2021
 ---
 

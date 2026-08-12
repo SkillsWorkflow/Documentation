@@ -1,6 +1,7 @@
 ---
 id: customstyle
 title: "Custom Style"
+description: "On this page you will find the process of how to customize the style of the document."
 sidebar_label: Custom Style
 hide_table_of_contents: true
 ---

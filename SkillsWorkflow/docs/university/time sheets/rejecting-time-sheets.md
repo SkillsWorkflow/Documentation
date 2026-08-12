@@ -1,6 +1,7 @@
 ---
 id: rejecting-time-sheets
 title: Rejecting Time sheets
+description: "It's also possible to reject all by clicking X icon in the right upper side next to the check icon."
 sidebar_label: 3. Rejecting Time sheets
 sidebar_position: 3
 ---

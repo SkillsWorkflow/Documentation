@@ -1,6 +1,7 @@
 ---
 id: de-typologies
 title: DE-Typologies
+description: "Extracts the list of typologies of users."
 sidebar_label: Typologies
 sidebar_position: 1
 ---

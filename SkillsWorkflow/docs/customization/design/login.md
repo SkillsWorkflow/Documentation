@@ -1,6 +1,7 @@
 ---
 id: login
 title: Login design guidelines
+description: "When logging in, the user has 2 action paths with separate pages with dedicated views specifically designed for optimal experience."
 sidebar_label: Login
 sidebar_position: 1
 ---

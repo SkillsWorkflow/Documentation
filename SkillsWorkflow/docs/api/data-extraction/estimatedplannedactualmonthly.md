@@ -1,6 +1,7 @@
 ---
 id: estimatedplannedactualmonthly
 title: EstimatedPlannedActualMonthly
+description: "System generic extraction of estimated, planned and actual, per currency, including time, costs, income, profit."
 sidebar_label: EstimatedPlannedActualMonthly
 sidebar_position: 1
 ---

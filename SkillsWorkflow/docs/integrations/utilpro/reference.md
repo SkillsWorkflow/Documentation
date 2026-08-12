@@ -1,5 +1,6 @@
 ---
 title: "UtilPro — Technical Reference"
+description: "The CSV files are transferred via an SFTP server."
 sidebar_label: Technical Reference
 sidebar_position: 2
 ---

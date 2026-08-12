@@ -1,6 +1,7 @@
 ---
 id: de-comments
 title: DE-Comments
+description: "Extracts comments from the feed."
 sidebar_label: Comments
 sidebar_position: 1
 ---

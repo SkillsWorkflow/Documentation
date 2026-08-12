@@ -1,6 +1,7 @@
 ---
 id: document
 title: Document
+description: "With this namespace, you can quickly provide methods to manipulate documents."
 sidebar_label: Document
 ---
 

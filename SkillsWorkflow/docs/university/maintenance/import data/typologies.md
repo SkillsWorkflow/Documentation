@@ -1,6 +1,7 @@
 ---
 id: typologies
 title: Typologies
+description: "In this article, we will guide you through the simple steps required to efficiently import typology data, ensuring a seamless onboarding process."
 sidebar_label: Typologies
 sidebar_position: 6
 ---

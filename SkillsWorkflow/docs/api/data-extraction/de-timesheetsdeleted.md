@@ -1,6 +1,7 @@
 ---
 id: de-timesheetsdeleted
 title: DE-TimeSheetsDeleted
+description: "Extracts time sheets that have been deleted."
 sidebar_label: TimeSheetsDeleted
 sidebar_position: 1
 ---

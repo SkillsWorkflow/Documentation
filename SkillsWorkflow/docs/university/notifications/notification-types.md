@@ -1,6 +1,7 @@
 ---
 id:  notification-types
 title: "Types, categories and periodicity"
+description: "Skills Workflow sends out two different types of notifications: Depending on their categories, notifications can have different periodicities: Regardless of…"
 sidebar_label: 1. Notification Types
 sidebar_position: 1
 ---

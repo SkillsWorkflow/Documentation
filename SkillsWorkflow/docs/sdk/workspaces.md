@@ -1,6 +1,7 @@
 ---
 id:  ui-workspaces
 title: 'Workspaces'
+description: "All settings directly regarding workspaces configuration properties (advanced) All the workspaces configuration functions have context as last parameter."
 sidebar_label: Workspaces
 ---
 

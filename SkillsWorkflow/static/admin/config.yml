@@ -1,0 +1,142 @@
+backend:
+  name: git-gateway
+  branch: master
+
+squash_merges: true
+local_backend: true
+
+# This enables draft -> review -> publish inside the backoffice UI.
+publish_mode: editorial_workflow
+
+# Keep media under the existing static assets tree.
+media_folder: static/img/backoffice
+public_folder: /img/backoffice
+
+site_url: https://documentation.skillsworkflow.com
+logo_url: /img/logo-blue.png
+
+i18n:
+  structure: multiple_folders
+  locales: [en, es, pt, pt-br]
+  default_locale: en
+
+collections:
+  - name: docs_en
+    label: Docs (EN)
+    folder: docs
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: docs_en_mdx
+    label: Docs (EN / MDX)
+    folder: docs
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    extension: mdx
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: docs_es
+    label: Docs (ES)
+    folder: i18n/es/docusaurus-plugin-content-docs/current
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: docs_es_mdx
+    label: Docs (ES / MDX)
+    folder: i18n/es/docusaurus-plugin-content-docs/current
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    extension: mdx
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: docs_pt
+    label: Docs (PT)
+    folder: i18n/pt/docusaurus-plugin-content-docs/current
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: docs_pt_mdx
+    label: Docs (PT / MDX)
+    folder: i18n/pt/docusaurus-plugin-content-docs/current
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    extension: mdx
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: docs_ptbr
+    label: Docs (PT-BR)
+    folder: i18n/pt-br/docusaurus-plugin-content-docs/current
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: docs_ptbr_mdx
+    label: Docs (PT-BR / MDX)
+    folder: i18n/pt-br/docusaurus-plugin-content-docs/current
+    create: true
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    extension: mdx
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }

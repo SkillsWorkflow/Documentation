@@ -1,6 +1,7 @@
 ---
 id: home
 title: Home guidelines
+description: "Home workspace is a standard view that shows the most relavant documents for your working day/week."
 sidebar_label: Home
 sidebar_position: 2
 ---

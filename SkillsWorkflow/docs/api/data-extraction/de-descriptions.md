@@ -1,6 +1,7 @@
 ---
 id: de-descriptions
 title: DE-Descriptions
+description: "Extracts the different versions of the descriptions of documents."
 sidebar_label: Descriptions
 sidebar_position: 1
 ---

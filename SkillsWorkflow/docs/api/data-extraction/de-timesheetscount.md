@@ -1,6 +1,7 @@
 ---
 id: de-timesheetscount
 title: DE-TimeSheetsCount
+description: "Gets the count of time sheets for the filters provided."
 sidebar_label: TimeSheetsCount
 sidebar_position: 1
 ---

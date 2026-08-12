@@ -1,6 +1,7 @@
 ---
 id:  create-activity
 title: Create an activity
+description: "To create a new Activity, navigate to the Lead."
 sidebar_label: 5. Create activity
 sidebar_position: 5
 ---

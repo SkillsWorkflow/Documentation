@@ -1,6 +1,7 @@
 ---
 id: create-assign-type
 title: Assigning Absence Types
+description: "Follow the steps below to massively assign absence types."
 sidebar_label: Absence Types
 sidebar_position: 7
 ---

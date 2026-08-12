@@ -1,6 +1,7 @@
 ---
 id:  2021-07-23-RCA-Mitigated-Webhooks-and-Automation-West-Europe
 title: RCA - Mitigated - Webhooks and Automation - West Europe - 23-07-2021
+description: "Starting 23 July 2021 - 09:56 UTC until 16:25 UTC, customers have experienced failures on webhook and automation execution on our West Europe region."
 sidebar_label: RCA - Mitigated - Webhooks and Automation - West Europe - 23-07-2021
 ---
 

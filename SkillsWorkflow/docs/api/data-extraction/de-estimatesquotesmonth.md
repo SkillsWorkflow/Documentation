@@ -1,6 +1,7 @@
 ---
 id: de-estimatesquotesmonth
 title: DE-EstimatesQuotesMonth
+description: "Extracts all data from estimates."
 sidebar_label: EstimatesQuotesMonth
 sidebar_position: 2
 ---

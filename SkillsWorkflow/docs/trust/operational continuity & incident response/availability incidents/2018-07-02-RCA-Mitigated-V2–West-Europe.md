@@ -1,6 +1,7 @@
 ---
 id:  2018-07-02-RCA-Mitigated-V2–West-Europe
 title: RCA - Mitigated V2 – West Europe -  02-07-2018
+description: "Starting on 02-07-2018 01:45:43 UTC some users had errors trying to access Skills Workflow V2 on tenants hosted on the West Europe data center This issue is…"
 sidebar_label: RCA - Mitigated V2 – West Europe -  02-07-2018
 ---
 

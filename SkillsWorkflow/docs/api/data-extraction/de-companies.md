@@ -1,6 +1,7 @@
 ---
 id: de-companies
 title: DE-Companies
+description: "Extracts the list of companies."
 sidebar_label: Companies
 sidebar_position: 1
 ---

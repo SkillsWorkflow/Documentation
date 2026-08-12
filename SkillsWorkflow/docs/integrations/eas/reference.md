@@ -1,5 +1,6 @@
 ---
 title: "EAS — Technical Reference"
+description: "There was a need to exchange data between EAS and Skills Workflow --- The JSON files will be transferred via an SFTP server."
 sidebar_label: Technical Reference
 sidebar_position: 2
 ---

@@ -1,6 +1,7 @@
 ---
 id:  ui-selectBox
 title: ' '
+description: "A sub namespace of UI, exclusive for select box operations ---"
 sidebar_label: Select Box
 ---
 

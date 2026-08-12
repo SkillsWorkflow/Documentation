@@ -1,5 +1,6 @@
 ---
 title: "Reach — Technical Reference"
+description: "--- Source: [Reach] [Integrations] Users v1 (Automation) {Active}."
 sidebar_label: Technical Reference
 sidebar_position: 2
 ---
@@ -15,6 +16,15 @@ For what this integration does and how it is configured, see **[Reach](./)**.
 ### Description
 
 This article describes how to exchange data between Reach (SAP SuccessFactors) and Skills Workflow.
+
+---
+### Components
+
+| Name | Type | Version | Stage | Role |
+| --- | --- | --- | --- | --- |
+| Reach users integration | Automation | 1 | Active | Scheduled job that reads the AD_UserAccounts CSV from SFTP and provisions/updates/deactivates users |
+
+Source: `[Reach] [Integrations] Users v1 (Automation) {Active}.json`.
 
 ---
 ### File Transfer Technology
@@ -157,6 +167,44 @@ Additionally to the above, there is another field being managed:
 - Set as False - When the userType is Temporary
 
 ---
-### Conclusion
+### How It Works (Automation Logic)
 
-The contents of this document create the foundation for data and process communication methodology between Skills Workflow and Agency. The current known data and process transfers are contained in this document but more may be created as additional data and process needs are discovered.
+The `Reach users integration` automation (`[Reach] [Integrations] Users v1 (Automation) {Active}.json`) runs daily at 04:00 UTC and drives the whole exchange:
+
+1. Reads the SFTP connection details from the configuration key `SFTP-GSPSF` (`GET /api/configuration-keys/SFTP-GSPSF`).
+2. Lists files on the SFTP Data directory and loops over each one found.
+3. For each file: downloads it over SFTP, reads it as a header CSV, then loops over every row.
+4. For each row (a user record):
+   - Looks the user up in Skills Workflow by `externalId` (`GET /api/users/external?externalId=...`).
+   - If not found and `isActive` is `false`, the row is skipped (no user created for an inactive new hire).
+   - If found and `isActive` is `false`, the user is patched with the expiration date and then deactivated (`PATCH /api/users/{id}`, setting `isActive: false` and renaming `userName`/`SsoUserName` with the `externalId` suffix so the login frees up).
+   - Otherwise the user is created or updated: the department is looked up by `externalId` (`GET /api/companies/{companyId}/departments/external?externalId=...`) and the job typology group/typology are created if missing (`POST /api/usertypologygroups`, `POST /api/usertypologies`) — freelancers (`employeeClass = Freelancer`) get a group name prefixed `FREELANCE `.
+   - The user is created via `POST /api/users`; freelancers are created inactive first and then activated in a second pass.
+   - If `responsible` (manager external ID) is present, the manager is looked up (`GET /api/users/external?externalId=...`) and patched onto the user as `ResponsibleId`, together with `PaidOvertime` from `fslaStatus` and, when present, `CityId` from `workLocation`.
+   - If the manager lookup fails, the user is still created, and the automation result payload notes that it was created without a manager.
+5. Once a file's rows are all processed, the file is moved to the SFTP success or failure subfolder (`ftpToPathSuccess` / `ftpToPathFailure`, both read from the same `SFTP-GSPSF` configuration key).
+
+The automation only sends error notifications (`sonia@skillsworkflow.com`); it does not notify on success.
+
+---
+### External System Contact Points
+
+- **SFTP** — host, credentials and paths are not hard-coded; they are all resolved at runtime from the Skills Workflow configuration key `SFTP-GSPSF`.
+- **Skills Workflow Integration API** (`integration-api-eastus.skillsworkflow.com`) — the automation calls it to read and write user, department and typology data:
+  - `GET /api/users/external?externalId=`
+  - `POST /api/users`
+  - `PATCH /api/users/{id}`
+  - `GET /api/companies/{companyId}/departments/external?externalId=`
+  - `POST /api/usertypologygroups`
+  - `POST /api/usertypologies`
+  - `GET /api/usertypes/name?name=`
+
+### Configuration
+
+- Configuration key **`SFTP-GSPSF`** — holds `ftpHostIp`, `ftpUsername`, `ftpPassword`, `ftpPath`, `ftpToPathSuccess`, `ftpToPathFailure` and `fileNameContains`. Its values are not part of the export.
+- Scheduler — daily, starting 2023-11-16 04:00 UTC; error notifications go to `sonia@skillsworkflow.com`.
+
+### Open Questions
+
+- The CSV template above documents `divisionid`, `administrativeResponsible`, `planningResponsible` and `leavesResponsible`, but none of these fields are read anywhere in the exported automation — not determinable from the export whether they are still produced by Reach or simply unused.
+- The exact matching rule Skills Workflow uses to decide create vs. update (beyond the `externalId` lookup) is not determinable from the export.

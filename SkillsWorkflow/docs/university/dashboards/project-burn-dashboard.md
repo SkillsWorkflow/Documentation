@@ -1,6 +1,7 @@
 ---
 id:  project-burn-dashboard
 title: Project Burn
+description: "Dashboards are a powerful feature used to quickly support decisions related to a specific client or project."
 sidebar_label: 2. Project Burn Dashboard
 sidebar_position: 2
 ---

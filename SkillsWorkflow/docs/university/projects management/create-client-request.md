@@ -1,6 +1,7 @@
 ---
 id: create-client-requests
 title: Create Client Requests
+description: "From the client perspective, you can now create and control your own requests using Skills Workflow."
 sidebar_label: 7. Create Client Requests
 sidebar_position: 7
 ---

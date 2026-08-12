@@ -1,6 +1,7 @@
 ---
 id:  invoice-authorizations
 title: Invoice Authorizations
+description: "You can create invoice orders in the system, and in this way inform the financial team to proceed with the creation / synchronization of the document to the…"
 sidebar_label: 1. Create invoice authorizations
 sidebar_position: 1
 ---

@@ -1,6 +1,7 @@
 ---
 id: projects
 title: Projects
+description: "In this article, we will guide you through the simple steps required to efficiently import projects, ensuring a seamless integration process."
 sidebar_label: Projects
 sidebar_position: 5
 ---

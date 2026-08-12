@@ -1,6 +1,7 @@
 ---
 id: store
 title: Store
+description: "On this page you will find how to create a workspace using the Store as DataSource."
 sidebar_label: Store
 ---
 

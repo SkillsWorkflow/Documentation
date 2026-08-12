@@ -1,6 +1,7 @@
 ---
 id:  2020-07-06-RCA-Mitigated-East-US
 title: RCA - Mitigated - East US - 06-07-2020
+description: "Starting 6 July 2020 19:22 UTC and 16 July 2020 17:22 UTC, some users intermittently experienced degraded overall system response in our East US region."
 sidebar_label: RCA - Mitigated - East US - 06-07-2020
 ---
 

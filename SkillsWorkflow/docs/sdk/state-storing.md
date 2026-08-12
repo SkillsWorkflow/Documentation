@@ -1,6 +1,7 @@
 ---
 id: state-storing
 title: " "
+description: "This documentation describes the StateStoring namespace and its methods for storing and retrieving application state."
 sidebar_label: State Storing
 ---
 

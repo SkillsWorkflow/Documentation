@@ -1,6 +1,7 @@
 ---
 id: de-businessobjecttypes
 title: DE-BusinessObjectTypes
+description: "Extracts business object types."
 sidebar_label: BusinessObjectTypes
 sidebar_position: 1
 ---

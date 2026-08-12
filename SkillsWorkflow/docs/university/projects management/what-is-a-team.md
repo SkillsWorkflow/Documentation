@@ -1,6 +1,7 @@
 ---
 id: what-is-a-team
 title: What is a Team and what does each Group represent?
+description: "The team is typically comprised by the following groups:"
 sidebar_label: 11. What is a Team and what does each Group represent?
 sidebar_position: 11
 ---

@@ -1,5 +1,6 @@
 ---
 title: 'UtilPro'
+description: "UtilPro is the agency's HR and payroll system."
 sidebar_label: UtilPro
 sidebar_position: 1
 ---

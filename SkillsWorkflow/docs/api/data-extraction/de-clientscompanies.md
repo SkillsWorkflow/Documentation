@@ -1,6 +1,7 @@
 ---
 id: de-clientscompanies
 title: DE-ClientsCompanies
+description: "Extracts the information about what companies have access to what clients."
 sidebar_label: ClientsCompanies
 sidebar_position: 1
 ---

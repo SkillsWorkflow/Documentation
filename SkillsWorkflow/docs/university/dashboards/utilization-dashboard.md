@@ -1,6 +1,7 @@
 ---
 id:  utilization-dashboard
 title: Utilization
+description: "Project Managers put a lot of effort on resource allocation."
 sidebar_label: 4. Utilization Dashboard
 sidebar_position: 4
 ---

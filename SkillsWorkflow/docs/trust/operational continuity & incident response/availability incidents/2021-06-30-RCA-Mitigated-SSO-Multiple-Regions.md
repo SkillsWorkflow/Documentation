@@ -1,6 +1,7 @@
 ---
 id:  2021-06-30-RCA-Mitigated-SSO-Multiple-Regions
 title: RCA - Mitigated - SSO - Multiple Regions - 30-06-2021
+description: "Starting 30 June 2021 - 14:16 UTC until 1 July 10:00 UTC, some users intermittently experienced errors using Single Sign On authentication (SSO) on our Brazil…"
 sidebar_label: RCA - Mitigated - SSO - Multiple Regions - 30-06-2021
 ---
 

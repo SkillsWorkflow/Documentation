@@ -1,6 +1,7 @@
 ---
 id: de-projectsadditionalinformation
 title: DE-ProjectsAdditionalInformation
+description: "Extracts additional information from projects."
 sidebar_label: ProjectsAdditionalInformation
 sidebar_position: 1
 ---

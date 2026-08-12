@@ -1,6 +1,7 @@
 ---
 id: de-typologygroupsdepartments
 title: DE-TypologyGroupsDepartments
+description: "Extracts typology groups associated to departments."
 sidebar_label: TypologyGroupsDepartments
 sidebar_position: 1
 ---

@@ -1,6 +1,7 @@
 ---
 id: de-leavesdeletedcount
 title: DE-LeavesDeletedCount
+description: "Gets the count of deleted leaves for the filters provided."
 sidebar_label: LeavesDeletedCount
 sidebar_position: 1
 ---

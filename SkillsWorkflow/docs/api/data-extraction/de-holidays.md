@@ -1,6 +1,7 @@
 ---
 id: de-holidays
 title: DE-Holidays
+description: "Extracts the list of holidays."
 sidebar_label: Holidays
 sidebar_position: 1
 ---

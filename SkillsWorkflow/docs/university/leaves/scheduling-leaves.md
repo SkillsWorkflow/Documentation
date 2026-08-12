@@ -1,6 +1,7 @@
 ---
 id:  scheduling-leaves
 title: Scheduling Leaves
+description: "To schedule Leaves, click on the Leaves modules and choose the option “Scheduler”."
 sidebar_label: 1. Scheduling Leaves
 sidebar_position: 1
 ---

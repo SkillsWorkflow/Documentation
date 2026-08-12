@@ -1,6 +1,7 @@
 ---
 id: cyber-security-faq
 title: Cyber Security FAQ
+description: "This document provides answers to the most frequently asked questions regarding our Cyber Security policies, practices and certifications."
 sidebar_label: Cyber Security FAQ
 ---
 

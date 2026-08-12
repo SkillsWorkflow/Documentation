@@ -1,6 +1,7 @@
 ---
 id: okta
 title: 'Okta'
+description: "In this article, you'll learn how to integrate with Okta SSO."
 sidebar_label: Okta
 ---
 

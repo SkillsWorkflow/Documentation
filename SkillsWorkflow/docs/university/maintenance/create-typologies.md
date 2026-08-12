@@ -1,6 +1,7 @@
 ---
 id: create-typologies 
 title: Create Typologies
+description: "As every person has his specific role inside the company, every user registered in Skills has his position linked to a specific “typology”."
 sidebar_label: Create Typologies
 sidebar_position: 2
 ---

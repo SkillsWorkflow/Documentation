@@ -1,6 +1,7 @@
 ---
 id: de-typologygroups
 title: DE-TypologyGroups
+description: "Extracts user typology groups of user typologies."
 sidebar_label: TypologyGroups
 sidebar_position: 1
 ---

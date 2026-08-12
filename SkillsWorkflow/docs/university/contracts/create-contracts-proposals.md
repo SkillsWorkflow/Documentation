@@ -1,6 +1,7 @@
 ---
 id:  create-contracts-proposals
 title: Create Contracts and Proposals
+description: "It is possible to create and manage contracts associated with specific projects and activities."
 sidebar_label: 2. Create Contracts and Proposals
 sidebar_position: 2
 ---

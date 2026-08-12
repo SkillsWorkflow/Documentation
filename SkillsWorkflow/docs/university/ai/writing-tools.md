@@ -1,6 +1,7 @@
 ---
 id: writing-tools
 title: Writing Tools
+description: "Writing Tools bring AI-powered text assistance directly into the rich text editors across Skills Workflow."
 sidebar_label: Writing Tools
 sidebar_position: 3
 ---

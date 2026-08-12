@@ -1,6 +1,7 @@
 ---
 id: integration-api
 title: Integration API
+description: "The Integration API allows you to integrate documents and entities in Skills Workflow from external systems by linking them via an External ID."
 sidebar_label: Integration API
 sidebar_position: 2
 ---

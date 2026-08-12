@@ -1,6 +1,7 @@
 ---
 id: departments
 title: Departments
+description: "In this article, we will guide you through the simple steps necessary to efficiently import departments, ensuring a smooth integration process."
 sidebar_label: Departments
 sidebar_position: 2
 ---

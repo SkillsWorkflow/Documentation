@@ -1,6 +1,7 @@
 ---
 id: workspace-context
 title: "Workspace Context"
+description: "All of the workspaces have the possibility to access the context, where it is possible to find the info of the components, the workspace and perform…"
 sidebar_label: Workspace Context
 ---
 

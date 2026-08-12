@@ -1,6 +1,7 @@
 ---
 id: media360
 title: 'Media360'
+description: "Media360 is the agency's media and financial back office."
 sidebar_label: Media360
 ---
 

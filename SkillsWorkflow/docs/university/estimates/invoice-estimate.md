@@ -1,6 +1,7 @@
 ---
 id:  invoice-estimate
 title: Invoice an Estimate
+description: "Estimates can be created as retainers, and the system will automatically display their values."
 sidebar_label: 2. Invoice an Estimate
 sidebar_postiion: 2
 ---

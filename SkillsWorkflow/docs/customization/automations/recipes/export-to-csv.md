@@ -1,6 +1,7 @@
 ---
 id: recipe-export-to-csv
 title: Export data to a CSV file and deliver it
+description: "A common automation: fetch a set of records, turn them into a CSV file, and send that file to another system."
 sidebar_label: Export data to CSV
 sidebar_position: 1
 ---

@@ -1,6 +1,7 @@
 ---
 id: box_old
 title: Box Old
+description: "The integration allows you to: --- When a file is uploaded into Box, it is automatically available in Skills Workflow."
 sidebar_label: Box
 unlisted: true
 ---

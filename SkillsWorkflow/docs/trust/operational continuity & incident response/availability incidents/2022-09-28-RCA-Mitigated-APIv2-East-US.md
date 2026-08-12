@@ -1,6 +1,7 @@
 ---
 id: 2022-09-28-RCA-Mitigated-APIv2-East-US
 title: RCA - Mitigated - APIv2 - East US - 28-09-2022
+description: "On 28 September 2022, between 20:25 UTC and 22:46 UTC, many customers experienced errors or extreme delays accessing the Web Application, APIv2, and other…"
 sidebar_label: RCA - Mitigated - APIv2 - East US - 28-09-2022
 ---
 

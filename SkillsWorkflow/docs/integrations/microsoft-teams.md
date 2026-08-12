@@ -1,6 +1,7 @@
 ---
 id: microsoft-teams
 title: Microsoft Teams
+description: "Post a card to a Microsoft Teams channel whenever a chosen event happens in Skills Workflow."
 sidebar_label: Microsoft Teams
 ---
 
@@ -124,6 +125,24 @@ A common request: post to Teams whenever a Deliverable moves to a specific workf
 - **Automation Workflow** — receives the webhook payload, runs the query, fills in the Template, and posts the result to the Teams URL stored in [System Parameters](#6-configuration).
 
 If a ready-made Marketplace package matches this scenario, import it (see [Section 5](#5-installation)) instead of building each piece by hand.
+
+:::note Exported example: `GetDeliverableById`
+One deployed Named Query for this pattern, `GetDeliverableById` (v1, Active — `[Microsoft Teams] [Integrations] GetDeliverableById v1 (Query) {Active}.json`), looks up a job by id:
+
+```sql
+with brief as (
+    select top 1 db.Text
+    from DocumentBrief db
+    where db.DocumentOid = @Oid
+    order by db.CreatedOn desc
+)
+select d.Number, d.Project, d.Name as Title, d.CreatedOnUtc as CreatedOn, b.Text as Description
+from JobLookup d, brief b
+where d.Id = @Oid
+```
+
+It returns `Number`, `Project`, `Title`, `CreatedOn` and `Description` — narrower than the Status/UpdatedBy/UpdatedOn/Link fields shown in the sample card above, so the Template and card layout paired with this particular query would only be able to show these five fields. The Automation Workflow, Webhook, Template and System Parameters that use this query were not included in the export, so the rest of this instance's wiring is not determinable.
+:::
 
 ---
 

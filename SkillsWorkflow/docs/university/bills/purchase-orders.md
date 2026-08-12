@@ -1,6 +1,7 @@
 ---
 id:  client-staff-dashboard
 title: Client Staff Plan Summary
+description: "Dashboard provides a summary report of all fees and estimates under a company, client group and period selected."
 sidebar_label: 3. Client Staff Plan Summary Dashboard
 sidebar_position: 3
 ---

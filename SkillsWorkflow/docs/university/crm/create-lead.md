@@ -1,6 +1,7 @@
 ---
 id: create-lead
 title: Create lead
+description: "To create a new Lead, navigate to the “Clients” module."
 sidebar_label: 4. Create lead
 sidebar_position: 4
 ---

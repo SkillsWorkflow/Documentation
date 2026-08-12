@@ -1,6 +1,7 @@
 ---
 id: 2022-10-12-RCA-Mitigated-Automations-West-Europe
 title: RCA - Mitigated - Automations - West Europe - 12-10-2022
+description: "On 12 October 2022, between 08:30 UTC and 09:55 UTC, some customers reported failures on automation execution on our West Europe region."
 sidebar_label: RCA - Mitigated - Automations - West Europe - 12-10-2022
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: de-leaves
 title: DE-Leaves
+description: "Contains documents with information about vacations from employees"
 sidebar_label: Leaves
 sidebar_position: 0
 ---

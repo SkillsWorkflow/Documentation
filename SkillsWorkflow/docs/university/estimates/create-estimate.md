@@ -1,6 +1,7 @@
 ---
 id: create-estimate
 title: Create estimate
+description: "Estimates can either be linked to Fees or created directly under a Project or Job."
 sidebar_label: 1. Create Estimate
 sidebar_position: 1
 ---

@@ -1,6 +1,7 @@
 ---
 id: mdx
 title: Powered by MDX
+description: "You can write JSX and use React components within your Markdown thanks to MDX."
 ---
 
 import Tabs from '@theme/Tabs';

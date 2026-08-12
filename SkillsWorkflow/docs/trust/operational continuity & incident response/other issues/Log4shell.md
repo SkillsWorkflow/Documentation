@@ -1,6 +1,7 @@
 ---
 id:  Log4shell
 title: "Log4shell"
+description: "In this article, we clarify our clients about the newly found CVE-2021-44228 also known as “log4shell” and how it impacts (or not) SkillsWorkflow."
 sidebar_label: 1. Log4shell
 ---
 

@@ -1,6 +1,7 @@
 ---
 id:  security
 title: Security
+description: "At Skills Workflow, we take the security, privacy and reliability of our platform seriously."
 sidebar_label: Security
 ---
 

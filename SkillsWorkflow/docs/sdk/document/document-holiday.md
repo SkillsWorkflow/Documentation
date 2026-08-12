@@ -1,6 +1,7 @@
 ---
 id: holiday
 title: Holiday
+description: "A sub namespace of Document, exclusive for holiday operations ---"
 sidebar_label: Holiday
 
 ---

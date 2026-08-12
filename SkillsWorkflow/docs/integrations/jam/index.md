@@ -1,5 +1,6 @@
 ---
 title: 'JAM'
+description: "JAM is the agency's job administration system."
 sidebar_label: JAM
 sidebar_position: 1
 ---

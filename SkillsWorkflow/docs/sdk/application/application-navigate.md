@@ -1,6 +1,7 @@
 ---
 id: application-navigate
 title: " "
+description: "A sub namespace of Application, exclusive for navigate operations ---"
 sidebar_label: Navigate
 ---
 

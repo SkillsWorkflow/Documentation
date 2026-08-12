@@ -1,8 +1,26 @@
 ---
 id: api
 title: API
+description: "Every other integration in this section is, underneath, this API being used."
 sidebar_label: API
 sidebar_position: 1
+---
+
+## Description
+
+This article describes the **Skills Workflow API**.
+
+Every other integration in this section is, underneath, this API being used. It is the interface any external system uses to read and write Skills Workflow data directly — clients, suppliers, users, jobs, projects, estimates, expenses, files and more — without a person entering it by hand.
+
+It exists for the cases the packaged integrations do not cover. When an agency runs a system nobody has built a connector for, or wants to automate something specific to how they work, the API is what makes that possible without waiting for a product change. It is also how an implementation partner loads data during onboarding, and how a client's own systems can be wired into the platform.
+
+Two collections are published:
+
+- **Integration API** — the endpoints for provisioning and maintaining master data, such as users and employees.
+- **Client API** — the broader day-to-day object model: jobs, projects, contracts, requests, estimates, expenses, assignments, comments, files and workflow.
+
+The API is versioned and additive: it keeps growing, but without breaking what already works — so an integration built against it does not need revisiting every release.
+
 ---
 
 ## Authentication
@@ -195,3 +213,47 @@ Payload:
     }
 }
 ```
+
+---
+
+## Marketplace Export Reference
+
+Two Postman collections are published in the Marketplace under `API`: `Client API` (v15) and `Integration API` (v2). Source: `[API] [Integrations] Client API v15 (Postman) {Active}.json`, `[API] [Integrations] Integration API v2 (Postman) {Active}.json`.
+
+### Integration API (v2)
+
+As exported, this collection has three requests — narrower than the Billing/Commercial Client and Supplier endpoints documented above, which are not part of this particular export (not determinable whether they've moved elsewhere or simply weren't included when this collection was exported):
+
+| Request | Method & Endpoint | Notes |
+| --- | --- | --- |
+| User | `PATCH /api/users/{id}` | Partial update; only send fields you want changed |
+| User | `POST /api/users` | Create-or-update — send `Id` or `ExternalId` to decide which; `UserName`, `Name`, `ExternalId`, `CompanyCode`, `DepartmentExternalId`, `TypologyExternalId`, `IsActive` are required |
+| Employee | `POST /api/employees` | Create-or-update — send `Id` or `ExternalId`; `Name`, `ExternalId`, `CompanyId` required |
+
+Host: `https://integration-api-{Environment}.skillsworkflow.com`.
+
+### Client API (v15)
+
+A much larger collection covering the day-to-day object model (host `https://apiv2-{Tenant}.skillsworkflow.com`, one request per folder shown; some environment-specific examples use a fixed tenant such as `chronicle`):
+
+| Area | Endpoints |
+| --- | --- |
+| Additional Information | `PUT /api/v3/documentUserFieldValues` |
+| Assignments | `POST /api/assignments/batch` |
+| Comment | `POST /api/posts` (comment), `POST /api/posts` (link file) |
+| Commercial Client | `POST /api/v3/commercial-clients` |
+| Description | `POST /api/documentBriefs` |
+| Estimate | `POST /api/v3/estimates`, `PUT /api/estimates/{id}/items`, `POST /api/estimates/details/thirdparty`, `POST /api/estimates/details/resources`, `POST /api/estimates/details/expenses`, `POST /api/billing-conditions` |
+| Expense / Expense Sheet | `POST /api/expenses`, `POST /api/expenses/{ExpenseSheetId}/items` |
+| File | `POST /api/v3/file-system/folders/{folderId}/links` |
+| Job | `PATCH /api/jobs/{jobId}`, `POST /api/v3/jobs` |
+| Project | `PATCH /api/projects/{id}` (and additional-information variant), `GET /api/contracts/{id}/projects/new`, `POST /api/posts` |
+| Contract | `PATCH /api/contracts/{id}` (and additional-information variant), `POST /api/posts` |
+| Typology | `POST /api/v3/user-typology-histories`, `PATCH /api/v3/user-typology-histories/{id}` |
+| Request | `POST /api/v3/requests`, `GET /api/v3/requests/{id}` |
+| User | `POST /api/v3/users` (create/duplicate), `PATCH /api/users/{id}`, `POST /api/v3/commercial-client-users` |
+| Workflow | `GET /api/v3/document-types/{id}/workflows?expandTransitions=true` |
+
+### Open Questions
+
+- The Integration API export (v2) has far fewer endpoints than this page already documented (Billing Client, Supplier, Commercial Client association) — not determinable from the export whether those moved to a different collection, a different version, or are simply outdated; they're left in place above since nothing here contradicts them.

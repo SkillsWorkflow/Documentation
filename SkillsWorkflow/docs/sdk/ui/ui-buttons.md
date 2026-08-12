@@ -1,6 +1,7 @@
 ---
 id:  ui-buttons
 title: Buttons
+description: "A sub namespace of UI, exclusive for buttons operations ---"
 sidebar_label: Buttons
 ---
 

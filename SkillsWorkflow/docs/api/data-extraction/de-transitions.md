@@ -1,6 +1,7 @@
 ---
 id: de-transitions
 title: DE-Transitions
+description: "Extracts the list of existing transitions."
 sidebar_label: Transitions
 sidebar_position: 1
 ---

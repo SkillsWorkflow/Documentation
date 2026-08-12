@@ -1,6 +1,7 @@
 ---
 id:  timesheet-aprobaciones-dashboard
 title: Missing Time Hours and Approvals
+description: "This dashboard provides real-time information on users blocked due to missing hours and/or missing timesheet approvals from their subordinates."
 sidebar_label: 8. Missing Time Hours and Approvals Dashboard
 sidebar_position: 8
 ---

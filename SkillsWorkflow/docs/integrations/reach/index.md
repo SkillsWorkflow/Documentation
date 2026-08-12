@@ -1,5 +1,6 @@
 ---
 title: 'Reach'
+description: "Reach is the agency's HR system."
 sidebar_label: Reach
 sidebar_position: 1
 ---

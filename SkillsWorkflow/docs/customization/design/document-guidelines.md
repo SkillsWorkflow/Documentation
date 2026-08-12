@@ -1,6 +1,7 @@
 ---
 id: document-guidelines
 title: Document guidelines
+description: "Document can be show in popup or expanded."
 sidebar_label: Document Guidelines
 sidebar_position: 4
 ---

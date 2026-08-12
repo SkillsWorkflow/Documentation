@@ -1,6 +1,7 @@
 ---
 id:  zonza
 title: 'Zonza'
+description: "This is the Documentation of how the Integration between the Zonza and Skills Workflow."
 sidebar_label: Zonza
 unlisted: true
 ---
@@ -15,6 +16,17 @@ in a new tab — a deep link, not a data exchange.
 The content below was copied from the HR-Link page and describes an employee feed that this
 integration does not provide. It is kept only for history. Either replace it with the real
 behaviour, or delete the file.
+
+**New lead (2026-08-11):** the exported `Sitecore` and `Swivle` Marketplace Workspaces (`Content Library`,
+`[Sitecore] [Integrations] Content Library v2 (Workspace) {Active}.json` and
+`[Swivle] [Integrations] Content Library v3 (Workspace) {Active}.json`) both call the same three Skills
+Workflow integration-workflow automations by id (`7f03ffb3-8a37-45b4-951a-f8369e98ad50`,
+`24737319-db17-4145-b9db-a01013f1e5fa`, and, in the Sitecore version only, `352a1423-6d00-4ac1-9045-ecf20d510763`)
+to search a DAM, list filters, and list users. The Sitecore version's user-list JavaScript names its response
+variable `zonzaResult`, and both workspaces query custom fields called `Zonza Reference` / `Zonza 4 ID` / `Zonza 5 ID`.
+None of the three automations were included in that export, so this doesn't confirm what they call — but it's
+a concrete lead that a real Zonza connection exists behind those Workspaces, contradicting "no Zonza
+integration was found." See [Sitecore](./sitecore) and [Swivle](./swivle) for what is exported.
 :::
 
 ### Description

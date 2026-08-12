@@ -1,6 +1,7 @@
 ---
 id: 2023-04-05-RCA-Mitigated-Blocked-Documents-West-Europe
 title: RCA - Mitigated - Blocked Documents - West Europe - 05-04-2023
+description: "On April 5, 2023, some customers reported erroneous behavior when accessing documents from our application in our West Europe region."
 sidebar_label: RCA - Mitigated - Blocked Documents - West Europe - 05-04-2023
 ---
 

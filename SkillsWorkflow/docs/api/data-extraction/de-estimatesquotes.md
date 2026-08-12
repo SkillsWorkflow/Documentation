@@ -1,6 +1,7 @@
 ---
 id: de-estimatesquotes
 title: DE-EstimatesQuotes
+description: "Extracts the estimate details."
 sidebar_label: EstimatesQuotes
 sidebar_position: 1
 ---

@@ -1,6 +1,7 @@
 ---
 id: de-taxes
 title: DE-Taxes
+description: "Extracts information about taxes."
 sidebar_label: Taxes
 sidebar_position: 1
 ---

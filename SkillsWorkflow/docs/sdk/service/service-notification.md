@@ -1,6 +1,7 @@
 ---
 id:  service-notification
 title: Notification
+description: "A sub namespace of Service, exclusive for notification operations ---"
 sidebar_label: Notification
 ---
 

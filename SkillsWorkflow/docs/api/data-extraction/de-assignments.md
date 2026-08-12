@@ -1,6 +1,7 @@
 ---
 id: de-assignments
 title: DE-Assignments
+description: "Extracts the teams of users associated with each document."
 sidebar_label: Assignments
 sidebar_position: 1
 ---

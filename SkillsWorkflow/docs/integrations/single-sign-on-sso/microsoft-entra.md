@@ -1,6 +1,7 @@
 ---
 id: microsoft-entra
 title: Microsoft Entra
+description: "In this article, you'll learn how to integrate with Microsoft Entra."
 sidebar_label: Microsoft Entra
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: 2022-06-06-RCA-Mitigated-Webhooks-Not-Firing-West-Europe
 title: RCA - Mitigated - Webhooks - Not Firing - West Europe - 06-06-2022
+description: "On 6 June 2022, between 14:57 UTC and 18:48 UTC, webhooks were not invoked in response to system events."
 sidebar_label: RCA - Mitigated - Webhooks - Not Firing - West Europe - 06-06-2022
 ---
 

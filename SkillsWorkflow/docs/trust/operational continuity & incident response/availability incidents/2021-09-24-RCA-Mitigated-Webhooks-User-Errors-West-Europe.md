@@ -1,6 +1,7 @@
 ---
 id:  2021-09-24-RCA-Mitigated-Webhooks-User-Errors-West-Europe
 title: RCA - Mitigated - Webhooks, User Errors - West Europe - 24-09-2021
+description: "Between 24 September 2021 - 12:29 UTC and 12:55 UTC, a very small subset of customers have experienced failures and extremely high latency on webhook and…"
 sidebar_label: RCA - Mitigated - Webhooks, User Errors - West Europe - 24-09-2021
 ---
 

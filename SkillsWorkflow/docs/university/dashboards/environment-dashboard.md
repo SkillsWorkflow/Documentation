@@ -1,6 +1,7 @@
 ---
 id:  environment-dashboard
 title: Environment
+description: "It is now possible to change the appearance of Skills Workflow."
 sidebar_label: 9. Environment Workspace
 sidebar_position: 9
 ---

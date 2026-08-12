@@ -1,5 +1,6 @@
 ---
 title: 'Sage'
+description: "Sage is where the agency's finance team works."
 sidebar_label: Sage
 sidebar_position: 1
 ---

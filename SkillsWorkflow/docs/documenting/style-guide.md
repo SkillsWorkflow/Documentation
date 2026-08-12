@@ -1,6 +1,7 @@
 ---
 id: style-guide
 title: Documentation Style Guide
+description: "You can write content using GitHub-flavored Markdown syntax."
 sidebar_label: Style Guide
 ---
 

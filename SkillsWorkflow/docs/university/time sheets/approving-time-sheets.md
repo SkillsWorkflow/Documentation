@@ -1,6 +1,7 @@
 ---
 id: approving-time-sheets
 title: Approving Timesheets
+description: "You can approve all the requested timesheets by clicking check icon in the right upper side."
 sidebar_label: 2. Approving Timesheets
 sidebar_position: 2
 ---

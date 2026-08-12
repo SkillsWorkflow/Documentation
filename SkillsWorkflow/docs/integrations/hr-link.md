@@ -1,6 +1,7 @@
 ---
 id: hr-link
 title: 'HR-Link'
+description: "HR-Link is the HR system of record."
 sidebar_label: HR-Link
 ---
 

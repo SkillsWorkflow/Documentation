@@ -1,6 +1,7 @@
 ---
 id: timesheet-timer
 title: Timesheet Timer
+description: "The Timesheet Timer lets you track the time you spend on a document in real time."
 sidebar_label: 5. Timesheet Timer
 sidebar_position: 5
 ---

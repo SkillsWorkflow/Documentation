@@ -1,0 +1,90 @@
+# Skills Workflow Documentation — https://documentation.skillsworkflow.com
+#
+# This is public product documentation. Search engines and AI assistants are
+# welcome to crawl and answer from it: a user who gets a correct answer inside
+# ChatGPT, Claude or Google is a user who did not have to raise a ticket.
+#
+# `/docs/to-review/` holds unreviewed content migrated from the old Knowledge
+# Base. It is deliberately excluded everywhere — sitemap, site search and here —
+# so it is never quoted back as current documentation.
+
+# --- Search engines ---------------------------------------------------------
+
+User-agent: Googlebot
+Disallow: /docs/to-review/
+Disallow: /search
+
+User-agent: Bingbot
+Disallow: /docs/to-review/
+Disallow: /search
+
+# --- AI assistants and answer engines ---------------------------------------
+
+# OpenAI — live retrieval for ChatGPT answers
+User-agent: OAI-SearchBot
+Disallow: /docs/to-review/
+Disallow: /search
+
+# OpenAI — fetches a page when a user shares or asks about a link
+User-agent: ChatGPT-User
+Disallow: /docs/to-review/
+Disallow: /search
+
+# OpenAI — training crawler
+User-agent: GPTBot
+Disallow: /docs/to-review/
+Disallow: /search
+
+# Anthropic — live retrieval for Claude answers
+User-agent: ClaudeBot
+Disallow: /docs/to-review/
+Disallow: /search
+
+# Anthropic — fetches a page on a user's request
+User-agent: Claude-User
+Disallow: /docs/to-review/
+Disallow: /search
+
+# Anthropic — training crawler
+User-agent: anthropic-ai
+Disallow: /docs/to-review/
+Disallow: /search
+
+# Google — controls use in Gemini and AI Overviews, separate from Googlebot
+User-agent: Google-Extended
+Disallow: /docs/to-review/
+Disallow: /search
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /docs/to-review/
+Disallow: /search
+
+# Apple Intelligence / Siri
+User-agent: Applebot-Extended
+Disallow: /docs/to-review/
+Disallow: /search
+
+# Meta AI
+User-agent: meta-externalagent
+Disallow: /docs/to-review/
+Disallow: /search
+
+# Common Crawl — the corpus behind many open models
+User-agent: CCBot
+Disallow: /docs/to-review/
+Disallow: /search
+
+# --- Everything else --------------------------------------------------------
+
+User-agent: *
+Disallow: /docs/to-review/
+Disallow: /search
+
+# --- Machine-readable indexes -----------------------------------------------
+
+Sitemap: https://documentation.skillsworkflow.com/sitemap.xml
+
+# Curated entry point for LLMs (https://llmstxt.org):
+#   https://documentation.skillsworkflow.com/llms.txt       — index of every page
+#   https://documentation.skillsworkflow.com/llms-full.txt  — full text, single file

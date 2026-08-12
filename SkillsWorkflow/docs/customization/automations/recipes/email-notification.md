@@ -1,6 +1,7 @@
 ---
 id: recipe-email-notification
 title: Send an email notification
+description: "When something happens in Skills Workflow, let people know by email — optionally pulling in extra detail first."
 sidebar_label: Email notification
 sidebar_position: 2
 ---

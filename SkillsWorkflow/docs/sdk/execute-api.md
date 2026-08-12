@@ -1,6 +1,7 @@
 ---
 id: execute-api
 title: "Execute API"
+description: "This method can be used inside any workspace."
 sidebar_label: Execute API
 ---
 

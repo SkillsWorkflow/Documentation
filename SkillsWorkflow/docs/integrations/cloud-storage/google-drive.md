@@ -1,6 +1,7 @@
 ---
 id:  google-drive
 title: Google Drive
+description: "The integration allows you to: --- When a file is uploaded into Google Drive, it is automatically available in Skills Workflow."
 sidebar_label: Google Drive
 ---
 

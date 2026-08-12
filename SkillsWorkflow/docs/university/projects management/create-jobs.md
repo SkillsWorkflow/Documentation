@@ -1,6 +1,7 @@
 ---
 id:  create-jobs
 title: Create Jobs
+description: "To create a new Job, navigate to the “Projects” module."
 sidebar_label: 2. Create Jobs
 sidebar_position: 2
 ---

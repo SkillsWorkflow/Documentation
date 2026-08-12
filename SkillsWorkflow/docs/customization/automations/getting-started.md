@@ -1,6 +1,7 @@
 ---
 id: getting-started
 title: Build your first automation
+description: "This walkthrough takes you from an empty screen to a working automation."
 sidebar_label: Build your first automation
 sidebar_position: 1
 ---

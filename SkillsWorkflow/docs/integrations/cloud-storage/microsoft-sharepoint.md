@@ -1,6 +1,7 @@
 ---
 id: microsoft-sharepoint
 title: Microsoft Sharepoint
+description: "Skills Workflow integrates with Sharepoint."
 sidebar_label: Microsoft Sharepoint
 ---
 

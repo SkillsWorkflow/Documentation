@@ -1,6 +1,7 @@
 ---
 id: client-api
 title: Client API
+description: "The Client API is designed for creating and updating documents in Skills Workflow."
 sidebar_label: Client API
 sidebar_position: 0
 ---

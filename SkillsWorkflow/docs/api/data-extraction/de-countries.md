@@ -1,6 +1,7 @@
 ---
 id: de-countries
 title: DE-Countries
+description: "Extracts the list of countries."
 sidebar_label: Countries
 sidebar_position: 1
 ---

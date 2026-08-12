@@ -1,6 +1,7 @@
 ---
 id: de-suppliers
 title: DE-Suppliers
+description: "Extracts suppliers for integration purposes."
 sidebar_label: Suppliers
 sidebar_position: 1
 ---

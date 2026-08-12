@@ -1,6 +1,7 @@
 ---
 id:  resource-allocation
 title: Resource Allocation
+description: "The Resource Allocation module provides multiple scheduling views tailored to different planning needs: --- Legend: Supported &nbsp;&nbsp; Not supported…"
 sidebar_label: 4. Resource Allocation
 sidebar_position: 4
 ---
