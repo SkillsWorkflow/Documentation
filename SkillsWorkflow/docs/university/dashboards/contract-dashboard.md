@@ -1,6 +1,7 @@
 ---
 id:  contract-dashboard
 title: Contract
+description: "Dashboards are a powerful feature used to quickly support decisions related to a specific contract."
 sidebar_label: 3. Contract Dashboards
 sidebar_position: 3
 ---

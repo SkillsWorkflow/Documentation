@@ -1,6 +1,7 @@
 ---
 id: multi-approving-time-sheets
 title: Time sheet Approval levels
+description: "If the approval type is the same for all clients, the timesheet approval type should be selected at the company level."
 sidebar_label: 4. Time sheet Approval levels
 sidebar_position: 4
 ---

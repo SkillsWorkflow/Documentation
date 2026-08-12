@@ -1,6 +1,7 @@
 ---
 id: de-expenses
 title: DE-Expenses
+description: "Extracts expenses for integration purposes."
 sidebar_label: Expenses
 sidebar_position: 1
 ---

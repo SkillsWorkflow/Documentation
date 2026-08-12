@@ -1,6 +1,7 @@
 ---
 id:  list-view
 title: Manage List View
+description: "By default you have the following sub-lists: You need to expand your view in order to be able to see all the available fields."
 sidebar_label: 6. Manage your List View
 sidebar_position: 6
 ---

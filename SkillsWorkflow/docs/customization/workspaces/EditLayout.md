@@ -1,6 +1,7 @@
 ---
 id: EditLayout
 title: "Edit Layout"
+description: "On this page you will find how to customize the layout of the workspace."
 sidebar_label: Edit Layout
 hide_table_of_contents: true
 ---

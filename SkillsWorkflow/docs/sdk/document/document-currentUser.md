@@ -1,6 +1,7 @@
 ---
 id: currentUser
 title: Current User
+description: "A sub namespace of Document, exclusive for the current logged user operations ---"
 sidebar_label: Current User
 
 ---

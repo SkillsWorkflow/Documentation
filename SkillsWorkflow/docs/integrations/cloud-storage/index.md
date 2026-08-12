@@ -1,6 +1,7 @@
 ---
 id: cloud-storage
 title: Cloud Storage
+description: "Skills Workflow supports integrations with several cloud-based file storage platforms, allowing users to access, preview, and attach documents directly within…"
 sidebar_label: Cloud Storage
 ---
 

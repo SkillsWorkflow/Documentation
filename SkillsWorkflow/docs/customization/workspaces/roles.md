@@ -1,6 +1,7 @@
 ---
 id: Roles
 title: "Roles"
+description: "On this page you will find how to add roles to your workspace."
 sidebar_label: Roles
 hide_table_of_contents: true
 ---

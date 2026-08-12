@@ -1,6 +1,7 @@
 ---
 id: gsp-dynamic-timesheet-importer
 title: 'GSP Dynamics Timesheet Importer'
+description: "Where timesheets are recorded in Dynamics rather than in Skills Workflow, the agency still needs that time visible inside the platform — next to the projects,…"
 sidebar_label: GSP Timesheet Importer
 ---
 

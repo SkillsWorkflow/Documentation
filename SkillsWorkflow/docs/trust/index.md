@@ -1,6 +1,7 @@
 ---
 id: home
 title: Home
+description: "Welcome to the Skills Workflow Trust Page."
 sidebar_label: Home
 sidebar_position: 1
 ---

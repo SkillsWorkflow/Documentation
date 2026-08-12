@@ -1,8 +1,10 @@
 ---
 id: 2026-05-11-RCA-Mitigated-Production-Outage-East-US
 title: RCA - Mitigated - Production Outage East US - 11-05-2026
+description: "----------------------------------------------------------------"
 sidebar_label: RCA - Mitigated - Production Outage East US - 11-05-2026
--------------------------------------------------------------------
+---
+----------------------------------------------------------------
 
 ### Impact summary
 

@@ -1,6 +1,7 @@
 ---
 id: de-purchaseorders
 title: DE-PurchaseOrders
+description: "Extracts purchase orders data from the system."
 sidebar_label: PurchaseOrders
 sidebar_position: 1
 ---

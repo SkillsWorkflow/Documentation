@@ -1,6 +1,7 @@
 ---
 id: create-holidays  
 title: Holidays
+description: "To create a holiday, go to “Maintenance” and look for the “Holiday”."
 sidebar_label: Register Holidays
 sidebar_position: 5
 ---

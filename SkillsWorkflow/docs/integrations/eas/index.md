@@ -1,5 +1,6 @@
 ---
 title: 'EAS'
+description: "EAS holds the agency's people and commercial master data."
 sidebar_label: EAS
 sidebar_position: 1
 ---

@@ -1,6 +1,7 @@
 ---
 id: de-services
 title: DE-Services
+description: "Extracts the existing services."
 sidebar_label: Services
 sidebar_position: 1
 ---

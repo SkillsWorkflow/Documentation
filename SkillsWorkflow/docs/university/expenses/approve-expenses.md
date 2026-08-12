@@ -1,6 +1,7 @@
 ---
 id:  1-approve-expenses
 title: Approve Expenses
+description: "Change the expense sheet stage."
 sidebar_label: 3. Approve Expenses
 sidebar_position: 3
 ---

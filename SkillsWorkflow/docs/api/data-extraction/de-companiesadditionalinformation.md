@@ -1,6 +1,7 @@
 ---
 id: de-companiesadditionalinformation
 title: DE-CompaniesAdditionalInformation
+description: "Extracts the custom fields associated with the companies."
 sidebar_label: CompaniesAdditionalInformation
 sidebar_position: 1
 ---

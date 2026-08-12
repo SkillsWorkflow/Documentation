@@ -1,6 +1,7 @@
 ---
 id: allow-inline
 title: Allow Inline Editing
+description: "On this page you will find how to use inline editing."
 sidebar_label: Allow inline editing
 ---
 

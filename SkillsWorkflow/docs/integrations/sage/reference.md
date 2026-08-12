@@ -1,5 +1,6 @@
 ---
 title: "Sage — Technical Reference"
+description: "This is the Documentation of how the Integration between the Sage and Skills Workflow."
 sidebar_label: Technical Reference
 sidebar_position: 2
 ---

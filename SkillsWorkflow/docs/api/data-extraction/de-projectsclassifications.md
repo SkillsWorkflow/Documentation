@@ -1,6 +1,7 @@
 ---
 id: de-projectsclassifications
 title: DE-ProjectsClassifications
+description: "Extract project classifications."
 sidebar_label: ProjectsClassifications
 sidebar_position: 1
 ---

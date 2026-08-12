@@ -1,6 +1,7 @@
 ---
 id: 2026-04-16-RCA-Mitigated-Document-Forms-West-Europe
 title: RCA - Mitigated - Document Forms - West Europe - 16-04-2026
+description: "On 16 April 2026, after a product installation, some customers experienced issues when opening document creation forms."
 sidebar_label: RCA - Mitigated - Document Forms - West Europe - 16-04-2026
 ---
 

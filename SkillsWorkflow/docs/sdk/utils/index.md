@@ -1,6 +1,7 @@
 ---
 id: utils
 title: Utils
+description: "With this namespace, you can quickly access methods that perform common operations."
 sidebar_label: Utils
 ---
 

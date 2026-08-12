@@ -1,6 +1,7 @@
 ---
 id:  ui-icons
 title: Icons
+description: "A sub namespace of UI, exclusive for getting icons and files icon classes ---"
 sidebar_label: Icons
 ---
 

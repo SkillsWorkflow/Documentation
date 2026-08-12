@@ -1,6 +1,7 @@
 ---
 id: actions
 title: Actions
+description: "This section describes the action types available in an Automation Workflow."
 sidebar_label: Actions
 sidebar_position: 2
 ---

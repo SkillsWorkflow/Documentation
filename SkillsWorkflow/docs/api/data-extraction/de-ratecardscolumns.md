@@ -1,6 +1,7 @@
 ---
 id: de-ratecardscolumns
 title: DE-RateCardsColumns
+description: "Extraction of rate cards' columns."
 sidebar_label: RateCardsColumns
 sidebar_position: 1
 ---

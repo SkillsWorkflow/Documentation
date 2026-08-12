@@ -1,5 +1,6 @@
 ---
 title: "CETA — Technical Reference"
+description: "There was a need to exchange data between CETA and Skills Workflow --- Service REST."
 sidebar_label: Technical Reference
 sidebar_position: 2
 ---

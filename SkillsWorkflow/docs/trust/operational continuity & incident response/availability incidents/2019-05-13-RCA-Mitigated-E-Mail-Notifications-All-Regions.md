@@ -1,6 +1,7 @@
 ---
 id:  2019-05-13-RCA-Mitigated-E-Mail-Notifications-All-Regions
 title: RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019
+description: "Between 13 May 2019 and 14 May 2019, some users failed to receive a notification via e-mail across all regions."
 sidebar_label: RCA - Mitigated - E-Mail Notifications - All Regions - 13-05-2019
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: vbs-timesheet
 title: 'VBS Timesheet'
+description: "This integration is separate from the VBS employee integration."
 sidebar_label: VBS Timesheet
 ---
 
@@ -98,6 +99,19 @@ The integration is configured per company, from the integration settings area in
 Every run writes to the integration log inside Skills Workflow, at the level of detail chosen in **Log Level Type**. The log is cleared at the start of each run.
 
 An entry that VBS rejects is recorded with the reason VBS gave, and a summary e-mail is sent to the address configured in **Administrator Mail**. Rejected entries do not stop the run — the remaining entries are still sent — and they are retried on the following run, so a transient problem in VBS resolves itself once the connection is back.
+
+---
+
+### Marketplace Export: Cost Centre Workspace
+
+A separate Marketplace component, **`VBS Time Sheet Cost Centre`** (Workspace, v3, Active — `[VBS] [Integrations] VBS Time Sheet Cost Centre v3 (Workspace) {Active} - Workspace.json`), implements a different mechanism from the settings-driven push described above: an in-app query view that produces a VBS-ready export row per timesheet entry, apparently for a manual/Excel-based hand-off rather than the automatic API push. Its own description (stored in the component, in Portuguese) frames it as "Business rules for the VBS Excel integration."
+
+- The query computes, per timesheet entry: the user's and client's external ids, the destination **Company** and **Division** codes, and a **CostCenter**, using lookup tables `LineofBusiness` and `DestinationCostCenter`.
+- Cost-center routing follows the discipline (department type) and the project's business line, with exceptions: divisions flagged "Don't Use Line of Business" (e.g. a central production division) and clients classified `InterCompany` instead use the user's own cost center and branch; if a project has no business line, the client's is used instead.
+- Freelancer-type users are excluded.
+- Only approved hours (`Aprovado = 'S'`) are included, and the row carries a fixed `cod_system = '24'` and `TypeHour = 'D'`.
+
+This looks like a client-specific customization layered on top of, or as an alternative to, the native VBS Timesheet integration described elsewhere on this page — not determinable from the export how the two relate operationally (e.g. whether this Workspace is used instead of the API push for this client, or as a manual reconciliation/audit view).
 
 ---
 

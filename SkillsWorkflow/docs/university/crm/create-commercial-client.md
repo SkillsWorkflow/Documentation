@@ -1,6 +1,7 @@
 ---
 id: create-commercial-client
 title: Create a commercial client
+description: "To create a new commercial client you must go to the “Maintenance” module and to the sub-list “Clients”."
 sidebar_label: 1. Create commercial client
 sidebar_position: 1
 ---

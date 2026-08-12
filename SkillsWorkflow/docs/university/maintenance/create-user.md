@@ -1,6 +1,7 @@
 ---
 id:  create-user
 title: Create User
+description: "Navigate to Maintenance and enter the “User” module To create a new user there are two ways"
 sidebar_label: Create User
 sidebar_position: 1 
 ---

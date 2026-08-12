@@ -1,6 +1,7 @@
 ---
 id: adnet
 title: 'AdnNet'
+description: "AdnNet is the agency's administrative and financial back office."
 sidebar_label: AdnNet
 ---
 

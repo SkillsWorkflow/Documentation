@@ -1,6 +1,7 @@
 ---
 id:  my-tasks
 title: My Tasks
+description: "Once you complete all the fields click on the option 'check'."
 sidebar_label: 9. My Tasks
 sidebar_position: 9
 ---

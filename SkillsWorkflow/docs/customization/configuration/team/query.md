@@ -2,6 +2,7 @@
 id: query
 
 title: Query
+description: "On this page you will find how to create an action of the type Team based in Data Source."
 sidebar_label: Query
 hide_table_of_contents: true
 ---

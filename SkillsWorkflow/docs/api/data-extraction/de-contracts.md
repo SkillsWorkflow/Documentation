@@ -1,6 +1,7 @@
 ---
 id: de-contracts
 title: DE-Contracts
+description: "Extracts contracts information."
 sidebar_label: Contracts
 sidebar_position: 1
 ---

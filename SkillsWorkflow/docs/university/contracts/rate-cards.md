@@ -1,6 +1,7 @@
 ---
 id:  rate-cards
 title: Create Rate Cards
+description: "Rate Cards are prices/costs for typology groups and/or users."
 sidebar_label: 1. Create Rate Cards
 sidebar_position: 1
 ---

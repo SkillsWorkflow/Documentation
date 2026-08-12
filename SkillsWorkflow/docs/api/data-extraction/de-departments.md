@@ -1,6 +1,7 @@
 ---
 id: de-departments
 title: DE-Departments
+description: "Extracts the list of departments."
 sidebar_label: Departments
 sidebar_position: 1
 ---

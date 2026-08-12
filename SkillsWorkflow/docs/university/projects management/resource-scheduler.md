@@ -1,6 +1,7 @@
 ---
 id:  resource-scheduler
 title: Resource Scheduler 
+description: "Planning your resources helps you to make your availability more effective by monitoring your activities."
 sidebar_label: 3. Resource Scheduler
 sidebar_position: 3
 ---

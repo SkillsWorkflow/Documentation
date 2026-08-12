@@ -1,6 +1,7 @@
 ---
 id: mms
 title: 'MMS'
+description: "MMS holds the agency's master data — the official list of clients, products, suppliers, services and people."
 sidebar_label: MMS
 ---
 

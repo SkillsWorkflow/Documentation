@@ -1,6 +1,7 @@
 ---
 id: leave-dashboard
 title: Leaves
+description: "When scheduling our own leaves or approving leaves submitted by our subordinates, it's important to know if other employees in the company are also on leave…"
 sidebar_label: 6. Leaves Dashboard
 sidebar_position: 6
 ---

@@ -1,6 +1,7 @@
 ---
 id:  gantt-chart
 title: Gantt Chart
+description: "The Gantt view will give a more visual representation of all the jobs of a Project and how they are related to one another through time."
 sidebar_label: 5. Gantt Chart
 sidebar_position: 5
 ---

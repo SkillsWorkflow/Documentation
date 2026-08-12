@@ -1,6 +1,7 @@
 ---
 id: users
 title: Users
+description: "In this article, we will guide you through the simple steps necessary to efficiently import user data, ensuring a seamless integration process."
 sidebar_label: Users
 sidebar_position: 8
 ---

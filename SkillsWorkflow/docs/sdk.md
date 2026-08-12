@@ -1,6 +1,7 @@
 ---
 id: sdk
 title: SDK
+description: "The Skills Workflow SDK provides a set of namespaces with utility functions accessible through the global SW object."
 sidebar_position: 0
 ---
 

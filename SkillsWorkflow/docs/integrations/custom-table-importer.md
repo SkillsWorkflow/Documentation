@@ -1,6 +1,7 @@
 ---
 id: custom-table-importer
 title: 'Custom Table Importer'
+description: "Agencies regularly need data inside Skills Workflow that does not come from any connected system — a rate card, a media plan, a budget breakdown, a list from…"
 sidebar_label: Custom Table Importer
 ---
 

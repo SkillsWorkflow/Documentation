@@ -1,6 +1,7 @@
 ---
 id: create-commercial-product
 title: Create a commercial product
+description: "To create a new commercial product you must go to the “Maintenance” module and to the sub-list “Clients”."
 sidebar_label: 3. Create commercial product
 sidebar_position: 3
 ---

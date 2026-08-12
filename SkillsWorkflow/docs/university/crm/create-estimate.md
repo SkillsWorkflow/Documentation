@@ -1,6 +1,7 @@
 ---
 id: create-estimate
 title: Create estimate
+description: "Estimates can either be linked to Fees or created directly under a Company, Leads, or Activity."
 sidebar_label: 6. Create estimate
 sidebar_position: 6
 ---

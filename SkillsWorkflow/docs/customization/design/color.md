@@ -1,6 +1,7 @@
 ---
 id: color
 title: Color Guidelines
+description: "This colors are mainly used to identify our brand and convey important actions."
 sidebar_label: Color
 sidebar_position: 10
 ---

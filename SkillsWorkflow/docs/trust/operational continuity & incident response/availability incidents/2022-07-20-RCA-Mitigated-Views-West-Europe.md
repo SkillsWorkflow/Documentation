@@ -1,6 +1,7 @@
 ---
 id:  2022-07-20-RCA-Mitigated-Views-West-Europe
 title: RCA - Mitigated - Views - West Europe - 20-07-2022
+description: "On 20 July 2022, between 08:50 UTC and 09:30 UTC, several users reported issues when logging on with Single Sign-On or accessing different pages in Skills…"
 sidebar_label: RCA - Mitigated - Views - West Europe - 20-07-2022
 ---
 

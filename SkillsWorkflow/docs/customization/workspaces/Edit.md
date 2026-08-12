@@ -1,6 +1,7 @@
 ---
 id: Edit Workspace
 title: "Definition"
+description: "On this page you will find how to edit the workspaces."
 sidebar_label: Definition
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: transitions
 title: Transitions
+description: "A transition defines a path that moves a document from one stage to another within the same workflow."
 sidebar_label: Transitions
 sidebar_position: 4
 ---

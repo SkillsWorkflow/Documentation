@@ -1,6 +1,7 @@
 ---
 id: design-mode
 title: Design mode guidelines
+description: "Design mode shows the Workspace in editing mode."
 sidebar_label: Design mode
 sidebar_position: 9
 ---

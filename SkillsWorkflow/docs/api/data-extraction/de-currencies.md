@@ -1,6 +1,7 @@
 ---
 id: de-currencies
 title: DE-Currencies
+description: "Extracts the list of currencies."
 sidebar_label: Currencies
 sidebar_position: 1
 ---

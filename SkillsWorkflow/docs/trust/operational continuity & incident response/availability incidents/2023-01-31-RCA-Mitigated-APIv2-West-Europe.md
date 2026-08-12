@@ -1,6 +1,7 @@
 ---
 id: 2023-01-31-RCA-Mitigated-APIv2-West-Europe
 title: RCA - Mitigated - APIv2 - West Europe - 31-01-2023
+description: "On 31 January 2023, between 08:10 UTC and 08:22 UTC, some customers experienced errors or delays accessing the Web Application or API v2 in our West Europe…"
 sidebar_label: RCA - Mitigated - APIv2 - West Europe - 31-01-2023
 ---
 

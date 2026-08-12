@@ -1,6 +1,7 @@
 ---
 id: typology-groups
 title: Typology groups
+description: "In this article, we will guide you through the simple steps required to efficiently import typology group data, ensuring a smooth onboarding process."
 sidebar_label: Typology groups
 sidebar_position: 7
 ---

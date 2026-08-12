@@ -1,6 +1,7 @@
 ---
 id:  2022-06-06-RCA-Mitigated-Proofing-Automations-West-Europe
 title: RCA - Mitigated - Proofing Automations - West Europe - 06-06-2022
+description: "Between 23 March 16:28 UTC and 31 March 15:29, users reported some tasks getting stuck at the “Proof ID Generated” stage despite of already having Proofs…"
 sidebar_label: RCA - Mitigated - Proofing Automations - West Europe - 06-06-2022
 ---
 

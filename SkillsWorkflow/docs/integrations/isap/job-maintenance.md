@@ -1,5 +1,6 @@
 ---
 title: Job Maintenance
+description: "For what the iSAP integration covers overall — employees, clients, products and the job exchange — see iSAP."
 sidebar_label: Job Maintenance
 sidebar_position: 2
 ---

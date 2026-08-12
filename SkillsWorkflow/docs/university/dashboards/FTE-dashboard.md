@@ -1,6 +1,7 @@
 ---
 id:  fte-dashboard
 title: FTE
+description: "FTE which stands for Full-Time Equivalent is a unit that measures the workload of an employee."
 sidebar_label: 10. FTE
 sidebar_position: 10
 ---

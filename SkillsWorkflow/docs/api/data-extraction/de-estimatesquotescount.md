@@ -1,6 +1,7 @@
 ---
 id: de-estimatesquotescount
 title: DE-EstimatesQuotesCount
+description: "Counts the occurrences of quotes."
 sidebar_label: EstimatesQuotesCount
 sidebar_position: 1
 ---

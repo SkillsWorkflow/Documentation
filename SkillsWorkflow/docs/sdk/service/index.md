@@ -1,6 +1,7 @@
 ---
 id: service
 title: Service
+description: "The SW. Service namespace provides grouped access to business-level services in the Skills Workflow SDK."
 sidebar_label: Service
 ---
 

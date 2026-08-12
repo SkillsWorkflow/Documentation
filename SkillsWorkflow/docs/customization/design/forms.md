@@ -1,6 +1,7 @@
 ---
 id: forms
 title: Form guidelines
+description: "Forms have visual elements to easily identify each field."
 sidebar_label: Forms
 sidebar_position: 6
 ---

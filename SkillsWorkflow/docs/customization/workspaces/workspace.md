@@ -1,6 +1,7 @@
 ---
 id: craft-workspaces
 title: "Workspaces"
+description: "Click on the add icon to open the creation pop-up."
 sidebar_label: Workspaces
 hide_table_of_contents: true
 ---

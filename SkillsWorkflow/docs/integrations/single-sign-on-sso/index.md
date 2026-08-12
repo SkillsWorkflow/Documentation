@@ -1,6 +1,7 @@
 ---
 id: sso-configuration
 title: SSO Configuration
+description: "Skills Workflow supports SSO using the SAML 2."
 sidebar_label: SSO Configuration
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: de-leavesdeleted
 title: DE-LeavesDeleted
+description: "Extracts deleted leaves using the parameter ModifiedFrom to filter data on the ModifiedOn field."
 sidebar_label: LeavesDeleted
 sidebar_position: 1
 ---

@@ -1,5 +1,6 @@
 ---
 title: 'CETA'
+description: "CETA is the agency's job and financial back office."
 sidebar_label: CETA
 sidebar_position: 1
 ---

@@ -1,6 +1,7 @@
 ---
 id: branding
 title: " "
+description: "With this namespace, you can quickly provide methods to manipulate the tenant branding."
 sidebar_label: Branding
 ---
 

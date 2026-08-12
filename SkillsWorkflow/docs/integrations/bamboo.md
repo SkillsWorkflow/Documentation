@@ -1,8 +1,15 @@
 ---
 id: bamboo
 title: 'BambooHR'
+description: "BambooHR is where the agency's people and their time off are managed."
 sidebar_label: BambooHR
 ---
+
+:::caution Mechanism corrected, and two of three jobs are currently disabled
+This page previously described the integration as event-driven, firing off a BambooHR webhook. The exported components (Module `BambooHR`) show three independently **scheduled, daily-polling** automations instead — each calling BambooHR's `/v1/employees/changed?since=...&type=...` endpoint for what changed since yesterday. No webhook file exists anywhere in this export. The "Data Exchange Technology" section below has been corrected accordingly.
+
+More importantly: of the three, **only `BambooHR - Daily Employee Update` has its scheduler switched on** (`isActive: true`). `BambooHR - Daily Create Employee` and `BambooHr - Leaves Update` are both exported with `isActive: false` on their scheduler — meaning, as exported, new employees are not being created automatically and leave is not being synced, only changes to existing users' fields are. If that's not the intended current state, it needs fixing in the platform, not in this page.
+:::
 
 ### Description
 
@@ -19,14 +26,17 @@ The second one is what makes the difference day to day. Resourcing, scheduling, 
 
 ### Data Exchange Technology
 
-The integration is delivered as a **Marketplace automation**, not as a scheduled job. It is event-driven:
+The integration is delivered as three separate **Marketplace automations**, each on its own daily schedule — not event-driven:
 
-1. A change in BambooHR — a new employee, or a time-off request being created or decided — fires a webhook.
-2. The webhook triggers the automation in Skills Workflow.
-3. The automation calls the BambooHR API to read the current state of that employee.
-4. Skills Workflow is updated to match.
+| Automation | Role | Scheduler (as exported) |
+| --- | --- | --- |
+| BambooHR - Daily Create Employee | New employees changed/inserted in BambooHR since yesterday → created as Users | **Disabled** (`isActive: false`) |
+| BambooHR - Daily Employee Update | Employees updated in BambooHR since yesterday → matching User fields updated | **Active** |
+| BambooHr - Leaves Update | Time-off requests for the company's close-vacations period → leave created/updated/deleted in Skills Workflow | **Disabled** (`isActive: false`) |
 
-Because it reads the current state rather than trusting the event payload, an event that arrives late or out of order still leaves Skills Workflow correct.
+Each run calls BambooHR's "changed employees" endpoint (`GET /v1/employees/changed?since=<yesterday>&type=...`), then for every id returned fetches that employee's full record (`GET /v1/employees/{id}?fields=...`) and applies it. Reading the current state rather than trusting the event/list payload means a run that's late or picks up the same id twice still leaves Skills Workflow correct.
+
+Source: `[BambooHR] [Integrations] Daily Create Employee v17 (Automation) {Active}.json`, `[BambooHR] [Integrations] Daily Employee Update v15 (Automation) {Active}.json`, `[BambooHR] [Integrations] Leaves Update v17 (Automation) {Active}.json`, plus 8 supporting named queries (`BambooHr-GetSkillsInformation`, `BambooHr-GerUserByExternalId`, `BambooHr-UserExists`, `BambooHr-GetSupervisorByExternalId`, `BambooHr-GetsupervisorByEmail`, `BambooHr-GetUserLeaveInformation`, `BambooHr-GetUserLeavesForYear`, `BambooHr-GetCompanyCloseVacationsPeriod`).
 
 ---
 
@@ -72,22 +82,20 @@ Leave is matched per employee and per day, so re-running the automation does not
 
 ### What the Agency Needs to Provide
 
-- A BambooHR account with API access, the company domain, and an API key.
-- Webhooks configured in BambooHR for employee changes and time-off changes, pointing at the Skills Workflow automation.
+- A BambooHR account with API access, the company domain, and an API key (read via a `Config` configuration key referenced by all three automations — its exact name and value are not part of the export).
 - Confirmation of which Skills Workflow leave types the BambooHR time-off types map onto.
 
 ---
 
 ### Package Contents
 
-To enable this integration, install the package from the Marketplace. It contains the automation workflow that performs the sync, and the named query used to look up existing leave before creating new records.
+To enable this integration, install the package from the Marketplace. As exported it contains three automations (`BambooHR - Daily Create Employee`, `BambooHR - Daily Employee Update`, `BambooHr - Leaves Update`) and 8 supporting named queries — not the single automation + single query previously documented here.
 
 ---
 
 ### Security
 
-- The automation endpoint is public but requires a **shared key**.
-- The shared key is set by the agency and is unique to it.
+- All three automations poll BambooHR outbound, on a schedule — there's no public/inbound endpoint or shared key involved in what's exported (the previous "public endpoint with a shared key" description doesn't match; not determinable whether an older version worked that way).
 - All data is encrypted in transit and at rest.
 - PII, and therefore GDPR compliance for the source data, remains controlled by BambooHR.
 - The BambooHR API key is stored in Skills Workflow as a configuration key, not inside the automation.

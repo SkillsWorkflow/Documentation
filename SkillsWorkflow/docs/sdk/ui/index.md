@@ -1,6 +1,7 @@
 ---
 id: ui
 title: UI
+description: "With this namespace, you can quickly provide methods to show UI."
 sidebar_label: UI
 ---
 

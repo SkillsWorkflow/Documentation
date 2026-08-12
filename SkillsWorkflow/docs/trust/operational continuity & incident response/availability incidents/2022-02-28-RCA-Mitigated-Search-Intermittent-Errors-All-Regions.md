@@ -1,6 +1,7 @@
 ---
 id:  2022-02-28-RCA-Mitigated-Search-Intermittent-Errors-All-Regions
 title: RCA - Mitigated - Search - Intermittent Errors - All Regions - 28-02-2022
+description: "Between 28 February 2022 0:00 UTC and 3 March 2022 12:00 UTC, some users experienced intermittent errors while using the search feature."
 sidebar_label: RCA - Mitigated - Search - Intermittent Errors - All Regions - 28-02-2022
 ---
 

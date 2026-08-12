@@ -1,6 +1,7 @@
 ---
 id: tagbox
 title: TagBox
+description: "On this page you will find TagBoxs examples as well as how to setup a TagBox."
 sidebar_label: TagBox
 hide_table_of_contents: true
 ---

@@ -1,6 +1,7 @@
 ---
 id: de-estimatescount
 title: DE-EstimatesCount
+description: "Gets the count of estimates for the given filters."
 sidebar_label: EstimatesCount
 sidebar_position: 1
 ---

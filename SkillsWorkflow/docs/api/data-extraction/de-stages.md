@@ -1,6 +1,7 @@
 ---
 id: de-stages
 title: DE-Stages
+description: "Extracts the list of stages of the workflows."
 sidebar_label: Stages
 sidebar_position: 1
 ---

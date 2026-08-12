@@ -199,7 +199,17 @@ module.exports = {
         sitemap: {
           changefreq: 'daily',
           priority: 0.5,
-          ignorePatterns: ['/tags/**', '/search'],
+          // `to-review` holds unreviewed content migrated from the old Knowledge Base.
+          // It is hidden from the sidebar via className, but that does nothing for
+          // crawlers — keep it out of the sitemap so search engines and AI crawlers
+          // do not surface it as current documentation.
+          ignorePatterns: [
+            '/tags/**',
+            '/search',
+            '**/to-review/**',
+            '**/docs/integrations/zonza',
+            '**/docs/integrations/cloud-storage/box_old'
+          ],
           filename: 'sitemap.xml'
         }
       }
@@ -215,7 +225,12 @@ module.exports = {
         // This plugin does not honour Docusaurus `unlisted: true` — it indexes the built
         // HTML regardless of the noindex tag. Any page marked unlisted must also be listed
         // here, or it stays findable through site search. Patterns cover every locale.
+        //
+        // `to-review` is excluded because it holds unreviewed content migrated from the
+        // old Knowledge Base. Leaving it indexed means site search — and any LLM reading
+        // /search-doc.json — can quote stale material back as current documentation.
         excludeRoutes: [
+          '**/to-review/**',
           '**/docs/integrations/zonza',
           '**/docs/integrations/cloud-storage/box_old'
         ]

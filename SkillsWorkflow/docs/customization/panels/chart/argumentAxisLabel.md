@@ -1,6 +1,7 @@
 ---
 id: argument-axis-label
 title: Argument Axis
+description: "A property used to set chart's argument axis in a workspace."
 sidebar_label: Argument Axis
 ---
 

@@ -1,6 +1,7 @@
 ---
 id:  adp
 title: 'ADP'
+description: "This is the Documentation of how the Integration between the ADP and Skills Workflow."
 sidebar_label: ADP
 ---
 

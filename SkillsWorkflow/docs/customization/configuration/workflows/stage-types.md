@@ -1,6 +1,7 @@
 ---
 id: stage-types
 title: Stage Types
+description: "A stage type is the classification attached to a stage."
 sidebar_label: Stage Types
 sidebar_position: 3
 ---

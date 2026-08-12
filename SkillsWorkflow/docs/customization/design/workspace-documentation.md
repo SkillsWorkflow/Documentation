@@ -1,6 +1,7 @@
 ---
 id: workspace-documentation
 title: Workspace Documentation Guidelines
+description: "Every Workspace should have a documentation template to guide users on how to use it."
 sidebar_label: Workspace Documentation
 sidebar_position: 14
 ---

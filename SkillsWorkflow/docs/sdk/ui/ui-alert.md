@@ -1,6 +1,7 @@
 ---
 id:  ui-alert
 title: ' '
+description: "A sub namespace of UI, exclusive for alert operations ---"
 sidebar_label: Alert
 ---
 

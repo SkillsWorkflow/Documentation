@@ -1,6 +1,7 @@
 ---
 id: de-timesheets
 title: DE-TimeSheets
+description: "Extracts the time entered in time sheets."
 sidebar_label: TimeSheets
 sidebar_position: 1
 ---

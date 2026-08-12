@@ -1,6 +1,7 @@
 ---
 id: de-estimatesquotesmonthcount
 title: DE-EstimatesQuotesMonthCount
+description: "Gets the count of estimate quotes for the given filters."
 sidebar_label: EstimatesQuotesMonthCount
 sidebar_position: 1
 ---

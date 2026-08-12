@@ -1,6 +1,7 @@
 ---
 id: create-articles
 title: How to create Articles in Github
+description: "Sign or register your Github account and navigate to Skills Workflow Organization."
 sidebar_label: How to create Articles in Github
 ---
 

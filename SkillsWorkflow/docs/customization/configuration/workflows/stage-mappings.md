@@ -1,6 +1,7 @@
 ---
 id: stage-mappings
 title: Stage Mappings
+description: "A stage mapping creates an automatic link between stages across different workflows."
 sidebar_label: Stage Mappings
 sidebar_position: 5
 ---

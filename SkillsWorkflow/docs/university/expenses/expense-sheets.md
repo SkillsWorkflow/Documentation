@@ -1,6 +1,7 @@
 ---
 id:  expense-sheets
 title: Expense Sheets
+description: "It's possible to create and manage expenses relative to projects and other activities."
 sidebar_label: 1. Create Expense Sheets
 sidebar_position: 1
 ---

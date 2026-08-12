@@ -1,6 +1,7 @@
 ---
 id: 2023-01-02-RCA-Mitigated-APIv2-West-Europe
 title: RCA - Mitigated - APIv2 - West Europe - 02-01-2023
+description: "On 02 January 2023, between 11:00 UTC and 12:00 UTC, some customers experienced timeout errors when moving documents to a different status or creating new…"
 sidebar_label: RCA - Mitigated - APIv2 - West Europe - 02-01-2023
 ---
 

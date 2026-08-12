@@ -1,6 +1,7 @@
 ---
 id: application-popup
 title: " "
+description: "A sub namespace of Application, exclusive for popup operations ---"
 sidebar_label: Popup
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: webhooks
 title: Webhooks
+description: "Webhooks let you react to events inside Skills Workflow in real time — no polling needed."
 sidebar_label: Webhooks
 sidebar_position: 3
 ---

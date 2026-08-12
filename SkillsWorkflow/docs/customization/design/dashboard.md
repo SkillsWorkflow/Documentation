@@ -1,6 +1,7 @@
 ---
 id: dashboard
 title: Dashboard guidelines
+description: "Margins workspace shows the balance by company between planned and remaining time."
 sidebar_label: Dashboard
 sidebar_position: 8
 ---

@@ -1,6 +1,7 @@
 ---
 id: edit-profile
 title: Edit Profile
+description: "On the Skill Workflow Home page, at the top of the page you will see your name."
 sidebar_label: Edit Profile
 sidebar_position: 3
 ---

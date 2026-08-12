@@ -1,6 +1,7 @@
 ---
 id: endpoint
 title: Endpoint
+description: "On this page you will find how to create a workspace using an Endpoint as DataSource Basic Usage Example"
 sidebar_label: Endpoint
 ---
 

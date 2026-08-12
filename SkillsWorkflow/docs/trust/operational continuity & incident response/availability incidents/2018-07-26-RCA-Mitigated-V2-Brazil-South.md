@@ -1,6 +1,7 @@
 ---
 id:  2018-07-26-RCA-Mitigated-V2-Brazil-South 
 title: RCA - Mitigated - V2 - Brazil South - 26-07-2018
+description: "Starting on 26-07-2018 15:15 UTC and until 26-07-2018 15:50 UTC, some users experienced errors trying to access Skills Workflow V2 on the Brazil South region."
 sidebar_label: RCA - Mitigated - V2 - Brazil South - 26-07-2018
 ---
 

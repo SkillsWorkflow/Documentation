@@ -1,6 +1,7 @@
 ---
 id:  2020-06-24-RCA-Mitigated-Brazil-South
 title: RCA - Mitigated - Brazil South - 24-06-2020
+description: "Between 24 June 2020 18:45 UTC and 24 June 2020 22:50 UTC, some users experienced errors and slow response times on our Brazil South region."
 sidebar_label: RCA - Mitigated - Brazil South - 24-06-2020
 ---
 

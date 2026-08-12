@@ -1,6 +1,7 @@
 ---
 id:  create-leave-type
 title: Create Leave Types
+description: "Several leave types can be created in a company, such as: Follow the steps below to create a new leave type: <!"
 sidebar_label: Create Leave Types
 sidebar_position: 6
 ---

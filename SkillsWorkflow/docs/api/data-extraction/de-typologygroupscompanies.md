@@ -1,6 +1,7 @@
 ---
 id: de-typologygroupscompanies
 title: DE-TypologyGroupsCompanies
+description: "Extracts typology grous associated to companies"
 sidebar_label: TypologyGroupsCompanies
 sidebar_position: 1
 ---

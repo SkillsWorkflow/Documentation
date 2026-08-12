@@ -1,6 +1,7 @@
 ---
 id: favorites
 title: Favorites
+description: "Favorites let you bookmark the documents and dashboards you access most often."
 sidebar_label: Favorites
 sidebar_position: 1
 ---

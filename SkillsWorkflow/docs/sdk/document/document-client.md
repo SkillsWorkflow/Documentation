@@ -1,6 +1,7 @@
 ---
 id: client
 title: Client
+description: "A sub namespace of Document, exclusive for client operations --- Get Custom Fields Get Lookup Set Custom Fields Update ---"
 sidebar_label: Client
 
 ---

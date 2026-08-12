@@ -1,6 +1,7 @@
 ---
 id: de-products
 title: DE-Products
+description: "Extracts the list of products."
 sidebar_label: Products
 sidebar_position: 1
 ---

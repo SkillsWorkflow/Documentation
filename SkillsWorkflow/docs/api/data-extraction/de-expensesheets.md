@@ -1,6 +1,7 @@
 ---
 id: de-expensesheets
 title: DE-ExpenseSheets
+description: "Extracts expense sheets for integration purposes."
 sidebar_label: ExpenseSheets
 sidebar_position: 1
 ---

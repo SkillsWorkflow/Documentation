@@ -1,6 +1,7 @@
 ---
 id: de-projectscount
 title: DE-ProjectsCount
+description: "Gets the count of projects for the provided filters."
 sidebar_label: ProjectsCount
 sidebar_position: 1
 ---

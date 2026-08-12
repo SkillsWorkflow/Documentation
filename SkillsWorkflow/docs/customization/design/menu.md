@@ -1,6 +1,7 @@
 ---
 id: menu
 title: Menu guidelines
+description: "Menu can now be hidden in order to utilize all available screen."
 sidebar_label: Menu
 sidebar_position: 5
 ---

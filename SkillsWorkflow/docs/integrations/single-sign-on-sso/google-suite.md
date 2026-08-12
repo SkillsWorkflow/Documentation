@@ -1,6 +1,7 @@
 ---
 id: google-suite
 title: Google Suite
+description: "In this article, you'll learn how to integrate with Google Suite SSO."
 sidebar_label: Google Suite
 ---
 

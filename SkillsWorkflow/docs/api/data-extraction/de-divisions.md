@@ -1,6 +1,7 @@
 ---
 id: de-divisions
 title: DE-Divisions
+description: "Extracts the list of divisions."
 sidebar_label: Divisions
 sidebar_position: 1
 ---

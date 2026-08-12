@@ -1,6 +1,7 @@
 ---
 id:  assign-executor
 title: Assign an executor
+description: "From the Job List, select and click Job you want to assign an Executor."
 sidebar_label: 12. Assign an executor
 sidebar_position: 12
 ---

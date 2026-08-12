@@ -1,6 +1,7 @@
 ---
 id:  powerbi
 title: PowerBI Integration With Csv Files
+description: "Produces a Power BI Workspace using data aquired from SkillsWorkflow."
 sidebar_label: PowerBI
 ---
 

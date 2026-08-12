@@ -1,6 +1,7 @@
 ---
 id: set-columns
 title: Set Columns
+description: "A function used to set grid's columns in a workspace."
 sidebar_label: Set Columns
 ---
 

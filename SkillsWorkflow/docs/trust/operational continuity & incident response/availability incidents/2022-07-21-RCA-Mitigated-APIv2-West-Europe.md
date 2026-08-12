@@ -1,6 +1,7 @@
 ---
 id: 2022-07-21-RCA-Mitigated-APIv2-West-Europe
 title: RCA - Mitigated - APIv2 - West Europe - 21-07-2022
+description: "On 21 July 2022, between 03:48 UTC and 08:15 UTC, many customers experienced errors or extreme delays accessing the Web Application, APIv2, and other APIs on…"
 sidebar_label: RCA - Mitigated - APIv2 - West Europe - 21-07-2022
 ---
 

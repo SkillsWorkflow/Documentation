@@ -1,6 +1,7 @@
 ---
 id: employees
 title: Employees
+description: "In this article, we walk you through the simple steps required to efficiently import your employee data, ensuring a smooth onboarding process."
 sidebar_label: Employees
 sidebar_position: 3
 ---

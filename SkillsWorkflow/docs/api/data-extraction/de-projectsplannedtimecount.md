@@ -1,6 +1,7 @@
 ---
 id: de-projectsplannedtimecount
 title: DE-ProjectsPlannedTimeCount
+description: "Gets the count of projects planned time for the provided filters."
 sidebar_label: ProjectsPlannedTimeCount
 sidebar_position: 1
 ---

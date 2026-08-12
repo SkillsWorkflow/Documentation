@@ -2,6 +2,7 @@
 id: home
 slug: /university
 title: ""
+description: "Wanna learn more?  Here you can get some easy lessons to improve your knowledge of Skills Workflow."
 sidebar_label: Home
 sidebar_position: 1
 hide_table_of_contents: true

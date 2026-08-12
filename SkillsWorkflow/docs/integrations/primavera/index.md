@@ -1,5 +1,6 @@
 ---
 title: 'Primavera'
+description: "Primavera is where the agency's finance team works."
 sidebar_label: Primavera
 sidebar_position: 1
 ---

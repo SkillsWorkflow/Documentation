@@ -1,6 +1,7 @@
 ---
 id: queryMentions
 title: "Query Mentions"
+description: "On this page you will find how to use mentions based on queries."
 sidebar_label: Query Mentions
 hide_table_of_contents: true
 ---

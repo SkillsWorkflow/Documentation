@@ -1,6 +1,7 @@
 ---
 id: markAsSaved
 title: Mark as Saved
+description: "This method can be used to mark changes as saved, so when navigating, the prompt will not be shown saying that are changes that were not saved ---"
 sidebar_label: Mark as Saved
 ---
 

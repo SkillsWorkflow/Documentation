@@ -1,6 +1,7 @@
 ---
 id: de-jobscount
 title: DE-JobsCount
+description: "Gets the count of jobs for the given filters."
 sidebar_label: JobsCount
 sidebar_position: 1
 ---

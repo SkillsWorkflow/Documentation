@@ -1,6 +1,7 @@
 ---
 id:  contracts-projects
 title: Estimate Associated Projects
+description: "Click the check icon e submit post."
 sidebar_label: 3. Manage Projects associated to an Estimate
 sidebar_position: 3
 ---

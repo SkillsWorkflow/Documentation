@@ -1,6 +1,7 @@
 ---
 id: de-timesheetsdeletedcount
 title: DE-TimeSheetsDeletedCount
+description: "Gets the count of deleted time sheet for the provided filters."
 sidebar_label: TimeSheetsDeletedCount
 sidebar_position: 1
 ---

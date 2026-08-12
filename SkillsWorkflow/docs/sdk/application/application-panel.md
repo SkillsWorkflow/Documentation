@@ -1,6 +1,7 @@
 ---
 id: application-panel
 title: " "
+description: "This method can be used inside any workspace."
 sidebar_label: Panel
 ---
 

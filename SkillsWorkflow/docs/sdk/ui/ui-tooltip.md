@@ -1,6 +1,7 @@
 ---
 id:  ui-tooltip
 title: ' '
+description: "A sub namespace of UI, exclusive for tooltip operations ---"
 sidebar_label: Tooltip
 ---
 

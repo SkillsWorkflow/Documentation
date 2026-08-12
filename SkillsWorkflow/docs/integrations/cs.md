@@ -1,6 +1,7 @@
 ---
 id: cs
 title: 'CS (Career Settings)'
+description: "Career Settings is the HR system of record."
 sidebar_label: CS
 ---
 

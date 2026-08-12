@@ -1,7 +1,12 @@
 ---
 title: 'TOConline'
+description: "TOConline is the certified online accounting and invoicing platform used by many agencies in Portugal."
 sidebar_label: TOConline
 ---
+
+:::caution Scope corrected against the Marketplace export
+This page previously described a single bill-to-invoice flow. The exported package (Module `TOC Online`, 32 files / 30 distinct components) is considerably larger: it also issues **client credit notes** and **supplier invoices** to TOConline, and runs a **daily master-data sync** of clients, suppliers, services and taxes. The bill flow below is accurate and unchanged; the "Package Contents" and two new sections cover the rest.
+:::
 
 ### Description
 
@@ -10,6 +15,8 @@ This article describes the integration between **TOConline** and `Skills Workflo
 TOConline is the certified online accounting and invoicing platform used by many agencies in Portugal. This integration closes the last manual step in the billing cycle: once a bill has been approved in Skills Workflow, it is issued as an invoice in TOConline automatically, and the invoice number comes straight back onto the bill.
 
 Without it, somebody re-keys every approved bill into the accounting platform — which is slow, error-prone, and leaves the two systems disagreeing about what has actually been invoiced. With it, approval *is* invoicing, and each bill in Skills Workflow carries the TOConline document number that corresponds to it.
+
+The same approve-and-send pattern also applies to client credit notes and supplier invoices, and clients, suppliers, services and tax rates are kept in sync with TOConline in the background so the codes bills refer to stay current.
 
 ---
 
@@ -92,16 +99,39 @@ These are the link between the two systems. A bill for a client without a `TocOn
 
 ### Package Contents
 
-Install the package from the Marketplace. It contains:
+Install the package from the Marketplace. As exported it contains three financial-document flows (Bill, Client Credit Note, Supplier Invoice), a daily master-data sync, and 21 supporting named queries — not just the bill flow.
 
-| Item | Purpose |
-| --- | --- |
-| Webhook | Fires when a bill moves from Under Approval to Integrated |
-| Automation Workflow | Authenticates, gathers the data, issues the invoice and writes the number back |
-| Named Query — bill | Retrieves the bill header |
-| Named Query — bill items | Retrieves the bill lines |
+| Flow | Webhook | Automation | Key Queries |
+| --- | --- | --- | --- |
+| Bill → Invoice | Toc Online - On Bill StageChanged (v2) | TocOnline - Integrate Bill (v4) | TocOnline-GetBillById, TocOnline-GetBillItemsById |
+| Client Credit Note | Toc Online - On Client Credit Note Stage Changed (v2) | TocOnline- Integrate Credit Note (v3) | TocOnline-GetClientCreditNoteById, -ItemsById |
+| Supplier Invoice | Toc Online - On Supplier Invoice Stage Changed (v1) | Toconline - Integrate Supplier Invoice (v2) | TocOnline-GetSupplierInvoiceById, -ItemsById |
+| Master data (daily) | — (`TocOnline - Scheduler`, daily) | TocOnline - Clients (v2), Services (v1), Suppliers (v1) | TocOnline-GetBillingClient, -GetCommercialClient, -GetClient, -GetCommercialClientCompany, -GetLastTocOnlineClientCode, -GetArticle, -GetLastTocOnlineServiceCode, -GetSupplier, -GetLastTocOnlineSupplierCode |
+| Taxes (on demand) | — | TocOnline - Taxes (v3) | TocOnline-GetTaxByExternalIdAndCompany, -GetCompanyByCode |
+| Expense Item Types (on demand) | — | TocOnline - Expense Item Types (v2) | TocOnline-GetExpenseItemType, -GetLastTocOnlineExpenseItemCode |
 
-Plus the configuration key holding the TOConline credentials.
+Plus the configuration key holding the TOConline credentials (aliased `Config` across the automations, holding at least an `api` base URL).
+
+---
+
+### Client Credit Notes and Supplier Invoices
+
+The same "approve → integrate" pattern used for bills applies to two more document types:
+
+- **Client Credit Notes** — `Toc Online - On Client Credit Note Stage Changed` fires on the same New → Integrated transition as bills. `TocOnline- Integrate Credit Note` builds the credit note and its lines (`TocOnline-GetClientCreditNoteById`, `-ItemsById`) and sends them to TOConline (`POST {api}/api/commercial_sales_documents`, then `POST {api}/api/commercial_sales_document_lines` for the lines, with a `PATCH` variant also present for updates), writing the result back (`PATCH /api/client-credit-notes/{id}`).
+- **Supplier Invoices** — `Toconline - Integrate Supplier Invoice` builds the invoice (`TocOnline-GetSupplierInvoiceById`, `-ItemsById`) and posts it to TOConline's purchases endpoint (`POST {api}/api/v1/commercial_purchases_documents`, then re-fetches it by id), writing the result back (`PATCH /api/supplier-invoices/{id}`).
+
+:::caution Supplier Invoice webhook filter looks broken
+`Toc Online - On Supplier Invoice Stage Changed`'s two filter conditions **both** check `fromWorkflowStageName` (one against `"Novo"`, one against `"Integrado"`), joined with `AND` — a single event can't have its `fromWorkflowStageName` equal to two different values at once, so as written this filter can never match anything. The second condition was most likely meant to check `toWorkflowStageName` instead. Until that's fixed, this webhook likely never fires.
+:::
+
+### Master Data Sync
+
+`TocOnline - Clients`, `- Suppliers` and `- Services` each pull their respective list from TOConline (`GET {api}/api/customers`, `/api/suppliers`, `/api/services`), resolve each record against Skills Workflow (assigning the next `TocOnlineClientCode` / `TocOnlineSupplierCode` / `TocOnlineServiceCode` via the matching `GetLastTocOnline...Code` query when creating one), and create/update the corresponding billing client, commercial client, supplier or service — writing the assigned code back via `PUT /api/v3/documentUserFieldValues`.
+
+`TocOnline - Scheduler` runs daily and enqueues `Clients`, `Suppliers` and `Services` as background work (confirmed by matching automation ids). `Clients` is additionally exported with its own daily scheduler active, so it currently runs both on its own schedule and via the orchestrator — likely redundant rather than harmful, since it looks up existing records before creating.
+
+`TocOnline - Taxes` (pulls `GET {api}/api/taxes`, matches by external id and company, creates/updates `/api/v3/vats`) and `TocOnline - Expense Item Types` (pulls `GET {api}/api/expense_categories`) are on-demand and not part of the daily scheduler chain.
 
 ---
 

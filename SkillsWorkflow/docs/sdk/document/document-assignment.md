@@ -1,6 +1,7 @@
 ---
 id: assignment
 title: Assignment
+description: "A sub namespace of Document, exclusive for assignment operations ---"
 sidebar_label: Assignment
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Primavera — Technical Reference"
+description: "This is the Documentation of how the Integration between the ERP Primavera and Skills Workflow work."
 sidebar_label: Technical Reference
 sidebar_position: 2
 ---

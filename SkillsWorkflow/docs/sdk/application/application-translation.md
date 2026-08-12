@@ -1,6 +1,7 @@
 ---
 id: application-translation
 title: " "
+description: "This method can be used to get the translation of some words or sentences."
 sidebar_label: Translation
 ---
 

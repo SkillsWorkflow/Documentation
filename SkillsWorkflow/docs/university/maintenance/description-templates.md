@@ -1,6 +1,7 @@
 ---
 id: description-templates
 title: Description Templates
+description: "Go to “Maintenance” and click on the module “Template Description” A screen for creating the Briefing will open."
 sidebar_label: Description Templates
 sidebar_position: 4
 ---

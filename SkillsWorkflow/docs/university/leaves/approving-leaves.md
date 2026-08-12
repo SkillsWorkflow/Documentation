@@ -1,6 +1,7 @@
 ---
 id:  approving-leaves
 title: Approving Leaves
+description: "To approve/disapprove leaves, navigate to the “Approval” module."
 sidebar_label: 2. Approving Leaves
 sidebar_position: 2
 ---

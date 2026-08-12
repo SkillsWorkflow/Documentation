@@ -1,6 +1,7 @@
 ---
 id:  create-expenses
 title: Expenses
+description: "To create expenses navigate to Project module and select a project to add receipts."
 sidebar_label: 2. Create Expenses
 sidebar_position: 2
 ---

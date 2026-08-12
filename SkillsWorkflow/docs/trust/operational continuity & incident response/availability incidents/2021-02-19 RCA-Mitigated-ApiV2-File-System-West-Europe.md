@@ -1,6 +1,7 @@
 ---
 id:  2021-02-19-RCA-Mitigated-ApiV2-File-System-West-Europe
 title: RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021
+description: "Starting 19 February 2021 at around 13:37 UTC until 16:05 UTC, some users experienced errors and degraded response time performing some operations on our West…"
 sidebar_label: RCA - Mitigated - ApiV2 - File System - West Europe - 19-02-2021
 ---
 

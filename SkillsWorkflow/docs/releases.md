@@ -1,6 +1,7 @@
 ---
 id: releases
 title: Releases
+description: "We have new versions releases of the system every week."
 sidebar_label: Releases
 ---
 

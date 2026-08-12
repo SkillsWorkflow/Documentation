@@ -1,6 +1,7 @@
 ---
 id: menu
 title: "Menu"
+description: "On this page you will find how to affect only the icon that appears in the menu."
 sidebar_label: Menu
 hide_table_of_contents: true
 ---
