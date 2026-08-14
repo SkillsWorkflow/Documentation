@@ -469,6 +469,17 @@ img[alt="img-box-shadow"] {
   border-radius: 5px;
 }
 
+img[alt="img-box-shadow-feed"] {
+  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  display: block;
+  width: 780px;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+}
+
 img[alt="img-box-shadow-200"] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
   border: 2px solid lightgrey;
