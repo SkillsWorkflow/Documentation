@@ -239,20 +239,6 @@ module.exports = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        redirects: [
-          {
-            from: '/docs/integrations/iSAP-Job-Maintenance',
-            to: '/docs/integrations/isap/job-maintenance'
-          },
-          {
-            from: '/docs/integrations/eas-integration',
-            to: '/docs/integrations/eas'
-          },
-          {
-            from: '/docs/integrations/eas-integration/reference',
-            to: '/docs/integrations/eas/reference'
-          }
-        ],
         createRedirects(existingPath) {
           if (existingPath.endsWith('/index')) {
             return [existingPath.replace(/\/index$/, '')];

@@ -1,8 +1,8 @@
 ---
-id: how-feed-works
-title: Cómo Funciona el Feed
+id: using-feed
+title: Uso del Feed
 description: "Use el Feed para consultar el contexto del documento, colaborar con el equipo y controlar lo que pueden ver los usuarios cliente."
-sidebar_label: Cómo Funciona el Feed
+sidebar_label: Uso del Feed
 sidebar_position: 1
 ---
 
@@ -10,7 +10,12 @@ El Feed es el área de colaboración de un documento. Reúne en un único lugar 
 
 ## Consultar el contexto del documento
 
-<!-- IMAGE: Contexto del documento en el Feed. Capture la parte superior del Feed de un documento con el área de descripción/brief y los archivos adjuntos que puedan existir. No incluya datos de clientes ni información confidencial. -->
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-document-context.png)
+<figcaption>Contexto del documento en el Feed.</figcaption>
+
+</figure>
 
 En la parte superior del Feed puede consultar la descripción del documento y su información de apoyo antes de revisar la actividad que aparece debajo. Según el tipo y la configuración del documento, esta área también puede mostrar otros campos descriptivos y archivos adjuntos al documento.
 
@@ -18,15 +23,50 @@ Use esta información para comprender la solicitud o el brief antes de crear una
 
 ## Añadir una publicación o una acción de workflow
 
-<!-- IMAGE: Compositor del Feed. Capture el campo del mensaje y las acciones disponibles debajo, incluido un ejemplo de la opción para avanzar el documento. -->
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-composer.png)
+<figcaption>Compositor y acciones del Feed.</figcaption>
+
+</figure>
 
 Use el compositor situado debajo del contexto del documento para escribir un mensaje. También puede usar las acciones disponibles para añadir archivos, asignar o notificar a personas y avanzar el documento en su workflow.
 
 Al publicar, el Feed registra la publicación junto con las acciones realizadas. Por ejemplo, una sola entrada del Feed puede incluir un mensaje, archivos, un cambio de etapa del workflow y personas notificadas o mencionadas. Las acciones disponibles dependen del documento, el workflow y sus permisos.
 
+## Usar acciones del Feed
+
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-actions.jpeg)
+<figcaption>Acciones disponibles debajo del compositor del Feed.</figcaption>
+
+</figure>
+
+Seleccione una acción debajo del compositor, complete la información solicitada y publique la entrada para registrar el cambio en el Feed. Las siguientes acciones estaban disponibles en la WebApp actual:
+
+| Acción | Qué hace |
+| --- | --- |
+| **Move stage** | Selecciona una transición de workflow disponible y mueve el documento a su etapa de destino. Las transiciones mostradas dependen de la etapa actual y del workflow del documento. |
+| **Items** | Crea un elemento desde el Feed. Introduzca su nombre, seleccione su tipo y establezca su fecha. Los tipos de elemento disponibles dependen de la configuración. |
+| **Add file** | Adjunta un archivo a la publicación. También puede arrastrar un archivo al compositor. |
+| **Add assignment** | Abre las asignaciones de equipo del documento, agrupadas por tipo de asignación. Use los controles disponibles para añadir, actualizar o eliminar una asignación. |
+| **Change end date** | Cambia la fecha y hora de finalización del documento. |
+| **Additional information** | Abre los campos adicionales configurados para el documento para que puedan completarse o actualizarse. Los campos varían según el tipo y la configuración del documento. |
+| **Notifications** | Permite elegir un usuario al que notificar cuando se publique la entrada. |
+
+:::caution
+No use Notifications para incluir usuarios cliente en una conversación interna. Notificar o hacer `@mention` a un cliente puede hacer que una publicación sea visible para ese cliente.
+:::
+
 ## Seguir la actividad y las conversaciones
 
-<!-- IMAGE: Cronología del Feed. Capture una publicación con autor, mensaje, actividad del workflow, personas notificadas o mencionadas y archivos adjuntos. -->
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-activity-timeline.png)
+<figcaption>Actividad y conversaciones en la cronología del Feed.</figcaption>
+
+</figure>
 
 La cronología muestra primero la actividad más reciente. Cada entrada puede incluir el autor, la fecha y hora de publicación, el mensaje, los archivos, la actividad del workflow y las personas notificadas o mencionadas. Use comentarios y respuestas en una publicación para mantener juntas la conversación y su contexto.
 
@@ -34,7 +74,12 @@ Use la búsqueda del Feed para encontrar actividad anterior cuando esté disponi
 
 ## Visibilidad para usuarios cliente
 
-<!-- IMAGE: Visibilidad para clientes. Capture una publicación visible para clientes con el indicador “Cliente puede ver”. Si es posible, añada una segunda captura de una publicación interna sin este indicador para compararla. -->
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-client-visibility.png)
+<figcaption>Publicaciones visibles para clientes y publicaciones internas.</figcaption>
+
+</figure>
 
 Un usuario se considera cliente cuando tiene activa la marca `IsClient`. La visibilidad de una conversación se define en la publicación principal mediante `IsVisibleToClient`; no se configura por separado en un comentario o una respuesta.
 
