@@ -506,6 +506,8 @@ img[alt="img-box-shadow-popup"] {
   border: 2px solid lightgrey;
   border-radius: 5px;
   width: 780px;
+  max-width: 100%;
+  height: auto;
 }
 
 img[alt="img-with-border"] {
