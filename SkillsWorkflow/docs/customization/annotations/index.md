@@ -29,7 +29,7 @@ Supported file previews:
 
 ## Annotation toolbar
 
-The annotation toolbar is shown inside the **Annotations** module while the annotation editor is active. It no longer floats over the preview.
+The annotation toolbar is shown inside the **Annotations** module while the annotation editor is active.
 
 The toolbar provides undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight, and a color dropdown. Save and Cancel are shown in the annotation card when editing a comment, or below the toolbar when no annotation card is being edited.
 
@@ -83,9 +83,9 @@ PDF annotations are associated with the page where they were created. When users
 
 ## Collaboration and feed
 
-Users who do not own the file can add annotations to the original file. Their annotations are saved alongside annotations from other reviewers; no duplicated temporary copy is created.
+Users who do not own the file can add annotations to the original file. Annotations from different reviewers are kept together on that file.
 
-When those changes are saved on preview close, Skills Workflow creates a feed post that references the reviewed original file. The post includes the comments already loaded in that review session and any new comments added by the reviewer.
+When a reviewer closes the preview after saving annotations, Skills Workflow creates a feed post that references the reviewed file and includes the review comments.
 
 ![img-box-shadow-popup](/img/annotations/08-annotation-feed-post.png)
 <figcaption>Feed post created after annotations are saved</figcaption>
