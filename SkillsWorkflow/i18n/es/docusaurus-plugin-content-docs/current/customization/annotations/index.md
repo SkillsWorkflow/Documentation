@@ -16,6 +16,8 @@ Las anotaciones aparecen en el panel lateral del preview, en el módulo **Annota
 
 El botón **+** del módulo **Annotations** inicia una nueva anotación. Hacer clic en el título/header del módulo no abre el editor.
 
+En vídeos, el botón **+** está disponible después de que se carguen los metadatos del preview. En PDFs, está disponible después de que se haya renderizado una página PDF.
+
 Previews soportados:
 
 - Imágenes.
@@ -29,7 +31,7 @@ Previews soportados:
 
 La toolbar de anotaciones aparece dentro del módulo **Annotations** mientras el editor de anotaciones está activo. Ya no aparece flotando sobre el preview.
 
-La toolbar incluye undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight y un dropdown de color. Save y Cancel aparecen debajo de la anotación que se está editando.
+La toolbar incluye undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight y un dropdown de color. Save y Cancel aparecen en la tarjeta de anotación al editar un comentario, o debajo de la toolbar cuando no se está editando ninguna tarjeta de anotación.
 
 ![img-box-shadow-sm](/img/annotations/02-annotation-toolbar.png)
 <figcaption>Toolbar de anotaciones dentro del módulo Annotations</figcaption>
@@ -37,6 +39,8 @@ La toolbar incluye undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight y
 ## Comentarios y panel lateral
 
 Cada tarjeta de anotación muestra autor, fecha/hora, texto, timestamp de vídeo cuando aplica, número de página PDF cuando aplica e indicador de histórico cuando existen versiones anteriores del texto.
+
+En el preview, las anotaciones con un comentario también muestran una etiqueta corta con el comentario junto a su marker.
 
 Seleccionar una anotación en el panel lateral la abre en el preview. Seleccionar una anotación de otro usuario la muestra, pero no presenta el editor inline.
 
@@ -102,4 +106,4 @@ Para activar anotaciones para un cliente:
 Notas de configuración:
 
 - La aprobación de páginas PDF es una feature separada y no es obligatoria para usar anotaciones.
-- Si los usuarios no ven el panel de anotaciones después de la activación, confirmar que el tipo de archivo es soportado y que la configuración se guardó en el ambiente/cliente correcto.
+- Si los usuarios no ven el panel de anotaciones después de la activación, confirmar que **Enable annotations** está activado y que el archivo se muestra en un preview soportado.

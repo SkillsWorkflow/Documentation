@@ -30,6 +30,8 @@
   --sw-line: rgba(15, 23, 42, 0.12);
   --sw-bg-alt: #ebf2ff;
   --sw-screenshot-radius: 16px;
+  --sw-screenshot-border: #eaecec;
+  --sw-screenshot-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.149);
 }
 
 /* You can override the default Infima variables here. */
@@ -464,27 +466,25 @@ img[alt="crafted-love"] {
   width: 250px;
 }
 
-img[alt="img-box-shadow"] {
-  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey;
+img[alt="img-box-shadow"],
+img[alt="img-box-shadow-feed"],
+img[alt="img-box-shadow-200"],
+img[alt="img-box-shadow-sm"],
+img[alt="img-box-shadow-popup"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  box-shadow: var(--sw-screenshot-shadow);
+  border: 1px solid var(--sw-screenshot-border);
   border-radius: var(--sw-screenshot-radius);
 }
 
 img[alt="img-box-shadow-feed"] {
-  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey;
-  border-radius: var(--sw-screenshot-radius);
-  display: block;
   width: 780px;
-  max-width: 100%;
-  height: auto;
-  margin: 1rem auto;
 }
 
 img[alt="img-box-shadow-200"] {
-  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey;
-  border-radius: var(--sw-screenshot-radius);
   width: 200px;
 }
 
@@ -496,27 +496,16 @@ img[alt="img-symbol-box-shadow"] {
 }
 
 img[alt="img-box-shadow-sm"] {
-  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey;
-  border-radius: var(--sw-screenshot-radius);
   width: 250px;
 }
 
 img[alt="img-box-shadow-popup"] {
-  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 2px solid lightgrey;
-  border-radius: var(--sw-screenshot-radius);
   width: 780px;
 }
 
-img[alt="img-box-shadow-sm"],
-img[alt="img-box-shadow-popup"] {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 1rem auto;
-}
-
+img[alt="img-box-shadow"] + figcaption,
+img[alt="img-box-shadow-feed"] + figcaption,
+img[alt="img-box-shadow-200"] + figcaption,
 img[alt="img-box-shadow-sm"] + figcaption,
 img[alt="img-box-shadow-popup"] + figcaption {
   text-align: center;
