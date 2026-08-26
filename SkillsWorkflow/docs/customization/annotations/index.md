@@ -16,6 +16,8 @@ Annotations appear in the file preview side panel under the **Annotations** modu
 
 The **+** button in the **Annotations** module starts a new annotation. Clicking the module title/header does not start the editor.
 
+For videos, the **+** button is available after the preview's metadata has loaded. For PDFs, it is available after a PDF page has rendered.
+
 Supported file previews:
 
 - Images.
@@ -29,7 +31,7 @@ Supported file previews:
 
 The annotation toolbar is shown inside the **Annotations** module while the annotation editor is active. It no longer floats over the preview.
 
-The toolbar provides undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight, and a color dropdown. Save and Cancel are shown below the annotation being edited.
+The toolbar provides undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight, and a color dropdown. Save and Cancel are shown in the annotation card when editing a comment, or below the toolbar when no annotation card is being edited.
 
 ![img-box-shadow-sm](/img/annotations/02-annotation-toolbar.png)
 <figcaption>Annotation toolbar inside the Annotations module</figcaption>
@@ -37,6 +39,8 @@ The toolbar provides undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight
 ## Comments and side panel
 
 Each annotation card shows the author, date/time, comment text, video timestamp when applicable, PDF page number when applicable, and a history indicator when previous text versions exist.
+
+On the preview, annotations with a comment also show a short comment label beside their marker.
 
 Selecting an annotation in the side panel opens it on the preview. Selecting another user's annotation shows it, but does not show the inline editor.
 
@@ -79,9 +83,9 @@ PDF annotations are associated with the page where they were created. When users
 
 ## Collaboration and feed
 
-Annotations made by users who do not own the file are saved on the original file, not on a duplicated temporary copy. When those changes are saved on preview close, Skills Workflow creates a feed post that references the reviewed original file.
+Users who do not own the file can add annotations to the original file. Their annotations are saved alongside annotations from other reviewers; no duplicated temporary copy is created.
 
-Multiple reviewers can add annotations to the same original file.
+When those changes are saved on preview close, Skills Workflow creates a feed post that references the reviewed original file. The post includes the comments already loaded in that review session and any new comments added by the reviewer.
 
 ![img-box-shadow-popup](/img/annotations/08-annotation-feed-post.png)
 <figcaption>Feed post created after annotations are saved</figcaption>
@@ -102,4 +106,4 @@ To enable annotations for a client:
 Configuration notes:
 
 - PDF page approval is a separate feature and is not required to use annotations.
-- If users cannot see the annotation panel after activation, confirm that the file type is supported and that the configuration was saved for the correct environment/client.
+- If users cannot see the annotation panel after activation, confirm that **Enable annotations** is enabled and that the file is shown in a supported preview.

@@ -16,6 +16,8 @@ As anotações aparecem no painel lateral do preview de ficheiros, no módulo **
 
 O botão **+** no módulo **Annotations** inicia uma nova anotação. Clicar no título/header do módulo não abre o editor.
 
+Em vídeos, o botão **+** fica disponível depois de os metadados do preview carregarem. Em PDFs, fica disponível depois de uma página PDF ser renderizada.
+
 Previews suportados:
 
 - Imagens.
@@ -29,7 +31,7 @@ Previews suportados:
 
 A toolbar de anotações aparece dentro do módulo **Annotations** enquanto o editor de anotações está ativo. Já não aparece por cima do preview.
 
-A toolbar disponibiliza undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight e um dropdown de cor. Save e Cancel aparecem abaixo da anotação que está a ser editada.
+A toolbar disponibiliza undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight e um dropdown de cor. Save e Cancel aparecem no cartão da anotação ao editar um comentário ou abaixo da toolbar quando não está a ser editado nenhum cartão de anotação.
 
 ![img-box-shadow-sm](/img/annotations/02-annotation-toolbar.png)
 <figcaption>Toolbar de anotações dentro do módulo Annotations</figcaption>
@@ -37,6 +39,8 @@ A toolbar disponibiliza undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highli
 ## Comentários e painel lateral
 
 Cada cartão de anotação mostra autor, data/hora, texto, timestamp de vídeo quando aplicável, número de página de PDF quando aplicável e indicador de histórico quando existem versões anteriores do texto.
+
+No preview, as anotações com comentário também apresentam uma etiqueta curta com o comentário junto ao respetivo marker.
 
 Selecionar uma anotação no painel lateral abre-a no preview. Selecionar uma anotação de outro utilizador mostra-a, mas não apresenta o editor inline.
 
@@ -79,9 +83,9 @@ As anotações de PDF ficam associadas à página onde foram criadas. Quando os 
 
 ## Colaboração e feed
 
-As anotações feitas por utilizadores que não são donos do ficheiro são guardadas no ficheiro original, e não numa cópia temporária duplicada. Quando estas alterações são guardadas ao fechar o preview, o Skills Workflow cria um post no feed que faz referência ao ficheiro original revisto.
+Os utilizadores que não são donos do ficheiro podem adicionar anotações ao ficheiro original. As suas anotações são guardadas juntamente com as de outros revisores; não é criada uma cópia temporária duplicada.
 
-Vários revisores podem adicionar anotações ao mesmo ficheiro original.
+Quando estas alterações são guardadas ao fechar o preview, o Skills Workflow cria um post no feed que faz referência ao ficheiro original revisto. O post inclui os comentários já carregados nessa sessão de revisão e os novos comentários adicionados pelo revisor.
 
 ![img-box-shadow-popup](/img/annotations/08-annotation-feed-post.png)
 <figcaption>Post no feed criado depois de guardar anotações</figcaption>
@@ -102,4 +106,4 @@ Para ativar anotações para um cliente:
 Notas de configuração:
 
 - A aprovação de páginas PDF é uma feature separada e não é obrigatória para usar anotações.
-- Se os utilizadores não virem o painel de anotações depois da ativação, confirmar que o tipo de ficheiro é suportado e que a configuração foi guardada no ambiente/cliente correto.
+- Se os utilizadores não virem o painel de anotações depois da ativação, confirmar que **Enable annotations** está ativo e que o ficheiro é mostrado num preview suportado.
