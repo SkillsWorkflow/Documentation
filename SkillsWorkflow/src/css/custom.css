@@ -29,6 +29,7 @@
   --sw-muted: #868c98;
   --sw-line: rgba(15, 23, 42, 0.12);
   --sw-bg-alt: #ebf2ff;
+  --sw-screenshot-radius: 16px;
 }
 
 /* You can override the default Infima variables here. */
@@ -466,13 +467,13 @@ img[alt="crafted-love"] {
 img[alt="img-box-shadow"] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
   border: 2px solid lightgrey;
-  border-radius: 5px;
+  border-radius: var(--sw-screenshot-radius);
 }
 
 img[alt="img-box-shadow-feed"] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
   border: 2px solid lightgrey;
-  border-radius: 5px;
+  border-radius: var(--sw-screenshot-radius);
   display: block;
   width: 780px;
   max-width: 100%;
@@ -483,7 +484,7 @@ img[alt="img-box-shadow-feed"] {
 img[alt="img-box-shadow-200"] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
   border: 2px solid lightgrey;
-  border-radius: 5px;
+  border-radius: var(--sw-screenshot-radius);
   width: 200px;
 }
 
@@ -497,14 +498,14 @@ img[alt="img-symbol-box-shadow"] {
 img[alt="img-box-shadow-sm"] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
   border: 2px solid lightgrey;
-  border-radius: 5px;
+  border-radius: var(--sw-screenshot-radius);
   width: 250px;
 }
 
 img[alt="img-box-shadow-popup"] {
   box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
   border: 2px solid lightgrey;
-  border-radius: 5px;
+  border-radius: var(--sw-screenshot-radius);
   width: 780px;
 }
 
