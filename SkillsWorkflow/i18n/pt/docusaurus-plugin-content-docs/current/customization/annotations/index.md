@@ -79,9 +79,9 @@ As anotações de PDF ficam associadas à página onde foram criadas. Quando os 
 
 ## Colaboração e feed
 
-As anotações feitas por utilizadores que não são donos do ficheiro são guardadas no ficheiro original, e não numa cópia temporária duplicada. Quando estas alterações são guardadas ao fechar o preview, o Skills Workflow cria um post no feed que faz referência ao ficheiro original revisto.
+Os utilizadores que não são donos do ficheiro podem adicionar anotações ao ficheiro original. As suas anotações são guardadas juntamente com as de outros revisores; não é criada uma cópia temporária duplicada.
 
-Vários revisores podem adicionar anotações ao mesmo ficheiro original.
+Quando estas alterações são guardadas ao fechar o preview, o Skills Workflow cria um post no feed que faz referência ao ficheiro original revisto. O post inclui os comentários já carregados nessa sessão de revisão e os novos comentários adicionados pelo revisor.
 
 ![img-box-shadow-popup](/img/annotations/08-annotation-feed-post.png)
 <figcaption>Post no feed criado depois de guardar anotações</figcaption>

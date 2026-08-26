@@ -79,9 +79,9 @@ PDF annotations are associated with the page where they were created. When users
 
 ## Collaboration and feed
 
-Annotations made by users who do not own the file are saved on the original file, not on a duplicated temporary copy. When those changes are saved on preview close, Skills Workflow creates a feed post that references the reviewed original file.
+Users who do not own the file can add annotations to the original file. Their annotations are saved alongside annotations from other reviewers; no duplicated temporary copy is created.
 
-Multiple reviewers can add annotations to the same original file.
+When those changes are saved on preview close, Skills Workflow creates a feed post that references the reviewed original file. The post includes the comments already loaded in that review session and any new comments added by the reviewer.
 
 ![img-box-shadow-popup](/img/annotations/08-annotation-feed-post.png)
 <figcaption>Feed post created after annotations are saved</figcaption>

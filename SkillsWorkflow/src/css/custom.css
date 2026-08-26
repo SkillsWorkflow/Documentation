@@ -506,8 +506,19 @@ img[alt="img-box-shadow-popup"] {
   border: 2px solid lightgrey;
   border-radius: 5px;
   width: 780px;
+}
+
+img[alt="img-box-shadow-sm"],
+img[alt="img-box-shadow-popup"] {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin: 1rem auto;
+}
+
+img[alt="img-box-shadow-sm"] + figcaption,
+img[alt="img-box-shadow-popup"] + figcaption {
+  text-align: center;
 }
 
 img[alt="img-with-border"] {
