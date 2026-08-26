@@ -29,7 +29,7 @@ Previews suportados:
 
 ## Toolbar de anotações
 
-A toolbar de anotações aparece dentro do módulo **Annotations** enquanto o editor de anotações está ativo. Ela não aparece mais flutuando sobre o preview.
+A toolbar de anotações aparece dentro do módulo **Annotations** enquanto o editor de anotações está ativo.
 
 A toolbar disponibiliza undo/redo, Frame, Ellipse, Arrow, Line, Freehand, Highlight e um dropdown de cor. Save e Cancel aparecem no cartão da anotação ao editar um comentário ou abaixo da toolbar quando nenhum cartão de anotação está sendo editado.
 
@@ -83,9 +83,9 @@ As anotações de PDF ficam associadas à página onde foram criadas. Quando os 
 
 ## Colaboração e feed
 
-Os usuários que não são donos do arquivo podem adicionar anotações ao arquivo original. Suas anotações são salvas junto às de outros revisores; não é criada uma cópia temporária duplicada.
+Os usuários que não são donos do arquivo podem adicionar anotações ao arquivo original. As anotações de diferentes revisores ficam salvas juntas nesse arquivo.
 
-Quando essas alterações são salvas ao fechar o preview, o Skills Workflow cria um post no feed que faz referência ao arquivo original revisado. O post inclui os comentários já carregados nessa sessão de revisão e os novos comentários adicionados pelo revisor.
+Quando um revisor fecha o preview depois de salvar anotações, o Skills Workflow cria um post no feed que referencia o arquivo revisado e inclui os comentários da revisão.
 
 ![img-box-shadow-popup](/img/annotations/08-annotation-feed-post.png)
 <figcaption>Post no feed criado depois de salvar anotações</figcaption>
