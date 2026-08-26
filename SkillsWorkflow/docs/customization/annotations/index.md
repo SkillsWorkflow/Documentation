@@ -46,7 +46,7 @@ Selecting an annotation in the side panel opens it on the preview. Selecting ano
 
 When an annotation is selected or hovered, Skills Workflow visually links the annotation card to the marker on the preview with a connector line. Hovering a card highlights the related marker without changing the current selection. If another annotation is already selected, the selected connector remains visible but muted.
 
-![img-box-shadow-sm](/img/annotations/03-annotation-card.png)
+![img-box-shadow](/img/annotations/03-annotation-card.png)
 <figcaption>Annotation card in the side panel</figcaption>
 
 ## Editing rules
