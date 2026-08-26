@@ -46,7 +46,7 @@ Selecionar uma anotação no painel lateral abre a anotação no preview. Seleci
 
 Quando uma anotação é selecionada ou está em hover, o Skills Workflow liga visualmente o cartão da anotação ao marker no preview com uma linha conectora. Fazer hover em um cartão destaca o marker relacionado sem alterar a seleção atual. Se já existir outra anotação selecionada, o conector selecionado continua visível mas com menos destaque.
 
-![img-box-shadow-sm](/img/annotations/03-annotation-card.png)
+![img-box-shadow](/img/annotations/03-annotation-card.png)
 <figcaption>Cartão de anotação no painel lateral</figcaption>
 
 ## Regras de edição
