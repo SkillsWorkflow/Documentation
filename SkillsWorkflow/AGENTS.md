@@ -17,12 +17,20 @@
 
 ## Documentation Architecture and Article Design
 
+### Start From the Existing Article
+
+- Before creating a page, search the docs for the feature by name and by the screen it lives in. If an article already covers it, update that article. A second page for the same feature splits the reader's path and leaves the page they actually open stale.
+- Read at least three neighbouring pages in the target section before writing. Each section has a house style: heading shape, person, bullet length, how often a screenshot appears. Those pages are the specification for it.
+- A ticket or a release is the trigger for documentation, not its scope. Document the feature as the reader meets it, not the change that prompted the work. When surrounding content in the article has gone stale, correct it in the same change.
+- Creating a new page needs a reason you can state: no article covers this, or the existing article has a different audience. Record that reason in the PR summary.
+
 Choose the article type before writing. A page must have one primary audience and one clear purpose, so it can be shared directly with a user or retrieved accurately by search and future LLM-based support.
 
 ### Product and Customization
 
 - `docs/customization/` is the product and support layer. Write for end users and consultants who configure a client.
 - A feature page explains what the feature does, when it is available, how the user works with it, and the verified rules or limitations that affect that work.
+- A customization page is written for the consultant who enables and configures the feature. It is not the place to teach a user how to operate a screen that already has a University lesson. When both exist, the lesson teaches the screen and the customization page carries enablement, configuration and the rules a consultant must know.
 - Put feature-specific activation and configuration in the feature article under `## Configuration`. Do not create a separate configuration page merely to repeat how to enable one feature.
 - Put configuration that applies to several independent features in the relevant shared configuration area instead, then link to it from each affected feature.
 - Use this section order when the information exists: `## Overview` or an introductory paragraph, `## Availability` or `## Prerequisites`, `## How to use`, `## Rules and behaviour`, `## Configuration`, and `## Related articles`.
@@ -39,7 +47,12 @@ Choose the article type before writing. A page must have one primary audience an
 ### University
 
 - `docs/university/` is task and process guidance for end users. Organize it around an outcome the reader needs to achieve, such as creating, approving, or managing a business record.
-- Explain the normal workflow in the order a user performs it. Link to the canonical product page for feature behavior, configuration, or complete rules instead of duplicating them.
+- University is an ordered curriculum. Pages are numbered lessons inside a track (`sidebar_label: "5. Gantt Chart"`, `sidebar_position: 5`). A feature the user operates has its lesson here, and that lesson is where they learn the whole thing.
+- Teach the feature, do not specify it. Use second person, a heading that is a full sentence saying what the reader can do, one fact per bullet, and a screenshot for each screen or control described.
+- Cover the feature end to end: where to open it, what each control and column does, and the normal order of work. Never reduce a lesson to whichever part changed most recently.
+- New behaviour in a feature that already has a lesson belongs inside that lesson, in the place a reader would look for it.
+- Keep setting names, permissions and enablement steps out of the lesson. Those belong in the customization article. Link to it.
+- Explain the normal workflow in the order a user performs it. Link to the canonical product page for configuration or complete rules instead of duplicating them.
 - Do not use University pages as a catch-all for support configuration, integration setup, API contracts, or technical reference material.
 
 ### API, SDK, and Technical References
