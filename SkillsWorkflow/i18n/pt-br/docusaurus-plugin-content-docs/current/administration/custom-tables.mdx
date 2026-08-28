@@ -1,0 +1,95 @@
+---
+id: custom-tables
+title: Tabelas Personalizadas
+sidebar_label: Tabelas Personalizadas
+sidebar_position: 10
+slug: /administration/custom-tables
+---
+
+import SdkReference from "../_partials/_custom-table-sdk.mdx";
+import ApiReference from "../_partials/_custom-table-api.mdx";
+
+## Visão geral
+
+As Tabelas Personalizadas permitem ampliar o modelo de dados do Skills Workflow com tabelas, colunas e tipos de dados próprios.
+
+---
+
+## Navegar para Custom Tables
+
+1. Vá em **Maintenance**
+2. Selecione o módulo **Custom Tables**
+
+<figure>
+
+![img-box-shadow](/img/maintenance/custom_tables_list.png)
+
+<figcaption>Lista de tabelas personalizadas</figcaption>
+</figure>
+
+---
+
+## Criar uma tabela personalizada
+
+1. Clique em **+**
+2. Defina o nome da tabela
+3. Configure a coluna chave, normalmente `Oid`
+4. Adicione colunas e tipos de dados
+
+<figure>
+
+![img-box-shadow](/img/maintenance/custom_tables_create.png)
+
+<figcaption>Criação de uma nova tabela personalizada</figcaption>
+</figure>
+
+---
+
+## Permissões
+
+Cada tabela possui:
+
+- **Read Role** para leitura
+- **Save Role** para inserção, atualização e remoção
+
+<figure>
+
+![img-box-shadow](/img/maintenance/custom_tables_permissions.png)
+
+<figcaption>Configuração de permissões</figcaption>
+</figure>
+
+---
+
+## Ler dados com queries
+
+Use o namespace `CustomTable` e consulte o schema `[customtables]`.
+
+```sql
+SELECT Oid, Name, Price, IsActive
+FROM [customtables].[ProductCatalog]
+WHERE IsActive = 1
+ORDER BY Name
+```
+
+---
+
+## Referência do SDK
+
+<details>
+<summary><strong>Ver métodos do SDK</strong></summary>
+
+<SdkReference />
+
+</details>
+
+---
+
+## Referência da API
+
+<details>
+<summary><strong>Ver endpoints da API</strong></summary>
+
+<ApiReference />
+
+</details>

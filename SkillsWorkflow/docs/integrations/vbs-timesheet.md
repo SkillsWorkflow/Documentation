@@ -9,7 +9,7 @@ sidebar_label: VBS Timesheet
 
 This article describes the **VBS Timesheet** integration between `Skills Workflow` and **VBS**.
 
-This integration is separate from the [VBS](./vbs) employee integration. While that one brings people into Skills Workflow, this one sends **time** back out: the hours and the leave that people record in Skills Workflow are pushed into VBS, so that the agency's cost, billing and payroll processes run on the same time data the teams actually entered.
+This integration is separate from the [VBS](vbs) employee integration. While that one brings people into Skills Workflow, this one sends **time** back out: the hours and the leave that people record in Skills Workflow are pushed into VBS, so that the agency's cost, billing and payroll processes run on the same time data the teams actually entered.
 
 It takes care of the full life cycle of a time entry, not just the creation:
 

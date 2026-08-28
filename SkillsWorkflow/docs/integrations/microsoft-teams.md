@@ -24,7 +24,7 @@ Flow:
 
 None of this is tied to one scenario:
 
-- The webhook's event can be any [Skills Workflow webhook event](../api/webhooks.md#event) — `StageUpdated` on `Deliverable` (posting whenever a job changes stage) is just one example.
+- The webhook's event can be any [Skills Workflow webhook event](../build-and-extend/api/webhooks#event) — `StageUpdated` on `Deliverable` (posting whenever a job changes stage) is just one example.
 - The Named Query and Template can be swapped or edited to show different data, independently of the webhook.
 - System Parameters can hold more than one destination URL, so the same automation can post to several Teams channels — one per project or client, for instance.
 
@@ -38,7 +38,7 @@ To enable this integration, import all five items:
 
 | Item (Marketplace name) | Description |
 |---|---|
-| Webhook | Triggers the automation on the event you configure — see [Webhooks](../api/webhooks.md) |
+| Webhook | Triggers the automation on the event you configure — see [Webhooks](../build-and-extend/api/webhooks) |
 | System Parameters | Stores the Teams channel webhook URL(s) — one per channel if you need to post to more than one |
 | Template | The Adaptive Card JSON posted to Teams |
 | Named Query | Retrieves the data that fills in the Template's JSON |
@@ -183,7 +183,7 @@ Before setting up the integration, make sure you have:
 - Access to the **Marketplace**
 - A Microsoft Teams channel that should receive the card
 - A valid Microsoft Teams incoming webhook URL for that channel (see [Section 8](#8-configuring-the-incoming-webhook-in-microsoft-teams) to create one)
-- A Skills Workflow **Webhook** configured for the event that should trigger the automation (see the [Webhooks reference](../api/webhooks.md))
+- A Skills Workflow **Webhook** configured for the event that should trigger the automation (see the [Webhooks reference](../build-and-extend/api/webhooks))
 - A **Template** with the Adaptive Card definition
 - The values required by the **Configuration Keys** or **System Parameters**
 

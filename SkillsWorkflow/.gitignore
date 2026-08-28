@@ -23,3 +23,7 @@ yarn-error.log*
 
 algolia-crawler/.env
 .env
+
+# Marketplace export used to draft integration docs — contains plaintext
+# credentials in a few files (Azure AD client secret, webhook secrets)
+.integration-files/

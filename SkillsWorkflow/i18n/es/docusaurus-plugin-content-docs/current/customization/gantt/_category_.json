@@ -1,8 +1,0 @@
-{
-  "label": "Gantt",
-  "position": 7,
-  "link": {
-    "type": "doc",
-    "id": "customization/gantt/index"
-  }
-}

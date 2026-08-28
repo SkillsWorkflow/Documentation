@@ -11,7 +11,7 @@ This article describes the **GSP Dynamics Timesheet Importer**.
 
 Where timesheets are recorded in Dynamics rather than in Skills Workflow, the agency still needs that time visible inside the platform — next to the projects, the clients and the financials — in order to report on utilisation, billability and delivered hours.
 
-This importer takes care of that. It collects the Dynamics timesheet report and loads it into a [Custom Table](../university/maintenance/custom-tables) in Skills Workflow, where it can be used by views, reports and dashboards like any other data in the platform.
+This importer takes care of that. It collects the Dynamics timesheet report and loads it into a [Custom Table](../administration/custom-tables) in Skills Workflow, where it can be used by views, reports and dashboards like any other data in the platform.
 
 It is a reporting feed. It does not create timesheets in Skills Workflow and does not affect approvals or billing.
 
