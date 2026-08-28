@@ -83,6 +83,35 @@ Choose the article type before writing. A page must have one primary audience an
 - Examples are allowed only when they are clearly framed as hypothetical and cannot be confused with actual system values.
 - For any system-defined or tenant-defined value list, do not provide example members unless they were verified from source data first.
 
+## Prose Style
+
+Documentation is instructional writing. Tell the reader what to do and what will happen. The tells below are what make a page read as machine-written, and they share one habit: explaining and justifying instead of instructing.
+
+**Do not justify a rule with its mechanism.** The reader needs the rule, not the reason the software behaves that way. Internal cause belongs in the commit message, not the article.
+
+- Avoid: "Because a bulk action reloads the Gantt when it closes, it cannot run while there are unsaved changes."
+- Prefer: "Save your changes before running a bulk action."
+
+**Do not write every bullet in the same syntactic shape.** A list where each item is `**Bolded claim.** Explanation, so consequence.` is the clearest signature of generated text. Vary the construction, or drop the bolded lead-ins and write plain sentences.
+
+**Cut purpose and contrast clauses.** `, so ...`, `so that ...`, `instead of ...`, `rather than ...`, `not X but Y`. State the behaviour and stop. If half a sentence explains why the behaviour is desirable, delete that half.
+
+- Avoid: "The button is not shown at all rather than shown disabled."
+- Prefer: "The button is hidden."
+
+**Do not answer objections nobody raised.** Sentences defending a design ("so it cannot be pressed with no effect", "which reduces confusion") are arguing, not documenting.
+
+**Name the setting.** Abstract paraphrase used to avoid committing to a name reads as evasion. If the exact name is not verified, verify it or say plainly that it could not be verified. Do not write around it.
+
+- Avoid: "The maximum number of jobs a single bulk action may cover is configurable on the component."
+- Prefer the real setting name, or state that it was not verified.
+
+**Vary section shape.** If every section is one intro sentence, one numbered list, one explanatory paragraph and one captioned image, the page reads as a template being filled. Some behaviour needs three steps and no picture.
+
+**Avoid the em dash as a default connector**, and avoid meta-commentary about the page itself ("This page covers...", "In this section we will..."). Say the thing.
+
+**Prefer the shorter draft.** If a rewrite is not noticeably shorter than the original, the padding was moved rather than removed.
+
 ## Integrations: Product Pages and Technical References
 
 - `docs/integrations/` is the **product layer**: what an integration takes care of, what the agency must provide, what is configurable. Written for the customer, not the implementer.

@@ -8,82 +8,67 @@ sidebar_position: 1
 
 # Gantt
 
-The Gantt shows a project's jobs on a timeline, with the job hierarchy in a grid on the left. This page covers how to work with the rows of that grid: selecting them, duplicating jobs, and changing several jobs in one operation.
+The Gantt shows a project's jobs on a timeline, with the job hierarchy in a grid on the left. Rows in that grid can be selected and acted on as a group: duplicated, or edited together with a bulk action.
 
-For the end-to-end walkthrough of building a schedule — creating parent and child jobs, dependencies, dates and % done — see [Gantt Chart](../../university/projects%20management/gantt-chart.md) in University.
+To build a schedule from scratch, see [Gantt Chart](../../university/projects%20management/gantt-chart.md) in University.
 
 ## Availability
 
-The Gantt is provided by a workspace. What is described here applies to the Gantt view configured in a workspace, and the toolbar buttons are shown only when that workspace enables the Gantt toolbar.
+The Gantt comes from a workspace, and its toolbar is off unless the workspace turns it on.
 
-The two row actions have their own requirements:
-
-- **Duplicate** requires permission to create jobs.
-- **Bulk action** requires permission to edit jobs, and the job must be configured for bulk editing — the same configuration that provides the Bulk action button in list views.
-
-When a requirement is not met, the button is not shown at all rather than shown disabled.
+Duplicate needs permission to create jobs. Bulk action needs permission to edit jobs, and the job must already be set up for bulk editing, as it is for list views. A button whose requirement is not met is hidden.
 
 ## Selecting rows
 
-The first column of the Gantt grid is a selection column, matching the selection column used in Skills Workflow lists. Its checkboxes appear when you hover a row and stay visible while a row is selected.
+The first column of the grid holds the selection checkboxes. They appear when you hover a row, and stay while the row is selected.
 
-- Tick a row's checkbox to select it.
-- Tick the checkbox in the column header to select every row.
-- Ticking a parent row also selects everything underneath it.
-- Clicking a row's WBS cell selects the whole row. Hold **Ctrl** (**Cmd** on macOS) to add or remove a row from the selection, or **Shift** to extend the selection from the last row you clicked.
+Tick the checkbox in the column header to select every row. Ticking a parent selects everything under it.
 
-Clicking any other cell selects that cell instead of the row, so copying and pasting values between cells keeps working as it does in a spreadsheet.
+Clicking a row's WBS cell selects the whole row. Ctrl (Cmd on macOS) adds or removes one row. Shift extends from the last row you clicked. Clicking any other cell selects the cell, not the row.
 
 ![img-box-shadow](/img/gantt/01-row-selection.png)
 <figcaption>Selection column with a parent row and its children selected</figcaption>
 
 ## Duplicating jobs
 
-**Duplicate** creates a copy of every selected row.
+Select the rows and click **Duplicate**. The copies appear next to the originals in Draft, and become jobs when you click **Save**.
 
-1. Select the rows you want to copy.
-2. Click **Duplicate** in the toolbar.
-3. Review the copies, then click **Save**.
+A duplicated parent brings its branch with it, so selecting a parent together with its children still produces one copy of the branch.
 
-The copies are placed next to the rows they were copied from and start in Draft. They exist only in the view until you save: clicking **Save** is what creates them as jobs.
-
-A duplicated parent brings its whole structure with it, so selecting a parent together with its children still produces one copy of that branch, not one copy per row.
-
-Duplicate does not affect what you have copied with **Copy row**, so you can duplicate rows without losing the clipboard.
+Duplicate leaves the **Copy row** clipboard untouched.
 
 ![img-box-shadow](/img/gantt/02-duplicate.png)
 <figcaption>Duplicated rows created in Draft below the originals</figcaption>
 
 ## Editing several jobs at once
 
-**Bulk action** opens the same bulk editing dialog used in list views, applied to the rows selected in the Gantt.
+**Bulk action** opens the bulk editing dialog on the selected rows. It is the same dialog used in list views.
 
-1. Save any pending changes in the Gantt.
-2. Select the rows you want to change.
-3. Click **Bulk action** in the toolbar.
-4. Choose the field and the value to apply, then run the operation.
-
-Bulk action writes directly to the selected jobs. When it finishes, the Gantt reloads so the grid shows the saved result.
+Save the Gantt first. The dialog writes to the jobs directly, and the Gantt reloads when it closes.
 
 ![img-box-shadow-popup](/img/gantt/03-bulk-action.png)
 <figcaption>Bulk action applied to the rows selected in the Gantt</figcaption>
 
 ## Rules and behaviour
 
-- **Save your work before a bulk action.** Because a bulk action reloads the Gantt when it closes, it cannot run while there are unsaved changes. Skills Workflow shows a message asking you to save first.
-- **Only saved jobs can be bulk edited.** Rows created in the Gantt but not yet saved have no job behind them yet, so they are left out of the operation and a message tells you they were skipped. Save first if you want to include them.
-- **Bulk actions are limited to a maximum number of jobs at a time.** Selecting more than the configured limit shows a message instead of running the operation.
-- **Duplicated rows are not jobs until you save.** Leaving the Gantt before saving discards them, and Skills Workflow warns you when you navigate away with unsaved changes.
-- **Save is enabled only when there is something to save**, so it cannot be pressed with no effect.
+With unsaved changes in the Gantt, a bulk action stops and Skills Workflow asks you to save.
+
+Rows you have not saved yet have no job behind them. A bulk action skips them and tells you how it went.
+
+One bulk action covers at most 100 jobs. Selecting more shows a message.
+
+Duplicated rows are lost if you leave the Gantt without saving. Skills Workflow warns you before you navigate away.
+
+Save stays disabled until there is something to save.
 
 ## Configuration
 
-The Gantt toolbar and its row actions are configured on the Gantt component in the workspace:
+On the Gantt component in the workspace:
 
-- The toolbar, including **Duplicate** and **Bulk action**, is shown only when the Gantt component is configured to show it.
-- The maximum number of jobs a single bulk action may cover is configurable on the component. When it is not set, the limit is 100 jobs.
-- Permission to create and to bulk edit follows the job's own configuration, and each can also be turned off for a specific Gantt through the component's parameters.
+- `showToolbar` shows the toolbar, including Duplicate and Bulk action.
+- `bulkCapLimit` sets how many jobs one bulk action may cover. Without it the limit is 100.
+- `allowCreate` and `allowBulk` turn either action off for this Gantt. They otherwise follow the job's own permissions.
 
 ## Related articles
 
-- [Gantt Chart](../../university/projects%20management/gantt-chart.md) — building a project schedule in the Gantt.
+- [Gantt Chart](../../university/projects%20management/gantt-chart.md), building a project schedule in the Gantt.
