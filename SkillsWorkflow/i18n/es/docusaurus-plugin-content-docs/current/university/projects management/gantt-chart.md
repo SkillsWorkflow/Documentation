@@ -11,6 +11,8 @@ sidebar_position: 4
 
 La vista de Gantt brindará una representación más visual de todos los trabajos de un proyecto y cómo se relacionan entre sí a lo largo del tiempo.
 
+Para seleccionar filas, duplicar jobs y editar varios jobs a la vez, consulte [Gantt](../../customization/gantt/index.md).
+
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson4-1.png)

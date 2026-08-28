@@ -9,6 +9,8 @@ Uma das formas de visualizar seus projetos é através do Gráfico de Gantt.
 
 A vista do Gantt permite-lhe uma representação visual de suas atividades e projetos, e de como estão relacionados temporalmente.
 
+Para selecionar linhas, duplicar jobs e editar vários jobs de uma só vez, consulte [Gantt](../../customization/gantt/index.md).
+
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson4-1.png)

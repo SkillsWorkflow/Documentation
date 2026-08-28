@@ -11,6 +11,8 @@ sidebar_position: 5
 
 The Gantt view will give a more visual representation of all the jobs of a Project and how they are related to one another through time.
 
+For selecting rows, duplicating jobs and editing several jobs at once, see [Gantt](../../customization/gantt/index.md).
+
 <figure>
 
 ![img-box-shadow](/img/university/project-management/project-management-lesson4-1.png)
