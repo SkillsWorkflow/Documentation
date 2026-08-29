@@ -1,5 +1,5 @@
 ---
-id: index
+id: annotations
 title: Annotations
 description: "Annotation features in the Skills Workflow file preview."
 sidebar_label: Annotations

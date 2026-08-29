@@ -412,7 +412,7 @@ module.exports = {
             { from: '/docs/university/dashboards/project-burn-dashboard', to: '/docs/product/dashboards-and-reporting/project-burn-dashboard' },
             { from: '/docs/to-review/querying%20data', to: '/docs/product/dashboards-and-reporting/querying data' },
             { from: '/docs/university/dashboards/utilization-dashboard', to: '/docs/product/dashboards-and-reporting/utilization-dashboard' },
-            { from: '/docs/customization/annotations', to: '/docs/product/files-and-collaboration/index' },
+            { from: '/docs/customization/annotations', to: '/docs/product/files-and-collaboration/annotations' },
             { from: '/docs/university/feed/using-feed', to: '/docs/product/files-and-collaboration/using-feed' },
             { from: '/docs/to-review/mobile%20app/android-app-config', to: '/docs/product/mobile/android-app-config' },
             { from: '/docs/to-review/mobile%20app/ios-app-config', to: '/docs/product/mobile/ios-app-config' },
