@@ -1,0 +1,183 @@
+/* Colours come from the product palette in src/css/custom.css, so both themes
+   are handled there. */
+
+.root { margin-top: 1.5rem; }
+
+/* ── controls ───────────────────────────────────────────────────────────── */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.search {
+  flex: 1 1 16rem;
+  min-width: 0;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--sw-line-strong);
+  border-radius: var(--sw-radius);
+  background: var(--sw-surface);
+  color: var(--sw-heading);
+  font-family: inherit;
+  font-size: 0.92rem;
+}
+.search::placeholder { color: var(--sw-muted); }
+.search:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+  border-color: var(--ifm-color-primary);
+}
+
+.filters { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--sw-line);
+  border-radius: 999px;
+  background: var(--sw-surface);
+  color: var(--sw-body);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.filter:hover { border-color: var(--ifm-color-primary); color: var(--ifm-color-primary); }
+.filterOn {
+  background: var(--sw-primary-soft);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+.filterCount {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.75rem;
+  color: var(--sw-muted);
+}
+.filterOn .filterCount { color: inherit; }
+
+/* ── versions ───────────────────────────────────────────────────────────── */
+
+.version {
+  border: 1px solid var(--sw-line);
+  border-radius: var(--sw-radius);
+  background: var(--sw-surface);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.85rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+  background: var(--sw-surface-2);
+}
+.summary::-webkit-details-marker { display: none; }
+.summary::before {
+  content: "";
+  width: 0.42rem;
+  height: 0.42rem;
+  border-right: 1.6px solid var(--sw-muted);
+  border-bottom: 1.6px solid var(--sw-muted);
+  transform: rotate(-45deg);
+  transition: transform 0.15s ease;
+  flex: none;
+}
+.version[open] > .summary::before { transform: rotate(45deg); }
+
+.versionName {
+  font-family: var(--sw-font-display);
+  font-size: 1.05rem;
+  color: var(--sw-heading);
+  font-variant-numeric: tabular-nums;
+}
+.count { font-size: 0.8rem; color: var(--sw-muted); margin-left: auto; }
+
+/* ── entries ────────────────────────────────────────────────────────────── */
+
+.entries { list-style: none; margin: 0; padding: 0; }
+
+.entry {
+  padding: 1.1rem 1.1rem 1.15rem;
+  border-top: 1px solid var(--sw-line);
+  margin: 0;
+}
+
+.entryHead {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.entryTitle {
+  font-family: var(--sw-font-sans);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--sw-heading);
+  margin: 0;
+  flex: 1 1 18rem;
+  line-height: 1.45;
+}
+
+.tag {
+  flex: none;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Semantic colours are the product's own --system-* values. */
+.improvement {
+  background: color-mix(in srgb, var(--system-green-color-1) 18%, transparent);
+  color: color-mix(in srgb, var(--system-green-color-1) 72%, black);
+}
+.change {
+  background: color-mix(in srgb, var(--system-orange-color-1) 20%, transparent);
+  color: color-mix(in srgb, var(--system-orange-color-1) 76%, black);
+}
+.fix {
+  background: color-mix(in srgb, var(--system-red-color-1) 12%, transparent);
+  color: color-mix(in srgb, var(--system-red-color-1) 82%, black);
+}
+
+:global(html[data-theme="dark"]) .improvement { color: color-mix(in srgb, var(--system-green-color-1) 88%, white); }
+:global(html[data-theme="dark"]) .change { color: color-mix(in srgb, var(--system-orange-color-1) 88%, white); }
+:global(html[data-theme="dark"]) .fix { color: color-mix(in srgb, var(--system-red-color-1) 55%, white); }
+
+.entryBody {
+  margin-top: 0.5rem;
+  color: var(--sw-body);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+.entryBody p { margin: 0 0 0.5rem; }
+.entryBody p:last-child { margin-bottom: 0; }
+.entryBody ul, .entryBody ol { margin: 0.35rem 0 0.5rem; padding-left: 1.2rem; }
+.entryBody li { margin-bottom: 0.25rem; }
+.entryBody strong { color: var(--sw-heading); }
+.entryBody img { max-width: 100%; height: auto; border-radius: var(--sw-radius-sm); }
+
+.empty {
+  padding: 1.5rem;
+  border: 1px dashed var(--sw-line-strong);
+  border-radius: var(--sw-radius);
+  color: var(--sw-muted);
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .filter, .summary::before { transition: none; }
+}

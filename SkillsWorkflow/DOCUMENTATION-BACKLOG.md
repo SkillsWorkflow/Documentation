@@ -25,8 +25,11 @@ company already sells and the documentation does not yet explain.
 - [ ] 1.5 &nbsp;3 pages are `unlisted: true` but absent from `excludeRoutes`
       (`administration/importing-data/` clients, products, workflows), so they stay findable in
       site search.
-- [ ] 1.6 &nbsp;`start-here/releases.md` promises weekly release notes and has no content behind it.
-      Publish it or delete it.
+- [x] 1.6 &nbsp;`start-here/releases` — **done**. The hand-maintained page was not empty, as first
+      reported here: it was stale (stopped at version 21) and published internal notes, including
+      acceptance criteria in Portuguese, client names and internal ticket numbers. It is now
+      generated at build time from the releases endpoint, publishing only the curated
+      `ReleaseTitle` / `ReleaseDescription` fields. See `scripts/fetch-releases.mjs`.
 - [ ] 1.7 &nbsp;Two pages have locale-specific `id` values (`timesheet-aprobaciones-dashboard` in es,
       `create-projects`/`1-approve-expenses` in pt-br), which prevented a redirect from being
       generated for them. Align the ids across locales.
@@ -87,13 +90,29 @@ The whole briefing stage is the least documented part of the platform.
 - [ ] 5.2 &nbsp;68 orphaned locale files were deleted during the restructure. Check whether any of
       them documented something the English tree never had.
 
-## 6. Verification still owed
+## 6. Releases feed
 
-- [ ] 6.1 &nbsp;`internal/to-review/` — 8 pages parked out of the site. Triage each: publish, merge
+- [ ] 6.0 &nbsp;The endpoint is on **`apiv2-support-test-we`**, a test environment. Confirm this is
+      the right source for a public site, or point `RELEASES_ENDPOINT` at production.
+- [ ] 6.1 &nbsp;20 of 633 entries carry a malformed version (`.23.6`, leading dot). The build script
+      trims the dot rather than dropping the entry; fixing them at source would be better.
+- [ ] 6.2 &nbsp;The payload has **no date field**. Versions look year-based (21.x to 26.x) but nothing
+      in the response confirms it, so the page cannot show "released on". Adding a date to the
+      workflow output would let entries be dated.
+- [ ] 6.3 &nbsp;`IsFeature` is 1 for everything that is not an error, including Doubt and Sub-Task, so
+      it cannot be used as a "this is a feature" flag. The build script categorises from `JobType`
+      instead. Worth aligning at source.
+- [ ] 6.4 &nbsp;The endpoint answers with the payload double-encoded (a JSON string containing the
+      JSON array) when `Accept: application/json` is sent. The script unwraps it; the workflow
+      should probably return the array directly.
+
+## 7. Verification still owed
+
+- [ ] 7.1 &nbsp;`internal/to-review/` — 8 pages parked out of the site. Triage each: publish, merge
       or delete. Some duplicate live pages (GDPR, Azure AD blocking, timesheets).
-- [ ] 6.2 &nbsp;`internal/design/` — 14 pages of guidelines, now internal. Confirm none of it was
+- [ ] 7.2 &nbsp;`internal/design/` — 14 pages of guidelines, now internal. Confirm none of it was
       customer-facing.
-- [ ] 6.3 &nbsp;`internal/documenting/` — the style guide is referenced from `AGENTS.md`. Confirm
+- [ ] 7.3 &nbsp;`internal/documenting/` — the style guide is referenced from `AGENTS.md`. Confirm
       the new location does not break that workflow.
-- [ ] 6.4 &nbsp;30 RCA incident reports (2018–2026) still sit inside `trust/`. Split them into a
+- [ ] 7.4 &nbsp;30 RCA incident reports (2018–2026) still sit inside `trust/`. Split them into a
       dated archive so the 10 policy pages are findable.

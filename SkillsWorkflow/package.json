@@ -7,9 +7,9 @@
   },
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "npm run releases && docusaurus start",
     "start:search": "docusaurus build && docusaurus serve",
-    "build": "docusaurus build && npm run generate:llms",
+    "build": "npm run releases && docusaurus build && npm run generate:llms",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
@@ -17,7 +17,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "generate:de": "node scripts/generate-de-docs.mjs",
-    "generate:llms": "node scripts/generate-llms-txt.mjs"
+    "generate:llms": "node scripts/generate-llms-txt.mjs",
+    "releases": "node scripts/fetch-releases.mjs"
   },
   "dependencies": {
     "@dagrejs/dagre": "^3.0.0",
