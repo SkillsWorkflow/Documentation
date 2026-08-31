@@ -14,9 +14,9 @@ To ensure a successful integration in the **Production environment**, the follow
 
 Currently supported providers include:
 
-- [Google Suite](./google-suite)
-- [Microsoft Entra](./microsoft-entra)
-- [Okta](./okta)
+- [Google Suite](google-suite)
+- [Microsoft Entra](microsoft-entra)
+- [Okta](okta)
 
 ---
 ### Configuration Steps

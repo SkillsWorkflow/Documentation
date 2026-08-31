@@ -11,7 +11,7 @@ This article describes the **Custom Table Importer**.
 
 Agencies regularly need data inside Skills Workflow that does not come from any connected system — a rate card, a media plan, a budget breakdown, a list from a client, a report exported from another tool. Building a dedicated integration for each of those is rarely worth it, but retyping them is worse.
 
-The Custom Table Importer solves that. It watches a folder, and every Excel file dropped there becomes a [Custom Table](../university/maintenance/custom-tables) inside Skills Workflow — available to views, reports and dashboards like any other data in the platform. No integration project, no development: the agency exports a spreadsheet and drops it in a folder.
+The Custom Table Importer solves that. It watches a folder, and every Excel file dropped there becomes a [Custom Table](../administration/custom-tables) inside Skills Workflow — available to views, reports and dashboards like any other data in the platform. No integration project, no development: the agency exports a spreadsheet and drops it in a folder.
 
 ---
 

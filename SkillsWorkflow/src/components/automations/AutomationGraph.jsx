@@ -99,9 +99,10 @@ function AutomationGraphInner({ preset, height }) {
  * Interactive automation flow diagram.
  *
  * @param {string} [preset='model'] - which preset from automationGraphConfig to render.
- * @param {number} [height=360] - diagram height in px.
+ * @param {number} [height=520] - diagram height in px. The layout runs top to
+ *   bottom, so allow roughly 108px per step.
  */
-export default function AutomationGraph({ preset = 'model', height = 360 }) {
+export default function AutomationGraph({ preset = 'model', height = 520 }) {
   return (
     <ReactFlowProvider>
       <AutomationGraphInner preset={preset} height={height} />

@@ -12,7 +12,7 @@ iSAP is the agency's SAP-based back office. This integration keeps the two syste
 
 The job flow works in **both directions**, which is what makes this integration different from a simple master-data feed. A job can start life in either system and still end up correctly represented in the other, with the two staying in step through its whole life — including when it is closed.
 
-For the day-to-day detail of how jobs behave once the integration is in place, see **[Job Maintenance](./job-maintenance)**.
+For the day-to-day detail of how jobs behave once the integration is in place, see **[Job Maintenance](job-maintenance)**.
 
 ---
 

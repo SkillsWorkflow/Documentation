@@ -35,11 +35,17 @@ const EDGE_STYLE = {
 const EDGE_LABEL_STYLE = { fontSize: 10, fill: '#475569', fontWeight: 600 };
 const EDGE_LABEL_BG = { fill: '#f1f5f9', fillOpacity: 0.9 };
 
-// ── Layout with dagre (left → right, like a pipeline) ────
+// ── Layout with dagre (top → bottom, read like a list of steps) ────
+//
+// TB rather than LR so the chain reads down the page: the flows are linear and
+// the node labels are action names, which get long. It also matches where the
+// handles are — React Flow's `default` node takes its target on the top edge and
+// its source on the bottom, so a left-to-right layout made every edge leave the
+// bottom of one node and arc back over to the top of the next.
 
 function applyDagreLayout(nodes, edges) {
     const g = new Dagre.graphlib.Graph().setDefaultEdgeLabel(() => ({}));
-    g.setGraph({ rankdir: 'LR', nodesep: 40, ranksep: 80 });
+    g.setGraph({ rankdir: 'TB', nodesep: 40, ranksep: 64 });
 
     for (const node of nodes) {
         g.setNode(node.id, { width: NODE_WIDTH, height: NODE_HEIGHT });
@@ -67,6 +73,10 @@ function makeNode({ id, role }) {
         type: 'default',
         data: { label: id },
         position: { x: 0, y: 0 },
+        // Stated rather than left to the default, so the handles cannot drift out
+        // of step with the dagre rankdir above.
+        targetPosition: 'top',
+        sourcePosition: 'bottom',
         style: ROLE_STYLE[role] ?? ROLE_STYLE.work,
     };
 }

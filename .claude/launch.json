@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "skillsworkflow-docs",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd SkillsWorkflow && npm run start -- --port $PORT"],
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}

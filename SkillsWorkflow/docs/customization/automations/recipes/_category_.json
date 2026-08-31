@@ -1,9 +1,0 @@
-{
-  "label": "Recipes",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "title": "Automation recipes",
-    "description": "Complete, copy-paste automations for common scenarios. Each recipe shows the action chain as a diagram and the full JSON it produces — adapt the URLs, fields and columns to your case."
-  }
-}

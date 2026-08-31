@@ -42,10 +42,23 @@ function loadLocalEnv() {
   }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  loadLocalEnv();
-}
+// Load the local .env unconditionally. `docusaurus build` runs with
+// NODE_ENV=production, so gating this on non-production meant a local build got
+// no FONTAWESOME_KIT_ID, the kit <script> was never emitted, and every `fal fa-*`
+// icon on the site rendered blank. loadLocalEnv never overwrites a variable the
+// real environment already set, so this stays correct on the deploy host too.
+loadLocalEnv();
 const fontAwesomeKitId = process.env.FONTAWESOME_KIT_ID;
+
+// Without the kit there is no error and no broken image — every `fal fa-*` on the
+// site just renders blank, which is easy to ship without noticing. Say so.
+if (!fontAwesomeKitId) {
+  console.warn(
+    '[icons] FONTAWESOME_KIT_ID is not set — Font Awesome icons will render blank.\n' +
+    '        Local: add it to SkillsWorkflow/.env (gitignored).\n' +
+    '        Deploy: set it as an environment variable on the host (Netlify > Site settings > Environment variables).'
+  );
+}
 
 function humanizeSidebarLabel(label) {
   const normalized = label
@@ -128,8 +141,33 @@ module.exports = {
       title: '',
       logo: { alt: 'Skills Workflow', src: 'img/logo-blue.png' },
       items: [
-        { to: 'docs', label: 'Docs', position: 'left', className: 'navbar-item' },
-        { to: 'docs/university', label: 'University', position: 'left', className: 'navbar-item' },
+        // The navbar names the site's own top-level trees, so it answers "what is
+        // in here?" and agrees with the sidebar instead of contradicting it.
+        //
+        // There is deliberately no "Docs" item: it pointed at `/`, which meant it
+        // did nothing on the homepage and ejected the reader back to the marketing
+        // page from anywhere else. The logo is the one Home affordance.
+        //
+        // `activeBaseRegex` is matched against the raw pathname, which carries the
+        // locale prefix on localized builds (`/pt/docs/...`), hence `(^|/)docs`.
+        // "How to" rather than "Product": this tree is where the task answers live
+        // ("Create a Project", "Approving Time Sheets"), and "Product" reads as the
+        // platform team describing its own product rather than addressing the reader.
+        // It pairs with "Get started": look a task up here, learn the order there.
+        { to: 'docs/product',          label: 'How to',        position: 'left',  className: 'navbar-item',
+          activeBaseRegex: '(^|/)docs/product(/|$)' },
+        { to: 'docs/administration',   label: 'Administration', position: 'left', className: 'navbar-item',
+          activeBaseRegex: '(^|/)docs/administration(/|$)' },
+        { to: 'docs/build-and-extend', label: 'Build & Extend', position: 'left', className: 'navbar-item',
+          activeBaseRegex: '(^|/)docs/build-and-extend(/|$)' },
+        { to: 'docs/integrations',     label: 'Integrations',  position: 'left',  className: 'navbar-item',
+          activeBaseRegex: '(^|/)docs/integrations(/|$)' },
+
+        // "Get started" rather than "Learning paths": behind it are three ordered
+        // routes (use / administer / implement), not a task lookup. A reader with a
+        // single "how do I…?" question is served by Product, not by a 20-step route.
+        { to: 'docs/learning-paths', label: 'Get started', position: 'right', className: 'navbar-item',
+          activeBaseRegex: '(^|/)docs/(university|learning-paths)(/|$)' },
         { to: 'docs/trust', label: 'Trust', position: 'right', className: 'navbar-item' },
         {
           label: 'API',
@@ -144,19 +182,21 @@ module.exports = {
     footer: {
       links: [
         {
-          title: 'Customization',
+          title: 'Build & Extend',
           items: [
-            { label: 'Style Guide', to: 'docs/documenting/style-guide' },
-            { label: 'Automations', to: 'docs/customization/automations' },
-            { label: 'SDK', to: 'docs/sdk' },
-            { label: 'API', to: 'docs/api/client-api' },
+            { label: 'Workspaces', to: 'docs/build-and-extend/workspaces' },
+            { label: 'Automations', to: 'docs/build-and-extend/automations' },
+            { label: 'SDK', to: 'docs/build-and-extend/sdk' },
+            { label: 'API', to: 'docs/build-and-extend/api/client-api' },
             { label: 'Integrations', to: 'docs/integrations' },
-            { label: 'University', to: 'docs/university' }
+            { label: 'Get started', to: 'docs/learning-paths' }
           ]
         },
         {
           title: 'Learn More',
           items: [
+            { label: 'Glossary', to: 'docs/start-here/glossary' },
+            { label: 'Releases', to: 'docs/start-here/releases' },
             { label: 'Client API', to: 'https://apiv2-demo-prod-we.skillsworkflow.com/swagger' },
             { label: 'Integration API', to: 'https://integration-api-test.skillsworkflow.com' },
             { label: 'Website', to: 'https://www.skillsworkflow.com/' },
@@ -207,8 +247,7 @@ module.exports = {
             '/tags/**',
             '/search',
             '**/to-review/**',
-            '**/docs/integrations/zonza',
-            '**/docs/integrations/cloud-storage/box_old'
+            '**/docs/integrations/zonza'
           ],
           filename: 'sitemap.xml'
         }
@@ -230,21 +269,8 @@ module.exports = {
         // old Knowledge Base. Leaving it indexed means site search — and any LLM reading
         // /search-doc.json — can quote stale material back as current documentation.
         excludeRoutes: [
-          '**/to-review/**',
-          '**/docs/integrations/zonza',
-          '**/docs/integrations/cloud-storage/box_old'
+          '**/docs/integrations/zonza'
         ]
-      }
-    ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        createRedirects(existingPath) {
-          if (existingPath.endsWith('/index')) {
-            return [existingPath.replace(/\/index$/, '')];
-          }
-          return [];
-        }
       }
     ]
   ]

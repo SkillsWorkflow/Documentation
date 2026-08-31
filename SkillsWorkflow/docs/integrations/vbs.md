@@ -1,6 +1,7 @@
 ---
 id: vbs
 title: 'VBS'
+description: "The integration between VBS and Skills Workflow: what it covers and how it is configured."
 sidebar_label: VBS
 ---
 
@@ -12,7 +13,7 @@ VBS is the agency's ERP. This is the widest integration in the platform: it cove
 
 The integration is modular — each flow can be switched on or off per company, so an agency can start with just clients and jobs and add the financial documents later.
 
-For the separate integration that sends **time** to VBS, see [VBS Timesheet](./vbs-timesheet).
+For the separate integration that sends **time** to VBS, see [VBS Timesheet](vbs-timesheet).
 
 ---
 

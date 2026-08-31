@@ -1,449 +1,330 @@
 /* stylelint-disable docusaurus/copyright-header */
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Varela+Round&display=swap");
 
-/* ──────────────────────────────────────────────────────────────────────────
-   Brand tokens — kept in sync with the institutional website
-   (web-site/css/style.css :root) and the WebApp product
-   (SkillsWorkflow.WebApp ClientApp/css/skills_Base.css).
+/* ═══════════════════════════════════════════════════════════════════════════
+   Skills Workflow — documentation theme
 
-   Two-font system, same as the website and the product:
-     - display (headings) → Varela Round   [product: --system-primary-font]
-     - sans (body copy)   → Open Sans      [product: --system-secondary-font]
-   ────────────────────────────────────────────────────────────────────────── */
+   Brand stays: #0072c6 primary, #00b8d9 accent, Varela Round display over
+   Open Sans body. What changed is the delivery — a calmer type scale, borders
+   instead of drop shadows, real spacing rhythm, and a dark mode that is
+   designed rather than inverted.
+
+   Layers, in order:
+     1. tokens        2. base typography    3. navigation
+     4. content       5. components         6. preserved blocks
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Varela+Round&display=swap");
+
+/* ── 1. tokens ──────────────────────────────────────────────────────────── */
+
 :root {
-  --sw-font-display: "Varela Round", system-ui, sans-serif;
-  --sw-font-sans: "Open Sans", system-ui, sans-serif;
-  --sw-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Courier New", monospace;
+  --sw-font-display: "Varela Round", system-ui, sans-serif;   /* --system-primary-font */
+  --sw-font-sans: "Open Sans", system-ui, -apple-system, sans-serif; /* --system-secondary-font */
+  --sw-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  --sw-primary: #0072c6;
-  --sw-primary-strong: #00508b;
-  --sw-accent: #00b8d9;
-  --sw-heading: #0a0d14;
-  --sw-body: #374151;
-  --sw-muted: #868c98;
-  --sw-line: rgba(15, 23, 42, 0.12);
-  --sw-bg-alt: #ebf2ff;
-  --sw-screenshot-radius: 16px;
-  --sw-screenshot-border: #eaecec;
+  /* ── brand, taken verbatim from the WebApp (ClientApp/css/skills_Base.css) ──
+     so the documentation and the product read as one system. Names mirror the
+     product's own --system-* tokens; the --sw-* aliases exist because the
+     preserved rules further down already reference them. */
+  --system-main-color-1: #0072c6;
+  --system-action-color: #3ea6ff;
+  --system-base-color: #18212f;
+  --system-green-color-1: #7ec880;
+  --system-red-color-1: #f7412d;
+  --system-orange-color-1: #faa45e;
+  --system-gray-color-1: #eaecec;
+  --system-gray-color-2: #fbfbfb;
+  --system-gray-color-3: #ccc;
+  --system-dark-gray-color-1: #666;
+  --system-dark-gray-color-2: #999;
+  --system-border-radius: 16px;
+
+  --sw-primary: var(--system-main-color-1);
+  --sw-primary-strong: color-mix(in srgb, var(--system-main-color-1) 82%, black);
+  --sw-primary-soft: color-mix(in srgb, var(--system-main-color-1) 7%, white);
+  --sw-accent: var(--system-action-color);
+
+  --sw-heading: var(--system-base-color);
+  --sw-body: var(--system-dark-gray-color-1);
+  --sw-muted: var(--system-dark-gray-color-2);
+  --sw-line: var(--system-gray-color-1);
+  --sw-line-strong: var(--system-gray-color-3);
+  --sw-surface: #ffffff;
+  --sw-surface-2: var(--system-gray-color-2);
+  --sw-ground: #ffffff;
+
+  /* The product rounds at 16px; docs surfaces step down from it. */
+  --sw-radius: 12px;
+  --sw-radius-sm: 8px;
+  --sw-radius-lg: var(--system-border-radius);
+  --sw-shadow-sm: 0 1px 2px rgba(24, 33, 47, 0.05);
+  --sw-shadow: 0 4px 16px rgba(24, 33, 47, 0.08);
+
+  --sw-screenshot-radius: var(--system-border-radius);
+  --sw-screenshot-border: var(--sw-line);
   --sw-screenshot-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.149);
-}
 
-/* You can override the default Infima variables here. */
-:root {
   --ifm-color-primary: #0072c6;
-  --ifm-color-primary-dark: #00508b;
-  --ifm-color-primary-darker: #003963;
-  --ifm-color-primary-darkest: #00223b;
-  --ifm-color-primary-light: #0294ff;
+  --ifm-color-primary-dark: #00609f;
+  --ifm-color-primary-darker: #00508b;
+  --ifm-color-primary-darkest: #003963;
+  --ifm-color-primary-light: #128fe0;
   --ifm-color-primary-lighter: #2aa5ff;
   --ifm-color-primary-lightest: #52b5ff;
-  --ifm-font-color-base: var(--sw-body);
-  --ifm-code-font-size: 95%;
+
   --ifm-font-family-base: var(--sw-font-sans);
   --ifm-heading-font-family: var(--sw-font-display);
   --ifm-font-family-monospace: var(--sw-font-mono);
+  --ifm-font-color-base: var(--sw-body);
+  --ifm-heading-color: var(--sw-heading);
+  --ifm-background-color: var(--sw-ground);
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.86);
+  --ifm-navbar-shadow: none;
+  --ifm-toc-border-color: var(--sw-line);
+  --ifm-code-font-size: 88%;
+  --ifm-code-background: var(--sw-surface-2);
+  --ifm-code-border-radius: var(--sw-radius-sm);
+  --ifm-line-height-base: 1.7;
+  --ifm-spacing-horizontal: 1.25rem;
+  --ifm-menu-color: var(--sw-body);
+  --ifm-menu-color-background-active: var(--sw-primary-soft);
+  --ifm-breadcrumb-color-active: var(--sw-primary);
+  --ifm-link-hover-decoration: none;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 114, 198, 0.12);
   --home-text-color: var(--sw-heading);
-  --docusaurus-highlighted-code-line-bg: rgb(215, 215, 215);
 }
 
-/* Dark mode: only the neutrals flip; the brand blue stays #0072c6 as in the
-   website and the product. */
 html[data-theme="dark"] {
-  --ifm-font-color-base: #e5e7eb;
-  --sw-heading: #ffffff;
-  --sw-body: #e5e7eb;
-  --sw-muted: #9ca3af;
-  --sw-line: rgba(255, 255, 255, 0.14);
-  --sw-bg-alt: #1f2430;
+  /* The product ships light only, so the dark palette is derived here rather
+     than copied. Everything is anchored on --system-base-color (#18212f), the
+     product's own darkest neutral, so the two themes stay related. */
+  --sw-ground: #131a24;
+  --sw-surface: #18212f;
+  --sw-surface-2: #1e2836;
+  --sw-heading: #eef2f7;
+  --sw-body: #b6c0cd;
+  --sw-muted: #808c9c;
+  --sw-line: #26313f;
+  --sw-line-strong: #384556;
+  --sw-primary-soft: color-mix(in srgb, var(--system-main-color-1) 22%, #131a24);
+  --sw-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --sw-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  --sw-screenshot-border: var(--sw-line-strong);
+  --sw-screenshot-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+
+  /* #0072c6 does not carry on a dark ground; the product's action colour does. */
+  --ifm-color-primary: var(--system-action-color);
+  --ifm-color-primary-dark: #1f93f0;
+  --ifm-color-primary-darker: #0d86e6;
+  --ifm-color-primary-darkest: #0b6dbb;
+  --ifm-color-primary-light: #5fb5ff;
+  --ifm-color-primary-lighter: #7cc3ff;
+  --ifm-color-primary-lightest: #a8d7ff;
+
+  --ifm-background-color: var(--sw-ground);
+  --ifm-background-surface-color: var(--sw-surface);
+  --ifm-navbar-background-color: rgba(19, 26, 36, 0.86);
+  --ifm-font-color-base: var(--sw-body);
+  --ifm-heading-color: var(--sw-heading);
+  --ifm-code-background: var(--sw-surface-2);
+  --docusaurus-highlighted-code-line-bg: rgba(62, 166, 255, 0.16);
+}
+
+/* ── 2. base typography ─────────────────────────────────────────────────── */
+
+html { -webkit-font-smoothing: antialiased; }
+body { background: var(--sw-ground); color: var(--sw-body); }
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  font-family: var(--sw-font-display);
+  color: var(--sw-heading);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.markdown h1 { font-size: 2.35rem; line-height: 1.15; margin: 0 0 1rem; }
+.markdown h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 3rem 0 1rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--sw-line);
+}
+.markdown h2:first-of-type { border-top: none; padding-top: 0; margin-top: 2rem; }
+.markdown h3 { font-size: 1.15rem; margin: 2rem 0 0.6rem; }
+.markdown h4 { font-size: 1rem; margin: 1.5rem 0 0.5rem; color: var(--sw-body); }
+
+.markdown p,
+.markdown li { font-size: 0.975rem; }
+.markdown > p { margin-bottom: 1.05rem; }
+.markdown li { margin-bottom: 0.4rem; }
+.markdown ul, .markdown ol { padding-left: 1.35rem; }
+.markdown a { color: var(--ifm-color-primary); text-decoration: none; font-weight: 500; }
+.markdown a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.markdown strong { color: var(--sw-heading); font-weight: 600; }
+
+.markdown hr { border: none; border-top: 1px solid var(--sw-line); margin: 2.5rem 0; }
+
+.markdown blockquote {
+  border-left: 3px solid var(--sw-primary);
+  background: var(--sw-surface-2);
+  border-radius: 0 var(--sw-radius-sm) var(--sw-radius-sm) 0;
+  padding: 0.9rem 1.1rem;
+  color: var(--sw-body);
+}
+
+.markdown code {
+  border: 1px solid var(--sw-line);
+  padding: 0.12em 0.38em;
+  font-weight: 500;
+}
+.markdown pre code { border: none; padding: 0; }
+div[class^="codeBlockContainer"] {
+  border-radius: var(--sw-radius);
+  border: 1px solid var(--sw-line);
+  box-shadow: none;
 }
 
 figcaption {
-  color: #488ec1;
-  margin-bottom: 20px;
-  margin-top: 1px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.pagination-nav__label {
-  color: var(--sw-body);
-}
-
-span.token.constant {
-  color: #57c7fa !important;
-}
-span.token.function {
-  color: #57c7fa !important;
-}
-span.token.method.function.property-access {
-  color: #57c7fa !important;
-}
-.span.token.known-class-name.class-name {
-  color: #f7d44b !important;
-}
-span.token.parameter.known-class-name.class-name {
-  color: #f7a452 !important;
-}
-span.token.punctuation {
-  color: #9d53f2 !important;
-}
-span.token.parameter.punctuation {
-  color: #9d53f2 !important;
-}
-span.token.parameter.operator {
-  color: #4899ea !important;
-}
-span.token.operator {
-  color: #4899ea !important;
-}
-span.token.arrow.operator {
-  color: #4899ea !important;
-}
-span.token.comment {
-  color: #999999 !important;
-}
-
-/* .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-next-theme-CodeBlock-Content-styles-module {
-  background: #efefef;
-} */
-
-.menu__list-item {
-  margin: 0 !important;
-}
-
-.menu__link--sublist::after {
-  /*content: '';*/
-  height: 13px !important;
-  width: 13px;
-}
-
-.header-home {
-  height: 60vh;
-}
-
-.buttons_src-pages-styles-module {
-  margin-top: 30px;
-}
-
-.menu {
-  font-size: 15px !important;
-}
-
-.markdown h1:first-child {
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
-
-.markdown h2 {
-  margin-bottom: 20px;
-}
-
-.markdown h3 {
-  margin-bottom: 10px;
-}
-
-div code-block {
-  margin-top: 20px;
-}
-
-.margin-top--none {
-  margin-top: 0 !important;
-}
-
-.margin-left--xs {
-  margin-left: 0.25rem !important;
-}
-
-.padding-vert--md {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-}
-
-.padding--lg {
-  padding: 2rem !important;
-}
-
-h1 {
-  margin: 0 auto;
-  font-family: var(--sw-font-display);
-  font-size: 42px;
-  line-height: 48px;
-  font-weight: 700;
-  text-align: left;
-  letter-spacing: -0.02em;
-  text-transform: none;
-  margin-bottom: 20px !important;
-  margin-top: 20px !important;
-  color: var(--sw-heading);
-}
-
-h2 {
-  display: block;
-  width: auto;
-  font-family: var(--sw-font-display);
-  color: var(--ifm-color-primary);
-  font-size: 25px;
-  font-weight: 600 !important;
-  letter-spacing: 0.15px;
-  white-space: normal;
-  margin-top: 20px !important;
-  margin-bottom: 15px !important;
-  margin-left: 10px;
-}
-
-h2 ~ blockquote,
-h2 ~ ul,
-h2 ~ p,
-h2 ~ div,
-h2 ~ table,
-h2 ~ figure {
-  margin-left: 10px;
-}
-
-h3 {
-  font-family: var(--sw-font-display) !important;
-  font-weight: 600;
-  font-size: 18px;
-  color: #6ea5dc;
-  margin-top: 20px !important;
-  margin-bottom: 10px !important;
-  margin-left: 20px;
-}
-
-h3 ~ blockquote,
-h3 ~ ul,
-h3 ~ p,
-h3 ~ div,
-h3 ~ table,
-h3 ~ figure {
-  margin-left: 20px;
-}
-
-h4 {
-  color: var(--sw-heading);
-  margin-bottom: 8px !important;
-  margin-left: 30px;
-  font-size: 14px;
-  margin-top: 9px;
-}
-
-h4 ~ blockquote,
-h4 ~ ul,
-h4 ~ p,
-h4 ~ div,
-h4 ~ table,
-h4 ~ figure {
-  margin-left: 30px;
-}
-
-h5 {
+  text-align: center;
   color: var(--sw-muted);
-  /* margin-bottom: 8px !important; */
-  margin-left: 40px;
-  font-size: 14px;
-  /* margin-top: 9px; */
-  display: inline-block;
-  margin-bottom: 0px;
-  margin-right: 4px;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
 }
 
-h5 ~ blockquote,
-h5 ~ ul,
-h5 ~ p,
-h5 ~ div,
-h5 ~ table,
-h5 ~ figure {
-  margin-left: 40px;
-}
+/* ── 3. navigation ──────────────────────────────────────────────────────── */
 
-p {
-  font-size: 14px !important;
-  font-family: var(--sw-font-sans) !important;
-  color: var(--sw-body);
-  margin-bottom: 5px !important;
+.navbar {
+  border-bottom: 1px solid var(--sw-line);
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
 }
-
-ticket {
-  display: inline-block;
-  background-color: #999999;
-  font-family: var(--sw-font-sans) !important;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  color: white;
-  
-  a {
-    color: white;
-  }
-}
-
-dl {
-  font-size: 14px !important;
-  font-family: var(--sw-font-sans) !important;
+.navbar__brand { margin-right: 1.75rem; }
+.navbar__logo { height: 1.6rem; }
+.navbar__link {
+  font-size: 0.9rem;
+  font-weight: 600;
   color: var(--sw-body);
 }
+.navbar__link:hover, .navbar__link--active { color: var(--ifm-color-primary); }
+.navbar__link--active { position: relative; }
+.navbar__link--active::after {
+  content: "";
+  position: absolute;
+  left: 0.6rem; right: 0.6rem; bottom: -1.05rem;
+  height: 2px;
+  background: var(--ifm-color-primary);
+  border-radius: 2px 2px 0 0;
+}
 
-dt {
-  font-size: 14px !important;
-  font-family: var(--sw-font-sans) !important;
+.theme-doc-sidebar-container { border-right: 1px solid var(--sw-line) !important; }
+.menu { padding: 1rem 0.75rem 3rem; font-size: 0.9rem; }
+.menu__list .menu__list { padding-left: 0.5rem; margin-left: 0.35rem; border-left: 1px solid var(--sw-line); }
+.menu__link {
+  border-radius: var(--sw-radius-sm);
+  padding: 0.4rem 0.65rem;
+  line-height: 1.4;
   color: var(--sw-body);
 }
-
-.markdown li {
-  font-size: 14px;
+.menu__link:hover { background: var(--sw-surface-2); color: var(--sw-heading); }
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--sw-primary-soft);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
 }
+.menu__list-item-collapsible > .menu__link { font-weight: 600; color: var(--sw-heading); }
+.menu__caret { border-radius: var(--sw-radius-sm); }
 
-.markdown ul {
-  font-size: 14px;
-  color: var(--sw-body);
-}
+.theme-doc-toc-desktop { font-size: 0.85rem; }
+.table-of-contents { border-left: 1px solid var(--sw-line); }
+.table-of-contents__link:hover { color: var(--ifm-color-primary); }
+.table-of-contents__link--active { color: var(--ifm-color-primary); font-weight: 600; }
 
-.markdown ol {
-  font-size: 14px;
-  color: var(--sw-body);
-}
-
-.hidden {
-  display: none !important;
-}
-
-iframe.iframe-with-border {
-  border-radius: 4px;
-  box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 20%);
-  border: 1px solid lightgrey;
-}
-
-/* ol {
-  list-style: none;
-  counter-reset: item;
-  font-size: 14px;
-  color: #333;
-}
-
-ol li {
-  counter-increment: item; 
-  margin-bottom: 5px;
+.toc-collapsible-heading {
   align-items: baseline;
   display: flex;
-  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-left: 0.25rem;
+}
+.toc-collapsible-heading > .table-of-contents__link { flex: 1; min-width: 0; }
+
+.toc-collapsible-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  color: var(--ifm-toc-link-color);
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 0.875rem;
+  height: 1rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.toc-collapsible-toggle:hover,
+.toc-collapsible-toggle:focus-visible {
+  background: var(--sw-surface-2);
+  color: var(--ifm-color-primary);
+}
+.toc-collapsible-toggle:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+}
+.toc-collapsible-toggle[aria-expanded="false"] .toc-collapsible-icon { transform: rotate(-90deg); }
+
+.toc-collapsible-icon {
+  font-size: 0.75rem;
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .toc-collapsible-icon { transition: none; }
 }
 
-ol li:before {
-  margin-right: 10px;
-  content: counter(item); 
-  background: #86C5FF;
-  border-radius: 100%;
-  color: white;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  display: inline-block;
-  align-items: baseline;
-}  */
+.breadcrumbs__item:not(:last-child) .breadcrumbs__link { color: var(--sw-muted); background: none; }
+.breadcrumbs__link { font-size: 0.82rem; }
 
-a {
-  text-decoration: none !important;
+.pagination-nav__link {
+  border: 1px solid var(--sw-line);
+  border-radius: var(--sw-radius);
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
+.pagination-nav__link:hover { border-color: var(--ifm-color-primary); background: var(--sw-surface-2); }
+.pagination-nav__sublabel { color: var(--sw-muted); font-size: 0.78rem; }
+.pagination-nav__label { font-family: var(--sw-font-display); font-size: 1rem; }
 
-hr {
-  background-color: #dbdde1;
-}
+/* ── 4. content surfaces ────────────────────────────────────────────────── */
 
-.home-h1 {
-  font-weight: 300;
-  color: var(--home-text-color);
-  margin-bottom: 15px !important;
-}
+.theme-doc-markdown { max-width: 52rem; }
+article { padding-bottom: 2rem; }
 
-.home-p {
+.footer {
+  background: var(--sw-surface-2);
+  border-top: 1px solid var(--sw-line);
   color: var(--sw-body);
-  font-size: 16px !important;
+  padding: 3rem 0 2rem;
 }
-
-.home-p-dark {
-  color: #333;
-  font-size: 16px !important;
-  transform: rotateY(359deg);
-}
-
-/* Heading/body colours come from the brand tokens, which already swap per
-   theme (see the html[data-theme="dark"] token block at the top). These rules
-   only need to clear the inherited backgrounds in dark mode. */
-html[data-theme="dark"] h2,
-html[data-theme="dark"] h3,
-html[data-theme="dark"] p {
-  background-color: transparent;
-}
-
-/* Caso esteja ativo estraga o dropdown da seleção de lingua no dark theme
-html[data-theme='dark'] ul {
-  color: #fff;
-  background-color: transparent;
-  font-size: 14px;
-} */
-
-html[data-theme="dark"] li {
-  color: #fff;
-  background-color: transparent;
-  font-size: 14px;
-}
-
-/* Home Image */
-html[data-theme="dark"] .home-page-image {
-  background-image: url(/img/home/homepage-dark.jpg);
-}
-
-.home-page-options {
-  color: var(--sw-body);
-  background-color: var(--sw-bg-alt);
-  border-radius: 5px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Was #333 text on a #333333 background — effectively invisible in dark mode. */
-html[data-theme="dark"] .home-page-options {
-  color: var(--sw-body);
-  background-color: #1f2430;
-}
-
-.home-page-image {
-  background-image: url(/img/home/homepage-light.png);
-  margin-bottom: 40px;
-}
-
-html[data-theme="dark"] a:hover {
-  color: #fff !important;
-}
-
-html[data-theme="dark"] .skills_src-pages-:hover {
-  transform: scale(0.95) !important;
-}
-
-.token-line {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-}
-
-.docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
-}
-
-.navbar-item {
-  color: #797979;
-  font-size: 12px;
-  font-weight: 600;
+.footer__title {
+  font-family: var(--sw-font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
+  color: var(--sw-muted);
 }
+.footer__link-item { color: var(--sw-body); font-size: 0.9rem; }
+.footer__link-item:hover { color: var(--ifm-color-primary); }
+.footer__copyright { color: var(--sw-muted); font-size: 0.82rem; }
 
+/* Docusaurus renders a bullet separator between footer links; drop it. */
+.footer__links .footer__link-separator { display: none; }
+
+.hidden { display: none; }
+
+/* ── 5. preserved: admonitions ─────────────────────────────────────────── */
 .theme-admonition {
   margin-top: 15px;
   margin-bottom: 25px !important;
@@ -462,6 +343,8 @@ img[alt="small"] {
   width: 30%;
 }
 
+
+/* ── 5. preserved: content images (alt= is the styling hook) ───────────── */
 img[alt="crafted-love"] {
   width: 250px;
 }
@@ -522,255 +405,7 @@ img[alt="home-image-size"] {
   width: 800px;
   padding: 50px;
 }
-
-
-.left {
-  animation: right-to-left 1s linear forwards;
-}
-
-@keyframes right-to-left {
-  0% {
-    transform: translateX(50px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes left-to-right {
-  0% {
-    transform: translateX(-50px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-figure {
-  margin: 0;
-  text-align: center;
-}
-
-figure p {
-  margin-bottom: 0px !important;
-  margin-top: 5px !important;
-}
-
-.row {
-  margin-bottom: 1.6rem;
-}
-
-.footer__links {
-  animation: left-to-right 1s linear forwards;
-  font-size: 14px;
-}
-
-html[data-theme="dark"] .footer {
-  --ifm-footer-background-color: #333;
-  --ifm-footer-color: #fff;
-}
-
-html[data-theme="light"] .footer {
-  background-image: linear-gradient(rgb(243, 248, 255), rgb(243, 248, 255));
-}
-
-html[data-theme="light"] .footer__copyright {
-  padding-top: 15px;
-  border-top: 1px solid rgb(226, 239, 248);
-}
-
-html[data-theme="dark"] .footer__copyright {
-  padding-top: 15px;
-  border-top: 1px solid #e2eff81c;
-}
-
-html[data-theme="dark"] .hero__title {
-  color: #fff;
-}
-
-.footer__col {
-  display: flex !important;
-  justify-content: left;
-}
-
-.footer__col {
-  display: flex !important;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  text-align: left !important;
-  height: 200px !important;
-}
-
-.footer__title {
-  height: 20%;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-html[data-theme="light"] .footer__title {
-  color: rgb(26, 26, 26);
-}
-
-html[data-theme="dark"] .footer__title {
-  color: #fff;
-}
-
-.footer__items {
-  height: 80%;
-}
-
-footer li a {
-  color: rgb(155, 164, 175) !important;
-}
-
-footer li a:hover {
-  text-decoration: none;
-  color: rgb(26, 26, 26) !important;
-}
-
-.footer__copyright {
-  color: rgb(155, 164, 175);
-  font-size: 14px;
-  text-align: left;
-}
-
-.javascript {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-}
-
-.pagination-nav__link {
-  border: none;
-  flex-grow: 1;
-  padding: var(--ifm-global-spacing);
-  line-height: var(--ifm-heading-line-height);
-  transition: border-color var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
-}
-
-/* Algolia Search here*/
-html[data-theme="light"] .DocSearch {
-  --docsearch-primary-color: var(--ifm-color-primary);
-  --docsearch-text-color: var(--ifm-font-color-base);
-  --docsearch-muted-color: var(--ifm-color-primary-dark);
-  --docsearch-container-background: rgba(0, 114, 198, 0.35);
-  /* Modal */
-  --docsearch-modal-background: #f3f9ff;
-  /* Search box */
-  --docsearch-searchbox-background: #e6f2ff;
-  --docsearch-searchbox-focus-background: var(--ifm-color-white);
-  /* Hit */
-  --docsearch-hit-color: var(--ifm-font-color-base);
-  --docsearch-hit-active-color: var(--ifm-color-white);
-  --docsearch-hit-background: #edf5ff;
-  /* Footer */
-  --docsearch-footer-background: #e6f2ff;
-  --home-text-color: black;
-}
-
-html[data-theme="dark"] .DocSearch {
-  --docsearch-primary-color: var(--ifm-color-primary-light);
-  --docsearch-text-color: var(--ifm-font-color-base);
-  --docsearch-muted-color: var(--ifm-color-primary-lightest);
-  --docsearch-container-background: rgba(0, 34, 59, 0.82);
-  /* Modal */
-  --docsearch-modal-background: #0e2539;
-  /* Search box */
-  --docsearch-searchbox-background: #12324c;
-  --docsearch-searchbox-focus-background: #0b2234;
-  /* Hit */
-  --docsearch-hit-color: var(--ifm-font-color-base);
-  --docsearch-hit-active-color: var(--ifm-color-white);
-  --docsearch-hit-background: #143952;
-  /* Footer */
-  --docsearch-footer-background: #12324c;
-  --docsearch-key-gradient: linear-gradient(
-    -26.5deg,
-    var(--ifm-color-emphasis-200) 0%,
-    var(--ifm-color-emphasis-100) 100%
-  );
-  /* --home-text-color: var(--home-text-color: #fff; */
-}
-
-.DocSearch-Modal {
-  border-radius: 16px !important;
-  border: 1px solid rgba(0, 114, 198, 0.28);
-  box-shadow: 0 20px 44px rgba(0, 57, 99, 0.22);
-}
-
-.DocSearch-SearchBar,
-.DocSearch-Form {
-  border-radius: 16px !important;
-  border: 1px solid rgba(0, 114, 198, 0.24);
-}
-
-.DocSearch-Hit a {
-  border-radius: 12px;
-}
-
-/* Lunr Search dropdown (algolia-autocomplete classes) */
-.algolia-autocomplete .ds-dropdown-menu {
-  border-radius: 16px !important;
-  overflow: hidden;
-  box-shadow: 0 20px 44px rgba(0, 57, 99, 0.22);
-}
-
-.algolia-autocomplete .ds-dropdown-menu:before {
-  background: var(--ifm-color-primary) !important;
-  border-top-color: var(--ifm-color-primary) !important;
-  border-right-color: var(--ifm-color-primary) !important;
-}
-
-.algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-'] {
-  border-radius: 16px !important;
-  background: #f3f9ff;
-}
-
-.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
-  background-color: var(--ifm-color-primary) !important;
-  color: #ffffff;
-}
-
-.algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
-  background-color: #f3f9ff;
-}
-
-.algolia-autocomplete .ds-cursor .algolia-docsearch-suggestion--wrapper {
-  background: #e6f2ff;
-  box-shadow: inset -3px 0 0 var(--ifm-color-primary);
-}
-
-html[data-theme='dark'] .algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-'] {
-  background: #0e2539;
-}
-
-html[data-theme='dark'] .algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
-  background-color: #0e2539;
-}
-
-html[data-theme='dark'] .algolia-autocomplete .ds-cursor .algolia-docsearch-suggestion--wrapper {
-  background: #12324c;
-}
-
-/* Custom Table */
-
-table {
-  box-sizing: border-box;
-  border: 1px solid #e4e4eb;
-  border-radius: 5px !important;
-  display: table;
-  width: 100%;
-  border-collapse: collapse;
-  margin: auto;
-  margin-top: 20px !important;
-  margin-bottom: 30px !important;
-  border-style: hidden;
-  box-shadow: 0 0 0 1px #e4e4eb;
-  font-size: 14px;
-}
-
+/* ── 5. preserved: tables used by the docs ─────────────────────────────── */
 table .selected:hover {
   background-color: rgb(240, 240, 240) !important;
 }
@@ -864,71 +499,69 @@ table tbody td code {
   border-radius: 5px;
   padding: 3px 5px;
 }
-
-/********/
-
-.tabs-container {
-  background-color: #d4e2ff5e;
-  padding: 0px 13px 16px 13px;
-  border-radius: 5px;
+/* ── 5. preserved: search ──────────────────────────────────────────────── */
+.DocSearch {
+  --docsearch-primary-color: var(--ifm-color-primary);
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-primary-dark);
+  --docsearch-container-background: rgba(0, 114, 198, 0.35);
+  /* Modal */
+  --docsearch-modal-background: #f3f9ff;
+  /* Search box */
+  --docsearch-searchbox-background: #e6f2ff;
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: #edf5ff;
+  /* Footer */
+  --docsearch-footer-background: #e6f2ff;
+  --home-text-color: black;
 }
 
-::marker {
-  color: #0072c6;
-  font-size: 15px;
-  font-weight: 600;
+html[data-theme="dark"] .DocSearch {
+  --docsearch-primary-color: var(--ifm-color-primary-light);
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-primary-lightest);
+  --docsearch-container-background: rgba(0, 34, 59, 0.82);
+  /* Modal */
+  --docsearch-modal-background: #0e2539;
+  /* Search box */
+  --docsearch-searchbox-background: #12324c;
+  --docsearch-searchbox-focus-background: #0b2234;
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: #143952;
+  /* Footer */
+  --docsearch-footer-background: #12324c;
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+  /* --home-text-color: var(--home-text-color: #fff; */
 }
 
-.toc-collapsible-heading {
-  align-items: baseline;
-  display: flex;
-  gap: 0.35rem;
-  margin-left: 0.25rem;
-}
+/* ── 6. doc cards ───────────────────────────────────────────────────────── */
 
-.toc-collapsible-heading > .table-of-contents__link {
-  flex: 1;
-  min-width: 0;
-}
-
-.toc-collapsible-toggle {
-  align-items: center;
-  background: transparent;
-  border: 0;
-  border-radius: 4px;
-  color: var(--ifm-toc-link-color);
-  cursor: pointer;
-  display: inline-flex;
-  flex: 0 0 0.875rem;
-  height: 1rem;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.toc-collapsible-toggle:hover,
-.toc-collapsible-toggle:focus-visible {
-  background: var(--ifm-color-emphasis-100);
+/* The swizzled DocCard icon (src/theme/DocCard/Heading/Icon) renders a Font
+   Awesome glyph where Docusaurus put an emoji. Tint it with the brand so a
+   category card reads as part of the system rather than as decoration. */
+.sw-doccard-icon {
   color: var(--ifm-color-primary);
+  font-size: 1.05em;
+  width: 1.4em;
+  display: inline-flex;
+  justify-content: center;
 }
 
-.toc-collapsible-toggle:focus-visible {
-  outline: 2px solid var(--ifm-color-primary);
-  outline-offset: 1px;
+article .card {
+  border-radius: var(--sw-radius);
+  border: 1px solid var(--sw-line);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
-
-.toc-collapsible-toggle[aria-expanded="false"] .toc-collapsible-icon {
-  transform: rotate(-90deg);
-}
-
-.toc-collapsible-icon {
-  font-size: 0.75rem;
-  line-height: 1;
-  transition: transform 0.15s ease;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .toc-collapsible-icon {
-    transition: none;
-  }
+article .card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--sw-shadow-sm);
 }

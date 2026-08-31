@@ -1,0 +1,3 @@
+# Enable Serena only while working inside this trusted repository.
+[mcp_servers.serena]
+enabled = true

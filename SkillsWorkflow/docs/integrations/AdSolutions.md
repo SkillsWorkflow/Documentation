@@ -6,7 +6,7 @@ sidebar_label: AdSolutions
 ---
 
 :::info Not the same as "AdnNet"
-Despite the similar-sounding name, this integration is unrelated to the [AdnNet](./adnet) integration already documented on this site — the two connect to different external systems (this one to "AdIntegra", a SOAP/ASMX web service, per every exported component's `AdIntegraSkillsWS-` prefix and `AdIntegraSkills.asmx` endpoint).
+Despite the similar-sounding name, this integration is unrelated to the [AdnNet](adnet) integration already documented on this site — the two connect to different external systems (this one to "AdIntegra", a SOAP/ASMX web service, per every exported component's `AdIntegraSkillsWS-` prefix and `AdIntegraSkills.asmx` endpoint).
 :::
 
 ### Description

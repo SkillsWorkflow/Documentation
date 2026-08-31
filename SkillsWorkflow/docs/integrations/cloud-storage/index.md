@@ -11,9 +11,9 @@ These integrations aim to streamline document management processes, enabling rea
 
 Currently supported providers include:
 
-- [Box](./box)
-- [Google Drive](./google-drive)
-- [Microsoft SharePoint](./microsoft-sharepoint)
+- [Box](box)
+- [Google Drive](google-drive)
+- [Microsoft SharePoint](microsoft-sharepoint)
 
 ---
 ### General Configuration Guidelines
