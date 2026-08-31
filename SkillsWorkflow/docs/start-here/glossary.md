@@ -136,7 +136,7 @@ approves internally.
 ### Invoice
 
 The document the finance or accounting system issues from an approved bill. Most
-[integrations](../ai/use-cases/integrations.mdx) work by sending an approved **Bill** out and writing the
+[integrations](/docs/integrations) work by sending an approved **Bill** out and writing the
 resulting **Invoice** reference back onto it — so a bill in Skills Workflow carries the
 number of the invoice it produced.
 
@@ -225,7 +225,7 @@ succeeded. If a page uses "status" to mean the workflow stage, read it as Stage.
 
 The move from one stage to the next, and the permission to make it. A transition has to
 exist between two stages for a document to move between them — which is why an
-[integration](../ai/use-cases/integrations.mdx) may report that it could not apply a stage change even
+[integration](/docs/integrations) may report that it could not apply a stage change even
 though the target stage exists.
 
 ### Workflow
@@ -246,7 +246,7 @@ so on.
 ### Automation
 
 A configured sequence of steps the platform runs on its own — calling an external system,
-running a query, creating or updating records. Most [integrations](../ai/use-cases/integrations.mdx) are
+running a query, creating or updating records. Most [integrations](/docs/integrations) are
 built from automations.
 
 ### Webhook
@@ -292,7 +292,7 @@ A record of time worked, entered against a job by a user, and approved.
 ### Leave
 
 Time off — holiday, sickness and similar. Leave is what makes someone unavailable in
-resourcing and scheduling, which is why [HR integrations](../ai/use-cases/integrations.mdx) exist to keep it
+resourcing and scheduling, which is why [HR integrations](/docs/integrations) exist to keep it
 current.
 
 ### Typology-based planning

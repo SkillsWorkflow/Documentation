@@ -1,4 +1,7 @@
 {
   "label": "Availability Incident Archive",
-  "position": 90
+  "position": 90,
+  "link": {
+    "type": "generated-index"
+  }
 }

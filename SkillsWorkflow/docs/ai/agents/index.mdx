@@ -1,7 +1,7 @@
 ---
 id: ai-agents-index
-title: AI Assistants
-description: "One assistant for each kind of task."
+title: AI Agents
+description: "The agents available in the AI Assistant, what each one can do, and how to pick the right one."
 sidebar_label: Overview
 sidebar_position: 1
 hide_title: true
@@ -13,58 +13,59 @@ import '../_ai-kit.css';
 <div className="ai-landing">
 
 <header className="ai-head ai-wrap">
-  <p className="ai-eyebrow ai-reveal">AI Assistants</p>
-  <h1 className="ai-head__title ai-reveal">One assistant for each kind of task.</h1>
-  <p className="ai-lead ai-reveal">Each assistant is built for a different kind of work, so you get the result you want in plain language — no technical prompts required. New here? Start with the <a className="ai-link" href="/docs/ai/ai-overview">AI Overview</a>.</p>
+  <p className="ai-eyebrow ai-reveal">AI Agents</p>
+  <h1 className="ai-head__title ai-reveal">One agent for each kind of work.</h1>
+  <p className="ai-lead ai-reveal">You pick an agent in the <a className="ai-link" href="/docs/ai/ai-assistant">AI Assistant</a> panel before you send a message. Each one carries a different set of <a className="ai-link" href="/docs/ai/ai-tools">tools</a>, and that set is the whole of what it can do — so picking the right one is most of getting the right answer.</p>
 </header>
 
 <section className="ai-section ai-wrap">
   <div className="ai-grid">
     <a className="ai-card ai-reveal" href="/docs/ai/agents/document-agent">
-      <h2 className="ai-card__title">Document Assistant</h2>
-      <p className="ai-card__body">Create, update, find, duplicate, or move documents such as jobs and deliverables.</p>
-      <code className="ai-chip">"Create a job from this client request"</code>
+      <h2 className="ai-card__title">Document Agent</h2>
+      <p className="ai-card__body">Create, update, duplicate, find and move jobs, deliverables and other documents. Writes briefs from a job type's template, edits custom fields, changes teams.</p>
+      <code className="ai-chip">"Create a job for the Northwind spring campaign"</code>
       <p className="ai-card__more">Explore →</p>
     </a>
 
     <a className="ai-card ai-reveal" href="/docs/ai/agents/workflow-agent">
-      <h2 className="ai-card__title">Workflow Assistant</h2>
-      <p className="ai-card__body">Review or change workflow stages, transitions, and approval paths.</p>
+      <h2 className="ai-card__title">Workflow Agent</h2>
+      <p className="ai-card__body">Inspect and configure workflows — stages, transitions, actions, roles, motives, teams and mappings.</p>
       <code className="ai-chip">"Show me the workflow for Deliverables"</code>
       <p className="ai-card__more">Explore →</p>
     </a>
 
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/writing-agent">
-      <h2 className="ai-card__title">Writing Assistant</h2>
-      <p className="ai-card__body">Rewrite, polish, shorten, or clarify any text without leaving the editor.</p>
-      <code className="ai-chip">"Rewrite this in a more professional tone"</code>
-      <p className="ai-card__more">Explore →</p>
-    </a>
-
     <a className="ai-card ai-reveal" href="/docs/ai/agents/workspace-agent">
-      <h2 className="ai-card__title">Workspace Assistant</h2>
-      <p className="ai-card__body">Adjust workspaces and dashboards — panels, filters, and widgets — or build a new one.</p>
+      <h2 className="ai-card__title">Workspace Agent</h2>
+      <p className="ai-card__body">Build and change workspaces and dashboards — components, layout, filters, data sources — and edit the files behind them when a change needs code.</p>
       <code className="ai-chip">"Add a kanban panel to this workspace"</code>
       <p className="ai-card__more">Explore →</p>
     </a>
 
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/workspace-studio">
-      <h2 className="ai-card__title">Workspace Studio</h2>
-      <p className="ai-card__body">Make code-level changes to a workspace's components, data sources, or configuration.</p>
-      <code className="ai-chip">"Fix the bug in this grid's column setup"</code>
+    <a className="ai-card ai-reveal" href="/docs/ai/agents/writing-agent">
+      <h2 className="ai-card__title">Writing Agent</h2>
+      <p className="ai-card__body">Rewrite, shorten, translate or change the tone of any text. This is the agent behind <a className="ai-link" href="/docs/ai/ai-actions">AI Actions</a> in the editor toolbar.</p>
+      <code className="ai-chip">"Rewrite this in a more professional tone"</code>
       <p className="ai-card__more">Explore →</p>
     </a>
   </div>
 </section>
 
 <section className="ai-section ai-wrap">
-  <p className="ai-eyebrow">Tips for better results</p>
+  <p className="ai-eyebrow">Getting a better answer</p>
   <ul className="ai-list">
-    <li>Say what you want to achieve in plain language.</li>
-    <li>Share names — the document, project, workflow, or workspace — when you know them.</li>
-    <li>Add screenshots or files when they help explain the request.</li>
-    <li>If you want a certain tone or layout, say what style you are after.</li>
+    <li>Say what you want to end up with, not which button you think it needs.</li>
+    <li>Name the client, project, job or workspace when you know it — that is what saves a round of questions.</li>
+    <li>Leave the workspace or document context switch on when your request is about what is on screen.</li>
+    <li>Attach the email, spreadsheet or image the request came from instead of retyping it.</li>
+    <li>Read the approval card before approving. It lists exactly what is about to be written.</li>
   </ul>
+</section>
+
+<section className="ai-section ai-wrap">
+  <div className="ai-callout ai-callout--tip">
+    <p className="ai-callout__label">These four are the agents Skills Workflow ships</p>
+    <p className="ai-callout__body">Your agency can add its own on top of them, with their own instructions, tools and knowledge. See <a className="ai-link" href="/docs/ai/ai-extend">Add your own skills, agents and tools</a>.</p>
+  </div>
 </section>
 
 </div>

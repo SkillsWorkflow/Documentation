@@ -58,3 +58,15 @@ This route assumes you already understand what the client's users do. If you do 
 ## Connecting other systems
 
 20. [Integrations](/docs/integrations) — what already exists before you build anything.
+
+## AI
+
+21. [AI Assistant](/docs/ai/ai-assistant) — what the client's users see, and the four settings that
+    control it.
+22. [Agents](/docs/ai/agents) — which agent handles which kind of request.
+23. [Tools](/docs/ai/ai-tools) — what an agent can read and change, and which actions ask for
+    approval.
+24. [Add your own skills, agents and tools](/docs/ai/ai-extend) — configuring AI around a client's
+    own way of working.
+25. [AI Actions](/docs/ai/ai-actions) — the editor actions, which a client defines themselves.
+26. [Client Portals](/docs/ai/ai-portals) — a page of a client's own, generated with AI.

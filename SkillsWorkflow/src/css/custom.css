@@ -405,100 +405,118 @@ img[alt="home-image-size"] {
   width: 800px;
   padding: 50px;
 }
-/* ── 5. preserved: tables used by the docs ─────────────────────────────── */
-table .selected:hover {
-  background-color: rgb(240, 240, 240) !important;
+/* ── 5. tables ──────────────────────────────────────────────────────────────
+   Modelled on the WebApp DataGrid (customDxExtreme.scss): a closed card with
+   an 11px radius, a tinted header strip, alternating rows and a primary-tinted
+   hover. The wrapper comes from src/theme/MDXComponents.js and carries the
+   horizontal scroll, so the table itself can stay a real table at full width
+   instead of the shrink-to-fit block Infima ships. */
+
+.sw-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.75rem 0;
+  -webkit-overflow-scrolling: touch;
 }
 
-table tr {
-  background-color: transparent !important;
-  border-bottom: 1px solid #e4e4eb;
-  color: #49495f;
-}
-
-.selected:hover {
-  background-color: rgb(240, 240, 240) !important;
-}
-
-html[data-theme="dark"] table {
-  box-sizing: border-box;
-  border: 1px solid #e4e4eb;
-  border-radius: 5px !important;
+.sw-table-wrapper > table,
+.markdown table {
   display: table;
   width: 100%;
-  border-collapse: collapse;
-  margin: auto;
-  margin-top: 20px !important;
-  margin-bottom: 30px !important;
-  border-style: hidden;
-  box-shadow: 0 0 0 1px #e4e4eb;
-  font-size: 14px;
-  background-color: #5a5a5a;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--sw-line);
+  border-radius: 11px;
+  overflow: hidden;
+  background: var(--sw-surface);
+  color: var(--sw-body);
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
-html[data-theme="dark"] .selected {
-  color: white;
+/* A table that is not wrapped (raw JSX outside MDX) still needs the margin. */
+.markdown > table {
+  margin: 1.75rem 0;
 }
 
-html[data-theme="dark"] .selected:hover {
-  background-color: rgb(167 167 167) !important;
+.markdown table thead tr,
+.sw-table-wrapper table thead tr {
+  background: var(--sw-surface-2);
 }
 
-html[data-theme="dark"] table tr {
-  color: white;
-}
-
-html[data-theme="dark"] table thead {
-  background-color: #2d2b2b;
-}
-
-table th,
-table td {
+.markdown table th,
+.sw-table-wrapper table th {
   border: 0;
-  text-align: center;
+  border-bottom: 1px solid var(--sw-line);
+  background: var(--sw-surface-2);
+  color: var(--sw-heading);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.72rem 0.95rem;
+  white-space: nowrap;
 }
 
-table tbody td code {
+.markdown table td,
+.sw-table-wrapper table td {
+  border: 0;
+  text-align: left;
+  vertical-align: top;
+  padding: 0.72rem 0.95rem;
+}
+
+/* border-collapse is separate (radii need it), so row lines go on the cells. */
+.markdown table tbody tr + tr td,
+.sw-table-wrapper table tbody tr + tr td {
+  border-top: 1px solid var(--sw-line);
+}
+
+.markdown table tbody tr,
+.sw-table-wrapper table tbody tr {
+  background: transparent;
+  transition: background-color 0.12s ease;
+}
+
+.markdown table tbody tr:nth-child(even),
+.sw-table-wrapper table tbody tr:nth-child(even) {
+  background: var(--sw-surface-2);
+}
+
+.markdown table tbody tr:hover,
+.sw-table-wrapper table tbody tr:hover,
+table tr.selected:hover {
+  background: var(--sw-primary-soft);
+}
+
+/* Corner rounding, for browsers that do not clip overflow on a table box. */
+.markdown table thead tr:first-child th:first-child,
+.sw-table-wrapper table thead tr:first-child th:first-child { border-top-left-radius: 10px; }
+.markdown table thead tr:first-child th:last-child,
+.sw-table-wrapper table thead tr:first-child th:last-child { border-top-right-radius: 10px; }
+.markdown table tbody tr:last-child td:first-child,
+.sw-table-wrapper table tbody tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+.markdown table tbody tr:last-child td:last-child,
+.sw-table-wrapper table tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+.markdown table tbody td code,
+.sw-table-wrapper table tbody td code {
   background-color: rgba(62, 123, 250, 0.06);
   border-radius: 5px;
   padding: 3px 5px;
 }
 
-.small-custom-table {
-  box-sizing: border-box;
-  border: 1px solid #e4e4eb;
-  border-radius: 5px !important;
-  display: table;
+html[data-theme="dark"] .markdown table tbody td code,
+html[data-theme="dark"] .sw-table-wrapper table tbody td code {
+  background-color: rgba(62, 166, 255, 0.12);
+}
+
+/* Narrower variant, centred in the measure. */
+.sw-table-wrapper > table.small-custom-table,
+.markdown table.small-custom-table {
   width: 90%;
-  border-collapse: collapse;
-  margin: auto;
-  border-style: hidden;
-  box-shadow: 0 0 0 1px #e4e4eb;
-  font-size: 14px;
+  margin-inline: auto;
 }
 
-.small-custom-table tr {
-  background-color: transparent !important;
-  border-bottom: 1px solid #e4e4eb;
-  color: #49495f;
-}
-
-.selected:hover {
-  background-color: rgb(240, 240, 240) !important;
-}
-
-.small-custom-table th,
-.small-custom-table td {
-  border: 0;
-  text-align: center;
-  width: 47%;
-}
-
-.small-custom-table tbody td code {
-  background-color: rgba(62, 123, 250, 0.06);
-  border-radius: 5px;
-  padding: 3px 5px;
-}
 /* ── 5. preserved: search ──────────────────────────────────────────────── */
 .DocSearch {
   --docsearch-primary-color: var(--ifm-color-primary);
