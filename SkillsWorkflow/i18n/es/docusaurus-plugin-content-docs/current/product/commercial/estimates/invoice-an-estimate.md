@@ -1,7 +1,7 @@
 ---
 id:  invoice-estimate
 title: Factura un Presupuesto
-sidebar_label: 2. Factura un Presupuesto
+sidebar_label: Factura un Presupuesto
 sidebar_postion: 2
 ---
 
@@ -59,3 +59,9 @@ Los recursos estarán disponibles en "Tiempo planificado"
 ![img-box-shadow](/img/university/estimates/estimates-lesson2-5.png)
 <figcaption></figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Crear un Estimado](/docs/product/commercial/estimates/create-estimate)
+- [Autorizaciones de factura](/docs/product/billing-and-costs/billing/invoice-authorizations)
+- [Notas de credito](/docs/product/billing-and-costs/billing/credit-notes)

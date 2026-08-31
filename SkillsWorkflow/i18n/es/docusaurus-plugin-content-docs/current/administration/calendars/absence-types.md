@@ -1,7 +1,7 @@
 ---
 id: create-assign-type
 title: Asignar Tipos de Ausencia
-sidebar_label: 7. Tipos de Ausencia
+sidebar_label: Tipos de Ausencia
 sidebar_position: 7
 ---
 

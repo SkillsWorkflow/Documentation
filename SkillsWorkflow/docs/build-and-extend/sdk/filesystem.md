@@ -1,6 +1,6 @@
 ---
 id: filesystem
-title: " "
+title: File System
 description: "The namespace FileSystem provides to developers a method to easily upload files to a folder."
 sidebar_label: File System
 ---

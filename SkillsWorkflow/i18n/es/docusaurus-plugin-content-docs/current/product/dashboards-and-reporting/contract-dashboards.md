@@ -1,11 +1,11 @@
 ---
 id:  contract-dashboard
-title: Contrato Dashboards
-sidebar_label: 3. Contract Dashboards
+title: Fee Workspace
+sidebar_label: Fee Workspace
 sidebar_position: 3
 ---
 
-Dashboards son una característica poderosa que se utiliza para respaldar rápidamente las decisiones relacionadas con un contrato específico.
+Workspaces son una característica poderosa que se utiliza para respaldar rápidamente las decisiones relacionadas con un contrato específico.
 
 El objetivo es darle al usuario la capacidad de controlar los procesos de una manera muy amigable y completa.
 
@@ -13,10 +13,10 @@ Como gestor de proyectos, es muy útil conocer el estado de un cliente específi
 
 Hay varios tableros a nivel de contrato disponibles en el sistema que mostrarán información diferente.
 
-### Burn Dashboard
+### Burn Workspace
 
 1. Seleccione el contrato que desea analizar.
-2. Haga clic en la pestaña "Burn Dashboard".
+2. Haga clic en la pestaña "Burn Workspace".
 3. Seleccione el proyecto que desea consultar.
 
 Encontrará varias representaciones que le mostrarán de un vistazo si su Contrato ya está Bruned.
@@ -51,10 +51,10 @@ Esta representación muestra el número de horas reales por grupo tipológico.
 
 Esta representación muestra el número de horas contratadas por grupo tipológico, aplicado al proyecto previamente seleccionado.
 
-### Recursos Dashboard
+### Recursos Workspace
 
 1. Dentro del contrato previamente seleccionado
-2. Haga clic en la ventana "Recursos Dashboard"  
+2. Haga clic en la ventana "Recursos Workspace"  
 
 <figure>
 
@@ -80,10 +80,10 @@ Esta representación te permitirá comprobar si las horas planificadas o las hor
 
 Además, podrá verificar qué usuario está completando más horas en su proyecto/contrato
 
-### Staffing Dashboard
+### Staffing Workspace
 
 1. Dentro del contrato previamente seleccionado
-2. Haga clic en la pestaña "Staffing Dashboard" 
+2. Haga clic en la pestaña "Staffing Workspace" 
  
 
 <figure>
@@ -113,3 +113,8 @@ Esta representación le permite controlar mensualmente el tiempo planificado VS 
 Basado en el tiempo planificado VS real, esta representación muestra la contribución de cada grupo de tipología para su contrato
 
 Tenga en cuenta que puede imprimir o exportar cualquiera de los paneles descritos
+
+## Artículos relacionados
+
+- [Fees](/docs/product/commercial/fees)
+- [Crear un Estimado](/docs/product/commercial/estimates/create-estimate)

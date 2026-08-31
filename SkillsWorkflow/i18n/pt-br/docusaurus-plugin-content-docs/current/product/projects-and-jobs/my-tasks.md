@@ -1,7 +1,7 @@
 ---
 id:  my-tasks
 title: Minhas tarefas
-sidebar_label: 8. Minhas tarefas
+sidebar_label: Minhas tarefas
 sidebar_position: 8
 ---
 
@@ -123,3 +123,7 @@ Você pode adicionar uma lista de itens menores dentro de sua tarefa na forma de
 <figcaption></figcaption>
 </figure>
 
+## Artigos relacionados
+
+- [Gerenciar a sua visualização de lista](/docs/product/projects-and-jobs/list-view)
+- [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

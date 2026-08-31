@@ -2,7 +2,7 @@
 id: filling-time-sheets
 title: Filling in Time Sheets
 description: "Verify that you can navigate by clicking on the time sheets section."
-sidebar_label: 1. Filling in Time Sheets
+sidebar_label: Filling in Time Sheets
 sidebar_position: 1
 ---
 
@@ -100,3 +100,10 @@ To enter time, navigate to the **Time Sheets** module.
 
 <figcaption>Calendar</figcaption>
 </figure>
+
+## Related articles
+
+- [Time Sheet Timer](/docs/product/time/timesheets/timesheet-timer)
+- [Approving Time Sheets](/docs/product/time/timesheets/approving-time-sheets)
+- [Transfer hours between projects or jobs](/docs/product/time/timesheets/transferring-hours-between-projects)
+- [Planned Time](/docs/product/planning-and-scheduling/resourcing/planned-hours)

@@ -1,7 +1,7 @@
 ---
 id:  mobile-features
 title: Mobile app 
-sidebar_label: 1. Mobile app
+sidebar_label: Mobile app
 sidebar_position: 2
 ---
 
@@ -127,3 +127,8 @@ O calendário do quadro de horários lhe dará uma visão geral de suas horas. S
 <figcaption>Timesheet calendar</figcaption>
 </figure>
 Novos recursos e atualizações disponíveis serão adicionados a este artigo
+
+## Artigos relacionados
+
+- [iOS App User Configuration](/docs/product/mobile/ios-app-config)
+- [Android App User Configuration](/docs/product/mobile/android-app-config)

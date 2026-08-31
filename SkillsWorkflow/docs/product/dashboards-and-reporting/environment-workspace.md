@@ -1,21 +1,21 @@
 ---
 id:  environment-dashboard
-title: Environment
+title: Environment Workspace
 description: "It is now possible to change the appearance of Skills Workflow."
-sidebar_label: 9. Environment Workspace
+sidebar_label: Environment Workspace
 sidebar_position: 9
 ---
 
 It is now possible to change the appearance of Skills Workflow. Make it look like your agency, differentiate it from the others and show your brand identity to all your team and clients.
 
-This can be done through the Environment Dashboard. In order to access it, Users must have the following profiles linked to their profile:
+This can be done through the Environment Workspace. In order to access it, Users must have the following profiles linked to their profile:
 
 - MaintenanceNavigate
 - MaintenanceSave
 - EnvironmentNavigate
 - EnvironmentSave
 
-To access the Environment Dashboard, log in to Skills Workflow, click on your username in the top right corner of the home page, select the "Maintenance" option and press the "Ambient" module.
+To access the Environment Workspace, log in to Skills Workflow, click on your username in the top right corner of the home page, select the "Maintenance" option and press the "Ambient" module.
 
 <figure>
 
@@ -24,7 +24,7 @@ To access the Environment Dashboard, log in to Skills Workflow, click on your us
 </figure> 
 
  
-There are 3 sections in the Dashboard where the following are defined:
+There are 3 sections in the Workspace where the following are defined:
 
 1. Images: images to use as background and company logos.
 
@@ -70,3 +70,7 @@ To configure the colors, simply type in your color code or click the dropdown me
 Hover State should be more visually appealing than normal state
 
 Once you have configured the images and colors, click the Save button to save your changes.
+
+## Related articles
+
+- [Client Workspace](/docs/product/dashboards-and-reporting/client-dashboard)

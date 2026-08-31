@@ -1,6 +1,7 @@
 ---
-id:  password policy
+id: password-policy
 title: Password Policy
+description: "Setting up the Skills Workflow password policy so native logins meet the company's own security requirements."
 sidebar_label: Password Policy
 ---
 

@@ -1,7 +1,7 @@
 ---
 id:  client-staff-dashboard
-title: Resumen del plan de personal del cliente
-sidebar_label: 11. Resumen del plan de personal del cliente Dashboard
+title: Resumen del plan de personal del cliente Workspace
+sidebar_label: Resumen del plan de personal del cliente Workspace
 sidebar_position: 11
 ---
 
@@ -59,3 +59,8 @@ En el formato de informe predeterminado anterior, se muestran los siguientes cam
 ![img-box-shadow](/img/university/dashboards/client-staff-summary-dashboard/university-client-staff-summary-2.png)
 <figcaption></figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Fees](/docs/product/commercial/fees)
+- [Crear un Estimado](/docs/product/commercial/estimates/create-estimate)

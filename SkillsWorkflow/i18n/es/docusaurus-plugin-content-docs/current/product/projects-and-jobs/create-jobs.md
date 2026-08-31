@@ -1,7 +1,7 @@
 ---
 id:  create-jobs
 title: Cómo crear Jobs?
-sidebar_label: 2. Crear Jobs
+sidebar_label: Crear Jobs
 sidebar_position: 2
 ---
 
@@ -162,3 +162,9 @@ Para notificar a alguien de su equipo sobre una nueva publicación o temas relac
 
 - **Otros** - También puede encontrar otras pestañas según los módulos del sistema al que tenga acceso.
 
+## Artículos relacionados
+
+- [Crear proyectos](/docs/product/projects-and-jobs/create-projects)
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [Qué es un Equipo y qué representa cada Grupo?](/docs/product/people/teams/what-is-a-team)
+- [Administre su vista de lista](/docs/product/projects-and-jobs/list-view)

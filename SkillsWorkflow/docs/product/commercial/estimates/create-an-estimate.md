@@ -1,8 +1,8 @@
 ---
 id: create-estimate
-title: Create estimate
+title: Create Estimate
 description: "Estimates can either be linked to Fees or created directly under a Project or Job."
-sidebar_label: 1. Create Estimate
+sidebar_label: Create Estimate
 sidebar_position: 1
 ---
 
@@ -175,3 +175,9 @@ As you fill in the values, the total per Deliverable on the Deliverables section
 Note that each individual column on the Estimate is controlled by access roles.
 
 Please note that you can have several external costs, expenses and resources under one client line. It will depend how you want to show the estimate details to clients
+
+## Related articles
+
+- [Create Rate Cards](/docs/product/commercial/rates/rate-cards)
+- [Fees](/docs/product/commercial/fees)
+- [Invoice an Estimate](/docs/product/commercial/estimates/invoice-estimate)

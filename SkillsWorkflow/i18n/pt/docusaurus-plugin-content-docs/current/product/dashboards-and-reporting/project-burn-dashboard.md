@@ -1,11 +1,11 @@
 ---
 id:  project-burn-dashboard
-title: Projeto Burn
-sidebar_label: 2. Dashboard Projeto Burn 
+title: Workspace Projeto Burn
+sidebar_label: Workspace Projeto Burn
 sidebar_position: 2
 ---
 
-Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um cliente ou projeto específico.
+Workspaces são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um cliente ou projeto específico.
 
 O objetivo é dar ao usuário a capacidade de controlar os processos de uma forma muito amigável e abrangente.
 
@@ -13,9 +13,9 @@ Como gerente de projetos, é muito útil entender o status de um cliente especí
 
 Existem vários painéis no nível do projeto disponíveis no sistema que exibirão informações diferentes.
 
-### Burn Dashboard
+### Burn Workspace
 1. Selecione o projeto que deseja analisar;
-2. Clique em "Burn Dashboard";
+2. Clique em "Burn Workspace";
 3. Você encontrará várias representações que mostrarão rapidamente se o seu projeto já está gravado.
 
 Observe que o painel de gravação é baseado na previsão versus horas reais.
@@ -46,7 +46,7 @@ Os valores de receita são baseados nas horas planejadas/contratadas e no valor 
  
 #### Grupo de tipologia Burn
 
-Este Dashboard mostra qual tipologia está queimando seu projeto e é baseado em horas reais
+Este Workspace mostra qual tipologia está queimando seu projeto e é baseado em horas reais
 
 
 #### Departamento Burn
@@ -57,3 +57,8 @@ Essa representação é baseada nas horas reais dos usuários e mostra qual depa
 #### Usuario Burn
 
 Essa representação é baseada nas horas reais dos usuários e mostra qual usuário está preenchendo mais horas em um projeto específico
+
+## Artigos relacionados
+
+- [Criar um Projeto](/docs/product/projects-and-jobs/create-projects)
+- [Tempo Planeado](/docs/product/planning-and-scheduling/resourcing/planned-hours)

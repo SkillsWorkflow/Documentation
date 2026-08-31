@@ -2,7 +2,7 @@
 id: create-commercial-client
 title: Create a commercial client
 description: "To create a new commercial client you must go to the “Maintenance” module and to the sub-list “Clients”."
-sidebar_label: 1. Create commercial client
+sidebar_label: Create a commercial client
 sidebar_position: 1
 ---
 
@@ -31,3 +31,9 @@ Timesheet Level - choose the highest level at which users can enter time for thi
 
 >After saving the Client, several tabs will appear automatically at the bottom of the page, where you can add new products and associate users.
 Once all fields are complete, you will be able to create Projects and Jobs for this client.
+
+## Related articles
+
+- [Create a client contact](/docs/product/commercial/crm/create-client-contact)
+- [Create a commercial product](/docs/product/commercial/crm/create-commercial-product)
+- [Create lead](/docs/product/commercial/crm/create-lead)

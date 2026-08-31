@@ -1,7 +1,7 @@
 ---
 id:  create-estimate
 title: Crear un Estimado
-sidebar_label: 1.  Crear un Estimado
+sidebar_label: Crear un Estimado
 ---
 
 El estimados pueden vincularse a las tarifas o crearse directamente en un proyecto o trabajo.
@@ -171,3 +171,9 @@ A medida que ingresa los valores, el total por Entregable en la sección Entrega
 Tenga en cuenta que cada columna individual de la estimación está controlada por roles de acceso. 
 
 Tenga en cuenta que puede tener varios costos, gastos y recursos externos en una línea de cliente. Dependerá de cómo quieras mostrar los detalles del presupuesto a los clientes.
+
+## Artículos relacionados
+
+- [Como administrar tablas Rate Card](/docs/product/commercial/rates/rate-cards)
+- [Fees](/docs/product/commercial/fees)
+- [Factura un Presupuesto](/docs/product/commercial/estimates/invoice-estimate)

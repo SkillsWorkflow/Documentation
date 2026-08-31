@@ -2,7 +2,7 @@
 id:  my-tasks
 title: My Tasks
 description: "Once you complete all the fields click on the option 'check'."
-sidebar_label: 9. My Tasks
+sidebar_label: My Tasks
 sidebar_position: 9
 ---
 
@@ -123,3 +123,8 @@ You can add a list of smaller items inside your task in the form of a checklist.
 ![img-box-shadow](/img/university/project-management/project-management-lesson8-7.png)
 <figcaption></figcaption>
 </figure>
+
+## Related articles
+
+- [Manage List View](/docs/product/projects-and-jobs/list-view)
+- [Filling in Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

@@ -1,7 +1,7 @@
 ---
 id:  approving-leaves
 title: Aprobación de Permisos/Vacaciones
-sidebar_label: 2. Aprobación de Permisos/Vacaciones
+sidebar_label: Aprobación de Permisos/Vacaciones
 sidebar_position: 2
 ---
 
@@ -85,3 +85,9 @@ Navegue para el **Módulo Permisos**.
 ![img-with-border](/img/university/leaves/approve-leaves_6.png)
 <figcaption> </figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Programar Permisos/Vacaciones](/docs/product/people/leaves/scheduling-leaves)
+- [Permisos Workspace](/docs/product/dashboards-and-reporting/leave-dashboard)
+- [Leaves Mi Departmento Workspace](/docs/product/dashboards-and-reporting/leave-department-dashboard)

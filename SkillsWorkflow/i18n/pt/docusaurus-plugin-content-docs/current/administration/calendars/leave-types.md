@@ -1,7 +1,7 @@
 ---
 id: create-leave-type
 title: Criar Tipos de Ausências
-sidebar_label: 6. Criar tipos de ausências
+sidebar_label: Criar tipos de ausências
 sidebar_position: 6
 ---
 

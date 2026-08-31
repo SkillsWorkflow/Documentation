@@ -1,7 +1,7 @@
 ---
 id:  assign-users
 title: Asignar o desasignar usuarios
-sidebar_label: 9. Asignar o desasignar usuarios de forma masiva
+sidebar_label: Asignar o desasignar usuarios de forma masiva
 sidebar_position: 9
 ---
 
@@ -48,3 +48,8 @@ Si la intención es desasignar usuarios de los equipos de los Job, el proceso es
 ![img-box-shadow](/img/university/project-management/project-management-lesson9-4.png)
 <figcaption></figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Qué es un Equipo y qué representa cada Grupo?](/docs/product/people/teams/what-is-a-team)
+- [Cómo crear Jobs?](/docs/product/projects-and-jobs/create-jobs)

@@ -106,3 +106,8 @@ To keep a discussion internal:
 - A client can still see posts that they created. Do not use a post created by a client for an internal discussion.
 - In the current WebApp, there is no visible functional control to manually change the privacy of a post after it has been created. Set the document to the appropriate workflow stage before creating the post.
 - The fields, actions, and options shown in the Feed can vary by document type, workflow configuration, and user permissions.
+
+## Related articles
+
+- [Annotations](/docs/product/files-and-collaboration/annotations)
+- [Create Jobs](/docs/product/projects-and-jobs/create-jobs)

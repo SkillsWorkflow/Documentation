@@ -1,7 +1,7 @@
 ---
 id: multi-approving-time-sheets
-title: Niveles de Aprobación Timesheet
-sidebar_label: 4. Niveles de Aprobación Timesheet
+title: Niveles de Aprobación de Hojas de Tiempo
+sidebar_label: Niveles de Aprobación de Hojas de Tiempo
 sidebar_position: 4
 ---
 
@@ -80,3 +80,7 @@ Cuando la orden de aprobación 0 aprueba, las horas pasan a la orden de aprobaci
 
 Las horas administrativas siguen la aprobación establecida para los usuarios y sus niveles.
 
+## Artículos relacionados
+
+- [Aprobar Hojas de Tiempo](/docs/product/time/timesheets/approving-time-sheets)
+- [Rechazar Hojas de Tiempo](/docs/product/time/timesheets/rejecting-time-sheets)

@@ -1,17 +1,17 @@
 ---
 id:  utilization-burn-dashboard
-title: Burn y Utilización Dashboards
-sidebar_label: 5. Burn y Utilizacion Dashboards
+title: Burn y Utilización Workspaces
+sidebar_label: Burn y Utilización Workspaces
 sidebar_position: 5
 --- 
 
-Dashboards son una característica poderosa que se utiliza para respaldar rápidamente las decisiones relacionadas con un contrato específico.
+Workspaces son una característica poderosa que se utiliza para respaldar rápidamente las decisiones relacionadas con un contrato específico.
 
 El objetivo es darle al usuario la capacidad de controlar los procesos de una manera muy amigable y completa.
 
 Como gestor de proyectos, es muy útil conocer el estado de un cliente específico y controlar la rentabilidad de cada proyecto y contrato. De esta manera el PM tendrá las herramientas necesarias para negociar con sus clientes.
 
-Hay varios dashboards a nivel de contrato disponibles en el sistema que mostrarán información diferente.
+Hay varios workspaces a nivel de contrato disponibles en el sistema que mostrarán información diferente.
 
 #### Burn y Utilización - Fee
 
@@ -85,3 +85,8 @@ Esta representación te permitirá comprobar si las horas planificadas o las hor
 #### Utilización por Usuario
 
 Además, podrás comprobar qué usuario está realizando más horas en tu contrato.
+
+## Artículos relacionados
+
+- [Tiempo Planificado](/docs/product/planning-and-scheduling/resourcing/planned-hours)
+- [Llenar Hojas de Tiempo](/docs/product/time/timesheets/filling-time-sheets)

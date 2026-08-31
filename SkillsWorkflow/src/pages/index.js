@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import Translate from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
+import useIsBrowser from '@docusaurus/useIsBrowser';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { useHistory } from '@docusaurus/router';
+import { usePluginData } from '@docusaurus/useGlobalData';
 import styles from './styles.module.css';
 
 /* Icons and colours are the product's own. The `fal fa-*` classes are exactly
@@ -21,7 +25,7 @@ const areas = [
     text: 'Create projects, break them into jobs, and follow them in the list view.' },
   { to: '/docs/product/planning-and-scheduling', title: 'Planning & Scheduling',
     icon: 'fal fa-poll-people', soft: '#fefae8', accent: '#f4cd0d',
-    text: 'The Gantt, the resource scheduler, allocation and planned hours.' },
+    text: 'The Gantt, the resource scheduler and planned time.' },
   { to: '/docs/product/time', title: 'Time',
     icon: 'fal fa-hourglass-start', soft: '#eefafb', accent: '#58d0da',
     text: 'Filling in, approving and transferring timesheets.' },
@@ -30,16 +34,16 @@ const areas = [
     text: 'Teams and groups, assignments, leave scheduling and approval.' },
   { to: '/docs/product/commercial', title: 'Commercial',
     icon: 'fal fa-calculator', soft: '#faf9f8', accent: '#a0867d',
-    text: 'CRM, rate cards, estimates, contracts and proposals.' },
+    text: 'CRM, rate cards, estimates and fees.' },
   { to: '/docs/product/billing-and-costs', title: 'Billing & Costs',
     icon: 'fal fa-file-invoice-dollar', soft: '#f4faf4', accent: '#91cc91',
     text: 'Invoice authorizations, credit notes and expenses.' },
   { to: '/docs/product/files-and-collaboration', title: 'Files & Collaboration',
     icon: 'fal fa-folders', soft: '#fef8ec', accent: '#f7bd55',
     text: 'Annotations on files, and the feed where the conversation happens.' },
-  { to: '/docs/product/dashboards-and-reporting', title: 'Dashboards & Reporting',
+  { to: '/docs/product/dashboards-and-reporting', title: 'Workspaces & Reporting',
     icon: 'fal fa-chart-pie', soft: '#fdf3f3', accent: '#f0868e',
-    text: 'The dashboards that ship with the platform, and how to read them.' },
+    text: 'The workspaces that ship with the platform, and how to read them.' },
   { to: '/docs/product/notifications', title: 'Notifications',
     icon: 'fal fa-bell', soft: '#edf8fd', accent: '#51beeb',
     text: 'What the platform notifies people about, and through which channel.' },
@@ -49,7 +53,7 @@ const areas = [
 ];
 const routes = [
   {
-    to: '/docs/university',
+    to: '/docs/learning-paths',
     icon: 'fal fa-graduation-cap',
     eyebrow: 'For everyone using the platform',
     title: 'Learn the product',
@@ -73,17 +77,113 @@ const routes = [
 
 const quick = [
   { to: '/docs/start-here/glossary', label: 'Glossary' },
-  { to: '/docs/product/planning-and-scheduling/gantt/gantt-chart', label: 'Gantt' },
+  { to: '/docs/product/planning-and-scheduling/gantt', label: 'Gantt' },
   { to: '/docs/administration/workflows', label: 'Workflows' },
   { to: '/docs/build-and-extend/automations', label: 'Automations' },
   { to: '/docs/integrations', label: 'Integrations' },
   { to: '/docs/build-and-extend/api/client-api', label: 'Client API' },
 ];
 
+/* The hero field is a real search input, not a proxy for the navbar one.
+   docusaurus-lunr-search's own SearchBar hard-codes `id="search_input_react"`,
+   so rendering a second SearchBar would collide — but its DocSearch class takes
+   `inputSelector` as an argument, so binding a second instance to this input is
+   not a collision. Both read the same index and the same JSON the plugin
+   already publishes; the results drop below the field the reader actually
+   clicked, rather than under the navbar in the far corner. */
+const HERO_INPUT_ID = 'hero_search_input';
+
+function HeroSearch() {
+  const isBrowser = useIsBrowser();
+  const history = useHistory();
+  const { siteConfig = {} } = useDocusaurusContext();
+  const pluginData = usePluginData('docusaurus-lunr-search');
+  const initialized = useRef(false);
+  const [ready, setReady] = useState(false);
+
+  const { baseUrl } = siteConfig;
+  const pluginConfig = (siteConfig.plugins || []).find(
+    (plugin) =>
+      Array.isArray(plugin) &&
+      typeof plugin[0] === 'string' &&
+      plugin[0].includes('docusaurus-lunr-search')
+  );
+  const assetUrl = (pluginConfig && pluginConfig[1]?.assetUrl) || baseUrl;
+
+  useEffect(() => {
+    // The index only exists in a production build; `docusaurus start` never
+    // writes it. Leave the field enabled but inert there rather than hanging.
+    if (!isBrowser || initialized.current || process.env.NODE_ENV !== 'production') {
+      return;
+    }
+    initialized.current = true;
+
+    Promise.all([
+      fetch(`${assetUrl}${pluginData.fileNames.searchDoc}`).then((r) => r.json()),
+      fetch(`${assetUrl}${pluginData.fileNames.lunrIndex}`).then((r) => r.json()),
+      import('docusaurus-lunr-search/src/theme/SearchBar/DocSearch'),
+      import('docusaurus-lunr-search/src/theme/SearchBar/algolia.css')
+    ])
+      .then(([searchDocFile, searchIndex, { default: DocSearch }]) => {
+        const { searchDocs, options } = searchDocFile;
+        if (!searchDocs || searchDocs.length === 0) return;
+
+        new DocSearch({
+          searchDocs,
+          searchIndex,
+          baseUrl,
+          inputSelector: `#${HERO_INPUT_ID}`,
+          // Client-side navigation, matching the navbar field's behaviour so a
+          // result opens the same way from either search.
+          handleSelected: (input, event, suggestion) => {
+            const url = suggestion.url || '/';
+            input.setVal('');
+            event.target.blur();
+            history.push(url);
+          },
+          maxHits: options?.maxHits
+        });
+        setReady(true);
+      })
+      .catch(() => {
+        /* Index missing or malformed: the field stays inert rather than throwing. */
+      });
+  }, [isBrowser, assetUrl, baseUrl, history, pluginData]);
+
+  const isMac = isBrowser && /Mac|iPhone|iPad/.test(window.navigator.platform);
+
+  return (
+    <div className={styles.search} role="search">
+      <div className={styles.searchField}>
+        <i className={`fal fa-search ${styles.searchIcon}`} aria-hidden="true" />
+        <input
+          id={HERO_INPUT_ID}
+          type="search"
+          className={styles.searchInput}
+          placeholder={translate({
+            id: 'home.search.placeholder',
+            message: 'Search Skills Workflow documentation...'
+          })}
+          aria-label={translate({
+            id: 'home.search.label',
+            message: 'Search Skills Workflow documentation'
+          })}
+        />
+        {isBrowser && ready && (
+          <kbd className={styles.searchKbd} aria-hidden="true">
+            {isMac ? '⌘' : 'Ctrl'} K
+          </kbd>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function Home() {
   return (
     <Layout description="Official Skills Workflow documentation: product guides, administration, workspaces, automations, integrations, API and SDK references.">
       <header className={styles.hero}>
+        <div className={styles.heroWash} aria-hidden="true" />
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>
             <Translate>Skills Workflow documentation</Translate>
@@ -97,8 +197,9 @@ function Home() {
               up, and references for the people building on top.
             </Translate>
           </p>
+          <HeroSearch />
           <div className={styles.heroActions}>
-            <Link className={styles.btnPrimary} to="/docs/university">
+            <Link className={styles.btnPrimary} to="/docs/learning-paths">
               <Translate>Start learning</Translate>
             </Link>
             <Link className={styles.btnGhost} to="/docs/product/projects-and-jobs">

@@ -1,8 +1,4 @@
 {
   "label": "Planejamento e Agendamento",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "slug": "/product/planning-and-scheduling"
-  }
+  "position": 3
 }

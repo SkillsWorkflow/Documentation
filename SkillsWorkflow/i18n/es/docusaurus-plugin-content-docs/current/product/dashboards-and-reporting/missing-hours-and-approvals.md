@@ -1,11 +1,11 @@
 ---
-id:  timesheet-approvals-dashboard
-title: Horas de Tiempo en Falta y Aprobaciones
-sidebar_label: 8. Horas de Tiempo en Falta y Aprobaciones Dashboard
+id: timesheet-approvals-dashboard
+title: Horas de Tiempo en Falta y Aprobaciones Workspace
+sidebar_label: Horas de Tiempo en Falta y Aprobaciones Workspace
 sidebar_position: 8
 ---
 
-Este dashboard proporciona información en tiempo real sobre los usuarios bloqueados debido a horas faltantes y/o aprobaciones faltantes de las hojas de tiempo de sus subordinados.
+Este workspace proporciona información en tiempo real sobre los usuarios bloqueados debido a horas faltantes y/o aprobaciones faltantes de las hojas de tiempo de sus subordinados.
 
 Para acceder, seleccione "Horas de Tiempo en Falta y Aprobaciones" en el menú del  Timesheet.
 
@@ -15,7 +15,7 @@ Para acceder, seleccione "Horas de Tiempo en Falta y Aprobaciones" en el menú d
 <figcaption></figcaption>
 </figure>
 
-El dashboard tiene 2 secciones que muestran lo siguiente:
+El workspace tiene 2 secciones que muestran lo siguiente:
 
 Gráficos
 
@@ -41,4 +41,9 @@ Una lista que muestra los usuarios bloqueados en cada departamento con las sigui
 
 ![img-box-shadow](/img/university/dashboards/missing-timesheets-dashboard/university-missing-timesheets-2.png)
 <figcaption></figcaption>
-</figure> 
+</figure>
+
+## Artículos relacionados
+
+- [Aprobar Hojas de Tiempo](/docs/product/time/timesheets/approving-time-sheets)
+- [Llenar Hojas de Tiempo](/docs/product/time/timesheets/filling-time-sheets)

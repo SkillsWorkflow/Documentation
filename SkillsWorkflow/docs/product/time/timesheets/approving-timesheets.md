@@ -1,8 +1,8 @@
 ---
 id: approving-time-sheets
-title: Approving Timesheets
+title: Approving Time Sheets
 description: "You can approve all the requested timesheets by clicking check icon in the right upper side."
-sidebar_label: 2. Approving Timesheets
+sidebar_label: Approving Time Sheets
 sidebar_position: 2
 ---
 
@@ -52,3 +52,9 @@ Go to workspace **Time sheets Approval**
 
 <figcaption>Approved time sheets</figcaption>
 </figure>
+
+## Related articles
+
+- [Rejecting Time Sheets](/docs/product/time/timesheets/rejecting-time-sheets)
+- [Time Sheet Approval Levels](/docs/product/time/timesheets/multi-approving-time-sheets)
+- [Missing Time Hours and Approvals Workspace](/docs/product/dashboards-and-reporting/timesheet-approvals-dashboard)

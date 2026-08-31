@@ -2,7 +2,7 @@
 id:  create-jobs
 title: Create Jobs
 description: "To create a new Job, navigate to the “Projects” module."
-sidebar_label: 2. Create Jobs
+sidebar_label: Create Jobs
 sidebar_position: 2
 ---
 
@@ -111,3 +111,10 @@ In order to notify someone on your team about a new post or Job related topics, 
 - **History** - Track of status changes. You can see for example who created the Project and at what time.
 - **Additional Information** - All the non-standard Job's fields.
 - **Others** - You may also find other tabs depending on the modules of the system you have access to.
+
+## Related articles
+
+- [Create a Project](/docs/product/projects-and-jobs/create-projects)
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [What is a Team and what does each Group represent?](/docs/product/people/teams/what-is-a-team)
+- [Manage List View](/docs/product/projects-and-jobs/list-view)

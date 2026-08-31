@@ -2,7 +2,7 @@
 id:  rate-cards
 title: Create Rate Cards
 description: "Rate Cards are prices/costs for typology groups and/or users."
-sidebar_label: 1. Create Rate Cards
+sidebar_label: Create Rate Cards
 sidebar_position: 1
 ---
 
@@ -80,3 +80,8 @@ If you want to add several users or groups of typology at the same time:
 ![img-box-shadow](/img/university/contracts/university-contracts-rateCards-3.png)
 <figcaption>Inserting multiple values in Rate Card table</figcaption>
 </figure>
+
+## Related articles
+
+- [Create Estimate](/docs/product/commercial/estimates/create-estimate)
+- [Fees](/docs/product/commercial/fees)

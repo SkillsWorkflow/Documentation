@@ -2,7 +2,7 @@
 id: create-commercial-product
 title: Create a commercial product
 description: "To create a new commercial product you must go to the “Maintenance” module and to the sub-list “Clients”."
-sidebar_label: 3. Create commercial product
+sidebar_label: Create a commercial product
 sidebar_position: 3
 ---
 
@@ -52,3 +52,7 @@ To create a new product, you will have to:
 
 <figcaption></figcaption>
 </figure>
+
+## Related articles
+
+- [Create a commercial client](/docs/product/commercial/crm/create-commercial-client)

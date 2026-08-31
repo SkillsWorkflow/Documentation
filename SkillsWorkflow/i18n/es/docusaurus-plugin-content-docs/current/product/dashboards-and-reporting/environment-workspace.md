@@ -1,13 +1,13 @@
 ---
 id:  environment-dashboard
-title: Ambiente Dashboard
-sidebar_label: 9. Ambiente Dashboard
+title: Ambiente Workspace
+sidebar_label: Ambiente Workspace
 sidebar_position: 9
 ---
 
 Ahora es posible cambiar el aspecto de Skills Workflow. Haz que se parezca a tu agencia, diferénciala de las demás y muestra la identidad de tu marca a todo tu equipo y clientes.
 
-Esto se puede hacer a través del Dashboard de Medio Ambiente. Para poder acceder al mismo, los Usuarios deberán tener vinculados a su perfil los siguientes profile:
+Esto se puede hacer a través del Workspace de Medio Ambiente. Para poder acceder al mismo, los Usuarios deberán tener vinculados a su perfil los siguientes profile:
 
 - MaintenanceNavigate
 - MaintenanceSave
@@ -23,7 +23,7 @@ Para acceder al Dasnboard del Ambiente, inicie sesión en Skills Workflow, haga 
 </figure> 
 
  
-Hay 3 secciones en el Dashboard donde se define lo siguiente:
+Hay 3 secciones en el Workspace donde se define lo siguiente:
 
 1. Imágenes: imágenes para usar como fondo y logotipos de la empresa.
 
@@ -73,3 +73,7 @@ Para configurar los colores, simplemente escriba su código de color o haga clic
 Hover State debería ser más atractivo visualmente que el estado normal
 
 Una vez que haya configurado las imágenes y los colores, haga clic en el botón Guardar para guardar los cambios realizados.
+
+## Artículos relacionados
+
+- [Clientes Workspace](/docs/product/dashboards-and-reporting/client-dashboard)

@@ -1,7 +1,7 @@
 ---
-id: 1-approve-expenses
+id: approve-expenses
 title: Aprovar Despesas
-sidebar_label: 3. Aprovar Despesas
+sidebar_label: Aprovar Despesas
 sidebar_position: 3
 ---
 
@@ -69,3 +69,8 @@ Para aprovar despesas, navegue até o módulo Projeto e selecione um projeto.
 
 <figcaption>Project's expense</figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Criar Despesas](/docs/product/billing-and-costs/expenses/create-expenses)
+- [Folhas de Despesas](/docs/product/billing-and-costs/expenses/expense-sheets)

@@ -1,6 +1,7 @@
 ---
 id: vbs
 title: 'VBS'
+description: "The integration between VBS and Skills Workflow: what it covers and how it is configured."
 sidebar_label: VBS
 ---
 

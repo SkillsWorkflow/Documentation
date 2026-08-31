@@ -1,16 +1,16 @@
 ---
 id:  utilization-dashboard
-title: Utilization
+title: Utilization Workspace
 description: "Project Managers put a lot of effort on resource allocation."
-sidebar_label: 4. Utilization Dashboard
+sidebar_label: Utilization Workspace
 sidebar_position: 4
 ---
 
 Project Managers put a lot of effort on resource allocation. As much as possible, they want their team to be busy with tasks which are valuable to the agency (billable hours) as this will increase profitability. However, resource allocation becomes a challenge as the team grows when you have to assign resources to different projects all happening at the same time.
 
-One of the easiest ways to check the effectiveness of your resource allocation effort is to track and analyze your team’s utilization. Skills Workflow have developed a Utilization Dashboard giving different views on how users time were spent across different dimensions. This will serve as a powerful tool to improve resource allocation.
+One of the easiest ways to check the effectiveness of your resource allocation effort is to track and analyze your team’s utilization. Skills Workflow have developed a Utilization Workspace giving different views on how users time were spent across different dimensions. This will serve as a powerful tool to improve resource allocation.
 
-The Utilization Dashboard can be accessed by selecting Workspaces from the menu bar then selecting Utilization:
+The Utilization Workspace can be accessed by selecting Workspaces from the menu bar then selecting Utilization:
 
 <figure>
 
@@ -63,3 +63,8 @@ Details are as follows:
 - Utilization Non-Billable % - (Non-Billable / Capacity) x 100
 - Utilization Billable % - (Billable / Capacity) x 100
 - Hours – Total Hours per Project/Job/Client
+
+## Related articles
+
+- [Resource Scheduler](/docs/product/planning-and-scheduling/resourcing/resource-scheduler)
+- [Filling in Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

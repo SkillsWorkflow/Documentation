@@ -1,23 +1,23 @@
 ---
 id:  contract-dashboard
-title: Contract
-description: "Dashboards are a powerful feature used to quickly support decisions related to a specific contract."
-sidebar_label: 3. Contract Dashboards
+title: Fee Workspace
+description: "Workspaces are a powerful feature used to quickly support decisions related to a specific contract."
+sidebar_label: Fee Workspace
 sidebar_position: 3
 ---
 
-Dashboards are a powerful feature used to quickly support decisions related to a specific contract.
+Workspaces are a powerful feature used to quickly support decisions related to a specific contract.
 
 The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
 
 As a project manager, it is very useful to understand the status of a specific client and control the profitability of each project and contract. This way the PM will have the necessary tools to negotiate with their clients.
 
-There are several dashboards at the Contract-level available in the system that will display different information.
+There are several workspaces at the Contract-level available in the system that will display different information.
 
-#### Burn Dashboard
+#### Burn Workspace
 
 1. Select the contract you want to analyze.
-2. Click on the "Burn Dashboard" tab.
+2. Click on the "Burn Workspace" tab.
 3. Select the project you want to check.
 
 You will find several representations that will show you in a glimpse whether your Contract is already burned.
@@ -52,10 +52,10 @@ This representation shows the number of actual hours per typology group.
 
 This representation shows the number of contracted hours per typology group, applied to the project previously selected.
 
-### Resources Dashboard
+### Resources Workspace
 
 1. Inside the previously selected contract
-2. Click on the "Resources Dashboard" tab
+2. Click on the "Resources Workspace" tab
 
 <figure>
 
@@ -81,9 +81,9 @@ This representation will allow you to check if the planned hours or actual hours
 
 Also, you will be able to check which user is filling in more hours under your project/contract
 
-### Staffing Dashboard
+### Staffing Workspace
 - Inside the previously selected contract
-- Click on the "Staffing Dashboard" tab
+- Click on the "Staffing Workspace" tab
 
 <figure>
 
@@ -111,4 +111,9 @@ This representation allows you to control on a monthly basis the planned time VS
 
 Based on planned VS actual time this representation shows the contribution of each typology group for your contract
 
-Please note that you can print out or export any of the described dashboards
+Please note that you can print out or export any of the described workspaces
+
+## Related articles
+
+- [Fees](/docs/product/commercial/fees)
+- [Create Estimate](/docs/product/commercial/estimates/create-estimate)

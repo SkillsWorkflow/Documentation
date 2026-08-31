@@ -1,7 +1,7 @@
 ---
 id:  create-lead
 title: Crear un Lead
-sidebar_label: 4. Crear un Lead
+sidebar_label: Crear un Lead
 sidebar_position: 4
 ---
 
@@ -61,3 +61,9 @@ En la parte superior de la página, podrá encontrar varias pestañas con inform
 - **Archivos** - Todos los archivos subidos a este Lead aparecerán en esta pestaña.
 - **Historia** -  Seguimiento de los cambios de estado. Puede ver, por ejemplo, quién creó el cliente potencial y en qué momento.
 - **Otros** - También puede encontrar otras pestañas dependiendo de los módulos del sistema a los que tenga acceso.
+
+## Artículos relacionados
+
+- [Crear una actividad](/docs/product/commercial/crm/create-activity)
+- [Crear un nuevo cliente comercial](/docs/product/commercial/crm/create-commercial-client)
+- [Crear un presupuesto](/docs/product/commercial/crm/create-estimate)

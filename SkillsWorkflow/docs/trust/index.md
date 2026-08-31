@@ -1,8 +1,8 @@
 ---
 id: home
-title: Home
-description: "Welcome to the Skills Workflow Trust Page."
-sidebar_label: Home
+title: Trust
+description: "Availability, security, privacy and incident information for customers, IT teams and procurement."
+sidebar_label: Overview
 sidebar_position: 1
 ---
 

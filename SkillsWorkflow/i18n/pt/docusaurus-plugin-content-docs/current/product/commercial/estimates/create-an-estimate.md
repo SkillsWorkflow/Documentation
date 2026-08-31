@@ -1,7 +1,7 @@
 ---
 id:  create-estimate
-title: Orçamentos
-sidebar_label: 1.  Criar um Orçamento
+title: Criar um Orçamento
+sidebar_label: Criar um Orçamento
 ---
 
 Os orçamentos podem ser vinculadas a taxas ou criadas diretamente em um projeto ou trabalho
@@ -171,3 +171,9 @@ Conforme você preenche os valores, o total por entrega na seção Entregas na p
 Observe que cada coluna individual na estimativa é controlada por funções de acesso. 
 
 Observe que você pode ter vários custos, despesas e recursos externos em uma linha de cliente. Dependerá de como você deseja mostrar os detalhes da estimativa aos clientes
+
+## Artigos relacionados
+
+- [Tabelas de preços](/docs/product/commercial/rates/rate-cards)
+- [Contrato](/docs/product/commercial/fees)
+- [Orçamentos](/docs/product/commercial/estimates/invoice-estimate)

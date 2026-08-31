@@ -1,19 +1,19 @@
 ---
 id:  utilization-burn-dashboard
-title: Burn and Utilization
-description: "Dashboards are a powerful feature used to quickly support decisions related to a specific contract."
-sidebar_label: 5. Burn and Utilization Dashboards
+title: Burn and Utilization Workspace
+description: "Workspaces are a powerful feature used to quickly support decisions related to a specific contract."
+sidebar_label: Burn and Utilization Workspace
 sidebar_position: 5
 ---
  
 
-Dashboards are a powerful feature used to quickly support decisions related to a specific contract.
+Workspaces are a powerful feature used to quickly support decisions related to a specific contract.
 
 The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
 
 As a project manager, it is very useful to understand the status of a specific client and control the profitability of each project and contract. This way the PM will have the necessary tools to negotiate with their clients.
 
-There are several dashboards at the Contract-level available in the system that will display different information.
+There are several workspaces at the Contract-level available in the system that will display different information.
 
 Burn and Utilization - Fee
 
@@ -90,3 +90,8 @@ This representation will allow you to check if the planned hours or actual hours
 #### Utilization by User
 
 Also, you will be able to check which user is filling in more hours under your contract.
+
+## Related articles
+
+- [Planned Time](/docs/product/planning-and-scheduling/resourcing/planned-hours)
+- [Filling in Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

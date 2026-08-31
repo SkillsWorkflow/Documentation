@@ -107,3 +107,7 @@ Notas de configuração:
 
 - A aprovação de páginas PDF é uma feature separada e não é obrigatória para usar anotações.
 - Se os usuários não virem o painel de anotações depois da ativação, confirmar que **Enable annotations** está ativado e que o arquivo é exibido em um preview suportado.
+
+## Artigos relacionados
+
+- [Usando o Feed](/docs/product/files-and-collaboration/using-feed)

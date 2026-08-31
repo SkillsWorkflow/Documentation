@@ -1,6 +1,6 @@
 ---
 id: storage
-title: " "
+title: Storage
 description: "With this namespace, you can quickly provide methods to manipulate the storage."
 sidebar_label: Storage
 ---

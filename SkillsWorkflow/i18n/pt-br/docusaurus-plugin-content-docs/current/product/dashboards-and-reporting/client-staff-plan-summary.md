@@ -1,14 +1,14 @@
 ---
 id:  client-staff-dashboard
-title: Resumo do Plano de Equipe do Cliente
-sidebar_label: 11. Dashboard de resumo do plano de equipe do cliente
+title: Workspace de resumo do plano de equipe do cliente
+sidebar_label: Workspace de resumo do plano de equipe do cliente
 sidebar_position: 11
 ---
 
 
-## Dashboard de resumo do plano de equipe do cliente
+## Workspace de resumo do plano de equipe do cliente
 
-O Dashboard de Resumo do Plano de Equipe do Cliente fornece um relatório resumido de todas as taxas e estimativas de uma empresa, grupo de clientes e período selecionado
+O Workspace de Resumo do Plano de Equipe do Cliente fornece um relatório resumido de todas as taxas e estimativas de uma empresa, grupo de clientes e período selecionado
 
 Isso pode ser acessado selecionando "Resumo do plano de equipe do cliente" no menu "Espaços de trabalho".
 
@@ -62,3 +62,8 @@ No formato de relatório padrão acima, os seguintes campos são mostrados:
 ![img-box-shadow](/img/university/dashboards/client-staff-summary-dashboard/university-client-staff-summary-2.png)
 <figcaption></figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Contrato](/docs/product/commercial/fees)
+- [Criar um Orçamento](/docs/product/commercial/estimates/create-estimate)

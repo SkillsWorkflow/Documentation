@@ -1,8 +1,4 @@
 {
   "label": "Briefing e Pedidos",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "slug": "/product/briefing-and-requests"
-  }
+  "position": 1
 }

@@ -1,7 +1,7 @@
 ---
 id:  invoice-estimate
 title: Orçamentos
-sidebar_label: 2.  Faturar um orçamento
+sidebar_label: Faturar um orçamento
 ---
 
 Os orçamentos podem ser criadas como retentores, e o sistema exibirá automaticamente seus valores.
@@ -57,3 +57,9 @@ Os recursos estarão disponíveis em "Tempo planejado"
 ![img-box-shadow](/img/university/estimates/estimates-lesson2-5.png)
 <figcaption></figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Criar um Orçamento](/docs/product/commercial/estimates/create-estimate)
+- [Autorizações de fatura](/docs/product/billing-and-costs/billing/invoice-authorizations)
+- [Notas de credito](/docs/product/billing-and-costs/billing/credit-notes)

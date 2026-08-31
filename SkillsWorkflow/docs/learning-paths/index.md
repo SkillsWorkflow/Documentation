@@ -1,19 +1,23 @@
 ---
 id: home
-slug: /university
-title: ""
-description: "Wanna learn more?  Here you can get some easy lessons to improve your knowledge of Skills Workflow."
-sidebar_label: Home
+title: Get started
+description: "Ordered routes through the Skills Workflow documentation for the person using the platform, the person administering it, and the person implementing it."
+sidebar_label: Get started
 sidebar_position: 1
-hide_table_of_contents: true
 ---
 
-### Welcome to Skills Workflow's University
+# Get started
 
-Wanna learn more? Here you can get some easy lessons to improve your knowledge of Skills Workflow.
+Three routes through the documentation, each in the order the work is actually done.
 
-<figure>
+Every step links to the same page the rest of the documentation uses. Nothing is written twice, so
+no page can be current on one route and stale on another.
 
-![home-image-size](/img/homefeat03.svg)
+| Route | For | Starts with |
+| --- | --- | --- |
+| [Using the platform](/docs/learning-paths/end-user) | Anyone doing the work | Creating a project |
+| [Administering a client](/docs/learning-paths/administrator) | Administrators | Users and profiles |
+| [Implementing the platform](/docs/learning-paths/consultant) | Consultants and developers | Workspaces |
 
-</figure>
+You do not have to start at the beginning. Each step says what it covers, so you can join a route
+wherever your question is.

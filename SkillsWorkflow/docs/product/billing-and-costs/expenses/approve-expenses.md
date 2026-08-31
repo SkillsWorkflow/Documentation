@@ -1,8 +1,8 @@
 ---
-id:  1-approve-expenses
+id: approve-expenses
 title: Approve Expenses
 description: "Change the expense sheet stage."
-sidebar_label: 3. Approve Expenses
+sidebar_label: Approve Expenses
 sidebar_position: 3
 ---
 ### Expenses can be approved in two ways:
@@ -61,3 +61,8 @@ To approve expenses navigate to Project module and select a project.
 ![img-box-shadow](/img/university/expenses/university-expenses-approve-3.png)
 <figcaption>Project's expense</figcaption>
 </figure>
+
+## Related articles
+
+- [Create Expenses](/docs/product/billing-and-costs/expenses/create-expenses)
+- [Expense Sheets](/docs/product/billing-and-costs/expenses/expense-sheets)

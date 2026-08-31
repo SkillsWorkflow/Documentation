@@ -1,7 +1,7 @@
 ---
 id:  assign-users
 title: Atribuir ou cancelar a atribuição de usuários
-sidebar_label: 9. Atribuir ou cancelar a atribuição massivamente de usuários
+sidebar_label: Atribuir ou cancelar a atribuição massivamente de usuários
 sidebar_position: 9
 ---
 
@@ -48,3 +48,8 @@ Se a intenção for desatribuir usuários das equipes de trabalhos, o processo �
 ![img-box-shadow](/img/university/project-management/project-management-lesson9-4.png)
 <figcaption></figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [O que é uma Equipa e o que cada Grupo representa?](/docs/product/people/teams/what-is-a-team)
+- [Como criar atividades](/docs/product/projects-and-jobs/create-jobs)

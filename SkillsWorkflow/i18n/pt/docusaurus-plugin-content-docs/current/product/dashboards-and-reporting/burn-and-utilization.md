@@ -1,13 +1,13 @@
 ---
 id:  utilization-burn-dashboard
-title: Burn e Utilização
-sidebar_label: 5. Burn e Dashboards de Utilização
+title: Burn e Workspaces de Utilização
+sidebar_label: Burn e Workspaces de Utilização
 sidebar_position: 5
 --- 
 
 ## Burn e Utilization de Utilização
 
-Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
+Workspaces são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
 
 O objetivo é dar ao usuário a capacidade de controlar os processos de forma muito amigável e abrangente.
 
@@ -88,3 +88,8 @@ Essa representação permitirá que você verifique se as horas planejadas ou as
 #### Utilização por usuário
 
 Além disso, você poderá verificar qual usuário está preenchendo mais horas sob seu contrato.
+
+## Artigos relacionados
+
+- [Tempo Planeado](/docs/product/planning-and-scheduling/resourcing/planned-hours)
+- [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

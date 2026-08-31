@@ -1,14 +1,14 @@
 ---
 id:  planned-hours
-title: Planned Hours
+title: Planned Time
 description: "After creating your Project, you can start planning the amount of time that each resource will spend on this Project."
-sidebar_label: 8. Planned hours
+sidebar_label: Planned Time
 sidebar_position: 8
 ---
 
 After creating your Project, you can start planning the amount of time that each resource will spend on this Project.
 
-1. Go to the tab Planned Hours inside your Project.
+1. Go to the **Planned Time** tab inside your Project.
 
 2. Click on the plus sign to add a new row to your planned hours table.
 
@@ -54,7 +54,7 @@ Once people start entering timesheets for this Project and/or jobs belonging to 
 
 You will be able to track the planned vs actual hours in real time for your Projects.
 
-Planned hours typically come from the contract with the client, and as such the system has specific roles that control whether a user has permission edit this column or not.
+Planned hours typically come from the Fee with the client, and as such the system has specific roles that control whether a user has permission edit this column or not.
 
 **You can also do monthly forecasts by filling in forecasted figures under each month column.**
 
@@ -72,3 +72,9 @@ The column Actual and Forecast will show the sum of all monthly forecasts with t
 </figure>
 
 This column will show the remaining planned time allocated to you specifically, or to your position.
+
+## Related articles
+
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [Resource Scheduler](/docs/product/planning-and-scheduling/resourcing/resource-scheduler)
+- [Filling in Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

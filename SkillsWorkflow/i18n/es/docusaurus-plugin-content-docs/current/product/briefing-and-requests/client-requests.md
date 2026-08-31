@@ -1,7 +1,7 @@
 ---
 id: create-client-requests
 title: Crear solicitudes de clientes
-sidebar_label: 6. Crear solicitudes de clientes
+sidebar_label: Crear solicitudes de clientes
 sidebar_position: 6
 ---
 
@@ -97,3 +97,8 @@ También es posible crear Sub-Trabajos bajo un Job principal.
 
 <figcaption></figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Crear proyectos](/docs/product/projects-and-jobs/create-projects)
+- [Crear un nuevo cliente comercial](/docs/product/commercial/crm/create-commercial-client)

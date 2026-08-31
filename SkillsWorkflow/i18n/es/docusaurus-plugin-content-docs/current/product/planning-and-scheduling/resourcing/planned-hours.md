@@ -1,13 +1,13 @@
 ---
 id:  planned-hours
-title: Horas planificadas
-sidebar_label: 7. Horas planificadas
+title: Tiempo Planificado
+sidebar_label: Tiempo Planificado
 sidebar_position: 7
 ---
 
 Después de crear su Proyecto, puede comenzar a planificar la cantidad de tiempo que cada recurso dedicará a este Proyecto.
 
-1. Vaya a la pestaña Horas Planificadas dentro de su Proyecto.
+1. Vaya a la pestaña **Tiempo Planificado** dentro de su Proyecto.
 
 2. Haga clic en el signo más para agregar una nueva fila a su tabla de horas planificadas.
 
@@ -71,3 +71,9 @@ La columna Real y Pronóstico mostrará la suma de todos los pronósticos mensua
 </figure>
 
 Esta columna mostrará el tiempo planificado restante asignado específicamente a usted oa su puesto.
+
+## Artículos relacionados
+
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [Programador de Recursos](/docs/product/planning-and-scheduling/resourcing/resource-scheduler)
+- [Llenar Hojas de Tiempo](/docs/product/time/timesheets/filling-time-sheets)

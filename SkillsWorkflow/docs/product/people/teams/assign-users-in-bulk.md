@@ -2,7 +2,7 @@
 id:  assign-users
 title: Massively assign or unassign users
 description: "Follow the next steps to massively assign or unassign users on the Jobs' teams: If the intention is to unassign users from the jobs' teams, the process is the…"
-sidebar_label: 10. Massively assign or unassign users
+sidebar_label: Massively assign or unassign users
 sidebar_position: 10
 ---
 
@@ -49,3 +49,8 @@ If the intention is to unassign users from the jobs' teams, the process is the s
 ![img-box-shadow](/img/university/project-management/project-management-lesson9-4.png)
 <figcaption></figcaption>
 </figure>
+
+## Related articles
+
+- [What is a Team and what does each Group represent?](/docs/product/people/teams/what-is-a-team)
+- [Create Jobs](/docs/product/projects-and-jobs/create-jobs)

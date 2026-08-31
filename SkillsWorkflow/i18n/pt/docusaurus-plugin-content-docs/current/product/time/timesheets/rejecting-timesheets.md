@@ -1,7 +1,7 @@
 ---
 id: rejecting-time-sheets
-title: Rejeitar Folhas de horas
-sidebar_label: 3. Rejeitar Folhas de horas
+title: Rejeitar Time Sheets
+sidebar_label: Rejeitar Time Sheets
 sidebar_position: 3
 ---
 
@@ -42,3 +42,8 @@ No mesmo workspace on as **folhas de horas** são aprovadas.
 
 <figcaption>As folhas de horas rejeitadas aparecerão em vermelho.</figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Aprovar Time Sheets](/docs/product/time/timesheets/approving-time-sheets)
+- [Níveis de Aprovação de Time Sheets](/docs/product/time/timesheets/multi-approving-time-sheets)

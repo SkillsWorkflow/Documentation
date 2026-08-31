@@ -2,7 +2,7 @@
 id: what-is-a-team
 title: What is a Team and what does each Group represent?
 description: "The team is typically comprised by the following groups:"
-sidebar_label: 11. What is a Team and what does each Group represent?
+sidebar_label: What is a Team and what does each Group represent?
 sidebar_position: 11
 ---
 
@@ -47,3 +47,44 @@ The names can also be customized based on company needs.
 1. Each group plays a different part with a different set of responsibilities
 2. For each phase of the process, a person may be able to move a job forward on the workflow or not, based on the group he or she belongs to
 3. Each person knows what jobs depend on his or her own actions
+
+## Assigning an executor to a job
+
+From the Job List, select and click Job you want to assign an Executor.
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor1.png)
+<figcaption></figcaption>
+</figure>
+
+
+Click "Add Assignment" icon (People) then place the cursor beside "Executor". The pencil icon will appear then click. 
+ 
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor2.png)
+<figcaption></figcaption>
+</figure>
+
+- A List of Resources will be displayed for selection:
+
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor3.png)
+<figcaption></figcaption>
+</figure>
+
+Choose a particular Resource then click "Submit Post" icon (Right Arrow Head) to Save.
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor4.png)
+<figcaption></figcaption>
+</figure>
+
+## Related articles
+
+- [Assign or unassign users in bulk](/docs/product/people/teams/assign-users)

@@ -1,7 +1,7 @@
 ---
 id: timesheet-timer
-title: Cronómetro de Timesheet
-sidebar_label: 5. Cronómetro de Timesheet
+title: Cronómetro de Hoja de Tiempo
+sidebar_label: Cronómetro de Hoja de Tiempo
 sidebar_position: 5
 ---
 
@@ -111,3 +111,7 @@ La opción "Start Current Document" está disponible al visualizar cualquiera de
 - Contratos
 
 Para registrar tiempo en otros documentos, use la opción **Search Document to Start**.
+
+## Artículos relacionados
+
+- [Llenar Hojas de Tiempo](/docs/product/time/timesheets/filling-time-sheets)

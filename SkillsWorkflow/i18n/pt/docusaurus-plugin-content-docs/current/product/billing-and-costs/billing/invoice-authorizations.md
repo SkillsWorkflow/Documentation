@@ -1,7 +1,7 @@
 ---
 id:  invoice-authorizations
 title: Autorizações de fatura
-sidebar_label: 1. Criar autorizações de fatura
+sidebar_label: Autorizações de fatura
 sidebar_position: 1
 ---
 
@@ -94,3 +94,9 @@ Na listagem de autorizações factura pode aplicar diversos filtros, tais como: 
 ![img-box-shadow](/img/university/bills/bills-lesson1-5.png)
 <figcaption>Lista de autorizações fatura</figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Orçamentos](/docs/product/commercial/estimates/invoice-estimate)
+- [Notas de credito](/docs/product/billing-and-costs/billing/credit-notes)
+- [Notas de Encomenda](/docs/product/billing-and-costs/billing/purchase-orders)

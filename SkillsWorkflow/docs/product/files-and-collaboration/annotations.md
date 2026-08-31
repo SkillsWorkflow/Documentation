@@ -107,3 +107,7 @@ Configuration notes:
 
 - PDF page approval is a separate feature and is not required to use annotations.
 - If users cannot see the annotation panel after activation, confirm that **Enable annotations** is enabled and that the file is shown in a supported preview.
+
+## Related articles
+
+- [Using the Feed](/docs/product/files-and-collaboration/using-feed)

@@ -1,6 +1,6 @@
 ---
 id: application-configuration
-title: " "
+title: Configuration
 description: "This method can be used to get the current environment configuration."
 sidebar_label: Configuration
 ---

@@ -1,8 +1,4 @@
 {
   "label": "Notificaciones",
-  "position": 10,
-  "link": {
-    "type": "generated-index",
-    "slug": "/product/notifications"
-  }
+  "position": 10
 }

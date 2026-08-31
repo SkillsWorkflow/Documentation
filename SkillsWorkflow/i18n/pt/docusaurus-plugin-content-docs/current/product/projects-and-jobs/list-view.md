@@ -1,7 +1,7 @@
 ---
 id:  list-view
-title: Como gerenciar a sua visualização de lista?
-sidebar_label: 5. Gerenciar a sua visualização de lista
+title: Gerenciar a sua visualização de lista
+sidebar_label: Gerenciar a sua visualização de lista
 sidebar_position: 5
 ---
 
@@ -76,3 +76,8 @@ Primeiro, você precisa expandir sua visualização para poder ver todos os camp
 ![img-box-shadow](/img/university/project-management/project-management-lesson5-5.png)
 <figcaption></figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Como criar atividades](/docs/product/projects-and-jobs/create-jobs)
+- [Minhas tarefas](/docs/product/projects-and-jobs/my-tasks)

@@ -1,7 +1,7 @@
 ---
 id:  notification-types
-title: "Tipos, categorías y periodicidad"
-sidebar_label: 1. Tipos de notificación
+title: "Tipos de notificación"
+sidebar_label: Tipos de notificación
 sidebar_position: 1
 ---
 
@@ -109,3 +109,6 @@ Notificaciones Responsables:
 <figcaption>Notifications settings</figcaption>
 </figure>
 
+## Artículos relacionados
+
+- [Uso del Feed](/docs/product/files-and-collaboration/using-feed)

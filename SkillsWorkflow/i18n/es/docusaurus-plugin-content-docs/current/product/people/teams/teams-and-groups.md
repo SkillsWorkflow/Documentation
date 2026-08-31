@@ -1,7 +1,7 @@
 ---
 id: what-is-a-team
 title: Qué es un Equipo y qué representa cada Grupo?
-sidebar_label: 10. Qué es un Equipo y qué representa cada Grupo?
+sidebar_label: Qué es un Equipo y qué representa cada Grupo?
 sidebar_position: 10
 ---
 
@@ -46,3 +46,44 @@ Los nombres también se pueden personalizar según las necesidades de la empresa
 1. Cada grupo juega un papel diferente con un conjunto diferente de responsabilidades
 2. Para cada fase del proceso, una persona puede avanzar o no un Job en el flujo del Job, según el grupo al que pertenezca.
 3. Cada uno sabe qué Job dependen de sus propias acciones
+
+## Asignar un ejecutor a un job
+
+En la lista de Jobs, seleccione y haga clic en el trabajo al que desea asignar un ejecutor.
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor1.png)
+<figcaption></figcaption>
+</figure>
+
+
+Haga clic en el icono "Agregar asignación" (Personas) y luego coloque el cursor al lado de "Ejecutor". Aparecerá el icono del lápiz y luego haga clic. 
+ 
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor2.png)
+<figcaption></figcaption>
+</figure>
+
+- Se mostrará una lista de recursos para su selección:
+
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor3.png)
+<figcaption></figcaption>
+</figure>
+
+Elija un recurso en particular y luego haga clic en el icono "Enviar publicación" (punta de flecha derecha) para guardar.
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor4.png)
+<figcaption></figcaption>
+</figure>
+
+## Artículos relacionados
+
+- [Asignar o desasignar usuarios](/docs/product/people/teams/assign-users)

@@ -2,7 +2,7 @@
 id:  scheduling-leaves
 title: Scheduling Leaves
 description: "To schedule Leaves, click on the Leaves modules and choose the option “Scheduler”."
-sidebar_label: 1. Scheduling Leaves
+sidebar_label: Scheduling Leaves
 sidebar_position: 1
 ---
 
@@ -74,4 +74,7 @@ Click on the days you want to book. There is no need to save. The system automat
 <figcaption> </figcaption>
 </figure>
 
+## Related articles
 
+- [Approving Leaves](/docs/product/people/leaves/approving-leaves)
+- [Leaves Workspace](/docs/product/dashboards-and-reporting/leave-dashboard)

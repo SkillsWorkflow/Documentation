@@ -1,12 +1,12 @@
 ---
 id:  client-staff-dashboard
-title: Client Staff Plan Summary
-description: "Dashboard provides a summary report of all fees and estimates under a company, client group and period selected."
-sidebar_label: 11. Client Staff Plan Summary Dashboard
+title: Client Staff Plan Summary Workspace
+description: "Workspace provides a summary report of all fees and estimates under a company, client group and period selected."
+sidebar_label: Client Staff Plan Summary Workspace
 sidebar_position: 11
 ---
 
-The Client Staff Plan Summary Dashboard provides a summary report of all fees and estimates under a company, client group and period selected.
+The Client Staff Plan Summary Workspace provides a summary report of all fees and estimates under a company, client group and period selected.
 
 This can be accessed by selecting “Client Staff Plan Summary” under “Workspaces” menu.
 
@@ -16,7 +16,7 @@ This can be accessed by selecting “Client Staff Plan Summary” under “Works
 <figcaption></figcaption>
 </figure>
 
-The dashboard has 2 sections:
+The workspace has 2 sections:
 
 Company and Client Group – This is where you set the criteria to determine the fees and estimates to be included in the report by selecting from the dropdown, values for the following:
 
@@ -45,3 +45,8 @@ In the default report format above the following fields are shown:
 ![img-box-shadow](/img/university/dashboards/client-staff-summary-dashboard/university-client-staff-summary-2.png)
 <figcaption></figcaption>
 </figure>
+
+## Related articles
+
+- [Fees](/docs/product/commercial/fees)
+- [Create Estimate](/docs/product/commercial/estimates/create-estimate)

@@ -1,7 +1,7 @@
 ---
 id:  expense-sheets
-title: Crear hojas de gastos
-sidebar_label: 1. Crear Hojas de Gastos
+title: Crear Hojas de Gastos
+sidebar_label: Crear Hojas de Gastos
 sidebar_position: 1
 ---
 
@@ -38,4 +38,7 @@ Para crear una nueva **Hoja de Gastos** (Hoja de Agregación de Gastos Múltiple
 - **Tipo**: Seleccione el tipo de gasto (esta información es muy importante, ya que definirá el flujo de gastos).
 - **Fecha de inicio/Fecha de finalización**: Seleccione la fecha de inicio y la fecha de finalización del gasto (debe reflejar la fecha en que se reembolsa al empleado).
 
+## Artículos relacionados
 
+- [Crear Gastos](/docs/product/billing-and-costs/expenses/create-expenses)
+- [Aprobar gastos](/docs/product/billing-and-costs/expenses/approve-expenses)

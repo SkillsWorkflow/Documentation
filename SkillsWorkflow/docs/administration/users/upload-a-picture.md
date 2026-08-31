@@ -1,7 +1,8 @@
 ---
 id:  upload-picture
-title: Password recovery via "Forgot your password" option
-sidebar_label: Password recovery via "Forgot your password" option
+title: Upload a profile picture
+description: "Choose a photo to use as your Skills Workflow profile picture, and replace it from your Profile page."
+sidebar_label: Profile picture
 ---
 
 You can choose a photo to set as your Skills Workflow profile picture. This picture will be used as the icon for your account and will represent you in Skills Workflow.

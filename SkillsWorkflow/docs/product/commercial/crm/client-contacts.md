@@ -2,7 +2,7 @@
 id: create-client-contact
 title: Create a client contact
 description: "In order to create a new client contact with all the client details, you should access the “CLIENTS” module and go into the “Client Contact” tab."
-sidebar_label: 2. Create client contact
+sidebar_label: Create a client contact
 sidebar_position: 2
 ---
 
@@ -42,3 +42,8 @@ It won't be necessary to save the changes made, as the system will automatically
 ![img-box-shadow](/img/university/crm/crm-client1-4.png)
 <figcaption>Contact details automatically saved</figcaption>
 </figure>
+
+## Related articles
+
+- [Create a commercial client](/docs/product/commercial/crm/create-commercial-client)
+- [Create lead](/docs/product/commercial/crm/create-lead)

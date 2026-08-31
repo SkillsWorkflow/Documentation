@@ -1,6 +1,6 @@
 ---
 id: store
-title: " "
+title: Store
 description: "With this namespace, you can quickly provide methods to manipulate the data store."
 sidebar_label: Store
 ---

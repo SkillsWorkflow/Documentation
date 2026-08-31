@@ -1,8 +1,8 @@
 ---
 id:  create-projects
-title: Create Projects
+title: Create a Project
 description: "To create a new Project, navigate to the “Clients” module."
-sidebar_label: 1. Create a Project
+sidebar_label: Create a Project
 sidebar_position: 1
 ---
 
@@ -75,7 +75,14 @@ sidebar_position: 1
 
 - **Feed** - Activity and comments related with the Project.
 - **Jobs** - List of existing jobs belonging to this Project.
-- **Planned Hours** - Planned versus Actual hours per typology and/or user for the Project.
+- **Planned Time** - Planned versus Actual hours per typology and/or user for the Project.
 - **Files** - All the files uploaded into this Project will appear on this tab.
 - **History** - Track of status changes. You can see for example who created the Project and at what time.
 - **Others** - You may also find other tabs depending on the modules of the system you have access to.
+
+## Related articles
+
+- [Create Jobs](/docs/product/projects-and-jobs/create-jobs)
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [Planned Time](/docs/product/planning-and-scheduling/resourcing/planned-hours)
+- [Fees](/docs/product/commercial/fees)

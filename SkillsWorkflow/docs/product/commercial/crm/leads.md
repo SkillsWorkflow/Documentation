@@ -2,7 +2,7 @@
 id: create-lead
 title: Create lead
 description: "To create a new Lead, navigate to the “Clients” module."
-sidebar_label: 4. Create lead
+sidebar_label: Create lead
 sidebar_position: 4
 ---
 
@@ -63,3 +63,9 @@ At the top of the page, you will be able to find various tabs with information a
 - **Files** - All the files uploaded to this Lead will appear on this tab.
 - **History** - Track of status changes. You can see for example who created the Lead and at what time.
 - **Others** - You may also find other tabs depending on the modules of the system you have access to.
+
+## Related articles
+
+- [Create an activity](/docs/product/commercial/crm/create-activity)
+- [Create a commercial client](/docs/product/commercial/crm/create-commercial-client)
+- [Create estimate](/docs/product/commercial/crm/create-estimate)

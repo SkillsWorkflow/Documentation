@@ -1,7 +1,7 @@
 ---
 id: create-activity
 title: Crear una actividad
-sidebar_label: 5. Crear una actividad
+sidebar_label: Crear una actividad
 sidebar_position: 5
 ---
 
@@ -98,3 +98,7 @@ En la parte superior de la página, encontrará varias pestañas con informació
 - **Archivos** - Todos los archivos subidos a esta actividad aparecerán en esta pestaña.
 - **Historial** - Seguimiento de los cambios de estado. Puede ver, por ejemplo, quién creó la actividad y en qué momento.
 - **Otros** - También puede encontrar otras pestañas, dependiendo de los módulos del sistema a los que tenga acceso.
+
+## Artículos relacionados
+
+- [Crear un Lead](/docs/product/commercial/crm/create-lead)

@@ -1,8 +1,8 @@
 ---
 id: timesheet-timer
-title: Timesheet Timer
+title: Time Sheet Timer
 description: "The Timesheet Timer lets you track the time you spend on a document in real time."
-sidebar_label: 5. Timesheet Timer
+sidebar_label: Time Sheet Timer
 sidebar_position: 5
 ---
 
@@ -112,3 +112,7 @@ The "Start Current Document" option is available when viewing any of the followi
 - Contracts
 
 To track time on other documents, use the **Search Document to Start** option.
+
+## Related articles
+
+- [Filling in Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

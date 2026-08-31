@@ -1,7 +1,7 @@
 ---
 id:  mobile-features
 title: Funciones dispositivos moviles
-sidebar_label: 1. Funciones dispositivos moviles
+sidebar_label: Funciones dispositivos moviles
 sidebar_position: 2
 ---
 
@@ -126,3 +126,8 @@ El timesheet calendario le dará una visión general de sus horas. Seleccione un
 </figure>
 
 Se agregarán nuevas características y actualizaciones disponibles a este artículo.
+
+## Artículos relacionados
+
+- [iOS App User Configuration](/docs/product/mobile/ios-app-config)
+- [Android App User Configuration](/docs/product/mobile/android-app-config)

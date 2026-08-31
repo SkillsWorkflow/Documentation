@@ -1,7 +1,7 @@
 ---
 id:  utilization-dashboard
-title: Utilização
-sidebar_label: 4.Dashboard de Utilização 
+title: Workspace de Utilização
+sidebar_label: Workspace de Utilização
 sidebar_position: 4
 ---
 
@@ -62,3 +62,8 @@ Detalhes a seguir:
    - % de utilização não faturável - (não faturável / capacidade) x 100
    - % Faturável de Utilização - (Faturável / Capacidade) x 100
    - Horas - Total de horas por projeto/trabalho/cliente
+
+## Artigos relacionados
+
+- [Planejamento de Equipes](/docs/product/planning-and-scheduling/resourcing/resource-scheduler)
+- [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

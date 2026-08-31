@@ -1,6 +1,7 @@
 ---
 id:  android-app-config
 title: Android App User Configuration
+description: "Downloading the Skills Workflow app from the Play Store and configuring it on an Android device."
 sidebar_label: Android App User Configuration
 ---
 
@@ -25,3 +26,8 @@ To configure the app you should follow these few steps:
 ![img-box-shadow](/img/integrations/android-app-config1.png)
 <figcaption>Skills Workflow App settings for https://demo.skillsworkflow.com </figcaption>
 </figure>
+
+## Related articles
+
+- [Mobile Features](/docs/product/mobile/mobile-features)
+- [iOS App User Configuration](/docs/product/mobile/ios-app-config)

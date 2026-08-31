@@ -1,7 +1,7 @@
 ---
 id: create-leave-type
 title: Criar Tipos de Licença
-sidebar_label: 6. Criar Tipos de Licença
+sidebar_label: Criar Tipos de Licença
 sidebar_position: 6
 ---
 

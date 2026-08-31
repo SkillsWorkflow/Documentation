@@ -257,7 +257,7 @@ Below is the complete list of action types available for transitions, organized 
 | `ExceedsBudget` | Checks if the document exceeds the budget. | `QueryName;RoleName` — query returning a boolean + error message; optional role name for permission bypass. |
 | `UpdateRealPlannedCost` | Recalculates real vs. planned costs. | — |
 
-#### Planned Hours & Workloads
+#### Planned Time & Workloads
 
 | Action Type | Description | Options |
 |-------------|-------------|---------|

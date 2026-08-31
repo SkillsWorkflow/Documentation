@@ -1,7 +1,7 @@
 ---
 id:  create-jobs
 title: Como criar atividades
-sidebar_label: 2. Criar Atividades
+sidebar_label: Criar Atividades
 sidebar_position: 2
 ---
 
@@ -128,3 +128,10 @@ At the top of the page you will be able to find various tabs with information ab
 - **História** - Lista de todas as alterações às etapas. Verifique por exemplo quem criou a atividade e quando
 
 - **Outros** - Poderá encontrar outras opções do sistema dependendo dos seus acessos.
+
+## Artigos relacionados
+
+- [Criar um Projeto](/docs/product/projects-and-jobs/create-projects)
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [O que é uma Equipa e o que cada Grupo representa?](/docs/product/people/teams/what-is-a-team)
+- [Gerenciar a sua visualização de lista](/docs/product/projects-and-jobs/list-view)

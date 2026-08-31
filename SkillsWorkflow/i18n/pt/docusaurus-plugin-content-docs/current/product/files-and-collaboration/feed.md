@@ -106,3 +106,8 @@ Para manter uma discussão interna:
 - Um cliente continua a ver as publicações que criou. Não utilize uma publicação criada pelo cliente para uma discussão interna.
 - Na WebApp atual, não existe um controlo funcional visível para alterar manualmente a privacidade de uma publicação depois de criada. Coloque o documento na fase de workflow adequada antes de criar a publicação.
 - Os campos, as ações e as opções apresentados no Feed podem variar conforme o tipo de documento, a configuração do workflow e as permissões do utilizador.
+
+## Artigos relacionados
+
+- [Anotações](/docs/product/files-and-collaboration/annotations)
+- [Como criar atividades](/docs/product/projects-and-jobs/create-jobs)

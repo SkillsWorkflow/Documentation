@@ -1,6 +1,7 @@
 ---
 id: workflow-actions
 title: Workflow Actions
+description: "Reference table of the action types a workflow transition can run, and what each one does."
 sidebar_label: Workflow Actions
 sidebar_position: 8
 ---

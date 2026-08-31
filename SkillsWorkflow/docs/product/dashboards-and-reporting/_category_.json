@@ -1,8 +1,4 @@
 {
-  "label": "Dashboards & Reporting",
-  "position": 9,
-  "link": {
-    "type": "generated-index",
-    "slug": "/product/dashboards-and-reporting"
-  }
+  "label": "Workspaces & Reporting",
+  "position": 9
 }

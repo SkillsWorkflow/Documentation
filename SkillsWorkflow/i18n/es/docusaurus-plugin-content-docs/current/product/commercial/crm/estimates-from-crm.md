@@ -1,7 +1,7 @@
 ---
 id: create-estimate
 title: Crear un presupuesto
-sidebar_label: 6. Crear un presupuesto
+sidebar_label: Crear un presupuesto
 sidebar_position: 6
 ---
 
@@ -152,3 +152,8 @@ A medida que completes los valores, el total por Entregable en la sección de En
 Ten en cuenta que cada columna individual en el Presupuesto está controlada por roles de acceso.
 
 Por favor, ten en cuenta que puedes tener varios costos externos, gastos y recursos bajo una línea de cliente. Dependerá de cómo desees mostrar los detalles del presupuesto a los clientes.
+
+## Artículos relacionados
+
+- [Crear un Estimado](/docs/product/commercial/estimates/create-estimate)
+- [Crear un Lead](/docs/product/commercial/crm/create-lead)

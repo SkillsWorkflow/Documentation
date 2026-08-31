@@ -1,7 +1,7 @@
 ---
 id:  rate-cards
 title: Como administrar tablas Rate Card
-sidebar_label: 1. Administrar tablas Rate Card
+sidebar_label: Administrar tablas Rate Card
 sidebar_position: 1
 ---
 
@@ -93,3 +93,8 @@ Si desea agregar varios grupos o usuarios de Tipología al mismo tiempo:
 </figure> -->
 
 Todos los clientes vinculados con una tabla de Tarjeta de tarifas permitirán que el sistema sepa qué tasa debe aplicarse cuando se crean las cotizaciones.
+
+## Artículos relacionados
+
+- [Crear un Estimado](/docs/product/commercial/estimates/create-estimate)
+- [Fees](/docs/product/commercial/fees)

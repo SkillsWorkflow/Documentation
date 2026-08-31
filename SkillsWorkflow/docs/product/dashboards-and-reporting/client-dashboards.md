@@ -1,25 +1,25 @@
 ---
 id:  client-dashboard
-title: Clients
-description: "Dashboards are a powerful feature used to quickly support decisions related to a specific client or project."
-sidebar_label: 1. Client Dashboards
+title: Client Workspace
+description: "Workspaces are a powerful feature used to quickly support decisions related to a specific client or project."
+sidebar_label: Client Workspace
 sidebar_position: 1
 ---
 
-Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.
+Workspaces are a powerful feature used to quickly support decisions related to a specific client or project.
 
 The goal is to give the ability to control processes in a very friendly and comprehensive way.
 
 As a project manager is very useful to understand the status of a specific client and control the profitability of each project. This way the PM will have the tools to negotiate with their clients.
 
-There are several Dashboards at the client level available in the system that will display different information.
+There are several Workspaces at the client level available in the system that will display different information.
 
 
-### Burn Dashboard
+### Burn Workspace
 
 1. Go to the client module.
 2. Select the client you want to check.
-3. Press on Burn Dashboard.
+3. Press on Burn Workspace.
 
 You will find out a summary with total indicators:
 
@@ -52,12 +52,12 @@ This representation will show you a monthly distribution of planned revenue vers
 You will also find out the same representation of the corresponding accumulated values
 
 
-### Profitability Dashboard
+### Profitability Workspace
 
 1. Go to the client module;
 2. Select the client you want to check;
-3. Press on Profitability Dashboard 
-4. This Dashboard shows you in a glimpse the projects, under the client you have selected, which returns you a higher profit (based on the income value quoted to the client)
+3. Press on Profitability Workspace 
+4. This Workspace shows you in a glimpse the projects, under the client you have selected, which returns you a higher profit (based on the income value quoted to the client)
 
 You will be able to analyze the planned profit per project, and per typology.
 
@@ -75,12 +75,12 @@ Additionally, you will be able to check the profit margin per project by percent
 <figcaption></figcaption>
 </figure>
 
-### Project Allocation Dashboard
+### Project Allocation Workspace
 
 1. Go to the client module;
 2. Select the client you want to check;
-3. Press on Project Allocation Dashboard 
-4. Project Allocation Dashboard will show you a table where you can check the following information per project:
+3. Press on Project Allocation Workspace 
+4. Project Allocation Workspace will show you a table where you can check the following information per project:
 
 Users Capacity;
 - Actual hours already registered in the system;
@@ -93,7 +93,7 @@ Users Capacity;
 <figcaption></figcaption>
 </figure>
 
-Please note that this dashboard is a table and allows you to add more fields if needed.
+Please note that this workspace is a table and allows you to add more fields if needed.
 
 To do so you should press on the icon at your right (marked in orange), and the system will show a field chooser as an Excel pivot table.
 
@@ -103,4 +103,9 @@ To do so you should press on the icon at your right (marked in orange), and the 
 <figcaption></figcaption>
 </figure>
 
-Please note that you can either export to excel or print out this dashboard by pressing outside the grid with the right function of your mouse.
+Please note that you can either export to excel or print out this workspace by pressing outside the grid with the right function of your mouse.
+
+## Related articles
+
+- [Create a commercial client](/docs/product/commercial/crm/create-commercial-client)
+- [Create a Project](/docs/product/projects-and-jobs/create-projects)

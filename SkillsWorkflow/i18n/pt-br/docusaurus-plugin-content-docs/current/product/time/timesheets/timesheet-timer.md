@@ -1,7 +1,7 @@
 ---
 id: timesheet-timer
-title: Cronômetro de Timesheet
-sidebar_label: 5. Cronômetro de Timesheet
+title: Cronômetro de Time Sheet
+sidebar_label: Cronômetro de Time Sheet
 sidebar_position: 5
 ---
 
@@ -111,3 +111,7 @@ A opção "Start Current Document" está disponível ao visualizar qualquer um d
 - Contratos
 
 Para registrar tempo em outros documentos, use a opção **Search Document to Start**.
+
+## Artigos relacionados
+
+- [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

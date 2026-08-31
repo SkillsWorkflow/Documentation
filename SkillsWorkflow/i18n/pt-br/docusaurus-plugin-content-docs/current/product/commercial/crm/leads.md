@@ -1,7 +1,7 @@
 ---
 id:  create-lead
 title: Criar um Lead
-sidebar_label: 4. Criar um Lead
+sidebar_label: Criar um Lead
 sidebar_position: 4
 ---
 
@@ -62,3 +62,9 @@ Na parte superior da página, você encontrará várias guias com informações 
 - **Arquivos** - Todos os arquivos carregados para este Lead aparecerão nesta aba.
 - **Histórico** - Registro de mudanças de status. Você pode ver, por exemplo, quem criou o Lead e em que momento.
 - **Outros** - Você também pode encontrar outras abas, dependendo dos módulos do sistema aos quais você tem acesso.
+
+## Artigos relacionados
+
+- [Create an activity](/docs/product/commercial/crm/create-activity)
+- [Como criar um Cliente Comercial?](/docs/product/commercial/crm/create-commercial-client)
+- [Create estimate](/docs/product/commercial/crm/create-estimate)

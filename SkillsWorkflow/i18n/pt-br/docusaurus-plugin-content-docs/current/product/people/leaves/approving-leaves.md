@@ -1,7 +1,7 @@
 ---
 id:  approving-leaves
 title: Aprovar Ausências
-sidebar_label: 2. Aprovar ausências
+sidebar_label: Aprovar ausências
 sidebar_position: 2
 ---
 
@@ -86,3 +86,9 @@ Navegue para o **Módulo Ausências**.
 ![img-with-border](/img/university/leaves/approve-leaves_6.png)
 <figcaption> </figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Planejar Ausências](/docs/product/people/leaves/scheduling-leaves)
+- [Ausências Workspace](/docs/product/dashboards-and-reporting/leave-dashboard)
+- [Workspace de Licenças meu Departamento](/docs/product/dashboards-and-reporting/leave-department-dashboard)

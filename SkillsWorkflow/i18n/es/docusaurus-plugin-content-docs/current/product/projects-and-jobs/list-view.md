@@ -1,7 +1,7 @@
 ---
 id:  list-view
 title: Administre su vista de lista
-sidebar_label: 5. Administre su vista de lista
+sidebar_label: Administre su vista de lista
 sidebar_position: 5
 ---
 
@@ -81,3 +81,8 @@ Necesita expandir su vista para poder ver todos los campos disponibles. Para eso
 ![img-box-shadow](/img/university/project-management/project-management-lesson5-5.png)
 <figcaption></figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Cómo crear Jobs?](/docs/product/projects-and-jobs/create-jobs)
+- [Mis tareas](/docs/product/projects-and-jobs/my-tasks)

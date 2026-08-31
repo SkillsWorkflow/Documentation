@@ -1,7 +1,7 @@
 ---
 id:  scheduling-leaves
 title: Programar Permisos/Vacaciones
-sidebar_label: 1. Programar Permisos/Vacaciones
+sidebar_label: Programar Permisos/Vacaciones
 sidebar_position: 1
 ---
 
@@ -71,4 +71,7 @@ Acceder al módulo de **Permisos/Vacaciones**.
 <figcaption> </figcaption>
 </figure>
 
+## Artículos relacionados
 
+- [Aprobación de Permisos/Vacaciones](/docs/product/people/leaves/approving-leaves)
+- [Permisos Workspace](/docs/product/dashboards-and-reporting/leave-dashboard)

@@ -1,6 +1,6 @@
 ---
 id: application-workspace
-title: " "
+title: Workspace
 description: "This method can be used inside any workspace."
 sidebar_label: Workspace
 ---

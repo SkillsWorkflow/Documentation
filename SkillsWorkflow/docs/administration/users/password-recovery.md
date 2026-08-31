@@ -1,6 +1,7 @@
 ---
 id:  forgot-your-password
 title: Password recovery via "Forgot your password" option
+description: "How a user resets their own password from the login page, without help from a maintenance user."
 sidebar_label: Password recovery via "Forgot your password" option
 ---
 

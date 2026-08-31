@@ -2,7 +2,7 @@
 id: transferring-hours-between-projects
 title: Transfer hours between projects or jobs
 description: Move selected timesheet entries to another project or job.
-sidebar_label: 6. Transfer hours
+sidebar_label: Transfer hours between projects or jobs
 sidebar_position: 6
 ---
 
@@ -44,3 +44,7 @@ When transferring more than one timesheet, select entries that share the intende
 ## Why a destination may not appear
 
 The transfer popup only returns eligible destinations whose period covers the earliest and latest date among the timesheets you selected. If you cannot find a project or job, check its start and end dates first, then reduce the selected date range or choose a destination that covers it.
+
+## Related articles
+
+- [Filling in Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

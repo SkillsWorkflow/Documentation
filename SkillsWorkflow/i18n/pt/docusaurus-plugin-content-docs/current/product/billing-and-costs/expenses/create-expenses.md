@@ -1,7 +1,7 @@
 ---
 id: create-expenses
-title: Despesas
-sidebar_label: 2. Criar Despesas
+title: Criar Despesas
+sidebar_label: Criar Despesas
 sidebar_position: 2
 ---
 
@@ -111,3 +111,8 @@ Se tiver vários recibos para a mesma folha, pode repetir o processo usando a op
 2. O sistema irá gerar um número automático e também um pop-up de confirmação.
 
 3. Aceda à folha de despesas, no Feed troque a etapa, para enviar para o responsável para aprovação.
+
+## Artigos relacionados
+
+- [Folhas de Despesas](/docs/product/billing-and-costs/expenses/expense-sheets)
+- [Aprovar Despesas](/docs/product/billing-and-costs/expenses/approve-expenses)

@@ -1,7 +1,7 @@
 ---
-id:  create-expenses
+id: create-expenses
 title: Crear Gastos 
-sidebar_label: 2. Crear Gastos 
+sidebar_label: Crear Gastos 
 ---
 
 ### Los gastos se pueden crear de dos maneras:
@@ -89,3 +89,7 @@ Si tienes varios recibos para la misma hoja puedes repetir el proceso usando la 
 2. El sistema generará un número automático y también una ventana emergente de confirmación.
 3. Vaya a la hoja de gastos, en el intercambio de Feed, la etapa para enviar al responsable para su aprobación.
 
+## Artículos relacionados
+
+- [Crear Hojas de Gastos](/docs/product/billing-and-costs/expenses/expense-sheets)
+- [Aprobar gastos](/docs/product/billing-and-costs/expenses/approve-expenses)

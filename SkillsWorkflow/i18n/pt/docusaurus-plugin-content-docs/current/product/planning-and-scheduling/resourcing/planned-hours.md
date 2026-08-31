@@ -1,13 +1,13 @@
 ---
 id:  planned-hours
-title: Horas Planejadas
-sidebar_label: 7. Horas Planejadas
+title: Tempo Planeado
+sidebar_label: Tempo Planeado
 sidebar_position: 7
 ---
 
 Após criar seu projeto, você pode começar planejando as horas que cada usuário irá precisar para completar a realização do projeto.
 
-1. Navegue para a aba de Horas Planejadas dentro do seu Projeto.
+1. Navegue para a aba **Tempo Planeado** dentro do seu Projeto.
 
 2. Clique no ícone "+" para adicionar uma nova linha à sua planilha de horas planejadas.
 
@@ -39,7 +39,7 @@ Após criar seu projeto, você pode começar planejando as horas que cada usuár
 
 Você também poderá planejar as horas para uma determinada tipologia e não para um usuário em específico:
 
-1. Navegue para a aba de Horas Planejadas dentro do seu Projeto.
+1. Navegue para a aba **Tempo Planeado** dentro do seu Projeto.
 
 2. Clique no ícone "+" para adicionar uma nova linha à sua planilha de horas planejadas
 
@@ -70,3 +70,9 @@ Você irá conseguir revisar as horas que você planejou para cada usuário/tipo
 </figure>
 
 Esta coluna irá mostrar o tempo restante planejado que não foi utilizado, e será atribuído a você especificamente, ou à tipologia a que você pertence.
+
+## Artigos relacionados
+
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [Resource Scheduler](/docs/product/planning-and-scheduling/resourcing/resource-scheduler)
+- [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

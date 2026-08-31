@@ -1,12 +1,12 @@
 ---
-id:  timesheet-aprobaciones-dashboard
-title: Missing Time Hours and Approvals
-description: "This dashboard provides real-time information on users blocked due to missing hours and/or missing timesheet approvals from their subordinates."
-sidebar_label: 8. Missing Time Hours and Approvals Dashboard
+id: timesheet-approvals-dashboard
+title: Missing Time Hours and Approvals Workspace
+description: "This workspace provides real-time information on users blocked due to missing hours and/or missing timesheet approvals from their subordinates."
+sidebar_label: Missing Time Hours and Approvals Workspace
 sidebar_position: 8
 ---
 
-This dashboard provides real-time information on users blocked due to missing hours and/or missing timesheet approvals from their subordinates.
+This workspace provides real-time information on users blocked due to missing hours and/or missing timesheet approvals from their subordinates.
 
 Para acceder, seleccione "Horas de Tiempo en Falta y Aprobaciones" en el menú del  Timesheet.
 
@@ -16,7 +16,7 @@ Para acceder, seleccione "Horas de Tiempo en Falta y Aprobaciones" en el menú d
 <figcaption></figcaption>
 </figure>
 
-The dashboard has 2 sections that show the following:
+The workspace has 2 sections that show the following:
 
 Graphics
 
@@ -42,4 +42,9 @@ A list showing blocked users in each department with the following columns:
 
 ![img-box-shadow](/img/university/dashboards/missing-timesheets-dashboard/university-missing-timesheets-2.png)
 <figcaption></figcaption>
-</figure> 
+</figure>
+
+## Related articles
+
+- [Approving Time Sheets](/docs/product/time/timesheets/approving-time-sheets)
+- [Filling in Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

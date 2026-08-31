@@ -1,6 +1,6 @@
 ---
 id: application-panel
-title: " "
+title: Panel
 description: "This method can be used inside any workspace."
 sidebar_label: Panel
 ---

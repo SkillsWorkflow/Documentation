@@ -1,7 +1,7 @@
 ---
 id: create-client-requests
 title: Como criar solicitações de clientes
-sidebar_label: 6. Criar solicitações de clientes
+sidebar_label: Criar solicitações de clientes
 sidebar_position: 6
 ---
 
@@ -93,3 +93,8 @@ Also it is possible to create Sub-Jobs under a main Job.
 
 <figcaption></figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Criar um Projeto](/docs/product/projects-and-jobs/create-projects)
+- [Como criar um Cliente Comercial?](/docs/product/commercial/crm/create-commercial-client)

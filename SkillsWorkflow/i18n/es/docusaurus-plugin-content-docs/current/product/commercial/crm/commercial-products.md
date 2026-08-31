@@ -1,7 +1,7 @@
 ---
 id: create-commercial-product
 title: Crear Producto Comercial
-sidebar_label: 3. Create commercial product
+sidebar_label: Crear Producto Comercial
 sidebar_position: 3
 ---
 
@@ -51,3 +51,7 @@ Para crear un nuevo producto, tendrás que:
 
 <figcaption></figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Crear un nuevo cliente comercial](/docs/product/commercial/crm/create-commercial-client)

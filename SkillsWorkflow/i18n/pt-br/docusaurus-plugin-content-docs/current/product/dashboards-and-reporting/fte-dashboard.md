@@ -1,15 +1,13 @@
 ---
 id:  fte-dashboard
-title: Contratos
-sidebar_label: 10. Contratos
+title: FTE
+sidebar_label: FTE
 sidebar_position: 10
 ---
 
-## Contratos
+O FTE que significa Full-Time Equivalent é uma unidade que mede a carga de trabalho de um funcionário. O FTE é frequentemente usado para medir o envolvimento de um funcionário em um projeto. Nesse painel, os gerentes de projeto podem analisar o FTE em diferentes níveis (ou seja, Empresa, Divisão, Departamento, Grupo de Tipologia, Funcionário).
 
-Os Contratos que significa Full-Time Equivalent é uma unidade que mede a carga de trabalho de um funcionário. O FTE é frequentemente usado para medir o envolvimento de um funcionário em um projeto. Nesse painel, os gerentes de projeto podem analisar o FTE em diferentes níveis (ou seja, Empresa, Divisão, Departamento, Grupo de Tipologia, Funcionário).
-
-Para acessar, selecione Contratos no menu Workspaces.
+Para acessar, selecione FTE no menu Workspaces.
 
 <figure>
 
@@ -35,7 +33,7 @@ Pessoas
 
 - Ativo – Headcount com status ativo
 
-- Contratos – (Capacidade + Tempo de Licença + Tempo de Férias) / Horário de Trabalho 
+- FTE – (Capacidade + Tempo de Licença + Tempo de Férias) / Horário de Trabalho 
 
 - Capacidade – Total de Horas de Trabalho do período – Total de Feriados em horas – Total de Licenças em horas
 
@@ -72,3 +70,7 @@ Expandir o nível do Grupo de Tipologia exibirá os Funcionários com esse Grupo
 <figcaption></figcaption>
 </figure>
 
+## Artigos relacionados
+
+- [Planejamento de Equipes](/docs/product/planning-and-scheduling/resourcing/resource-scheduler)
+- [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

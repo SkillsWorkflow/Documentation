@@ -1,7 +1,7 @@
 ---
 id: create-client-contact
 title: Como criar um novo contato de cliente
-sidebar_label: 2. Como criar um novo contato de cliente
+sidebar_label: Como criar um novo contato de cliente
 sidebar_position: 2
 ---
 
@@ -40,3 +40,8 @@ Não será necessário salvar, pois o sistema irá fazê-lo automaticamente.
 
 <figcaption>Detalhes de contato salvos automaticamente</figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Como criar um Cliente Comercial?](/docs/product/commercial/crm/create-commercial-client)
+- [Criar um Lead](/docs/product/commercial/crm/create-lead)

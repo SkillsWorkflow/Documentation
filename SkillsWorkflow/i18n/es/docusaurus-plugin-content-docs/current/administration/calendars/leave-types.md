@@ -1,7 +1,7 @@
 ---
 id: create-leave-type
 title: Crear Tipos de Vacaciones
-sidebar_label: 6. Crear Tipos de Vacaciones
+sidebar_label: Crear Tipos de Vacaciones
 sidebar_position: 6
 ---
 

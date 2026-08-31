@@ -1,7 +1,7 @@
 ---
 id: filling-time-sheets
-title: Llenar Timesheets
-sidebar_label: 1. Llenar Timesheets
+title: Llenar Hojas de Tiempo
+sidebar_label: Llenar Hojas de Tiempo
 sidebar_position: 1
 ---
 
@@ -108,3 +108,10 @@ Para completar las horas de trabajo, navegue hasta el módulo **Time sheets**
 
 <figcaption>Calendário</figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Cronómetro de Hoja de Tiempo](/docs/product/time/timesheets/timesheet-timer)
+- [Aprobar Hojas de Tiempo](/docs/product/time/timesheets/approving-time-sheets)
+- [Transferir horas entre proyectos o jobs](/docs/product/time/timesheets/transferring-hours-between-projects)
+- [Tiempo Planificado](/docs/product/planning-and-scheduling/resourcing/planned-hours)

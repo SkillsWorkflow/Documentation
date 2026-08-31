@@ -2,7 +2,7 @@
 id:  create-activity
 title: Create an activity
 description: "To create a new Activity, navigate to the Lead."
-sidebar_label: 5. Create activity
+sidebar_label: Create an activity
 sidebar_position: 5
 ---
 
@@ -95,3 +95,7 @@ At the top of the page, you will be able to find various tabs with information a
 - **Files** - All the files uploaded into this Activity will appear on this tab.
 - **History** - Track of status changes. You can see for example who created the Activity and at what time.
 - **Others** - You may also find other tabs depending on the modules of the system you have access to.
+
+## Related articles
+
+- [Create lead](/docs/product/commercial/crm/create-lead)

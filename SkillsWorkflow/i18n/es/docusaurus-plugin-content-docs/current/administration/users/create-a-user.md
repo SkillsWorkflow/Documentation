@@ -1,7 +1,7 @@
 ---
 id:  create-user
 title: Crear Usuario
-sidebar_label: 1. Crear Usuario
+sidebar_label: Crear Usuario
 sidebar_position: 1 
 ---
 

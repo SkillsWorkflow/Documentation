@@ -1,18 +1,21 @@
 ---
 id: home
-slug: /university
-title: Home
-sidebar_label: Home
+title: Começar
+description: "Percursos ordenados pela documentação do Skills Workflow: para quem usa a plataforma, para quem a administra e para quem a implementa."
+sidebar_label: Começar
 sidebar_position: 1
-hide_table_of_contents: true
 ---
 
-### Bem vindo à Universidade
+# Começar
 
-Quer saber mais? Veja as nossas lições simples e fáceis para melhorar seu conhecimento na utilização do sistema.
+Três percursos pela documentação, cada um pela ordem em que o trabalho é realmente feito.
 
-<figure>
+Cada passo liga à mesma página que o resto da documentação usa. Nada é escrito duas vezes, por isso nenhuma página pode estar atual num percurso e desatualizada noutro.
 
-![home-image-size](/img/homefeat03.svg)
+| Percurso | Para | Começa em |
+| --- | --- | --- |
+| [Usar a plataforma](/docs/learning-paths/end-user) | Quem faz o trabalho | Criar um projeto |
+| [Administrar um cliente](/docs/learning-paths/administrator) | Administradores | Utilizadores e perfis |
+| [Implementar a plataforma](/docs/learning-paths/consultant) | Consultores e programadores | Workspaces |
 
-</figure>
+Não tem de começar pelo início. Cada passo diz o que cobre, por isso pode entrar num percurso onde estiver a sua dúvida.

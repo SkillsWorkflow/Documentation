@@ -1,7 +1,7 @@
 ---
 id:  create-projects
 title: Crear proyectos
-sidebar_label: 1. Crear proyectos
+sidebar_label: Crear proyectos
 sidebar_position: 1
 ---
 
@@ -78,3 +78,10 @@ sidebar_position: 1
 - **Archivos** - Todos los archivos cargados en este Proyecto aparecerán en esta pestaña.
 - **Histórico** - Seguimiento de los cambios de estado. Puede ver, por ejemplo, quién creó el proyecto y en qué momento.
 - **Otros** - También puede encontrar otras pestañas según los módulos del sistema al que tenga acceso.
+
+## Artículos relacionados
+
+- [Cómo crear Jobs?](/docs/product/projects-and-jobs/create-jobs)
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [Tiempo Planificado](/docs/product/planning-and-scheduling/resourcing/planned-hours)
+- [Fees](/docs/product/commercial/fees)

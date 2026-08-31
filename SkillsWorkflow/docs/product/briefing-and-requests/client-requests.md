@@ -2,7 +2,7 @@
 id: create-client-requests
 title: Create Client Requests
 description: "From the client perspective, you can now create and control your own requests using Skills Workflow."
-sidebar_label: 7. Create Client Requests
+sidebar_label: Create Client Requests
 sidebar_position: 7
 ---
 
@@ -99,3 +99,8 @@ Also it is possible to create Sub-Jobs under a main Job.
 
 <figcaption></figcaption>
 </figure>
+
+## Related articles
+
+- [Create a Project](/docs/product/projects-and-jobs/create-projects)
+- [Create a commercial client](/docs/product/commercial/crm/create-commercial-client)

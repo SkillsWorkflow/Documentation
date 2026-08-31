@@ -1,25 +1,25 @@
 ---
 id:  project-burn-dashboard
-title: Project Burn
-description: "Dashboards are a powerful feature used to quickly support decisions related to a specific client or project."
-sidebar_label: 2. Project Burn Dashboard
+title: Project Burn Workspace
+description: "Workspaces are a powerful feature used to quickly support decisions related to a specific client or project."
+sidebar_label: Project Burn Workspace
 sidebar_position: 2
 ---
 
-Dashboards are a powerful feature used to quickly support decisions related to a specific client or project.
+Workspaces are a powerful feature used to quickly support decisions related to a specific client or project.
 
 The goal is to give the user the ability to control processes in a very friendly and comprehensive way.
 
 As a project manager, it is very useful to understand the status of a specific client and control the profitability of each project. This way the PM will have the necessary tools to negotiate with their clients.
 
-There are several dashboards at the project level available in the system that will display different information.
+There are several workspaces at the project level available in the system that will display different information.
 
-### Burn Dashboard
+### Burn Workspace
 1. Select the project you want to analyze;
-2. Click on the "Burn Dashboard" tab;
+2. Click on the "Burn Workspace" tab;
 3. You will find several representations that will show you in a glimpse whether your project is already burned.
 
-Please note that the burn dashboard is based on Forecast versus Real hours.
+Please note that the burn workspace is based on Forecast versus Real hours.
 
 #### Time Burn
 
@@ -45,7 +45,7 @@ Revenue values are based on planned/contracted hours and the associated value fo
 
 #### Typology Group Burn
 
-This Dashboard shows which typology is burning your project and is based on actual hours.
+This Workspace shows which typology is burning your project and is based on actual hours.
 
 
 #### Department Burn
@@ -55,3 +55,8 @@ This representation is based on the users' actual hours and shows which departme
 #### User Burn
 
 This representation is based on the users' actual hours and shows which user is filling in more hours under a specific project.
+
+## Related articles
+
+- [Create a Project](/docs/product/projects-and-jobs/create-projects)
+- [Planned Time](/docs/product/planning-and-scheduling/resourcing/planned-hours)

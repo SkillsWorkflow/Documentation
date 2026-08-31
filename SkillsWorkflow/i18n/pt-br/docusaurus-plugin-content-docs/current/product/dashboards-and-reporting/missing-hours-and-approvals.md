@@ -1,11 +1,11 @@
 ---
-id:  timesheet-approvals-dashboard
-title: Horas e Aprovações do Dashboard de Horários Ausentes
-sidebar_label: 8. Dashboard de aprovações e horas do quadro de horários ausentes
+id: timesheet-approvals-dashboard
+title: Workspace de aprovações e horas do quadro de horários ausentes
+sidebar_label: Workspace de aprovações e horas do quadro de horários ausentes
 sidebar_position: 8
 ---
 
-Esse Dashboard fornece informações em tempo real sobre usuários bloqueados devido à falta de horas e/ou aprovações ausentes das planilhas de horas de seus subordinados.
+Esse Workspace fornece informações em tempo real sobre usuários bloqueados devido à falta de horas e/ou aprovações ausentes das planilhas de horas de seus subordinados.
 
 Para acessar, selecione “Horas e Aprovações do Quadro de Horários em Falta” no menu Quadro de Horários.
 
@@ -15,7 +15,7 @@ Para acessar, selecione “Horas e Aprovações do Quadro de Horários em Falta�
 <figcaption></figcaption>
 </figure>
 
-O dashboard tem 2 seções que mostram o seguinte:
+O workspace tem 2 seções que mostram o seguinte:
 
 Gráficos
 
@@ -42,4 +42,9 @@ Uma lista mostrando os usuários bloqueados em cada departamento com as seguinte
 
 ![img-box-shadow](/img/university/dashboards/missing-timesheets-dashboard/university-missing-timesheets-2.png)
 <figcaption></figcaption>
-</figure> 
+</figure>
+
+## Artigos relacionados
+
+- [Aprovar Time Sheets](/docs/product/time/timesheets/approving-time-sheets)
+- [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

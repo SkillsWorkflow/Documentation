@@ -1,7 +1,7 @@
 ---
 id: expense-sheets
 title: Folhas de Despesas
-sidebar_label: 1. Criar Folhas de Despesas
+sidebar_label: Folhas de Despesas
 sidebar_position: 1
 ---
 
@@ -41,3 +41,8 @@ Para criar uma nova **Folha de Despesas** (folha de agregação de várias despe
 - **Departamento** - O departamento ao qual o utilizador pertence.
 - **Tipo** - Selecione o tipo de gasto (esta informação é muito importante, pois definirá o fluxo da despesa).
 - **Data Inicio / Data Fim** - Selecione a data de início da despesa e a data de fim (deve refletir a data em que o funcionário é reembolsado).
+
+## Artigos relacionados
+
+- [Criar Despesas](/docs/product/billing-and-costs/expenses/create-expenses)
+- [Aprovar Despesas](/docs/product/billing-and-costs/expenses/approve-expenses)

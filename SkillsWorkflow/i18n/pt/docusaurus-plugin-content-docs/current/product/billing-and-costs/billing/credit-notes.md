@@ -1,7 +1,7 @@
 ---
 id:  credit-notes
 title: Notas de credito
-sidebar_label: 2. Gerar notas de credito a clientes
+sidebar_label: Notas de credito
 sidebar_position: 2
 ---
 
@@ -53,3 +53,8 @@ Na listagem das notas de encomenda pode aplicar diversos filtros, tais como: cli
 ![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
 <figcaption>Lista de notas de credito</figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Autorizações de fatura](/docs/product/billing-and-costs/billing/invoice-authorizations)
+- [Orçamentos](/docs/product/commercial/estimates/invoice-estimate)

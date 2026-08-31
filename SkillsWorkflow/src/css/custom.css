@@ -243,6 +243,48 @@ figcaption {
 .table-of-contents__link:hover { color: var(--ifm-color-primary); }
 .table-of-contents__link--active { color: var(--ifm-color-primary); font-weight: 600; }
 
+.toc-collapsible-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 0.35rem;
+  margin-left: 0.25rem;
+}
+.toc-collapsible-heading > .table-of-contents__link { flex: 1; min-width: 0; }
+
+.toc-collapsible-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  color: var(--ifm-toc-link-color);
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 0.875rem;
+  height: 1rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.toc-collapsible-toggle:hover,
+.toc-collapsible-toggle:focus-visible {
+  background: var(--sw-surface-2);
+  color: var(--ifm-color-primary);
+}
+.toc-collapsible-toggle:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+}
+.toc-collapsible-toggle[aria-expanded="false"] .toc-collapsible-icon { transform: rotate(-90deg); }
+
+.toc-collapsible-icon {
+  font-size: 0.75rem;
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .toc-collapsible-icon { transition: none; }
+}
+
 .breadcrumbs__item:not(:last-child) .breadcrumbs__link { color: var(--sw-muted); background: none; }
 .breadcrumbs__link { font-size: 0.82rem; }
 
@@ -499,4 +541,27 @@ html[data-theme="dark"] .DocSearch {
     var(--ifm-color-emphasis-100) 100%
   );
   /* --home-text-color: var(--home-text-color: #fff; */
+}
+
+/* ── 6. doc cards ───────────────────────────────────────────────────────── */
+
+/* The swizzled DocCard icon (src/theme/DocCard/Heading/Icon) renders a Font
+   Awesome glyph where Docusaurus put an emoji. Tint it with the brand so a
+   category card reads as part of the system rather than as decoration. */
+.sw-doccard-icon {
+  color: var(--ifm-color-primary);
+  font-size: 1.05em;
+  width: 1.4em;
+  display: inline-flex;
+  justify-content: center;
+}
+
+article .card {
+  border-radius: var(--sw-radius);
+  border: 1px solid var(--sw-line);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+article .card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--sw-shadow-sm);
 }

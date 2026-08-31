@@ -1,7 +1,7 @@
 ---
 id:  fte-dashboard
 title: FTE
-sidebar_label: 10. FTE
+sidebar_label: FTE
 sidebar_position: 10
 ---
 
@@ -70,3 +70,7 @@ Al expandir el nivel del Grupo de tipología, se mostrarán los Empleados con es
 <figcaption></figcaption>
 </figure>
 
+## Artículos relacionados
+
+- [Programador de Recursos](/docs/product/planning-and-scheduling/resourcing/resource-scheduler)
+- [Llenar Hojas de Tiempo](/docs/product/time/timesheets/filling-time-sheets)

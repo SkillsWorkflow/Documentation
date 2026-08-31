@@ -1,7 +1,7 @@
 ---
 id: create-client-contact
 title: Crear un nuevo contacto de Cliente
-sidebar_label: 1. Crear contacto de cliente
+sidebar_label: Crear un nuevo contacto de Cliente
 sidebar_position: 2
 ---
 
@@ -41,3 +41,8 @@ No será necesario guardar los cambios realizados, ya que el sistema lo hará au
 
 <figcaption>Contact details automatically saved</figcaption>
 </figure>
+
+## Artículos relacionados
+
+- [Crear un nuevo cliente comercial](/docs/product/commercial/crm/create-commercial-client)
+- [Crear un Lead](/docs/product/commercial/crm/create-lead)

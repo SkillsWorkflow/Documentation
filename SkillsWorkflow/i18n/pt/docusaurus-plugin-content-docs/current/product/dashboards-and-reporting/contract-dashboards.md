@@ -1,11 +1,11 @@
 ---
 id:  contract-dashboard
-title: Contrato
-sidebar_label: 3.  Dashboards de Contratos
+title: Contrato Workspace
+sidebar_label: Contrato Workspace
 sidebar_position: 3
 ---
 
-Os Dashboards são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
+Os Workspaces são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um contrato específico.
 
 O objetivo é dar ao usuário a capacidade de controlar os processos de forma muito amigável e abrangente.
 
@@ -13,10 +13,10 @@ Como gerente de projetos, é muito útil entender o status de um cliente especí
 
 Existem vários painéis no nível do contrato disponíveis no sistema que exibirão informações diferentes.
 
-### Burn Dashboard
+### Burn Workspace
 
 1. Selecione o contrato que deseja analisar.
-2. Clique na guia "Burn Dashboard".
+2. Clique na guia "Burn Workspace".
 3. Selecione o projeto que deseja verificar.
 
 Você encontrará várias representações que mostrarão rapidamente se o seu Contrato já está queimado.
@@ -52,7 +52,7 @@ Esta representação mostra o número de horas reais por grupo de tipologia.
 Esta representação mostra o número de horas contratadas por grupo de tipologia, aplicadas ao projeto previamente selecionado.
  
 
-### Dashboard de Recursos
+### Workspace de Recursos
 1. Dentro do contrato previamente selecionado
 2. Clique na guia "Painel de Recursos"
  
@@ -80,9 +80,9 @@ Essa representação permitirá que você verifique se as horas planejadas ou as
 
 Além disso, você poderá verificar qual usuário está preenchendo mais horas no seu projeto/contrato
 
-### Dashboard de Pessoas
+### Workspace de Pessoas
 1. Dentro do contrato previamente selecionado
-2. Clique na guia "Dashboard de Pessoas" 
+2. Clique na guia "Workspace de Pessoas" 
  
 <figure>
 
@@ -111,3 +111,8 @@ Essa representação permite controlar mensalmente o tempo planejado VS a utiliz
 Com base no tempo real planejado VS esta representação mostra a contribuição de cada grupo de tipologia para o seu contrato
 
 Observe que você pode imprimir ou exportar qualquer um dos painéis descritos
+
+## Artigos relacionados
+
+- [Contrato](/docs/product/commercial/fees)
+- [Criar um Orçamento](/docs/product/commercial/estimates/create-estimate)

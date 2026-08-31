@@ -1,7 +1,7 @@
 ---
 id: create-commercial-client
 title: Como criar um Cliente Comercial?
-sidebar_label: 1. Como criar um Cliente Comercial?
+sidebar_label: Como criar um Cliente Comercial?
 sidebar_position: 1
 ---
 
@@ -33,3 +33,9 @@ Para criar um cliente comercial, você deverá aceder o back-office e navegar pa
 > Após salvar as alterações de cliente, vários sub-módulos irão aparecer automaticamente no final da tela, onde você poderá adicionar novos produtos e associar usuários.
 
 Assim que estes campos estejam preenchidos, você poderá então criar projetos e atividades para este cliente.
+
+## Artigos relacionados
+
+- [Como criar um novo contato de cliente](/docs/product/commercial/crm/create-client-contact)
+- [Criar um novo produto comercial](/docs/product/commercial/crm/create-commercial-product)
+- [Criar um Lead](/docs/product/commercial/crm/create-lead)

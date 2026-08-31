@@ -1,7 +1,7 @@
 ---
 id:  rate-cards
 title: Tabelas de preços
-sidebar_label: 1. Criar tabelas de preços
+sidebar_label: Criar tabelas de preços
 sidebar_position: 1
 ---
 
@@ -94,3 +94,8 @@ Se você deseja adicionar vários usuários ou grupos de tipologia ao mesmo temp
 ![img-box-shadow](/img/university/contracts/university-contracts-rateCards-3.png)
 <figcaption>Inserting multiple values in Rate Card table</figcaption>
 </figure>
+
+## Artigos relacionados
+
+- [Criar um Orçamento](/docs/product/commercial/estimates/create-estimate)
+- [Contrato](/docs/product/commercial/fees)

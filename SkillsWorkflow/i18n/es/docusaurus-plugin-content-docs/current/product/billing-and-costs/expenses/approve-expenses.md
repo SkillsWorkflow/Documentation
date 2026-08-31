@@ -1,7 +1,7 @@
 ---
-id:  1-approve-expenses
+id: approve-expenses
 title: Aprobar gastos
-sidebar_label: 3. Aprobar gastos
+sidebar_label: Aprobar gastos
 sidebar_position: 3
 ---
 
@@ -74,3 +74,7 @@ Para aprobar gastos, vaya al módulo Proyecto y seleccione un proyecto.
 <figcaption>Project's expense</figcaption>
 </figure>
 
+## Artículos relacionados
+
+- [Crear Gastos](/docs/product/billing-and-costs/expenses/create-expenses)
+- [Crear Hojas de Gastos](/docs/product/billing-and-costs/expenses/expense-sheets)

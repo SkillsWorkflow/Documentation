@@ -12,16 +12,26 @@
 
 /* ── hero ───────────────────────────────────────────────────────────────── */
 
+/* `overflow` stays visible: the search dropdown opens downward out of the hero
+   and would otherwise be clipped. The wash below does its own clipping. */
 .hero {
   position: relative;
-  overflow: hidden;
   padding: 6rem 0 4.5rem;
   border-bottom: 1px solid var(--sw-line);
   background: var(--sw-ground);
 }
 
-/* A single soft brand wash instead of the old full-bleed photograph. */
-.hero::before {
+/* A single soft brand wash instead of the old full-bleed photograph. It is
+   deliberately larger than the hero, so it needs a clipping box of its own
+   rather than clipping the whole header. */
+.heroWash {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.heroWash::before {
   content: "";
   position: absolute;
   inset: -40% 0 auto -10%;
@@ -67,7 +77,129 @@
   line-height: 1.65;
   color: var(--sw-body);
   max-width: 56ch;
-  margin: 0 0 2rem;
+  margin: 0 0 1.75rem;
+}
+
+/* ── hero search ────────────────────────────────────────────────────────── */
+
+/* A real search input with its own DocSearch instance, so the results drop
+   below this field rather than under the navbar. `position: relative` on the
+   wrapper is what anchors the autocomplete dropdown here. */
+
+.search {
+  position: relative;
+  max-width: 34rem;
+  margin: 0 0 1.75rem;
+}
+
+.searchField {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--sw-line-strong);
+  border-radius: var(--sw-radius);
+  background: var(--sw-surface);
+  box-shadow: var(--sw-shadow-sm);
+  cursor: text;
+  text-align: left;
+  font: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.searchField:hover,
+.searchField:focus-within {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--sw-shadow);
+}
+
+.searchIcon {
+  color: var(--ifm-color-primary);
+  font-size: 1rem;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--sw-body);
+  font: inherit;
+  font-size: 0.98rem;
+}
+.searchInput::placeholder {
+  color: var(--sw-muted);
+}
+/* The UA's own clear affordance duplicates autocomplete.js's. */
+.searchInput::-webkit-search-decoration,
+.searchInput::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* autocomplete.js wraps the input in its own span at runtime; that span has to
+   carry the flex sizing, or the input collapses to its default width.
+   `!important` is needed on `position`: autocomplete.js writes
+   `position: relative` as an *inline* style on this span, and that would make
+   the span — rather than the field — the dropdown's containing block, leaving
+   the menu the width of the input instead of the width of the field. */
+.searchField :global(.algolia-autocomplete) {
+  position: static !important;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+.searchField :global(.algolia-autocomplete) .searchInput {
+  width: 100%;
+}
+
+/* Anchor the dropdown to the hero field: full width, directly beneath it.
+   The plugin's own stylesheet pins it to a 500–600px box aligned to a navbar
+   field, which is the wrong geometry here. */
+.search :global(.algolia-autocomplete .ds-dropdown-menu) {
+  position: absolute !important;
+  top: calc(100% + 0.5rem) !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: auto !important;
+  min-width: 0;
+  max-width: none;
+  margin: 0 !important;
+  z-index: 40;
+}
+
+/* The caret is drawn against the navbar field's geometry; it lands in the
+   wrong place under a full-width field. */
+.search :global(.algolia-autocomplete .ds-dropdown-menu:before) {
+  display: none;
+}
+
+/* The menu itself is transparent by design — the panel is the dataset inside
+   it. Give that an opaque surface so hero content cannot show through. */
+.search :global(.algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-']) {
+  background: var(--sw-surface);
+  border: 1px solid var(--sw-line-strong);
+  box-shadow: var(--sw-shadow);
+  max-height: min(60vh, 32rem);
+}
+
+/* Lift the field and its dropdown above the hero's other content. */
+.search {
+  z-index: 40;
+}
+
+.searchKbd {
+  flex: none;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--sw-line-strong);
+  border-radius: var(--sw-radius-sm);
+  background: var(--sw-surface-2);
+  color: var(--sw-muted);
+  font-family: var(--sw-font-sans);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  box-shadow: none;
 }
 
 .heroActions {
@@ -332,7 +464,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .route, .card, .routeGo, .chip, .btnPrimary, .btnGhost { transition: none; }
+  .route, .card, .routeGo, .chip, .btnPrimary, .btnGhost, .searchField { transition: none; }
   .route:hover { transform: none; }
   .route:hover .routeGo { transform: none; }
 }

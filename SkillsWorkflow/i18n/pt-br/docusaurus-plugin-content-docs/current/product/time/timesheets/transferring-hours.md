@@ -2,7 +2,7 @@
 id: transferring-hours-between-projects
 title: Transferir horas entre projetos ou jobs
 description: Mova lançamentos de timesheet selecionados para outro projeto ou job.
-sidebar_label: 6. Transferir horas
+sidebar_label: Transferir horas entre projetos ou jobs
 sidebar_position: 6
 ---
 
@@ -44,3 +44,7 @@ Ao transferir mais de um timesheet, selecione lançamentos que tenham o mesmo de
 ## Por que um destino pode não aparecer
 
 A janela de transferência retorna apenas destinos elegíveis cujo período cubra a data mais antiga e a mais recente dos timesheets selecionados. Se não encontrar um projeto ou job, confira primeiro as datas de início e término e, depois, reduza o intervalo de datas selecionado ou escolha um destino que o cubra.
+
+## Artigos relacionados
+
+- [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)

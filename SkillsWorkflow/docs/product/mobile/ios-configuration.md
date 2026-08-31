@@ -1,6 +1,7 @@
 ---
 id:  ios-app-config
 title: iOS App User Configuration
+description: "Downloading the Skills Workflow app from the App Store and configuring it on an iOS device."
 sidebar_label: iOS App User Configuration
 ---
 
@@ -24,3 +25,8 @@ To configure the app you should follow these few steps:
 ![img-box-shadow](/img/integrations/ios-app-config1.png)
 <figcaption>Skills Workflow App settings for https://demo.skillsworkflow.com </figcaption>
 </figure>
+
+## Related articles
+
+- [Mobile Features](/docs/product/mobile/mobile-features)
+- [Android App User Configuration](/docs/product/mobile/android-app-config)

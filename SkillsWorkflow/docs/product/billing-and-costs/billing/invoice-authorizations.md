@@ -2,7 +2,7 @@
 id:  invoice-authorizations
 title: Invoice Authorizations
 description: "You can create invoice orders in the system, and in this way inform the financial team to proceed with the creation / synchronization of the document to the…"
-sidebar_label: 1. Create invoice authorizations
+sidebar_label: Invoice Authorizations
 sidebar_position: 1
 ---
 
@@ -86,3 +86,9 @@ In the list of invoice authorizations you can apply several filters, such as: cu
 ![img-box-shadow](/img/university/bills/bills-lesson1-5.png)
 <figcaption>Invoice Whitelist</figcaption>
 </figure>
+
+## Related articles
+
+- [Invoice an Estimate](/docs/product/commercial/estimates/invoice-estimate)
+- [Credit Notes](/docs/product/billing-and-costs/billing/credit-notes)
+- [Purchase Orders](/docs/product/billing-and-costs/billing/purchase-orders)

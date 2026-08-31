@@ -1,8 +1,8 @@
 ---
-id:  create-expenses
-title: Expenses
+id: create-expenses
+title: Create Expenses
 description: "To create expenses navigate to Project module and select a project to add receipts."
-sidebar_label: 2. Create Expenses
+sidebar_label: Create Expenses
 sidebar_position: 2
 ---
 
@@ -92,3 +92,8 @@ If you have several receipts for the same sheet you can repeat the process using
 1. Select the expense you which to copy and click on duplicate.
 2. The system will generate an automatic number and also a confirmation pop-up.
 3. Go to the expense sheet, in the Feed exchange the stage in order to send for the responsible for approval.
+
+## Related articles
+
+- [Expense Sheets](/docs/product/billing-and-costs/expenses/expense-sheets)
+- [Approve Expenses](/docs/product/billing-and-costs/expenses/approve-expenses)

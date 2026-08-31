@@ -1,7 +1,7 @@
 ---
 id:  scheduling-leaves
 title: Agendamento de Ausências 
-sidebar_label: 1. Agendamento de Ausências 
+sidebar_label: Agendamento de Ausências 
 sidebar_position: 1
 ---
 
@@ -73,4 +73,7 @@ Para associar um formulário de ausência a um dia ou a um grupo de dias, clique
 <figcaption> </figcaption>
 </figure>
 
+## Artigos relacionados
 
+- [Aprovando Ausências](/docs/product/people/leaves/approving-leaves)
+- [Ausências Workspace](/docs/product/dashboards-and-reporting/leave-dashboard)

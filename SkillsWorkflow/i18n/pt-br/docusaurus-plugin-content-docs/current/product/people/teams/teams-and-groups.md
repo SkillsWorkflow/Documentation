@@ -1,7 +1,7 @@
 ---
 id: what-is-a-team
 title: O que é uma Equipe e o que cada Grupo representa?
-sidebar_label: 10. O que é uma Equipe e o que cada Grupo representa?
+sidebar_label: O que é uma Equipe e o que cada Grupo representa?
 sidebar_position: 10
 ---
 
@@ -46,3 +46,41 @@ Os nomes também podem ser personalizados com base nas necessidades da empresa.
 1. Cada grupo desempenha um papel diferente com um conjunto diferente de responsabilidades
 2. Para cada fase do processo, uma pessoa pode avançar ou não um Job no fluxo de Job, com base no grupo ao qual pertence
 3. Cada pessoa sabe quais Jobs dependem de suas próprias ações
+
+## Atribuir um executor a um job
+
+Na Lista de Atividades, selecione e clique uma Atividade que deseja atribuir a um Executor.
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor1.png)
+<figcaption></figcaption>
+</figure>
+
+Clique no ícone "Adicionar Atribuição" (Pessoas) e coloque o cursor ao lado de "Executor". O ícone de lápis aparecerá e clique.
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor2.png)
+<figcaption></figcaption>
+</figure>
+
+- Uma lista de recursos será exibida para seleção:
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor3.png)
+<figcaption></figcaption>
+</figure>
+
+Escolha um recurso específico e clique no ícone "Enviar postagem" (seta para a direita) para salvar.
+
+<figure>
+
+![img-box-shadow](/img/university/project-management/assign-executor4.png)
+<figcaption></figcaption>
+</figure>
+
+## Artigos relacionados
+
+- [Atribuir ou cancelar a atribuição de usuários](/docs/product/people/teams/assign-users)

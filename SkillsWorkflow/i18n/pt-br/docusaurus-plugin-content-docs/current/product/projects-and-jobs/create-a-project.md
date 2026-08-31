@@ -1,7 +1,7 @@
 ---
-id:  create-projets
-title: Como criar Projetos
-sidebar_label: 1. Criar um Projeto
+id:  create-projects
+title: Criar um Projeto
+sidebar_label: Criar um Projeto
 sidebar_position: 1
 ---
 
@@ -76,7 +76,14 @@ Depois de preencher todos os campos, verifique que ativa o Projeto
 
 - **Feed** - Ações e comentários relacionados com o Projeto.
 - **Atividades** - Lista de Atividades relacionadas com seu Projeto.
-- **Horas Planejadas** - Horas Planejadas versus horas reais inseridas, se o Projeto for associado a Fees.
+- **Tempo Planejado** - Horas planejadas versus horas reais inseridas, se o Projeto for associado a um Contrato.
 - **Ficheiros** - Todos os ficheiros subidos no Projeto.
 - **Historia** - Lista de todas as alterações às etapas. Verifique por exemplo quem criou a atividade e quando.
 - **Outros** - Poderá encontrar outras opções do sistema dependendo dos seus acessos.
+
+## Artigos relacionados
+
+- [Como criar atividades](/docs/product/projects-and-jobs/create-jobs)
+- [Gantt](/docs/product/planning-and-scheduling/gantt)
+- [Tempo Planejado](/docs/product/planning-and-scheduling/resourcing/planned-hours)
+- [Contrato](/docs/product/commercial/fees)

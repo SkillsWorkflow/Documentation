@@ -2,7 +2,7 @@
 id:  invoice-estimate
 title: Invoice an Estimate
 description: "Estimates can be created as retainers, and the system will automatically display their values."
-sidebar_label: 2. Invoice an Estimate
+sidebar_label: Invoice an Estimate
 sidebar_postiion: 2
 ---
 
@@ -61,3 +61,9 @@ Resources will be available under "Planned Time"
 ![img-box-shadow](/img/university/estimates/estimates-lesson2-5.png)
 <figcaption></figcaption>
 </figure>
+
+## Related articles
+
+- [Create Estimate](/docs/product/commercial/estimates/create-estimate)
+- [Invoice Authorizations](/docs/product/billing-and-costs/billing/invoice-authorizations)
+- [Credit Notes](/docs/product/billing-and-costs/billing/credit-notes)

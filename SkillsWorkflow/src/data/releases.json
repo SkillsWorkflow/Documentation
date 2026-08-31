@@ -1,6 +1,21 @@
 {
-  "generatedAt": "2026-08-29T07:14:47.510Z",
+  "generatedAt": "2026-08-31T11:17:21.603Z",
   "versions": [
+    {
+      "version": "26.25.0",
+      "entries": [
+        {
+          "title": "Add 12h/24h Timeline Format Toggle in Standard Resource Scheduler",
+          "description": "<p><strong>What&#39;s new</strong></p><ul><li>12h/24h Time Format Option Added to the Resource Scheduler</li><li>Users can now switch between 12-hour and 24-hour time formats directly from the three-dot menu in the Resource Scheduler.</li></ul><p><br></p><p><strong>How it works</strong></p><ul><li>Open the <strong>three-dot menu</strong> in the Resource Scheduler and select the preferred time format.</li><li>In <strong>12-hour format</strong>, hour labels are displayed from <strong>12 AM–11 PM</strong>.</li><li>In <strong>24-hour format</strong>, hour labels are displayed from <strong>00–23</strong>.</li><li>The selected time format remains consistent when switching between scheduler views or refreshing the page.</li></ul><p><br></p><p><strong>Benefit</strong></p><ul><li>This gives users greater flexibility to view the Resource Scheduler in their preferred time format, making scheduling and interpreting time slots easier and more intuitive.</li></ul>",
+          "category": "improvement"
+        },
+        {
+          "title": "Resource Scheduler keeps reservation description and priority on edit",
+          "description": "<p><strong>What&#39;s new</strong></p><ul><li>When an existing reservation is opened for editing in Resource Scheduler, the Description field now shows the saved text and the Priority selector now shows the current priority.</li></ul><p><strong>How it works</strong></p><ul><li>In the reservation editor, Description loads the value already stored on the reservation instead of opening empty.</li><li>In the same editor, Priority highlights the reservation&#39;s current Low, Medium, or High value.</li><li>Users can change either value and save the reservation, and the updated selection is kept when the reservation is reopened.</li></ul><p><strong>Benefit</strong></p><ul><li>Users can review and update existing reservations without having to remember or re-enter values that were already set.</li></ul>",
+          "category": "improvement"
+        }
+      ]
+    },
     {
       "version": "26.25",
       "entries": [
@@ -755,13 +770,13 @@
       "version": "24.24.0",
       "entries": [
         {
-          "title": "Service Commission Configuration by Client in Estimate Module",
-          "description": "<p>A new configuration for service commission percentages by client has been introduced in the budget module. Users can now access the commercial client profile to set up the services and the corresponding commission percentages they wish to consider for calculating the sale price of the service.</p><p>Additionally, when creating a budget, the system will automatically suggest the defined percentage for the selected client and service in the services section. This enhancement simplifies the budgeting process, ensuring that commission rates are consistently applied based on client specifications.</p>",
+          "title": "Enhanced Monthly Cost Synchronization Feature for Timesheets",
+          "description": "<p>A new option has been created to facilitate the bulk synchronization of monthly costs for users. Previously, updating the costs of registered timesheets required individual synchronization for each user, making it impractical, especially when multiple user costs are updated simultaneously through a spreadsheet. Now, this bulk synchronization feature is available in two places:</p><ol><li>During the bulk import process (Advanced), users can now choose whether to affect already registered timesheets when importing costs.</li><li>In the Users workspace, users can take bulk actions by selecting the users to be synchronized, considering all loaded months.</li></ol><p>This enhancement streamlines the process, saving time and effort in managing timesheet costs.</p>",
           "category": "improvement"
         },
         {
-          "title": "Enhanced Monthly Cost Synchronization Feature for Timesheets",
-          "description": "<p>A new option has been created to facilitate the bulk synchronization of monthly costs for users. Previously, updating the costs of registered timesheets required individual synchronization for each user, making it impractical, especially when multiple user costs are updated simultaneously through a spreadsheet. Now, this bulk synchronization feature is available in two places:</p><ol><li>During the bulk import process (Advanced), users can now choose whether to affect already registered timesheets when importing costs.</li><li>In the Users workspace, users can take bulk actions by selecting the users to be synchronized, considering all loaded months.</li></ol><p>This enhancement streamlines the process, saving time and effort in managing timesheet costs.</p>",
+          "title": "Service Commission Configuration by Client in Estimate Module",
+          "description": "<p>A new configuration for service commission percentages by client has been introduced in the budget module. Users can now access the commercial client profile to set up the services and the corresponding commission percentages they wish to consider for calculating the sale price of the service.</p><p>Additionally, when creating a budget, the system will automatically suggest the defined percentage for the selected client and service in the services section. This enhancement simplifies the budgeting process, ensuring that commission rates are consistently applied based on client specifications.</p>",
           "category": "improvement"
         },
         {
@@ -965,13 +980,13 @@
       "version": "24.13.0",
       "entries": [
         {
-          "title": "Automatic Redirect to Login on Session Timeout",
-          "description": "<p>Implemented a feature to detect when the session is lost and automatically redirect the user to the login page instead of displaying a message that live updates are not available. If multiple tabs are open, re-login is only required in one tab.</p>",
+          "title": "Enhanced Kanban Functionality: Inline Card Editing for Assignees",
+          "description": "<p>We have significantly enhanced the kanban functionality. Users can now edit cards inline, specifically the assignee field, allowing for quick and efficient adjustments directly on the kanban board. This improvement makes task management more agile and intuitive, eliminating the need for multiple clicks and navigation between different screens. With this update, we ensure a smoother user experience and increased team productivity.</p>",
           "category": "improvement"
         },
         {
-          "title": "Enhanced Kanban Functionality: Inline Card Editing for Assignees",
-          "description": "<p>We have significantly enhanced the kanban functionality. Users can now edit cards inline, specifically the assignee field, allowing for quick and efficient adjustments directly on the kanban board. This improvement makes task management more agile and intuitive, eliminating the need for multiple clicks and navigation between different screens. With this update, we ensure a smoother user experience and increased team productivity.</p>",
+          "title": "Automatic Redirect to Login on Session Timeout",
+          "description": "<p>Implemented a feature to detect when the session is lost and automatically redirect the user to the login page instead of displaying a message that live updates are not available. If multiple tabs are open, re-login is only required in one tab.</p>",
           "category": "improvement"
         },
         {
@@ -1150,11 +1165,6 @@
           "category": "improvement"
         },
         {
-          "title": "Improved Filtering by Team Members in Job List Workspace",
-          "description": "<p>A significant enhancement has been introduced to the job list in workspace to improve the functionality of filtering by team columns, enabling more effective filtering of information by specific users. Now, users can easily search and filter jobs based on specific team members, enhancing accuracy and efficiency in viewing job details.</p>",
-          "category": "fix"
-        },
-        {
           "title": "Bulk Stage Changes Now Prompt Required Field Completion in Workspace Lists",
           "description": "<p>Previously, the system had a limitation in bulk stage changes within workspace lists, particularly when transitions had configured required actions. In such cases, the stage change was not successfully completed. This issue has been resolved. Now, when attempting bulk stage changes, if transitions have required actions configured, a popup will prompt users to provide the necessary information. This ensures that all required fields are completed, allowing the stage transition to be successfully executed. This improvement enhances the usability and reliability of bulk stage changes within workspace lists.</p>",
           "category": "fix"
@@ -1163,6 +1173,11 @@
           "title": "Centralized Annotation Updates in Single Feed Post",
           "description": "<p>The annotation feature has been improved to streamline user interactions and reduce clutter in the feed. Now, whenever a user creates annotations on multiple images within the same timeframe, all changes will be consolidated into a single post on the feed. This enhancement simplifies the browsing experience for users and ensures that related annotations are easily accessible and organized in one place, promoting efficiency and ease of use within the system.</p>",
           "category": "improvement"
+        },
+        {
+          "title": "Improved Filtering by Team Members in Job List Workspace",
+          "description": "<p>A significant enhancement has been introduced to the job list in workspace to improve the functionality of filtering by team columns, enabling more effective filtering of information by specific users. Now, users can easily search and filter jobs based on specific team members, enhancing accuracy and efficiency in viewing job details.</p>",
+          "category": "fix"
         },
         {
           "title": "Enhanced Validation for Estimate Creation Associated with Jobs",
@@ -1200,11 +1215,6 @@
           "category": "improvement"
         },
         {
-          "title": "Mass User Assignment in Jobs Workspace",
-          "description": "<p>An issue was identified where the mass user assignment feature in the job listing workspace was not correctly validating user access rights. This problem has been resolved, and the system now accurately validates user access rights before assigning them, ensuring that only users with appropriate access to the selected companies are included in the assignment process.</p>",
-          "category": "fix"
-        },
-        {
           "title": "Restricting Annotation Modifications to the Creator Only",
           "description": "<p>The annotation feature has been enhanced to restrict modifications by users other than the creator. Now, only the original creator of an annotation can edit it, ensuring greater control over the integrity and accuracy of annotations within the system.</p>",
           "category": "improvement"
@@ -1213,6 +1223,11 @@
           "title": "Effort Field Format Updated to HH:MM",
           "description": "<p>Users can now define the format of the effort field to display hours and minutes (HH:MM). Consistency across all system areas is crucial for seamless usability. This support has been added to the Resource Planning Workspace, ensuring that users can set and view effort values in the HH:MM format consistently throughout the system.</p>",
           "category": "improvement"
+        },
+        {
+          "title": "Mass User Assignment in Jobs Workspace",
+          "description": "<p>An issue was identified where the mass user assignment feature in the job listing workspace was not correctly validating user access rights. This problem has been resolved, and the system now accurately validates user access rights before assigning them, ensuring that only users with appropriate access to the selected companies are included in the assignment process.</p>",
+          "category": "fix"
         },
         {
           "title": "Duplicate Display of VAT Field Names in Expense Creation",
@@ -1395,11 +1410,6 @@
           "category": "fix"
         },
         {
-          "title": "Efficient User-Client Association: Mass Import Feature for Administrators",
-          "description": "<p>In response to the need for a quick and mass association of users with clients, we are introducing a new feature accessible through the advanced options in the workspace. This functionality is exclusively available for administrators and allows for a seamless and efficient import of data using a table/excel format. The import file should include the following columns: UserName, CommercialClient ExternalId, and Active (denoted as 0/1, true/false, True/False).</p><p>This enhancement aims to empower administrators with a convenient method for associating users with clients on a large scale, providing a user-friendly import process through the workspace&#39;s advanced options.</p>",
-          "category": "improvement"
-        },
-        {
           "title": "Introducing Favorites for Quick Document and Workspace Access",
           "description": "<p>In this release, we are excited to introduce the concept of favorites in the system, enhancing user customization and document management. Users now have the ability to mark documents as favorites by right-clicking on the document name and selecting the &quot;Mark as Favorite&quot; option. This functionality extends to all documents and workspaces.</p><ul><li><strong>Mark as Favorite</strong>: Users can mark documents and workspaces as favorites for quick and easy access.</li><li><strong>Favorites Tab in Search:</strong> A new &quot;Favorites&quot; tab has been added to the search functionality, allowing users to conveniently access their marked favorites in one centralized location.</li></ul><p>This feature aims to improve user efficiency and document organization, providing a user-friendly way to access frequently used documents and workspaces.</p>",
           "category": "improvement"
@@ -1412,6 +1422,11 @@
         {
           "title": "Efficient User Monthly Cost Association: Mass Import Feature for Administrators",
           "description": "<p>In response to the need for importing monthly user costs, we are introducing a new feature accessible through the advanced options in the workspace. This functionality is exclusively available for administrators and allows for a seamless and efficient import using a table/excel format. The import file should include the following columns: User Name, Start Date, End Date, Monthly Value, and Hourly Rate.</p><p>This enhancement aims to empower administrators with a convenient method for importing monthly user costs on a large scale, providing a user-friendly import process through the workspace&#39;s advanced options.</p>",
+          "category": "improvement"
+        },
+        {
+          "title": "Efficient User-Client Association: Mass Import Feature for Administrators",
+          "description": "<p>In response to the need for a quick and mass association of users with clients, we are introducing a new feature accessible through the advanced options in the workspace. This functionality is exclusively available for administrators and allows for a seamless and efficient import of data using a table/excel format. The import file should include the following columns: UserName, CommercialClient ExternalId, and Active (denoted as 0/1, true/false, True/False).</p><p>This enhancement aims to empower administrators with a convenient method for associating users with clients on a large scale, providing a user-friendly import process through the workspace&#39;s advanced options.</p>",
           "category": "improvement"
         },
         {
@@ -1522,21 +1537,21 @@
       ]
     },
     {
-      "version": "23.8.0",
-      "entries": [
-        {
-          "title": "Performance Improvements in User Assignment to Documents",
-          "description": "<p>This version focuses on enhancing the performance of the user assignment process to documents. With these improvements, users will experience a more efficient and streamlined process when assigning users to documents. These enhancements have been introduced to optimize the overall user experience.</p>",
-          "category": "improvement"
-        }
-      ]
-    },
-    {
       "version": "23.8",
       "entries": [
         {
           "title": "Enhanced Timesheet Scheduler Performance",
           "description": "<p>This release is dedicated to boosting the performance of the Timesheet Scheduler. We&#39;ve made significant improvements to optimize the scheduling process, resulting in a faster and more responsive experience for users. These enhancements are designed to streamline and improve the overall efficiency of managing timesheets.</p>",
+          "category": "improvement"
+        }
+      ]
+    },
+    {
+      "version": "23.8.0",
+      "entries": [
+        {
+          "title": "Performance Improvements in User Assignment to Documents",
+          "description": "<p>This version focuses on enhancing the performance of the user assignment process to documents. With these improvements, users will experience a more efficient and streamlined process when assigning users to documents. These enhancements have been introduced to optimize the overall user experience.</p>",
           "category": "improvement"
         }
       ]
@@ -1570,13 +1585,13 @@
           "category": "improvement"
         },
         {
-          "title": "New Daily Workload Feature in Resource Planning Workspace",
-          "description": "<p>We&#39;ve introduced an addition to our Resource Planning Workspace. Now, you can set daily workloads to specify the number of hours assigned to each project or job and allocate them to individual users on a day-to-day basis. This enhancement provides you with more precise control and flexibility in managing your project resources and schedules.</p><p>Please note that the Resource Planning workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
+          "title": "Customized Job Progress Visualization in Resource Workspace",
+          "description": "<p>We&#39;ve introduced an enhancement to our Resource Management Workspace. Now, when you view a user&#39;s job progress map, you have the option to display the job bars not just from their start dates but from the date of their last stage change to the end date. To activate this feature, simply set the &quot;JobStartDate&quot; parameter to &quot;stagedate.&quot; This customization provides you with a more tailored and insightful view of your project timelines based on your specific preferences.</p><p>Please note that the Resource workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
           "category": "improvement"
         },
         {
-          "title": "Customized Job Progress Visualization in Resource Workspace",
-          "description": "<p>We&#39;ve introduced an enhancement to our Resource Management Workspace. Now, when you view a user&#39;s job progress map, you have the option to display the job bars not just from their start dates but from the date of their last stage change to the end date. To activate this feature, simply set the &quot;JobStartDate&quot; parameter to &quot;stagedate.&quot; This customization provides you with a more tailored and insightful view of your project timelines based on your specific preferences.</p><p>Please note that the Resource workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
+          "title": "New Daily Workload Feature in Resource Planning Workspace",
+          "description": "<p>We&#39;ve introduced an addition to our Resource Planning Workspace. Now, you can set daily workloads to specify the number of hours assigned to each project or job and allocate them to individual users on a day-to-day basis. This enhancement provides you with more precise control and flexibility in managing your project resources and schedules.</p><p>Please note that the Resource Planning workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
           "category": "improvement"
         },
         {
@@ -1645,8 +1660,8 @@
           "category": "improvement"
         },
         {
-          "title": "Addition of New Properties in BambooHR Integration",
-          "description": "<p>In this update, new properties have been added to the integration with BambooHR.</p><ul><li><strong>Email in SSO and AD Username Fields: </strong>The integration now allows the email address to be automatically populated into both the Single Sign-On (SSO) and Active Directory (AD) Username fields. This simplifies user access and ensures consistency across systems.</li><li><strong>Minimum Daily and Weekly Hours</strong>: In response to user feedback, the integration now populates the minimum daily and weekly hours based on the predefined values set by the company. This automation reduces data entry and aligns with company-wide standards.</li><li><strong>Default Profile Assignment:</strong> The default profile assignment streamlines user onboarding and ensures proper profile alignment.</li></ul>",
+          "title": "Importing User Leaves from BambooHR to Skills Workflow",
+          "description": "<p>In this update, a new feature has been introduced that enables the seamless import of user leaves from the BambooHR system into the Skills Workflow platform.</p>",
           "category": "improvement"
         },
         {
@@ -1655,8 +1670,8 @@
           "category": "improvement"
         },
         {
-          "title": "Importing User Leaves from BambooHR to Skills Workflow",
-          "description": "<p>In this update, a new feature has been introduced that enables the seamless import of user leaves from the BambooHR system into the Skills Workflow platform.</p>",
+          "title": "Addition of New Properties in BambooHR Integration",
+          "description": "<p>In this update, new properties have been added to the integration with BambooHR.</p><ul><li><strong>Email in SSO and AD Username Fields: </strong>The integration now allows the email address to be automatically populated into both the Single Sign-On (SSO) and Active Directory (AD) Username fields. This simplifies user access and ensures consistency across systems.</li><li><strong>Minimum Daily and Weekly Hours</strong>: In response to user feedback, the integration now populates the minimum daily and weekly hours based on the predefined values set by the company. This automation reduces data entry and aligns with company-wide standards.</li><li><strong>Default Profile Assignment:</strong> The default profile assignment streamlines user onboarding and ensures proper profile alignment.</li></ul>",
           "category": "improvement"
         },
         {
@@ -1665,23 +1680,23 @@
           "category": "fix"
         },
         {
-          "title": "Importing Projects from Skills Workflow to Timely",
-          "description": "<p>In this update, a new feature has been introduced that enables the seamless import of projects from the Skills Workflow platform  into the Timely system.</p>",
-          "category": "improvement"
-        },
-        {
-          "title": "Introducing a New Workspace for Planning Time in Days",
-          "description": "<p>We are pleased to introduce a new workspace dedicated to planned time, which is designed to enhance your resource allocation process. This addition addresses the need for more flexible resource planning, as we recognize that planning in days is just as crucial as planning in hours.</p><p>Currently, our planned time module operates solely on an hourly basis. However, we understand that certain projects and tasks require planning in days to accurately reflect resource allocation and project timelines.</p><p>This new workspace functions as a replica of the familiar planned time module, but with the added flexibility of planning in days.</p><p><br></p><p>Please note that the Planned Time workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
-          "category": "improvement"
-        },
-        {
           "title": "Importing Commercial Clients from Skills Workflow to Timely",
           "description": "<p>In this update, a new feature has been introduced that enables the seamless import of Commercial Clients from the Skills Workflow platform into the Timely system.</p>",
           "category": "improvement"
         },
         {
+          "title": "Importing Projects from Skills Workflow to Timely",
+          "description": "<p>In this update, a new feature has been introduced that enables the seamless import of projects from the Skills Workflow platform  into the Timely system.</p>",
+          "category": "improvement"
+        },
+        {
           "title": "Daily Resource Allocation in Staff Plan Workspace",
           "description": "<p>We are excited to introduce a significant enhancement to our Staff Plan workspace in the Builder module. Now, users have the capability to create plans using days as the unit of measurement, providing a more flexible and accurate resource planning experience.</p><p>Traditionally, our system has focused on planning resources in hours. However, we understand that many projects require a day-based approach for more precise resource allocation.</p><p>To address this need, we have expanded the capabilities of our Staff Plan workspace. With this new feature, you can now create plans in days, ensuring that your resource allocation is aligned with project timelines and account management requirements.</p><p><br></p><p>Please note that the Staff Plan workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
+          "category": "improvement"
+        },
+        {
+          "title": "Introducing a New Workspace for Planning Time in Days",
+          "description": "<p>We are pleased to introduce a new workspace dedicated to planned time, which is designed to enhance your resource allocation process. This addition addresses the need for more flexible resource planning, as we recognize that planning in days is just as crucial as planning in hours.</p><p>Currently, our planned time module operates solely on an hourly basis. However, we understand that certain projects and tasks require planning in days to accurately reflect resource allocation and project timelines.</p><p>This new workspace functions as a replica of the familiar planned time module, but with the added flexibility of planning in days.</p><p><br></p><p>Please note that the Planned Time workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
           "category": "improvement"
         },
         {
@@ -1715,13 +1730,13 @@
       "version": "23.5",
       "entries": [
         {
-          "title": "Improvements to the resource planning workspace",
-          "description": "<p>Users now have the capability to filter tasks based on user tags, making task distribution and team workload monitoring simpler and more effective than ever before.</p><ul><li><strong>Access the Resources Planning Workspace:</strong> Log in to our platform and navigate to the Resource Planning workspace.</li><li><strong>View Current Tasks</strong>: Here, you will find a comprehensive list of all tasks assigned to your team.</li><li><strong>Activate User Tag Filtering: </strong>You will now notice a new filtering option - &quot;Search Resource Tags.&quot; Click on it to proceed.</li><li><strong>Select Desired Tags</strong>: A dropdown list will display all available user tags. Choose one or more tags that you wish to filter by.</li><li><strong>See the Results: </strong>Once the filters are applied, the task list will be automatically updated to display only those tasks that correspond to the selected user tags.</li><li><strong>Effortless Task Distribution:</strong> With tasks now filtered, you can allocate work with precision, taking into account the skills and availability of each team member.</li></ul><p><br></p><p>Please note that the Resource Planning workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
+          "title": "Improvements to the Kanban per Period workspace",
+          "description": "<p>Users now have the capability to filter tasks based on user tags, making task distribution and team workload monitoring simpler and more effective than ever before.</p><ul><li><strong>Access the Kanban per Period Workspace:</strong> Log in to our platform and navigate to the Kanban per Period workspace.</li><li><strong>View Current Tasks</strong>: Here, you will find a comprehensive list of all tasks assigned to your team.</li><li><strong>Activate User Tag Filtering: </strong>You will now notice a new filtering option - &quot;Search.&quot; Click on it to proceed.</li><li><strong>Select Desired Tags</strong>: A dropdown list will display all available user tags. Choose one or more tags that you wish to filter by.</li><li><strong>See the Results: </strong>Once the filters are applied, the task list will be automatically updated to display only those tasks that correspond to the selected user tags.</li><li><strong>Effortless Task Distribution:</strong> With tasks now filtered, you can allocate work with precision, taking into account the skills and availability of each team member.</li></ul><p><br></p><p>Please note that the Kanban per Period workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
           "category": "change"
         },
         {
-          "title": "Improvements to the Kanban per Period workspace",
-          "description": "<p>Users now have the capability to filter tasks based on user tags, making task distribution and team workload monitoring simpler and more effective than ever before.</p><ul><li><strong>Access the Kanban per Period Workspace:</strong> Log in to our platform and navigate to the Kanban per Period workspace.</li><li><strong>View Current Tasks</strong>: Here, you will find a comprehensive list of all tasks assigned to your team.</li><li><strong>Activate User Tag Filtering: </strong>You will now notice a new filtering option - &quot;Search.&quot; Click on it to proceed.</li><li><strong>Select Desired Tags</strong>: A dropdown list will display all available user tags. Choose one or more tags that you wish to filter by.</li><li><strong>See the Results: </strong>Once the filters are applied, the task list will be automatically updated to display only those tasks that correspond to the selected user tags.</li><li><strong>Effortless Task Distribution:</strong> With tasks now filtered, you can allocate work with precision, taking into account the skills and availability of each team member.</li></ul><p><br></p><p>Please note that the Kanban per Period workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
+          "title": "Improvements to the resource planning workspace",
+          "description": "<p>Users now have the capability to filter tasks based on user tags, making task distribution and team workload monitoring simpler and more effective than ever before.</p><ul><li><strong>Access the Resources Planning Workspace:</strong> Log in to our platform and navigate to the Resource Planning workspace.</li><li><strong>View Current Tasks</strong>: Here, you will find a comprehensive list of all tasks assigned to your team.</li><li><strong>Activate User Tag Filtering: </strong>You will now notice a new filtering option - &quot;Search Resource Tags.&quot; Click on it to proceed.</li><li><strong>Select Desired Tags</strong>: A dropdown list will display all available user tags. Choose one or more tags that you wish to filter by.</li><li><strong>See the Results: </strong>Once the filters are applied, the task list will be automatically updated to display only those tasks that correspond to the selected user tags.</li><li><strong>Effortless Task Distribution:</strong> With tasks now filtered, you can allocate work with precision, taking into account the skills and availability of each team member.</li></ul><p><br></p><p>Please note that the Resource Planning workspace needs to be installed through the Marketplace workspace before access can be granted.</p>",
           "category": "change"
         }
       ]
@@ -1810,14 +1825,14 @@
           "category": "improvement"
         },
         {
-          "title": "Fixed file upload via mobile app",
-          "description": "<p>Previewing and downloading files is now available via the mobile app. Through the document feed, or the files tab, the user has the feature available for use.</p>",
-          "category": "fix"
-        },
-        {
           "title": "Profitability workspace: Added project owner field",
           "description": "<p>In order to obtain more detailed information on the projects under analysis, the project owner field was added to the workspace.</p>",
           "category": "change"
+        },
+        {
+          "title": "Fixed file upload via mobile app",
+          "description": "<p>Previewing and downloading files is now available via the mobile app. Through the document feed, or the files tab, the user has the feature available for use.</p>",
+          "category": "fix"
         },
         {
           "title": "Button to recalculate the value of timesheets",
@@ -1855,13 +1870,13 @@
           "category": "improvement"
         },
         {
-          "title": "Maintenance - Added interface to import Commercial Products",
-          "description": "<p>Importing services has been made easier through an update made to the Commercial Products configuration workspace.</p><p>The user with creation access will be able to massively import a list of Commercial Products into the system.</p><p>For this, the user only needs to select the &quot;export&quot; option and fill in an excel table with the extracted formatting. In this way, the insertion of data will be done then, only once through the import option of the table.</p>",
+          "title": "Maintenance - Added interface to import Services Groups",
+          "description": "<p>Importing services groups has been made easier through an update made to the Services Group configuration workspace.</p><p>The user with creation access will be able to massively import a list of Group Services into the system.</p><p>For this, the user only needs to select the &quot;export&quot; option and fill in an excel table with the extracted formatting. In this way, the insertion of data will be done then, only once through the import option of the table.</p>",
           "category": "improvement"
         },
         {
-          "title": "Maintenance - Added interface to import Services Groups",
-          "description": "<p>Importing services groups has been made easier through an update made to the Services Group configuration workspace.</p><p>The user with creation access will be able to massively import a list of Group Services into the system.</p><p>For this, the user only needs to select the &quot;export&quot; option and fill in an excel table with the extracted formatting. In this way, the insertion of data will be done then, only once through the import option of the table.</p>",
+          "title": "Maintenance - Added interface to import Commercial Products",
+          "description": "<p>Importing services has been made easier through an update made to the Commercial Products configuration workspace.</p><p>The user with creation access will be able to massively import a list of Commercial Products into the system.</p><p>For this, the user only needs to select the &quot;export&quot; option and fill in an excel table with the extracted formatting. In this way, the insertion of data will be done then, only once through the import option of the table.</p>",
           "category": "improvement"
         },
         {
@@ -1870,13 +1885,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added option to add tags to Commercial Clients",
-          "description": "<p>In order to be able to label clients, a new field was added to the commercial client&#39;s info.</p><p>The tags must be previously created in the &quot;Tags&quot; maintenance workspace and only then must they be associated with the commercial client.</p><p>Only users with corresponding accesses should be able to create and edit Tags.</p>",
+          "title": "Leaves Scheduler Workspace: Book and Unbook leaves",
+          "description": "<p>In the leaves scheduler workspace, new functionalities have been added, so that the user can fully manage his absences through the workspace.</p><p>By dragging the mouse, it is possible to mark the absences.</p><p>By clicking the right mouse button, you will be able to consult or delete the details of the marked absence.</p><p><br></p>",
           "category": "improvement"
         },
         {
-          "title": "Leaves Scheduler Workspace: Book and Unbook leaves",
-          "description": "<p>In the leaves scheduler workspace, new functionalities have been added, so that the user can fully manage his absences through the workspace.</p><p>By dragging the mouse, it is possible to mark the absences.</p><p>By clicking the right mouse button, you will be able to consult or delete the details of the marked absence.</p><p><br></p>",
+          "title": "Added option to add tags to Commercial Clients",
+          "description": "<p>In order to be able to label clients, a new field was added to the commercial client&#39;s info.</p><p>The tags must be previously created in the &quot;Tags&quot; maintenance workspace and only then must they be associated with the commercial client.</p><p>Only users with corresponding accesses should be able to create and edit Tags.</p>",
           "category": "improvement"
         },
         {
@@ -1975,6 +1990,11 @@
           "category": "improvement"
         },
         {
+          "title": "Converted the list of Purchase Orders to use Search and  Custom views.",
+          "description": "<p>In order to create custom views and improve the performance, the Purchase Orders list was converted into a workspace based on the Search service.</p>",
+          "category": "improvement"
+        },
+        {
           "title": "Added logic to customize hierarchy between documents.",
           "description": "<p>Through the configuration of each document (example: Budgets, Jobs), it is possible to define a hierarchy.</p><ul><li>In this way, there is the possibility for the user to visualize and navigate to the hierarchically inferior documents through breadcrumbs.</li></ul>",
           "category": "improvement"
@@ -1985,9 +2005,9 @@
           "category": "improvement"
         },
         {
-          "title": "Converted the list of Purchase Orders to use Search and  Custom views.",
-          "description": "<p>In order to create custom views and improve the performance, the Purchase Orders list was converted into a workspace based on the Search service.</p>",
-          "category": "improvement"
+          "title": "Created a new Estimate creation popup.",
+          "description": "<p>A standard workspace for creating Estimates has been created. In order to improve the system&#39;s performance and usability, this was a first approach to the popup.</p>",
+          "category": "fix"
         },
         {
           "title": "Added information about the Clients' company in the Users' association.",
@@ -1995,13 +2015,13 @@
           "category": "improvement"
         },
         {
-          "title": "Created a new Job creation popup.",
-          "description": "<p>A standard workspace for creating Jobs has been created. In order to improve the system&#39;s performance and usability, this was a first approach to the popup.</p>",
+          "title": "Fixed error when filtering by datafields in Search.",
+          "description": "",
           "category": "fix"
         },
         {
-          "title": "Fixed error when filtering by datafields in Search.",
-          "description": "",
+          "title": "Created a new Job creation popup.",
+          "description": "<p>A standard workspace for creating Jobs has been created. In order to improve the system&#39;s performance and usability, this was a first approach to the popup.</p>",
           "category": "fix"
         },
         {
@@ -2020,11 +2040,6 @@
           "category": "fix"
         },
         {
-          "title": "Created a new Estimate creation popup.",
-          "description": "<p>A standard workspace for creating Estimates has been created. In order to improve the system&#39;s performance and usability, this was a first approach to the popup.</p>",
-          "category": "fix"
-        },
-        {
           "title": "Fixed the bug that didn't allow to set wokflow to null in the jobtype",
           "description": "<p>The document type may or may not have an associated workflow. Not being a mandatory field, it is now possible to set the field to null.</p>",
           "category": "fix"
@@ -2035,11 +2050,6 @@
           "category": "improvement"
         },
         {
-          "title": "Delegates Users Workspace - Improved the association of Delegates to Users",
-          "description": "<p><strong>Delegates User Workspace:</strong></p><p>The associations feature was refactored.</p><ul><li>Now it allows the association of more than one Delegates at the same time to the User.</li></ul><p><br></p>",
-          "category": "improvement"
-        },
-        {
           "title": "Removed the \"Unfiltred\" tag when there is no View created.",
           "description": "<p>When a list supports views, but there are not yet created, the &quot;Unfiltred&quot; tag was removed and a blank one was added.</p><ul><li>The default list with no filters applied will not have a name associated with it.</li></ul>",
           "category": "improvement"
@@ -2047,6 +2057,11 @@
         {
           "title": "Created endpoints to list and remove Schedules.",
           "description": "<p>In the analytics API, new endpoints were created to list and remove Schedules.</p>",
+          "category": "improvement"
+        },
+        {
+          "title": "Delegates Users Workspace - Improved the association of Delegates to Users",
+          "description": "<p><strong>Delegates User Workspace:</strong></p><p>The associations feature was refactored.</p><ul><li>Now it allows the association of more than one Delegates at the same time to the User.</li></ul><p><br></p>",
           "category": "improvement"
         },
         {
@@ -2180,13 +2195,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added the possibility to inactivate reasons for workflow transitions.",
-          "description": "<p><strong>Motives in Transitions Workspace:</strong></p><ul><li>When a motive is already being used in documents, it cannot be deleted.</li><li>Currently you can deactivate it, to discontinue its use.</li></ul>",
+          "title": "Client Users Workspace - Improved the association of Clients to Users",
+          "description": "<p><strong>Client User Workspace:</strong></p><p>The associations feature was refactored.</p><ul><li>Now it allows the association of more than one Client at the same time to the User.</li></ul>",
           "category": "fix"
         },
         {
-          "title": "Client Users Workspace - Improved the association of Clients to Users",
-          "description": "<p><strong>Client User Workspace:</strong></p><p>The associations feature was refactored.</p><ul><li>Now it allows the association of more than one Client at the same time to the User.</li></ul>",
+          "title": "Added the possibility to inactivate reasons for workflow transitions.",
+          "description": "<p><strong>Motives in Transitions Workspace:</strong></p><ul><li>When a motive is already being used in documents, it cannot be deleted.</li><li>Currently you can deactivate it, to discontinue its use.</li></ul>",
           "category": "fix"
         }
       ]
@@ -2300,13 +2315,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added Vendor Tax information in Purchase Orders.",
-          "description": "<p>Added Vendor Tax information in Purchase Orders.</p><ul><li>This field is coming from the services table in the Sub-Estimate builder.</li></ul>",
+          "title": "Added additional Parameters to the Builder Workspace.",
+          "description": "<p>Added the following parameters for Estimate QuantityCap:</p><ul><li>DeliverableQuantityCap - Quantity cap applied to the deliverables section.</li><li>ServiceQuantityCap - Quantity cap applied to the services section.</li><li>ServiceWithTemplateQuantityCap - Quantity cap applied to services with Tasks template associated.</li><li>ExpenseQuantityCap - Quantity cap applied to the expenses section.</li><li>TimeRateQuantityCap - Quantity cap applied to the Time Rates section.</li></ul><p><br></p>",
           "category": "improvement"
         },
         {
-          "title": "Added additional Parameters to the Builder Workspace.",
-          "description": "<p>Added the following parameters for Estimate QuantityCap:</p><ul><li>DeliverableQuantityCap - Quantity cap applied to the deliverables section.</li><li>ServiceQuantityCap - Quantity cap applied to the services section.</li><li>ServiceWithTemplateQuantityCap - Quantity cap applied to services with Tasks template associated.</li><li>ExpenseQuantityCap - Quantity cap applied to the expenses section.</li><li>TimeRateQuantityCap - Quantity cap applied to the Time Rates section.</li></ul><p><br></p>",
+          "title": "Added Vendor Tax information in Purchase Orders.",
+          "description": "<p>Added Vendor Tax information in Purchase Orders.</p><ul><li>This field is coming from the services table in the Sub-Estimate builder.</li></ul>",
           "category": "improvement"
         },
         {
@@ -2315,13 +2330,13 @@
           "category": "improvement"
         },
         {
-          "title": "Adjusted the UI on the Custom Views options.",
-          "description": "<p>Inserted views button (filter symbol) with the following actions:</p><ul><li>Delete (symbol X)</li><li>New view (plus symbol)</li><li>Duplicate (duplicate symbol)</li><li>Edit (change the switch name from Default to Public)</li></ul>",
+          "title": "Added setting to define the time of day to detected Blocked User.",
+          "description": "<p>Added Assistant Blocking Time to the Configuration.</p><ul><li>This will behave as the alert time configuration, as it will only run the timesheet blocking for that certain hour.</li></ul>",
           "category": "improvement"
         },
         {
-          "title": "Added setting to define the time of day to detected Blocked User.",
-          "description": "<p>Added Assistant Blocking Time to the Configuration.</p><ul><li>This will behave as the alert time configuration, as it will only run the timesheet blocking for that certain hour.</li></ul>",
+          "title": "Adjusted the UI on the Custom Views options.",
+          "description": "<p>Inserted views button (filter symbol) with the following actions:</p><ul><li>Delete (symbol X)</li><li>New view (plus symbol)</li><li>Duplicate (duplicate symbol)</li><li>Edit (change the switch name from Default to Public)</li></ul>",
           "category": "improvement"
         },
         {
@@ -2335,11 +2350,6 @@
           "category": "improvement"
         },
         {
-          "title": "Added support for three types of views (default, public and personal).",
-          "description": "<p>Added support for different types of Views:</p><ul><li>Standard - Stored in the Marketplace along with the Workspace;</li><li>Private - Stored in the micro service;</li><li>Public - Stored in the micro service.</li></ul><p><br></p>",
-          "category": "improvement"
-        },
-        {
           "title": "Added Bulk to the Suppliers workspace.",
           "description": "<p>In order to make the system more efficient, the Bulk option was added to the Suppliers workspace. In this way it is possible to update the VAT field simultaneously in more than one supplier</p>",
           "category": "improvement"
@@ -2347,6 +2357,11 @@
         {
           "title": "Target document lock when executing actions.",
           "description": "<p>In order of long-running actions, we cannot allow the target document to change during processing, new properties have been added to the interface:</p><ul><li>FullDocumentLocked;</li><li>LockedBy;</li><li>LockedOnUtc.</li></ul><p><br></p><p>If the user tries to modify the target document, during the process of performing actions, the system shows an error message.</p><p><br></p><p><br></p><p><br></p>",
+          "category": "improvement"
+        },
+        {
+          "title": "Added support for three types of views (default, public and personal).",
+          "description": "<p>Added support for different types of Views:</p><ul><li>Standard - Stored in the Marketplace along with the Workspace;</li><li>Private - Stored in the micro service;</li><li>Public - Stored in the micro service.</li></ul><p><br></p>",
           "category": "improvement"
         },
         {
@@ -2430,13 +2445,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added option to hide certain transitions from document feed.",
-          "description": "<p>Created a custom function to handle the Transitions to show:</p><p><br></p><p>Stages - Removed the Transitions from all Workspaces when showing to the User.</p><p>Configuration - Added a Custom Function to list the Transitions to remove.</p><p><br></p><p>This feature was developed to be used in conjunction with the BATCH functionality. This way, users will not be able to move documents when they have a batch active, through documents feed or others workspaces.</p>",
+          "title": "Added a quantity cap in the builder",
+          "description": "<p>Added &#39;quantityCap&#39; property to validate that all of the Builder quantities cannot exceed that value.</p><p>This option is a parameter that allows the maintenance users to adjust the cap if necessary.</p>",
           "category": "improvement"
         },
         {
-          "title": "Added a quantity cap in the builder",
-          "description": "<p>Added &#39;quantityCap&#39; property to validate that all of the Builder quantities cannot exceed that value.</p><p>This option is a parameter that allows the maintenance users to adjust the cap if necessary.</p>",
+          "title": "Added option to hide certain transitions from document feed.",
+          "description": "<p>Created a custom function to handle the Transitions to show:</p><p><br></p><p>Stages - Removed the Transitions from all Workspaces when showing to the User.</p><p>Configuration - Added a Custom Function to list the Transitions to remove.</p><p><br></p><p>This feature was developed to be used in conjunction with the BATCH functionality. This way, users will not be able to move documents when they have a batch active, through documents feed or others workspaces.</p>",
           "category": "improvement"
         },
         {
@@ -2495,18 +2510,23 @@
           "category": "improvement"
         },
         {
-          "title": "Added option to upload files in the creation form for Tenders document.",
-          "description": "Added option to upload files in the creation form for tenders as it works for other documents.",
-          "category": "improvement"
-        },
-        {
           "title": "Builder take into account the round values from Estimate currency.",
           "description": "<p>Builder take into account the round values from Estimate currency.</p>",
           "category": "improvement"
         },
         {
+          "title": "Added option to upload files in the creation form for Tenders document.",
+          "description": "Added option to upload files in the creation form for tenders as it works for other documents.",
+          "category": "improvement"
+        },
+        {
           "title": "Added Quantity concept in the action that creates the Jobs from the Services.",
           "description": "The Query to create tasks from job type returns quantity, in order to create multiple jobs.",
+          "category": "improvement"
+        },
+        {
+          "title": "When creating Briefs, Jobs, Sub-Jobs, and Tasks only shows sprints that belong to the Project.",
+          "description": "When creating Briefs, Jobs, Sub-Jobs, and Tasks Only shows sprints that belong to the Project.",
           "category": "improvement"
         },
         {
@@ -2520,14 +2540,14 @@
           "category": "improvement"
         },
         {
-          "title": "When creating Briefs, Jobs, Sub-Jobs, and Tasks only shows sprints that belong to the Project.",
-          "description": "When creating Briefs, Jobs, Sub-Jobs, and Tasks Only shows sprints that belong to the Project.",
-          "category": "improvement"
-        },
-        {
           "title": "Added support to import Workflow Stages.",
           "description": "<p>Added support to import Workflow Stages via configuration import table. </p>",
           "category": "improvement"
+        },
+        {
+          "title": "Upgrade DevExtreme version.",
+          "description": "<p>Upgrade DevExtreme version:</p><ul><li><span style=\"color: rgb(0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255);\">Upgrade the widgets to the latest version. </span></li></ul>",
+          "category": "fix"
         },
         {
           "title": "Added support to import worktypes.",
@@ -2538,11 +2558,6 @@
           "title": "Added support to disabled default buttons in workspace's properties.",
           "description": "<tbody><p data-table-row=\"1\" data-table-cell=\"1\" style=\"text-align: left;\">Now it is possible to disabled default buttons in workspace&#39;s properties.</p></tbody>",
           "category": "improvement"
-        },
-        {
-          "title": "Upgrade DevExtreme version.",
-          "description": "<p>Upgrade DevExtreme version:</p><ul><li><span style=\"color: rgb(0, 0, 0); font-size: 14px; background-color: rgb(255, 255, 255);\">Upgrade the widgets to the latest version. </span></li></ul>",
-          "category": "fix"
         },
         {
           "title": "Added missing fields on the All Estimate List Workspace.",
@@ -2575,23 +2590,23 @@
           "category": "improvement"
         },
         {
-          "title": "Added columns to the Tender lists.",
-          "description": "<p>The following columns are added in All, mine, closed, my pending actions lists:</p><p><br></p><p>a) Columns shown in list view by default:</p><ul><li>Code</li><li>Title</li><li>Status</li><li>Due date</li><li>Currency</li></ul><p><br></p><p>b) b) Columns that are part of the column selector:</p><ul><li>Version</li><li>Created by</li><li>Created on</li><li>Modified By</li><li>Modified on.</li></ul>",
-          "category": "improvement"
-        },
-        {
           "title": "Added Requests documents in the Kanban.",
           "description": "Changed the Data Source to include Briefs in the Kanban Workspace.",
           "category": "improvement"
         },
         {
-          "title": "Created the \"Info\" tab for Tenders document.",
-          "description": "Created the Info tab for Tenders:  Sections - Added an Info and a History sections.",
+          "title": "Added columns to the Tender lists.",
+          "description": "<p>The following columns are added in All, mine, closed, my pending actions lists:</p><p><br></p><p>a) Columns shown in list view by default:</p><ul><li>Code</li><li>Title</li><li>Status</li><li>Due date</li><li>Currency</li></ul><p><br></p><p>b) b) Columns that are part of the column selector:</p><ul><li>Version</li><li>Created by</li><li>Created on</li><li>Modified By</li><li>Modified on.</li></ul>",
           "category": "improvement"
         },
         {
           "title": "Added an option to dissolve the Batch.",
           "description": "If users start a new batch and at any point need to move one particular task to \"hold\" they need to dissolve the batch. This means that once the batch is created it moves together either to complete or back to ready.  Provided a “Dissolve Batch” button. The dissolve batch button is remain inactive if no task is selected.",
+          "category": "improvement"
+        },
+        {
+          "title": "Created the \"Info\" tab for Tenders document.",
+          "description": "Created the Info tab for Tenders:  Sections - Added an Info and a History sections.",
           "category": "improvement"
         },
         {
@@ -2640,6 +2655,11 @@
           "category": "improvement"
         },
         {
+          "title": "Created Feed, History and Files tabs for Tenders.",
+          "description": "Tenders is a new module in the system. Like the other modules tenders include the following tabs in workspace version: Feed, History. They also include a tab Files as per other documents.",
+          "category": "improvement"
+        },
+        {
           "title": "Added the button to navigate to the Tenders from the Preview popups.",
           "description": "Added the button to navigate to the Tenders from the Preview popups.",
           "category": "improvement"
@@ -2652,11 +2672,6 @@
         {
           "title": "Added a way to create Numbering based on a Data Source.",
           "description": "Instead of having many variations of numbering methods, added a Data Source as a parameter to determine the way the Numbers are generated. In this way, the numbering format is more flexible and adjustable to the needs of each client.",
-          "category": "improvement"
-        },
-        {
-          "title": "Created Feed, History and Files tabs for Tenders.",
-          "description": "Tenders is a new module in the system. Like the other modules tenders include the following tabs in workspace version: Feed, History. They also include a tab Files as per other documents.",
           "category": "improvement"
         },
         {
@@ -2675,13 +2690,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added the Gridster \"Layout\" properties to the Workspace setup.",
-          "description": "Some Workspaces (e.g., lists) only intend to use the full screen space.  Now exist a way to set the Workspace to occupy only the available screen space on any resolution.",
+          "title": "Added support to chage the Product field in the tender.",
+          "description": "As in the other documents, it is possible to edit and associate products with Tenders.",
           "category": "improvement"
         },
         {
-          "title": "Added support to chage the Product field in the tender.",
-          "description": "As in the other documents, it is possible to edit and associate products with Tenders.",
+          "title": "Added the Gridster \"Layout\" properties to the Workspace setup.",
+          "description": "Some Workspaces (e.g., lists) only intend to use the full screen space.  Now exist a way to set the Workspace to occupy only the available screen space on any resolution.",
           "category": "improvement"
         },
         {
@@ -2775,13 +2790,13 @@
           "category": "improvement"
         },
         {
-          "title": "Created 4 Tenders lists in the side menu bar",
-          "description": "<p style=\"text-align: left;\"><strong style=\"background-color: initial; color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">Created 4 new Tenders lists in the side menu bar:</strong></p><p style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" class=\"ql-indent-1\"><strong style=\"background-color: initial; color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">1) </strong><strong style=\"background-color: rgb(255, 255, 255); color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">My Pending Actions</strong><span style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\"> - Tenders where I&#39;ve been assigned as the Assignee (executor team)</span></p><p style=\"text-align: left;\" class=\"ql-indent-1\"><strong style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px; background-color: rgb(255, 255, 255);\">2) Mine - A</strong><span style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">ll Tenders where I have been assigned as part of any given team</span></p><p style=\"text-align: left;\" class=\"ql-indent-1\"><strong style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px; background-color: rgb(255, 255, 255);\">3) All - A</strong><span style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">ll active Tenders for clients I have access to regardless of assignment</span></p><p style=\"text-align: left;\" class=\"ql-indent-1\"><strong style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px; background-color: rgb(255, 255, 255);\">4) Closed - </strong><span style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">Tenders in cancelled and done stages.</span></p><p><br></p>",
+          "title": "Added Roles to support to Custom Tables.",
+          "description": "<p><span style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(0, 0, 0);\">Custom Tables values read and save are now controlled by roles.</span></p><p><span style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(0, 0, 0);\">These are defined in the custom tables configuration - default is Administrator.</span></p><p><br></p>",
           "category": "improvement"
         },
         {
-          "title": "Added Roles to support to Custom Tables.",
-          "description": "<p><span style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(0, 0, 0);\">Custom Tables values read and save are now controlled by roles.</span></p><p><span style=\"background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(0, 0, 0);\">These are defined in the custom tables configuration - default is Administrator.</span></p><p><br></p>",
+          "title": "Created 4 Tenders lists in the side menu bar",
+          "description": "<p style=\"text-align: left;\"><strong style=\"background-color: initial; color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">Created 4 new Tenders lists in the side menu bar:</strong></p><p style=\"text-align: left;\"><br></p><p style=\"text-align: left;\" class=\"ql-indent-1\"><strong style=\"background-color: initial; color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">1) </strong><strong style=\"background-color: rgb(255, 255, 255); color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">My Pending Actions</strong><span style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\"> - Tenders where I&#39;ve been assigned as the Assignee (executor team)</span></p><p style=\"text-align: left;\" class=\"ql-indent-1\"><strong style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px; background-color: rgb(255, 255, 255);\">2) Mine - A</strong><span style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">ll Tenders where I have been assigned as part of any given team</span></p><p style=\"text-align: left;\" class=\"ql-indent-1\"><strong style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px; background-color: rgb(255, 255, 255);\">3) All - A</strong><span style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">ll active Tenders for clients I have access to regardless of assignment</span></p><p style=\"text-align: left;\" class=\"ql-indent-1\"><strong style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px; background-color: rgb(255, 255, 255);\">4) Closed - </strong><span style=\"color: rgb(102, 102, 102); font-family: &quot;Varela Round&quot;; font-size: 14px;\">Tenders in cancelled and done stages.</span></p><p><br></p>",
           "category": "improvement"
         },
         {
@@ -2895,6 +2910,11 @@
           "category": "improvement"
         },
         {
+          "title": "Added the possibility of auto populate worktype for tasks based on type.",
+          "description": "Added association between work type and job type. The Feed and Timesheet suggestions now attempt to automatically fill the Work Type based on what's defined in the Job Type (this only works for Jobs).",
+          "category": "improvement"
+        },
+        {
           "title": "Created an action to create SubJobs based on a flag in the Third Party entries in the Estimate.",
           "description": "Added a flag on the Deliverables section to define whether the underneath sub-jobs/tasks will be created based on the Estimate items.  If flag is on it means that the sub-jobs/tasks should be created from the estimate line items. If flag is off, it will created the sub-jobs/tasks not from the estimate but from the job template.",
           "category": "improvement"
@@ -2902,11 +2922,6 @@
         {
           "title": "Added ability to link jobs/sub-jobs/tasks with each other in the info tab of jobs, sub-jobs and tasks in a field called \"Linked tickets\".",
           "description": "Added ability to link jobs/sub-jobs/tasks with each other in the info tab of jobs, sub-jobs and tasks in a field called \"Linked tickets\" (optional field) Added ability to select the linking types for jobs, sub-jobs and tasks (can select multiple types) Added ability to navigate to linked tickets from info tab of jobs, sub-jobs and tasks.",
-          "category": "improvement"
-        },
-        {
-          "title": "Added the possibility of auto populate worktype for tasks based on type.",
-          "description": "Added association between work type and job type. The Feed and Timesheet suggestions now attempt to automatically fill the Work Type based on what's defined in the Job Type (this only works for Jobs).",
           "category": "improvement"
         },
         {
@@ -3005,13 +3020,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added auto refresh to the All Jobs list with Search",
-          "description": "The All Jobs list with search refreshes every 5 minutes After 5 minutes, if the user isn't on the list's tab, it waits until he comes back to refresh the data (this way we avoid unnecessary refreshments).",
+          "title": "Added new numbers formats for Bills, POs and ExpenseSheets",
+          "description": "New code formats were made available to the system: Added for Bills/PurchaseOrders: ClientCodeProjectNumberEstimateNumberSequence3 ; Added for Expense: CompanyCodeTypeCodeYear2Sequence5.",
           "category": "improvement"
         },
         {
-          "title": "Added new numbers formats for Bills, POs and ExpenseSheets",
-          "description": "New code formats were made available to the system: Added for Bills/PurchaseOrders: ClientCodeProjectNumberEstimateNumberSequence3 ; Added for Expense: CompanyCodeTypeCodeYear2Sequence5.",
+          "title": "Added auto refresh to the All Jobs list with Search",
+          "description": "The All Jobs list with search refreshes every 5 minutes After 5 minutes, if the user isn't on the list's tab, it waits until he comes back to refresh the data (this way we avoid unnecessary refreshments).",
           "category": "improvement"
         },
         {
@@ -3030,8 +3045,8 @@
           "category": "improvement"
         },
         {
-          "title": "Added to the workspace custom view indicator the possibility to select a view.",
-          "description": "The possibility for the user, directly above the name of the custom view, to change the view of the selected list was added.",
+          "title": "Moved Custom Views settings into Workspace settings.",
+          "description": "Moved the Layouts definition per Panel to the Workspace definition:  Layouts - When applying, send the settings to each Panel Panel - Each Panel should take care of their own settings.",
           "category": "improvement"
         },
         {
@@ -3040,8 +3055,8 @@
           "category": "improvement"
         },
         {
-          "title": "Moved Custom Views settings into Workspace settings.",
-          "description": "Moved the Layouts definition per Panel to the Workspace definition:  Layouts - When applying, send the settings to each Panel Panel - Each Panel should take care of their own settings.",
+          "title": "Added to the workspace custom view indicator the possibility to select a view.",
+          "description": "The possibility for the user, directly above the name of the custom view, to change the view of the selected list was added.",
           "category": "improvement"
         }
       ]
@@ -3060,23 +3075,23 @@
           "category": "improvement"
         },
         {
-          "title": "Added the Company Currency to the Profitability Workspace.",
-          "description": "In order to distinguish the Cost / hours from the Time Sheets entered, a Currency column for the company has been added in the Project Profitability Workspace.",
-          "category": "improvement"
-        },
-        {
           "title": "Added the Estimate Currency to the Profitability Workspace.",
           "description": "Added the Estimate Currency to the Profitability Workspace.",
           "category": "improvement"
         },
         {
-          "title": "Created an automatism between Skills and ActiveCollab.",
-          "description": "There are now 2 automations that support the integration between Skills and ActiveCollab. The goal is that the tasks created in ActiveCollab are imported directly into a project previously created in Skills ; projects are updated in Skills when they are adjusted in ActiveCollab.",
+          "title": "Added the Company Currency to the Profitability Workspace.",
+          "description": "In order to distinguish the Cost / hours from the Time Sheets entered, a Currency column for the company has been added in the Project Profitability Workspace.",
           "category": "improvement"
         },
         {
           "title": "Added the Project Owner to the Margins Workspace.",
           "description": "The user will be able to analyze the profitability of the projects, with the possibility of filtering documents based on those responsible for each project.",
+          "category": "improvement"
+        },
+        {
+          "title": "Created an automatism between Skills and ActiveCollab.",
+          "description": "There are now 2 automations that support the integration between Skills and ActiveCollab. The goal is that the tasks created in ActiveCollab are imported directly into a project previously created in Skills ; projects are updated in Skills when they are adjusted in ActiveCollab.",
           "category": "improvement"
         },
         {
@@ -3115,26 +3130,6 @@
           "category": "improvement"
         },
         {
-          "title": "Added support for user to delete files in Leaves.",
-          "description": "Through the new filesystem, the user is now able to add files and delete them.",
-          "category": "improvement"
-        },
-        {
-          "title": "Added way to differentiate automatic Time Sheets from manuals in the Scheduler.",
-          "description": "In the Time Sheets calendar, it is possible to differentiate the hours that were filled automatically, through the workflow action. Cells of this type have a different border.",
-          "category": "improvement"
-        },
-        {
-          "title": "Added the option to invoice by value.",
-          "description": "The system allows the user to invoice in two ways. The \"Amount type\" field was released, where the user must indicate whether he intends to invoice in % or in value. After this selection, the user is able to define the respective values.",
-          "category": "improvement"
-        },
-        {
-          "title": "Added additional fields on Holidays workspace.",
-          "description": "Company - Added the possibility to define holidays by company. If the field is not filled in, the company configuration prevails. Description - Text box to provide more info for the leave type. IsPlannable - Setting that allows the leave type to be reflected in the resource module. Time Sheet - Added the AllowsTimeSheet flag to determine if it support Time Sheet entry Tags - Add support for tags.",
-          "category": "improvement"
-        },
-        {
           "title": "Added bulk support on the new All Jobs List.",
           "description": "The user, through the new list of jobs, already has the bulk operation available.",
           "category": "improvement"
@@ -3145,8 +3140,23 @@
           "category": "improvement"
         },
         {
-          "title": "Created a new automation, which makes it possible to configure the body of the sent email.",
-          "description": "Automation - Created the body in the email with the corresponding fields in the Automation.",
+          "title": "Added additional fields on Holidays workspace.",
+          "description": "Company - Added the possibility to define holidays by company. If the field is not filled in, the company configuration prevails. Description - Text box to provide more info for the leave type. IsPlannable - Setting that allows the leave type to be reflected in the resource module. Time Sheet - Added the AllowsTimeSheet flag to determine if it support Time Sheet entry Tags - Add support for tags.",
+          "category": "improvement"
+        },
+        {
+          "title": "Added the option to invoice by value.",
+          "description": "The system allows the user to invoice in two ways. The \"Amount type\" field was released, where the user must indicate whether he intends to invoice in % or in value. After this selection, the user is able to define the respective values.",
+          "category": "improvement"
+        },
+        {
+          "title": "Added way to differentiate automatic Time Sheets from manuals in the Scheduler.",
+          "description": "In the Time Sheets calendar, it is possible to differentiate the hours that were filled automatically, through the workflow action. Cells of this type have a different border.",
+          "category": "improvement"
+        },
+        {
+          "title": "Added support for user to delete files in Leaves.",
+          "description": "Through the new filesystem, the user is now able to add files and delete them.",
           "category": "improvement"
         },
         {
@@ -3160,16 +3170,6 @@
           "category": "improvement"
         },
         {
-          "title": "Added modified on, modified by, created on, created by in Suppliers workspace.",
-          "description": "New fields have been added to the supplier workspace in order to see who created a new supplier or who modified an existing supplier and when.",
-          "category": "improvement"
-        },
-        {
-          "title": "Added holiday description in the tooltip.",
-          "description": "Added the holiday description in the Time Sheet and Vacation calendar, through the tooltip.",
-          "category": "improvement"
-        },
-        {
           "title": "Added the ability to assign holidays by user.",
           "description": "Added a flag to the User to select which Holidays the User will have. This way, the user can enjoy holidays that are not part of their main company.",
           "category": "improvement"
@@ -3180,18 +3180,33 @@
           "category": "improvement"
         },
         {
+          "title": "Added holiday description in the tooltip.",
+          "description": "Added the holiday description in the Time Sheet and Vacation calendar, through the tooltip.",
+          "category": "improvement"
+        },
+        {
+          "title": "Added modified on, modified by, created on, created by in Suppliers workspace.",
+          "description": "New fields have been added to the supplier workspace in order to see who created a new supplier or who modified an existing supplier and when.",
+          "category": "improvement"
+        },
+        {
+          "title": "Created a new automation, which makes it possible to configure the body of the sent email.",
+          "description": "Automation - Created the body in the email with the corresponding fields in the Automation.",
+          "category": "improvement"
+        },
+        {
           "title": "Created a Workspace to show the logs of EAS.",
           "description": "Through this workspace, the user can easily check the integration logs between Skills and EAS, detecting possible errors that may exist.",
           "category": "improvement"
         },
         {
-          "title": "Added a popup with a Filter Builder to build a filter with grid fields.",
-          "description": "New Filter features were implemented: - Builder: opens a popup with a Filter Builder to build a filter with grid fields. When saving, apply the filter to the grid. - Clear: clears all filters applied to the grid. - Save: is only displayed if a filter is selected. Saves all changes made in filtering the grid. - Save as: creates a new filter based on a selected filter or the filter that is selected in the grid. - Delete: is only displayed if a filter is selected. Removes the selected filter.",
+          "title": "Added a new predefined filter to the document lists.",
+          "description": "Through the new button added, the user is able to create predefined filters in their listings. For now it is only available on the All Jobs list.",
           "category": "improvement"
         },
         {
-          "title": "Added a new predefined filter to the document lists.",
-          "description": "Through the new button added, the user is able to create predefined filters in their listings. For now it is only available on the All Jobs list.",
+          "title": "Added a popup with a Filter Builder to build a filter with grid fields.",
+          "description": "New Filter features were implemented: - Builder: opens a popup with a Filter Builder to build a filter with grid fields. When saving, apply the filter to the grid. - Clear: clears all filters applied to the grid. - Save: is only displayed if a filter is selected. Saves all changes made in filtering the grid. - Save as: creates a new filter based on a selected filter or the filter that is selected in the grid. - Delete: is only displayed if a filter is selected. Removes the selected filter.",
           "category": "improvement"
         },
         {
@@ -3210,13 +3225,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added formulas to the budget workspaces.",
-          "description": "In order to facilitate the users' work, a matrix with formulas and the accounts that need them was added to the forecast workspace. In this way, the value of the columns is calculated based on the previously defined matrix.",
+          "title": "Added the possibility to duplicate Forecasts versions.",
+          "description": "The Users need to create simulations of alternative predictions (forecasts) of the Company's performance, through this feature your work becomes faster.",
           "category": "improvement"
         },
         {
-          "title": "Added the possibility to duplicate Forecasts versions.",
-          "description": "The Users need to create simulations of alternative predictions (forecasts) of the Company's performance, through this feature your work becomes faster.",
+          "title": "Added formulas to the budget workspaces.",
+          "description": "In order to facilitate the users' work, a matrix with formulas and the accounts that need them was added to the forecast workspace. In this way, the value of the columns is calculated based on the previously defined matrix.",
           "category": "improvement"
         },
         {
@@ -3255,6 +3270,11 @@
           "category": "improvement"
         },
         {
+          "title": "Added a setting in the Company to specify if Time Sheet is constrained to the Document Start and End.",
+          "description": "A new setting has been made available in the company.  When turned on, the system will not verify if the Timesheet is within the document dates.",
+          "category": "fix"
+        },
+        {
           "title": "Added user approved or approved by hr leaves in the Boards Workspaces.",
           "description": "Responsible users, through the Boards Workspace, are able to consult the future leaves of their subordinates, in order to be able to plan activities ensuring the availability of users.",
           "category": "fix"
@@ -3262,11 +3282,6 @@
         {
           "title": "In the People on Leave workspace, the leaves approved by HR were added.",
           "description": "In the People on Leave workspace, the leaves approved by HR were added. All leaves now appear except \"Unapproved\"",
-          "category": "fix"
-        },
-        {
-          "title": "Added a setting in the Company to specify if Time Sheet is constrained to the Document Start and End.",
-          "description": "A new setting has been made available in the company.  When turned on, the system will not verify if the Timesheet is within the document dates.",
           "category": "fix"
         },
         {
@@ -3290,24 +3305,19 @@
           "category": "improvement"
         },
         {
-          "title": "Created support to add shifts to Users.",
-          "description": "<p>Today there is a place in the system to assign shifts to employees. The goal is for a booker to be able to tell (in the resource scheduler) who is available to pick up a certain task based on the shift each person is working.</p>",
+          "title": "Converted Expense Creation Form into a Workspace.",
+          "description": "<p>Created a new workspace for expense Creation with the following fields:</p><ul><li>Title</li><li>Type</li><li>Expense Type</li><li>Company</li><li>Finance Job Number (custom field)</li><li>Currency</li><li>Cash Advance Request number (custom field)</li></ul>",
           "category": "improvement"
         },
         {
-          "title": "Converted Expense Creation Form into a Workspace.",
-          "description": "<p>Created a new workspace for expense Creation with the following fields:</p><ul><li>Title</li><li>Type</li><li>Expense Type</li><li>Company</li><li>Finance Job Number (custom field)</li><li>Currency</li><li>Cash Advance Request number (custom field)</li></ul>",
+          "title": "Created support to add shifts to Users.",
+          "description": "<p>Today there is a place in the system to assign shifts to employees. The goal is for a booker to be able to tell (in the resource scheduler) who is available to pick up a certain task based on the shift each person is working.</p>",
           "category": "improvement"
         },
         {
           "title": "Created a new Leaves Scheduler workspace called \"My Absense\".",
           "description": "<p>A new Leaves workspace is now available, with the following features:</p><p><br></p><ul><li>Year - Show a filter to select the Year</li><li>Types - Show a Tile View with the Leave Types the User has</li><li>Calendar - Show a calendar of 12 months with the scheduled Leaves</li><li>List - Show a list of the User Leaves</li><li>Switch - Let the User switch between the list and the Leave calendar</li><li>Create - Add a popup to create a Leave from a Leave Type</li></ul>",
           "category": "change"
-        },
-        {
-          "title": "Stage Mapping Changes in Feed are now posted by Skillio Name.",
-          "description": "Added the RealCreatedBy to the Documents:  Changes - When changes are performed, set the Created By to the internal user Real - Always record the Real Created By in the Document for future reference.",
-          "category": "improvement"
         },
         {
           "title": "Added the Audit of Reservations to the list.",
@@ -3320,8 +3330,23 @@
           "category": "improvement"
         },
         {
+          "title": "Created a new workspace for Assets & Orders into a Request document.",
+          "description": "Created a new workspace for Assets & Orders for clients that don't have a DAM integration. It is similar to the existing Assets & Orders but whithout the Master Assets part - only with the Orders table.  Added ability to create orders by clicking on a plus sign.",
+          "category": "improvement"
+        },
+        {
           "title": "Added some new fields to the Expense types workspace.",
           "description": "<p>Added the following fields to the Expense types workspace:</p><ul><li>Type </li><li>Modified By</li><li>Modified On</li><li>Created By</li><li>Created On</li></ul><p><br></p><p><br></p>",
+          "category": "improvement"
+        },
+        {
+          "title": "Stage Mapping Changes in Feed are now posted by Skillio Name.",
+          "description": "Added the RealCreatedBy to the Documents:  Changes - When changes are performed, set the Created By to the internal user Real - Always record the Real Created By in the Document for future reference.",
+          "category": "improvement"
+        },
+        {
+          "title": "Added a Data Source to the Document Assignment Type.",
+          "description": "It is possible, through a query, to define which results are desirable in the lookup for Users per Team. Example: only agencies that have been working with determinate client must appear in the drop down list.",
           "category": "improvement"
         },
         {
@@ -3330,18 +3355,8 @@
           "category": "improvement"
         },
         {
-          "title": "Created a new workspace for Assets & Orders into a Request document.",
-          "description": "Created a new workspace for Assets & Orders for clients that don't have a DAM integration. It is similar to the existing Assets & Orders but whithout the Master Assets part - only with the Orders table.  Added ability to create orders by clicking on a plus sign.",
-          "category": "improvement"
-        },
-        {
           "title": "Added Shifts to Configuration.",
           "description": "<p>A new concept was created in the system: the ability to configure shift schedules by company.</p><p>There are multiple people across different companies who work in shifts, so it was created a new shifts workspace.</p><p><br></p><p>The fields required for this configuration are as follows:</p><ul><li>Company</li><li>Name</li><li>Start Time UTC</li><li>End Time UTC</li><li>Created By</li><li>Created On</li><li>Modified By</li><li>Modified On</li><li>Active</li></ul><p><br></p><p><br></p>",
-          "category": "improvement"
-        },
-        {
-          "title": "Added a Data Source to the Document Assignment Type.",
-          "description": "It is possible, through a query, to define which results are desirable in the lookup for Users per Team. Example: only agencies that have been working with determinate client must appear in the drop down list.",
           "category": "improvement"
         },
         {
@@ -3470,8 +3485,8 @@
           "category": "improvement"
         },
         {
-          "title": "Migrated Resource Scheduler workspaces to use workloads",
-          "description": "Created a new Workspace for Workloads:  Scheduler - Show data from the Workloads, instead of the assignments Workspace - Get the data from the Workloads and save them into Workloads",
+          "title": "Added the possibility to define mandatory fields to activate Project document from Draft",
+          "description": "Through a query, which returns a boolean, it is possible to indicate all the fields that are required to be configured with the correct values.  Query - if the document has all valid fields, it returns true.",
           "category": "improvement"
         },
         {
@@ -3480,18 +3495,18 @@
           "category": "improvement"
         },
         {
-          "title": "Non-human Resources can be created separatly from the Users",
-          "description": "<p>To create a new Resource, go to Configuration into the list of non-human resources and create or edit resources.</p>",
-          "category": "improvement"
-        },
-        {
-          "title": "Added the possibility to define mandatory fields to activate Project document from Draft",
-          "description": "Through a query, which returns a boolean, it is possible to indicate all the fields that are required to be configured with the correct values.  Query - if the document has all valid fields, it returns true.",
+          "title": "Migrated Resource Scheduler workspaces to use workloads",
+          "description": "Created a new Workspace for Workloads:  Scheduler - Show data from the Workloads, instead of the assignments Workspace - Get the data from the Workloads and save them into Workloads",
           "category": "improvement"
         },
         {
           "title": "Converted ExpenseSheet lists into workspaces",
           "description": "The expenseSheets list was converted into a workspace, in order to make its adaptation to the needs of each client more flexible.",
+          "category": "improvement"
+        },
+        {
+          "title": "Non-human Resources can be created separatly from the Users",
+          "description": "<p>To create a new Resource, go to Configuration into the list of non-human resources and create or edit resources.</p>",
           "category": "improvement"
         },
         {
@@ -3505,16 +3520,6 @@
           "category": "improvement"
         },
         {
-          "title": "Converted ExpenseSheet info tab into workspace",
-          "description": "The expenseSheets info tab was converted into a workspace, in order to make its adaptation to the needs of each client more flexible.",
-          "category": "improvement"
-        },
-        {
-          "title": "Converted Expense info tab into workspace",
-          "description": "The expenses info tab was converted into a workspace, in order to make its adaptation to the needs of each client more flexible.",
-          "category": "improvement"
-        },
-        {
           "title": "Converted Expenses tab (builder) inside ExpenseSheet into a workspace",
           "description": "The expenses tab inside ExpenseSheet was converted into a workspace, in order to make its adaptation to the needs of each client more flexible.",
           "category": "improvement"
@@ -3525,18 +3530,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added the plus in ExpenseSheet lists to create new expensesheets.",
-          "description": "Through the list in the ExpenseSheet workspace, there is now the possibility to create new documents.",
+          "title": "Converted Expense info tab into workspace",
+          "description": "The expenses info tab was converted into a workspace, in order to make its adaptation to the needs of each client more flexible.",
           "category": "improvement"
         },
         {
-          "title": "Converted Expenses lists into workspaces",
-          "description": "The expenses list was converted into a workspace, in order to make its adaptation to the needs of each client more flexible.",
-          "category": "improvement"
-        },
-        {
-          "title": "Added bulk option in all ExpenseSheets and Expense lists workspaces",
-          "description": "It is possible, through a bulk action, to update the fields of Team, Status, Finance Job Number, Finance Job Number and Currency of the ExpenseSheet document. For the Expense document, the user can change the fields: Team and Status.",
+          "title": "Converted ExpenseSheet info tab into workspace",
+          "description": "The expenseSheets info tab was converted into a workspace, in order to make its adaptation to the needs of each client more flexible.",
           "category": "improvement"
         },
         {
@@ -3552,6 +3552,21 @@
         {
           "title": "Created a Manager Timesheet Approval Workspace",
           "description": "Created a first approach for a new Timesheet Approvals workspace to replace the Timesheet Approval module.",
+          "category": "improvement"
+        },
+        {
+          "title": "Converted Expenses lists into workspaces",
+          "description": "The expenses list was converted into a workspace, in order to make its adaptation to the needs of each client more flexible.",
+          "category": "improvement"
+        },
+        {
+          "title": "Added the plus in ExpenseSheet lists to create new expensesheets.",
+          "description": "Through the list in the ExpenseSheet workspace, there is now the possibility to create new documents.",
+          "category": "improvement"
+        },
+        {
+          "title": "Added bulk option in all ExpenseSheets and Expense lists workspaces",
+          "description": "It is possible, through a bulk action, to update the fields of Team, Status, Finance Job Number, Finance Job Number and Currency of the ExpenseSheet document. For the Expense document, the user can change the fields: Team and Status.",
           "category": "improvement"
         },
         {
@@ -3585,13 +3600,13 @@
           "category": "improvement"
         },
         {
-          "title": "Added option to remove buttons from grid column",
-          "description": "The option to delete buttons are available in the context menu.",
+          "title": "Budget: Added month selection to show forecast and actual according to the selected month",
+          "description": "When looking at a Budget, the workspace shows the Forecast and Actual according to the Reference Month:</p><ul><li>Forecast - The Forecast should only be shown for the months after the reference month, including the reference month</li><li>Actual - Should be shown for the months before the reference month, not including the reference month.",
           "category": "improvement"
         },
         {
-          "title": "Budget: Added month selection to show forecast and actual according to the selected month",
-          "description": "When looking at a Budget, the workspace shows the Forecast and Actual according to the Reference Month:</p><ul><li>Forecast - The Forecast should only be shown for the months after the reference month, including the reference month</li><li>Actual - Should be shown for the months before the reference month, not including the reference month.",
+          "title": "Added option to remove buttons from grid column",
+          "description": "The option to delete buttons are available in the context menu.",
           "category": "improvement"
         },
         {
@@ -3620,23 +3635,23 @@
           "category": "improvement"
         },
         {
-          "title": "Add the Department to the Expenses list inside the Expense Sheet",
-          "description": "Added Department column in the Expense Items list inside the Expense",
-          "category": "change"
-        },
-        {
           "title": "The total amount of the expense sheet should reflect the total associated expenses",
           "description": "If any expense is eliminated, the expense amount will be updated on the Expense sheet",
           "category": "change"
         },
         {
-          "title": "Duplication of expense lines",
-          "description": "It is possible to duplicate expense lines. The fields, such as the supplier, must all be copied.",
+          "title": "Add the Department to the Expenses list inside the Expense Sheet",
+          "description": "Added Department column in the Expense Items list inside the Expense",
           "category": "change"
         },
         {
           "title": "Expense: VAT field is filtered by expense company",
           "description": "<p>In the expense, the VAT field is filtered by the VATs defined in the expense company.</p>",
+          "category": "change"
+        },
+        {
+          "title": "Duplication of expense lines",
+          "description": "It is possible to duplicate expense lines. The fields, such as the supplier, must all be copied.",
           "category": "change"
         },
         {
@@ -3670,11 +3685,6 @@
           "category": "change"
         },
         {
-          "title": "Blocked documents not allow document changes from Kanban board",
-          "description": "When a document is blocked, it does not allow for Workflow, Team and Info changes.Blocked documents not allow document changes from Kanban board",
-          "category": "improvement"
-        },
-        {
           "title": "The Checklist from MI jobs does not inherit the parent's description",
           "description": "Checklist Items should be created with description in blank.",
           "category": "improvement"
@@ -3685,8 +3695,8 @@
           "category": "improvement"
         },
         {
-          "title": "Gantt Improvements: When executing a transition with repeated final states, the gantt already records the changes",
-          "description": "In Gantt, there is a column called STAGE Stage column is the name of the status where the document can go to In some cases, the drop-down shows multiple transitions to move to the same status",
+          "title": "Blocked documents not allow document changes from Kanban board",
+          "description": "When a document is blocked, it does not allow for Workflow, Team and Info changes.Blocked documents not allow document changes from Kanban board",
           "category": "improvement"
         },
         {
@@ -3697,6 +3707,11 @@
         {
           "title": "Provide a log book of all events happening with a task in the scheduler",
           "description": "",
+          "category": "improvement"
+        },
+        {
+          "title": "Gantt Improvements: When executing a transition with repeated final states, the gantt already records the changes",
+          "description": "In Gantt, there is a column called STAGE Stage column is the name of the status where the document can go to In some cases, the drop-down shows multiple transitions to move to the same status",
           "category": "improvement"
         },
         {

@@ -2,7 +2,7 @@
 id:  credit-notes
 title: "Credit Notes"
 description: "Whenever you change the sales values ​​of the invoiced budget, to a lower value the system will suggest that a credit note be issued."
-sidebar_label: 2. Generate credit notes to clients
+sidebar_label: Credit Notes
 sidebar_position: 2
 ---
 
@@ -52,3 +52,8 @@ In the list of purchase orders you can apply several filters, such as: client, p
 ![img-box-shadow](/img/university/bills/bills-lesson2-1.png)
 <figcaption>List of credit notes</figcaption>
 </figure>
+
+## Related articles
+
+- [Invoice Authorizations](/docs/product/billing-and-costs/billing/invoice-authorizations)
+- [Invoice an Estimate](/docs/product/commercial/estimates/invoice-estimate)

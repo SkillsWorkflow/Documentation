@@ -1,8 +1,8 @@
 ---
 id: multi-approving-time-sheets
-title: Time sheet Approval levels
+title: Time Sheet Approval Levels
 description: "If the approval type is the same for all clients, the timesheet approval type should be selected at the company level."
-sidebar_label: 4. Time sheet Approval levels
+sidebar_label: Time Sheet Approval Levels
 sidebar_position: 4
 ---
 
@@ -81,3 +81,8 @@ Once the user responsible order 0 approves, the hours flow to the responsible or
 </figure>
 
 Administrative hours are sent to the user responsible set on the user info.
+
+## Related articles
+
+- [Approving Time Sheets](/docs/product/time/timesheets/approving-time-sheets)
+- [Rejecting Time Sheets](/docs/product/time/timesheets/rejecting-time-sheets)

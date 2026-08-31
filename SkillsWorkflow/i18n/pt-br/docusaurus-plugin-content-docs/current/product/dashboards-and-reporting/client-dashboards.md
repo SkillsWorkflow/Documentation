@@ -1,11 +1,11 @@
 ---
 id:  client-dashboard
-title: Clientes
-sidebar_label: 1.  Dashboards de Clientes 
+title: Workspaces de Clientes
+sidebar_label: Workspaces de Clientes
 sidebar_position: 1
 ---
 
-##  Dashboards de Clientes
+##  Workspaces de Clientes
 
 Os painéis são um recurso poderoso usado para apoiar rapidamente as decisões relacionadas a um cliente ou projeto específico.
 
@@ -13,16 +13,16 @@ O objetivo é dar a capacidade de controlar os processos de uma forma muito amig
 
 Como gerente de projetos é muito útil entender o status de um cliente específico e controlar a lucratividade de cada projeto. Dessa forma, o PM terá as ferramentas para negociar com seus clientes.
 
-Existem vários Dashboards no nível do cliente disponíveis no sistema que exibirão informações diferentes.
+Existem vários Workspaces no nível do cliente disponíveis no sistema que exibirão informações diferentes.
 
 
-### Burn Dashboard
+### Burn Workspace
 
 1. Vá para o módulo cliente.
 
 2. Selecione o cliente que deseja verificar.
 
-3. Pressione em Burn Dashboard.
+3. Pressione em Burn Workspace.
 
 Você encontrará um resumo com indicadores totais:
 
@@ -57,8 +57,8 @@ Você também descobrirá a mesma representação dos valores acumulados corresp
  
 1. Vá para o módulo cliente;
 2. Selecione o cliente que deseja verificar;
-3. Pressione em Profitability Dashboard 
-4. Este Dashboard mostra-lhe um vislumbre dos projetos, sob o cliente que você selecionou, que lhe retorna um lucro maior (com base no valor da receita cotada para o cliente)
+3. Pressione em Profitability Workspace 
+4. Este Workspace mostra-lhe um vislumbre dos projetos, sob o cliente que você selecionou, que lhe retorna um lucro maior (com base no valor da receita cotada para o cliente)
 
 Você poderá analisar o lucro planejado por projeto e por tipologia.
 
@@ -81,8 +81,8 @@ Além disso, você poderá verificar a margem de lucro por projeto por porcentag
 
 1. Vá para o módulo cliente;
 2. Selecione o cliente que deseja verificar;
-3. Pressione no Dashboard de Alocação do Projeto 
-4. O Dashboard de Alocação de Projetos mostrará uma tabela onde você poderá verificar as seguintes informações por projeto:
+3. Pressione no Workspace de Alocação do Projeto 
+4. O Workspace de Alocação de Projetos mostrará uma tabela onde você poderá verificar as seguintes informações por projeto:
 
 Capacidade de Usuários;
 
@@ -107,3 +107,8 @@ Para isso você deve pressionar o ícone à sua direita (marcado em laranja), e 
 </figure>
 
 Observe que você pode exportar para o Excel ou imprimir este painel pressionando fora da grade com a função direita do mouse.
+
+## Artigos relacionados
+
+- [Como criar um Cliente Comercial?](/docs/product/commercial/crm/create-commercial-client)
+- [Criar um Projeto](/docs/product/projects-and-jobs/create-projects)

@@ -1,6 +1,6 @@
 ---
 id: data
-title: " "
+title: Data
 description: "The namespace Data provides to developers, methods to easily manipulate data."
 sidebar_label: Data
 ---

@@ -2,7 +2,7 @@
 id:  list-view
 title: Manage List View
 description: "By default you have the following sub-lists: You need to expand your view in order to be able to see all the available fields."
-sidebar_label: 6. Manage your List View
+sidebar_label: Manage List View
 sidebar_position: 6
 ---
 
@@ -82,3 +82,8 @@ You need to expand your view in order to be able to see all the available fields
 ![img-box-shadow](/img/university/project-management/project-management-lesson5-5.png)
 <figcaption></figcaption>
 </figure>
+
+## Related articles
+
+- [Create Jobs](/docs/product/projects-and-jobs/create-jobs)
+- [My Tasks](/docs/product/projects-and-jobs/my-tasks)

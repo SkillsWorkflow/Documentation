@@ -1,7 +1,7 @@
 ---
 id: filling-time-sheets
-title: Preencher Folhas de horas
-sidebar_label: 1. Preencher Folhas de horas
+title: Preencher Time Sheets
+sidebar_label: Preencher Time Sheets
 sidebar_position: 1
 ---
 
@@ -110,3 +110,10 @@ Para preencher horas, navegue para o módulo **Time sheets**
 </figure>
 
 ---
+
+## Artigos relacionados
+
+- [Cronômetro de Time Sheet](/docs/product/time/timesheets/timesheet-timer)
+- [Aprovar Time Sheets](/docs/product/time/timesheets/approving-time-sheets)
+- [Transferir horas entre projetos ou jobs](/docs/product/time/timesheets/transferring-hours-between-projects)
+- [Tempo Planejado](/docs/product/planning-and-scheduling/resourcing/planned-hours)

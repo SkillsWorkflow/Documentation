@@ -1,24 +1,24 @@
 ---
 id:  client-dashboard
-title: Clientes Dashboard
-sidebar_label: 1. Clientes Dashboards
+title: Clientes Workspace
+sidebar_label: Clientes Workspace
 sidebar_position: 1
 ---
 
-Dashboards son un recurso poderoso que se utiliza para respaldar rápidamente las decisiones relacionadas con un cliente o proyecto específico.
+Workspaces son un recurso poderoso que se utiliza para respaldar rápidamente las decisiones relacionadas con un cliente o proyecto específico.
 
 El objetivo es dar la capacidad de controlar los procesos de una manera muy amigable y completa.
 
 Como gestor de proyectos es muy útil para comprender el estado de un cliente específico y controlar la rentabilidad de cada proyecto. De esta manera el PM tendrá las herramientas para negociar con sus clientes.
 
-Hay varios Dashboards a nivel de cliente disponibles en el sistema que mostrarán información diferente.
+Hay varios Workspaces a nivel de cliente disponibles en el sistema que mostrarán información diferente.
 
 
-### Burn Dashboard
+### Burn Workspace
 
 1. Ir al módulo de cliente.
 2. Seleccione el cliente que desea consultar.
-3. Haga clic en Burn Dashboard.
+3. Haga clic en Burn Workspace.
 
 Encontrarás un resumen con indicadores totales:
 
@@ -51,11 +51,11 @@ Esta representación le mostrará una distribución mensual de los ingresos plan
 También encontrará la misma representación de los valores acumulados correspondientes
  
 
-### Profitability Dashboard
+### Profitability Workspace
 1. Vaya al módulo de cliente;
 2. Seleccione el cliente que desea consultar;
-3. Haga clic en Profitability Dashboard 
-4. El Dashboard le muestra de un vistazo los proyectos, bajo el cliente que ha seleccionado, lo que le devuelve una mayor ganancia (basado en el valor de ingresos cotizado al cliente)
+3. Haga clic en Profitability Workspace 
+4. El Workspace le muestra de un vistazo los proyectos, bajo el cliente que ha seleccionado, lo que le devuelve una mayor ganancia (basado en el valor de ingresos cotizado al cliente)
 
 Podrás analizar el beneficio planificado por proyecto y por tipología.
 <figure>
@@ -74,11 +74,11 @@ Además, podrá consultar el margen de beneficio por proyecto por porcentaje y v
 
  
 
-### Asignación de proyectos Dashboard
+### Asignación de proyectos Workspace
 1. Ir al módulo de cliente;
 2. Seleccione el cliente que desea consultar;
-3. Pulse en Asignación de proyectos Dashboard 
-4. Asignación de proyectos Dashboard te mostrará una tabla donde puedes consultar la siguiente información por proyecto:
+3. Pulse en Asignación de proyectos Workspace 
+4. Asignación de proyectos Workspace te mostrará una tabla donde puedes consultar la siguiente información por proyecto:
 
 Capacidad de Usuarios;
 
@@ -103,3 +103,8 @@ Para ello deberá pulsar sobre el icono de su derecha (marcado en naranja), y el
 </figure>
 
 Tenga en cuenta que puede exportar a Excel o imprimir este tablero presionando fuera de la cuadrícula con la función derecha de su mouse.
+
+## Artículos relacionados
+
+- [Crear un nuevo cliente comercial](/docs/product/commercial/crm/create-commercial-client)
+- [Crear proyectos](/docs/product/projects-and-jobs/create-projects)

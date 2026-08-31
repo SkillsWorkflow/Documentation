@@ -1,7 +1,7 @@
 ---
 id:  utilization-dashboard
-title: Utilización Dashboard
-sidebar_label: 4. Utilización Dashboard
+title: Utilización Workspace
+sidebar_label: Utilización Workspace
 sidebar_position: 4
 ---
 
@@ -9,7 +9,7 @@ Los gerentes de proyecto ponen mucho esfuerzo en la asignación de recursos. En 
 
 Una de las formas más fáciles de verificar la efectividad de su esfuerzo de asignación de recursos es rastrear y analizar la utilización de su equipo. Skills Workflow ha desarrollado un panel de utilización que brinda diferentes puntos de vista sobre cómo los usuarios dedicaron el tiempo en diferentes dimensiones. Esto servirá como una poderosa herramienta para mejorar la asignación de recursos.
 
-la utilización Dashboard se puede acceder seleccionando Espacios de trabajo en la barra de menú y luego seleccionando Utilización:
+la utilización Workspace se puede acceder seleccionando Espacios de trabajo en la barra de menú y luego seleccionando Utilización:
 
 <figure>
 
@@ -59,3 +59,8 @@ Los detalles son los siguientes:
    - % de utilización no facturable - (no facturable/capacidad) x 100
    - % facturable de utilización - (facturable/capacidad) x 100
    - Horas: horas totales por proyecto/job/cliente
+
+## Artículos relacionados
+
+- [Programador de Recursos](/docs/product/planning-and-scheduling/resourcing/resource-scheduler)
+- [Llenar Hojas de Tiempo](/docs/product/time/timesheets/filling-time-sheets)

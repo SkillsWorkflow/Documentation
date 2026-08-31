@@ -1,7 +1,7 @@
 ---
 id:  my-tasks
 title: Mis tareas
-sidebar_label: 8. Mis tareas
+sidebar_label: Mis tareas
 sidebar_position: 8
 ---
 
@@ -124,3 +124,7 @@ Puede agregar una lista de elementos más pequeños dentro de su tarea en forma 
 <figcaption></figcaption>
 </figure>
 
+## Artículos relacionados
+
+- [Administre su vista de lista](/docs/product/projects-and-jobs/list-view)
+- [Llenar Hojas de Tiempo](/docs/product/time/timesheets/filling-time-sheets)

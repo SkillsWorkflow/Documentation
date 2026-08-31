@@ -2,7 +2,7 @@
 id:  approving-leaves
 title: Approving Leaves
 description: "To approve/disapprove leaves, navigate to the “Approval” module."
-sidebar_label: 2. Approving Leaves
+sidebar_label: Approving Leaves
 sidebar_position: 2
 ---
 
@@ -84,3 +84,9 @@ You can provide the user with a motive for rejecting his leave.
 ![img-with-border](/img/university/leaves/approve-leaves_6.png)
 <figcaption> </figcaption>
 </figure>
+
+## Related articles
+
+- [Scheduling Leaves](/docs/product/people/leaves/scheduling-leaves)
+- [Leaves Workspace](/docs/product/dashboards-and-reporting/leave-dashboard)
+- [Leaves My Department Workspace](/docs/product/dashboards-and-reporting/leave-department-dashboard)

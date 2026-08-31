@@ -1,7 +1,7 @@
 ---
 id: create-holidays
 title: Feriados
-sidebar_label: 5. Registrar feriados
+sidebar_label: Registrar feriados
 sidebar_position: 5
 ---
 

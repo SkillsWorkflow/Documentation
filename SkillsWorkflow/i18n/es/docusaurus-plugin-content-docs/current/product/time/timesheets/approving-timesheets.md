@@ -1,7 +1,7 @@
 ---
 id: approving-time-sheets
-title: Aprobar Timesheets
-sidebar_label: 2. Aprobar Timesheets
+title: Aprobar Hojas de Tiempo
+sidebar_label: Aprobar Hojas de Tiempo
 sidebar_position: 2
 ---
 
@@ -53,3 +53,9 @@ Navegar al módulo **Time sheets Aprobar**
 </figure>
 
 ---
+
+## Artículos relacionados
+
+- [Rechazar Hojas de Tiempo](/docs/product/time/timesheets/rejecting-time-sheets)
+- [Niveles de Aprobación de Hojas de Tiempo](/docs/product/time/timesheets/multi-approving-time-sheets)
+- [Horas de Tiempo en Falta y Aprobaciones Workspace](/docs/product/dashboards-and-reporting/timesheet-approvals-dashboard)

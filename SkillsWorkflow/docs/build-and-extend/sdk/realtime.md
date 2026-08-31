@@ -1,6 +1,6 @@
 ---
 id: realtime
-title: " "
+title: Realtime
 description: "With this namespace, you can quickly provide methods to manipulate live updates."
 sidebar_label: Realtime
 ---

@@ -1,7 +1,7 @@
 ---
 id: create-holidays  
 title: Vacaciones
-sidebar_label: 5. Registro Vacaciones
+sidebar_label: Registro Vacaciones
 sidebar_position: 5
 ---
 

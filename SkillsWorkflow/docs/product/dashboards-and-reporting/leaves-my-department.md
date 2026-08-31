@@ -1,8 +1,8 @@
 ---
 id:  leave-department-dashboard
-title: Leaves My Department
+title: Leaves My Department Workspace
 description: "Al programar sus propias licencias o aprobar las licencias enviadas por sus subordinados, es importante saber si otros empleados del mismo departamento…"
-sidebar_label: 7. Leaves My Department
+sidebar_label: Leaves My Department Workspace
 sidebar_position: 7
 ---
 
@@ -17,3 +17,8 @@ To access, select "Leaves - My Department" in the Workspaces and the current mon
 </figure>
 
 To select the desired month, simply click the forward or back buttons next to the month display field.
+
+## Related articles
+
+- [Approving Leaves](/docs/product/people/leaves/approving-leaves)
+- [Leaves Workspace](/docs/product/dashboards-and-reporting/leave-dashboard)
