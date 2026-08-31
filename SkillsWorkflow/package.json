@@ -8,7 +8,11 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "npm run releases && docusaurus start",
-    "start:search": "docusaurus build && docusaurus serve",
+    "start:es": "npm run releases && docusaurus start --locale es",
+    "start:pt": "npm run releases && docusaurus start --locale pt",
+    "start:pt-br": "npm run releases && docusaurus start --locale pt-br",
+    "start:search": "npm run releases && docusaurus build --locale en && docusaurus serve",
+    "start:all": "npm run releases && docusaurus build && docusaurus serve",
     "build": "npm run releases && docusaurus build && npm run generate:llms",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -49,7 +53,6 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/plugin-client-redirects": "^3.10.0",
     "node-sql-parser": "^5.4.0"
   },
   "resolutions": {
