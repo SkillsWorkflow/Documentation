@@ -17,71 +17,164 @@ import styles from './styles.module.css';
    Font Awesome Pro is loaded through the kit in docusaurus.config.cjs. */
 
 const areas = [
-  { to: '/docs/product/briefing-and-requests', title: 'Briefing & Requests',
+  { to: '/docs/product/briefing-and-requests', title: translate({
+      id: 'home.area.briefing.title',
+      message: 'Briefing & Requests',
+    }),
     icon: 'fal fa-users-class', soft: '#fef4ea', accent: '#f8913c',
-    text: 'How work arrives: client requests and the templates that shape them.' },
-  { to: '/docs/product/projects-and-jobs', title: 'Projects & Jobs',
+    text: translate({
+      id: 'home.area.briefing.text',
+      message: 'How work arrives: client requests and the templates that shape them.',
+    }) },
+  { to: '/docs/product/projects-and-jobs', title: translate({
+      id: 'home.area.projects.title',
+      message: 'Projects & Jobs',
+    }),
     icon: 'fal fa-clipboard-list', soft: '#f5f3fd', accent: '#9a8be7',
-    text: 'Create projects, break them into jobs, and follow them in the list view.' },
-  { to: '/docs/product/planning-and-scheduling', title: 'Planning & Scheduling',
+    text: translate({
+      id: 'home.area.projects.text',
+      message: 'Create projects, break them into jobs, and follow them in the list view.',
+    }) },
+  { to: '/docs/product/planning-and-scheduling', title: translate({
+      id: 'home.area.planning.title',
+      message: 'Planning & Scheduling',
+    }),
     icon: 'fal fa-poll-people', soft: '#fefae8', accent: '#f4cd0d',
-    text: 'The Gantt, the resource scheduler and planned time.' },
-  { to: '/docs/product/time', title: 'Time',
+    text: translate({
+      id: 'home.area.planning.text',
+      message: 'The Gantt, the resource scheduler and planned time.',
+    }) },
+  { to: '/docs/product/time', title: translate({
+      id: 'home.area.time.title',
+      message: 'Time',
+    }),
     icon: 'fal fa-hourglass-start', soft: '#eefafb', accent: '#58d0da',
-    text: 'Filling in, approving and transferring timesheets.' },
-  { to: '/docs/product/people', title: 'People',
+    text: translate({
+      id: 'home.area.time.text',
+      message: 'Filling in, approving and transferring timesheets.',
+    }) },
+  { to: '/docs/product/people', title: translate({
+      id: 'home.area.people.title',
+      message: 'People',
+    }),
     icon: 'fal fa-user-friends', soft: '#f2f6fd', accent: '#8bb4e7',
-    text: 'Teams and groups, assignments, leave scheduling and approval.' },
-  { to: '/docs/product/commercial', title: 'Commercial',
+    text: translate({
+      id: 'home.area.people.text',
+      message: 'Teams and groups, assignments, leave scheduling and approval.',
+    }) },
+  { to: '/docs/product/commercial', title: translate({
+      id: 'home.area.commercial.title',
+      message: 'Commercial',
+    }),
     icon: 'fal fa-calculator', soft: '#faf9f8', accent: '#a0867d',
-    text: 'CRM, rate cards, estimates and fees.' },
-  { to: '/docs/product/billing-and-costs', title: 'Billing & Costs',
+    text: translate({
+      id: 'home.area.commercial.text',
+      message: 'CRM, rate cards, estimates and fees.',
+    }) },
+  { to: '/docs/product/billing-and-costs', title: translate({
+      id: 'home.area.billing.title',
+      message: 'Billing & Costs',
+    }),
     icon: 'fal fa-file-invoice-dollar', soft: '#f4faf4', accent: '#91cc91',
-    text: 'Invoice authorizations, credit notes and expenses.' },
-  { to: '/docs/product/files-and-collaboration', title: 'Files & Collaboration',
+    text: translate({
+      id: 'home.area.billing.text',
+      message: 'Invoice authorizations, credit notes and expenses.',
+    }) },
+  { to: '/docs/product/files-and-collaboration', title: translate({
+      id: 'home.area.files.title',
+      message: 'Files & Collaboration',
+    }),
     icon: 'fal fa-folders', soft: '#fef8ec', accent: '#f7bd55',
-    text: 'Annotations on files, and the feed where the conversation happens.' },
-  { to: '/docs/product/dashboards-and-reporting', title: 'Workspaces & Reporting',
+    text: translate({
+      id: 'home.area.files.text',
+      message: 'Annotations on files, and the feed where the conversation happens.',
+    }) },
+  { to: '/docs/product/dashboards-and-reporting', title: translate({
+      id: 'home.area.workspaces.title',
+      message: 'Workspaces & Reporting',
+    }),
     icon: 'fal fa-chart-pie', soft: '#fdf3f3', accent: '#f0868e',
-    text: 'The workspaces that ship with the platform, and how to read them.' },
-  { to: '/docs/product/notifications', title: 'Notifications',
+    text: translate({
+      id: 'home.area.workspaces.text',
+      message: 'The workspaces that ship with the platform, and how to read them.',
+    }) },
+  { to: '/docs/product/notifications', title: translate({
+      id: 'home.area.notifications.title',
+      message: 'Notifications',
+    }),
     icon: 'fal fa-bell', soft: '#edf8fd', accent: '#51beeb',
-    text: 'What the platform notifies people about, and through which channel.' },
-  { to: '/docs/product/mobile', title: 'Mobile',
+    text: translate({
+      id: 'home.area.notifications.text',
+      message: 'What the platform notifies people about, and through which channel.',
+    }) },
+  { to: '/docs/product/mobile', title: translate({
+      id: 'home.area.mobile.title',
+      message: 'Mobile',
+    }),
     icon: 'fal fa-mobile', soft: '#f5fae8', accent: '#9ACD32',
-    text: 'The iOS and Android apps, and how users configure them.' },
+    text: translate({
+      id: 'home.area.mobile.text',
+      message: 'The iOS and Android apps, and how users configure them.',
+    }) },
 ];
 const routes = [
   {
     to: '/docs/learning-paths',
     icon: 'fal fa-graduation-cap',
-    eyebrow: 'For everyone using the platform',
-    title: 'Learn the product',
-    text: 'Ordered paths through the documentation, from your first project to closing a month.',
+    eyebrow: translate({
+      id: 'home.route.learn.eyebrow',
+      message: 'For everyone using the platform',
+    }),
+    title: translate({
+      id: 'home.route.learn.title',
+      message: 'Learn the product',
+    }),
+    text: translate({
+      id: 'home.route.learn.text',
+      message: 'Ordered paths through the documentation, from your first project to closing a month.',
+    }),
   },
   {
     to: '/docs/administration',
     icon: 'fal fa-sliders-h',
-    eyebrow: 'For administrators',
-    title: 'Set up a client',
-    text: 'Users and profiles, workflows, custom tables, calendars and data imports.',
+    eyebrow: translate({
+      id: 'home.route.setup.eyebrow',
+      message: 'For administrators',
+    }),
+    title: translate({
+      id: 'home.route.setup.title',
+      message: 'Set up a client',
+    }),
+    text: translate({
+      id: 'home.route.setup.text',
+      message: 'Users and profiles, workflows, custom tables, calendars and data imports.',
+    }),
   },
   {
     to: '/docs/build-and-extend',
     icon: 'fal fa-code',
-    eyebrow: 'For consultants and developers',
-    title: 'Build & extend',
-    text: 'Workspaces and panels, automations, the SDK and the API.',
+    eyebrow: translate({
+      id: 'home.route.build.eyebrow',
+      message: 'For consultants and developers',
+    }),
+    title: translate({
+      id: 'home.route.build.title',
+      message: 'Build & extend',
+    }),
+    text: translate({
+      id: 'home.route.build.text',
+      message: 'Workspaces and panels, automations, the SDK and the API.',
+    }),
   },
 ];
 
 const quick = [
-  { to: '/docs/start-here/glossary', label: 'Glossary' },
-  { to: '/docs/product/planning-and-scheduling/gantt', label: 'Gantt' },
-  { to: '/docs/administration/workflows', label: 'Workflows' },
-  { to: '/docs/build-and-extend/automations', label: 'Automations' },
-  { to: '/docs/integrations', label: 'Integrations' },
-  { to: '/docs/build-and-extend/api/client-api', label: 'Client API' },
+  { to: '/docs/start-here/glossary', label: translate({ id: 'home.quick.glossary', message: 'Glossary' }) },
+  { to: '/docs/product/planning-and-scheduling/gantt', label: translate({ id: 'home.quick.gantt', message: 'Gantt' }) },
+  { to: '/docs/administration/workflows', label: translate({ id: 'home.quick.workflows', message: 'Workflows' }) },
+  { to: '/docs/build-and-extend/automations', label: translate({ id: 'home.quick.automations', message: 'Automations' }) },
+  { to: '/docs/integrations', label: translate({ id: 'home.quick.integrations', message: 'Integrations' }) },
+  { to: '/docs/build-and-extend/api/client-api', label: translate({ id: 'home.quick.clientApi', message: 'Client API' }) },
 ];
 
 /* The hero field is a real search input, not a proxy for the navbar one.
@@ -181,18 +274,24 @@ function HeroSearch() {
 
 function Home() {
   return (
-    <Layout description="Official Skills Workflow documentation: product guides, administration, workspaces, automations, integrations, API and SDK references.">
+    <Layout
+      description={translate({
+        id: 'home.meta.description',
+        message:
+          'Official Skills Workflow documentation: product guides, administration, workspaces, automations, integrations, API and SDK references.',
+      })}
+    >
       <header className={styles.hero}>
         <div className={styles.heroWash} aria-hidden="true" />
         <div className={styles.heroInner}>
           <p className={styles.eyebrow}>
-            <Translate>Skills Workflow documentation</Translate>
+            <Translate id="home.hero.eyebrow">Skills Workflow documentation</Translate>
           </p>
           <h1 className={styles.heroTitle}>
-            <Translate>Everything the platform does, from briefing to billing</Translate>
+            <Translate id="home.hero.title">Everything the platform does, from briefing to billing</Translate>
           </h1>
           <p className={styles.heroText}>
-            <Translate>
+            <Translate id="home.hero.text">
               Product guides for the people doing the work, configuration for the people setting it
               up, and references for the people building on top.
             </Translate>
@@ -200,14 +299,14 @@ function Home() {
           <HeroSearch />
           <div className={styles.heroActions}>
             <Link className={styles.btnPrimary} to="/docs/learning-paths">
-              <Translate>Start learning</Translate>
+              <Translate id="home.hero.ctaPrimary">Start learning</Translate>
             </Link>
             <Link className={styles.btnGhost} to="/docs/product/projects-and-jobs">
-              <Translate>Browse the product</Translate>
+              <Translate id="home.hero.ctaSecondary">Browse the product</Translate>
             </Link>
           </div>
           <div className={styles.quick}>
-            <span className={styles.quickLabel}><Translate>Popular</Translate></span>
+            <span className={styles.quickLabel}><Translate id="home.quick.label">Popular</Translate></span>
             {quick.map((q) => (
               <Link key={q.to} className={styles.chip} to={q.to}>{q.label}</Link>
             ))}
@@ -234,9 +333,9 @@ function Home() {
 
         <section className={styles.sectionAlt}>
           <div className={styles.wrap}>
-            <h2 className={styles.sectionTitle}><Translate>By product area</Translate></h2>
+            <h2 className={styles.sectionTitle}><Translate id="home.areas.title">By product area</Translate></h2>
             <p className={styles.sectionText}>
-              <Translate>
+              <Translate id="home.areas.text">
                 Each area covers what the capability does, how it is used, and how it is configured.
               </Translate>
             </p>
@@ -261,16 +360,16 @@ function Home() {
           <div className={styles.wrap}>
             <div className={styles.strip}>
               <div className={styles.stripCopy}>
-                <h2 className={styles.stripTitle}><Translate>Connect your stack</Translate></h2>
+                <h2 className={styles.stripTitle}><Translate id="home.integrations.title">Connect your stack</Translate></h2>
                 <p className={styles.stripText}>
-                  <Translate>
+                  <Translate id="home.integrations.text">
                     Finance, HR, time, creative and identity systems, each with its own setup guide
                     and the rules that say which system owns which data.
                   </Translate>
                 </p>
               </div>
               <Link className={styles.btnPrimary} to="/docs/integrations">
-                <Translate>See integrations</Translate>
+                <Translate id="home.integrations.cta">See integrations</Translate>
               </Link>
             </div>
           </div>
