@@ -3,7 +3,7 @@ id: actions
 title: Actions
 description: "This section describes the action types available in an Automation Workflow."
 sidebar_label: Actions
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';

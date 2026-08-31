@@ -3,7 +3,7 @@ id: getting-started
 title: Build your first automation
 description: "This walkthrough takes you from an empty screen to a working automation."
 sidebar_label: Build your first automation
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 import AutomationGraph from '@site/src/components/automations/AutomationGraph';
@@ -14,7 +14,7 @@ This walkthrough takes you from an empty screen to a working automation. We'll b
 An automation that fires on *project created*, calls an external endpoint with the new project's details, and returns a success response. Here's the chain we're aiming for — click any step to see what it does:
 :::
 
-<AutomationGraph preset="notify" height={300} />
+<AutomationGraph preset="notify" height={420} />
 
 If you haven't yet, skim the [Overview](./index.md) to see how **Trigger → Condition → Actions** fit together. Every automation is built between a mandatory **Start** and **Result** action.
 
@@ -52,7 +52,7 @@ This is the core pattern: **each action names the next one via `next`**, forming
 }
 ```
 
-Notice `{{['#HttpRequest'].Body.Name}}` inside the body — that pulls the project's name straight from the trigger. Any earlier action's result can be referenced the same way, using `{{['ActionName']}}`. See [Configurations](./index.md#configurations) for the full syntax.
+Notice `{{['#HttpRequest'].Body.Name}}` inside the body — that pulls the project's name straight from the trigger. Any earlier action's result can be referenced the same way, using `{{['ActionName']}}`. See [Writing expressions](./expressions/index.md) for the full syntax.
 
 ## Step 4: Confirm the Result
 
@@ -117,6 +117,7 @@ Want it to run only for some projects? Add a **Condition** so the automation pro
 
 ## Where to go next
 
-- **[Actions reference](actions-reference.md)** — every action type you can add to the chain, with templates and examples.
-- **[Configurations & expressions](./index.md#configurations)** — how actions share data, plus functions, pipe functions and JSONPath.
+- **[Actions](./actions-reference.md)** — every action type you can add to the chain, with templates and examples.
+- **[Expressions](./expressions/index.md)** — how actions share data, plus functions, pipe functions and JSONPath.
+- **[Workflow structure](./workflow-structure.md)** — the rules a workflow must satisfy before it saves, sub-workflows and error routing.
 - **[Recipes](./recipes/export-to-csv.md)** — complete, copy-paste automations for common scenarios.

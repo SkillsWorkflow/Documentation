@@ -10,7 +10,7 @@ import AutomationGraph from '@site/src/components/automations/AutomationGraph';
 
 A common automation: fetch a set of records, turn them into a CSV file, and send that file to another system. The chain looks like this — click any step for what it does:
 
-<AutomationGraph preset="csvDelivery" height={300} />
+<AutomationGraph preset="csvDelivery" height={520} />
 
 ## How it works
 

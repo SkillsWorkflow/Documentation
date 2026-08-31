@@ -10,7 +10,7 @@ import AutomationGraph from '@site/src/components/automations/AutomationGraph';
 
 When something happens in Skills Workflow, let people know by email — optionally pulling in extra detail first. Click any step to see what it does:
 
-<AutomationGraph preset="emailNotify" height={300} />
+<AutomationGraph preset="emailNotify" height={420} />
 
 ## How it works
 
