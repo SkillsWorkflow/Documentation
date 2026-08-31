@@ -21,9 +21,6 @@ The **Info** section holds the purchase order's own fields: Name, Start Date, De
 
 A purchase order also has **Files** and **Feed** sections, like other documents in Skills Workflow.
 
-![img-box-shadow](/img/product/billing/purchase-orders/PLACEHOLDER-detail-view.png)
-<figcaption>Placeholder — replace with a screenshot of the Purchase Order detail screen (Info and Items sections).</figcaption>
-
 ## Stage
 
 A purchase order moves through the stages configured for its workflow. Available stage types include `Draft`, `New`, `Sent`, `ToEmit`, `Invoiced`, `NotExpectingInvoice` and `PartiallyInvoiced`. Which of these a workflow uses, and in what order, is set up per workflow.
@@ -31,9 +28,6 @@ A purchase order moves through the stages configured for its workflow. Available
 ## Invoicing a purchase order
 
 From the Purchase Orders list, select one or more purchase orders and click **Invoice**. Skills Workflow generates a Supplier Invoice or a Supplier Note from each one and marks the purchase order Invoiced.
-
-![img-box-shadow](/img/product/billing/purchase-orders/PLACEHOLDER-list-view.png)
-<figcaption>Placeholder — replace with a screenshot of the Purchase Orders list with the Invoice action.</figcaption>
 
 ## Related articles
 
