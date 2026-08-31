@@ -297,6 +297,9 @@
   margin: 0;
   font-size: 0.98rem;
 }
+.ai-landing .ai-callout__body + .ai-callout__body {
+  margin-top: 0.75rem;
+}
 .ai-landing .ai-callout .ai-list {
   margin-top: 0.1rem;
 }

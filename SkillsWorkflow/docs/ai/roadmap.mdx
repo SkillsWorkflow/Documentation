@@ -1,9 +1,9 @@
 ---
 id: ai-roadmap
 title: Roadmap
-description: "Where we are taking it next.  Skills Workflow AI keeps growing, across four areas of your agency's day."
+description: "What Skills Workflow AI already does, what is being finished, and what is planned next."
 sidebar_label: Roadmap
-sidebar_position: 4
+sidebar_position: 7
 hide_title: true
 hide_table_of_contents: true
 ---
@@ -14,54 +14,122 @@ import './_ai-kit.css';
 
 <header className="ai-head ai-wrap">
   <p className="ai-eyebrow ai-reveal">Roadmap</p>
-  <h1 className="ai-head__title ai-reveal">Where we are taking it next.</h1>
-  <p className="ai-lead ai-reveal">Skills Workflow AI keeps growing, across four areas of your agency's day. Each <a className="ai-link" href="/docs/ai/ai-use-cases">use case</a> below carries the quarter it is planned for.</p>
+  <h1 className="ai-head__title ai-reveal">What is here, and what is coming.</h1>
+  <p className="ai-lead ai-reveal">Everything under <em>Delivered</em> is in the product now and has a page describing how to use it. Everything below that is directional: the sequence is what we intend, not a commitment to a date.</p>
 </header>
 
 <section className="ai-section ai-wrap">
-  <span className="ai-tag">Directional · subject to change</span>
+  <p className="ai-eyebrow">Delivered</p>
+  <h2 className="ai-h2">In the product today.</h2>
 
   <div className="ai-roadmap">
     <div className="ai-track ai-reveal">
-      <p className="ai-track__q">Q3 2026 · Data</p>
-      <h2 className="ai-track__name">Know, without looking</h2>
+      <p className="ai-track__q">Chat, everywhere</p>
+      <h3 className="ai-track__name">Ask where you are working</h3>
       <ul>
-        <li><a className="ai-link" href="/docs/ai/use-cases/data-points">Data Points</a> — ask any data point and get a straight answer</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/team-and-individual-work">Team &amp; Individual Work</a> — your to-dos, surfaced</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/user-experience">User Experience</a> — chat available across the system</li>
+        <li><a className="ai-link" href="/docs/ai/ai-assistant">AI Assistant</a> — a panel beside any screen, reading the workspace or document you are on</li>
+        <li><a className="ai-link" href="/docs/ai/ai-actions">AI Actions</a> — text assistance in the toolbar of every rich text editor</li>
+        <li><a className="ai-link" href="/docs/ai/ai-assistant#memories">Memories</a> — the assistant remembers what you told it, and you can clear it</li>
       </ul>
     </div>
 
     <div className="ai-track ai-reveal">
-      <p className="ai-track__q">Q4 2026 · Processes</p>
-      <h2 className="ai-track__name">No guesswork</h2>
+      <p className="ai-track__q">Data</p>
+      <h3 className="ai-track__name">Ask your data a straight question</h3>
       <ul>
-        <li><a className="ai-link" href="/docs/ai/use-cases/help-on-processes">Help on Processes</a> — AI explains a workflow and the next step</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/files-and-contents">Files &amp; Contents</a> — summarize long discussions &amp; attached files</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/files-and-contents">Files &amp; Contents</a> — auto-draft descriptions so nothing starts blank</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/team-and-individual-work">Individual Work</a> — move documents without leaving the chat</li>
+        <li><a className="ai-link" href="/docs/ai/ai-tools#your-data">Your reports as tools</a> — the assistant answers from your own data extraction queries, with your own permissions</li>
       </ul>
     </div>
 
     <div className="ai-track ai-reveal">
-      <p className="ai-track__q">Q1 2027 · Integration</p>
-      <h2 className="ai-track__name">Work from your chat</h2>
+      <p className="ai-track__q">Documents and processes</p>
+      <h3 className="ai-track__name">Do the work, not the forms</h3>
       <ul>
-        <li><a className="ai-link" href="/docs/ai/use-cases/integrations">Integrations</a> — talk to Skills Workflow from WhatsApp</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/document-creation">Document Creation</a> — generate whole projects &amp; jobs</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/document-creation">Document Creation</a> — generate client reports</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/data-points">Data Points</a> — client status &amp; sentiment at a glance</li>
+        <li><a className="ai-link" href="/docs/ai/agents/document-agent">Create and change documents</a> — jobs, briefs, custom fields, teams, duplicates</li>
+        <li><a className="ai-link" href="/docs/ai/agents/document-agent#moving-a-stage">Move a document</a> — without leaving the chat</li>
+        <li><a className="ai-link" href="/docs/ai/agents/workflow-agent">Understand and change a workflow</a> — stages, transitions, approval paths</li>
+        <li><a className="ai-link" href="/docs/ai/ai-actions#working-from-a-briefing-template">Briefs that follow your template</a> — nothing starts blank</li>
       </ul>
     </div>
 
     <div className="ai-track ai-track--pink ai-reveal">
-      <p className="ai-track__q">Q2 2027 · Creation</p>
-      <h2 className="ai-track__name">Idea to set-up, fast</h2>
+      <p className="ai-track__q">Building</p>
+      <h3 className="ai-track__name">Idea to set-up, fast</h3>
       <ul>
-        <li><a className="ai-link" href="/docs/ai/use-cases/integrations">Integrations</a> — add Microsoft Teams</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/dashboards-generation">Dashboards Generation</a> — spin up a dashboard from a sentence</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/problem-detection-and-alerts">Problem Detection &amp; Alerts</a> — margins &amp; overhead</li>
-        <li><a className="ai-link" href="/docs/ai/use-cases/document-creation">Document Creation</a> — auto-assign the right people</li>
+        <li><a className="ai-link" href="/docs/ai/agents/workspace-agent">Workspaces and dashboards from a sentence</a></li>
+        <li><a className="ai-link" href="/docs/ai/ai-portals">Client Portals</a> — a page of its own, generated with AI, reading live data</li>
+        <li><a className="ai-link" href="/docs/ai/ai-extend">Your own skills, agents and tools</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">In progress</p>
+  <h2 className="ai-h2">Partly here, being finished.</h2>
+  <span className="ai-tag">Directional · subject to change</span>
+
+  <div className="ai-roadmap">
+    <div className="ai-track ai-reveal">
+      <p className="ai-track__q">Files &amp; contents</p>
+      <h3 className="ai-track__name">Read what is already written</h3>
+      <ul>
+        <li>Attach a file to a request and have it read — available now in the assistant</li>
+        <li>Summarize a long discussion, and everything attached and decided on a piece of work</li>
+      </ul>
+    </div>
+
+    <div className="ai-track ai-reveal">
+      <p className="ai-track__q">Creation</p>
+      <h3 className="ai-track__name">Beyond one job at a time</h3>
+      <ul>
+        <li>Jobs and deliverables — available now</li>
+        <li>Whole projects and estimates from a description or an email</li>
+        <li>Suggesting the right people for the work, not only applying who you named</li>
+      </ul>
+    </div>
+
+    <div className="ai-track ai-reveal">
+      <p className="ai-track__q">Client portals</p>
+      <h3 className="ai-track__name">Ready for client users</h3>
+      <ul>
+        <li>Publishing a portal without uploading its files by hand</li>
+        <li>Scoping a portal to the client it belongs to</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Planned</p>
+  <h2 className="ai-h2">Where we are taking it next.</h2>
+  <span className="ai-tag">Directional · subject to change</span>
+
+  <div className="ai-roadmap">
+    <div className="ai-track ai-reveal">
+      <p className="ai-track__q">Reach</p>
+      <h3 className="ai-track__name">Work from your chat</h3>
+      <ul>
+        <li>Talk to Skills Workflow from WhatsApp</li>
+        <li>Then from Microsoft Teams</li>
+      </ul>
+    </div>
+
+    <div className="ai-track ai-reveal">
+      <p className="ai-track__q">Know</p>
+      <h3 className="ai-track__name">The problem finds you</h3>
+      <ul>
+        <li>Say once what you want warning about — margins, overhead, a slipping deadline — and be told, with the evidence attached</li>
+        <li>Client status and sentiment at a glance</li>
+      </ul>
+    </div>
+
+    <div className="ai-track ai-track--pink ai-reveal">
+      <p className="ai-track__q">Create</p>
+      <h3 className="ai-track__name">Less retyping</h3>
+      <ul>
+        <li>Client reports generated from the work already recorded</li>
+        <li>Reading a cost sheet or a scanned document straight into document lines</li>
       </ul>
     </div>
   </div>
@@ -70,7 +138,7 @@ import './_ai-kit.css';
 <section className="ai-section ai-wrap">
   <div className="ai-callout ai-callout--tip">
     <p className="ai-callout__label">Have a request?</p>
-    <p className="ai-callout__body">If there is a workflow you wish AI already handled, tell your Skills Workflow contact — this roadmap is shaped directly by what agencies ask for.</p>
+    <p className="ai-callout__body">If there is a workflow you wish AI already handled, tell your Skills Workflow contact — this roadmap is shaped directly by what agencies ask for. Some of it you do not have to wait for: an agent of your own, with your rules and your tools, is something you can build today. See <a className="ai-link" href="/docs/ai/ai-extend">Add your own skills, agents and tools</a>.</p>
   </div>
 </section>
 

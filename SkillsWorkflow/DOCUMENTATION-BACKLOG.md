@@ -116,3 +116,27 @@ The whole briefing stage is the least documented part of the platform.
       the new location does not break that workflow.
 - [ ] 7.4 &nbsp;30 RCA incident reports (2018–2026) still sit inside `trust/`. Split them into a
       dated archive so the 10 policy pages are findable.
+
+## 8. AI section — owed after the August 2026 rewrite
+
+- [ ] 8.1 &nbsp;**Three screenshot placeholders are published.** `static/img/ai/enable-ai-actions-setting.png`,
+      `ai-actions-toolbar-button.png` and `ai-assistant-panel-button.png` are SVG placeholders naming the
+      capture required. Replace each file, keeping the filename. The two they stand in for
+      (`university/ai/enable-writing-tools.png`, `writing-tools-toolbar-button.png`) predate the
+      rename and still read *Enable writing tools* / *Writing tools*, so they cannot be reused.
+      Delete them once the replacements land.
+- [ ] 8.2 &nbsp;**Six new AI pages are English-only.** `ai-assistant`, `ai-tools`, `ai-portals`,
+      `ai-extend`, `ai-overview` and `ai-roadmap` have no `es`/`pt`/`pt-br` copy. The agent pages
+      and `ai-actions` were translated because translations already existed for them.
+- [ ] 8.3 &nbsp;**Client Portals is documented as a preview.** Four gaps are named on the page and
+      come straight from the implementation: no publishing tooling, a portal is not scoped to the
+      client in its URL, write access to the `Portals` folder is a security boundary, and absolute
+      asset paths break. Revisit the page when any of them is closed.
+- [ ] 8.4 &nbsp;**No page documents how an administrator actually edits an agent, skill or MCP
+      server.** `ai-extend` describes what each one carries and how they combine, verified from
+      `SkillWorkflow.AI.Agents`, but the editing surface for `@ai_agent-*` / `@ai_mcp-*` keys and
+      the `$ai-agents/skills/` folder was not found in the WebApp, so no click path is published.
+      Confirm the intended self-service route and add the steps.
+- [ ] 8.5 &nbsp;**The `Skilio-Agent`, `wise-os`, `brief-editor-agent` and `release-notes-agent`
+      definitions in the agent repo are not documented.** They are not part of the four shipped
+      agents; confirm whether any is customer-facing before leaving them out.

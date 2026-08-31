@@ -1,4 +1,7 @@
 {
-    "label": "Application",
-    "key": "application"
+  "label": "Application",
+  "key": "application",
+  "link": {
+    "type": "generated-index"
+  }
 }

@@ -1,40 +1,71 @@
 ---
 id: ai-agents-index
-title: Assistentes de IA
-sidebar_label: Visão geral
+title: Agentes de IA
+description: "Os agentes disponíveis no Assistente de IA, o que cada um faz e como escolher o certo."
+sidebar_label: Resumo
 sidebar_position: 1
+hide_title: true
+hide_table_of_contents: true
 ---
 
-## Escolha o assistente certo
+import '@site/docs/ai/_ai-kit.css';
 
-O Skills Workflow inclui assistentes de IA focados em tarefas específicas. Cada assistente foi pensado para um tipo de pedido, para que seja mais fácil obter o resultado certo sem precisar de usar pedidos demasiado técnicos.
+<div className="ai-landing">
 
-## Assistentes disponíveis
+<header className="ai-head ai-wrap">
+  <p className="ai-eyebrow ai-reveal">Agentes de IA</p>
+  <h1 className="ai-head__title ai-reveal">Um agente para cada tipo de trabalho.</h1>
+  <p className="ai-lead ai-reveal">Escolhe um agente no painel do <a className="ai-link" href="/docs/ai/ai-assistant">Assistente de IA</a> antes de enviar uma mensagem. Cada um tem o seu próprio conjunto de <a className="ai-link" href="/docs/ai/ai-tools">ferramentas</a>, e esse conjunto é tudo o que ele consegue fazer — por isso escolher o agente certo é a maior parte de obter a resposta certa.</p>
+</header>
 
-| Assistente | Melhor para | Exemplo de pedido |
-| --- | --- | --- |
-| [Assistente de Documentos](document-agent.mdx) | Criar, atualizar, procurar, duplicar ou mover documentos como jobs e deliverables | `Create a job from this client request` |
-| [Assistente de Workflows](workflow-agent.mdx) | Rever ou alterar stages, transições e fluxos de aprovação | `Show me the workflow for Deliverables` |
-| [Assistente de Escrita](writing-agent.mdx) | Reescrever, melhorar, encurtar ou clarificar texto | `Rewrite this in a more professional tone` |
-| [Assistente de Workspaces](workspace-agent.mdx) | Ajustar workspaces, dashboards, painéis, filtros e widgets | `Add a kanban panel to this workspace` |
+<section className="ai-section ai-wrap">
+  <div className="ai-grid">
+    <a className="ai-card ai-reveal" href="/docs/ai/agents/document-agent">
+      <h2 className="ai-card__title">Agente de Documentos</h2>
+      <p className="ai-card__body">Criar, atualizar, duplicar, encontrar e mover jobs, deliverables e outros documentos. Escreve briefs a partir do template do job type, edita campos personalizados, altera equipas.</p>
+      <code className="ai-chip">"Cria um job para a campanha de primavera da Northwind"</code>
+      <p className="ai-card__more">Explorar →</p>
+    </a>
 
-## Que assistente devo usar?
+    <a className="ai-card ai-reveal" href="/docs/ai/agents/workflow-agent">
+      <h2 className="ai-card__title">Agente de Workflows</h2>
+      <p className="ai-card__body">Consultar e configurar workflows — stages, transições, ações, papéis, motivos, equipas e mapeamentos.</p>
+      <code className="ai-chip">"Mostra-me o workflow dos Deliverables"</code>
+      <p className="ai-card__more">Explorar →</p>
+    </a>
 
-- Use o [Assistente de Documentos](document-agent.mdx) quando quer fazer algo com um documento real na plataforma.
-- Use o [Assistente de Workflows](workflow-agent.mdx) quando quer alterar a forma como os documentos passam de um stage para outro.
-- Use o [Assistente de Escrita](writing-agent.mdx) quando só precisa de ajuda com texto.
-- Use o [Assistente de Workspaces](workspace-agent.mdx) quando quer alterar um workspace ou dashboard.
+    <a className="ai-card ai-reveal" href="/docs/ai/agents/workspace-agent">
+      <h2 className="ai-card__title">Agente de Workspaces</h2>
+      <p className="ai-card__body">Construir e alterar workspaces e dashboards — componentes, layout, filtros, fontes de dados — e editar os ficheiros por trás deles quando a alteração precisa de código.</p>
+      <code className="ai-chip">"Adiciona um painel kanban a este workspace"</code>
+      <p className="ai-card__more">Explorar →</p>
+    </a>
 
-## Dicas para melhores resultados
+    <a className="ai-card ai-reveal" href="/docs/ai/agents/writing-agent">
+      <h2 className="ai-card__title">Agente de Escrita</h2>
+      <p className="ai-card__body">Reescrever, encurtar, traduzir ou mudar o tom de qualquer texto. É o agente por trás das <a className="ai-link" href="/docs/ai/ai-actions">Ações de IA</a> na barra de ferramentas do editor.</p>
+      <code className="ai-chip">"Reescreve isto num tom mais profissional"</code>
+      <p className="ai-card__more">Explorar →</p>
+    </a>
+  </div>
+</section>
 
-- Diga em linguagem simples o que quer alcançar.
-- Partilhe nomes como o documento, projeto, workflow ou workspace, se os souber.
-- Junte screenshots ou ficheiros quando ajudarem a explicar o pedido.
-- Se quer um tom ou layout específico, diga qual.
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Obter uma resposta melhor</p>
+  <ul className="ai-list">
+    <li>Diga o resultado a que quer chegar, não o botão que acha que é preciso carregar.</li>
+    <li>Indique o cliente, projeto, job ou workspace quando os souber — é isso que poupa uma ronda de perguntas.</li>
+    <li>Deixe ligado o interruptor de contexto do workspace ou do documento quando o pedido é sobre o que está no ecrã.</li>
+    <li>Anexe o email, a folha de cálculo ou a imagem de onde veio o pedido, em vez de reescrever tudo.</li>
+    <li>Leia o cartão de aprovação antes de aprovar. Lista exatamente o que vai ser escrito.</li>
+  </ul>
+</section>
 
-## Próximos passos
+<section className="ai-section ai-wrap">
+  <div className="ai-callout ai-callout--tip">
+    <p className="ai-callout__label">Estes quatro são os agentes que o Skills Workflow disponibiliza</p>
+    <p className="ai-callout__body">A sua agência pode acrescentar os seus, com instruções, ferramentas e conhecimento próprios. Ver <a className="ai-link" href="/docs/ai/ai-extend">Adicionar as suas skills, agents e tools</a>.</p>
+  </div>
+</section>
 
-- Leia [Assistente de Documentos](document-agent.mdx) se trabalha sobretudo com jobs, deliverables e outros documentos.
-- Leia [Assistente de Workflows](workflow-agent.mdx) se gere a configuração de workflows e aprovações.
-- Leia [Assistente de Escrita](writing-agent.mdx) se quer ajuda a escrever ou reescrever texto.
-- Leia [Assistente de Workspaces](workspace-agent.mdx) se quer melhorar dashboards e layouts de workspace.
+</div>

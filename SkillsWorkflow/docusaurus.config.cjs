@@ -257,6 +257,32 @@ module.exports = {
 
   plugins: [
     [
+      require.resolve('@docusaurus/plugin-client-redirects'),
+      {
+        // The AI section was restructured: the ten aspirational "use case" pages were folded
+        // into the Roadmap, Workspace Studio was merged into the Workspace Agent, and
+        // Writing Tools was renamed to its real product name, AI Actions. Every `to:` below
+        // is validated against a real route at build time — retarget an entry rather than
+        // deleting the page it points at.
+        redirects: [
+          { from: '/docs/ai/writing-tools', to: '/docs/ai/ai-actions' },
+          { from: '/docs/ai/agents/workspace-studio', to: '/docs/ai/agents/workspace-agent' },
+          { from: '/ai/ai-use-cases', to: '/docs/ai/ai-overview' },
+          { from: '/docs/ai/ai-use-cases', to: '/docs/ai/ai-overview' },
+          { from: '/docs/ai/use-cases/dashboards-generation', to: '/docs/ai/agents/workspace-agent' },
+          { from: '/docs/ai/use-cases/document-creation', to: '/docs/ai/agents/document-agent' },
+          { from: '/docs/ai/use-cases/help-on-processes', to: '/docs/ai/agents/workflow-agent' },
+          { from: '/docs/ai/use-cases/user-experience', to: '/docs/ai/ai-assistant' },
+          { from: '/docs/ai/use-cases/data-points', to: '/docs/ai/ai-tools' },
+          { from: '/docs/ai/use-cases/files-and-contents', to: '/docs/ai/ai-roadmap' },
+          { from: '/docs/ai/use-cases/import-and-ocr', to: '/docs/ai/ai-roadmap' },
+          { from: '/docs/ai/use-cases/integrations', to: '/docs/ai/ai-roadmap' },
+          { from: '/docs/ai/use-cases/problem-detection-and-alerts', to: '/docs/ai/ai-roadmap' },
+          { from: '/docs/ai/use-cases/team-and-individual-work', to: '/docs/ai/ai-roadmap' }
+        ]
+      }
+    ],
+    [
       require.resolve('docusaurus-lunr-search'),
       {
         languages: ['en', 'pt', 'es'],
