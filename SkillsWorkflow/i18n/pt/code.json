@@ -1,121 +1,223 @@
 {
-  "Skills Workflow's Documentation": {
-    "message": "Documentação da Skills Workflow"
+  "home.area.briefing.title": {
+    "message": "Briefing e Briefs"
   },
-  "We are here to let you shine! Let's get everything done": {
-    "message": "Estamos aqui para te ajudar a brilhar! Vamos fazer tudo"
+  "home.area.briefing.text": {
+    "message": "Como o trabalho chega: os briefs dos clientes e os modelos que lhes dão forma."
   },
-  "Get Started": {
-    "message": "Começar"
+  "home.area.projects.title": {
+    "message": "Projetos e Entregas"
   },
-  "Crafting": {
-    "message": "Construir"
+  "home.area.projects.text": {
+    "message": "Criar projetos, dividi-los em entregas e acompanhá-los na vista de lista."
   },
-  "Integrations": {
+  "home.area.planning.title": {
+    "message": "Planeamento e Agendamento"
+  },
+  "home.area.planning.text": {
+    "message": "O Gantt, o agendamento de recursos e o tempo planeado."
+  },
+  "home.area.time.title": {
+    "message": "Tempo"
+  },
+  "home.area.time.text": {
+    "message": "Preencher, aprovar e transferir time sheets."
+  },
+  "home.area.people.title": {
+    "message": "Pessoas"
+  },
+  "home.area.people.text": {
+    "message": "Equipas e grupos, alocações, agendamento e aprovação de ausências."
+  },
+  "home.area.commercial.title": {
+    "message": "Comercial"
+  },
+  "home.area.commercial.text": {
+    "message": "CRM, rate cards, orçamentos e contratos."
+  },
+  "home.area.billing.title": {
+    "message": "Faturação e Custos"
+  },
+  "home.area.billing.text": {
+    "message": "Autorizações de invoice, notas de crédito e despesas."
+  },
+  "home.area.files.title": {
+    "message": "Ficheiros e Colaboração"
+  },
+  "home.area.files.text": {
+    "message": "Anotações em ficheiros, e o feed onde acontece a conversa."
+  },
+  "home.area.workspaces.title": {
+    "message": "Workspaces e Relatórios"
+  },
+  "home.area.workspaces.text": {
+    "message": "Os workspaces que vêm com a plataforma, e como lê-los."
+  },
+  "home.area.notifications.title": {
+    "message": "Notificações"
+  },
+  "home.area.notifications.text": {
+    "message": "Sobre o que a plataforma notifica as pessoas, e por que canal."
+  },
+  "home.area.mobile.title": {
+    "message": "Mobile"
+  },
+  "home.area.mobile.text": {
+    "message": "As apps iOS e Android, e como os utilizadores as configuram."
+  },
+  "home.route.learn.eyebrow": {
+    "message": "Para quem usa a plataforma"
+  },
+  "home.route.learn.title": {
+    "message": "Aprender o produto"
+  },
+  "home.route.learn.text": {
+    "message": "Percursos ordenados pela documentação, do primeiro projeto ao fecho do mês."
+  },
+  "home.route.setup.eyebrow": {
+    "message": "Para administradores"
+  },
+  "home.route.setup.title": {
+    "message": "Configurar um cliente"
+  },
+  "home.route.setup.text": {
+    "message": "Utilizadores e perfis, workflows, tabelas personalizadas, calendários e importação de dados."
+  },
+  "home.route.build.eyebrow": {
+    "message": "Para consultores e programadores"
+  },
+  "home.route.build.title": {
+    "message": "Construir e estender"
+  },
+  "home.route.build.text": {
+    "message": "Workspaces e painéis, automatizações, o SDK e a API."
+  },
+  "home.quick.glossary": {
+    "message": "Glossário"
+  },
+  "home.quick.gantt": {
+    "message": "Gantt"
+  },
+  "home.quick.workflows": {
+    "message": "Workflows"
+  },
+  "home.quick.automations": {
+    "message": "Automatizações"
+  },
+  "home.quick.integrations": {
     "message": "Integrações"
   },
-  "University": {
-    "message": "Universidade"
+  "home.quick.clientApi": {
+    "message": "Client API"
   },
-  "Unleash the creativity in you. Why not craft your own workspace?": {
-    "message": "Liberta tua criatividade. Porque não criar o teu próprio workspace"
+  "home.search.placeholder": {
+    "message": "Pesquisar na documentação Skills Workflow..."
   },
-  "A wide library is available for you! Check the available Workspaces directory.": {
-    "message": "Uma vasta biblioteca está disponível para ti! Consulta os workpaces disponíveis na diretoria"
+  "home.search.label": {
+    "message": "Pesquisar na documentação Skills Workflow"
   },
-  "Want to become a system expert? Explore our walkthrough lessons.": {
-    "message": "Queres tornar te um perito do sistema? Explora as nossas lições passo a passo"
+  "home.meta.description": {
+    "message": "Documentação oficial da Skills Workflow: guias de produto, administração, workspaces, automatizações, integrações e referências de API e SDK."
   },
-  "theme.NotFound.title": {
-    "message": "Página não encontrada",
-    "description": "The title of the 404 page"
+  "home.hero.eyebrow": {
+    "message": "Documentação Skills Workflow"
   },
-  "theme.NotFound.p1": {
-    "message": "Não foi possível encontrar o que você está procurando.",
-    "description": "The first paragraph of the 404 page"
+  "home.hero.title": {
+    "message": "Tudo o que a plataforma faz, do brief à faturação"
   },
-  "theme.NotFound.p2": {
-    "message": "Entre em contato com o proprietário do site que lhe trouxe para cá e lhe informe que o link está quebrado.",
-    "description": "The 2nd paragraph of the 404 page"
+  "home.hero.text": {
+    "message": "Guias de produto para quem faz o trabalho, configuração para quem o prepara, e referências para quem constrói por cima."
   },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Fechar",
-    "description": "The ARIA label for close button of announcement bar"
+  "home.hero.ctaPrimary": {
+    "message": "Começar a aprender"
+  },
+  "home.hero.ctaSecondary": {
+    "message": "Explorar o produto"
+  },
+  "home.quick.label": {
+    "message": "Popular"
+  },
+  "home.areas.title": {
+    "message": "Por área de produto"
+  },
+  "home.areas.text": {
+    "message": "Cada área cobre o que a funcionalidade faz, como se usa e como se configura."
+  },
+  "home.integrations.title": {
+    "message": "Ligue o seu stack"
+  },
+  "home.integrations.text": {
+    "message": "Sistemas de finanças, RH, tempo, criativos e de identidade, cada um com o seu guia de configuração e as regras que dizem que sistema é dono de que dados."
+  },
+  "home.integrations.cta": {
+    "message": "Ver integrações"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Esta página deu erro.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Voltar para o topo",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Arquivo",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Arquivo",
+    "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Navegação da página de listagem do blog",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Conteúdo mais novo",
+    "message": "Publicações mais recentes",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Conteúdo mais antigo",
+    "message": "Publicações mais antigas",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Leitura de um minuto|Leitura de {readingTime} minutos",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "Tags:",
-    "description": "The label alongside a tag list"
-  },
-  "theme.blog.post.readMore": {
-    "message": "Leia Mais",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
-  },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Navegação da página de postagem do blog",
+    "message": "Navegação da página de publicação do blog",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Postagem mais nova",
+    "message": "Publicação mais recente",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Postagem mais antiga",
+    "message": "Publicação mais antiga",
     "description": "The blog post button label to navigate to the older/next post"
   },
-  "theme.tags.tagsPageTitle": {
-    "message": "Tags",
-    "description": "The title of the tag list page"
-  },
-  "theme.blog.post.plurals": {
-    "message": "Uma postagem|{count} postagens",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.blog.tagTitle": {
-    "message": "{nPosts} marcadas com \"{tagName}\"",
-    "description": "The title of the page for a blog tag"
-  },
   "theme.tags.tagsPageLink": {
-    "message": "Ver todas as Tags",
+    "message": "Ver todas as etiquetas",
     "description": "The label of the link targeting the tag list page"
   },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copiar código para a área de transferência",
-    "description": "The ARIA label for copy code blocks button"
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "modo do sistema",
+    "description": "The name for the system color mode"
   },
-  "theme.CodeBlock.copied": {
-    "message": "Copiado",
-    "description": "The copied button label on code blocks"
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "modo claro",
+    "description": "The name for the light color mode"
   },
-  "theme.CodeBlock.copy": {
-    "message": "Copiar",
-    "description": "The copy button label on code blocks"
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "modo escuro",
+    "description": "The name for the dark color mode"
   },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expandir sidebar",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  "theme.colorToggle.ariaLabel": {
+    "message": "Mudar entre modo claro e escuro ({mode} está ativo)",
+    "description": "The ARIA label for the color mode toggle"
   },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expandir sidebar",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Trilha",
+    "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Navigação das páginas de documentação",
+    "message": "Páginas de documento",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
@@ -126,24 +228,19 @@
     "message": "Próxima",
     "description": "The label used to navigate to the next doc"
   },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Fechar sidebar",
-    "description": "The title attribute for collapse button of doc sidebar"
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Um documento marcado|{count} documentos marcados",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Fechar sidebar",
-    "description": "The title attribute for collapse button of doc sidebar"
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} com \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
   },
-  "theme.docs.sidebar.responsiveCloseButtonLabel": {
-    "message": "Fechar menu",
-    "description": "The ARIA label for close button of mobile doc sidebar"
-  },
-  "theme.docs.sidebar.responsiveOpenButtonLabel": {
-    "message": "Abrir menu",
-    "description": "The ARIA label for open button of mobile doc sidebar"
+  "theme.docs.versionBadge.label": {
+    "message": "Versão: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Esta é uma documentação não lançada para {siteTitle} {versionLabel}.",
+    "message": "Esta é uma documentação não lançada da versão {versionLabel} para {siteTitle}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
@@ -151,23 +248,23 @@
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Para a documentação atualizada, veja: {latestVersionLink} ({versionLabel}).",
-    "description": "The label userd to tell the user that he's browsing an unmaintained doc version"
+    "message": "Para a documentação atualizada, consulte a {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "última versão",
+    "message": "versão mais recente",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Editar essa página",
+    "message": "Editar esta página",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Link direto para o título",
+    "message": "Link direto para {heading}",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " em {date}",
+    "message": " a {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
@@ -178,44 +275,208 @@
     "message": "Última atualização{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versões",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "Página não encontrada",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Etiquetas:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.admonition.caution": {
+    "message": "cuidado",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "perigo",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "informação",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "observação",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "dica",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "aviso",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Fechar",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navegação das publicações recentes do blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expandir a categoria '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Recolher a categoria '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(abre num novo separador)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Navegação principal",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Línguas",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NotFound.p1": {
+    "message": "Não foi possível encontrar o que procura.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Por favor, contacte o proprietário do site que o trouxe até aqui e informe-o de que o link está partido.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Nesta página",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Ler mais",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Ler mais sobre {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Um minuto para ler|{readingTime} min para ler",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Alternar quebra de linha",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copiar",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copiado",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copiar código para a área de transferência",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Página Inicial",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Recolher painel lateral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Recolher painel lateral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Painel lateral de documentos",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Fechar painel de navegação",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Voltar para o menu principal",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Alternar painel de navegação",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expandir a seleção",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Recolher a seleção",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expandir painel lateral",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expandir painel lateral",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Tentar novamente",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
   "theme.common.skipToMainContent": {
     "message": "Pular para o conteúdo principal",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
-  "theme.SearchPage.documentsFound.plurals": {
-    "message": "Um documento encontrado|{count} documentos encontrados",
-    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  "theme.tags.tagsPageTitle": {
+    "message": "Etiquetas",
+    "description": "The title of the tag list page"
   },
-  "theme.SearchPage.existingResultsTitle": {
-    "message": "Resultado da busca por \"{query}\"",
-    "description": "The search page title for non-empty query"
+  "theme.blog.post.plurals": {
+    "message": "Uma publicação|{count} publicações",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
-  "theme.SearchPage.emptyResultsTitle": {
-    "message": "Busca da documentação",
-    "description": "The search page title for empty query"
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} com a etiqueta \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
   },
-  "theme.SearchPage.inputPlaceholder": {
-    "message": "Digite sua busca aqui",
-    "description": "The placeholder for search page input"
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
   },
-  "theme.SearchPage.inputLabel": {
-    "message": "Buscar",
-    "description": "The ARIA label for search page input"
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Autores",
+    "description": "The title of the authors page"
   },
-  "theme.SearchPage.algoliaLabel": {
-    "message": "Busca feita por Algolia",
-    "description": "The ARIA label for Algolia mention"
+  "theme.blog.authorsList.viewAll": {
+    "message": "Ver todos os autores",
+    "description": "The label of the link targeting the blog authors page"
   },
-  "theme.SearchPage.noResultsText": {
-    "message": "Nenhum resultado foi encontrado",
-    "description": "The paragraph for empty search result"
+  "theme.blog.author.noPosts": {
+    "message": "Este autor ainda não escreveu nenhuma publicação.",
+    "description": "The text for authors with 0 blog post"
   },
-  "theme.SearchPage.fetchingNewResults": {
-    "message": "Trazendo novos resultados...",
-    "description": "The paragraph for fetching new search results"
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Página não listada",
+    "description": "The unlisted content banner title"
   },
-  "theme.SearchBar.label": {
-    "message": "Buscar",
-    "description": "The ARIA label and placeholder for search button"
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Esta página não está listada. Mecanismos de busca não irão indexá-la, e somente usuários que possuam o link direto poderão acessá-la",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Página de rascunho",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Esta página é um rascunho. Ela estará visível apenas no desenvolvimento e será excluída da compilação de produção.",
+    "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} itens",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   }
 }

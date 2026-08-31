@@ -1,66 +1,286 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Próxima",
     "description": "The label for version current"
   },
-  "sidebar.docs.category.Craft": {
-    "message": "Criar",
-    "description": "The label for category Craft in sidebar docs"
-  },
   "sidebar.docs.category.Panels": {
-    "message": "Paineis",
-    "description": "The label for category Panels in sidebar docs"
-  },
-  "sidebar.docs.category.Advanced": {
-    "message": "Avançado",
-    "description": "The label for category Advanced in sidebar docs"
+    "message": "Painéis",
+    "description": "The label for category 'Panels' in sidebar 'docs'"
   },
   "sidebar.docs.category.SDK": {
     "message": "SDK",
-    "description": "The label for category SDK in sidebar docs"
+    "description": "The label for category 'SDK' in sidebar 'docs'"
   },
   "sidebar.docs.category.UI": {
     "message": "UI",
-    "description": "The label for category UI in sidebar docs"
-  },
-  "sidebar.docs.category.Document": {
-    "message": "Documento",
-    "description": "The label for category Document in sidebar docs"
+    "description": "The label for category 'UI' in sidebar 'docs'"
   },
   "sidebar.docs.category.Integrations": {
     "message": "Integrações",
-    "description": "The label for category Integrations in sidebar docs"
+    "description": "The label for category 'Integrations' in sidebar 'docs'"
   },
-  "sidebar.university.category.Bills": {
-    "message": "Documentos Financeiros",
-    "description": "The label for category Bills in sidebar university"
+  "sidebar.docs.category.How to": {
+    "message": "Como fazer",
+    "description": "The label for category 'How to' in sidebar 'docs'"
   },
-  "sidebar.university.category.Contracts": {
-    "message": "Contratos",
-    "description": "The label for category Contracts in sidebar university"
+  "sidebar.docs.category.Briefing & Requests": {
+    "message": "Briefing e Briefs",
+    "description": "The label for category 'Briefing & Requests' in sidebar 'docs'"
   },
-  "sidebar.university.category.Estimates": {
-    "message": "Orçamentos",
-    "description": "The label for category Estimates in sidebar university"
+  "sidebar.docs.category.Projects & Jobs": {
+    "message": "Projetos e Atividades",
+    "description": "The label for category 'Projects & Jobs' in sidebar 'docs'"
   },
-  "sidebar.university.category.Expenses": {
-    "message": "Despesas",
-    "description": "The label for category Expenses in sidebar university"
+  "sidebar.docs.category.Planning & Scheduling": {
+    "message": "Planejamento e Alocação",
+    "description": "The label for category 'Planning & Scheduling' in sidebar 'docs'"
   },
-  "sidebar.university.category.Notifications": {
-    "message": "Notificações",
-    "description": "The label for category Notifications in sidebar university"
+  "sidebar.docs.category.Resourcing": {
+    "message": "Recursos",
+    "description": "The label for category 'Resourcing' in sidebar 'docs'"
   },
-  "sidebar.university.category.Projects Management": {
-    "message": "Gestão de Projectos",
-    "description": "The label for category Notifications in sidebar university"
+  "sidebar.docs.category.Time": {
+    "message": "Tempo",
+    "description": "The label for category 'Time' in sidebar 'docs'"
   },
-  "sidebar.university.category.Leaves": {
+  "sidebar.docs.category.Time Sheets": {
+    "message": "Time Sheets",
+    "description": "The label for category 'Time Sheets' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.People": {
+    "message": "Pessoas",
+    "description": "The label for category 'People' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Leaves": {
     "message": "Ausências",
-    "description": "The label for category Leaves in sidebar university"
+    "description": "The label for category 'Leaves' in sidebar 'docs'"
   },
-  "sidebar.university.category.Maintenance": {
-    "message": "Manutenção",
-    "description": "The label for category Maintenance in sidebar university"
+  "sidebar.docs.category.Teams": {
+    "message": "Equipes",
+    "description": "The label for category 'Teams' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Commercial": {
+    "message": "Comercial",
+    "description": "The label for category 'Commercial' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.CRM": {
+    "message": "CRM",
+    "description": "The label for category 'CRM' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Estimates": {
+    "message": "Propostas",
+    "description": "The label for category 'Estimates' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Fees": {
+    "message": "Contratos",
+    "description": "The label for category 'Fees' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Rates": {
+    "message": "Rates",
+    "description": "The label for category 'Rates' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Billing & Costs": {
+    "message": "Faturamento e Custos",
+    "description": "The label for category 'Billing & Costs' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Billing": {
+    "message": "Faturamento",
+    "description": "The label for category 'Billing' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Expenses": {
+    "message": "Despesas",
+    "description": "The label for category 'Expenses' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Files & Collaboration": {
+    "message": "Arquivos e Colaboração",
+    "description": "The label for category 'Files & Collaboration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Workspaces & Reporting": {
+    "message": "Workspaces e Relatórios",
+    "description": "The label for category 'Workspaces & Reporting' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Notifications": {
+    "message": "Notificações",
+    "description": "The label for category 'Notifications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Mobile": {
+    "message": "Mobile",
+    "description": "The label for category 'Mobile' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Administration": {
+    "message": "Administração",
+    "description": "The label for category 'Administration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Calendars": {
+    "message": "Calendários",
+    "description": "The label for category 'Calendars' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.customization-configuration-workflows": {
+    "message": "Workflows",
+    "description": "The label for category 'Workflows' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Importing Data": {
+    "message": "Importação de Dados",
+    "description": "The label for category 'Importing Data' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.System": {
+    "message": "Sistema",
+    "description": "The label for category 'System' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Users": {
+    "message": "Usuários",
+    "description": "The label for category 'Users' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Build & Extend": {
+    "message": "Construir e Estender",
+    "description": "The label for category 'Build & Extend' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.application": {
+    "message": "Aplicação",
+    "description": "The label for category 'Application' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.sdk-document": {
+    "message": "Documento",
+    "description": "The label for category 'Document' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Service": {
+    "message": "Serviço",
+    "description": "The label for category 'Service' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Utils": {
+    "message": "Utilitários",
+    "description": "The label for category 'Utils' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Automations": {
+    "message": "Automatizações",
+    "description": "The label for category 'Automations' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Expressions": {
+    "message": "Expressões",
+    "description": "The label for category 'Expressions' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recipes": {
+    "message": "Receitas",
+    "description": "The label for category 'Recipes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recipes.link.generated-index.title": {
+    "message": "Receitas de automatização",
+    "description": "The generated-index page title for category 'Recipes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recipes.link.generated-index.description": {
+    "message": "Automatizações completas, prontas para copiar, para cenários comuns. Cada receita mostra a cadeia de ações em um diagrama e o JSON completo que produz — adapte as URLs, campos e colunas ao seu caso.",
+    "description": "The generated-index page description for category 'Recipes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Queries": {
+    "message": "Queries",
+    "description": "The label for category 'Queries' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Workspaces": {
+    "message": "Workspaces",
+    "description": "The label for category 'Workspaces' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.ERP, Finance & Master Data": {
+    "message": "ERP, Finanças e Dados Mestre",
+    "description": "The label for category 'ERP, Finance & Master Data' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Primavera": {
+    "message": "Primavera",
+    "description": "The label for category 'Primavera' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Sage": {
+    "message": "Sage",
+    "description": "The label for category 'Sage' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.iSAP": {
+    "message": "iSAP",
+    "description": "The label for category 'iSAP' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Job & Production Management": {
+    "message": "Gestão de Atividades e Produção",
+    "description": "The label for category 'Job & Production Management' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.CETA": {
+    "message": "CETA",
+    "description": "The label for category 'CETA' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.JAM": {
+    "message": "JAM",
+    "description": "The label for category 'JAM' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.HR & People": {
+    "message": "RH e Pessoas",
+    "description": "The label for category 'HR & People' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.EAS": {
+    "message": "EAS",
+    "description": "The label for category 'EAS' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Reach": {
+    "message": "Reach",
+    "description": "The label for category 'Reach' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.UtilPro": {
+    "message": "UtilPro",
+    "description": "The label for category 'UtilPro' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Time & Timesheets": {
+    "message": "Tempo e Time Sheets",
+    "description": "The label for category 'Time & Timesheets' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Creative & Collaboration": {
+    "message": "Criativo e Colaboração",
+    "description": "The label for category 'Creative & Collaboration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Cloud Storage": {
+    "message": "Armazenamento em Nuvem",
+    "description": "The label for category 'Cloud Storage' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Identity & Access": {
+    "message": "Identidade e Acesso",
+    "description": "The label for category 'Identity & Access' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Single Sign-On": {
+    "message": "Single Sign-On",
+    "description": "The label for category 'Single Sign-On' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Reporting & Data": {
+    "message": "Relatórios e Dados",
+    "description": "The label for category 'Reporting & Data' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI": {
+    "message": "IA",
+    "description": "The label for category 'AI' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Agents": {
+    "message": "Agentes",
+    "description": "The label for category 'Agents' in sidebar 'docs'"
+  },
+  "sidebar.trust.category.Access & Asset Management": {
+    "message": "Gestão de Acessos e Ativos",
+    "description": "The label for category 'Access & Asset Management' in sidebar 'trust'"
+  },
+  "sidebar.trust.category.Data Protection & Privacy": {
+    "message": "Proteção de Dados e Privacidade",
+    "description": "The label for category 'Data Protection & Privacy' in sidebar 'trust'"
+  },
+  "sidebar.trust.category.Operational Continuity & Incident Response": {
+    "message": "Continuidade Operacional e Resposta a Incidentes",
+    "description": "The label for category 'Operational Continuity & Incident Response' in sidebar 'trust'"
+  },
+  "sidebar.trust.category.Availability Incident Archive": {
+    "message": "Arquivo de Incidentes de Disponibilidade",
+    "description": "The label for category 'Availability Incident Archive' in sidebar 'trust'"
+  },
+  "sidebar.trust.category.Other Incident Reports": {
+    "message": "Outros Relatórios de Incidentes",
+    "description": "The label for category 'Other Incident Reports' in sidebar 'trust'"
+  },
+  "sidebar.trust.category.Service Quality & Change Management": {
+    "message": "Qualidade de Serviço e Gestão de Mudanças",
+    "description": "The label for category 'Service Quality & Change Management' in sidebar 'trust'"
   }
 }
