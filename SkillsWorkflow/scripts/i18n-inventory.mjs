@@ -182,9 +182,12 @@ function terminologyCheck(locale) {
   const english = [];
   const foreign = [];
   for (const rel of walk(dir)) {
-    /* Fenced code is API payloads and field names — `Job` there is the entity
-       name and must stay English. */
-    const body = readFileSync(join(dir, rel), 'utf8').replace(/```[\s\S]*?```/g, '');
+    /* Fenced and inline code are API payloads, field names and literal config values —
+       `Job` there is the entity name or a literal string a parameter accepts, and must
+       stay English. */
+    const body = readFileSync(join(dir, rel), 'utf8')
+      .replace(/```[\s\S]*?```/g, '')
+      .replace(/`[^`\n]*`/g, '');
     if (rule.english.some((w) => new RegExp(`\\b${w}\\b`).test(body))) english.push(rel);
     if (rule.foreign.some((w) => new RegExp(`\\b${w}\\b`).test(body))) foreign.push(rel);
   }

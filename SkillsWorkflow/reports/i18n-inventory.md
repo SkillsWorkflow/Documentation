@@ -3,7 +3,7 @@
 **Internal working document.** Not published — `reports/` is outside `docs/`, so this
 is not built into the site.
 
-Generated 2026-08-31 by `node scripts/i18n-inventory.mjs`. Re-run it rather than editing
+Generated 2026-09-01 by `node scripts/i18n-inventory.mjs`. Re-run it rather than editing
 this file by hand.
 
 Docusaurus falls back to English silently, for pages and for interface strings alike.
@@ -15,11 +15,11 @@ Nothing here breaks a build; the only way to see a gap is to count it.
 
 | Locale | Pages translated | Interface strings translated |
 | --- | --- | --- |
-| `pt` | 99 / 360 (28%) | 233 / 233 (100%) |
-| `es` | 100 / 360 (28%) | 233 / 233 (100%) |
-| `pt-br` | 95 / 360 (26%) | 233 / 233 (100%) |
+| `pt` | 115 / 361 (32%) | 233 / 233 (100%) |
+| `es` | 115 / 361 (32%) | 233 / 233 (100%) |
+| `pt-br` | 109 / 361 (30%) | 233 / 233 (100%) |
 
-English pages counted: **360** (excluding `to-review/` and `_partials/`).
+English pages counted: **361** (excluding `to-review/` and `_partials/`).
 
 ---
 
@@ -30,12 +30,12 @@ Translated / total. A section at 0 is one no reader of that language can use at 
 | Section | English | `pt` | `es` | `pt-br` |
 | --- | --- | --- | --- | --- |
 | administration | 31 | 17 / 31 | 17 / 31 | 17 / 31 |
-| ai | 12 | 6 / 12 | 6 / 12 | 1 / 12 |
+| ai | 13 | 7 / 13 | 7 / 13 | 1 / 13 |
 | build-and-extend | 134 | 2 / 134 | 2 / 134 | 2 / 134 |
 | integrations | 65 | 12 / 65 | 12 / 65 | 12 / 65 |
-| learning-paths | 4 | 1 / 4 | 1 / 4 | 1 / 4 |
-| product | 71 | 61 / 71 | 62 / 71 | 62 / 71 |
-| start-here | 2 | 0 / 2 | 0 / 2 | 0 / 2 |
+| learning-paths | 4 | 4 / 4 | 4 / 4 | 4 / 4 |
+| product | 71 | 71 / 71 | 71 / 71 | 71 / 71 |
+| start-here | 2 | 2 / 2 | 2 / 2 | 2 / 2 |
 | trust | 41 | 0 / 41 | 0 / 41 | 0 / 41 |
 
 ---
@@ -101,7 +101,7 @@ reader has no way to tell.
 
 ## Missing pages
 
-### `pt` — 261 missing
+### `pt` — 246 missing
 
 **administration**
 
@@ -320,30 +320,6 @@ reader has no way to tell.
 - `integrations/vbd.md`
 - `integrations/vbs-timesheet.md`
 
-**learning-paths**
-
-- `learning-paths/administrator.md`
-- `learning-paths/consultant.md`
-- `learning-paths/end-user.md`
-
-**product**
-
-- `product/billing-and-costs/billing/bills.md`
-- `product/billing-and-costs/billing/supplier-invoices.md`
-- `product/billing-and-costs/billing/supplier-notes.md`
-- `product/commercial/rates/price-tables.md`
-- `product/dashboards-and-reporting/reports.md`
-- `product/dashboards-and-reporting/using-workspaces.md`
-- `product/files-and-collaboration/files.md`
-- `product/mobile/android-configuration.md`
-- `product/mobile/ios-configuration.md`
-- `product/planning-and-scheduling/resourcing/resource-scheduler.md`
-
-**start-here**
-
-- `start-here/glossary.md`
-- `start-here/releases.mdx`
-
 **trust**
 
 - `trust/access & asset management/asset-inventory-program.md`
@@ -388,7 +364,7 @@ reader has no way to tell.
 - `trust/service quality & change management/measuring-performance.md`
 - `trust/service quality & change management/support-model-sla.md`
 
-### `es` — 260 missing
+### `es` — 246 missing
 
 **administration**
 
@@ -607,29 +583,6 @@ reader has no way to tell.
 - `integrations/vbd.md`
 - `integrations/vbs-timesheet.md`
 
-**learning-paths**
-
-- `learning-paths/administrator.md`
-- `learning-paths/consultant.md`
-- `learning-paths/end-user.md`
-
-**product**
-
-- `product/billing-and-costs/billing/bills.md`
-- `product/billing-and-costs/billing/supplier-invoices.md`
-- `product/billing-and-costs/billing/supplier-notes.md`
-- `product/commercial/rates/price-tables.md`
-- `product/dashboards-and-reporting/reports.md`
-- `product/dashboards-and-reporting/using-workspaces.md`
-- `product/files-and-collaboration/files.md`
-- `product/mobile/android-configuration.md`
-- `product/mobile/ios-configuration.md`
-
-**start-here**
-
-- `start-here/glossary.md`
-- `start-here/releases.mdx`
-
 **trust**
 
 - `trust/access & asset management/asset-inventory-program.md`
@@ -674,7 +627,7 @@ reader has no way to tell.
 - `trust/service quality & change management/measuring-performance.md`
 - `trust/service quality & change management/support-model-sla.md`
 
-### `pt-br` — 265 missing
+### `pt-br` — 252 missing
 
 **administration**
 
@@ -695,6 +648,7 @@ reader has no way to tell.
 
 **ai**
 
+- `ai/agents/brief-validator.md`
 - `ai/agents/document-agent.md`
 - `ai/agents/index.mdx`
 - `ai/agents/workflow-agent.md`
@@ -898,29 +852,6 @@ reader has no way to tell.
 - `integrations/vbd.md`
 - `integrations/vbs-timesheet.md`
 
-**learning-paths**
-
-- `learning-paths/administrator.md`
-- `learning-paths/consultant.md`
-- `learning-paths/end-user.md`
-
-**product**
-
-- `product/billing-and-costs/billing/bills.md`
-- `product/billing-and-costs/billing/supplier-invoices.md`
-- `product/billing-and-costs/billing/supplier-notes.md`
-- `product/commercial/rates/price-tables.md`
-- `product/dashboards-and-reporting/reports.md`
-- `product/dashboards-and-reporting/using-workspaces.md`
-- `product/files-and-collaboration/files.md`
-- `product/mobile/android-configuration.md`
-- `product/mobile/ios-configuration.md`
-
-**start-here**
-
-- `start-here/glossary.md`
-- `start-here/releases.mdx`
-
 **trust**
 
 - `trust/access & asset management/asset-inventory-program.md`
@@ -977,7 +908,7 @@ for one object on the same screen.
 | --- | --- | --- | --- |
 | `pt` | Entrega | 13 | 9 |
 | `es` | Job | 0 | 0 |
-| `pt-br` | Atividade | 16 | 1 |
+| `pt-br` | Atividade | 15 | 1 |
 
 <details><summary><code>pt</code> — pages to review</summary>
 
@@ -1025,7 +956,6 @@ Using the English word where the interface says **Atividade**:
 - `product/mobile/mobile-features.md`
 - `product/people/teams/assign-users-in-bulk.md`
 - `product/people/teams/teams-and-groups.md`
-- `product/planning-and-scheduling/resourcing/resource-scheduler.md`
 - `product/projects-and-jobs/create-jobs.md`
 - `product/projects-and-jobs/index.md`
 - `product/projects-and-jobs/my-tasks.md`
