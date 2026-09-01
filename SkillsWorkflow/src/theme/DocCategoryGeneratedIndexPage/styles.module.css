@@ -1,0 +1,15 @@
+/**
+ * This is intentionally close to Docusaurus' default generated-index shell.
+ * The product-specific composition lives in custom.css, where it can share the
+ * documentation tokens and respond to light and dark themes.
+ */
+@media (min-width: 997px) {
+  .generatedIndexPage {
+    max-width: 75% !important;
+  }
+}
+
+.title {
+  --ifm-h1-font-size: 3rem;
+  margin-bottom: calc(1.25 * var(--ifm-leading));
+}
