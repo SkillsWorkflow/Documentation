@@ -79,6 +79,20 @@ The `resolve_*` tools are what turn *"the Northwind retainer"* into a record. Wh
 
 Together these are what produce a structured brief instead of a paragraph. The agent reads the job type's template and the client's instructions first, then writes into that scaffold.
 
+#### Client brief instructions
+
+`get_client_brief_instructions` is read-only. It takes the selected commercial client's ID, opens that client's own file area, and follows this route:
+
+```text
+Client root folder → ai-instructions folder → brief-instructions.md
+```
+
+It returns the Markdown content of that file to the agent. The tool does not search the rest of the client files, chat attachments or the tenant's `$ai-agents/skills` folder.
+
+The folder and file must exist in the client file area, and the file must contain text. If either is missing, empty or cannot be read, the tool has no client instructions to return. An agent can then use its general briefing guidance, but it cannot validate against client-specific rules.
+
+See [Brief Validator](/docs/ai/agents/brief-validator) for the setup, an example instruction file and the expected validation result.
+
 ### Custom fields
 
 | Tool | What the agent can do |

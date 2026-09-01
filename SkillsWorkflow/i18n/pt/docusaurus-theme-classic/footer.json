@@ -1,38 +1,86 @@
 {
-  "link.title.Craft": {
-    "message": "Cria",
-    "description": "The title of the footer links column with title=Craft in the footer"
-  },
-  "link.title.Community": {
-    "message": "Comunidade",
-    "description": "The title of the footer links column with title=Community in the footer"
-  },
-  "link.title.More": {
-    "message": "Mais",
-    "description": "The title of the footer links column with title=More in the footer"
-  },
-  "link.item.label.Style Guide": {
-    "message": "Guia de Estilos",
-    "description": "The label of footer link with label=Style Guide linking to docs/"
-  },
-  "link.item.label.Help Desk": {
-    "message": "Help Desk",
-    "description": "The label of footer link with label=Help Desk linking to https://helpdesk.skillsworkflow.com"
-  },
   "link.item.label.Twitter": {
     "message": "Twitter",
     "description": "The label of footer link with label=Twitter linking to https://twitter.com/skillsworkflow"
   },
-  "link.item.label.Blog": {
-    "message": "Blogue",
-    "description": "The label of footer link with label=Blog linking to blog"
-  },
-  "link.item.label.GitHub": {
-    "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/SkillsWorkflow/Documentation"
-  },
   "link.item.label.Releases": {
-    "message": "Lançamentos",
-    "description": "The label of footer link with label=Releases linking to docs/releases"
+    "message": "Versões",
+    "description": "The label of footer link with label=Releases linking to docs/start-here/releases"
+  },
+  "link.title.Build & Extend": {
+    "message": "Construir e Estender",
+    "description": "The title of the footer links column with title=Build & Extend in the footer"
+  },
+  "link.title.Learn More": {
+    "message": "Saber mais",
+    "description": "The title of the footer links column with title=Learn More in the footer"
+  },
+  "link.title.Social Media": {
+    "message": "Redes sociais",
+    "description": "The title of the footer links column with title=Social Media in the footer"
+  },
+  "link.item.label.Workspaces": {
+    "message": "Workspaces",
+    "description": "The label of footer link with label=Workspaces linking to docs/build-and-extend/workspaces"
+  },
+  "link.item.label.Automations": {
+    "message": "Automatizações",
+    "description": "The label of footer link with label=Automations linking to docs/build-and-extend/automations"
+  },
+  "link.item.label.SDK": {
+    "message": "SDK",
+    "description": "The label of footer link with label=SDK linking to docs/build-and-extend/sdk"
+  },
+  "link.item.label.API": {
+    "message": "API",
+    "description": "The label of footer link with label=API linking to docs/build-and-extend/api/client-api"
+  },
+  "link.item.label.Integrations": {
+    "message": "Integrações",
+    "description": "The label of footer link with label=Integrations linking to docs/integrations"
+  },
+  "link.item.label.Get started": {
+    "message": "Começar",
+    "description": "The label of footer link with label=Get started linking to docs/learning-paths"
+  },
+  "link.item.label.Glossary": {
+    "message": "Glossário",
+    "description": "The label of footer link with label=Glossary linking to docs/start-here/glossary"
+  },
+  "link.item.label.Client API": {
+    "message": "Client API",
+    "description": "The label of footer link with label=Client API linking to https://apiv2-demo-prod-we.skillsworkflow.com/swagger"
+  },
+  "link.item.label.Integration API": {
+    "message": "Integration API",
+    "description": "The label of footer link with label=Integration API linking to https://integration-api-test.skillsworkflow.com"
+  },
+  "link.item.label.Website": {
+    "message": "Website",
+    "description": "The label of footer link with label=Website linking to https://www.skillsworkflow.com/"
+  },
+  "link.item.label.Status": {
+    "message": "Estado",
+    "description": "The label of footer link with label=Status linking to https://status.skillsworkflow.com/"
+  },
+  "link.item.label.Youtube": {
+    "message": "Youtube",
+    "description": "The label of footer link with label=Youtube linking to https://www.youtube.com/channel/UCauqHRlHUSkS1H8KUYm4CiA"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/skills-workflow/?viewAsMember=true"
+  },
+  "link.item.label.Instagram": {
+    "message": "Instagram",
+    "description": "The label of footer link with label=Instagram linking to https://www.instagram.com/skillsworkflow"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/skillsworkflow"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Skills Workflow",
+    "description": "The footer copyright"
   }
 }
