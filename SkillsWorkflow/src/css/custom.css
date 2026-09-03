@@ -583,3 +583,117 @@ article .card:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: var(--sw-shadow-sm);
 }
+
+/* ── 7. How to area index ────────────────────────────────────────────────
+   The generated Product index is a directory of work areas, not a collection
+   of articles. Give those areas a roomy, scan-first treatment while keeping
+   the smaller default cards in category indexes and article content. */
+
+.sw-generated-index--product {
+  max-width: 80rem !important;
+  padding-bottom: 2.5rem;
+}
+
+.sw-generated-index--product .breadcrumbs {
+  margin-bottom: 1.6rem;
+}
+
+.sw-generated-index--product .title {
+  --ifm-h1-font-size: clamp(2.65rem, 4vw, 3.55rem);
+  margin-bottom: 0;
+  letter-spacing: -0.035em;
+}
+
+.sw-generated-index--product > article {
+  margin-top: 2.8rem !important;
+}
+
+.sw-generated-index--product .row {
+  row-gap: 1.25rem;
+}
+
+.sw-generated-index--product .row > .col {
+  margin-bottom: 0;
+}
+
+.sw-generated-index--product .card {
+  align-content: center;
+  background: var(--sw-surface);
+  border-color: var(--sw-line);
+  box-shadow: var(--sw-shadow-sm);
+  display: grid;
+  min-height: 10.9rem;
+  padding: 2rem 2.35rem;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.sw-generated-index--product .card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--sw-shadow);
+  transform: translateY(-2px);
+}
+
+.sw-generated-index--product .card:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ifm-color-primary) 28%, transparent);
+  outline-offset: 3px;
+}
+
+.sw-generated-index--product .card h2 {
+  align-items: center;
+  color: var(--sw-heading);
+  display: flex;
+  font-family: var(--sw-font-display);
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.sw-generated-index--product .sw-doccard-icon {
+  color: var(--ifm-color-primary);
+  flex: 0 0 auto;
+  font-size: 1.8rem;
+  margin-right: 0.9rem;
+  width: 1.15em;
+}
+
+.sw-generated-index--product .card p {
+  color: var(--sw-body);
+  font-size: 0.94rem;
+  line-height: 1.45;
+  margin: 1.35rem 0 0;
+}
+
+@media (max-width: 996px) {
+  .sw-generated-index--product {
+    max-width: none !important;
+  }
+
+  .sw-generated-index--product > article {
+    margin-top: 2rem !important;
+  }
+
+  .sw-generated-index--product .card {
+    min-height: 9.5rem;
+    padding: 1.65rem 1.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .sw-generated-index--product .row {
+    row-gap: 0.9rem;
+  }
+
+  .sw-generated-index--product .card {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sw-generated-index--product .card {
+    transition: none;
+  }
+
+  .sw-generated-index--product .card:hover {
+    transform: none;
+  }
+}

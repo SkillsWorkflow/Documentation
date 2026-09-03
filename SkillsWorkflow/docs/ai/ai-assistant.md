@@ -114,4 +114,3 @@ A memory is a suggestion, not an instruction: when the assistant fills a field f
 - [Tools](/docs/ai/ai-tools)
 - [AI Actions](/docs/ai/ai-actions)
 - [Add your own skills, agents and tools](/docs/ai/ai-extend)
-- [Roadmap](/docs/ai/ai-roadmap)
