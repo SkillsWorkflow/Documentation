@@ -115,7 +115,7 @@ module.exports = {
                 {
                     type: 'category',
                     label: 'Reporting & Data',
-                    items: ['integrations/powerbi', 'integrations/custom-table-importer', 'integrations/api']
+                    items: ['integrations/powerbi', 'integrations/google-data-studio', 'integrations/custom-table-importer', 'integrations/api']
                 }
             ]
         },

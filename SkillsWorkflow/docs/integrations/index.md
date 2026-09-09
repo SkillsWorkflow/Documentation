@@ -113,6 +113,7 @@ This page lists every available integration, what it covers and which way the da
 | Integration | What it covers | Direction |
 | --- | --- | --- |
 | [Power BI](powerbi) | Scheduled query exports as Power BI data sources | Out |
+| [Google Data Studio](google-data-studio) | Data extraction queries loaded into Google BigQuery for reporting in Google Data Studio (Looker Studio) | Out |
 | [Custom Table Importer](custom-table-importer) | Excel files loaded into custom tables | In |
 | [API](api) | The Skills Workflow Integration API and Client API | Both |
 
