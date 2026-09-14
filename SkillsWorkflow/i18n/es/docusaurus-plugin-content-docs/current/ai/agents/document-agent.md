@@ -44,6 +44,10 @@ Plazo para finales de la semana que viene.
 
 El agente resuelve el cliente, el proyecto, el departamento y el job type, y pregunta donde un nombre sea ambiguo. Antes de crear, lee la plantilla de briefing del job type y escribe tu descripción dentro de esa estructura, para que el brief siga el formato de la agencia en vez de llegar como un párrafo. La tarjeta de aprobación muestra los campos resueltos y el brief redactado; corrige ahí el título o la descripción si alguno está mal.
 
+Cuando no hayas nombrado un cliente, un proyecto o un job type, se ofrece primero aquel para el que creas la mayor parte de tu trabajo, como una confirmación *Sí, usar …* y no como un valor ya rellenado. Desactívalo con **Use what I usually do to suggest values** en [Memorias de IA](/docs/ai/ai-memories#settings).
+
+Si cambias de cliente a mitad del flujo, el proyecto, el departamento y el job type que ya habías fijado se vuelven a preguntar. Cada uno pertenece al de encima, y los valores disponibles cambian con él.
+
 ### Duplicar un documento
 
 Pide una copia y di qué debe cambiar:
