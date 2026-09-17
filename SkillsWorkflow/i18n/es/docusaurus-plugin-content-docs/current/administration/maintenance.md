@@ -17,7 +17,7 @@ Maintenance es el módulo de back-office donde administradores y consultores con
 <figure>
 
 ![img-box-shadow](/img/maintenance/catalogue-browse-by-area.png)
-<figcaption>Placeholder — sustituir por una captura de la página principal del catálogo de Maintenance, mostrando el panel "Browse by area" y la cuadrícula "Configuration entries" de un área seleccionada.</figcaption>
+<figcaption>El catálogo de Maintenance, con Organisation & locations seleccionada en Browse by area.</figcaption>
 </figure>
 
 ## Cómo usar el catálogo
@@ -25,6 +25,12 @@ Maintenance es el módulo de back-office donde administradores y consultores con
 ### Browse by area
 
 El panel **Browse by area**, a la izquierda, lista todas las categorías de maintenance, cada una con el recuento de entradas de configuración que contiene. Seleccionar una categoría carga sus entradas en **Configuration entries**. Consulte la tabla de áreas más abajo para ver la lista completa.
+
+<figure>
+
+![img-box-shadow](/img/maintenance/catalogue-projects-work-delivery.png)
+<figcaption>El mismo catálogo con Projects, work & delivery seleccionada, mostrando sus 16 entradas de configuración.</figcaption>
+</figure>
 
 ### Buscar en todas las entradas
 
@@ -34,22 +40,9 @@ El campo **Search all Maintenance entries** busca en todas las áreas a la vez, 
 
 Seleccionar una tarjeta en Configuration entries abre el workspace de configuración de esa entrada:
 
-<figure>
-
-![img-box-shadow](/img/maintenance/configuration-workspace-grid.png)
-<figcaption>Placeholder — sustituir por una captura de la cuadrícula de datos de un workspace de configuración (por ejemplo, Job Classifications), mostrando los controles de añadir, filtrar y buscar, y el recuento de filas.</figcaption>
-</figure>
-
 - Una cuadrícula de datos lista los registros de la entrada, con controles para añadir un registro, filtrar, buscar dentro de la cuadrícula y agrupar filas por una columna.
 - El recuento de filas se muestra en la parte inferior de la cuadrícula.
 - Seleccionar una fila abre un panel de registro con los campos de ese registro.
-
-<figure>
-
-![img-box-shadow](/img/maintenance/configuration-workspace-record.png)
-<figcaption>Placeholder — sustituir por una captura del panel de registro de un workspace de configuración, mostrando sus campos y los controles de guardar, anterior/siguiente y expandir.</figcaption>
-</figure>
-
 - Los cambios se guardan desde el panel de registro.
 - Los controles anterior y siguiente del panel recorren los registros de la cuadrícula sin cerrar el panel.
 

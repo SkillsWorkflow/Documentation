@@ -17,7 +17,7 @@ Maintenance é o módulo de back-office onde administradores e consultores confi
 <figure>
 
 ![img-box-shadow](/img/maintenance/catalogue-browse-by-area.png)
-<figcaption>Placeholder — substituir por uma captura de tela da página inicial do catálogo de Maintenance, mostrando o painel "Browse by area" e a grade "Configuration entries" de uma área selecionada.</figcaption>
+<figcaption>O catálogo de Maintenance, com Organisation & locations selecionada em Browse by area.</figcaption>
 </figure>
 
 ## Como usar o catálogo
@@ -25,6 +25,12 @@ Maintenance é o módulo de back-office onde administradores e consultores confi
 ### Browse by area
 
 O painel **Browse by area**, à esquerda, lista todas as categorias de maintenance, cada uma com a contagem de entradas de configuração que contém. Selecionar uma categoria carrega suas entradas em **Configuration entries**. Consulte a tabela de áreas abaixo para a lista completa.
+
+<figure>
+
+![img-box-shadow](/img/maintenance/catalogue-projects-work-delivery.png)
+<figcaption>O mesmo catálogo com Projects, work & delivery selecionada, mostrando suas 16 entradas de configuração.</figcaption>
+</figure>
 
 ### Pesquisar todas as entradas
 
@@ -34,22 +40,9 @@ O campo **Search all Maintenance entries** pesquisa em todas as áreas ao mesmo 
 
 Selecionar um cartão em Configuration entries abre o workspace de configuração dessa entrada:
 
-<figure>
-
-![img-box-shadow](/img/maintenance/configuration-workspace-grid.png)
-<figcaption>Placeholder — substituir por uma captura de tela da grade de dados de um workspace de configuração (por exemplo, Job Classifications), mostrando os controles de adicionar, filtrar e pesquisar, e a contagem de linhas.</figcaption>
-</figure>
-
 - Uma grade de dados lista os registros da entrada, com controles para adicionar um registro, filtrar, pesquisar dentro da grade e agrupar linhas por uma coluna.
 - A contagem de linhas é exibida na parte inferior da grade.
 - Selecionar uma linha abre um painel de registro com os campos desse registro.
-
-<figure>
-
-![img-box-shadow](/img/maintenance/configuration-workspace-record.png)
-<figcaption>Placeholder — substituir por uma captura de tela do painel de registro de um workspace de configuração, mostrando seus campos e os controles de salvar, anterior/próximo e expandir.</figcaption>
-</figure>
-
 - As alterações são salvas a partir do painel de registro.
 - Os controles anterior e próximo do painel percorrem os registros da grade sem fechar o painel.
 

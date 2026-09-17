@@ -18,7 +18,7 @@ Maintenance is the back-office module where administrators and consultants confi
 <figure>
 
 ![img-box-shadow](/img/maintenance/catalogue-browse-by-area.png)
-<figcaption>Placeholder — replace with a screenshot of the Maintenance catalogue landing page, showing the "Browse by area" panel and the "Configuration entries" grid for a selected area.</figcaption>
+<figcaption>The Maintenance catalogue, with Organisation & locations selected in Browse by area.</figcaption>
 </figure>
 
 ## How to use the catalogue
@@ -26,6 +26,12 @@ Maintenance is the back-office module where administrators and consultants confi
 ### Browse by area
 
 The **Browse by area** panel on the left lists every maintenance category, each with a count of the configuration entries it holds. Selecting a category loads its entries under **Configuration entries**. See [Areas in the Maintenance catalogue](#areas-in-the-maintenance-catalogue) for the full list.
+
+<figure>
+
+![img-box-shadow](/img/maintenance/catalogue-projects-work-delivery.png)
+<figcaption>The same catalogue with Projects, work & delivery selected, showing its 16 configuration entries.</figcaption>
+</figure>
 
 ### Search all entries
 
@@ -35,22 +41,9 @@ The **Search all Maintenance entries** field matches across every area at once, 
 
 Selecting a card under Configuration entries opens that entry's configuration workspace:
 
-<figure>
-
-![img-box-shadow](/img/maintenance/configuration-workspace-grid.png)
-<figcaption>Placeholder — replace with a screenshot of a configuration workspace's data grid (for example, Job Classifications), showing the add, filter and search controls and the row count.</figcaption>
-</figure>
-
 - A data grid lists the entry's records, with controls to add a record, filter, search within the grid, and group rows by a column.
 - The row count is shown at the bottom of the grid.
 - Selecting a row opens a record panel with that record's fields.
-
-<figure>
-
-![img-box-shadow](/img/maintenance/configuration-workspace-record.png)
-<figcaption>Placeholder — replace with a screenshot of a configuration workspace's record panel, showing its fields and the save, previous/next and expand controls.</figcaption>
-</figure>
-
 - Changes are saved from the record panel.
 - The panel's previous and next controls step through the grid's records without closing the panel.
 
