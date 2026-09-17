@@ -40,29 +40,63 @@ Click the floating assistant button in the bottom-right corner. It is draggable,
 <figure>
 
 ![img-box-shadow](/img/ai/ai-assistant-panel-button.png)
-<figcaption>The AI Assistant panel, with the Agent selector above the message box</figcaption>
+<figcaption>The floating assistant button</figcaption>
 </figure>
 
 ## Pick an agent
 
-The **Agent** selector sits above the message box. Nothing is selected for you. Without a selection the panel refuses to send: *Select an agent before sending a message.*
+Agent and context share one control, the sliders icon beside the message box: **Agent and context**. Open it and the **Agent** section names the agent in use. Click that name to see the full list with each agent's description, and pick another.
+
+Nothing is selected for you. Without a selection the panel refuses to send: *Select an agent before sending a message.*
 
 Each agent contributes its own suggested prompts to the empty conversation. Clicking one fills the message box.
 
+Opening a rich text editor while the assistant is on a different agent gets you an offer rather than a switch, naming what you are editing and the agent that suits it better. **Switch** changes agent, **Stay** keeps the one you have and is remembered for the rest of the session. On a conversation you have not typed in yet, the panel switches on its own and undoes it if you move away.
+
 ## Give it context
 
-The assistant does not read your whole account. It reads what you allow it to, and the panel says what is going out. With every context switch off, the footnote reads *Sends only your message and chat history.*
+The assistant does not read your whole account. It reads what you allow it to, and the **Context for this message** section of the same control lists every piece of it, grouped, with the reason each one is there.
 
-Two switches live in the panel menu. Each appears only when there is something to send:
+<figure>
 
-- **Workspace**: the workspace you are on, with its active filters, selection and query parameters.
-- **Document**: the document open behind the panel.
+![img-box-shadow](/img/ai/ai-chat-context-bar.png)
+<figcaption>Agent and context, above the message box</figcaption>
+</figure>
 
-When you are working inside a document, extra chips appear over the message box for that document's **content** and its **briefing**. Turn a chip off to keep that part out of the request.
+Each row appears only when there is something to send:
+
+| Group | Row | Sends |
+|---|---|---|
+| Current page | The document's name | The document open behind the panel |
+| Current page | The editor's name, with a character count | The text you are editing right now |
+| Job guidance | Brief instructions | The guidance that applies to this response. **Remove** drops it |
+| More context | The workspace's name | Its layout, filters and selection |
+| More context | Saved memories, with a count | What the assistant has learned about you |
+
+The switch on a row keeps that piece out of the request. The one on **Saved memories** is not a per-message override: it writes the same **Memory on** setting the memory screen shows. **Manage** opens that screen. See [AI Memories](/docs/ai/ai-memories).
 
 ## Attach files
 
-Drop a file into the message box to send it with your request. Attachments belong to the conversation, so an agent asked to write a brief can read the file you attached two messages ago.
+Drop a file onto the message box, or use **Attach file**. Each file becomes a chip above the box: images preview, everything else shows its type icon, and under the name you get the size, *Uploading…*, or the reason the file was refused. Remove one with the `×` on its chip.
+
+What happens next depends on the file, and the panel says which: *Images are analysed by the assistant. Other files are attached to the record.* An image is read and described. Any other file is held ready to be attached to a brief or posted to a feed when you ask, and it is carried onto a job or deliverable the same conversation creates.
+
+Attachments stay with the conversation. An agent asked to write a brief can still reach the file you attached two messages ago.
+
+These cannot be attached:
+
+- Files over your tenant's own upload limit, `FileSystemMaxSizeForUpload (MB)` in **Maintenance > Configuration > System > FileSystem**. Unset, the limit is 10 MB.
+- Email files, `.msg` and `.eml`.
+- Archives.
+- Programs and scripts, such as `.exe`, `.bat`, `.ps1`, `.sh` and `.jar`.
+
+An extension nobody recognises is still allowed. A `.psd` or an `.indd` attaches to a record perfectly well.
+
+<figure>
+
+![img-box-shadow](/img/ai/ai-chat-attachment-chips.png)
+<figcaption>Attachment chips above the message box</figcaption>
+</figure>
 
 ## Approve what it does
 
@@ -88,6 +122,31 @@ Which actions raise an approval card is set per agent, so an agent your agency b
 
 When a request is missing something the assistant cannot guess, such as which client or which job type, it asks with a picker. Long lists come back partially, with *Showing the first results — refine your search to narrow them down.* Type in the picker's search box to narrow them.
 
+## Follow what it is doing
+
+While the assistant works, the message it is writing carries the run above it, step by step. Each step names what is happening in your words rather than the tool's — *Searching for clients…*, *Loading job type template…*, *Creating job…* — and a count says how many steps the run took. Open a step to see the arguments it was called with and what came back.
+
+Use it when an answer surprises you. A brief written from the wrong template usually shows up here as the wrong template being loaded.
+
+## Read an answer from your data
+
+When an agent answers from one of your data extraction queries, the rows are not left as a table inside a paragraph. The panel renders the result.
+
+<figure>
+
+![img-box-shadow](/img/ai/ai-chat-analytics-result.png)
+<figcaption>A data query answered in the panel</figcaption>
+</figure>
+
+- Rows that are documents come back as a list, grouped by urgency: **Overdue**, **Due today**, **Tomorrow**, **This week**, **Later**, **No date**. Counts along the top give you the totals, and clicking a row opens the document.
+- Rows that describe a breakdown come back as a chart with a table view beside it. A result that is both a list and a breakdown renders as both.
+- Long results are trimmed with a **Show all** control and a row count.
+- Ask two questions in one message and the panel shows the last answer, saying *2 queries ran — showing the last*.
+
+A query that cannot run says so: *The data query could not be run*, or *The assistant wrote a query this data does not support*.
+
+Which queries an agent may reach is set per agent. See [Tools](/docs/ai/ai-tools#your-data).
+
 ## Chat history
 
 Conversations are saved per user. Open **Chat History** from the panel menu to reopen one, and delete conversations there one at a time or several at once. Deleting a conversation cannot be undone.
@@ -96,21 +155,22 @@ Conversations are saved per user. Open **Chat History** from the panel menu to r
 
 ## Memories
 
-The assistant remembers facts you tell it: a client you work with constantly, the language you write in, a job type you always pick. It uses them to fill in later requests, and only saves something after it has told you.
+The assistant carries what it has learned about you between conversations: a client you work with constantly, the language you write in, a job type you always pick. It also counts the client, project and job type you create documents for, and proposes them next time.
 
-Open **Manage Memories** from the panel menu to see everything it holds, delete a single memory, or clear all of them. Memories are per user, and the store holds at most 100 entries.
-
-A memory is a suggestion, not an instruction: when the assistant fills a field from one, it says so and waits for you to confirm.
+Open **Manage Memories** from the panel menu to review all of it, switch a memory off, write one yourself, or turn memory off entirely. A remembered value is a suggestion: the assistant never reaches an approval card with one you have not confirmed. [AI Memories](/docs/ai/ai-memories) covers the screen, the two saving modes and the limits.
 
 ## Rules and behaviour
 
 - The assistant acts **as you**. It can only read and write what your own permissions allow, and a request for something you cannot see comes back empty rather than elevated.
-- Chat history is kept per user and per tenant. Two users never share a conversation.
+- Chat history is kept per user and per tenant. Two users never share a conversation, and the same user's conversations do not travel between tenants.
+- A very long conversation is compacted automatically instead of failing, and the earliest detail is the first to go. Start a **New Chat** when you change subject.
+- The conversation is not stored by the model service. Each request is answered and discarded there; the transcript you see is kept by Skills Workflow, on your user.
 - Answers are generated. Review anything before sending it to a client or acting on it.
 
 ## Related articles
 
 - [Agents](/docs/ai/agents)
+- [AI Memories](/docs/ai/ai-memories)
 - [Tools](/docs/ai/ai-tools)
 - [AI Actions](/docs/ai/ai-actions)
 - [Add your own skills, agents and tools](/docs/ai/ai-extend)

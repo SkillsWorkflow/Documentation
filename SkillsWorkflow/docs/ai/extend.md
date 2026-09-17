@@ -3,7 +3,7 @@ id: ai-extend
 title: Add Your Own Skills, Agents and Tools
 description: "Extend the AI with knowledge of your own way of working: skills that teach an agent your rules, agents built for your processes, and tools that reach your own systems and reports."
 sidebar_label: Add Your Own
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 The four agents Skills Workflow ships know the platform. They do not know your agency: your brief structure, your naming, your approval habits, the system you keep budgets in.
@@ -49,8 +49,13 @@ An agent is a definition, not code. It carries:
 - **Tools requiring approval**, the ones that stop and ask the user first.
 - **Suggested prompts** shown in an empty conversation.
 - **An icon** marking it in the list.
+- **A model**, named only when this agent needs a different one from the platform default.
 
 Once saved, it appears in the agent selector alongside the four that ship. There is no deployment step.
+
+Naming a model is worth doing when the job asks for it: a reasoning model for an agent that has to work something out, a cheaper one for an agent that only classifies or rewrites. Left unnamed, the agent runs on whatever the platform is configured with, which is what you want for most agents.
+
+Every agent you build honours the asking user's memories. That is not a tool you grant and cannot be switched off per agent; it is the user's own setting. Granting the memory tools decides only whether your agent may add to that store. See [AI Memories](/docs/ai/ai-memories).
 
 Four things worth getting right:
 
@@ -97,6 +102,7 @@ An MCP server is registered once for your tenant, with its address, and then nam
 
 - [Tools](/docs/ai/ai-tools)
 - [Agents](/docs/ai/agents)
+- [AI Memories](/docs/ai/ai-memories)
 - [AI Actions](/docs/ai/ai-actions)
 - [Client Portals](/docs/ai/ai-portals)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)

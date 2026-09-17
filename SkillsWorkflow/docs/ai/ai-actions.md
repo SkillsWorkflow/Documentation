@@ -3,7 +3,7 @@ id: ai-actions
 title: AI Actions
 description: "AI Actions put text assistance in the toolbar of every rich text editor. This page covers using them, and configuring the list your agency sees."
 sidebar_label: AI Actions
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 AI Actions are the AI button in a rich text editor's toolbar. Instead of opening the chat panel, you pick an action from the toolbar and the text in the editor is rewritten in place.

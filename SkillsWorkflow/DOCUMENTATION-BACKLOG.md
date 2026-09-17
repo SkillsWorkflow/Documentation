@@ -140,3 +140,13 @@ The whole briefing stage is the least documented part of the platform.
 - [ ] 8.5 &nbsp;**The `Skilio-Agent`, `wise-os`, `brief-editor-agent` and `release-notes-agent`
       definitions in the agent repo are not documented.** They are not part of the four shipped
       agents; confirm whether any is customer-facing before leaving them out.
+- [ ] 8.7 &nbsp;**`ai-memories` is English-only**, like the other pages named in 8.2.
+- [ ] 8.8 &nbsp;**Whether the assistant reads an attached PDF is unresolved.** The platform now serves
+      document file parts to the model, but the WebApp sends every attachment as a link and its own
+      composer hint says only images are analysed. `ai-assistant` therefore documents the hint.
+      Confirm with the AI team and widen the page if PDFs are in fact read.
+- [ ] 8.9 &nbsp;**The `Ask before saving` and `Save automatically and tell me` hints promise an
+      undoable notice in the chat.** The agent server's prompt and the setting's hint both say the
+      platform shows what was saved with an undo; the WebApp only invalidates its memory cache on
+      `save_memory`, so no such notice is rendered. `ai-memories` documents the saving behaviour
+      without the notice. Either build the notice or reword the hint.

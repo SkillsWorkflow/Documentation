@@ -3,7 +3,7 @@ id: ai-tools
 title: Tools
 description: "The catalogue of tools an agent can be given: what each one lets the agent read or change, which ones write to your account, and how tools are granted per agent."
 sidebar_label: Tools
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 An agent on its own can only talk. What lets it look something up, create a job or move a document is a **tool**. An agent's tools are the whole of what it can do: an agent without `create_job` cannot create a job, however you ask.
@@ -133,6 +133,10 @@ There is no default transition. The agent lists what is available, you pick, and
 
 These are what answer *"how is this client tracking this month"* without a dashboard. Every query is filtered, sorted and paged in SQL before a row is returned, is read-only, and is scoped to the asking user's permissions — a user refused a report in the platform is refused it here too.
 
+Both tools take the query's own parameters plus a `queryBuilder`, and that is where filtering, sorting, paging and column selection happen: `filters`, `orderBy`, `fields`, `skip` and `take`. There is no aggregation. A total or a breakdown comes from a query written that way, not from the agent asking for one.
+
+Every call is bounded. An agent that names no row count gets 50 rows, and 500 is the ceiling on any count it does ask for. A query author's own row limit lowers both. The panel renders what comes back as a list, a chart or both. See [AI Assistant](/docs/ai/ai-assistant#read-an-answer-from-your-data).
+
 The query catalogue is per tenant. See [Data Extraction API](/docs/build-and-extend/api/data-extraction-api) for which queries exist and what each carries.
 
 ### Memory
@@ -143,7 +147,9 @@ The query catalogue is per tenant. See [Data Extraction API](/docs/build-and-ext
 | `update_memory` | Correct something remembered earlier |
 | `delete_memory` | Forget something |
 
-Users see and clear this store themselves under **Manage Memories**.
+These write to the asking user's own store and nowhere else. Whether they write at all is the user's decision: with **Memory on** switched off, a save is refused and the agent is told so. With **Ask before saving**, the agent must get the user's agreement in the conversation first. Forgetting always works.
+
+Every agent honours a user's memories, granted these tools or not, because reading them is not a tool. Users manage the store under **Manage Memories** — see [AI Memories](/docs/ai/ai-memories).
 
 ### Chat interface
 
@@ -186,5 +192,6 @@ These run in the user's browser instead of on the server, because they need the 
 
 - [Agents](/docs/ai/agents)
 - [AI Assistant](/docs/ai/ai-assistant)
+- [AI Memories](/docs/ai/ai-memories)
 - [Add your own skills, agents and tools](/docs/ai/ai-extend)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)

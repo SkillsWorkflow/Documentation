@@ -44,6 +44,10 @@ Deadline end of next week.
 
 The agent resolves the client, project, department and job type, asking you where a name is ambiguous. Before creating, it reads the job type's briefing template and writes your description into that structure, so the brief follows your agency's format rather than arriving as a paragraph. The approval card shows the resolved fields and the drafted brief; edit the title or description there if either is wrong.
 
+Where you have not named a client, project or job type, the one you create most of your work for is offered first, as a *Yes, use …* confirmation rather than a value already filled in. Turn that off with **Use what I usually do to suggest values** in [AI Memories](/docs/ai/ai-memories#settings).
+
+Change your mind about the client mid-flow and the project, department and job type you had already settled are asked again. Each of those belongs under the one above it, and the values available change with it.
+
 ### Duplicating a document
 
 Ask for a copy and say what should differ:
