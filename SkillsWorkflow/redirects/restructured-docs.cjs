@@ -302,7 +302,7 @@ module.exports = [
     "to": "/docs/build-and-extend/api/webhooks"
   },
   {
-    "from": "/docs/customization/annotations/index",
+    "from": "/docs/customization/annotations",
     "to": "/docs/product/files-and-collaboration/annotations"
   },
   {
