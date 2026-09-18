@@ -29,7 +29,7 @@ The panel has two tabs.
 
 **Users** lists the people you can message, with their typology group and a green dot while they are online. Selecting a person opens the conversation with them.
 
-A person's picture can also start the conversation. Where the chat action is available on a picture, such as a Feed post, a reply or a team assignment, click it and the conversation opens.
+You can also start a conversation from a person's picture wherever it appears with the chat option — for example, in a Feed post, a reply, or a team assignment.
 
 ## Start a conversation
 
@@ -59,21 +59,21 @@ The name is optional and can be changed later. An unnamed group is listed under 
 
 </figure>
 
-Write in the composer at the bottom of the conversation. **Enter** sends the message and **Shift+Enter** starts a new line. Addresses beginning with `http://` or `https://` are turned into links that open in a new tab.
+Write in the composer at the bottom of the conversation. **Enter** sends the message and **Shift+Enter** starts a new line. Any link you paste becomes clickable and opens in a new tab.
 
-Text you have not sent yet is kept for that conversation in your browser and is waiting in the composer when you come back to it.
+If you start writing a message and don't send it, it's still there the next time you open that conversation — but only on this device.
 
 While a message is on its way it shows **Sending...**. If it does not reach the service, it stays on screen as **Message not sent** with a **Retry** action.
 
-The thread groups consecutive messages from the same person and prints the time once at the end of each group. Days are separated by a date, and a red rule marks the first message you have not read. Scroll to the top of a conversation to load older messages.
+Messages sent one after another by the same person are grouped together, with the time shown once at the end of the group. Days are separated by a date, and a red rule marks the first message you have not read. Scroll to the top of a conversation to load older messages.
 
 ### Copy or edit a message
 
-Point at a message to reveal its actions.
+Hover over a message to see the available actions.
 
 **Copy message** puts the message text on the clipboard.
 
-**Edit message** appears on your own messages. It opens the text in an editable box below the thread's own composer rules: **Enter** saves, **Esc** cancels. Everyone then sees the message marked as **Edited**. System messages, such as the note recording a rename, cannot be edited, and no message can be deleted.
+**Edit message** appears on your own messages. It opens the text in an editable box, where **Enter** saves your change and **Esc** cancels it. Everyone then sees the message marked as **Edited**. System messages, such as the note recording a rename, can't be edited, and no message can be deleted.
 
 ### While someone is writing
 
@@ -88,7 +88,7 @@ A line below the last message names the people currently typing and stacks their
 
 </figure>
 
-A group header shows the conversation name and how many of its members are online. **Manage members**, the **...** button, opens the group menu.
+The group header shows the conversation name and how many members are online. Select **Manage members** (the **...** button) to open the group menu.
 
 **Rename conversation** asks for the new name, which is required. The conversation is renamed for everyone and the change is recorded as a message in the thread.
 
@@ -96,13 +96,13 @@ A group header shows the conversation name and how many of its members are onlin
 
 **Leave** records that you left and takes the conversation off your list.
 
-The member list under the menu removes someone through the action on their row. Confirm the removal and that person stops receiving the conversation's messages. Removal is offered while the group has more than two members.
+To remove someone, use the remove action next to their name in the member list below the menu. Confirm the removal, and that person will no longer receive the conversation's messages. You can remove a member only while the group has more than two people.
 
 ## Notifications
 
 With the chat panel closed, an incoming message arrives as a toast in the corner of the application. Select the toast to open that conversation.
 
-While the browser tab sits in the background, the message is also raised as a desktop notification. Direct messages are titled with the sender's name. A group message is titled with the conversation name and names the sender in its body.
+While the browser tab sits in the background, the message is also raised as a desktop notification. A direct message shows the sender's name. A group message shows the conversation name, with the sender's name in the message text.
 
 Desktop notifications require **Enable browser notifications** under **Notifications** in your configuration, and the browser's own permission, which is requested the first time you open chat or notifications after enabling the setting. They are available in the Modern Layout. The in-app toast is what the other layouts use.
 
@@ -110,8 +110,8 @@ Desktop notifications require **Enable browser notifications** under **Notificat
 
 - The **Users** tab never lists you, inactive users, or system administrators.
 - Search in **Conversations** matches conversation names. It does not search message text.
-- The composer sends text. The chat panel has no attachment control.
-- Messages you send from another tab or device appear in the conversation without notifying you twice.
+- Chat only sends text messages. You can't attach files.
+- If you use Chat in more than one browser tab or on more than one device at once, your conversations stay in sync across all of them.
 
 ## Configuration
 
@@ -124,7 +124,7 @@ Who each person can message is controlled by **Chat Visibility Restriction Enabl
 - With the setting off, everyone sees every active user except system administrators.
 - With the setting on, a user who has people on their chat visibility list sees only those people, together with anyone who put that user on their own list. A user whose list is empty keeps seeing everyone.
 
-The chat visibility lists are held on the user record and are not editable in the WebApp. Ask the Skills Workflow support team to set them.
+These lists can't be edited from the WebApp. Ask the Skills Workflow support team to set them up.
 
 ## Related articles
 

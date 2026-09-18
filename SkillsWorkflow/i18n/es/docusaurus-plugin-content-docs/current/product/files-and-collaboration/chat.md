@@ -29,7 +29,7 @@ El panel tiene dos pestañas.
 
 **Usuarios** lista las personas a las que puede escribir, con su grupo de tipología y un punto verde mientras están en línea. Al seleccionar una persona se abre la conversación con ella.
 
-La foto de una persona también inicia la conversación. Donde la acción de chat esté disponible sobre la foto, como en una publicación del Feed, en una respuesta o en una asignación de equipo, haga clic en la foto y la conversación se abre.
+También puede iniciar una conversación desde la foto de una persona siempre que la opción de chat aparezca sobre ella — por ejemplo, en una publicación del Feed, en una respuesta o en una asignación de equipo.
 
 ## Iniciar una conversación
 
@@ -59,21 +59,21 @@ El nombre es opcional y se puede cambiar más tarde. Un grupo sin nombre se list
 
 </figure>
 
-Escriba en el cuadro de mensaje al final de la conversación. **Enter** envía el mensaje y **Shift+Enter** crea una nueva línea. Las direcciones que empiezan por `http://` o `https://` se convierten en enlaces que se abren en una pestaña nueva.
+Escriba en el cuadro de mensaje al final de la conversación. **Enter** envía el mensaje y **Shift+Enter** crea una nueva línea. Cualquier enlace que pegue queda clicable y se abre en una pestaña nueva.
 
-El texto que aún no ha enviado se guarda en esa conversación, en su navegador, y le espera en el cuadro de mensaje cuando vuelva.
+Si empieza a escribir un mensaje y no lo envía, sigue ahí la próxima vez que abra esa conversación — pero solo en este dispositivo.
 
 Mientras el mensaje se entrega, muestra **Enviando...**. Si no llega al servicio, se queda en pantalla con **No se pudo enviar el mensaje.** y la acción **Reintentar**.
 
-El historial agrupa los mensajes seguidos de una misma persona y escribe la hora una vez al final de cada grupo. Los días se separan con una fecha y una línea roja marca el primer mensaje que no ha leído. Desplácese hasta la parte superior de una conversación para cargar mensajes más antiguos.
+Los mensajes seguidos de una misma persona se agrupan, y la hora se muestra una vez al final del grupo. Los días se separan con una fecha y una línea roja marca el primer mensaje que no ha leído. Desplácese hasta la parte superior de una conversación para cargar mensajes más antiguos.
 
 ### Copiar o editar un mensaje
 
-Apunte a un mensaje para mostrar sus acciones.
+Haga hover sobre un mensaje para ver las acciones disponibles.
 
 **Copiar mensaje** pone el texto del mensaje en el portapapeles.
 
-**Editar mensaje** aparece en sus propios mensajes. Abre el texto en un cuadro editable con las reglas del cuadro de mensaje: **Enter** guarda, **Esc** cancela. Todos pasan a ver el mensaje marcado como **Editado**. Los mensajes de sistema, como la nota que registra un cambio de nombre, no se pueden editar, y ningún mensaje se puede eliminar.
+**Editar mensaje** aparece en sus propios mensajes. Abre el texto en un cuadro editable, donde **Enter** guarda el cambio y **Esc** lo cancela. Todos pasan a ver el mensaje marcado como **Editado**. Los mensajes de sistema, como la nota que registra un cambio de nombre, no se pueden editar, y ningún mensaje se puede eliminar.
 
 ### Mientras alguien escribe
 
@@ -88,7 +88,7 @@ Una línea bajo el último mensaje nombra a las personas que están escribiendo 
 
 </figure>
 
-La cabecera de un grupo muestra el nombre de la conversación y cuántos miembros están en línea. **Gestionar miembros**, el botón **...**, abre el menú del grupo.
+La cabecera del grupo muestra el nombre de la conversación y cuántos miembros están en línea. Seleccione **Gestionar miembros** (el botón **...**) para abrir el menú del grupo.
 
 **Rename conversation** pide el nuevo nombre, que es obligatorio. La conversación pasa a llamarse así para todos y el cambio queda registrado como mensaje en el historial.
 
@@ -96,13 +96,13 @@ La cabecera de un grupo muestra el nombre de la conversación y cuántos miembro
 
 **Leave** registra que ha salido y quita la conversación de su lista.
 
-La lista de miembros bajo el menú quita a alguien mediante la acción de su fila. Confirme la eliminación y esa persona deja de recibir los mensajes de la conversación. La eliminación se ofrece mientras el grupo tenga más de dos miembros.
+Para quitar a alguien, use la acción de eliminar junto a su nombre, en la lista de miembros bajo el menú. Confirme la eliminación y esa persona deja de recibir los mensajes de la conversación. Solo puede quitar a un miembro mientras el grupo tenga más de dos personas.
 
 ## Notificaciones
 
 Con el panel del Chat cerrado, un mensaje entrante aparece como aviso en la esquina de la aplicación. Seleccione el aviso para abrir esa conversación.
 
-Mientras la pestaña del navegador está en segundo plano, el mensaje también se lanza como notificación de escritorio. Los mensajes directos llevan por título el nombre de quien los envía. Un mensaje de grupo lleva por título el nombre de la conversación y nombra al remitente en el cuerpo.
+Mientras la pestaña del navegador está en segundo plano, el mensaje también se lanza como notificación de escritorio. Un mensaje directo muestra el nombre de quien lo envía. Un mensaje de grupo muestra el nombre de la conversación, con el nombre de quien lo envía en el texto.
 
 Las notificaciones de escritorio requieren **Enable browser notifications**, en **Notificaciones** dentro de su configuración, y el permiso del propio navegador, que se solicita la primera vez que abre el chat o las notificaciones tras activar el ajuste. Están disponibles en el Modern Layout. Los demás layouts se quedan con el aviso dentro de la aplicación.
 
@@ -110,8 +110,8 @@ Las notificaciones de escritorio requieren **Enable browser notifications**, en 
 
 - La pestaña **Usuarios** nunca le lista a usted, ni a los usuarios inactivos, ni a los administradores del sistema.
 - La búsqueda en **Conversaciones** busca nombres de conversaciones. No busca el texto de los mensajes.
-- El cuadro de mensaje envía texto. El panel del Chat no tiene acción para adjuntar archivos.
-- Los mensajes que envía desde otra pestaña u otro dispositivo aparecen en la conversación sin avisarle dos veces.
+- El Chat solo envía mensajes de texto. No se pueden adjuntar archivos.
+- Si usa el Chat en más de una pestaña del navegador o en más de un dispositivo a la vez, sus conversaciones se mantienen sincronizadas en todos ellos.
 
 ## Configuración
 
@@ -124,7 +124,7 @@ A quién puede escribir cada persona lo controla **Chat Visibility Restriction E
 - Con el ajuste desactivado, todos ven a todos los usuarios activos, salvo los administradores del sistema.
 - Con el ajuste activado, un usuario que tenga personas en su lista de visibilidad de chat ve solo a esas personas, más a quien le haya incluido a él en la suya. Un usuario con la lista vacía sigue viendo a todos.
 
-Las listas de visibilidad de chat están en el registro del usuario y no son editables en la WebApp. Pida al equipo de soporte de Skills Workflow que las configure.
+Estas listas no son editables en la WebApp. Pida al equipo de soporte de Skills Workflow que las configure.
 
 ## Artículos relacionados
 

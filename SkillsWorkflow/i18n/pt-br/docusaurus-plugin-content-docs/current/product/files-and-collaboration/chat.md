@@ -29,7 +29,7 @@ O painel tem duas abas.
 
 **Usuários** lista as pessoas para quem você pode enviar mensagens, com o grupo de tipologia de cada uma e um ponto verde enquanto estiverem online. Selecionar uma pessoa abre a conversa com ela.
 
-A foto de uma pessoa também inicia a conversa. Onde a ação de chat estiver disponível sobre a foto, como em um post do Feed, em uma resposta ou em uma associação de equipe, clique na foto e a conversa abre.
+Você também pode iniciar uma conversa a partir da foto de uma pessoa sempre que a opção de chat aparecer sobre ela — por exemplo, em um post do Feed, em uma resposta ou em uma associação de equipe.
 
 ## Iniciar uma conversa
 
@@ -59,21 +59,21 @@ O nome é opcional e pode ser alterado depois. Um grupo sem nome é listado com 
 
 </figure>
 
-Escreva na caixa de mensagem no rodapé da conversa. **Enter** envia a mensagem e **Shift+Enter** cria uma nova linha. Os endereços iniciados por `http://` ou `https://` viram links que abrem em uma nova aba.
+Escreva na caixa de mensagem no rodapé da conversa. **Enter** envia a mensagem e **Shift+Enter** cria uma nova linha. Qualquer link que você cole fica clicável e abre em uma nova aba.
 
-O texto que você ainda não enviou fica guardado naquela conversa, no seu navegador, e espera por você na caixa de mensagem quando voltar.
+Se você começar a escrever uma mensagem e não enviá-la, ela continua ali na próxima vez que você abrir essa conversa — mas só neste dispositivo.
 
 Enquanto a mensagem é entregue, ela mostra **Enviando...**. Se não chegar ao serviço, permanece na tela com **Não foi possível enviar a mensagem.** e a ação **Tentar novamente**.
 
-O histórico agrupa mensagens seguidas da mesma pessoa e escreve o horário uma vez ao final de cada grupo. Os dias são separados por uma data e uma linha vermelha marca a primeira mensagem que você ainda não leu. Role até o topo de uma conversa para carregar mensagens mais antigas.
+As mensagens seguidas da mesma pessoa são agrupadas, com o horário mostrado uma vez ao final do grupo. Os dias são separados por uma data e uma linha vermelha marca a primeira mensagem que você ainda não leu. Role até o topo de uma conversa para carregar mensagens mais antigas.
 
 ### Copiar ou editar uma mensagem
 
-Aponte para uma mensagem para revelar suas ações.
+Faça hover em uma mensagem para ver as ações disponíveis.
 
 **Copiar mensagem** coloca o texto da mensagem na área de transferência.
 
-**Editar mensagem** aparece nas suas próprias mensagens. Ela abre o texto em uma caixa editável com as regras da caixa de mensagem: **Enter** salva, **Esc** cancela. Todos passam a ver a mensagem marcada como **Editada**. As mensagens de sistema, como a nota que registra uma mudança de nome, não podem ser editadas, e nenhuma mensagem pode ser excluída.
+**Editar mensagem** aparece nas suas próprias mensagens. Ela abre o texto em uma caixa editável, onde **Enter** salva a alteração e **Esc** cancela. Todos passam a ver a mensagem marcada como **Editada**. As mensagens de sistema, como a nota que registra uma mudança de nome, não podem ser editadas, e nenhuma mensagem pode ser excluída.
 
 ### Enquanto alguém escreve
 
@@ -88,7 +88,7 @@ Uma linha abaixo da última mensagem nomeia as pessoas que estão digitando e em
 
 </figure>
 
-O cabeçalho de um grupo mostra o nome da conversa e quantos membros estão online. **Gerenciar membros**, o botão **...**, abre o menu do grupo.
+O cabeçalho do grupo mostra o nome da conversa e quantos membros estão online. Selecione **Gerenciar membros** (o botão **...**) para abrir o menu do grupo.
 
 **Mudar o nome da conversa** pede o novo nome, que é obrigatório. A conversa passa a ter esse nome para todos e a alteração fica registrada como mensagem no histórico.
 
@@ -96,13 +96,13 @@ O cabeçalho de um grupo mostra o nome da conversa e quantos membros estão onli
 
 **Sair** registra que você saiu e tira a conversa da sua lista.
 
-A lista de membros abaixo do menu remove alguém pela ação na linha correspondente. Confirme a remoção e essa pessoa deixa de receber as mensagens da conversa. A remoção é oferecida enquanto o grupo tiver mais de dois membros.
+Para remover alguém, use a ação de remover ao lado do nome dessa pessoa, na lista de membros abaixo do menu. Confirme a remoção e essa pessoa deixa de receber as mensagens da conversa. Você só pode remover um membro enquanto o grupo tiver mais de duas pessoas.
 
 ## Notificações
 
 Com o painel do Chat fechado, uma mensagem recebida aparece como aviso no canto da aplicação. Selecione o aviso para abrir aquela conversa.
 
-Enquanto a aba do navegador estiver em segundo plano, a mensagem também é lançada como notificação da área de trabalho. As mensagens diretas têm como título o nome de quem enviou. Uma mensagem de grupo tem como título o nome da conversa e nomeia o remetente no corpo.
+Enquanto a aba do navegador estiver em segundo plano, a mensagem também é lançada como notificação da área de trabalho. Uma mensagem direta mostra o nome de quem a enviou. Uma mensagem de grupo mostra o nome da conversa, com o nome de quem enviou no texto.
 
 As notificações da área de trabalho exigem **Enable browser notifications**, em **Notificações** na sua configuração, e a permissão do próprio navegador, solicitada na primeira vez que você abre o chat ou as notificações depois de ativar a opção. Elas estão disponíveis no Modern Layout. Os demais layouts ficam com o aviso dentro da aplicação.
 
@@ -110,8 +110,8 @@ As notificações da área de trabalho exigem **Enable browser notifications**, 
 
 - A aba **Usuários** nunca lista você, usuários inativos nem administradores de sistema.
 - A busca em **Conversas** pesquisa nomes de conversas. Ela não pesquisa o texto das mensagens.
-- A caixa de mensagem envia texto. O painel do Chat não tem ação para anexar arquivos.
-- As mensagens que você envia em outra aba ou em outro dispositivo aparecem na conversa sem notificar você duas vezes.
+- O Chat só envia mensagens de texto. Não é possível anexar arquivos.
+- Se você usar o Chat em mais de uma aba do navegador ou em mais de um dispositivo ao mesmo tempo, suas conversas ficam sincronizadas em todos eles.
 
 ## Configuração
 
@@ -124,7 +124,7 @@ Quem cada pessoa pode contatar é controlado por **Chat Visibility Restriction E
 - Com a opção desligada, todos veem todos os usuários ativos, exceto os administradores de sistema.
 - Com a opção ligada, um usuário que tenha pessoas na sua lista de visibilidade de chat vê apenas essas pessoas, mais quem o tenha colocado na própria lista. Um usuário com a lista vazia continua vendo todos.
 
-As listas de visibilidade de chat ficam no cadastro do usuário e não são editáveis no WebApp. Peça à equipe de suporte da Skills Workflow para defini-las.
+Essas listas não são editáveis no WebApp. Peça à equipe de suporte da Skills Workflow para configurá-las.
 
 ## Artigos relacionados
 
