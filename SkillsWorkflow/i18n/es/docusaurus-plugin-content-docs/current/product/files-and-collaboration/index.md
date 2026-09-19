@@ -7,4 +7,4 @@ sidebar_position: 0
 
 # Archivos y Colaboración
 
-El trabajo se discute donde vive. El feed recoge la conversación, las decisiones y los archivos adjuntos a un documento. Las anotaciones permiten a los revisores marcar un archivo directamente en lugar de describir los cambios con palabras.
+El trabajo se discute donde vive. El feed recoge la conversación, las decisiones y los archivos adjuntos a un documento. Las anotaciones permiten a los revisores marcar un archivo directamente en lugar de describir los cambios con palabras. El Chat recoge los intercambios rápidos que no pertenecen a ningún documento.

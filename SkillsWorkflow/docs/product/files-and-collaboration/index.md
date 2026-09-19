@@ -7,4 +7,4 @@ sidebar_position: 0
 
 # Files & Collaboration
 
-Work is discussed where it lives. The feed carries the conversation, the decisions and the files attached to a document. Annotations let reviewers mark up a file directly instead of describing changes in words.
+Work is discussed where it lives. The feed carries the conversation, the decisions and the files attached to a document. Annotations let reviewers mark up a file directly instead of describing changes in words. Chat carries the quick exchanges that do not belong to any one document.
