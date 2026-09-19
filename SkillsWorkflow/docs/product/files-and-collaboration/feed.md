@@ -59,6 +59,30 @@ Select an action below the composer, complete the information requested, and pub
 Do not use Notifications to include client users in an internal discussion. Notifying or `@mention`ing a client can make a post visible to that client.
 :::
 
+## Check a person's status before you assign them
+
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-avatar-status.png)
+<figcaption>Status dot and profile card on an avatar in Add assignment.</figcaption>
+
+</figure>
+
+Every avatar shown in **Add assignment**, and in the document's Team panel, carries a status dot for online, offline, or on leave. A user without a chat client shows as offline.
+
+Hover an avatar to open a profile card with the person's department, responsible person, email, workload, and a 14-day leave timeline. Approved leave scheduled within the next two weeks appears on that timeline.
+
+## Deactivated users always show as inactive
+
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-avatar-inactive.png)
+<figcaption>Inactive marker on a deactivated user's profile card.</figcaption>
+
+</figure>
+
+A deactivated user's avatar carries the inactive marker. This marker takes priority over the online, offline, and leave status.
+
 ## Follow the activity and conversations
 
 <figure>

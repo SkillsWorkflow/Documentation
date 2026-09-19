@@ -59,6 +59,30 @@ Selecione uma ação abaixo do compositor, preencha as informações solicitadas
 Não use Notifications para incluir usuários clientes em uma discussão interna. Notificar ou fazer `@mention` a um cliente pode tornar uma publicação visível para esse cliente.
 :::
 
+## Verificar o status de uma pessoa antes de atribuí-la
+
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-avatar-status.png)
+<figcaption>Indicador de status e cartão de perfil em um avatar no Add assignment.</figcaption>
+
+</figure>
+
+Todos os avatares exibidos em **Add assignment**, e no painel Team do documento, têm um indicador de status para online, offline ou em licença. Um usuário sem cliente de chat aparece como offline.
+
+Passe o cursor sobre um avatar para abrir um cartão de perfil com o departamento da pessoa, o responsável, o e-mail, a carga de trabalho e uma linha do tempo de licenças de 14 dias. A licença aprovada prevista para as próximas duas semanas aparece nessa linha do tempo.
+
+## Usuários desativados sempre aparecem como inativos
+
+<figure>
+
+![img-box-shadow-feed](/img/university/feed/feed-avatar-inactive.png)
+<figcaption>Indicador de inativo no cartão de perfil de um usuário desativado.</figcaption>
+
+</figure>
+
+O avatar de um usuário desativado exibe o indicador de inativo. Esse indicador tem prioridade sobre os status online, offline e em licença.
+
 ## Acompanhar a atividade e as conversas
 
 <figure>
