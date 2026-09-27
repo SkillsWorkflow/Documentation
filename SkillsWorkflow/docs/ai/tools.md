@@ -139,16 +139,6 @@ Every call is bounded. An agent that names no row count gets 50 rows, and 500 is
 
 The query catalogue is per tenant. See [Data Extraction API](/docs/build-and-extend/api/data-extraction-api) for which queries exist and what each carries.
 
-#### A worked example
-
-```
-Compare contracted vs. logged hours on the Northwind retainer this month.
-```
-
-The agent resolves *"the Northwind retainer"* to a project with `resolve_project`, then calls a named query through `execute_named_query` or its dedicated `analytics_{query}` tool, narrowing it to that project and this month with `queryBuilder.filters`. The panel renders the rows as a chart with a table beside it, the same as any other breakdown — see [Read an answer from your data](/docs/ai/ai-assistant#read-an-answer-from-your-data).
-
-Which named query answers a burn question — contracted hours against logged hours, cost against income — is set by your tenant's own data extraction catalogue. If none compares the two, the agent says the data does not support the question rather than approximating one.
-
 ### Memory
 
 | Tool | What the agent can do |

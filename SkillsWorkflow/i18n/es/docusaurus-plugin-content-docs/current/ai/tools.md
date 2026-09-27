@@ -139,16 +139,6 @@ Cada llamada tiene un límite. Un agent que no indica un número de filas recibe
 
 El catálogo de queries es por tenant. Consulta [Data Extraction API](/docs/build-and-extend/api/data-extraction-api) para saber qué queries existen y qué lleva cada una.
 
-#### Un ejemplo real
-
-```
-Compara las horas contratadas vs. registradas en el retainer de Northwind este mes.
-```
-
-El agent resuelve *"el retainer de Northwind"* a un project con `resolve_project`, luego llama a una named query mediante `execute_named_query` o su tool `analytics_{query}` dedicada, acotándola a ese project y a este mes con `queryBuilder.filters`. El panel muestra las filas como un gráfico con una tabla al lado, igual que en cualquier otro breakdown — consulta [Leer una respuesta a partir de tus datos](/docs/ai/ai-assistant#read-an-answer-from-your-data).
-
-Qué named query responde a una pregunta de burn — horas contratadas frente a horas registradas, coste frente a ingresos — lo define el propio catálogo de extracción de datos de tu tenant. Si ninguna compara las dos, el agent dice que los datos no respaldan la pregunta, en lugar de aproximar una.
-
 ### Memoria
 
 | Herramienta | Qué puede hacer el agente |
