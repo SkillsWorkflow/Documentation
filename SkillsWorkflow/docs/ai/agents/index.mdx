@@ -9,44 +9,45 @@ hide_table_of_contents: true
 ---
 
 import '../_ai-kit.css';
+import Link from '@docusaurus/Link';
 
 <div className="ai-landing">
 
 <header className="ai-head ai-wrap">
   <p className="ai-eyebrow ai-reveal">AI Agents</p>
   <h1 className="ai-head__title ai-reveal">One agent for each kind of work.</h1>
-  <p className="ai-lead ai-reveal">You pick an agent in the <a className="ai-link" href="/docs/ai/ai-assistant">AI Assistant</a> panel before you send a message. Each one carries a different set of <a className="ai-link" href="/docs/ai/ai-tools">tools</a>, and that set is the whole of what it can do — so picking the right one is most of getting the right answer.</p>
+  <p className="ai-lead ai-reveal">You pick an agent in the <Link className="ai-link" to="/docs/ai/ai-assistant">AI Assistant</Link> panel before you send a message. Each one carries a different set of <Link className="ai-link" to="/docs/ai/ai-tools">tools</Link>, and that set is the whole of what it can do — so picking the right one is most of getting the right answer.</p>
 </header>
 
 <section className="ai-section ai-wrap">
   <div className="ai-grid">
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/document-agent">
+    <Link className="ai-card ai-reveal" to="/docs/ai/agents/document-agent">
       <h2 className="ai-card__title">Document Agent</h2>
       <p className="ai-card__body">Create, update, duplicate, find and move jobs, deliverables and other documents. Writes briefs from a job type's template, edits custom fields, changes teams.</p>
       <code className="ai-chip">"Create a job for the Northwind spring campaign"</code>
       <p className="ai-card__more">Explore →</p>
-    </a>
+    </Link>
 
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/workflow-agent">
+    <Link className="ai-card ai-reveal" to="/docs/ai/agents/workflow-agent">
       <h2 className="ai-card__title">Workflow Agent</h2>
       <p className="ai-card__body">Inspect and configure workflows — stages, transitions, actions, roles, motives, teams and mappings.</p>
       <code className="ai-chip">"Show me the workflow for Deliverables"</code>
       <p className="ai-card__more">Explore →</p>
-    </a>
+    </Link>
 
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/workspace-agent">
+    <Link className="ai-card ai-reveal" to="/docs/ai/agents/workspace-agent">
       <h2 className="ai-card__title">Workspace Agent</h2>
       <p className="ai-card__body">Build and change workspaces and dashboards — components, layout, filters, data sources — and edit the files behind them when a change needs code.</p>
       <code className="ai-chip">"Add a kanban panel to this workspace"</code>
       <p className="ai-card__more">Explore →</p>
-    </a>
+    </Link>
 
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/writing-agent">
+    <Link className="ai-card ai-reveal" to="/docs/ai/agents/writing-agent">
       <h2 className="ai-card__title">Writing Agent</h2>
-      <p className="ai-card__body">Rewrite, shorten, translate or change the tone of any text. This is the agent behind <a className="ai-link" href="/docs/ai/ai-actions">AI Actions</a> in the editor toolbar.</p>
+      <p className="ai-card__body">Rewrite, shorten, translate or change the tone of any text. This is the agent behind <Link className="ai-link" to="/docs/ai/ai-actions">AI Actions</Link> in the editor toolbar.</p>
       <code className="ai-chip">"Rewrite this in a more professional tone"</code>
       <p className="ai-card__more">Explore →</p>
-    </a>
+    </Link>
   </div>
 </section>
 
@@ -64,7 +65,7 @@ import '../_ai-kit.css';
 <section className="ai-section ai-wrap">
   <div className="ai-callout ai-callout--tip">
     <p className="ai-callout__label">These four are the agents Skills Workflow ships</p>
-    <p className="ai-callout__body">Your agency can add its own on top of them, with their own instructions, tools and knowledge. See <a className="ai-link" href="/docs/ai/ai-extend">Add your own skills, agents and tools</a>.</p>
+    <p className="ai-callout__body">Your agency can add its own on top of them, with their own instructions, tools and knowledge. See <Link className="ai-link" to="/docs/ai/ai-extend">Add your own skills, agents and tools</Link>.</p>
   </div>
 </section>
 

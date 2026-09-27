@@ -9,6 +9,7 @@ hide_table_of_contents: true
 ---
 
 import './_ai-kit.css';
+import Link from '@docusaurus/Link';
 
 <div className="ai-landing">
 
@@ -25,19 +26,19 @@ import './_ai-kit.css';
 
   <div className="ai-grid">
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/ai-assistant">The AI Assistant panel</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-assistant">The AI Assistant panel</Link></h3>
       <p className="ai-card__body">A chat panel beside whatever you are working on. It reads the screen you are on, does the work, and asks you to approve anything it is about to write.</p>
       <code className="ai-chip">"Move this job to Client Approval."</code>
     </article>
 
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/ai-actions">AI Actions in the editor</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-actions">AI Actions in the editor</Link></h3>
       <p className="ai-card__body">A button in the toolbar of every rich text editor. Rewrite, shorten, change the tone, or fill your briefing template from notes — without leaving the field you are typing in.</p>
       <code className="ai-chip">"Make this sound warmer before it goes out."</code>
     </article>
 
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/ai-portals">Client Portals</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-portals">Client Portals</Link></h3>
       <p className="ai-card__body">A page of a client's own, generated with AI and served from Skills Workflow at its own address. None of the platform's interface around it — the reader signs in as themselves, and the page reads live data through their own permissions. Nothing exported, nothing to keep in sync.</p>
       <code className="ai-chip">"Build Northwind a page showing this quarter's deliverables."</code>
     </article>
@@ -47,41 +48,41 @@ import './_ai-kit.css';
 <section className="ai-section ai-wrap">
   <p className="ai-eyebrow">What your team can do today</p>
   <h2 className="ai-h2">Less busywork. More of the work you were hired for.</h2>
-  <p className="ai-sub">In the panel you pick an <a className="ai-link" href="/docs/ai/agents">agent</a>. Each one is built for a different kind of work.</p>
+  <p className="ai-sub">In the panel you pick an <Link className="ai-link" to="/docs/ai/agents">agent</Link>. Each one is built for a different kind of work.</p>
 
   <div className="ai-grid">
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/agents/document-agent">Create work in seconds</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent">Create work in seconds</Link></h3>
       <p className="ai-card__body">Describe what a client asked for and get a job or deliverable created and filled in, with its brief written into your job type's template — not a blank form.</p>
       <code className="ai-chip">"Create a deliverable for the Acme rebrand kickoff."</code>
     </article>
 
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/ai-tools#your-data">Ask your data a straight question</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-tools#your-data">Ask your data a straight question</Link></h3>
       <p className="ai-card__body">No dashboard to dig through. Ask about a project or a client and the assistant answers from your own reports, with your own permissions.</p>
       <code className="ai-chip">"How is the Northwind retainer tracking this month?"</code>
     </article>
 
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/ai-tools#your-data">Check burn without a dashboard</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-tools#your-data">Check burn without a dashboard</Link></h3>
       <p className="ai-card__body">Compare hours contracted against hours actually logged, and weigh cost against income, straight from your own reports — no workspace to open first.</p>
       <code className="ai-chip">"Compare contracted vs. logged hours on the Northwind retainer this month."</code>
     </article>
 
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/agents/workflow-agent">Reshape how work flows</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Reshape how work flows</Link></h3>
       <p className="ai-card__body">Adjust stages, approvals and who signs off by describing the outcome you want, instead of walking through configuration screens.</p>
       <code className="ai-chip">"Add a legal review step before Approved."</code>
     </article>
 
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/agents/workspace-agent">Make the view fit each team</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Make the view fit each team</Link></h3>
       <p className="ai-card__body">Tune the panels and filters on a workspace, or build a new one, shaped around how a team actually works.</p>
       <code className="ai-chip">"Add a board of this week's deliverables."</code>
     </article>
 
     <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><a className="ai-link" href="/docs/ai/ai-extend">Teach it your way of working</a></h3>
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-extend">Teach it your way of working</Link></h3>
       <p className="ai-card__body">Add skills that carry your rules, agents built for your processes, and tools that reach your own reports and systems.</p>
     </article>
   </div>
@@ -105,7 +106,7 @@ import './_ai-kit.css';
     <div className="ai-callout ai-callout--warn">
       <p className="ai-callout__label">In preview</p>
       <p className="ai-callout__body">The assistant carries a <strong>Preview</strong> badge. It is still under development, its behaviour may change, and results are generated — review them before acting on them or sending them to a client.</p>
-      <p className="ai-callout__body">Portals are new and still being built out. Read <a className="ai-link" href="/docs/ai/ai-portals#what-is-not-there-yet">what is not there yet</a> before you give a client the link.</p>
+      <p className="ai-callout__body">Portals are new and still being built out. Read <Link className="ai-link" to="/docs/ai/ai-portals#what-is-not-there-yet">what is not there yet</Link> before you give a client the link.</p>
     </div>
   </div>
 </section>
@@ -113,12 +114,12 @@ import './_ai-kit.css';
 <section className="ai-section ai-wrap">
   <p className="ai-eyebrow">Start here</p>
   <ul className="ai-list">
-    <li><a className="ai-link" href="/docs/ai/ai-assistant">AI Assistant</a> — open it, give it context, approve what it does</li>
-    <li><a className="ai-link" href="/docs/ai/agents">Agents</a> — which one to pick</li>
-    <li><a className="ai-link" href="/docs/ai/ai-memories">AI Memories</a> — what it remembers about you, and how to change it</li>
-    <li><a className="ai-link" href="/docs/ai/ai-tools">Tools</a> — what an agent can actually do</li>
-    <li><a className="ai-link" href="/docs/ai/ai-portals">Client Portals</a> — a page of a client's own, on live data</li>
-    <li><a className="ai-link" href="/docs/ai/ai-extend">Add your own skills, agents and tools</a></li>
+    <li><Link className="ai-link" to="/docs/ai/ai-assistant">AI Assistant</Link> — open it, give it context, approve what it does</li>
+    <li><Link className="ai-link" to="/docs/ai/agents">Agents</Link> — which one to pick</li>
+    <li><Link className="ai-link" to="/docs/ai/ai-memories">AI Memories</Link> — what it remembers about you, and how to change it</li>
+    <li><Link className="ai-link" to="/docs/ai/ai-tools">Tools</Link> — what an agent can actually do</li>
+    <li><Link className="ai-link" to="/docs/ai/ai-portals">Client Portals</Link> — a page of a client's own, on live data</li>
+    <li><Link className="ai-link" to="/docs/ai/ai-extend">Add your own skills, agents and tools</Link></li>
   </ul>
 </section>
 

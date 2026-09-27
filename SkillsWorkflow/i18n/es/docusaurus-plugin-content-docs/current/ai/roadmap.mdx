@@ -10,6 +10,7 @@ hide_table_of_contents: true
 ---
 
 import '@site/docs/ai/_ai-kit.css';
+import Link from '@docusaurus/Link';
 
 <div className="ai-landing">
 
@@ -28,9 +29,9 @@ import '@site/docs/ai/_ai-kit.css';
       <p className="ai-track__q">Chat, en todas partes</p>
       <h3 className="ai-track__name">Pregunta donde estás trabajando</h3>
       <ul>
-        <li><a className="ai-link" href="/docs/ai/ai-assistant">Asistente de IA</a> — un panel junto a cualquier pantalla, que lee el workspace o documento en el que estás</li>
-        <li><a className="ai-link" href="/docs/ai/ai-actions">Acciones de IA</a> — asistencia de texto en la barra de herramientas de cualquier editor de texto enriquecido</li>
-        <li><a className="ai-link" href="/docs/ai/ai-assistant#memories">Memorias</a> — el asistente recuerda lo que le dijiste, y puedes borrarlas</li>
+        <li><Link className="ai-link" to="/docs/ai/ai-assistant">Asistente de IA</Link> — un panel junto a cualquier pantalla, que lee el workspace o documento en el que estás</li>
+        <li><Link className="ai-link" to="/docs/ai/ai-actions">Acciones de IA</Link> — asistencia de texto en la barra de herramientas de cualquier editor de texto enriquecido</li>
+        <li><Link className="ai-link" to="/docs/ai/ai-assistant#memories">Memorias</Link> — el asistente recuerda lo que le dijiste, y puedes borrarlas</li>
       </ul>
     </div>
 
@@ -38,7 +39,7 @@ import '@site/docs/ai/_ai-kit.css';
       <p className="ai-track__q">Datos</p>
       <h3 className="ai-track__name">Hazle una pregunta directa a tus datos</h3>
       <ul>
-        <li><a className="ai-link" href="/docs/ai/ai-tools#your-data">Tus informes como tools</a> — el asistente responde a partir de tus propias queries de extracción de datos, con tus propios permisos</li>
+        <li><Link className="ai-link" to="/docs/ai/ai-tools#your-data">Tus informes como tools</Link> — el asistente responde a partir de tus propias queries de extracción de datos, con tus propios permisos</li>
       </ul>
     </div>
 
@@ -46,10 +47,10 @@ import '@site/docs/ai/_ai-kit.css';
       <p className="ai-track__q">Documentos y procesos</p>
       <h3 className="ai-track__name">Haz el trabajo, no los formularios</h3>
       <ul>
-        <li><a className="ai-link" href="/docs/ai/agents/document-agent">Crear y cambiar documentos</a> — jobs, briefs, custom fields, teams, duplicados</li>
-        <li><a className="ai-link" href="/docs/ai/agents/document-agent#moving-a-stage">Mover un documento</a> — sin salir del chat</li>
-        <li><a className="ai-link" href="/docs/ai/agents/workflow-agent">Entender y cambiar un workflow</a> — stages, transitions, approval paths</li>
-        <li><a className="ai-link" href="/docs/ai/ai-actions#working-from-a-briefing-template">Briefs que siguen tu plantilla</a> — nada empieza en blanco</li>
+        <li><Link className="ai-link" to="/docs/ai/agents/document-agent">Crear y cambiar documentos</Link> — jobs, briefs, custom fields, teams, duplicados</li>
+        <li><Link className="ai-link" to="/docs/ai/agents/document-agent#moving-a-stage">Mover un documento</Link> — sin salir del chat</li>
+        <li><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Entender y cambiar un workflow</Link> — stages, transitions, approval paths</li>
+        <li><Link className="ai-link" to="/docs/ai/ai-actions#working-from-a-briefing-template">Briefs que siguen tu plantilla</Link> — nada empieza en blanco</li>
       </ul>
     </div>
 
@@ -57,9 +58,9 @@ import '@site/docs/ai/_ai-kit.css';
       <p className="ai-track__q">Construcción</p>
       <h3 className="ai-track__name">De la idea a la configuración, rápido</h3>
       <ul>
-        <li><a className="ai-link" href="/docs/ai/agents/workspace-agent">Workspaces y dashboards a partir de una frase</a></li>
-        <li><a className="ai-link" href="/docs/ai/ai-portals">Portales de Cliente</a> — una página propia, generada con IA, que lee datos en tiempo real</li>
-        <li><a className="ai-link" href="/docs/ai/ai-extend">Tus propias skills, agents y tools</a></li>
+        <li><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Workspaces y dashboards a partir de una frase</Link></li>
+        <li><Link className="ai-link" to="/docs/ai/ai-portals">Portales de Cliente</Link> — una página propia, generada con IA, que lee datos en tiempo real</li>
+        <li><Link className="ai-link" to="/docs/ai/ai-extend">Tus propias skills, agents y tools</Link></li>
       </ul>
     </div>
   </div>
@@ -139,7 +140,7 @@ import '@site/docs/ai/_ai-kit.css';
 <section className="ai-section ai-wrap">
   <div className="ai-callout ai-callout--tip">
     <p className="ai-callout__label">¿Tienes una petición?</p>
-    <p className="ai-callout__body">Si hay un workflow que te gustaría que la IA ya gestionara, díselo a tu contacto de Skills Workflow — este roadmap se moldea directamente por lo que piden las agencias. Parte de esto no tienes que esperarlo: un agente propio, con tus reglas y tus tools, es algo que puedes construir hoy. Ver <a className="ai-link" href="/docs/ai/ai-extend">Añadir tus propias skills, agents y tools</a>.</p>
+    <p className="ai-callout__body">Si hay un workflow que te gustaría que la IA ya gestionara, díselo a tu contacto de Skills Workflow — este roadmap se moldea directamente por lo que piden las agencias. Parte de esto no tienes que esperarlo: un agente propio, con tus reglas y tus tools, es algo que puedes construir hoy. Ver <Link className="ai-link" to="/docs/ai/ai-extend">Añadir tus propias skills, agents y tools</Link>.</p>
   </div>
 </section>
 

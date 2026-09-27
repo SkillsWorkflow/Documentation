@@ -9,44 +9,45 @@ hide_table_of_contents: true
 ---
 
 import '@site/docs/ai/_ai-kit.css';
+import Link from '@docusaurus/Link';
 
 <div className="ai-landing">
 
 <header className="ai-head ai-wrap">
   <p className="ai-eyebrow ai-reveal">Agentes de IA</p>
   <h1 className="ai-head__title ai-reveal">Un agente para cada tipo de trabajo.</h1>
-  <p className="ai-lead ai-reveal">Eliges un agente en el panel del <a className="ai-link" href="/docs/ai/ai-assistant">Asistente de IA</a> antes de enviar un mensaje. Cada uno lleva su propio conjunto de <a className="ai-link" href="/docs/ai/ai-tools">herramientas</a>, y ese conjunto es todo lo que puede hacer — así que elegir bien el agente es la mayor parte de obtener la respuesta correcta.</p>
+  <p className="ai-lead ai-reveal">Eliges un agente en el panel del <Link className="ai-link" to="/docs/ai/ai-assistant">Asistente de IA</Link> antes de enviar un mensaje. Cada uno lleva su propio conjunto de <Link className="ai-link" to="/docs/ai/ai-tools">herramientas</Link>, y ese conjunto es todo lo que puede hacer — así que elegir bien el agente es la mayor parte de obtener la respuesta correcta.</p>
 </header>
 
 <section className="ai-section ai-wrap">
   <div className="ai-grid">
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/document-agent">
+    <Link className="ai-card ai-reveal" to="/docs/ai/agents/document-agent">
       <h2 className="ai-card__title">Agente de Documentos</h2>
       <p className="ai-card__body">Crear, actualizar, duplicar, encontrar y mover jobs, deliverables y otros documentos. Escribe briefs a partir de la plantilla del job type, edita campos personalizados, cambia equipos.</p>
       <code className="ai-chip">"Crea un job para la campaña de primavera de Northwind"</code>
       <p className="ai-card__more">Explorar →</p>
-    </a>
+    </Link>
 
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/workflow-agent">
+    <Link className="ai-card ai-reveal" to="/docs/ai/agents/workflow-agent">
       <h2 className="ai-card__title">Agente de Workflows</h2>
       <p className="ai-card__body">Consultar y configurar workflows — stages, transiciones, acciones, roles, motivos, equipos y mapeos.</p>
       <code className="ai-chip">"Muéstrame el workflow de los Deliverables"</code>
       <p className="ai-card__more">Explorar →</p>
-    </a>
+    </Link>
 
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/workspace-agent">
+    <Link className="ai-card ai-reveal" to="/docs/ai/agents/workspace-agent">
       <h2 className="ai-card__title">Agente de Workspaces</h2>
       <p className="ai-card__body">Construir y cambiar workspaces y dashboards — componentes, layout, filtros, fuentes de datos — y editar los ficheros que hay detrás cuando el cambio necesita código.</p>
       <code className="ai-chip">"Añade un panel kanban a este workspace"</code>
       <p className="ai-card__more">Explorar →</p>
-    </a>
+    </Link>
 
-    <a className="ai-card ai-reveal" href="/docs/ai/agents/writing-agent">
+    <Link className="ai-card ai-reveal" to="/docs/ai/agents/writing-agent">
       <h2 className="ai-card__title">Agente de Escritura</h2>
-      <p className="ai-card__body">Reescribir, acortar, traducir o cambiar el tono de cualquier texto. Es el agente detrás de las <a className="ai-link" href="/docs/ai/ai-actions">Acciones de IA</a> en la barra de herramientas del editor.</p>
+      <p className="ai-card__body">Reescribir, acortar, traducir o cambiar el tono de cualquier texto. Es el agente detrás de las <Link className="ai-link" to="/docs/ai/ai-actions">Acciones de IA</Link> en la barra de herramientas del editor.</p>
       <code className="ai-chip">"Reescribe esto en un tono más profesional"</code>
       <p className="ai-card__more">Explorar →</p>
-    </a>
+    </Link>
   </div>
 </section>
 
@@ -64,7 +65,7 @@ import '@site/docs/ai/_ai-kit.css';
 <section className="ai-section ai-wrap">
   <div className="ai-callout ai-callout--tip">
     <p className="ai-callout__label">Estos cuatro son los agentes que trae Skills Workflow</p>
-    <p className="ai-callout__body">Tu agencia puede añadir los suyos encima, con sus propias instrucciones, herramientas y conocimiento. Ver <a className="ai-link" href="/docs/ai/ai-extend">Añadir tus propias skills, agents y tools</a>.</p>
+    <p className="ai-callout__body">Tu agencia puede añadir los suyos encima, con sus propias instrucciones, herramientas y conocimiento. Ver <Link className="ai-link" to="/docs/ai/ai-extend">Añadir tus propias skills, agents y tools</Link>.</p>
   </div>
 </section>
 
