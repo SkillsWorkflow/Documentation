@@ -8,6 +8,36 @@ sidebar_position: 1.5
 
 Each one below is a concrete situation, the steps and the prompt to type in the [AI Assistant](/docs/ai/ai-assistant), and what to expect back — not just a general capability.
 
+## Create a Job Using a Briefing Template
+
+**Overview**
+
+Create a new job using the [Document Agent](/docs/ai/agents/document-agent) and automatically generate its brief based on the briefing template configured for the selected Job Type.
+
+**Scenario**
+
+A project manager needs to create a new campaign job. By providing the campaign details to the Document Agent, the system creates the job and generates a brief following the structure defined in the Job Type's briefing template.
+
+**Example prompt**
+
+```
+Create a new job for the client Nike with the following details:
+
+- Job Type: Digital Campaign
+- Job Title: Nike Summer Campaign 2026
+- Priority: High
+- Description: Develop a digital campaign to promote Nike's summer collection.
+
+Generate the job brief using the briefing template configured for this Job Type.
+```
+
+**Expected outcome**
+
+- A new job is created with the specified information.
+- The correct Job Type is selected.
+- The job brief follows the briefing template configured for that Job Type.
+- The generated brief includes the relevant information provided in the prompt.
+
 ## Check burn without a dashboard
 
 **Situation:** You want to know, right now, whether a retainer or project is burning more hours than it was contracted for, without opening a workspace first.
