@@ -1,0 +1,172 @@
+---
+id: ai-use-cases
+title: Use Cases
+description: "Concrete things to ask the AI Assistant for, grouped by what you are trying to get done — not by which agent happens to answer."
+sidebar_label: Use Cases
+sidebar_position: 1.5
+hide_title: true
+hide_table_of_contents: true
+---
+
+import './_ai-kit.css';
+import Link from '@docusaurus/Link';
+
+<div className="ai-landing">
+
+<header className="ai-head ai-wrap">
+  <p className="ai-eyebrow ai-reveal">Use Cases</p>
+  <h1 className="ai-head__title ai-reveal">Things to try, grouped by what you're trying to get done.</h1>
+  <p className="ai-lead ai-reveal">You don't have to pick the right agent before you ask — the panel offers one, and each example below names which one actually answers it. Every example here is something the platform does today; see the <Link className="ai-link" to="/docs/ai/ai-roadmap">Roadmap</Link> for what's still on the way.</p>
+</header>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Documents and jobs</p>
+  <h2 className="ai-h2">Create, duplicate and move work without the forms.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent">Create work in seconds</Link></h3>
+      <p className="ai-card__body">Describe what a client asked for and get a job or deliverable created and filled in, with its brief written into your job type's template — not a blank form.</p>
+      <code className="ai-chip">"Create a deliverable for the Acme rebrand kickoff."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent#duplicating-a-document">Copy instead of starting over</Link></h3>
+      <p className="ai-card__body">Duplicate a Job, Deliverable, Project, Estimate or Request, carrying over its brief, team and custom fields, and change only what's different.</p>
+      <code className="ai-chip">"Duplicate this job, but this one is for YouTube."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent#moving-a-stage">Move work along from the chat</Link></h3>
+      <p className="ai-card__body">Move a document to its next stage, picking from the transitions actually available on it right now — nothing is guessed.</p>
+      <code className="ai-chip">"Move SKILLS0059S1492 to Client Approval."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent">Ask about a client's projects and tasks</Link></h3>
+      <p className="ai-card__body">Search across a client's jobs, deliverables and tasks and get a straight answer, without opening each one.</p>
+      <code className="ai-chip">"What tasks are open on the Northwind account right now?"</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Workflows and approvals</p>
+  <h2 className="ai-h2">Understand and reshape how work moves, without the configuration screens.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Understand a workflow you inherited</Link></h3>
+      <p className="ai-card__body">See a workflow's stages, its transitions and what each one requires, before you touch anything.</p>
+      <code className="ai-chip">"Show me the workflow for Deliverables."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Reshape how work flows</Link></h3>
+      <p className="ai-card__body">Adjust stages, approvals and who signs off by describing the outcome you want, instead of walking through configuration screens.</p>
+      <code className="ai-chip">"Add a legal review step before Approved."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Change who can approve what</Link></h3>
+      <p className="ai-card__body">Adjust an approval path and who is allowed to perform a transition, as a proposal you review before it applies to every document already in that workflow.</p>
+      <code className="ai-chip">"Nobody outside Legal can approve this."</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Workspaces and dashboards</p>
+  <h2 className="ai-h2">Shape the view to the team, instead of the other way round.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Make the view fit each team</Link></h3>
+      <p className="ai-card__body">Tune the panels and filters on a workspace, or build a new one, shaped around how a team actually works.</p>
+      <code className="ai-chip">"Add a board of this week's deliverables."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">See what's critical across your accounts</Link></h3>
+      <p className="ai-card__body">Build a dashboard that surfaces overruns, risks and pending approvals across every client you manage, not just one at a time.</p>
+      <code className="ai-chip">"Build me a dashboard of critical activity across all my accounts."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Fix a workspace without touching code yourself</Link></h3>
+      <p className="ai-card__body">Describe a bug or a missing behaviour in a workspace, and get it found and fixed in the files behind it.</p>
+      <code className="ai-chip">"Fix the column setup in the estimates grid — the total column shows blank for rows with no lines."</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Briefs and writing</p>
+  <h2 className="ai-h2">Less blank-page time, wherever you're already typing.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-actions#working-from-a-briefing-template">Turn notes into a finished brief</Link></h3>
+      <p className="ai-card__body">Fill your briefing template from a rough note, so a brief follows your agency's structure instead of arriving as one paragraph.</p>
+      <code className="ai-chip">"Make this sound warmer before it goes out."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/brief-validator">Check a brief before it goes further</Link></h3>
+      <p className="ai-card__body">Validate a brief against your client's own instructions, and get back exactly what's missing rather than a deliverable built on a guess.</p>
+      <code className="ai-chip">"Validate this brief against Northwind's brief instructions."</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Client-facing pages</p>
+  <h2 className="ai-h2">Give a client a page of their own, without exporting anything.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-portals">Give a client their own page</Link></h3>
+      <p className="ai-card__body">Describe the page a client should see — status, burn, risks, open requests — and get it generated, reading their own live data through their own permissions.</p>
+      <code className="ai-chip">"Build Northwind a page showing this quarter's deliverables."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-portals">Cover several accounts, not just one</Link></h3>
+      <p className="ai-card__body">Ask for a client portal by name and get it built and published — then ask for the next one, in the same conversation.</p>
+      <code className="ai-chip">"Build a status portal for Northwind, Acme and Delta."</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Answering questions</p>
+  <h2 className="ai-h2">A straight answer from your own reports, no dashboard to open first.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-tools#your-data">Ask your data a straight question</Link></h3>
+      <p className="ai-card__body">No dashboard to dig through. Ask about a project or a client and the assistant answers from your own reports, with your own permissions.</p>
+      <code className="ai-chip">"How is the Northwind retainer tracking this month?"</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title">Check burn without a dashboard</h3>
+      <p className="ai-card__body">Compare hours contracted against hours actually logged, and weigh cost against income, straight from your own reports — no workspace to open first.</p>
+      <code className="ai-chip">"Compare contracted vs. logged hours on the Northwind retainer this month."</code>
+    </article>
+  </div>
+
+  <div className="ai-callout ai-callout--tip">
+    <p className="ai-callout__label">Which agent answers a data question?</p>
+    <p className="ai-callout__body">Answering from your reports is a capability an agent is granted, not one tied to a single agent by name — see <Link className="ai-link" to="/docs/ai/ai-tools#your-data">Your data</Link>. Which agent has it on in your tenant is worth confirming with whoever set yours up.</p>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <div className="ai-callout ai-callout--tip">
+    <p className="ai-callout__label">Building your own</p>
+    <p className="ai-callout__body">These are the use cases the platform ships with. Your agency can teach it more of its own — a rule, a report, a system outside Skills Workflow. See <Link className="ai-link" to="/docs/ai/ai-extend">Add your own skills, agents and tools</Link>.</p>
+  </div>
+</section>
+
+</div>

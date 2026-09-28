@@ -1,0 +1,172 @@
+---
+id: ai-use-cases
+title: Use Cases
+description: "Coisas concretas para pedir ao Assistente de IA, agrupadas pelo que quer fazer — não pelo agente que calha responder."
+sidebar_label: Use Cases
+sidebar_position: 1.5
+hide_title: true
+hide_table_of_contents: true
+---
+
+import '@site/docs/ai/_ai-kit.css';
+import Link from '@docusaurus/Link';
+
+<div className="ai-landing">
+
+<header className="ai-head ai-wrap">
+  <p className="ai-eyebrow ai-reveal">Use Cases</p>
+  <h1 className="ai-head__title ai-reveal">Coisas para experimentar, agrupadas pelo que quer fazer.</h1>
+  <p className="ai-lead ai-reveal">Não precisa de escolher o agente certo antes de perguntar — o painel sugere um, e cada exemplo abaixo indica qual é o que responde de facto. Tudo o que está aqui já existe hoje na plataforma; veja o <Link className="ai-link" to="/docs/ai/ai-roadmap">Roadmap</Link> para saber o que ainda está a caminho.</p>
+</header>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Documentos e jobs</p>
+  <h2 className="ai-h2">Criar, duplicar e mover trabalho sem os formulários.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent">Crie trabalho em segundos</Link></h3>
+      <p className="ai-card__body">Descreva o que um cliente pediu e veja um job ou deliverable criado e preenchido, com o respetivo brief escrito no template do seu job type — não um formulário em branco.</p>
+      <code className="ai-chip">"Cria um deliverable para o kickoff do rebranding da Acme."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent#duplicating-a-document">Copiar em vez de começar do zero</Link></h3>
+      <p className="ai-card__body">Duplique um Job, Deliverable, Project, Estimate ou Request, transportando o respetivo brief, team e custom fields, e altere só o que for diferente.</p>
+      <code className="ai-chip">"Duplica este job, mas este é para o YouTube."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent#moving-a-stage">Avance o trabalho a partir do chat</Link></h3>
+      <p className="ai-card__body">Mova um documento para a stage seguinte, escolhendo de entre as transitions realmente disponíveis nele neste momento — nada é adivinhado.</p>
+      <code className="ai-chip">"Move o SKILLS0059S1492 para Aprovação do Cliente."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent">Pergunte pelos projetos e tarefas de um cliente</Link></h3>
+      <p className="ai-card__body">Pesquise entre os jobs, deliverables e tarefas de um cliente e obtenha uma resposta direta, sem abrir cada um deles.</p>
+      <code className="ai-chip">"Que tarefas estão em aberto na conta da Northwind neste momento?"</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Workflows e aprovações</p>
+  <h2 className="ai-h2">Perceber e remodelar como o trabalho se move, sem os ecrãs de configuração.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Perceba um workflow que herdou</Link></h3>
+      <p className="ai-card__body">Veja as stages de um workflow, as suas transitions e o que cada uma exige, antes de mexer em seja o que for.</p>
+      <code className="ai-chip">"Mostra-me o workflow dos Deliverables."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Remodele a forma como o trabalho flui</Link></h3>
+      <p className="ai-card__body">Ajuste stages, aprovações e quem dá o sign-off descrevendo o resultado que quer, em vez de percorrer ecrãs de configuração.</p>
+      <code className="ai-chip">"Adiciona uma etapa de revisão legal antes de Aprovado."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Altere quem pode aprovar o quê</Link></h3>
+      <p className="ai-card__body">Ajuste um approval path e quem pode executar uma transition, como uma proposta que revê antes de se aplicar a todos os documentos já nesse workflow.</p>
+      <code className="ai-chip">"Ninguém fora do Jurídico pode aprovar isto."</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Workspaces e dashboards</p>
+  <h2 className="ai-h2">Molde a vista à equipa, em vez do contrário.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Ajuste a vista a cada equipa</Link></h3>
+      <p className="ai-card__body">Afine os painéis e filtros de um workspace, ou construa um novo, moldado à forma como uma equipa realmente trabalha.</p>
+      <code className="ai-chip">"Adiciona um board com os deliverables desta semana."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Veja o que é crítico em todas as suas contas</Link></h3>
+      <p className="ai-card__body">Construa um dashboard que traz à superfície derrapagens, riscos e aprovações pendentes em todos os clientes que gere, não só um de cada vez.</p>
+      <code className="ai-chip">"Cria-me um dashboard com a atividade crítica de todas as minhas contas."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Corrija um workspace sem mexer no código</Link></h3>
+      <p className="ai-card__body">Descreva um bug ou um comportamento em falta num workspace, e veja-o encontrado e corrigido nos ficheiros por trás dele.</p>
+      <code className="ai-chip">"Corrige a configuração das colunas na grid de estimates — a coluna do total aparece em branco nas linhas sem lines."</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Briefs e escrita</p>
+  <h2 className="ai-h2">Menos tempo com a página em branco, onde já está a escrever.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-actions#working-from-a-briefing-template">Transforme notas num brief acabado</Link></h3>
+      <p className="ai-card__body">Preencha o seu template de briefing a partir de uma nota rápida, para que o brief siga a estrutura da sua agência em vez de chegar como um parágrafo só.</p>
+      <code className="ai-chip">"Faz isto soar mais simpático antes de enviar."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/brief-validator">Valide um brief antes de avançar</Link></h3>
+      <p className="ai-card__body">Valide um brief face às instruções do próprio cliente, e receba exatamente o que falta em vez de um deliverable construído a partir de um palpite.</p>
+      <code className="ai-chip">"Valida este brief face às instruções de brief da Northwind."</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Páginas para o cliente</p>
+  <h2 className="ai-h2">Dê a um cliente uma página só dele, sem exportar nada.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-portals">Dê a um cliente a sua própria página</Link></h3>
+      <p className="ai-card__body">Descreva a página que um cliente deve ver — status, burn, riscos, pedidos em aberto — e veja-a gerada, a ler os seus próprios dados em tempo real através das suas próprias permissões.</p>
+      <code className="ai-chip">"Cria à Northwind uma página com os deliverables deste trimestre."</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-portals">Cubra várias contas, não só uma</Link></h3>
+      <p className="ai-card__body">Peça um client portal pelo nome e veja-o construído e publicado — depois peça o seguinte, na mesma conversa.</p>
+      <code className="ai-chip">"Cria um portal de status para a Northwind, a Acme e a Delta."</code>
+    </article>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <p className="ai-eyebrow">Responder a perguntas</p>
+  <h2 className="ai-h2">Uma resposta direta a partir dos seus próprios relatórios, sem precisar de abrir um dashboard primeiro.</h2>
+
+  <div className="ai-grid">
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-tools#your-data">Faça uma pergunta direta aos seus dados</Link></h3>
+      <p className="ai-card__body">Sem dashboard para vasculhar. Pergunte sobre um projeto ou um cliente e o assistente responde a partir dos seus próprios relatórios, com as suas próprias permissões.</p>
+      <code className="ai-chip">"Como está a correr o retainer da Northwind este mês?"</code>
+    </article>
+
+    <article className="ai-card ai-reveal">
+      <h3 className="ai-card__title">Consulte o burn sem abrir um dashboard</h3>
+      <p className="ai-card__body">Compare horas contratadas com horas efetivamente registadas, e pese o custo face à receita, diretamente a partir dos seus próprios relatórios — sem precisar de abrir um workspace primeiro.</p>
+      <code className="ai-chip">"Compara as horas contratadas com as horas registadas no retainer da Northwind este mês."</code>
+    </article>
+  </div>
+
+  <div className="ai-callout ai-callout--tip">
+    <p className="ai-callout__label">Qual agente responde a uma pergunta sobre dados?</p>
+    <p className="ai-callout__body">Responder a partir dos seus relatórios é uma capacidade que se concede a um agent, não algo ligado a um agente específico pelo nome — veja <Link className="ai-link" to="/docs/ai/ai-tools#your-data">Os seus dados</Link>. Vale a pena confirmar com quem configurou o seu tenant qual o agente que tem isto ativado.</p>
+  </div>
+</section>
+
+<section className="ai-section ai-wrap">
+  <div className="ai-callout ai-callout--tip">
+    <p className="ai-callout__label">Construir o seu próprio</p>
+    <p className="ai-callout__body">Estes são os use cases com que a plataforma já vem. A sua agência pode ensinar-lhe mais dos seus — uma regra, um relatório, um sistema fora do Skills Workflow. Veja <Link className="ai-link" to="/docs/ai/ai-extend">Adicionar as suas skills, agents e tools</Link>.</p>
+  </div>
+</section>
+
+</div>
