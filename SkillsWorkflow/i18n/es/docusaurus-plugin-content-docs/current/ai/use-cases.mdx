@@ -6,7 +6,7 @@ sidebar_label: Use Cases
 sidebar_position: 1.5
 ---
 
-Cada uno de los siguientes es una situación concreta, los pasos y el prompt que escribir en el [Asistente de IA](/docs/ai/ai-assistant), y qué esperar como respuesta — no solo una capacidad genérica.
+Cada uno de los siguientes es un escenario real para el [Asistente de IA](/docs/ai/ai-assistant): el prompt que escribir en el chat, y el resultado que comprobar — no solo una capacidad genérica.
 
 ## Crear un Job Usando una Plantilla de Briefing
 
@@ -38,61 +38,103 @@ Genera el brief del job usando la plantilla de briefing configurada para este Jo
 - El brief del job sigue la plantilla de briefing configurada para ese Job Type.
 - El brief generado incluye la información relevante indicada en el prompt.
 
-## Consulta el burn sin abrir un dashboard
+## Consulta el Burn Sin Abrir un Dashboard
 
-**Situación:** Quieres saber, ahora mismo, si un retainer o proyecto está consumiendo más horas de las contratadas, sin necesidad de abrir antes un workspace.
+**Visión general**
 
-1. Abre el panel del [Asistente de IA](/docs/ai/ai-assistant).
-2. Pregúntale directamente, indicando el cliente o el proyecto:
+Compara las horas contratadas con las horas realmente registradas, y el coste con el ingreso, directamente desde tus propios informes — sin necesidad de abrir antes un workspace.
+
+**Escenario**
+
+Un account manager quiere comprobar el burn de un retainer antes de una llamada con el cliente, sin navegar hasta un workspace para encontrar el informe correcto.
+
+**Prompt de ejemplo**
 
 ```
 Compara las horas contratadas vs. registradas en el retainer de Northwind este mes.
 ```
 
-3. El asistente identifica el cliente o proyecto que indicaste y responde a partir de uno de los informes de extracción de datos de tu tenant — las mismas cifras detrás de tus dashboards — mostrado como un gráfico con una tabla al lado.
+**Resultado esperado**
+
+- El asistente identifica el cliente o proyecto indicado en el prompt.
+- Responde a partir de uno de los informes de extracción de datos de tu tenant — las mismas cifras detrás de tus dashboards.
+- El resultado se muestra como un gráfico con una tabla al lado.
 
 :::note
 Responder a partir de tus informes es una capacidad que se concede a un agent, no algo ligado a un único agente por su nombre — consulta [Herramientas · Tus datos](/docs/ai/ai-tools#your-data). Si el agente en el que estás dice que no puede ejecutar la query, pregunta a quien configuró tu IA cuál la tiene activada.
 :::
 
-## Cubre varias cuentas, no solo una
+## Cubre Varias Cuentas, No Solo Una
 
-**Situación:** Gestionas varias cuentas de clientes y quieres que cada una tenga su propia página de estado, sin construirlas una a una a través de un formulario.
+**Visión general**
 
-1. Di para qué cliente es el portal y qué debe mostrar — estado, burn, riesgos, peticiones abiertas.
-2. En cuanto el primero esté listo, pide el portal del siguiente cliente en la misma conversación:
+Pide un portal de cliente por su nombre y consíguelo creado y publicado — luego pide el siguiente, en la misma conversación.
+
+**Escenario**
+
+Un account lead gestiona varias cuentas retainer y quiere que cada una tenga su propia página de estado, sin construirlas una a una a través de un formulario.
+
+**Prompt de ejemplo**
 
 ```
 Crea un portal de estado para Northwind. Luego crea el mismo para Acme, y para Delta.
 ```
 
-3. Cada portal se genera por separado, leyendo los datos en tiempo real de ese cliente a través de sus propios permisos. Consulta [Portales de Cliente](/docs/ai/ai-portals) para saber cómo se publica un portal, y qué comprobar antes de darle el enlace a un cliente.
+**Resultado esperado**
 
-## Ve qué es crítico en todas tus cuentas
+- Se genera un portal independiente para cada cliente indicado.
+- Cada portal lee los datos en tiempo real de ese cliente a través de sus propios permisos.
+- Cada portal se publica en su propia dirección.
 
-**Situación:** Quieres una única vista que muestre lo que necesita atención en todas las cuentas que gestionas, en vez de revisar el workspace de cada cliente uno a uno.
+Consulta [Portales de Cliente](/docs/ai/ai-portals) para saber cómo se publica un portal, y qué comprobar antes de darle el enlace a un cliente.
 
-1. Abre el Asistente de IA, elige el **Agente de Workspaces**, y abre (o crea) el workspace donde quieres esto.
-2. Describe el dashboard que quieres:
+## Ve Qué Es Crítico en Todas Tus Cuentas
+
+**Visión general**
+
+Construye un dashboard que muestre overruns, riesgos y aprobaciones pendientes en todos los clientes que gestionas, no solo en uno cada vez.
+
+**Escenario**
+
+Un studio lead quiere una única vista de lo que necesita atención en todas las cuentas, en vez de revisar el workspace de cada cliente uno a uno.
+
+**Prompt de ejemplo**
 
 ```
 Constrúyeme un dashboard con la actividad crítica de todas mis cuentas — overruns, riesgos y aprobaciones pendientes.
 ```
 
-3. Revisa la propuesta antes de aplicarla — nada se guarda hasta que lo hagas. Consulta [Agente de Workspaces](/docs/ai/agents/workspace-agent) para saber cómo se construye y aplica un cambio de workspace.
+**Resultado esperado**
 
-## Pregunta por los proyectos y tareas de un cliente
+- El Agente de Workspaces propone un dashboard que cubre todas las cuentas, no solo un cliente.
+- La propuesta muestra overruns, riesgos y aprobaciones pendientes.
+- Nada se guarda hasta que la propuesta se revisa y se aplica.
 
-**Situación:** Necesitas una respuesta rápida y exacta sobre qué está abierto en la cuenta de un cliente, sin abrir cada job para comprobarlo.
+Consulta [Agente de Workspaces](/docs/ai/agents/workspace-agent) para saber cómo se construye y aplica un cambio de workspace.
 
-1. Abre el Asistente de IA y elige el **Agente de Documentos**.
-2. Pregunta, indicando el cliente:
+## Pregunta por los Proyectos y Tareas de un Cliente
+
+**Visión general**
+
+Busca entre los jobs, deliverables y tareas de un cliente y obtén una respuesta directa, sin abrir cada uno.
+
+**Escenario**
+
+Un project manager necesita una respuesta rápida y exacta sobre qué está abierto en la cuenta de un cliente, sin abrir cada job para comprobarlo.
+
+**Prompt de ejemplo**
 
 ```
 ¿Qué tareas están abiertas en la cuenta de Northwind ahora mismo?
 ```
 
-3. El asistente busca entre los jobs, deliverables y otros documentos de ese cliente y responde directamente; haz clic en un resultado para abrirlo. Consulta [Agente de Documentos](/docs/ai/agents/document-agent) para la lista completa de tipos de documento que puede buscar.
+**Resultado esperado**
+
+- El asistente busca entre los jobs, deliverables y otros documentos de ese cliente.
+- Responde directamente, indicando qué está abierto.
+- Hacer clic en un resultado abre ese documento.
+
+Consulta [Agente de Documentos](/docs/ai/agents/document-agent) para la lista completa de tipos de documento que puede buscar.
 
 ## Artículos relacionados
 

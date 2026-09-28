@@ -6,7 +6,7 @@ sidebar_label: Use Cases
 sidebar_position: 1.5
 ---
 
-Each one below is a concrete situation, the steps and the prompt to type in the [AI Assistant](/docs/ai/ai-assistant), and what to expect back — not just a general capability.
+Each one below is a real scenario for the [AI Assistant](/docs/ai/ai-assistant): the prompt to type in the chat, and the outcome to check for — not just a general capability.
 
 ## Create a Job Using a Briefing Template
 
@@ -38,61 +38,103 @@ Generate the job brief using the briefing template configured for this Job Type.
 - The job brief follows the briefing template configured for that Job Type.
 - The generated brief includes the relevant information provided in the prompt.
 
-## Check burn without a dashboard
+## Check Burn Without a Dashboard
 
-**Situation:** You want to know, right now, whether a retainer or project is burning more hours than it was contracted for, without opening a workspace first.
+**Overview**
 
-1. Open the [AI Assistant](/docs/ai/ai-assistant) panel.
-2. Ask it directly, naming the client or project:
+Compare contracted hours against hours actually logged, and cost against income, straight from your own reports — no workspace to open first.
+
+**Scenario**
+
+An account manager wants to check burn on a retainer before a client call, without navigating to a workspace to find the right report.
+
+**Example prompt**
 
 ```
 Compare contracted vs. logged hours on the Northwind retainer this month.
 ```
 
-3. The assistant resolves the client or project you named and answers from one of your tenant's own data extraction reports — the same figures behind your dashboards — rendered as a chart with a table beside it.
+**Expected outcome**
+
+- The assistant resolves the client or project named in the prompt.
+- It answers from one of your tenant's own data extraction reports — the same figures behind your dashboards.
+- The result is rendered as a chart with a table beside it.
 
 :::note
 Answering from your reports is a capability an agent is granted, not one tied to a single named agent — see [Tools · Your data](/docs/ai/ai-tools#your-data). If the agent you're on says it can't run the query, ask whoever set up your AI which one has this switched on.
 :::
 
-## Cover several accounts, not just one
+## Cover Several Accounts, Not Just One
 
-**Situation:** You manage several client accounts and want each one to have its own status page, without building them one by one through a form.
+**Overview**
 
-1. Say which client the portal is for and what it should show — status, burn, risks, open requests.
-2. Once the first one is done, ask for the next client's portal in the same conversation:
+Ask for a client portal by name and get it built and published — then ask for the next one, in the same conversation.
+
+**Scenario**
+
+An account lead manages several retained clients and wants each one to have its own status page, without building them one by one through a form.
+
+**Example prompt**
 
 ```
 Build a status portal for Northwind. Then build the same one for Acme, and for Delta.
 ```
 
-3. Each portal is generated separately, reading that client's own live data through their own permissions. See [Client Portals](/docs/ai/ai-portals) for how a portal is published, and what to check before handing the link to a client.
+**Expected outcome**
 
-## See what's critical across your accounts
+- A separate portal is generated for each client named.
+- Each portal reads that client's own live data through their own permissions.
+- Each portal is published at its own address.
 
-**Situation:** You want one view that surfaces what needs attention across every account you manage, instead of checking each client's workspace in turn.
+See [Client Portals](/docs/ai/ai-portals) for how a portal is published, and what to check before handing the link to a client.
 
-1. Open the AI Assistant, select **Workspace Agent**, and open (or start) the workspace you want this on.
-2. Describe the dashboard you want:
+## See What's Critical Across Your Accounts
+
+**Overview**
+
+Build a dashboard that surfaces overruns, risks and pending approvals across every client you manage, not just one at a time.
+
+**Scenario**
+
+A studio lead wants one view of what needs attention across every account, instead of checking each client's workspace in turn.
+
+**Example prompt**
 
 ```
 Build me a dashboard of critical activity across all my accounts — overruns, risks and pending approvals.
 ```
 
-3. Review the proposal before applying it — nothing is saved until you do. See [Workspace Agent](/docs/ai/agents/workspace-agent) for how a workspace change is built and applied.
+**Expected outcome**
 
-## Ask about a client's projects and tasks
+- The Workspace Agent proposes a dashboard covering every account, not a single client.
+- The proposal surfaces overruns, risks and pending approvals.
+- Nothing is saved until the proposal is reviewed and applied.
 
-**Situation:** You need a quick, accurate answer about what's open on a client's account, without opening every job to check.
+See [Workspace Agent](/docs/ai/agents/workspace-agent) for how a workspace change is built and applied.
 
-1. Open the AI Assistant and select **Document Agent**.
-2. Ask, naming the client:
+## Ask About a Client's Projects and Tasks
+
+**Overview**
+
+Search across a client's jobs, deliverables and tasks and get a straight answer, without opening each one.
+
+**Scenario**
+
+A project manager needs a quick, accurate answer about what's open on a client's account, without opening every job to check.
+
+**Example prompt**
 
 ```
 What tasks are open on the Northwind account right now?
 ```
 
-3. The assistant searches across that client's jobs, deliverables and other documents and answers directly; click a result to open it. See [Document Agent](/docs/ai/agents/document-agent) for the full list of document types it can search.
+**Expected outcome**
+
+- The assistant searches across that client's jobs, deliverables and other documents.
+- It answers directly, naming what is open.
+- Clicking a result opens that document.
+
+See [Document Agent](/docs/ai/agents/document-agent) for the full list of document types it can search.
 
 ## Related articles
 
