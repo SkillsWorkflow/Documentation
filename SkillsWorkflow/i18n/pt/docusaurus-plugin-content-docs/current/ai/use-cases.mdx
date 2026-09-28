@@ -1,79 +1,73 @@
 ---
 id: ai-use-cases
 title: Use Cases
-description: "Coisas concretas para pedir ao Assistente de IA — cada uma delas algo que a plataforma já faz hoje."
+description: "Use cases reais para o Assistente de IA: os passos e o prompt exatos a escrever no chat, e o que esperar como resposta."
 sidebar_label: Use Cases
 sidebar_position: 1.5
-hide_title: true
-hide_table_of_contents: true
 ---
 
-import '@site/docs/ai/_ai-kit.css';
-import Link from '@docusaurus/Link';
+Cada um dos seguintes é uma situação concreta, os passos e o prompt a escrever no [Assistente de IA](/docs/ai/ai-assistant), e o que esperar como resposta — não apenas uma capacidade genérica.
 
-<div className="ai-landing">
+## Consulte o burn sem abrir um dashboard
 
-<header className="ai-head ai-wrap">
-  <p className="ai-eyebrow ai-reveal">Use Cases</p>
-  <h1 className="ai-head__title ai-reveal">Menos trabalho burocrático. Mais do trabalho para que foi contratada.</h1>
-  <p className="ai-lead ai-reveal">No painel escolhe um <Link className="ai-link" to="/docs/ai/agents">agente</Link>. Cada um está construído para um tipo de trabalho diferente.</p>
-</header>
+**Situação:** Quer saber, agora mesmo, se um retainer ou projeto está a consumir mais horas do que as contratadas, sem precisar de abrir um workspace primeiro.
 
-<section className="ai-section ai-wrap">
-  <div className="ai-grid">
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent">Crie trabalho em segundos</Link></h3>
-      <p className="ai-card__body">Descreva o que um cliente pediu e obtenha um job ou deliverable criado e preenchido, com o brief escrito no template do seu job type — não num formulário em branco.</p>
-      <code className="ai-chip">"Cria um deliverable para o arranque do rebranding da Acme."</code>
-    </article>
+1. Abra o painel do [Assistente de IA](/docs/ai/ai-assistant).
+2. Pergunte diretamente, indicando o cliente ou o projeto:
 
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-tools#your-data">Faça uma pergunta direta aos seus dados</Link></h3>
-      <p className="ai-card__body">Sem dashboard para vasculhar. Pergunte sobre um projeto ou um cliente e o assistente responde a partir dos seus próprios relatórios, com as suas próprias permissões.</p>
-      <code className="ai-chip">"Como está a correr o retainer da Northwind este mês?"</code>
-    </article>
+```
+Compara as horas contratadas vs. registadas no retainer da Northwind este mês.
+```
 
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title">Consulte o burn sem abrir um dashboard</h3>
-      <p className="ai-card__body">Compare as horas contratadas com as horas realmente registadas, e o custo com a receita, diretamente a partir dos seus próprios relatórios — sem precisar de abrir um workspace primeiro.</p>
-      <code className="ai-chip">"Compara as horas contratadas vs. registadas no retainer da Northwind este mês."</code>
-    </article>
+3. O assistente identifica o cliente ou projeto que indicou e responde a partir de um dos relatórios de extração de dados do seu tenant — os mesmos números por trás dos seus dashboards — apresentado como um gráfico com uma tabela ao lado.
 
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workflow-agent">Remodele a forma como o trabalho flui</Link></h3>
-      <p className="ai-card__body">Ajuste stages, aprovações e quem dá o aval descrevendo o resultado que quer, em vez de percorrer ecrãs de configuração.</p>
-      <code className="ai-chip">"Adiciona uma etapa de revisão legal antes de Aprovado."</code>
-    </article>
+:::note
+Responder a partir dos seus relatórios é uma capacidade que se concede a um agent, não algo ligado a um único agente pelo nome — veja [Ferramentas · Os seus dados](/docs/ai/ai-tools#your-data). Se o agente em que está disser que não consegue executar a query, pergunte a quem configurou a sua IA qual tem isto ativado.
+:::
 
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Ajuste a vista a cada equipa</Link></h3>
-      <p className="ai-card__body">Afine os painéis e filtros de um workspace, ou construa um novo, moldado à forma como uma equipa realmente trabalha.</p>
-      <code className="ai-chip">"Adiciona um board com os deliverables desta semana."</code>
-    </article>
+## Cubra várias contas, não só uma
 
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-extend">Ensine-lhe a sua forma de trabalhar</Link></h3>
-      <p className="ai-card__body">Adicione skills que carregam as suas regras, agentes construídos para os seus processos, e tools que alcançam os seus próprios relatórios e sistemas.</p>
-    </article>
+**Situação:** Gere várias contas de clientes e quer que cada uma tenha a sua própria página de status, sem as construir uma a uma através de um formulário.
 
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/ai-portals">Cubra várias contas, não só uma</Link></h3>
-      <p className="ai-card__body">Peça um portal de cliente pelo nome e veja-o criado e publicado — depois peça o seguinte, na mesma conversa.</p>
-      <code className="ai-chip">"Cria um portal de status para a Northwind, a Acme e a Delta."</code>
-    </article>
+1. Diga para que cliente é o portal e o que deve mostrar — status, burn, riscos, pedidos em aberto.
+2. Assim que o primeiro estiver pronto, peça o portal do cliente seguinte na mesma conversa:
 
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/workspace-agent">Veja o que é crítico em todas as suas contas</Link></h3>
-      <p className="ai-card__body">Construa um dashboard que mostra overruns, riscos e aprovações pendentes em todos os clientes que gere, não só num de cada vez.</p>
-      <code className="ai-chip">"Cria-me um dashboard com a atividade crítica de todas as minhas contas."</code>
-    </article>
+```
+Cria um portal de status para a Northwind. Depois cria o mesmo para a Acme, e para a Delta.
+```
 
-    <article className="ai-card ai-reveal">
-      <h3 className="ai-card__title"><Link className="ai-link" to="/docs/ai/agents/document-agent">Pergunte pelos projetos e tarefas de um cliente</Link></h3>
-      <p className="ai-card__body">Pesquise entre os jobs, deliverables e tarefas de um cliente e obtenha uma resposta direta, sem abrir cada um deles.</p>
-      <code className="ai-chip">"Que tarefas estão em aberto na conta da Northwind neste momento?"</code>
-    </article>
-  </div>
-</section>
+3. Cada portal é gerado separadamente, a ler os dados em tempo real desse cliente através das suas próprias permissões. Veja [Portais de Cliente](/docs/ai/ai-portals) para saber como um portal é publicado, e o que verificar antes de dar o link a um cliente.
 
-</div>
+## Veja o que é crítico em todas as suas contas
+
+**Situação:** Quer uma única vista que mostre o que precisa de atenção em todas as contas que gere, em vez de verificar o workspace de cada cliente um a um.
+
+1. Abra o Assistente de IA, escolha o **Agente de Workspaces**, e abra (ou comece) o workspace onde quer isto.
+2. Descreva o dashboard que quer:
+
+```
+Cria-me um dashboard com a atividade crítica de todas as minhas contas — overruns, riscos e aprovações pendentes.
+```
+
+3. Reveja a proposta antes de a aplicar — nada é gravado até o fazer. Veja [Agente de Workspaces](/docs/ai/agents/workspace-agent) para saber como uma alteração a um workspace é construída e aplicada.
+
+## Pergunte pelos projetos e tarefas de um cliente
+
+**Situação:** Precisa de uma resposta rápida e exata sobre o que está em aberto na conta de um cliente, sem abrir cada job para verificar.
+
+1. Abra o Assistente de IA e escolha o **Agente de Documentos**.
+2. Pergunte, indicando o cliente:
+
+```
+Que tarefas estão em aberto na conta da Northwind neste momento?
+```
+
+3. O assistente pesquisa entre os jobs, deliverables e outros documentos desse cliente e responde diretamente; clique num resultado para o abrir. Veja [Agente de Documentos](/docs/ai/agents/document-agent) para a lista completa de tipos de documento que consegue pesquisar.
+
+## Artigos relacionados
+
+- [Assistente de IA](/docs/ai/ai-assistant)
+- [Ferramentas](/docs/ai/ai-tools)
+- [Portais de Cliente](/docs/ai/ai-portals)
+- [Agente de Workspaces](/docs/ai/agents/workspace-agent)
+- [Agente de Documentos](/docs/ai/agents/document-agent)
