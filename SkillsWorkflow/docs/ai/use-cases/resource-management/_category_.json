@@ -1,0 +1,10 @@
+{
+  "label": "Resource Management",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Resource Management",
+    "description": "Use cases for checking burn, availability, scarcity and critical resource issues.",
+    "slug": "/ai/use-cases/resource-management"
+  }
+}

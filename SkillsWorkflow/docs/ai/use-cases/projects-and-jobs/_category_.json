@@ -1,0 +1,11 @@
+{
+  "label": "Projects & Jobs",
+  "position": 1,
+  "key": "ai-use-cases-projects-jobs",
+  "link": {
+    "type": "generated-index",
+    "title": "Projects & Jobs",
+    "description": "Use cases for creating jobs and tracking their progress.",
+    "slug": "/ai/use-cases/projects-and-jobs"
+  }
+}

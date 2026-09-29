@@ -1,0 +1,10 @@
+{
+  "label": "Gestión de Recursos",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "slug": "/ai/use-cases/resource-management",
+    "title": "Gestión de Recursos",
+    "description": "Use cases para consultar burn, disponibilidad, escasez y problemas críticos de recursos."
+  }
+}

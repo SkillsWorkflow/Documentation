@@ -1,0 +1,10 @@
+{
+  "label": "Estado das Contas",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "/ai/use-cases/accounts-status",
+    "title": "Estado das Contas",
+    "description": "Use cases para monitorizar várias contas de clientes ao mesmo tempo."
+  }
+}
