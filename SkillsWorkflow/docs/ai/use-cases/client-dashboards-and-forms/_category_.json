@@ -1,4 +1,9 @@
 {
   "label": "Client Dashboards and Forms",
-  "position": 3
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Client Dashboards and Forms",
+    "description": "Use cases for keeping clients informed through portals and status updates."
+  }
 }
