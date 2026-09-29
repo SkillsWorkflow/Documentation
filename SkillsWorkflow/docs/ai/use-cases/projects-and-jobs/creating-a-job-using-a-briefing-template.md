@@ -1,8 +1,8 @@
 ---
-id: create-a-web-design-job
-title: Create a Web Design Job
+id: creating-a-job-using-a-briefing-template
+title: Creating a Job Using a Briefing Template
 description: "Create a Job from a description, with its brief written from the Job Type's configured briefing template."
-sidebar_label: Create a Web Design Job
+sidebar_label: Creating a Job Using a Briefing Template
 sidebar_position: 1
 ---
 
