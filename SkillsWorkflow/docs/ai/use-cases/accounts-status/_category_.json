@@ -4,6 +4,7 @@
   "link": {
     "type": "generated-index",
     "title": "Accounts Status",
-    "description": "Use cases for monitoring several client accounts at once."
+    "description": "Use cases for monitoring several client accounts at once.",
+    "slug": "/ai/use-cases/accounts-status"
   }
 }

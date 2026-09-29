@@ -4,6 +4,7 @@
   "link": {
     "type": "generated-index",
     "title": "Use Cases",
-    "description": "Real use cases for the AI Assistant, organized by subject — what each one does, the prompt to send, and the result to expect."
+    "description": "Real use cases for the AI Assistant, organized by subject — what each one does, the prompt to send, and the result to expect.",
+    "slug": "/ai/use-cases"
   }
 }
