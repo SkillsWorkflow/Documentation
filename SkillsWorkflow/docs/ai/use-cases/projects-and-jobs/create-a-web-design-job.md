@@ -27,4 +27,5 @@ Use the briefing template configured for the Website Job Type to generate the jo
 - A new Job is created under the right client and project.
 - The Job Type resolves correctly even when named slightly differently from how it's configured (for example, "Website" resolving to the actual Job Type, "Web Design").
 - The brief follows the structure defined in the Job Type's briefing template, not a single paragraph.
-- Anything that can't be inferred — such as the business object type or the department — is asked for before the Job is created.
+- Anything that can't be inferred — such as the business object type or the department — is asked about, with suggested options to choose from, to make answering easier.
+- Everything generated is proposed as a draft first — the brief included — and can always be reviewed and changed before it's confirmed.
