@@ -1,0 +1,29 @@
+---
+id: updating-rate-cards
+title: Updating Rate Cards
+description: "Update rate card values and see the impact on estimates, contracts and project costs."
+sidebar_label: Updating Rate Cards
+sidebar_position: 3
+---
+
+:::note
+Planned — not available yet. This use case describes where the assistant is headed, not what it can do today.
+:::
+
+## Overview
+
+Update rate card information based on user instructions or an attached file, identifying the changes and their potential impact on estimates and project costs.
+
+## Example prompt
+
+```
+Update the rate card [Rate Card Name] based on the following instructions or attached file:
+
+[Describe the rates to be updated, the applicable resources or typology groups, the effective date, and any relevant conditions.]
+
+Identify the existing and proposed rates, summarize the changes, and highlight any potential impact on estimates, contracts, or project costs. Flag any information that requires confirmation before applying the changes.
+```
+
+## Expected outcome
+
+An updated rate card reflecting the requested changes, with a summary of existing and proposed rates, applicable resources or typology groups, effective dates, and potential impacts on estimates, contracts, and project costs. Any information requiring confirmation is highlighted.
