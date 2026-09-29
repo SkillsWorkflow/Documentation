@@ -1,0 +1,10 @@
+{
+  "label": "Use Cases",
+  "position": 1.5,
+  "link": {
+    "type": "generated-index",
+    "title": "Use Cases",
+    "description": "Use cases reais para o Assistente de IA, organizados por assunto — o que cada um faz, o prompt a enviar, e o resultado a esperar.",
+    "slug": "/ai/use-cases"
+  }
+}
