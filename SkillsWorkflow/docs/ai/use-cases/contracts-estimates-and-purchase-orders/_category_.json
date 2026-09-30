@@ -1,9 +1,9 @@
 {
-  "label": "Contracts, Estimates & Purchase Orders",
+  "label": "Contracts, Estimates and Purchase Orders",
   "position": 5,
   "link": {
     "type": "generated-index",
-    "title": "Contracts, Estimates & Purchase Orders",
+    "title": "Contracts, Estimates and Purchase Orders",
     "description": "Use cases for preparing and reviewing estimates and rate cards.",
     "slug": "/ai/use-cases/contracts-estimates-and-purchase-orders"
   }
