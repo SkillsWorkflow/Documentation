@@ -78,6 +78,13 @@ export const SECTIONS = {
   '/product/people/teams': 'fal fa-users',
   '/product/billing-and-costs/billing': 'fal fa-file-invoice-dollar',
   '/product/billing-and-costs/expenses': 'fal fa-receipt',
+
+  // AI use cases: same icon as the real product area each category mirrors.
+  '/ai/use-cases/resource-management': 'fal fa-user-friends',
+  '/ai/use-cases/client-dashboards-and-forms': 'fal fa-chart-pie',
+  '/ai/use-cases/accounts-status': 'fal fa-users',
+  '/ai/use-cases/contracts-estimates-and-purchase-orders': 'fal fa-calculator',
+  '/ai/use-cases/projects-and-jobs': 'fal fa-clipboard-list',
 };
 
 const CATEGORY_FALLBACK = 'fal fa-folder-open';
