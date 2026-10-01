@@ -12,12 +12,14 @@ import styles from './styles.module.css';
  */
 function Walkthrough({ subtitle, sidebar, children }) {
   return (
-    <div className={styles.walkthrough}>
-      <div>
-        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-        <div className={styles.conversation}>{children}</div>
+    <div className={styles.walkthroughContainer}>
+      <div className={styles.walkthrough}>
+        <div className={styles.main}>
+          {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+          <div className={styles.conversation}>{children}</div>
+        </div>
+        <div className={styles.sidebar}>{sidebar}</div>
       </div>
-      <div className={styles.sidebar}>{sidebar}</div>
     </div>
   );
 }

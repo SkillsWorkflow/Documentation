@@ -5,17 +5,36 @@
  * used elsewhere for success/tip/info/warning), not new brand colors.
  */
 
-.walkthrough {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 2.5rem;
+/*
+ * The two-column layout only has room to breathe when the DOC ARTICLE itself
+ * (not the browser viewport) is wide enough — Docusaurus's left nav and
+ * right TOC already eat a lot of the viewport, so a viewport media query
+ * stays in "two columns" long after the actual content column has gone
+ * narrow and cramped. A container query reacts to the real available width
+ * instead.
+ */
+.walkthroughContainer {
+  container-type: inline-size;
   margin: 1.5rem 0 2rem;
 }
 
-@media (max-width: 996px) {
+.walkthrough {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@container (min-width: 640px) {
   .walkthrough {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 300px);
+    gap: 2rem;
+    align-items: start;
   }
+}
+
+.main {
+  min-width: 0;
 }
 
 .subtitle {
