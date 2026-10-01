@@ -90,6 +90,39 @@ function Actions({ items }) {
   );
 }
 
+function Attachment({ src, filename, caption, description }) {
+  return (
+    <figure className={styles.attachment}>
+      <img src={src} alt="img-box-shadow-sm" aria-label={description} loading="lazy" />
+      <figcaption>{caption}</figcaption>
+      <span className={styles.attachmentFilename}>{filename}</span>
+    </figure>
+  );
+}
+
+function CreatedJobCard({ title, number, rows, actions, label }) {
+  return (
+    <section className={styles.createdJobCard} aria-label={label}>
+      <div className={styles.createdJobHeader}>
+        <span className={styles.createdJobIcon} aria-hidden="true"><i className="fal fa-file-alt" /></span>
+        <strong>{title}</strong>
+        <span className={styles.createdJobNumber}>#{number}</span>
+      </div>
+      <dl className={styles.createdJobDetails}>
+        {rows.map(([name, value]) => (
+          <div key={name} className={styles.createdJobRow}>
+            <dt>{name}</dt>
+            <dd>{value}</dd>
+          </div>
+        ))}
+      </dl>
+      <div className={styles.createdJobActions}>
+        {actions.map((action) => <span key={action}>{action}</span>)}
+      </div>
+    </section>
+  );
+}
+
 function Card({ theme, icon, label, title, children }) {
   return (
     <div className={[styles.card, styles[theme]].join(' ')}>
@@ -155,6 +188,8 @@ Walkthrough.Message = Message;
 Walkthrough.FieldTable = FieldTable;
 Walkthrough.Choices = Choices;
 Walkthrough.Actions = Actions;
+Walkthrough.Attachment = Attachment;
+Walkthrough.CreatedJobCard = CreatedJobCard;
 Walkthrough.CapabilityCard = CapabilityCard;
 Walkthrough.ChecklistCard = ChecklistCard;
 Walkthrough.PhrasingCard = PhrasingCard;

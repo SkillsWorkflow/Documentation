@@ -236,6 +236,107 @@ html[data-theme='dark'] .bubbleAssistant {
   color: #fff;
 }
 
+.attachment {
+  max-width: 360px;
+  margin: 0.75rem 0 0;
+}
+
+.attachment img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.attachment figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.attachmentFilename {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.createdJobCard {
+  margin-top: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 9px;
+  background: var(--ifm-background-surface-color);
+  overflow: hidden;
+  font-size: 0.88rem;
+}
+
+.createdJobHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.createdJobHeader strong {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.createdJobIcon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.createdJobNumber {
+  margin-left: auto;
+  color: var(--ifm-color-primary);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.createdJobDetails {
+  margin: 0;
+  padding: 0.45rem 0.75rem;
+}
+
+.createdJobRow {
+  display: grid;
+  grid-template-columns: minmax(90px, 34%) minmax(0, 1fr);
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+}
+
+.createdJobRow dt {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.createdJobRow dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.createdJobActions {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.6rem 0.75rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.createdJobActions span {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  padding: 0.3rem 0.55rem;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.8rem;
+}
+
 /* ---- sidebar -------------------------------------------------------- */
 
 .sidebar {
