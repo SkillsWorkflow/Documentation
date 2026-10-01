@@ -10,12 +10,10 @@ sidebar_position: 6
 
 Identify the most suitable dashboard for monitoring resource requirements and comparing planned demand against available capacity.
 
-## Example prompt
-
-```
+:::info[What to ask]
 What is the best dashboard to monitor resource requirements for [Project / Team / Period]? Identify the most relevant dashboard and explain how it helps track resource demand, required capacity, and potential resource gaps.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 The most relevant dashboard for monitoring resource requirements, showing how it supports the analysis of resource demand, required capacity, and potential resource gaps, with a link to the dashboard where available.
+:::

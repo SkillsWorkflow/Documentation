@@ -10,12 +10,10 @@ sidebar_position: 2
 
 Answer questions about project status by consolidating relevant information on progress, milestones, risks, and pending activities.
 
-## Example prompt
-
-```
+:::info[What to ask]
 What is the current status of [Project / Client Projects]? Summarize the progress, completed and pending milestones, current risks, outstanding requests, and any issues that may affect the project timeline. Highlight the activities requiring attention.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A consolidated project status summary showing progress, completed and pending milestones, risks, outstanding requests, and issues affecting the project timeline.
+:::

@@ -10,12 +10,10 @@ sidebar_position: 4
 
 Identifica el Dashboard más adecuado para monitorizar la asignación de recursos y proporciona acceso a la vista correspondiente.
 
-## Prompt de ejemplo
-
-```
+:::info[Qué preguntar]
 ¿Cuál es el mejor Dashboard para monitorizar la asignación de recursos en [Equipo / Project / Período]? Identifica el Dashboard más relevante y explica qué información de asignación proporciona.
-```
+:::
 
-## Resultado esperado
-
+:::tip[Qué obtienes]
 El Dashboard más relevante para monitorizar la asignación de recursos, incluyendo su propósito y la información de asignación disponible a través de él, con un enlace al Dashboard cuando esté disponible.
+:::

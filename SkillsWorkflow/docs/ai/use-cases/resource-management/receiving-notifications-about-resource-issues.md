@@ -6,20 +6,18 @@ sidebar_label: Receiving Notifications About Resource Issues
 sidebar_position: 7
 ---
 
-:::note
-Planned — not available yet. This use case describes where the assistant is headed, not what it can do today.
+:::warning[Preview]
+This use case is in preview — it describes where the assistant is headed, not something it can do yet.
 :::
 
 ## Overview
 
 Identify resource-related issues such as resource overruns, unexpected resource assignments, and deviations from planned capacity. Provide an overview of the issues requiring attention.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Show me the resource-related issues that require attention across [Projects / Team]. Identify resource overruns, unplanned or unexpected resource assignments, and deviations from planned capacity. For each issue, provide the affected project, resource, relevant dates, and a summary of the situation.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A consolidated list of resource-related issues requiring attention, including resource overruns, unexpected assignments, and deviations from planned capacity, with the affected projects, resources, dates, and issue details.
+:::

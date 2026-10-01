@@ -10,12 +10,10 @@ sidebar_position: 3
 
 Provide a consolidated overview of tasks and pending actions, highlighting overdue activities, upcoming deadlines, priorities, and responsibilities.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Show me the tasks and pending actions for [Project / Client / Team] during [Period]. Include overdue tasks, upcoming deadlines, blocked activities, task priorities, and responsible resources. Organize the results by priority and deadline, and highlight the actions that require immediate attention.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A prioritized list of pending actions, including overdue tasks, upcoming deadlines, blocked activities, task priorities, and responsible resources, highlighting the actions requiring immediate attention.
+:::

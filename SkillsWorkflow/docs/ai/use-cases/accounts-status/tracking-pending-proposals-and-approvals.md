@@ -10,12 +10,10 @@ sidebar_position: 5
 
 Identify proposals awaiting approval, their current status, the time spent pending, and any available information explaining why approval has not yet been granted.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Show me all proposals for [Client / Client List] that are still awaiting approval. Include the proposal name, amount, submission date, current approval status, pending approver, and time spent waiting. Review available comments, descriptions, and related information to identify any documented reasons for the delay.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A list of proposals awaiting approval, including amounts, submission dates, pending approvers, and waiting times, together with any documented reasons for the pending status.
+:::

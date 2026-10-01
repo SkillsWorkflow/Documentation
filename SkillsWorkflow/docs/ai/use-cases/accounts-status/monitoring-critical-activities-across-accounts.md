@@ -10,12 +10,10 @@ sidebar_position: 2
 
 Identify critical activities across multiple client accounts, highlighting overdue tasks, upcoming deadlines, blocked activities, and other issues requiring attention.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Show me the critical activities across [Client List]. Identify overdue tasks, upcoming deadlines, blocked activities, and projects at risk. Organize the results by client and priority, including the responsible team or resource and the relevant project or task links where available.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A prioritized overview of critical activities across client accounts, including overdue tasks, upcoming deadlines, blocked activities, responsible resources, and links to the relevant projects or tasks.
+:::

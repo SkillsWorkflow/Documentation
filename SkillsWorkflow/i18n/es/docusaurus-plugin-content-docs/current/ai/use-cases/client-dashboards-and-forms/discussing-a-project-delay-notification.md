@@ -10,12 +10,10 @@ sidebar_position: 5
 
 Investiga una notificación de retraso del Project revisando los comentarios, las respuestas, las descripciones y los archivos adjuntos. Resume el contexto disponible e inicia una discusión para aclarar la causa del retraso.
 
-## Prompt de ejemplo
-
-```
+:::info[Qué preguntar]
 Revisa la notificación de retraso de [Project / Task]. Analiza los detalles de la notificación, los comentarios, las respuestas, las descripciones y los archivos adjuntos para entender por qué se retrasó la actividad. Resume la información disponible e inicia una discusión pidiendo a los miembros del equipo relevantes que aclaren la causa del retraso y su impacto en el cronograma del Project.
-```
+:::
 
-## Resultado esperado
-
+:::tip[Qué obtienes]
 Un resumen contextual del retraso, basado en los detalles de la notificación, los comentarios, las respuestas, las descripciones y los adjuntos, junto con una discusión iniciada para aclarar la causa y su impacto en el cronograma del Project.
+:::

@@ -10,12 +10,10 @@ sidebar_position: 5
 
 Identifica propuestas a la espera de aprobación, su estado actual, el tiempo transcurrido pendientes y cualquier información disponible que explique por qué la aprobación todavía no se ha concedido.
 
-## Prompt de ejemplo
-
-```
+:::info[Qué preguntar]
 Muéstrame todas las propuestas de [Client / Client List] que todavía están a la espera de aprobación. Incluye el nombre de la propuesta, el importe, la fecha de envío, el estado actual de la aprobación, el aprobador pendiente y el tiempo de espera. Revisa los comentarios, las descripciones y otra información relacionada disponible para identificar posibles motivos documentados del retraso.
-```
+:::
 
-## Resultado esperado
-
+:::tip[Qué obtienes]
 Una lista de propuestas a la espera de aprobación, incluyendo importes, fechas de envío, aprobadores pendientes y tiempos de espera, junto con posibles motivos documentados del estado pendiente.
+:::

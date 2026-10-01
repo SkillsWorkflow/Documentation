@@ -10,12 +10,10 @@ sidebar_position: 5
 
 Investigate a project delay notification by reviewing comments, replies, descriptions, and attached files. Summarize the available context and initiate a discussion to clarify the cause of the delay.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Review the delay notification for [Project / Task]. Analyze the notification details, comments, replies, descriptions, and attached files to understand why the activity was delayed. Summarize the available information and start a discussion asking the relevant team members to clarify the cause of the delay and its impact on the project timeline.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A contextual summary of the delay, based on the notification details, comments, replies, descriptions, and attachments, together with a discussion initiated to clarify the cause and its impact on the project timeline.
+:::

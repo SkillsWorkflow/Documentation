@@ -10,12 +10,10 @@ sidebar_position: 6
 
 Identifique o Dashboard mais adequado para monitorizar as necessidades de recursos e comparar a procura planeada com a capacidade disponível.
 
-## Prompt de exemplo
-
-```
+:::info[O que perguntar]
 Qual é o melhor Dashboard para monitorizar as necessidades de recursos para [Project / Equipa / Período]? Identifica o Dashboard mais relevante e explica como ajuda a acompanhar a procura de recursos, a capacidade necessária e possíveis lacunas de recursos.
-```
+:::
 
-## Resultado esperado
-
+:::tip[O que obtém]
 O Dashboard mais relevante para monitorizar as necessidades de recursos, mostrando como apoia a análise da procura de recursos, da capacidade necessária e de possíveis lacunas de recursos, com uma ligação para o Dashboard, quando disponível.
+:::

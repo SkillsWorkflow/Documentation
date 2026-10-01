@@ -10,12 +10,10 @@ sidebar_position: 4
 
 Identify the most suitable dashboard for monitoring resource allocation and provide access to the relevant view.
 
-## Example prompt
-
-```
+:::info[What to ask]
 What is the best dashboard to monitor resource allocation across [Team / Project / Period]? Identify the most relevant dashboard and explain what allocation information it provides.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 The most relevant dashboard for monitoring resource allocation, including its purpose and the allocation information available through it, with a link to the dashboard where available.
+:::

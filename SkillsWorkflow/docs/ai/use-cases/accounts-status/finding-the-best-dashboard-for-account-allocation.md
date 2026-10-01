@@ -10,12 +10,10 @@ sidebar_position: 6
 
 Identify the most suitable dashboard for monitoring resource allocation across client accounts and projects.
 
-## Example prompt
-
-```
+:::info[What to ask]
 What is the best dashboard to monitor resource allocation across [Client List]? Identify the most relevant dashboard and explain how it helps track resource allocation by client, project, and team.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 The most relevant dashboard for monitoring resource allocation across client accounts, including an explanation of how it presents allocation by client, project, and team, with a link where available.
+:::

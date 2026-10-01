@@ -10,12 +10,10 @@ sidebar_position: 8
 
 Inicia una discusión sobre una notificación de overrun de recursos revisando el contexto disponible, incluyendo comentarios, respuestas, descripciones y archivos adjuntos.
 
-## Prompt de ejemplo
-
-```
+:::info[Qué preguntar]
 Revisa la notificación sobre el overrun de recursos en [Project / Recurso]. Analiza los detalles de la notificación, los comentarios, las respuestas, las descripciones y los archivos adjuntos para entender la situación. Resume las causas probables e inicia una discusión con el contexto relevante, pidiendo aclaraciones sobre el overrun y los posibles próximos pasos.
-```
+:::
 
-## Resultado esperado
-
+:::tip[Qué obtienes]
 Un resumen contextual del overrun de recursos, que incorpora los detalles disponibles de la notificación, los comentarios, las respuestas, las descripciones y los archivos adjuntos, junto con una discusión iniciada para aclarar la causa y los posibles próximos pasos.
+:::

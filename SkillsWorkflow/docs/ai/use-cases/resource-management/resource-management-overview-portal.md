@@ -10,12 +10,10 @@ sidebar_position: 9
 
 Provide a consolidated overview of critical resource-related information, highlighting issues that require attention and enabling navigation to the relevant dashboards, projects, or resources.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Give me an overview of the most critical resource management issues across [Team / Department]. Highlight resource overruns, capacity shortages, unexpected assignments, and projects requiring immediate attention. Organize the information by priority and provide links to the relevant dashboards, projects, or resource details where available.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A consolidated overview of critical resource management issues, organized by priority, with direct navigation to the relevant dashboards, projects, and resource details where available.
+:::

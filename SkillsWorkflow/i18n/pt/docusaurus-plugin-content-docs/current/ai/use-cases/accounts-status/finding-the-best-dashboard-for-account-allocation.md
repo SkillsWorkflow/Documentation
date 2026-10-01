@@ -10,12 +10,10 @@ sidebar_position: 6
 
 Identifica o Dashboard mais adequado para monitorizar a alocação de recursos em contas de clientes e projetos.
 
-## Prompt de exemplo
-
-```
+:::info[O que perguntar]
 Qual é o melhor Dashboard para monitorizar a alocação de recursos em [Client List]? Identifica o Dashboard mais relevante e explica como ajuda a acompanhar a alocação de recursos por cliente, projeto e equipa.
-```
+:::
 
-## Resultado esperado
-
+:::tip[O que obtém]
 O Dashboard mais relevante para monitorizar a alocação de recursos em contas de clientes, incluindo uma explicação de como apresenta a alocação por cliente, projeto e equipa, com um link quando disponível.
+:::

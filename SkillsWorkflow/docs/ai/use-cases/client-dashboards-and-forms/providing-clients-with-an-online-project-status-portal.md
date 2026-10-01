@@ -10,12 +10,10 @@ sidebar_position: 1
 
 Provide clients with a consolidated online view of project status, contract burn, risks, and pending requests through the relevant client portal.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Show me the best client portal to provide [Client] with an online overview of their projects. Include project status, contract burn, risks, and pending requests. Identify the most relevant portal and explain what information is available to the client.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A client portal providing an online overview of project status, contract burn, risks, and pending requests, with the relevant information organized for client access.
+:::

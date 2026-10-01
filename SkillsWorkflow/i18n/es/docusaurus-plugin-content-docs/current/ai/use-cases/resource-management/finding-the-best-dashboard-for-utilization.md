@@ -10,12 +10,10 @@ sidebar_position: 5
 
 Identifica el Dashboard más adecuado para monitorizar la utilización de recursos, incluyendo la distribución del Workload y el uso de capacidad.
 
-## Prompt de ejemplo
-
-```
+:::info[Qué preguntar]
 ¿Cuál es el mejor Dashboard para monitorizar la utilización de recursos en [Equipo / Departamento / Período]? Identifica el Dashboard más relevante y explica cómo ayuda a monitorizar el Workload, el uso de capacidad y la utilización de recursos.
-```
+:::
 
-## Resultado esperado
-
+:::tip[Qué obtienes]
 El Dashboard más relevante para monitorizar la utilización de recursos, con una explicación de cómo presenta la distribución del Workload y el uso de capacidad, y un enlace al Dashboard cuando esté disponible.
+:::

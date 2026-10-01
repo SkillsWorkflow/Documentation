@@ -10,12 +10,10 @@ sidebar_position: 9
 
 Forneça uma visão geral consolidada da informação crítica relacionada com recursos, destacando os problemas que requerem atenção e permitindo a navegação para os Dashboards, Projects ou recursos relevantes.
 
-## Prompt de exemplo
-
-```
+:::info[O que perguntar]
 Dá-me uma visão geral dos problemas de gestão de recursos mais críticos em [Equipa / Departamento]. Destaca os overruns de recursos, a escassez de capacidade, as atribuições inesperadas e os Projects que requerem atenção imediata. Organiza a informação por prioridade e fornece ligações para os Dashboards, Projects ou detalhes de recursos relevantes, quando disponíveis.
-```
+:::
 
-## Resultado esperado
-
+:::tip[O que obtém]
 Uma visão geral consolidada dos problemas críticos de gestão de recursos, organizada por prioridade, com navegação direta para os Dashboards, Projects e detalhes de recursos relevantes, quando disponíveis.
+:::

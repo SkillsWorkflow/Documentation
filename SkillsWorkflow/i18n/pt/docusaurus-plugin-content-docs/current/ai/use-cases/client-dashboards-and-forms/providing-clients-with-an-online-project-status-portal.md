@@ -10,12 +10,10 @@ sidebar_position: 1
 
 Disponibilize aos Clients uma vista online consolidada do status do Project, do consumo do contrato, dos riscos e dos pedidos pendentes através do Client Portal relevante.
 
-## Prompt de exemplo
-
-```
+:::info[O que perguntar]
 Mostra-me o melhor Client Portal para dar a [Client] uma visão geral online dos seus Projects. Inclui o status do Project, o consumo do contrato, os riscos e os pedidos pendentes. Identifica o Portal mais relevante e explica que informação está disponível para o Client.
-```
+:::
 
-## Resultado esperado
-
+:::tip[O que obtém]
 Um Client Portal que fornece uma visão geral online do status do Project, do consumo do contrato, dos riscos e dos pedidos pendentes, com a informação relevante organizada para acesso do Client.
+:::

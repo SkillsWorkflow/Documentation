@@ -10,12 +10,10 @@ sidebar_position: 3
 
 Identifique o Dashboard ou Portal mais adequado para partilhar informação do Project com os Clients, com base na informação a que precisam de aceder.
 
-## Prompt de exemplo
-
-```
+:::info[O que perguntar]
 Qual é o melhor Dashboard ou Portal para partilhar informação do Project com [Client]? Preciso de uma vista que dê visibilidade sobre o status do Project, o progresso, os riscos, o consumo do contrato e os pedidos pendentes. Identifica a opção mais relevante e explica que informação fornece.
-```
+:::
 
-## Resultado esperado
-
+:::tip[O que obtém]
 O Dashboard ou Portal mais relevante para partilhar informação do Project com o Client, incluindo a informação que fornece sobre status, progresso, riscos, consumo do contrato e pedidos pendentes, com uma ligação sempre que disponível.
+:::

@@ -10,12 +10,10 @@ sidebar_position: 2
 
 Responda a perguntas sobre o status do Project consolidando a informação relevante sobre o progresso, os marcos, os riscos e as atividades pendentes.
 
-## Prompt de exemplo
-
-```
+:::info[O que perguntar]
 Qual é o status atual de [Project / Client Projects]? Resume o progresso, os marcos concluídos e pendentes, os riscos atuais, os pedidos em aberto e quaisquer problemas que possam afetar o cronograma do Project. Destaca as atividades que precisam de atenção.
-```
+:::
 
-## Resultado esperado
-
+:::tip[O que obtém]
 Um resumo consolidado do status do Project, mostrando o progresso, os marcos concluídos e pendentes, os riscos, os pedidos em aberto e os problemas que afetam o cronograma do Project.
+:::

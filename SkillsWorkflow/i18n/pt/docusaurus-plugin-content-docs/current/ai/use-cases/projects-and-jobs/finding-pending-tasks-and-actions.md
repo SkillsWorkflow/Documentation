@@ -10,12 +10,10 @@ sidebar_position: 3
 
 Permite obter uma visão consolidada de tarefas e ações pendentes, destacando atividades em atraso, prazos próximos, prioridades e responsabilidades.
 
-## Prompt de exemplo
-
-```
+:::info[O que perguntar]
 Mostra-me as tarefas e ações pendentes para [Project / Client / Equipa] durante [Período]. Inclui tarefas em atraso, prazos próximos, atividades bloqueadas, prioridades das tarefas, e recursos responsáveis. Organiza os resultados por prioridade e prazo, e destaca as ações que requerem atenção imediata.
-```
+:::
 
-## Resultado esperado
-
+:::tip[O que obtém]
 Uma lista priorizada de ações pendentes, incluindo tarefas em atraso, prazos próximos, atividades bloqueadas, prioridades das tarefas, e recursos responsáveis, destacando as ações que requerem atenção imediata.
+:::

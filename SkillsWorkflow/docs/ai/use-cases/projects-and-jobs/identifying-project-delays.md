@@ -10,12 +10,10 @@ sidebar_position: 2
 
 Identify delayed projects, milestones, and tasks by analyzing deadlines, progress, dependencies, and available status information. Highlight the causes and potential impact of delays where documented.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Identify delays across [Project / Client Projects]. Analyze project deadlines, milestones, task progress, dependencies, and current status. Highlight overdue tasks, delayed milestones, and activities that may affect the project timeline. Include the documented reasons for delays, their potential impact, and the items requiring attention.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A consolidated overview of delayed projects, milestones, and tasks, including overdue activities, documented reasons for delays, potential impacts on project timelines, and items requiring attention.
+:::

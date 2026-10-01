@@ -10,12 +10,10 @@ sidebar_position: 2
 
 Identify available resources based on capacity, access permissions, typology groups, and affinity timesheets. Provide an overview of resource availability for a specific period or project.
 
-## Example prompt
-
-```
+:::info[What to ask]
 Analyze resource availability for [Project / Team] during [Period]. Consider resource capacity, access permissions, typology groups, and affinity timesheets. Identify available resources, their remaining capacity, and any constraints that may affect their assignment.
-```
+:::
 
-## Expected outcome
-
+:::tip[What you get back]
 A resource availability overview showing available capacity, access restrictions, typology groups, and affinity timesheet information for the selected period. The results identify resources available for assignment and any constraints affecting their availability.
+:::
