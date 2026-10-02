@@ -1,7 +1,7 @@
 ---
 id: creating-a-job-using-a-briefing-template
 title: Transformar um Briefing de Campanha num Job
-description: "Peça ao AI Assistant para transformar um briefing de campanha num Job e reveja o Job criado no chat."
+description: "Veja como o AI Assistant transforma um pedido de campanha num Job e organiza o briefing com o template do Job Type."
 sidebar_label: Transformar um Briefing de Campanha num Job
 sidebar_position: 1
 ---
@@ -10,9 +10,9 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Visão geral
 
-Descreva o trabalho ao AI Assistant por palavras suas. O assistente pode encontrar o cliente e o projeto, sugerir o departamento, o Job Type e o título, e preparar o briefing com o template do Job Type. Confirme as sugestões e reveja o Job antes de aprovar a criação.
+Descreva o trabalho ao AI Assistant por palavras suas. O assistente pode encontrar o cliente e o projeto, inferir o departamento, o Job Type e o título a partir do pedido, e organizar o briefing com o template do Job Type. Reveja o Job proposto antes de aprovar a criação.
 
-A agência e o número do Job nesta conversa são ilustrativos. Os registos e as secções do briefing disponíveis dependem da sua configuração.
+A agência, o número do Job e o template de Web Design neste exemplo são ilustrativos. Os registos e as secções do briefing disponíveis dependem da sua configuração.
 
 <Walkthrough
   subtitle="Exemplo de conversa entre alguém da agência e o AI Assistant."
@@ -25,7 +25,7 @@ A agência e o número do Job nesta conversa são ilustrativos. Os registos e as
         items={[
           'Descreva o cliente, o projeto e o trabalho por palavras suas.',
           'Verifique o departamento, o Job Type e o título sugeridos pelo assistente.',
-          'Reveja o Job e o briefing propostos antes de aprovar a criação.',
+          'Reveja o Job proposto antes de aprovar a criação.',
           'Abra o Job criado a partir do cartão na conversa.',
         ]}
       />
@@ -39,7 +39,7 @@ A agência e o número do Job nesta conversa são ilustrativos. Os registos e as
       <Walkthrough.NoteCard
         items={[
           'Uma correspondência exata pode ser usada diretamente. Uma correspondência provável ou uma preferência guardada tem de ser confirmada antes de criar o Job.',
-          'O cartão de aprovação permite rever os dados propostos. Se o assistente tiver preparado um briefing, também pode editá-lo nesse cartão.',
+          'O cartão de aprovação permite rever os dados propostos para o Job antes da criação.',
         ]}
       />
     </>
@@ -57,7 +57,7 @@ A agência e o número do Job nesta conversa são ilustrativos. Os registos e as
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Encontrei a General Motors e o projeto da campanha. Para um website, sugiro o departamento Digital e o Job Type Web Design. Dar-lhe-ia o título “GM 2026 EV Campaign – Global Website”. Estes dados estão certos?</p>
+    <p>Encontrei a General Motors e o projeto da campanha indicado. Como pediste um website, sugiro Digital, o Job Type Web Design e o título “GM 2026 EV Campaign – Global Website”. Posso organizar os requisitos no respetivo template de briefing. Estes dados do Job estão certos?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
@@ -75,10 +75,9 @@ A agência e o número do Job nesta conversa são ilustrativos. Os registos e as
         ['Job Type', 'Web Design'],
         ['Título', 'GM 2026 EV Campaign – Global Website'],
         ['Descrição', 'Um website global que apresenta a campanha, a gama de veículos, a mensagem principal e os próximos passos'],
-        ['Briefing', 'Preparado nas secções do template do Job Type selecionado'],
       ]}
     />
-    <p>Reveja os dados e o briefing propostos no cartão de aprovação antes de criar o Job.</p>
+    <p>Reveja os dados propostos para o Job no cartão de aprovação antes de o criar.</p>
     <Walkthrough.Actions items={[{ label: 'Fazer alterações' }, { label: 'Aprovar', primary: true }]} />
   </Walkthrough.Message>
 
@@ -87,7 +86,7 @@ A agência e o número do Job nesta conversa são ilustrativos. Os registos e as
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>O Job foi criado.</p>
+    <p>O Job foi criado com um briefing organizado no template de Web Design. Mantive os conteúdos pedidos para a campanha e a referência visual. Ainda falta indicar a redação final da mensagem da campanha.</p>
     <Walkthrough.CreatedJobCard
       label="Job criado"
       title="GM 2026 EV Campaign – Global Website"
@@ -104,6 +103,23 @@ A agência e o número do Job nesta conversa são ilustrativos. Os registos e as
     />
   </Walkthrough.Message>
 </Walkthrough>
+
+## Como o pedido se transforma num briefing estruturado
+
+Esta comparação ilustra como o pedido pode preencher o template de briefing de Web Design de uma agência. Os nomes das secções são um exemplo, não campos fixos do Skills Workflow. O assistente aproveita a informação fornecida e deixa a redação da mensagem da campanha por confirmar.
+
+<Walkthrough.BriefComparison
+  templateTitle="Exemplo de template de Web Design"
+  resultTitle="Briefing no Job criado"
+  note="Secções ilustrativas configuradas pela agência"
+  sections={[
+    ['Objetivo', 'O que deve este website alcançar?', 'Apresentar a campanha de veículos elétricos de 2026 e encaminhar os visitantes para um próximo passo.'],
+    ['Público-alvo', 'A quem se destina o website?', 'Visitantes que exploram a gama de veículos elétricos.'],
+    ['Mensagem principal', 'O que deve o visitante compreender?', 'Explicar a mensagem principal da campanha. Falta fornecer a redação final aprovada.'],
+    ['Conteúdo da página', 'O que deve o website incluir?', 'Apresentação da campanha, gama de veículos elétricos e um próximo passo claro.'],
+    ['Direção visual', 'Que direção criativa deve a equipa seguir?', 'Usar a referência visual anexada ao pedido.'],
+  ]}
+/>
 
 ## Artigos relacionados
 

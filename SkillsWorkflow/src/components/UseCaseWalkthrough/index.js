@@ -123,6 +123,32 @@ function CreatedJobCard({ title, number, rows, actions, label }) {
   );
 }
 
+function BriefComparison({ templateTitle, resultTitle, note, sections }) {
+  return (
+    <div className={styles.briefComparison}>
+      <div className={styles.briefComparisonPanel}>
+        <h3>{templateTitle}</h3>
+        {note && <p className={styles.briefComparisonNote}>{note}</p>}
+        {sections.map(([heading, prompt]) => (
+          <div className={styles.briefComparisonSection} key={heading}>
+            <strong>{heading}</strong>
+            <p>{prompt}</p>
+          </div>
+        ))}
+      </div>
+      <div className={[styles.briefComparisonPanel, styles.briefComparisonResult].join(' ')}>
+        <h3>{resultTitle}</h3>
+        {sections.map(([heading, , value]) => (
+          <div className={styles.briefComparisonSection} key={heading}>
+            <strong>{heading}</strong>
+            <p>{value}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Card({ theme, icon, label, title, children }) {
   return (
     <div className={[styles.card, styles[theme]].join(' ')}>
@@ -190,6 +216,7 @@ Walkthrough.Choices = Choices;
 Walkthrough.Actions = Actions;
 Walkthrough.Attachment = Attachment;
 Walkthrough.CreatedJobCard = CreatedJobCard;
+Walkthrough.BriefComparison = BriefComparison;
 Walkthrough.CapabilityCard = CapabilityCard;
 Walkthrough.ChecklistCard = ChecklistCard;
 Walkthrough.PhrasingCard = PhrasingCard;

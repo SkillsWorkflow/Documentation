@@ -1,7 +1,7 @@
 ---
 id: creating-a-job-using-a-briefing-template
 title: Convertir un Briefing de Campaña en un Job
-description: "Pide al AI Assistant que convierta un briefing de campaña en un Job y revisa el Job creado en el chat."
+description: "Descubre cómo el AI Assistant convierte una petición de campaña en un Job y organiza su briefing con la plantilla del Job Type."
 sidebar_label: Convertir un Briefing de Campaña en un Job
 sidebar_position: 1
 ---
@@ -10,9 +10,9 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Visión general
 
-Describe el trabajo al AI Assistant con tus propias palabras. El asistente puede encontrar el cliente y el proyecto, sugerir el departamento, el Job Type y el título, y preparar el briefing con la plantilla del Job Type. Confirma las sugerencias y revisa el Job antes de aprobar su creación.
+Describe el trabajo al AI Assistant con tus propias palabras. El asistente puede encontrar el cliente y el proyecto, inferir el departamento, el Job Type y el título a partir de la petición, y organizar el briefing con la plantilla del Job Type. Revisa el Job propuesto antes de aprobar su creación.
 
-La agencia y el número de Job de esta conversación son ilustrativos. Los registros y secciones del briefing disponibles dependen de tu configuración.
+La agencia, el número de Job y la plantilla de Web Design de este ejemplo son ilustrativos. Los registros y secciones del briefing disponibles dependen de tu configuración.
 
 <Walkthrough
   subtitle="Ejemplo de conversación entre alguien de la agencia y el AI Assistant."
@@ -25,7 +25,7 @@ La agencia y el número de Job de esta conversación son ilustrativos. Los regis
         items={[
           'Describe el cliente, el proyecto y el trabajo con tus propias palabras.',
           'Comprueba el departamento, el Job Type y el título que sugiere el asistente.',
-          'Revisa el Job y el briefing propuestos antes de aprobar la creación.',
+          'Revisa el Job propuesto antes de aprobar la creación.',
           'Abre el Job creado desde su tarjeta en la conversación.',
         ]}
       />
@@ -39,7 +39,7 @@ La agencia y el número de Job de esta conversación son ilustrativos. Los regis
       <Walkthrough.NoteCard
         items={[
           'Una coincidencia exacta puede utilizarse directamente. Una coincidencia probable o una preferencia guardada debe confirmarse antes de crear el Job.',
-          'La tarjeta de aprobación permite revisar los datos propuestos. Si el asistente ha preparado un briefing, también puedes editarlo allí.',
+          'La tarjeta de aprobación permite revisar los datos propuestos para el Job antes de crearlo.',
         ]}
       />
     </>
@@ -57,7 +57,7 @@ La agencia y el número de Job de esta conversación son ilustrativos. Los regis
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>He encontrado General Motors y el proyecto de la campaña. Para una web, sugiero el departamento Digital y el Job Type Web Design. Le pondría el título «GM 2026 EV Campaign – Global Website». ¿Son correctos estos datos?</p>
+    <p>He encontrado General Motors y el proyecto de campaña que indicaste. Como has pedido una web, sugiero Digital, el Job Type Web Design y el título «GM 2026 EV Campaign – Global Website». Puedo organizar los requisitos en su plantilla de briefing. ¿Son correctos estos datos del Job?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Tú">
@@ -75,10 +75,9 @@ La agencia y el número de Job de esta conversación son ilustrativos. Los regis
         ['Job Type', 'Web Design'],
         ['Título', 'GM 2026 EV Campaign – Global Website'],
         ['Descripción', 'Una web global que presenta la campaña, la gama de vehículos, el mensaje principal y los siguientes pasos'],
-        ['Briefing', 'Preparado en las secciones de la plantilla del Job Type seleccionado'],
       ]}
     />
-    <p>Revisa los datos y el briefing propuestos en la tarjeta de aprobación antes de crear el Job.</p>
+    <p>Revisa los datos propuestos para el Job en la tarjeta de aprobación antes de crearlo.</p>
     <Walkthrough.Actions items={[{ label: 'Hacer cambios' }, { label: 'Aprobar', primary: true }]} />
   </Walkthrough.Message>
 
@@ -87,7 +86,7 @@ La agencia y el número de Job de esta conversación son ilustrativos. Los regis
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>El Job se ha creado.</p>
+    <p>El Job se ha creado con un briefing organizado en la plantilla de Web Design. He conservado el contenido solicitado para la campaña y la referencia visual. Aún falta proporcionar la redacción final del mensaje de la campaña.</p>
     <Walkthrough.CreatedJobCard
       label="Job creado"
       title="GM 2026 EV Campaign – Global Website"
@@ -104,6 +103,23 @@ La agencia y el número de Job de esta conversación son ilustrativos. Los regis
     />
   </Walkthrough.Message>
 </Walkthrough>
+
+## Cómo se convierte la petición en un briefing estructurado
+
+Esta comparación ilustra cómo la petición puede rellenar la plantilla de briefing de Web Design de una agencia. Los nombres de las secciones son un ejemplo, no campos fijos de Skills Workflow. El asistente conserva la información proporcionada y deja pendiente la redacción del mensaje de la campaña.
+
+<Walkthrough.BriefComparison
+  templateTitle="Ejemplo de plantilla de Web Design"
+  resultTitle="Briefing en el Job creado"
+  note="Secciones ilustrativas configuradas por la agencia"
+  sections={[
+    ['Objetivo', '¿Qué debe conseguir esta web?', 'Presentar la campaña de vehículos eléctricos de 2026 y guiar a los visitantes hacia el siguiente paso.'],
+    ['Público objetivo', '¿A quién va dirigida la web?', 'Visitantes que exploran la gama de vehículos eléctricos.'],
+    ['Mensaje principal', '¿Qué debe entender el visitante?', 'Explicar el mensaje principal de la campaña. Falta proporcionar la redacción final aprobada.'],
+    ['Contenido de la página', '¿Qué debe incluir la web?', 'Presentación de la campaña, gama de vehículos eléctricos y un siguiente paso claro.'],
+    ['Dirección visual', '¿Qué dirección creativa debe seguir el equipo?', 'Usar la referencia visual adjunta a la petición.'],
+  ]}
+/>
 
 ## Artículos relacionados
 

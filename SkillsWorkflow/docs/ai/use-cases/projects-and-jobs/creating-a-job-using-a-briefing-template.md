@@ -1,7 +1,7 @@
 ---
 id: creating-a-job-using-a-briefing-template
 title: Turn a Campaign Brief into a Job
-description: "Ask the AI Assistant to turn a campaign brief into a Job, then review the created Job in chat."
+description: "See how the AI Assistant turns a campaign request into a Job and organizes its brief with a Job Type template."
 sidebar_label: Turn a Campaign Brief into a Job
 sidebar_position: 1
 ---
@@ -10,9 +10,9 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Overview
 
-Describe the work to the AI Assistant in your own words. It can find matching client and project records, suggest a department, Job Type and title, and prepare the brief with the Job Type's template. Confirm any suggested matches and review the Job before approving its creation.
+Describe the work to the AI Assistant in your own words. It can find matching client and project records, infer a department, Job Type and title from the request, and organize the brief with the Job Type's template. Review the proposed Job before approving its creation.
 
-The agency and Job number in this conversation are illustrative. Available records and briefing sections depend on your configuration.
+The agency, Job number and Web Design template in this example are illustrative. Available records and briefing sections depend on your configuration.
 
 <Walkthrough
   subtitle="An example conversation between an agency user and the AI Assistant."
@@ -25,7 +25,7 @@ The agency and Job number in this conversation are illustrative. Available recor
         items={[
           'Describe the client, project and deliverable in your own words.',
           'Check the department, Job Type and title the assistant suggests.',
-          'Review the proposed Job and brief before approving creation.',
+          'Review the proposed Job before approving creation.',
           'Open the created Job from its card in the conversation.',
         ]}
       />
@@ -39,7 +39,7 @@ The agency and Job number in this conversation are illustrative. Available recor
       <Walkthrough.NoteCard
         items={[
           'An exact match can be used directly. A likely match or remembered preference must be confirmed before a Job is created.',
-          'The approval card lets you review the proposed details. A prepared brief is editable there when the assistant supplied one.',
+          'The approval card lets you review the proposed Job details before creation.',
         ]}
       />
     </>
@@ -57,7 +57,7 @@ The agency and Job number in this conversation are illustrative. Available recor
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>I found General Motors and the campaign project. For a website, I suggest the Digital department and Web Design Job Type. I’d call it “GM 2026 EV Campaign – Global Website”. Do those details look right?</p>
+    <p>I found General Motors and the named campaign project. Because you asked for a website, I suggest Digital, the Web Design Job Type and the title “GM 2026 EV Campaign – Global Website”. I can organize your requirements in its briefing template. Are those Job details right?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
@@ -75,10 +75,9 @@ The agency and Job number in this conversation are illustrative. Available recor
         ['Job Type', 'Web Design'],
         ['Title', 'GM 2026 EV Campaign – Global Website'],
         ['Description', 'A global campaign website introducing the campaign, vehicle range, key message and next steps'],
-        ['Brief', 'Prepared in the selected Job Type’s briefing sections'],
       ]}
     />
-    <p>Review the proposed details and brief in the approval card before creating the Job.</p>
+    <p>Review the proposed Job details in the approval card before creating it.</p>
     <Walkthrough.Actions items={[{ label: 'Make changes' }, { label: 'Approve', primary: true }]} />
   </Walkthrough.Message>
 
@@ -87,7 +86,7 @@ The agency and Job number in this conversation are illustrative. Available recor
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>The Job has been created.</p>
+    <p>The Job has been created with a brief organized in the Web Design template. I kept your requested campaign content and visual reference. The final wording of the campaign message still needs to be supplied.</p>
     <Walkthrough.CreatedJobCard
       label="Created Job"
       title="GM 2026 EV Campaign – Global Website"
@@ -104,6 +103,23 @@ The agency and Job number in this conversation are illustrative. Available recor
     />
   </Walkthrough.Message>
 </Walkthrough>
+
+## How the request becomes a structured brief
+
+This comparison illustrates how the request can fill an agency's Web Design briefing template. The section names are an example, not fixed Skills Workflow fields. The assistant carries over what the user supplied and leaves the campaign message wording open for confirmation.
+
+<Walkthrough.BriefComparison
+  templateTitle="Example Web Design template"
+  resultTitle="Brief in the created Job"
+  note="Illustrative sections configured by the agency"
+  sections={[
+    ['Objective', 'What should this website achieve?', 'Introduce the 2026 electric vehicle campaign and guide visitors towards a next step.'],
+    ['Audience', 'Who is the website for?', 'Visitors exploring the electric vehicle range.'],
+    ['Key message', 'What should the visitor understand?', 'Explain the campaign’s main message. Final approved wording to be supplied.'],
+    ['Page content', 'What must the website include?', 'Campaign introduction, electric vehicle range and a clear next step.'],
+    ['Visual direction', 'What creative direction should the team use?', 'Use the visual reference attached to the request.'],
+  ]}
+/>
 
 ## Related articles
 
