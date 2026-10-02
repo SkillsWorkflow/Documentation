@@ -43,12 +43,140 @@
   font-size: 1.05rem;
 }
 
+/* ---- chat panel ----------------------------------------------------- */
+/* Framed like the product's own AI Assistant panel: a labeled header bar
+ * above the conversation, so the example reads as a chat at a glance. */
+
+.chatPanel {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  overflow: hidden;
+}
+
+.chatHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1rem;
+  background: #eef0ff;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.chatHeaderIcon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  color: #6c5ce7;
+  font-size: 0.8rem;
+}
+
+.chatHeaderLabel {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+html[data-theme='dark'] .chatHeader {
+  background: color-mix(in srgb, #7b6ef6 18%, var(--ifm-background-color));
+}
+
+html[data-theme='dark'] .chatHeaderIcon {
+  background: var(--ifm-background-color);
+}
+
 /* ---- conversation ------------------------------------------------- */
 
 .conversation {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 1.25rem;
+}
+
+/* ---- chat footer -----------------------------------------------------
+ * A static mock of the product's own composer bar (input + attach/filter
+ * icons + mic/language + send), so the panel reads as a chat, not just a
+ * list of bubbles. Not a real input — aria-hidden, nothing to type into. */
+
+.chatFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.75rem 1.25rem 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.chatInputBox {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-500);
+  background: var(--ifm-background-color);
+}
+
+.chatFooterRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatFooterIcons {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.chatFooterIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.92rem;
+}
+
+.chatFooterMicLang {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.chatFooterMicLang i {
+  color: var(--ifm-color-emphasis-500);
+  font-weight: 400;
+}
+
+.chatFooterDivider {
+  width: 1px;
+  height: 14px;
+  background: var(--ifm-color-emphasis-300);
+}
+
+.chatFooterSend {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.85rem;
 }
 
 .turn {
@@ -84,15 +212,25 @@
   align-items: center;
   justify-content: center;
   font-size: 0.95rem;
-  color: #fff;
+  overflow: hidden;
 }
 
 .avatarYou {
-  background: var(--ifm-color-emphasis-500);
+  background: #cdeae2;
 }
 
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* assistant avatar: the product's own AI badge — a light circle with the
+ * brand sparkle, not a plain glyph */
 .avatarAssistant {
-  background: linear-gradient(135deg, #7b6ef6, #a78bfa);
+  background: #eef0ff;
+  color: #6c5ce7;
+  border: 1px solid #dcd6fb;
 }
 
 .bubble {
@@ -101,26 +239,37 @@
   border-radius: 12px;
   padding: 0.85rem 1rem;
   border: 1px solid transparent;
+  border-left-width: 4px;
 }
 
 .bubbleYou {
   background: var(--ifm-color-primary-contrast-background, #eaf4fe);
   border-color: color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+  border-left-color: var(--ifm-color-primary);
 }
 
 .bubbleAssistant {
   background: #f6f4fe;
   border-color: #e2dcfb;
+  border-left-color: #7b6ef6;
+}
+
+html[data-theme='dark'] .avatarAssistant {
+  background: color-mix(in srgb, #7b6ef6 22%, var(--ifm-background-color));
+  border-color: color-mix(in srgb, #7b6ef6 40%, transparent);
+  color: #c9c0fb;
 }
 
 html[data-theme='dark'] .bubbleYou {
   background: color-mix(in srgb, var(--ifm-color-primary) 18%, var(--ifm-background-color));
   border-color: color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+  border-left-color: var(--ifm-color-primary);
 }
 
 html[data-theme='dark'] .bubbleAssistant {
   background: color-mix(in srgb, #7b6ef6 20%, var(--ifm-background-color));
   border-color: color-mix(in srgb, #7b6ef6 35%, transparent);
+  border-left-color: #a78bfa;
 }
 
 .bubbleHead {

@@ -16,7 +16,32 @@ function Walkthrough({ subtitle, sidebar, children }) {
       <div className={styles.walkthrough}>
         <div className={styles.main}>
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-          <div className={styles.conversation}>{children}</div>
+          <div className={styles.chatPanel}>
+            <div className={styles.chatHeader}>
+              <span className={styles.chatHeaderIcon} aria-hidden="true">
+                <i className="fal fa-sparkles" />
+              </span>
+              <span className={styles.chatHeaderLabel}>AI Assistant Chat</span>
+            </div>
+            <div className={styles.conversation}>{children}</div>
+            <div className={styles.chatFooter} aria-hidden="true">
+              <div className={styles.chatInputBox}>Ask anything…</div>
+              <div className={styles.chatFooterRow}>
+                <div className={styles.chatFooterIcons}>
+                  <span className={styles.chatFooterIcon}><i className="fal fa-paperclip" /></span>
+                  <span className={styles.chatFooterIcon}><i className="fal fa-sliders-h" /></span>
+                </div>
+                <div className={styles.chatFooterIcons}>
+                  <span className={styles.chatFooterMicLang}>
+                    <i className="fal fa-microphone" />
+                    <span className={styles.chatFooterDivider} />
+                    <span>EN</span>
+                  </span>
+                  <span className={styles.chatFooterSend}><i className="fal fa-arrow-up" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className={styles.sidebar}>{sidebar}</div>
       </div>
@@ -32,7 +57,11 @@ function Message({ sender, name, time, children }) {
         className={[styles.avatar, isAssistant ? styles.avatarAssistant : styles.avatarYou].join(' ')}
         aria-hidden="true"
       >
-        <i className={isAssistant ? 'fal fa-sparkles' : 'fal fa-user'} />
+        {isAssistant ? (
+          <i className="fal fa-sparkles" />
+        ) : (
+          <img className={styles.avatarImage} src="/img/ai/avatars/person.png" alt="" loading="lazy" />
+        )}
       </div>
       <div className={[styles.bubble, isAssistant ? styles.bubbleAssistant : styles.bubbleYou].join(' ')}>
         <div className={styles.bubbleHead}>
