@@ -99,6 +99,86 @@ html[data-theme='dark'] .chatHeaderIcon {
   padding: 1.25rem;
 }
 
+/* ---- chat footer -----------------------------------------------------
+ * A static mock of the product's own composer bar (input + attach/filter
+ * icons + mic/language + send), so the panel reads as a chat, not just a
+ * list of bubbles. Not a real input — aria-hidden, nothing to type into. */
+
+.chatFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.75rem 1.25rem 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.chatInputBox {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-500);
+  background: var(--ifm-background-color);
+}
+
+.chatFooterRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatFooterIcons {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.chatFooterIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.92rem;
+}
+
+.chatFooterMicLang {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.chatFooterMicLang i {
+  color: var(--ifm-color-emphasis-500);
+  font-weight: 400;
+}
+
+.chatFooterDivider {
+  width: 1px;
+  height: 14px;
+  background: var(--ifm-color-emphasis-300);
+}
+
+.chatFooterSend {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.85rem;
+}
+
 .turn {
   display: flex;
   flex-direction: column;

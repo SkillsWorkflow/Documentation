@@ -24,6 +24,23 @@ function Walkthrough({ subtitle, sidebar, children }) {
               <span className={styles.chatHeaderLabel}>AI Assistant Chat</span>
             </div>
             <div className={styles.conversation}>{children}</div>
+            <div className={styles.chatFooter} aria-hidden="true">
+              <div className={styles.chatInputBox}>Ask anything…</div>
+              <div className={styles.chatFooterRow}>
+                <div className={styles.chatFooterIcons}>
+                  <span className={styles.chatFooterIcon}><i className="fal fa-paperclip" /></span>
+                  <span className={styles.chatFooterIcon}><i className="fal fa-sliders-h" /></span>
+                </div>
+                <div className={styles.chatFooterIcons}>
+                  <span className={styles.chatFooterMicLang}>
+                    <i className="fal fa-microphone" />
+                    <span className={styles.chatFooterDivider} />
+                    <span>EN</span>
+                  </span>
+                  <span className={styles.chatFooterSend}><i className="fal fa-arrow-up" /></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.sidebar}>{sidebar}</div>
