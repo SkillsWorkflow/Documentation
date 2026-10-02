@@ -337,6 +337,60 @@ html[data-theme='dark'] .bubbleAssistant {
   font-size: 0.8rem;
 }
 
+/* Illustrative template-to-brief comparison outside the simulated chat. */
+.briefComparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.briefComparisonPanel {
+  min-width: 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.briefComparisonResult {
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-background-surface-color));
+}
+
+.briefComparisonPanel h3 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.briefComparisonNote {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.briefComparisonSection {
+  padding: 0.65rem 0;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.briefComparisonSection strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.briefComparisonSection p {
+  font-size: 0.9rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .briefComparison {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---- sidebar -------------------------------------------------------- */
 
 .sidebar {

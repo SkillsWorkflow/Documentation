@@ -3,7 +3,7 @@ id: finding-pending-tasks-and-actions
 title: Finding Pending Tasks and Actions
 description: "Get a prioritized list of overdue tasks, upcoming deadlines and blocked activities."
 sidebar_label: Finding Pending Tasks and Actions
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## Overview

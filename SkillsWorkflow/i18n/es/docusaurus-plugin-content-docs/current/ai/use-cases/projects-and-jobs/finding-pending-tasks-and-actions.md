@@ -3,7 +3,7 @@ id: finding-pending-tasks-and-actions
 title: Encontrar Tareas y Acciones Pendientes
 description: "Obtén una lista priorizada de tareas atrasadas, próximos plazos y actividades bloqueadas."
 sidebar_label: Encontrar Tareas y Acciones Pendientes
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## Visión general

@@ -3,7 +3,7 @@ id: identifying-project-delays
 title: Identificar Atrasos de Projeto
 description: "Identifique Projects, marcos e tarefas atrasados, e as respetivas razões e impacto documentados."
 sidebar_label: Identificar Atrasos de Projeto
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Visão geral

@@ -3,7 +3,7 @@ id: identifying-project-delays
 title: Identificar Retrasos de Proyecto
 description: "Identifica Projects, hitos y tareas retrasados, y las razones e impacto documentados."
 sidebar_label: Identificar Retrasos de Proyecto
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Visión general
