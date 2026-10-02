@@ -10,9 +10,9 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Visão geral
 
-Peça ao AI Assistant para criar um Job por palavras suas. Indique o cliente, o projeto, o trabalho a realizar e os detalhes do briefing que já conhece. O assistente usa o template de briefing do Job Type selecionado e pede-lhe para escolher os dados obrigatórios que não conseguir identificar. Reveja a proposta antes de aprovar a criação do Job.
+Descreva o trabalho ao AI Assistant por palavras suas. O assistente pode encontrar o cliente e o projeto, sugerir o departamento, o Job Type e o título, e preparar o briefing com o template do Job Type. Confirme as sugestões e reveja o Job antes de aprovar a criação.
 
-A conversa usa uma configuração de agência ilustrativa. Os chips na sua conta mostram os projetos, departamentos e Job Types disponíveis para si. O número do Job no exemplo é ilustrativo.
+A agência e o número do Job nesta conversa são ilustrativos. Os registos e as secções do briefing disponíveis dependem da sua configuração.
 
 <Walkthrough
   subtitle="Exemplo de conversa entre alguém da agência e o AI Assistant."
@@ -23,10 +23,10 @@ A conversa usa uma configuração de agência ilustrativa. Os chips na sua conta
       </Walkthrough.CapabilityCard>
       <Walkthrough.ChecklistCard
         items={[
-          'Indique o cliente e o projeto, ou selecione-os quando lhe forem pedidos.',
-          'Descreva o trabalho e o que o briefing deve incluir.',
-          'Escolha os restantes dados entre as opções apresentadas para a sua agência.',
-          'Reveja a proposta de Job e aprove-a para criar o registo.',
+          'Descreva o cliente, o projeto e o trabalho por palavras suas.',
+          'Verifique o departamento, o Job Type e o título sugeridos pelo assistente.',
+          'Reveja o Job e o briefing propostos antes de aprovar a criação.',
+          'Abra o Job criado a partir do cartão na conversa.',
         ]}
       />
       <Walkthrough.PhrasingCard
@@ -38,7 +38,7 @@ A conversa usa uma configuração de agência ilustrativa. Os chips na sua conta
       />
       <Walkthrough.NoteCard
         items={[
-          'O assistente apresenta chips selecionáveis quando precisa que escolha um projeto, tipo de objeto de negócio, departamento ou Job Type.',
+          'Uma correspondência exata pode ser usada diretamente. Uma correspondência provável ou uma preferência guardada tem de ser confirmada antes de criar o Job.',
           'O cartão de aprovação permite rever os dados propostos. Se o assistente tiver preparado um briefing, também pode editá-lo nesse cartão.',
         ]}
       />
@@ -46,8 +46,8 @@ A conversa usa uma configuração de agência ilustrativa. Os chips na sua conta
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>Precisamos de um Job para a campanha de veículos elétricos de 2026 da General Motors. É o website global da campanha. Dá-lhe o título “GM 2026 EV Campaign – Global Website” e usa o template de briefing do Job Type para websites para escrever o briefing completo.</p>
-    <p>O site deve apresentar a campanha, mostrar a gama de veículos elétricos, explicar a mensagem principal e encaminhar os visitantes para o passo seguinte. É para o projeto da campanha que já temos na General Motors. Anexei uma referência visual para a campanha.</p>
+    <p>Precisamos de um website global para a campanha de veículos elétricos de 2026 da General Motors, no projeto “General Motors – 2026 Global EV Campaign”. Podes criar o Job e escrever o briefing completo?</p>
+    <p>O site deve apresentar a campanha, mostrar a gama de veículos elétricos, explicar a mensagem principal e encaminhar os visitantes para o passo seguinte. Anexei uma referência visual.</p>
     <Walkthrough.Attachment
       src="/img/ai/use-cases/ev-campaign-reference.png"
       filename="ev-campaign-reference.png"
@@ -57,39 +57,11 @@ A conversa usa uma configuração de agência ilustrativa. Os chips na sua conta
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Encontrei o cliente.</p>
-    <Walkthrough.Choices label="Escolhe um projeto:" options={['General Motors – 2026 Global EV Campaign', 'General Motors – Corporate Website']} />
+    <p>Encontrei a General Motors e o projeto da campanha. Para um website, sugiro o departamento Digital e o Job Type Web Design. Dar-lhe-ia o título “GM 2026 EV Campaign – Global Website”. Estes dados estão certos?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
-    <p>Seleciono o projeto "General Motors – 2026 Global EV Campaign".</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Escolhe o tipo de objeto de negócio para este trabalho.</p>
-    <Walkthrough.Choices label="Escolhe um tipo de objeto de negócio:" options={['Job', 'Task']} />
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="Você">
-    <p>Seleciono o tipo de objeto de negócio "Job".</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Escolhe o departamento para este Job.</p>
-    <Walkthrough.Choices label="Escolhe um departamento:" options={['Digital', 'Creative', 'Production']} />
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="Você">
-    <p>Seleciono o departamento "Digital".</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Escolhe o Job Type para o website.</p>
-    <Walkthrough.Choices label="Escolhe um tipo de job:" options={['Web Design', 'Digital Campaign']} />
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="Você">
-    <p>Seleciono o tipo de job "Web Design".</p>
+    <p>Sim, usa Digital e Web Design. Mantém esse título.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -135,5 +107,6 @@ A conversa usa uma configuração de agência ilustrativa. Os chips na sua conta
 
 ## Artigos relacionados
 
+- [Criar um Job a Partir de um Email do Cliente](/docs/ai/use-cases/projects-and-jobs/creating-a-job-from-a-client-email)
 - [AI Assistant](/docs/ai/ai-assistant)
 - [AI Agents](/docs/ai/agents)

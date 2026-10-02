@@ -3,7 +3,7 @@ id: identifying-project-delays
 title: Identifying Project Delays
 description: "Identify delayed projects, milestones and tasks, and the documented reasons and impact."
 sidebar_label: Identifying Project Delays
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Overview

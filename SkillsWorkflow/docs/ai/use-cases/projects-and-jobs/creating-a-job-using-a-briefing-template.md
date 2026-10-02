@@ -10,9 +10,9 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Overview
 
-Ask the AI Assistant for a Job in your own words. Give it the client, project, deliverable and any brief details you already know. It uses the selected Job Type's briefing template and asks you to choose any required details it cannot resolve. Review the proposed Job before approving its creation.
+Describe the work to the AI Assistant in your own words. It can find matching client and project records, suggest a department, Job Type and title, and prepare the brief with the Job Type's template. Confirm any suggested matches and review the Job before approving its creation.
 
-The conversation uses an illustrative agency setup. The chips in your account show the projects, departments and Job Types available to you. The sample Job number is illustrative.
+The agency and Job number in this conversation are illustrative. Available records and briefing sections depend on your configuration.
 
 <Walkthrough
   subtitle="An example conversation between an agency user and the AI Assistant."
@@ -23,10 +23,10 @@ The conversation uses an illustrative agency setup. The chips in your account sh
       </Walkthrough.CapabilityCard>
       <Walkthrough.ChecklistCard
         items={[
-          'Name the client and project, or select them when asked.',
-          'Describe the deliverable and what the brief should cover.',
-          'Choose any remaining details from the options shown for your agency.',
-          'Review the proposed Job and approve it to create the record.',
+          'Describe the client, project and deliverable in your own words.',
+          'Check the department, Job Type and title the assistant suggests.',
+          'Review the proposed Job and brief before approving creation.',
+          'Open the created Job from its card in the conversation.',
         ]}
       />
       <Walkthrough.PhrasingCard
@@ -38,7 +38,7 @@ The conversation uses an illustrative agency setup. The chips in your account sh
       />
       <Walkthrough.NoteCard
         items={[
-          'The assistant shows selectable chips when it needs you to choose a project, business object type, department or Job Type.',
+          'An exact match can be used directly. A likely match or remembered preference must be confirmed before a Job is created.',
           'The approval card lets you review the proposed details. A prepared brief is editable there when the assistant supplied one.',
         ]}
       />
@@ -46,8 +46,8 @@ The conversation uses an illustrative agency setup. The chips in your account sh
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>We need a Job for General Motors' 2026 electric vehicle campaign. It's the global campaign website. Please call it “GM 2026 EV Campaign – Global Website” and use the briefing template for the website Job Type to write the full brief.</p>
-    <p>The site should introduce the campaign, show the electric vehicle range, explain the main campaign message and guide visitors to the next step. This is for the campaign project we already have under General Motors. I’ve attached a visual reference for the campaign.</p>
+    <p>We need a global website for General Motors’ 2026 electric vehicle campaign, under our “General Motors – 2026 Global EV Campaign” project. Can you set up the Job and write the full brief?</p>
+    <p>The site should introduce the campaign, show the electric vehicle range, explain the main campaign message and guide visitors to the next step. I’ve attached a visual reference.</p>
     <Walkthrough.Attachment
       src="/img/ai/use-cases/ev-campaign-reference.png"
       filename="ev-campaign-reference.png"
@@ -57,39 +57,11 @@ The conversation uses an illustrative agency setup. The chips in your account sh
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>I found the client.</p>
-    <Walkthrough.Choices label="Choose a project:" options={['General Motors – 2026 Global EV Campaign', 'General Motors – Corporate Website']} />
+    <p>I found General Motors and the campaign project. For a website, I suggest the Digital department and Web Design Job Type. I’d call it “GM 2026 EV Campaign – Global Website”. Do those details look right?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
-    <p>I select the project “General Motors – 2026 Global EV Campaign”.</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Choose the business object type for this work.</p>
-    <Walkthrough.Choices label="Choose a business object type:" options={['Job', 'Task']} />
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="You">
-    <p>I select the business object type “Job”.</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Choose the department for this Job.</p>
-    <Walkthrough.Choices label="Choose a department:" options={['Digital', 'Creative', 'Production']} />
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="You">
-    <p>I select the department “Digital”.</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Choose the Job Type for the website.</p>
-    <Walkthrough.Choices label="Choose a job type:" options={['Web Design', 'Digital Campaign']} />
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="You">
-    <p>I select the job type “Web Design”.</p>
+    <p>Yes, use Digital and Web Design. Keep that title.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -135,5 +107,6 @@ The conversation uses an illustrative agency setup. The chips in your account sh
 
 ## Related articles
 
+- [Create a Job from a Client Email](/docs/ai/use-cases/projects-and-jobs/creating-a-job-from-a-client-email)
 - [AI Assistant](/docs/ai/ai-assistant)
 - [AI Agents](/docs/ai/agents)
