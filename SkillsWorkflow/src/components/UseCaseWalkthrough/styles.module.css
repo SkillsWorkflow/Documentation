@@ -212,19 +212,17 @@ html[data-theme='dark'] .chatHeaderIcon {
   align-items: center;
   justify-content: center;
   font-size: 0.95rem;
+  overflow: hidden;
 }
 
-/* person avatar: initials, like the product's own fallback for a user
- * with no profile photo */
 .avatarYou {
-  background: linear-gradient(135deg, #2f80ed, #56ccf2);
-  color: #fff;
+  background: #cdeae2;
 }
 
-.avatarInitial {
-  font-size: 0.85rem;
-  font-weight: 700;
-  line-height: 1;
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* assistant avatar: the product's own AI badge — a light circle with the

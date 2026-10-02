@@ -51,14 +51,17 @@ function Walkthrough({ subtitle, sidebar, children }) {
 
 function Message({ sender, name, time, children }) {
   const isAssistant = sender === 'assistant';
-  const initial = (name || '').trim().charAt(0).toUpperCase();
   return (
     <div className={styles.bubbleRow}>
       <div
         className={[styles.avatar, isAssistant ? styles.avatarAssistant : styles.avatarYou].join(' ')}
         aria-hidden="true"
       >
-        {isAssistant ? <i className="fal fa-sparkles" /> : <span className={styles.avatarInitial}>{initial}</span>}
+        {isAssistant ? (
+          <i className="fal fa-sparkles" />
+        ) : (
+          <img className={styles.avatarImage} src="/img/ai/avatars/person.png" alt="" loading="lazy" />
+        )}
       </div>
       <div className={[styles.bubble, isAssistant ? styles.bubbleAssistant : styles.bubbleYou].join(' ')}>
         <div className={styles.bubbleHead}>
