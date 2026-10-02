@@ -43,12 +43,60 @@
   font-size: 1.05rem;
 }
 
+/* ---- chat panel ----------------------------------------------------- */
+/* Framed like the product's own AI Assistant panel: a labeled header bar
+ * above the conversation, so the example reads as a chat at a glance. */
+
+.chatPanel {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  overflow: hidden;
+}
+
+.chatHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1rem;
+  background: #eef0ff;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.chatHeaderIcon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  color: #6c5ce7;
+  font-size: 0.8rem;
+}
+
+.chatHeaderLabel {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+html[data-theme='dark'] .chatHeader {
+  background: color-mix(in srgb, #7b6ef6 18%, var(--ifm-background-color));
+}
+
+html[data-theme='dark'] .chatHeaderIcon {
+  background: var(--ifm-background-color);
+}
+
 /* ---- conversation ------------------------------------------------- */
 
 .conversation {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 1.25rem;
 }
 
 .turn {
@@ -84,15 +132,27 @@
   align-items: center;
   justify-content: center;
   font-size: 0.95rem;
+}
+
+/* person avatar: initials, like the product's own fallback for a user
+ * with no profile photo */
+.avatarYou {
+  background: linear-gradient(135deg, #2f80ed, #56ccf2);
   color: #fff;
 }
 
-.avatarYou {
-  background: var(--ifm-color-emphasis-500);
+.avatarInitial {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
+/* assistant avatar: the product's own AI badge — a light circle with the
+ * brand sparkle, not a plain glyph */
 .avatarAssistant {
-  background: linear-gradient(135deg, #7b6ef6, #a78bfa);
+  background: #eef0ff;
+  color: #6c5ce7;
+  border: 1px solid #dcd6fb;
 }
 
 .bubble {
@@ -101,26 +161,37 @@
   border-radius: 12px;
   padding: 0.85rem 1rem;
   border: 1px solid transparent;
+  border-left-width: 4px;
 }
 
 .bubbleYou {
   background: var(--ifm-color-primary-contrast-background, #eaf4fe);
   border-color: color-mix(in srgb, var(--ifm-color-primary) 25%, transparent);
+  border-left-color: var(--ifm-color-primary);
 }
 
 .bubbleAssistant {
   background: #f6f4fe;
   border-color: #e2dcfb;
+  border-left-color: #7b6ef6;
+}
+
+html[data-theme='dark'] .avatarAssistant {
+  background: color-mix(in srgb, #7b6ef6 22%, var(--ifm-background-color));
+  border-color: color-mix(in srgb, #7b6ef6 40%, transparent);
+  color: #c9c0fb;
 }
 
 html[data-theme='dark'] .bubbleYou {
   background: color-mix(in srgb, var(--ifm-color-primary) 18%, var(--ifm-background-color));
   border-color: color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+  border-left-color: var(--ifm-color-primary);
 }
 
 html[data-theme='dark'] .bubbleAssistant {
   background: color-mix(in srgb, #7b6ef6 20%, var(--ifm-background-color));
   border-color: color-mix(in srgb, #7b6ef6 35%, transparent);
+  border-left-color: #a78bfa;
 }
 
 .bubbleHead {

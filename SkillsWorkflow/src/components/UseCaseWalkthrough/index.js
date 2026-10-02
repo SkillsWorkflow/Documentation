@@ -16,7 +16,15 @@ function Walkthrough({ subtitle, sidebar, children }) {
       <div className={styles.walkthrough}>
         <div className={styles.main}>
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-          <div className={styles.conversation}>{children}</div>
+          <div className={styles.chatPanel}>
+            <div className={styles.chatHeader}>
+              <span className={styles.chatHeaderIcon} aria-hidden="true">
+                <i className="fal fa-sparkles" />
+              </span>
+              <span className={styles.chatHeaderLabel}>AI Assistant Chat</span>
+            </div>
+            <div className={styles.conversation}>{children}</div>
+          </div>
         </div>
         <div className={styles.sidebar}>{sidebar}</div>
       </div>
@@ -26,13 +34,14 @@ function Walkthrough({ subtitle, sidebar, children }) {
 
 function Message({ sender, name, time, children }) {
   const isAssistant = sender === 'assistant';
+  const initial = (name || '').trim().charAt(0).toUpperCase();
   return (
     <div className={styles.bubbleRow}>
       <div
         className={[styles.avatar, isAssistant ? styles.avatarAssistant : styles.avatarYou].join(' ')}
         aria-hidden="true"
       >
-        <i className={isAssistant ? 'fal fa-sparkles' : 'fal fa-user'} />
+        {isAssistant ? <i className="fal fa-sparkles" /> : <span className={styles.avatarInitial}>{initial}</span>}
       </div>
       <div className={[styles.bubble, isAssistant ? styles.bubbleAssistant : styles.bubbleYou].join(' ')}>
         <div className={styles.bubbleHead}>
