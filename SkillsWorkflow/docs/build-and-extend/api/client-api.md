@@ -1,7 +1,7 @@
 ---
 id: client-api
 title: Client API
-description: "The Client API is designed for creating and updating documents in Skills Workflow."
+description: "Use the Client API for document operations and timesheet-based access blocking workflows in Skills Workflow."
 sidebar_label: Client API
 sidebar_position: 0
 ---
@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-The Client API is designed for creating and updating documents in Skills Workflow. It’s not intended for bulk data extraction or reporting—use our Data API for that.
+The Client API supports document operations and external access blocking based on timesheet status in Skills Workflow. It’s not intended for bulk data extraction or reporting—use our Data API for that.
 
 ### Purpose
 
@@ -23,6 +23,7 @@ Integrate Skills Workflow into tools such as:
 - Project management systems: Asana, Trello, Monday, ZiFlow
 - Collaboration platforms: AirTable, Notion
 - Business systems: ERP systems, attendance tracking, and other external document workflows
+- Identity systems that block or restore access according to timesheet status
 
 ### Key Limitations
 
@@ -91,6 +92,102 @@ After downloading, make sure to configure the variables `{{ApiUrl}}`, `{{TenantI
 ## Endpoints
 
 [Swagger](https://apiv2-demo-prod-we.skillsworkflow.com/swagger/index.html)
+
+---
+
+## Timesheet access blocking and unblocking
+
+Skills Workflow identifies users whose timesheet status calls for an access block or unblock. Your integration reads those lists, changes access in its identity system, and reports each result to Skills Workflow. The API does not change access in the external system.
+
+For standard hosted API v2 URLs, use `https://apiv2-{tenantName}.skillsworkflow.com`. Replace `{tenantName}` with the **full assigned hostname segment** between `apiv2-` and `.skillsworkflow.com`; it may include an environment or region suffix. Use the API v2 hostname supplied for your environment if it differs from this pattern. Send `X-AppId` and `X-AppSecret` with every request; see [Authentication](#authentication).
+
+<figure>
+
+![img-box-shadow](/img/api/timesheet-access-blocking-flow.svg)
+<figcaption>For each block or unblock request, apply the access change in your identity system before reporting the result to Skills Workflow.</figcaption>
+
+</figure>
+
+### Block users
+
+1. Call `GET https://apiv2-{tenantName}.skillsworkflow.com/api/blockedloginrequests/userstoblock` to get users selected for blocking.
+2. Block each account in your identity system, using `AdUserName` to identify the account.
+3. Call `POST https://apiv2-{tenantName}.skillsworkflow.com/api/blockedloginrequests/block` for each result.
+
+| Endpoint | Response |
+| --- | --- |
+| `GET /api/blockedloginrequests/userstoblock` | `200 OK`: array of user objects. |
+| `POST /api/blockedloginrequests/block` | `200 OK`: user object. `404 Not Found` if `Oid` does not identify a user. |
+
+The GET endpoint accepts optional `companyId`, `companyName`, `countryId`, and `countryName` query parameters. The ID parameters are GUIDs. Each returned user has `Oid` (Skills Workflow user ID), `UserName`, and `AdUserName`. The response type also defines `Name`, but the current mapper does not populate it.
+
+Send a JSON body to the POST endpoint:
+
+| Field | Type | Meaning |
+| --- | --- | --- |
+| `Oid` | GUID, required | The `Oid` returned by the GET endpoint. |
+| `Success` | boolean | Whether the external block succeeded. |
+| `AccountExpirationDate` | date/time or null | Account expiration date to record in Skills Workflow when `Success` is `true`. |
+| `Message` | string | Result message used when a block fails. |
+
+<details>
+<summary>Copyable block result body</summary>
+
+Replace the placeholders with values from your integration before sending this JSON to `POST /api/blockedloginrequests/block`:
+
+```json
+{
+  "Oid": "<Oid from the users-to-block response>",
+  "Success": true,
+  "AccountExpirationDate": "<account expiration date>"
+}
+```
+
+If the external block fails, send `"Success": false` and include `"Message"` with the failure result.
+
+</details>
+
+On success, Skills Workflow records the account expiration date and clears any block retry record for the user. On failure, it stores or updates a retry record. Failed attempts delay another attempt; after the third failed attempt, the user is excluded from the block list. The list also excludes users already marked as blocked. Timesheet approval status can affect the list when approval blocking is enabled.
+
+### Unblock users
+
+1. Call `GET https://apiv2-{tenantName}.skillsworkflow.com/api/unblockuserrequests` to get unblock requests.
+2. Restore each account in your identity system, using `AdUserName` to identify it.
+3. Call `PUT https://apiv2-{tenantName}.skillsworkflow.com/api/unblockuserrequests` for each result.
+
+| Endpoint | Response |
+| --- | --- |
+| `GET /api/unblockuserrequests` | `200 OK`: array of unblock request objects. |
+| `PUT /api/unblockuserrequests` | `200 OK`: request ID. `400 Bad Request` for an invalid ID; `404 Not Found` if the request does not exist. |
+
+The GET endpoint accepts the same optional company and country filters as the block list. It returns requests from the preceding 60 minutes. Each request has `Id`, `AdUserName`, and `AccountExpirationDate` (which may be null).
+
+Send a JSON body to the PUT endpoint:
+
+| Field | Type | Meaning |
+| --- | --- | --- |
+| `Id` | string containing a GUID, required | The `Id` returned by the GET endpoint. |
+| `RequestResult` | boolean, required | Whether the external unblock succeeded. |
+| `RequestResultMessage` | string | Result message to record on the request. |
+
+<details>
+<summary>Copyable unblock result body</summary>
+
+Replace the placeholder with the `Id` from the unblock request before sending this JSON to `PUT /api/unblockuserrequests`:
+
+```json
+{
+  "Id": "<Id from the unblock request>",
+  "RequestResult": true,
+  "RequestResultMessage": ""
+}
+```
+
+If the external unblock fails, send `"RequestResult": false` and put the failure result in `"RequestResultMessage"`.
+
+</details>
+
+When `RequestResult` is `true`, Skills Workflow deletes the unblock request and updates the user's unblock state. When it is `false`, Skills Workflow retains the request with the reported result. The client remains responsible for restoring access in the external identity system.
 
 ---
 

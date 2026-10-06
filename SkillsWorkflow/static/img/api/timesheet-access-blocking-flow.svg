@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 444" role="img" aria-labelledby="title desc">
+  <title id="title">Timesheet access blocking and unblocking flow</title>
+  <desc id="desc">Two flows. Blocking: get users to block from Skills Workflow, block their access in the external identity system, then post each result to Skills Workflow. Unblocking: get unblock requests, restore access in the external identity system, then put each result to Skills Workflow.</desc>
+  <defs>
+    <style>
+      text { font-family: Inter, Arial, sans-serif; fill: #172b4d; }
+      .heading { font-size: 22px; font-weight: 700; }
+      .step { font-size: 17px; font-weight: 700; }
+      .detail { font-size: 14px; fill: #344563; }
+      .endpoint { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 13px; fill: #344563; }
+      .arrow { stroke: #65758b; stroke-width: 2.5; fill: none; }
+    </style>
+  </defs>
+  <rect width="1120" height="444" rx="16" fill="#ffffff"/>
+  <text x="30" y="41" class="heading">Block access</text>
+  <rect x="26" y="61" width="322" height="133" rx="12" fill="#e8f3ff" stroke="#81b6ec"/>
+  <text x="46" y="91" class="step">1. Skills Workflow</text>
+  <text x="46" y="120" class="detail">Get users to block</text>
+  <text x="46" y="147" class="endpoint">GET /api/blockedloginrequests/</text>
+  <text x="46" y="167" class="endpoint">userstoblock</text>
+  <path d="M 350 128 H 382" class="arrow"/>
+  <path d="M 382 122 L 390 128 L 382 134 Z" fill="#65758b"/>
+  <rect x="398" y="61" width="322" height="133" rx="12" fill="#fff4db" stroke="#e6bf64"/>
+  <text x="418" y="91" class="step">2. Your identity system</text>
+  <text x="418" y="120" class="detail">Block each external account</text>
+  <text x="418" y="147" class="detail">Match by AdUserName</text>
+  <path d="M 722 128 H 754" class="arrow"/>
+  <path d="M 754 122 L 762 128 L 754 134 Z" fill="#65758b"/>
+  <rect x="770" y="61" width="322" height="133" rx="12" fill="#e8f3ff" stroke="#81b6ec"/>
+  <text x="790" y="91" class="step">3. Skills Workflow</text>
+  <text x="790" y="120" class="detail">Report each block result</text>
+  <text x="790" y="147" class="endpoint">POST /api/blockedloginrequests/</text>
+  <text x="790" y="167" class="endpoint">block</text>
+  <path d="M 26 222 H 1092" stroke="#dfe5ec" stroke-width="2"/>
+  <text x="30" y="264" class="heading">Restore access</text>
+  <rect x="26" y="284" width="322" height="133" rx="12" fill="#e8f3ff" stroke="#81b6ec"/>
+  <text x="46" y="314" class="step">1. Skills Workflow</text>
+  <text x="46" y="343" class="detail">Get unblock requests</text>
+  <text x="46" y="370" class="endpoint">GET /api/unblockuserrequests</text>
+  <path d="M 350 351 H 382" class="arrow"/>
+  <path d="M 382 345 L 390 351 L 382 357 Z" fill="#65758b"/>
+  <rect x="398" y="284" width="322" height="133" rx="12" fill="#fff4db" stroke="#e6bf64"/>
+  <text x="418" y="314" class="step">2. Your identity system</text>
+  <text x="418" y="343" class="detail">Restore each external account</text>
+  <text x="418" y="370" class="detail">Match by AdUserName</text>
+  <path d="M 722 351 H 754" class="arrow"/>
+  <path d="M 754 345 L 762 351 L 754 357 Z" fill="#65758b"/>
+  <rect x="770" y="284" width="322" height="133" rx="12" fill="#e8f3ff" stroke="#81b6ec"/>
+  <text x="790" y="314" class="step">3. Skills Workflow</text>
+  <text x="790" y="343" class="detail">Report each unblock result</text>
+  <text x="790" y="370" class="endpoint">PUT /api/unblockuserrequests</text>
+</svg>
