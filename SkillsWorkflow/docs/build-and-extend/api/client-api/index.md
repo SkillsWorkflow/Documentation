@@ -1,5 +1,6 @@
 ---
-id: client-api
+id: index
+slug: /build-and-extend/api/client-api
 title: Client API
 description: "The Client API is designed for creating and updating documents in Skills Workflow."
 sidebar_label: Client API
@@ -23,6 +24,7 @@ Integrate Skills Workflow into tools such as:
 - Project management systems: Asana, Trello, Monday, ZiFlow
 - Collaboration platforms: AirTable, Notion
 - Business systems: ERP systems, attendance tracking, and other external document workflows
+- Identity systems that [block or restore access according to timesheet status](/docs/build-and-extend/api/client-api/timesheet-access-blocking)
 
 ### Key Limitations
 
@@ -92,7 +94,10 @@ After downloading, make sure to configure the variables `{{ApiUrl}}`, `{{TenantI
 
 [Swagger](https://apiv2-demo-prod-we.skillsworkflow.com/swagger/index.html)
 
+For timesheet-based account blocking, see [Timesheet access blocking](/docs/build-and-extend/api/client-api/timesheet-access-blocking).
+
 ---
+
 
 ## Examples
 
@@ -717,7 +722,7 @@ Where supported (see the [Supported Document Types](#supported-document-types) t
 `201 Created` — the created **Post** (feed entry), not the document itself. Its `DocumentId` field holds the ID of the newly created document.
 
 :::tip
-Most `Id` fields across the tabs above reference records that already exist in your tenant (clients, companies, products, etc.). The [Data Extraction](../api/data-extraction-api.md) queries under `docs/api/data-extraction` are available to look up the correct GUID for each of these before building a payload — don't hardcode IDs from another tenant or environment.
+Most `Id` fields across the tabs above reference records that already exist in your tenant (clients, companies, products, etc.). The [Data Extraction API](/docs/build-and-extend/api/data-extraction-api) can help you look up the correct GUID before building a payload. Do not hardcode IDs from another tenant or environment.
 :::
 
 #### Testing with Postman
