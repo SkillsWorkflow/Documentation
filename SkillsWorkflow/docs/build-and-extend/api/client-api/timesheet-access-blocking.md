@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Skills Workflow identifies users whose timesheet status calls for an access block or unblock. Your integration reads those lists, changes access in its identity system, and reports each result to Skills Workflow. The API does not change access in the external system.
 
-For standard hosted API v2 URLs, use `https://apiv2-{tenantName}.skillsworkflow.com`. Replace `{tenantName}` with the **full assigned hostname segment** between `apiv2-` and `.skillsworkflow.com`; it may include an environment or region suffix. Use the API v2 hostname supplied for your environment if it differs from this pattern. Send `X-AppId` and `X-AppSecret` with every request; see [Client API authentication](/docs/build-and-extend/api/client-api#authentication).
+For standard hosted API v2 URLs, use `https://apiv2-{tenantName}.skillsworkflow.com`. Replace `{tenantName}` with the **full assigned hostname segment** between `apiv2-` and `.skillsworkflow.com`; it may include an environment or region suffix. Use the API v2 hostname supplied for your environment if it differs from this pattern. Send `X-AppTenant`, `X-AppId`, and `X-AppSecret` with every request; see [Client API authentication](/docs/build-and-extend/api/client-api#authentication). `X-AppTenant` is the tenant ID supplied with your credentials, not the `{tenantName}` segment of the URL.
 
 <figure>
 
@@ -37,6 +37,7 @@ The request has no body. Add any optional company or country filters to the URL.
 
 ```http
 GET https://apiv2-{tenantName}.skillsworkflow.com/api/blockedloginrequests/userstoblock
+X-AppTenant: <TenantId>
 X-AppId: <AppId>
 X-AppSecret: <AppSecret>
 ```
@@ -71,6 +72,7 @@ Replace the placeholders before sending the request:
 
 ```http
 POST https://apiv2-{tenantName}.skillsworkflow.com/api/blockedloginrequests/block
+X-AppTenant: <TenantId>
 X-AppId: <AppId>
 X-AppSecret: <AppSecret>
 Content-Type: application/json
@@ -118,6 +120,7 @@ The request has no body. Add any optional company or country filters to the URL.
 
 ```http
 GET https://apiv2-{tenantName}.skillsworkflow.com/api/unblockuserrequests
+X-AppTenant: <TenantId>
 X-AppId: <AppId>
 X-AppSecret: <AppSecret>
 ```
@@ -151,6 +154,7 @@ Replace the placeholder with the `Id` from the unblock request before sending th
 
 ```http
 PUT https://apiv2-{tenantName}.skillsworkflow.com/api/unblockuserrequests
+X-AppTenant: <TenantId>
 X-AppId: <AppId>
 X-AppSecret: <AppSecret>
 Content-Type: application/json
