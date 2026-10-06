@@ -1,0 +1,10 @@
+{
+  "label": "Client API",
+  "position": 0,
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "build-and-extend/api/client-api/index"
+  }
+}
