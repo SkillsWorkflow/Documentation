@@ -110,5 +110,5 @@ The agency, clients, projects, Job numbers and stages in this example are illust
 ## Related articles
 
 - [Turn a Campaign Brief into a Job](/docs/ai/use-cases/projects-and-jobs/creating-a-job-using-a-briefing-template)
-- [Identifying Project Delays](/docs/ai/use-cases/projects-and-jobs/identifying-project-delays)
+- [Check the Delayed Projects That Need Your Attention](/docs/ai/use-cases/projects-and-jobs/identifying-project-delays)
 - [AI Assistant](/docs/ai/ai-assistant)

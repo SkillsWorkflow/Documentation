@@ -114,5 +114,5 @@ A agência, os clientes, os projetos, os números dos Jobs e as etapas neste exe
 ## Artigos relacionados
 
 - [Transformar um Briefing de Campanha num Job](/docs/ai/use-cases/projects-and-jobs/creating-a-job-using-a-briefing-template)
-- [Identificar Atrasos de Projeto](/docs/ai/use-cases/projects-and-jobs/identifying-project-delays)
+- [Ver os Projetos Atrasados que Precisam da Sua Atenção](/docs/ai/use-cases/projects-and-jobs/identifying-project-delays)
 - [AI Assistant](/docs/ai/ai-assistant)

@@ -114,5 +114,5 @@ La agencia, los clientes, los proyectos, los números de Job y las etapas de est
 ## Artículos relacionados
 
 - [Convertir un Briefing de Campaña en un Job](/docs/ai/use-cases/projects-and-jobs/creating-a-job-using-a-briefing-template)
-- [Identificar Retrasos de Proyecto](/docs/ai/use-cases/projects-and-jobs/identifying-project-delays)
+- [Revisar los Proyectos Retrasados que Necesitan tu Atención](/docs/ai/use-cases/projects-and-jobs/identifying-project-delays)
 - [AI Assistant](/docs/ai/ai-assistant)
