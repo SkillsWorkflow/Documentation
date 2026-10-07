@@ -202,6 +202,48 @@ function JobList({ title, rows, footer, previewLabel = 'Preview', openLabel = 'O
   );
 }
 
+function ApprovalCard({ title, subtitle, rows, actions }) {
+  return (
+    <section className={styles.approvalCard} aria-label={title}>
+      <div className={styles.approvalHeader}>
+        <span className={styles.jobListIcon} aria-hidden="true"><i className="fal fa-tasks" /></span>
+        <div className={styles.approvalHeading}>
+          <strong>{title}</strong>
+          {subtitle && <span className={styles.approvalSubtitle}>{subtitle}</span>}
+        </div>
+      </div>
+      <dl className={styles.approvalFacts}>
+        {rows.map(([name, value]) => (
+          <React.Fragment key={name}>
+            <dt>{name}</dt>
+            <dd>{value}</dd>
+          </React.Fragment>
+        ))}
+      </dl>
+      <div className={styles.approvalActions}>
+        {actions.map(({ label, primary }) => (
+          <span
+            key={label}
+            className={[styles.actionButton, primary ? styles.actionButtonPrimary : ''].join(' ')}
+          >
+            {label}
+          </span>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function StatusChip({ status, label }) {
+  return (
+    <div className={styles.statusChip}>
+      <span className={styles.statusChipCheck} aria-hidden="true">✓</span>
+      <span>{status}</span>
+      <span className={styles.statusChipLabel}>{label}</span>
+    </div>
+  );
+}
+
 function BriefComparison({ templateTitle, resultTitle, note, sections }) {
   return (
     <div className={styles.briefComparison}>
@@ -296,6 +338,8 @@ Walkthrough.Actions = Actions;
 Walkthrough.Attachment = Attachment;
 Walkthrough.CreatedJobCard = CreatedJobCard;
 Walkthrough.JobList = JobList;
+Walkthrough.ApprovalCard = ApprovalCard;
+Walkthrough.StatusChip = StatusChip;
 Walkthrough.BriefComparison = BriefComparison;
 Walkthrough.CapabilityCard = CapabilityCard;
 Walkthrough.ChecklistCard = ChecklistCard;
