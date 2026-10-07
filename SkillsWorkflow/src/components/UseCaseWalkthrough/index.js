@@ -152,6 +152,56 @@ function CreatedJobCard({ title, number, rows, actions, label }) {
   );
 }
 
+function JobList({ title, rows, footer, previewLabel = 'Preview', openLabel = 'Open' }) {
+  return (
+    <div className={styles.jobListWrap}>
+      <section className={styles.jobList} aria-label={title}>
+        <div className={styles.jobListHeader}>
+          <span className={styles.jobListIcon} aria-hidden="true"><i className="fal fa-tasks" /></span>
+          <strong>{title}</strong>
+          <span className={styles.jobListCount}>{rows.length}</span>
+        </div>
+        {rows.map(({ title: jobTitle, number, stage, due, tone, facts }) => (
+          <div
+            key={number || jobTitle}
+            className={[styles.jobListRow, facts ? styles.jobListRowOpen : ''].join(' ')}
+          >
+            <div className={styles.jobListLine}>
+              <span className={styles.jobListTitle}>{jobTitle}</span>
+              <span className={[styles.jobListDue, tone ? styles[`jobListDue_${tone}`] : ''].join(' ')}>{due}</span>
+            </div>
+            <div className={styles.jobListMeta}>
+              {number && <span className={styles.jobListNumber}>{number}</span>}
+              <span className={styles.jobListStage}>{stage}</span>
+            </div>
+            {facts && (
+              <div className={styles.jobListPeek}>
+                <div className={styles.jobListPeekActions} aria-hidden="true">
+                  <span title={previewLabel}><i className="fal fa-eye" /></span>
+                  <span title={openLabel}><i className="fal fa-external-link" /></span>
+                </div>
+                <dl className={styles.jobListFacts}>
+                  {facts.map(([name, value]) => (
+                    <React.Fragment key={name}>
+                      <dt>{name}</dt>
+                      <dd>{value}</dd>
+                    </React.Fragment>
+                  ))}
+                </dl>
+              </div>
+            )}
+          </div>
+        ))}
+      </section>
+      {footer && (
+        <div className={styles.jobListFooter} aria-hidden="true">
+          <i className="fal fa-database" /> {footer} <i className="fal fa-angle-down" />
+        </div>
+      )}
+    </div>
+  );
+}
+
 function BriefComparison({ templateTitle, resultTitle, note, sections }) {
   return (
     <div className={styles.briefComparison}>
@@ -245,6 +295,7 @@ Walkthrough.Choices = Choices;
 Walkthrough.Actions = Actions;
 Walkthrough.Attachment = Attachment;
 Walkthrough.CreatedJobCard = CreatedJobCard;
+Walkthrough.JobList = JobList;
 Walkthrough.BriefComparison = BriefComparison;
 Walkthrough.CapabilityCard = CapabilityCard;
 Walkthrough.ChecklistCard = ChecklistCard;
