@@ -487,6 +487,155 @@ html[data-theme='dark'] .bubbleAssistant {
 }
 
 /* Illustrative template-to-brief comparison outside the simulated chat. */
+/* "Jobs" result card for questions about the user's own Jobs */
+.jobListWrap {
+  margin-top: 0.75rem;
+}
+
+.jobList {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  overflow: hidden;
+  font-size: 0.88rem;
+}
+
+.jobListHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.jobListHeader strong {
+  font-weight: 500;
+}
+
+.jobListIcon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--ifm-color-warning) 18%, transparent);
+  color: var(--ifm-color-warning-darker);
+}
+
+.jobListCount {
+  margin-left: auto;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.jobListRow {
+  padding: 0.55rem 0.8rem;
+}
+
+.jobListRow + .jobListRow {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.jobListLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.jobListTitle {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.jobListDue {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.jobListDue_soon {
+  color: var(--ifm-color-warning-darker);
+}
+
+.jobListDue_late {
+  color: var(--ifm-color-danger);
+}
+
+.jobListMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.jobListNumber {
+  padding-right: 0.5rem;
+  border-right: 1px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-600);
+}
+
+.jobListStage::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background: var(--ifm-color-success);
+}
+
+.jobListRowOpen {
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+.jobListPeek {
+  margin-top: 0.5rem;
+}
+
+.jobListPeekActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.jobListFacts {
+  display: grid;
+  grid-template-columns: minmax(80px, 30%) minmax(0, 1fr);
+  gap: 0.3rem 0.6rem;
+  margin: 0.3rem 0 0;
+  font-size: 0.82rem;
+}
+
+.jobListFacts dt {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.jobListFacts dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.bubble ul {
+  margin: 0 0 0.6rem;
+  padding-left: 1.2rem;
+  font-size: 0.92rem;
+}
+
+.bubble li + li {
+  margin-top: 0.2rem;
+}
+
+.jobListFooter {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
 .briefComparison {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
