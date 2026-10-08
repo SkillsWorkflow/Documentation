@@ -243,6 +243,27 @@ figcaption {
 .table-of-contents__link:hover { color: var(--ifm-color-primary); }
 .table-of-contents__link--active { color: var(--ifm-color-primary); font-weight: 600; }
 
+@media (min-width: 997px) {
+  main .row:has(> .col > .theme-doc-toc-desktop) {
+    --sw-doc-toc-width: clamp(11.5rem, 22%, 15rem);
+  }
+
+  main .row:has(> .col > .theme-doc-toc-desktop) > .col:first-child {
+    flex: 1 1 0;
+    max-width: calc(100% - var(--sw-doc-toc-width)) !important;
+  }
+
+  main .row:has(> .col > .theme-doc-toc-desktop) > .col:first-child > div:has(> article) {
+    max-width: 52rem;
+    margin-inline: auto;
+  }
+
+  main .row > .col:has(> .theme-doc-toc-desktop) {
+    flex: 0 0 var(--sw-doc-toc-width);
+    max-width: var(--sw-doc-toc-width);
+  }
+}
+
 .toc-collapsible-heading {
   align-items: baseline;
   display: flex;
