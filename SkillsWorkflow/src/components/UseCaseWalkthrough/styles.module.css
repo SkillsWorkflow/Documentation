@@ -343,24 +343,25 @@ html[data-theme='dark'] .bubbleAssistant {
   width: 100%;
   margin: 0;
   border-collapse: collapse;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
 }
 
-.dataTable th,
-.dataTable td {
+.dataTableWrap .dataTable th,
+.dataTableWrap .dataTable td {
   text-align: left;
-  padding: 0.45rem 0.7rem;
+  vertical-align: top;
+  padding: 0.45rem 0.5rem;
   border: none;
-  white-space: nowrap;
 }
 
 .dataTable thead tr {
   background: none;
 }
 
-.dataTable th {
+.dataTableWrap .dataTable th {
   font-weight: 600;
   color: var(--ifm-color-emphasis-700);
+  white-space: normal;
 }
 
 .dataTable tbody tr {
