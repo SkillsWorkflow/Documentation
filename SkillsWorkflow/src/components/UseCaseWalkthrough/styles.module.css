@@ -329,6 +329,52 @@ html[data-theme='dark'] .bubbleAssistant {
   color: var(--ifm-color-emphasis-700);
 }
 
+/* multi-column result table */
+.dataTableWrap {
+  margin: 0.6rem 0;
+  overflow-x: auto;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+}
+
+.dataTable {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.dataTable th,
+.dataTable td {
+  text-align: left;
+  padding: 0.45rem 0.7rem;
+  border: none;
+  white-space: nowrap;
+}
+
+.dataTable thead tr {
+  background: none;
+}
+
+.dataTable th {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.dataTable tbody tr {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.dataTableNote {
+  margin: 0;
+  padding: 0.55rem 0.7rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
 /* choice pills */
 .choiceGroup {
   margin: 0.6rem 0;

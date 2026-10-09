@@ -89,6 +89,28 @@ function FieldTable({ rows }) {
   );
 }
 
+function DataTable({ columns, rows, note }) {
+  return (
+    <div className={styles.dataTableWrap}>
+      <table className={styles.dataTable}>
+        <thead>
+          <tr>
+            {columns.map((column) => <th key={column}>{column}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row[0]}>
+              {row.map((cell, index) => <td key={columns[index]}>{cell}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {note && <p className={styles.dataTableNote}>{note}</p>}
+    </div>
+  );
+}
+
 function Choices({ label, options }) {
   return (
     <div className={styles.choiceGroup}>
@@ -198,6 +220,14 @@ function JobList({ title, rows, footer, previewLabel = 'Preview', openLabel = 'O
           <i className="fal fa-database" /> {footer} <i className="fal fa-angle-down" />
         </div>
       )}
+    </div>
+  );
+}
+
+function Source({ label }) {
+  return (
+    <div className={styles.jobListFooter} aria-hidden="true">
+      <i className="fal fa-database" /> {label} <i className="fal fa-angle-down" />
     </div>
   );
 }
@@ -333,11 +363,13 @@ function NoteCard({ items }) {
 
 Walkthrough.Message = Message;
 Walkthrough.FieldTable = FieldTable;
+Walkthrough.DataTable = DataTable;
 Walkthrough.Choices = Choices;
 Walkthrough.Actions = Actions;
 Walkthrough.Attachment = Attachment;
 Walkthrough.CreatedJobCard = CreatedJobCard;
 Walkthrough.JobList = JobList;
+Walkthrough.Source = Source;
 Walkthrough.ApprovalCard = ApprovalCard;
 Walkthrough.StatusChip = StatusChip;
 Walkthrough.BriefComparison = BriefComparison;
