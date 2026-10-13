@@ -978,3 +978,70 @@ html[data-theme='dark'] .cardGoodToKnow {
 .statusChipLabel {
   color: var(--ifm-color-primary);
 }
+
+.workspaceCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  font-size: 0.88rem;
+}
+
+.workspaceIcon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  color: var(--ifm-color-primary);
+}
+
+.workspaceBody {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.workspaceTitleRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.workspaceBadge {
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: color-mix(in srgb, #7b6ef6 16%, transparent);
+  color: #5b4fd6;
+}
+
+html[data-theme='dark'] .workspaceBadge {
+  color: #b9b1ff;
+}
+
+.workspaceSubtitle {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.workspaceDescription {
+  margin: 0.4rem 0 0;
+  font-size: 0.84rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.workspaceActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.6rem;
+}
