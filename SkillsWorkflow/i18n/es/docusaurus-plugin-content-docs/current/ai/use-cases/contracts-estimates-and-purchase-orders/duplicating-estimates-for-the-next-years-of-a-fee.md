@@ -10,7 +10,9 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Visión general
 
-Eres el account manager de Northwind Coffee. El cliente acaba de renovar su retainer para 2027 con el mismo alcance y un aumento de precio del 5%. En lugar de crear el Fee del próximo año y reconstruir su estimate línea a línea, pides al AI Assistant que copie el Fee de este año. El asistente encuentra el Fee y su estimate, copia ambos a 2027 con las nuevas fechas, aplica la tasa de inflación a las líneas del estimate y pide tu aprobación antes de crear nada. Después le pides que active el nuevo estimate, para que el equipo pueda empezar a planificar el trabajo del próximo año.
+Dile al AI Assistant qué Fee de cliente quieres renovar y qué tasa de inflación aplicar. El asistente encuentra el Fee de este año y su estimate, y copia ambos al año siguiente en el mismo paso: el nombre y las fechas del nuevo Fee, y el estimate con sus líneas, la tasa de inflación aplicada a sus valores y la descripción, el equipo o los campos personalizados que elijas copiar. Revisas todo en una tarjeta antes de que se cree nada.
+
+Una vez creada la copia, el asistente muestra los valores del nuevo estimate junto a los del año anterior. Después puedes pedirle que active el nuevo estimate, para que el equipo pueda empezar a planificar el trabajo del año.
 
 :::note Preview
 Copiar el Fee completo está en preview. Hoy el asistente copia solo el estimate, con sus líneas, y la copia queda en el Fee original: no crea un nuevo Fee. La copia mantiene la **Fecha de Inicio**, la **Fecha de Fin** y los valores del original. Definir las nuevas fechas y el campo **Inflación %** en la copia también está en preview, así que abre la **Info** del nuevo estimate y defínelos antes de usarlo. El asistente puede activar la copia.

@@ -10,7 +10,9 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Overview
 
-You are the account manager for Northwind Coffee. The client has just renewed its retainer for 2027 on the same scope, with a 5% price increase. Rather than create next year's Fee and rebuild its estimate line by line, you ask the AI Assistant to copy this year's Fee. It finds the Fee and its estimate, copies both to 2027 with the new dates, applies the inflation rate to the estimate lines and asks for your approval before it creates anything. You then ask it to activate the new estimate, so the team can start planning next year's work.
+Tell the AI Assistant which client's Fee to renew and the inflation rate to apply. The assistant finds this year's Fee and its estimate, and copies both to the next year in the same step: the new Fee's name and dates, and the estimate with its lines, the inflation rate applied to its values and the description, team or custom fields you choose to carry over. You review everything on a card before anything is created.
+
+Once the copy exists, the assistant shows the new estimate's values next to last year's. You can then ask it to activate the new estimate, so the team can start planning the year's work.
 
 :::note Preview
 Copying the whole Fee is in preview. Today the assistant copies only the estimate, with its lines, and the copy stays on the original Fee: it does not create a new Fee. The copy keeps the original's **Start Date**, **End Date** and values. Setting the new dates and the **Inflation %** field on the copy is also in preview, so open the new estimate's **Info** and set them before you use it. The assistant can activate the copy.
