@@ -1,7 +1,7 @@
 ---
 id: duplicating-estimates-for-the-next-years-of-a-fee
-title: Copiar um Fee e o Seu Estimate para o Ano Seguinte com Inflação
-description: "Veja como um account manager pede ao AI Assistant para copiar o Fee do ano anterior, com o seu estimate, para um novo ano, com novas datas e uma taxa de inflação, e depois ativar o novo estimate."
+title: Copiar o Fee de um Cliente para o Ano Seguinte
+description: "Veja como um account manager renova o retainer de um cliente pedindo ao AI Assistant para copiar o Fee deste ano, com o seu estimate, para o próximo ano, aplicar uma taxa de inflação às linhas do estimate e ativar o novo estimate."
 sidebar_label: Copiar um Fee para o Ano Seguinte
 sidebar_position: 5
 ---
@@ -10,24 +10,26 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Visão geral
 
-Peça ao AI Assistant para copiar um Fee para o ano seguinte: o próprio Fee e o estimate que tem. Indique as novas datas e uma taxa de inflação, escolha o que mais a cópia do estimate deve incluir e aprove a cópia antes de ser criada. O novo estimate é criado no novo Fee e o assistente pode depois ativá-lo.
+É o account manager da Northwind Coffee. O cliente acabou de renovar o retainer para 2027 com o mesmo âmbito e um aumento de preço de 5%. Em vez de criar o Fee do próximo ano e reconstruir o estimate linha a linha, pede ao AI Assistant para copiar o Fee deste ano. O assistente encontra o Fee e o seu estimate, copia ambos para 2027 com as novas datas, aplica a taxa de inflação às linhas do estimate e pede a sua aprovação antes de criar o que quer que seja. Depois pede-lhe para ativar o novo estimate, para que a equipa possa começar a planear o trabalho do próximo ano.
 
 :::note Preview
 Copiar o Fee completo está em preview. Hoje o assistente copia apenas o estimate, com as suas linhas, e a cópia fica no Fee original: não cria um novo Fee. A cópia mantém a **Data de Início**, a **Data de Conclusão** e os valores do original. Definir as novas datas e o campo **Inflação %** na cópia também está em preview, por isso abra a **Info** do novo estimate e defina-os antes de o usar. O assistente consegue ativar a cópia.
 :::
 
-A agência, o cliente, os Fees, os nomes e números dos estimates e as etapas neste exemplo são ilustrativos. As etapas e transições que vê dependem do workflow do estimate.
+A agência, o cliente, os Fees, os estimates, os números, as horas, os valores e as etapas neste exemplo são ilustrativos. Os documentos que vê dependem dos seus acessos, e as etapas e transições dependem do workflow do estimate.
 
 <Walkthrough
   subtitle="Exemplo de conversa entre um account manager e o AI Assistant."
   sidebar={
     <>
-      <Walkthrough.CapabilityCard title="O Fee do próximo ano a partir do anterior">
-        O assistente encontra o Fee e o seu estimate, copia ambos para o novo ano com as datas, a taxa de inflação e os detalhes que escolher, e ativa o novo estimate com a sua aprovação.
+      <Walkthrough.CapabilityCard title="Do Fee deste ano ao do próximo">
+        O assistente copia o Fee e o seu estimate para o novo ano, aplica às linhas do estimate a taxa de inflação que pedir e ativa o novo estimate com a sua aprovação.
       </Walkthrough.CapabilityCard>
       <Walkthrough.ChecklistCard
         items={[
-          'Indique o Fee a copiar, as novas datas e a taxa de inflação.',
+          'Peça o Fee do cliente para este ano e confirme o seu estimate.',
+          'Peça ao assistente para copiar o Fee para o próximo ano e indique a taxa de inflação.',
+          'Consulte Como interpretei a tua pergunta para confirmar as novas datas.',
           'Escolha o que a cópia do estimate inclui: Descrição, Equipa ou Campos personalizados.',
           'Reveja os detalhes e selecione Duplicar.',
           'Confirme o novo Fee e, na Info do novo estimate, a Data de Início, a Data de Conclusão e a Inflação %.',
@@ -36,8 +38,9 @@ A agência, o cliente, os Fees, os nomes e números dos estimates e as etapas ne
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Copia o fee BBC 2025 e o seu estimate para 2026, com 10% de inflação.',
-          'Duplica o fee BBC 2025 para janeiro a dezembro de 2026.',
+          'Mostra-me o fee que temos com a Northwind Coffee este ano e o seu estimate.',
+          'Copia o fee Northwind Coffee Retainer 2026 e aplica-me uma taxa de inflação de 5%.',
+          'Duplica o fee para janeiro a dezembro de 2027.',
           'Ativa o estimate.',
         ]}
       />
@@ -53,23 +56,43 @@ A agência, o cliente, os Fees, os nomes e números dos estimates e as etapas ne
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>Copia o fee BBC 2025 e o seu estimate para 2026, com datas de 1 de janeiro de 2026 a 31 de dezembro de 2026, e aplica uma taxa de inflação de 10%.</p>
+    <p>A Northwind Coffee acabou de renovar o retainer para 2027. Mostra-me o fee que temos com eles este ano e o seu estimate.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Encontrei o fee <strong>BBC 2025</strong> e o seu estimate <strong>2025 - 00195 · FEE</strong>. O que deve a cópia do estimate incluir?</p>
-    <Walkthrough.JobList
-      title="Estimates · BBC 2025"
-      previewLabel="Pré-visualizar"
-      openLabel="Abrir"
+    <p><strong>A Northwind Coffee tem um fee para 2026, Northwind Coffee Retainer 2026</strong>, de 1 de janeiro a 31 de dezembro de 2026. Tem um estimate, <strong>2026 - 00031 · Retainer 2026</strong>, de 4800 horas e 312.000 €:</p>
+    <Walkthrough.DataTable
+      columns={['Typology Group', 'Horas', 'Valor']}
       rows={[
-        { title: 'FEE', number: '2025 - 00195', stage: 'Faturado' },
+        ['Creative', '1800h', '126.000 €'],
+        ['Design', '1400h', '84.000 €'],
+        ['Copywriting', '900h', '58.500 €'],
+        ['Accounts', '700h', '43.500 €'],
       ]}
+      note="O estimate está em Faturado."
     />
+    <p><strong>Como interpretei a tua pergunta</strong></p>
+    <ul>
+      <li>Incluído: fees da Northwind Coffee com datas em 2026 e os estimates que contêm.</li>
+      <li>Assumido: “este ano” significa de 1 de janeiro a 31 de dezembro de 2026.</li>
+    </ul>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="Você">
+    <p>Copia o fee Northwind Coffee Retainer 2026 para o próximo ano e aplica-me uma taxa de inflação de 5%.</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Vou copiar o fee e o seu estimate para 2027 e definir a Inflação % como 5 no novo estimate. O que deve a cópia do estimate incluir?</p>
     <Walkthrough.Choices
       label="O que deve a cópia incluir? Escolhe as que quiseres"
       options={['Descrição', 'Equipa', 'Campos personalizados']}
     />
+    <p><strong>Como interpretei a tua pergunta</strong></p>
+    <ul>
+      <li>Assumido: “próximo ano” significa de 1 de janeiro a 31 de dezembro de 2027, o mesmo período do fee original, um ano depois.</li>
+      <li>Assumido: o novo fee chama-se Northwind Coffee Retainer 2027 e o novo estimate Retainer 2027.</li>
+    </ul>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
@@ -81,14 +104,14 @@ A agência, o cliente, os Fees, os nomes e números dos estimates e as etapas ne
       title="Duplicar este fee"
       subtitle="Revê estes detalhes antes de eu duplicar."
       rows={[
-        ['A duplicar', 'BBC 2025'],
+        ['A duplicar', 'Northwind Coffee Retainer 2026'],
         ['Tipo de documento', 'Fee'],
-        ['Nome do novo fee', 'BBC 2026'],
-        ['Data de Início', '1 de janeiro de 2026'],
-        ['Data de Conclusão', '31 de dezembro de 2026'],
-        ['Estimate', '2025 - 00195 · FEE'],
-        ['Nome do novo estimate', 'FEE 2026'],
-        ['Inflação %', '10'],
+        ['Nome do novo fee', 'Northwind Coffee Retainer 2027'],
+        ['Data de Início', '1 de janeiro de 2027'],
+        ['Data de Conclusão', '31 de dezembro de 2027'],
+        ['Estimate', '2026 - 00031 · Retainer 2026'],
+        ['Nome do novo estimate', 'Retainer 2027'],
+        ['Inflação %', '5'],
         ['Inclui', 'Descrição, Equipa'],
       ]}
       actions={[{ label: 'Negar' }, { label: 'Duplicar', primary: true }]}
@@ -101,7 +124,17 @@ A agência, o cliente, os Fees, os nomes e números dos estimates e as etapas ne
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.StatusChip status="Atualizado" label="Duplicar este fee" />
-    <p>O fee foi duplicado como <strong>BBC 2026</strong>, com datas de 1 de janeiro a 31 de dezembro de 2026. O seu estimate foi copiado para o novo fee como <strong>2026 - 00012 · FEE 2026</strong>, com as mesmas datas e a Inflação % definida para 10. As linhas do estimate foram atualizadas com a inflação.</p>
+    <p>O fee foi duplicado como <strong>Northwind Coffee Retainer 2027</strong>, com datas de 1 de janeiro a 31 de dezembro de 2027. O seu estimate foi copiado para o novo fee como <strong>2026 - 00412 · Retainer 2027</strong>, com as mesmas datas e a Inflação % definida para 5. As linhas do estimate foram atualizadas com a inflação:</p>
+    <Walkthrough.DataTable
+      columns={['Typology Group', 'Horas', '2026', '2027']}
+      rows={[
+        ['Creative', '1800h', '126.000 €', '132.300 €'],
+        ['Design', '1400h', '84.000 €', '88.200 €'],
+        ['Copywriting', '900h', '58.500 €', '61.425 €'],
+        ['Accounts', '700h', '43.500 €', '45.675 €'],
+      ]}
+      note="As horas são as mesmas de 2026. O total passa de 312.000 € para 327.600 €."
+    />
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
@@ -109,7 +142,7 @@ A agência, o cliente, os Fees, os nomes e números dos estimates e as etapas ne
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Atualizado" label="2026 - 00012 · FEE 2026" />
+    <Walkthrough.StatusChip status="Atualizado" label="2026 - 00412 · Retainer 2027" />
     <p>O estimate foi ativado e passou para New.</p>
   </Walkthrough.Message>
 </Walkthrough>
