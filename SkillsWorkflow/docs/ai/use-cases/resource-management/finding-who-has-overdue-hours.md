@@ -132,5 +132,5 @@ The agency, people and hours in this example are illustrative. The people you se
 
 - [Missing Time Hours and Approvals Workspace](/docs/product/dashboards-and-reporting/timesheet-approvals-dashboard)
 - [Filling in Time Sheets](/docs/product/time/timesheets/filling-time-sheets)
-- [Checking Contract Burn](/docs/ai/use-cases/resource-management/checking-contract-burn)
+- [Check Contracted Hours and Team Capacity](/docs/ai/use-cases/resource-management/comparing-contracted-and-available-hours)
 - [AI Assistant](/docs/ai/ai-assistant)

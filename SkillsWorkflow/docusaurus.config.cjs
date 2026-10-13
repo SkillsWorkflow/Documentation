@@ -278,6 +278,7 @@ module.exports = {
           { from: '/docs/ai/use-cases/files-and-contents', to: '/docs/ai/ai-overview' },
           { from: '/docs/ai/use-cases/import-and-ocr', to: '/docs/ai/ai-overview' },
           { from: '/docs/ai/use-cases/integrations', to: '/docs/ai/ai-overview' },
+          { from: '/docs/ai/use-cases/resource-management/checking-contract-burn', to: '/docs/ai/use-cases/resource-management/comparing-contracted-and-available-hours' },
           { from: '/docs/ai/use-cases/problem-detection-and-alerts', to: '/docs/ai/ai-overview' },
           { from: '/docs/ai/use-cases/team-and-individual-work', to: '/docs/ai/ai-overview' },
           ...require('./redirects/restructured-docs.cjs')
