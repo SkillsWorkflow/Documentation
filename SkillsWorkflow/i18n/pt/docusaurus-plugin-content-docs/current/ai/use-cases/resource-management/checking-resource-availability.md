@@ -1,8 +1,8 @@
 ---
 id: checking-resource-availability
-title: Encontrar Criativos Disponíveis e Atribuir um a um Job
-description: "Veja como um gestor de projetos pergunta ao AI Assistant que criativos estão livres na próxima semana, consulta em que está alocada uma pessoa, filtra a pesquisa por Typology Group e atribui o criativo disponível a um Job como Executor."
-sidebar_label: Encontrar Criativos Disponíveis para um Job
+title: Encontrar Pessoas Disponíveis e Atribuir uma a um Job
+description: "Veja como um gestor de projetos pergunta ao AI Assistant quem está livre para cumprir um prazo, consulta em que está alocada uma pessoa, filtra a pesquisa por departamento ou Typology Group e atribui a pessoa disponível à equipa de um Job."
+sidebar_label: Encontrar Pessoas Disponíveis para um Job
 sidebar_position: 2
 ---
 
