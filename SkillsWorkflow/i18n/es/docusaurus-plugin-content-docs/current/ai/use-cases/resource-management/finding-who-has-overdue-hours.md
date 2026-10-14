@@ -132,5 +132,5 @@ La agencia, las personas y las horas de este ejemplo son ilustrativas. Las perso
 
 - [Horas de Tiempo en Falta y Aprobaciones Workspace](/docs/product/dashboards-and-reporting/timesheet-approvals-dashboard)
 - [Llenar Hojas de Tiempo](/docs/product/time/timesheets/filling-time-sheets)
-- [Consultar el Burn del Contrato](/docs/ai/use-cases/resource-management/checking-contract-burn)
+- [Consultar Horas Contratadas y Capacidad del Equipo](/docs/ai/use-cases/resource-management/comparing-contracted-and-available-hours)
 - [AI Assistant](/docs/ai/ai-assistant)

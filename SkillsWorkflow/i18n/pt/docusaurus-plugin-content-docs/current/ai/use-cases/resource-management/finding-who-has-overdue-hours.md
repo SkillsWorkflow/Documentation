@@ -132,5 +132,5 @@ A agência, as pessoas e as horas neste exemplo são ilustrativas. As pessoas qu
 
 - [Workspace de aprovações e horas do quadro de horários ausentes](/docs/product/dashboards-and-reporting/timesheet-approvals-dashboard)
 - [Preencher Time Sheets](/docs/product/time/timesheets/filling-time-sheets)
-- [Consultar o Burn do Contrato](/docs/ai/use-cases/resource-management/checking-contract-burn)
+- [Consultar Horas Contratadas e Capacidade da Equipa](/docs/ai/use-cases/resource-management/comparing-contracted-and-available-hours)
 - [AI Assistant](/docs/ai/ai-assistant)
