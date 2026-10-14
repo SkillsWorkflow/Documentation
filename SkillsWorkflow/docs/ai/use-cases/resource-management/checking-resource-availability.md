@@ -1,8 +1,8 @@
 ---
 id: checking-resource-availability
-title: Find Available Creatives and Assign One to a Job
-description: "See how a project manager asks the AI Assistant which creatives are free next week, checks what one person is booked on, narrows the search by typology group and assigns the available creative to a Job as Executor."
-sidebar_label: Find Available Creatives for a Job
+title: Find Available People and Assign One to a Job
+description: "See how a project manager asks the AI Assistant who is free for a deadline, checks what one person is booked on, narrows the search by department or typology group and assigns the available person to a Job's team."
+sidebar_label: Find Available People for a Job
 sidebar_position: 2
 ---
 
