@@ -264,6 +264,25 @@ function ApprovalCard({ title, subtitle, rows, actions }) {
   );
 }
 
+function WorkspaceCard({ title, subtitle, description, actionLabel = 'Open workspace', badge }) {
+  return (
+    <section className={styles.workspaceCard} aria-label={title}>
+      <span className={styles.workspaceIcon} aria-hidden="true"><i className="fal fa-chart-pie" /></span>
+      <div className={styles.workspaceBody}>
+        <div className={styles.workspaceTitleRow}>
+          <strong>{title}</strong>
+          {badge && <span className={styles.workspaceBadge}>{badge}</span>}
+        </div>
+        {subtitle && <span className={styles.workspaceSubtitle}>{subtitle}</span>}
+        {description && <p className={styles.workspaceDescription}>{description}</p>}
+        <div className={styles.workspaceActions}>
+          <span className={[styles.actionButton, styles.actionButtonPrimary].join(' ')}>{actionLabel}</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function StatusChip({ status, label }) {
   return (
     <div className={styles.statusChip}>
@@ -372,6 +391,7 @@ Walkthrough.JobList = JobList;
 Walkthrough.Source = Source;
 Walkthrough.ApprovalCard = ApprovalCard;
 Walkthrough.StatusChip = StatusChip;
+Walkthrough.WorkspaceCard = WorkspaceCard;
 Walkthrough.BriefComparison = BriefComparison;
 Walkthrough.CapabilityCard = CapabilityCard;
 Walkthrough.ChecklistCard = ChecklistCard;

@@ -280,6 +280,10 @@ module.exports = {
           { from: '/docs/ai/use-cases/integrations', to: '/docs/ai/ai-overview' },
           { from: '/docs/ai/use-cases/problem-detection-and-alerts', to: '/docs/ai/ai-overview' },
           { from: '/docs/ai/use-cases/team-and-individual-work', to: '/docs/ai/ai-overview' },
+          // The allocation, utilization and resource requirements dashboard use cases were merged.
+          { from: '/docs/ai/use-cases/resource-management/finding-the-best-dashboard-for-allocation', to: '/docs/ai/use-cases/resource-management/finding-the-best-resource-management-dashboard' },
+          { from: '/docs/ai/use-cases/resource-management/finding-the-best-dashboard-for-utilization', to: '/docs/ai/use-cases/resource-management/finding-the-best-resource-management-dashboard' },
+          { from: '/docs/ai/use-cases/resource-management/finding-the-best-dashboard-for-resource-requirements', to: '/docs/ai/use-cases/resource-management/finding-the-best-resource-management-dashboard' },
           ...require('./redirects/restructured-docs.cjs')
         ]
       }
