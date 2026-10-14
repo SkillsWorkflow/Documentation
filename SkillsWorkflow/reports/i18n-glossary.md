@@ -171,3 +171,13 @@ other single page. Decisions made translating it, beyond the core table above:
 
 Add a term here the moment a batch needs a call this file doesn't answer, so the next batch
 inherits the decision instead of re-guessing it.
+
+## pt-BR decisions (AI use cases, October 2026)
+
+Confirmed by a pt-BR reviewer while translating `docs/ai/use-cases/` into pt-BR:
+
+| English | pt-BR | Note |
+| --- | --- | --- |
+| Job (including the AI chat's own labels, which say "job" in the WebApp bundle) | Atividade | e.g. "Mover esta atividade para", "Tipo de atividade" |
+| Typology / Typology group | Cargo / Grupo de Cargo | Matches WebApp `Typology` / `TypologyGroup`; older pt-BR pages that say "tipologia" are drift |
+| Missing hours (unrecorded Time Sheet hours that block a user) | Pendência de time sheet | Not "Horas Ausentes": that reads as Ausência (leave) |
