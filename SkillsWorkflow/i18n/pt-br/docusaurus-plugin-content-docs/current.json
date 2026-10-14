@@ -282,5 +282,89 @@
   "sidebar.trust.category.Service Quality & Change Management": {
     "message": "Qualidade de Serviço e Gestão de Mudanças",
     "description": "The label for category 'Service Quality & Change Management' in sidebar 'trust'"
+  },
+  "sidebar.docs.category.Use Cases": {
+    "message": "Use Cases",
+    "description": "The label for category 'Use Cases' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Use Cases.link.generated-index.title": {
+    "message": "Use Cases",
+    "description": "The generated-index page title for category 'Use Cases' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Use Cases.link.generated-index.description": {
+    "message": "Use cases reais para o Assistente de IA, organizados por assunto: o que cada um faz, o prompt a enviar e o resultado esperado.",
+    "description": "The generated-index page description for category 'Use Cases' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.ai-use-cases-projects-jobs": {
+    "message": "Projetos e Atividades",
+    "description": "The label for category 'Projects & Jobs' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.ai-use-cases-projects-jobs.link.generated-index.title": {
+    "message": "Projetos e Atividades",
+    "description": "The generated-index page title for category 'Projects & Jobs' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.ai-use-cases-projects-jobs.link.generated-index.description": {
+    "message": "Use cases para criar atividades e acompanhar o andamento delas.",
+    "description": "The generated-index page description for category 'Projects & Jobs' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Resource Management": {
+    "message": "Gestão de Recursos",
+    "description": "The label for category 'Resource Management' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Resource Management.link.generated-index.title": {
+    "message": "Gestão de Recursos",
+    "description": "The generated-index page title for category 'Resource Management' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Resource Management.link.generated-index.description": {
+    "message": "Use cases para consultar burn, disponibilidade, escassez e problemas críticos de recursos.",
+    "description": "The generated-index page description for category 'Resource Management' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Client Dashboards and Forms": {
+    "message": "Dashboards e Formulários de Cliente",
+    "description": "The label for category 'Client Dashboards and Forms' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Client Dashboards and Forms.link.generated-index.title": {
+    "message": "Dashboards e Formulários de Cliente",
+    "description": "The generated-index page title for category 'Client Dashboards and Forms' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Client Dashboards and Forms.link.generated-index.description": {
+    "message": "Use cases para manter os clientes informados por meio de portais e atualizações de status.",
+    "description": "The generated-index page description for category 'Client Dashboards and Forms' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Accounts Status": {
+    "message": "Status das Contas",
+    "description": "The label for category 'Accounts Status' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Accounts Status.link.generated-index.title": {
+    "message": "Status das Contas",
+    "description": "The generated-index page title for category 'Accounts Status' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Accounts Status.link.generated-index.description": {
+    "message": "Use cases para monitorar várias contas de clientes ao mesmo tempo.",
+    "description": "The generated-index page description for category 'Accounts Status' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Contracts, Estimates & Purchase Orders": {
+    "message": "Contratos, Propostas e Ordens de Compra",
+    "description": "The label for category 'Contracts, Estimates & Purchase Orders' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Contracts, Estimates & Purchase Orders.link.generated-index.title": {
+    "message": "Contratos, Propostas e Ordens de Compra",
+    "description": "The generated-index page title for category 'Contracts, Estimates & Purchase Orders' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Contracts, Estimates & Purchase Orders.link.generated-index.description": {
+    "message": "Use cases para preparar e revisar propostas e rate cards.",
+    "description": "The generated-index page description for category 'Contracts, Estimates & Purchase Orders' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.People & Access": {
+    "message": "Pessoas e Acessos",
+    "description": "The label for category 'People & Access' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.People & Access.link.generated-index.title": {
+    "message": "Pessoas e Acessos",
+    "description": "The generated-index page title for category 'People & Access' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.People & Access.link.generated-index.description": {
+    "message": "Use cases para configurar novas pessoas, verificar o que elas podem acessar e fazer a passagem de trabalho quando alguém sai.",
+    "description": "The generated-index page description for category 'People & Access' in sidebar 'docs'"
   }
 }
