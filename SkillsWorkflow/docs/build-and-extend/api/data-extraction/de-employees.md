@@ -39,4 +39,10 @@ This query has no parameters.
 | User | u | LEFT JOIN |
 | Company | c | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| EmployeeRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

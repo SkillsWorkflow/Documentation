@@ -33,4 +33,10 @@ This query has no parameters.
 | City | cit | FROM |
 | Country | con | FROM |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| CityRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

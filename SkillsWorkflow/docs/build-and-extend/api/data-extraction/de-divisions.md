@@ -22,10 +22,14 @@ This query has no parameters.
 
 | Column | Source Table | Source Column |
 |--------|-------------|---------------|
+| Oid | div | Oid |
+| DocumentOid | div | Oid |
 | CompanyId | com | Oid |
 | Company | com | Name |
 | DivisionId | div | Oid |
 | Division | div | Name |
+| ExternalId | div | ExternalId |
+| Code | div | Code |
 
 ## Source Tables
 
@@ -34,4 +38,14 @@ This query has no parameters.
 | Division | div | FROM |
 | Company | com | JOIN |
 
-*Version: 2 · Category: Data Extraction · System: No*
+## Custom Fields
+
+- Module: `Skill.Module.BusinessObjects.Division`
+
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| DivisionRead | No |
+
+*Version: 5 · Category: Data Extraction · System: No*

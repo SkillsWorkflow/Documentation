@@ -36,4 +36,10 @@ This query has no parameters.
 | DepartmentLookup | dep | JOIN |
 | UserTypologyGroup | utg | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: Yes*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| UserTypologyGroupRead | No |
+
+*Version: 3 · Category: Data Extraction · System: Yes*

@@ -32,7 +32,10 @@ This query has no parameters.
 | Classification | cls | Name |
 | NatureId | nat | Oid |
 | Nature | nat | Name |
-| DepartmentId | eid | Department |
+| EstimateId | est | Oid |
+| Estimate | est | Name |
+| EstimateNumber | est | Number |
+| DepartmentId | dep | Oid |
 | Department | dep | Name |
 | ProjectPlannedUserTypologyGroupId | phd | UserTypologyGroup |
 | ProjectPlannedUserTypologyGroup | utg | Name |
@@ -71,4 +74,10 @@ This query has no parameters.
 | Division | div | JOIN |
 | Company | com | JOIN |
 
-*Version: 6 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| ProjectRead | No |
+
+*Version: 9 · Category: Data Extraction · System: No*

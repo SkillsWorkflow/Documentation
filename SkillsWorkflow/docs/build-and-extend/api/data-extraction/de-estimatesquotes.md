@@ -22,14 +22,20 @@ This query has no parameters.
 
 | Column | Source Table | Source Column |
 |--------|-------------|---------------|
+| Oid | est | Oid |
+| DocumentOid | est | Oid |
 | EstimateId | est | Oid |
 | Estimate | — | (expression) |
 | EstimateNumber | est | Number |
+| StartDate | est | Date |
+| EndDate | est | Expiration |
 | DepartmentId | dep | Id |
 | Department | dep | Name |
 | ModifiedOn | est | ModifiedOnUtc |
 | StageId | wfs | Oid |
 | Stage | wfs | Name |
+| StageTypeId | wst | Status |
+| StageType | wst | Name |
 | ClientId | cli | Id |
 | Client | cli | Name |
 | Contract | — | (expression) |
@@ -38,8 +44,8 @@ This query has no parameters.
 | Project | — | (expression) |
 | EstimateItemId | eit | Oid |
 | EstimateItem | eit | Name |
-| EstimateItemDescription | eit | Description |
-| EstimateItemDetailDescription | eid | Description |
+| EstimateItemDescription | — | replace(...) |
+| EstimateItemDetailDescription | — | replace(...) |
 | SupplierId | sup | Oid |
 | Supplier | sup | Name |
 | ServiceId | art | Oid |
@@ -68,22 +74,28 @@ This query has no parameters.
 | EstimateItemValueWithVatIncome | eit | ValueWithVatIncome |
 | EstimateItemClientDirectTotal | eit | ClientDirectTotal |
 | EstimateItemValueWithVatIncomeWithClientDirect | eit | ValueWithVatIncomeWithClientDirect |
+| EstimateItemDiscountPercentage | eit | DiscountPercentage |
+| EstimateItemDetailHours | eid | Hours |
 | EstimateItemDetailCost | — | (expression) |
 | EstimateItemDetailIncome | — | (expression) |
 | EstimateItemDetailTableRate | eid | TableRate |
 | EstimateItemDetailUnitPriceCost | eid | UnitPriceCost |
-| EstimateItemDetailUnitPriceIncome | — | (expression) |
-| DiscountCost | eid | DiscountCost |
+| EstimateItemDetailUnitPriceIncome | eid | UnitPriceIncome |
+| DiscountCost | — | (expression) |
 | QuantityCost | eid | QuantityCost |
-| ValueWithoutVatCost | eid | ValueWithoutVatCost |
-| VatValueCost | eid | VatValueCost |
-| ValueWithVatCost | eid | ValueWithVatCost |
-| DiscountIncome | eid | DiscountIncome |
+| ValueWithoutVatCost | — | (expression) |
+| VatValueCost | — | (expression) |
+| ValueWithVatCost | — | (expression) |
+| DiscountIncome | — | (expression) |
+| DiscountIncomePercentage | eid | DiscountIncomePercentage |
 | QuantityIncome | eid | QuantityIncome |
 | AgencyCommissionValue | eid | AgencyCommissionValue |
-| ValueWithoutVatIncome | eid | ValueWithoutVatIncome |
-| Margin | eid | Margin |
+| ValueWithoutVatIncome | — | (expression) |
+| ValueWithVatIncome | — | (expression) |
+| Margin | — | (expression) |
 | MarginPercentage | eid | MarginPercentage |
+| RevenueWithVat | — | (expression) |
+| RevenueWithoutVat | — | (expression) |
 
 ## Source Tables
 
@@ -109,10 +121,14 @@ This query has no parameters.
 | Article | art | LEFT JOIN |
 | Article | ari | LEFT JOIN |
 
+## Custom Fields
+
+- Module: `Skill.Module.BusinessObjects.Estimate`
+
 ## Access
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| EstimateRead | No |
 
-*Version: 8 · Category: Data Extraction · System: No*
+*Version: 17 · Category: Data Extraction · System: No*

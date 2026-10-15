@@ -31,4 +31,10 @@ This query has no parameters.
 |-------|-------|------|
 | Country | cou | FROM |
 
-*Version: 3 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| CountryRead | No |
+
+*Version: 6 · Category: Data Extraction · System: No*

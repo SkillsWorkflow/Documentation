@@ -16,7 +16,15 @@ POST /api/v3/analytics/named-query/DE-TimeSheetsCount/dynamic-execute
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| From | `where (@From is null or tim.Date >= @From) and` |
+| To | `(@To is null or tim.Date <= @To) and` |
+| ModifiedFrom | `(@ModifiedFrom is null or tim.ModifiedOn >= @ModifiedFrom) and` |
+| ProjectId | `(@ProjectId is null or prj.Id = @ProjectId) and` |
+| ProjectNumber | `(@ProjectNumber is null or prj.Number = cast(@ProjectNumber as nvarchar))` |
 
 ## Output Columns
 
@@ -28,4 +36,10 @@ Column metadata could not be extracted — the SQL statement could not be parsed
 
 No table metadata detected.
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| TimesheetRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

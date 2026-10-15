@@ -1,31 +1,31 @@
 [
   {
+    "name": "DE-AdditionalInformation",
+    "description": "Extracts the Additional Information (to be filtered by document where used)",
+    "parameters": [],
+    "columnCount": 0,
+    "tableCount": 0,
+    "version": 5,
+    "category": "System",
+    "isSystem": true
+  },
+  {
     "name": "DE-Bills",
     "description": "Extracts data for bills.",
     "parameters": [],
     "columnCount": 54,
     "tableCount": 19,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
-  },
-  {
-    "name": "DE-Leaves",
-    "description": "#Description\nContains documents with information about vacations from employees\n#Fields\n- CompanyId: unique identifier for the company (?string)\n- Company: name of the company (?string)\n- LeaveId: unique identifier for the leave (?string)\n- LeaveTypeId: unique identifier for the leave type (?string)\n- LeaveType: type of leave (?string - can be: 'Sick Leave', 'Vacation', 'Compensation')\n- UserId: unique identifier for the user (?string)\n- User: name of the user (?string)\n- Day: the date of the leave (?string, format yyyy-mm-ddTHH:MM:SS)\n- IsHalfDay: indicates if the leave is for half a day (bool)\n- Hours: leave duration in hours (int)\n- LeaveTypeYear: the year of the leave type (integer)\n- LeaveTypeExpiresOn: the date when the leave type expires (?string, format yyyy-mm-ddTHH:MM:SS)\n- ModifiedOn: date and time when the leave was last modified (?string, format yyyy-mm-ddTHH:MM:SS.SSS)\n- RequestedApproval: indicates if the leave was requested for approval (bool)\n- Status: status of the leave (?string - can be: 'New', 'Approved', 'Rejected')\n#Rules\n- If the user doesn't mention the year or month, assume the present.\n- If the user asks about a specific user, filter by the 'User' field.\n- If the user asks about a specific leave type, filter by the 'LeaveType' field.\n- If the user asks about a specific company, filter by the 'Company' field.\n- If the user asks about half-day leaves, filter by the 'IsHalfDay' field.\n- If the user asks about leaves within a specific date range, filter by the 'Day' field using >= and <= operators.\n- If the user doesn't specify a status, include all statuses.",
-    "parameters": [],
-    "columnCount": 17,
-    "tableCount": 8,
-    "version": 7,
-    "category": "Data Extraction",
-    "isSystem": true
   },
   {
     "name": "DE-Assignments",
     "description": "Extracts the teams of users associated with each document.",
     "parameters": [],
-    "columnCount": 10,
-    "tableCount": 4,
-    "version": 1,
+    "columnCount": 13,
+    "tableCount": 5,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -35,7 +35,27 @@
     "parameters": [],
     "columnCount": 16,
     "tableCount": 3,
-    "version": 1,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-BillingClients",
+    "description": "",
+    "parameters": [],
+    "columnCount": 33,
+    "tableCount": 11,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-BillsItems",
+    "description": "Extracts Bill Items information.",
+    "parameters": [],
+    "columnCount": 21,
+    "tableCount": 5,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -45,7 +65,7 @@
     "parameters": [],
     "columnCount": 5,
     "tableCount": 2,
-    "version": 4,
+    "version": 6,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -55,7 +75,17 @@
     "parameters": [],
     "columnCount": 6,
     "tableCount": 2,
-    "version": 1,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-Capacity",
+    "description": "Extracts capacity of the users considering their working days, holidays, vacations, and time per day they have to input. It also considers if the user is inactive.",
+    "parameters": [],
+    "columnCount": 30,
+    "tableCount": 1,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -65,7 +95,7 @@
     "parameters": [],
     "columnCount": 4,
     "tableCount": 2,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -75,7 +105,7 @@
     "parameters": [],
     "columnCount": 30,
     "tableCount": 6,
-    "version": 11,
+    "version": 14,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -85,7 +115,7 @@
     "parameters": [],
     "columnCount": 4,
     "tableCount": 3,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -95,7 +125,7 @@
     "parameters": [],
     "columnCount": 13,
     "tableCount": 2,
-    "version": 1,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -105,7 +135,7 @@
     "parameters": [],
     "columnCount": 12,
     "tableCount": 3,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -115,7 +145,7 @@
     "parameters": [],
     "columnCount": 25,
     "tableCount": 5,
-    "version": 5,
+    "version": 7,
     "category": "Data Extraction",
     "isSystem": true
   },
@@ -125,7 +155,7 @@
     "parameters": [],
     "columnCount": 3,
     "tableCount": 2,
-    "version": 3,
+    "version": 5,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -135,7 +165,7 @@
     "parameters": [],
     "columnCount": 0,
     "tableCount": 0,
-    "version": 1,
+    "version": 6,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -145,6 +175,26 @@
     "parameters": [],
     "columnCount": 2,
     "tableCount": 1,
+    "version": 6,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-CreditNotes",
+    "description": "Extracts information on credit notes.",
+    "parameters": [],
+    "columnCount": 50,
+    "tableCount": 18,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-CreditNotesItems",
+    "description": "Extracts information about client credit notes items.",
+    "parameters": [],
+    "columnCount": 18,
+    "tableCount": 5,
     "version": 3,
     "category": "Data Extraction",
     "isSystem": false
@@ -155,7 +205,7 @@
     "parameters": [],
     "columnCount": 5,
     "tableCount": 1,
-    "version": 3,
+    "version": 5,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -163,9 +213,9 @@
     "name": "DE-Departments",
     "description": "Extracts the list of departments.",
     "parameters": [],
-    "columnCount": 7,
-    "tableCount": 3,
-    "version": 3,
+    "columnCount": 9,
+    "tableCount": 4,
+    "version": 6,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -175,7 +225,7 @@
     "parameters": [],
     "columnCount": 12,
     "tableCount": 2,
-    "version": 2,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -183,9 +233,9 @@
     "name": "DE-Divisions",
     "description": "Extracts the list of divisions.",
     "parameters": [],
-    "columnCount": 4,
+    "columnCount": 8,
     "tableCount": 2,
-    "version": 2,
+    "version": 5,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -195,7 +245,7 @@
     "parameters": [],
     "columnCount": 9,
     "tableCount": 3,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -205,7 +255,7 @@
     "parameters": [],
     "columnCount": 45,
     "tableCount": 12,
-    "version": 1,
+    "version": 3,
     "category": "Scheduler",
     "isSystem": false
   },
@@ -213,9 +263,9 @@
     "name": "DE-Estimates",
     "description": "Extracts the list of estimates.",
     "parameters": [],
-    "columnCount": 0,
-    "tableCount": 0,
-    "version": 11,
+    "columnCount": 46,
+    "tableCount": 16,
+    "version": 19,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -225,7 +275,7 @@
     "parameters": [],
     "columnCount": 21,
     "tableCount": 6,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -235,7 +285,7 @@
     "parameters": [],
     "columnCount": 1,
     "tableCount": 3,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -243,9 +293,9 @@
     "name": "DE-EstimatesQuotes",
     "description": "Extracts the estimate details.",
     "parameters": [],
-    "columnCount": 62,
+    "columnCount": 74,
     "tableCount": 19,
-    "version": 8,
+    "version": 17,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -255,7 +305,7 @@
     "parameters": [],
     "columnCount": 1,
     "tableCount": 18,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -265,7 +315,7 @@
     "parameters": [],
     "columnCount": 0,
     "tableCount": 0,
-    "version": 2,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -275,17 +325,17 @@
     "parameters": [],
     "columnCount": 22,
     "tableCount": 4,
-    "version": 1,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
   {
-    "name": "DE-ExpenseType",
+    "name": "DE-ExpenseTypes",
     "description": "Extracts expense items types.",
     "parameters": [],
     "columnCount": 15,
     "tableCount": 5,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -295,7 +345,7 @@
     "parameters": [],
     "columnCount": 20,
     "tableCount": 7,
-    "version": 1,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -303,9 +353,9 @@
     "name": "DE-History",
     "description": "Extract history of documents.",
     "parameters": [],
-    "columnCount": 17,
+    "columnCount": 18,
     "tableCount": 4,
-    "version": 1,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -315,7 +365,7 @@
     "parameters": [],
     "columnCount": 6,
     "tableCount": 2,
-    "version": 4,
+    "version": 6,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -323,9 +373,9 @@
     "name": "DE-Jobs",
     "description": "Extracts the list of jobs.",
     "parameters": [],
-    "columnCount": 44,
-    "tableCount": 15,
-    "version": 16,
+    "columnCount": 48,
+    "tableCount": 16,
+    "version": 23,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -335,9 +385,19 @@
     "parameters": [],
     "columnCount": 1,
     "tableCount": 4,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
+  },
+  {
+    "name": "DE-Leaves",
+    "description": "#Description\nContains documents with information about vacations from employees\n#Fields\n- CompanyId: unique identifier for the company (?string)\n- Company: name of the company (?string)\n- LeaveId: unique identifier for the leave (?string)\n- LeaveTypeId: unique identifier for the leave type (?string)\n- LeaveType: type of leave (?string - can be: 'Sick Leave', 'Vacation', 'Compensation')\n- UserId: unique identifier for the user (?string)\n- User: name of the user (?string)\n- Day: the date of the leave (?string, format yyyy-mm-ddTHH:MM:SS)\n- IsHalfDay: indicates if the leave is for half a day (bool)\n- Hours: leave duration in hours (int)\n- LeaveTypeYear: the year of the leave type (integer)\n- LeaveTypeExpiresOn: the date when the leave type expires (?string, format yyyy-mm-ddTHH:MM:SS)\n- ModifiedOn: date and time when the leave was last modified (?string, format yyyy-mm-ddTHH:MM:SS.SSS)\n- RequestedApproval: indicates if the leave was requested for approval (bool)\n- Status: status of the leave (?string - can be: 'New', 'Approved', 'Rejected')\n#Rules\n- If the user doesn't mention the year or month, assume the present.\n- If the user asks about a specific user, filter by the 'User' field.\n- If the user asks about a specific leave type, filter by the 'LeaveType' field.\n- If the user asks about a specific company, filter by the 'Company' field.\n- If the user asks about half-day leaves, filter by the 'IsHalfDay' field.\n- If the user asks about leaves within a specific date range, filter by the 'Day' field using >= and <= operators.\n- If the user doesn't specify a status, include all statuses.",
+    "parameters": [],
+    "columnCount": 18,
+    "tableCount": 8,
+    "version": 10,
+    "category": "Data Extraction",
+    "isSystem": true
   },
   {
     "name": "DE-LeavesCount",
@@ -345,7 +405,7 @@
     "parameters": [],
     "columnCount": 1,
     "tableCount": 1,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -355,7 +415,7 @@
     "parameters": [],
     "columnCount": 2,
     "tableCount": 1,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -365,7 +425,17 @@
     "parameters": [],
     "columnCount": 1,
     "tableCount": 1,
-    "version": 1,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-PaymentConditions",
+    "description": "",
+    "parameters": [],
+    "columnCount": 12,
+    "tableCount": 2,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -375,7 +445,7 @@
     "parameters": [],
     "columnCount": 7,
     "tableCount": 3,
-    "version": 6,
+    "version": 8,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -383,9 +453,9 @@
     "name": "DE-Projects",
     "description": "Extracts a list of projects.",
     "parameters": [],
-    "columnCount": 53,
-    "tableCount": 19,
-    "version": 14,
+    "columnCount": 59,
+    "tableCount": 21,
+    "version": 18,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -395,7 +465,7 @@
     "parameters": [],
     "columnCount": 9,
     "tableCount": 2,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -405,7 +475,7 @@
     "parameters": [],
     "columnCount": 0,
     "tableCount": 0,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -415,7 +485,7 @@
     "parameters": [],
     "columnCount": 4,
     "tableCount": 2,
-    "version": 4,
+    "version": 6,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -423,9 +493,9 @@
     "name": "DE-ProjectsPlannedTime",
     "description": "Extract projects.",
     "parameters": [],
-    "columnCount": 27,
+    "columnCount": 30,
     "tableCount": 17,
-    "version": 6,
+    "version": 9,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -435,7 +505,7 @@
     "parameters": [],
     "columnCount": 0,
     "tableCount": 0,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -445,7 +515,7 @@
     "parameters": [],
     "columnCount": 11,
     "tableCount": 3,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -453,9 +523,9 @@
     "name": "DE-PurchaseOrders",
     "description": "Extracts purchase orders data from the system.",
     "parameters": [],
-    "columnCount": 49,
-    "tableCount": 21,
-    "version": 1,
+    "columnCount": 45,
+    "tableCount": 14,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -463,9 +533,9 @@
     "name": "DE-RateCardsColumns",
     "description": "Extraction of rate cards' columns.",
     "parameters": [],
-    "columnCount": 20,
-    "tableCount": 9,
-    "version": 1,
+    "columnCount": 23,
+    "tableCount": 10,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -475,7 +545,7 @@
     "parameters": [],
     "columnCount": 51,
     "tableCount": 26,
-    "version": 1,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -485,7 +555,7 @@
     "parameters": [],
     "columnCount": 16,
     "tableCount": 3,
-    "version": 2,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": true
   },
@@ -495,7 +565,7 @@
     "parameters": [],
     "columnCount": 6,
     "tableCount": 2,
-    "version": 2,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": true
   },
@@ -505,7 +575,7 @@
     "parameters": [],
     "columnCount": 4,
     "tableCount": 2,
-    "version": 2,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -515,7 +585,7 @@
     "parameters": [],
     "columnCount": 37,
     "tableCount": 13,
-    "version": 2,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -525,7 +595,7 @@
     "parameters": [],
     "columnCount": 9,
     "tableCount": 2,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -533,9 +603,9 @@
     "name": "DE-TimeSheets",
     "description": "Extracts the time entered in time sheets.",
     "parameters": [],
-    "columnCount": 38,
+    "columnCount": 41,
     "tableCount": 15,
-    "version": 19,
+    "version": 21,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -545,7 +615,7 @@
     "parameters": [],
     "columnCount": 0,
     "tableCount": 0,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -555,7 +625,7 @@
     "parameters": [],
     "columnCount": 2,
     "tableCount": 1,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -565,7 +635,7 @@
     "parameters": [],
     "columnCount": 1,
     "tableCount": 1,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -575,7 +645,7 @@
     "parameters": [],
     "columnCount": 27,
     "tableCount": 11,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -593,9 +663,9 @@
     "name": "DE-Typologies",
     "description": "Extracts the list of typologies of users.",
     "parameters": [],
-    "columnCount": 15,
+    "columnCount": 16,
     "tableCount": 5,
-    "version": 4,
+    "version": 6,
     "category": "Data Extraction",
     "isSystem": true
   },
@@ -605,7 +675,7 @@
     "parameters": [],
     "columnCount": 4,
     "tableCount": 2,
-    "version": 3,
+    "version": 5,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -615,7 +685,7 @@
     "parameters": [],
     "columnCount": 5,
     "tableCount": 3,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -625,7 +695,7 @@
     "parameters": [],
     "columnCount": 5,
     "tableCount": 3,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": true
   },
@@ -635,7 +705,7 @@
     "parameters": [],
     "columnCount": 12,
     "tableCount": 4,
-    "version": 2,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -645,7 +715,17 @@
     "parameters": [],
     "columnCount": 2,
     "tableCount": 1,
-    "version": 1,
+    "version": 3,
+    "category": "Data Extraction",
+    "isSystem": false
+  },
+  {
+    "name": "DE-UserTypologiesHistory",
+    "description": "Extracts the historical data of the typologies where the user has been inside the company.",
+    "parameters": [],
+    "columnCount": 20,
+    "tableCount": 8,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -653,9 +733,9 @@
     "name": "DE-Users",
     "description": "Extracts the list of users.",
     "parameters": [],
-    "columnCount": 30,
-    "tableCount": 9,
-    "version": 14,
+    "columnCount": 53,
+    "tableCount": 11,
+    "version": 25,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -665,7 +745,7 @@
     "parameters": [],
     "columnCount": 3,
     "tableCount": 2,
-    "version": 2,
+    "version": 4,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -675,7 +755,7 @@
     "parameters": [],
     "columnCount": 4,
     "tableCount": 2,
-    "version": 4,
+    "version": 6,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -683,9 +763,9 @@
     "name": "DE-Workloads",
     "description": "Extracts data from Workloads.",
     "parameters": [],
-    "columnCount": 13,
+    "columnCount": 12,
     "tableCount": 7,
-    "version": 1,
+    "version": 3,
     "category": "Data Extraction",
     "isSystem": false
   },
@@ -693,9 +773,9 @@
     "name": "DE-EstimatesQuotesMonth",
     "description": "Extracts all data from estimates.",
     "parameters": [],
-    "columnCount": 32,
+    "columnCount": 33,
     "tableCount": 15,
-    "version": 11,
+    "version": 14,
     "category": "Data Extraction",
     "isSystem": false
   }

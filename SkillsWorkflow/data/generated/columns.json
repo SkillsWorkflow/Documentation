@@ -324,108 +324,6 @@
     "sourceColumn": "iif(...)"
   },
   {
-    "deName": "DE-Leaves",
-    "alias": "CompanyId",
-    "sourceTable": "com",
-    "sourceColumn": "Id"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "Company",
-    "sourceTable": "com",
-    "sourceColumn": "Name"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "LeaveId",
-    "sourceTable": "lev",
-    "sourceColumn": "Oid"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "LeaveTypeId",
-    "sourceTable": "lvt",
-    "sourceColumn": "Oid"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "LeaveType",
-    "sourceTable": "lvt",
-    "sourceColumn": "Name"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "UserId",
-    "sourceTable": "usl",
-    "sourceColumn": "Id"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "User",
-    "sourceTable": "usl",
-    "sourceColumn": "Name"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "Day",
-    "sourceTable": "lev",
-    "sourceColumn": "Day"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "IsHalfDay",
-    "sourceTable": "lev",
-    "sourceColumn": "HalfDay"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "Hours",
-    "sourceTable": null,
-    "sourceColumn": "iif(...)"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "LeaveTypeYear",
-    "sourceTable": "uiv",
-    "sourceColumn": "Year"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "LeaveTypeExpiresOn",
-    "sourceTable": "uiv",
-    "sourceColumn": "ExpirationDate"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "ModifiedOn",
-    "sourceTable": "lev",
-    "sourceColumn": "ModifiedOn"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "RequestedApproval",
-    "sourceTable": "lev",
-    "sourceColumn": "RequestedApproval"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "Status",
-    "sourceTable": null,
-    "sourceColumn": "CASE(...)"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "Approvers",
-    "sourceTable": "apr",
-    "sourceColumn": "Approvers"
-  },
-  {
-    "deName": "DE-Leaves",
-    "alias": "HRApprovers",
-    "sourceTable": "hra",
-    "sourceColumn": "Approvers"
-  },
-  {
     "deName": "DE-Assignments",
     "alias": "DocumentId",
     "sourceTable": "ass",
@@ -466,6 +364,24 @@
     "alias": "User",
     "sourceTable": "usr",
     "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Assignments",
+    "alias": "CompanyId",
+    "sourceTable": "com",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Assignments",
+    "alias": "Company",
+    "sourceTable": "com",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Assignments",
+    "alias": "CompanyHasImage",
+    "sourceTable": "com",
+    "sourceColumn": "HasImage"
   },
   {
     "deName": "DE-Assignments",
@@ -582,6 +498,330 @@
     "sourceColumn": "OffsetMinutes"
   },
   {
+    "deName": "DE-BillingClients",
+    "alias": "BillingClientId",
+    "sourceTable": "cl",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "BillingClient",
+    "sourceTable": "cl",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "IsActive",
+    "sourceTable": "cl",
+    "sourceColumn": "Active"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "CompanyId",
+    "sourceTable": "c",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "Company",
+    "sourceTable": "c",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "CompanyHasImage",
+    "sourceTable": "c",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "PaymentConditionId",
+    "sourceTable": "p",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "PaymentCondition",
+    "sourceTable": "p",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "Code",
+    "sourceTable": "cl",
+    "sourceColumn": "Code"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "NameAndExternalId",
+    "sourceTable": "cl",
+    "sourceColumn": "NameAndExternalId"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "ExternalId",
+    "sourceTable": "cl",
+    "sourceColumn": "ExternalId"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "RateCard",
+    "sourceTable": "rc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "RateCardId",
+    "sourceTable": "rc",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "RateCardColumn",
+    "sourceTable": "rcc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "PriceTable",
+    "sourceTable": "pt",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "PriceTableId",
+    "sourceTable": "pt",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "PriceTableColumn",
+    "sourceTable": "ptc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "CreatedBy",
+    "sourceTable": "u",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "ModifiedBy",
+    "sourceTable": "us",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "CreatedById",
+    "sourceTable": "u",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "ModifiedById",
+    "sourceTable": "us",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "CreatedByHasImage",
+    "sourceTable": "u",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "ModifiedByHasImage",
+    "sourceTable": "us",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "CreatedOn",
+    "sourceTable": "cl",
+    "sourceColumn": "CreatedOnUtc"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "ModifiedOn",
+    "sourceTable": "cl",
+    "sourceColumn": "ModifiedOnUtc"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "Street",
+    "sourceTable": "cl",
+    "sourceColumn": "Street"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "Street2",
+    "sourceTable": "cl",
+    "sourceColumn": "Street2"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "StateProvince",
+    "sourceTable": "cl",
+    "sourceColumn": "StateProvince"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "ZipPostal",
+    "sourceTable": "cl",
+    "sourceColumn": "ZipPostal"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "TaxPayerNumber",
+    "sourceTable": "cl",
+    "sourceColumn": "TaxPayerNumber"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "Contact",
+    "sourceTable": "cl",
+    "sourceColumn": "Contact"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "Country",
+    "sourceTable": "cou",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillingClients",
+    "alias": "City",
+    "sourceTable": "ct",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "BillId",
+    "sourceTable": "bi",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "BillNumber",
+    "sourceTable": "bi",
+    "sourceColumn": "Number"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "Service",
+    "sourceTable": "art",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "Description",
+    "sourceTable": "bi",
+    "sourceColumn": "Description"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "UserId",
+    "sourceTable": "ssu",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "User",
+    "sourceTable": "ssu",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "UserHasImage",
+    "sourceTable": "ssu",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "VatId",
+    "sourceTable": "vat",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "Vat",
+    "sourceTable": "vat",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "VatPercentage",
+    "sourceTable": "vat",
+    "sourceColumn": "Percentage"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "UnitPrice",
+    "sourceTable": "bi",
+    "sourceColumn": "UnitPrice"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "Discount",
+    "sourceTable": "bi",
+    "sourceColumn": "Discount"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "Quantity",
+    "sourceTable": "bi",
+    "sourceColumn": "Quantity"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "ValueWithoutVat",
+    "sourceTable": "bi",
+    "sourceColumn": "ValueWithoutVat"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "VatValue",
+    "sourceTable": "bi",
+    "sourceColumn": "VatValue"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "ValueWithVat",
+    "sourceTable": "bi",
+    "sourceColumn": "ValueWithVat"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "EstimateItemValueWithoutVat",
+    "sourceTable": "eit",
+    "sourceColumn": "ValueWithoutVatIncome"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "EstimateItemVatValue",
+    "sourceTable": "eit",
+    "sourceColumn": "VatValueIncome"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "EstimateItemValueWithVat",
+    "sourceTable": "eit",
+    "sourceColumn": "ValueWithVatIncome"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "EstimateItemDiscount",
+    "sourceTable": "eit",
+    "sourceColumn": "Discount"
+  },
+  {
+    "deName": "DE-BillsItems",
+    "alias": "EstimateItemQuantity",
+    "sourceTable": "eit",
+    "sourceColumn": "QuantityIncome"
+  },
+  {
     "deName": "DE-Brands",
     "alias": "ClientId",
     "sourceTable": "cli",
@@ -644,6 +884,186 @@
   {
     "deName": "DE-BusinessObjectTypes",
     "alias": "HasConfiguration",
+    "sourceTable": null,
+    "sourceColumn": "iif(...)"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "DocumentOid",
+    "sourceTable": null,
+    "sourceColumn": "DocumentOid"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "UserId",
+    "sourceTable": null,
+    "sourceColumn": "UserId"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "User",
+    "sourceTable": null,
+    "sourceColumn": "User"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "UserHasImage",
+    "sourceTable": null,
+    "sourceColumn": "UserHasImage"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "IsActive",
+    "sourceTable": null,
+    "sourceColumn": "IsActive"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "ResponsibleIds",
+    "sourceTable": null,
+    "sourceColumn": "ResponsibleIds"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "Responsibles",
+    "sourceTable": null,
+    "sourceColumn": "Responsibles"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "ResponsibleHasImages",
+    "sourceTable": null,
+    "sourceColumn": "ResponsibleHasImages"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "DepartmentId",
+    "sourceTable": null,
+    "sourceColumn": "DepartmentId"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "Department",
+    "sourceTable": null,
+    "sourceColumn": "Department"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "DivisionId",
+    "sourceTable": null,
+    "sourceColumn": "DivisionId"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "Division",
+    "sourceTable": null,
+    "sourceColumn": "Division"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "CompanyId",
+    "sourceTable": null,
+    "sourceColumn": "CompanyId"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "Company",
+    "sourceTable": null,
+    "sourceColumn": "Company"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "CompanyHasImage",
+    "sourceTable": null,
+    "sourceColumn": "CompanyHasImage"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "Day",
+    "sourceTable": null,
+    "sourceColumn": "Day"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "RequiredHours",
+    "sourceTable": null,
+    "sourceColumn": "RequiredHours"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "IsPlannable",
+    "sourceTable": null,
+    "sourceColumn": "IsPlannable"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "TypologyId",
+    "sourceTable": null,
+    "sourceColumn": "TypologyId"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "Typology",
+    "sourceTable": null,
+    "sourceColumn": "Typology"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "TypologyGroupId",
+    "sourceTable": null,
+    "sourceColumn": "TypologyGroupId"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "TypologyGroup",
+    "sourceTable": null,
+    "sourceColumn": "TypologyGroup"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "IsWorkingDay",
+    "sourceTable": null,
+    "sourceColumn": "IsWorkingDay"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "IsHoliday",
+    "sourceTable": null,
+    "sourceColumn": "IsHoliday"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "Holiday",
+    "sourceTable": null,
+    "sourceColumn": "Holiday"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "LeaveHours",
+    "sourceTable": null,
+    "sourceColumn": "LeaveHours"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "WorkloadHours",
+    "sourceTable": null,
+    "sourceColumn": "WorkloadHours"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "WorkingCapacityHours",
+    "sourceTable": null,
+    "sourceColumn": "iif(...)"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "CapacityHours",
+    "sourceTable": null,
+    "sourceColumn": "iif(...)"
+  },
+  {
+    "deName": "DE-Capacity",
+    "alias": "OverAllocatedHours",
     "sourceTable": null,
     "sourceColumn": "iif(...)"
   },
@@ -1206,6 +1626,414 @@
     "sourceColumn": "Name"
   },
   {
+    "deName": "DE-CreditNotes",
+    "alias": "Oid",
+    "sourceTable": "doc",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "DocumentOid",
+    "sourceTable": "doc",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CreditNoteId",
+    "sourceTable": "doc",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CreditNote",
+    "sourceTable": "doc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CreditNoteNumber",
+    "sourceTable": "doc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Date",
+    "sourceTable": "doc",
+    "sourceColumn": "Date"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ManagementDate",
+    "sourceTable": "doc",
+    "sourceColumn": "ManagementDate"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Company",
+    "sourceTable": "com",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CompanyId",
+    "sourceTable": "com",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CompanyHasImage",
+    "sourceTable": "com",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ClientGroup",
+    "sourceTable": "clg",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Client",
+    "sourceTable": "cli",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ClientId",
+    "sourceTable": "cli",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ClientHasImage",
+    "sourceTable": "cli",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "BillingClient",
+    "sourceTable": "bcl",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CreatedOnUtc",
+    "sourceTable": "doc",
+    "sourceColumn": "CreatedOnUtc"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CreatedBy",
+    "sourceTable": "cre",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CreatedById",
+    "sourceTable": "cre",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CreatedByHasImage",
+    "sourceTable": "cre",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ModifiedOnUtc",
+    "sourceTable": "doc",
+    "sourceColumn": "ModifiedOnUtc"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ModifiedBy",
+    "sourceTable": "mod",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ModifiedById",
+    "sourceTable": "mod",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ModifiedByHasImage",
+    "sourceTable": "mod",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "BillId",
+    "sourceTable": "bil",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Bill",
+    "sourceTable": "bil",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "BillNumber",
+    "sourceTable": "bil",
+    "sourceColumn": "Number"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ProjectId",
+    "sourceTable": "prj",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Project",
+    "sourceTable": "prj",
+    "sourceColumn": "NameAndExternalId"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ContractId",
+    "sourceTable": "cnt",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Contract",
+    "sourceTable": "cnt",
+    "sourceColumn": "NameAndExternalId"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "EstimateId",
+    "sourceTable": "est",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Estimate",
+    "sourceTable": "est",
+    "sourceColumn": "NumberAndName"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Department",
+    "sourceTable": "dep",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Currency",
+    "sourceTable": "cur",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CurrencyIsoCode",
+    "sourceTable": "cur",
+    "sourceColumn": "IsoCode"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "CurrencySymbol",
+    "sourceTable": "cur",
+    "sourceColumn": "Symbol"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "PaymentCondition",
+    "sourceTable": "pcn",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "YourReference",
+    "sourceTable": "doc",
+    "sourceColumn": "YourReference"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ValueWithoutVat",
+    "sourceTable": "doc",
+    "sourceColumn": "ValueWithoutVat"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "VatValue",
+    "sourceTable": "doc",
+    "sourceColumn": "VatValue"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ValueWithVat",
+    "sourceTable": "doc",
+    "sourceColumn": "ValueWithVat"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "External",
+    "sourceTable": "doc",
+    "sourceColumn": "External"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ExternalId",
+    "sourceTable": "doc",
+    "sourceColumn": "ExternalId"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "ExternalError",
+    "sourceTable": "doc",
+    "sourceColumn": "ExternalError"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Paid",
+    "sourceTable": "doc",
+    "sourceColumn": "Paid"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "PaidValue",
+    "sourceTable": "doc",
+    "sourceColumn": "PaidValue"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "Stage",
+    "sourceTable": "wfs",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "StageColor",
+    "sourceTable": "wfs",
+    "sourceColumn": "Color"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "StateType",
+    "sourceTable": "wst",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotes",
+    "alias": "StageType",
+    "sourceTable": "wst",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ClientCreditNoteId",
+    "sourceTable": "ccn",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ClientCreditNote",
+    "sourceTable": "ccn",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ClientCreditNoteNumber",
+    "sourceTable": "ccn",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ClientCreditNoteItemId",
+    "sourceTable": "ccni",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ClientCreditNoteItem",
+    "sourceTable": null,
+    "sourceColumn": "concat(...)"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ValueWithoutVat",
+    "sourceTable": "ccni",
+    "sourceColumn": "ValueWithoutVat"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "VatValue",
+    "sourceTable": "ccni",
+    "sourceColumn": "VatValue"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ValueWithVat",
+    "sourceTable": "ccni",
+    "sourceColumn": "ValueWithVat"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "UnitPrice",
+    "sourceTable": "ccni",
+    "sourceColumn": "UnitPrice"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "Discount",
+    "sourceTable": "ccni",
+    "sourceColumn": "Discount"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "Description",
+    "sourceTable": "ccni",
+    "sourceColumn": "Description"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "Order",
+    "sourceTable": "ccni",
+    "sourceColumn": "Order"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "Quantity",
+    "sourceTable": "ccni",
+    "sourceColumn": "Quantity"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ReversalReasonId",
+    "sourceTable": "rr",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "ReversalReasonName",
+    "sourceTable": "rr",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "VatId",
+    "sourceTable": "vat",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "VatName",
+    "sourceTable": "vat",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-CreditNotesItems",
+    "alias": "VatPercentage",
+    "sourceTable": "vat",
+    "sourceColumn": "Percentage"
+  },
+  {
     "deName": "DE-Currencies",
     "alias": "CurrencyId",
     "sourceTable": "cur",
@@ -1276,6 +2104,18 @@
     "alias": "ModifiedOn",
     "sourceTable": "dep",
     "sourceColumn": "ModifiedOnUtc"
+  },
+  {
+    "deName": "DE-Departments",
+    "alias": "DepartmentTypeId",
+    "sourceTable": "dpt",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Departments",
+    "alias": "DepartmentType",
+    "sourceTable": "dpt",
+    "sourceColumn": "Name"
   },
   {
     "deName": "DE-Descriptions",
@@ -1351,6 +2191,18 @@
   },
   {
     "deName": "DE-Divisions",
+    "alias": "Oid",
+    "sourceTable": "div",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Divisions",
+    "alias": "DocumentOid",
+    "sourceTable": "div",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Divisions",
     "alias": "CompanyId",
     "sourceTable": "com",
     "sourceColumn": "Oid"
@@ -1372,6 +2224,18 @@
     "alias": "Division",
     "sourceTable": "div",
     "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Divisions",
+    "alias": "ExternalId",
+    "sourceTable": "div",
+    "sourceColumn": "ExternalId"
+  },
+  {
+    "deName": "DE-Divisions",
+    "alias": "Code",
+    "sourceTable": "div",
+    "sourceColumn": "Code"
   },
   {
     "deName": "DE-Employees",
@@ -1698,6 +2562,282 @@
     "sourceColumn": "Symbol"
   },
   {
+    "deName": "DE-Estimates",
+    "alias": "Oid",
+    "sourceTable": "est",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "DocumentOid",
+    "sourceTable": "est",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "EstimateId",
+    "sourceTable": "est",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Estimate",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "EstimateNumber",
+    "sourceTable": "est",
+    "sourceColumn": "Number"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "DepartmentId",
+    "sourceTable": "dep",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Department",
+    "sourceTable": "dep",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ModifiedOn",
+    "sourceTable": "est",
+    "sourceColumn": "ModifiedOnUtc"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "StageId",
+    "sourceTable": "wfs",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Stage",
+    "sourceTable": "wfs",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "StageTypeId",
+    "sourceTable": "wst",
+    "sourceColumn": "Status"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "StageType",
+    "sourceTable": "wst",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "TypeId",
+    "sourceTable": "typ",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Type",
+    "sourceTable": "typ",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ClientId",
+    "sourceTable": "est",
+    "sourceColumn": "Client"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Client",
+    "sourceTable": "cli",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ContractId",
+    "sourceTable": "cnt",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Contract",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ProjectId",
+    "sourceTable": "est",
+    "sourceColumn": "Project"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Project",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "JobId",
+    "sourceTable": "job",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Job",
+    "sourceTable": "job",
+    "sourceColumn": "NameAndExternalId"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "BrandId",
+    "sourceTable": "brd",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Brand",
+    "sourceTable": "brd",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ProductId",
+    "sourceTable": "pro",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Product",
+    "sourceTable": "pro",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "CurrencyId",
+    "sourceTable": "est",
+    "sourceColumn": "Currency"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Currency",
+    "sourceTable": "cur",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Exchange",
+    "sourceTable": "est",
+    "sourceColumn": "Exchange"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "StartDate",
+    "sourceTable": "est",
+    "sourceColumn": "Date"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "EndDate",
+    "sourceTable": "est",
+    "sourceColumn": "Expiration"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "RateCardId",
+    "sourceTable": "rtc",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "RateCard",
+    "sourceTable": "rtc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "RateCardColumnId",
+    "sourceTable": "rcc",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "RateCardColumn",
+    "sourceTable": "rcc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "Tags",
+    "sourceTable": "tag",
+    "sourceColumn": "Tags"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ValueWithoutTaxCost",
+    "sourceTable": "t",
+    "sourceColumn": "EstimatedCostWithoutVat"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "TaxValueCost",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ValueWithTaxCost",
+    "sourceTable": "t",
+    "sourceColumn": "EstimatedCostWithVat"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ValueWithoutTaxSell",
+    "sourceTable": "t",
+    "sourceColumn": "EstimatedIncomeWithoutVat"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "TaxValueSell",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "ValueWithTaxSell",
+    "sourceTable": "t",
+    "sourceColumn": "EstimatedIncomeWithVat"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "BilledWithoutTax",
+    "sourceTable": "t",
+    "sourceColumn": "BilledWithoutVat"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "CreditedWithoutTax",
+    "sourceTable": "t",
+    "sourceColumn": "CreditedWithoutVat"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "CreditedWithTax",
+    "sourceTable": "t",
+    "sourceColumn": "CreditedWithVat"
+  },
+  {
+    "deName": "DE-Estimates",
+    "alias": "RevenueWithTax",
+    "sourceTable": "t",
+    "sourceColumn": "EstimatedRevenueWithVat"
+  },
+  {
     "deName": "DE-EstimatesBillingConditions",
     "alias": "BillingConditionId",
     "sourceTable": "bic",
@@ -1831,6 +2971,18 @@
   },
   {
     "deName": "DE-EstimatesQuotes",
+    "alias": "Oid",
+    "sourceTable": "est",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "DocumentOid",
+    "sourceTable": "est",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
     "alias": "EstimateId",
     "sourceTable": "est",
     "sourceColumn": "Oid"
@@ -1846,6 +2998,18 @@
     "alias": "EstimateNumber",
     "sourceTable": "est",
     "sourceColumn": "Number"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "StartDate",
+    "sourceTable": "est",
+    "sourceColumn": "Date"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "EndDate",
+    "sourceTable": "est",
+    "sourceColumn": "Expiration"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -1875,6 +3039,18 @@
     "deName": "DE-EstimatesQuotes",
     "alias": "Stage",
     "sourceTable": "wfs",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "StageTypeId",
+    "sourceTable": "wst",
+    "sourceColumn": "Status"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "StageType",
+    "sourceTable": "wst",
     "sourceColumn": "Name"
   },
   {
@@ -1928,14 +3104,14 @@
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "EstimateItemDescription",
-    "sourceTable": "eit",
-    "sourceColumn": "Description"
+    "sourceTable": null,
+    "sourceColumn": "replace(...)"
   },
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "EstimateItemDetailDescription",
-    "sourceTable": "eid",
-    "sourceColumn": "Description"
+    "sourceTable": null,
+    "sourceColumn": "replace(...)"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -2107,6 +3283,18 @@
   },
   {
     "deName": "DE-EstimatesQuotes",
+    "alias": "EstimateItemDiscountPercentage",
+    "sourceTable": "eit",
+    "sourceColumn": "DiscountPercentage"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "EstimateItemDetailHours",
+    "sourceTable": "eid",
+    "sourceColumn": "Hours"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
     "alias": "EstimateItemDetailCost",
     "sourceTable": null,
     "sourceColumn": "(expression)"
@@ -2132,14 +3320,14 @@
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "EstimateItemDetailUnitPriceIncome",
-    "sourceTable": null,
-    "sourceColumn": "(expression)"
+    "sourceTable": "eid",
+    "sourceColumn": "UnitPriceIncome"
   },
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "DiscountCost",
-    "sourceTable": "eid",
-    "sourceColumn": "DiscountCost"
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -2150,26 +3338,32 @@
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "ValueWithoutVatCost",
-    "sourceTable": "eid",
-    "sourceColumn": "ValueWithoutVatCost"
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "VatValueCost",
-    "sourceTable": "eid",
-    "sourceColumn": "VatValueCost"
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "ValueWithVatCost",
-    "sourceTable": "eid",
-    "sourceColumn": "ValueWithVatCost"
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "DiscountIncome",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "DiscountIncomePercentage",
     "sourceTable": "eid",
-    "sourceColumn": "DiscountIncome"
+    "sourceColumn": "DiscountIncomePercentage"
   },
   {
     "deName": "DE-EstimatesQuotes",
@@ -2186,20 +3380,38 @@
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "ValueWithoutVatIncome",
-    "sourceTable": "eid",
-    "sourceColumn": "ValueWithoutVatIncome"
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "ValueWithVatIncome",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "Margin",
-    "sourceTable": "eid",
-    "sourceColumn": "Margin"
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotes",
     "alias": "MarginPercentage",
     "sourceTable": "eid",
     "sourceColumn": "MarginPercentage"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "RevenueWithVat",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-EstimatesQuotes",
+    "alias": "RevenueWithoutVat",
+    "sourceTable": null,
+    "sourceColumn": "(expression)"
   },
   {
     "deName": "DE-EstimatesQuotesCount",
@@ -2340,91 +3552,91 @@
     "sourceColumn": "Id"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "ExpenseTypeId",
     "sourceTable": "eit",
     "sourceColumn": "Oid"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "ExpenseType",
     "sourceTable": "eit",
     "sourceColumn": "Name"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "Company",
     "sourceTable": "com",
     "sourceColumn": "Name"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "CompanyId",
     "sourceTable": "com",
     "sourceColumn": "Id"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "Vat",
     "sourceTable": "vat",
     "sourceColumn": "Name"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "ExternalId",
     "sourceTable": "eit",
     "sourceColumn": "ExternalId"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "VatDeductiblePercentage",
     "sourceTable": "eit",
     "sourceColumn": "VatDeductiblePercentage"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "Value",
     "sourceTable": "eit",
     "sourceColumn": "Value"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "Active",
     "sourceTable": "eit",
     "sourceColumn": "Active"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "CreatedOnUtc",
     "sourceTable": "eit",
     "sourceColumn": "CreatedOnUtc"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "ModifiedOnUtc",
     "sourceTable": "eit",
     "sourceColumn": "ModifiedOnUtc"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "CreatedByName",
     "sourceTable": "cre",
     "sourceColumn": "Name"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "ModifiedByName",
     "sourceTable": "mod",
     "sourceColumn": "Name"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "CreatedById",
     "sourceTable": "cre",
     "sourceColumn": "Id"
   },
   {
-    "deName": "DE-ExpenseType",
+    "deName": "DE-ExpenseTypes",
     "alias": "ModifiedById",
     "sourceTable": "mod",
     "sourceColumn": "Id"
@@ -2509,9 +3721,9 @@
   },
   {
     "deName": "DE-Expenses",
-    "alias": "ValueWithVat",
+    "alias": "ValueWithoutVat",
     "sourceTable": "eim",
-    "sourceColumn": "ValueWithVat"
+    "sourceColumn": "ValueWithoutVat"
   },
   {
     "deName": "DE-Expenses",
@@ -2584,6 +3796,12 @@
     "alias": "EndDate",
     "sourceTable": "hst",
     "sourceColumn": "EndDate"
+  },
+  {
+    "deName": "DE-History",
+    "alias": "Motive",
+    "sourceTable": "hst",
+    "sourceColumn": "Motive"
   },
   {
     "deName": "DE-History",
@@ -2869,6 +4087,24 @@
   },
   {
     "deName": "DE-Jobs",
+    "alias": "ParentId",
+    "sourceTable": "par",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Jobs",
+    "alias": "Parent",
+    "sourceTable": "par",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Jobs",
+    "alias": "ParentNumber",
+    "sourceTable": "par",
+    "sourceColumn": "Number"
+  },
+  {
+    "deName": "DE-Jobs",
     "alias": "CreatedById",
     "sourceTable": "cre",
     "sourceColumn": "Id"
@@ -2952,10 +4188,124 @@
     "sourceColumn": "Motive"
   },
   {
+    "deName": "DE-Jobs",
+    "alias": "EstimateItemId",
+    "sourceTable": "job",
+    "sourceColumn": "EstimateItem"
+  },
+  {
     "deName": "DE-JobsCount",
     "alias": "Count",
     "sourceTable": null,
     "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "CompanyId",
+    "sourceTable": "com",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "Company",
+    "sourceTable": "com",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "LeaveId",
+    "sourceTable": "lev",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "LeaveTypeId",
+    "sourceTable": "lvt",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "LeaveType",
+    "sourceTable": "lvt",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "UserId",
+    "sourceTable": "usl",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "User",
+    "sourceTable": "usl",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "Day",
+    "sourceTable": "lev",
+    "sourceColumn": "Day"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "IsHalfDay",
+    "sourceTable": "lev",
+    "sourceColumn": "HalfDay"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "Hours",
+    "sourceTable": null,
+    "sourceColumn": "iif(...)"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "TotalMinutes",
+    "sourceTable": "lev",
+    "sourceColumn": "TotalMinutes"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "LeaveTypeYear",
+    "sourceTable": "uiv",
+    "sourceColumn": "Year"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "LeaveTypeExpiresOn",
+    "sourceTable": "uiv",
+    "sourceColumn": "ExpirationDate"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "ModifiedOn",
+    "sourceTable": "lev",
+    "sourceColumn": "ModifiedOn"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "RequestedApproval",
+    "sourceTable": "lev",
+    "sourceColumn": "RequestedApproval"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "Status",
+    "sourceTable": null,
+    "sourceColumn": "CASE(...)"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "Approvers",
+    "sourceTable": "apr",
+    "sourceColumn": "Approvers"
+  },
+  {
+    "deName": "DE-Leaves",
+    "alias": "HRApprovers",
+    "sourceTable": "hra",
+    "sourceColumn": "Approvers"
   },
   {
     "deName": "DE-LeavesCount",
@@ -2980,6 +4330,78 @@
     "alias": "Count",
     "sourceTable": null,
     "sourceColumn": "(expression)"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "PaymentConditionId",
+    "sourceTable": "pyc",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "PaymentCondition",
+    "sourceTable": "pyc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "Company",
+    "sourceTable": "com",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "CompanyId",
+    "sourceTable": "com",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "CompanyHasImage",
+    "sourceTable": "com",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "IsActive",
+    "sourceTable": "pyc",
+    "sourceColumn": "Active"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "Days",
+    "sourceTable": "pyc",
+    "sourceColumn": "Days"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "HasTax",
+    "sourceTable": "pyc",
+    "sourceColumn": "HasTax"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "ClientDirect",
+    "sourceTable": "pyc",
+    "sourceColumn": "ClientDirect"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "Discount",
+    "sourceTable": "pyc",
+    "sourceColumn": "Discount"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "ExternalId",
+    "sourceTable": "pyc",
+    "sourceColumn": "ExternalId"
+  },
+  {
+    "deName": "DE-PaymentConditions",
+    "alias": "AgencyCommissionHasTax",
+    "sourceTable": "pyc",
+    "sourceColumn": "AgencyCommissionHasTax"
   },
   {
     "deName": "DE-Products",
@@ -3220,6 +4642,42 @@
     "alias": "Investment",
     "sourceTable": "prj",
     "sourceColumn": "Investment"
+  },
+  {
+    "deName": "DE-Projects",
+    "alias": "OwnerId",
+    "sourceTable": "own",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Projects",
+    "alias": "Owner",
+    "sourceTable": "own",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Projects",
+    "alias": "OwnerHasImage",
+    "sourceTable": "own",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-Projects",
+    "alias": "OwnerCompanyId",
+    "sourceTable": "owc",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Projects",
+    "alias": "OwnerCompany",
+    "sourceTable": "owc",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Projects",
+    "alias": "OwnerCompanyHasImage",
+    "sourceTable": "owc",
+    "sourceColumn": "HasImage"
   },
   {
     "deName": "DE-Projects",
@@ -3487,9 +4945,27 @@
   },
   {
     "deName": "DE-ProjectsPlannedTime",
+    "alias": "EstimateId",
+    "sourceTable": "est",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-ProjectsPlannedTime",
+    "alias": "Estimate",
+    "sourceTable": "est",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-ProjectsPlannedTime",
+    "alias": "EstimateNumber",
+    "sourceTable": "est",
+    "sourceColumn": "Number"
+  },
+  {
+    "deName": "DE-ProjectsPlannedTime",
     "alias": "DepartmentId",
-    "sourceTable": "eid",
-    "sourceColumn": "Department"
+    "sourceTable": "dep",
+    "sourceColumn": "Oid"
   },
   {
     "deName": "DE-ProjectsPlannedTime",
@@ -3890,38 +5366,14 @@
   {
     "deName": "DE-PurchaseOrders",
     "alias": "Stage",
-    "sourceTable": null,
-    "sourceColumn": "isnull(...)"
+    "sourceTable": "ws",
+    "sourceColumn": "Name"
   },
   {
     "deName": "DE-PurchaseOrders",
     "alias": "Color",
     "sourceTable": null,
     "sourceColumn": "isnull(...)"
-  },
-  {
-    "deName": "DE-PurchaseOrders",
-    "alias": "AlreadyRead",
-    "sourceTable": null,
-    "sourceColumn": "iif(...)"
-  },
-  {
-    "deName": "DE-PurchaseOrders",
-    "alias": "CurrentUserInTeam",
-    "sourceTable": null,
-    "sourceColumn": "iif(...)"
-  },
-  {
-    "deName": "DE-PurchaseOrders",
-    "alias": "CurrentUserPending",
-    "sourceTable": null,
-    "sourceColumn": "iif(...)"
-  },
-  {
-    "deName": "DE-PurchaseOrders",
-    "alias": "CurrentUserInDepartment",
-    "sourceTable": null,
-    "sourceColumn": "iif(...)"
   },
   {
     "deName": "DE-PurchaseOrders",
@@ -3994,6 +5446,24 @@
     "alias": "EndDate",
     "sourceTable": "rtc",
     "sourceColumn": "EndDate"
+  },
+  {
+    "deName": "DE-RateCardsColumns",
+    "alias": "TypeId",
+    "sourceTable": "typ",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-RateCardsColumns",
+    "alias": "Type",
+    "sourceTable": "typ",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-RateCardsColumns",
+    "alias": "TypeCode",
+    "sourceTable": "typ",
+    "sourceColumn": "Code"
   },
   {
     "deName": "DE-RateCardsColumns",
@@ -5005,6 +6475,24 @@
   },
   {
     "deName": "DE-TimeSheets",
+    "alias": "ApproverId",
+    "sourceTable": "apr",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-TimeSheets",
+    "alias": "Approver",
+    "sourceTable": "apr",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-TimeSheets",
+    "alias": "ApproverHasImage",
+    "sourceTable": "apr",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-TimeSheets",
     "alias": "ModifiedOn",
     "sourceTable": "tim",
     "sourceColumn": "ModifiedOn"
@@ -5443,6 +6931,12 @@
   },
   {
     "deName": "DE-Typologies",
+    "alias": "Oid",
+    "sourceTable": "utp",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Typologies",
     "alias": "DocumentOid",
     "sourceTable": "utp",
     "sourceColumn": "Oid"
@@ -5700,6 +7194,126 @@
     "sourceColumn": "Name"
   },
   {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "UserTypologyHistoryId",
+    "sourceTable": "uth",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "StartDate",
+    "sourceTable": "uth",
+    "sourceColumn": "StartDate"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "EndDate",
+    "sourceTable": "uth",
+    "sourceColumn": "EndDate"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "CreatedById",
+    "sourceTable": "cre",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "CreatedBy",
+    "sourceTable": "cre",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "CreatedByHasImage",
+    "sourceTable": "cre",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "ModifiedById",
+    "sourceTable": "mod",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "ModifiedBy",
+    "sourceTable": "mod",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "ModifiedByHasImage",
+    "sourceTable": "mod",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "UserId",
+    "sourceTable": "usr",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "User",
+    "sourceTable": "usr",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "UserHasImage",
+    "sourceTable": "usr",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "TypologyId",
+    "sourceTable": "typ",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "Typology",
+    "sourceTable": "typ",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "TypologyGroupId",
+    "sourceTable": "tgp",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "TypologyGroup",
+    "sourceTable": "tgp",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "UserTypeId",
+    "sourceTable": "ust",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "UserType",
+    "sourceTable": "ust",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "DepartmentId",
+    "sourceTable": "dep",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-UserTypologiesHistory",
+    "alias": "Department",
+    "sourceTable": "dep",
+    "sourceColumn": "Name"
+  },
+  {
     "deName": "DE-Users",
     "alias": "DocumentOid",
     "sourceTable": "usr",
@@ -5716,6 +7330,12 @@
     "alias": "User",
     "sourceTable": "usr",
     "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "UserHasImage",
+    "sourceTable": "usr",
+    "sourceColumn": "HasImage"
   },
   {
     "deName": "DE-Users",
@@ -5761,6 +7381,12 @@
   },
   {
     "deName": "DE-Users",
+    "alias": "CompanyHasImage",
+    "sourceTable": "com",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-Users",
     "alias": "TypologyId",
     "sourceTable": "utp",
     "sourceColumn": "Oid"
@@ -5769,6 +7395,18 @@
     "deName": "DE-Users",
     "alias": "Typology",
     "sourceTable": "utp",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "TypologyGroupId",
+    "sourceTable": "utg",
+    "sourceColumn": "Oid"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "TypologyGroup",
+    "sourceTable": "utg",
     "sourceColumn": "Name"
   },
   {
@@ -5803,6 +7441,12 @@
   },
   {
     "deName": "DE-Users",
+    "alias": "StartDate",
+    "sourceTable": "usr",
+    "sourceColumn": "StartDate"
+  },
+  {
+    "deName": "DE-Users",
     "alias": "TerminationDate",
     "sourceTable": "usr",
     "sourceColumn": "ExpirationDate"
@@ -5818,6 +7462,24 @@
     "alias": "Email",
     "sourceTable": "usr",
     "sourceColumn": "Mail"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "SsoUserName",
+    "sourceTable": "usr",
+    "sourceColumn": "SsoUserName"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "AdUserName",
+    "sourceTable": "usr",
+    "sourceColumn": "AdUserName"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "UserName",
+    "sourceTable": "usl",
+    "sourceColumn": "UserName"
   },
   {
     "deName": "DE-Users",
@@ -5845,6 +7507,12 @@
   },
   {
     "deName": "DE-Users",
+    "alias": "CreatedOn",
+    "sourceTable": "usr",
+    "sourceColumn": "CreatedOn"
+  },
+  {
+    "deName": "DE-Users",
     "alias": "ModifiedOn",
     "sourceTable": "usr",
     "sourceColumn": "ModifiedOn"
@@ -5869,6 +7537,42 @@
   },
   {
     "deName": "DE-Users",
+    "alias": "IsTimesheetRequired",
+    "sourceTable": "usr",
+    "sourceColumn": "TimesheetRequired"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "SsoOnly",
+    "sourceTable": "usr",
+    "sourceColumn": "SsoOnly"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "IsApprover",
+    "sourceTable": "usr",
+    "sourceColumn": "Approver"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "ResponsibleId",
+    "sourceTable": "res",
+    "sourceColumn": "Id"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "Responsible",
+    "sourceTable": "res",
+    "sourceColumn": "Name"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "ResponsibleHasImage",
+    "sourceTable": "res",
+    "sourceColumn": "HasImage"
+  },
+  {
+    "deName": "DE-Users",
     "alias": "ClientIds",
     "sourceTable": "cli",
     "sourceColumn": "ClientIds"
@@ -5878,6 +7582,54 @@
     "alias": "Clients",
     "sourceTable": "cli",
     "sourceColumn": "Clients"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "DaysUntilBlocked",
+    "sourceTable": "usr",
+    "sourceColumn": "DaysUntilBlocked"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "IsWorkingOnSaturday",
+    "sourceTable": "usr",
+    "sourceColumn": "Saturday"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "IsWorkingOnSunday",
+    "sourceTable": "usr",
+    "sourceColumn": "Sunday"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "IsWorkingOnMonday",
+    "sourceTable": "usr",
+    "sourceColumn": "Monday"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "IsWorkingOnTuesday",
+    "sourceTable": "usr",
+    "sourceColumn": "Tuesday"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "IsWorkingOnWednesday",
+    "sourceTable": "usr",
+    "sourceColumn": "Wednesday"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "IsWorkingOnThursday",
+    "sourceTable": "usr",
+    "sourceColumn": "Thursday"
+  },
+  {
+    "deName": "DE-Users",
+    "alias": "IsWorkingOnFriday",
+    "sourceTable": "usr",
+    "sourceColumn": "Friday"
   },
   {
     "deName": "DE-UsersAdditionalInformation",
@@ -5941,19 +7693,13 @@
   },
   {
     "deName": "DE-Workloads",
-    "alias": "JobId",
-    "sourceTable": "dw",
-    "sourceColumn": "DocumentOid"
-  },
-  {
-    "deName": "DE-Workloads",
     "alias": "TimesheetId",
     "sourceTable": "dwt",
     "sourceColumn": "Timesheet"
   },
   {
     "deName": "DE-Workloads",
-    "alias": "UserIs",
+    "alias": "UserId",
     "sourceTable": "usr",
     "sourceColumn": "Id"
   },
@@ -6076,6 +7822,12 @@
     "alias": "EstimateItemDescription",
     "sourceTable": "eit",
     "sourceColumn": "Description"
+  },
+  {
+    "deName": "DE-EstimatesQuotesMonth",
+    "alias": "EstimateItemId",
+    "sourceTable": "eit",
+    "sourceColumn": "Oid"
   },
   {
     "deName": "DE-EstimatesQuotesMonth",

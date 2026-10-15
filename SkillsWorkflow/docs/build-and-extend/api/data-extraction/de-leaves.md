@@ -1,37 +1,12 @@
 ---
 id: de-leaves
 title: DE-Leaves
-description: "Contains documents with information about vacations from employees"
+description: "Extracts employee leaves (such as vacation, sick leave or compensation) with the leave type, day, hours, approval status and approvers."
 sidebar_label: Leaves
-sidebar_position: 0
+sidebar_position: 1
 ---
 
-#Description
-Contains documents with information about vacations from employees
-#Fields
-- CompanyId: unique identifier for the company (?string)
-- Company: name of the company (?string)
-- LeaveId: unique identifier for the leave (?string)
-- LeaveTypeId: unique identifier for the leave type (?string)
-- LeaveType: type of leave (?string - can be: 'Sick Leave', 'Vacation', 'Compensation')
-- UserId: unique identifier for the user (?string)
-- User: name of the user (?string)
-- Day: the date of the leave (?string, format yyyy-mm-ddTHH:MM:SS)
-- IsHalfDay: indicates if the leave is for half a day (bool)
-- Hours: leave duration in hours (int)
-- LeaveTypeYear: the year of the leave type (integer)
-- LeaveTypeExpiresOn: the date when the leave type expires (?string, format yyyy-mm-ddTHH:MM:SS)
-- ModifiedOn: date and time when the leave was last modified (?string, format yyyy-mm-ddTHH:MM:SS.SSS)
-- RequestedApproval: indicates if the leave was requested for approval (bool)
-- Status: status of the leave (?string - can be: 'New', 'Approved', 'Rejected')
-#Rules
-- If the user doesn't mention the year or month, assume the present.
-- If the user asks about a specific user, filter by the 'User' field.
-- If the user asks about a specific leave type, filter by the 'LeaveType' field.
-- If the user asks about a specific company, filter by the 'Company' field.
-- If the user asks about half-day leaves, filter by the 'IsHalfDay' field.
-- If the user asks about leaves within a specific date range, filter by the 'Day' field using `>=` and `<=` operators.
-- If the user doesn't specify a status, include all statuses.
+Extracts employee leaves (such as vacation, sick leave or compensation) with the leave type, day, hours, approval status and approvers.
 
 ## Endpoint
 
@@ -57,6 +32,7 @@ This query has no parameters.
 | Day | lev | Day |
 | IsHalfDay | lev | HalfDay |
 | Hours | — | iif(...) |
+| TotalMinutes | lev | TotalMinutes |
 | LeaveTypeYear | uiv | Year |
 | LeaveTypeExpiresOn | uiv | ExpirationDate |
 | ModifiedOn | lev | ModifiedOn |
@@ -78,4 +54,10 @@ This query has no parameters.
 | apr | — | LEFT JOIN |
 | apr | hra | LEFT JOIN |
 
-*Version: 7 · Category: Data Extraction · System: Yes*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| LeaveRead | No |
+
+*Version: 10 · Category: Data Extraction · System: Yes*

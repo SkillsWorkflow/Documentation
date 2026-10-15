@@ -35,7 +35,7 @@ This query has no parameters.
 | VatPercentage | vat | Percentage |
 | ValueWithVat | eim | ValueWithVat |
 | VatValue | eim | VatValue |
-| ValueWithVat | eim | ValueWithVat |
+| ValueWithoutVat | eim | ValueWithoutVat |
 | CreatedOnUtc | eim | CreatedOnUtc |
 | ModifiedOnUtc | eim | ModifiedOnUtc |
 | CreatedByName | cre | Name |
@@ -55,4 +55,10 @@ This query has no parameters.
 | UserLookup | cre | LEFT JOIN |
 | UserLookup | mod | LEFT JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| ExpenseRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

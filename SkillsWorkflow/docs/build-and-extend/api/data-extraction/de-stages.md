@@ -34,4 +34,10 @@ This query has no parameters.
 | WorkflowState | wfs | FROM |
 | WorkflowStateType | wst | JOIN |
 
-*Version: 2 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| WorkflowStageRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

@@ -34,4 +34,10 @@ This query has no parameters.
 | Project | prj | FROM |
 | Project_UserFields | puf | LEFT JOIN |
 
-*Version: 4 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| ProjectRead | No |
+
+*Version: 6 · Category: Data Extraction · System: No*

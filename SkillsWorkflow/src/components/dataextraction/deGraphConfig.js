@@ -22,12 +22,14 @@ export const HIERARCHY = [
     { parent: 'DE-Companies', child: 'DE-RateCardsColumns', via: 'CompanyId' },
     { parent: 'DE-Companies', child: 'DE-ProjectsTypes', via: 'CompanyId' },
     { parent: 'DE-Companies', child: 'DE-ProjectsClassifications', via: 'CompanyId' },
-    { parent: 'DE-Companies', child: 'DE-ExpenseType', via: 'CompanyId' },
+    { parent: 'DE-Companies', child: 'DE-ExpenseTypes', via: 'CompanyId' },
     { parent: 'DE-Companies', child: 'DE-ExpenseSheets', via: 'CompanyId' },
     { parent: 'DE-Companies', child: 'DE-Users', via: 'CompanyId' },
     { parent: 'DE-Companies', child: 'DE-CompaniesAdditionalInformation', via: 'CompanyId' },
     { parent: 'DE-Companies', child: 'DE-Currencies', via: 'CompanyId' },
     { parent: 'DE-Companies', child: 'DE-Suppliers', via: 'CompanyId' },
+    { parent: 'DE-Companies', child: 'DE-BillingClients', via: 'CompanyId' },
+    { parent: 'DE-Companies', child: 'DE-PaymentConditions', via: 'CompanyId' },
 
     // Users → People-related
     { parent: 'DE-Users', child: 'DE-UserCosts', via: 'UserId' },
@@ -35,6 +37,8 @@ export const HIERARCHY = [
     { parent: 'DE-Users', child: 'DE-UsersAdditionalInformation', via: 'UserId' },
     { parent: 'DE-Users', child: 'DE-Leaves', via: 'UserId' },
     { parent: 'DE-Users', child: 'DE-Attendances', via: 'UserId' },
+    { parent: 'DE-Users', child: 'DE-UserTypologiesHistory', via: 'UserId' },
+    { parent: 'DE-Users', child: 'DE-Capacity', via: 'UserId' },
 
     // Geography
     { parent: 'DE-Countries', child: 'DE-Cities', via: 'CountryId' },
@@ -51,8 +55,13 @@ export const HIERARCHY = [
     { parent: 'DE-Projects', child: 'DE-ProjectsAdditionalInformation', via: 'ProjectId' },
     { parent: 'DE-Projects', child: 'DE-ProjectsPlannedTime', via: 'ProjectId' },
     { parent: 'DE-Projects', child: 'DE-Bills', via: 'ProjectId' },
+    { parent: 'DE-Projects', child: 'DE-CreditNotes', via: 'ProjectId' },
     { parent: 'DE-Projects', child: 'DE-PurchaseOrders', via: 'ProjectId' },
     { parent: 'DE-Projects', child: 'DE-EstimatesQuotes', via: 'ProjectId' },
+
+    // Bills and credit notes → items. DE-BillsItems has no bill key (its BillId is the item's own Oid).
+    { parent: 'DE-Bills', child: 'DE-BillsItems', via: null },
+    { parent: 'DE-CreditNotes', child: 'DE-CreditNotesItems', via: 'CreditNoteId' },
 
     // Estimates → sub-entities
     { parent: 'DE-EstimatesQuotes', child: 'DE-EstimatesBillingConditions', via: 'EstimateId' },
@@ -78,7 +87,7 @@ export const HIERARCHY = [
     { parent: 'DE-EstimatesQuotes', child: 'DE-EstimatesQuotesCount', via: null },
 
     // Expenses
-    { parent: 'DE-ExpenseType', child: 'DE-Expenses', via: 'ExpenseTypeId' },
+    { parent: 'DE-ExpenseTypes', child: 'DE-Expenses', via: 'ExpenseTypeId' },
 
     // Types & Stages
     { parent: 'DE-BusinessObjectTypes', child: 'DE-Types', via: 'BusinessObjectTypeId' },

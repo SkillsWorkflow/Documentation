@@ -104,4 +104,10 @@ This query has no parameters.
 
 - Module: `Skill.Module.BusinessObjects.Bill`
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| BillRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

@@ -58,4 +58,10 @@ This query has no parameters.
 | Article | art | LEFT JOIN |
 | Currency | cur | LEFT JOIN |
 
-*Version: 5 · Category: Data Extraction · System: Yes*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| CompanyRead | No |
+
+*Version: 7 · Category: Data Extraction · System: Yes*

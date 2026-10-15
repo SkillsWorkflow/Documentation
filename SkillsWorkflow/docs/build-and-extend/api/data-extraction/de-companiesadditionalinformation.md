@@ -16,7 +16,11 @@ POST /api/v3/analytics/named-query/DE-CompaniesAdditionalInformation/dynamic-exe
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| ModifiedFrom | `where (@ModifiedFrom is null or cuf.ModifiedOn >= @ModifiedFrom)` |
 
 ## Output Columns
 
@@ -33,4 +37,10 @@ This query has no parameters.
 | Company | com | FROM |
 | Company_UserFields | cuf | LEFT JOIN |
 
-*Version: 3 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| CompanyRead | No |
+
+*Version: 5 · Category: Data Extraction · System: No*

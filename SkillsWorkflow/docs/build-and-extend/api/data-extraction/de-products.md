@@ -38,4 +38,10 @@ This query has no parameters.
 | ClientLookup | cli | JOIN |
 | Brand | brd | LEFT JOIN |
 
-*Version: 6 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| CommercialProductRead | No |
+
+*Version: 8 · Category: Data Extraction · System: No*

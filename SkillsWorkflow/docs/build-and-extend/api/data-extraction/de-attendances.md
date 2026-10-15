@@ -15,7 +15,12 @@ POST /api/v3/analytics/named-query/DE-Attendances/dynamic-execute
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| From | `where (@From is null or atc.Day >= @From) and` |
+| To | `(@To is null or atc.Day <= @To)` |
 
 ## Output Columns
 
@@ -46,4 +51,10 @@ This query has no parameters.
 | AttendanceDetail | atd | JOIN |
 | UserLookup | usl | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| AttendanceRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

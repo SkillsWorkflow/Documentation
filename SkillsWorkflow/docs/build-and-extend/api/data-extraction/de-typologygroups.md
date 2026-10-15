@@ -34,4 +34,10 @@ This query has no parameters.
 | UserTypologyGroup | utg | FROM |
 | Company | com | JOIN |
 
-*Version: 3 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| UserTypologyGroupRead | No |
+
+*Version: 5 · Category: Data Extraction · System: No*

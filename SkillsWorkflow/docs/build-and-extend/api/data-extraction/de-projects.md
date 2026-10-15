@@ -54,6 +54,12 @@ This query has no parameters.
 | CurrencyId | cur | Oid |
 | Currency | cur | Name |
 | Investment | prj | Investment |
+| OwnerId | own | Id |
+| Owner | own | Name |
+| OwnerHasImage | own | HasImage |
+| OwnerCompanyId | owc | Id |
+| OwnerCompany | owc | Name |
+| OwnerCompanyHasImage | owc | HasImage |
 | ProjectType | — | iif(...) |
 | RateCard | rtc | Name |
 | RateCardColumn | rcc | Name |
@@ -82,6 +88,8 @@ This query has no parameters.
 | Project | prj | FROM |
 | UserLookup | cre | JOIN |
 | UserLookup | mod | JOIN |
+| UserLookup | own | LEFT JOIN |
+| CompanyLookup | owc | LEFT JOIN |
 | ContractLookup | cnt | LEFT JOIN |
 | CompanyLookup | com | JOIN |
 | ClientLookup | cli | JOIN |
@@ -107,6 +115,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| ProjectRead | No |
 
-*Version: 14 · Category: Data Extraction · System: No*
+*Version: 18 · Category: Data Extraction · System: No*

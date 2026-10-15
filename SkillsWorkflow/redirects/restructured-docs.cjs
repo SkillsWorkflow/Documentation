@@ -127,7 +127,11 @@ module.exports = [
   },
   {
     "from": "/docs/api/data-extraction/de-expensetype",
-    "to": "/docs/build-and-extend/api/data-extraction/de-expensetype"
+    "to": "/docs/build-and-extend/api/data-extraction/de-expensetypes"
+  },
+  {
+    "from": "/docs/build-and-extend/api/data-extraction/de-expensetype",
+    "to": "/docs/build-and-extend/api/data-extraction/de-expensetypes"
   },
   {
     "from": "/docs/api/data-extraction/de-history",
