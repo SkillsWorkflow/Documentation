@@ -29,6 +29,9 @@ This query has no parameters.
 | Team | ast | Name |
 | UserId | usr | Id |
 | User | usr | Name |
+| CompanyId | com | Id |
+| Company | com | Name |
+| CompanyHasImage | com | HasImage |
 | ModifiedOnUtc | ass | ModifiedOnUtc |
 | ModifiedById | mod | Id |
 | ModifiedBy | mod | Name |
@@ -40,6 +43,13 @@ This query has no parameters.
 | Assignment | ass | FROM |
 | AssignmentType | ast | JOIN |
 | UserLookup | usr | JOIN |
+| CompanyLookup | com | JOIN |
 | UserLookup | mod | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| AssignmentRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

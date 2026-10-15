@@ -1,7 +1,7 @@
 ---
-id: de-expensetype
-title: DE-ExpenseType
-sidebar_label: ExpenseType
+id: de-expensetypes
+title: DE-ExpenseTypes
+sidebar_label: ExpenseTypes
 sidebar_position: 1
 ---
 
@@ -10,7 +10,7 @@ Extracts expense items types.
 ## Endpoint
 
 ```
-POST /api/v3/analytics/named-query/DE-ExpenseType/dynamic-execute
+POST /api/v3/analytics/named-query/DE-ExpenseTypes/dynamic-execute
 ```
 
 ## Parameters
@@ -47,4 +47,10 @@ This query has no parameters.
 | UserLookup | cre | LEFT JOIN |
 | UserLookup | mod | LEFT JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| ExpenseItemTypeRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

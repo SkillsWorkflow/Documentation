@@ -16,7 +16,11 @@ POST /api/v3/analytics/named-query/DE-LeavesDeleted/dynamic-execute
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| ModifiedFrom | `where (@ModifiedFrom is null or lev.ModifiedOnUtc >= @ModifiedFrom)` |
 
 ## Output Columns
 
@@ -31,4 +35,10 @@ This query has no parameters.
 |-------|-------|------|
 | LeaveDeleted | lev | FROM |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| LeaveRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

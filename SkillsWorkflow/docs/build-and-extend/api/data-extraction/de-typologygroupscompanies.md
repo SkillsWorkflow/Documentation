@@ -36,4 +36,10 @@ This query has no parameters.
 | CompanyLookup | com | JOIN |
 | UserTypologyGroup | utg | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| UserTypologyGroupRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

@@ -108,4 +108,10 @@ This query has no parameters.
 
 - Module: `Skill.Module.BusinessObjects.Request`
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| RequestRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

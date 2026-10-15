@@ -47,6 +47,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| PostRead | No |
 
-*Version: 1 · Category: Data Extraction · System: No*
+*Version: 4 · Category: Data Extraction · System: No*

@@ -56,6 +56,9 @@ This query has no parameters.
 | WorkType | wrk | Name |
 | Status | — | CASE(...) |
 | Approvers | — | isnull(...) |
+| ApproverId | apr | Id |
+| Approver | apr | Name |
+| ApproverHasImage | apr | HasImage |
 | ModifiedOn | tim | ModifiedOn |
 | RequestedApproval | tim | RequestedApproval |
 | HourlyUserCost | — | HourlyUserCost |
@@ -81,4 +84,10 @@ This query has no parameters.
 | tap | — | LEFT JOIN |
 | UserLookup | apr | LEFT JOIN |
 
-*Version: 19 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| TimesheetRead | No |
+
+*Version: 21 · Category: Data Extraction · System: No*

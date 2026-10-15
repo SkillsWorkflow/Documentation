@@ -15,7 +15,11 @@ POST /api/v3/analytics/named-query/DE-Brands/dynamic-execute
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| ModifiedFrom | `where (@ModifiedFrom is null or brd.ModifiedOn >= @ModifiedFrom)` |
 
 ## Output Columns
 
@@ -34,4 +38,10 @@ This query has no parameters.
 | Brand | brd | FROM |
 | ClientLookup | cli | JOIN |
 
-*Version: 4 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| BrandRead | No |
+
+*Version: 6 · Category: Data Extraction · System: No*

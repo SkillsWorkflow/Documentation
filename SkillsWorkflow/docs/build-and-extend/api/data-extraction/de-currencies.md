@@ -34,4 +34,10 @@ This query has no parameters.
 |-------|-------|------|
 | Currency | cur | FROM |
 
-*Version: 3 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| CurrencyRead | No |
+
+*Version: 5 · Category: Data Extraction · System: No*

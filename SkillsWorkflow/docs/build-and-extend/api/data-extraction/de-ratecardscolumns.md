@@ -31,6 +31,9 @@ This query has no parameters.
 | Active | rtc | Active |
 | StartDate | rtc | BeginDate |
 | EndDate | rtc | EndDate |
+| TypeId | typ | Oid |
+| Type | typ | Name |
+| TypeCode | typ | Code |
 | CurrencyId | cur | Oid |
 | Currency | cur | Name |
 | CompanyId | com | Oid |
@@ -56,5 +59,12 @@ This query has no parameters.
 | Department | dep | LEFT JOIN |
 | Company | com | LEFT JOIN |
 | Currency | cur | LEFT JOIN |
+| JobType | typ | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| RateCardColumnRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

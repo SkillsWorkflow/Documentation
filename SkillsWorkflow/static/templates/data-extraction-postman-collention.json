@@ -7,25 +7,29 @@
 	},
 	"item": [
 		{
-			"name": "Attendences",
+			"name": "AdditionalInformation",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -35,11 +39,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/11/07\",\n        \"To\": null\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Attendences/dynamic-execute",
-					"protocol": "https",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-AdditionalInformation/dynamic-execute",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -48,7 +56,7 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"DE-Attendences",
+						"DE-AdditionalInformation",
 						"dynamic-execute"
 					]
 				}
@@ -62,19 +70,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -84,11 +96,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n   \"queryBuilder\": {\n      \"skip\": 0,\n      \"take\": 100,\n      \"orderBy\": [\n        {\n          \"field\": \"User\",\n          \"direction\": \"asc\" \n        }\n      ],\n      \"fields\": [\"Team\", \"UserId\"],\n      \"filters\": [  \n        [\"Team\", \"=\", \"Executor\"],   \n        \"or\", \n        [\"Team\", \"=\", \"Requester\"]\n      ]\n    } \n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Assignments/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -98,6 +114,234 @@
 						"analytics",
 						"named-query",
 						"DE-Assignments",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Attendances",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"From\": null,\n        \"To\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Attendances/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Attendances",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillingClients",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-BillingClients/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-BillingClients",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bills",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Bills/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Bills",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillsItems",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-BillsItems/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-BillsItems",
 						"dynamic-execute"
 					]
 				}
@@ -137,11 +381,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Brands/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -151,6 +399,120 @@
 						"analytics",
 						"named-query",
 						"DE-Brands",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BusinessObjectTypes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-BusinessObjectTypes/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-BusinessObjectTypes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Capacity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Capacity/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Capacity",
 						"dynamic-execute"
 					]
 				}
@@ -190,11 +552,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Countries/dynamic-execute",
-					"protocol": "https",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Cities/dynamic-execute",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -203,7 +569,7 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"DE-Countries",
+						"DE-Cities",
 						"dynamic-execute"
 					]
 				}
@@ -243,11 +609,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Clients/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -296,11 +666,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ClientsCompanies/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -317,7 +691,7 @@
 			"response": []
 		},
 		{
-			"name": "Contracts",
+			"name": "Comments",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -337,23 +711,27 @@
 						"type": "text"
 					},
 					{
-						"key": "X-AppUser",
-						"value": "{{UserId}}",
+						"key": "Content-Type",
+						"value": "application/json",
 						"type": "text"
 					},
 					{
-						"key": "Content-Type",
-						"value": "application/json",
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"ContractNumber\": null,\n        \"ContractId\": null\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Contracts/dynamic-execute",
-					"protocol": "https",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Comments/dynamic-execute",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -362,7 +740,64 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"DE-Contracts",
+						"DE-Comments",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CommentsReplies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-CommentsReplies/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-CommentsReplies",
 						"dynamic-execute"
 					]
 				}
@@ -402,11 +837,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Companies/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -455,11 +894,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-CompaniesAdditionalInformation/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -469,6 +912,63 @@
 						"analytics",
 						"named-query",
 						"DE-CompaniesAdditionalInformation",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contracts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"ContractId\": null,\n        \"ContractNumber\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Contracts/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Contracts",
 						"dynamic-execute"
 					]
 				}
@@ -508,11 +1008,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Countries/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -522,6 +1026,120 @@
 						"analytics",
 						"named-query",
 						"DE-Countries",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreditNotes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-CreditNotes/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-CreditNotes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreditNotesItems",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-CreditNotesItems/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-CreditNotesItems",
 						"dynamic-execute"
 					]
 				}
@@ -561,11 +1179,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Currencies/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -614,11 +1236,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Departments/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -627,7 +1253,6 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-Departments",
 						"dynamic-execute"
 					]
@@ -668,11 +1293,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Descriptions/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -681,7 +1310,6 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-Descriptions",
 						"dynamic-execute"
 					]
@@ -722,11 +1350,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Divisions/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -775,11 +1407,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Employees/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -788,7 +1424,6 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-Employees",
 						"dynamic-execute"
 					]
@@ -803,19 +1438,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -825,11 +1464,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatedPlannedActualMonthly/dynamic-execute",
-					"protocol": "https",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/EstimatedPlannedActualMonthly/dynamic-execute",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -838,8 +1481,7 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
-						"DE-EstimatedPlannedActualMonthly",
+						"EstimatedPlannedActualMonthly",
 						"dynamic-execute"
 					]
 				}
@@ -853,19 +1495,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -875,11 +1521,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"EstimateId\": null,\n        \"EstimateNumber\": null\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Estimates/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -888,8 +1538,64 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-Estimates",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstimatesBillingConditions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesBillingConditions/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-EstimatesBillingConditions",
 						"dynamic-execute"
 					]
 				}
@@ -903,19 +1609,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -925,11 +1635,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"EstimateId\": null,\n        \"EstimateNumber\": null\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"EstimateId\": null,\n        \"EstimateNumber\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -938,7 +1652,6 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-EstimatesCount",
 						"dynamic-execute"
 					]
@@ -953,19 +1666,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -975,11 +1692,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesQuotes/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -988,8 +1709,64 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-EstimatesQuotes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstimatesQuotesCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesQuotesCount/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-EstimatesQuotesCount",
 						"dynamic-execute"
 					]
 				}
@@ -1003,19 +1780,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -1025,11 +1806,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesQuotesMonth/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1038,7 +1823,6 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-EstimatesQuotesMonth",
 						"dynamic-execute"
 					]
@@ -1053,19 +1837,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -1075,11 +1863,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"parameters\": {\n        \"EstimateId\": null,\n        \"EstimateNumber\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-EstimatesQuotesMonthCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1088,57 +1880,7 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-EstimatesQuotesMonthCount",
-						"dynamic-execute"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ExpenseTypes",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
-					},
-					{
-						"key": "X-AppId",
-						"value": "{{AppId}}"
-					},
-					{
-						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "X-AppUser",
-						"value": "{{UserId}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n}"
-				},
-				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ExpenseTypes/dynamic-execute",
-					"protocol": "https",
-					"host": [
-						"{{ApiUrl}}"
-					],
-					"path": [
-						"api",
-						"v3",
-						"analytics",
-						"named-query",
-						"DE-ExpenseTypes",
 						"dynamic-execute"
 					]
 				}
@@ -1152,19 +1894,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -1174,11 +1920,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Expenses/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1201,19 +1951,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -1223,11 +1977,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ExpenseSheets/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1237,6 +1995,120 @@
 						"analytics",
 						"named-query",
 						"DE-ExpenseSheets",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ExpenseTypes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ExpenseTypes/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ExpenseTypes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "History",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-History/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-History",
 						"dynamic-execute"
 					]
 				}
@@ -1276,11 +2148,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Holidays/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1329,11 +2205,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"JobId\": null,\n        \"JobNumber\": \"2024 - 00196\"\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Jobs/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1382,11 +2262,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"JobId\": null,\n        \"JobNumber\": \"2024 - 00196\"\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"JobId\": null,\n        \"JobNumber\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-JobsCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1435,11 +2319,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Leaves/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1488,11 +2376,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"From\": null,\n        \"To\": null,\n        \"ModifiedFrom\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-LeavesCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1541,11 +2433,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-LeavesDeleted/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1594,11 +2490,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-LeavesDeletedCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1608,6 +2508,63 @@
 						"analytics",
 						"named-query",
 						"DE-LeavesDeletedCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentConditions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-PaymentConditions/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-PaymentConditions",
 						"dynamic-execute"
 					]
 				}
@@ -1647,11 +2604,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Products/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1688,23 +2649,27 @@
 						"type": "text"
 					},
 					{
-						"key": "X-AppUser",
-						"value": "{{UserId}}",
+						"key": "Content-Type",
+						"value": "application/json",
 						"type": "text"
 					},
 					{
-						"key": "Content-Type",
-						"value": "application/json",
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"queryBuilder\": {\n      \"skip\": 0,\n      \"take\": 100,\n      \"orderBy\": [\n        {\n          \"field\": \"Project\",\n          \"direction\": \"asc\" \n        }\n      ],\n      \"fields\": [\"ProjectId\", \"Project\"],\n      \"filters\": [  \n        [\"ProjectNumber\", \"=\", \"2024 / 00258\"],   \n        \"or\", \n        [\"ProjectNumber\", \"=\", \"2024 / 00257\"]\n      ]\n    },\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\",\n        \"ProjectNumber\": null,\n        \"ProjectId\": null\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Projects/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1714,6 +2679,120 @@
 						"analytics",
 						"named-query",
 						"DE-Projects",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProjectsAdditionalInformation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsAdditionalInformation/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ProjectsAdditionalInformation",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProjectsClassifications",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsClassifications/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ProjectsClassifications",
 						"dynamic-execute"
 					]
 				}
@@ -1753,11 +2832,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": \"2024/04/01\"\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"ProjectId\": null,\n        \"ProjectNumber\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1767,55 +2850,6 @@
 						"analytics",
 						"named-query",
 						"DE-ProjectsCount",
-						"dynamic-execute"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ProjectsAdditionalInformation",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
-					},
-					{
-						"key": "X-AppId",
-						"value": "{{AppId}}"
-					},
-					{
-						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "X-AppUser",
-						"value": "{{UserId}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{}"
-				},
-				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsAdditionalInformation/dynamic-execute",
-					"protocol": "https",
-					"host": [
-						"{{ApiUrl}}"
-					],
-					"path": [
-						"api",
-						"v3",
-						"analytics",
-						"named-query",
-						"DE-ProjectsAdditionalInformation",
 						"dynamic-execute"
 					]
 				}
@@ -1855,11 +2889,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsPlannedTime/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1908,11 +2946,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"parameters\": {\n        \"ProjectId\": null,\n        \"ProjectNumber\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsPlannedTimeCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1929,25 +2971,29 @@
 			"response": []
 		},
 		{
-			"name": "RateCardsColumns",
+			"name": "ProjectsTypes",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -1957,11 +3003,129 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ProjectsTypes/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ProjectsTypes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PurchaseOrders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-PurchaseOrders/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-PurchaseOrders",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RateCardsColumns",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-RateCardsColumns/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -1971,6 +3135,177 @@
 						"analytics",
 						"named-query",
 						"DE-RateCardsColumns",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Requests",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Requests/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Requests",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Services",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Services/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Services",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ServicesGroups",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-ServicesGroups/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-ServicesGroups",
 						"dynamic-execute"
 					]
 				}
@@ -2010,11 +3345,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Stages/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2063,11 +3402,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Suppliers/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2084,25 +3427,29 @@
 			"response": []
 		},
 		{
-			"name": "TimeSheets",
+			"name": "Taxes",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -2112,11 +3459,72 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100,\n        \"orderBy\": [{\n            \"field\": \"Project\",\n            \"direction\": \"asc\" \n            }],\n        \"fields1\": [\"ProjectId\", \"Project\"],\n        \"filters\": [  \n            [\"Day\", \">=\", \"11/01/2024\"],   \n            \"and\", \n            [\"Day\", \"<=\", \"12/30/2024\"]\n        ]\n    },\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"ProjectNumber\": null,\n        \"ProjectId\": null,\n        \"From\": null,\n        \"To\": null\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Taxes/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Taxes",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TimeSheets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TimeSheets/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2139,19 +3547,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -2161,11 +3573,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"From\": null,\n        \"To\": null,\n        \"ModifiedFrom\": null,\n        \"ProjectId\": null,\n        \"ProjectNumber\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TimeSheetsCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2188,19 +3604,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -2210,11 +3630,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null,\n        \"ModifiedFrom\": null\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TimeSheetsDeleted/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2237,19 +3661,23 @@
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -2259,11 +3687,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"From\": \"2024/05/01\",\n        \"To\": null,\n        \"ModifiedFrom\": null\n    }\n}"
+					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null\n    },\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TimeSheetsDeletedCount/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2273,6 +3705,120 @@
 						"analytics",
 						"named-query",
 						"DE-TimeSheetsDeletedCount",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transitions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Transitions/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Transitions",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Types",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Types/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Types",
 						"dynamic-execute"
 					]
 				}
@@ -2312,11 +3858,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Typologies/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2365,11 +3915,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TypologyGroups/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2379,6 +3933,120 @@
 						"analytics",
 						"named-query",
 						"DE-TypologyGroups",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TypologyGroupsCompanies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TypologyGroupsCompanies/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-TypologyGroupsCompanies",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TypologyGroupsDepartments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-TypologyGroupsDepartments/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-TypologyGroupsDepartments",
 						"dynamic-execute"
 					]
 				}
@@ -2418,11 +4086,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Users/dynamic-execute",
-					"protocol": "https",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UserCosts/dynamic-execute",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2431,8 +4103,7 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
-						"DE-Users",
+						"DE-UserCosts",
 						"dynamic-execute"
 					]
 				}
@@ -2472,11 +4143,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Users/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2485,7 +4160,6 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-Users",
 						"dynamic-execute"
 					]
@@ -2494,7 +4168,7 @@
 			"response": []
 		},
 		{
-			"name": "UsersToBlock",
+			"name": "UsersAdditionalInformation",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -2526,65 +4200,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
-				},
-				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UsersToBlock/dynamic-execute",
-					"protocol": "https",
-					"host": [
-						"{{ApiUrl}}"
-					],
-					"path": [
-						"api",
-						"v3",
-						"analytics",
-						"named-query",
-						"",
-						"DE-UsersToBlock",
-						"dynamic-execute"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "UsersToUnblock",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "X-AppTenant",
-						"value": "{{TenantId}}",
-						"type": "text"
-					},
-					{
-						"key": "X-AppId",
-						"value": "{{AppId}}",
-						"type": "text"
-					},
-					{
-						"key": "X-AppSecret",
-						"value": "{{AppSecret}}",
-						"type": "text"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					},
-					{
-						"key": "X-AppUser",
-						"value": "{{UserId}}",
-						"type": "text"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
 					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"parameters\": {\n        \"ModifiedFrom\": null,\n        \"TaxPayerNumber\": \"44822111000159\",\n        \"UserId\": null,\n        \"Email\": null\n    }\n}"
 				},
 				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UsersToUnblock/dynamic-execute",
-					"protocol": "https",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UsersAdditionalInformation/dynamic-execute",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2593,8 +4217,7 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
-						"DE-UsersToUnblock",
+						"DE-UsersAdditionalInformation",
 						"dynamic-execute"
 					]
 				}
@@ -2634,11 +4257,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UserTypes/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2647,7 +4274,6 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
 						"DE-UserTypes",
 						"dynamic-execute"
 					]
@@ -2656,25 +4282,29 @@
 			"response": []
 		},
 		{
-			"name": "UsersAdditionalInformation",
+			"name": "UserTypologiesHistory",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "X-AppTenant",
-						"value": "{{TenantId}}"
+						"value": "{{TenantId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppId",
-						"value": "{{AppId}}"
+						"value": "{{AppId}}",
+						"type": "text"
 					},
 					{
 						"key": "X-AppSecret",
-						"value": "{{AppSecret}}"
+						"value": "{{AppSecret}}",
+						"type": "text"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					},
 					{
 						"key": "X-AppUser",
@@ -2684,11 +4314,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UsersAdditionalInformation/dynamic-execute",
-					"protocol": "https",
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-UserTypologiesHistory/dynamic-execute",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2697,8 +4331,64 @@
 						"v3",
 						"analytics",
 						"named-query",
-						"",
-						"DE-UsersAdditionalInformation",
+						"DE-UserTypologiesHistory",
+						"dynamic-execute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Workloads",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AppTenant",
+						"value": "{{TenantId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppId",
+						"value": "{{AppId}}",
+						"type": "text"
+					},
+					{
+						"key": "X-AppSecret",
+						"value": "{{AppSecret}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-AppUser",
+						"value": "{{UserId}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-Workloads/dynamic-execute",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"analytics",
+						"named-query",
+						"DE-Workloads",
 						"dynamic-execute"
 					]
 				}
@@ -2738,11 +4428,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{}"
+					"raw": "{\n    \"queryBuilder\": {\n        \"skip\": 0,\n        \"take\": 100\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "{{ApiUrl}}/api/v3/analytics/named-query/DE-WorkTypes/dynamic-execute",
-					"protocol": "https",
 					"host": [
 						"{{ApiUrl}}"
 					],
@@ -2801,16 +4495,6 @@
 		{
 			"key": "UserId",
 			"value": "",
-			"type": "string"
-		},
-		{
-			"key": "Version",
-			"value": "17",
-			"type": "string"
-		},
-		{
-			"key": "Id",
-			"value": "739b9986-184b-4a59-ae0e-2233b075bb25",
 			"type": "string"
 		}
 	]

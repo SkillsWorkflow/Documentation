@@ -35,4 +35,10 @@ This query has no parameters.
 | ArticleGroup | ag | FROM |
 | Company | c | JOIN |
 
-*Version: 2 · Category: Data Extraction · System: Yes*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| ServiceGroupRead | No |
+
+*Version: 4 · Category: Data Extraction · System: Yes*

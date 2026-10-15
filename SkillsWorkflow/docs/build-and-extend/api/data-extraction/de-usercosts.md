@@ -43,4 +43,10 @@ This query has no parameters.
 | Company | com | FROM |
 | Currency | cur | FROM |
 
-*Version: 2 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| UserMonthlyValueRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

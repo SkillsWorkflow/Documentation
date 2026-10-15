@@ -71,6 +71,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| CommercialClientRead | No |
 
-*Version: 11 · Category: Data Extraction · System: No*
+*Version: 14 · Category: Data Extraction · System: No*

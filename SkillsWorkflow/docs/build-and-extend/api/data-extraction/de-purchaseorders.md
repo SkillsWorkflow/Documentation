@@ -62,12 +62,8 @@ This query has no parameters.
 | ExternalId | doc | ExternalId |
 | ExternalError | doc | ExternalError |
 | StageType | wst | Name |
-| Stage | — | isnull(...) |
+| Stage | ws | Name |
 | Color | — | isnull(...) |
-| AlreadyRead | — | iif(...) |
-| CurrentUserInTeam | — | iif(...) |
-| CurrentUserPending | — | iif(...) |
-| CurrentUserInDepartment | — | iif(...) |
 | CurrencyIsoCode | curr | IsoCode |
 | Currency | curr | Name |
 | Articles | art | Articles |
@@ -87,14 +83,7 @@ This query has no parameters.
 | Supplier | s | LEFT JOIN |
 | UserLookup | usrCb | LEFT JOIN |
 | UserLookup | usrMb | LEFT JOIN |
-| BaseObjectRead | bor | LEFT JOIN |
 | WorkflowState | ws | JOIN |
-| Configuration | cfg | JOIN |
-| UserLookup | usr | LEFT JOIN |
-| CompanyLookup | com | LEFT JOIN |
-| LocalizationLanguage | lol | LEFT JOIN |
-| Localization | loc | LEFT JOIN |
-| cut | — | LEFT JOIN |
 | WorkflowStateType | wst | JOIN |
 | art | — | LEFT JOIN |
 
@@ -106,6 +95,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| PurchaseOrderRead | No |
 
-*Version: 1 · Category: Data Extraction · System: No*
+*Version: 4 · Category: Data Extraction · System: No*

@@ -33,4 +33,10 @@ This query has no parameters.
 | WorkType | wrk | FROM |
 | Company | com | LEFT JOIN |
 
-*Version: 4 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| WorkTypeRead | No |
+
+*Version: 6 · Category: Data Extraction · System: No*

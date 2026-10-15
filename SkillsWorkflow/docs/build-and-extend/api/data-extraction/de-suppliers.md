@@ -86,8 +86,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
 | SupplierRead | No |
-| Base | No |
 
-*Version: 2 · Category: Data Extraction · System: No*
+*Version: 4 · Category: Data Extraction · System: No*

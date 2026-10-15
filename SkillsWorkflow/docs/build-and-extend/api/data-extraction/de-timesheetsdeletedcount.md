@@ -16,7 +16,11 @@ POST /api/v3/analytics/named-query/DE-TimeSheetsDeletedCount/dynamic-execute
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| ModifiedFrom | `where (@ModifiedFrom is null or tim.ModifiedOnUtc >= @ModifiedFrom)` |
 
 ## Output Columns
 
@@ -30,4 +34,10 @@ This query has no parameters.
 |-------|-------|------|
 | TimesheetDeleted | tim | FROM |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| TimesheetRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

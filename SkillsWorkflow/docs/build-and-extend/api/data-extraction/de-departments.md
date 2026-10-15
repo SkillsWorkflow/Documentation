@@ -29,6 +29,8 @@ This query has no parameters.
 | DepartmentId | dep | Oid |
 | Department | dep | Name |
 | ModifiedOn | dep | ModifiedOnUtc |
+| DepartmentTypeId | dpt | Oid |
+| DepartmentType | dpt | Name |
 
 ## Source Tables
 
@@ -37,5 +39,12 @@ This query has no parameters.
 | Department | dep | FROM |
 | Division | div | JOIN |
 | Company | com | JOIN |
+| DepartmentType | dpt | JOIN |
 
-*Version: 3 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| DepartmentRead | No |
+
+*Version: 6 · Category: Data Extraction · System: No*

@@ -16,7 +16,12 @@ POST /api/v3/analytics/named-query/DE-EstimatesQuotesMonthCount/dynamic-execute
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| EstimateId | `(@EstimateId is null or est.Oid = @EstimateId) and` |
+| EstimateNumber | `(@EstimateNumber is null or est.Number = cast(@EstimateNumber as nvarchar))` |
 
 ## Output Columns
 
@@ -28,4 +33,10 @@ Column metadata could not be extracted — the SQL statement could not be parsed
 
 No table metadata detected.
 
-*Version: 2 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| EstimateRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

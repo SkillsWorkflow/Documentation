@@ -47,4 +47,10 @@ This query has no parameters.
 | Company | c | JOIN |
 | ArticleGroup | ag | LEFT JOIN |
 
-*Version: 2 · Category: Data Extraction · System: Yes*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| ServiceRead | No |
+
+*Version: 4 · Category: Data Extraction · System: Yes*

@@ -29,6 +29,7 @@ export async function generateDePages(deList, outputDir) {
                 position: 2,
                 collapsible: true,
                 collapsed: true,
+                link: { type: 'generated-index' },
             },
             null,
             2,
@@ -77,13 +78,17 @@ export async function generateDePages(deList, outputDir) {
         // --- Parameters ---
         lines.push('## Parameters');
         lines.push('');
-        const paramKeys = de.Parameters ? Object.keys(de.Parameters) : [];
+        const sqlParams = extractSqlParameters(de.Statement);
+        const paramKeys = [...new Set([...Object.keys(de.Parameters || {}), ...sqlParams.keys()])];
         if (paramKeys.length > 0) {
-            lines.push('| Parameter | Default |');
+            // The API binds only what the body sends: a missing parameter fails with "Must declare the scalar variable".
+            lines.push('Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.');
+            lines.push('');
+            lines.push('| Parameter | Used in |');
             lines.push('|-----------|---------|');
             for (const key of paramKeys) {
-                const val = de.Parameters[key];
-                lines.push(`| ${key} | ${val != null ? String(val) : '—'} |`);
+                const usage = sqlParams.get(key);
+                lines.push(`| ${key} | ${usage ? '`' + usage.replace(/\|/g, '\\|') + '`' : '—'} |`);
             }
         } else {
             lines.push('This query has no parameters.');
@@ -204,13 +209,13 @@ export async function updateLandingPage(landingPagePath, summaryRows) {
 
     const lines = [];
     lines.push('');
-    lines.push('| NamedQuery | Description | Filters | Columns | Details |');
+    lines.push('| NamedQuery | Description | Parameters | Columns | Details |');
     lines.push('|-----------|-------------|---------|---------|---------|');
 
     for (const row of summaryRows) {
         const filters = row.paramKeys.length > 0 ? row.paramKeys.join(', ') : '—';
         const colCount = row.parsed.columns.length;
-        const desc = row.description ? truncate(row.description, 60) : '—';
+        const desc = row.description ? truncate(row.description.replace(/\s+/g, ' ').trim(), 60) : '—';
         lines.push(`| ${row.name} | ${desc} | ${filters} | ${colCount} | [View](data-extraction/${row.slug}.md) |`);
     }
 
@@ -232,6 +237,23 @@ export async function updateLandingPage(landingPagePath, summaryRows) {
 function formatJoinType(jt) {
     if (!jt || jt === 'FROM') return 'FROM';
     return String(jt).toUpperCase().replace(/\s+/g, ' ');
+}
+
+// @CurrentUserId is filled in by the API from the calling user, so callers never send it.
+const SERVER_PARAMETERS = new Set(['currentuserid']);
+
+function extractSqlParameters(statement) {
+    const sql = statement.replace(/--[^\n]*/g, '');
+    const declared = new Set([...sql.matchAll(/declare\s+@(\w+)/gi)].map((m) => m[1].toLowerCase()));
+    const params = new Map();
+    for (const line of sql.split('\n')) {
+        for (const m of line.matchAll(/(?<!@)@(\w+)/g)) {
+            const key = m[1].toLowerCase();
+            if (declared.has(key) || SERVER_PARAMETERS.has(key) || [...params.keys()].some((k) => k.toLowerCase() === key)) continue;
+            params.set(m[1], line.trim().replace(/\s+/g, ' '));
+        }
+    }
+    return params;
 }
 
 function truncate(str, max) {

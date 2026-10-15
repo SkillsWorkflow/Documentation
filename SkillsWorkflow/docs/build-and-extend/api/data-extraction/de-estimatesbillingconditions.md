@@ -52,4 +52,10 @@ This query has no parameters.
 | CommercialClient | cli | JOIN |
 | Company | com | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| EstimateRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

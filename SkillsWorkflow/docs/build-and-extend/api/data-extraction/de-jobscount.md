@@ -16,7 +16,13 @@ POST /api/v3/analytics/named-query/DE-JobsCount/dynamic-execute
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| ModifiedFrom | `(@ModifiedFrom is null or del.ModifiedOn >= @ModifiedFrom) and` |
+| JobId | `(@JobId is null or job.Id = @JobId) and` |
+| JobNumber | `(@JobNumber is null or job.Number = @JobNumber)` |
 
 ## Output Columns
 
@@ -33,4 +39,10 @@ This query has no parameters.
 | WorkflowState | wfs | JOIN |
 | WorkflowStateType | wst | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| DeliverableRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

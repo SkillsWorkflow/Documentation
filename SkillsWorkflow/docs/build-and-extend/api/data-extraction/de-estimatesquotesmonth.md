@@ -35,6 +35,7 @@ This query has no parameters.
 | Project | — | (expression) |
 | EstimateItem | eit | Name |
 | EstimateItemDescription | eit | Description |
+| EstimateItemId | eit | Oid |
 | EstimateItemDetailDepartmentId | ddp | Id |
 | EstimateItemDetailDepartment | ddp | Name |
 | EstimateItemDetailTypologyGroupId | eid | UserTypologyGroup |
@@ -79,6 +80,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| EstimateRead | No |
 
-*Version: 11 · Category: Data Extraction · System: No*
+*Version: 14 · Category: Data Extraction · System: No*

@@ -54,4 +54,10 @@ This query has no parameters.
 | UserLookup | cre | LEFT JOIN |
 | UserLookup | mod | LEFT JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| ExpenseSheetRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

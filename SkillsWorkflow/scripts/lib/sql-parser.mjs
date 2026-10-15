@@ -35,8 +35,14 @@ export function parseSql(statement) {
     try {
         ast = parser.astify(cleaned, { database: 'TransactSQL' });
     } catch {
-        // If the parser fails, return what we can
-        return { columns: [], tables: [], customFieldsDirectives, parseError: true };
+        // CTE bodies often use T-SQL the parser rejects (string_agg ... within group); the outer select alone still names the output columns.
+        const outerSelect = /\)\s*(select\s[\s\S]*)$/i.exec(cleaned);
+        try {
+            if (!/^with\s/i.test(cleaned) || !outerSelect) throw new Error();
+            ast = parser.astify(outerSelect[1], { database: 'TransactSQL' });
+        } catch {
+            return { columns: [], tables: [], customFieldsDirectives, parseError: true };
+        }
     }
 
     // node-sql-parser may return an array; take the first statement

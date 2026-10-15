@@ -51,6 +51,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| EstimateRead | No |
 
-*Version: 1 · Category: Data Extraction · System: No*
+*Version: 3 · Category: Data Extraction · System: No*

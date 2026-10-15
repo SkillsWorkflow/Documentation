@@ -35,4 +35,10 @@ This query has no parameters.
 | CommercialClientCompany | ccc | LEFT JOIN |
 | Company | com | LEFT JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| CommercialClientRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

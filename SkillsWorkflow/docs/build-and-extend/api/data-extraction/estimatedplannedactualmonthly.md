@@ -85,4 +85,10 @@ This query has no parameters.
 | UserLookUp | usl | LEFT JOIN |
 | UserType | ust | LEFT JOIN |
 
-*Version: 1 · Category: Scheduler · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| EstimateRead | No |
+
+*Version: 3 · Category: Scheduler · System: No*

@@ -22,6 +22,7 @@ This query has no parameters.
 
 | Column | Source Table | Source Column |
 |--------|-------------|---------------|
+| Oid | utp | Oid |
 | DocumentOid | utp | Oid |
 | TypologyId | utp | Oid |
 | Typology | utp | Name |
@@ -52,4 +53,10 @@ This query has no parameters.
 
 - Module: `Skill.Module.BusinessObjects.UserTypology`
 
-*Version: 4 · Category: Data Extraction · System: Yes*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| UserTypologyRead | No |
+
+*Version: 6 · Category: Data Extraction · System: Yes*

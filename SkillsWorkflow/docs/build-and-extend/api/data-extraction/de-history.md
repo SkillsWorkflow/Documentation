@@ -27,6 +27,7 @@ This query has no parameters.
 | Version | — | Version |
 | StartDate | hst | StartDate |
 | EndDate | hst | EndDate |
+| Motive | hst | Motive |
 | UserId | usr | Id |
 | User | usr | Name |
 | UserHasImage | usr | HasImage |
@@ -52,6 +53,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| AuditRead | No |
 
-*Version: 1 · Category: Data Extraction · System: No*
+*Version: 4 · Category: Data Extraction · System: No*

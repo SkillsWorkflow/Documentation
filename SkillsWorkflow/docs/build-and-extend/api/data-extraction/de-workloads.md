@@ -24,9 +24,8 @@ This query has no parameters.
 | WorkloadId | dw | Oid |
 | DayUtc | dw | DayUtc |
 | Workload | dw | Workload |
-| JobId | dw | DocumentOid |
 | TimesheetId | dwt | Timesheet |
-| UserIs | usr | Id |
+| UserId | usr | Id |
 | User | usr | Name |
 | ClientId | cli | Oid |
 | Client | cli | Name |
@@ -47,4 +46,10 @@ This query has no parameters.
 | Project | prj | JOIN |
 | CommercialClient | cli | JOIN |
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| PlannedHoursRead | No |
+
+*Version: 3 · Category: Data Extraction · System: No*

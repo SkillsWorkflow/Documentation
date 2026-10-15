@@ -51,6 +51,9 @@ This query has no parameters.
 | Department | dep | Name |
 | StartDate | job | EntryDateUtc |
 | EndDate | job | AgreedDateUtc |
+| ParentId | par | Id |
+| Parent | par | Name |
+| ParentNumber | par | Number |
 | CreatedById | cre | Id |
 | CreatedBy | cre | Name |
 | CreatedByHasImage | cre | HasImage |
@@ -65,6 +68,7 @@ This query has no parameters.
 | Delayed | — | iif(...) |
 | Version | job | Version |
 | Motive | his | Motive |
+| EstimateItemId | job | EstimateItem |
 
 ## Source Tables
 
@@ -75,6 +79,7 @@ This query has no parameters.
 | UserLookup | mod | JOIN |
 | ProjectLookup | prj | JOIN |
 | ClientLookup | cli | JOIN |
+| JobLookup | par | LEFT JOIN |
 | CommercialClientProduct | pro | LEFT JOIN |
 | WorkflowState | wfs | JOIN |
 | WorkflowStateType | wst | JOIN |
@@ -94,6 +99,6 @@ This query has no parameters.
 
 | Role | Administrative |
 |------|---------------|
-| Administrator | Yes |
+| DeliverableRead | No |
 
-*Version: 16 · Category: Data Extraction · System: No*
+*Version: 23 · Category: Data Extraction · System: No*

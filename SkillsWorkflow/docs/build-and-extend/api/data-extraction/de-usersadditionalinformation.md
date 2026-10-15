@@ -30,4 +30,10 @@ This query has no parameters.
 | User | usr | FROM |
 | User_UserFields | puf | LEFT JOIN |
 
-*Version: 2 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| UserRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*

@@ -16,7 +16,13 @@ POST /api/v3/analytics/named-query/DE-Contracts/dynamic-execute
 
 ## Parameters
 
-This query has no parameters.
+Send every parameter below in the `parameters` object of the request body. Use `null` for a parameter you do not want to set.
+
+| Parameter | Used in |
+|-----------|---------|
+| ModifiedFrom | `(@ModifiedFrom is null or pjt.ModifiedOnUtc >= @ModifiedFrom) and` |
+| ContractId | `(@ContractId is null or cnt.Id = @ContractId) and` |
+| ContractNumber | `(@ContractNumber is null or cnt.Number = cast(@ContractNumber as nvarchar))` |
 
 ## Output Columns
 
@@ -28,4 +34,14 @@ Column metadata could not be extracted — the SQL statement could not be parsed
 
 No table metadata detected.
 
-*Version: 1 · Category: Data Extraction · System: No*
+## Custom Fields
+
+- Module: `Skill.Module.BusinessObjects.Contract`
+
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| ContractRead | No |
+
+*Version: 6 · Category: Data Extraction · System: No*

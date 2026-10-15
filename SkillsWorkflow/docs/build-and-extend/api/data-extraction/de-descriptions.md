@@ -42,4 +42,10 @@ This query has no parameters.
 | DocumentBrief | des | FROM |
 | UserLookup | cre | JOIN |
 
-*Version: 2 · Category: Data Extraction · System: No*
+## Access
+
+| Role | Administrative |
+|------|---------------|
+| DocumentRead | No |
+
+*Version: 4 · Category: Data Extraction · System: No*
