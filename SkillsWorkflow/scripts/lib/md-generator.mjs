@@ -14,7 +14,7 @@ const MARKER_END = '<!-- DE-TABLE-END -->';
  * Generate all per-DE Markdown pages and the _category_.json file.
  *
  * @param {Array}  deList     Enriched DE objects from de-loader.
- * @param {string} outputDir  Absolute path to docs/api/data-extraction/
+ * @param {string} outputDir  Absolute path to docs/build-and-extend/api/data-extraction/
  * @returns {Promise<Array>} Array of { name, slug, parsed } for each DE.
  */
 export async function generateDePages(deList, outputDir) {
@@ -25,11 +25,11 @@ export async function generateDePages(deList, outputDir) {
         join(outputDir, '_category_.json'),
         JSON.stringify(
             {
-                label: 'Queries',
-                position: 2,
+                label: 'Data Extraction API',
+                position: 1,
                 collapsible: true,
                 collapsed: true,
-                link: { type: 'generated-index' },
+                link: { type: 'doc', id: 'build-and-extend/api/data-extraction/index' },
             },
             null,
             2,
@@ -193,7 +193,7 @@ export async function generateDePages(deList, outputDir) {
 /**
  * Update the landing page by replacing content between DE-TABLE markers.
  *
- * @param {string} landingPagePath  Absolute path to data-extraction-api.md
+ * @param {string} landingPagePath  Absolute path to data-extraction/index.md
  * @param {Array}  summaryRows      Output from generateDePages.
  */
 export async function updateLandingPage(landingPagePath, summaryRows) {
@@ -216,7 +216,7 @@ export async function updateLandingPage(landingPagePath, summaryRows) {
         const filters = row.paramKeys.length > 0 ? row.paramKeys.join(', ') : '—';
         const colCount = row.parsed.columns.length;
         const desc = row.description ? truncate(row.description.replace(/\s+/g, ' ').trim(), 60) : '—';
-        lines.push(`| ${row.name} | ${desc} | ${filters} | ${colCount} | [View](data-extraction/${row.slug}.md) |`);
+        lines.push(`| ${row.name} | ${desc} | ${filters} | ${colCount} | [View](./${row.slug}.md) |`);
     }
 
     lines.push('');

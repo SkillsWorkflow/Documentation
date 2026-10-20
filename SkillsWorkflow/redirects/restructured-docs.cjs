@@ -14,6 +14,10 @@ module.exports = [
     "to": "/docs/build-and-extend/api/data-extraction-api"
   },
   {
+    "from": "/docs/category/queries",
+    "to": "/docs/build-and-extend/api/data-extraction-api"
+  },
+  {
     "from": "/docs/api/data-extraction/de-assignments",
     "to": "/docs/build-and-extend/api/data-extraction/de-assignments"
   },

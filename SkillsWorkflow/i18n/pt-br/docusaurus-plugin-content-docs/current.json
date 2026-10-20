@@ -175,9 +175,9 @@
     "message": "API",
     "description": "The label for category 'API' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Queries": {
-    "message": "Queries",
-    "description": "The label for category 'Queries' in sidebar 'docs'"
+  "sidebar.docs.category.Data Extraction API": {
+    "message": "Data Extraction API",
+    "description": "The label for category 'Data Extraction API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Workspaces": {
     "message": "Workspaces",
