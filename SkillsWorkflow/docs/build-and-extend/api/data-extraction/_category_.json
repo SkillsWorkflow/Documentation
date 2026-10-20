@@ -1,9 +1,10 @@
 {
-  "label": "Queries",
-  "position": 2,
+  "label": "Data Extraction API",
+  "position": 1,
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "doc",
+    "id": "build-and-extend/api/data-extraction/index"
   }
 }

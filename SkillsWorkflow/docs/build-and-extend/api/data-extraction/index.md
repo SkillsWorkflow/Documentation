@@ -1,0 +1,370 @@
+---
+id: index
+slug: /build-and-extend/api/data-extraction-api
+title: Data Extraction API
+description: "The Data Extraction API enables you to export data from Skills Workflow into external tools and systems—such as Excel, Power BI, or custom applications—by…"
+sidebar_label: Data Extraction API
+sidebar_position: 1
+---
+
+import LineageGraph from '@site/src/components/dataextraction/LineageGraph';
+
+## Overview
+
+The Data Extraction API enables you to export data from Skills Workflow into external tools and systems—such as Excel, Power BI, or custom applications—by dynamically querying named data sets.
+
+### Purpose
+
+The Data Extraction API is intended for reading and exporting data from Skills Workflow in a structured and efficient way. It is ideal for reporting, dashboards, and integration with external BI or analytics tools.
+
+### Use Cases
+
+Export data from Skills Workflow to:
+- Excel, Power BI, Google Sheets
+- Custom dashboards or internal reporting systems
+- Third-party analytics tools
+- Automation tools like Zapier or Make (Integromat)
+- Data warehouses or ETL pipelines
+
+### Key Limitations
+- Read-only: This API does not support creating or updating records.
+- Depends on predefined data sets.
+- Pagination recommended: Use pagination (skip/take) for large queries to avoid timeouts or incomplete results.
+- Rate limits may apply: For high-frequency requests, consider caching or batching.
+
+---
+
+## Getting Started
+
+### Authentication
+
+Before calling any endpoint, you must obtain the following credentials from our Support team:
+
+- **App Key** (`X-AppId`)  
+- **App Secret** (`X-AppSecret`)  
+- **Tenant ID** (`X-AppTenant`)
+
+> These are provided by the support team upon request.
+
+Include them in each request via HTTP headers:
+
+```http
+X-AppTenant:  <X-AppTenant>
+X-AppId:      <X-AppId>
+X-AppSecret:  <X-AppSecret>
+X-AppUser:    <UserId>     # Optional, if user-scoped filtering is required
+Content-Type: application/json
+```
+
+### Environments
+
+The API is available in four environments, depending on your subscription plan:
+
+- **Development**  
+- **Test**  
+- **UAT**  
+- **Production**  
+
+Each environment has its own base URL:
+
+```
+{{ApiUrl}}/api/v3/analytics
+```
+
+### Postman Collection
+
+To facilitate testing of the available queries, we provide a Postman collection file with all endpoints configured. You can download it from the link below:
+
+[Download Postman Collection - Data Extraction](/templates/data-extraction-postman-collention.json)
+
+After downloading, make sure to configure the variables `{{ApiUrl}}`, `{{TenantId}}`, `{{AppId}}`, `{{AppSecret}}`, and `{{UserId}}` according to the credentials you have been given.
+
+### Rate Limits
+
+:::note
+Each request must complete within **30 seconds**.
+:::
+
+- **Apply filters** to narrow the data set.  
+- **Use pagination** (`skip` / `take`) to retrieve large data sets in chunks.
+
+
+### Filtering Data
+
+To flexibly extract data, use the **`queryBuilder`** object in your POST body. It supports:
+
+| Property   | Type     | Description                                                                                       |
+|------------|----------|---------------------------------------------------------------------------------------------------|
+| `skip`     | integer  | Number of records to skip (for pagination).                                                       |
+| `take`     | integer  | Maximum number of records to return.                                                              |
+| `orderBy`  | array    | List of `{ field, direction }` objects to sort results.                                           |
+| `fields`   | array    | List of field names to include in the response.                                                   |
+| `filters`  | array    | Complex filters combining expressions, e.g. `[["Status","=","Open"],"and",["Priority",">",2]]`.  |
+
+### Filter Operations
+The following table lists available filter operations by data type. 
+The Query Builder uses the first operation in each array as the default operation for the specified data type.
+
+| Data Type      | Filter Operations                                                                                 |
+|----------------|---------------------------------------------------------------------------------------------------|
+| `string`       | `contains`, `notcontains`, `startswith`, `endswith`, `=`, `<>`, `isblank`, `isnotblank`           |
+| `numeric`      | `=`, `<>`, `<`, `>`, `<=`, `>=`, `between`, `isblank`, `isnotblank`                                |
+| `date`, `datetime` | `=`, `<>`, `<`, `>`, `<=`, `>=`, `between`, `isblank`, `isnotblank`                            |
+| `boolean`      | `=`, `<>`, `isblank`, `isnotblank`                                                                 |
+| `object`       | `isblank`, `isnotblank`                                                                            |
+
+```json
+{
+  "queryBuilder": {
+    "skip": 0,
+    "take": 100,
+    "orderBy": [
+      { "field": "UserId", "direction": "asc" }
+    ],
+    "fields": ["Team", "UserId"],
+    "filters": [
+      ["Team", "=", "Executor"],
+      "or",
+      ["Team", "=", "Requester"]
+    ]
+  }
+}
+```
+
+### Query Parameters
+
+Some Named Queries take parameters, such as `ModifiedFrom` for incremental loads or `From` and `To` for a date range. The table in [Named Queries and Available Parameters](#named-queries-and-available-parameters) lists them, and each query's page shows where each one is used.
+
+Send them in the `parameters` object, next to `queryBuilder`. Every parameter of the query must be present. Use `null` for the ones you do not want to filter by:
+
+```json
+{
+  "parameters": {
+    "From": "2025-01-01",
+    "To": null
+  },
+  "queryBuilder": {
+    "skip": 0,
+    "take": 100
+  }
+}
+```
+
+If a parameter is missing, the request fails with `400` and the message `Must declare the scalar variable "@To"`.
+
+---
+
+### Discovering Available Fields
+
+To know which fields you can request, perform an initial call with only pagination:
+
+```bash
+POST {{ApiUrl}}/api/v3/analytics/named-query/DE-Clients/dynamic-execute
+Headers:
+  X-AppTenant: <TenantId>
+  X-AppId:     <AppKey>
+  X-AppSecret: <AppSecret>
+Body:
+{
+  "queryBuilder": {
+    "skip": 0,
+    "take": 100
+  }
+}
+```
+
+This returns up to 100 records and reveals all available properties in the response schema, which you can then reference in subsequent `queryBuilder.fields` and `queryBuilder.filters`.
+
+---
+
+## Endpoints
+
+The collection includes several `dynamic-execute` endpoints, each under:
+
+```
+POST /api/v3/analytics/named-query/{NamedQuery}/dynamic-execute
+```
+
+Where `{NamedQuery}` is one of:
+### Named Queries and Available Parameters
+
+Below is a list of available Named Queries and their parameters (if any).
+
+<!-- DE-TABLE-START -->
+
+| NamedQuery | Description | Parameters | Columns | Details |
+|-----------|-------------|---------|---------|---------|
+| DE-AdditionalInformation | Extracts the Additional Information (to be filtered by docu… | — | 0 | [View](./de-additionalinformation.md) |
+| DE-Bills | Extracts data for bills. | — | 54 | [View](./de-bills.md) |
+| DE-Assignments | Extracts the teams of users associated with each document. | — | 13 | [View](./de-assignments.md) |
+| DE-Attendances | Extracts data on attendances. | From, To | 16 | [View](./de-attendances.md) |
+| DE-BillingClients | Extracts billing clients with their company, payment condit… | — | 33 | [View](./de-billingclients.md) |
+| DE-BillsItems | Extracts Bill Items information. | — | 21 | [View](./de-billsitems.md) |
+| DE-Brands | Extracts the list of brands. | ModifiedFrom | 5 | [View](./de-brands.md) |
+| DE-BusinessObjectTypes | Extracts business object types. | — | 6 | [View](./de-businessobjecttypes.md) |
+| DE-Capacity | Extracts capacity of the users considering their working da… | — | 30 | [View](./de-capacity.md) |
+| DE-Cities | Extracts all cities. | — | 4 | [View](./de-cities.md) |
+| DE-Clients | Extracts the list of clients. | — | 30 | [View](./de-clients.md) |
+| DE-ClientsCompanies | Extracts the information about what companies have access t… | — | 4 | [View](./de-clientscompanies.md) |
+| DE-Comments | Extracts comments from the feed. | — | 13 | [View](./de-comments.md) |
+| DE-CommentsReplies | Extracts replies of comments. | — | 12 | [View](./de-commentsreplies.md) |
+| DE-Companies | Extracts the list of companies. | — | 25 | [View](./de-companies.md) |
+| DE-CompaniesAdditionalInformation | Extracts the custom fields associated with the companies. | ModifiedFrom | 3 | [View](./de-companiesadditionalinformation.md) |
+| DE-Contracts | Extracts contracts information. | ModifiedFrom, ContractId, ContractNumber | 0 | [View](./de-contracts.md) |
+| DE-Countries | Extracts the list of countries. | — | 2 | [View](./de-countries.md) |
+| DE-CreditNotes | Extracts information on credit notes. | — | 50 | [View](./de-creditnotes.md) |
+| DE-CreditNotesItems | Extracts information about client credit notes items. | — | 18 | [View](./de-creditnotesitems.md) |
+| DE-Currencies | Extracts the list of currencies. | — | 5 | [View](./de-currencies.md) |
+| DE-Departments | Extracts the list of departments. | — | 9 | [View](./de-departments.md) |
+| DE-Descriptions | Extracts the different versions of the descriptions of docu… | — | 12 | [View](./de-descriptions.md) |
+| DE-Divisions | Extracts the list of divisions. | — | 8 | [View](./de-divisions.md) |
+| DE-Employees | Extracts employees. | — | 9 | [View](./de-employees.md) |
+| EstimatedPlannedActualMonthly | System generic extraction of estimated, planned and actual,… | — | 45 | [View](./estimatedplannedactualmonthly.md) |
+| DE-Estimates | Extracts the list of estimates. | — | 46 | [View](./de-estimates.md) |
+| DE-EstimatesBillingConditions | — | — | 21 | [View](./de-estimatesbillingconditions.md) |
+| DE-EstimatesCount | Gets the count of estimates for the given filters. | ModifiedFrom, EstimateId, EstimateNumber | 1 | [View](./de-estimatescount.md) |
+| DE-EstimatesQuotes | Extracts the estimate details. | — | 74 | [View](./de-estimatesquotes.md) |
+| DE-EstimatesQuotesCount | Counts the occurrences of quotes. | — | 1 | [View](./de-estimatesquotescount.md) |
+| DE-EstimatesQuotesMonthCount | Gets the count of estimate quotes for the given filters. | EstimateId, EstimateNumber | 0 | [View](./de-estimatesquotesmonthcount.md) |
+| DE-ExpenseSheets | Extracts expense sheets for integration purposes. | — | 22 | [View](./de-expensesheets.md) |
+| DE-ExpenseTypes | Extracts expense items types. | — | 15 | [View](./de-expensetypes.md) |
+| DE-Expenses | Extracts expenses for integration purposes. | — | 20 | [View](./de-expenses.md) |
+| DE-History | Extract history of documents. | — | 18 | [View](./de-history.md) |
+| DE-Holidays | Extracts the list of holidays. | ModifiedFrom | 6 | [View](./de-holidays.md) |
+| DE-Jobs | Extracts the list of jobs. | — | 48 | [View](./de-jobs.md) |
+| DE-JobsCount | Gets the count of jobs for the given filters. | ModifiedFrom, JobId, JobNumber | 1 | [View](./de-jobscount.md) |
+| DE-Leaves | Extracts employee leaves (such as vacation, sick leave or c… | — | 18 | [View](./de-leaves.md) |
+| DE-LeavesCount | — | From, To, ModifiedFrom | 1 | [View](./de-leavescount.md) |
+| DE-LeavesDeleted | Extracts deleted leaves using the parameter ModifiedFrom to… | ModifiedFrom | 2 | [View](./de-leavesdeleted.md) |
+| DE-LeavesDeletedCount | Gets the count of deleted leaves for the filters provided. | ModifiedFrom | 1 | [View](./de-leavesdeletedcount.md) |
+| DE-PaymentConditions | Extracts payment conditions per company, including days, di… | — | 12 | [View](./de-paymentconditions.md) |
+| DE-Products | Extracts the list of products. | — | 7 | [View](./de-products.md) |
+| DE-Projects | Extracts a list of projects. | — | 59 | [View](./de-projects.md) |
+| DE-ProjectsClassifications | Extract project classifications. | — | 9 | [View](./de-projectsclassifications.md) |
+| DE-ProjectsCount | Gets the count of projects for the provided filters. | ModifiedFrom, ProjectId, ProjectNumber | 0 | [View](./de-projectscount.md) |
+| DE-ProjectsAdditionalInformation | Extracts additional information from projects. | — | 4 | [View](./de-projectsadditionalinformation.md) |
+| DE-ProjectsPlannedTime | Extract projects. | — | 30 | [View](./de-projectsplannedtime.md) |
+| DE-ProjectsPlannedTimeCount | Gets the count of projects planned time for the provided fi… | ProjectId, ProjectNumber | 0 | [View](./de-projectsplannedtimecount.md) |
+| DE-ProjectsTypes | Extract projects types. | — | 11 | [View](./de-projectstypes.md) |
+| DE-PurchaseOrders | Extracts purchase orders data from the system. | — | 45 | [View](./de-purchaseorders.md) |
+| DE-RateCardsColumns | Extraction of rate cards' columns. | — | 23 | [View](./de-ratecardscolumns.md) |
+| DE-Requests | Extracts requests data. | — | 51 | [View](./de-requests.md) |
+| DE-Services | Extracts the existing services. | — | 16 | [View](./de-services.md) |
+| DE-ServicesGroups | Extracts the services groups. | — | 6 | [View](./de-servicesgroups.md) |
+| DE-Stages | Extracts the list of stages of the workflows. | — | 4 | [View](./de-stages.md) |
+| DE-Suppliers | Extracts suppliers for integration purposes. | — | 37 | [View](./de-suppliers.md) |
+| DE-Taxes | Extracts information about taxes. | — | 9 | [View](./de-taxes.md) |
+| DE-TimeSheets | Extracts the time entered in time sheets. | — | 41 | [View](./de-timesheets.md) |
+| DE-TimeSheetsCount | Gets the count of time sheets for the filters provided. | From, To, ModifiedFrom, ProjectId, ProjectNumber | 0 | [View](./de-timesheetscount.md) |
+| DE-TimeSheetsDeleted | Extracts time sheets that have been deleted. | ModifiedFrom | 2 | [View](./de-timesheetsdeleted.md) |
+| DE-TimeSheetsDeletedCount | Gets the count of deleted time sheet for the provided filte… | ModifiedFrom | 1 | [View](./de-timesheetsdeletedcount.md) |
+| DE-Transitions | Extracts the list of existing transitions. | — | 27 | [View](./de-transitions.md) |
+| DE-Types | Extracts job types. | — | 39 | [View](./de-types.md) |
+| DE-Typologies | Extracts the list of typologies of users. | — | 16 | [View](./de-typologies.md) |
+| DE-TypologyGroups | Extracts user typology groups of user typologies. | — | 4 | [View](./de-typologygroups.md) |
+| DE-TypologyGroupsCompanies | Extracts typology grous associated to companies | — | 5 | [View](./de-typologygroupscompanies.md) |
+| DE-TypologyGroupsDepartments | Extracts typology groups associated to departments. | — | 5 | [View](./de-typologygroupsdepartments.md) |
+| DE-UserCosts | Extracts cost of users. | — | 12 | [View](./de-usercosts.md) |
+| DE-UserTypes | Extracts the user types. | — | 2 | [View](./de-usertypes.md) |
+| DE-UserTypologiesHistory | Extracts the historical data of the typologies where the us… | — | 20 | [View](./de-usertypologieshistory.md) |
+| DE-Users | Extracts the list of users. | — | 53 | [View](./de-users.md) |
+| DE-UsersAdditionalInformation | — | — | 3 | [View](./de-usersadditionalinformation.md) |
+| DE-WorkTypes | Extracts the work types list. | — | 4 | [View](./de-worktypes.md) |
+| DE-Workloads | Extracts data from Workloads. | — | 12 | [View](./de-workloads.md) |
+| DE-EstimatesQuotesMonth | Extracts all data from estimates. | — | 33 | [View](./de-estimatesquotesmonth.md) |
+<!-- DE-TABLE-END -->
+
+---
+
+## Example Usage
+
+### Retrieve Filtered Assignments
+
+```bash
+POST {{ApiUrl}}/api/v3/analytics/named-query/DE-Assignments/dynamic-execute
+Headers:
+  X-AppTenant: <TenantId>
+  X-AppId:     <AppKey>
+  X-AppSecret: <AppSecret>
+  X-AppUser:   <UserId>
+Body:
+{
+  "queryBuilder": {
+    "skip": 0,
+    "take": 50,
+    "orderBy": [
+      { "field": "User", "direction": "asc" }
+    ],
+    "fields": ["Team", "UserId", "AssignmentDate"],
+    "filters": [
+      ["Team", "=", "Executor"],
+      "or",
+      ["Team", "=", "Requester"]
+    ]
+  }
+}
+```
+
+#### Sample Response
+
+```json
+{
+  "data": [
+    { "Team": "Executor",  "UserId": "U123", "AssignmentDate": "2025-04-01T09:30:00Z" },
+    { "Team": "Requester", "UserId": "U456", "AssignmentDate": "2025-04-02T14:45:00Z" }
+    // …
+  ],
+  "totalCount": 124
+}
+```
+
+## Scheduled Data Extraction
+
+You can configure **Schedules** in Skills Workflow to automate recurring data exports.
+
+This method is ideal for generating files (e.g., CSV) that can be directly consumed by external tools such as Power BI, Excel, Tableau, and others.
+
+### Overview
+
+Schedules allow you to:
+
+- Define a **Query** to extract data (same data source as the API).
+- Choose an export **Format** (e.g., `.csv`).
+- Set a **Cron Expression** to determine when the export should occur.
+
+Once scheduled, the system will run the query at the specified time and generate a downloadable file.
+
+### Configuration Example
+
+Here’s a configuration example of a schedule set up to export timesheet data every day at 5:00 AM UTC:
+<figure>
+
+![img](/img/api/data-extraction-api/schedule-timesheet.png)
+<figcaption>Schedule Configuration Screenshot</figcaption>
+</figure>
+
+
+_The above screenshot shows the “DE-TimeSheets” query being scheduled to export daily._
+
+
+### Cron Expression
+
+The **Cron Expression (UTC)** field defines when the job should run. For example:
+
+```
+5 0 * * *
+```
+
+This runs the job daily at 5:00 AM UTC.
+
+:::tip Best Practice
+We recommend running schedules outside working hours to minimize system load and ensure the data is complete.
+:::
+
+---
+
+## Data Relationships
+
+The diagram below shows the hierarchy between Data Extractions. Use the dropdown to focus on a specific DE and its immediate parent/children, or select "All" to view the full tree. Click any node to inspect its output columns.
+
+<LineageGraph />

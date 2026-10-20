@@ -30,7 +30,7 @@ const SOURCES_DIR = resolve(ROOT, 'data/de-sources');
 const OVERRIDES_DIR = resolve(ROOT, 'data/de-overrides');
 const GENERATED_DIR = resolve(ROOT, 'data/generated');
 const OUTPUT_DIR = resolve(ROOT, 'docs/build-and-extend/api/data-extraction');
-const LANDING_PAGE = resolve(ROOT, 'docs/build-and-extend/api/data-extraction-api.md');
+const LANDING_PAGE = resolve(ROOT, 'docs/build-and-extend/api/data-extraction/index.md');
 
 async function main() {
     console.log('═══════════════════════════════════════════');
