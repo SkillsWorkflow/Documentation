@@ -290,6 +290,11 @@ module.exports = {
           { from: '/docs/ai/use-cases/client-dashboards-and-forms/receiving-notifications-about-project-delays', to: '/docs/ai/use-cases/projects-and-jobs/identifying-project-delays' },
           { from: '/docs/ai/use-cases/accounts-status/finding-the-best-dashboard-for-account-allocation', to: '/docs/ai/use-cases/resource-management/finding-the-best-resource-management-dashboard' },
           { from: '/docs/ai/use-cases/resource-management/resource-management-overview-portal', to: '/docs/ai/use-cases/resource-management/finding-the-best-resource-management-dashboard' },
+          // Old URLs still linked from www.skillsworkflow.com and help.skillsworkflow.com.
+          { from: '/docs', to: '/' },
+          { from: '/docs/university', to: '/docs/learning-paths' },
+          { from: '/docs/integrations/eas-integration', to: '/docs/integrations/eas' },
+          { from: '/docs/integrations/iSAP-Job-Maintenance', to: '/docs/integrations/isap/job-maintenance' },
           ...require('./redirects/restructured-docs.cjs')
         ]
       }
