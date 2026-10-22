@@ -148,5 +148,4 @@ A agência, os clientes, os projetos, os números das Atividades, as etapas e as
 ## Artigos relacionados
 
 - [Ver as Atividades em que Você Está Trabalhando](/docs/ai/use-cases/projects-and-jobs/finding-pending-tasks-and-actions)
-- [Receber Notificações sobre Atrasos em Projetos](/docs/ai/use-cases/client-dashboards-and-forms/receiving-notifications-about-project-delays)
 - [Assistente de IA](/docs/ai/ai-assistant)

@@ -128,6 +128,6 @@ A agência, os clientes, os projetos, as Atividades, as pessoas e as horas deste
 
 ## Artigos relacionados
 
-- [Identificar Escassez de Recursos](/docs/ai/use-cases/resource-management/identifying-resource-scarcity)
+- [Verificar Horas Contratadas e Capacidade da Equipe](/docs/ai/use-cases/resource-management/comparing-contracted-and-available-hours)
 - [Transformar um Brief de Campanha em uma Atividade](/docs/ai/use-cases/projects-and-jobs/creating-a-job-using-a-briefing-template)
 - [Assistente de IA](/docs/ai/ai-assistant)
