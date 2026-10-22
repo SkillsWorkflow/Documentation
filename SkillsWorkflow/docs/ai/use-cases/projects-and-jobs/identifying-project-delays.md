@@ -144,5 +144,4 @@ The agency, clients, projects, Job numbers, stages and transitions in this examp
 ## Related articles
 
 - [See the Jobs You're Working On](/docs/ai/use-cases/projects-and-jobs/finding-pending-tasks-and-actions)
-- [Receiving Notifications About Project Delays](/docs/ai/use-cases/client-dashboards-and-forms/receiving-notifications-about-project-delays)
 - [AI Assistant](/docs/ai/ai-assistant)

@@ -148,5 +148,4 @@ La agencia, los clientes, los proyectos, los números de Job, las etapas y las t
 ## Artículos relacionados
 
 - [Ver los Jobs en los que Trabajas](/docs/ai/use-cases/projects-and-jobs/finding-pending-tasks-and-actions)
-- [Recibir Notificaciones Sobre Retrasos de Proyecto](/docs/ai/use-cases/client-dashboards-and-forms/receiving-notifications-about-project-delays)
 - [AI Assistant](/docs/ai/ai-assistant)
