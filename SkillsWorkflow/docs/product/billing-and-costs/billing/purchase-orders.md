@@ -29,6 +29,13 @@ A purchase order moves through the stages configured for its workflow. Available
 
 From the Purchase Orders list, select one or more purchase orders and click **Invoice**. Skills Workflow generates a Supplier Invoice or a Supplier Note from each one and marks the purchase order Invoiced.
 
+## Changes to the estimate after buying {#changes-after-buying}
+
+When you buy from an estimate, each purchase order line takes the service's description, article, department and VAT as they are at that moment. Changing the service in the estimate afterwards does not update purchase orders already created, and buying again does not create a new purchase order when only the description changed.
+
+To fix a mistake in a service, correct it in the estimate and in the purchase order itself.
+
 ## Related articles
 
 - [Create an estimate](../../commercial/estimates/create-an-estimate.md)
+- [Errors and common questions](/docs/product/troubleshooting)

@@ -25,8 +25,13 @@ Los campos propios de una factura son su **Nombre**, **Fecha**, **Fecha de Gesti
 Una factura también tiene secciones de **Info**, **Archivos** y **Feed**, y puede tener
 workspaces, como los demás documentos en Skills Workflow.
 
+## Cambios en el presupuesto después de facturar {#changes-after-invoicing}
+
+Una factura creada desde un presupuesto toma la descripción de cada entregable y de sus servicios tal como están cuando factura. Corregir el presupuesto después no cambia las facturas ya creadas. Para corregir una factura ya emitida al cliente, use una [nota de crédito](/docs/product/billing-and-costs/billing/credit-notes).
+
 ## Artículos relacionados
 
 - [Autorizaciones de factura](/docs/product/billing-and-costs/billing/invoice-authorizations)
 - [Notas de credito](/docs/product/billing-and-costs/billing/credit-notes)
 - [Facturas de Proveedor](/docs/product/billing-and-costs/billing/supplier-invoices)
+- [Errores y preguntas frecuentes](/docs/product/troubleshooting)

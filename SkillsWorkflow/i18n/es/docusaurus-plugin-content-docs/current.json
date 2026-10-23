@@ -282,5 +282,9 @@
   "sidebar.trust.category.Service Quality & Change Management": {
     "message": "Calidad de Servicio y Gestión de Cambios",
     "description": "The label for category 'Service Quality & Change Management' in sidebar 'trust'"
+  },
+  "sidebar.docs.category.Errors & FAQ": {
+    "message": "Errores y preguntas frecuentes",
+    "description": "The label for category 'Errors & FAQ' in sidebar 'docs'"
   }
 }

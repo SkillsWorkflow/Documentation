@@ -62,8 +62,25 @@ Resources will be available under "Planned Time"
 <figcaption></figcaption>
 </figure>
 
+## Approve deliverables before invoicing {#approve-deliverables}
+
+Only deliverables marked as **Approved** are invoiced. A new service is created already approved, but a new deliverable is not. Before invoicing, open the estimate and mark the deliverables to invoice as **Approved**.
+
+Your workflow can do this for you. When the **ApproveItems** action is added to a transition, moving the estimate through that transition marks every deliverable and every service of the estimate as approved. Your administrator can tell you whether your estimate workflow uses it. See [Workflow Actions](/docs/administration/workflows/workflow-actions).
+
+## Error: "There must be at least one condition with billing value / percentage" {#error-billing-condition-value-percentage}
+
+This message appears when you invoice an estimate and none of its billing conditions has an amount that can be invoiced. Check the estimate in this order:
+
+1. At least one deliverable is marked as **Approved**. Only approved deliverables are invoiced, and the billing conditions are checked only on those deliverables.
+2. If an approved deliverable has its own billing conditions, at least one of them needs a **Value** or a **Percentage** other than 0. When every approved deliverable has its own billing conditions, the estimate's **Billing Conditions** are not used.
+3. In the estimate's **Billing Conditions**, fill in the field that matches the **Amount Type**: **Percentage** when the type is Percentage, **Value** when the type is Value. A value typed into the other field does not count.
+
+The estimate's billing conditions cannot add up to more than 100% of the estimate value without VAT.
+
 ## Related articles
 
 - [Create Estimate](/docs/product/commercial/estimates/create-estimate)
 - [Invoice Authorizations](/docs/product/billing-and-costs/billing/invoice-authorizations)
 - [Credit Notes](/docs/product/billing-and-costs/billing/credit-notes)
+- [Errors and common questions](/docs/product/troubleshooting)

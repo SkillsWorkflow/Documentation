@@ -25,8 +25,13 @@ Os campos próprios de uma fatura são seu **Nome**, **Data**, **Data de Gestão
 Uma fatura também tem seções de **Info**, **Arquivos** e **Feed**, e pode ter workspaces,
 como os outros documentos no Skills Workflow.
 
+## Alterações no orçamento depois de faturar {#changes-after-invoicing}
+
+Uma fatura criada a partir de um orçamento fica com a descrição de cada entregável e dos seus serviços como estão no momento em que você fatura. Corrigir o orçamento depois disso não altera as faturas já criadas. Para corrigir uma fatura já emitida ao cliente, use uma [nota de crédito](/docs/product/billing-and-costs/billing/credit-notes).
+
 ## Artigos relacionados
 
 - [Autorizações de fatura](/docs/product/billing-and-costs/billing/invoice-authorizations)
 - [Notas de credito](/docs/product/billing-and-costs/billing/credit-notes)
 - [Faturas de Fornecedor](/docs/product/billing-and-costs/billing/supplier-invoices)
+- [Erros e dúvidas frequentes](/docs/product/troubleshooting)

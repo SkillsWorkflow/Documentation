@@ -366,5 +366,9 @@
   "sidebar.docs.category.People & Access.link.generated-index.description": {
     "message": "Use cases para configurar novas pessoas, verificar o que elas podem acessar e fazer a passagem de trabalho quando alguém sai.",
     "description": "The generated-index page description for category 'People & Access' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Errors & FAQ": {
+    "message": "Erros e dúvidas frequentes",
+    "description": "The label for category 'Errors & FAQ' in sidebar 'docs'"
   }
 }
