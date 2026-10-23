@@ -58,3 +58,9 @@ Na listagem das notas de encomenda pode aplicar diversos filtros, tais como: for
 
 <figcaption>Lista de notas de encomenda</figcaption>
 </figure>
+
+## Alterações ao orçamento depois de comprar {#changes-after-buying}
+
+Quando compra a partir de um orçamento, cada linha da nota de encomenda fica com a descrição, o artigo, o departamento e o IVA do serviço tal como estão nesse momento. Alterar o serviço no orçamento depois disso não atualiza as notas de encomenda já criadas, e voltar a comprar não cria uma nota de encomenda nova quando só mudou a descrição.
+
+Para corrigir um engano num serviço, corrija-o no orçamento e na própria nota de encomenda.

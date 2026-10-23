@@ -20,8 +20,13 @@ A bill's own fields are its **Name**, **Date**, **Management Date**, **Due** and
 
 A bill also has **Info**, **Files** and **Feed** sections, and can carry workspaces, like other documents in Skills Workflow.
 
+## Changes to the estimate after invoicing {#changes-after-invoicing}
+
+A bill created from an estimate takes the description of each deliverable and its services as they are when you invoice. Correcting the estimate afterwards does not change bills already created. To correct a bill already issued to the client, use a [credit note](/docs/product/billing-and-costs/billing/credit-notes).
+
 ## Related articles
 
 - [Invoice Authorizations](/docs/product/billing-and-costs/billing/invoice-authorizations)
 - [Credit Notes](/docs/product/billing-and-costs/billing/credit-notes)
 - [Supplier Invoices](/docs/product/billing-and-costs/billing/supplier-invoices)
+- [Errors and common questions](/docs/product/troubleshooting)

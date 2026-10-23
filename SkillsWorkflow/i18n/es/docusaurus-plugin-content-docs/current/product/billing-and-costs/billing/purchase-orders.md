@@ -32,3 +32,9 @@ Para validar la emisión correcta de documentos, simplemente navegue al área de
 ![img-box-shadow](/img/university/bills/bills-lesson1-5.png)
 <figcaption></figcaption>
 </figure>
+
+## Cambios en el presupuesto después de comprar {#changes-after-buying}
+
+Cuando compra desde un presupuesto, cada línea de la orden de compra toma la descripción, el artículo, el departamento y el IVA del servicio tal como están en ese momento. Cambiar el servicio en el presupuesto después no actualiza las órdenes de compra ya creadas, y volver a comprar no crea una orden de compra nueva cuando solo cambió la descripción.
+
+Para corregir un error en un servicio, corríjalo en el presupuesto y en la propia orden de compra.

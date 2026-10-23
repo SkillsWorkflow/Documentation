@@ -60,8 +60,25 @@ Los recursos estarán disponibles en "Tiempo planificado"
 <figcaption></figcaption>
 </figure>
 
+## Aprobar los entregables antes de facturar {#approve-deliverables}
+
+Solo se facturan los entregables marcados como **Aprobado**. Un servicio nuevo se crea ya aprobado, pero un entregable nuevo no. Antes de facturar, abra el presupuesto y marque como **Aprobado** los entregables que va a facturar.
+
+El workflow puede hacerlo por usted. Cuando la acción **ApproveItems** está en una transición, pasar el presupuesto por esa transición marca como aprobados todos los entregables y todos los servicios del presupuesto. Su administrador puede decirle si el workflow de presupuestos la usa. Consulte [Acciones de Workflow](/docs/administration/workflows/workflow-actions).
+
+## Error: "Debe haber al menos una condición con el valor de facturación / porcentaje." {#error-billing-condition-value-percentage}
+
+Este mensaje aparece al facturar un presupuesto cuando ninguna de sus condiciones de facturación tiene un importe que se pueda facturar. Revise el presupuesto en este orden:
+
+1. Al menos un entregable está marcado como **Aprobado**. Solo se facturan los entregables aprobados, y las condiciones de facturación solo se comprueban en esos entregables.
+2. Si un entregable aprobado tiene condiciones de facturación propias, al menos una de ellas necesita un **Importe** o un **Porcentaje** distinto de 0. Cuando todos los entregables aprobados tienen condiciones de facturación propias, no se usan las **Condiciones de Facturación** del presupuesto.
+3. En las **Condiciones de Facturación** del presupuesto, rellene el campo que corresponde al **Tipo de Cantidad**: **Porcentaje** cuando el tipo es Porcentaje, **Importe** cuando el tipo es Importe. Un valor escrito en el otro campo no cuenta.
+
+La suma de las condiciones de facturación del presupuesto no puede superar el 100% del valor del presupuesto sin IVA.
+
 ## Artículos relacionados
 
 - [Crear un Estimado](/docs/product/commercial/estimates/create-estimate)
 - [Autorizaciones de factura](/docs/product/billing-and-costs/billing/invoice-authorizations)
 - [Notas de credito](/docs/product/billing-and-costs/billing/credit-notes)
+- [Errores y preguntas frecuentes](/docs/product/troubleshooting)
