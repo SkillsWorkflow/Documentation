@@ -15,6 +15,8 @@
 - Every referenced local image must exist under `static/img/...`; Docusaurus fails the build on broken Markdown image links.
 - Run `npm run build` after documentation changes that affect pages, navigation, images, or locales.
 
+Documenting a feature from its ticket or PR to a documentation PR follows the procedure in `.claude/skills/feature-docs/SKILL.md`; the rules below are what that procedure applies.
+
 ## Documentation Architecture and Article Design
 
 ### Start From the Existing Article
