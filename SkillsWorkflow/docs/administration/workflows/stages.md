@@ -28,6 +28,12 @@ Every workflow is built from a sequence of stages connected by [transitions](tra
 | **Percentage** | A completion percentage (0–100) associated with this stage. |
 | **Suggest Percentage** | If enabled, the system auto-suggests the stage percentage when a transition fires. |
 
+<figure>
+
+![img-box-shadow-sm](/img/workflow-management/stage-settings.png)
+<figcaption>Stage properties in Workflow Management, where Allows Timesheet is shown as Accepts hours and Delayed as Waiting on others.</figcaption>
+</figure>
+
 ---
 
 ## Stage Teams
@@ -42,6 +48,12 @@ A stage team links an **assignment type** (e.g. Requester, Executor, Reviewer) t
 | **Allow Write** | The team can edit the document. |
 | **Allow Pending** | The team receives pending/task notifications. |
 | **Must Send Notification** | A notification is sent to team members when a document enters this stage. |
+
+<figure>
+
+![img-box-shadow-sm](/img/workflow-management/stage-team-access.png)
+<figcaption>Stage teams in Workflow Management. The R, W, P and N columns are Allow Read, Allow Write, Allow Pending and Must Send Notification.</figcaption>
+</figure>
 
 :::tip
 Use stage teams to enforce that only the right people can see and edit documents at each step. For example, only the *Executor* team might have write access during the "In Production" stage.
@@ -66,3 +78,4 @@ For example, a stage named "Approved" might have:
 - The **final stage** is the terminal state (e.g. "Closed" or "Completed").
 - Stages referenced by [transitions](transitions.md) cannot be deleted until those transitions are removed first.
 - Use [stage types](stage-types.md) to group stages for reporting and automation rules.
+- To edit stages on a diagram, use [Workflow Management](/docs/administration/workflows/workflow-management).
