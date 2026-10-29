@@ -33,6 +33,12 @@ Transitions are the core mechanism for controlling **how** and **when** document
 | **User Must Be In Team** | Only users who are in the document's team can execute the transition. |
 | **Must Send Notification** | A notification is sent when the transition executes. |
 
+<figure>
+
+![img-box-shadow-sm](/img/workflow-management/transition-settings.png)
+<figcaption>Transition properties in Workflow Management. Message Text is shown as Confirmation text and the required options under Requirements.</figcaption>
+</figure>
+
 ---
 
 ## Transition Roles
@@ -44,6 +50,12 @@ Transitions can be **restricted by security role**. Only users who have one of t
 | **Role** | The security role allowed to execute the transition. |
 | **Check Limits** | If enabled, the role is only valid within a value range. |
 | **Start Value / End Value** | The value range for limit-based restrictions (e.g. approval amount limits). |
+
+<figure>
+
+![img-box-shadow-sm](/img/workflow-management/transition-roles.png)
+<figcaption>Transition roles in Workflow Management. Check value limits shows the From and To values.</figcaption>
+</figure>
 
 :::tip Example
 You can set up a transition "Approve" that is only available to users with the "Manager" role, and a separate "Approve (Senior)" transition for amounts above €50,000 that requires the "Director" role with appropriate limit values.
@@ -59,6 +71,12 @@ A **motive** is a reason the user must select when executing a transition. Motiv
 |----------|-------------|
 | **Description** | The motive text shown to the user (e.g. "Budget exceeded", "Client request"). |
 | **Active** | Whether this motive is currently available for selection. |
+
+<figure>
+
+![img-box-shadow-sm](/img/workflow-management/transition-motives.png)
+<figcaption>Transition motives in Workflow Management.</figcaption>
+</figure>
 
 ---
 
@@ -96,6 +114,14 @@ When configuring a transition action:
 1. Select the **Action Type** from the list below
 2. Some actions require an **Options** value (typically a query name)
 3. The action fires automatically when the transition executes
+
+<figure>
+
+![img-box-shadow-sm](/img/workflow-management/transition-actions.png)
+<figcaption>A transition action in Workflow Management, with its value field below the action type.</figcaption>
+</figure>
+
+To edit transitions on a diagram, use [Workflow Management](/docs/administration/workflows/workflow-management).
 
 ### Data-Source Actions
 

@@ -45,7 +45,7 @@ The interactive diagram below shows how workflow entities relate to each other. 
 
 ### Workflow
 
-The top-level container. Each document type has exactly one workflow with an initial and final stage.
+The top-level container. A document type can have several workflows, each with its own initial and final stage. To create and edit workflows on a diagram, use [Workflow Management](/docs/administration/workflows/workflow-management).
 
 ### [Stages](stages.md)
 
