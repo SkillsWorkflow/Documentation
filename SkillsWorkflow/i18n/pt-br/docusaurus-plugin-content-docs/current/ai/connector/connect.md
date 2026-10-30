@@ -71,10 +71,6 @@ Substitua o endereço pelo do seu tenant e cada `<...>` pelo valor que a equipe 
 </TabItem>
 <TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
 
-:::preview
-Esta configuração segue a documentação do próprio Codex e ainda não foi testada com o Skills Workflow.
-:::
-
 O Codex CLI, a extensão do Codex para IDE e o app de desktop do ChatGPT compartilham um único arquivo de configuração, `~/.codex/config.toml`. Adicione o conector a ele:
 
 ```toml
@@ -88,10 +84,6 @@ Substitua o endereço pelo do seu tenant e cada `<...>` pelo valor que a equipe 
 
 </TabItem>
 <TabItem value="copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/githubcopilot.svg" alt="" className="sw-tool-tab__mono" />GitHub Copilot</span>}>
-
-:::preview
-Esta configuração segue a documentação do Visual Studio Code e ainda não foi testada com o Skills Workflow.
-:::
 
 No Visual Studio Code, adicione o conector ao `mcp.json`, no seu perfil de usuário ou em `.vscode/mcp.json` de um projeto. Para o arquivo do usuário, execute **MCP: Open User Configuration** a partir da Command Palette.
 
