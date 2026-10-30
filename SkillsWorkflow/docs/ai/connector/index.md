@@ -21,13 +21,13 @@ The connection is a connector you add once, with credentials the Skills Workflow
 
 ## Planned
 
-These are not available yet and have no date. The behaviour below is what is expected, and may change.
+These are not available yet and have no date. Each page shows an example built on a demo tenant and the behaviour that is expected, which may change.
 
 | What your agency needs | Expected behaviour |
 |---|---|
-| A report to print or send | A report laid out for paper. You open it, print it or save it as PDF, and the copy keeps the figures and the date of that moment, ready to email to someone outside Skills Workflow. |
-| A form that creates work | A form a client or a colleague fills in, which creates the job in Skills Workflow with the answers in its fields, as the person who sent it. |
-| Numbers on a screen in the studio | A view made for a TV: few figures in large type, such as the day's deadlines and the jobs waiting on clients, refreshing on its own. |
+| [A report to print or send](/docs/ai/connector/ai-connector-printable-reports) | A report laid out for paper. You open it, print it or save it as PDF, and the copy keeps the figures and the date of that moment, ready to email to someone outside Skills Workflow. |
+| [A form that creates work](/docs/ai/connector/ai-connector-forms) | A form a client's team fills in. Each request becomes a job in the right project, in its first stage, with the details in the job's feed, created as the person who sent it. |
+| [Numbers on a screen in the studio](/docs/ai/connector/ai-connector-wall-displays) | A board made for a TV: what is due in the next two weeks, what is waiting on the client and what is late, in large type and refreshing on its own. |
 
 ### Work in Skills Workflow from your AI tool
 
