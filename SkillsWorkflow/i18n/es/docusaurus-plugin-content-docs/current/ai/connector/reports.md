@@ -27,7 +27,7 @@ Disponible. Necesitas el [conector de Skills Workflow en tu herramienta de IA](/
 - Las queries son de solo lectura. Un informe nunca cambia datos.
 - Cada query comprueba sus roles. A una persona sin ellos se le deniegan los datos del informe, igual que en Skills Workflow.
 - Los gráficos se dibujan dentro de la página. Un informe no puede cargar librerías de gráficos ni nada más desde otro sitio.
-- El informe muestra los datos tal como están cuando se abre. Un informe para imprimir o enviar, con las cifras de un momento dado, está [planeado](/docs/ai/connector#planned).
+- El informe muestra los datos tal como están cuando se abre. Un informe para imprimir o enviar, con las cifras de un momento dado, está planeado: consulta [Imprimir o Enviar un Informe tal como Está Hoy](/docs/ai/connector/ai-connector-printable-reports).
 
 ## Artículos relacionados
 

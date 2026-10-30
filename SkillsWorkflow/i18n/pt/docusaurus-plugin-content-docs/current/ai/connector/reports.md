@@ -27,7 +27,7 @@ Disponível. Precisa do [conector do Skills Workflow na sua ferramenta de IA](/d
 - As queries são apenas de leitura. Um relatório nunca altera dados.
 - Cada query verifica os seus perfis. A uma pessoa sem eles são recusados os dados no relatório, tal como no Skills Workflow.
 - Os gráficos são desenhados dentro da página. Um relatório não pode carregar bibliotecas de gráficos nem nada de outro site.
-- O relatório mostra os dados tal como estão quando abre. Um relatório para imprimir ou enviar, com os valores de um dado momento, está [planeado](/docs/ai/connector#planned).
+- O relatório mostra os dados tal como estão quando abre. Um relatório para imprimir ou enviar, com os valores de um dado momento, está planeado: veja [Imprimir ou Enviar um Relatório Tal Como Está Hoje](/docs/ai/connector/ai-connector-printable-reports).
 
 ## Artigos relacionados
 
