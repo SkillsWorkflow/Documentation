@@ -71,7 +71,19 @@ Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envi
 </TabItem>
 <TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
 
-Codex CLI, la extensión de Codex para IDE y la app de escritorio de ChatGPT comparten un único archivo de configuración, `~/.codex/config.toml`. Añade el conector en él:
+En la app de Codex:
+
+1. Abre **Plugins** y selecciona la pestaña **MCPs**.
+2. Selecciona **Add** y añade un servidor MCP.
+3. En **URL**, escribe la dirección del conector.
+4. Deja **Bearer token env var** vacío.
+5. En **Headers**, selecciona **Add header** para cada credencial y rellena `x-app-id`, `x-tenant-id` y `x-app-key`, cada una con el valor que envió el equipo de Skills Workflow.
+6. Selecciona **Save**.
+
+   ![img-box-shadow-popup](/img/ai/codex/codex-mcp-headers.png)
+   <figcaption>El servidor MCP de Skills Workflow en Codex, con la dirección del conector y sus tres cabeceras.</figcaption>
+
+Codex CLI y la extensión de Codex para IDE leen los mismos servidores de `~/.codex/config.toml`. Para añadir el conector ahí:
 
 ```toml
 [mcp_servers.skills-workflow]
@@ -80,7 +92,7 @@ http_headers = { "x-app-id" = "<App ID>", "x-tenant-id" = "<Tenant ID>" }
 env_http_headers = { "x-app-key" = "SW_APP_KEY" }
 ```
 
-Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envió el equipo de Skills Workflow. La app key se lee de la variable de entorno `SW_APP_KEY`, lo que la mantiene fuera del archivo; asigna la app key a esa variable antes de iniciar Codex.
+Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envió el equipo de Skills Workflow. La app key se lee de la variable de entorno `SW_APP_KEY`; asígnale la app key antes de iniciar Codex.
 
 </TabItem>
 <TabItem value="copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/githubcopilot.svg" alt="" className="sw-tool-tab__mono" />GitHub Copilot</span>}>
@@ -135,6 +147,9 @@ La respuesta enumera las ocho tools del conector:
 | `publish_app_page_version` | Publica una versión nueva de una pantalla |
 | `set_app_page_live_version` | Elige la versión de una pantalla que reciben los usuarios |
 | `get_app_page_url` | Da la dirección de una pantalla |
+
+![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
+<figcaption>Codex respondiendo a la pregunta con las ocho tools del conector.</figcaption>
 
 Esta pregunta no lee ni escribe nada en tu tenant. Si la herramienta dice que no tiene tools de Skills Workflow, o informa de un error, uno de los valores es incorrecto; compara la dirección y cada cabecera con lo que envió el equipo de Skills Workflow.
 
