@@ -10,7 +10,7 @@ import styles from './styles.module.css';
  * Icons are the ones already mapped in src/data/icons.js for the matching
  * product area (e.g. `fal fa-sparkles` for /ai) — no new symbols.
  */
-function Walkthrough({ subtitle, sidebar, children }) {
+function Walkthrough({ subtitle, sidebar, title = 'AI Assistant Chat', children }) {
   return (
     <div className={styles.walkthroughContainer}>
       <div className={styles.walkthrough}>
@@ -21,7 +21,7 @@ function Walkthrough({ subtitle, sidebar, children }) {
               <span className={styles.chatHeaderIcon} aria-hidden="true">
                 <i className="fal fa-sparkles" />
               </span>
-              <span className={styles.chatHeaderLabel}>AI Assistant Chat</span>
+              <span className={styles.chatHeaderLabel}>{title}</span>
             </div>
             <div className={styles.conversation}>{children}</div>
             <div className={styles.chatFooter} aria-hidden="true">

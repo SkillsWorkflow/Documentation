@@ -69,7 +69,7 @@ Charts are therefore drawn in the page itself.
 2. **Name the data.** Which report, which figures, which records. A portal reads what your data extraction queries publish, so a question no query answers needs the query first.
 3. **The portal is generated.** The `client-portal` skill gives the agent the whole contract: the SDK, the sandbox, the query grammar, and the rule that no endpoint or column may be invented. Where a fact cannot be established, the agent says so.
 4. **Review it against the states, not just the happy path.** A portal must render an empty answer, a refused one and an unreachable service as three different things. Open it as a user who is *not* granted the report and check what they see.
-5. **Publish it** to the `Portals` folder in your tenant's file system, under `{client}/{portal}/`.
+5. **Publish it.** With the [Skills Workflow connector in Claude](/docs/ai/claude/ai-claude-connect), Claude publishes the portal to the `Portals` folder of your tenant's file system, under `{client}/{portal}/`, and gives you its address.
 
 ## Rules and behaviour
 
@@ -83,13 +83,15 @@ Charts are therefore drawn in the page itself.
 
 These are known and worth deciding on before portals go to client users:
 
-- **There is no publishing tool.** A portal is published by creating its folders and uploading its files.
+- **The connector publishes one file per portal.** A portal published from Claude is a single `index.html`, with its styles, scripts and images inside it. A portal made of several files is published by creating its folders and uploading its files.
 - **A portal is not scoped to its client.** Access today is "has a session, and the folder exists". The client segment in the URL does not restrict who may open it, so any signed-in user can open any client's portal if they know its address. Restricting the portal folders by role is the mechanism to use in the meantime.
 - **Who may write to the `Portals` folder is a security boundary.** A portal runs script in the browser of everyone who opens it. Treat write access to that folder as you would treat deploying code.
 - **A build that emits absolute paths will not work.** A portal is served under its own path; a page whose assets are addressed from the site root loses all of them. Generate relative paths, or configure the base path at build time.
 
 ## Related articles
 
+- [Skills Workflow in Claude](/docs/ai/claude)
+- [Connect Claude to Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Add your own skills, agents and tools](/docs/ai/ai-extend)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)
 - [AI Assistant](/docs/ai/ai-assistant)
