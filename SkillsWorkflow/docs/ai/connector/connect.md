@@ -1,7 +1,7 @@
 ---
 id: ai-connector-setup
 title: Connect Claude, Codex or GitHub Copilot to Skills Workflow
-description: "Add the Skills Workflow connector to Claude, Claude Code, Codex or GitHub Copilot with your tenant's address and the x-app-id, x-app-key and x-tenant-id headers the Skills Workflow team sends you."
+description: "Add the Skills Workflow connector to Claude, Claude Code, ChatGPT, Codex or GitHub Copilot with your tenant's address and the x-app-id, x-app-key and x-tenant-id headers the Skills Workflow team sends you."
 sidebar_label: Connect Your AI Tool
 sidebar_position: 2
 ---
@@ -69,13 +69,21 @@ claude mcp add --transport http skills-workflow https://apiv2-demo-test-we.skill
 Replace the address with your tenant's and each `<...>` with the value the Skills Workflow team sent.
 
 </TabItem>
-<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
+<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />ChatGPT / Codex</span>}>
 
-:::preview
-This set-up follows Codex's own documentation and has not been tested with Skills Workflow yet.
-:::
+In the ChatGPT app:
 
-The Codex CLI, the Codex IDE extension and the ChatGPT desktop app share one configuration file, `~/.codex/config.toml`. Add the connector to it:
+1. Open **Plugins** and select the **MCPs** tab.
+2. Select **Add** and add an MCP server.
+3. In **URL**, type the connector's address.
+4. Leave **Bearer token env var** empty.
+5. Under **Headers**, select **Add header** for each credential and fill in `x-app-id`, `x-tenant-id` and `x-app-key`, each with the value the Skills Workflow team sent.
+6. Select **Save**.
+
+   ![img-box-shadow-popup](/img/ai/codex/codex-mcp-headers.png)
+   <figcaption>The Skills Workflow MCP server in the ChatGPT app, with the connector's address and its three headers.</figcaption>
+
+The Codex CLI and the Codex IDE extension read the same servers from `~/.codex/config.toml`. To add the connector there instead:
 
 ```toml
 [mcp_servers.skills-workflow]
@@ -84,14 +92,10 @@ http_headers = { "x-app-id" = "<App ID>", "x-tenant-id" = "<Tenant ID>" }
 env_http_headers = { "x-app-key" = "SW_APP_KEY" }
 ```
 
-Replace the address with your tenant's and each `<...>` with the value the Skills Workflow team sent. The app key is read from the `SW_APP_KEY` environment variable, which keeps it out of the file; set that variable to the app key before starting Codex.
+Replace the address with your tenant's and each `<...>` with the value the Skills Workflow team sent. The app key is read from the `SW_APP_KEY` environment variable; set it to the app key before starting Codex.
 
 </TabItem>
 <TabItem value="copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/githubcopilot.svg" alt="" className="sw-tool-tab__mono" />GitHub Copilot</span>}>
-
-:::preview
-This set-up follows the Visual Studio Code documentation and has not been tested with Skills Workflow yet.
-:::
 
 In Visual Studio Code, add the connector to `mcp.json`, either in your user profile or in `.vscode/mcp.json` of a project. Run **MCP: Open User Configuration** from the Command Palette for the user file.
 
@@ -143,6 +147,9 @@ The answer lists the connector's eight tools:
 | `publish_app_page_version` | Publishes a new version of a screen |
 | `set_app_page_live_version` | Chooses the version of a screen users get |
 | `get_app_page_url` | Gives the address of a screen |
+
+![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
+<figcaption>The ChatGPT app answering the question with the connector's eight tools.</figcaption>
 
 Nothing is read from or written to your tenant by this question. If the tool says it has no Skills Workflow tools, or reports an error, one of the values is wrong; compare the address and each header with what the Skills Workflow team sent.
 

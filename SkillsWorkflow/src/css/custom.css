@@ -760,4 +760,5 @@ article .card:hover {
 .sw-tool-tab { display: inline-flex; align-items: center; gap: 0.45rem; }
 .sw-tool-tab img { width: 1.1rem; height: 1.1rem; }
 [data-theme='dark'] .sw-tool-tab img.sw-tool-tab__mono { filter: invert(1); }
-.theme-doc-markdown img[src*="/img/ai/claude/"] { max-width: 460px; }
+.theme-doc-markdown img[src*="/img/ai/claude/"],
+.theme-doc-markdown img[src*="/img/ai/codex/"] { max-width: 520px; }

@@ -1,7 +1,7 @@
 ---
 id: ai-connector-setup
 title: Conectar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow
-description: "Adicione o conector do Skills Workflow ao Claude, ao Claude Code, ao Codex ou ao GitHub Copilot com o endereço do seu tenant e os headers x-app-id, x-app-key e x-tenant-id que a equipe do Skills Workflow envia."
+description: "Adicione o conector do Skills Workflow ao Claude, ao Claude Code, ao ChatGPT, ao Codex ou ao GitHub Copilot com o endereço do seu tenant e os headers x-app-id, x-app-key e x-tenant-id que a equipe do Skills Workflow envia."
 sidebar_label: Conectar Sua Ferramenta de IA
 sidebar_position: 2
 ---
@@ -69,13 +69,21 @@ claude mcp add --transport http skills-workflow https://apiv2-demo-test-we.skill
 Substitua o endereço pelo do seu tenant e cada `<...>` pelo valor que a equipe do Skills Workflow enviou.
 
 </TabItem>
-<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
+<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />ChatGPT / Codex</span>}>
 
-:::preview
-Esta configuração segue a documentação do próprio Codex e ainda não foi testada com o Skills Workflow.
-:::
+No app do ChatGPT:
 
-O Codex CLI, a extensão do Codex para IDE e o app de desktop do ChatGPT compartilham um único arquivo de configuração, `~/.codex/config.toml`. Adicione o conector a ele:
+1. Abra **Plugins** e selecione a aba **MCPs**.
+2. Selecione **Add** e adicione um servidor MCP.
+3. Em **URL**, digite o endereço do conector.
+4. Deixe **Bearer token env var** vazio.
+5. Em **Headers**, selecione **Add header** para cada credencial e preencha `x-app-id`, `x-tenant-id` e `x-app-key`, cada um com o valor que a equipe do Skills Workflow enviou.
+6. Selecione **Save**.
+
+   ![img-box-shadow-popup](/img/ai/codex/codex-mcp-headers.png)
+   <figcaption>O servidor MCP do Skills Workflow no app do ChatGPT, com o endereço do conector e os três headers dele.</figcaption>
+
+O Codex CLI e a extensão do Codex para IDE leem os mesmos servidores de `~/.codex/config.toml`. Para adicionar o conector lá:
 
 ```toml
 [mcp_servers.skills-workflow]
@@ -84,14 +92,10 @@ http_headers = { "x-app-id" = "<App ID>", "x-tenant-id" = "<Tenant ID>" }
 env_http_headers = { "x-app-key" = "SW_APP_KEY" }
 ```
 
-Substitua o endereço pelo do seu tenant e cada `<...>` pelo valor que a equipe do Skills Workflow enviou. A app key é lida da variável de ambiente `SW_APP_KEY`, o que a mantém fora do arquivo; defina essa variável com a app key antes de iniciar o Codex.
+Substitua o endereço pelo do seu tenant e cada `<...>` pelo valor que a equipe do Skills Workflow enviou. A app key é lida da variável de ambiente `SW_APP_KEY`; defina-a com a app key antes de iniciar o Codex.
 
 </TabItem>
 <TabItem value="copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/githubcopilot.svg" alt="" className="sw-tool-tab__mono" />GitHub Copilot</span>}>
-
-:::preview
-Esta configuração segue a documentação do Visual Studio Code e ainda não foi testada com o Skills Workflow.
-:::
 
 No Visual Studio Code, adicione o conector ao `mcp.json`, no seu perfil de usuário ou em `.vscode/mcp.json` de um projeto. Para o arquivo do usuário, execute **MCP: Open User Configuration** a partir da Command Palette.
 
@@ -143,6 +147,9 @@ A resposta lista as oito ferramentas do conector:
 | `publish_app_page_version` | Publica uma nova versão de uma tela |
 | `set_app_page_live_version` | Escolhe a versão de uma tela que os usuários recebem |
 | `get_app_page_url` | Informa o endereço de uma tela |
+
+![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
+<figcaption>O app do ChatGPT respondendo à pergunta com as oito ferramentas do conector.</figcaption>
 
 Essa pergunta não lê nem escreve nada no seu tenant. Se a ferramenta disser que não tem ferramentas do Skills Workflow, ou informar um erro, um dos valores está errado; compare o endereço e cada header com o que a equipe do Skills Workflow enviou.
 
