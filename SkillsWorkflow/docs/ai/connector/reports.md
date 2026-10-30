@@ -27,7 +27,7 @@ Available. You need the [Skills Workflow connector in your AI tool](/docs/ai/con
 - Queries are read-only. A report never changes data.
 - Each query checks its roles. A person without them is refused the data in the report, as they are in Skills Workflow.
 - Charts are drawn inside the page. A report cannot load chart libraries or anything else from another site.
-- The report shows data as it is when it opens. A report to print or send, with the figures of a given moment, is [planned](/docs/ai/connector#planned).
+- The report shows data as it is when it opens. A report to print or send, with the figures of a given moment, is planned: see [Print or Send a Report as It Stands Today](/docs/ai/connector/ai-connector-printable-reports).
 
 ## Related articles
 

@@ -21,13 +21,13 @@ La conexión es un conector que añades una sola vez, con las credenciales que t
 
 ## Planeado {#planned}
 
-Esto todavía no está disponible y no tiene fecha. El comportamiento descrito es el previsto, y puede cambiar.
+Esto todavía no está disponible y no tiene fecha. Cada página muestra un ejemplo construido en un tenant de demostración y el comportamiento previsto, que puede cambiar.
 
 | Lo que necesita tu agencia | Comportamiento previsto |
 |---|---|
-| Un informe para imprimir o enviar | Un informe maquetado para papel. Lo abres, lo imprimes o lo guardas como PDF, y la copia conserva las cifras y la fecha de ese momento, lista para enviar por email a alguien fuera de Skills Workflow. |
-| Un formulario que crea trabajo | Un formulario que rellena un cliente o un compañero y que crea el job en Skills Workflow con las respuestas en sus campos, como la persona que lo envió. |
-| Cifras en una pantalla del estudio | Una vista hecha para una TV: pocas cifras en letra grande, como los plazos del día y los jobs pendientes de los clientes, que se actualiza sola. |
+| [Un informe para imprimir o enviar](/docs/ai/connector/ai-connector-printable-reports) | Un informe maquetado para papel. Lo abres, lo imprimes o lo guardas como PDF, y la copia conserva las cifras y la fecha de ese momento, lista para enviar por email a alguien fuera de Skills Workflow. |
+| [Un formulario que crea trabajo](/docs/ai/connector/ai-connector-forms) | Un formulario que rellena el equipo de un cliente. Cada solicitud se convierte en un job en el proyecto correcto, en su primera etapa, con los detalles en el feed del job, creado como la persona que lo envió. |
+| [Cifras en una pantalla del estudio](/docs/ai/connector/ai-connector-wall-displays) | Un tablero hecho para una TV: lo que vence en las próximas dos semanas, lo que está pendiente del cliente y lo que va con retraso, en letra grande y actualizándose solo. |
 
 ### Trabajar en Skills Workflow desde tu herramienta de IA
 
