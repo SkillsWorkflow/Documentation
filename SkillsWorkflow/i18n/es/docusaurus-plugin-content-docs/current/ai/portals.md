@@ -69,7 +69,7 @@ Por eso, los gráficos se dibujan en la propia página.
 2. **Identifica los datos.** Qué informe, qué cifras, qué registros. Un portal lee lo que publican tus queries de extracción de datos, así que una pregunta que ninguna query responde necesita primero la query.
 3. **El portal se genera.** La skill `client-portal` le da al agent todo el contrato: el SDK, el sandbox, la gramática de las queries y la regla de que no se puede inventar ningún endpoint ni columna. Cuando un hecho no se puede confirmar, el agent lo dice.
 4. **Revísalo frente a los distintos estados, no solo el camino ideal.** Un portal debe mostrar una respuesta vacía, una denegada y un servicio inalcanzable como tres cosas distintas. Ábrelo como un usuario al que *no* se le ha concedido el informe y comprueba qué ve.
-5. **Publícalo.** Con el [conector de Skills Workflow en Claude](/docs/ai/claude/ai-claude-connect), Claude publica el portal en la carpeta `Portals` del sistema de archivos de tu tenant, en `{client}/{portal}/`, y te da su dirección.
+5. **Publícalo.** Con el [conector de Skills Workflow en Claude](/docs/ai/connector/ai-connector-setup), Claude publica el portal en la carpeta `Portals` del sistema de archivos de tu tenant, en `{client}/{portal}/`, y te da su dirección.
 
 ## Reglas y comportamiento
 
@@ -90,8 +90,8 @@ Esto es lo que se sabe y vale la pena decidir antes de llevar los portales a usu
 
 ## Artículos relacionados
 
-- [Skills Workflow en Claude](/docs/ai/claude)
-- [Conectar Claude, Codex o GitHub Copilot a Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Skills Workflow en Claude](/docs/ai/connector)
+- [Conectar Claude, Codex o GitHub Copilot a Skills Workflow](/docs/ai/connector/ai-connector-setup)
 - [Añadir tus propias skills, agents y tools](/docs/ai/ai-extend)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)
 - [Asistente de IA](/docs/ai/ai-assistant)
