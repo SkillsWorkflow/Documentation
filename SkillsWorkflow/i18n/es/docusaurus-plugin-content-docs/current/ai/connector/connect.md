@@ -1,7 +1,7 @@
 ---
 id: ai-connector-setup
 title: Conectar Claude, Codex o GitHub Copilot a Skills Workflow
-description: "Añade el conector de Skills Workflow a Claude, Claude Code, Codex o GitHub Copilot con la dirección de tu tenant y las cabeceras x-app-id, x-app-key y x-tenant-id que te envía el equipo de Skills Workflow."
+description: "Añade el conector de Skills Workflow a Claude, Claude Code, ChatGPT, Codex o GitHub Copilot con la dirección de tu tenant y las cabeceras x-app-id, x-app-key y x-tenant-id que te envía el equipo de Skills Workflow."
 sidebar_label: Conectar tu Herramienta de IA
 sidebar_position: 2
 ---
@@ -69,9 +69,9 @@ claude mcp add --transport http skills-workflow https://apiv2-demo-test-we.skill
 Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envió el equipo de Skills Workflow.
 
 </TabItem>
-<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
+<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />ChatGPT / Codex</span>}>
 
-En la app de Codex:
+En la app de ChatGPT:
 
 1. Abre **Plugins** y selecciona la pestaña **MCPs**.
 2. Selecciona **Add** y añade un servidor MCP.
@@ -81,7 +81,7 @@ En la app de Codex:
 6. Selecciona **Save**.
 
    ![img-box-shadow-popup](/img/ai/codex/codex-mcp-headers.png)
-   <figcaption>El servidor MCP de Skills Workflow en Codex, con la dirección del conector y sus tres cabeceras.</figcaption>
+   <figcaption>El servidor MCP de Skills Workflow en la app de ChatGPT, con la dirección del conector y sus tres cabeceras.</figcaption>
 
 Codex CLI y la extensión de Codex para IDE leen los mismos servidores de `~/.codex/config.toml`. Para añadir el conector ahí:
 
@@ -149,7 +149,7 @@ La respuesta enumera las ocho tools del conector:
 | `get_app_page_url` | Da la dirección de una pantalla |
 
 ![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
-<figcaption>Codex respondiendo a la pregunta con las ocho tools del conector.</figcaption>
+<figcaption>La app de ChatGPT respondiendo a la pregunta con las ocho tools del conector.</figcaption>
 
 Esta pregunta no lee ni escribe nada en tu tenant. Si la herramienta dice que no tiene tools de Skills Workflow, o informa de un error, uno de los valores es incorrecto; compara la dirección y cada cabecera con lo que envió el equipo de Skills Workflow.
 

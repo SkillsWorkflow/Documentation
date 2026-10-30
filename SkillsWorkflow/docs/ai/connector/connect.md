@@ -1,7 +1,7 @@
 ---
 id: ai-connector-setup
 title: Connect Claude, Codex or GitHub Copilot to Skills Workflow
-description: "Add the Skills Workflow connector to Claude, Claude Code, Codex or GitHub Copilot with your tenant's address and the x-app-id, x-app-key and x-tenant-id headers the Skills Workflow team sends you."
+description: "Add the Skills Workflow connector to Claude, Claude Code, ChatGPT, Codex or GitHub Copilot with your tenant's address and the x-app-id, x-app-key and x-tenant-id headers the Skills Workflow team sends you."
 sidebar_label: Connect Your AI Tool
 sidebar_position: 2
 ---
@@ -69,9 +69,9 @@ claude mcp add --transport http skills-workflow https://apiv2-demo-test-we.skill
 Replace the address with your tenant's and each `<...>` with the value the Skills Workflow team sent.
 
 </TabItem>
-<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
+<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />ChatGPT / Codex</span>}>
 
-In the Codex app:
+In the ChatGPT app:
 
 1. Open **Plugins** and select the **MCPs** tab.
 2. Select **Add** and add an MCP server.
@@ -81,7 +81,7 @@ In the Codex app:
 6. Select **Save**.
 
    ![img-box-shadow-popup](/img/ai/codex/codex-mcp-headers.png)
-   <figcaption>The Skills Workflow MCP server in Codex, with the connector's address and its three headers.</figcaption>
+   <figcaption>The Skills Workflow MCP server in the ChatGPT app, with the connector's address and its three headers.</figcaption>
 
 The Codex CLI and the Codex IDE extension read the same servers from `~/.codex/config.toml`. To add the connector there instead:
 
@@ -149,7 +149,7 @@ The answer lists the connector's eight tools:
 | `get_app_page_url` | Gives the address of a screen |
 
 ![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
-<figcaption>Codex answering the question with the connector's eight tools.</figcaption>
+<figcaption>The ChatGPT app answering the question with the connector's eight tools.</figcaption>
 
 Nothing is read from or written to your tenant by this question. If the tool says it has no Skills Workflow tools, or reports an error, one of the values is wrong; compare the address and each header with what the Skills Workflow team sent.
 
