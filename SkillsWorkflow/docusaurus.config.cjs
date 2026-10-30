@@ -296,6 +296,15 @@ module.exports = {
           { from: '/docs/university', to: '/docs/learning-paths' },
           { from: '/docs/integrations/eas-integration', to: '/docs/integrations/eas' },
           { from: '/docs/integrations/iSAP-Job-Maintenance', to: '/docs/integrations/isap/job-maintenance' },
+          { from: '/docs/ai/claude', to: '/docs/ai/connector' },
+          { from: '/docs/ai/claude/ai-claude-connect', to: '/docs/ai/connector/ai-connector-setup' },
+          { from: '/docs/ai/claude/ai-claude-client-status-page', to: '/docs/ai/connector/ai-connector-client-status-page' },
+          { from: '/docs/ai/claude/ai-claude-client-hub', to: '/docs/ai/connector/ai-connector-client-hub' },
+          { from: '/docs/ai/claude/ai-claude-reports', to: '/docs/ai/connector/ai-connector-reports' },
+          { from: '/docs/ai/claude/ai-claude-team-screens', to: '/docs/ai/connector/ai-connector-team-screens' },
+          { from: '/docs/ai/claude/ai-claude-printable-reports', to: '/docs/ai/connector' },
+          { from: '/docs/ai/claude/ai-claude-forms', to: '/docs/ai/connector' },
+          { from: '/docs/ai/claude/ai-claude-wall-displays', to: '/docs/ai/connector' },
           ...require('./redirects/restructured-docs.cjs')
         ]
       }

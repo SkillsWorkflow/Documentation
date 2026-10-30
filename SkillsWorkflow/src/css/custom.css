@@ -244,8 +244,13 @@ figcaption {
 .table-of-contents__link--active { color: var(--ifm-color-primary); font-weight: 600; }
 
 @media (min-width: 997px) {
+  main .container:has(> .row > .col > .theme-doc-toc-desktop) {
+    max-width: none;
+    padding-right: 1rem;
+  }
+
   main .row:has(> .col > .theme-doc-toc-desktop) {
-    --sw-doc-toc-width: clamp(11.5rem, 22%, 15rem);
+    --sw-doc-toc-width: clamp(11.5rem, 18%, 15rem);
   }
 
   main .row:has(> .col > .theme-doc-toc-desktop) > .col:first-child {
@@ -253,8 +258,9 @@ figcaption {
     max-width: calc(100% - var(--sw-doc-toc-width)) !important;
   }
 
-  main .row:has(> .col > .theme-doc-toc-desktop) > .col:first-child > div:has(> article) {
-    max-width: 52rem;
+  main .row:has(> .col > .theme-doc-toc-desktop) > .col:first-child > div:has(> article),
+  main .row:has(> .col > .theme-doc-toc-desktop) .theme-doc-markdown {
+    max-width: 64rem;
     margin-inline: auto;
   }
 
@@ -750,3 +756,8 @@ article .card:hover {
     transform: none;
   }
 }
+
+.sw-tool-tab { display: inline-flex; align-items: center; gap: 0.45rem; }
+.sw-tool-tab img { width: 1.1rem; height: 1.1rem; }
+[data-theme='dark'] .sw-tool-tab img.sw-tool-tab__mono { filter: invert(1); }
+.theme-doc-markdown img[src*="/img/ai/claude/"] { max-width: 460px; }

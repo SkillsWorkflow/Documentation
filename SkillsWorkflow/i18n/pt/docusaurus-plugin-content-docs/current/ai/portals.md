@@ -69,7 +69,7 @@ Por isso, os gráficos são desenhados na própria página.
 2. **Identifique os dados.** Que relatório, que valores, que registos. Um portal lê aquilo que as suas queries de extração de dados publicam, pelo que uma pergunta à qual nenhuma query responde precisa primeiro da query.
 3. **O portal é gerado.** A skill `client-portal` fornece ao agent todo o contrato: o SDK, a sandbox, a gramática das queries e a regra de que nenhum endpoint ou coluna pode ser inventado. Quando um facto não pode ser confirmado, o agent diz-o.
 4. **Reveja o portal em função dos vários estados, e não apenas do caminho feliz.** Um portal tem de apresentar uma resposta vazia, uma resposta recusada e um serviço inacessível como três situações diferentes. Abra-o como um utilizador a quem *não* foi concedido o relatório e verifique o que vê.
-5. **Publique-o.** Com o [conector do Skills Workflow no Claude](/docs/ai/claude/ai-claude-connect), o Claude publica o portal na pasta `Portals` do sistema de ficheiros do seu tenant, em `{client}/{portal}/`, e dá-lhe o endereço.
+5. **Publique-o.** Com o [conector do Skills Workflow na sua ferramenta de IA](/docs/ai/connector/ai-connector-setup), a sua ferramenta de IA publica o portal na pasta `Portals` do sistema de ficheiros do seu tenant, em `{client}/{portal}/`, e dá-lhe o endereço.
 
 ## Regras e comportamento
 
@@ -79,19 +79,19 @@ Por isso, os gráficos são desenhados na própria página.
 - Republicar um ficheiro que já existe tem de o substituir como uma nova versão. Voltar a carregá-lo cria um segundo ficheiro com o mesmo nome, e o portal pode continuar a servir o antigo.
 - Um portal é servido apenas em modo de leitura. Não tem armazenamento próprio; tudo o que gravar passa pela API.
 
-## O que ainda não existe
+## O que ainda não existe {#what-is-not-there-yet}
 
 Estes pontos são conhecidos e vale a pena decidir sobre eles antes de disponibilizar os portais a utilizadores clientes:
 
-- **O conector publica um ficheiro por portal.** Um portal publicado a partir do Claude é um único `index.html`, com os estilos, os scripts e as imagens dentro dele. Um portal composto por vários ficheiros é publicado criando as suas pastas e carregando os seus ficheiros.
+- **O conector publica um ficheiro por portal.** Um portal publicado através do conector é um único `index.html`, com os estilos, os scripts e as imagens dentro dele. Um portal composto por vários ficheiros é publicado criando as suas pastas e carregando os seus ficheiros.
 - **Um portal não está delimitado ao seu cliente.** Atualmente, o acesso é "tem uma sessão, e a pasta existe". O segmento do cliente no URL não restringe quem o pode abrir, pelo que qualquer utilizador com sessão iniciada pode abrir o portal de qualquer cliente, desde que conheça o seu endereço. Restringir as pastas dos portais por função é, entretanto, o mecanismo a utilizar.
 - **Quem pode escrever na pasta `Portals` constitui uma fronteira de segurança.** Um portal executa script no browser de todos os que o abrem. Trate o acesso de escrita a essa pasta como trataria a implementação de código.
 - **Um build que gere caminhos absolutos não vai funcionar.** Um portal é servido sob o seu próprio caminho; uma página cujos assets sejam referenciados a partir da raiz do site perde-os todos. Gere caminhos relativos, ou configure o caminho base no momento do build.
 
 ## Artigos relacionados
 
-- [Skills Workflow no Claude](/docs/ai/claude)
-- [Ligar o Claude ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Skills Workflow na Sua Ferramenta de IA](/docs/ai/connector)
+- [Ligar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/connector/ai-connector-setup)
 - [Adicionar as suas skills, agents e tools](/docs/ai/ai-extend)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)
 - [Assistente de IA](/docs/ai/ai-assistant)
