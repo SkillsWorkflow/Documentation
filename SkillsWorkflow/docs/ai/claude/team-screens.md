@@ -1,7 +1,7 @@
 ---
 id: ai-claude-team-screens
 title: Add a Screen to Skills Workflow
-description: "Ask Claude Code for a screen of your own inside Skills Workflow: in the menu, as a tab on every job or project, as your team's home page or as a tile in Maintenance, shown only to the roles you choose."
+description: "Ask Claude Code, Codex or GitHub Copilot for a screen of your own inside Skills Workflow: in the menu, as a tab on every job or project, as your team's home page or as a tile in Maintenance, shown only to the roles you choose."
 sidebar_label: A Screen Inside Skills Workflow
 sidebar_position: 6
 ---
@@ -12,7 +12,7 @@ When a team works from a view the standard screens do not give them, ask Claude 
 
 ## Availability
 
-Available when screens are turned on for your tenant; ask the Skills Workflow team. The screen is built as a small code project, so ask for it in [Claude Code](/docs/ai/claude/ai-claude-connect#add-the-connector-in-claude-code) with the Skills Workflow connector added.
+Available when screens are turned on for your tenant; ask the Skills Workflow team. The screen is built as a small code project, so ask for it in a tool that works on code, such as Claude Code, Codex or GitHub Copilot, with the [Skills Workflow connector](/docs/ai/claude/ai-claude-connect) added.
 
 ## Where a screen can show
 
@@ -89,6 +89,6 @@ The agency, names and numbers in this example are illustrative.
 
 ## Related articles
 
-- [Connect Claude to Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Connect Claude, Codex or GitHub Copilot to Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Skills Workflow in Claude](/docs/ai/claude)
 - [Build a Report From Your Data](/docs/ai/claude/ai-claude-reports)

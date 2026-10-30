@@ -95,4 +95,4 @@ A agência, o cliente, os números e o endereço neste exemplo são ilustrativos
 - [Um Endereço para Tudo o que um Cliente Abre](/docs/ai/claude/ai-claude-client-hub)
 - [Construir um Relatório a Partir dos Seus Dados](/docs/ai/claude/ai-claude-reports)
 - [Portais de Cliente](/docs/ai/ai-portals)
-- [Ligar o Claude ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Ligar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/claude/ai-claude-connect)

@@ -1,7 +1,7 @@
 ---
 id: ai-claude-team-screens
 title: Acrescentar um Ecrã ao Skills Workflow
-description: "Peça ao Claude Code um ecrã próprio dentro do Skills Workflow: no menu, como separador em cada job ou projeto, como página inicial da sua equipa ou como mosaico em Maintenance, visível apenas para os perfis que escolher."
+description: "Peça ao Claude Code, ao Codex ou ao GitHub Copilot um ecrã próprio dentro do Skills Workflow: no menu, como separador em cada job ou projeto, como página inicial da sua equipa ou como mosaico em Maintenance, visível apenas para os perfis que escolher."
 sidebar_label: Um Ecrã Dentro do Skills Workflow
 sidebar_position: 6
 ---
@@ -12,7 +12,7 @@ Quando uma equipa trabalha a partir de uma vista que os ecrãs standard não lhe
 
 ## Disponibilidade
 
-Disponível quando os ecrãs estão ativos no seu tenant; peça-o à equipa do Skills Workflow. O ecrã é construído como um pequeno projeto de código, por isso peça-o no [Claude Code](/docs/ai/claude/ai-claude-connect#add-the-connector-in-claude-code) com o conector do Skills Workflow adicionado.
+Disponível quando os ecrãs estão ativos no seu tenant; peça-o à equipa do Skills Workflow. O ecrã é construído como um pequeno projeto de código, por isso peça-o numa ferramenta que trabalhe sobre código, como o Claude Code, o Codex ou o GitHub Copilot, com o [conector do Skills Workflow](/docs/ai/claude/ai-claude-connect) adicionado.
 
 ## Onde um ecrã pode aparecer
 
@@ -89,6 +89,6 @@ A agência, os nomes e os números neste exemplo são ilustrativos.
 
 ## Artigos relacionados
 
-- [Ligar o Claude ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Ligar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Skills Workflow no Claude](/docs/ai/claude)
 - [Construir um Relatório a Partir dos Seus Dados](/docs/ai/claude/ai-claude-reports)

@@ -77,4 +77,4 @@ La agencia, el cliente y el job de este ejemplo son ilustrativos.
 
 - [Compartir una Página de Estado en Tiempo Real con un Cliente](/docs/ai/claude/ai-claude-client-status-page)
 - [Skills Workflow en Claude](/docs/ai/claude)
-- [Conectar Claude a Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Conectar Claude, Codex o GitHub Copilot a Skills Workflow](/docs/ai/claude/ai-claude-connect)

@@ -91,7 +91,7 @@ These are known and worth deciding on before portals go to client users:
 ## Related articles
 
 - [Skills Workflow in Claude](/docs/ai/claude)
-- [Connect Claude to Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Connect Claude, Codex or GitHub Copilot to Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Add your own skills, agents and tools](/docs/ai/ai-extend)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)
 - [AI Assistant](/docs/ai/ai-assistant)

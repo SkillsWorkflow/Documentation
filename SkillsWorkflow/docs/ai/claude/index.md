@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Connect Claude to your Skills Workflow tenant and describe what you need in plain language. Claude builds it, publishes it to your tenant and gives you its address. What it builds reads live Skills Workflow data, and each person who opens it sees only what their own permissions allow.
 
-The connection is a connector you add to Claude once, with credentials the Skills Workflow team sends you. Read [Connect Claude to Skills Workflow](/docs/ai/claude/ai-claude-connect) to set it up.
+The connection is a connector you add once, with credentials the Skills Workflow team sends you. The same connector works in Claude Code, Codex and GitHub Copilot. Read [Connect Claude, Codex or GitHub Copilot to Skills Workflow](/docs/ai/claude/ai-claude-connect) to set it up.
 
 ## What you can create
 
@@ -44,7 +44,7 @@ Today the connector creates and publishes. A second connector is planned for wor
 
 ## Related articles
 
-- [Connect Claude to Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Connect Claude, Codex or GitHub Copilot to Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Client Portals](/docs/ai/ai-portals)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)
 - [AI Can Make Mistakes](/docs/ai/ai-can-make-mistakes)

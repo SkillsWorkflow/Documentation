@@ -1,7 +1,7 @@
 ---
 id: ai-claude-team-screens
 title: Adicionar uma Tela ao Skills Workflow
-description: "Peça ao Claude Code uma tela própria dentro do Skills Workflow: no menu, como uma aba em cada Atividade ou projeto, como a página inicial da sua equipe ou como um bloco em Maintenance, mostrada apenas aos perfis que você escolher."
+description: "Peça ao Claude Code, ao Codex ou ao GitHub Copilot uma tela própria dentro do Skills Workflow: no menu, como uma aba em cada Atividade ou projeto, como a página inicial da sua equipe ou como um bloco em Maintenance, mostrada apenas aos perfis que você escolher."
 sidebar_label: Uma Tela Dentro do Skills Workflow
 sidebar_position: 6
 ---
@@ -12,7 +12,7 @@ Quando uma equipe trabalha com uma visão que as telas padrão não oferecem, pe
 
 ## Disponibilidade
 
-Disponível quando as telas estão ativadas para o seu tenant; fale com a equipe do Skills Workflow. A tela é criada como um pequeno projeto de código, então peça-a no [Claude Code](/docs/ai/claude/ai-claude-connect#add-the-connector-in-claude-code) com o conector do Skills Workflow adicionado.
+Disponível quando as telas estão ativadas para o seu tenant; fale com a equipe do Skills Workflow. A tela é criada como um pequeno projeto de código, então peça-a em uma ferramenta que trabalhe com código, como o Claude Code, o Codex ou o GitHub Copilot, com o [conector do Skills Workflow](/docs/ai/claude/ai-claude-connect) adicionado.
 
 ## Onde uma tela pode aparecer
 
@@ -89,6 +89,6 @@ A agência, os nomes e os números deste exemplo são ilustrativos.
 
 ## Artigos relacionados
 
-- [Conectar o Claude ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Conectar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Skills Workflow no Claude](/docs/ai/claude)
 - [Criar um Relatório a Partir dos Seus Dados](/docs/ai/claude/ai-claude-reports)

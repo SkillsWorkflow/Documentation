@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Ligue o Claude ao tenant do Skills Workflow e descreva o que precisa em linguagem simples. O Claude constrói-o, publica-o no seu tenant e dá-lhe o endereço. O que constrói lê dados do Skills Workflow em tempo real, e cada pessoa que o abre vê apenas o que as suas próprias permissões permitem.
 
-A ligação é um conector que adiciona ao Claude uma única vez, com as credenciais que a equipa do Skills Workflow lhe envia. Leia [Ligar o Claude ao Skills Workflow](/docs/ai/claude/ai-claude-connect) para o configurar.
+A ligação é um conector que adiciona uma única vez, com as credenciais que a equipa do Skills Workflow lhe envia. O mesmo conector funciona no Claude Code, no Codex e no GitHub Copilot. Leia [Ligar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/claude/ai-claude-connect) para o configurar.
 
 ## O que pode criar
 
@@ -44,7 +44,7 @@ Hoje o conector cria e publica. Está planeado um segundo conector para trabalha
 
 ## Artigos relacionados
 
-- [Ligar o Claude ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Ligar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Portais de Cliente](/docs/ai/ai-portals)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)
 - [A IA Pode Cometer Erros](/docs/ai/ai-can-make-mistakes)

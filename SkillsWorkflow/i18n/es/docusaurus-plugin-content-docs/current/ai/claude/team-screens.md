@@ -1,7 +1,7 @@
 ---
 id: ai-claude-team-screens
 title: Añadir una Pantalla a Skills Workflow
-description: "Pide a Claude Code una pantalla propia dentro de Skills Workflow: en el menú, como pestaña en cada job o proyecto, como página de inicio de tu equipo o como mosaico en Maintenance, visible solo para los roles que elijas."
+description: "Pide a Claude Code, Codex o GitHub Copilot una pantalla propia dentro de Skills Workflow: en el menú, como pestaña en cada job o proyecto, como página de inicio de tu equipo o como mosaico en Maintenance, visible solo para los roles que elijas."
 sidebar_label: Una Pantalla Dentro de Skills Workflow
 sidebar_position: 6
 ---
@@ -12,7 +12,7 @@ Cuando un equipo trabaja con una vista que las pantallas estándar no le dan, p�
 
 ## Disponibilidad
 
-Disponible cuando las pantallas están activadas para tu tenant; pregunta al equipo de Skills Workflow. La pantalla se construye como un pequeño proyecto de código, así que pídela en [Claude Code](/docs/ai/claude/ai-claude-connect#add-the-connector-in-claude-code) con el conector de Skills Workflow añadido.
+Disponible cuando las pantallas están activadas para tu tenant; pregunta al equipo de Skills Workflow. La pantalla se construye como un pequeño proyecto de código, así que pídela en una herramienta que trabaje con código, como Claude Code, Codex o GitHub Copilot, con el [conector de Skills Workflow](/docs/ai/claude/ai-claude-connect) añadido.
 
 ## Dónde puede aparecer una pantalla
 
@@ -89,6 +89,6 @@ La agencia, los nombres y los números de este ejemplo son ilustrativos.
 
 ## Artículos relacionados
 
-- [Conectar Claude a Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Conectar Claude, Codex o GitHub Copilot a Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Skills Workflow en Claude](/docs/ai/claude)
 - [Construir un Informe a Partir de tus Datos](/docs/ai/claude/ai-claude-reports)

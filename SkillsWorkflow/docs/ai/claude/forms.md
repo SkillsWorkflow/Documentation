@@ -77,4 +77,4 @@ The agency, client and job in this example are illustrative.
 
 - [Share a Live Status Page With a Client](/docs/ai/claude/ai-claude-client-status-page)
 - [Skills Workflow in Claude](/docs/ai/claude)
-- [Connect Claude to Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Connect Claude, Codex or GitHub Copilot to Skills Workflow](/docs/ai/claude/ai-claude-connect)

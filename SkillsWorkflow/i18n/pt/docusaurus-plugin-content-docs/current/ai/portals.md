@@ -91,7 +91,7 @@ Estes pontos são conhecidos e vale a pena decidir sobre eles antes de disponibi
 ## Artigos relacionados
 
 - [Skills Workflow no Claude](/docs/ai/claude)
-- [Ligar o Claude ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
+- [Ligar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/claude/ai-claude-connect)
 - [Adicionar as suas skills, agents e tools](/docs/ai/ai-extend)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)
 - [Assistente de IA](/docs/ai/ai-assistant)
