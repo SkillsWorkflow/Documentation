@@ -8,13 +8,13 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Quando o Assistente de IA avisar que uma Atividade está atrasada, pergunte o motivo. O assistente lê o Feed da Atividade, os comentários e as respostas, a descrição e os arquivos anexados, e resume o que travou o trabalho. Pergunte o que mais no projeto depende dela e, em seguida, peça ao assistente que publique um comentário no Feed da Atividade para que a equipe confirme a causa e uma nova data. Você revisa o comentário antes de ele ser publicado.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, as pessoas, as Atividades, os comentários e as datas deste exemplo são ilustrativos. O assistente só lê documentos e comentários aos quais você tem acesso.
 

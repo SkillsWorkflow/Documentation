@@ -8,13 +8,13 @@ sidebar_position: 1
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Describe el trabajo al AI Assistant como lo harías con un compañero: el cliente y el proyecto, los entregables y las horas que necesita cada grupo de tipología. El asistente prepara el estimate con una línea por entregable y grupo de tipología, con los precios del rate card del cliente, y te pregunta lo que no puede deducir, como el **Tipo Presupuesto** o las fechas. Revisas las líneas y los totales en una tarjeta antes de que se cree el estimate.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, el cliente, el proyecto, el estimate, los grupos de tipología, las tarifas y los valores de este ejemplo son ilustrativos. Los Tipos Presupuesto, los rate cards y las etapas dependen de la configuración de tu agencia.
 

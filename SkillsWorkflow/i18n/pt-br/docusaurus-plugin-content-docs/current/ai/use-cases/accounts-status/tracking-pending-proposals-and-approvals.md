@@ -8,13 +8,13 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Pergunte ao Assistente de IA quais propostas enviadas aos clientes ainda aguardam aprovação. Ele as lista com o valor, o dia em que foram enviadas, há quanto tempo estão aguardando e quem é o responsável. Pergunte por que uma delas está parada, e o assistente resume o que foi escrito na proposta e no Feed dela. Em seguida, você pode pedir que ele publique um comentário no Feed da proposta para que o responsável faça o acompanhamento. Você revisa o comentário antes de ele ser publicado.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, os clientes, as propostas, os valores e as etapas deste exemplo são ilustrativos. As etapas dependem do workflow de cada proposta, e as propostas que você vê dependem do seu acesso.
 

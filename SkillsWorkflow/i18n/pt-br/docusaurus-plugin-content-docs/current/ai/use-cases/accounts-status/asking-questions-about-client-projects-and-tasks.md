@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Pergunte ao Assistente de IA, com suas próprias palavras, o que está em aberto para um cliente ou para vários. Ele lista os projetos ativos do cliente com as Atividades em aberto e atrasadas, e você pode fazer perguntas de acompanhamento para ver quais Atividades estão atrasadas e quem é responsável por cada uma, e o que vence nos próximos dias. Use isso para preparar uma ligação com o cliente ou para decidir onde cobrar primeiro.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, os projetos, as Atividades e as pessoas deste exemplo são ilustrativos. As Atividades que você vê dependem do seu acesso e dos dados que a sua agência disponibiliza ao assistente.
 

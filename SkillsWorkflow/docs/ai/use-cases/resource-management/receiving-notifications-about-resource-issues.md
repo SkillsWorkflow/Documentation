@@ -8,13 +8,13 @@ sidebar_position: 7
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 The AI Assistant tells you about resource issues on your team without you having to ask: people who recorded more hours on a job than were planned, time recorded on jobs where the person was never planned, and people planned above their capacity in the coming weeks. Each issue comes with the person, the job and the hours involved. You can then ask the assistant to narrow the list to one client, find who has free capacity, and open the workspace where you change the planning.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, clients, people, jobs and hours in this example are illustrative. The issues you see depend on your access and on the data your agency makes available to the assistant.
 

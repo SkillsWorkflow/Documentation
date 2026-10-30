@@ -8,13 +8,13 @@ sidebar_position: 1
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Describe the work to the AI Assistant as you would to a colleague: the client and project, the deliverables, and the hours each typology group needs. The assistant prepares the estimate with one line per deliverable and typology group, priced from the rate card on the client, and asks for anything it cannot work out, such as the Estimate Type or the dates. You review the lines and totals on a card before the estimate is created.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, project, estimate, typology groups, rates and values in this example are illustrative. Estimate Types, rate cards and stages depend on your agency's configuration.
 

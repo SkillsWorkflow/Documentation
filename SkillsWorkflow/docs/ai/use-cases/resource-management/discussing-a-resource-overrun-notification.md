@@ -8,13 +8,13 @@ sidebar_position: 8
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 When the AI Assistant tells you that someone recorded more hours on a job than were planned, ask it why. The assistant reads the job's Feed, its comments and replies, the description and the files attached to it, and summarises what explains the extra hours. You can then ask it to post a comment on the job's Feed, mentioning the people who need to confirm the cause and decide what happens next. You review the comment before it is posted.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, people, job, comments and hours in this example are illustrative. The assistant only reads documents and comments you can access.
 

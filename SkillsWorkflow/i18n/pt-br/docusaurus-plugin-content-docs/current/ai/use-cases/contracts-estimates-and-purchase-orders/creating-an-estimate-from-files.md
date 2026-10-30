@@ -8,13 +8,13 @@ sidebar_position: 2
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Anexe o arquivo que descreve o trabalho, como um briefing do cliente, uma planilha de escopo ou um orçamento de fornecedor, e peça uma proposta ao Assistente de IA. O assistente extrai os entregáveis, as horas por grupo de cargo, os custos de terceiros e as despesas, calcula o preço das horas com o rate card do cliente e lista o que o arquivo não informa. Responda ao que falta, revise a proposta em um cartão e aprove-a.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, o arquivo, a proposta, os fornecedores, as tarifas e os valores deste exemplo são ilustrativos. Os Tipos Orçamento, os rate cards e as etapas dependem da configuração da sua agência.
 

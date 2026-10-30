@@ -8,13 +8,13 @@ sidebar_position: 2
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Pergunte ao Assistente de IA, com suas próprias palavras, como está um projeto. Ele responde com as Atividades do projeto por etapa, o que foi entregue, o que está atrasado e o que vence a seguir, e as horas registradas em relação ao que foi contratado. Faça perguntas de acompanhamento para ver o que pode colocar o cronograma em risco e quais Atividades aguardam o cliente, para saber o que levar à sua próxima reunião de status.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, o projeto, as Atividades e as horas deste exemplo são ilustrativos. As Atividades que você vê dependem do seu acesso e dos dados que a sua agência disponibiliza ao assistente.
 

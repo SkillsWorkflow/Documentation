@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Indica al AI Assistant qué quieres compartir con un cliente: el estado de sus proyectos, el burn del contrato, los riesgos o las peticiones que están pendientes de él. El asistente lo relaciona con los workspaces y portales de cliente que tiene tu agencia, explica qué muestra cada uno y recomienda la opción más clara. También te indica qué vistas son solo para uso interno de la agencia, como la rentabilidad.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia y el cliente de este ejemplo son ilustrativos. El asistente recomienda a partir de los workspaces y portales disponibles en tu agencia, así que los nombres que ves pueden ser distintos. Burn Workspace y Profitability Workspace, usados en este ejemplo, son workspaces de cliente.
 

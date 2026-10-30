@@ -8,15 +8,15 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Copying the whole Fee is in preview. Today the assistant copies only the estimate, with its lines, and the copy stays on the original Fee: it does not create a new Fee. The copy keeps the original's **Start Date**, **End Date** and values. Setting the new dates and the **Inflation %** field on the copy is also in preview, so open the new estimate's **Info** and set them before you use it. The assistant can activate the copy.
+:::
+
 ## Overview
 
 Tell the AI Assistant which client's Fee to renew and the inflation rate to apply. The assistant finds this year's Fee and its estimate, and copies both to the next year in the same step: the new Fee's name and dates, and the estimate with its lines, the inflation rate applied to its values and the description, team or custom fields you choose to carry over. You review everything on a card before anything is created.
 
 Once the copy exists, the assistant shows the new estimate's values next to last year's. You can then ask it to activate the new estimate, so the team can start planning the year's work.
-
-:::note Preview
-Copying the whole Fee is in preview. Today the assistant copies only the estimate, with its lines, and the copy stays on the original Fee: it does not create a new Fee. The copy keeps the original's **Start Date**, **End Date** and values. Setting the new dates and the **Inflation %** field on the copy is also in preview, so open the new estimate's **Info** and set them before you use it. The assistant can activate the copy.
-:::
 
 The agency, client, Fees, estimates, numbers, hours, values and stages in this example are illustrative. The documents you see depend on your access, and the stages and transitions depend on the estimate's workflow.
 

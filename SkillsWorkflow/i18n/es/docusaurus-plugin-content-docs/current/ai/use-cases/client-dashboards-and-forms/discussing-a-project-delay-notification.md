@@ -8,13 +8,13 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Cuando el AI Assistant te avisa de que un job va con retraso, pregúntale por qué. El asistente lee el Feed del job, sus comentarios y respuestas, la descripción y los archivos adjuntos, y resume qué frenó el trabajo. Pregunta qué más depende de él en el proyecto y, después, pide al asistente que publique un comentario en el Feed del job para que el equipo confirme la causa y una nueva fecha. Revisas el comentario antes de que se publique.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, el cliente, las personas, los jobs, los comentarios y las fechas de este ejemplo son ilustrativos. El asistente solo lee los documentos y comentarios a los que tienes acceso.
 

@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Pregunta al AI Assistant, con tus propias palabras, qué hay abierto para un cliente o para varios. Lista los proyectos activos del cliente con sus jobs abiertos y con retraso, y puedes hacer preguntas de seguimiento para ver qué jobs están vencidos y quién es responsable de cada uno, y qué vence en los próximos días. Úsalo para preparar una llamada con el cliente o para decidir por dónde empezar a hacer seguimiento.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, el cliente, los proyectos, los jobs y las personas de este ejemplo son ilustrativos. Los jobs que ves dependen de tus accesos y de los datos que tu agencia pone a disposición del asistente.
 

@@ -8,13 +8,13 @@ sidebar_position: 7
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 El AI Assistant te avisa de los problemas de recursos de tu equipo sin que tengas que preguntar: personas que registraron en un job más horas de las planificadas, tiempo registrado en jobs en los que la persona nunca estuvo planificada y personas planificadas por encima de su capacidad en las próximas semanas. Cada problema incluye la persona, el job y las horas implicadas. Después puedes pedir al asistente que acote la lista a un cliente, que busque quién tiene capacidad libre y que abra el workspace donde cambias la planificación.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, los clientes, las personas, los jobs y las horas de este ejemplo son ilustrativos. Los problemas que ves dependen de tus accesos y de los datos que tu agencia pone a disposición del asistente.
 

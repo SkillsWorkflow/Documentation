@@ -8,13 +8,13 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Quando o AI Assistant lhe disser que um job está atrasado, pergunte-lhe porquê. O assistente lê o Feed do job, os comentários e as respostas, a descrição e os ficheiros anexados, e resume o que travou o trabalho. Pergunte o que mais no projeto depende dele e, depois, peça ao assistente para publicar um comentário no Feed do job para que a equipa confirme a causa e uma nova data. Revê o comentário antes de ser publicado.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, as pessoas, os jobs, os comentários e as datas neste exemplo são ilustrativos. O assistente só lê documentos e comentários a que tem acesso.
 

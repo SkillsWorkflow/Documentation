@@ -8,13 +8,13 @@ sidebar_position: 7
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 O Assistente de IA avisa você sobre problemas de recursos na sua equipe sem que você precise perguntar: pessoas que registraram mais horas em uma Atividade do que o planejado, tempo registrado em Atividades nas quais a pessoa nunca foi planejada e pessoas planejadas acima da capacidade nas próximas semanas. Cada problema vem com a pessoa, a Atividade e as horas envolvidas. Em seguida, você pode pedir que o assistente restrinja a lista a um cliente, encontre quem tem capacidade livre e abra o workspace onde você altera o planejamento.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, os clientes, as pessoas, as Atividades e as horas deste exemplo são ilustrativos. Os problemas que você vê dependem do seu acesso e dos dados que a sua agência disponibiliza ao assistente.
 

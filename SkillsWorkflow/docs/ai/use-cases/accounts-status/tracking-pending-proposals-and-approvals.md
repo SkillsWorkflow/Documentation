@@ -8,13 +8,13 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Ask the AI Assistant which estimates sent to clients are still waiting for approval. It lists them with their value, the day they were sent, how long they have been waiting and who is responsible. Ask why one is held up, and the assistant summarises what was written on the estimate and its Feed. You can then ask it to post a comment on the estimate's Feed so the responsible person follows up. You review the comment before it is posted.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, clients, estimates, values and stages in this example are illustrative. The stages depend on each estimate's workflow, and the estimates you see depend on your access.
 

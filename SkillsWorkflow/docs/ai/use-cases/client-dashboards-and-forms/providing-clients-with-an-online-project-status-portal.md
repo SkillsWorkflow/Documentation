@@ -8,15 +8,15 @@ sidebar_position: 1
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Tell the AI Assistant which client and project the portal is for and what it should show. The assistant proposes the sections of the page and the data behind each one: the project's status, its contract burn, the jobs at risk and the requests still waiting on someone. You review the page, and the assistant publishes it as a client portal with its own address, ready to share.
 
 A client portal is a page of its own, served from Skills Workflow and reading live data. Anyone who opens it signs in and sees the data their own permissions allow. Read [Client Portals](/docs/ai/ai-portals) for how portals work and what is not there yet.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, project, numbers and address in this example are illustrative.
 

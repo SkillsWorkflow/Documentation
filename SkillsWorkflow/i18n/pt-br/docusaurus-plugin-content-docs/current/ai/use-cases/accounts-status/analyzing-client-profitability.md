@@ -8,13 +8,13 @@ sidebar_position: 4
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Pergunte ao Assistente de IA quão rentável um cliente foi em um período. Ele compara a receita de cada projeto com o custo e mostra a margem, com os projetos mais e menos rentáveis primeiro. Faça perguntas de acompanhamento sobre um projeto para ver para onde foi o custo, por grupo de cargo, e abra o **Profitability Workspace** do cliente para continuar acompanhando.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, os projetos e os valores deste exemplo são ilustrativos. Os números que você vê dependem do seu acesso e dos dados que a sua agência disponibiliza ao assistente.
 

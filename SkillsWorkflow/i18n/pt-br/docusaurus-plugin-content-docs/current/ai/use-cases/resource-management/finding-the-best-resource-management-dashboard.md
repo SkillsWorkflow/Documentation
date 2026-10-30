@@ -12,10 +12,6 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 Pergunte ao Assistente de IA, com suas próprias palavras, qual workspace usar para o que você quer monitorar: como o trabalho está distribuído entre as pessoas, quão ocupada a equipe está ou onde a demanda planejada ultrapassa a capacidade disponível. O assistente relaciona a sua pergunta com os workspaces que a sua agência tem, explica para que serve cada um e recomenda a opção mais clara. Cada workspace recomendado vem com um botão **Open workspace**, para que você possa ir direto até ele a partir do chat.
 
-:::note Preview
-Abrir um workspace recomendado diretamente do chat, com o botão **Open workspace**, está em preview. Enquanto isso não estiver disponível, abra pelo menu o workspace que o assistente indicar.
-:::
-
 A agência e a equipe deste exemplo são ilustrativas. O Skills Workflow oferece um conjunto de workspaces padrão, e algumas agências também têm workspaces personalizados criados sob demanda. O assistente recomenda entre os workspaces disponíveis na sua agência, por isso os nomes que você vê podem ser diferentes dos deste exemplo. Resources Scheduler, My Scheduler e Capacity × Workload, usados neste exemplo, são workspaces padrão.
 
 <Walkthrough

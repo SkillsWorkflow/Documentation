@@ -8,13 +8,13 @@ sidebar_position: 2
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Attach the file that describes the work, such as a client brief, a scope spreadsheet or a supplier quote, and ask the AI Assistant for an estimate. The assistant extracts the deliverables, the hours per typology group, the third-party costs and the expenses, prices the hours from the rate card on the client, and lists what the file does not say. Answer what is missing, review the estimate on a card and approve it.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, file, estimate, suppliers, rates and values in this example are illustrative. Estimate Types, rate cards and stages depend on your agency's configuration.
 

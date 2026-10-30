@@ -8,13 +8,13 @@ sidebar_position: 4
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Ask the AI Assistant how profitable a client is over a period. It compares each project's income with its cost and shows the margin, with the most and least profitable projects first. Follow up on a project to see where the cost went, by typology group, and open the client's **Profitability Workspace** to keep following it.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, projects and values in this example are illustrative. The figures you see depend on your access and on the data your agency makes available to the assistant.
 

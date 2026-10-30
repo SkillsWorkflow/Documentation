@@ -8,13 +8,13 @@ sidebar_position: 2
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Adjunta el archivo que describe el trabajo, como un brief del cliente, una hoja de cálculo de alcance o un presupuesto de un proveedor, y pide al AI Assistant un estimate. El asistente extrae los entregables, las horas por grupo de tipología, los costes de terceros y los gastos, calcula el precio de las horas con el rate card del cliente y lista lo que el archivo no indica. Responde a lo que falta, revisa el estimate en una tarjeta y apruébalo.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, el cliente, el archivo, el estimate, los proveedores, las tarifas y los valores de este ejemplo son ilustrativos. Los Tipos Presupuesto, los rate cards y las etapas dependen de la configuración de tu agencia.
 
