@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Diga ao Assistente de IA o que você quer compartilhar com um cliente: o status dos projetos dele, o burn do contrato, os riscos ou os pedidos que aguardam por ele. O assistente relaciona isso com os workspaces e os portais de cliente que a sua agência tem, explica o que cada um mostra e recomenda a opção mais clara. Ele também diz quais visões são só para uso interno da agência, como a rentabilidade.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência e o cliente deste exemplo são ilustrativos. O assistente recomenda entre os workspaces e os portais disponíveis na sua agência, por isso os nomes que você vê podem ser diferentes. Burn Workspace e Profitability Workspace, usados neste exemplo, são workspaces de cliente.
 

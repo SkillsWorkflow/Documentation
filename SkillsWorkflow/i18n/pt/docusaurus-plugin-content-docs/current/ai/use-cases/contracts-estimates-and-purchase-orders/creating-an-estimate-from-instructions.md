@@ -8,13 +8,13 @@ sidebar_position: 1
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Descreva o trabalho ao AI Assistant como o faria a um colega: o cliente e o projeto, os entregáveis e as horas de que cada grupo de cargo precisa. O assistente prepara o estimate com uma linha por entregável e grupo de cargo, com os preços da rate card do cliente, e pergunta-lhe o que não consegue deduzir, como o **Tipo Orçamento** ou as datas. Revê as linhas e os totais num cartão antes de o estimate ser criado.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, o projeto, o estimate, os grupos de cargo, as tarifas e os valores neste exemplo são ilustrativos. Os tipos de orçamento, as rate cards e as etapas dependem da configuração da sua agência.
 

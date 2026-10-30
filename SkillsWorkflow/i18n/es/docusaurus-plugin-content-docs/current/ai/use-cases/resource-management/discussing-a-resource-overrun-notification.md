@@ -8,13 +8,13 @@ sidebar_position: 8
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Cuando el AI Assistant te avisa de que alguien registró en un job más horas de las planificadas, pregúntale por qué. El asistente lee el Feed del job, sus comentarios y respuestas, la descripción y los archivos adjuntos, y resume qué explica las horas de más. Después puedes pedirle que publique un comentario en el Feed del job, mencionando a las personas que tienen que confirmar la causa y decidir qué pasa a continuación. Revisas el comentario antes de que se publique.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, el cliente, las personas, el job, los comentarios y las horas de este ejemplo son ilustrativos. El asistente solo lee los documentos y comentarios a los que tienes acceso.
 

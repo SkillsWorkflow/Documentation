@@ -8,13 +8,13 @@ sidebar_position: 4
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Antes de criar uma proposta, peça ao Assistente de IA que compare as opções que você está avaliando: um escopo diferente, menos horas para um grupo de cargo ou outra coluna do rate card do cliente. O assistente calcula o preço de cada cenário, mostra as horas e o total lado a lado e diz como cada um se encaixa no orçamento do cliente. Quando você escolhe um, ele prepara a proposta a partir dele para a sua aprovação.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, o projeto, as colunas do rate card, as tarifas e os valores deste exemplo são ilustrativos. Os rate cards e as colunas deles dependem da configuração da sua agência.
 

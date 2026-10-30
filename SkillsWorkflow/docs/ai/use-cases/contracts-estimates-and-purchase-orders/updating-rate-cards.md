@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Tell the AI Assistant which rate card to change, which typology groups or users, by how much and from when, or attach the file with the new rates. The assistant shows the current and the new rate for every column of the rate card, and lists the estimates that use it, so you can decide whether they need new prices too. You choose whether to change the rate card or create a new one for the new period, and review the change on a card before it is applied.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, rate cards, columns, rates and estimates in this example are illustrative. Rate cards and their columns depend on your agency's configuration.
 

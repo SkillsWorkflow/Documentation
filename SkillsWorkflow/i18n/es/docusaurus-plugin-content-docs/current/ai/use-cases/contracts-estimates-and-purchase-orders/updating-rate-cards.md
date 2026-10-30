@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Indica al AI Assistant qué rate card cambiar, qué grupos de tipología o usuarios, en cuánto y desde cuándo, o adjunta el archivo con las nuevas tarifas. El asistente muestra la tarifa actual y la nueva de cada columna del rate card, y lista los estimates que lo usan, para que decidas si también necesitan precios nuevos. Eliges si cambias el rate card o creas uno nuevo para el nuevo periodo, y revisas el cambio en una tarjeta antes de que se aplique.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, el cliente, los rate cards, las columnas, las tarifas y los estimates de este ejemplo son ilustrativos. Los rate cards y sus columnas dependen de la configuración de tu agencia.
 

@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Diga ao AI Assistant que rate card quer alterar, que grupos de cargo ou utilizadores, em quanto e a partir de quando, ou anexe o ficheiro com as novas tarifas. O assistente mostra a tarifa atual e a nova de cada coluna da rate card, e lista os estimates que a usam, para que possa decidir se também precisam de novos preços. Escolhe se altera a rate card ou cria uma nova para o novo período, e revê a alteração num cartão antes de ser aplicada.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, as rate cards, as colunas, as tarifas e os estimates neste exemplo são ilustrativos. As rate cards e as suas colunas dependem da configuração da sua agência.
 

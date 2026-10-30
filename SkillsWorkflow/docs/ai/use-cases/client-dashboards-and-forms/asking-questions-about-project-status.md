@@ -8,13 +8,13 @@ sidebar_position: 2
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Ask the AI Assistant, in your own words, how a project is going. It answers with the project's jobs by stage, what was delivered, what is late and what is due next, and the hours recorded against what was contracted. Follow up to see what could put the timeline at risk and which jobs are waiting on the client, so you know what to raise at your next status meeting.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, project, jobs and hours in this example are illustrative. The jobs you see depend on your access and on the data your agency makes available to the assistant.
 

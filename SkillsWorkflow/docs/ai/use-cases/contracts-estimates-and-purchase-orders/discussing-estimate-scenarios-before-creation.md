@@ -8,13 +8,13 @@ sidebar_position: 4
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Before you create an estimate, ask the AI Assistant to compare the options you are weighing: a different scope, fewer hours for a typology group, or another column of the client's rate card. The assistant prices each scenario, shows the hours and the total side by side, and tells you how each one fits the client's budget. When you choose one, it prepares the estimate from it for your approval.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, project, rate card columns, rates and values in this example are illustrative. Rate cards and their columns depend on your agency's configuration.
 

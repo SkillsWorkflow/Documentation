@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Tell the AI Assistant what you want to share with a client: the status of their projects, the contract burn, the risks or the requests waiting on them. The assistant matches it to the workspaces and client portals your agency has, explains what each one shows and recommends the clearest choice. It also tells you which views are meant for the agency only, such as profitability.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency and client in this example are illustrative. The assistant recommends from the workspaces and portals available in your agency, so the names you see may differ. Burn Workspace and Profitability Workspace, used in this example, are client workspaces.
 

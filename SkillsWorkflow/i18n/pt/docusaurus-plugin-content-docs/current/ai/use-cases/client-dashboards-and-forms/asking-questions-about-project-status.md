@@ -8,13 +8,13 @@ sidebar_position: 2
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Pergunte ao AI Assistant, por palavras suas, como está a correr um projeto. O assistente responde com os jobs do projeto por etapa, o que foi entregue, o que está atrasado e o que se segue, e as horas registadas face às contratadas. Faça perguntas de seguimento para ver o que pode pôr o prazo em risco e que jobs estão à espera do cliente, para saber o que levar à próxima reunião de ponto de situação.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, o projeto, os jobs e as horas neste exemplo são ilustrativos. Os jobs que vê dependem dos seus acessos e dos dados que a sua agência disponibiliza ao assistente.
 

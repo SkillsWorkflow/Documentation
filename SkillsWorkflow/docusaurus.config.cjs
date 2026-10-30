@@ -230,7 +230,8 @@ module.exports = {
           sidebarItemsGenerator,
           editUrl:
             'https://github.com/SkillsWorkflow/Documentation/edit/master/SkillsWorkflow',
-          editLocalizedFiles: true
+          editLocalizedFiles: true,
+          admonitions: { keywords: ['preview'], extendDefaults: true }
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')

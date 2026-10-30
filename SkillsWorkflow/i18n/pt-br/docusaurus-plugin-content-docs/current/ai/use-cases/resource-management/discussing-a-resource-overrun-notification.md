@@ -8,13 +8,13 @@ sidebar_position: 8
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Quando o Assistente de IA avisar que alguém registrou mais horas em uma Atividade do que o planejado, pergunte o motivo. O assistente lê o Feed da Atividade, os comentários e as respostas, a descrição e os arquivos anexados, e resume o que explica as horas a mais. Em seguida, você pode pedir que ele publique um comentário no Feed da Atividade, mencionando as pessoas que precisam confirmar a causa e decidir o que acontece a seguir. Você revisa o comentário antes de ele ser publicado.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, as pessoas, a Atividade, os comentários e as horas deste exemplo são ilustrativos. O assistente só lê documentos e comentários aos quais você tem acesso.
 

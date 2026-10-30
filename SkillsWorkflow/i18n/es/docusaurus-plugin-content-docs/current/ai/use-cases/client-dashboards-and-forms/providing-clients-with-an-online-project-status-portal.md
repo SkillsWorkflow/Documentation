@@ -8,15 +8,15 @@ sidebar_position: 1
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Indica al AI Assistant para qué cliente y proyecto es el portal y qué debe mostrar. El asistente propone las secciones de la página y los datos de cada una: el estado del proyecto, el burn del contrato, los jobs en riesgo y las peticiones que siguen pendientes de alguien. Revisas la página y el asistente la publica como portal de cliente con su propia dirección, lista para compartir.
 
 Un portal de cliente es una página independiente, servida desde Skills Workflow y que lee datos en directo. Quien lo abre inicia sesión y ve los datos que le permiten sus propios permisos. Consulta [Portales de Cliente](/docs/ai/ai-portals) para saber cómo funcionan los portales y qué falta todavía.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, el cliente, el proyecto, los números y la dirección de este ejemplo son ilustrativos.
 

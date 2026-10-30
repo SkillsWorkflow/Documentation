@@ -8,13 +8,13 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 Ask the AI Assistant, in your own words, what is open for one client or for several. It lists the client's active projects with their open and late jobs, and you can follow up to see which jobs are overdue and who is responsible for each, and what is due in the coming days. Use it to prepare a client call or to decide where to follow up first.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, projects, jobs and people in this example are illustrative. The jobs you see depend on your access and on the data your agency makes available to the assistant.
 

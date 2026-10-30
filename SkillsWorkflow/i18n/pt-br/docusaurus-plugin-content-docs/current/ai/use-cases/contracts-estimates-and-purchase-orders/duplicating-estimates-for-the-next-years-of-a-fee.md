@@ -8,15 +8,15 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Copiar o Contrato inteiro está em preview. Hoje o assistente copia apenas a proposta, com as suas linhas, e a cópia fica no Contrato original: ele não cria um novo Contrato. A cópia mantém a **Data de Início**, a **Data de Conclusão** e os valores do original. Definir as novas datas e o campo **Inflation %** na cópia também está em preview, então abra a **Info** da nova proposta e defina-os antes de usá-la. O assistente consegue ativar a cópia.
+:::
+
 ## Visão geral
 
 Diga ao Assistente de IA qual Contrato de cliente você quer renovar e qual taxa de inflação aplicar. O assistente encontra o Contrato deste ano e a sua proposta, e copia os dois para o ano seguinte de uma só vez: o nome e as datas do novo Contrato, e a proposta com as suas linhas, a taxa de inflação aplicada aos valores e a descrição, a equipe ou os campos personalizados que você escolher levar. Você revisa tudo em um cartão antes de qualquer coisa ser criada.
 
 Depois que a cópia existe, o assistente mostra os valores da nova proposta ao lado dos do ano anterior. Você pode então pedir que ele ative a nova proposta, para que a equipe comece a planejar o trabalho do ano.
-
-:::note Preview
-Copiar o Contrato inteiro está em preview. Hoje o assistente copia apenas a proposta, com as suas linhas, e a cópia fica no Contrato original: ele não cria um novo Contrato. A cópia mantém a **Data de Início**, a **Data de Conclusão** e os valores do original. Definir as novas datas e o campo **Inflation %** na cópia também está em preview, então abra a **Info** da nova proposta e defina-os antes de usá-la. O assistente consegue ativar a cópia.
-:::
 
 A agência, o cliente, os Contratos, as propostas, os números, as horas, os valores e as etapas deste exemplo são ilustrativos. Os documentos que você vê dependem dos seus acessos, e as etapas e transições dependem do workflow da proposta.
 

@@ -8,13 +8,13 @@ sidebar_position: 1
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Descreva o trabalho ao Assistente de IA como você faria para um colega: o cliente e o projeto, os entregáveis e as horas de que cada grupo de cargo precisa. O assistente prepara a proposta com uma linha por entregável e grupo de cargo, com os preços do rate card do cliente, e pergunta o que não consegue deduzir, como o Tipo Orçamento ou as datas. Você revisa as linhas e os totais em um cartão antes de a proposta ser criada.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, o projeto, a proposta, os grupos de cargo, as tarifas e os valores deste exemplo são ilustrativos. Os Tipos Orçamento, os rate cards e as etapas dependem da configuração da sua agência.
 

@@ -8,13 +8,13 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
+:::
+
 ## Descripción general
 
 Pregunta al AI Assistant qué estimates enviados a clientes siguen pendientes de aprobación. Los lista con su valor, el día en que se enviaron, cuánto tiempo llevan en espera y quién es el responsable. Pregunta por qué uno está parado y el asistente resume lo que se escribió en el estimate y en su Feed. Después puedes pedirle que publique un comentario en el Feed del estimate para que el responsable haga el seguimiento. Revisas el comentario antes de que se publique.
-
-:::note Preview
-Este caso de uso está en preview y aún no se ha probado de principio a fin. La conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
 
 La agencia, los clientes, los estimates, los valores y las etapas de este ejemplo son ilustrativos. Las etapas dependen del workflow de cada estimate, y los estimates que ves dependen de tus accesos.
 

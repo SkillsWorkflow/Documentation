@@ -8,15 +8,15 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Copiar el Fee completo está en preview. Hoy el asistente copia solo el estimate, con sus líneas, y la copia queda en el Fee original: no crea un nuevo Fee. La copia mantiene la **Fecha de Inicio**, la **Fecha de Fin** y los valores del original. Definir las nuevas fechas y el campo **Inflación %** en la copia también está en preview, así que abre la **Info** del nuevo estimate y defínelos antes de usarlo. El asistente puede activar la copia.
+:::
+
 ## Visión general
 
 Dile al AI Assistant qué Fee de cliente quieres renovar y qué tasa de inflación aplicar. El asistente encuentra el Fee de este año y su estimate, y copia ambos al año siguiente en el mismo paso: el nombre y las fechas del nuevo Fee, y el estimate con sus líneas, la tasa de inflación aplicada a sus valores y la descripción, el equipo o los campos personalizados que elijas copiar. Revisas todo en una tarjeta antes de que se cree nada.
 
 Una vez creada la copia, el asistente muestra los valores del nuevo estimate junto a los del año anterior. Después puedes pedirle que active el nuevo estimate, para que el equipo pueda empezar a planificar el trabajo del año.
-
-:::note Preview
-Copiar el Fee completo está en preview. Hoy el asistente copia solo el estimate, con sus líneas, y la copia queda en el Fee original: no crea un nuevo Fee. La copia mantiene la **Fecha de Inicio**, la **Fecha de Fin** y los valores del original. Definir las nuevas fechas y el campo **Inflación %** en la copia también está en preview, así que abre la **Info** del nuevo estimate y defínelos antes de usarlo. El asistente puede activar la copia.
-:::
 
 La agencia, el cliente, los Fees, los estimates, los números, las horas, los valores y las etapas de este ejemplo son ilustrativos. Los documentos que ves dependen de tus accesos, y las etapas y transiciones dependen del workflow del estimate.
 

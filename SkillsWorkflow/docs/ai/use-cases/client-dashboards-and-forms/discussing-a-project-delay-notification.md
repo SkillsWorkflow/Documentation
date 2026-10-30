@@ -8,13 +8,13 @@ sidebar_position: 5
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+:::
+
 ## Overview
 
 When the AI Assistant tells you that a job is late, ask it why. The assistant reads the job's Feed, its comments and replies, the description and the attached files, and summarises what held the work up. Ask what else in the project depends on it, and then ask the assistant to post a comment on the job's Feed so the team confirms the cause and a new date. You review the comment before it is posted.
-
-:::note Preview
-This use case is in preview and has not been tested end to end yet. The conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
 
 The agency, client, people, jobs, comments and dates in this example are illustrative. The assistant only reads documents and comments you can access.
 

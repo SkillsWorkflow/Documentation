@@ -8,13 +8,13 @@ sidebar_position: 4
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Este caso de uso está em preview, a conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
+:::
+
 ## Visão geral
 
 Antes de criar um estimate, peça ao AI Assistant para comparar as opções que está a ponderar: um âmbito diferente, menos horas para um grupo de cargo ou outra coluna da rate card do cliente. O assistente calcula o preço de cada cenário, mostra as horas e o total lado a lado e diz-lhe como cada um se enquadra no orçamento do cliente. Quando escolher um, prepara o estimate a partir dele para a sua aprovação.
-
-:::note Preview
-Este caso de uso está em preview e ainda não foi testado de ponta a ponta. A conversa mostra como se espera que o AI Assistant o trate, e o que hoje responde ou faz pode ser diferente deste exemplo.
-:::
 
 A agência, o cliente, o projeto, as colunas da rate card, as tarifas e os valores neste exemplo são ilustrativos. As rate cards e as suas colunas dependem da configuração da sua agência.
 
