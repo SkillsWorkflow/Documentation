@@ -45,7 +45,9 @@ paths carry the `SkillsWorkflow/` prefix.
 
 - Real screenshots from a dev tenant, with realistic data (an agency's client, campaign, deliverables), never
   customer names or real people. Images are shared by all locales and live in `static/img/<area>/...`.
-- Capture at 1x (Playwright `scale: "css"`), cropped to the part the step talks about, under ~200 KB.
+- Capture at 2x (Playwright `deviceScaleFactor: 2` with `scale: "device"`), cropped to the part the step talks about, and
+  never resize it down: the image must stay sharp on high-density screens. Keep PNG for interface shots; use JPEG
+  at quality 90 only when a PNG passes ~600 KB.
 - Markdown alt is the CSS selector (`img-box-shadow`, `img-box-shadow-popup`, `img-box-shadow-sm`), with a
   `<figcaption>` directly below. Without the final screenshot yet: a placeholder whose file name says it is one.
 
