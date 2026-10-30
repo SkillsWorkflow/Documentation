@@ -1,93 +1,32 @@
 ---
 id: ai-connector-client-status-page
 title: Compartilhar uma Página de Status em Tempo Real com um Cliente
-description: "Peça ao Claude uma página que mostre a um cliente o andamento da campanha, as entregas e o que aguarda por ele, publicada em um único endereço que sempre mostra os dados de hoje."
+description: "Peça à sua ferramenta de IA uma página que mostre a um cliente o andamento da campanha, as entregas e o que aguarda por ele, publicada em um único endereço que sempre mostra os dados de hoje."
 sidebar_label: Uma Página de Status em Tempo Real para um Cliente
 sidebar_position: 3
 ---
 
-import Walkthrough from '@site/src/components/UseCaseWalkthrough';
+Dê a um cliente um único endereço onde ele vê como o trabalho está andando: o progresso da campanha, as entregas previstas e as aprovações que aguardam por ele. Peça a página à sua ferramenta de IA, revise-a e envie o endereço ao cliente. A página lê o Skills Workflow sempre que é aberta, então ninguém a atualiza à mão.
 
-Dê a um cliente um único endereço onde ele vê como o trabalho está andando: o progresso da campanha, as entregas previstas e as aprovações que aguardam por ele. Peça a página ao Claude, revise-a e envie o endereço ao cliente. A página lê o Skills Workflow sempre que é aberta, então ninguém a atualiza à mão e ninguém envia um deck de status por e-mail na sexta-feira.
+![img-box-shadow](/img/ai/connector/client-status-page.png)
+<figcaption>Uma página de status publicada com o conector em um tenant de demonstração, para o cliente fictício Northwind Coffee: o progresso, três contadores, as entregas que aguardam o cliente e todas as entregas com a etapa e a data de entrega.</figcaption>
 
 ## Disponibilidade
 
-Disponível. Você precisa do [conector do Skills Workflow no Claude](/docs/ai/connector/ai-connector-setup). O cliente faz login com o próprio usuário do Skills Workflow e vê apenas os projetos e as Atividades que esse usuário tem permissão para ver.
+Disponível. Você precisa do [conector do Skills Workflow na sua ferramenta de IA](/docs/ai/connector/ai-connector-setup). O cliente faz login com o próprio usuário do Skills Workflow e vê apenas os projetos e as Atividades que esse usuário tem permissão para ver.
 
 ## Como pedir
 
-1. Indique o cliente, o projeto ou a campanha, e o que o cliente deve ver na página.
-2. Confira o que o Claude propõe para cada seção e os dados por trás dela. Peça alterações antes de ele publicar.
-3. O Claude publica a página com o nome do cliente e informa o endereço.
-4. Abra o endereço como um usuário com as permissões do cliente e depois envie-o.
-
-A agência, o cliente, os números e o endereço deste exemplo são ilustrativos.
-
-<Walkthrough
-  title="Claude"
-  subtitle="Exemplo de conversa entre um gerente de contas e o Claude."
-  sidebar={
-    <>
-      <Walkthrough.CapabilityCard title="Um status que se mantém atualizado sozinho">
-        O Claude monta a página a partir dos seus projetos e Atividades. Sempre que o cliente a abre, ela mostra os dados de hoje.
-      </Walkthrough.CapabilityCard>
-      <Walkthrough.ChecklistCard
-        items={[
-          'Indique o cliente e a campanha.',
-          'Diga o que o cliente deve e não deve ver.',
-          'Revise as seções antes de o Claude publicar.',
-          'Abra o endereço como o cliente antes de enviá-lo.',
-        ]}
-      />
-      <Walkthrough.PhrasingCard
-        items={[
-          'Crie uma página de status para a campanha de Natal da Northwind Coffee.',
-          'Coloque no topo as aprovações que aguardam o cliente.',
-          'Esconda as horas, o cliente não deve vê-las.',
-        ]}
-      />
-      <Walkthrough.NoteCard
-        items={[
-          'O cliente precisa de um usuário do Skills Workflow para abrir a página.',
-          'Qualquer usuário com login que saiba o endereço pode abri-la. Restrinja a pasta por perfil quando isso importar.',
-        ]}
-      />
-    </>
-  }
->
-  <Walkthrough.Message sender="you" name="Você">
-    <p>Crie uma página de status para a campanha Christmas 2026 da Northwind Coffee. Eles devem ver o progresso, o que vence nas próximas duas semanas e tudo o que aguarda a aprovação deles. Sem horas nem custos.</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Claude">
-    <p>Esta é a página que vou publicar para a Northwind Coffee:</p>
-    <Walkthrough.FieldTable
-      rows={[
-        ['Cabeçalho', 'Nome da campanha, responsável e progresso geral'],
-        ['Aguardando você', 'Atividades em uma etapa de aprovação do cliente, das mais antigas para as mais recentes'],
-        ['Para as próximas duas semanas', 'Entregas com a data de entrega e a etapa'],
-        ['Entregue', 'Atividades fechadas neste mês'],
-        ['Deixado de fora', 'Horas, valores de hora e custos'],
-      ]}
-    />
-    <p>O endereço será <code>/portal/northwind-coffee/christmas-2026/</code>. Posso publicar?</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="Você">
-    <p>Sim, pode publicar.</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Claude">
-    <Walkthrough.StatusChip status="Publicado" label="northwind-coffee/christmas-2026" />
-    <p>Está publicada. Abra-a com um usuário que tenha as permissões da Northwind Coffee antes de enviar o endereço: é exatamente o que o cliente vai ver.</p>
-  </Walkthrough.Message>
-</Walkthrough>
+1. Indique o cliente e o projeto, e diga o que o cliente deve ver. A página acima foi criada a partir da consulta `DE-Jobs`, filtrada para um cliente e um projeto.
+2. Diga qual etapa significa "aguardando o cliente". Os nomes das etapas são os configurados no seu tenant, e a página os mostra como estão.
+3. Deixe a ferramenta de IA publicar a página. Ela informa o endereço, `/portal/{client}/{page}/`.
+4. Abra o endereço como um usuário com as permissões do cliente antes de enviá-lo.
 
 ## Regras e comportamento
 
-- O endereço tem duas partes, o cliente e a página: `/portal/{client}/{page}/`. Ambas usam apenas letras minúsculas, números e hífens.
+- O endereço tem duas partes, o cliente e a página. Ambas usam apenas letras minúsculas, números e hífens.
 - Pedir uma alteração republica a página inteira no mesmo endereço. O cliente continua com o mesmo link.
-- A página não tem imagens próprias além das que o Claude incorpora nela. Os logos e as fotos de pessoas e clientes vêm do Skills Workflow.
+- Uma página publicada pela primeira vez pode responder "não encontrada" por alguns instantes antes de abrir.
 - Abrir a página sem sessão mostra o login do Skills Workflow e volta para a página em seguida.
 
 ## Artigos relacionados

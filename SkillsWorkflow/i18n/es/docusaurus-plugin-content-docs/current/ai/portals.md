@@ -69,7 +69,7 @@ Por eso, los gráficos se dibujan en la propia página.
 2. **Identifica los datos.** Qué informe, qué cifras, qué registros. Un portal lee lo que publican tus queries de extracción de datos, así que una pregunta que ninguna query responde necesita primero la query.
 3. **El portal se genera.** La skill `client-portal` le da al agent todo el contrato: el SDK, el sandbox, la gramática de las queries y la regla de que no se puede inventar ningún endpoint ni columna. Cuando un hecho no se puede confirmar, el agent lo dice.
 4. **Revísalo frente a los distintos estados, no solo el camino ideal.** Un portal debe mostrar una respuesta vacía, una denegada y un servicio inalcanzable como tres cosas distintas. Ábrelo como un usuario al que *no* se le ha concedido el informe y comprueba qué ve.
-5. **Publícalo.** Con el [conector de Skills Workflow en Claude](/docs/ai/connector/ai-connector-setup), Claude publica el portal en la carpeta `Portals` del sistema de archivos de tu tenant, en `{client}/{portal}/`, y te da su dirección.
+5. **Publícalo.** Con el [conector de Skills Workflow en tu herramienta de IA](/docs/ai/connector/ai-connector-setup), tu herramienta de IA publica el portal en la carpeta `Portals` del sistema de archivos de tu tenant, en `{client}/{portal}/`, y te da su dirección.
 
 ## Reglas y comportamiento
 
@@ -83,14 +83,14 @@ Por eso, los gráficos se dibujan en la propia página.
 
 Esto es lo que se sabe y vale la pena decidir antes de llevar los portales a usuarios clientes:
 
-- **El conector publica un archivo por portal.** Un portal publicado desde Claude es un único `index.html`, con sus estilos, scripts e imágenes dentro. Un portal formado por varios archivos se publica creando sus carpetas y subiendo sus archivos.
+- **El conector publica un archivo por portal.** Un portal publicado a través del conector es un único `index.html`, con sus estilos, scripts e imágenes dentro. Un portal formado por varios archivos se publica creando sus carpetas y subiendo sus archivos.
 - **Un portal no está delimitado a su cliente.** Hoy, el acceso es "tiene una sesión, y la carpeta existe". El segmento del cliente en la URL no restringe quién puede abrirlo, así que cualquier usuario con sesión iniciada puede abrir el portal de cualquier cliente si conoce su dirección. Restringir las carpetas de los portales por rol es el mecanismo a usar mientras tanto.
 - **Quién puede escribir en la carpeta `Portals` es un límite de seguridad.** Un portal ejecuta script en el navegador de todos los que lo abren. Trata el acceso de escritura a esa carpeta como tratarías el despliegue de código.
 - **Un build que genere rutas absolutas no funcionará.** Un portal se sirve bajo su propia ruta; una página cuyos assets se referencien desde la raíz del sitio los pierde todos. Genera rutas relativas, o configura la ruta base en el momento del build.
 
 ## Artículos relacionados
 
-- [Skills Workflow en Claude](/docs/ai/connector)
+- [Skills Workflow en tu Herramienta de IA](/docs/ai/connector)
 - [Conectar Claude, Codex o GitHub Copilot a Skills Workflow](/docs/ai/connector/ai-connector-setup)
 - [Añadir tus propias skills, agents y tools](/docs/ai/ai-extend)
 - [Data Extraction API](/docs/build-and-extend/api/data-extraction-api)

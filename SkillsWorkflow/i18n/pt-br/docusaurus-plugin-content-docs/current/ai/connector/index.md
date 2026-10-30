@@ -1,46 +1,44 @@
 ---
 id: ai-connector
-title: Skills Workflow no Claude
-description: "Conecte o Claude ao Skills Workflow e crie o que a sua agência entrega a clientes e equipes: páginas de status, relatórios, telas dentro da plataforma, relatórios para imprimir, formulários e painéis de parede, todos lendo dados em tempo real."
+title: Skills Workflow na Sua Ferramenta de IA
+description: "Conecte o Claude, o Codex ou o GitHub Copilot ao Skills Workflow e crie o que a sua agência entrega a clientes e equipes: páginas de status, relatórios e telas dentro da plataforma, todos lendo dados em tempo real."
 sidebar_label: Visão geral
 sidebar_position: 1
 ---
 
-Conecte o Claude ao tenant do Skills Workflow e descreva o que você precisa em linguagem simples. O Claude cria, publica no seu tenant e informa o endereço. O que ele cria lê dados do Skills Workflow em tempo real, e cada pessoa que abre vê apenas o que as suas próprias permissões permitem.
+Conecte a sua ferramenta de IA ao seu tenant do Skills Workflow e descreva o que você precisa em linguagem simples. Ela cria, publica no seu tenant e informa o endereço. O que ela cria lê dados do Skills Workflow em tempo real, e cada pessoa que abre vê apenas o que as suas próprias permissões permitem.
 
-A conexão é um conector que você adiciona uma única vez, com as credenciais que a equipe do Skills Workflow envia. O mesmo conector funciona no Claude Code, no Codex e no GitHub Copilot. Leia [Conectar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/connector/ai-connector-setup) para configurá-lo.
+A conexão é um conector que você adiciona uma única vez, com as credenciais que a equipe do Skills Workflow envia. O mesmo conector funciona no Claude, no Claude Code, no Codex e no GitHub Copilot. Leia [Conectar o Claude, o Codex ou o GitHub Copilot ao Skills Workflow](/docs/ai/connector/ai-connector-setup) para configurá-lo.
 
 ## O que você pode criar
 
-| O que a sua agência precisa | Exemplo típico | Status |
-|---|---|---|
-| [Uma página de status em tempo real para um cliente](/docs/ai/connector/ai-connector-client-status-page) | O andamento de uma campanha, as entregas e o que aguarda o cliente, em um único endereço | Disponível |
-| [Um endereço para tudo o que um cliente abre](/docs/ai/connector/ai-connector-client-hub) | A página inicial de um cliente, com links para cada uma das páginas de status e relatórios dele | Disponível |
-| [Um relatório a partir dos seus dados](/docs/ai/connector/ai-connector-reports) | Horas e burn de um retainer, faturamento por mês, Atividades por etapa | Disponível |
-| [Uma tela dentro do Skills Workflow](/docs/ai/connector/ai-connector-team-screens) | Um quadro de tráfego no menu, uma aba em cada Atividade, a página inicial da equipe | Disponível |
-| [Um relatório para imprimir ou enviar](/docs/ai/connector/ai-connector-printable-reports) | O relatório de status mensal como está hoje, salvo em PDF e enviado por e-mail | Preview |
-| [Um formulário que cria trabalho](/docs/ai/connector/ai-connector-forms) | Um formulário de pedido que abre uma Atividade, um formulário curto de feedback depois de uma entrega | Preview |
-| [Números em uma tela no estúdio](/docs/ai/connector/ai-connector-wall-displays) | Os prazos de hoje e a capacidade da semana em uma TV no estúdio | Preview |
+| O que a sua agência precisa | O exemplo na página |
+|---|---|
+| [Uma página de status em tempo real para um cliente](/docs/ai/connector/ai-connector-client-status-page) | O progresso de uma campanha, as entregas e o que aguarda a aprovação do cliente |
+| [Um endereço para tudo o que um cliente abre](/docs/ai/connector/ai-connector-client-hub) | A página inicial de um cliente com links para a página de status e o relatório dele, com um número em tempo real ao lado de cada um |
+| [Um relatório a partir dos seus dados](/docs/ai/connector/ai-connector-reports) | As entregas de uma campanha por etapa e previstas por semana, a partir da consulta DE-Jobs |
+| [Uma tela dentro do Skills Workflow](/docs/ai/connector/ai-connector-team-screens) | A página inicial da equipe com contadores em tempo real, que também tem uma entrada no menu |
 
-**Disponível** significa que a plataforma oferece suporte hoje. **Preview** significa que pode ser criado com o que a plataforma oferece hoje, mas ainda não foi testado de ponta a ponta; confira o resultado antes de entregá-lo a alguém.
+## Planejado {#planned}
 
-Outras coisas que as agências pedem, criadas da mesma forma:
+Estes itens ainda não estão disponíveis e não têm data. O comportamento abaixo é o esperado e pode mudar.
 
-- Um acompanhamento de novos negócios com os pitches em andamento e as Propostas aguardando aprovação
-- Uma página de boas-vindas para um novo cliente, com a equipe, os contatos e como pedir trabalho
-- O resumo de fim de campanha: o que foi entregue, as horas gastas em relação à Proposta e as aprovações registradas
-- Uma página por diretor de contas, com os clientes dele, ordenados pelo que precisa de atenção
+| O que a sua agência precisa | Comportamento esperado |
+|---|---|
+| Um relatório para imprimir ou enviar | Um relatório diagramado para papel. Você o abre, imprime ou salva como PDF, e a cópia guarda os números e a data daquele momento, pronta para enviar por e-mail a alguém de fora do Skills Workflow. |
+| Um formulário que cria trabalho | Um formulário que um cliente ou um colega preenche e que cria a Atividade no Skills Workflow com as respostas nos campos dela, como a pessoa que o enviou. |
+| Números em uma tela no estúdio | Uma visão feita para uma TV: poucos números em letras grandes, como os prazos do dia e as Atividades que aguardam os clientes, atualizando sozinha. |
 
-## Planejado: trabalhar no Skills Workflow a partir do Claude
+### Trabalhar no Skills Workflow a partir da sua ferramenta de IA
 
-Hoje o conector cria e publica. Está planejado um segundo conector para trabalhar nos seus dados diretamente a partir do Claude: encontrar documentos, mover uma Atividade para a próxima etapa, atualizar registros. Ele ainda não está disponível e não tem data.
+Hoje o conector cria e publica. Está planejado um segundo conector para trabalhar nos seus dados diretamente a partir da sua ferramenta de IA: encontrar documentos, mover uma Atividade para a próxima etapa, atualizar registros. Ele ainda não está disponível e não tem data.
 
 ## Regras e comportamento
 
-- Tudo o que o Claude publica fica armazenado no file system do seu tenant e é servido a partir do endereço do próprio tenant.
-- Ninguém abre o que o Claude publica sem fazer login no Skills Workflow. Clientes que vão abrir uma página precisam de um usuário do Skills Workflow.
-- O que o Claude publica lê os dados com as permissões da pessoa que o está vendo, e nunca mostra a alguém dados que essa pessoa não poderia ver no Skills Workflow.
-- O Claude pode cometer erros. Abra o que ele publica como as pessoas que vão usá-lo antes de compartilhar o endereço. Veja [A IA Pode Cometer Erros](/docs/ai/ai-can-make-mistakes).
+- Tudo o que a sua ferramenta de IA publica fica armazenado no file system do seu tenant e é servido a partir do endereço do próprio tenant.
+- Ninguém abre o que a sua ferramenta de IA publica sem fazer login no Skills Workflow. Clientes que vão abrir uma página precisam de um usuário do Skills Workflow.
+- O que a sua ferramenta de IA publica lê os dados com as permissões da pessoa que o está vendo, e nunca mostra a alguém dados que essa pessoa não poderia ver no Skills Workflow.
+- As ferramentas de IA podem cometer erros. Abra o que ela publica como as pessoas que vão usá-lo antes de compartilhar o endereço. Veja [A IA Pode Cometer Erros](/docs/ai/ai-can-make-mistakes).
 
 ## Artigos relacionados
 

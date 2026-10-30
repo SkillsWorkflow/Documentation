@@ -33,7 +33,7 @@ Con los datos llegan dos skills, `client-portal` y `app-page`. Le dan a la herra
 ## Añadir el conector
 
 <Tabs groupId="ai-tool" queryString>
-<TabItem value="claude" label="Claude" default>
+<TabItem value="claude" label={<span className="sw-tool-tab"><img src="/img/ai/logos/claude.svg" alt=""/>Claude</span>} default>
 
 Claude en la web y Claude Desktop comparten los conectores. En los planes Team y Enterprise, un propietario de la organización de Claude añade el conector para todos.
 
@@ -55,7 +55,7 @@ Claude en la web y Claude Desktop comparten los conectores. En los planes Team y
 Claude guarda los valores de las cabeceras y no vuelve a mostrarlos. Para cambiar uno, quita el conector y vuelve a añadirlo.
 
 </TabItem>
-<TabItem value="claude-code" label="Claude Code">
+<TabItem value="claude-code" label={<span className="sw-tool-tab"><img src="/img/ai/logos/claude.svg" alt=""/>Claude Code</span>}>
 
 Añade el conector desde un terminal:
 
@@ -69,7 +69,7 @@ claude mcp add --transport http skills-workflow https://apiv2-demo-test-we.skill
 Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envió el equipo de Skills Workflow.
 
 </TabItem>
-<TabItem value="codex" label="Codex">
+<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
 
 :::preview
 Esta configuración sigue la documentación del propio Codex y todavía no se ha probado con Skills Workflow.
@@ -87,7 +87,7 @@ env_http_headers = { "x-app-key" = "SW_APP_KEY" }
 Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envió el equipo de Skills Workflow. La app key se lee de la variable de entorno `SW_APP_KEY`, lo que la mantiene fuera del archivo; asigna la app key a esa variable antes de iniciar Codex.
 
 </TabItem>
-<TabItem value="copilot" label="GitHub Copilot">
+<TabItem value="copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/githubcopilot.svg" alt="" className="sw-tool-tab__mono" />GitHub Copilot</span>}>
 
 :::preview
 Esta configuración sigue la documentación de Visual Studio Code y todavía no se ha probado con Skills Workflow.
@@ -128,10 +128,23 @@ Las pantallas dentro de Skills Workflow se construyen como un pequeño proyecto 
 Inicia una conversación nueva y pregunta:
 
 ```
-Using Skills Workflow, give me the address of a page named "status" for the client "test".
+Which Skills Workflow tools do you have?
 ```
 
-La herramienta responde con una dirección en el propio dominio de tu tenant. No se crea nada: la pregunta solo resuelve dónde se serviría esa página. Un error en lugar de una dirección significa que uno de los valores es incorrecto; compara cada cabecera con lo que envió el equipo de Skills Workflow.
+La respuesta enumera las ocho tools del conector:
+
+| Tool | Qué hace |
+|---|---|
+| `get_client_portal` | Lee una página de cliente publicada |
+| `create_client_portal` | Publica una página de cliente nueva |
+| `update_client_portal` | Sustituye una página de cliente publicada |
+| `get_portal_url` | Da la dirección de una página de cliente |
+| `get_app_page` | Lee una pantalla dentro de Skills Workflow y sus versiones |
+| `publish_app_page_version` | Publica una versión nueva de una pantalla |
+| `set_app_page_live_version` | Elige la versión de una pantalla que reciben los usuarios |
+| `get_app_page_url` | Da la dirección de una pantalla |
+
+Esta pregunta no lee ni escribe nada en tu tenant. Si la herramienta dice que no tiene tools de Skills Workflow, o informa de un error, uno de los valores es incorrecto; compara la dirección y cada cabecera con lo que envió el equipo de Skills Workflow.
 
 ## Reglas y comportamiento
 
@@ -142,6 +155,6 @@ La herramienta responde con una dirección en el propio dominio de tu tenant. No
 
 ## Artículos relacionados
 
-- [Skills Workflow en Claude](/docs/ai/connector)
+- [Skills Workflow en tu Herramienta de IA](/docs/ai/connector)
 - [Portales de Cliente](/docs/ai/ai-portals)
 - [La IA Puede Cometer Errores](/docs/ai/ai-can-make-mistakes)

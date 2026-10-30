@@ -33,7 +33,7 @@ Com os dados vêm duas skills, `client-portal` e `app-page`. Dão à ferramenta 
 ## Adicionar o conector
 
 <Tabs groupId="ai-tool" queryString>
-<TabItem value="claude" label="Claude" default>
+<TabItem value="claude" label={<span className="sw-tool-tab"><img src="/img/ai/logos/claude.svg" alt=""/>Claude</span>} default>
 
 O Claude na web e o Claude Desktop partilham os conectores. Nos planos Team e Enterprise, é um owner da organização no Claude que adiciona o conector para todos.
 
@@ -55,7 +55,7 @@ O Claude na web e o Claude Desktop partilham os conectores. Nos planos Team e En
 O Claude guarda os valores dos headers e não volta a mostrá-los. Para alterar um, remova o conector e adicione-o de novo.
 
 </TabItem>
-<TabItem value="claude-code" label="Claude Code">
+<TabItem value="claude-code" label={<span className="sw-tool-tab"><img src="/img/ai/logos/claude.svg" alt=""/>Claude Code</span>}>
 
 Adicione o conector a partir de um terminal:
 
@@ -69,7 +69,7 @@ claude mcp add --transport http skills-workflow https://apiv2-demo-test-we.skill
 Substitua o endereço pelo do seu tenant e cada `<...>` pelo valor que a equipa do Skills Workflow enviou.
 
 </TabItem>
-<TabItem value="codex" label="Codex">
+<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
 
 :::preview
 Esta configuração segue a documentação do próprio Codex e ainda não foi testada com o Skills Workflow.
@@ -87,7 +87,7 @@ env_http_headers = { "x-app-key" = "SW_APP_KEY" }
 Substitua o endereço pelo do seu tenant e cada `<...>` pelo valor que a equipa do Skills Workflow enviou. A app key é lida da variável de ambiente `SW_APP_KEY`, o que a mantém fora do ficheiro; defina essa variável com a app key antes de iniciar o Codex.
 
 </TabItem>
-<TabItem value="copilot" label="GitHub Copilot">
+<TabItem value="copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/githubcopilot.svg" alt="" className="sw-tool-tab__mono" />GitHub Copilot</span>}>
 
 :::preview
 Esta configuração segue a documentação do Visual Studio Code e ainda não foi testada com o Skills Workflow.
@@ -128,10 +128,23 @@ Os ecrãs dentro do Skills Workflow são construídos como um pequeno projeto de
 Comece uma nova conversa e pergunte:
 
 ```
-Using Skills Workflow, give me the address of a page named "status" for the client "test".
+Which Skills Workflow tools do you have?
 ```
 
-A ferramenta responde com um endereço no domínio do seu tenant. Nada é criado: a pergunta apenas resolve onde uma página assim seria servida. Um erro em vez de um endereço significa que um dos valores está errado; compare cada header com o que a equipa do Skills Workflow enviou.
+A resposta lista as oito tools do conector:
+
+| Tool | O que faz |
+|---|---|
+| `get_client_portal` | Lê uma página de cliente publicada |
+| `create_client_portal` | Publica uma nova página de cliente |
+| `update_client_portal` | Substitui uma página de cliente publicada |
+| `get_portal_url` | Dá o endereço de uma página de cliente |
+| `get_app_page` | Lê um ecrã dentro do Skills Workflow e as suas versões |
+| `publish_app_page_version` | Publica uma nova versão de um ecrã |
+| `set_app_page_live_version` | Escolhe a versão de um ecrã que os utilizadores recebem |
+| `get_app_page_url` | Dá o endereço de um ecrã |
+
+Esta pergunta não lê nem escreve nada no seu tenant. Se a ferramenta disser que não tem tools do Skills Workflow, ou mostrar um erro, um dos valores está errado; compare o endereço e cada header com o que a equipa do Skills Workflow enviou.
 
 ## Regras e comportamento
 
@@ -142,6 +155,6 @@ A ferramenta responde com um endereço no domínio do seu tenant. Nada é criado
 
 ## Artigos relacionados
 
-- [Skills Workflow no Claude](/docs/ai/connector)
+- [Skills Workflow na Sua Ferramenta de IA](/docs/ai/connector)
 - [Portais de Cliente](/docs/ai/ai-portals)
 - [A IA Pode Cometer Erros](/docs/ai/ai-can-make-mistakes)
