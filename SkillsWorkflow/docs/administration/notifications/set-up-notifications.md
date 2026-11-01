@@ -27,6 +27,22 @@ Setting up notifications for a tenant means turning on the notifications service
 
 While the setting is off, the tenant uses the [legacy notifications](/docs/product/notifications/notification-types).
 
+## Set the company domain
+
+The company's domain is the address that notifications use in their links to the tenant. **Leaves To Approve** is only sent to approvers whose company has a domain.
+
+1. Go to **Maintenance → Companies** and open the company.
+2. Open the **Others** tab.
+3. In the **Website** group, select the tenant in **Domain** and save.
+
+Repeat this for every company whose users receive notifications.
+
+<figure>
+
+![img-box-shadow](/img/notifications/company-domain.png)
+<figcaption>Domain in the Website group of the Others tab of a company</figcaption>
+</figure>
+
 ## Install the notification components
 
 In **Maintenance → Marketplace**, install:
