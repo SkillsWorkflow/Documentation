@@ -1,0 +1,100 @@
+---
+id: receive-and-manage-notifications
+title: Receber e gerenciar notificações
+description: "Ler notificações no painel Notificações e na página Notifications, abrir o documento relacionado, marcar notificações como lidas ou não lidas, ler os emails de notificação e escolher os canais Email, Push e Web para cada tipo de notificação."
+sidebar_label: Receber e gerenciar notificações
+sidebar_position: 1
+---
+
+As notificações chegam até você na Web, por Email e por Push, nos canais que escolheu para cada tipo de notificação. Na Web aparecem no painel **Notificações** e na página **Notifications**, onde cada uma abre o documento a que diz respeito.
+
+## Pré-requisitos
+
+- O tenant usa o serviço de notificações. Veja [Configurar as notificações](/docs/administration/notifications/set-up-notifications).
+- O canal está selecionado para esse tipo de notificação nas suas preferências. Veja [Escolher as notificações que recebe](#escolher-as-notificações-que-recebe).
+
+## Painel Notificações
+
+Clique no ícone do sino na barra de topo para abrir o painel **Notificações**.
+
+<figure>
+
+![img-box-shadow-sm](/img/notifications/notifications-panel.png)
+<figcaption>O painel Notificações, com os filtros Tudo e Não Lido</figcaption>
+</figure>
+
+Cada cartão mostra quem originou a notificação, quando, o documento a que diz respeito e o que aconteceu: o comentário, a mudança de etapa ou o resumo. Um ponto azul assinala uma notificação não lida.
+
+- **Tudo** e **Não Lido** filtram a lista pelo estado de leitura.
+- **Marcar todas como lidas** marca todas as notificações como lidas.
+- **Ver tudo** abre a [página Notifications](#página-notifications). Aparece quando a página está instalada e a lista não está vazia.
+- **Atualizar** recarrega a lista.
+
+## Abrir uma notificação ou marcá-la como lida
+
+- Clique em um cartão para o marcar como lido e abrir a pré-visualização do documento.
+- Faça duplo clique em um cartão para abrir o documento.
+- Passe o mouse sobre um cartão para mostrar **Navegar para**, que abre o documento, e **Marcar como lido** ou **Marcar como não lido**. Estas ações mudam o estado de leitura sem abrir nada.
+
+<figure>
+
+![img-box-shadow-sm](/img/notifications/notification-card-actions.png)
+<figcaption>Navegar para e Marcar como lido em um cartão de notificação</figcaption>
+</figure>
+
+## Página Notifications
+
+**Ver tudo** no painel abre a página **Notifications**. Lista todas suas notificações, com busca, e abre o documento da notificação selecionada em uma pré-visualização à direita.
+
+<figure>
+
+![img-box-shadow](/img/notifications/all-notifications.png)
+<figcaption>A página Notifications, com o job da notificação selecionada na pré-visualização</figcaption>
+</figure>
+
+## Emails de notificação
+
+Os emails de notificação chegam de notifications@skillsworkflow.com. Um email sobre um documento mostra o documento, a pessoa que agiu e quando, o que aconteceu, o comentário e um botão **Open document** que abre o documento no Skills Workflow.
+
+<figure>
+
+![img-box-shadow](/img/notifications/email-mention.png)
+<figcaption>Email de uma menção, com o comentário e o botão Open document</figcaption>
+</figure>
+
+## Notificações push
+
+As notificações push aparecem no celular pelo aplicativo móvel do Skills Workflow.
+
+## Escolher as notificações que recebe
+
+Suas preferências estão no seu registro de usuário.
+
+1. Acesse **Manutenção → Users** e abra o usuário.
+2. Abra a aba **NOTIFICAÇÃO**. Se ela não estiver visível, abra a lista de abas com **▾**.
+3. Cada linha é um tipo de notificação, identificado pela sua descrição. Selecione **Email**, **Push** e **Web** nos canais que você quer e desmarque os demais.
+
+<figure>
+
+![img-box-shadow-popup](/img/notifications/user-notification-preferences.png)
+<figcaption>A aba NOTIFICAÇÃO de um usuário, com os canais selecionados por tipo de notificação</figcaption>
+</figure>
+
+A aba **NOTIFICAÇÃO** aparece quando o tenant usa o serviço de notificações e você tem a role `NotificationPreferenceWrite`. Alterar as preferências de outro usuário exige também a role `CanManageOthersPreferences`.
+
+## Regras e comportamento
+
+- Um tipo de notificação sem nenhum canal selecionado não é entregue a você.
+- Uma notificação enviada apenas por Email ou Push não aparece no painel Notificações. Selecione **Web** para a ver também aí.
+- As notificações por email exigem um endereço de email no seu usuário.
+- Você nunca é notificado sobre seu próprio comentário.
+- Quando alguém comenta um documento, as pessoas da equipe do documento são notificadas. Uma resposta a um comentário também notifica a equipe.
+- Uma menção notifica a pessoa mencionada. As menções só são entregues enquanto **Receber notificações dos documentos** estiver ativado para esse usuário.
+
+## Artigos relacionados
+
+- [Notificações](/docs/product/notifications)
+- [Notificações disponíveis](/docs/product/notifications/available-notifications)
+- [Usando o Feed](/docs/product/files-and-collaboration/using-feed)
+- [Configurar as notificações](/docs/administration/notifications/set-up-notifications)
+- [Roles e perfis](/docs/administration/system-roles-profiles)
