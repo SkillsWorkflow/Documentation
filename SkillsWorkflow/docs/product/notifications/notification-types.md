@@ -1,10 +1,12 @@
 ---
 id:  notification-types
-title: "Notification Types"
-description: "Skills Workflow sends out two different types of notifications: Depending on their categories, notifications can have different periodicities: Regardless of…"
-sidebar_label: Notification Types
-sidebar_position: 1
+title: "Legacy notifications"
+description: "The legacy Skills Workflow notifications, used by tenants that do not use the notifications service: email and in-system notifications, their immediate, daily and weekly periodicities, and My Notifications."
+sidebar_label: Legacy notifications
+sidebar_position: 3
 ---
+
+This page applies to tenants that do not use the notifications service. For tenants with **Use Notifications Service** turned on, see [Notifications](/docs/product/notifications), [Receive and manage notifications](/docs/product/notifications/receive-and-manage-notifications) and [Available notifications](/docs/product/notifications/available-notifications).
 
 Skills Workflow sends out two different types of notifications:
 
@@ -112,4 +114,5 @@ Responsible Notifications:
 
 ## Related articles
 
+- [Notifications](/docs/product/notifications)
 - [Using the Feed](/docs/product/files-and-collaboration/using-feed)

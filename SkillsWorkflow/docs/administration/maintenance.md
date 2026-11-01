@@ -61,7 +61,7 @@ Selecting a card under Configuration entries opens that entry's configuration wo
 | Reports & output | 4 | Printing Layouts, Queries, Query Preview, Reports |
 | Screens, lists & workspaces | 4 | List Definitions, Panels, Views, [Workspaces](/docs/build-and-extend/workspaces) |
 | Media & print production | 4 | Print Size Units, Print Sizes, Publications, Publishers |
-| System & integrations | 12 | AI Skills, [Automations](/docs/build-and-extend/automations), Configuration, [Custom Tables](/docs/administration/custom-tables), Environment, Integration Logs, Integrators, Marketplace, Notification Types, [SSO](/docs/integrations/single-sign-on-sso), System Parameters, [Webhooks](/docs/build-and-extend/api/webhooks) |
+| System & integrations | 12 | AI Skills, [Automations](/docs/build-and-extend/automations), Configuration, [Custom Tables](/docs/administration/custom-tables), Environment, Integration Logs, Integrators, [Marketplace](/docs/administration/system/install-from-marketplace), [Notification Types](/docs/product/notifications/available-notifications), [SSO](/docs/integrations/single-sign-on-sso), System Parameters, [Webhooks](/docs/build-and-extend/api/webhooks) |
 | Other | 7 | Chat GPT, Copilot Chat, File System, Marketplace v2, Projects with Inactive Products, Usage Metrics, and other entries not grouped under another area |
 
 Entries without a link are not yet covered by a dedicated article. The "Other" area can also hold entries that are specific to a tenant.

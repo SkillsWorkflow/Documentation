@@ -370,5 +370,9 @@
   "sidebar.docs.category.Errors & FAQ": {
     "message": "Erros e dúvidas frequentes",
     "description": "The label for category 'Errors & FAQ' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.administration-notifications": {
+    "message": "Notificações",
+    "description": "The label for category 'Notifications' in sidebar 'docs'"
   }
 }

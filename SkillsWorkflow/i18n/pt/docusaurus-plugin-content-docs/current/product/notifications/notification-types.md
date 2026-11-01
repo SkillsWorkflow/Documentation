@@ -1,9 +1,12 @@
 ---
 id:  notification-types
-title: "Tipos de notificação"
-sidebar_label: Tipos de notificação
-sidebar_position: 1
+title: "Notificações antigas"
+description: "As notificações antigas do Skills Workflow, usadas pelos tenants que não usam o serviço de notificações: notificações por email e no sistema, as suas periodicidades imediata, diária e semanal, e Minhas notificações."
+sidebar_label: Notificações antigas
+sidebar_position: 3
 ---
+
+Esta página aplica-se aos tenants que não usam o serviço de notificações. Nos tenants com **Use Notifications Service** ligado, veja [Notificações](/docs/product/notifications), [Receber e gerir notificações](/docs/product/notifications/receive-and-manage-notifications) e [Notificações disponíveis](/docs/product/notifications/available-notifications).
 
 Skills Workflow envia dois tipos diferentes de notificações:
 
@@ -111,4 +114,5 @@ Notificações responsáveis:
 
 ## Artigos relacionados
 
+- [Notificações](/docs/product/notifications)
 - [Utilizar o Feed](/docs/product/files-and-collaboration/using-feed)

@@ -60,7 +60,7 @@ Seleccionar una tarjeta en Configuration entries abre el workspace de configurac
 | Reports & output | 4 | Printing Layouts, Queries, Query Preview, Reports |
 | Screens, lists & workspaces | 4 | List Definitions, Panels, Views, [Workspaces](/docs/build-and-extend/workspaces) |
 | Media & print production | 4 | Print Size Units, Print Sizes, Publications, Publishers |
-| System & integrations | 12 | AI Skills, [Automations](/docs/build-and-extend/automations), Configuration, [Custom Tables](/docs/administration/custom-tables), Environment, Integration Logs, Integrators, Marketplace, Notification Types, [SSO](/docs/integrations/single-sign-on-sso), System Parameters, [Webhooks](/docs/build-and-extend/api/webhooks) |
+| System & integrations | 12 | AI Skills, [Automations](/docs/build-and-extend/automations), Configuration, [Custom Tables](/docs/administration/custom-tables), Environment, Integration Logs, Integrators, [Marketplace](/docs/administration/system/install-from-marketplace), [Notification Types](/docs/product/notifications/available-notifications), [SSO](/docs/integrations/single-sign-on-sso), System Parameters, [Webhooks](/docs/build-and-extend/api/webhooks) |
 | Other | 7 | Chat GPT, Copilot Chat, File System, Marketplace v2, Projects with Inactive Products, Usage Metrics, y otras entradas no agrupadas en otra área |
 
 Las entradas sin enlace todavía no están cubiertas por un artículo específico. El área "Other" también puede contener entradas propias de un tenant.
