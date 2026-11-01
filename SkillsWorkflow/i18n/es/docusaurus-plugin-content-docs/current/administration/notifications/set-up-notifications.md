@@ -27,6 +27,22 @@ Configurar las notificaciones en un tenant consiste en activar el servicio de no
 
 Mientras la opción esté desactivada, el tenant usa las [notificaciones antiguas](/docs/product/notifications/notification-types).
 
+## Definir el dominio de la empresa
+
+El dominio de la empresa es la dirección que las notificaciones usan en sus enlaces al tenant. **Leaves To Approve** solo se envía a aprobadores cuya empresa tiene dominio.
+
+1. Vaya a **Mantenimiento → Companies** y abra la empresa.
+2. Abra la pestaña **Otros**.
+3. En el grupo **Website**, seleccione el tenant en **Dominio** y guarde.
+
+Repita esto para todas las empresas cuyos usuarios reciben notificaciones.
+
+<figure>
+
+![img-box-shadow](/img/notifications/company-domain.png)
+<figcaption>Dominio en el grupo Website de la pestaña Otros de una empresa</figcaption>
+</figure>
+
 ## Instalar los componentes de las notificaciones
 
 En **Mantenimiento → Marketplace**, instale:
