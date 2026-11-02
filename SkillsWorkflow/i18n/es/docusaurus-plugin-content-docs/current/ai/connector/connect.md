@@ -9,6 +9,8 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+Para Microsoft 365 Copilot y Teams, siga [Configurar el agente Copilot Studio](/docs/ai/connector/ai-connector-copilot-studio). La pestaña GitHub Copilot de abajo corresponde a Visual Studio Code.
+
 Añade Skills Workflow a la herramienta de IA con la que trabajas. Una vez conectada, la herramienta puede crear páginas de estado, informes y pantallas para tu agencia y publicarlos en tu tenant. La conexión es la misma en todas las herramientas: una dirección y tres cabeceras.
 
 ## Requisitos previos
