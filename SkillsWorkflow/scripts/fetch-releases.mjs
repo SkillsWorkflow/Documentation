@@ -11,8 +11,8 @@
  * that to every visitor. Projecting here means those fields never leave the
  * build machine.
  *
- * Published per entry: version, title, description, and a category derived from
- * JobType. Nothing else.
+ * Published per entry: version, title, description, the screenshot the What's New
+ * popup shows (ReleaseImage), and a category derived from JobType. Nothing else.
  *
  * Failure is soft. If the endpoint is unreachable the previous releases.json is
  * kept and the build carries on, so an API outage cannot break the docs site.
@@ -41,6 +41,13 @@ function categoryOf(entry) {
   if (type.startsWith('error') || type === 'bug') return 'fix';
   if (type.startsWith('change request')) return 'change';
   return 'improvement';
+}
+
+/* ReleaseImage is a read-only blob URL whose SAS token runs to 9999-12-31, so
+   the page can point at it directly. Anything that is not https is dropped. */
+function imageOf(entry) {
+  const url = String(entry.ReleaseImage || '').trim();
+  return /^https:\/\//i.test(url) ? url : null;
 }
 
 /* Roughly 3% of rows carry a version with a leading dot (".23.6"). They are
@@ -109,6 +116,7 @@ async function main() {
       title,
       // HTML, but only ever p / ul / li / strong / br / span / em / code / a.
       description: String(entry.ReleaseDescription || '').trim(),
+      image: imageOf(entry),
       category: categoryOf(entry),
     });
   }
