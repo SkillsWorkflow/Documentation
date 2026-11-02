@@ -1,0 +1,36 @@
+swagger: '2.0'
+info:
+  title: Skills Workflow MCP
+  description: MCP para portais de clientes e paginas internas da Skills Workflow.
+  version: '1.0'
+host: YOUR-TENANT-API-HOST
+basePath: /
+schemes:
+  - https
+paths:
+  /mcp/client-portal:
+    post:
+      summary: Skills Workflow MCP
+      operationId: InvokeMCP
+      x-ms-agentic-protocol: mcp-streamable-1.0
+      parameters:
+        - name: x-app-id
+          in: header
+          type: string
+          required: true
+          description: App ID fornecido pela Skills Workflow
+        - name: x-tenant-id
+          in: header
+          type: string
+          required: true
+          description: Tenant ID fornecido pela Skills Workflow
+      responses:
+        '200':
+          description: Success
+securityDefinitions:
+  api_key:
+    type: apiKey
+    in: header
+    name: x-app-key
+security:
+  - api_key: []
