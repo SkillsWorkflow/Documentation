@@ -1,23 +1,19 @@
-# Team chat use cases (draft)
+# Team chat use cases
 
-Use cases for calling the AI Assistant (Skilio) from a Chat conversation between people, by mentioning `@Skilio`.
+Use cases for calling the AI Assistant (Skilio) into a Chat conversation between people, by mentioning `@Skilio`.
 
-**Status:** not in the product yet. Neither the Chat code (`frame/chat/chat-v2`) nor the Chat page mentions the AI. Do not merge until there is a ticket or spec and the behaviour has been checked against it.
+**Status:** published in preview (SkillsWorkflow/Documentation#887). The feature is not in the product yet. Neither the Chat code (`frame/chat/chat-v2`) nor the Chat page described it before these docs. When a ticket or spec arrives, check the use cases and the Chat page section against it, and remove the `:::preview` blocks once the behaviour has shipped.
 
-## What is on this branch
+## Where it lives
 
-- `docs/ai/use-cases/team-conversations/`: a new **Team Conversations** category with three use cases, each marked `:::preview`:
-  - `deciding-who-takes-a-job-in-a-team-conversation.md`
-  - `turning-a-team-conversation-into-a-job.md`
-  - `catching-up-and-recording-the-decision-on-the-feed.md`
-- `src/components/UseCaseWalkthrough`: `variant="team"` draws the people-to-people Chat panel (Chat header, conversation name and members, "Write a message..." composer). Messages take `sender="me" | "member" | "assistant"`, a `time` and an `avatar`. `Walkthrough.DateSeparator` adds the "Today" chip. The existing AI Assistant walkthroughs are unchanged.
+- `docs/ai/use-cases/team-conversations/` and its es, pt and pt-br translations: the **Team Conversations** category with three use cases, each marked `:::preview`.
+- `docs/product/files-and-collaboration/chat.md` (and translations): the **Ask Skilio in a conversation** section, also marked preview, linking to the category.
+- `src/components/UseCaseWalkthrough`: `variant="team"` draws the people-to-people Chat panel (Chat header, conversation name and members, "Write a message..." composer). Messages take `sender="me" | "member" | "assistant"`, a `time` and an `avatar`. `Walkthrough.DateSeparator` adds the "Today" chip.
 - `static/img/ai/avatars/`: illustrated avatars for Ana Costa, Rui Santos, Sofia Marques and Laura Bennett.
 
-## Still to do before merging
+## Still to check
 
-- Translate the three use cases and the category into es, pt and pt-br.
-- Add a short section to `docs/product/files-and-collaboration/chat.md` ("Ask Skilio in a conversation") that links to the category.
-- Check the Font Awesome icons in the Chat header on a build with `FONTAWESOME_KIT_ID` set.
+- The Font Awesome icons in the Chat header on a build with `FONTAWESOME_KIT_ID` set.
 
 ## Product questions to confirm
 

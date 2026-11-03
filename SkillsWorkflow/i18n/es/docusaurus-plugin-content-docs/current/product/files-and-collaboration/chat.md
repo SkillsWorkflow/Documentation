@@ -106,6 +106,16 @@ Mientras la pestaña del navegador está en segundo plano, el mensaje también s
 
 Las notificaciones de escritorio requieren **Enable browser notifications**, en **Notificaciones** dentro de su configuración, y el permiso del propio navegador, que se solicita la primera vez que abre el chat o las notificaciones tras activar el ajuste. Están disponibles en el Modern Layout. Los demás layouts se quedan con el aviso dentro de la aplicación.
 
+## Preguntar a Skilio en una conversación
+
+:::preview
+Llamar a Skilio a una conversación del Chat está en preview. El comportamiento descrito aquí y en los use cases enlazados es como se espera que funcione, y lo que hace hoy puede diferir.
+:::
+
+En una conversación con compañeros, mencione a **@Skilio** para incorporar el AI Assistant a la discusión. Skilio responde en la conversación, así que todos trabajan con los mismos datos, y puede hacer el trabajo que el equipo acaba de acordar, como crear un Job o publicar una decisión en el Feed de un Job. Antes de que Skilio cambie nada, la persona que lo mencionó revisa y aprueba el cambio.
+
+Consulte [Conversaciones de Equipo](/docs/ai/use-cases/team-conversations) para ver ejemplos.
+
 ## Reglas y comportamiento
 
 - La pestaña **Usuarios** nunca le lista a usted, ni a los usuarios inactivos, ni a los administradores del sistema.
@@ -131,3 +141,4 @@ Estas listas no son editables en la WebApp. Pida al equipo de soporte de Skills 
 - [Uso del Feed](/docs/product/files-and-collaboration/using-feed)
 - [Roles y Perfiles](/docs/administration/system-roles-profiles)
 - [Tipos de Notificación](/docs/product/notifications/notification-types)
+- [Conversaciones de Equipo](/docs/ai/use-cases/team-conversations)

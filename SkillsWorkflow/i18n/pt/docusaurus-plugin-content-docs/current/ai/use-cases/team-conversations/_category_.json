@@ -1,0 +1,10 @@
+{
+  "label": "Conversas de Equipa",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "slug": "/ai/use-cases/team-conversations",
+    "title": "Conversas de Equipa",
+    "description": "Use cases para chamar o AI Assistant para uma conversa do Chat entre pessoas, para responder a uma pergunta ou fazer o trabalho que a equipa acabou de combinar."
+  }
+}
