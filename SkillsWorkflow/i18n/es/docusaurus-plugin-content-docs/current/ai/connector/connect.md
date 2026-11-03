@@ -1,7 +1,7 @@
 ---
 id: ai-connector-setup
-title: Conectar Claude, Codex o GitHub Copilot a Skills Workflow
-description: "Añade el conector de Skills Workflow a Claude, Claude Code, Codex o GitHub Copilot con la dirección de tu tenant y las cabeceras x-app-id, x-app-key y x-tenant-id que te envía el equipo de Skills Workflow."
+title: Conectar Claude, Codex, GitHub Copilot o Microsoft 365 Copilot a Skills Workflow
+description: "Añade el conector de Skills Workflow a Claude, Claude Code, ChatGPT, Codex o GitHub Copilot con la dirección de tu tenant y las cabeceras x-app-id, x-app-key y x-tenant-id que te envía el equipo de Skills Workflow."
 sidebar_label: Conectar tu Herramienta de IA
 sidebar_position: 2
 ---
@@ -9,7 +9,6 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Para Microsoft 365 Copilot y Teams, siga [Configurar el agente Copilot Studio](/docs/ai/connector/ai-connector-copilot-studio). La pestaña GitHub Copilot de abajo corresponde a Visual Studio Code.
 
 Añade Skills Workflow a la herramienta de IA con la que trabajas. Una vez conectada, la herramienta puede crear páginas de estado, informes y pantallas para tu agencia y publicarlos en tu tenant. La conexión es la misma en todas las herramientas: una dirección y tres cabeceras.
 
@@ -71,13 +70,21 @@ claude mcp add --transport http skills-workflow https://apiv2-demo-test-we.skill
 Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envió el equipo de Skills Workflow.
 
 </TabItem>
-<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
+<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />ChatGPT / Codex</span>}>
 
-:::preview
-Esta configuración sigue la documentación del propio Codex y todavía no se ha probado con Skills Workflow.
-:::
+En la app de ChatGPT:
 
-Codex CLI, la extensión de Codex para IDE y la app de escritorio de ChatGPT comparten un único archivo de configuración, `~/.codex/config.toml`. Añade el conector en él:
+1. Abre **Plugins** y selecciona la pestaña **MCPs**.
+2. Selecciona **Add** y añade un servidor MCP.
+3. En **URL**, escribe la dirección del conector.
+4. Deja **Bearer token env var** vacío.
+5. En **Headers**, selecciona **Add header** para cada credencial y rellena `x-app-id`, `x-tenant-id` y `x-app-key`, cada una con el valor que envió el equipo de Skills Workflow.
+6. Selecciona **Save**.
+
+   ![img-box-shadow-popup](/img/ai/codex/codex-mcp-headers.png)
+   <figcaption>El servidor MCP de Skills Workflow en la app de ChatGPT, con la dirección del conector y sus tres cabeceras.</figcaption>
+
+Codex CLI y la extensión de Codex para IDE leen los mismos servidores de `~/.codex/config.toml`. Para añadir el conector ahí:
 
 ```toml
 [mcp_servers.skills-workflow]
@@ -86,14 +93,10 @@ http_headers = { "x-app-id" = "<App ID>", "x-tenant-id" = "<Tenant ID>" }
 env_http_headers = { "x-app-key" = "SW_APP_KEY" }
 ```
 
-Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envió el equipo de Skills Workflow. La app key se lee de la variable de entorno `SW_APP_KEY`, lo que la mantiene fuera del archivo; asigna la app key a esa variable antes de iniciar Codex.
+Sustituye la dirección por la de tu tenant y cada `<...>` por el valor que envió el equipo de Skills Workflow. La app key se lee de la variable de entorno `SW_APP_KEY`; asígnale la app key antes de iniciar Codex.
 
 </TabItem>
 <TabItem value="copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/githubcopilot.svg" alt="" className="sw-tool-tab__mono" />GitHub Copilot</span>}>
-
-:::preview
-Esta configuración sigue la documentación de Visual Studio Code y todavía no se ha probado con Skills Workflow.
-:::
 
 En Visual Studio Code, añade el conector a `mcp.json`, en tu perfil de usuario o en `.vscode/mcp.json` de un proyecto. Para el archivo de usuario, ejecuta **MCP: Open User Configuration** desde la Command Palette.
 
@@ -121,6 +124,67 @@ En Visual Studio Code, añade el conector a `mcp.json`, en tu perfil de usuario 
 Sustituye la dirección por la de tu tenant. La primera vez que se inicia el servidor, Visual Studio Code pide los tres valores y los guarda. No escribas los valores en el archivo de un proyecto que subes con commit.
 
 </TabItem>
+<TabItem value="microsoft-365-copilot" label="Microsoft 365 Copilot">
+
+Cree un agente Skills Workflow en Copilot Studio para los usuarios de Microsoft 365 Copilot o Teams de la agencia. El agente se conecta al servidor MCP de Skills Workflow. GitHub Copilot en Visual Studio Code se conecta directamente; siga la pestaña GitHub Copilot en Conectar su herramienta de AI.
+
+### Requisitos previos
+
+Pida a Skills Workflow la dirección de la API del tenant, App ID, App key, Tenant ID y las skills `client-portal` y `app-page`. Necesita acceso a Copilot Studio y permiso para crear conectores personalizados en el mismo entorno Power Platform.
+
+Use un entorno con Dataverse. Un entorno Teams no admite los nuevos agentes GitHub Copilot; un entorno Developer sin Dataverse también bloquea la creación. Reserve la App key a los publicadores autorizados: permite publicar y sustituir páginas de todo el tenant como administrador de Skills Workflow.
+
+### Crear el conector personalizado
+
+1. Abra [Power Apps](https://make.powerapps.com/), seleccione el entorno y abra **Custom connectors → New custom connector → Create from blank**. Asígnele el nombre `Skills Workflow MCP`.
+2. Active **Swagger editor**. Descargue la [plantilla OpenAPI](/files/skillsworkflow-mcp.openapi.yaml), sustituya `YOUR-TENANT-API-HOST` por el hostname de la API de su tenant (sin `https://` ni ruta) y pegue la definición en el editor. La ruta MCP es `/mcp/client-portal`.
+3. Desactive **Swagger editor** y compruebe en **Security**: autenticación **API Key**, nombre del parámetro `x-app-key`, ubicación **Header**. Seleccione **Create connector**.
+
+![img-box-shadow](/img/ai/copilot-studio/security.png)
+<figcaption>La App key se guarda en la conexión, no en los dos inputs del agente.</figcaption>
+
+
+4. Abra **Test → New connection**, introduzca la App key en el campo protegido `api_key` y seleccione **Create**. Esto crea la conexión; el estado Connected por sí solo no valida las herramientas MCP.
+
+### Crear un agente standard
+
+1. En [Copilot Studio](https://copilotstudio.microsoft.com/), seleccione el mismo entorno. Abra **Home → Other ways to build → Build with standard orchestration → Agent**. Introduzca un nombre y seleccione **Create**.
+
+![img-box-shadow](/img/ai/copilot-studio/standard.png)
+<figcaption>Elija Agent en la sección Standard para seguir esta configuración probada.</figcaption>
+
+
+2. Abra **Add tool**, busque `Skills Workflow` y seleccione **Skills Workflow MCP** en **Model Context Protocol**. Seleccione la conexión creada y elija **Add**.
+3. Abra la herramienta añadida y rellene **Inputs**: `x-app-id` con App ID y `x-tenant-id` con Tenant ID. Seleccione **Save**. Ambos son headers enviados con la App key de la conexión. Rellénelos en cada agente; no se copian automáticamente desde otro agente.
+
+![img-box-shadow](/img/ai/copilot-studio/inputs.png)
+<figcaption>App ID y Tenant ID van en los Inputs de la herramienta; la App key va en la conexión protegida.</figcaption>
+
+
+### Probar la conexión MCP
+
+Inicie una nueva sesión de prueba y pregunte qué herramientas Skills Workflow están disponibles. Compare la lista con las ocho herramientas de Comprobar la conexión.
+
+Después pida al agente que llame a `get_portal_url` para el cliente hipotético `mcp-connection-check` y el portal `connection-check`, sin crear ni modificar nada. Revise el registro de actividad: la herramienta debe terminar con **Completed** y devolver la URL de su tenant. Esta herramienta devuelve una dirección aunque no exista una página en esa ubicación; no publica ni verifica la página.
+
+![img-box-shadow](/img/ai/copilot-studio/test.png)
+<figcaption>Una llamada real a get_portal_url terminó correctamente en la prueba del agente standard.</figcaption>
+
+
+Una lista textual de herramientas no basta para validar la conexión. Si el editor muestra **Connector request failed**, compruebe los tres valores de los headers y los inputs guardados. Confirme el comportamiento en ejecución mediante el resultado real de la herramienta en el registro de prueba.
+
+### Preparar el acceso de los key users
+
+Antes de pedir al agente que publique contenido, obtenga y configure con Skills Workflow las reglas oficiales `client-portal` y `app-page`. La publicación y distribución a otros usuarios requieren una validación separada; la prueba anterior valida solo una conexión.
+
+Para distribuirlo en la organización, siga las [instrucciones Microsoft para publicar en Teams y Microsoft Copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams). Pida a IT que revise las licencias, la identidad de la conexión y el grupo de publicadores autorizados antes de poner el agente a disposición de los usuarios. Quienes abren las páginas publicadas se autentican con su propia identidad.
+
+### Trial y créditos
+
+Un trial de Copilot Studio puede permitir las pruebas en la experiencia standard. No garantiza capacidad de ejecución en la nueva experiencia GitHub Copilot: la creación y las pruebas en esa experiencia pueden consumir Copilot Credits. Si aparece `EnforcementUsageCredits`, pida al administrador que revise **Licensing → Copilot Studio → Manage Copilot Credits**. Consulte las [orientaciones Microsoft sobre capacidad](https://learn.microsoft.com/en-us/power-platform/admin/manage-usage-github-copilot-harness).
+
+
+</TabItem>
 </Tabs>
 
 Las pantallas dentro de Skills Workflow se construyen como un pequeño proyecto de código. Constrúyelas en una herramienta que trabaje con código: Claude Code, Codex o GitHub Copilot.
@@ -145,6 +209,9 @@ La respuesta enumera las ocho tools del conector:
 | `publish_app_page_version` | Publica una versión nueva de una pantalla |
 | `set_app_page_live_version` | Elige la versión de una pantalla que reciben los usuarios |
 | `get_app_page_url` | Da la dirección de una pantalla |
+
+![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
+<figcaption>La app de ChatGPT respondiendo a la pregunta con las ocho tools del conector.</figcaption>
 
 Esta pregunta no lee ni escribe nada en tu tenant. Si la herramienta dice que no tiene tools de Skills Workflow, o informa de un error, uno de los valores es incorrecto; compara la dirección y cada cabecera con lo que envió el equipo de Skills Workflow.
 

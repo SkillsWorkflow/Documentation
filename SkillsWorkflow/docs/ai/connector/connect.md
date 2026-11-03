@@ -1,7 +1,7 @@
 ---
 id: ai-connector-setup
-title: Connect Claude, Codex or GitHub Copilot to Skills Workflow
-description: "Add the Skills Workflow connector to Claude, Claude Code, Codex or GitHub Copilot with your tenant's address and the x-app-id, x-app-key and x-tenant-id headers the Skills Workflow team sends you."
+title: Connect Claude, Codex, GitHub Copilot or Microsoft 365 Copilot to Skills Workflow
+description: "Add the Skills Workflow connector to Claude, Claude Code, ChatGPT, Codex or GitHub Copilot with your tenant's address and the x-app-id, x-app-key and x-tenant-id headers the Skills Workflow team sends you."
 sidebar_label: Connect Your AI Tool
 sidebar_position: 2
 ---
@@ -9,7 +9,6 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-For Microsoft 365 Copilot and Teams, follow [Set up the Copilot Studio agent](/docs/ai/connector/ai-connector-copilot-studio). The GitHub Copilot tab below is for Visual Studio Code.
 
 Add Skills Workflow to the AI tool you work in. Once it is connected, the tool can create status pages, reports and screens for your agency and publish them to your tenant. The connection is the same in every tool: one address and three headers.
 
@@ -71,13 +70,21 @@ claude mcp add --transport http skills-workflow https://apiv2-demo-test-we.skill
 Replace the address with your tenant's and each `<...>` with the value the Skills Workflow team sent.
 
 </TabItem>
-<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />Codex</span>}>
+<TabItem value="codex" label={<span className="sw-tool-tab"><img src="/img/ai/logos/openai.svg" alt="" className="sw-tool-tab__mono" />ChatGPT / Codex</span>}>
 
-:::preview
-This set-up follows Codex's own documentation and has not been tested with Skills Workflow yet.
-:::
+In the ChatGPT app:
 
-The Codex CLI, the Codex IDE extension and the ChatGPT desktop app share one configuration file, `~/.codex/config.toml`. Add the connector to it:
+1. Open **Plugins** and select the **MCPs** tab.
+2. Select **Add** and add an MCP server.
+3. In **URL**, type the connector's address.
+4. Leave **Bearer token env var** empty.
+5. Under **Headers**, select **Add header** for each credential and fill in `x-app-id`, `x-tenant-id` and `x-app-key`, each with the value the Skills Workflow team sent.
+6. Select **Save**.
+
+   ![img-box-shadow-popup](/img/ai/codex/codex-mcp-headers.png)
+   <figcaption>The Skills Workflow MCP server in the ChatGPT app, with the connector's address and its three headers.</figcaption>
+
+The Codex CLI and the Codex IDE extension read the same servers from `~/.codex/config.toml`. To add the connector there instead:
 
 ```toml
 [mcp_servers.skills-workflow]
@@ -86,14 +93,10 @@ http_headers = { "x-app-id" = "<App ID>", "x-tenant-id" = "<Tenant ID>" }
 env_http_headers = { "x-app-key" = "SW_APP_KEY" }
 ```
 
-Replace the address with your tenant's and each `<...>` with the value the Skills Workflow team sent. The app key is read from the `SW_APP_KEY` environment variable, which keeps it out of the file; set that variable to the app key before starting Codex.
+Replace the address with your tenant's and each `<...>` with the value the Skills Workflow team sent. The app key is read from the `SW_APP_KEY` environment variable; set it to the app key before starting Codex.
 
 </TabItem>
 <TabItem value="copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/githubcopilot.svg" alt="" className="sw-tool-tab__mono" />GitHub Copilot</span>}>
-
-:::preview
-This set-up follows the Visual Studio Code documentation and has not been tested with Skills Workflow yet.
-:::
 
 In Visual Studio Code, add the connector to `mcp.json`, either in your user profile or in `.vscode/mcp.json` of a project. Run **MCP: Open User Configuration** from the Command Palette for the user file.
 
@@ -121,6 +124,67 @@ In Visual Studio Code, add the connector to `mcp.json`, either in your user prof
 Replace the address with your tenant's. The first time the server starts, Visual Studio Code asks for the three values and stores them. Do not write the values into the file of a project you commit.
 
 </TabItem>
+<TabItem value="microsoft-365-copilot" label="Microsoft 365 Copilot">
+
+Create a Skills Workflow agent in Copilot Studio for your agency's Microsoft 365 Copilot or Teams users. The agent connects to the Skills Workflow MCP server. GitHub Copilot in Visual Studio Code connects directly; follow the separate GitHub Copilot tab in Connect Your AI Tool.
+
+### Prerequisites
+
+Ask Skills Workflow for your tenant's API address, App ID, App key, Tenant ID, and the `client-portal` and `app-page` skills. You need access to Copilot Studio and permission to create custom connectors in the same Power Platform environment.
+
+Use an environment with Dataverse. A Teams environment does not support the new GitHub Copilot agents; a Developer environment without Dataverse also blocks creation. Keep the App key with authorised publishers: it permits publishing and replacing pages across the tenant as its Skills Workflow administrator.
+
+### Create the custom connector
+
+1. Open [Power Apps](https://make.powerapps.com/), select the environment, and open **Custom connectors → New custom connector → Create from blank**. Name it `Skills Workflow MCP`.
+2. Enable **Swagger editor**. Download the [OpenAPI template](/files/skillsworkflow-mcp.openapi.yaml), replace `YOUR-TENANT-API-HOST` with your tenant's API hostname (without `https://` or a path), and paste the definition into the editor. The MCP path is `/mcp/client-portal`.
+3. Disable **Swagger editor** and check **Security**: authentication **API Key**, parameter name `x-app-key`, location **Header**. Select **Create connector**.
+
+![img-box-shadow](/img/ai/copilot-studio/security.png)
+<figcaption>The App key is stored in the connection, not in the two agent inputs.</figcaption>
+
+
+4. Open **Test → New connection**, enter the App key in the protected `api_key` field, and select **Create**. This creates the connection; a Connected status alone does not validate the MCP tools.
+
+### Create a standard agent
+
+1. In [Copilot Studio](https://copilotstudio.microsoft.com/), select the same environment. Open **Home → Other ways to build → Build with standard orchestration → Agent**. Enter a name and select **Create**.
+
+![img-box-shadow](/img/ai/copilot-studio/standard.png)
+<figcaption>Choose Agent under Standard to follow this tested setup.</figcaption>
+
+
+2. Open **Add tool**, search for `Skills Workflow`, and select **Skills Workflow MCP** under **Model Context Protocol**. Select the connection you created and choose **Add**.
+3. Open the added tool and fill in **Inputs**: `x-app-id` with App ID and `x-tenant-id` with Tenant ID. Select **Save**. Both are headers sent with the App key from the connection. Fill them for each agent; they are not copied automatically from another agent.
+
+![img-box-shadow](/img/ai/copilot-studio/inputs.png)
+<figcaption>App ID and Tenant ID belong in the tool's Inputs; App key belongs in the protected connection.</figcaption>
+
+
+### Test the MCP connection
+
+Start a new test session and ask which Skills Workflow tools are available. Compare the list with the eight tools in Check the connection.
+
+Then ask the agent to call `get_portal_url` for the hypothetical client `mcp-connection-check` and portal `connection-check`, without creating or modifying anything. Inspect the activity trace: the tool must finish with **Completed** and return your tenant's URL. This tool returns an address even when no page exists there; it does not publish or verify the page.
+
+![img-box-shadow](/img/ai/copilot-studio/test.png)
+<figcaption>A real get_portal_url call completed successfully in the standard agent test.</figcaption>
+
+
+A textual list of tools is not enough to validate the connection. If the editor reports **Connector request failed**, check the three header values and saved inputs. Use the actual tool result in the test trace to confirm runtime behaviour.
+
+### Prepare access for key users
+
+Before asking the agent to publish content, obtain and configure the official `client-portal` and `app-page` rules with Skills Workflow. Publication and distribution to other users require separate validation; the test above validates a connection only.
+
+For organisational rollout, follow Microsoft's [Teams and Microsoft Copilot publishing instructions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams). Have IT review licensing, connection identity and the intended group of authorised publishers before making the agent available. People opening published pages sign in as themselves.
+
+### Trial and credits
+
+A Copilot Studio trial can allow testing in the standard experience. It does not guarantee execution capacity for the new GitHub Copilot experience: building and testing there can consume Copilot Credits. If you see `EnforcementUsageCredits`, ask your administrator to check **Licensing → Copilot Studio → Manage Copilot Credits**. See [Microsoft's capacity guidance](https://learn.microsoft.com/en-us/power-platform/admin/manage-usage-github-copilot-harness).
+
+
+</TabItem>
 </Tabs>
 
 Screens inside Skills Workflow are built as a small code project. Build them in a tool that works on code: Claude Code, Codex or GitHub Copilot.
@@ -145,6 +209,9 @@ The answer lists the connector's eight tools:
 | `publish_app_page_version` | Publishes a new version of a screen |
 | `set_app_page_live_version` | Chooses the version of a screen users get |
 | `get_app_page_url` | Gives the address of a screen |
+
+![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
+<figcaption>The ChatGPT app answering the question with the connector's eight tools.</figcaption>
 
 Nothing is read from or written to your tenant by this question. If the tool says it has no Skills Workflow tools, or reports an error, one of the values is wrong; compare the address and each header with what the Skills Workflow team sent.
 

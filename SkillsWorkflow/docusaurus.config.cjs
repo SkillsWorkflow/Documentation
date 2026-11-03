@@ -298,6 +298,7 @@ module.exports = {
           { from: '/docs/integrations/iSAP-Job-Maintenance', to: '/docs/integrations/isap/job-maintenance' },
           { from: '/docs/ai/claude', to: '/docs/ai/connector' },
           { from: '/docs/ai/claude/ai-claude-connect', to: '/docs/ai/connector/ai-connector-setup' },
+          { from: '/docs/ai/connector/ai-connector-copilot-studio', to: '/docs/ai/connector/ai-connector-setup' },
           { from: '/docs/ai/claude/ai-claude-client-status-page', to: '/docs/ai/connector/ai-connector-client-status-page' },
           { from: '/docs/ai/claude/ai-claude-client-hub', to: '/docs/ai/connector/ai-connector-client-hub' },
           { from: '/docs/ai/claude/ai-claude-reports', to: '/docs/ai/connector/ai-connector-reports' },
