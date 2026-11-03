@@ -1045,3 +1045,232 @@ html[data-theme='dark'] .workspaceBadge {
   justify-content: flex-end;
   margin-top: 0.6rem;
 }
+
+/* ---- team chat variant ------------------------------------------------
+ * Mirrors the product's people-to-people Chat panel: a "Chat" bar, the
+ * conversation header, members on the left with their name above a white
+ * bubble, your own messages on the right in a blue bubble, and the
+ * "Write a message..." composer. Skilio joins as one more participant. */
+
+.teamPanel {
+  background: #fafafa;
+}
+
+.teamHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 1rem;
+  background: #e3eaf3;
+}
+
+.teamHeaderIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #b4c4d9;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.teamHeaderLabel {
+  flex: 1 1 auto;
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.teamHeaderClose {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.teamConversationHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.teamBack {
+  color: var(--ifm-color-emphasis-500);
+  margin-right: 0.35rem;
+}
+
+.teamGroupAvatar {
+  background: #dbe4f0;
+  color: #4b6584;
+}
+
+.teamConversationName {
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.teamConversationMembers {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.teamOnlineDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3fa36b;
+}
+
+.teamConversation {
+  gap: 1rem;
+}
+
+.dateSeparator {
+  display: flex;
+  justify-content: center;
+}
+
+.dateSeparator span {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  padding: 0.1rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-background-surface-color);
+}
+
+.teamRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.teamRowMe {
+  justify-content: flex-end;
+}
+
+.avatarTeamAssistant {
+  background: #2f6fc4;
+  color: #fff;
+}
+
+.teamMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 82%;
+}
+
+.teamRowMe .teamMessage {
+  align-items: flex-end;
+}
+
+.teamSender {
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.teamBubble {
+  border-radius: 12px;
+  padding: 0.55rem 0.85rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.teamBubble p {
+  margin: 0 0 0.5rem;
+}
+
+.teamBubble p:last-child {
+  margin-bottom: 0;
+}
+
+.teamBubble ul {
+  margin: 0 0 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.teamBubbleMe {
+  background: #2f6fc4;
+  border-color: #2f6fc4;
+  color: #fff;
+}
+
+.teamBubbleMe a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Skilio's answers carry tables and cards, so its bubble takes the width */
+.teamBubbleAssistant {
+  width: 100%;
+  border-color: #e2dcfb;
+}
+
+.teamRow:has(.teamBubbleAssistant) .teamMessage {
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+
+.teamTime {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-500);
+}
+
+.teamFooter {
+  padding: 0.75rem 1rem 0.7rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+.teamInputBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid #2f6fc4;
+  border-radius: 999px;
+  padding: 0.35rem 0.4rem 0.35rem 1rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-500);
+}
+
+.teamSend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2f6fc4;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.teamHint {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-500);
+}
+
+html[data-theme='dark'] .teamPanel {
+  background: var(--ifm-background-color);
+}
+
+html[data-theme='dark'] .teamHeader {
+  background: color-mix(in srgb, #4b6584 35%, var(--ifm-background-color));
+}
+
+html[data-theme='dark'] .teamBubbleAssistant {
+  border-color: color-mix(in srgb, #7b6ef6 40%, transparent);
+}
