@@ -106,6 +106,16 @@ Enquanto o separador do browser estiver em segundo plano, a mensagem é também 
 
 As notificações de ambiente de trabalho exigem **Enable browser notifications**, em **Notificações** na sua configuração, e a permissão do próprio browser, pedida da primeira vez que abre o chat ou as notificações depois de ativar a definição. Estão disponíveis no Modern Layout. Os restantes layouts ficam com o aviso dentro da aplicação.
 
+## Perguntar ao Skilio numa conversa
+
+:::preview
+Chamar o Skilio para uma conversa do Chat está em preview. O comportamento descrito aqui e nos casos de uso indicados é o esperado, e o que faz hoje pode ser diferente.
+:::
+
+Numa conversa com colegas, mencione o **@Skilio** para trazer o AI Assistant para a discussão. O Skilio responde na conversa, para que todos trabalhem com os mesmos factos, e pode fazer o trabalho que a equipa acabou de combinar, como criar um Job ou publicar uma decisão no Feed de um Job. Antes de o Skilio alterar alguma coisa, a pessoa que o mencionou revê e aprova a alteração.
+
+Veja exemplos em [Conversas de Equipa](/docs/ai/use-cases/team-conversations).
+
 ## Regras e comportamento
 
 - O separador **Utilizadores** nunca lista o próprio utilizador, utilizadores inativos nem administradores de sistema.
@@ -131,3 +141,4 @@ Estas listas não são editáveis na WebApp. Peça à equipa de suporte da Skill
 - [Utilizar o Feed](/docs/product/files-and-collaboration/using-feed)
 - [Roles e Perfis](/docs/administration/system-roles-profiles)
 - [Tipos de Notificação](/docs/product/notifications/notification-types)
+- [Conversas de Equipa](/docs/ai/use-cases/team-conversations)

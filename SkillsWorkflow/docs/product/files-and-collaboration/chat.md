@@ -106,6 +106,16 @@ While the browser tab sits in the background, the message is also raised as a de
 
 Desktop notifications require **Enable browser notifications** under **Notifications** in your configuration, and the browser's own permission, which is requested the first time you open chat or notifications after enabling the setting. They are available in the Modern Layout. The in-app toast is what the other layouts use.
 
+## Ask Skilio in a conversation
+
+:::preview
+Calling Skilio into a Chat conversation is in preview. The behaviour described here and in the linked use cases is how it is expected to work, and what it does today may differ.
+:::
+
+In a conversation with colleagues, mention **@Skilio** to bring the AI Assistant into the discussion. Skilio answers in the conversation, so everyone works from the same facts, and it can do the work the team has just agreed on, such as creating a Job or posting a decision on a Job's Feed. Before Skilio changes anything, the person who mentioned it reviews and approves the change.
+
+See [Team Conversations](/docs/ai/use-cases/team-conversations) for examples.
+
 ## Rules and behaviour
 
 - The **Users** tab never lists you, inactive users, or system administrators.
@@ -131,3 +141,4 @@ These lists can't be edited from the WebApp. Ask the Skills Workflow support tea
 - [Using the Feed](/docs/product/files-and-collaboration/using-feed)
 - [Roles and Profiles](/docs/administration/system-roles-profiles)
 - [Notification Types](/docs/product/notifications/notification-types)
+- [Team Conversations](/docs/ai/use-cases/team-conversations)

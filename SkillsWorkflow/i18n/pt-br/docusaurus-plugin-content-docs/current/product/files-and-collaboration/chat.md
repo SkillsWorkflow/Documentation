@@ -106,6 +106,16 @@ Enquanto a aba do navegador estiver em segundo plano, a mensagem também é lan�
 
 As notificações da área de trabalho exigem **Enable browser notifications**, em **Notificações** na sua configuração, e a permissão do próprio navegador, solicitada na primeira vez que você abre o chat ou as notificações depois de ativar a opção. Elas estão disponíveis no Modern Layout. Os demais layouts ficam com o aviso dentro da aplicação.
 
+## Chamar o Skilio em uma conversa
+
+:::preview
+Chamar o Skilio para uma conversa do Chat está em preview. O comportamento descrito aqui e nos use cases indicados é como se espera que funcione, e o que ele faz hoje pode ser diferente.
+:::
+
+Em uma conversa com colegas, mencione **@Skilio** para trazer o Assistente de IA para a discussão. O Skilio responde na conversa, para que todos trabalhem com os mesmos dados, e pode fazer o trabalho que a equipe acabou de combinar, como criar uma Atividade ou publicar uma decisão no Feed de uma Atividade. Antes que o Skilio altere qualquer coisa, a pessoa que o mencionou revisa e aprova a alteração.
+
+Veja [Conversas em Equipe](/docs/ai/use-cases/team-conversations) para exemplos.
+
 ## Regras e comportamento
 
 - A aba **Usuários** nunca lista você, usuários inativos nem administradores de sistema.
@@ -131,3 +141,4 @@ Essas listas não são editáveis no WebApp. Peça à equipe de suporte da Skill
 - [Usando o Feed](/docs/product/files-and-collaboration/using-feed)
 - [Roles e Perfis](/docs/administration/system-roles-profiles)
 - [Tipos de Notificação](/docs/product/notifications/notification-types)
+- [Conversas em Equipe](/docs/ai/use-cases/team-conversations)
