@@ -124,7 +124,7 @@ No Visual Studio Code, adicione o conector ao `mcp.json`, no seu perfil de usuá
 Substitua o endereço pelo do seu tenant. Na primeira vez que o servidor inicia, o Visual Studio Code pede os três valores e os armazena. Não escreva os valores no arquivo de um projeto do qual você faz commit.
 
 </TabItem>
-<TabItem value="microsoft-365-copilot" label="Microsoft 365 Copilot">
+<TabItem value="microsoft-365-copilot" label={<span className="sw-tool-tab"><img src="/img/ai/logos/microsoft-365-copilot.png" alt=""/>Microsoft 365 Copilot</span>}>
 
 Crie um agente Skills Workflow no Copilot Studio para os usuários de Microsoft 365 Copilot ou Teams da agência. O agente liga-se ao servidor MCP da Skills Workflow. O GitHub Copilot no Visual Studio Code liga-se diretamente; siga o separador GitHub Copilot em Conectar sua ferramenta de AI.
 
