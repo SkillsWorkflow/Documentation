@@ -1,30 +1,30 @@
 ---
 id: php-security-notice
-title: "Vulnerabilidades Críticas no PHP – Skills Workflow Não Afetado"
-description: "Comunicado de segurança sobre as vulnerabilidades CVE-2026-109618 e CVE-2026-109619 e a ausência de impacto no Skills Workflow."
-sidebar_label: PHP – Skills Workflow Não Afetado
+title: "Critical PHP Vulnerabilities – Skills Workflow Not Affected"
+description: "Security notice about vulnerabilities CVE-2026-109618 and CVE-2026-109619 and their lack of impact on Skills Workflow."
+sidebar_label: PHP – Skills Workflow Not Affected
 ---
 
-**Assunto: Comunicado de Segurança: Vulnerabilidades Críticas no PHP – Skills Workflow Não Afetado**
+**Subject: Security Notice: Critical PHP Vulnerabilities – Skills Workflow Not Affected**
 
-**COMUNICADO DE SEGURANÇA**  
-**Vulnerabilidades Críticas no PHP – Skills Workflow Não Afetado**
+**SECURITY NOTICE**  
+**Critical PHP Vulnerabilities – Skills Workflow Not Affected**
 
-Caro Cliente,
+Dear Customer,
 
-Gostaríamos de informar sobre a recente divulgação de vulnerabilidades críticas de segurança no PHP, uma tecnologia amplamente utilizada no desenvolvimento de aplicações web.
+We would like to inform you about the recent disclosure of critical security vulnerabilities in PHP, a technology widely used in web application development.
 
-Em 21 de outubro de 2026, a equipa de segurança do PHP publicou alertas sobre duas vulnerabilidades críticas (CVE-2026-109618 e CVE-2026-109619), que podem permitir a execução remota de código não autorizado.
+On 21 October 2026, the PHP security team published alerts about two critical vulnerabilities (CVE-2026-109618 and CVE-2026-109619), which may allow unauthorised remote code execution.
 
-**Queremos tranquilizá-lo, confirmando que o Skills Workflow não é afetado por estas vulnerabilidades.**
+**We would like to reassure you that Skills Workflow is not affected by these vulnerabilities.**
 
-Nem a aplicação Skills Workflow nem os nossos sistemas internos utilizam PHP. Por isso, estas vulnerabilidades não têm qualquer impacto na nossa plataforma nem na infraestrutura que a suporta.
+Neither the Skills Workflow application nor our internal systems use PHP. These vulnerabilities therefore have no impact on our platform or the infrastructure that supports it.
 
-A segurança continua a ser uma das nossas principais prioridades. Monitorizamos continuamente novas ameaças e mantemos as medidas de segurança adequadas para proteger os nossos serviços e os dados dos nossos clientes.
+Security remains one of our top priorities. We continuously monitor new threats and maintain appropriate security measures to protect our services and our customers' data.
 
-Para mais informações sobre estas vulnerabilidades, consulte o site oficial do PHP: [https://www.php.net](https://www.php.net "https://www.php.net")
+For more information about these vulnerabilities, please visit the official PHP website: [https://www.php.net](https://www.php.net "https://www.php.net")
 
-Agradecemos a confiança contínua no Skills Workflow.
+Thank you for your continued trust in Skills Workflow.
 
-Com os melhores cumprimentos,  
-**Equipa Skills Workflow**
+Kind regards,  
+**The Skills Workflow Team**
