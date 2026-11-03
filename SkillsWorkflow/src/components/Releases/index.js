@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import data from '@site/src/data/releases.json';
 import styles from './styles.module.css';
 
 /* Rendered from src/data/releases.json, produced at build time by
-   scripts/fetch-releases.mjs. That script keeps only title, description and
-   category — the endpoint's internal fields (client codes, ticket numbers,
+   scripts/fetch-releases.mjs. That script keeps only title, description, image
+   and category — the endpoint's internal fields (client codes, ticket numbers,
    effort) never reach the browser. */
 
 const LABELS = {
@@ -13,9 +13,38 @@ const LABELS = {
   fix: 'Fix',
 };
 
-/* The newest few versions are open; everything older starts collapsed, because
-   the full list is 630-odd entries over 115 versions. */
+/* The newest few versions are open; everything older starts collapsed, so the
+   page stays short as versions pile up. */
 const OPEN_BY_DEFAULT = 3;
+
+/* The same screenshot the What's New popup shows, enlarged on click. A native
+   <dialog> gives Escape-to-close and focus handling for free. */
+function EntryImage({ src, title }) {
+  const dialog = useRef(null);
+  const [broken, setBroken] = useState(false);
+  if (broken) return null;
+
+  return (
+    <>
+      <button
+        type="button"
+        className={styles.media}
+        aria-label={`Enlarge image: ${title}`}
+        onClick={() => dialog.current?.showModal()}
+      >
+        <img src={src} alt="" loading="lazy" decoding="async" onError={() => setBroken(true)} />
+      </button>
+      <dialog
+        ref={dialog}
+        className={styles.lightbox}
+        aria-label={title}
+        onClick={() => dialog.current?.close()}
+      >
+        <img src={src} alt={title} loading="lazy" />
+      </dialog>
+    </>
+  );
+}
 
 function Entry({ entry }) {
   return (
@@ -24,6 +53,7 @@ function Entry({ entry }) {
         <span className={`${styles.tag} ${styles[entry.category]}`}>{LABELS[entry.category]}</span>
         <h3 className={styles.entryTitle}>{entry.title}</h3>
       </div>
+      {entry.image ? <EntryImage src={entry.image} title={entry.title} /> : null}
       {entry.description ? (
         <div
           className={styles.entryBody}

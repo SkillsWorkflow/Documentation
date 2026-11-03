@@ -170,6 +170,36 @@
 .entryBody strong { color: var(--sw-heading); }
 .entryBody img { max-width: 100%; height: auto; border-radius: var(--sw-radius-sm); }
 
+.media {
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  border: 1px solid var(--sw-line);
+  border-radius: var(--sw-radius-sm);
+  background: var(--sw-surface-2);
+  overflow: hidden;
+  cursor: zoom-in;
+}
+.media img { display: block; width: 100%; height: auto; }
+.media:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.lightbox {
+  max-width: min(92vw, 80rem);
+  max-height: 92vh;
+  padding: 0;
+  border: none;
+  border-radius: var(--sw-radius);
+  background: transparent;
+  cursor: zoom-out;
+}
+.lightbox::backdrop { background: rgb(0 0 0 / 0.75); }
+.lightbox img { display: block; max-width: 100%; max-height: 92vh; height: auto; }
+
 .empty {
   padding: 1.5rem;
   border: 1px dashed var(--sw-line-strong);
