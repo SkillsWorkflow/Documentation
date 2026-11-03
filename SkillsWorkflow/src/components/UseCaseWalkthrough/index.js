@@ -10,7 +10,122 @@ import styles from './styles.module.css';
  * Icons are the ones already mapped in src/data/icons.js for the matching
  * product area (e.g. `fal fa-sparkles` for /ai) — no new symbols.
  */
-function Walkthrough({ subtitle, sidebar, title = 'AI Assistant Chat', children }) {
+const VariantContext = React.createContext('assistant');
+
+/**
+ * `variant="team"` draws the product's people-to-people Chat panel instead
+ * (Chat header, conversation header with members, "Write a message…"
+ * composer), for use cases where colleagues talk and call Skilio in.
+ */
+function Walkthrough({ variant = 'assistant', ...props }) {
+  return (
+    <VariantContext.Provider value={variant}>
+      {variant === 'team' ? <TeamWalkthrough {...props} /> : <AssistantWalkthrough {...props} />}
+    </VariantContext.Provider>
+  );
+}
+
+function TeamWalkthrough({ subtitle, sidebar, conversation, members, children }) {
+  return (
+    <div className={styles.walkthroughContainer}>
+      <div className={styles.walkthrough}>
+        <div className={styles.main}>
+          {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+          <div className={[styles.chatPanel, styles.teamPanel].join(' ')}>
+            <div className={styles.teamHeader}>
+              <span className={styles.teamHeaderIcon} aria-hidden="true">
+                <i className="fal fa-comments" />
+              </span>
+              <span className={styles.teamHeaderLabel}>Chat</span>
+              <i className={['fal fa-times', styles.teamHeaderClose].join(' ')} aria-hidden="true" />
+            </div>
+            <div className={styles.teamConversationHeader}>
+              <i className={['fal fa-arrow-left', styles.teamBack].join(' ')} aria-hidden="true" />
+              <span className={[styles.avatar, styles.teamGroupAvatar].join(' ')} aria-hidden="true">
+                <i className="fal fa-users" />
+              </span>
+              <div>
+                <div className={styles.teamConversationName}>{conversation}</div>
+                {members && (
+                  <div className={styles.teamConversationMembers}>
+                    <span className={styles.teamOnlineDot} />
+                    {members}
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className={[styles.conversation, styles.teamConversation].join(' ')}>{children}</div>
+            <div className={styles.teamFooter} aria-hidden="true">
+              <div className={styles.teamInputBox}>
+                <span>Write a message...</span>
+                <span className={styles.teamSend}><i className="fal fa-paper-plane" /></span>
+              </div>
+              <div className={styles.teamHint}>Enter to send · Shift+Enter for a new line</div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.sidebar}>{sidebar}</div>
+      </div>
+    </div>
+  );
+}
+
+function DateSeparator({ label }) {
+  return (
+    <div className={styles.dateSeparator}>
+      <span>{label}</span>
+    </div>
+  );
+}
+
+/* The AI Assistant's mark as the product shows it on its launcher: white
+ * sparkles on the brand blue. Inline SVG so it does not depend on the
+ * Font Awesome kit being loaded. */
+function AssistantMark() {
+  return (
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round">
+      <path d="M10 3.5l1.6 4.6 4.6 1.6-4.6 1.6L10 16l-1.6-4.7L3.8 9.7l4.6-1.6z" />
+      <path d="M18 13.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z" />
+    </svg>
+  );
+}
+
+/* `avatar` is the person's picture under /img/ai/avatars; without one the
+ * generic person picture is used. */
+function TeamMessage({ sender, name, time, avatar, children }) {
+  const isMe = sender === 'me';
+  const isAssistant = sender === 'assistant';
+  return (
+    <div className={[styles.teamRow, isMe ? styles.teamRowMe : ''].join(' ')}>
+      {!isMe && (
+        isAssistant ? (
+          <div className={[styles.avatar, styles.avatarTeamAssistant].join(' ')} aria-hidden="true">
+            <AssistantMark />
+          </div>
+        ) : (
+          <div className={styles.avatar} aria-hidden="true">
+            <img className={styles.avatarImage} src={avatar || '/img/ai/avatars/person.png'} alt="" loading="lazy" />
+          </div>
+        )
+      )}
+      <div className={styles.teamMessage}>
+        {!isMe && <div className={styles.teamSender}>{name}</div>}
+        <div
+          className={[
+            styles.teamBubble,
+            isMe ? styles.teamBubbleMe : '',
+            isAssistant ? styles.teamBubbleAssistant : '',
+          ].join(' ')}
+        >
+          {children}
+        </div>
+        {time && <div className={styles.teamTime}>{time}</div>}
+      </div>
+    </div>
+  );
+}
+
+function AssistantWalkthrough({ subtitle, sidebar, title = 'AI Assistant Chat', children }) {
   return (
     <div className={styles.walkthroughContainer}>
       <div className={styles.walkthrough}>
@@ -49,7 +164,13 @@ function Walkthrough({ subtitle, sidebar, title = 'AI Assistant Chat', children 
   );
 }
 
-function Message({ sender, name, time, children }) {
+function Message(props) {
+  const variant = React.useContext(VariantContext);
+  if (variant === 'team') return <TeamMessage {...props} />;
+  return <AssistantMessage {...props} />;
+}
+
+function AssistantMessage({ sender, name, time, children }) {
   const isAssistant = sender === 'assistant';
   return (
     <div className={styles.bubbleRow}>
@@ -381,6 +502,7 @@ function NoteCard({ items }) {
 }
 
 Walkthrough.Message = Message;
+Walkthrough.DateSeparator = DateSeparator;
 Walkthrough.FieldTable = FieldTable;
 Walkthrough.DataTable = DataTable;
 Walkthrough.Choices = Choices;

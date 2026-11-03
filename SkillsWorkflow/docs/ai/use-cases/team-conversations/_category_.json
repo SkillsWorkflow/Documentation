@@ -1,0 +1,10 @@
+{
+  "label": "Team Conversations",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "Team Conversations",
+    "description": "Use cases for calling the AI Assistant into a Chat conversation between people, to answer a question or do the work the team just agreed on.",
+    "slug": "/ai/use-cases/team-conversations"
+  }
+}
