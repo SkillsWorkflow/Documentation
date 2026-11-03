@@ -79,6 +79,10 @@
     "message": "Presupuestos",
     "description": "The label for category 'Estimates' in sidebar 'docs'"
   },
+  "sidebar.docs.category.Quotes": {
+    "message": "Presupuesto",
+    "description": "The label for category 'Quotes' in sidebar 'docs'"
+  },
   "sidebar.docs.category.Fees": {
     "message": "Fees",
     "description": "The label for category 'Fees' in sidebar 'docs'"
