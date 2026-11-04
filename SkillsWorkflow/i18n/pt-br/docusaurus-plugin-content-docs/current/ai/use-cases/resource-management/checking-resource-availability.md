@@ -49,7 +49,7 @@ A agência, os clientes, os projetos, as Atividades, as pessoas e as horas deste
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>Estou com a campanha de Natal da Northwind Coffee e preciso desenvolver a campanha criativa até o fim da semana que vem. Quais criativos estão disponíveis para trabalhar em tempo integral?</p>
+    <p>Estou com a campanha de Natal da Orvella Tea e preciso desenvolver a campanha criativa até o fim da semana que vem. Quais criativos estão disponíveis para trabalhar em tempo integral?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -104,13 +104,13 @@ A agência, os clientes, os projetos, as Atividades, as pessoas e as horas deste
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
-    <p>Certo, preciso começar a Atividade Northwind Christmas 2026 – Campaign Website, então atribua ao Lucas como executor.</p>
+    <p>Certo, preciso começar a Atividade Orvella Christmas 2026 – Campaign Website, então atribua ao Lucas como executor.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.ApprovalCard
       title="Adicionar à equipe deste documento"
-      subtitle="NWC0021DIGI001 · Northwind Christmas 2026 – Campaign Website"
+      subtitle="ORV0021DIGI001 · Orvella Christmas 2026 – Campaign Website"
       rows={[['Adicionando', 'Lucas Ferreira como Executor']]}
       actions={[{ label: 'Negar' }, { label: 'Aprovar', primary: true }]}
     />
@@ -121,8 +121,8 @@ A agência, os clientes, os projetos, as Atividades, as pessoas e as horas deste
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Atualizado" label="NWC0021DIGI001 · Northwind Christmas 2026 – Campaign Website" />
-    <p>Lucas Ferreira foi atribuído como Executor em Northwind Christmas 2026 – Campaign Website (NWC0021DIGI001).</p>
+    <Walkthrough.StatusChip status="Atualizado" label="ORV0021DIGI001 · Orvella Christmas 2026 – Campaign Website" />
+    <p>Lucas Ferreira foi atribuído como Executor em Orvella Christmas 2026 – Campaign Website (ORV0021DIGI001).</p>
   </Walkthrough.Message>
 </Walkthrough>
 

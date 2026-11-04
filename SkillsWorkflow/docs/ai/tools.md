@@ -54,7 +54,7 @@ These run on the server, against the Skills Workflow API, as the signed-in user.
 | `get_current_user` | Read who is asking |
 | `get_current_time` | Read the current date and time |
 
-The `resolve_*` tools are what turn *"the Northwind retainer"* into a record. When more than one candidate matches, the assistant asks you to pick.
+The `resolve_*` tools are what turn *"the Orvella retainer"* into a record. When more than one candidate matches, the assistant asks you to pick.
 
 ### Documents and jobs
 

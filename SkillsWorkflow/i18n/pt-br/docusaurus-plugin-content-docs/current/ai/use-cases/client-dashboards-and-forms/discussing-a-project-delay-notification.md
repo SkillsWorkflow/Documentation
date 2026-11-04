@@ -52,7 +52,7 @@ A agência, o cliente, as pessoas, as Atividades, os comentários e as datas des
   }
 >
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>A Christmas Launch Event – Stand Design está 4 dias atrasada.</strong> Ela vencia em 26 de outubro e ainda está em In Progress. Pertence ao projeto Northwind Christmas 2026.</p>
+    <p><strong>A Christmas Launch Event – Stand Design está 4 dias atrasada.</strong> Ela vencia em 26 de outubro e ainda está em In Progress. Pertence ao projeto Orvella Christmas 2026.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
@@ -63,7 +63,7 @@ A agência, o cliente, as pessoas, as Atividades, os comentários e as datas des
     <p><strong>O design do estande ficou esperando as novas diretrizes de marca do cliente:</strong></p>
     <ul>
       <li>Em 14 de outubro, a Sarah Lee pediu ao cliente o logo e a paleta de cores atualizados. A resposta no Feed diz que eles chegariam até 18 de outubro.</li>
-      <li>As diretrizes, <strong>Northwind_Brand_Guidelines_2027.pdf</strong>, foram anexadas em 24 de outubro, seis dias depois do prometido.</li>
+      <li>As diretrizes, <strong>Orvella_Brand_Guidelines_2027.pdf</strong>, foram anexadas em 24 de outubro, seis dias depois do prometido.</li>
       <li>Em 25 de outubro, a Sarah escreveu que o estande precisa de mais três dias úteis depois da chegada das diretrizes.</li>
     </ul>
     <p>Ninguém definiu uma nova data de entrega na Atividade.</p>
@@ -86,7 +86,7 @@ A agência, o cliente, as pessoas, as Atividades, os comentários e as datas des
     />
     <p><strong>Como interpretei sua pergunta</strong></p>
     <ul>
-      <li>Incluído: Atividades do projeto Northwind Christmas 2026 cuja descrição ou cujo Feed se refere ao design do estande.</li>
+      <li>Incluído: Atividades do projeto Orvella Christmas 2026 cuja descrição ou cujo Feed se refere ao design do estande.</li>
       <li>Assumido: uma Atividade que ainda não começou depende da atrasada quando usa o resultado dela.</li>
     </ul>
   </Walkthrough.Message>

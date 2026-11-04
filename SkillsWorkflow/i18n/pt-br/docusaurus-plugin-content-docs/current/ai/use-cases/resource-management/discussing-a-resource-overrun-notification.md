@@ -52,7 +52,7 @@ A agência, o cliente, as pessoas, a Atividade, os comentários e as horas deste
   }
 >
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>A Anna Smith registrou 46 horas no Campaign Website, 16 horas a mais do que as 30 planejadas.</strong> A Atividade pertence ao projeto Northwind Christmas 2026 e vence em 20 de novembro.</p>
+    <p><strong>A Anna Smith registrou 46 horas no Campaign Website, 16 horas a mais do que as 30 planejadas.</strong> A Atividade pertence ao projeto Orvella Christmas 2026 e vence em 20 de novembro.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
@@ -64,7 +64,7 @@ A agência, o cliente, as pessoas, a Atividade, os comentários e as horas deste
     <ul>
       <li>Em 19 de outubro, o cliente pediu mais duas landing pages para a linha de presentes de Natal. O David Brown publicou o pedido no Feed.</li>
       <li>Em 20 de outubro, a Anna respondeu que as novas páginas precisavam de cerca de 15 horas a mais de design.</li>
-      <li>O sitemap revisado, <strong>Northwind_Christmas_sitemap_v2.pdf</strong>, foi anexado no mesmo dia e mostra as duas novas páginas.</li>
+      <li>O sitemap revisado, <strong>Orvella_Christmas_sitemap_v2.pdf</strong>, foi anexado no mesmo dia e mostra as duas novas páginas.</li>
       <li>O planejamento e a descrição da Atividade não foram atualizados depois da mudança.</li>
     </ul>
     <p>Ninguém confirmou se as páginas extras podem ser cobradas do cliente.</p>
@@ -82,7 +82,7 @@ A agência, o cliente, as pessoas, a Atividade, os comentários e as horas deste
       rows={[
         ['Atividade', 'Campaign Website'],
         ['Menções', 'David Brown, Anna Smith'],
-        ['Comentário', 'A Anna registrou 46h contra 30h planejadas, depois das duas landing pages adicionadas em 19 de outubro. Vocês podem confirmar o novo escopo, se ele pode ser cobrado da Northwind Coffee e de quantas horas a mais a Anna precisa para terminar a Atividade?'],
+        ['Comentário', 'A Anna registrou 46h contra 30h planejadas, depois das duas landing pages adicionadas em 19 de outubro. Vocês podem confirmar o novo escopo, se ele pode ser cobrado da Orvella Tea e de quantas horas a mais a Anna precisa para terminar a Atividade?'],
       ]}
       actions={[{ label: 'Negar' }, { label: 'Publicar', primary: true }]}
     />

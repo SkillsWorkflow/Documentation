@@ -52,7 +52,7 @@ The agency, people and hours in this example are illustrative. The people you se
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>I am closing the month on the Northwind Coffee account. Who on my team is blocked because of missing hours?</p>
+    <p>I am closing the month on the Orvella Tea account. Who on my team is blocked because of missing hours?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -109,7 +109,7 @@ The agency, people and hours in this example are illustrative. The people you se
         ['David Brown', 'Social Media Calendar', '20h', '4h'],
         ['Sarah Lee', 'Christmas Launch Event', '40h', '0h'],
       ]}
-      note="All three jobs belong to the Northwind Christmas 2026 project. Its contract burn will read low until these hours are recorded."
+      note="All three jobs belong to the Orvella Christmas 2026 project. Its contract burn will read low until these hours are recorded."
     />
     <p><strong>How I read your question</strong></p>
     <ul>

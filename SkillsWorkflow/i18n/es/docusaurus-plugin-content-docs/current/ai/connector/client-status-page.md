@@ -9,7 +9,7 @@ sidebar_position: 3
 Da a un cliente una única dirección donde vea cómo va su trabajo: el avance de la campaña, los entregables que vencen y las aprobaciones pendientes de él. Pide la página a tu herramienta de IA, revísala y envía la dirección al cliente. La página lee Skills Workflow cada vez que se abre, así que nadie la actualiza a mano.
 
 ![img-box-shadow](/img/ai/connector/client-status-page.png)
-<figcaption>Una página de estado publicada con el conector en un tenant de demostración, para el cliente ficticio Northwind Coffee: avance, tres contadores, los entregables pendientes del cliente y todos los entregables con su etapa y su fecha de entrega.</figcaption>
+<figcaption>Una página de estado publicada con el conector en un tenant de demostración, para el cliente ficticio Orvella Tea: avance, tres contadores, los entregables pendientes del cliente y todos los entregables con su etapa y su fecha de entrega.</figcaption>
 
 ## Disponibilidad
 

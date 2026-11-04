@@ -1,77 +1,81 @@
 ---
 id: asking-questions-about-project-status
 title: Preguntar por el Estado de un Proyecto
-description: "Mira cómo un gestor de proyectos pregunta al AI Assistant en qué punto está un proyecto, qué jobs están entregados, con retraso o a punto de vencer, qué está en riesgo y qué está pendiente del cliente."
+description: "Mira cómo un gestor de proyectos pregunta al AI Assistant en qué punto está un proyecto, qué jobs van con retraso, qué podría poner en riesgo el calendario, qué está pendiente del cliente y cuántas horas hay planificadas y registradas."
 sidebar_label: Preguntar por el Estado de un Proyecto
 sidebar_position: 2
 ---
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
-:::preview
-Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
-
 ## Descripción general
 
-Pregunta al AI Assistant, con tus propias palabras, cómo va un proyecto. Responde con los jobs del proyecto por etapa, lo que se ha entregado, lo que va con retraso y lo que vence a continuación, y las horas registradas frente a las contratadas. Haz preguntas de seguimiento para ver qué podría poner en riesgo el calendario y qué jobs están pendientes del cliente, para saber qué plantear en tu próxima reunión de seguimiento.
+Pregunta al AI Assistant, con tus propias palabras, cómo va un proyecto. Responde con la etapa del proyecto, sus jobs por etapa, los jobs marcados con retraso, las fechas del proyecto y su responsable. Haz preguntas de seguimiento para ver qué podría poner en riesgo el calendario, qué jobs están pendientes del cliente y cuántas horas hay planificadas y registradas, para saber qué plantear en tu próxima reunión de seguimiento.
 
-La agencia, el cliente, el proyecto, los jobs y las horas de este ejemplo son ilustrativos. Los jobs que ves dependen de tus accesos y de los datos que tu agencia pone a disposición del asistente.
+Cada proyecto y cada job de la respuesta es un enlace. Selecciona uno para abrirlo y actuar sobre él. Cuando un workspace te ayuda a seguir el proyecto, el asistente lo sugiere con un botón **Abrir**.
+
+El cliente, el proyecto, los jobs y las horas de este ejemplo son ilustrativos. Los jobs que ves dependen de tus accesos y de los datos que tu agencia pone a disposición del asistente.
 
 <Walkthrough
   subtitle="Ejemplo de conversación entre un gestor de proyectos y el AI Assistant."
   sidebar={
     <>
       <Walkthrough.CapabilityCard title="De una pregunta a un informe de estado">
-        El asistente reúne los jobs, las fechas y las horas del proyecto en una sola respuesta, lista para una llamada con el cliente o una reunión de seguimiento.
+        El asistente reúne los jobs, las etapas, las fechas y las horas del proyecto en una sola respuesta, lista para una llamada con el cliente o una reunión de seguimiento.
       </Walkthrough.CapabilityCard>
       <Walkthrough.ChecklistCard
         items={[
           'Pregunta cómo va el proyecto.',
-          'Lee los jobs por etapa y las horas registradas frente al contrato.',
+          'Lee la etapa del proyecto y sus jobs por etapa.',
           'Pregunta qué podría poner en riesgo el calendario.',
           'Pregunta qué jobs están pendientes del cliente.',
-          'Abre un job de la lista para actuar sobre él.',
+          'Pregunta cuántas horas hay planificadas y registradas.',
+          'Abre un job desde la respuesta para actuar sobre él.',
         ]}
       />
       <Walkthrough.PhrasingCard
         items={[
-          '¿Cómo vamos con el proyecto de Navidad de Northwind?',
+          '¿Cómo vamos con el proyecto de Navidad de Orvella Tea?',
           '¿Qué va con retraso en este proyecto?',
           '¿Qué necesitamos del cliente esta semana?',
+          '¿Cuántas horas hay planificadas y registradas en este proyecto?',
         ]}
       />
       <Walkthrough.NoteCard
         items={[
           'Las etapas dependen del workflow de cada job, así que un mismo proyecto puede mostrar nombres de etapa distintos.',
-          'Un job va con retraso cuando su fecha de vencimiento ha pasado y no está en una etapa de cierre.',
-          'Pendiente del cliente significa que el job está en una etapa que tu agencia usa para la aprobación o los comentarios del cliente.',
+          'Un job va con retraso cuando su fecha de fin planificada ha pasado y no está terminado.',
+          'Pendiente del cliente significa que el job está en una etapa de aprobación o comentarios del cliente, o que sus comentarios o su brief muestran una petición abierta al cliente.',
+          'Las horas planificadas vienen de las reservas en los jobs del proyecto y las horas registradas, de las hojas de horas.',
         ]}
       />
     </>
   }
 >
   <Walkthrough.Message sender="you" name="Tú">
-    <p>¿Cómo vamos con el proyecto Northwind Christmas 2026?</p>
+    <p>¿Cómo vamos con el proyecto Orvella Tea Christmas 2026?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Northwind Christmas 2026 tiene 14 jobs. 9 están entregados, 3 están en curso y 2 no han empezado.</strong> El proyecto termina el 15 de diciembre.</p>
+    <p><strong>ORV0031 — Orvella Tea – Christmas 2026 Campaign está en In Progress.</strong> Va del 1 de septiembre al 15 de diciembre de 2026, y el responsable eres tú.</p>
     <Walkthrough.DataTable
-      columns={['', 'Horas']}
+      columns={['Etapa', 'Jobs']}
       rows={[
-        ['Contratadas', '640h'],
-        ['Planificadas', '590h'],
-        ['Registradas', '398h'],
+        ['Closed', '2'],
+        ['Client Approval', '3'],
+        ['In Progress', '2'],
+        ['To Do', '1'],
       ]}
-      note="El 62% de las horas contratadas están registradas, con el 70% del tiempo del proyecto transcurrido."
+      note="1 de los 8 jobs está marcado con retraso."
     />
+    <p>La principal preocupación es el stand del evento de lanzamiento, que ya ha pasado su fecha de fin planificada. Puedes seguir las etapas del proyecto en el workspace de abajo.</p>
+    <Walkthrough.WorkspaceCard title="Kanban" subtitle="Workspace · Menu" actionLabel="Abrir" />
     <p><strong>Cómo he interpretado tu pregunta</strong></p>
     <ul>
-      <li>Incluido: todos los jobs del proyecto Northwind Christmas 2026, y las horas planificadas y registradas en ellos hasta hoy.</li>
-      <li>Asumido: “entregado” significa que el job está en una etapa de cierre.</li>
+      <li>Incluido: el proyecto ORV0031 y todos sus jobs visibles para ti.</li>
+      <li>Asumido: “cómo vamos” significa la etapa del proyecto, el progreso de los jobs y los indicadores de retraso, no las horas registradas ni la facturación.</li>
     </ul>
-    <Walkthrough.Source label="Jobs · 14 filas" />
+    <Walkthrough.Source label="Jobs · 8 filas" />
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Tú">
@@ -81,16 +85,25 @@ La agencia, el cliente, el proyecto, los jobs y las horas de este ejemplo son il
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.JobList
       title="Jobs en riesgo"
+      previewLabel="Vista previa"
+      openLabel="Abrir"
       rows={[
-        { title: 'Christmas Launch Event – Stand Design', number: 'NWC0031EV002', stage: 'In Progress', due: '4 días de retraso', tone: 'late' },
-        { title: 'Campaign Website', number: 'NWC0031DIGI001', stage: 'In Progress', due: '20 nov' },
-        { title: 'Christmas Launch Event – Stand Production', number: 'NWC0031EV003', stage: 'New', due: '13 nov' },
+        { title: 'Christmas Launch Event – Stand Design', number: 'ORV0031EV002', stage: 'In Progress', due: '4 días de retraso', tone: 'late' },
+        { title: 'Christmas Launch Event – Stand Production', number: 'ORV0031EV003', stage: 'To Do', due: '13 nov' },
+        { title: 'Campaign Website', number: 'ORV0031DIGI001', stage: 'In Progress', due: '20 nov' },
       ]}
       footer="Jobs · 3 filas"
     />
     <ul>
-      <li>El diseño del stand va con retraso y Stand Production no puede empezar hasta que se apruebe.</li>
-      <li>Campaign Website tiene 16 horas registradas por encima de lo planificado después de que se añadieran dos landing pages.</li>
+      <li>Stand Design tenía que terminar el 31 de octubre y sigue en In Progress. Es lo primero que escalaría.</li>
+      <li>Stand Production tiene responsables, pero no tiene ejecutor.</li>
+      <li>Campaign Website termina dentro de 16 días y sigue en In Progress.</li>
+    </ul>
+    <p>Siguiente paso recomendado: confirmar una nueva fecha para el diseño del stand y asignar un ejecutor a Stand Production.</p>
+    <p><strong>Cómo he interpretado tu pregunta</strong></p>
+    <ul>
+      <li>Incluido: los jobs del proyecto, revisados por fecha de fin planificada, etapa, prioridad y asignaciones.</li>
+      <li>No evaluado: dependencias, esfuerzo restante y disponibilidad de las personas.</li>
     </ul>
   </Walkthrough.Message>
 
@@ -101,14 +114,38 @@ La agencia, el cliente, el proyecto, los jobs y las horas de este ejemplo son il
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p><strong>Tres jobs están a la espera de la aprobación del cliente:</strong></p>
     <Walkthrough.DataTable
-      columns={['Job', 'Etapa', 'En espera desde']}
+      columns={['Job', 'Etapa', 'Fecha de fin']}
       rows={[
-        ['Social Media Calendar – December', 'Client Approval', '23 de octubre'],
-        ['In-store Posters', 'Client Approval', '27 de octubre'],
-        ['Gift Card Design', 'Client Approval', '29 de octubre'],
+        ['Social Media Calendar – December', 'Client Approval', '7 nov'],
+        ['In-store Posters', 'Client Approval', '10 nov'],
+        ['Gift Card Design', 'Client Approval', '14 nov'],
       ]}
-      note="El calendario de redes sociales de diciembre lleva 7 días en espera y sus primeras publicaciones salen el 1 de diciembre."
+      note="Los comentarios y los briefs más recientes de los demás jobs no muestran ninguna petición abierta al cliente."
     />
+    <Walkthrough.Source label="Descriptions · 8 filas" />
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="Tú">
+    <p>¿Cuántas horas hay planificadas y registradas en este proyecto?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <Walkthrough.DataTable
+      columns={['', 'Horas']}
+      rows={[
+        ['Planificadas', '590h'],
+        ['Registradas', '398h'],
+      ]}
+      note="El tiempo registrado es el 67% de las horas planificadas. Es una comparación de tiempo y no mide cuánto trabajo está hecho."
+    />
+    <p>Puedes seguir el tiempo planificado y el real por mes en el workspace de abajo.</p>
+    <Walkthrough.WorkspaceCard title="FTE" subtitle="Workspace · Menu" actionLabel="Abrir" />
+    <p><strong>Cómo he interpretado tu pregunta</strong></p>
+    <ul>
+      <li>Asumido: “planificadas” significa las horas reservadas en los jobs del proyecto, no el esfuerzo contratado o presupuestado.</li>
+      <li>Incluido: el tiempo registrado por todas las personas visibles en el proyecto, sea cual sea su estado de aprobación o si es facturable.</li>
+    </ul>
+    <Walkthrough.Source label="Time sheets · 1 fila" />
   </Walkthrough.Message>
 </Walkthrough>
 

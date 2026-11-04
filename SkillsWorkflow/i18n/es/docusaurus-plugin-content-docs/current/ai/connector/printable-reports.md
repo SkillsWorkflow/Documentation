@@ -13,7 +13,7 @@ Esto todavía no está disponible. El ejemplo de abajo se construyó con el cone
 Algunos informes están hechos para salir de Skills Workflow: el informe de estado mensual adjunto a un email para el cliente, el resumen de fin de campaña para su equipo de compras, las cifras para una reunión del consejo. Pide a tu herramienta de IA un informe maquetado para papel. Ábrelo el día que lo necesites, selecciona **Print or save as PDF** y envía la copia. La copia conserva las cifras y la fecha de ese momento.
 
 ![img-box-shadow](/img/ai/connector/monthly-report-screen.png)
-<figcaption>El informe de estado mensual del cliente ficticio Northwind Coffee en un tenant de demostración, tal como se abre en el navegador, con su botón de impresión.</figcaption>
+<figcaption>El informe de estado mensual del cliente ficticio Orvella Tea en un tenant de demostración, tal como se abre en el navegador, con su botón de impresión.</figcaption>
 
 ![img-box-shadow](/img/ai/connector/monthly-report-print.png)
 <figcaption>El mismo informe tal como se imprime: una página A4 con la fecha y la hora de las cifras arriba y en el pie de página, y sin botón.</figcaption>

@@ -33,7 +33,7 @@ A agência, o cliente, as pessoas e as horas neste exemplo são ilustrativos. Os
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Quantas horas faltam nos estimates aprovados da Northwind Coffee neste trimestre?',
+          'Quantas horas faltam nos estimates aprovados da Orvella Tea neste trimestre?',
           'Mostra por typology group, com a percentagem usada.',
           'Temos pessoas suficientes para entregar essas horas até ao fim de outubro?',
           'Explica-me as limitações.',
@@ -54,11 +54,11 @@ A agência, o cliente, as pessoas e as horas neste exemplo são ilustrativos. Os
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>Tenho uma reunião trimestral com a Northwind Coffee na próxima semana. Quantas das horas que contratámos com eles para este trimestre ainda faltam?</p>
+    <p>Tenho uma reunião trimestral com a Orvella Tea na próxima semana. Quantas das horas que contratámos com eles para este trimestre ainda faltam?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>A Northwind Coffee tem 1280 horas contratadas de outubro a dezembro de 2026.</strong> Já foram registadas 395, faltam entregar 885 horas (69%):</p>
+    <p><strong>A Orvella Tea tem 1280 horas contratadas de outubro a dezembro de 2026.</strong> Já foram registadas 395, faltam entregar 885 horas (69%):</p>
     <Walkthrough.DataTable
       columns={['Typology group', 'Contratadas', 'Registadas', 'Em falta']}
       rows={[
@@ -71,7 +71,7 @@ A agência, o cliente, as pessoas e as horas neste exemplo são ilustrativos. Os
     />
     <p><strong>Como interpretei a tua pergunta</strong></p>
     <ul>
-      <li>Incluído: estimates aprovados da Northwind Coffee de 1 de outubro a 31 de dezembro de 2026.</li>
+      <li>Incluído: estimates aprovados da Orvella Tea de 1 de outubro a 31 de dezembro de 2026.</li>
       <li>Assumido: “faltam” significa as horas contratadas menos as horas registadas nas time sheets.</li>
       <li>Não incluído: estimates que não estão aprovados.</li>
     </ul>
@@ -97,7 +97,7 @@ A agência, o cliente, as pessoas e as horas neste exemplo são ilustrativos. Os
     <p><strong>Como interpretei a tua pergunta</strong></p>
     <ul>
       <li>Incluído: pessoas ativas e planeáveis de cada typology group, de 14 de outubro a 31 de dezembro de 2026.</li>
-      <li>Assumido: “por planear” são as horas em falta que ainda não estão agendadas em trabalho da Northwind Coffee.</li>
+      <li>Assumido: “por planear” são as horas em falta que ainda não estão agendadas em trabalho da Orvella Tea.</li>
       <li>Assumido: o tempo livre é o tempo de trabalho menos as ausências aprovadas e todo o trabalho já agendado, em qualquer cliente.</li>
       <li>Assumido: cada typology group só é coberto por pessoas desse typology group.</li>
     </ul>

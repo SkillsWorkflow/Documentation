@@ -69,11 +69,11 @@ A agência, os clientes, as pessoas, os jobs e as horas neste exemplo são ilust
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
-    <p>Mostra-me só as derrapagens na Northwind Coffee, e desde quando.</p>
+    <p>Mostra-me só as derrapagens na Orvella Tea, e desde quando.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Há uma derrapagem na Northwind Coffee:</strong></p>
+    <p><strong>Há uma derrapagem na Orvella Tea:</strong></p>
     <Walkthrough.DataTable
       columns={['Pessoa', 'Job', 'Planeado', 'Registado', 'Acima do planeado desde']}
       rows={[
@@ -83,7 +83,7 @@ A agência, os clientes, as pessoas, os jobs e as horas neste exemplo são ilust
     />
     <p><strong>Como interpretei a tua pergunta</strong></p>
     <ul>
-      <li>Incluído: jobs do cliente Northwind Coffee em que uma pessoa registou mais horas do que as planeadas para ela.</li>
+      <li>Incluído: jobs do cliente Orvella Tea em que uma pessoa registou mais horas do que as planeadas para ela.</li>
       <li>Assumido: “desde quando” significa o primeiro dia em que as horas registadas ultrapassaram as horas planeadas.</li>
     </ul>
     <Walkthrough.Source label="Cargas de trabalho · 1 linha" />

@@ -38,7 +38,7 @@ A trabalhar a partir de um documento já aberto no ecrã, deixe ligado o interru
 Descreva o trabalho pelas mesmas palavras que usaria com um colega, e inclua tudo o que o brief deve dizer.
 
 ```
-Cria um job para a Northwind, campanha de primavera, artwork para o email de lançamento.
+Cria um job para a Orvella, campanha de primavera, artwork para o email de lançamento.
 Prazo até ao fim da próxima semana.
 ```
 

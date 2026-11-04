@@ -36,9 +36,9 @@ The agency, client, rate cards, columns, rates and estimates in this example are
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Raise Design rates on the Northwind rate card by 4% from January.',
+          'Raise Design rates on the Orvella rate card by 4% from January.',
           'Update the rate card with the attached price list.',
-          'Which estimates use the Northwind Coffee 2026 rate card?',
+          'Which estimates use the Orvella Tea 2026 rate card?',
         ]}
       />
       <Walkthrough.NoteCard
@@ -53,14 +53,14 @@ The agency, client, rate cards, columns, rates and estimates in this example are
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>Raise Design and Copywriting on the Northwind Coffee rate card by 4% from 1 January 2027.</p>
+    <p>Raise Design and Copywriting on the Orvella Tea rate card by 4% from 1 January 2027.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>The <strong>Northwind Coffee 2026</strong> rate card runs from 1 January to 31 December 2026. Should I change it, or create a new one for 2027 with the new rates?</p>
+    <p>The <strong>Orvella Tea 2026</strong> rate card runs from 1 January to 31 December 2026. Should I change it, or create a new one for 2027 with the new rates?</p>
     <Walkthrough.Choices
       label="Rate card"
-      options={['Create Northwind Coffee 2027', 'Change Northwind Coffee 2026']}
+      options={['Create Orvella Tea 2027', 'Change Orvella Tea 2026']}
     />
   </Walkthrough.Message>
 
@@ -84,8 +84,8 @@ The agency, client, rate cards, columns, rates and estimates in this example are
       title="Create this rate card"
       subtitle="Review these details before I create it."
       rows={[
-        ['Name', 'Northwind Coffee 2027'],
-        ['Copied from', 'Northwind Coffee 2026'],
+        ['Name', 'Orvella Tea 2027'],
+        ['Copied from', 'Orvella Tea 2026'],
         ['Company', 'Bluebird Creative'],
         ['Start Date', '1 January 2027'],
         ['End Date', '31 December 2027'],
@@ -100,8 +100,8 @@ The agency, client, rate cards, columns, rates and estimates in this example are
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Created" label="Northwind Coffee 2027" />
-    <p>The rate card was created with the new Design and Copywriting rates. Set it on the Northwind Coffee client to use it in new estimates.</p>
+    <Walkthrough.StatusChip status="Created" label="Orvella Tea 2027" />
+    <p>The rate card was created with the new Design and Copywriting rates. Set it on the Orvella Tea client to use it in new estimates.</p>
   </Walkthrough.Message>
 </Walkthrough>
 

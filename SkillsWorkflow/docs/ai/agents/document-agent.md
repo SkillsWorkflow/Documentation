@@ -38,7 +38,7 @@ Working from a document already open on screen, leave the **Document** context s
 Describe the work in the same words you would use to a colleague, and include anything the brief should say.
 
 ```
-Create a job for Northwind, spring campaign, artwork for the launch email.
+Create a job for Orvella, spring campaign, artwork for the launch email.
 Deadline end of next week.
 ```
 

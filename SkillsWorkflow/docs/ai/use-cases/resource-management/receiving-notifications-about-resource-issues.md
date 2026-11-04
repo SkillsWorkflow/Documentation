@@ -69,11 +69,11 @@ The agency, clients, people, jobs and hours in this example are illustrative. Th
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
-    <p>Show me only the overruns on Northwind Coffee, and since when.</p>
+    <p>Show me only the overruns on Orvella Tea, and since when.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>One overrun is on Northwind Coffee:</strong></p>
+    <p><strong>One overrun is on Orvella Tea:</strong></p>
     <Walkthrough.DataTable
       columns={['Person', 'Job', 'Planned', 'Recorded', 'Over plan since']}
       rows={[
@@ -83,7 +83,7 @@ The agency, clients, people, jobs and hours in this example are illustrative. Th
     />
     <p><strong>How I read your question</strong></p>
     <ul>
-      <li>Included: jobs of the Northwind Coffee client where a person recorded more hours than were planned for them.</li>
+      <li>Included: jobs of the Orvella Tea client where a person recorded more hours than were planned for them.</li>
       <li>Assumed: “since when” means the first day the recorded hours went above the planned hours.</li>
     </ul>
     <Walkthrough.Source label="Workloads · 1 row" />

@@ -13,7 +13,7 @@ This is not available yet. The example below was built with the connector on a d
 Some reports are meant to leave Skills Workflow: the monthly status report attached to an email to the client, the end-of-campaign summary for their procurement team, the figures for a board meeting. Ask your AI tool for a report laid out for paper. Open it on the day you need it, select **Print or save as PDF**, and send the copy. The copy keeps the figures and the date of that moment.
 
 ![img-box-shadow](/img/ai/connector/monthly-report-screen.png)
-<figcaption>The monthly status report of the fictitious client Northwind Coffee on a demo tenant, as it opens in the browser, with its print button.</figcaption>
+<figcaption>The monthly status report of the fictitious client Orvella Tea on a demo tenant, as it opens in the browser, with its print button.</figcaption>
 
 ![img-box-shadow](/img/ai/connector/monthly-report-print.png)
 <figcaption>The same report as it prints: one A4 page with the date and time of the figures at the top and in the footer, and no button.</figcaption>

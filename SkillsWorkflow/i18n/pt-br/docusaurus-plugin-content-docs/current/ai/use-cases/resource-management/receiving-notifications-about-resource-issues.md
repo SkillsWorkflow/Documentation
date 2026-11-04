@@ -69,11 +69,11 @@ A agência, os clientes, as pessoas, as Atividades e as horas deste exemplo são
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
-    <p>Mostre só as horas acima do planejado na Northwind Coffee, e desde quando.</p>
+    <p>Mostre só as horas acima do planejado na Orvella Tea, e desde quando.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Há um caso de horas acima do planejado na Northwind Coffee:</strong></p>
+    <p><strong>Há um caso de horas acima do planejado na Orvella Tea:</strong></p>
     <Walkthrough.DataTable
       columns={['Pessoa', 'Atividade', 'Planejado', 'Registrado', 'Acima do planejado desde']}
       rows={[
@@ -83,7 +83,7 @@ A agência, os clientes, as pessoas, as Atividades e as horas deste exemplo são
     />
     <p><strong>Como interpretei sua pergunta</strong></p>
     <ul>
-      <li>Incluído: Atividades do cliente Northwind Coffee em que uma pessoa registrou mais horas do que as planejadas para ela.</li>
+      <li>Incluído: Atividades do cliente Orvella Tea em que uma pessoa registrou mais horas do que as planejadas para ela.</li>
       <li>Assumido: “desde quando” significa o primeiro dia em que as horas registradas ultrapassaram as horas planejadas.</li>
     </ul>
     <Walkthrough.Source label="Workloads · 1 linha" />

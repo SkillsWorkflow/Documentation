@@ -36,7 +36,7 @@ The agency, client, projects and values in this example are illustrative. The fi
       />
       <Walkthrough.PhrasingCard
         items={[
-          'How profitable was Northwind Coffee this year?',
+          'How profitable was Orvella Tea this year?',
           'Which of my clients has the lowest margin?',
           'Why is Holiday Packaging losing money?',
         ]}
@@ -52,22 +52,22 @@ The agency, client, projects and values in this example are illustrative. The fi
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>How profitable was Northwind Coffee this year?</p>
+    <p>How profitable was Orvella Tea this year?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Northwind Coffee brought €486,000 in income this year, with a cost of €352,400 and a margin of 27%.</strong></p>
+    <p><strong>Orvella Tea brought €486,000 in income this year, with a cost of €352,400 and a margin of 27%.</strong></p>
     <Walkthrough.DataTable
       columns={['Project', 'Income', 'Cost', 'Margin', 'Margin %']}
       rows={[
         ['Retainer 2026', '€312,000', '€218,400', '€93,600', '30%'],
-        ['Northwind Christmas 2026', '€124,000', '€89,300', '€34,700', '28%'],
+        ['Orvella Christmas 2026', '€124,000', '€89,300', '€34,700', '28%'],
         ['Holiday Packaging', '€50,000', '€44,700', '€5,300', '11%'],
       ]}
     />
     <p><strong>How I read your question</strong></p>
     <ul>
-      <li>Included: Northwind Coffee projects with hours recorded from 1 January to today.</li>
+      <li>Included: Orvella Tea projects with hours recorded from 1 January to today.</li>
       <li>Assumed: income is the hours sold on the estimates at their sale value, and cost is the hours recorded at each person’s cost.</li>
     </ul>
     <Walkthrough.Source label="Profitability · 3 rows" />

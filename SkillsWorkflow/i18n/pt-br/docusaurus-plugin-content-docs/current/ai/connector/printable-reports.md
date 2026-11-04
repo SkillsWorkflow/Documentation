@@ -13,7 +13,7 @@ Isto ainda não está disponível. O exemplo abaixo foi criado com o conector em
 Alguns relatórios são feitos para sair do Skills Workflow: o relatório de status mensal anexado a um e-mail para o cliente, o resumo de fim de campanha para a equipe de compras dele, os números para uma reunião da diretoria. Peça à sua ferramenta de IA um relatório diagramado para papel. Abra-o no dia em que precisar, selecione **Print or save as PDF** e envie a cópia. A cópia guarda os números e a data daquele momento.
 
 ![img-box-shadow](/img/ai/connector/monthly-report-screen.png)
-<figcaption>O relatório de status mensal do cliente fictício Northwind Coffee em um tenant de demonstração, como abre no navegador, com o seu botão de impressão.</figcaption>
+<figcaption>O relatório de status mensal do cliente fictício Orvella Tea em um tenant de demonstração, como abre no navegador, com o seu botão de impressão.</figcaption>
 
 ![img-box-shadow](/img/ai/connector/monthly-report-print.png)
 <figcaption>O mesmo relatório como é impresso: uma página A4 com a data e a hora dos números no topo e no rodapé, e sem botão.</figcaption>

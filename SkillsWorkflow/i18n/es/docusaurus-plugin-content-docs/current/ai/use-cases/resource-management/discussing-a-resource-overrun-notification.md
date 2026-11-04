@@ -52,7 +52,7 @@ La agencia, el cliente, las personas, el job, los comentarios y las horas de est
   }
 >
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Anna Smith ha registrado 46 horas en Campaign Website, 16 horas más que las 30 planificadas.</strong> El job pertenece al proyecto Northwind Christmas 2026 y vence el 20 de noviembre.</p>
+    <p><strong>Anna Smith ha registrado 46 horas en Campaign Website, 16 horas más que las 30 planificadas.</strong> El job pertenece al proyecto Orvella Christmas 2026 y vence el 20 de noviembre.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Tú">
@@ -64,7 +64,7 @@ La agencia, el cliente, las personas, el job, los comentarios y las horas de est
     <ul>
       <li>El 19 de octubre, el cliente pidió dos landing pages más para la gama de regalos de Navidad. David Brown publicó la petición en el Feed.</li>
       <li>El 20 de octubre, Anna respondió que las nuevas páginas necesitaban unas 15 horas más de diseño.</li>
-      <li>El mapa del sitio revisado, <strong>Northwind_Christmas_sitemap_v2.pdf</strong>, se adjuntó el mismo día y muestra las dos páginas nuevas.</li>
+      <li>El mapa del sitio revisado, <strong>Orvella_Christmas_sitemap_v2.pdf</strong>, se adjuntó el mismo día y muestra las dos páginas nuevas.</li>
       <li>La planificación y la descripción del job no se actualizaron tras el cambio.</li>
     </ul>
     <p>Nadie ha confirmado si las páginas adicionales se facturan al cliente.</p>
@@ -82,7 +82,7 @@ La agencia, el cliente, las personas, el job, los comentarios y las horas de est
       rows={[
         ['Job', 'Campaign Website'],
         ['Menciones', 'David Brown, Anna Smith'],
-        ['Comentario', 'Anna ha registrado 46h frente a las 30h planificadas, después de las dos landing pages añadidas el 19 de octubre. ¿Podéis confirmar el nuevo alcance, si se factura a Northwind Coffee y cuántas horas más necesita Anna para terminar el job?'],
+        ['Comentario', 'Anna ha registrado 46h frente a las 30h planificadas, después de las dos landing pages añadidas el 19 de octubre. ¿Podéis confirmar el nuevo alcance, si se factura a Orvella Tea y cuántas horas más necesita Anna para terminar el job?'],
       ]}
       actions={[{ label: 'Denegar' }, { label: 'Publicar', primary: true }]}
     />

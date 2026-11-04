@@ -49,7 +49,7 @@ The agency, clients, projects, Jobs, people and hours in this example are illust
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>I have the Christmas campaign for Northwind Coffee, and I need to develop the creative campaign by the end of next week. Which creatives are available to work full-time?</p>
+    <p>I have the Christmas campaign for Orvella Tea, and I need to develop the creative campaign by the end of next week. Which creatives are available to work full-time?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -104,13 +104,13 @@ The agency, clients, projects, Jobs, people and hours in this example are illust
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
-    <p>Okay, I need to start the Northwind Christmas 2026 – Campaign Website job, so assign it to Lucas as the executor.</p>
+    <p>Okay, I need to start the Orvella Christmas 2026 – Campaign Website job, so assign it to Lucas as the executor.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.ApprovalCard
       title="Add to this document’s team"
-      subtitle="NWC0021DIGI001 · Northwind Christmas 2026 – Campaign Website"
+      subtitle="ORV0021DIGI001 · Orvella Christmas 2026 – Campaign Website"
       rows={[['Adding', 'Lucas Ferreira as Executor']]}
       actions={[{ label: 'Deny' }, { label: 'Approve', primary: true }]}
     />
@@ -121,8 +121,8 @@ The agency, clients, projects, Jobs, people and hours in this example are illust
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Updated" label="NWC0021DIGI001 · Northwind Christmas 2026 – Campaign Website" />
-    <p>Lucas Ferreira has been assigned as the Executor on Northwind Christmas 2026 – Campaign Website (NWC0021DIGI001).</p>
+    <Walkthrough.StatusChip status="Updated" label="ORV0021DIGI001 · Orvella Christmas 2026 – Campaign Website" />
+    <p>Lucas Ferreira has been assigned as the Executor on Orvella Christmas 2026 – Campaign Website (ORV0021DIGI001).</p>
   </Walkthrough.Message>
 </Walkthrough>
 

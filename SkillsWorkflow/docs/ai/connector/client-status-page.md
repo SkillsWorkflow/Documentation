@@ -9,7 +9,7 @@ sidebar_position: 3
 Give a client one address where they see how their work is going: the campaign's progress, the deliverables due and the approvals waiting on them. Ask your AI tool for the page, review it and send the client the address. The page reads Skills Workflow every time it opens, so nobody updates it by hand.
 
 ![img-box-shadow](/img/ai/connector/client-status-page.png)
-<figcaption>A status page published with the connector on a demo tenant, for the fictitious client Northwind Coffee: progress, three counters, the deliverables waiting on the client and every deliverable with its stage and due date.</figcaption>
+<figcaption>A status page published with the connector on a demo tenant, for the fictitious client Orvella Tea: progress, three counters, the deliverables waiting on the client and every deliverable with its stage and due date.</figcaption>
 
 ## Availability
 

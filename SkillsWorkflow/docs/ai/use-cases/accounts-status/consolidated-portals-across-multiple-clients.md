@@ -53,7 +53,7 @@ The agency, clients, numbers and addresses in this example are illustrative.
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>I look after Northwind Coffee, Contoso Bank and Fabrikam Motors. Create one portal where I can see how all three are doing.</p>
+    <p>I look after Orvella Tea, Contoso Bank and Fabrikam Motors. Create one portal where I can see how all three are doing.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -62,7 +62,7 @@ The agency, clients, numbers and addresses in this example are illustrative.
       columns={['Client', 'Active projects', 'Late jobs', 'Waiting on client', 'Contract burn', 'Portal']}
       rows={[
         ['Contoso Bank', '4', '3', '2', '81%', '—'],
-        ['Northwind Coffee', '2', '1', '3', '62%', 'christmas-2026'],
+        ['Orvella Tea', '2', '1', '3', '62%', 'christmas-2026'],
         ['Fabrikam Motors', '3', '0', '1', '44%', '—'],
       ]}
       note="Contoso Bank has 81% of its contracted hours recorded with two months left on its fee."
@@ -83,7 +83,7 @@ The agency, clients, numbers and addresses in this example are illustrative.
       title="Publish this portal"
       subtitle="Review the portal before I publish it."
       rows={[
-        ['Clients', 'Northwind Coffee, Contoso Bank, Fabrikam Motors'],
+        ['Clients', 'Orvella Tea, Contoso Bank, Fabrikam Motors'],
         ['Address', '/portal/accounts/anna-smith/'],
         ['Columns', 'Active projects, Late jobs, Waiting on client, Contract burn, Portal'],
         ['Order', 'Late jobs, most first'],
@@ -98,7 +98,7 @@ The agency, clients, numbers and addresses in this example are illustrative.
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.StatusChip status="Published" label="accounts/anna-smith" />
-    <p>The portal is published. Select a client’s row to see its late jobs, or the portal name to open Northwind Coffee’s own portal.</p>
+    <p>The portal is published. Select a client’s row to see its late jobs, or the portal name to open Orvella Tea’s own portal.</p>
   </Walkthrough.Message>
 </Walkthrough>
 

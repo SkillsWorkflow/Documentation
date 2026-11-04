@@ -13,7 +13,7 @@ Esto todavía no está disponible. El ejemplo de abajo se construyó con el cone
 Pon en la pantalla del estudio lo que el equipo debe ver de un vistazo: lo que vence pronto, lo que está pendiente del cliente y lo que ya va con retraso. Pide a tu herramienta de IA un tablero hecho para una TV, legible desde el otro lado de la sala, que se mantenga actualizado solo.
 
 ![img-box-shadow](/img/ai/connector/studio-board.png)
-<figcaption>El tablero del estudio de la campaña de Navidad del cliente ficticio Northwind Coffee en un tenant de demostración, a 1920 × 1080: lo que vence en los próximos 14 días, lo pendiente del cliente y lo que va con retraso.</figcaption>
+<figcaption>El tablero del estudio de la campaña de Navidad del cliente ficticio Orvella Tea en un tenant de demostración, a 1920 × 1080: lo que vence en los próximos 14 días, lo pendiente del cliente y lo que va con retraso.</figcaption>
 
 ## Comportamiento previsto
 

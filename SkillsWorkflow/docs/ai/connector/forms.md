@@ -13,7 +13,7 @@ This is not available yet. The example below was built with the connector on a d
 Replace the request emails with a form. The client's marketing team says what they need, the details and the date, and the request arrives in Skills Workflow as a job in the campaign's project, ready for traffic to pick up.
 
 ![img-box-shadow](/img/ai/connector/request-form.png)
-<figcaption>The request form of the fictitious client Northwind Coffee on a demo tenant, filled in by its marketing team.</figcaption>
+<figcaption>The request form of the fictitious client Orvella Tea on a demo tenant, filled in by its marketing team.</figcaption>
 
 ![img-box-shadow](/img/ai/connector/request-form-sent.png)
 <figcaption>After sending, the form shows the number of the job it created, its stage and a link to the campaign's status page.</figcaption>

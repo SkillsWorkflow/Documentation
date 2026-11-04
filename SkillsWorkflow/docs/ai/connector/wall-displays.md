@@ -13,7 +13,7 @@ This is not available yet. The example below was built with the connector on a d
 Put what the team should see at a glance on the screen in the studio: what is due soon, what is waiting on the client and what is already late. Ask your AI tool for a board made for a TV, readable from across the room, that keeps itself up to date.
 
 ![img-box-shadow](/img/ai/connector/studio-board.png)
-<figcaption>The studio board of the fictitious client Northwind Coffee's Christmas campaign on a demo tenant, at 1920 × 1080: due in the next 14 days, waiting on the client and late.</figcaption>
+<figcaption>The studio board of the fictitious client Orvella Tea's Christmas campaign on a demo tenant, at 1920 × 1080: due in the next 14 days, waiting on the client and late.</figcaption>
 
 ## Expected behaviour
 

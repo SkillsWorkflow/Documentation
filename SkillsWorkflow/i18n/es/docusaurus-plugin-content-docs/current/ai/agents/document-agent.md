@@ -38,7 +38,7 @@ Trabajando sobre un documento ya abierto en pantalla, deja activado el interrupt
 Describe el trabajo con las mismas palabras que usarías con un compañero, e incluye todo lo que el brief deba decir.
 
 ```
-Crea un job para Northwind, campaña de primavera, artwork para el correo de lanzamiento.
+Crea un job para Orvella, campaña de primavera, artwork para el correo de lanzamiento.
 Plazo para finales de la semana que viene.
 ```
 

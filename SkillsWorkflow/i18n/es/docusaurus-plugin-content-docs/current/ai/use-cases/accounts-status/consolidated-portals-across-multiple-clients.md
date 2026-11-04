@@ -53,7 +53,7 @@ La agencia, los clientes, los números y las direcciones de este ejemplo son ilu
   }
 >
   <Walkthrough.Message sender="you" name="Tú">
-    <p>Llevo Northwind Coffee, Contoso Bank y Fabrikam Motors. Crea un portal donde pueda ver cómo van los tres.</p>
+    <p>Llevo Orvella Tea, Contoso Bank y Fabrikam Motors. Crea un portal donde pueda ver cómo van los tres.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -62,7 +62,7 @@ La agencia, los clientes, los números y las direcciones de este ejemplo son ilu
       columns={['Cliente', 'Proyectos activos', 'Jobs con retraso', 'Pendiente del cliente', 'Burn del contrato', 'Portal']}
       rows={[
         ['Contoso Bank', '4', '3', '2', '81%', '—'],
-        ['Northwind Coffee', '2', '1', '3', '62%', 'christmas-2026'],
+        ['Orvella Tea', '2', '1', '3', '62%', 'christmas-2026'],
         ['Fabrikam Motors', '3', '0', '1', '44%', '—'],
       ]}
       note="Contoso Bank tiene registrado el 81% de sus horas contratadas y le quedan dos meses de fee."
@@ -83,7 +83,7 @@ La agencia, los clientes, los números y las direcciones de este ejemplo son ilu
       title="Publicar este portal"
       subtitle="Revisa el portal antes de que lo publique."
       rows={[
-        ['Clientes', 'Northwind Coffee, Contoso Bank, Fabrikam Motors'],
+        ['Clientes', 'Orvella Tea, Contoso Bank, Fabrikam Motors'],
         ['Dirección', '/portal/accounts/anna-smith/'],
         ['Columnas', 'Proyectos activos, Jobs con retraso, Pendiente del cliente, Burn del contrato, Portal'],
         ['Orden', 'Jobs con retraso, de más a menos'],
@@ -98,7 +98,7 @@ La agencia, los clientes, los números y las direcciones de este ejemplo son ilu
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.StatusChip status="Publicado" label="accounts/anna-smith" />
-    <p>El portal está publicado. Selecciona la fila de un cliente para ver sus jobs con retraso, o el nombre del portal para abrir el portal propio de Northwind Coffee.</p>
+    <p>El portal está publicado. Selecciona la fila de un cliente para ver sus jobs con retraso, o el nombre del portal para abrir el portal propio de Orvella Tea.</p>
   </Walkthrough.Message>
 </Walkthrough>
 

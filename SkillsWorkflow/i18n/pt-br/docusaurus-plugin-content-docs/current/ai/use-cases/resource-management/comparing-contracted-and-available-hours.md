@@ -33,7 +33,7 @@ A agência, o cliente, as pessoas e as horas deste exemplo são ilustrativos. As
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Quantas horas restam nas nossas Propostas aprovadas da Northwind Coffee neste trimestre?',
+          'Quantas horas restam nas nossas Propostas aprovadas da Orvella Tea neste trimestre?',
           'Mostre por grupo de cargo, com a porcentagem utilizada.',
           'Temos pessoas suficientes para entregar essas horas até o fim de outubro?',
           'Explique as limitações para mim.',
@@ -54,11 +54,11 @@ A agência, o cliente, as pessoas e as horas deste exemplo são ilustrativos. As
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>Tenho uma reunião trimestral com a Northwind Coffee na semana que vem. Quantas das horas que contratamos com eles para este trimestre ainda restam?</p>
+    <p>Tenho uma reunião trimestral com a Orvella Tea na semana que vem. Quantas das horas que contratamos com eles para este trimestre ainda restam?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>A Northwind Coffee tem 1.280 horas contratadas de outubro a dezembro de 2026.</strong> Até agora foram registradas 395, restando 885 horas (69%) para entregar:</p>
+    <p><strong>A Orvella Tea tem 1.280 horas contratadas de outubro a dezembro de 2026.</strong> Até agora foram registradas 395, restando 885 horas (69%) para entregar:</p>
     <Walkthrough.DataTable
       columns={['Grupo de Cargo', 'Contratadas', 'Registradas', 'Restantes']}
       rows={[
@@ -71,7 +71,7 @@ A agência, o cliente, as pessoas e as horas deste exemplo são ilustrativos. As
     />
     <p><strong>Como interpretei sua pergunta</strong></p>
     <ul>
-      <li>Incluído: Propostas aprovadas da Northwind Coffee de 1º de outubro a 31 de dezembro de 2026.</li>
+      <li>Incluído: Propostas aprovadas da Orvella Tea de 1º de outubro a 31 de dezembro de 2026.</li>
       <li>Assumido: “restam” significa as horas contratadas menos as horas registradas nas Time Sheets.</li>
       <li>Não incluído: Propostas que não estão aprovadas.</li>
     </ul>
@@ -97,7 +97,7 @@ A agência, o cliente, as pessoas e as horas deste exemplo são ilustrativos. As
     <p><strong>Como interpretei sua pergunta</strong></p>
     <ul>
       <li>Incluído: pessoas ativas e planejáveis de cada grupo de cargo, de 14 de outubro a 31 de dezembro de 2026.</li>
-      <li>Assumido: “a planejar” são as horas restantes ainda não alocadas em trabalho da Northwind Coffee.</li>
+      <li>Assumido: “a planejar” são as horas restantes ainda não alocadas em trabalho da Orvella Tea.</li>
       <li>Assumido: o tempo livre é o tempo de trabalho menos as ausências aprovadas e todas as alocações existentes, de qualquer cliente.</li>
       <li>Assumido: cada grupo de cargo é coberto apenas por pessoas desse grupo de cargo.</li>
     </ul>

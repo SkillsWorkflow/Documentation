@@ -13,7 +13,7 @@ Isto ainda não está disponível. O exemplo abaixo foi criado com o conector em
 Substitua os e-mails de pedido por um formulário. A equipe de marketing do cliente diz o que precisa, os detalhes e a data, e o pedido chega ao Skills Workflow como uma Atividade no projeto da campanha, pronta para o tráfego assumir.
 
 ![img-box-shadow](/img/ai/connector/request-form.png)
-<figcaption>O formulário de pedidos do cliente fictício Northwind Coffee em um tenant de demonstração, preenchido pela equipe de marketing dele.</figcaption>
+<figcaption>O formulário de pedidos do cliente fictício Orvella Tea em um tenant de demonstração, preenchido pela equipe de marketing dele.</figcaption>
 
 ![img-box-shadow](/img/ai/connector/request-form-sent.png)
 <figcaption>Depois do envio, o formulário mostra o número da Atividade que criou, a etapa dela e um link para a página de status da campanha.</figcaption>

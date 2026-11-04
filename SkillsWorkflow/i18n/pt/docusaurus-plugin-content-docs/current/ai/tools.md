@@ -54,7 +54,7 @@ Estas são executadas no servidor, contra a Skills Workflow API, como o utilizad
 | `get_current_user` | Ler quem está a perguntar |
 | `get_current_time` | Ler a data e hora atuais |
 
-As tools `resolve_*` são o que transforma *"o retainer da Northwind"* num registo. Quando há mais do que um candidato correspondente, o assistente pede-lhe para escolher.
+As tools `resolve_*` são o que transforma *"o retainer da Orvella"* num registo. Quando há mais do que um candidato correspondente, o assistente pede-lhe para escolher.
 
 ### Documentos e jobs
 

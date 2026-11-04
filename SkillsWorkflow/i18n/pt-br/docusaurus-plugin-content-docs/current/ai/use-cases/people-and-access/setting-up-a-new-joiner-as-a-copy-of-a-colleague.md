@@ -97,7 +97,7 @@ A agência, as pessoas, os clientes e os perfis de acesso deste exemplo são ilu
         ['Horas mínimas', '8 por dia, 40 por semana'],
         ['SSO', 'tom.carter@brightlane.com'],
         ['Perfis de acesso', 'Designer, Timesheets, Leaves'],
-        ['Clientes', 'Contoso Foods, Northwind Coffee'],
+        ['Clientes', 'Contoso Foods, Orvella Tea'],
         ['Feriados', '14 em 2026, iguais aos da Ana'],
         ['Tipos de Ausências em 2026', 'Vacation 4 dias, Training 3 dias'],
       ]}

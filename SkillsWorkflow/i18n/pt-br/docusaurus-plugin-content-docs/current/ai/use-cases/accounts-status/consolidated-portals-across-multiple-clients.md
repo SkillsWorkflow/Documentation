@@ -53,7 +53,7 @@ A agência, os clientes, os números e os endereços deste exemplo são ilustrat
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>Eu cuido da Northwind Coffee, do Contoso Bank e da Fabrikam Motors. Crie um único portal onde eu possa ver como estão os três.</p>
+    <p>Eu cuido da Orvella Tea, do Contoso Bank e da Fabrikam Motors. Crie um único portal onde eu possa ver como estão os três.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -62,7 +62,7 @@ A agência, os clientes, os números e os endereços deste exemplo são ilustrat
       columns={['Cliente', 'Projetos ativos', 'Atividades atrasadas', 'Aguardando o cliente', 'Burn do contrato', 'Portal']}
       rows={[
         ['Contoso Bank', '4', '3', '2', '81%', '—'],
-        ['Northwind Coffee', '2', '1', '3', '62%', 'christmas-2026'],
+        ['Orvella Tea', '2', '1', '3', '62%', 'christmas-2026'],
         ['Fabrikam Motors', '3', '0', '1', '44%', '—'],
       ]}
       note="O Contoso Bank tem 81% das horas contratadas registradas, faltando dois meses para o fim do contrato."
@@ -83,7 +83,7 @@ A agência, os clientes, os números e os endereços deste exemplo são ilustrat
       title="Publicar este portal"
       subtitle="Revise o portal antes de eu publicá-lo."
       rows={[
-        ['Clientes', 'Northwind Coffee, Contoso Bank, Fabrikam Motors'],
+        ['Clientes', 'Orvella Tea, Contoso Bank, Fabrikam Motors'],
         ['Endereço', '/portal/accounts/anna-smith/'],
         ['Colunas', 'Projetos ativos, Atividades atrasadas, Aguardando o cliente, Burn do contrato, Portal'],
         ['Ordem', 'Atividades atrasadas, do maior para o menor número'],
@@ -98,7 +98,7 @@ A agência, os clientes, os números e os endereços deste exemplo são ilustrat
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.StatusChip status="Publicado" label="accounts/anna-smith" />
-    <p>O portal está publicado. Selecione a linha de um cliente para ver as Atividades atrasadas dele, ou o nome do portal para abrir o portal próprio da Northwind Coffee.</p>
+    <p>O portal está publicado. Selecione a linha de um cliente para ver as Atividades atrasadas dele, ou o nome do portal para abrir o portal próprio da Orvella Tea.</p>
   </Walkthrough.Message>
 </Walkthrough>
 

@@ -52,7 +52,7 @@ A agência, o cliente, as pessoas, o job, os comentários e as horas neste exemp
   }
 >
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>A Anna Smith registou 46 horas no Campaign Website, mais 16 horas do que as 30 planeadas.</strong> O job pertence ao projeto Northwind Christmas 2026 e tem conclusão prevista para 20 de novembro.</p>
+    <p><strong>A Anna Smith registou 46 horas no Campaign Website, mais 16 horas do que as 30 planeadas.</strong> O job pertence ao projeto Orvella Christmas 2026 e tem conclusão prevista para 20 de novembro.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
@@ -64,7 +64,7 @@ A agência, o cliente, as pessoas, o job, os comentários e as horas neste exemp
     <ul>
       <li>A 19 de outubro, o cliente pediu mais duas landing pages para a gama de presentes de Natal. O David Brown publicou o pedido no Feed.</li>
       <li>A 20 de outubro, a Anna respondeu que as novas páginas precisavam de cerca de mais 15 horas de design.</li>
-      <li>O sitemap revisto, <strong>Northwind_Christmas_sitemap_v2.pdf</strong>, foi anexado no mesmo dia e mostra as duas novas páginas.</li>
+      <li>O sitemap revisto, <strong>Orvella_Christmas_sitemap_v2.pdf</strong>, foi anexado no mesmo dia e mostra as duas novas páginas.</li>
       <li>O planeamento e a descrição do job não foram atualizados depois da alteração.</li>
     </ul>
     <p>Ninguém confirmou se as páginas extra são faturáveis ao cliente.</p>
@@ -82,7 +82,7 @@ A agência, o cliente, as pessoas, o job, os comentários e as horas neste exemp
       rows={[
         ['Job', 'Campaign Website'],
         ['Menções', 'David Brown, Anna Smith'],
-        ['Comentário', 'A Anna registou 46h face a 30h planeadas, depois das duas landing pages acrescentadas a 19 de outubro. Podem confirmar o novo âmbito, se é faturável à Northwind Coffee e de quantas horas mais a Anna precisa para terminar o job?'],
+        ['Comentário', 'A Anna registou 46h face a 30h planeadas, depois das duas landing pages acrescentadas a 19 de outubro. Podem confirmar o novo âmbito, se é faturável à Orvella Tea e de quantas horas mais a Anna precisa para terminar o job?'],
       ]}
       actions={[{ label: 'Negar' }, { label: 'Publicar', primary: true }]}
     />

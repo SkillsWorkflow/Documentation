@@ -35,7 +35,7 @@ The agency and client in this example are illustrative. The assistant recommends
       />
       <Walkthrough.PhrasingCard
         items={[
-          'What can I show Northwind Coffee about their contract burn?',
+          'What can I show Orvella Tea about their contract burn?',
           'Is there a portal for this client already?',
           'Which dashboard should I use in the monthly client meeting?',
         ]}
@@ -51,12 +51,12 @@ The agency and client in this example are illustrative. The assistant recommends
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>Northwind Coffee wants to see how their projects are going and how much of the contract they have used. What should I share with them?</p>
+    <p>Orvella Tea wants to see how their projects are going and how much of the contract they have used. What should I share with them?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>For <strong>contract burn</strong>, use the <strong>Burn Workspace</strong> on the client. It shows contracted, planned and recorded hours per project, and the burn month by month.</p>
-    <p>For <strong>project status and pending requests</strong>, there is a client portal for Northwind Coffee, <strong>christmas-2026</strong>, with the jobs by stage, the jobs at risk and the jobs waiting for client approval.</p>
+    <p>For <strong>project status and pending requests</strong>, there is a client portal for Orvella Tea, <strong>christmas-2026</strong>, with the jobs by stage, the jobs at risk and the jobs waiting for client approval.</p>
     <Walkthrough.WorkspaceCard
       title="Burn Workspace"
       subtitle="Workspace · Client"
@@ -64,7 +64,7 @@ The agency and client in this example are illustrative. The assistant recommends
     />
     <Walkthrough.WorkspaceCard
       title="christmas-2026"
-      subtitle="Client portal · northwind-coffee"
+      subtitle="Client portal · orvella-tea"
       description="Status, contract burn in hours, jobs at risk and jobs waiting on the client for the Christmas 2026 project."
       actionLabel="Open portal"
     />
