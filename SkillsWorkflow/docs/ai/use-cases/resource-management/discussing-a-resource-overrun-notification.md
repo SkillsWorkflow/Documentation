@@ -52,7 +52,7 @@ The agency, client, people, job, comments and hours in this example are illustra
   }
 >
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Anna Smith has recorded 46 hours on Campaign Website, 16 hours more than the 30 planned.</strong> The job belongs to the Orvella Christmas 2026 project and is due on 20 November.</p>
+    <p><strong>Anna Smith has recorded 46 hours on Campaign Website, 16 hours more than the 30 planned.</strong> The job belongs to the Northwind Christmas 2026 project and is due on 20 November.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
@@ -64,7 +64,7 @@ The agency, client, people, job, comments and hours in this example are illustra
     <ul>
       <li>On 19 October, the client asked for two more landing pages for the Christmas gift range. David Brown posted the request on the Feed.</li>
       <li>On 20 October, Anna replied that the new pages needed about 15 more hours of design.</li>
-      <li>The revised sitemap, <strong>Orvella_Christmas_sitemap_v2.pdf</strong>, was attached the same day and shows the two new pages.</li>
+      <li>The revised sitemap, <strong>Northwind_Christmas_sitemap_v2.pdf</strong>, was attached the same day and shows the two new pages.</li>
       <li>The job’s planning and description were not updated after the change.</li>
     </ul>
     <p>Nobody has confirmed whether the extra pages are billable to the client.</p>
@@ -82,7 +82,7 @@ The agency, client, people, job, comments and hours in this example are illustra
       rows={[
         ['Job', 'Campaign Website'],
         ['Mentions', 'David Brown, Anna Smith'],
-        ['Comment', 'Anna has recorded 46h against 30h planned, after the two landing pages added on 19 October. Can you confirm the new scope, whether it is billable to Orvella Tea, and how many more hours Anna needs to finish the job?'],
+        ['Comment', 'Anna has recorded 46h against 30h planned, after the two landing pages added on 19 October. Can you confirm the new scope, whether it is billable to Northwind Coffee, and how many more hours Anna needs to finish the job?'],
       ]}
       actions={[{ label: 'Deny' }, { label: 'Post', primary: true }]}
     />

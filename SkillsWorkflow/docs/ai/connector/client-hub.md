@@ -9,7 +9,7 @@ sidebar_position: 4
 Give each client a single address to bookmark. Your AI tool builds a home page for the client that links to the pages you published for them, with one live figure beside each link.
 
 ![img-box-shadow](/img/ai/connector/client-home-page.png)
-<figcaption>The home page of the fictitious client Orvella Tea on a demo tenant, linking to its status page and its report, with the approvals waiting and the deliverables done.</figcaption>
+<figcaption>The home page of the fictitious client Northwind Coffee on a demo tenant, linking to its status page and its report, with the approvals waiting and the deliverables done.</figcaption>
 
 ## Availability
 

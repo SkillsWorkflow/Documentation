@@ -52,7 +52,7 @@ The agency, clients, projects, Job numbers and stages in this example are illust
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>You’re working on <strong>3 jobs this week</strong>, across two projects: <strong>General Motors – 2026 Global EV Campaign</strong> and <strong>Orvella Tea – Autumn 2026 In-Store</strong>. One is new and scheduled for today; the other two are in progress and run through Friday.</p>
+    <p>You’re working on <strong>3 jobs this week</strong>, across two projects: <strong>General Motors – 2026 Global EV Campaign</strong> and <strong>Northwind Coffee – Autumn 2026 In-Store</strong>. One is new and scheduled for today; the other two are in progress and run through Friday.</p>
     <p><strong>How I read your question</strong></p>
     <ul>
       <li>Included: jobs where you are on the team and whose scheduled dates overlap 5–11 October 2026.</li>
@@ -65,7 +65,7 @@ The agency, clients, projects, Job numbers and stages in this example are illust
       rows={[
         { title: 'GM 2026 EV Campaign – Social Launch Assets', number: 'GMC0042CR001', stage: 'New', due: 'Today', tone: 'soon' },
         { title: 'GM 2026 EV Campaign – Global Website', number: 'GMC0042DIGI001', stage: 'In Progress', due: '9 Oct' },
-        { title: 'Orvella Tea – Autumn Menu Posters', number: 'ORV0017CR001', stage: 'In Progress', due: '9 Oct' },
+        { title: 'Northwind Coffee – Autumn Menu Posters', number: 'NWC0017CR001', stage: 'In Progress', due: '9 Oct' },
       ]}
     />
   </Walkthrough.Message>

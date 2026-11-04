@@ -63,7 +63,7 @@ The agency, clients, estimates, values and stages in this example are illustrati
         ['2026 - 00377 · Mobile App Phase 2', 'Contoso Bank', '€86,000', '1 October', '29', 'David Brown'],
         ['2026 - 00395 · Dealer Kit Q1', 'Fabrikam Motors', '€38,500', '15 October', '15', 'Anna Smith'],
         ['2026 - 00401 · Spring Shoot', 'Contoso Bank', '€16,000', '22 October', '8', 'David Brown'],
-        ['2026 - 00409 · Gift Card Design', 'Orvella Tea', '€8,000', '27 October', '3', 'Sarah Lee'],
+        ['2026 - 00409 · Gift Card Design', 'Northwind Coffee', '€8,000', '27 October', '3', 'Sarah Lee'],
       ]}
     />
     <p><strong>How I read your question</strong></p>

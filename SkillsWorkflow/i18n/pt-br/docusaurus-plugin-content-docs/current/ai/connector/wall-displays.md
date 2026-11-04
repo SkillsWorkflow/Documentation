@@ -13,7 +13,7 @@ Isto ainda não está disponível. O exemplo abaixo foi criado com o conector em
 Coloque na tela do estúdio o que a equipe deve ver de relance: o que vence em breve, o que aguarda o cliente e o que já está atrasado. Peça à sua ferramenta de IA um painel feito para uma TV, legível do outro lado da sala, que se mantém atualizado sozinho.
 
 ![img-box-shadow](/img/ai/connector/studio-board.png)
-<figcaption>O painel do estúdio da campanha de Natal do cliente fictício Orvella Tea em um tenant de demonstração, em 1920 × 1080: o que vence nos próximos 14 dias, o que aguarda o cliente e o que está atrasado.</figcaption>
+<figcaption>O painel do estúdio da campanha de Natal do cliente fictício Northwind Coffee em um tenant de demonstração, em 1920 × 1080: o que vence nos próximos 14 dias, o que aguarda o cliente e o que está atrasado.</figcaption>
 
 ## Comportamento esperado
 

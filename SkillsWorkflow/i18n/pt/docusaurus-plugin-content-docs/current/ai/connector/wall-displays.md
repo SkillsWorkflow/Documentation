@@ -13,7 +13,7 @@ Isto ainda não está disponível. O exemplo abaixo foi construído com o conect
 Ponha no ecrã do estúdio o que a equipa deve ver num relance: o que tem entrega em breve, o que está à espera do cliente e o que já está atrasado. Peça à sua ferramenta de IA um quadro feito para uma TV, legível do outro lado da sala, que se mantém atualizado sozinho.
 
 ![img-box-shadow](/img/ai/connector/studio-board.png)
-<figcaption>O quadro de estúdio da campanha de Natal do cliente fictício Orvella Tea num tenant de demonstração, a 1920 × 1080: a entregar nos próximos 14 dias, à espera do cliente e atrasados.</figcaption>
+<figcaption>O quadro de estúdio da campanha de Natal do cliente fictício Northwind Coffee num tenant de demonstração, a 1920 × 1080: a entregar nos próximos 14 dias, à espera do cliente e atrasados.</figcaption>
 
 ## Comportamento esperado
 

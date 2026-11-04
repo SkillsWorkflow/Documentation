@@ -52,7 +52,7 @@ La agencia, el cliente, las personas, los jobs, los comentarios y las fechas de 
   }
 >
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Christmas Launch Event – Stand Design lleva 4 días de retraso.</strong> Vencía el 26 de octubre y sigue en In Progress. Pertenece al proyecto Orvella Christmas 2026.</p>
+    <p><strong>Christmas Launch Event – Stand Design lleva 4 días de retraso.</strong> Vencía el 26 de octubre y sigue en In Progress. Pertenece al proyecto Northwind Christmas 2026.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Tú">
@@ -63,7 +63,7 @@ La agencia, el cliente, las personas, los jobs, los comentarios y las fechas de 
     <p><strong>El diseño del stand estuvo esperando las nuevas guías de marca del cliente:</strong></p>
     <ul>
       <li>El 14 de octubre, Sarah Lee pidió al cliente el logotipo y la paleta de colores actualizados. La respuesta en el Feed dice que llegarían antes del 18 de octubre.</li>
-      <li>Las guías, <strong>Orvella_Brand_Guidelines_2027.pdf</strong>, se adjuntaron el 24 de octubre, seis días más tarde de lo prometido.</li>
+      <li>Las guías, <strong>Northwind_Brand_Guidelines_2027.pdf</strong>, se adjuntaron el 24 de octubre, seis días más tarde de lo prometido.</li>
       <li>El 25 de octubre, Sarah escribió que el stand necesita tres días laborables más desde la llegada de las guías.</li>
     </ul>
     <p>Nadie ha definido una nueva fecha de vencimiento en el job.</p>
@@ -86,7 +86,7 @@ La agencia, el cliente, las personas, los jobs, los comentarios y las fechas de 
     />
     <p><strong>Cómo he interpretado tu pregunta</strong></p>
     <ul>
-      <li>Incluido: jobs del proyecto Orvella Christmas 2026 cuya descripción o Feed hace referencia al diseño del stand.</li>
+      <li>Incluido: jobs del proyecto Northwind Christmas 2026 cuya descripción o Feed hace referencia al diseño del stand.</li>
       <li>Asumido: un job que aún no ha empezado depende del que va con retraso cuando usa su resultado.</li>
     </ul>
   </Walkthrough.Message>

@@ -36,9 +36,9 @@ A agência, o cliente, as rate cards, as colunas, as tarifas e os estimates nest
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Aumenta em 4% as tarifas de Design na rate card da Orvella a partir de janeiro.',
+          'Aumenta em 4% as tarifas de Design na rate card da Northwind a partir de janeiro.',
           'Atualiza a rate card com a tabela de preços em anexo.',
-          'Que estimates usam a rate card Orvella Tea 2026?',
+          'Que estimates usam a rate card Northwind Coffee 2026?',
         ]}
       />
       <Walkthrough.NoteCard
@@ -53,14 +53,14 @@ A agência, o cliente, as rate cards, as colunas, as tarifas e os estimates nest
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>Aumenta em 4% o Design e o Copywriting na rate card da Orvella Tea a partir de 1 de janeiro de 2027.</p>
+    <p>Aumenta em 4% o Design e o Copywriting na rate card da Northwind Coffee a partir de 1 de janeiro de 2027.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>A rate card <strong>Orvella Tea 2026</strong> vai de 1 de janeiro a 31 de dezembro de 2026. Devo alterá-la, ou criar uma nova para 2027 com as novas tarifas?</p>
+    <p>A rate card <strong>Northwind Coffee 2026</strong> vai de 1 de janeiro a 31 de dezembro de 2026. Devo alterá-la, ou criar uma nova para 2027 com as novas tarifas?</p>
     <Walkthrough.Choices
       label="Rate Card"
-      options={['Criar Orvella Tea 2027', 'Alterar Orvella Tea 2026']}
+      options={['Criar Northwind Coffee 2027', 'Alterar Northwind Coffee 2026']}
     />
   </Walkthrough.Message>
 
@@ -84,8 +84,8 @@ A agência, o cliente, as rate cards, as colunas, as tarifas e os estimates nest
       title="Criar esta rate card"
       subtitle="Revê estes detalhes antes de eu a criar."
       rows={[
-        ['Nome', 'Orvella Tea 2027'],
-        ['Copiada de', 'Orvella Tea 2026'],
+        ['Nome', 'Northwind Coffee 2027'],
+        ['Copiada de', 'Northwind Coffee 2026'],
         ['Empresa', 'Bluebird Creative'],
         ['Data de Início', '1 de janeiro de 2027'],
         ['Data de Conclusão', '31 de dezembro de 2027'],
@@ -100,8 +100,8 @@ A agência, o cliente, as rate cards, as colunas, as tarifas e os estimates nest
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Criado" label="Orvella Tea 2027" />
-    <p>A rate card foi criada com as novas tarifas de Design e Copywriting. Defina-a no cliente Orvella Tea para a usar em novos estimates.</p>
+    <Walkthrough.StatusChip status="Criado" label="Northwind Coffee 2027" />
+    <p>A rate card foi criada com as novas tarifas de Design e Copywriting. Defina-a no cliente Northwind Coffee para a usar em novos estimates.</p>
   </Walkthrough.Message>
 </Walkthrough>
 

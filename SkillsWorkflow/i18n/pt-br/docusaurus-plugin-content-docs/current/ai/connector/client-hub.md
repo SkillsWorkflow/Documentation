@@ -9,7 +9,7 @@ sidebar_position: 4
 Dê a cada cliente um único endereço para salvar nos favoritos. A sua ferramenta de IA cria uma página inicial para o cliente com links para as páginas que você publicou para ele, com um número em tempo real ao lado de cada link.
 
 ![img-box-shadow](/img/ai/connector/client-home-page.png)
-<figcaption>A página inicial do cliente fictício Orvella Tea em um tenant de demonstração, com links para a página de status e o relatório dele, com as aprovações pendentes e as entregas concluídas.</figcaption>
+<figcaption>A página inicial do cliente fictício Northwind Coffee em um tenant de demonstração, com links para a página de status e o relatório dele, com as aprovações pendentes e as entregas concluídas.</figcaption>
 
 ## Disponibilidade
 

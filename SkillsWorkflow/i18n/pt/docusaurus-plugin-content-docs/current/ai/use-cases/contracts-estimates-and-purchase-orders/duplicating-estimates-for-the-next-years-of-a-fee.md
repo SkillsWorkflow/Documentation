@@ -40,8 +40,8 @@ A agência, o cliente, os Fees, os estimates, os números, as horas, os valores 
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Mostra-me o fee que temos com a Orvella Tea este ano e o seu estimate.',
-          'Copia o fee Orvella Tea Retainer 2026 e aplica-me uma taxa de inflação de 5%.',
+          'Mostra-me o fee que temos com a Northwind Coffee este ano e o seu estimate.',
+          'Copia o fee Northwind Coffee Retainer 2026 e aplica-me uma taxa de inflação de 5%.',
           'Duplica o fee para janeiro a dezembro de 2027.',
           'Ativa o estimate.',
         ]}
@@ -58,11 +58,11 @@ A agência, o cliente, os Fees, os estimates, os números, as horas, os valores 
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>A Orvella Tea acabou de renovar o retainer para 2027. Mostra-me o fee que temos com eles este ano e o seu estimate.</p>
+    <p>A Northwind Coffee acabou de renovar o retainer para 2027. Mostra-me o fee que temos com eles este ano e o seu estimate.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>A Orvella Tea tem um fee para 2026, Orvella Tea Retainer 2026</strong>, de 1 de janeiro a 31 de dezembro de 2026. Tem um estimate, <strong>2026 - 00031 · Retainer 2026</strong>, de 4800 horas e 312.000 €:</p>
+    <p><strong>A Northwind Coffee tem um fee para 2026, Northwind Coffee Retainer 2026</strong>, de 1 de janeiro a 31 de dezembro de 2026. Tem um estimate, <strong>2026 - 00031 · Retainer 2026</strong>, de 4800 horas e 312.000 €:</p>
     <Walkthrough.DataTable
       columns={['Typology Group', 'Horas', 'Valor']}
       rows={[
@@ -75,13 +75,13 @@ A agência, o cliente, os Fees, os estimates, os números, as horas, os valores 
     />
     <p><strong>Como interpretei a tua pergunta</strong></p>
     <ul>
-      <li>Incluído: fees da Orvella Tea com datas em 2026 e os estimates que contêm.</li>
+      <li>Incluído: fees da Northwind Coffee com datas em 2026 e os estimates que contêm.</li>
       <li>Assumido: “este ano” significa de 1 de janeiro a 31 de dezembro de 2026.</li>
     </ul>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
-    <p>Copia o fee Orvella Tea Retainer 2026 para o próximo ano e aplica-me uma taxa de inflação de 5%.</p>
+    <p>Copia o fee Northwind Coffee Retainer 2026 para o próximo ano e aplica-me uma taxa de inflação de 5%.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -93,7 +93,7 @@ A agência, o cliente, os Fees, os estimates, os números, as horas, os valores 
     <p><strong>Como interpretei a tua pergunta</strong></p>
     <ul>
       <li>Assumido: “próximo ano” significa de 1 de janeiro a 31 de dezembro de 2027, o mesmo período do fee original, um ano depois.</li>
-      <li>Assumido: o novo fee chama-se Orvella Tea Retainer 2027 e o novo estimate Retainer 2027.</li>
+      <li>Assumido: o novo fee chama-se Northwind Coffee Retainer 2027 e o novo estimate Retainer 2027.</li>
     </ul>
   </Walkthrough.Message>
 
@@ -106,9 +106,9 @@ A agência, o cliente, os Fees, os estimates, os números, as horas, os valores 
       title="Duplicar este fee"
       subtitle="Revê estes detalhes antes de eu duplicar."
       rows={[
-        ['A duplicar', 'Orvella Tea Retainer 2026'],
+        ['A duplicar', 'Northwind Coffee Retainer 2026'],
         ['Tipo de documento', 'Fee'],
-        ['Nome do novo fee', 'Orvella Tea Retainer 2027'],
+        ['Nome do novo fee', 'Northwind Coffee Retainer 2027'],
         ['Data de Início', '1 de janeiro de 2027'],
         ['Data de Conclusão', '31 de dezembro de 2027'],
         ['Estimate', '2026 - 00031 · Retainer 2026'],
@@ -126,7 +126,7 @@ A agência, o cliente, os Fees, os estimates, os números, as horas, os valores 
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.StatusChip status="Atualizado" label="Duplicar este fee" />
-    <p>O fee foi duplicado como <strong>Orvella Tea Retainer 2027</strong>, com datas de 1 de janeiro a 31 de dezembro de 2027. O seu estimate foi copiado para o novo fee como <strong>2026 - 00412 · Retainer 2027</strong>, com as mesmas datas e a Inflação % definida para 5. As linhas do estimate foram atualizadas com a inflação:</p>
+    <p>O fee foi duplicado como <strong>Northwind Coffee Retainer 2027</strong>, com datas de 1 de janeiro a 31 de dezembro de 2027. O seu estimate foi copiado para o novo fee como <strong>2026 - 00412 · Retainer 2027</strong>, com as mesmas datas e a Inflação % definida para 5. As linhas do estimate foram atualizadas com a inflação:</p>
     <Walkthrough.DataTable
       columns={['Typology Group', 'Horas', '2026', '2027']}
       rows={[

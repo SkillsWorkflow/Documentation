@@ -40,8 +40,8 @@ The agency, client, Fees, estimates, numbers, hours, values and stages in this e
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Show me the fee we have with Orvella Tea this year and its estimate.',
-          'Copy the Orvella Tea Retainer 2026 fee and apply a 5% inflation rate.',
+          'Show me the fee we have with Northwind Coffee this year and its estimate.',
+          'Copy the Northwind Coffee Retainer 2026 fee and apply a 5% inflation rate.',
           'Duplicate the fee for January to December 2027.',
           'Activate the estimate.',
         ]}
@@ -58,11 +58,11 @@ The agency, client, Fees, estimates, numbers, hours, values and stages in this e
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>Orvella Tea has just renewed its retainer for 2027. Show me the fee we have with them this year and its estimate.</p>
+    <p>Northwind Coffee has just renewed its retainer for 2027. Show me the fee we have with them this year and its estimate.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Orvella Tea has one fee for 2026, Orvella Tea Retainer 2026</strong>, from 1 January to 31 December 2026. It has one estimate, <strong>2026 - 00031 · Retainer 2026</strong>, for 4,800 hours and €312,000:</p>
+    <p><strong>Northwind Coffee has one fee for 2026, Northwind Coffee Retainer 2026</strong>, from 1 January to 31 December 2026. It has one estimate, <strong>2026 - 00031 · Retainer 2026</strong>, for 4,800 hours and €312,000:</p>
     <Walkthrough.DataTable
       columns={['Typology group', 'Hours', 'Value']}
       rows={[
@@ -75,13 +75,13 @@ The agency, client, Fees, estimates, numbers, hours, values and stages in this e
     />
     <p><strong>How I read your question</strong></p>
     <ul>
-      <li>Included: Orvella Tea fees with dates in 2026, and the estimates on them.</li>
+      <li>Included: Northwind Coffee fees with dates in 2026, and the estimates on them.</li>
       <li>Assumed: “this year” means 1 January to 31 December 2026.</li>
     </ul>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
-    <p>Copy the Orvella Tea Retainer 2026 fee to next year and apply a 5% inflation rate.</p>
+    <p>Copy the Northwind Coffee Retainer 2026 fee to next year and apply a 5% inflation rate.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -93,7 +93,7 @@ The agency, client, Fees, estimates, numbers, hours, values and stages in this e
     <p><strong>How I read your question</strong></p>
     <ul>
       <li>Assumed: “next year” means 1 January to 31 December 2027, the same period as the original fee, one year later.</li>
-      <li>Assumed: the new fee is named Orvella Tea Retainer 2027 and the new estimate Retainer 2027.</li>
+      <li>Assumed: the new fee is named Northwind Coffee Retainer 2027 and the new estimate Retainer 2027.</li>
     </ul>
   </Walkthrough.Message>
 
@@ -106,9 +106,9 @@ The agency, client, Fees, estimates, numbers, hours, values and stages in this e
       title="Duplicate this fee"
       subtitle="Review these details before I duplicate it."
       rows={[
-        ['Duplicating', 'Orvella Tea Retainer 2026'],
+        ['Duplicating', 'Northwind Coffee Retainer 2026'],
         ['Document type', 'Fee'],
-        ['New fee name', 'Orvella Tea Retainer 2027'],
+        ['New fee name', 'Northwind Coffee Retainer 2027'],
         ['Start Date', '1 January 2027'],
         ['End Date', '31 December 2027'],
         ['Estimate', '2026 - 00031 · Retainer 2026'],
@@ -126,7 +126,7 @@ The agency, client, Fees, estimates, numbers, hours, values and stages in this e
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.StatusChip status="Updated" label="Duplicate this fee" />
-    <p>The fee was duplicated as <strong>Orvella Tea Retainer 2027</strong>, dated 1 January to 31 December 2027. Its estimate was copied to the new fee as <strong>2026 - 00412 · Retainer 2027</strong>, with the same dates and Inflation % set to 5. The estimate lines were updated with the inflation:</p>
+    <p>The fee was duplicated as <strong>Northwind Coffee Retainer 2027</strong>, dated 1 January to 31 December 2027. Its estimate was copied to the new fee as <strong>2026 - 00412 · Retainer 2027</strong>, with the same dates and Inflation % set to 5. The estimate lines were updated with the inflation:</p>
     <Walkthrough.DataTable
       columns={['Typology group', 'Hours', '2026', '2027']}
       rows={[

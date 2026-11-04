@@ -97,7 +97,7 @@ The agency, people, clients and access profiles in this example are illustrative
         ['Minimum hours', '8 per day, 40 per week'],
         ['SSO', 'tom.carter@brightlane.com'],
         ['Access profiles', 'Designer, Timesheets, Leaves'],
-        ['Clients', 'Contoso Foods, Orvella Tea'],
+        ['Clients', 'Contoso Foods, Northwind Coffee'],
         ['Public holidays', '14 in 2026, as Ana’s'],
         ['Leave types in 2026', 'Vacation 4 days, Training 3 days'],
       ]}

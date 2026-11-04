@@ -33,7 +33,7 @@ The agency, client, people and hours in this example are illustrative. The estim
       />
       <Walkthrough.PhrasingCard
         items={[
-          'How many hours are left on our approved Orvella Tea estimates this quarter?',
+          'How many hours are left on our approved Northwind Coffee estimates this quarter?',
           'Show it by typology group, with the percentage used.',
           'Do we have enough people to deliver those hours by the end of October?',
           'Explain the limitations to me.',
@@ -54,11 +54,11 @@ The agency, client, people and hours in this example are illustrative. The estim
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>I have a quarterly review with Orvella Tea next week. How many of the hours we contracted with them for this quarter are still left?</p>
+    <p>I have a quarterly review with Northwind Coffee next week. How many of the hours we contracted with them for this quarter are still left?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Orvella Tea has 1,280 contracted hours for October to December 2026.</strong> 395 have been recorded so far, leaving 885 hours (69%) to deliver:</p>
+    <p><strong>Northwind Coffee has 1,280 contracted hours for October to December 2026.</strong> 395 have been recorded so far, leaving 885 hours (69%) to deliver:</p>
     <Walkthrough.DataTable
       columns={['Typology group', 'Contracted', 'Recorded', 'Left']}
       rows={[
@@ -71,7 +71,7 @@ The agency, client, people and hours in this example are illustrative. The estim
     />
     <p><strong>How I read your question</strong></p>
     <ul>
-      <li>Included: approved Orvella Tea estimates from 1 October to 31 December 2026.</li>
+      <li>Included: approved Northwind Coffee estimates from 1 October to 31 December 2026.</li>
       <li>Assumed: “left” means contracted hours minus the hours recorded on timesheets.</li>
       <li>Not included: estimates that are not approved.</li>
     </ul>
@@ -97,7 +97,7 @@ The agency, client, people and hours in this example are illustrative. The estim
     <p><strong>How I read your question</strong></p>
     <ul>
       <li>Included: active, plannable people in each typology group, from 14 October to 31 December 2026.</li>
-      <li>Assumed: “still to plan” is the remaining hours not yet booked on Orvella Tea work.</li>
+      <li>Assumed: “still to plan” is the remaining hours not yet booked on Northwind Coffee work.</li>
       <li>Assumed: free time is working time minus approved leave and all existing bookings, on any client.</li>
       <li>Assumed: each typology group is covered only by people in that typology group.</li>
     </ul>

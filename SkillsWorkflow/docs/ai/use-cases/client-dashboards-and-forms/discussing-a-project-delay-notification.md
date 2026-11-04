@@ -52,7 +52,7 @@ The agency, client, people, jobs, comments and dates in this example are illustr
   }
 >
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Christmas Launch Event – Stand Design is 4 days late.</strong> It was due on 26 October and is still in In Progress. It belongs to the Orvella Christmas 2026 project.</p>
+    <p><strong>Christmas Launch Event – Stand Design is 4 days late.</strong> It was due on 26 October and is still in In Progress. It belongs to the Northwind Christmas 2026 project.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
@@ -63,7 +63,7 @@ The agency, client, people, jobs, comments and dates in this example are illustr
     <p><strong>The stand design waited for the client’s new brand guidelines:</strong></p>
     <ul>
       <li>On 14 October, Sarah Lee asked the client for the updated logo and colour palette. The reply on the Feed says they would arrive by 18 October.</li>
-      <li>The guidelines, <strong>Orvella_Brand_Guidelines_2027.pdf</strong>, were attached on 24 October, six days later than promised.</li>
+      <li>The guidelines, <strong>Northwind_Brand_Guidelines_2027.pdf</strong>, were attached on 24 October, six days later than promised.</li>
       <li>On 25 October, Sarah wrote that the stand needs three more working days after the guidelines arrived.</li>
     </ul>
     <p>Nobody has set a new due date on the job.</p>
@@ -86,7 +86,7 @@ The agency, client, people, jobs, comments and dates in this example are illustr
     />
     <p><strong>How I read your question</strong></p>
     <ul>
-      <li>Included: jobs in the Orvella Christmas 2026 project whose description or Feed refers to the stand design.</li>
+      <li>Included: jobs in the Northwind Christmas 2026 project whose description or Feed refers to the stand design.</li>
       <li>Assumed: a job that has not started yet depends on the late one when it uses its output.</li>
     </ul>
   </Walkthrough.Message>

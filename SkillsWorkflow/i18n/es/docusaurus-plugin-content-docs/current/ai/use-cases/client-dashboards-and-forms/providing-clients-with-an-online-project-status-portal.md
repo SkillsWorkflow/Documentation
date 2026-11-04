@@ -38,9 +38,9 @@ La agencia, el cliente, el proyecto, los números y la dirección de este ejempl
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Crea una página de estado para Orvella Tea con su proyecto de Navidad.',
+          'Crea una página de estado para Northwind Coffee con su proyecto de Navidad.',
           'Da a Contoso Bank una vista online del burn del contrato y de las aprobaciones pendientes.',
-          'Añade los jobs en riesgo al portal de Orvella.',
+          'Añade los jobs en riesgo al portal de Northwind.',
         ]}
       />
       <Walkthrough.NoteCard
@@ -55,11 +55,11 @@ La agencia, el cliente, el proyecto, los números y la dirección de este ejempl
   }
 >
   <Walkthrough.Message sender="you" name="Tú">
-    <p>Orvella Tea quiere seguir online el proyecto Christmas 2026. Crea un portal con el estado del proyecto, el burn del contrato, los riesgos y las peticiones que están pendientes de ellos.</p>
+    <p>Northwind Coffee quiere seguir online el proyecto Christmas 2026. Crea un portal con el estado del proyecto, el burn del contrato, los riesgos y las peticiones que están pendientes de ellos.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Voy a crear un portal para <strong>Orvella Christmas 2026</strong> con cuatro secciones:</p>
+    <p>Voy a crear un portal para <strong>Northwind Christmas 2026</strong> con cuatro secciones:</p>
     <Walkthrough.DataTable
       columns={['Sección', 'Qué muestra']}
       rows={[
@@ -82,11 +82,11 @@ La agencia, el cliente, el proyecto, los números y la dirección de este ejempl
       title="Publicar este portal"
       subtitle="Revisa el portal antes de que lo publique."
       rows={[
-        ['Cliente', 'Orvella Tea'],
-        ['Proyecto', 'Orvella Christmas 2026'],
-        ['Dirección', '/portal/orvella-tea/christmas-2026/'],
+        ['Cliente', 'Northwind Coffee'],
+        ['Proyecto', 'Northwind Christmas 2026'],
+        ['Dirección', '/portal/northwind-coffee/christmas-2026/'],
         ['Secciones', 'Estado del proyecto, Burn del contrato (horas), En riesgo, Pendiente de ti'],
-        ['Cabecera', 'Logotipo de Orvella Tea'],
+        ['Cabecera', 'Logotipo de Northwind Coffee'],
       ]}
       actions={[{ label: 'Denegar' }, { label: 'Publicar', primary: true }]}
     />
@@ -97,9 +97,9 @@ La agencia, el cliente, el proyecto, los números y la dirección de este ejempl
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Publicado" label="orvella-tea/christmas-2026" />
+    <Walkthrough.StatusChip status="Publicado" label="northwind-coffee/christmas-2026" />
     <p>El portal está publicado. Hoy muestra 14 jobs, 9 entregados, el 62% de las horas contratadas registradas, 2 jobs en riesgo y 3 jobs a la espera de la aprobación del cliente.</p>
-    <p>Antes de compartir la dirección, restringe la carpeta <strong>orvella-tea</strong> a los roles que deben abrirlo.</p>
+    <p>Antes de compartir la dirección, restringe la carpeta <strong>northwind-coffee</strong> a los roles que deben abrirlo.</p>
   </Walkthrough.Message>
 </Walkthrough>
 

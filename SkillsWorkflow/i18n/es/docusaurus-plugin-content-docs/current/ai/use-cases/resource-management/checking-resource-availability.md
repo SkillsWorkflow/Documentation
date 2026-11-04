@@ -49,7 +49,7 @@ La agencia, los clientes, los proyectos, los Jobs, las personas y las horas de e
   }
 >
   <Walkthrough.Message sender="you" name="Tú">
-    <p>Tengo la campaña de Navidad de Orvella Tea y necesito desarrollar la campaña creativa antes de que termine la próxima semana. ¿Qué creativos están disponibles para trabajar a tiempo completo?</p>
+    <p>Tengo la campaña de Navidad de Northwind Coffee y necesito desarrollar la campaña creativa antes de que termine la próxima semana. ¿Qué creativos están disponibles para trabajar a tiempo completo?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -104,13 +104,13 @@ La agencia, los clientes, los proyectos, los Jobs, las personas y las horas de e
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Tú">
-    <p>Vale, necesito empezar el job Orvella Christmas 2026 – Campaign Website, así que asígnaselo a Lucas como ejecutor.</p>
+    <p>Vale, necesito empezar el job Northwind Christmas 2026 – Campaign Website, así que asígnaselo a Lucas como ejecutor.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.ApprovalCard
       title="Añadir al equipo de este documento"
-      subtitle="ORV0021DIGI001 · Orvella Christmas 2026 – Campaign Website"
+      subtitle="NWC0021DIGI001 · Northwind Christmas 2026 – Campaign Website"
       rows={[['Añadiendo', 'Lucas Ferreira como Executor']]}
       actions={[{ label: 'Denegar' }, { label: 'Aprobar', primary: true }]}
     />
@@ -121,8 +121,8 @@ La agencia, los clientes, los proyectos, los Jobs, las personas y las horas de e
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Actualizado" label="ORV0021DIGI001 · Orvella Christmas 2026 – Campaign Website" />
-    <p>Lucas Ferreira ha sido asignado como Executor en Orvella Christmas 2026 – Campaign Website (ORV0021DIGI001).</p>
+    <Walkthrough.StatusChip status="Actualizado" label="NWC0021DIGI001 · Northwind Christmas 2026 – Campaign Website" />
+    <p>Lucas Ferreira ha sido asignado como Executor en Northwind Christmas 2026 – Campaign Website (NWC0021DIGI001).</p>
   </Walkthrough.Message>
 </Walkthrough>
 

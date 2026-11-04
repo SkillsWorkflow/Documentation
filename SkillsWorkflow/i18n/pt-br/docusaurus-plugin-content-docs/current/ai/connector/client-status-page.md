@@ -9,7 +9,7 @@ sidebar_position: 3
 Dê a um cliente um único endereço onde ele vê como o trabalho está andando: o progresso da campanha, as entregas previstas e as aprovações que aguardam por ele. Peça a página à sua ferramenta de IA, revise-a e envie o endereço ao cliente. A página lê o Skills Workflow sempre que é aberta, então ninguém a atualiza à mão.
 
 ![img-box-shadow](/img/ai/connector/client-status-page.png)
-<figcaption>Uma página de status publicada com o conector em um tenant de demonstração, para o cliente fictício Orvella Tea: o progresso, três contadores, as entregas que aguardam o cliente e todas as entregas com a etapa e a data de entrega.</figcaption>
+<figcaption>Uma página de status publicada com o conector em um tenant de demonstração, para o cliente fictício Northwind Coffee: o progresso, três contadores, as entregas que aguardam o cliente e todas as entregas com a etapa e a data de entrega.</figcaption>
 
 ## Disponibilidade
 

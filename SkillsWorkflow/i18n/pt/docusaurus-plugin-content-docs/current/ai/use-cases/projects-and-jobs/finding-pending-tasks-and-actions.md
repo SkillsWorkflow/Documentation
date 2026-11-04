@@ -52,7 +52,7 @@ A agência, os clientes, os projetos, os números dos Jobs e as etapas neste exe
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Estás a trabalhar em <strong>3 jobs esta semana</strong>, em dois projetos: <strong>General Motors – 2026 Global EV Campaign</strong> e <strong>Orvella Tea – Autumn 2026 In-Store</strong>. Um é novo e está agendado para hoje; os outros dois estão em curso e decorrem até sexta-feira.</p>
+    <p>Estás a trabalhar em <strong>3 jobs esta semana</strong>, em dois projetos: <strong>General Motors – 2026 Global EV Campaign</strong> e <strong>Northwind Coffee – Autumn 2026 In-Store</strong>. Um é novo e está agendado para hoje; os outros dois estão em curso e decorrem até sexta-feira.</p>
     <p><strong>Como interpretei a tua pergunta</strong></p>
     <ul>
       <li>Incluído: jobs em que estás na equipa e cujas datas agendadas se sobrepõem a 5–11 de outubro de 2026.</li>
@@ -67,7 +67,7 @@ A agência, os clientes, os projetos, os números dos Jobs e as etapas neste exe
       rows={[
         { title: 'GM 2026 EV Campaign – Social Launch Assets', number: 'GMC0042CR001', stage: 'Novo', due: 'Hoje', tone: 'soon' },
         { title: 'GM 2026 EV Campaign – Global Website', number: 'GMC0042DIGI001', stage: 'Em curso', due: '9 out' },
-        { title: 'Orvella Tea – Autumn Menu Posters', number: 'ORV0017CR001', stage: 'Em curso', due: '9 out' },
+        { title: 'Northwind Coffee – Autumn Menu Posters', number: 'NWC0017CR001', stage: 'Em curso', due: '9 out' },
       ]}
     />
   </Walkthrough.Message>

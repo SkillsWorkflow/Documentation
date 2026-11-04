@@ -13,7 +13,7 @@ Esto todavía no está disponible. El ejemplo de abajo se construyó con el cone
 Sustituye los emails de solicitud por un formulario. El equipo de marketing del cliente dice lo que necesita, los detalles y la fecha, y la solicitud llega a Skills Workflow como un job en el proyecto de la campaña, listo para que tráfico lo recoja.
 
 ![img-box-shadow](/img/ai/connector/request-form.png)
-<figcaption>El formulario de solicitud del cliente ficticio Orvella Tea en un tenant de demostración, rellenado por su equipo de marketing.</figcaption>
+<figcaption>El formulario de solicitud del cliente ficticio Northwind Coffee en un tenant de demostración, rellenado por su equipo de marketing.</figcaption>
 
 ![img-box-shadow](/img/ai/connector/request-form-sent.png)
 <figcaption>Tras el envío, el formulario muestra el número del job que creó, su etapa y un enlace a la página de estado de la campaña.</figcaption>

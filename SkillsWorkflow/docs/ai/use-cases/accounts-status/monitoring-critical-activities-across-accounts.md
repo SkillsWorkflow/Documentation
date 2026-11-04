@@ -59,7 +59,7 @@ The agency, clients, projects, Job numbers, departments and workspaces in this e
       columns={['Client', 'Late Jobs']}
       rows={[
         ['Orbit Telecom', '31'],
-        ['Orvella Tea', '18'],
+        ['Northwind Coffee', '18'],
         ['Lumen Bank', '14'],
         ['Atlas Motors', '11'],
         ['Other', '126'],
@@ -80,11 +80,11 @@ The agency, clients, projects, Job numbers, departments and workspaces in this e
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
-    <p>Which Jobs for Orbit Telecom, Orvella Tea and Lumen Bank became late in the last 30 days? Group them by client and include the project and department.</p>
+    <p>Which Jobs for Orbit Telecom, Northwind Coffee and Lumen Bank became late in the last 30 days? Group them by client and include the project and department.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>I found <strong>6 Jobs that became late in the last 30 days</strong>: 3 for Orbit Telecom, 2 for Orvella Tea and 1 for Lumen Bank.</p>
+    <p>I found <strong>6 Jobs that became late in the last 30 days</strong>: 3 for Orbit Telecom, 2 for Northwind Coffee and 1 for Lumen Bank.</p>
     <p><strong>Orbit Telecom</strong></p>
     <Walkthrough.DataTable
       columns={['Job', 'Project', 'Department']}
@@ -94,12 +94,12 @@ The agency, clients, projects, Job numbers, departments and workspaces in this e
         ['ORB0019DIGI001 · Landing Page', 'Orbit Black Friday 2026', 'Digital'],
       ]}
     />
-    <p><strong>Orvella Tea</strong></p>
+    <p><strong>Northwind Coffee</strong></p>
     <Walkthrough.DataTable
       columns={['Job', 'Project', 'Department']}
       rows={[
-        ['ORV0021ACC001 · Client Presentation', 'Orvella Holiday Menu 2026', 'Account Management'],
-        ['ORV0021PROD002 · In-Store Posters', 'Orvella Holiday Menu 2026', 'Production'],
+        ['NWC0021ACC001 · Client Presentation', 'Northwind Holiday Menu 2026', 'Account Management'],
+        ['NWC0021PROD002 · In-Store Posters', 'Northwind Holiday Menu 2026', 'Production'],
       ]}
     />
     <p><strong>Lumen Bank</strong></p>
@@ -111,7 +111,7 @@ The agency, clients, projects, Job numbers, departments and workspaces in this e
     />
     <p><strong>How I read your question</strong></p>
     <ul>
-      <li>Included: Jobs for Orbit Telecom, Orvella Tea and Lumen Bank that are currently marked late, with due dates from 27 September through 26 October 2026.</li>
+      <li>Included: Jobs for Orbit Telecom, Northwind Coffee and Lumen Bank that are currently marked late, with due dates from 27 September through 26 October 2026.</li>
       <li>Assumed: “became late” means the due date passed during that period. Jobs that were late but are no longer marked late are not included.</li>
       <li>Grouped by client and ordered by due date, then Job number. All 6 matching Jobs are included.</li>
     </ul>
@@ -122,15 +122,15 @@ The agency, clients, projects, Job numbers, departments and workspaces in this e
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Orvella Tea has 4 Jobs due from today through 3 November</strong> and Lumen Bank has 1. No Jobs are due in that period for Orbit Telecom.</p>
-    <p><strong>Orvella Tea</strong></p>
+    <p><strong>Northwind Coffee has 4 Jobs due from today through 3 November</strong> and Lumen Bank has 1. No Jobs are due in that period for Orbit Telecom.</p>
+    <p><strong>Northwind Coffee</strong></p>
     <Walkthrough.DataTable
       columns={['Job', 'Department', 'Delivery']}
       rows={[
-        ['ORV0021ACC003 · Status Meeting', 'Account Management', '29/10/2026'],
-        ['ORV0021CR002 · Menu Board Design', 'Creative', '30/10/2026'],
-        ['ORV0022CR001 · Concept Development', 'Creative', '02/11/2026'],
-        ['ORV0021PROD003 · Print Proofs', 'Production', '03/11/2026'],
+        ['NWC0021ACC003 · Status Meeting', 'Account Management', '29/10/2026'],
+        ['NWC0021CR002 · Menu Board Design', 'Creative', '30/10/2026'],
+        ['NWC0022CR001 · Concept Development', 'Creative', '02/11/2026'],
+        ['NWC0021PROD003 · Print Proofs', 'Production', '03/11/2026'],
       ]}
     />
     <p><strong>Lumen Bank</strong></p>
@@ -142,7 +142,7 @@ The agency, clients, projects, Job numbers, departments and workspaces in this e
     />
     <p><strong>How I read your question</strong></p>
     <ul>
-      <li>Included: Jobs for Orbit Telecom, Orvella Tea and Lumen Bank with a due date from 27 October through 3 November 2026.</li>
+      <li>Included: Jobs for Orbit Telecom, Northwind Coffee and Lumen Bank with a due date from 27 October through 3 November 2026.</li>
       <li>Grouped by client and ordered by due date, then Job number.</li>
     </ul>
   </Walkthrough.Message>

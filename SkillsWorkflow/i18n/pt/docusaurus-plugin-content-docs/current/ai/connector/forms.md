@@ -13,7 +13,7 @@ Isto ainda não está disponível. O exemplo abaixo foi construído com o conect
 Substitua os emails de pedido por um formulário. A equipa de marketing do cliente diz o que precisa, os detalhes e a data, e o pedido chega ao Skills Workflow como um job no projeto da campanha, pronto para o traffic tratar dele.
 
 ![img-box-shadow](/img/ai/connector/request-form.png)
-<figcaption>O formulário de pedidos do cliente fictício Orvella Tea num tenant de demonstração, preenchido pela sua equipa de marketing.</figcaption>
+<figcaption>O formulário de pedidos do cliente fictício Northwind Coffee num tenant de demonstração, preenchido pela sua equipa de marketing.</figcaption>
 
 ![img-box-shadow](/img/ai/connector/request-form-sent.png)
 <figcaption>Depois do envio, o formulário mostra o número do job que criou, a sua etapa e uma ligação para a página de estado da campanha.</figcaption>

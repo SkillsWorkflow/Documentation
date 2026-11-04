@@ -52,7 +52,7 @@ A agência, o cliente, as pessoas, os jobs, os comentários e as datas neste exe
   }
 >
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>O Christmas Launch Event – Stand Design tem 4 dias de atraso.</strong> Tinha conclusão prevista para 26 de outubro e continua em In Progress. Pertence ao projeto Orvella Christmas 2026.</p>
+    <p><strong>O Christmas Launch Event – Stand Design tem 4 dias de atraso.</strong> Tinha conclusão prevista para 26 de outubro e continua em In Progress. Pertence ao projeto Northwind Christmas 2026.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
@@ -63,7 +63,7 @@ A agência, o cliente, as pessoas, os jobs, os comentários e as datas neste exe
     <p><strong>O design do stand esteve à espera das novas normas de marca do cliente:</strong></p>
     <ul>
       <li>A 14 de outubro, a Sarah Lee pediu ao cliente o logótipo e a paleta de cores atualizados. A resposta no Feed diz que chegariam até 18 de outubro.</li>
-      <li>As normas, <strong>Orvella_Brand_Guidelines_2027.pdf</strong>, foram anexadas a 24 de outubro, seis dias depois do prometido.</li>
+      <li>As normas, <strong>Northwind_Brand_Guidelines_2027.pdf</strong>, foram anexadas a 24 de outubro, seis dias depois do prometido.</li>
       <li>A 25 de outubro, a Sarah escreveu que o stand precisa de mais três dias úteis depois da chegada das normas.</li>
     </ul>
     <p>Ninguém definiu uma nova data de conclusão no job.</p>
@@ -86,7 +86,7 @@ A agência, o cliente, as pessoas, os jobs, os comentários e as datas neste exe
     />
     <p><strong>Como interpretei a tua pergunta</strong></p>
     <ul>
-      <li>Incluído: jobs do projeto Orvella Christmas 2026 cuja descrição ou Feed refere o design do stand.</li>
+      <li>Incluído: jobs do projeto Northwind Christmas 2026 cuja descrição ou Feed refere o design do stand.</li>
       <li>Assumido: um job que ainda não começou depende do job atrasado quando usa o resultado dele.</li>
     </ul>
   </Walkthrough.Message>

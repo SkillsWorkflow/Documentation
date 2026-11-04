@@ -52,7 +52,7 @@ La agencia, las personas y las horas de este ejemplo son ilustrativas. Las perso
   }
 >
   <Walkthrough.Message sender="you" name="Tú">
-    <p>Estoy cerrando el mes en la cuenta de Orvella Tea. ¿Quién de mi equipo está bloqueado por horas pendientes?</p>
+    <p>Estoy cerrando el mes en la cuenta de Northwind Coffee. ¿Quién de mi equipo está bloqueado por horas pendientes?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
@@ -109,7 +109,7 @@ La agencia, las personas y las horas de este ejemplo son ilustrativas. Las perso
         ['David Brown', 'Social Media Calendar', '20h', '4h'],
         ['Sarah Lee', 'Christmas Launch Event', '40h', '0h'],
       ]}
-      note="Los tres jobs pertenecen al proyecto Orvella Christmas 2026. El burn del contrato quedará por debajo del real hasta que se registren estas horas."
+      note="Los tres jobs pertenecen al proyecto Northwind Christmas 2026. El burn del contrato quedará por debajo del real hasta que se registren estas horas."
     />
     <p><strong>Cómo he interpretado tu pregunta</strong></p>
     <ul>

@@ -59,7 +59,7 @@ La agencia, los clientes, los proyectos, los números de Job, los departamentos 
       columns={['Cliente', 'Jobs retrasados']}
       rows={[
         ['Orbit Telecom', '31'],
-        ['Orvella Tea', '18'],
+        ['Northwind Coffee', '18'],
         ['Lumen Bank', '14'],
         ['Atlas Motors', '11'],
         ['Otros', '126'],
@@ -80,11 +80,11 @@ La agencia, los clientes, los proyectos, los números de Job, los departamentos 
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Tú">
-    <p>¿Qué Jobs de Orbit Telecom, Orvella Tea y Lumen Bank se retrasaron en los últimos 30 días? Agrúpalos por cliente e incluye el proyecto y el departamento.</p>
+    <p>¿Qué Jobs de Orbit Telecom, Northwind Coffee y Lumen Bank se retrasaron en los últimos 30 días? Agrúpalos por cliente e incluye el proyecto y el departamento.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>He encontrado <strong>6 Jobs que se retrasaron en los últimos 30 días</strong>: 3 de Orbit Telecom, 2 de Orvella Tea y 1 de Lumen Bank.</p>
+    <p>He encontrado <strong>6 Jobs que se retrasaron en los últimos 30 días</strong>: 3 de Orbit Telecom, 2 de Northwind Coffee y 1 de Lumen Bank.</p>
     <p><strong>Orbit Telecom</strong></p>
     <Walkthrough.DataTable
       columns={['Job', 'Proyecto', 'Departamento']}
@@ -94,12 +94,12 @@ La agencia, los clientes, los proyectos, los números de Job, los departamentos 
         ['ORB0019DIGI001 · Landing Page', 'Orbit Black Friday 2026', 'Digital'],
       ]}
     />
-    <p><strong>Orvella Tea</strong></p>
+    <p><strong>Northwind Coffee</strong></p>
     <Walkthrough.DataTable
       columns={['Job', 'Proyecto', 'Departamento']}
       rows={[
-        ['ORV0021ACC001 · Client Presentation', 'Orvella Holiday Menu 2026', 'Account Management'],
-        ['ORV0021PROD002 · In-Store Posters', 'Orvella Holiday Menu 2026', 'Production'],
+        ['NWC0021ACC001 · Client Presentation', 'Northwind Holiday Menu 2026', 'Account Management'],
+        ['NWC0021PROD002 · In-Store Posters', 'Northwind Holiday Menu 2026', 'Production'],
       ]}
     />
     <p><strong>Lumen Bank</strong></p>
@@ -111,7 +111,7 @@ La agencia, los clientes, los proyectos, los números de Job, los departamentos 
     />
     <p><strong>Cómo he interpretado tu pregunta</strong></p>
     <ul>
-      <li>Incluido: Jobs de Orbit Telecom, Orvella Tea y Lumen Bank que están marcados como retrasados, con fecha de entrega del 27 de septiembre al 26 de octubre de 2026.</li>
+      <li>Incluido: Jobs de Orbit Telecom, Northwind Coffee y Lumen Bank que están marcados como retrasados, con fecha de entrega del 27 de septiembre al 26 de octubre de 2026.</li>
       <li>Asumido: “se retrasaron” significa que la fecha de entrega pasó durante ese periodo. No se incluyen los Jobs que estuvieron retrasados pero ya no están marcados así.</li>
       <li>Agrupados por cliente y ordenados por fecha de entrega y, después, por número de Job. Se incluyen los 6 Jobs que coinciden.</li>
     </ul>
@@ -122,15 +122,15 @@ La agencia, los clientes, los proyectos, los números de Job, los departamentos 
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Orvella Tea tiene 4 Jobs que vencen entre hoy y el 3 de noviembre</strong> y Lumen Bank tiene 1. Orbit Telecom no tiene Jobs que venzan en ese periodo.</p>
-    <p><strong>Orvella Tea</strong></p>
+    <p><strong>Northwind Coffee tiene 4 Jobs que vencen entre hoy y el 3 de noviembre</strong> y Lumen Bank tiene 1. Orbit Telecom no tiene Jobs que venzan en ese periodo.</p>
+    <p><strong>Northwind Coffee</strong></p>
     <Walkthrough.DataTable
       columns={['Job', 'Departamento', 'Entrega']}
       rows={[
-        ['ORV0021ACC003 · Status Meeting', 'Account Management', '29/10/2026'],
-        ['ORV0021CR002 · Menu Board Design', 'Creative', '30/10/2026'],
-        ['ORV0022CR001 · Concept Development', 'Creative', '02/11/2026'],
-        ['ORV0021PROD003 · Print Proofs', 'Production', '03/11/2026'],
+        ['NWC0021ACC003 · Status Meeting', 'Account Management', '29/10/2026'],
+        ['NWC0021CR002 · Menu Board Design', 'Creative', '30/10/2026'],
+        ['NWC0022CR001 · Concept Development', 'Creative', '02/11/2026'],
+        ['NWC0021PROD003 · Print Proofs', 'Production', '03/11/2026'],
       ]}
     />
     <p><strong>Lumen Bank</strong></p>
@@ -142,7 +142,7 @@ La agencia, los clientes, los proyectos, los números de Job, los departamentos 
     />
     <p><strong>Cómo he interpretado tu pregunta</strong></p>
     <ul>
-      <li>Incluido: Jobs de Orbit Telecom, Orvella Tea y Lumen Bank con fecha de entrega del 27 de octubre al 3 de noviembre de 2026.</li>
+      <li>Incluido: Jobs de Orbit Telecom, Northwind Coffee y Lumen Bank con fecha de entrega del 27 de octubre al 3 de noviembre de 2026.</li>
       <li>Agrupados por cliente y ordenados por fecha de entrega y, después, por número de Job.</li>
     </ul>
   </Walkthrough.Message>

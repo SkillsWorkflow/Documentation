@@ -54,7 +54,7 @@ Estas se ejecutan en el servidor, contra la Skills Workflow API, como el usuario
 | `get_current_user` | Leer quién está preguntando |
 | `get_current_time` | Leer la fecha y hora actuales |
 
-Las tools `resolve_*` son las que convierten *"el retainer de Orvella"* en un registro. Cuando hay más de un candidato que coincide, el asistente te pide que elijas.
+Las tools `resolve_*` son las que convierten *"el retainer de Northwind"* en un registro. Cuando hay más de un candidato que coincide, el asistente te pide que elijas.
 
 ### Documentos y jobs
 
