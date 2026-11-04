@@ -18,10 +18,10 @@ O **Duplicar** exige permissão para criar jobs. A **Ação em massa** exige per
 
 ## A barra de ferramentas
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar.png)
-<figcaption>A barra de ferramentas do Gantt</figcaption>
+O lado esquerdo da barra edita os jobs:
 
-Da esquerda para a direita:
+![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-left.png)
+<figcaption>O lado esquerdo da barra de ferramentas do Gantt</figcaption>
 
 | Controlo | O que faz |
 |---|---|
@@ -31,6 +31,14 @@ Da esquerda para a direita:
 | **Duplicar** e **Ação em massa** | Atuam sobre as linhas selecionadas. Veja as secções abaixo. |
 | **Desfazer** e **Refazer** | Andam para trás ou para a frente nas alterações por gravar. |
 | **Gravar** | Grava todas as alterações. Fica desativado até haver algo para gravar. |
+
+O lado direito muda o que vê:
+
+![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-right.png)
+<figcaption>O lado direito da barra de ferramentas do Gantt</figcaption>
+
+| Controlo | O que faz |
+|---|---|
 | **Column chooser** | Mostra ou esconde colunas. |
 | **Filtros** | Mostra um campo de filtro por baixo de cada cabeçalho de coluna. |
 | **Expand tasks** e **Collapse tasks** | Abrem ou fecham todas as linhas pai. |
@@ -48,7 +56,7 @@ Da esquerda para a direita:
 
 As linhas novas são gravadas como jobs em Rascunho.
 
-Para adicionar um job por baixo de uma linha específica, clique com o botão direito na linha e escolha **Adicionar...** > **Subtarefa**.
+No Gantt de um projeto, o **Adicionar** põe a linha nova no fim. Para a pôr debaixo de outro job, arraste a linha pela pega (os pontos à esquerda) e largue-a entre as linhas desse job. Uma linha laranja mostra onde vai ficar. Também pode clicar com o botão direito no job e escolher **Adicionar...** > **Subtarefa**.
 
 ## Planear os jobs
 

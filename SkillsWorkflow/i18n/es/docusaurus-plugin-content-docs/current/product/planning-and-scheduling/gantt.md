@@ -18,10 +18,10 @@ El Gantt proviene de un workspace. La pestaña **GANTT** aparece en los proyecto
 
 ## La barra de herramientas
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar.png)
-<figcaption>La barra de herramientas del Gantt</figcaption>
+El lado izquierdo de la barra edita los jobs:
 
-De izquierda a derecha:
+![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-left.png)
+<figcaption>El lado izquierdo de la barra de herramientas del Gantt</figcaption>
 
 | Control | Qué hace |
 |---|---|
@@ -31,6 +31,14 @@ De izquierda a derecha:
 | **Duplicar** y **Acción masiva** | Actúan sobre las filas seleccionadas. Vea las secciones de abajo. |
 | **Undo** y **Redo** | Retroceden o avanzan en los cambios sin guardar. |
 | **Guardar** | Guarda todos los cambios. Permanece desactivado hasta que hay algo que guardar. |
+
+El lado derecho cambia lo que ve:
+
+![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-right.png)
+<figcaption>El lado derecho de la barra de herramientas del Gantt</figcaption>
+
+| Control | Qué hace |
+|---|---|
 | **Column chooser** | Muestra u oculta columnas. |
 | **Filtros** | Muestra un campo de filtro debajo de cada encabezado de columna. |
 | **Expand tasks** y **Collapse tasks** | Abren o cierran todas las filas padre. |
@@ -48,7 +56,7 @@ De izquierda a derecha:
 
 Las filas nuevas se guardan como jobs en Borrador.
 
-Para añadir un job debajo de una fila concreta, haga clic derecho en la fila y elija **Añadir...** > **Subtarea**.
+En el Gantt de un proyecto, **Agregar** pone la fila nueva al final. Para ponerla debajo de otro job, arrastre la fila por su asa (los puntos de la izquierda) y suéltela entre las filas de ese job. Una línea naranja muestra dónde quedará. También puede hacer clic derecho en el job y elegir **Añadir...** > **Subtarea**.
 
 ## Planificar los jobs
 

@@ -18,10 +18,10 @@ Duplicate needs permission to create jobs. Bulk action needs permission to edit 
 
 ## The toolbar
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar.png)
-<figcaption>The Gantt toolbar</figcaption>
+The left side of the toolbar edits the jobs:
 
-From left to right:
+![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-left.png)
+<figcaption>The left side of the Gantt toolbar</figcaption>
 
 | Control | What it does |
 |---|---|
@@ -31,6 +31,14 @@ From left to right:
 | **Duplicate** and **Bulk action** | Act on the selected rows. See the sections below. |
 | **Undo** and **Redo** | Step back or forward through your unsaved changes. |
 | **Save** | Saves every change. It stays disabled until there is something to save. |
+
+The right side changes what you see:
+
+![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-right.png)
+<figcaption>The right side of the Gantt toolbar</figcaption>
+
+| Control | What it does |
+|---|---|
 | **Column chooser** | Shows or hides columns. |
 | **Filters** | Shows a filter field under each column header. |
 | **Expand tasks** and **Collapse tasks** | Open or close every parent row. |
@@ -48,7 +56,7 @@ From left to right:
 
 New rows are saved as jobs in Draft.
 
-To add a job under a specific row, right-click the row and choose **Add...** > **Subtask**.
+In the Gantt of a project, **Add** places the new row at the end. To put it under another job, drag the row by its handle (the dots on the left) and drop it between that job's rows. An orange line shows where it will land. You can also right-click the job and choose **Add...** > **Subtask**.
 
 ## Planning the jobs
 
