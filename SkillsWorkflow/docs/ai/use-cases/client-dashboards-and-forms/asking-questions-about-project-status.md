@@ -1,77 +1,81 @@
 ---
 id: asking-questions-about-project-status
 title: Ask About a Project's Status
-description: "See how a project manager asks the AI Assistant where a project stands, which jobs are delivered, late or due soon, what is at risk and what is waiting on the client."
+description: "See how a project manager asks the AI Assistant where a project stands, which jobs are late, what could put the timeline at risk, what is waiting on the client and how many hours are planned and recorded."
 sidebar_label: Ask About a Project's Status
 sidebar_position: 2
 ---
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
-:::preview
-This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
-
 ## Overview
 
-Ask the AI Assistant, in your own words, how a project is going. It answers with the project's jobs by stage, what was delivered, what is late and what is due next, and the hours recorded against what was contracted. Follow up to see what could put the timeline at risk and which jobs are waiting on the client, so you know what to raise at your next status meeting.
+Ask the AI Assistant, in your own words, how a project is going. It answers with the project's stage, its jobs by stage, the jobs flagged as delayed, the project dates and its owner. Follow up to see what could put the timeline at risk, which jobs are waiting on the client and how many hours are planned and recorded, so you know what to raise at your next status meeting.
 
-The agency, client, project, jobs and hours in this example are illustrative. The jobs you see depend on your access and on the data your agency makes available to the assistant.
+Every project and job in the answer is a link. Select one to open it and act on it. When a workspace helps you follow the project, the assistant suggests it with an **Open** button.
+
+The client, project, jobs and hours in this example are illustrative. The jobs you see depend on your access and on the data your agency makes available to the assistant.
 
 <Walkthrough
   subtitle="An example conversation between a project manager and the AI Assistant."
   sidebar={
     <>
       <Walkthrough.CapabilityCard title="From a question to a status update">
-        The assistant gathers the project’s jobs, dates and hours into one answer, ready for a client call or a status meeting.
+        The assistant gathers the project’s jobs, stages, dates and hours into one answer, ready for a client call or a status meeting.
       </Walkthrough.CapabilityCard>
       <Walkthrough.ChecklistCard
         items={[
           'Ask how the project is going.',
-          'Read the jobs by stage and the hours recorded against the contract.',
+          'Read the project stage and its jobs by stage.',
           'Ask what could put the timeline at risk.',
           'Ask which jobs are waiting on the client.',
-          'Open a job from the list to act on it.',
+          'Ask how many hours are planned and recorded.',
+          'Open a job from the answer to act on it.',
         ]}
       />
       <Walkthrough.PhrasingCard
         items={[
-          'Where are we on the Northwind Christmas project?',
+          'Where are we on the Orvella Tea Christmas project?',
           'What is late on this project?',
           'What do we need from the client this week?',
+          'How many hours are planned and recorded on this project?',
         ]}
       />
       <Walkthrough.NoteCard
         items={[
           'Stages depend on each job’s workflow, so the same project can show different stage names.',
-          'A job is late when its due date has passed and it is not in a closing stage.',
-          'Waiting on the client means the job is in a stage your agency uses for client approval or feedback.',
+          'A job is late when its planned end date has passed and it is not finished.',
+          'Waiting on the client means the job is in a client approval or feedback stage, or its comments or brief show an open request to the client.',
+          'Planned hours come from the bookings on the project’s jobs and recorded hours from timesheets.',
         ]}
       />
     </>
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>Where are we on the Northwind Christmas 2026 project?</p>
+    <p>Where are we on the Orvella Tea Christmas 2026 project?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Northwind Christmas 2026 has 14 jobs. 9 are delivered, 3 are in progress and 2 have not started.</strong> The project ends on 15 December.</p>
+    <p><strong>ORV0031 — Orvella Tea – Christmas 2026 Campaign is In Progress.</strong> It runs from 1 September to 15 December 2026, with you as owner.</p>
     <Walkthrough.DataTable
-      columns={['', 'Hours']}
+      columns={['Stage', 'Jobs']}
       rows={[
-        ['Contracted', '640h'],
-        ['Planned', '590h'],
-        ['Recorded', '398h'],
+        ['Closed', '2'],
+        ['Client Approval', '3'],
+        ['In Progress', '2'],
+        ['To Do', '1'],
       ]}
-      note="62% of the contracted hours are recorded, with 70% of the project’s time elapsed."
+      note="1 of the 8 jobs is flagged as delayed."
     />
+    <p>The main concern is the launch event stand, which is past its planned end date. You can follow the project’s stages in the workspace below.</p>
+    <Walkthrough.WorkspaceCard title="Kanban" subtitle="Workspace · Menu" actionLabel="Open" />
     <p><strong>How I read your question</strong></p>
     <ul>
-      <li>Included: all jobs of the Northwind Christmas 2026 project, and the hours planned and recorded on them up to today.</li>
-      <li>Assumed: “delivered” means the job is in a closing stage.</li>
+      <li>Included: project ORV0031 and all its jobs visible to you.</li>
+      <li>Assumed: “where are we” means the project stage, job progress and delay flags, not recorded hours or billing.</li>
     </ul>
-    <Walkthrough.Source label="Jobs · 14 rows" />
+    <Walkthrough.Source label="Jobs · 8 rows" />
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
@@ -82,15 +86,22 @@ The agency, client, project, jobs and hours in this example are illustrative. Th
     <Walkthrough.JobList
       title="Jobs at risk"
       rows={[
-        { title: 'Christmas Launch Event – Stand Design', number: 'NWC0031EV002', stage: 'In Progress', due: '4 days late', tone: 'late' },
-        { title: 'Campaign Website', number: 'NWC0031DIGI001', stage: 'In Progress', due: '20 Nov' },
-        { title: 'Christmas Launch Event – Stand Production', number: 'NWC0031EV003', stage: 'New', due: '13 Nov' },
+        { title: 'Christmas Launch Event – Stand Design', number: 'ORV0031EV002', stage: 'In Progress', due: '4 days late', tone: 'late' },
+        { title: 'Christmas Launch Event – Stand Production', number: 'ORV0031EV003', stage: 'To Do', due: '13 Nov' },
+        { title: 'Campaign Website', number: 'ORV0031DIGI001', stage: 'In Progress', due: '20 Nov' },
       ]}
       footer="Jobs · 3 rows"
     />
     <ul>
-      <li>The stand design is late and Stand Production cannot start until it is approved.</li>
-      <li>Campaign Website has 16 hours recorded above plan after two landing pages were added.</li>
+      <li>Stand Design was due on 31 October and is still In Progress. This is the first item I would escalate.</li>
+      <li>Stand Production has responsible people but no executor listed.</li>
+      <li>Campaign Website is due in 16 days and is still In Progress.</li>
+    </ul>
+    <p>Recommended next step: confirm a revised date for the stand design and assign an executor to Stand Production.</p>
+    <p><strong>How I read your question</strong></p>
+    <ul>
+      <li>Included: the project’s jobs, reviewed by planned end date, stage, priority and assignments.</li>
+      <li>Not assessed: dependencies, remaining effort and people’s availability.</li>
     </ul>
   </Walkthrough.Message>
 
@@ -101,14 +112,38 @@ The agency, client, project, jobs and hours in this example are illustrative. Th
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p><strong>Three jobs are waiting for client approval:</strong></p>
     <Walkthrough.DataTable
-      columns={['Job', 'Stage', 'Waiting since']}
+      columns={['Job', 'Stage', 'Due']}
       rows={[
-        ['Social Media Calendar – December', 'Client Approval', '23 October'],
-        ['In-store Posters', 'Client Approval', '27 October'],
-        ['Gift Card Design', 'Client Approval', '29 October'],
+        ['Social Media Calendar – December', 'Client Approval', '7 Nov'],
+        ['In-store Posters', 'Client Approval', '10 Nov'],
+        ['Gift Card Design', 'Client Approval', '14 Nov'],
       ]}
-      note="The December social calendar has been waiting for 7 days and its first posts go out on 1 December."
+      note="The comments and latest briefs of the other jobs do not show an open request to the client."
     />
+    <Walkthrough.Source label="Descriptions · 8 rows" />
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="You">
+    <p>How many hours are planned and recorded on this project?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <Walkthrough.DataTable
+      columns={['', 'Hours']}
+      rows={[
+        ['Planned', '590h'],
+        ['Recorded', '398h'],
+      ]}
+      note="Recorded time is 67% of the planned hours. This compares time only and does not measure how much of the work is done."
+    />
+    <p>You can follow planned and actual time by month in the workspace below.</p>
+    <Walkthrough.WorkspaceCard title="FTE" subtitle="Workspace · Menu" actionLabel="Open" />
+    <p><strong>How I read your question</strong></p>
+    <ul>
+      <li>Assumed: “planned” means the hours booked on the project’s jobs, not contracted or estimated effort.</li>
+      <li>Included: time recorded by everyone visible on the project, whatever its approval or billable status.</li>
+    </ul>
+    <Walkthrough.Source label="Time sheets · 1 row" />
   </Walkthrough.Message>
 </Walkthrough>
 
