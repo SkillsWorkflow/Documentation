@@ -1,14 +1,16 @@
 ---
 id: gantt
 title: Gantt
-description: "The Gantt shows jobs on a timeline, for a whole project or for one job and the jobs under it: building the schedule, copying rows, duplicating jobs and editing several at once."
+description: "Plan a project or a job on a timeline: add jobs, organise them into phases, link them with dependencies, copy, duplicate and edit several at once."
 sidebar_label: Gantt
 sidebar_position: 1
 ---
-The Gantt shows jobs on a timeline, with the job hierarchy in a grid on the left and the bars on the right. Open it from the **GANTT** tab of a project to plan the whole project, or from the **GANTT** tab of a job to plan that job and the jobs under it.
+The Gantt puts your jobs on a timeline. The grid on the left shows the job hierarchy, and the bars on the right show when each job runs and which jobs wait for others.
+
+It works the same way on a project and on a job. Open the **GANTT** tab of a project to plan the whole project, or the **GANTT** tab of a job to plan that job and the jobs under it.
 
 ![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-project.png)
-<figcaption>The Gantt of a project</figcaption>
+<figcaption>A project planned in three phases, with dependencies between the jobs</figcaption>
 
 ## Availability
 
@@ -18,9 +20,9 @@ Duplicate needs permission to create jobs. Bulk action needs permission to edit 
 
 ## The toolbar
 
-The left side of the toolbar edits the jobs:
+The left side of the toolbar is where you change the plan:
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-left.png)
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-toolbar-left.png)
 <figcaption>The left side of the Gantt toolbar</figcaption>
 
 | Control | What it does |
@@ -34,7 +36,7 @@ The left side of the toolbar edits the jobs:
 
 The right side changes what you see:
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-right.png)
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-toolbar-right.png)
 <figcaption>The right side of the Gantt toolbar</figcaption>
 
 | Control | What it does |
@@ -51,18 +53,25 @@ The right side changes what you see:
 
 1. Pick the department and job type in **Select job type...**.
 2. Click **Add**.
-3. Rename the new row and set its dates in the grid, or drag its bar.
+3. Name the new row and set its dates in the grid, or drag its bar.
 4. Click **Save**.
+
+**Add** puts the new job right below the row you have selected, at the same level. With nothing selected, it goes to the end of the list.
+
+To move a job somewhere else, drag its row by the handle (the dots on the left) and drop it where it belongs. An orange line shows where it will land. Drop it between the rows of a phase to make it part of that phase.
+
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-drag-under-job.png)
+<figcaption>Dragging a new job into the Creative Production phase</figcaption>
+
+You can also right-click a job and choose **Add...** > **Subtask** to add a job under it.
 
 New rows are saved as jobs in Draft.
 
-In the Gantt of a project, **Add** places the new row at the end. To put it under another job, drag the row by its handle (the dots on the left) and drop it between that job's rows. An orange line shows where it will land. You can also right-click the job and choose **Add...** > **Subtask**.
-
 ## Planning the jobs
 
-Change dates in the grid, or drag a bar along the timeline to move it and drag its ends to make it longer or shorter. A parent row spans the jobs under it.
+Change dates in the grid, or drag a bar along the timeline to move it and drag its ends to make it longer or shorter. A parent row spans the jobs under it, and its **%Done** follows theirs.
 
-The bar colour follows the job's stage. Fill in **Predecessor** or **Successor** to link jobs that depend on each other.
+Use **Predecessor** or **Successor** to say which job has to finish before another one starts. The arrows on the timeline show these links.
 
 Clicking a row's WBS cell opens the job preview.
 
@@ -75,14 +84,14 @@ Tick the checkbox in the column header to select every row. Ticking a parent sel
 Clicking a row's WBS cell also selects the whole row. Ctrl (Cmd on macOS) adds or removes one row. Shift extends from the last row you clicked. Clicking any other cell selects the cell, not the row.
 
 ![img-box-shadow](/img/product/planning-and-scheduling/gantt/01-row-selection.png)
-<figcaption>A parent row ticked, with the rows under it selected too</figcaption>
+<figcaption>Ticking Creative Production selects the jobs under it too</figcaption>
 
 ## Copying and pasting
 
 Right-click a selected row to get **Copy row** and **Paste row**. **Paste row** inserts the copied rows after the row you right-clicked, at the same level, as drafts. Click **Save** to create them.
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-row-menu.png)
-<figcaption>Copy row and Paste row on a selected row</figcaption>
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-row-menu.png)
+<figcaption>Copy row and Paste row on a selected job</figcaption>
 
 Right-click a cell outside a row selection to get **Copy** and **Paste**, which copy the cell's value.
 
@@ -95,7 +104,7 @@ A duplicated parent brings its branch with it, so selecting a parent together wi
 Duplicate leaves the **Copy row** clipboard untouched.
 
 ![img-box-shadow](/img/product/planning-and-scheduling/gantt/02-duplicate.png)
-<figcaption>A duplicated row created in Draft below the original</figcaption>
+<figcaption>A copy of Social media carousel, in Draft, right below the original</figcaption>
 
 ## Editing several jobs at once
 
@@ -104,28 +113,14 @@ Duplicate leaves the **Copy row** clipboard untouched.
 Save the Gantt first. The dialog writes to the jobs directly, and the Gantt reloads when it closes.
 
 ![img-box-shadow-popup](/img/product/planning-and-scheduling/gantt/03-bulk-action.png)
-<figcaption>Bulk action applied to the rows selected in the Gantt</figcaption>
+<figcaption>Bulk action on two selected jobs</figcaption>
 
 ## Filtering
 
 Click **Filters** and type in the field under a column header. The grid keeps the matching rows and the parents above them.
 
 ![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-filter-bar.png)
-<figcaption>The Name filter showing only the matching job</figcaption>
-
-## The Gantt of a job
-
-The **GANTT** tab of a job shows that job at the top, with every job under it. It has the same toolbar, menus and columns as the Gantt of a project.
-
-![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-job.png)
-<figcaption>The Gantt opened on a job</figcaption>
-
-Jobs you add or paste here go inside that job. The job at the top stays in place:
-
-- It cannot be deleted or indented from its own Gantt.
-- The rows directly under it cannot be outdented. Trying it shows *Tasks directly under this job cannot be outdented.*
-
-Saved changes also appear in the project's Gantt.
+<figcaption>Filtering the Name column by "launch"</figcaption>
 
 ## Rules and behaviour
 
@@ -136,6 +131,16 @@ Rows you have not saved yet have no job behind them. A bulk action skips them an
 One bulk action covers at most 100 jobs. Selecting more shows a message.
 
 Unsaved rows are lost if you leave the Gantt without saving. Skills Workflow warns you before you navigate away.
+
+On a job's Gantt, the job you opened sits at the top and everything stays inside it:
+
+- Jobs you add or paste always go inside it.
+- The job at the top cannot be deleted or indented from its own Gantt.
+- The rows directly under it cannot be outdented. Trying it shows *Tasks directly under this job cannot be outdented.*
+- What you save there also appears in the project's Gantt.
+
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-job.png)
+<figcaption>The Gantt of the Creative Production job</figcaption>
 
 ## Configuration
 

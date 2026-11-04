@@ -1,14 +1,16 @@
 ---
 id: gantt
 title: Gantt
-description: "O Gantt mostra os jobs em uma linha do tempo, para um projeto inteiro ou para um job e os jobs abaixo dele: montar o planejamento, copiar linhas, duplicar jobs e editar vários de uma vez."
+description: "Planeje um projeto ou um job em uma linha do tempo: adicione jobs, organize-os em fases, ligue-os com dependências, copie, duplique e edite vários de uma vez."
 sidebar_label: Gantt
 sidebar_position: 1
 ---
-O Gantt mostra os jobs em uma linha do tempo, com a hierarquia dos jobs em uma grade à esquerda e as barras à direita. Abra-o na aba **GANTT** de um projeto para planejar o projeto inteiro, ou na aba **GANTT** de um job para planejar esse job e os jobs abaixo dele.
+O Gantt coloca os seus jobs em uma linha do tempo. A grade à esquerda mostra a hierarquia dos jobs, e as barras à direita mostram quando cada job acontece e quais jobs esperam por outros.
+
+Ele funciona do mesmo jeito em um projeto e em um job. Abra a aba **GANTT** de um projeto para planejar o projeto inteiro, ou a aba **GANTT** de um job para planejar esse job e os jobs abaixo dele.
 
 ![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-project.png)
-<figcaption>O Gantt de um projeto</figcaption>
+<figcaption>Um projeto planejado em três fases, com dependências entre os jobs</figcaption>
 
 ## Disponibilidade
 
@@ -18,9 +20,9 @@ O **Duplicar** exige permissão para criar jobs. A **Ação em massa** exige per
 
 ## A barra de ferramentas
 
-O lado esquerdo da barra edita os jobs:
+O lado esquerdo da barra é onde você altera o planejamento:
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-left.png)
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-toolbar-left.png)
 <figcaption>O lado esquerdo da barra de ferramentas do Gantt</figcaption>
 
 | Controle | O que faz |
@@ -34,7 +36,7 @@ O lado esquerdo da barra edita os jobs:
 
 O lado direito muda o que você vê:
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-toolbar-right.png)
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-toolbar-right.png)
 <figcaption>O lado direito da barra de ferramentas do Gantt</figcaption>
 
 | Controle | O que faz |
@@ -54,15 +56,22 @@ O lado direito muda o que você vê:
 3. Dê nome à nova linha e defina as datas na grade, ou arraste a barra.
 4. Clique em **Salvar**.
 
-As linhas novas são salvas como jobs em Rascunho.
+O **Adicionar** coloca o job novo logo abaixo da linha que você selecionou, no mesmo nível. Sem nada selecionado, ele vai para o fim da lista.
 
-No Gantt de um projeto, o **Adicionar** coloca a linha nova no fim. Para colocá-la abaixo de outro job, arraste a linha pela alça (os pontos à esquerda) e solte-a entre as linhas desse job. Uma linha laranja mostra onde ela vai ficar. Você também pode clicar com o botão direito no job e escolher **Adicionar...** > **Subtarefa**.
+Para mudar um job de lugar, arraste a linha pela alça (os pontos à esquerda) e solte-a onde ela deve ficar. Uma linha laranja mostra onde ela vai ficar. Solte-a entre as linhas de uma fase para colocá-la nessa fase.
+
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-drag-under-job.png)
+<figcaption>Arrastando um job novo para a fase Creative Production</figcaption>
+
+Você também pode clicar com o botão direito em um job e escolher **Adicionar...** > **Subtarefa** para adicionar um job abaixo dele.
+
+As linhas novas são salvas como jobs em Rascunho.
 
 ## Planejar os jobs
 
-Altere as datas na grade, ou arraste uma barra pela linha do tempo para movê-la e arraste as pontas para aumentá-la ou diminuí-la. Uma linha pai abrange os jobs abaixo dela.
+Altere as datas na grade, ou arraste uma barra pela linha do tempo para movê-la e arraste as pontas para aumentá-la ou diminuí-la. Uma linha pai abrange os jobs abaixo dela, e a sua **%Done** acompanha a deles.
 
-A cor da barra acompanha a etapa do job. Preencha **Antecessor** ou **Successor** para ligar jobs que dependem uns dos outros.
+Use **Antecessor** ou **Successor** para indicar qual job precisa terminar antes de outro começar. As setas na linha do tempo mostram essas ligações.
 
 Clicar na célula WBS de uma linha abre a pré-visualização do job.
 
@@ -75,14 +84,14 @@ Marque a caixa no cabeçalho da coluna para selecionar todas as linhas. Marcar u
 Clicar na célula WBS de uma linha também seleciona a linha inteira. Ctrl (Cmd no macOS) adiciona ou remove uma linha. Shift estende a partir da última linha em que você clicou. Clicar em qualquer outra célula seleciona a célula, não a linha.
 
 ![img-box-shadow](/img/product/planning-and-scheduling/gantt/01-row-selection.png)
-<figcaption>Uma linha pai marcada, com as linhas abaixo dela também selecionadas</figcaption>
+<figcaption>Marcar Creative Production seleciona também os jobs abaixo dele</figcaption>
 
 ## Copiar e colar
 
 Clique com o botão direito em uma linha selecionada para ter **Copiar linha** e **Colar linha**. O **Colar linha** insere as linhas copiadas logo depois da linha em que você clicou, no mesmo nível, em Rascunho. Clique em **Salvar** para criá-las.
 
-![img-box-shadow-sm](/img/product/planning-and-scheduling/gantt/gantt-row-menu.png)
-<figcaption>Copiar linha e Colar linha em uma linha selecionada</figcaption>
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-row-menu.png)
+<figcaption>Copiar linha e Colar linha em um job selecionado</figcaption>
 
 Clique com o botão direito em uma célula fora de uma seleção de linhas para ter **Copiar** e **Colar**, que copiam o valor da célula.
 
@@ -95,7 +104,7 @@ Um pai duplicado leva o seu ramo junto, então selecionar um pai junto com os fi
 O **Duplicar** não mexe na área de transferência do **Copiar linha**.
 
 ![img-box-shadow](/img/product/planning-and-scheduling/gantt/02-duplicate.png)
-<figcaption>Uma linha duplicada criada em Rascunho abaixo da original</figcaption>
+<figcaption>Uma cópia de Social media carousel, em Rascunho, logo abaixo da original</figcaption>
 
 ## Editar vários jobs de uma vez
 
@@ -104,28 +113,14 @@ A **Ação em massa** abre a caixa de diálogo de edição em massa sobre as lin
 Salve o Gantt primeiro. A caixa de diálogo grava diretamente nos jobs, e o Gantt recarrega quando ela fecha.
 
 ![img-box-shadow-popup](/img/product/planning-and-scheduling/gantt/03-bulk-action.png)
-<figcaption>Ação em massa aplicada às linhas selecionadas no Gantt</figcaption>
+<figcaption>Ação em massa sobre dois jobs selecionados</figcaption>
 
 ## Filtrar
 
 Clique em **Filtros** e digite no campo abaixo de um cabeçalho de coluna. A grade mantém as linhas que correspondem e os pais acima delas.
 
 ![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-filter-bar.png)
-<figcaption>O filtro do Nome mostrando só o job que corresponde</figcaption>
-
-## O Gantt de um job
-
-A aba **GANTT** de um job mostra esse job no topo, com todos os jobs abaixo dele. Ela tem a mesma barra de ferramentas, os mesmos menus e as mesmas colunas que o Gantt de um projeto.
-
-![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-job.png)
-<figcaption>O Gantt aberto em um job</figcaption>
-
-Os jobs que você adicionar ou colar aqui ficam dentro desse job. O job do topo fica no lugar:
-
-- Ele não pode ser excluído nem descer de nível a partir do seu próprio Gantt.
-- As linhas diretamente abaixo dele não podem subir de nível. Tentar isso mostra *As tarefas diretamente abaixo desta atividade não podem subir de nível.*
-
-As alterações salvas aparecem também no Gantt do projeto.
+<figcaption>Filtrando a coluna do nome por "launch"</figcaption>
 
 ## Regras e comportamento
 
@@ -136,6 +131,16 @@ As linhas que você ainda não salvou não têm um job por trás. A ação em ma
 Uma ação em massa abrange no máximo 100 jobs. Selecionar mais mostra uma mensagem.
 
 As linhas não salvas se perdem se você sair do Gantt sem salvar. O Skills Workflow avisa antes de você sair da página.
+
+No Gantt de um job, o job que você abriu fica no topo e tudo fica dentro dele:
+
+- Os jobs que você adicionar ou colar ficam sempre dentro dele.
+- O job do topo não pode ser excluído nem descer de nível a partir do seu próprio Gantt.
+- As linhas diretamente abaixo dele não podem subir de nível. Tentar isso mostra *As tarefas diretamente abaixo desta atividade não podem subir de nível.*
+- O que você salva ali aparece também no Gantt do projeto.
+
+![img-box-shadow](/img/product/planning-and-scheduling/gantt/gantt-job.png)
+<figcaption>O Gantt do job Creative Production</figcaption>
 
 ## Configuração
 
