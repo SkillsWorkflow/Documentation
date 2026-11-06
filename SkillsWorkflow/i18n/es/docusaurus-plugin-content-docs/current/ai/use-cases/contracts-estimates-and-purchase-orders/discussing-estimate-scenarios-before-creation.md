@@ -111,6 +111,7 @@ La agencia, el cliente, el proyecto, las columnas del rate card, las tarifas y l
 ## Artículos relacionados
 
 - [Crear un Estimate a Partir de tus Instrucciones](/docs/ai/use-cases/contracts-estimates-and-purchase-orders/creating-an-estimate-from-instructions)
+- [Obtener una Primera Estimación a Partir de un Vídeo de Referencia](/docs/ai/use-cases/contracts-estimates-and-purchase-orders/estimating-from-a-reference-video)
 - [Como administrar tablas Rate Card](/docs/product/commercial/rates/rate-cards)
 - [Crear un Estimate](/docs/product/commercial/estimates/create-estimate)
 - [AI Assistant](/docs/ai/ai-assistant)
