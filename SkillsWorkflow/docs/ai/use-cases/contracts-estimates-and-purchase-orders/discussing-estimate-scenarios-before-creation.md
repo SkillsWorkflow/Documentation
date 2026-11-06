@@ -111,7 +111,6 @@ The agency, client, project, rate card columns, rates and values in this example
 ## Related articles
 
 - [Create an Estimate From Your Instructions](/docs/ai/use-cases/contracts-estimates-and-purchase-orders/creating-an-estimate-from-instructions)
-- [Get a First Estimate From a Reference Video](/docs/ai/use-cases/contracts-estimates-and-purchase-orders/estimating-from-a-reference-video)
 - [Create Rate Cards](/docs/product/commercial/rates/rate-cards)
 - [Create Estimate](/docs/product/commercial/estimates/create-estimate)
 - [AI Assistant](/docs/ai/ai-assistant)
