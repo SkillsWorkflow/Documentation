@@ -128,6 +128,7 @@ The agency, clients, projects, Jobs, people and hours in this example are illust
 
 ## Related articles
 
+- [Reassign Work From an Overloaded Person](/docs/ai/use-cases/resource-management/reassigning-work-from-an-overloaded-person)
 - [Check Contracted Hours and Team Capacity](/docs/ai/use-cases/resource-management/comparing-contracted-and-available-hours)
 - [Turn a Campaign Brief into a Job](/docs/ai/use-cases/projects-and-jobs/creating-a-job-using-a-briefing-template)
 - [AI Assistant](/docs/ai/ai-assistant)
