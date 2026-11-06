@@ -128,6 +128,7 @@ La agencia, los clientes, los proyectos, los Jobs, las personas y las horas de e
 
 ## Artículos relacionados
 
+- [Reasignar Trabajo de una Persona Sobrecargada](/docs/ai/use-cases/resource-management/reassigning-work-from-an-overloaded-person)
 - [Consultar Horas Contratadas y Capacidad del Equipo](/docs/ai/use-cases/resource-management/comparing-contracted-and-available-hours)
 - [Convertir un Briefing de Campaña en un Job](/docs/ai/use-cases/projects-and-jobs/creating-a-job-using-a-briefing-template)
 - [AI Assistant](/docs/ai/ai-assistant)
