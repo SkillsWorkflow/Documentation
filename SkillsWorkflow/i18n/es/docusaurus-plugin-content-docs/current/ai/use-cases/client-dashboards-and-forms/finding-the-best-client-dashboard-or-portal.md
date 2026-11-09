@@ -8,6 +8,10 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Recomendar portales de cliente está en preview. Hoy el asistente sugiere los workspaces de tu agencia, pero todavía no indica los portales de cliente que ya existen.
+:::
+
 ## Descripción general
 
 Indica al AI Assistant qué quieres compartir con un cliente: el estado de sus proyectos, el burn del contrato, los riesgos o las peticiones que están pendientes de él. El asistente lo relaciona con los workspaces y portales de cliente que tiene tu agencia, explica qué muestra cada uno y recomienda la opción más clara. También te indica qué vistas son solo para uso interno de la agencia, como la rentabilidad.
@@ -41,6 +45,7 @@ La agencia y el cliente de este ejemplo son ilustrativos. El asistente recomiend
           'Los workspaces se abren dentro de Skills Workflow. Un portal de cliente es una página independiente que compartes como una dirección.',
           'Las vistas con márgenes, costes o tarifas son para la agencia. Comprueba lo que muestra una vista antes de compartirla.',
           'Cuando ningún workspace o portal cubre lo que necesita el cliente, pide al asistente que cree un portal.',
+          'Preview: el asistente todavía no recomienda portales de cliente existentes. Hoy sugiere workspaces.',
         ]}
       />
     </>
@@ -61,6 +66,7 @@ La agencia y el cliente de este ejemplo son ilustrativos. El asistente recomiend
     <Walkthrough.WorkspaceCard
       title="christmas-2026"
       subtitle="Portal de cliente · orvella-tea"
+      badge="Preview"
       description="Estado, burn del contrato en horas, jobs en riesgo y jobs pendientes del cliente del proyecto Christmas 2026."
       actionLabel="Abrir portal"
     />
@@ -73,6 +79,19 @@ La agencia y el cliente de este ejemplo son ilustrativos. El asistente recomiend
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>No, mantenlo en uso interno. El <strong>Profitability Workspace</strong> muestra el beneficio planificado y el margen por proyecto y por tipología, calculados a partir de tus ingresos y tus costes.</p>
     <p>El Burn Workspace también muestra los ingresos frente al coste. En la reunión con el cliente, quédate en los gráficos de burn de tiempo, o comparte el portal, que solo muestra horas.</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="Tú">
+    <p>Antes de la reunión, quiero ver cuánto tiempo del equipo se está dedicando a sus proyectos. ¿Dónde lo veo?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Usa el <strong>Project Allocation Workspace</strong> del cliente. Muestra, por proyecto, la capacidad de las personas, las horas reales y facturables registradas y el porcentaje de asignación. Es una tabla, así que puedes añadir más campos. Este también es de uso interno.</p>
+    <Walkthrough.WorkspaceCard
+      title="Project Allocation Workspace"
+      subtitle="Workspace · Cliente"
+      description="Por proyecto: capacidad de las personas, horas reales, horas facturables y porcentaje de asignación."
+    />
   </Walkthrough.Message>
 </Walkthrough>
 

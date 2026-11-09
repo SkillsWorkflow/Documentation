@@ -8,6 +8,10 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
+:::preview
+Recommending client portals is in preview. Today the assistant suggests your agency’s workspaces, and it does not yet point you to the client portals you already have.
+:::
+
 ## Overview
 
 Tell the AI Assistant what you want to share with a client: the status of their projects, the contract burn, the risks or the requests waiting on them. The assistant matches it to the workspaces and client portals your agency has, explains what each one shows and recommends the clearest choice. It also tells you which views are meant for the agency only, such as profitability.
@@ -41,6 +45,7 @@ The agency and client in this example are illustrative. The assistant recommends
           'Workspaces open inside Skills Workflow. A client portal is a page of its own that you share as an address.',
           'Views with margins, costs or rates are meant for the agency. Check what a view shows before sharing it.',
           'When no workspace or portal covers what the client needs, ask the assistant to create a portal.',
+          'Preview: the assistant does not yet recommend existing client portals. Today it suggests workspaces.',
         ]}
       />
     </>
@@ -61,6 +66,7 @@ The agency and client in this example are illustrative. The assistant recommends
     <Walkthrough.WorkspaceCard
       title="christmas-2026"
       subtitle="Client portal · orvella-tea"
+      badge="Preview"
       description="Status, contract burn in hours, jobs at risk and jobs waiting on the client for the Christmas 2026 project."
       actionLabel="Open portal"
     />
@@ -73,6 +79,19 @@ The agency and client in this example are illustrative. The assistant recommends
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>No, keep it internal. The <strong>Profitability Workspace</strong> shows the planned profit and the margin per project and per typology, worked out from your income and your costs.</p>
     <p>The Burn Workspace also shows revenue against cost. In the client meeting, stay on the time burn charts, or share the portal, which shows hours only.</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="You">
+    <p>Before the meeting, I want to see how much of the team’s time is going into their projects. Where do I see that?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Use the <strong>Project Allocation Workspace</strong> on the client. It shows, per project, the users’ capacity, the actual and billable hours recorded and the allocation %. It is a table, so you can add more fields. Keep this one internal too.</p>
+    <Walkthrough.WorkspaceCard
+      title="Project Allocation Workspace"
+      subtitle="Workspace · Client"
+      description="Per project: users’ capacity, actual hours, billable hours and allocation %."
+    />
   </Walkthrough.Message>
 </Walkthrough>
 
