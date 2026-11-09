@@ -1274,3 +1274,137 @@ html[data-theme='dark'] .teamHeader {
 html[data-theme='dark'] .teamBubbleAssistant {
   border-color: color-mix(in srgb, #7b6ef6 40%, transparent);
 }
+
+/* ---- notification card (alert levels) ------------------------------ */
+.notificationCard {
+  --level: var(--ifm-color-primary);
+  margin: 0.25rem auto;
+  width: min(100%, 26rem);
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-left: 4px solid var(--level);
+  border-radius: 0;
+  background: color-mix(in srgb, var(--level) 6%, var(--ifm-background-surface-color));
+  font-size: 0.86rem;
+}
+
+.notificationAction { --level: #d93636; }
+.notificationAttention { --level: #d9961a; }
+.notificationInfo { --level: var(--ifm-color-primary); }
+
+.notificationHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+}
+
+.notificationLevel {
+  font-weight: 600;
+  color: color-mix(in srgb, var(--level) 80%, var(--ifm-color-emphasis-900));
+}
+
+.notificationTime {
+  color: var(--ifm-color-emphasis-500);
+}
+
+.notificationTitle {
+  margin-top: 0.2rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.notificationSender {
+  color: var(--ifm-color-primary);
+}
+
+.notificationBody {
+  margin-top: 0.3rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.notificationBody p,
+.notificationBody ul {
+  margin: 0.2rem 0 0;
+}
+
+/* ---- notifications panel (bell) ------------------------------------- */
+.notificationPanel {
+  margin: 0.25rem auto;
+  width: min(100%, 27rem);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+}
+
+.notificationPanelHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.65rem 0.9rem;
+  background: #d3e3f4;
+}
+
+.notificationPanelBell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #1f5fa8;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.notificationPanelTitle {
+  font-size: 1.15rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.notificationPanelFilters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.6rem 0.8rem 0.2rem;
+  font-size: 0.82rem;
+}
+
+.notificationFilter {
+  padding: 0.1rem 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.notificationFilterActive {
+  border-color: var(--ifm-color-emphasis-300);
+  color: #1f5fa8;
+  background: var(--ifm-background-surface-color);
+}
+
+.notificationFilterLevel {
+  color: color-mix(in srgb, var(--level) 80%, var(--ifm-color-emphasis-900));
+}
+
+.notificationPanelList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem 0.8rem;
+}
+
+.notificationPanelList .notificationCard {
+  margin: 0;
+  width: 100%;
+}
+
+html[data-theme='dark'] .notificationPanelHeader {
+  background: color-mix(in srgb, #1f5fa8 35%, var(--ifm-background-color));
+}
+
+html[data-theme='dark'] .notificationFilterActive {
+  color: var(--ifm-color-primary);
+}

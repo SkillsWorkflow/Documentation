@@ -383,6 +383,18 @@
     "message": "Use cases para chamar o Assistente de IA para uma conversa do Chat entre pessoas, para responder a uma pergunta ou fazer o trabalho que a equipe acabou de combinar.",
     "description": "The generated-index page description for category 'Team Conversations' in sidebar 'docs'"
   },
+  "sidebar.docs.category.Alerts & Notifications": {
+    "message": "Alertas e Notificações",
+    "description": "The label for category 'Alerts & Notifications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Alerts & Notifications.link.generated-index.title": {
+    "message": "Alertas e Notificações",
+    "description": "The generated-index page title for category 'Alerts & Notifications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Alerts & Notifications.link.generated-index.description": {
+    "message": "Use cases para pedir ao Assistente de IA que configure alertas recorrentes, que depois chegam às pessoas certas como notificações marcadas pelo seu nível de urgência.",
+    "description": "The generated-index page description for category 'Alerts & Notifications' in sidebar 'docs'"
+  },
   "sidebar.docs.category.Errors & FAQ": {
     "message": "Erros e dúvidas frequentes",
     "description": "The label for category 'Errors & FAQ' in sidebar 'docs'"

@@ -1,0 +1,10 @@
+{
+  "label": "Alerts & Notifications",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "title": "Alerts & Notifications",
+    "description": "Use cases for asking the AI Assistant to set up recurring alerts, which then reach the right people as notifications marked by how urgent they are.",
+    "slug": "/ai/use-cases/alerts-and-notifications"
+  }
+}
