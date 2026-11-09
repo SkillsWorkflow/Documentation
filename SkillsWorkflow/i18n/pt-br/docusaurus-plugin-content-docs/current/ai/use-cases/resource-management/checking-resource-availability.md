@@ -128,6 +128,7 @@ A agência, os clientes, os projetos, as Atividades, as pessoas e as horas deste
 
 ## Artigos relacionados
 
+- [Reatribuir Trabalho de uma Pessoa Sobrecarregada](/docs/ai/use-cases/resource-management/reassigning-work-from-an-overloaded-person)
 - [Verificar Horas Contratadas e Capacidade da Equipe](/docs/ai/use-cases/resource-management/comparing-contracted-and-available-hours)
 - [Transformar um Brief de Campanha em uma Atividade](/docs/ai/use-cases/projects-and-jobs/creating-a-job-using-a-briefing-template)
 - [Assistente de IA](/docs/ai/ai-assistant)
