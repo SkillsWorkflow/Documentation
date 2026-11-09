@@ -501,6 +501,82 @@ function NoteCard({ items }) {
   );
 }
 
+/* A notification as it arrives in the Notifications panel, with its alert
+ * level: `action` (red), `attention` (amber) or `info` (blue). Used after a
+ * <Walkthrough.DateSeparator> to show what an alert created in the
+ * conversation sends later. */
+const NOTIFICATION_LEVEL_ICONS = {
+  action: 'fal fa-exclamation-circle',
+  attention: 'fal fa-exclamation-triangle',
+  info: 'fal fa-info-circle',
+};
+
+function NotificationCard({ level = 'info', levelLabel, sender = 'Skilio', title, time, children }) {
+  const levelClass = {
+    action: styles.notificationAction,
+    attention: styles.notificationAttention,
+    info: styles.notificationInfo,
+  }[level];
+  return (
+    <section className={[styles.notificationCard, levelClass].join(' ')} aria-label={`${levelLabel}: ${title}`}>
+      <div className={styles.notificationHead}>
+        <span className={styles.notificationLevel}>
+          <i className={NOTIFICATION_LEVEL_ICONS[level]} aria-hidden="true" /> {levelLabel}
+        </span>
+        {time && <span className={styles.notificationTime}>{time}</span>}
+      </div>
+      <div className={styles.notificationTitle}>
+        <span className={styles.notificationSender}>{sender}</span> · {title}
+      </div>
+      <div className={styles.notificationBody}>{children}</div>
+    </section>
+  );
+}
+
+/* The Notifications panel opened from the bell in the top bar: its header,
+ * the All and Unread filters, and one filter per alert level present in
+ * the <Walkthrough.NotificationCard> children, with its count. */
+const NOTIFICATION_LEVEL_ORDER = ['action', 'attention', 'info'];
+
+function NotificationPanel({ children }) {
+  const counts = {};
+  const labels = {};
+  React.Children.forEach(children, (child) => {
+    if (!child || !child.props || !child.props.level) return;
+    const { level, levelLabel } = child.props;
+    counts[level] = (counts[level] || 0) + 1;
+    labels[level] = levelLabel;
+  });
+  const levelClass = {
+    action: styles.notificationAction,
+    attention: styles.notificationAttention,
+    info: styles.notificationInfo,
+  };
+  return (
+    <section className={styles.notificationPanel} aria-label="Notifications">
+      <div className={styles.notificationPanelHeader}>
+        <span className={styles.notificationPanelBell} aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+            <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+          </svg>
+        </span>
+        <span className={styles.notificationPanelTitle}>Notifications</span>
+      </div>
+      <div className={styles.notificationPanelFilters} aria-hidden="true">
+        <span className={[styles.notificationFilter, styles.notificationFilterActive].join(' ')}>All</span>
+        <span className={styles.notificationFilter}>Unread</span>
+        {NOTIFICATION_LEVEL_ORDER.filter((level) => counts[level]).map((level) => (
+          <span key={level} className={[styles.notificationFilter, styles.notificationFilterLevel, levelClass[level]].join(' ')}>
+            {labels[level]} · {counts[level]}
+          </span>
+        ))}
+      </div>
+      <div className={styles.notificationPanelList}>{children}</div>
+    </section>
+  );
+}
+
 Walkthrough.Message = Message;
 Walkthrough.DateSeparator = DateSeparator;
 Walkthrough.FieldTable = FieldTable;
@@ -513,6 +589,8 @@ Walkthrough.JobList = JobList;
 Walkthrough.Source = Source;
 Walkthrough.ApprovalCard = ApprovalCard;
 Walkthrough.StatusChip = StatusChip;
+Walkthrough.NotificationCard = NotificationCard;
+Walkthrough.NotificationPanel = NotificationPanel;
 Walkthrough.WorkspaceCard = WorkspaceCard;
 Walkthrough.BriefComparison = BriefComparison;
 Walkthrough.CapabilityCard = CapabilityCard;
