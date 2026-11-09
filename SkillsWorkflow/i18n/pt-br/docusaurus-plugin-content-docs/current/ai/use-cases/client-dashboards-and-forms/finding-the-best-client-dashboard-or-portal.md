@@ -9,7 +9,7 @@ sidebar_position: 3
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 :::preview
-Este caso de uso está em preview, a conversa mostra como se espera que o Assistente de IA lide com ele, e o que ele responde ou faz hoje pode ser diferente deste exemplo.
+Recomendar portais de cliente está em preview. Hoje o assistente sugere os workspaces da sua agência, mas ainda não indica os portais de cliente que já existem.
 :::
 
 ## Visão geral
@@ -35,7 +35,7 @@ A agência e o cliente deste exemplo são ilustrativos. O assistente recomenda e
       />
       <Walkthrough.PhrasingCard
         items={[
-          'O que posso mostrar à Northwind Coffee sobre o burn do contrato deles?',
+          'O que posso mostrar à Orvella Tea sobre o burn do contrato deles?',
           'Já existe um portal para este cliente?',
           'Qual dashboard devo usar na reunião mensal com o cliente?',
         ]}
@@ -45,28 +45,22 @@ A agência e o cliente deste exemplo são ilustrativos. O assistente recomenda e
           'Os workspaces abrem dentro do Skills Workflow. Um portal de cliente é uma página própria que você compartilha como um endereço.',
           'Visões com margens, custos ou tarifas são para a agência. Confira o que uma visão mostra antes de compartilhá-la.',
           'Quando nenhum workspace ou portal cobre o que o cliente precisa, peça ao assistente que crie um portal.',
+          'Preview: o assistente ainda não recomenda portais de cliente existentes. Hoje ele sugere workspaces.',
         ]}
       />
     </>
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>A Northwind Coffee quer ver como estão os projetos deles e quanto do contrato já usaram. O que devo compartilhar com eles?</p>
+    <p>A Orvella Tea quer ver como estão os projetos deles e quanto do contrato já usaram. O que devo compartilhar com eles?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>Para o <strong>burn do contrato</strong>, use o <strong>Burn Workspace</strong> do cliente. Ele mostra as horas contratadas, planejadas e registradas por projeto, e o burn mês a mês.</p>
-    <p>Para o <strong>status dos projetos e os pedidos pendentes</strong>, existe um portal de cliente para a Northwind Coffee, <strong>christmas-2026</strong>, com as Atividades por etapa, as Atividades em risco e as Atividades aguardando aprovação do cliente.</p>
     <Walkthrough.WorkspaceCard
       title="Burn Workspace"
       subtitle="Workspace · Cliente"
       description="Horas contratadas, planejadas e registradas por projeto, com o burn mensal de tempo e de receita."
-    />
-    <Walkthrough.WorkspaceCard
-      title="christmas-2026"
-      subtitle="Portal de cliente · northwind-coffee"
-      description="Status, burn do contrato em horas, Atividades em risco e Atividades aguardando o cliente no projeto Christmas 2026."
-      actionLabel="Abrir portal"
     />
   </Walkthrough.Message>
 
@@ -76,7 +70,35 @@ A agência e o cliente deste exemplo são ilustrativos. O assistente recomenda e
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>Não, mantenha-o interno. O <strong>Profitability Workspace</strong> mostra o lucro planejado e a margem por projeto e por cargo, calculados a partir das suas receitas e dos seus custos.</p>
-    <p>O Burn Workspace também mostra a receita em relação ao custo. Na reunião com o cliente, fique nos gráficos de burn de tempo ou compartilhe o portal, que mostra só horas.</p>
+    <p>O Burn Workspace também mostra a receita em relação ao custo. Na reunião com o cliente, fique nos gráficos de burn de tempo.</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="Você">
+    <p>Antes da reunião, quero ver quanto do tempo da equipe está indo para os projetos deles. Onde vejo isso?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Use o <strong>Project Allocation Workspace</strong> do cliente. Ele mostra, por projeto, a capacidade das pessoas, as horas reais e faturáveis registradas e a porcentagem de alocação. É uma tabela, então você pode adicionar mais campos. Este também é só para uso interno.</p>
+    <Walkthrough.WorkspaceCard
+      title="Project Allocation Workspace"
+      subtitle="Workspace · Cliente"
+      description="Por projeto: capacidade das pessoas, horas reais, horas faturáveis e porcentagem de alocação."
+    />
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="Você">
+    <p>E existe algum portal que eu possa enviar a eles, para acompanharem os projetos entre as reuniões?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Sim. Existe um portal de cliente para a Orvella Tea, <strong>christmas-2026</strong>, com as Atividades por etapa, as Atividades em risco e as Atividades aguardando aprovação do cliente. Ele mostra só horas, então você pode compartilhá-lo. Envie o endereço ao cliente.</p>
+    <Walkthrough.WorkspaceCard
+      title="christmas-2026"
+      subtitle="Portal de cliente · orvella-tea"
+      badge="Preview"
+      description="Status, burn do contrato em horas, Atividades em risco e Atividades aguardando o cliente no projeto Christmas 2026."
+      actionLabel="Abrir portal"
+    />
   </Walkthrough.Message>
 </Walkthrough>
 

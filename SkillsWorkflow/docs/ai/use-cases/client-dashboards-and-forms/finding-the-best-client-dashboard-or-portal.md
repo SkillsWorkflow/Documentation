@@ -9,7 +9,7 @@ sidebar_position: 3
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 :::preview
-This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
+Recommending client portals is in preview. Today the assistant suggests your agency’s workspaces, and it does not yet point you to the client portals you already have.
 :::
 
 ## Overview
@@ -35,7 +35,7 @@ The agency and client in this example are illustrative. The assistant recommends
       />
       <Walkthrough.PhrasingCard
         items={[
-          'What can I show Northwind Coffee about their contract burn?',
+          'What can I show Orvella Tea about their contract burn?',
           'Is there a portal for this client already?',
           'Which dashboard should I use in the monthly client meeting?',
         ]}
@@ -45,28 +45,22 @@ The agency and client in this example are illustrative. The assistant recommends
           'Workspaces open inside Skills Workflow. A client portal is a page of its own that you share as an address.',
           'Views with margins, costs or rates are meant for the agency. Check what a view shows before sharing it.',
           'When no workspace or portal covers what the client needs, ask the assistant to create a portal.',
+          'Preview: the assistant does not yet recommend existing client portals. Today it suggests workspaces.',
         ]}
       />
     </>
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>Northwind Coffee wants to see how their projects are going and how much of the contract they have used. What should I share with them?</p>
+    <p>Orvella Tea wants to see how their projects are going and how much of the contract they have used. What should I share with them?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>For <strong>contract burn</strong>, use the <strong>Burn Workspace</strong> on the client. It shows contracted, planned and recorded hours per project, and the burn month by month.</p>
-    <p>For <strong>project status and pending requests</strong>, there is a client portal for Northwind Coffee, <strong>christmas-2026</strong>, with the jobs by stage, the jobs at risk and the jobs waiting for client approval.</p>
     <Walkthrough.WorkspaceCard
       title="Burn Workspace"
       subtitle="Workspace · Client"
       description="Contracted, planned and recorded hours per project, with the monthly time and revenue burn."
-    />
-    <Walkthrough.WorkspaceCard
-      title="christmas-2026"
-      subtitle="Client portal · northwind-coffee"
-      description="Status, contract burn in hours, jobs at risk and jobs waiting on the client for the Christmas 2026 project."
-      actionLabel="Open portal"
     />
   </Walkthrough.Message>
 
@@ -76,7 +70,35 @@ The agency and client in this example are illustrative. The assistant recommends
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>No, keep it internal. The <strong>Profitability Workspace</strong> shows the planned profit and the margin per project and per typology, worked out from your income and your costs.</p>
-    <p>The Burn Workspace also shows revenue against cost. In the client meeting, stay on the time burn charts, or share the portal, which shows hours only.</p>
+    <p>The Burn Workspace also shows revenue against cost. In the client meeting, stay on the time burn charts.</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="You">
+    <p>Before the meeting, I want to see how much of the team’s time is going into their projects. Where do I see that?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Use the <strong>Project Allocation Workspace</strong> on the client. It shows, per project, the users’ capacity, the actual and billable hours recorded and the allocation %. It is a table, so you can add more fields. Keep this one internal too.</p>
+    <Walkthrough.WorkspaceCard
+      title="Project Allocation Workspace"
+      subtitle="Workspace · Client"
+      description="Per project: users’ capacity, actual hours, billable hours and allocation %."
+    />
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="You">
+    <p>Is there a portal I can send them, so they can follow their projects between meetings?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Yes. There is a client portal for Orvella Tea, <strong>christmas-2026</strong>, with the jobs by stage, the jobs at risk and the jobs waiting for client approval. It shows hours only, so you can share it. Send the client its address.</p>
+    <Walkthrough.WorkspaceCard
+      title="christmas-2026"
+      subtitle="Client portal · orvella-tea"
+      badge="Preview"
+      description="Status, contract burn in hours, jobs at risk and jobs waiting on the client for the Christmas 2026 project."
+      actionLabel="Open portal"
+    />
   </Walkthrough.Message>
 </Walkthrough>
 
