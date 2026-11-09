@@ -8,10 +8,6 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
-:::preview
-This use case is in preview, the conversation shows how the AI Assistant is expected to handle it, and what it answers or does today may differ from this example.
-:::
-
 ## Overview
 
 Tell the AI Assistant what you want to share with a client: the status of their projects, the contract burn, the risks or the requests waiting on them. The assistant matches it to the workspaces and client portals your agency has, explains what each one shows and recommends the clearest choice. It also tells you which views are meant for the agency only, such as profitability.
@@ -35,7 +31,7 @@ The agency and client in this example are illustrative. The assistant recommends
       />
       <Walkthrough.PhrasingCard
         items={[
-          'What can I show Northwind Coffee about their contract burn?',
+          'What can I show Orvella Tea about their contract burn?',
           'Is there a portal for this client already?',
           'Which dashboard should I use in the monthly client meeting?',
         ]}
@@ -51,12 +47,12 @@ The agency and client in this example are illustrative. The assistant recommends
   }
 >
   <Walkthrough.Message sender="you" name="You">
-    <p>Northwind Coffee wants to see how their projects are going and how much of the contract they have used. What should I share with them?</p>
+    <p>Orvella Tea wants to see how their projects are going and how much of the contract they have used. What should I share with them?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>For <strong>contract burn</strong>, use the <strong>Burn Workspace</strong> on the client. It shows contracted, planned and recorded hours per project, and the burn month by month.</p>
-    <p>For <strong>project status and pending requests</strong>, there is a client portal for Northwind Coffee, <strong>christmas-2026</strong>, with the jobs by stage, the jobs at risk and the jobs waiting for client approval.</p>
+    <p>For <strong>project status and pending requests</strong>, there is a client portal for Orvella Tea, <strong>christmas-2026</strong>, with the jobs by stage, the jobs at risk and the jobs waiting for client approval.</p>
     <Walkthrough.WorkspaceCard
       title="Burn Workspace"
       subtitle="Workspace · Client"
@@ -64,7 +60,7 @@ The agency and client in this example are illustrative. The assistant recommends
     />
     <Walkthrough.WorkspaceCard
       title="christmas-2026"
-      subtitle="Client portal · northwind-coffee"
+      subtitle="Client portal · orvella-tea"
       description="Status, contract burn in hours, jobs at risk and jobs waiting on the client for the Christmas 2026 project."
       actionLabel="Open portal"
     />

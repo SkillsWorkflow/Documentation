@@ -8,10 +8,6 @@ sidebar_position: 3
 
 import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
-:::preview
-Este caso de uso está en preview, la conversación muestra cómo se espera que el AI Assistant lo gestione, y lo que responde o hace hoy puede diferir de este ejemplo.
-:::
-
 ## Descripción general
 
 Indica al AI Assistant qué quieres compartir con un cliente: el estado de sus proyectos, el burn del contrato, los riesgos o las peticiones que están pendientes de él. El asistente lo relaciona con los workspaces y portales de cliente que tiene tu agencia, explica qué muestra cada uno y recomienda la opción más clara. También te indica qué vistas son solo para uso interno de la agencia, como la rentabilidad.
@@ -35,7 +31,7 @@ La agencia y el cliente de este ejemplo son ilustrativos. El asistente recomiend
       />
       <Walkthrough.PhrasingCard
         items={[
-          '¿Qué puedo mostrar a Northwind Coffee sobre el burn de su contrato?',
+          '¿Qué puedo mostrar a Orvella Tea sobre el burn de su contrato?',
           '¿Ya hay un portal para este cliente?',
           '¿Qué dashboard debo usar en la reunión mensual con el cliente?',
         ]}
@@ -51,12 +47,12 @@ La agencia y el cliente de este ejemplo son ilustrativos. El asistente recomiend
   }
 >
   <Walkthrough.Message sender="you" name="Tú">
-    <p>Northwind Coffee quiere ver cómo van sus proyectos y cuánto del contrato han consumido. ¿Qué debería compartir con ellos?</p>
+    <p>Orvella Tea quiere ver cómo van sus proyectos y cuánto del contrato han consumido. ¿Qué debería compartir con ellos?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>Para el <strong>burn del contrato</strong>, usa el <strong>Burn Workspace</strong> del cliente. Muestra las horas contratadas, planificadas y registradas por proyecto, y el burn mes a mes.</p>
-    <p>Para el <strong>estado de los proyectos y las peticiones pendientes</strong>, hay un portal de cliente para Northwind Coffee, <strong>christmas-2026</strong>, con los jobs por etapa, los jobs en riesgo y los jobs a la espera de la aprobación del cliente.</p>
+    <p>Para el <strong>estado de los proyectos y las peticiones pendientes</strong>, hay un portal de cliente para Orvella Tea, <strong>christmas-2026</strong>, con los jobs por etapa, los jobs en riesgo y los jobs a la espera de la aprobación del cliente.</p>
     <Walkthrough.WorkspaceCard
       title="Burn Workspace"
       subtitle="Workspace · Cliente"
@@ -64,7 +60,7 @@ La agencia y el cliente de este ejemplo son ilustrativos. El asistente recomiend
     />
     <Walkthrough.WorkspaceCard
       title="christmas-2026"
-      subtitle="Portal de cliente · northwind-coffee"
+      subtitle="Portal de cliente · orvella-tea"
       description="Estado, burn del contrato en horas, jobs en riesgo y jobs pendientes del cliente del proyecto Christmas 2026."
       actionLabel="Abrir portal"
     />
