@@ -57,18 +57,10 @@ A agência e o cliente neste exemplo são ilustrativos. O assistente recomenda a
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>Para o <strong>burn do contrato</strong>, use o <strong>Burn Workspace</strong> no cliente. Mostra as horas contratadas, planeadas e registadas por projeto, e o burn mês a mês.</p>
-    <p>Para o <strong>estado do projeto e os pedidos pendentes</strong>, existe um portal de cliente para a Orvella Tea, <strong>christmas-2026</strong>, com os jobs por etapa, os jobs em risco e os jobs à espera de aprovação do cliente.</p>
     <Walkthrough.WorkspaceCard
       title="Burn Workspace"
       subtitle="Workspace · Cliente"
       description="Horas contratadas, planeadas e registadas por projeto, com o burn mensal de tempo e de receita."
-    />
-    <Walkthrough.WorkspaceCard
-      title="christmas-2026"
-      subtitle="Portal de cliente · orvella-tea"
-      badge="Preview"
-      description="Estado, burn do contrato em horas, jobs em risco e jobs à espera do cliente para o projeto Christmas 2026."
-      actionLabel="Abrir portal"
     />
   </Walkthrough.Message>
 
@@ -78,7 +70,7 @@ A agência e o cliente neste exemplo são ilustrativos. O assistente recomenda a
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>Não, mantenha-o interno. O <strong>Profitability Workspace</strong> mostra o lucro planeado e a margem por projeto e por cargo, calculados a partir das suas receitas e dos seus custos.</p>
-    <p>O Burn Workspace também mostra a receita face ao custo. Na reunião com o cliente, fique pelos gráficos de burn de tempo, ou partilhe o portal, que mostra só horas.</p>
+    <p>O Burn Workspace também mostra a receita face ao custo. Na reunião com o cliente, fique pelos gráficos de burn de tempo.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
@@ -91,6 +83,21 @@ A agência e o cliente neste exemplo são ilustrativos. O assistente recomenda a
       title="Project Allocation Workspace"
       subtitle="Workspace · Cliente"
       description="Por projeto: capacidade das pessoas, horas reais, horas faturáveis e percentagem de alocação."
+    />
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="Você">
+    <p>E há algum portal que lhes possa enviar, para acompanharem os projetos entre reuniões?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Sim. Existe um portal de cliente para a Orvella Tea, <strong>christmas-2026</strong>, com os jobs por etapa, os jobs em risco e os jobs à espera de aprovação do cliente. Mostra só horas, por isso pode partilhá-lo. Envie o endereço ao cliente.</p>
+    <Walkthrough.WorkspaceCard
+      title="christmas-2026"
+      subtitle="Portal de cliente · orvella-tea"
+      badge="Preview"
+      description="Estado, burn do contrato em horas, jobs em risco e jobs à espera do cliente para o projeto Christmas 2026."
+      actionLabel="Abrir portal"
     />
   </Walkthrough.Message>
 </Walkthrough>

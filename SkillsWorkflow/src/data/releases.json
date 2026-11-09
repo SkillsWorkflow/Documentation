@@ -1,13 +1,37 @@
 {
-  "generatedAt": "2026-11-02T16:28:36.727Z",
+  "generatedAt": "2026-11-09T10:12:41.881Z",
   "versions": [
     {
       "version": "26.32.0",
       "entries": [
         {
+          "title": "Bring your team's absence history with you",
+          "description": "<p>Starting a leaves integration or moving from another system? Import the absences your people already recorded, so nobody has to enter them again. Every row is checked first: what doesn&#39;t match is flagged with a suggested fix, and only the rows that are ready are imported.</p>",
+          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/93df2bba-7d8e-457c-8b4c-d0385f2db2f0?sv=2019-07-07&sr=b&sig=L4YUprnvK%2FhuSWPJz2A%2BGKcCEd1zsBwJ3QfRgIbcL9E%3D&st=2026-11-02T18%3A36%3A52Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
+          "category": "change"
+        },
+        {
           "title": "Keep resource sales rates consistent in estimates",
           "description": "<p>Resource sales rates are easier to keep consistent across estimates. A sales rate card column can now be selected at client level and in the Companies tab, and the chosen column is used to fill the resource sales rate when an estimate is created. This brings sales-rate setup in line with purchase rates.</p>",
           "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/ff6e3c41-af21-4024-a7c8-926eab156f0e?sv=2019-07-07&sr=b&sig=YEuJvZXjb1FcC4fXN5euutKLoc8oNd5F67z5Y8RDytA%3D&st=2026-11-02T16%3A11%3A22Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
+          "category": "improvement"
+        },
+        {
+          "title": "Build the screen your team needs, inside Skills Workflow",
+          "description": "<p>Describe the view your team is missing and your AI tool builds it inside Skills Workflow: a home page with live counters, a tab on every Job or an entry in the menu, shown only to the roles you choose. Ask us to turn screens on for your account.</p>",
+          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/f0bafa45-17a2-4f05-9c83-0182256887c9?sv=2019-07-07&sr=b&sig=PhLS%2FMOu%2BHSzvcolZt%2Bm5M2R6ijVApvQnaySLc8hklM%3D&st=2026-11-02T19%3A53%3A34Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
+          "category": "improvement"
+        },
+        {
+          "title": "Give every client a live status page",
+          "description": "<p>Replace status emails with one link. Ask your AI tool for a page that shows a client their progress, what is waiting on their approval and every deliverable. It reads Skills Workflow each time it opens, and the client sees only what their own user allows.</p>",
+          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/52ce5083-5d4b-4dc0-82f9-7c25573cb24d?sv=2019-07-07&sr=b&sig=kuKenbVm%2FiLSvd8TxVBaI3yg0FevP4QhrSR2ZwvldV4%3D&st=2026-11-03T14%3A19%3A38Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
+          "category": "improvement"
+        },
+        {
+          "title": "Ask the AI Assistant who is free and put them on the Job",
+          "description": "<p>Skip the planning grid. Ask the AI Assistant who is free next week and it checks capacity, bookings and leave to show who is available and for how many hours. Choose someone and it adds them to the Job&#39;s team as soon as you approve.</p>",
+          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/4cd38ff1-28c2-4784-aa0f-658280b60006?sv=2019-07-07&sr=b&sig=7Wh81POIpgBD8G9sxwcqXwrhRDy6IjfmfDarXD%2FABAM%3D&st=2026-11-02T18%3A18%3A12Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
           "category": "improvement"
         }
       ]
@@ -28,12 +52,6 @@
           "category": "improvement"
         },
         {
-          "title": "Show your brand in the browser tab",
-          "description": "<p>Add your own icon to your tenant branding and every browser tab, including the login page, shows it instead of the Skills Workflow icon. The icon follows the same hostname rules as the rest of your branding, and the default icon stays when none is set.</p>",
-          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/7f2a8de9-de32-4e98-b968-4f96c474d0b9?sv=2019-07-07&sr=b&sig=MXa7EU%2F9Wi6QTxDlbasRbDRyIkpmhKzrlJwhZ%2BTiMqs%3D&st=2026-10-29T08%3A54%3A50Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
-          "category": "fix"
-        },
-        {
           "title": "Pick up where you left off in grouped lists",
           "description": "<p>Come back to a grouped workspace grid and find it just as you left it. Open and closed groups and your scroll position are now kept when you leave the workspace or reload the page, for each custom view, so you no longer have to reopen groups and scroll back to your place.</p>",
           "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/16bfe22f-d8b0-4e4e-ab31-9f9172e27bf6?sv=2019-07-07&sr=b&sig=DLTKFMhO6%2BmReg3L6etrGDE34kinl9JgrK09h0FTmgY%3D&st=2026-10-29T08%3A48%3A58Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
@@ -43,6 +61,12 @@
           "title": "Filter resources by typology group",
           "description": "<p>Focus your planning on the roles you need. Filter resources in the Resources workspace now includes a Typology Group section, so you can pick a group and see only its resources and their planning. Combine it with the other filters to narrow the results further.</p>",
           "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/7bfc59de-c16b-470a-ae0b-56310b973a24?sv=2019-07-07&sr=b&sig=PCKr7czM8lOmKpS2VfNTf05RAdng4fvjHRusBLy0ifs%3D&st=2026-10-29T08%3A35%3A22Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
+          "category": "improvement"
+        },
+        {
+          "title": "Show your brand in the browser tab",
+          "description": "<p>Add your own icon to your tenant branding and every browser tab, including the login page, shows it instead of the Skills Workflow icon. The icon follows the same hostname rules as the rest of your branding, and the default icon stays when none is set.</p>",
+          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/7f2a8de9-de32-4e98-b968-4f96c474d0b9?sv=2019-07-07&sr=b&sig=MXa7EU%2F9Wi6QTxDlbasRbDRyIkpmhKzrlJwhZ%2BTiMqs%3D&st=2026-10-29T08%3A54%3A50Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
           "category": "improvement"
         }
       ]

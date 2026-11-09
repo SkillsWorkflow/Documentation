@@ -57,18 +57,10 @@ The agency and client in this example are illustrative. The assistant recommends
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>For <strong>contract burn</strong>, use the <strong>Burn Workspace</strong> on the client. It shows contracted, planned and recorded hours per project, and the burn month by month.</p>
-    <p>For <strong>project status and pending requests</strong>, there is a client portal for Orvella Tea, <strong>christmas-2026</strong>, with the jobs by stage, the jobs at risk and the jobs waiting for client approval.</p>
     <Walkthrough.WorkspaceCard
       title="Burn Workspace"
       subtitle="Workspace · Client"
       description="Contracted, planned and recorded hours per project, with the monthly time and revenue burn."
-    />
-    <Walkthrough.WorkspaceCard
-      title="christmas-2026"
-      subtitle="Client portal · orvella-tea"
-      badge="Preview"
-      description="Status, contract burn in hours, jobs at risk and jobs waiting on the client for the Christmas 2026 project."
-      actionLabel="Open portal"
     />
   </Walkthrough.Message>
 
@@ -78,7 +70,7 @@ The agency and client in this example are illustrative. The assistant recommends
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <p>No, keep it internal. The <strong>Profitability Workspace</strong> shows the planned profit and the margin per project and per typology, worked out from your income and your costs.</p>
-    <p>The Burn Workspace also shows revenue against cost. In the client meeting, stay on the time burn charts, or share the portal, which shows hours only.</p>
+    <p>The Burn Workspace also shows revenue against cost. In the client meeting, stay on the time burn charts.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="You">
@@ -91,6 +83,21 @@ The agency and client in this example are illustrative. The assistant recommends
       title="Project Allocation Workspace"
       subtitle="Workspace · Client"
       description="Per project: users’ capacity, actual hours, billable hours and allocation %."
+    />
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="You">
+    <p>Is there a portal I can send them, so they can follow their projects between meetings?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Yes. There is a client portal for Orvella Tea, <strong>christmas-2026</strong>, with the jobs by stage, the jobs at risk and the jobs waiting for client approval. It shows hours only, so you can share it. Send the client its address.</p>
+    <Walkthrough.WorkspaceCard
+      title="christmas-2026"
+      subtitle="Client portal · orvella-tea"
+      badge="Preview"
+      description="Status, contract burn in hours, jobs at risk and jobs waiting on the client for the Christmas 2026 project."
+      actionLabel="Open portal"
     />
   </Walkthrough.Message>
 </Walkthrough>
