@@ -2,7 +2,7 @@
 id: ai-can-make-mistakes
 title: AI Can Make Mistakes
 description: "Why the AI Assistant can give wrong or incomplete answers, how to check what it tells you, and how to report an answer that is wrong."
-sidebar_label: AI Can Make Mistakes
+sidebar_label: Check What AI Tells You
 sidebar_position: 9
 ---
 

@@ -2,7 +2,7 @@
 id: ai-connector-printable-reports
 title: Print or Send a Report as It Stands Today
 description: "A report laid out for A4 that your AI tool publishes: open it, print it or save it as PDF, and send a dated copy of the figures to someone outside Skills Workflow. In preview."
-sidebar_label: A Report to Print or Send
+sidebar_label: Ready to Print or Send
 sidebar_position: 7
 ---
 

@@ -2,7 +2,7 @@
 id: ai-actions
 title: Ações de IA
 description: "As Ações de IA colocam assistência de texto na barra de ferramentas de todos os editores de texto enriquecido. Este artigo cobre como as usar e como configurar a lista que a sua agência vê."
-sidebar_label: Ações de IA
+sidebar_label: Escrever com IA no Editor de Texto
 sidebar_position: 3
 ---
 

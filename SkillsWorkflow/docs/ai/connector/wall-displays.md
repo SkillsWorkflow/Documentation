@@ -2,7 +2,7 @@
 id: ai-connector-wall-displays
 title: Put Your Agency's Numbers on a Screen
 description: "A board your AI tool publishes for a TV in the studio: what is due in the next two weeks, what is waiting on the client and what is late, in large type and refreshing on its own. In preview."
-sidebar_label: Numbers on a Studio Screen
+sidebar_label: "Management Dashboard: Numbers on a Studio Screen"
 sidebar_position: 9
 ---
 

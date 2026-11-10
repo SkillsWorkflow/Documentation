@@ -2,7 +2,7 @@
 id: ai-connector-wall-displays
 title: Pôr os Números da Sua Agência num Ecrã
 description: "Um quadro que a sua ferramenta de IA publica para uma TV no estúdio: o que tem entrega nas próximas duas semanas, o que está à espera do cliente e o que está atrasado, em letra grande e que se atualiza sozinho. Em preview."
-sidebar_label: Números num Ecrã do Estúdio
+sidebar_label: "Dashboard de Gestão: Números num Ecrã do Estúdio"
 sidebar_position: 9
 ---
 

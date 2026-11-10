@@ -2,7 +2,7 @@
 id: ai-connector-reports
 title: Construir un Informe a Partir de tus Datos
 description: "Pide a tu herramienta de IA un informe con tablas y gráficos construido sobre tus queries de extracción de datos de Skills Workflow, publicado en una dirección que calcula las cifras cuando se abre."
-sidebar_label: Un Informe a Partir de tus Datos
+sidebar_label: Creado a Partir de Tus Datos
 sidebar_position: 5
 ---
 

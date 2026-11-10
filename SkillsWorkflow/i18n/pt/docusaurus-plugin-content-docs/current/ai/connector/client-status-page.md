@@ -2,7 +2,7 @@
 id: ai-connector-client-status-page
 title: Partilhar uma Página de Estado em Tempo Real com um Cliente
 description: "Peça à sua ferramenta de IA uma página que mostre a um cliente o estado da sua campanha, os seus deliverables e o que está à espera dele, publicada num só endereço que mostra sempre os dados de hoje."
-sidebar_label: Uma Página de Estado para um Cliente
+sidebar_label: "Portal do Cliente: Estado da Campanha em Tempo Real"
 sidebar_position: 3
 ---
 

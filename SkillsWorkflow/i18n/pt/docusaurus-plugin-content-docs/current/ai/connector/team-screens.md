@@ -2,7 +2,7 @@
 id: ai-connector-team-screens
 title: Acrescentar um Ecrã ao Skills Workflow
 description: "Peça ao Claude Code, ao Codex ou ao GitHub Copilot um ecrã próprio dentro do Skills Workflow: no menu, como separador em cada job ou projeto, como página inicial da sua equipa ou como mosaico em Maintenance, visível apenas para os perfis que escolher."
-sidebar_label: Um Ecrã Dentro do Skills Workflow
+sidebar_label: "Ferramenta Especializada: Um Ecrã Dentro do Skills Workflow"
 sidebar_position: 6
 ---
 

@@ -2,7 +2,7 @@
 id: ai-connector-reports
 title: Criar um Relatório a Partir dos Seus Dados
 description: "Peça à sua ferramenta de IA um relatório com tabelas e gráficos baseado nas consultas de extração de dados do Skills Workflow, publicado em um endereço que calcula os números quando é aberto."
-sidebar_label: Um Relatório a Partir dos Seus Dados
+sidebar_label: Criado a Partir dos Seus Dados
 sidebar_position: 5
 ---
 

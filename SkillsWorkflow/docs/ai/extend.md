@@ -2,7 +2,7 @@
 id: ai-extend
 title: Add Your Own Skills, Agents and Tools
 description: "Extend the AI with knowledge of your own way of working: skills that teach an agent your rules, agents built for your processes, and tools that reach your own systems and reports."
-sidebar_label: Add Your Own
+sidebar_label: "Teach Skilio Your Agency's Way of Working"
 sidebar_position: 6
 ---
 

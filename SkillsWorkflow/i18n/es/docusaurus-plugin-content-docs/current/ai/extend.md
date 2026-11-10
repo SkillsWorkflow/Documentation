@@ -2,7 +2,7 @@
 id: ai-extend
 title: Añadir tus Propias Skills, Agents y Tools
 description: "Amplía la IA con el conocimiento de tu propia forma de trabajar: skills que enseñan a un agent tus reglas, agents creados para tus procesos, y tools que alcanzan tus propios sistemas e informes."
-sidebar_label: Añadir las Tuyas
+sidebar_label: Enseñar a Skilio la Forma de Trabajar de Tu Agencia
 sidebar_position: 6
 ---
 

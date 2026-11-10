@@ -2,7 +2,7 @@
 id: ai-connector-forms
 title: Recoger Solicitudes con un Formulario
 description: "Un formulario que tu herramienta de IA publica para el equipo de un cliente: cada solicitud se convierte en un job en el proyecto correcto, en su primera etapa, con los detalles en el feed del job. En versión preliminar."
-sidebar_label: Un Formulario que Crea Trabajo
+sidebar_label: "Formulario de Solicitudes: Solicitudes que se Convierten en Jobs"
 sidebar_position: 8
 ---
 

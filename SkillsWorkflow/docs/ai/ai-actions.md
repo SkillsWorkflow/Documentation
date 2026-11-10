@@ -2,7 +2,7 @@
 id: ai-actions
 title: AI Actions
 description: "AI Actions put text assistance in the toolbar of every rich text editor. This page covers using them, and configuring the list your agency sees."
-sidebar_label: AI Actions
+sidebar_label: Write With AI in the Text Editor
 sidebar_position: 4
 ---
 

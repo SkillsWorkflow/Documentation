@@ -2,7 +2,7 @@
 id: ai-connector-client-hub
 title: One Address for Everything a Client Opens
 description: "Ask your AI tool for a client's home page: one address that links to every status page and report you publish for them, with a live figure beside each link."
-sidebar_label: One Address per Client
+sidebar_label: "Client Portal: One Address per Client"
 sidebar_position: 4
 ---
 

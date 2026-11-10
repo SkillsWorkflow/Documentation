@@ -2,7 +2,7 @@
 id: ai-connector-printable-reports
 title: Imprimir o Enviar un Informe tal como Está Hoy
 description: "Un informe maquetado para A4 que publica tu herramienta de IA: ábrelo, imprímelo o guárdalo como PDF, y envía una copia fechada de las cifras a alguien fuera de Skills Workflow. En versión preliminar."
-sidebar_label: Un Informe para Imprimir o Enviar
+sidebar_label: Listo para Imprimir o Enviar
 sidebar_position: 7
 ---
 

@@ -2,7 +2,7 @@
 id: ai-connector-team-screens
 title: Add a Screen to Skills Workflow
 description: "Ask Claude Code, Codex or GitHub Copilot for a screen of your own inside Skills Workflow: in the menu, as a tab on every job or project, as your team's home page or as a tile in Maintenance, shown only to the roles you choose."
-sidebar_label: A Screen Inside Skills Workflow
+sidebar_label: "Specialized Tool: A Screen Inside Skills Workflow"
 sidebar_position: 6
 ---
 

@@ -2,7 +2,7 @@
 id: ai-connector-reports
 title: Build a Report From Your Data
 description: "Ask your AI tool for a report with tables and charts built on your Skills Workflow data extraction queries, published at an address that calculates the figures when it opens."
-sidebar_label: A Report From Your Data
+sidebar_label: Built From Your Live Data
 sidebar_position: 5
 ---
 

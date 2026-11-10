@@ -2,7 +2,7 @@
 id: ai-connector-team-screens
 title: Adicionar uma Tela ao Skills Workflow
 description: "Peça ao Claude Code, ao Codex ou ao GitHub Copilot uma tela própria dentro do Skills Workflow: no menu, como uma aba em cada Atividade ou projeto, como a página inicial da sua equipe ou como um bloco em Maintenance, mostrada apenas aos perfis que você escolher."
-sidebar_label: Uma Tela Dentro do Skills Workflow
+sidebar_label: "Ferramenta Especializada: Uma Tela Dentro do Skills Workflow"
 sidebar_position: 6
 ---
 

@@ -2,7 +2,7 @@
 id: ai-memories
 title: AI Memories
 description: "What the AI Assistant remembers about you, the screen where you review and change it, the two saving modes, and the limits on the store."
-sidebar_label: AI Memories
+sidebar_label: Memories
 sidebar_position: 3
 ---
 

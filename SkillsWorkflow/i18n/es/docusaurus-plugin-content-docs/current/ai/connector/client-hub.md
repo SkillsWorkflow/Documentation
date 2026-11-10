@@ -2,7 +2,7 @@
 id: ai-connector-client-hub
 title: Una Dirección para Todo lo que Abre un Cliente
 description: "Pide a tu herramienta de IA la página de inicio de un cliente: una dirección que enlaza a cada página de estado e informe que publicas para él, con una cifra en tiempo real junto a cada enlace."
-sidebar_label: Una Dirección por Cliente
+sidebar_label: "Portal del Cliente: Una Dirección por Cliente"
 sidebar_position: 4
 ---
 

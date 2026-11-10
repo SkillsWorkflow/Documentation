@@ -2,7 +2,7 @@
 id: ai-connector-printable-reports
 title: Imprimir ou Enviar um Relatório Como Está Hoje
 description: "Um relatório diagramado para A4 que a sua ferramenta de IA publica: abra-o, imprima-o ou salve-o como PDF e envie uma cópia datada dos números a alguém de fora do Skills Workflow. Em preview."
-sidebar_label: Um Relatório para Imprimir ou Enviar
+sidebar_label: Pronto para Imprimir ou Enviar
 sidebar_position: 7
 ---
 
