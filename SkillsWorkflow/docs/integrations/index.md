@@ -26,6 +26,7 @@ This page lists every available integration, what it covers and which way the da
 | --- | --- | --- |
 | [AdnNet](adnet) | Clients and suppliers in; jobs, bills and supplier invoices out | Both |
 | [AdSolutions](./adsolutions) | Clients, products, suppliers and services in from AdIntegra; jobs and projects out as they leave draft | Both |
+| [Banco Central do Brasil](/docs/integrations/banco-central-brazil) | Daily exchange rates (buy and sell, against BRL) for every registered currency, from the BCB's closing bulletin | In |
 | [Granatum](./granatum) | Clients, suppliers and products in; approved bills and purchase orders posted out as financial entries | Both |
 | [Jasmin](./jasmin) | Clients, suppliers and reference data in from Primavera's Jasmin ERP; bills, purchase orders and supplier invoices out (client credit notes built but currently disabled) | Both |
 | [Kamul](./kamul) | Brands, clients, products and suppliers in; bills and purchase orders out, with status polled back | Both |
