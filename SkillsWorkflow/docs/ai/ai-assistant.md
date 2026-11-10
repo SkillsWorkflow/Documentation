@@ -2,7 +2,7 @@
 id: ai-assistant
 title: AI Assistant
 description: "The AI Assistant panel: how to open it, pick an agent, give it context, attach files, approve what it does, and manage chat history and memories."
-sidebar_label: AI Assistant
+sidebar_label: Skilio, Your Assistant
 sidebar_position: 2
 ---
 

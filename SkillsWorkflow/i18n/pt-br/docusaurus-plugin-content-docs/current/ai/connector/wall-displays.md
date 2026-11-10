@@ -2,7 +2,7 @@
 id: ai-connector-wall-displays
 title: Colocar os Números da Sua Agência em uma Tela
 description: "Um painel que a sua ferramenta de IA publica para uma TV no estúdio: o que vence nas próximas duas semanas, o que aguarda o cliente e o que está atrasado, em letras grandes e atualizando sozinho. Em preview."
-sidebar_label: Números em uma Tela no Estúdio
+sidebar_label: "Dashboard de Gestão: Números em uma Tela do Estúdio"
 sidebar_position: 9
 ---
 

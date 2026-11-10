@@ -2,7 +2,7 @@
 id: ai-assistant
 title: Asistente de IA
 description: "El panel del Asistente de IA: cómo abrirlo, elegir un agente, darle contexto, adjuntar archivos, aprobar lo que hace y gestionar el historial de conversaciones y las memorias."
-sidebar_label: Asistente de IA
+sidebar_label: Skilio, Tu Asistente
 sidebar_position: 2
 ---
 

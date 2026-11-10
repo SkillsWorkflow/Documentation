@@ -2,7 +2,7 @@
 id: ai-memories
 title: Memorias de IA
 description: "Lo que el Asistente de IA recuerda sobre ti, la pantalla donde revisas y cambias esas memorias, los dos modos de guardado y los límites del almacén."
-sidebar_label: Memorias de IA
+sidebar_label: Memorias
 sidebar_position: 3
 ---
 

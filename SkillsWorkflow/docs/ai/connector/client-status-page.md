@@ -2,7 +2,7 @@
 id: ai-connector-client-status-page
 title: Share a Live Status Page With a Client
 description: "Ask your AI tool for a page that shows a client the state of their campaign, its deliverables and what is waiting on them, published at one address that always shows today's data."
-sidebar_label: A Live Status Page for a Client
+sidebar_label: "Client Portal: Live Campaign Status"
 sidebar_position: 3
 ---
 

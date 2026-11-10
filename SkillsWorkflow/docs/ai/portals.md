@@ -2,7 +2,7 @@
 id: ai-portals
 title: Client Portals
 description: "A client portal is a page of its own, generated with AI, served from Skills Workflow behind your users' session and reading live platform data through their own permissions."
-sidebar_label: Client Portals
+sidebar_label: How It Works
 sidebar_position: 7
 ---
 

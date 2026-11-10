@@ -2,7 +2,7 @@
 id: ai-connector-forms
 title: Receber Pedidos com um Formulário
 description: "Um formulário que a sua ferramenta de IA publica para a equipe de um cliente: cada pedido se torna uma Atividade no projeto certo, na primeira etapa, com os detalhes no Feed da Atividade. Em preview."
-sidebar_label: Um Formulário que Cria Trabalho
+sidebar_label: "Formulário de Pedidos: Pedidos que Viram Atividades"
 sidebar_position: 8
 ---
 

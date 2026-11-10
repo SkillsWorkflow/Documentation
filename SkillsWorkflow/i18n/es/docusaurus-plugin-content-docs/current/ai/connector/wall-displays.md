@@ -2,7 +2,7 @@
 id: ai-connector-wall-displays
 title: Poner las Cifras de tu Agencia en una Pantalla
 description: "Un tablero que tu herramienta de IA publica para una TV del estudio: lo que vence en las próximas dos semanas, lo que está pendiente del cliente y lo que va con retraso, en letra grande y actualizándose solo. En versión preliminar."
-sidebar_label: Cifras en una Pantalla del Estudio
+sidebar_label: "Dashboard de Gestión: Cifras en una Pantalla del Estudio"
 sidebar_position: 9
 ---
 

@@ -2,7 +2,7 @@
 id: ai-connector-client-hub
 title: Um Único Endereço para Tudo o que um Cliente Abre
 description: "Peça à sua ferramenta de IA a página inicial de um cliente: um único endereço com links para todas as páginas de status e relatórios que você publica para ele, com um número em tempo real ao lado de cada link."
-sidebar_label: Um Endereço por Cliente
+sidebar_label: "Portal do Cliente: Um Endereço por Cliente"
 sidebar_position: 4
 ---
 

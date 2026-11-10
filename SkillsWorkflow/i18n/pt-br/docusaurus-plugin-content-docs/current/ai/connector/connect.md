@@ -2,7 +2,7 @@
 id: ai-connector-setup
 title: Conectar Claude, Codex, GitHub Copilot ou Microsoft 365 Copilot ao Skills Workflow
 description: "Adicione o conector do Skills Workflow ao Claude, ao Claude Code, ao ChatGPT, ao Codex ou ao GitHub Copilot com o endereço do seu tenant e os headers x-app-id, x-app-key e x-tenant-id que a equipe do Skills Workflow envia."
-sidebar_label: Conectar Sua Ferramenta de IA
+sidebar_label: Conectar Sua IA
 sidebar_position: 2
 ---
 

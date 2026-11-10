@@ -2,7 +2,7 @@
 id: ai-connector-forms
 title: Recolher Pedidos com um Formulário
 description: "Um formulário que a sua ferramenta de IA publica para a equipa de um cliente: cada pedido torna-se um job no projeto certo, na sua primeira etapa, com os detalhes no feed do job. Em preview."
-sidebar_label: Um Formulário que Cria Trabalho
+sidebar_label: "Formulário de Pedidos: Pedidos que Passam a Entregas"
 sidebar_position: 8
 ---
 

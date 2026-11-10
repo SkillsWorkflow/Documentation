@@ -2,7 +2,7 @@
 id: ai-can-make-mistakes
 title: A IA Pode Cometer Erros
 description: "Porque é que o Assistente de IA pode dar respostas erradas ou incompletas, como confirmar o que lhe diz e como reportar uma resposta errada."
-sidebar_label: A IA Pode Cometer Erros
+sidebar_label: Confirmar o Que a IA Responde
 sidebar_position: 9
 ---
 

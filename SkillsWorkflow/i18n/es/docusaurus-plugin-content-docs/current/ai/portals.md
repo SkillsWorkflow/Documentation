@@ -2,7 +2,7 @@
 id: ai-portals
 title: Portales de Cliente
 description: "Un portal de cliente es una página propia, generada con IA, servida desde Skills Workflow tras la sesión de tus usuarios y que lee datos de la plataforma en tiempo real a través de sus propios permisos."
-sidebar_label: Portales de Cliente
+sidebar_label: Cómo Funciona
 sidebar_position: 7
 ---
 

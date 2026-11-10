@@ -294,5 +294,37 @@
   "sidebar.docs.category.administration-notifications": {
     "message": "Notificaciones",
     "description": "The label for category 'Notifications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What You Can Ask Skilio": {
+    "message": "Lo Que Puedes Pedir a Skilio",
+    "description": "The label for category 'What You Can Ask Skilio' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.How Skilio Works": {
+    "message": "Cómo Funciona Skilio",
+    "description": "The label for category 'How Skilio Works' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Build Portals, Dashboards and Tools With Your AI": {
+    "message": "Crear Portales, Dashboards y Herramientas con Tu IA",
+    "description": "The label for category 'Build Portals, Dashboards and Tools With Your AI' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.For Your Clients": {
+    "message": "Para Tus Clientes",
+    "description": "The label for category 'For Your Clients' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.For Your Agency": {
+    "message": "Para Tu Agencia",
+    "description": "The label for category 'For Your Agency' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Reports": {
+    "message": "Informes",
+    "description": "The label for category 'Reports' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What You Can Ask Skilio.link.generated-index.title": {
+    "message": "Lo Que Puedes Pedir a Skilio",
+    "description": "The generated-index page title for category 'What You Can Ask Skilio' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What You Can Ask Skilio.link.generated-index.description": {
+    "message": "Casos de uso reales para el Asistente de IA, organizados por tema — qué hace cada uno, el prompt a enviar, y el resultado a esperar.",
+    "description": "The generated-index page description for category 'What You Can Ask Skilio' in sidebar 'docs'"
   }
 }

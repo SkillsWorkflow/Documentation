@@ -2,7 +2,7 @@
 id: ai-connector-forms
 title: Collect Requests With a Form
 description: "A form your AI tool publishes for a client's team: each request becomes a job in the right project, in its first stage, with the details in the job's feed. In preview."
-sidebar_label: A Form That Creates Work
+sidebar_label: "Ingestion Form: Requests That Become Jobs"
 sidebar_position: 8
 ---
 

@@ -2,7 +2,7 @@
 id: ai-memories
 title: Memórias de IA
 description: "O que o Assistente de IA memoriza sobre si, o ecrã onde revê e altera essas memórias, os dois modos de gravação e os limites do arquivo."
-sidebar_label: Memórias de IA
+sidebar_label: Memórias
 sidebar_position: 3
 ---
 

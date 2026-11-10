@@ -2,7 +2,7 @@
 id: ai-connector-team-screens
 title: Añadir una Pantalla a Skills Workflow
 description: "Pide a Claude Code, Codex o GitHub Copilot una pantalla propia dentro de Skills Workflow: en el menú, como pestaña en cada job o proyecto, como página de inicio de tu equipo o como mosaico en Maintenance, visible solo para los roles que elijas."
-sidebar_label: Una Pantalla Dentro de Skills Workflow
+sidebar_label: "Herramienta Especializada: Una Pantalla Dentro de Skills Workflow"
 sidebar_position: 6
 ---
 
