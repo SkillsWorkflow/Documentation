@@ -1,29 +1,6 @@
 {
-  "generatedAt": "2026-11-10T13:47:25.056Z",
+  "generatedAt": "2026-11-09T10:12:41.881Z",
   "versions": [
-    {
-      "version": "26.33.0",
-      "entries": [
-        {
-          "title": "Never miss a change to the brief",
-          "description": "<p>See exactly what changed in a Job&#39;s Description. Browse earlier versions and see what was added, removed or reformatted, highlighted at a glance, so the whole team works from the latest brief. The editor also gains code blocks, quotes and emoji.</p><p>It comes with the Modern Layout, a lighter, cleaner Skills Workflow where search shows results as you type and hovering over a person shows their status, contacts and upcoming leave. The Modern Layout becomes the standard for everyone in the next version. Want it now? Ask us to turn it on for your agency.</p>",
-          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/79e87b05-650c-4049-988b-b739b0614c9a?sv=2019-07-07&sr=b&sig=AAAcZeYKZgVtj6Ju8hF1AMpsqiiwMDEg9RfVNU2oY1Q%3D&st=2026-11-10T13%3A37%3A31Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
-          "category": "improvement"
-        },
-        {
-          "title": "Renew client Fees for next year without rebuilding them",
-          "description": "<p>Stop rebuilding every client Fee by hand at year end. Ask the AI Assistant to copy a client&#39;s Fee to next year and it creates the new Fee with its estimate, lines included, ready for you to review and approve. Then ask it to activate the new estimate and your team can start planning the year straight away.</p>",
-          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/88e1ae7a-f1db-489a-8d74-03169d07472d?sv=2019-07-07&sr=b&sig=y2Bk6ARsKvy15VV2SI4shPeJv4roWEnz%2BdHxW2PA28I%3D&st=2026-11-09T13%3A51%3A18Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
-          "category": "improvement"
-        },
-        {
-          "title": "Put your team's next two weeks on one page",
-          "description": "<p>Replace the Monday spreadsheet with one link. Ask your AI tool for a portal that shows each department&#39;s load for the next two weeks, the jobs that are late or due soon, who is away and which freelance contracts are ending. The page reads Skills Workflow every time it opens, so the whole team works from the same picture.</p>",
-          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/f1b7d414-cbdb-4e23-8272-21506650cfbd?sv=2019-07-07&sr=b&sig=Ga1Ku3HnGkCH5YVon7BMzz8Cnh1F7UgRZQ5I2b9%2B6y4%3D&st=2026-11-09T17%3A39%3A15Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
-          "category": "improvement"
-        }
-      ]
-    },
     {
       "version": "26.32.0",
       "entries": [
@@ -81,15 +58,15 @@
           "category": "fix"
         },
         {
-          "title": "Show your brand in the browser tab",
-          "description": "<p>Add your own icon to your tenant branding and every browser tab, including the login page, shows it instead of the Skills Workflow icon. The icon follows the same hostname rules as the rest of your branding, and the default icon stays when none is set.</p>",
-          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/7f2a8de9-de32-4e98-b968-4f96c474d0b9?sv=2019-07-07&sr=b&sig=MXa7EU%2F9Wi6QTxDlbasRbDRyIkpmhKzrlJwhZ%2BTiMqs%3D&st=2026-10-29T08%3A54%3A50Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
-          "category": "improvement"
-        },
-        {
           "title": "Filter resources by typology group",
           "description": "<p>Focus your planning on the roles you need. Filter resources in the Resources workspace now includes a Typology Group section, so you can pick a group and see only its resources and their planning. Combine it with the other filters to narrow the results further.</p>",
           "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/7bfc59de-c16b-470a-ae0b-56310b973a24?sv=2019-07-07&sr=b&sig=PCKr7czM8lOmKpS2VfNTf05RAdng4fvjHRusBLy0ifs%3D&st=2026-10-29T08%3A35%3A22Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
+          "category": "improvement"
+        },
+        {
+          "title": "Show your brand in the browser tab",
+          "description": "<p>Add your own icon to your tenant branding and every browser tab, including the login page, shows it instead of the Skills Workflow icon. The icon follows the same hostname rules as the rest of your branding, and the default icon stays when none is set.</p>",
+          "image": "https://fsskillstestwe.blob.core.windows.net/2c3be12b-9df9-4ab7-9d87-1399ead42cda/7f2a8de9-de32-4e98-b968-4f96c474d0b9?sv=2019-07-07&sr=b&sig=MXa7EU%2F9Wi6QTxDlbasRbDRyIkpmhKzrlJwhZ%2BTiMqs%3D&st=2026-10-29T08%3A54%3A50Z&se=9999-12-31T23%3A59%3A59Z&sp=r",
           "category": "improvement"
         }
       ]
