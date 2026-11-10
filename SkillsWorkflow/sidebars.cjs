@@ -29,6 +29,7 @@ module.exports = {
                     items: [
                         'integrations/adnet',
                         'integrations/adsolutions',
+                        'integrations/banco-central-brazil',
                         'integrations/granatum',
                         'integrations/jasmin',
                         'integrations/kamul',
