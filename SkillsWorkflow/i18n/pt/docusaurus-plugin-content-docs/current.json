@@ -311,13 +311,13 @@
     "message": "Para os Seus Clientes",
     "description": "The label for category 'For Your Clients' in sidebar 'docs'"
   },
-  "sidebar.docs.category.For Your Agency": {
-    "message": "Para a Sua Agência",
-    "description": "The label for category 'For Your Agency' in sidebar 'docs'"
+  "sidebar.docs.category.For Management": {
+    "message": "Para a Direção",
+    "description": "The label for category 'For Management' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Reports": {
-    "message": "Relatórios",
-    "description": "The label for category 'Reports' in sidebar 'docs'"
+  "sidebar.docs.category.For Department Leads": {
+    "message": "Para os Líderes de Departamento",
+    "description": "The label for category 'For Department Leads' in sidebar 'docs'"
   },
   "sidebar.docs.category.What You Can Ask Skilio.link.generated-index.title": {
     "message": "O Que Pode Pedir ao Skilio",

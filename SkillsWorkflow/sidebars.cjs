@@ -162,20 +162,26 @@ module.exports = {
                     items: [
                         'ai/connector/ai-connector-setup',
                         'ai/ai-portals',
+                        // Grouped by who the page is made for (clients, management, department leads).
                         {
                             type: 'category',
                             label: 'For Your Clients',
-                            items: ['ai/connector/ai-connector-client-status-page', 'ai/connector/ai-connector-client-hub', 'ai/connector/ai-connector-forms']
+                            items: [
+                                'ai/connector/ai-connector-client-status-page',
+                                'ai/connector/ai-connector-client-hub',
+                                'ai/connector/ai-connector-forms',
+                                'ai/connector/ai-connector-printable-reports'
+                            ]
                         },
                         {
                             type: 'category',
-                            label: 'For Your Agency',
-                            items: ['ai/connector/ai-connector-wall-displays', 'ai/connector/ai-connector-team-screens']
+                            label: 'For Management',
+                            items: ['ai/connector/ai-connector-wall-displays', 'ai/connector/ai-connector-reports']
                         },
                         {
                             type: 'category',
-                            label: 'Reports',
-                            items: ['ai/connector/ai-connector-reports', 'ai/connector/ai-connector-printable-reports']
+                            label: 'For Department Leads',
+                            items: ['ai/connector/ai-connector-team-screens']
                         }
                     ]
                 },
