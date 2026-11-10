@@ -76,7 +76,7 @@ git status                # the build runs `npm run releases` and rewrites src/d
 
 - Branch `docs/<topic>` or the ticket branch, from `origin/master`.
 - Commits by type: `docs(integrations): add <Name> integration` (page, reference, index), `docs(integrations):
-  add <Name> to the sidebar`, locales in their own commit if large. Commit messages end with the
-  `Co-Authored-By` line the session asks for.
+  add <Name> to the sidebar`, locales in their own commit if large. No `Co-Authored-By` or other
+  attribution line on commits or PRs.
 - Push and PR only when asked. PR summary: page URLs and locales, the automation file and version documented,
   what was verified against a real run, and anything unverified.
