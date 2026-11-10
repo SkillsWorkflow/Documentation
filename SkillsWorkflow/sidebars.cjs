@@ -29,7 +29,7 @@ module.exports = {
                     items: [
                         'integrations/adnet',
                         'integrations/adsolutions',
-                        'integrations/banco-central-brazil',
+                        { type: 'category', label: 'Banco Central do Brasil', link: { type: 'doc', id: 'integrations/banco-central-brazil/index' }, items: ['integrations/banco-central-brazil/reference'] },
                         'integrations/granatum',
                         'integrations/jasmin',
                         'integrations/kamul',
