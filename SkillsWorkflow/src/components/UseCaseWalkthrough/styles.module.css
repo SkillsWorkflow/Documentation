@@ -951,6 +951,69 @@ html[data-theme='dark'] .cardGoodToKnow {
   margin-top: 0.7rem;
 }
 
+.approvalButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-left: auto;
+}
+
+/* Sectioned cards: one label column for every section, like the app. */
+.approvalFactsAligned {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+}
+
+.approvalFactsAligned dd {
+  overflow-wrap: break-word;
+}
+
+.approvalActionsSplit {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.approvalLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+.approvalSection + .approvalSection {
+  margin-top: 0.6rem;
+}
+
+.approvalSectionTitle {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+  margin-bottom: 0.3rem;
+}
+
+.approvalTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.9rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.approvalTab {
+  padding: 0.3rem 0.1rem;
+  margin-bottom: -1px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font: inherit;
+  color: var(--ifm-color-emphasis-700);
+  cursor: pointer;
+}
+
+.approvalTabActive {
+  color: var(--ifm-color-emphasis-900);
+  border-bottom-color: var(--ifm-color-primary);
+}
+
 .statusChip {
   display: flex;
   flex-wrap: wrap;

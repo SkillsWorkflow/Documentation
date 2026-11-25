@@ -71,23 +71,39 @@ La agencia, las personas, los clientes y los perfiles de acceso de este ejemplo 
     <p>Voy a crear a Tom Carter como copia de Ana Lopes, con timesheets desde el 7 dic 2026. Mantengo la tipología de Ana, como confirmaste, y también sus perfiles de acceso, clientes, departamento y horas registradas.</p>
     <Walkthrough.ApprovalCard
       title="Configurar a Tom Carter"
-      rows={[
-        ['Copia de', 'Ana Lopes'],
-        ['Nombre', 'Tom Carter'],
-        ['Usuario', 'tom.carter'],
-        ['Correo', '—'],
-        ['Usuario SSO', '—'],
-        ['Entra (timesheets desde)', '07/dic/2026'],
-        ['Horas mínimas por día', '8'],
-        ['Horas mínimas por semana', '40'],
-        ['Tipología', 'Art Director'],
-        ['Perfiles de acceso', 'Designer, Timesheets, Leaves'],
-        ['Clientes', 'Contoso Foods, Northwind Coffee'],
-        ['Departamentos', 'Design'],
-        ['Tipos de ausencia', 'Vacation 25 (hasta 31/dic/2026), Training 3, Special day off 1 (hasta 01/oct/2025)'],
-        ['Configurado como el compañero', 'Perfiles de acceso, empresa, departamento, división, acceso a clientes, responsable, horario y festivos'],
+      sections={[
+        { title: 'Origen', rows: [
+            ['Copia de', 'Ana Lopes'],
+        ] },
+        { title: 'Detalles', tabs: [
+          { label: 'Cuenta', rows: [
+              ['Nombre', 'Tom Carter'],
+              ['Usuario', 'tom.carter'],
+              ['Correo', '—'],
+              ['Usuario SSO', '—'],
+          ] },
+          { label: 'Trabajo', rows: [
+              ['Entra (timesheets desde)', '07/dic/2026'],
+              ['Horas mínimas por día', '8'],
+              ['Horas mínimas por semana', '40'],
+              ['Tipología', 'Art Director'],
+              ['Perfiles de acceso', 'Designer, Timesheets, Leaves'],
+          ] },
+          { label: 'Clientes', rows: [
+              ['Clientes', 'Contoso Foods, Northwind Coffee'],
+          ] },
+          { label: 'Departamentos', rows: [
+              ['Departamentos', 'Design'],
+          ] },
+          { label: 'Ausencias', rows: [
+              ['Tipos de ausencia', 'Vacation 25 (hasta 31/dic/2026), Training 3, Special day off 1 (hasta 01/oct/2025)'],
+          ] },
+        ] },
+        { title: 'Incluye', rows: [
+            ['Configurado como el compañero', 'Perfiles de acceso, empresa, departamento, división, acceso a clientes, responsable, horario y festivos'],
+        ] },
       ]}
-      actions={[{ label: 'Editar detalles' }, { label: 'Descartar' }, { label: 'Crear usuario', primary: true }]}
+      actions={[{ label: 'Editar detalles', link: true }, { label: 'Descartar' }, { label: 'Crear usuario', primary: true }]}
     />
   </Walkthrough.Message>
 

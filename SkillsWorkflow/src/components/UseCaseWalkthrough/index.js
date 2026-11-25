@@ -353,7 +353,57 @@ function Source({ label }) {
   );
 }
 
-function ApprovalCard({ title, subtitle, rows, actions }) {
+function ApprovalFacts({ rows, aligned }) {
+  return (
+    <dl className={[styles.approvalFacts, aligned ? styles.approvalFactsAligned : ''].join(' ')}>
+      {rows.map(([name, value]) => (
+        <React.Fragment key={name}>
+          <dt>{name}</dt>
+          <dd>{value}</dd>
+        </React.Fragment>
+      ))}
+    </dl>
+  );
+}
+
+/* One section of a sectioned card. With `tabs` it shows a tab strip, like the
+   app's Details section (Account / Work / Clients / Departments / Leave). */
+function ApprovalSection({ title, rows, tabs }) {
+  const [active, setActive] = React.useState(0);
+  return (
+    <div className={styles.approvalSection}>
+      {title && <div className={styles.approvalSectionTitle}>{title}</div>}
+      {tabs ? (
+        <>
+          <div className={styles.approvalTabs} role="tablist">
+            {tabs.map((tab, i) => (
+              <button
+                key={tab.label}
+                type="button"
+                role="tab"
+                aria-selected={i === active}
+                className={[styles.approvalTab, i === active ? styles.approvalTabActive : ''].join(' ')}
+                onClick={() => setActive(i)}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+          <ApprovalFacts rows={tabs[active].rows} aligned />
+        </>
+      ) : (
+        <ApprovalFacts rows={rows} aligned />
+      )}
+    </div>
+  );
+}
+
+/* `rows` for a flat card, or `sections` ({ title, rows } or { title, tabs }) for
+   a card laid out like the app's sectioned cards. An action with `link: true`
+   is drawn as a pencil link on the left, like Edit details. */
+function ApprovalCard({ title, subtitle, rows, sections, actions }) {
+  const links = actions.filter((action) => action.link);
+  const buttons = actions.filter((action) => !action.link);
   return (
     <section className={styles.approvalCard} aria-label={title}>
       <div className={styles.approvalHeader}>
@@ -363,23 +413,28 @@ function ApprovalCard({ title, subtitle, rows, actions }) {
           {subtitle && <span className={styles.approvalSubtitle}>{subtitle}</span>}
         </div>
       </div>
-      <dl className={styles.approvalFacts}>
-        {rows.map(([name, value]) => (
-          <React.Fragment key={name}>
-            <dt>{name}</dt>
-            <dd>{value}</dd>
-          </React.Fragment>
-        ))}
-      </dl>
-      <div className={styles.approvalActions}>
-        {actions.map(({ label, primary }) => (
-          <span
-            key={label}
-            className={[styles.actionButton, primary ? styles.actionButtonPrimary : ''].join(' ')}
-          >
+      {sections
+        ? sections.map((section, i) => <ApprovalSection key={section.title || i} {...section} />)
+        : <ApprovalFacts rows={rows} />}
+      <div className={[styles.approvalActions, links.length ? styles.approvalActionsSplit : ''].join(' ')}>
+        {links.map(({ label }) => (
+          <span key={label} className={styles.approvalLink}>
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path d="M11.3 1.7a1.5 1.5 0 0 1 2.1 0l.9.9a1.5 1.5 0 0 1 0 2.1L5.6 13.4 2 14l.6-3.6 8.7-8.7z" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
+            </svg>
             {label}
           </span>
         ))}
+        <span className={styles.approvalButtons}>
+          {buttons.map(({ label, primary }) => (
+            <span
+              key={label}
+              className={[styles.actionButton, primary ? styles.actionButtonPrimary : ''].join(' ')}
+            >
+              {label}
+            </span>
+          ))}
+        </span>
       </div>
     </section>
   );

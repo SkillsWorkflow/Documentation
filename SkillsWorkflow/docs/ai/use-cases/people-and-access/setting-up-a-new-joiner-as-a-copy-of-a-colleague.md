@@ -71,23 +71,39 @@ The agency, people, clients and access profiles in this example are illustrative
     <p>I’ll create Tom Carter as a copy of Ana Lopes, with timesheets starting 7 Dec 2026. I’ll keep Ana’s typology as you confirmed, along with Ana’s access profiles, clients, department and recorded hours.</p>
     <Walkthrough.ApprovalCard
       title="Set up Tom Carter"
-      rows={[
-        ['Copy of', 'Ana Lopes'],
-        ['Name', 'Tom Carter'],
-        ['Username', 'tom.carter'],
-        ['Email', '—'],
-        ['SSO username', '—'],
-        ['Starts (timesheets from)', '07/Dec/2026'],
-        ['Minimum hours per day', '8'],
-        ['Minimum hours per week', '40'],
-        ['Typology', 'Art Director'],
-        ['Access profiles', 'Designer, Timesheets, Leaves'],
-        ['Clients', 'Contoso Foods, Northwind Coffee'],
-        ['Departments', 'Design'],
-        ['Leave types', 'Vacation 25 (until 31/Dec/2026), Training 3, Special day off 1 (until 01/Oct/2025)'],
-        ['Set up like the colleague', 'Access profiles, company, department, division, client access, responsible, working hours and holidays'],
+      sections={[
+        { title: 'Source', rows: [
+            ['Copy of', 'Ana Lopes'],
+        ] },
+        { title: 'Details', tabs: [
+          { label: 'Account', rows: [
+              ['Name', 'Tom Carter'],
+              ['Username', 'tom.carter'],
+              ['Email', '—'],
+              ['SSO username', '—'],
+          ] },
+          { label: 'Work', rows: [
+              ['Starts (timesheets from)', '07/Dec/2026'],
+              ['Minimum hours per day', '8'],
+              ['Minimum hours per week', '40'],
+              ['Typology', 'Art Director'],
+              ['Access profiles', 'Designer, Timesheets, Leaves'],
+          ] },
+          { label: 'Clients', rows: [
+              ['Clients', 'Contoso Foods, Northwind Coffee'],
+          ] },
+          { label: 'Departments', rows: [
+              ['Departments', 'Design'],
+          ] },
+          { label: 'Leave', rows: [
+              ['Leave types', 'Vacation 25 (until 31/Dec/2026), Training 3, Special day off 1 (until 01/Oct/2025)'],
+          ] },
+        ] },
+        { title: 'Includes', rows: [
+            ['Set up like the colleague', 'Access profiles, company, department, division, client access, responsible, working hours and holidays'],
+        ] },
       ]}
-      actions={[{ label: 'Edit details' }, { label: 'Discard' }, { label: 'Create user', primary: true }]}
+      actions={[{ label: 'Edit details', link: true }, { label: 'Discard' }, { label: 'Create user', primary: true }]}
     />
   </Walkthrough.Message>
 
