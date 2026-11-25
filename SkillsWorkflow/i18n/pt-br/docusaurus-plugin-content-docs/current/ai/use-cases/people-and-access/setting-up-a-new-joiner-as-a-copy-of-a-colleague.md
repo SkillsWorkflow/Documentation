@@ -1,7 +1,7 @@
 ---
 id: setting-up-a-new-joiner-as-a-copy-of-a-colleague
 title: Configurar uma Pessoa Nova como Cópia de um Colega
-description: "Veja como um gerente de operações pede ao Assistente de IA que crie o usuário de alguém que está entrando na agência como cópia de um colega, revisa o novo usuário antes de ele ser criado e define os clientes e perfis de acesso de que a pessoa precisa."
+description: "Veja como um gerente de operações pede ao Assistente de IA que crie o usuário de alguém que está entrando na agência como cópia de um colega, completa o novo usuário em um cartão antes de ele ser criado e compara os perfis de acesso com os de colegas que têm a mesma tipologia."
 sidebar_label: Configurar uma Pessoa Nova
 sidebar_position: 1
 ---
@@ -10,9 +10,9 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Visão geral
 
-Diga ao Assistente de IA quem está entrando, quando a pessoa começa e com qual colega ela deve ser configurada. O assistente duplica o usuário desse colega e conclui a configuração de uma só vez: o nome, o nome de usuário, o email e a data de início da pessoa nova, e o cargo, as horas, os perfis de acesso, os feriados e os tipos de ausência deste ano do colega. Você revisa tudo em um cartão antes de o usuário ser criado.
+Diga ao Assistente de IA quem está entrando, quando a pessoa começa e com qual colega ela deve ser configurada. O assistente prepara uma cópia do usuário desse colega com o nome da pessoa nova, um nome de usuário e a data de início, e mantém a tipologia, as horas, os perfis de acesso, os clientes e o departamento do colega. Você revisa tudo em um cartão, adiciona o que é pessoal da pessoa nova, escolhe os tipos de ausência dela e cria o usuário.
 
-Depois que o usuário existe, o assistente mostra como a pessoa foi configurada e pede que você confirme os clientes e departamentos em que ela trabalha. Em seguida, compara os perfis de acesso dela com os de colegas na mesma função e sugere os que estão faltando.
+Depois que o usuário existe, o assistente mostra como a pessoa foi configurada. Em seguida, você pode pedir que ele compare os perfis de acesso da pessoa com os de colegas que têm a mesma tipologia.
 
 A agência, as pessoas, os clientes e os perfis de acesso deste exemplo são ilustrativos.
 
@@ -21,129 +21,104 @@ A agência, as pessoas, os clientes e os perfis de acesso deste exemplo são ilu
   sidebar={
     <>
       <Walkthrough.CapabilityCard title="De “o Tom começa na segunda” a um usuário pronto">
-        O assistente copia o que a pessoa nova tem em comum com um colega, corrige o que é pessoal do colega e deixa você revisar tudo antes de qualquer coisa ser criada.
+        O assistente copia o que a pessoa nova tem em comum com um colega e deixa você revisar e completar tudo em um só cartão antes de qualquer coisa ser criada.
       </Walkthrough.CapabilityCard>
       <Walkthrough.ChecklistCard
         items={[
           'Informe o nome completo da pessoa nova, a data de início e o colega a ser copiado.',
-          'Confira o nome de usuário, o email e o nome de usuário SSO que o assistente sugere a partir dos do colega.',
-          'Confira as horas, o cargo e os perfis de acesso, e altere os que forem diferentes para essa pessoa.',
-          'Altere os dias em Tipos de Ausências se a pessoa tiver menos dias este ano.',
-          'Selecione Create user e depois confirme os clientes e departamentos em que a pessoa trabalha.',
-          'Leia a comparação com os colegas e aprove ou negue o perfil de acesso sugerido.',
+          'Se você mencionar um cargo, diga se quer manter a tipologia do colega.',
+          'Em Conta, confira o usuário e adicione o e-mail e o usuário SSO. Eles começam vazios.',
+          'Em Trabalho, confira a data de início, as horas, a tipologia e os perfis de acesso copiados do colega.',
+          'Em Férias, selecione os tipos de ausência que a pessoa deve ter e altere os dias deste ano.',
+          'Selecione Criar usuário e leia como a pessoa foi configurada.',
+          'Peça ao assistente que compare os perfis de acesso da pessoa com os de colegas que têm a mesma tipologia.',
         ]}
       />
       <Walkthrough.PhrasingCard
         items={[
           'O Tom Carter entra na segunda como Senior Designer. Configure o Tom igual à Ana Lopes.',
-          'Duplique a Ana Lopes para o Tom Carter, começando em 2 de novembro, em meio período.',
-          'Crie um usuário para o Tom Carter igual à Ana Lopes, com o perfil Traffic e sem Account.',
+          'Duplique a Ana Lopes para o Tom Carter, começando em 7 de dezembro.',
+          'Compare os perfis de acesso do Tom Carter com os dos outros Art Directors de Design.',
         ]}
       />
       <Walkthrough.NoteCard
         items={[
           'Você precisa de permissão para criar e editar usuários.',
-          'O assistente sempre pede o nome completo e a data de início da pessoa nova. As time sheets dela começam nesse dia.',
-          'Os tipos de ausência começam com os dias que o colega tem este ano. Altere-os no cartão antes de criar o usuário.',
-          'A data de nascimento e o telefone não são copiados. O fuso horário, os valores mensais de custo e de rate e as tags também não: defina-os no cadastro do novo usuário.',
-          'Se a pessoa nova entrar com senha, ela precisará alterá-la no primeiro acesso.',
-          'Nada é criado até você selecionar Create user. Selecione Negar para parar e diga ao assistente o que mudar.',
+          'O assistente sempre pede o nome completo e a data de início da pessoa nova. As timesheets dela começam nesse dia.',
+          'Não existe um campo de cargo. A tipologia vem do colega que você copia, a menos que você a altere no cartão.',
+          'As horas são copiadas exatamente como estão no usuário do colega. Se aparecerem como 0, altere-as no cartão.',
+          'Em Férias aparecem todos os tipos de ausência do colega, inclusive os expirados. Só os que você selecionar são dados à pessoa nova.',
+          'O usuário precisa ser único. Se já estiver em uso, o assistente pede outro. Ele não avisa se já existe alguém com o mesmo nome.',
+          'Nada é criado até você selecionar Criar usuário. Selecione Cancelar para parar.',
         ]}
       />
     </>
   }
 >
   <Walkthrough.Message sender="you" name="Você">
-    <p>O Tom Carter vai entrar na equipe de Design na segunda-feira, 2 de novembro, como Senior Designer. Configure o Tom igual à Ana Lopes.</p>
+    <p>O Tom Carter vai entrar na equipe de Design na segunda-feira, 7 de dezembro, como Senior Designer. Configure o Tom igual à Ana Lopes.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Vou criar o Tom Carter como cópia da Ana Lopes, com início em 2 nov 2026. As time sheets do Tom começam nesse dia, com as horas, o cargo e os perfis de acesso da Ana. Revise os detalhes abaixo.</p>
+    <p>A tipologia registrada da Ana é Art Director. Mantenho essa tipologia para o Tom ou uso como modelo um colega Senior Designer?</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="you" name="Você">
+    <p>Mantenha a tipologia da Ana.</p>
+  </Walkthrough.Message>
+
+  <Walkthrough.Message sender="assistant" name="Skilio">
+    <p>Vou criar o Tom Carter como cópia da Ana Lopes, com timesheets a partir de 7 dez 2026. Vou manter a tipologia da Ana, como você confirmou, além dos perfis de acesso, dos clientes, do departamento e das horas registradas da Ana.</p>
     <Walkthrough.ApprovalCard
       title="Configurar Tom Carter"
-      subtitle="Revise o novo usuário antes de eu criá-lo."
       rows={[
-        ['Cópia de:', 'Ana Lopes'],
+        ['Cópia de', 'Ana Lopes'],
         ['Nome', 'Tom Carter'],
-        ['Nome de Usuário', 'tom.carter'],
-        ['Email', 'tom.carter@brightlane.com'],
-        ['Nome de Usuário SSO', 'tom.carter@brightlane.com'],
-        ['Início (time sheets a partir de)', '2 nov 2026'],
+        ['Usuário', 'tom.carter'],
+        ['E-mail', '—'],
+        ['Usuário SSO', '—'],
+        ['Entra (timesheets a partir de)', '07/dez/2026'],
         ['Horas mínimas por dia', '8'],
         ['Horas mínimas por semana', '40'],
-        ['Grupo de Cargo', 'Creative'],
-        ['Cargo', 'Senior Designer'],
-        ['Perfis de acesso', 'Designer, Timesheets, Leaves'],
-        ['Tipos de Ausências', 'Vacation 25, Training 3'],
-        ['Configurado como o colega', 'Perfis de acesso, empresa, departamento, divisão, acesso a clientes, líder, horário de trabalho e feriados'],
-      ]}
-      actions={[{ label: 'Editar detalhes' }, { label: 'Negar' }, { label: 'Create user', primary: true }]}
-    />
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="Você">
-    <p>Selecionei Editar detalhes, mudei Vacation para 4 dias este ano e selecionei Create user.</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Como o Tom Carter foi configurado</strong></p>
-    <Walkthrough.FieldTable
-      rows={[
-        ['Empresa', 'Brightlane Lisbon'],
-        ['Departamento', 'Design'],
-        ['Cargo', 'Senior Designer (Creative)'],
-        ['Líder', 'Marta Silva'],
-        ['Time sheets a partir de', '2 nov 2026'],
-        ['Horas mínimas', '8 por dia, 40 por semana'],
-        ['SSO', 'tom.carter@brightlane.com'],
+        ['Tipologia', 'Art Director'],
         ['Perfis de acesso', 'Designer, Timesheets, Leaves'],
         ['Clientes', 'Contoso Foods, Northwind Coffee'],
-        ['Feriados', '14 em 2026, iguais aos da Ana'],
-        ['Tipos de Ausências em 2026', 'Vacation 4 dias, Training 3 dias'],
+        ['Departamentos', 'Design'],
+        ['Tipos de férias', 'Vacation 25 (até 31/dez/2026), Training 3, Special day off 1 (até 01/out/2025)'],
+        ['Configurado como o colega', 'Perfis de acesso, empresa, departamento, divisão, acesso a clientes, responsável, horário e feriados'],
       ]}
-    />
-    <p>Confirme abaixo os clientes e departamentos do Tom.</p>
-    <Walkthrough.ApprovalCard
-      title="Acessos de Tom Carter"
-      subtitle="Revise isto antes de eu continuar."
-      rows={[
-        ['Usuário', 'Tom Carter'],
-        ['Adicionar clientes', 'Nenhum'],
-        ['Remover clientes', 'Nenhum'],
-        ['Adicionar departamentos', 'Nenhum'],
-        ['Remover departamentos', 'Nenhum'],
-      ]}
-      actions={[{ label: 'Editar detalhes' }, { label: 'Negar' }, { label: 'Aprovar', primary: true }]}
+      actions={[{ label: 'Editar detalhes' }, { label: 'Cancelar' }, { label: 'Criar usuário', primary: true }]}
     />
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
-    <p>O Tom vai trabalhar na Fabrikam Retail, não na Contoso Foods. Adicionei a Fabrikam Retail, removi a Contoso Foods no cartão e selecionei Aprovar.</p>
+    <p>Selecionei Editar detalhes, adicionei o e-mail do Tom, selecionei Vacation e Training em Férias, mudei Vacation para 2 dias este ano e selecionei Criar usuário.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>O Tom agora tem acesso à Fabrikam Retail e não tem mais acesso à Contoso Foods. Todo o resto continua como foi copiado da Ana.</p>
-    <p>Comparei os perfis de acesso do Tom com os dos outros Senior Designers de Design. <strong>8 de 9 têm Creative Review</strong>, e o Tom não tem. Sugiro adicioná-lo.</p>
-    <Walkthrough.ApprovalCard
-      title="Alterar os perfis de acesso de Tom Carter"
-      subtitle="Revise a alteração de acesso antes de eu aplicá-la."
-      rows={[
-        ['Usuário', 'Tom Carter'],
-        ['Adicionar', 'Creative Review'],
-      ]}
-      actions={[{ label: 'Negar' }, { label: 'Aprovar', primary: true }]}
-    />
+    <p>A conta do Tom Carter foi criada como <strong>tom.carter</strong>, com base na configuração da Ana Lopes.</p>
+    <ul>
+      <li><strong>Empresa:</strong> Brightlane Lisbon</li>
+      <li><strong>Departamento / divisão:</strong> Design / Lisbon</li>
+      <li><strong>Tipologia:</strong> Art Director, como você confirmou</li>
+      <li><strong>Timesheets a partir de:</strong> 7 dez 2026</li>
+      <li><strong>Horas mínimas:</strong> 8 por dia / 40 por semana</li>
+      <li><strong>Perfis de acesso:</strong> Designer, Timesheets, Leaves</li>
+      <li><strong>Acesso a clientes:</strong> <span style={{whiteSpace: 'nowrap'}}><img src="/img/ai/clients/contoso-foods.svg" alt="" width="18" height="18" style={{verticalAlign: '-3px', marginRight: '4px'}} /><span style={{borderBottom: '1px dotted currentColor'}}>Contoso Foods</span></span>, <span style={{whiteSpace: 'nowrap'}}><img src="/img/ai/clients/northwind-coffee.svg" alt="" width="18" height="18" style={{verticalAlign: '-3px', marginRight: '4px'}} /><span style={{borderBottom: '1px dotted currentColor'}}>Northwind Coffee</span></span></li>
+      <li><strong>Feriados:</strong> 14 em 2026, iguais aos da Ana</li>
+      <li><strong>Ausências em 2026:</strong> Vacation 2 dias, Training 3 dias</li>
+      <li><strong>Responsável por:</strong> Ninguém</li>
+      <li><strong>SSO:</strong> Não configurado</li>
+    </ul>
+    <p>A conta e as etapas de configuração foram concluídas, sem pendências.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Você">
-    <p>Selecionei Aprovar.</p>
+    <p>Compare os perfis de acesso do Tom com os dos outros Art Directors de Design. Está faltando algum perfil?</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>O Tom Carter agora tem o perfil de acesso Creative Review e está pronto para começar em 2 nov 2026.</p>
-    <Walkthrough.Choices
-      options={['Comparar os acessos do Tom com a equipe de Design', 'Configurar outra pessoa']}
-    />
+    <p>O Tom tem os mesmos perfis de acesso que os outros 4 Art Directors de Design. Não falta nenhum.</p>
   </Walkthrough.Message>
 </Walkthrough>
 
