@@ -59,9 +59,9 @@ A agência, o cliente, os Contratos, as propostas, os números, os valores e as 
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Encontrei um contrato de 2026 e a proposta associada para a Orvella Tea, no valor de <strong>€ 96.000</strong> sem impostos. A proposta está <strong>Approved</strong>, enquanto o contrato continua em <strong>New</strong>.</p>
+    <p>Encontrei um contrato de 2026 e a proposta associada para a Orvella Tea, no valor de <strong>€ 96.000</strong> sem impostos. O contrato e a proposta estão ambos em <strong>Approved</strong>.</p>
     <ul>
-      <li><strong>Contrato:</strong> 2026 - 00031 · Orvella Tea Retainer 2026 · € 96.000</li>
+      <li><strong>Contrato:</strong> 2026 - 00031 · Orvella Tea Retainer 2026 · € 96.000 · Approved</li>
       <li><strong>Proposta:</strong> 2026 - 00118 · Orvella Tea Retainer 2026 · € 96.000 · Approved</li>
     </ul>
     <Walkthrough.Actions items={[{ label: 'Quais são as condições de faturamento deste contrato?' }, { label: 'Mostre o custo e a margem da proposta' }]} />
@@ -80,7 +80,7 @@ A agência, o cliente, os Contratos, as propostas, os números, os valores e as 
     <p>Vou criar uma cópia para 2027 do Orvella Tea Retainer 2026, com datas de 1º de janeiro a 31 de dezembro de 2027, com a sua única proposta renomeada para <strong>Orvella Tea Retainer 2027</strong>.</p>
     <Walkthrough.ApprovalCard
       title="Orvella Tea Retainer 2026"
-      subtitle="2026 - 00031 · Orvella Tea · New · Vence em 31/12/2026"
+      subtitle="2026 - 00031 · Orvella Tea · Approved · Vence em 31/12/2026"
       rows={[
         ['Data de início', '01/01/2026'],
         ['Total', '96.000,00'],

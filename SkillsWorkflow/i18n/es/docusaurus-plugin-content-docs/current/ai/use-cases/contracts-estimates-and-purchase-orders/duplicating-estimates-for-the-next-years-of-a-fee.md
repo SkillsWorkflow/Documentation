@@ -59,9 +59,9 @@ La agencia, el cliente, los Fees, los estimates, los números, los valores y las
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>He encontrado un fee de 2026 y su estimate asociado para Orvella Tea, por valor de <strong>96.000 €</strong> sin impuestos. El estimate está <strong>Approved</strong>, mientras que el contrato del fee sigue en <strong>New</strong>.</p>
+    <p>He encontrado un fee de 2026 y su estimate asociado para Orvella Tea, por valor de <strong>96.000 €</strong> sin impuestos. El fee y su estimate están <strong>Approved</strong>.</p>
     <ul>
-      <li><strong>Fee:</strong> 2026 - 00031 · Orvella Tea Retainer 2026 · 96.000 €</li>
+      <li><strong>Fee:</strong> 2026 - 00031 · Orvella Tea Retainer 2026 · 96.000 € · Approved</li>
       <li><strong>Estimate:</strong> 2026 - 00118 · Orvella Tea Retainer 2026 · 96.000 € · Approved</li>
     </ul>
     <Walkthrough.Actions items={[{ label: '¿Cuáles son las condiciones de facturación de este fee?' }, { label: 'Muestra el coste y el margen del estimate' }]} />
@@ -80,7 +80,7 @@ La agencia, el cliente, los Fees, los estimates, los números, los valores y las
     <p>Voy a crear una copia para 2027 de Orvella Tea Retainer 2026, con fechas del 1 de enero al 31 de diciembre de 2027, con su único estimate renombrado como <strong>Orvella Tea Retainer 2027</strong>.</p>
     <Walkthrough.ApprovalCard
       title="Orvella Tea Retainer 2026"
-      subtitle="2026 - 00031 · Orvella Tea · New · Vence el 31/12/2026"
+      subtitle="2026 - 00031 · Orvella Tea · Approved · Vence el 31/12/2026"
       rows={[
         ['Fecha de inicio', '01/01/2026'],
         ['Total', '96.000,00'],

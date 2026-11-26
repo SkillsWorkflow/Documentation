@@ -59,9 +59,9 @@ The agency, client, Fees, estimates, numbers, values and stages in this example 
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Found one 2026 fee and its associated estimate for Orvella Tea, worth <strong>€96,000</strong> excluding tax. The estimate is <strong>Approved</strong>, while the fee contract remains at <strong>New</strong>.</p>
+    <p>Found one 2026 fee and its associated estimate for Orvella Tea, worth <strong>€96,000</strong> excluding tax. The fee and its estimate are both <strong>Approved</strong>.</p>
     <ul>
-      <li><strong>Fee:</strong> 2026 - 00031 · Orvella Tea Retainer 2026 · €96,000</li>
+      <li><strong>Fee:</strong> 2026 - 00031 · Orvella Tea Retainer 2026 · €96,000 · Approved</li>
       <li><strong>Estimate:</strong> 2026 - 00118 · Orvella Tea Retainer 2026 · €96,000 · Approved</li>
     </ul>
     <Walkthrough.Actions items={[{ label: 'What are this fee’s billing terms?' }, { label: 'Show the estimate’s cost and margin' }]} />
@@ -80,7 +80,7 @@ The agency, client, Fees, estimates, numbers, values and stages in this example 
     <p>I’ll create a 2027 copy of Orvella Tea Retainer 2026, dated 1 Jan–31 Dec 2027, with its one estimate renamed <strong>Orvella Tea Retainer 2027</strong>.</p>
     <Walkthrough.ApprovalCard
       title="Orvella Tea Retainer 2026"
-      subtitle="2026 - 00031 · Orvella Tea · New · Due 12/31/2026"
+      subtitle="2026 - 00031 · Orvella Tea · Approved · Due 12/31/2026"
       rows={[
         ['Start date', '01/01/2026'],
         ['Total', '96,000.00'],
