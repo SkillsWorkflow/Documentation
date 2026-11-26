@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   title: Skills Workflow MCP
-  description: MCP para portais de clientes e paginas internas da Skills Workflow.
+  description: Skills Workflow MCP for client portals and screens inside Skills Workflow.
   version: '1.0'
 host: YOUR-TENANT-API-HOST
 basePath: /
@@ -18,12 +18,12 @@ paths:
           in: header
           type: string
           required: true
-          description: App ID fornecido pela Skills Workflow
+          description: App ID provided by Skills Workflow
         - name: x-tenant-id
           in: header
           type: string
           required: true
-          description: Tenant ID fornecido pela Skills Workflow
+          description: Tenant ID provided by Skills Workflow
       responses:
         '200':
           description: Success

@@ -1,7 +1,7 @@
 ---
 id: ai-connector-team-screens
 title: Add a Screen to Skills Workflow
-description: "Ask Claude Code, Codex or GitHub Copilot for a screen of your own inside Skills Workflow: in the menu, as a tab on every job or project, as your team's home page or as a tile in Maintenance, shown only to the roles you choose."
+description: "Ask your AI tool for a screen of your own inside Skills Workflow: in the menu, as a tab on every job or project, as your team's home page or as a tile in Maintenance, shown only to the roles you choose."
 sidebar_label: "Specialized Tool: A Screen Inside Skills Workflow"
 sidebar_position: 6
 ---
@@ -13,7 +13,7 @@ When a team works from a view the standard screens do not give them, ask your AI
 
 ## Availability
 
-Available when screens are turned on for your tenant; ask the Skills Workflow team. The screen is built as a small code project, so ask for it in a tool that works on code, such as Claude Code, Codex or GitHub Copilot, with the [Skills Workflow connector](/docs/ai/connector/ai-connector-setup) added.
+Available when screens are turned on for your tenant; ask the Skills Workflow team. Ask for the screen in your AI tool with the [Skills Workflow connector](/docs/ai/connector/ai-connector-setup) added. A tool that works on code, such as Claude Code, Codex or GitHub Copilot, builds it as a small code project; Claude and ChatGPT write it as plain files.
 
 ## Where a screen can show
 

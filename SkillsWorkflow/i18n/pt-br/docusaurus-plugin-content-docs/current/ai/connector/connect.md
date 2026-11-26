@@ -29,7 +29,9 @@ O endereço do conector é o endereço da API do seu tenant seguido de `/mcp/cli
 https://apiv2-demo-test-we.skillsworkflow.com/mcp/client-portal
 ```
 
-Junto com os dados vêm duas skills, `client-portal` e `app-page`. Elas dão à ferramenta de IA as regras do que ela publica: como uma página lê os seus dados, o que ela pode carregar e como é publicada. Adicione-as à sua ferramenta antes de pedir qualquer coisa; no Claude, em **Settings** > **Capabilities** > **Skills**.
+Junto com os dados vem a skill `client-portal`. Ela dá à ferramenta de IA as regras das páginas de cliente: como uma página lê os seus dados, o que ela pode carregar e como é publicada. Adicione-a à sua ferramenta antes de pedir uma página de cliente; no Claude, em **Settings** > **Capabilities** > **Skills**.
+
+As regras das telas dentro do Skills Workflow chegam pelo próprio conector: antes de criar uma tela, a ferramenta de IA lê a skill `page-builder` instalada no seu tenant. Se a ferramenta informar que a skill não está instalada, peça à equipe do Skills Workflow que instale a AI skill `page-builder` do Marketplace no seu tenant.
 
 ## Adicionar o conector
 
@@ -130,7 +132,7 @@ Crie um agente Skills Workflow no Copilot Studio para os usuários de Microsoft 
 
 ### Pré-requisitos
 
-Peça à Skills Workflow o endereço da API do tenant, App ID, App key, Tenant ID e as skills `client-portal` e `app-page`. Você precisa de acesso ao Copilot Studio e permissão para criar conectores personalizados no mesmo ambiente Power Platform.
+Peça à Skills Workflow o endereço da API do tenant, App ID, App key, Tenant ID e a skill `client-portal`. Você precisa de acesso ao Copilot Studio e permissão para criar conectores personalizados no mesmo ambiente Power Platform.
 
 Use um ambiente Power Platform com Dataverse. Reserve a App key aos publicadores autorizados: ela permite publicar e substituir páginas em todo o tenant como administrador da Skills Workflow.
 
@@ -161,7 +163,7 @@ Use um ambiente Power Platform com Dataverse. Reserve a App key aos publicadores
 
 ### Testar a conexão MCP
 
-Inicie uma nova sessão de teste e pergunte quais as ferramentas Skills Workflow disponíveis. Compare a lista com as oito ferramentas na seção **Verificar a conexão** abaixo.
+Inicie uma nova sessão de teste e pergunte quais as ferramentas Skills Workflow disponíveis. Compare a lista com as dez ferramentas na seção **Verificar a conexão** abaixo.
 
 Depois peça ao agente para chamar `get_portal_url` para o cliente hipotético `mcp-connection-check` e o portal `connection-check`, sem criar nem alterar nada. Verifique o registro de atividade: a ferramenta deve terminar com **Completed** e retornar a URL do seu tenant. Essa ferramenta retorna um endereço mesmo que não exista uma página nesse local; não publica nem verifica a página.
 
@@ -172,7 +174,7 @@ Uma lista textual de ferramentas não basta para validar a conexão. Se o editor
 
 ### Preparar o acesso dos key users
 
-Antes de pedir ao agente para publicar conteúdo, obtenha e configure com a Skills Workflow as regras oficiais `client-portal` e `app-page`. O teste de conexão acima não publica o agente nem verifica suas skills.
+Antes de pedir ao agente para publicar uma página de cliente, obtenha e configure com a Skills Workflow as regras oficiais `client-portal`. As telas dentro do Skills Workflow recebem as regras da skill `page-builder`, pelo conector. O teste de conexão acima não publica o agente nem verifica suas skills.
 
 Para disponibilizar na organização, siga as [instruções Microsoft de publicação no Teams e Microsoft Copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams). Peça à equipe de TI para revisar o licenciamento, a identidade da conexão e o grupo de publicadores autorizados antes de disponibilizar o agente. Quem abre as páginas publicadas se autentica com sua própria identidade.
 
@@ -183,7 +185,7 @@ Um trial do Copilot Studio pode permitir testar um agente standard. Outros tipos
 </TabItem>
 </Tabs>
 
-As telas dentro do Skills Workflow são criadas como um pequeno projeto de código. Crie-as em uma ferramenta que trabalhe com código: Claude Code, Codex ou GitHub Copilot.
+As telas dentro do Skills Workflow podem ser criadas em qualquer uma dessas ferramentas. Uma ferramenta que trabalhe com código, como o Claude Code, o Codex ou o GitHub Copilot, cria a tela como um pequeno projeto de código; o Claude e o ChatGPT a escrevem como arquivos simples.
 
 ## Verificar a conexão
 
@@ -193,7 +195,7 @@ Inicie uma nova conversa e pergunte:
 Which Skills Workflow tools do you have?
 ```
 
-A resposta lista as oito ferramentas do conector:
+A resposta lista as dez ferramentas do conector:
 
 | Ferramenta | O que faz |
 |---|---|
@@ -205,9 +207,11 @@ A resposta lista as oito ferramentas do conector:
 | `publish_app_page_version` | Publica uma nova versão de uma tela |
 | `set_app_page_live_version` | Escolhe a versão de uma tela que os usuários recebem |
 | `get_app_page_url` | Informa o endereço de uma tela |
+| `get_page_builder_skill` | Lê as regras das telas dentro do Skills Workflow, instaladas no seu tenant |
+| `read_page_builder_skill_resource` | Lê um arquivo de referência dessas regras |
 
 ![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
-<figcaption>O app do ChatGPT respondendo à pergunta com as oito ferramentas do conector.</figcaption>
+<figcaption>O app do ChatGPT respondendo à pergunta com as ferramentas do conector.</figcaption>
 
 Essa pergunta não lê nem escreve nada no seu tenant. Se a ferramenta disser que não tem ferramentas do Skills Workflow, ou informar um erro, um dos valores está errado; compare o endereço e cada header com o que a equipe do Skills Workflow enviou.
 
