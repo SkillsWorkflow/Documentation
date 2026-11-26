@@ -1,7 +1,7 @@
 ---
 id: ai-connector-team-screens
 title: Añadir una Pantalla a Skills Workflow
-description: "Pide a Claude Code, Codex o GitHub Copilot una pantalla propia dentro de Skills Workflow: en el menú, como pestaña en cada job o proyecto, como página de inicio de tu equipo o como mosaico en Maintenance, visible solo para los roles que elijas."
+description: "Pide a tu herramienta de IA una pantalla propia dentro de Skills Workflow: en el menú, como pestaña en cada job o proyecto, como página de inicio de tu equipo o como mosaico en Maintenance, visible solo para los roles que elijas."
 sidebar_label: "Herramienta Especializada: Una Pantalla Dentro de Skills Workflow"
 sidebar_position: 6
 ---
@@ -13,7 +13,7 @@ Cuando un equipo trabaja con una vista que las pantallas estándar no le dan, p�
 
 ## Disponibilidad
 
-Disponible cuando las pantallas están activadas para tu tenant; pregunta al equipo de Skills Workflow. La pantalla se construye como un pequeño proyecto de código, así que pídela en una herramienta que trabaje con código, como Claude Code, Codex o GitHub Copilot, con el [conector de Skills Workflow](/docs/ai/connector/ai-connector-setup) añadido.
+Disponible cuando las pantallas están activadas para tu tenant; pregunta al equipo de Skills Workflow. Pide la pantalla a tu herramienta de IA con el [conector de Skills Workflow](/docs/ai/connector/ai-connector-setup) añadido. Una herramienta que trabaje con código, como Claude Code, Codex o GitHub Copilot, la construye como un pequeño proyecto de código; Claude y ChatGPT la escriben como archivos simples.
 
 ## Dónde puede aparecer una pantalla
 

@@ -29,7 +29,9 @@ The connector's address is your tenant's API address followed by `/mcp/client-po
 https://apiv2-demo-test-we.skillsworkflow.com/mcp/client-portal
 ```
 
-With the details come two skills, `client-portal` and `app-page`. They give the AI tool the rules of what it publishes: how a page reads your data, what it may load and how it is published. Add them to your tool before you ask for anything; in Claude, under **Settings** > **Capabilities** > **Skills**.
+With the details comes the `client-portal` skill. It gives the AI tool the rules for client pages: how a page reads your data, what it may load and how it is published. Add it to your tool before you ask for a client page; in Claude, under **Settings** > **Capabilities** > **Skills**.
+
+The rules for screens inside Skills Workflow come through the connector: before it writes a screen, the AI tool reads the `page-builder` skill installed on your tenant. If the tool reports that the skill is not installed, ask the Skills Workflow team to install the `page-builder` AI skill from the Marketplace on your tenant.
 
 ## Add the connector
 
@@ -130,7 +132,7 @@ Create a Skills Workflow agent in Copilot Studio for your agency's Microsoft 365
 
 ### Prerequisites
 
-Ask Skills Workflow for your tenant's API address, App ID, App key, Tenant ID, and the `client-portal` and `app-page` skills. You need access to Copilot Studio and permission to create custom connectors in the same Power Platform environment.
+Ask Skills Workflow for your tenant's API address, App ID, App key, Tenant ID, and the `client-portal` skill. You need access to Copilot Studio and permission to create custom connectors in the same Power Platform environment.
 
 Use a Power Platform environment with Dataverse. Keep the App key with authorised publishers: it permits publishing and replacing pages across the tenant as its Skills Workflow administrator.
 
@@ -161,7 +163,7 @@ Use a Power Platform environment with Dataverse. Keep the App key with authorise
 
 ### Test the MCP connection
 
-Start a new test session and ask which Skills Workflow tools are available. Compare the list with the eight tools in the **Check the connection** section below.
+Start a new test session and ask which Skills Workflow tools are available. Compare the list with the ten tools in the **Check the connection** section below.
 
 Then ask the agent to call `get_portal_url` for the hypothetical client `mcp-connection-check` and portal `connection-check`, without creating or modifying anything. Inspect the activity trace: the tool must finish with **Completed** and return your tenant's URL. This tool returns an address even when no page exists there; it does not publish or verify the page.
 
@@ -172,7 +174,7 @@ A textual list of tools is not enough to validate the connection. If the editor 
 
 ### Prepare access for key users
 
-Before asking the agent to publish content, obtain and configure the official `client-portal` and `app-page` rules with Skills Workflow. The connection test above does not publish the agent or verify its skills.
+Before asking the agent to publish a client page, obtain and configure the official `client-portal` rules with Skills Workflow. Screens inside Skills Workflow take their rules from the `page-builder` skill through the connector. The connection test above does not publish the agent or verify its skills.
 
 For organisational rollout, follow Microsoft's [Teams and Microsoft Copilot publishing instructions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams). Have IT review licensing, connection identity and the intended group of authorised publishers before making the agent available. People opening published pages sign in as themselves.
 
@@ -183,7 +185,7 @@ A Copilot Studio trial can allow testing a standard agent. Other agent types can
 </TabItem>
 </Tabs>
 
-Screens inside Skills Workflow are built as a small code project. Build them in a tool that works on code: Claude Code, Codex or GitHub Copilot.
+Screens inside Skills Workflow can be built in any of these tools. A tool that works on code, such as Claude Code, Codex or GitHub Copilot, builds the screen as a small code project; Claude and ChatGPT write it as plain files.
 
 ## Check the connection
 
@@ -193,7 +195,7 @@ Start a new conversation and ask:
 Which Skills Workflow tools do you have?
 ```
 
-The answer lists the connector's eight tools:
+The answer lists the connector's ten tools:
 
 | Tool | What it does |
 |---|---|
@@ -205,9 +207,11 @@ The answer lists the connector's eight tools:
 | `publish_app_page_version` | Publishes a new version of a screen |
 | `set_app_page_live_version` | Chooses the version of a screen users get |
 | `get_app_page_url` | Gives the address of a screen |
+| `get_page_builder_skill` | Reads the rules for screens inside Skills Workflow, installed on your tenant |
+| `read_page_builder_skill_resource` | Reads one reference file of those rules |
 
 ![img-box-shadow-popup](/img/ai/codex/codex-tools-check.png)
-<figcaption>The ChatGPT app answering the question with the connector's eight tools.</figcaption>
+<figcaption>The ChatGPT app answering the question with the connector's tools.</figcaption>
 
 Nothing is read from or written to your tenant by this question. If the tool says it has no Skills Workflow tools, or reports an error, one of the values is wrong; compare the address and each header with what the Skills Workflow team sent.
 
