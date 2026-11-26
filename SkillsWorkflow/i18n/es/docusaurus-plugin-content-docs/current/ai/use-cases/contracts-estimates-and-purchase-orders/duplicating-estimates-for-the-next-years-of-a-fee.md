@@ -1,7 +1,7 @@
 ---
 id: duplicating-estimates-for-the-next-years-of-a-fee
 title: Copiar el Fee de un Cliente al Año Siguiente
-description: "Mira cómo un account manager renueva el retainer de un cliente pidiendo al AI Assistant que copie el Fee de este año, con su estimate, al año siguiente, aplique una tasa de inflación a las líneas del estimate y active el nuevo estimate."
+description: "Mira cómo un account manager renueva el retainer de un cliente pidiendo al AI Assistant que copie el Fee de este año, con su estimate, al año siguiente."
 sidebar_label: Copiar un Fee al Año Siguiente
 sidebar_position: 5
 ---
@@ -10,42 +10,45 @@ import Walkthrough from '@site/src/components/UseCaseWalkthrough';
 
 ## Visión general
 
-Dile al AI Assistant qué Fee de cliente quieres renovar y qué tasa de inflación aplicar. El asistente encuentra el Fee de este año y su estimate, y copia ambos al año siguiente en el mismo paso: el nombre y las fechas del nuevo Fee, y el estimate con sus líneas, la tasa de inflación aplicada a sus valores y la descripción, el equipo o los campos personalizados que elijas copiar. Revisas todo en una tarjeta antes de que se cree nada.
+Cuando un cliente renueva su retainer, pide al AI Assistant el Fee de este año y su estimate, y después pídele que los copie al año siguiente. El asistente te pregunta qué debe incluir la copia y muestra el nombre y las fechas del nuevo Fee en una tarjeta. No se crea nada hasta que seleccionas Copiar.
 
-Una vez creada la copia, el asistente muestra los valores del nuevo estimate junto a los del año anterior. Después puedes pedirle que active el nuevo estimate, para que el equipo pueda empezar a planificar el trabajo del año.
+El nuevo Fee y su estimate se crean como borradores, con fechas del nuevo año, y el estimate recibe el nuevo año en su nombre. El asistente te indica lo que no se ha copiado y te da un botón para abrir el nuevo estimate.
 
-La agencia, el cliente, los Fees, los estimates, los números, las horas, los valores y las etapas de este ejemplo son ilustrativos. Los documentos que ves dependen de tus accesos, y las etapas y transiciones dependen del workflow del estimate.
+La agencia, el cliente, los Fees, los estimates, los números, los valores y las etapas de este ejemplo son ilustrativos. Los documentos que ves dependen de tus accesos.
 
 <Walkthrough
   subtitle="Ejemplo de conversación entre un account manager y el AI Assistant."
   sidebar={
     <>
       <Walkthrough.CapabilityCard title="Del Fee de este año al del próximo">
-        El asistente copia el Fee y su estimate al nuevo año, aplica a las líneas del estimate la tasa de inflación que pidas y activa el nuevo estimate con tu aprobación.
+        El asistente copia el Fee y su estimate al nuevo año en un solo paso, después de que revises la copia en una tarjeta.
       </Walkthrough.CapabilityCard>
       <Walkthrough.ChecklistCard
         items={[
           'Pide el Fee del cliente de este año y comprueba su estimate.',
-          'Pide al asistente que copie el Fee al próximo año e indica la tasa de inflación.',
-          'Consulta Cómo he interpretado tu pregunta para confirmar las nuevas fechas.',
-          'Elige qué incluye la copia del estimate: Descripción, Equipo o Campos personalizados.',
-          'Revisa los detalles y selecciona Copiar.',
-          'Comprueba el nuevo Fee y los valores del nuevo estimate.',
-          'Pide al asistente que active el nuevo estimate.',
+          'Pide al asistente que copie el Fee al próximo año.',
+          'Comprueba las fechas y los nuevos nombres en la respuesta del asistente.',
+          'Elige qué incluye la copia: Descripción, Equipo o Campos personalizados, y selecciona Continuar.',
+          'En la tarjeta Copiar contrato, comprueba el nombre y las fechas. Selecciona Editar detalles para cambiarlos.',
+          'Selecciona Copiar y abre el nuevo estimate.',
         ]}
       />
       <Walkthrough.PhrasingCard
         items={[
           'Muéstrame el fee que tenemos con Orvella Tea este año y su estimate.',
-          'Copia el fee Orvella Tea Retainer 2026 y aplícame una tasa de inflación del 5%.',
-          'Duplica el fee para enero a diciembre de 2027.',
-          'Activa el estimate.',
+          'Copia el fee Orvella Tea Retainer 2026 al próximo año.',
+          'Copia el fee y su estimate a enero–diciembre de 2027.',
         ]}
       />
       <Walkthrough.NoteCard
         items={[
-          'La Inflación % se aplica a las líneas del estimate, así que los valores cambian cuando la defines.',
-          'El asistente pide tu aprobación antes de crear la copia. Selecciona Denegar para dejarlo todo como está.',
+          'El nuevo Fee y sus estimates se crean como borradores.',
+          'Cada estimate se desplaza el mismo periodo que el Fee, con sus líneas, y recibe el nuevo año en su nombre.',
+          'No se copian los archivos, el feed, el historial de aprobaciones, los repartos mensuales ni las condiciones de facturación.',
+          'Si el Fee tiene más de un estimate, el asistente pregunta cuáles copiar.',
+          'Si ya existe un contrato con el nuevo nombre, el asistente pregunta si quieres usarlo o elegir otro nombre.',
+          'Si la copia falla, no se crea nada y el asistente te explica por qué.',
+          'No se crea nada hasta que seleccionas Copiar. Selecciona Descartar para parar.',
         ]}
       />
     </>
@@ -56,60 +59,58 @@ La agencia, el cliente, los Fees, los estimates, los números, las horas, los va
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p><strong>Orvella Tea tiene un fee para 2026, Orvella Tea Retainer 2026</strong>, del 1 de enero al 31 de diciembre de 2026. Tiene un estimate, <strong>2026 - 00031 · Retainer 2026</strong>, de 4800 horas y 312.000 €:</p>
-    <Walkthrough.DataTable
-      columns={['Typology Group', 'Horas', 'Valor']}
-      rows={[
-        ['Creative', '1800h', '126.000 €'],
-        ['Design', '1400h', '84.000 €'],
-        ['Copywriting', '900h', '58.500 €'],
-        ['Accounts', '700h', '43.500 €'],
-      ]}
-      note="El estimate está en Facturado."
-    />
+    <p>He encontrado un fee de 2026 y su estimate asociado para Orvella Tea, por valor de <strong>96.000 €</strong> sin impuestos. El fee y su estimate están <strong>Approved</strong>.</p>
+    <ul>
+      <li><strong>Fee:</strong> 2026 - 00031 · Orvella Tea Retainer 2026 · 96.000 € · Approved</li>
+      <li><strong>Estimate:</strong> 2026 - 00118 · Orvella Tea Retainer 2026 · 96.000 € · Approved</li>
+    </ul>
+    <Walkthrough.Actions items={[{ label: '¿Cuáles son las condiciones de facturación de este fee?' }, { label: 'Muestra el coste y el margen del estimate' }]} />
     <p><strong>Cómo he interpretado tu pregunta</strong></p>
     <ul>
-      <li>Incluido: fees de Orvella Tea con fechas en 2026 y los estimates que contienen.</li>
-      <li>Asumido: “este año” significa del 1 de enero al 31 de diciembre de 2026.</li>
+      <li>Incluido: los estimates de Orvella Tea del 1 de enero al 26 de noviembre de 2026 y el contrato de fee vinculado.</li>
+      <li>Asumido: “este año” significa 2026; “fee” significa el contrato del retainer, no una factura.</li>
     </ul>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Tú">
-    <p>Copia el fee Orvella Tea Retainer 2026 al próximo año y aplícame una tasa de inflación del 5%.</p>
+    <p>Copia el fee Orvella Tea Retainer 2026 al próximo año.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <p>Voy a copiar el fee y su estimate a 2027 y a definir la Inflación % en 5 en el nuevo estimate. ¿Qué debe incluir la copia del estimate?</p>
+    <p>Voy a crear una copia para 2027 de Orvella Tea Retainer 2026, con fechas del 1 de enero al 31 de diciembre de 2027, con su único estimate renombrado como <strong>Orvella Tea Retainer 2027</strong>.</p>
+    <Walkthrough.ApprovalCard
+      title="Orvella Tea Retainer 2026"
+      subtitle="2026 - 00031 · Orvella Tea · Approved · Vence el 31/12/2026"
+      rows={[
+        ['Fecha de inicio', '01/01/2026'],
+        ['Total', '96.000,00'],
+      ]}
+      actions={[]}
+    />
     <Walkthrough.Choices
       label="¿Qué debe incluir la copia? Elige las que quieras"
       options={['Descripción', 'Equipo', 'Campos personalizados']}
     />
-    <p><strong>Cómo he interpretado tu pregunta</strong></p>
-    <ul>
-      <li>Asumido: “próximo año” significa del 1 de enero al 31 de diciembre de 2027, el mismo periodo que el fee original, un año después.</li>
-      <li>Asumido: el nuevo fee se llama Orvella Tea Retainer 2027 y el nuevo estimate Retainer 2027.</li>
-    </ul>
+    <Walkthrough.Actions items={[{ label: 'Continuar', primary: true }]} />
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="you" name="Tú">
-    <p>Descripción y Equipo.</p>
+    <p>He seleccionado Descripción, Equipo y Campos personalizados, y después Continuar.</p>
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
     <Walkthrough.ApprovalCard
-      title="Copiar el contrato Orvella Tea Retainer 2026"
-      subtitle="Revisa el nuevo contrato antes de que lo cree."
+      title="Copiar contrato"
       rows={[
         ['Contrato', 'Orvella Tea Retainer 2026'],
         ['Nombre', 'Orvella Tea Retainer 2027'],
-        ['Fecha de inicio', '1 de enero de 2027'],
-        ['Fecha de fin', '31 de diciembre de 2027'],
-        ['Inflación (%)', '5'],
-        ['Presupuestos', 'Retainer 2026 → Retainer 2027'],
+        ['Fecha de inicio', '01/01/2027'],
+        ['Fecha de fin', '31/12/2027'],
+        ['Presupuestos', 'Orvella Tea Retainer 2026 → Orvella Tea Retainer 2027. Cada uno se desplaza el mismo periodo que el contrato, con sus líneas.'],
         ['Se copia', 'Cada presupuesto con sus líneas y detalles'],
-        ['Incluye', 'Descripción, Equipo'],
+        ['Incluye', 'Descripción, Equipo, Campos personalizados'],
       ]}
-      actions={[{ label: 'Denegar' }, { label: 'Copiar', primary: true }]}
+      actions={[{ label: 'Editar detalles' }, { label: 'Descartar' }, { label: 'Copiar', primary: true }]}
     />
   </Walkthrough.Message>
 
@@ -118,27 +119,29 @@ La agencia, el cliente, los Fees, los estimates, los números, las horas, los va
   </Walkthrough.Message>
 
   <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Actualizado" label="Copiar el contrato Orvella Tea Retainer 2026" />
-    <p>El fee se ha duplicado como <strong>Orvella Tea Retainer 2027</strong>, con fechas del 1 de enero al 31 de diciembre de 2027. Su estimate se ha copiado al nuevo fee como <strong>2026 - 00412 · Retainer 2027</strong>, con fechas del 1 de enero al 31 de diciembre de 2027 y la Inflación % definida en 5. Las líneas del estimate se han actualizado con la inflación:</p>
-    <Walkthrough.DataTable
-      columns={['Typology Group', 'Horas', '2026', '2027']}
+    <p>He creado el contrato de 2027 como <strong>borrador</strong>: <strong>Orvella Tea Retainer 2027</strong>, con fechas del 1 de enero al 31 de diciembre de 2027. Su estimate copiado, <strong>Orvella Tea Retainer 2027</strong>, también es un <strong>borrador</strong>.</p>
+    <p>No se han copiado los archivos, el feed ni el historial de aprobaciones; tampoco los repartos mensuales ni las condiciones de facturación del estimate.</p>
+    <Walkthrough.ApprovalCard
+      title="Orvella Tea Retainer 2027"
+      subtitle="Contrato · Orvella Tea · Borrador · Vence el 31/12/2027"
       rows={[
-        ['Creative', '1800h', '126.000 €', '132.300 €'],
-        ['Design', '1400h', '84.000 €', '88.200 €'],
-        ['Copywriting', '900h', '58.500 €', '61.425 €'],
-        ['Accounts', '700h', '43.500 €', '45.675 €'],
+        ['Fecha de inicio', '01/01/2027'],
+        ['Total', '96.000,00'],
       ]}
-      note="Las horas son las mismas que en 2026. El total pasa de 312.000 € a 327.600 €."
+      actions={[]}
     />
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="you" name="Tú">
-    <p>Activa el estimate.</p>
-  </Walkthrough.Message>
-
-  <Walkthrough.Message sender="assistant" name="Skilio">
-    <Walkthrough.StatusChip status="Actualizado" label="2026 - 00412 · Retainer 2027" />
-    <p>El estimate se ha activado y ha pasado a New.</p>
+    <Walkthrough.ApprovalCard
+      title="Orvella Tea Retainer 2027"
+      subtitle="Estimate · Orvella Tea · Borrador · Vence el 31/12/2027"
+      rows={[
+        ['Contrato', 'Orvella Tea Retainer 2027'],
+        ['Fecha de inicio', '01/01/2027'],
+        ['Total', '96.000,00 €'],
+      ]}
+      actions={[]}
+    />
+    <Walkthrough.Actions items={[{ label: 'Abrir el estimate de 2027' }]} />
+    <p>✓ Contrato creado correctamente: <strong>Orvella Tea Retainer 2027</strong>.</p>
   </Walkthrough.Message>
 </Walkthrough>
 
