@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://skillsworkflow.com/a2ui/v0_9/catalogs/approval/catalog.json",
+  "title": "SkillsWorkflow Approval Catalog",
+  "description": "The A2UI v0.9.1 basic catalog (whose id keeps v0_9), unchanged, plus EntityPicker and the translate function. Approval cards are built from it by the agent server and drawn by the WebApp and the mobile app. A client that cannot draw a component shows its label and display text.",
+  "catalogId": "https://skillsworkflow.com/a2ui/v0_9/catalogs/approval/catalog.json",
+  "components": {
+    "Text": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Text" },
+    "Image": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Image" },
+    "Icon": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Icon" },
+    "Video": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Video" },
+    "AudioPlayer": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/AudioPlayer" },
+    "Row": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Row" },
+    "Column": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Column" },
+    "List": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/List" },
+    "Card": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Card" },
+    "Tabs": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Tabs" },
+    "Modal": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Modal" },
+    "Divider": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Divider" },
+    "Button": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Button" },
+    "TextField": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/TextField" },
+    "CheckBox": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/CheckBox" },
+    "ChoicePicker": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/ChoicePicker" },
+    "Slider": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/Slider" },
+    "DateTimeInput": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/components/DateTimeInput" },
+    "EntityPicker": {
+      "type": "object",
+      "description": "Picks one or more platform entities from a list too long to send (users, clients, projects). The server names the entity type and the filter; each client searches the platform the way it already does. Use ChoicePicker instead when the server knows every option and they are few.",
+      "allOf": [
+        { "$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/ComponentCommon" },
+        { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/$defs/CatalogComponentCommon" },
+        {
+          "type": "object",
+          "properties": {
+            "component": { "const": "EntityPicker" },
+            "label": { "$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/DynamicString", "description": "What is being picked." },
+            "entity": {
+              "type": "string",
+              "description": "The platform entity searched.",
+              "enum": ["user", "client", "project", "department", "jobType", "company", "role", "documentType", "typology"]
+            },
+            "filter": {
+              "type": "object",
+              "description": "Restricts the search, as the entity's lookup accepts it (e.g. clientId for a project).",
+              "additionalProperties": { "$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/DynamicString" }
+            },
+            "multiple": { "type": "boolean", "default": false, "description": "Whether more than one entity can be picked." },
+            "value": { "$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/DynamicStringList", "description": "The ids picked. Bind it to the argument it edits." },
+            "display": { "$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/DynamicStringList", "description": "The names of the ids in value, in the same order, as shown while not editing. A client writes the picked names here when it is bound." }
+          },
+          "required": ["component", "label", "entity", "value", "display"]
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+  },
+  "functions": {
+    "required": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/required" },
+    "regex": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/regex" },
+    "length": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/length" },
+    "numeric": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/numeric" },
+    "email": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/email" },
+    "formatString": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/formatString" },
+    "formatNumber": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/formatNumber" },
+    "formatCurrency": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/formatCurrency" },
+    "formatDate": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/formatDate" },
+    "pluralize": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/pluralize" },
+    "openUrl": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/openUrl" },
+    "and": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/and" },
+    "or": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/or" },
+    "not": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/functions/not" },
+    "translate": {
+      "type": "object",
+      "description": "A text in the user's language from the client's own translations. The client looks the key up and shows fallback when it has no translation for it, so a client without our keys (A2A, a new app) still shows readable text.",
+      "properties": {
+        "call": { "const": "translate" },
+        "args": {
+          "type": "object",
+          "properties": {
+            "key": { "type": "string", "description": "The WebApp translation key, e.g. AiChatApprovalHours." },
+            "fallback": { "$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/DynamicString", "description": "The text shown without a translation, in the user's language when the server knows it." },
+            "params": {
+              "type": "object",
+              "description": "Values for the key's {{name}} placeholders, also applied to fallback.",
+              "additionalProperties": { "$ref": "https://a2ui.org/specification/v0_9/common_types.json#/$defs/DynamicString" }
+            }
+          },
+          "required": ["key", "fallback"],
+          "additionalProperties": false
+        },
+        "returnType": { "const": "string" }
+      },
+      "required": ["call", "args"],
+      "unevaluatedProperties": false
+    }
+  },
+  "$defs": {
+    "CatalogComponentCommon": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/$defs/CatalogComponentCommon" },
+    "theme": { "$ref": "https://a2ui.org/specification/v0_9/catalogs/basic/catalog.json#/$defs/theme" },
+    "anyComponent": {
+      "oneOf": [
+        { "$ref": "#/components/Text" },
+        { "$ref": "#/components/Image" },
+        { "$ref": "#/components/Icon" },
+        { "$ref": "#/components/Video" },
+        { "$ref": "#/components/AudioPlayer" },
+        { "$ref": "#/components/Row" },
+        { "$ref": "#/components/Column" },
+        { "$ref": "#/components/List" },
+        { "$ref": "#/components/Card" },
+        { "$ref": "#/components/Tabs" },
+        { "$ref": "#/components/Modal" },
+        { "$ref": "#/components/Divider" },
+        { "$ref": "#/components/Button" },
+        { "$ref": "#/components/TextField" },
+        { "$ref": "#/components/CheckBox" },
+        { "$ref": "#/components/ChoicePicker" },
+        { "$ref": "#/components/Slider" },
+        { "$ref": "#/components/DateTimeInput" },
+        { "$ref": "#/components/EntityPicker" }
+      ],
+      "discriminator": { "propertyName": "component" }
+    },
+    "anyFunction": {
+      "oneOf": [
+        { "$ref": "#/functions/required" },
+        { "$ref": "#/functions/regex" },
+        { "$ref": "#/functions/length" },
+        { "$ref": "#/functions/numeric" },
+        { "$ref": "#/functions/email" },
+        { "$ref": "#/functions/formatString" },
+        { "$ref": "#/functions/formatNumber" },
+        { "$ref": "#/functions/formatCurrency" },
+        { "$ref": "#/functions/formatDate" },
+        { "$ref": "#/functions/pluralize" },
+        { "$ref": "#/functions/openUrl" },
+        { "$ref": "#/functions/and" },
+        { "$ref": "#/functions/or" },
+        { "$ref": "#/functions/not" },
+        { "$ref": "#/functions/translate" }
+      ]
+    }
+  }
+}
